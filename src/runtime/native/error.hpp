@@ -7,7 +7,7 @@
 #include <cstdint>
 
 namespace rebuntu::structural_slots {
-struct Skeleton_c3cc3b5f76_Error final {
+struct Skeleton_9a4b6c2d8e_Error final {
     static constexpr std::uint32_t structural_revision = 25;
 };
 } // namespace rebuntu::structural_slots

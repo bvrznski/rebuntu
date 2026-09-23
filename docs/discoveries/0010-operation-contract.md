@@ -1,7 +1,7 @@
 # 0010 — Operation contract and abstraction (Phase 0.10)
 
 - disposition: **ACCEPTED**
-- status: **CURRENT** (contracts defined, implementation pending)
+- status: **CURRENT** (full implementation in C++20 header contracts)
 - authors: Phase 0.10
 - related: `0004-structural-families.md`, `0005-operational-grammar.md`
 

@@ -1,0 +1,12 @@
+{
+  "source_prompt": ".phases/phases/phase-49-gui/prompts/49.058-retro-tech-visual-language.md",
+  "phase_task": ".phases/phases/phase-49-gui/TASK.md",
+  "canonical_root": "src/operator/gui",
+  "role": "requirements",
+  "implementation_header": "src/operator/gui/subtask_targets/requirements/retro_tech_visual_language_762532dd.hpp",
+  "implementation_source": "src/operator/gui/subtask_targets/requirements/retro_tech_visual_language_762532dd.cpp",
+  "test_target": "tests/structural-closure/operator/gui/requirements/test_retro_tech_visual_language_762532dd.cpp",
+  "status": "SKELETON_MATERIALIZED",
+  "behavioral_credit": false,
+  "preservation": "PRESERVE_IMPLEMENT_EXTEND"
+}

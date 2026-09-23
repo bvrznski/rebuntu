@@ -1,0 +1,12 @@
+{
+  "source_prompt": ".phases/phases/phase-42-system-knowledge-graph/prompts/42.052-configuration-relations.md",
+  "phase_task": ".phases/phases/phase-42-system-knowledge-graph/TASK.md",
+  "canonical_root": "src/knowledge/system-knowledge-graph",
+  "role": "requirements",
+  "implementation_header": "src/knowledge/system-knowledge-graph/subtask_targets/requirements/configuration_relations_61dd434b.hpp",
+  "implementation_source": "src/knowledge/system-knowledge-graph/subtask_targets/requirements/configuration_relations_61dd434b.cpp",
+  "test_target": "tests/structural-closure/knowledge/system-knowledge-graph/requirements/test_configuration_relations_61dd434b.cpp",
+  "status": "SKELETON_MATERIALIZED",
+  "behavioral_credit": false,
+  "preservation": "PRESERVE_IMPLEMENT_EXTEND"
+}

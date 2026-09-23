@@ -1,0 +1,9 @@
+{
+  "component": "system-self-inspection-architecture-introspection",
+  "canonical_root": "observation",
+  "phase_tasks": [
+    ".phases/phases/phase-105-system-self-inspection-architecture-introspection/TASK.md"
+  ],
+  "status": "SKELETON",
+  "native_authority_rule": true
+}

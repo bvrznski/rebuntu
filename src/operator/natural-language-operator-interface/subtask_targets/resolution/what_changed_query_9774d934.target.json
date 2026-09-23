@@ -1,0 +1,12 @@
+{
+  "source_prompt": ".phases/phases/phase-46-natural-language-operator-interface/prompts/46.273-what-changed-query.md",
+  "phase_task": ".phases/phases/phase-46-natural-language-operator-interface/TASK.md",
+  "canonical_root": "src/operator/natural-language-operator-interface",
+  "role": "resolution",
+  "implementation_header": "src/operator/natural-language-operator-interface/subtask_targets/resolution/what_changed_query_9774d934.hpp",
+  "implementation_source": "src/operator/natural-language-operator-interface/subtask_targets/resolution/what_changed_query_9774d934.cpp",
+  "test_target": "tests/structural-closure/operator/natural-language-operator-interface/resolution/test_what_changed_query_9774d934.cpp",
+  "status": "SKELETON_MATERIALIZED",
+  "behavioral_credit": false,
+  "preservation": "PRESERVE_IMPLEMENT_EXTEND"
+}

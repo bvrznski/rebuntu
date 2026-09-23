@@ -1,0 +1,12 @@
+{
+  "source_prompt": ".phases/phases/phase-31-service-management/prompts/31.3-systemd-provider-adapter.md",
+  "phase_task": ".phases/phases/phase-31-service-management/TASK.md",
+  "canonical_root": "src/domains/service-management",
+  "role": "integration",
+  "implementation_header": "src/domains/service-management/subtask_targets/integration/systemd_provider_adapter_c19488f2.hpp",
+  "implementation_source": "src/domains/service-management/subtask_targets/integration/systemd_provider_adapter_c19488f2.cpp",
+  "test_target": "tests/structural-closure/domains/service-management/integration/test_systemd_provider_adapter_c19488f2.cpp",
+  "status": "SKELETON_MATERIALIZED",
+  "behavioral_credit": false,
+  "preservation": "PRESERVE_IMPLEMENT_EXTEND"
+}

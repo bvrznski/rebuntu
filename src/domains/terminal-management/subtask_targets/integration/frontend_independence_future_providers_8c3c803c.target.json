@@ -1,0 +1,12 @@
+{
+  "source_prompt": ".phases/phases/phase-27-terminal-management/prompts/27.28-frontend-independence-future-providers.md",
+  "phase_task": ".phases/phases/phase-27-terminal-management/TASK.md",
+  "canonical_root": "src/domains/terminal-management",
+  "role": "integration",
+  "implementation_header": "src/domains/terminal-management/subtask_targets/integration/frontend_independence_future_providers_8c3c803c.hpp",
+  "implementation_source": "src/domains/terminal-management/subtask_targets/integration/frontend_independence_future_providers_8c3c803c.cpp",
+  "test_target": "tests/structural-closure/domains/terminal-management/integration/test_frontend_independence_future_providers_8c3c803c.cpp",
+  "status": "SKELETON_MATERIALIZED",
+  "behavioral_credit": false,
+  "preservation": "PRESERVE_IMPLEMENT_EXTEND"
+}

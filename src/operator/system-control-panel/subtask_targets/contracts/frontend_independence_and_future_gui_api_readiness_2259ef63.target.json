@@ -1,0 +1,12 @@
+{
+  "source_prompt": ".phases/phases/phase-25-system-control-panel/prompts/25.24-frontend-independence-and-future-gui-api-readiness.md",
+  "phase_task": ".phases/phases/phase-25-system-control-panel/TASK.md",
+  "canonical_root": "src/operator/system-control-panel",
+  "role": "contracts",
+  "implementation_header": "src/operator/system-control-panel/subtask_targets/contracts/frontend_independence_and_future_gui_api_readiness_2259ef63.hpp",
+  "implementation_source": "src/operator/system-control-panel/subtask_targets/contracts/frontend_independence_and_future_gui_api_readiness_2259ef63.cpp",
+  "test_target": "tests/structural-closure/operator/system-control-panel/contracts/test_frontend_independence_and_future_gui_api_readiness_2259ef63.cpp",
+  "status": "SKELETON_MATERIALIZED",
+  "behavioral_credit": false,
+  "preservation": "PRESERVE_IMPLEMENT_EXTEND"
+}

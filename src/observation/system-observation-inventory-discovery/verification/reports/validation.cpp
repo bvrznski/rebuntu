@@ -1,0 +1,6 @@
+#include "observation/system-observation-inventory-discovery/verification/reports/validation.hpp"
+
+// Structural translation-unit slot only. No maturity credit.
+namespace rebuntu::structural_slots {
+static_assert(Skeleton_bedd719c84_Validation::structural_revision == 25);
+}

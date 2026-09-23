@@ -1,0 +1,12 @@
+{
+  "source_prompt": ".phases/phases/phase-68-system-stability-homeostasis/prompts/68.18.md",
+  "phase_task": ".phases/phases/phase-68-system-stability-homeostasis/TASK.md",
+  "canonical_root": "src/control/system-stability-homeostasis",
+  "role": "requirements",
+  "implementation_header": "src/control/system-stability-homeostasis/subtask_targets/requirements/requirement_2f82e381.hpp",
+  "implementation_source": "src/control/system-stability-homeostasis/subtask_targets/requirements/requirement_2f82e381.cpp",
+  "test_target": "tests/structural-closure/control/system-stability-homeostasis/requirements/test_requirement_2f82e381.cpp",
+  "status": "SKELETON_MATERIALIZED",
+  "behavioral_credit": false,
+  "preservation": "PRESERVE_IMPLEMENT_EXTEND"
+}

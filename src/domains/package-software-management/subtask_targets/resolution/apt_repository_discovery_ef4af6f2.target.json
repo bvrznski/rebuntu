@@ -1,0 +1,12 @@
+{
+  "source_prompt": ".phases/phases/phase-35-package-software-management/prompts/35.6-apt-repository-discovery.md",
+  "phase_task": ".phases/phases/phase-35-package-software-management/TASK.md",
+  "canonical_root": "src/domains/package-software-management",
+  "role": "resolution",
+  "implementation_header": "src/domains/package-software-management/subtask_targets/resolution/apt_repository_discovery_ef4af6f2.hpp",
+  "implementation_source": "src/domains/package-software-management/subtask_targets/resolution/apt_repository_discovery_ef4af6f2.cpp",
+  "test_target": "tests/structural-closure/domains/package-software-management/resolution/test_apt_repository_discovery_ef4af6f2.cpp",
+  "status": "SKELETON_MATERIALIZED",
+  "behavioral_credit": false,
+  "preservation": "PRESERVE_IMPLEMENT_EXTEND"
+}

@@ -1,0 +1,6 @@
+#include "automation/workflow-foundation/events/sources/validation.hpp"
+
+// Structural translation-unit slot only. No maturity credit.
+namespace rebuntu::structural_slots {
+static_assert(Skeleton_d0ba51b85f_Validation::structural_revision == 25);
+}

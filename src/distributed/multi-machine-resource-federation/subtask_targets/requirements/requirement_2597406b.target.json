@@ -1,0 +1,12 @@
+{
+  "source_prompt": ".phases/phases/phase-81-multi-machine-resource-federation/prompts/81.7.md",
+  "phase_task": ".phases/phases/phase-81-multi-machine-resource-federation/TASK.md",
+  "canonical_root": "src/distributed/multi-machine-resource-federation",
+  "role": "requirements",
+  "implementation_header": "src/distributed/multi-machine-resource-federation/subtask_targets/requirements/requirement_2597406b.hpp",
+  "implementation_source": "src/distributed/multi-machine-resource-federation/subtask_targets/requirements/requirement_2597406b.cpp",
+  "test_target": "tests/structural-closure/distributed/multi-machine-resource-federation/requirements/test_requirement_2597406b.cpp",
+  "status": "SKELETON_MATERIALIZED",
+  "behavioral_credit": false,
+  "preservation": "PRESERVE_IMPLEMENT_EXTEND"
+}

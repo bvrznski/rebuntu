@@ -1,0 +1,12 @@
+{
+  "source_prompt": ".phases/phases/phase-31-service-management/prompts/31.18-ordering-vs-requirement-semantics.md",
+  "phase_task": ".phases/phases/phase-31-service-management/TASK.md",
+  "canonical_root": "src/domains/service-management",
+  "role": "requirements",
+  "implementation_header": "src/domains/service-management/subtask_targets/requirements/ordering_vs_requirement_semantics_b8d57491.hpp",
+  "implementation_source": "src/domains/service-management/subtask_targets/requirements/ordering_vs_requirement_semantics_b8d57491.cpp",
+  "test_target": "tests/structural-closure/domains/service-management/requirements/test_ordering_vs_requirement_semantics_b8d57491.cpp",
+  "status": "SKELETON_MATERIALIZED",
+  "behavioral_credit": false,
+  "preservation": "PRESERVE_IMPLEMENT_EXTEND"
+}

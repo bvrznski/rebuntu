@@ -1,0 +1,12 @@
+{
+  "source_prompt": ".phases/phases/phase-33-network-management/prompts/33.36-route-change-planning.md",
+  "phase_task": ".phases/phases/phase-33-network-management/TASK.md",
+  "canonical_root": "src/domains/network-management",
+  "role": "planning",
+  "implementation_header": "src/domains/network-management/subtask_targets/planning/route_change_planning_88218048.hpp",
+  "implementation_source": "src/domains/network-management/subtask_targets/planning/route_change_planning_88218048.cpp",
+  "test_target": "tests/structural-closure/domains/network-management/planning/test_route_change_planning_88218048.cpp",
+  "status": "SKELETON_MATERIALIZED",
+  "behavioral_credit": false,
+  "preservation": "PRESERVE_IMPLEMENT_EXTEND"
+}

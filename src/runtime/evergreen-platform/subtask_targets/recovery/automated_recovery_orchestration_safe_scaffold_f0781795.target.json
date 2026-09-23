@@ -1,0 +1,12 @@
+{
+  "source_prompt": ".phases/phases/phase-24-evergreen-platform/prompts/24.11_automated_recovery_orchestration__safe_scaffold.md",
+  "phase_task": ".phases/phases/phase-24-evergreen-platform/TASK.md",
+  "canonical_root": "src/runtime/evergreen-platform",
+  "role": "recovery",
+  "implementation_header": "src/runtime/evergreen-platform/subtask_targets/recovery/automated_recovery_orchestration_safe_scaffold_f0781795.hpp",
+  "implementation_source": "src/runtime/evergreen-platform/subtask_targets/recovery/automated_recovery_orchestration_safe_scaffold_f0781795.cpp",
+  "test_target": "tests/structural-closure/runtime/evergreen-platform/recovery/test_automated_recovery_orchestration_safe_scaffold_f0781795.cpp",
+  "status": "SKELETON_MATERIALIZED",
+  "behavioral_credit": false,
+  "preservation": "PRESERVE_IMPLEMENT_EXTEND"
+}

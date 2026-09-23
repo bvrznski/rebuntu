@@ -1,0 +1,12 @@
+{
+  "source_prompt": ".phases/phases/phase-75-configuration-evolution-drift-governance/prompts/75.10.md",
+  "phase_task": ".phases/phases/phase-75-configuration-evolution-drift-governance/TASK.md",
+  "canonical_root": "src/domains/configuration-evolution-drift-governance",
+  "role": "requirements",
+  "implementation_header": "src/domains/configuration-evolution-drift-governance/subtask_targets/requirements/requirement_470633a4.hpp",
+  "implementation_source": "src/domains/configuration-evolution-drift-governance/subtask_targets/requirements/requirement_470633a4.cpp",
+  "test_target": "tests/structural-closure/domains/configuration-evolution-drift-governance/requirements/test_requirement_470633a4.cpp",
+  "status": "SKELETON_MATERIALIZED",
+  "behavioral_credit": false,
+  "preservation": "PRESERVE_IMPLEMENT_EXTEND"
+}

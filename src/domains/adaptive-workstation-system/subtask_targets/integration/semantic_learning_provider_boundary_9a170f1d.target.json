@@ -1,0 +1,12 @@
+{
+  "source_prompt": ".phases/phases/phase-44-adaptive-workstation-system/prompts/44.120-semantic-learning-provider-boundary.md",
+  "phase_task": ".phases/phases/phase-44-adaptive-workstation-system/TASK.md",
+  "canonical_root": "src/domains/adaptive-workstation-system",
+  "role": "integration",
+  "implementation_header": "src/domains/adaptive-workstation-system/subtask_targets/integration/semantic_learning_provider_boundary_9a170f1d.hpp",
+  "implementation_source": "src/domains/adaptive-workstation-system/subtask_targets/integration/semantic_learning_provider_boundary_9a170f1d.cpp",
+  "test_target": "tests/structural-closure/domains/adaptive-workstation-system/integration/test_semantic_learning_provider_boundary_9a170f1d.cpp",
+  "status": "SKELETON_MATERIALIZED",
+  "behavioral_credit": false,
+  "preservation": "PRESERVE_IMPLEMENT_EXTEND"
+}

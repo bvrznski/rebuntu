@@ -1,0 +1,12 @@
+{
+  "source_prompt": ".phases/phases/phase-37-secrets-credentials-management/prompts/37.59-phase-36-configuration-integration.md",
+  "phase_task": ".phases/phases/phase-37-secrets-credentials-management/TASK.md",
+  "canonical_root": "src/security/secrets-credentials-management",
+  "role": "integration",
+  "implementation_header": "src/security/secrets-credentials-management/subtask_targets/integration/configuration_integration_d4ea7164.hpp",
+  "implementation_source": "src/security/secrets-credentials-management/subtask_targets/integration/configuration_integration_d4ea7164.cpp",
+  "test_target": "tests/structural-closure/security/secrets-credentials-management/integration/test_configuration_integration_d4ea7164.cpp",
+  "status": "SKELETON_MATERIALIZED",
+  "behavioral_credit": false,
+  "preservation": "PRESERVE_IMPLEMENT_EXTEND"
+}

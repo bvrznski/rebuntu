@@ -1,0 +1,12 @@
+{
+  "source_prompt": ".phases/phases/phase-44-adaptive-workstation-system/prompts/44.129-gpu-identity-safe-adaptation.md",
+  "phase_task": ".phases/phases/phase-44-adaptive-workstation-system/TASK.md",
+  "canonical_root": "src/domains/adaptive-workstation-system",
+  "role": "contracts",
+  "implementation_header": "src/domains/adaptive-workstation-system/subtask_targets/contracts/gpu_identity_safe_adaptation_35cf298f.hpp",
+  "implementation_source": "src/domains/adaptive-workstation-system/subtask_targets/contracts/gpu_identity_safe_adaptation_35cf298f.cpp",
+  "test_target": "tests/structural-closure/domains/adaptive-workstation-system/contracts/test_gpu_identity_safe_adaptation_35cf298f.cpp",
+  "status": "SKELETON_MATERIALIZED",
+  "behavioral_credit": false,
+  "preservation": "PRESERVE_IMPLEMENT_EXTEND"
+}

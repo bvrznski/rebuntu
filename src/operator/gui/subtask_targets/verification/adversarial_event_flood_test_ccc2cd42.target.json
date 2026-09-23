@@ -1,0 +1,12 @@
+{
+  "source_prompt": ".phases/phases/phase-49-gui/prompts/49.564-adversarial-event-flood-test.md",
+  "phase_task": ".phases/phases/phase-49-gui/TASK.md",
+  "canonical_root": "src/operator/gui",
+  "role": "verification",
+  "implementation_header": "src/operator/gui/subtask_targets/verification/adversarial_event_flood_test_ccc2cd42.hpp",
+  "implementation_source": "src/operator/gui/subtask_targets/verification/adversarial_event_flood_test_ccc2cd42.cpp",
+  "test_target": "tests/structural-closure/operator/gui/verification/test_adversarial_event_flood_test_ccc2cd42.cpp",
+  "status": "SKELETON_MATERIALIZED",
+  "behavioral_credit": false,
+  "preservation": "PRESERVE_IMPLEMENT_EXTEND"
+}

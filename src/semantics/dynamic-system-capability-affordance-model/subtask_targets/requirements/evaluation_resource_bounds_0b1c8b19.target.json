@@ -1,0 +1,12 @@
+{
+  "source_prompt": ".phases/phases/phase-54-dynamic-system-capability-affordance-model/prompts/54.116-rebuntu-phase-54-116-evaluation-resource-bounds.md",
+  "phase_task": ".phases/phases/phase-54-dynamic-system-capability-affordance-model/TASK.md",
+  "canonical_root": "src/semantics/dynamic-system-capability-affordance-model",
+  "role": "requirements",
+  "implementation_header": "src/semantics/dynamic-system-capability-affordance-model/subtask_targets/requirements/evaluation_resource_bounds_0b1c8b19.hpp",
+  "implementation_source": "src/semantics/dynamic-system-capability-affordance-model/subtask_targets/requirements/evaluation_resource_bounds_0b1c8b19.cpp",
+  "test_target": "tests/structural-closure/semantics/dynamic-system-capability-affordance-model/requirements/test_evaluation_resource_bounds_0b1c8b19.cpp",
+  "status": "SKELETON_MATERIALIZED",
+  "behavioral_credit": false,
+  "preservation": "PRESERVE_IMPLEMENT_EXTEND"
+}

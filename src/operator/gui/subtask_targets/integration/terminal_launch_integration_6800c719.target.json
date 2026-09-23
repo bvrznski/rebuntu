@@ -1,0 +1,12 @@
+{
+  "source_prompt": ".phases/phases/phase-49-gui/prompts/49.372-terminal-launch-integration.md",
+  "phase_task": ".phases/phases/phase-49-gui/TASK.md",
+  "canonical_root": "src/operator/gui",
+  "role": "integration",
+  "implementation_header": "src/operator/gui/subtask_targets/integration/terminal_launch_integration_6800c719.hpp",
+  "implementation_source": "src/operator/gui/subtask_targets/integration/terminal_launch_integration_6800c719.cpp",
+  "test_target": "tests/structural-closure/operator/gui/integration/test_terminal_launch_integration_6800c719.cpp",
+  "status": "SKELETON_MATERIALIZED",
+  "behavioral_credit": false,
+  "preservation": "PRESERVE_IMPLEMENT_EXTEND"
+}

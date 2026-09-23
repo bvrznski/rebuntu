@@ -1,0 +1,12 @@
+{
+  "source_prompt": ".phases/phases/phase-57-continuous-reconciliation-goal-maintenance/prompts/57.0-rebuntu-phase-57-0-reconciliation-topology.md",
+  "phase_task": ".phases/phases/phase-57-continuous-reconciliation-goal-maintenance/TASK.md",
+  "canonical_root": "src/control/continuous-reconciliation-goal-maintenance",
+  "role": "observability",
+  "implementation_header": "src/control/continuous-reconciliation-goal-maintenance/subtask_targets/observability/reconciliation_topology_30a80672.hpp",
+  "implementation_source": "src/control/continuous-reconciliation-goal-maintenance/subtask_targets/observability/reconciliation_topology_30a80672.cpp",
+  "test_target": "tests/structural-closure/control/continuous-reconciliation-goal-maintenance/observability/test_reconciliation_topology_30a80672.cpp",
+  "status": "SKELETON_MATERIALIZED",
+  "behavioral_credit": false,
+  "preservation": "PRESERVE_IMPLEMENT_EXTEND"
+}

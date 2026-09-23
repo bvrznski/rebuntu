@@ -1,0 +1,12 @@
+{
+  "source_prompt": ".phases/phases/phase-49-gui/prompts/49.014-single-instance-policy.md",
+  "phase_task": ".phases/phases/phase-49-gui/TASK.md",
+  "canonical_root": "src/operator/gui",
+  "role": "security",
+  "implementation_header": "src/operator/gui/subtask_targets/security/single_instance_policy_525a445d.hpp",
+  "implementation_source": "src/operator/gui/subtask_targets/security/single_instance_policy_525a445d.cpp",
+  "test_target": "tests/structural-closure/operator/gui/security/test_single_instance_policy_525a445d.cpp",
+  "status": "SKELETON_MATERIALIZED",
+  "behavioral_credit": false,
+  "preservation": "PRESERVE_IMPLEMENT_EXTEND"
+}

@@ -1,0 +1,15 @@
+{
+  "component": "privilege-boundary-secure-execution",
+  "canonical_root": "security",
+  "phase_tasks": [
+    ".phases/phases/phase-08-privilege-boundary-secure-execution/TASK.md"
+  ],
+  "status": "partial",
+  "native_authority_rule": true,
+  "implementation_depth": "2/5",
+  "mass_implementation_xviii": [
+    "boundary/secure_boundary.cpp",
+    "ipc/message_frame.cpp",
+    "tests/rebuntu/test_privilege_boundary_saturation.cpp"
+  ]
+}

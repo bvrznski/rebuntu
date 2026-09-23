@@ -1,0 +1,12 @@
+{
+  "source_prompt": ".phases/phases/phase-49-gui/prompts/49.367-polkit-integration-boundary.md",
+  "phase_task": ".phases/phases/phase-49-gui/TASK.md",
+  "canonical_root": "src/operator/gui",
+  "role": "integration",
+  "implementation_header": "src/operator/gui/subtask_targets/integration/polkit_integration_boundary_cb773e8d.hpp",
+  "implementation_source": "src/operator/gui/subtask_targets/integration/polkit_integration_boundary_cb773e8d.cpp",
+  "test_target": "tests/structural-closure/operator/gui/integration/test_polkit_integration_boundary_cb773e8d.cpp",
+  "status": "SKELETON_MATERIALIZED",
+  "behavioral_credit": false,
+  "preservation": "PRESERVE_IMPLEMENT_EXTEND"
+}

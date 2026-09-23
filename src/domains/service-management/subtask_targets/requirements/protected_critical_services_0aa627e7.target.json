@@ -1,0 +1,12 @@
+{
+  "source_prompt": ".phases/phases/phase-31-service-management/prompts/31.36-protected-critical-services.md",
+  "phase_task": ".phases/phases/phase-31-service-management/TASK.md",
+  "canonical_root": "src/domains/service-management",
+  "role": "requirements",
+  "implementation_header": "src/domains/service-management/subtask_targets/requirements/protected_critical_services_0aa627e7.hpp",
+  "implementation_source": "src/domains/service-management/subtask_targets/requirements/protected_critical_services_0aa627e7.cpp",
+  "test_target": "tests/structural-closure/domains/service-management/requirements/test_protected_critical_services_0aa627e7.cpp",
+  "status": "SKELETON_MATERIALIZED",
+  "behavioral_credit": false,
+  "preservation": "PRESERVE_IMPLEMENT_EXTEND"
+}

@@ -1,0 +1,12 @@
+{
+  "source_prompt": ".phases/phases/phase-36-configuration-management/prompts/36.8-configuration-provenance.md",
+  "phase_task": ".phases/phases/phase-36-configuration-management/TASK.md",
+  "canonical_root": "src/domains/configuration-management",
+  "role": "requirements",
+  "implementation_header": "src/domains/configuration-management/subtask_targets/requirements/configuration_provenance_2b6ba41c.hpp",
+  "implementation_source": "src/domains/configuration-management/subtask_targets/requirements/configuration_provenance_2b6ba41c.cpp",
+  "test_target": "tests/structural-closure/domains/configuration-management/requirements/test_configuration_provenance_2b6ba41c.cpp",
+  "status": "SKELETON_MATERIALIZED",
+  "behavioral_credit": false,
+  "preservation": "PRESERVE_IMPLEMENT_EXTEND"
+}

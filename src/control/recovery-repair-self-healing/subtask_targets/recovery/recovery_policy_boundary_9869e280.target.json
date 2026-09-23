@@ -1,0 +1,12 @@
+{
+  "source_prompt": ".phases/phases/phase-61-recovery-repair-self-healing/prompts/61.9-rebuntu-phase-61-9-recovery-policy-boundary.md",
+  "phase_task": ".phases/phases/phase-61-recovery-repair-self-healing/TASK.md",
+  "canonical_root": "src/control/recovery-repair-self-healing",
+  "role": "recovery",
+  "implementation_header": "src/control/recovery-repair-self-healing/subtask_targets/recovery/recovery_policy_boundary_9869e280.hpp",
+  "implementation_source": "src/control/recovery-repair-self-healing/subtask_targets/recovery/recovery_policy_boundary_9869e280.cpp",
+  "test_target": "tests/structural-closure/control/recovery-repair-self-healing/recovery/test_recovery_policy_boundary_9869e280.cpp",
+  "status": "SKELETON_MATERIALIZED",
+  "behavioral_credit": false,
+  "preservation": "PRESERVE_IMPLEMENT_EXTEND"
+}

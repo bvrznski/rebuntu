@@ -1,0 +1,12 @@
+{
+  "source_prompt": ".phases/phases/phase-52-associated-systems-hardware-rooted-trust/prompts/52.096-grant-recipient-constraints.md",
+  "phase_task": ".phases/phases/phase-52-associated-systems-hardware-rooted-trust/TASK.md",
+  "canonical_root": "src/providers/associated-systems-hardware-rooted-trust",
+  "role": "requirements",
+  "implementation_header": "src/providers/associated-systems-hardware-rooted-trust/subtask_targets/requirements/grant_recipient_constraints_a0d6207d.hpp",
+  "implementation_source": "src/providers/associated-systems-hardware-rooted-trust/subtask_targets/requirements/grant_recipient_constraints_a0d6207d.cpp",
+  "test_target": "tests/structural-closure/providers/associated-systems-hardware-rooted-trust/requirements/test_grant_recipient_constraints_a0d6207d.cpp",
+  "status": "SKELETON_MATERIALIZED",
+  "behavioral_credit": false,
+  "preservation": "PRESERVE_IMPLEMENT_EXTEND"
+}

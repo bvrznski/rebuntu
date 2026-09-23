@@ -1,0 +1,12 @@
+{
+  "source_prompt": ".phases/phases/phase-12-stability-and-recovery/prompts/12.14.md",
+  "phase_task": ".phases/phases/phase-12-stability-and-recovery/TASK.md",
+  "canonical_root": "src/control/stability-and-recovery",
+  "role": "requirements",
+  "implementation_header": "src/control/stability-and-recovery/subtask_targets/requirements/requirement_13164634.hpp",
+  "implementation_source": "src/control/stability-and-recovery/subtask_targets/requirements/requirement_13164634.cpp",
+  "test_target": "tests/structural-closure/control/stability-and-recovery/requirements/test_requirement_13164634.cpp",
+  "status": "SKELETON_MATERIALIZED",
+  "behavioral_credit": false,
+  "preservation": "PRESERVE_IMPLEMENT_EXTEND"
+}

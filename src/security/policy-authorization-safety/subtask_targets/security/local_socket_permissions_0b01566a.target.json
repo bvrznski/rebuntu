@@ -1,0 +1,12 @@
+{
+  "source_prompt": ".phases/phases/phase-07-policy-authorization-safety/prompts/7.34_local_socket_permissions.md",
+  "phase_task": ".phases/phases/phase-07-policy-authorization-safety/TASK.md",
+  "canonical_root": "src/security/policy-authorization-safety",
+  "role": "security",
+  "implementation_header": "src/security/policy-authorization-safety/subtask_targets/security/local_socket_permissions_0b01566a.hpp",
+  "implementation_source": "src/security/policy-authorization-safety/subtask_targets/security/local_socket_permissions_0b01566a.cpp",
+  "test_target": "tests/structural-closure/security/policy-authorization-safety/security/test_local_socket_permissions_0b01566a.cpp",
+  "status": "SKELETON_MATERIALIZED",
+  "behavioral_credit": false,
+  "preservation": "PRESERVE_IMPLEMENT_EXTEND"
+}

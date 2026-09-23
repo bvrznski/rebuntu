@@ -1,0 +1,12 @@
+{
+  "source_prompt": ".phases/phases/phase-42-system-knowledge-graph/prompts/42.076-container-and-daemon-relations.md",
+  "phase_task": ".phases/phases/phase-42-system-knowledge-graph/TASK.md",
+  "canonical_root": "src/knowledge/system-knowledge-graph",
+  "role": "requirements",
+  "implementation_header": "src/knowledge/system-knowledge-graph/subtask_targets/requirements/container_and_daemon_relations_681b9c92.hpp",
+  "implementation_source": "src/knowledge/system-knowledge-graph/subtask_targets/requirements/container_and_daemon_relations_681b9c92.cpp",
+  "test_target": "tests/structural-closure/knowledge/system-knowledge-graph/requirements/test_container_and_daemon_relations_681b9c92.cpp",
+  "status": "SKELETON_MATERIALIZED",
+  "behavioral_credit": false,
+  "preservation": "PRESERVE_IMPLEMENT_EXTEND"
+}

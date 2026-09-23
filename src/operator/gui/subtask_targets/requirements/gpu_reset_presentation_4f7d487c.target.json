@@ -1,0 +1,12 @@
+{
+  "source_prompt": ".phases/phases/phase-49-gui/prompts/49.421-gpu-reset-presentation.md",
+  "phase_task": ".phases/phases/phase-49-gui/TASK.md",
+  "canonical_root": "src/operator/gui",
+  "role": "requirements",
+  "implementation_header": "src/operator/gui/subtask_targets/requirements/gpu_reset_presentation_4f7d487c.hpp",
+  "implementation_source": "src/operator/gui/subtask_targets/requirements/gpu_reset_presentation_4f7d487c.cpp",
+  "test_target": "tests/structural-closure/operator/gui/requirements/test_gpu_reset_presentation_4f7d487c.cpp",
+  "status": "SKELETON_MATERIALIZED",
+  "behavioral_credit": false,
+  "preservation": "PRESERVE_IMPLEMENT_EXTEND"
+}

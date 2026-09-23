@@ -1,0 +1,9 @@
+{
+  "component": "performance-optimization-adaptive-tuning",
+  "canonical_root": "domains",
+  "phase_tasks": [
+    ".phases/phases/phase-71-performance-optimization-adaptive-tuning/TASK.md"
+  ],
+  "status": "SKELETON",
+  "native_authority_rule": true
+}

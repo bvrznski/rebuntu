@@ -1,0 +1,12 @@
+{
+  "source_prompt": ".phases/phases/phase-28-development-environment-management/prompts/28.33-development-management-cli.md",
+  "phase_task": ".phases/phases/phase-28-development-environment-management/TASK.md",
+  "canonical_root": "src/domains/development-environment-management",
+  "role": "requirements",
+  "implementation_header": "src/domains/development-environment-management/subtask_targets/requirements/development_management_cli_9361bc1e.hpp",
+  "implementation_source": "src/domains/development-environment-management/subtask_targets/requirements/development_management_cli_9361bc1e.cpp",
+  "test_target": "tests/structural-closure/domains/development-environment-management/requirements/test_development_management_cli_9361bc1e.cpp",
+  "status": "SKELETON_MATERIALIZED",
+  "behavioral_credit": false,
+  "preservation": "PRESERVE_IMPLEMENT_EXTEND"
+}

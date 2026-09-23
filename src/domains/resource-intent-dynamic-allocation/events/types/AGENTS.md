@@ -1,0 +1,1 @@
+Read `/.phases/AGENTS.md` and the owning phase TASK.md before implementation. Do not treat this structural target as implemented behavior. Preserve Native Authority and update the phase ledger after implementation.

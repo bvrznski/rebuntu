@@ -1,0 +1,12 @@
+{
+  "source_prompt": ".phases/phases/phase-51-distributed-rebuntu-system/prompts/51.087-indeterminate-execution-handling.md",
+  "phase_task": ".phases/phases/phase-51-distributed-rebuntu-system/TASK.md",
+  "canonical_root": "src/distributed/distributed-rebuntu-system",
+  "role": "execution",
+  "implementation_header": "src/distributed/distributed-rebuntu-system/subtask_targets/execution/indeterminate_execution_handling_1c35ced9.hpp",
+  "implementation_source": "src/distributed/distributed-rebuntu-system/subtask_targets/execution/indeterminate_execution_handling_1c35ced9.cpp",
+  "test_target": "tests/structural-closure/distributed/distributed-rebuntu-system/execution/test_indeterminate_execution_handling_1c35ced9.cpp",
+  "status": "SKELETON_MATERIALIZED",
+  "behavioral_credit": false,
+  "preservation": "PRESERVE_IMPLEMENT_EXTEND"
+}

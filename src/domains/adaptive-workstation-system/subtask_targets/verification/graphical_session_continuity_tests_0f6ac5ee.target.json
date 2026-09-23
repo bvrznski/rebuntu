@@ -1,0 +1,12 @@
+{
+  "source_prompt": ".phases/phases/phase-44-adaptive-workstation-system/prompts/44.290-graphical-session-continuity-tests.md",
+  "phase_task": ".phases/phases/phase-44-adaptive-workstation-system/TASK.md",
+  "canonical_root": "src/domains/adaptive-workstation-system",
+  "role": "verification",
+  "implementation_header": "src/domains/adaptive-workstation-system/subtask_targets/verification/graphical_session_continuity_tests_0f6ac5ee.hpp",
+  "implementation_source": "src/domains/adaptive-workstation-system/subtask_targets/verification/graphical_session_continuity_tests_0f6ac5ee.cpp",
+  "test_target": "tests/structural-closure/domains/adaptive-workstation-system/verification/test_graphical_session_continuity_tests_0f6ac5ee.cpp",
+  "status": "SKELETON_MATERIALIZED",
+  "behavioral_credit": false,
+  "preservation": "PRESERVE_IMPLEMENT_EXTEND"
+}

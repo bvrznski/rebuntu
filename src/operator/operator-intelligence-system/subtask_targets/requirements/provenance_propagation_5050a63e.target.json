@@ -1,0 +1,12 @@
+{
+  "source_prompt": ".phases/phases/phase-43-operator-intelligence-system/prompts/43.014-provenance-propagation.md",
+  "phase_task": ".phases/phases/phase-43-operator-intelligence-system/TASK.md",
+  "canonical_root": "src/operator/operator-intelligence-system",
+  "role": "requirements",
+  "implementation_header": "src/operator/operator-intelligence-system/subtask_targets/requirements/provenance_propagation_5050a63e.hpp",
+  "implementation_source": "src/operator/operator-intelligence-system/subtask_targets/requirements/provenance_propagation_5050a63e.cpp",
+  "test_target": "tests/structural-closure/operator/operator-intelligence-system/requirements/test_provenance_propagation_5050a63e.cpp",
+  "status": "SKELETON_MATERIALIZED",
+  "behavioral_credit": false,
+  "preservation": "PRESERVE_IMPLEMENT_EXTEND"
+}

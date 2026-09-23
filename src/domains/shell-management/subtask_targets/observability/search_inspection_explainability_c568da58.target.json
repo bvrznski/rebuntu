@@ -1,0 +1,12 @@
+{
+  "source_prompt": ".phases/phases/phase-26-shell-management/prompts/26.22-search-inspection-explainability.md",
+  "phase_task": ".phases/phases/phase-26-shell-management/TASK.md",
+  "canonical_root": "src/domains/shell-management",
+  "role": "observability",
+  "implementation_header": "src/domains/shell-management/subtask_targets/observability/search_inspection_explainability_c568da58.hpp",
+  "implementation_source": "src/domains/shell-management/subtask_targets/observability/search_inspection_explainability_c568da58.cpp",
+  "test_target": "tests/structural-closure/domains/shell-management/observability/test_search_inspection_explainability_c568da58.cpp",
+  "status": "SKELETON_MATERIALIZED",
+  "behavioral_credit": false,
+  "preservation": "PRESERVE_IMPLEMENT_EXTEND"
+}

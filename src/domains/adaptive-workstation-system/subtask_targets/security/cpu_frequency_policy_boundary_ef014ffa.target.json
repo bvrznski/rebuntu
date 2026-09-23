@@ -1,0 +1,12 @@
+{
+  "source_prompt": ".phases/phases/phase-44-adaptive-workstation-system/prompts/44.123-cpu-frequency-policy-boundary.md",
+  "phase_task": ".phases/phases/phase-44-adaptive-workstation-system/TASK.md",
+  "canonical_root": "src/domains/adaptive-workstation-system",
+  "role": "security",
+  "implementation_header": "src/domains/adaptive-workstation-system/subtask_targets/security/cpu_frequency_policy_boundary_ef014ffa.hpp",
+  "implementation_source": "src/domains/adaptive-workstation-system/subtask_targets/security/cpu_frequency_policy_boundary_ef014ffa.cpp",
+  "test_target": "tests/structural-closure/domains/adaptive-workstation-system/security/test_cpu_frequency_policy_boundary_ef014ffa.cpp",
+  "status": "SKELETON_MATERIALIZED",
+  "behavioral_credit": false,
+  "preservation": "PRESERVE_IMPLEMENT_EXTEND"
+}

@@ -1,0 +1,12 @@
+{
+  "source_prompt": ".phases/phases/phase-38-user-identity-management/prompts/38.23-fish-bash-compatibility-boundary.md",
+  "phase_task": ".phases/phases/phase-38-user-identity-management/TASK.md",
+  "canonical_root": "src/domains/user-identity-management",
+  "role": "requirements",
+  "implementation_header": "src/domains/user-identity-management/subtask_targets/requirements/fish_bash_compatibility_boundary_a5abb3fd.hpp",
+  "implementation_source": "src/domains/user-identity-management/subtask_targets/requirements/fish_bash_compatibility_boundary_a5abb3fd.cpp",
+  "test_target": "tests/structural-closure/domains/user-identity-management/requirements/test_fish_bash_compatibility_boundary_a5abb3fd.cpp",
+  "status": "SKELETON_MATERIALIZED",
+  "behavioral_credit": false,
+  "preservation": "PRESERVE_IMPLEMENT_EXTEND"
+}

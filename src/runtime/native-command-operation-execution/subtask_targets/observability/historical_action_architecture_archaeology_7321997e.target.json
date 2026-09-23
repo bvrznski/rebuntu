@@ -1,0 +1,12 @@
+{
+  "source_prompt": ".phases/phases/phase-06-native-command-operation-execution/prompts/6.66_historical_action_architecture_archaeology.md",
+  "phase_task": ".phases/phases/phase-06-native-command-operation-execution/TASK.md",
+  "canonical_root": "src/runtime/native-command-operation-execution",
+  "role": "observability",
+  "implementation_header": "src/runtime/native-command-operation-execution/subtask_targets/observability/historical_action_architecture_archaeology_7321997e.hpp",
+  "implementation_source": "src/runtime/native-command-operation-execution/subtask_targets/observability/historical_action_architecture_archaeology_7321997e.cpp",
+  "test_target": "tests/structural-closure/runtime/native-command-operation-execution/observability/test_historical_action_architecture_archaeology_7321997e.cpp",
+  "status": "SKELETON_MATERIALIZED",
+  "behavioral_credit": false,
+  "preservation": "PRESERVE_IMPLEMENT_EXTEND"
+}

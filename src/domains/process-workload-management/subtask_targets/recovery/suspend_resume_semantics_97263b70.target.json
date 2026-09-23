@@ -1,0 +1,12 @@
+{
+  "source_prompt": ".phases/phases/phase-29-process-workload-management/prompts/29.33-suspend-resume-semantics.md",
+  "phase_task": ".phases/phases/phase-29-process-workload-management/TASK.md",
+  "canonical_root": "src/domains/process-workload-management",
+  "role": "recovery",
+  "implementation_header": "src/domains/process-workload-management/subtask_targets/recovery/suspend_resume_semantics_97263b70.hpp",
+  "implementation_source": "src/domains/process-workload-management/subtask_targets/recovery/suspend_resume_semantics_97263b70.cpp",
+  "test_target": "tests/structural-closure/domains/process-workload-management/recovery/test_suspend_resume_semantics_97263b70.cpp",
+  "status": "SKELETON_MATERIALIZED",
+  "behavioral_credit": false,
+  "preservation": "PRESERVE_IMPLEMENT_EXTEND"
+}

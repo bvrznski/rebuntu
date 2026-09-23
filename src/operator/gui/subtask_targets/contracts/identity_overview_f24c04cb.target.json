@@ -1,0 +1,12 @@
+{
+  "source_prompt": ".phases/phases/phase-49-gui/prompts/49.138-identity-overview.md",
+  "phase_task": ".phases/phases/phase-49-gui/TASK.md",
+  "canonical_root": "src/operator/gui",
+  "role": "contracts",
+  "implementation_header": "src/operator/gui/subtask_targets/contracts/identity_overview_f24c04cb.hpp",
+  "implementation_source": "src/operator/gui/subtask_targets/contracts/identity_overview_f24c04cb.cpp",
+  "test_target": "tests/structural-closure/operator/gui/contracts/test_identity_overview_f24c04cb.cpp",
+  "status": "SKELETON_MATERIALIZED",
+  "behavioral_credit": false,
+  "preservation": "PRESERVE_IMPLEMENT_EXTEND"
+}

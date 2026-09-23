@@ -1,0 +1,12 @@
+{
+  "source_prompt": ".phases/phases/phase-36-configuration-management/prompts/36.28-desired-state-adoption.md",
+  "phase_task": ".phases/phases/phase-36-configuration-management/TASK.md",
+  "canonical_root": "src/domains/configuration-management",
+  "role": "lifecycle",
+  "implementation_header": "src/domains/configuration-management/subtask_targets/lifecycle/desired_state_adoption_7a55c940.hpp",
+  "implementation_source": "src/domains/configuration-management/subtask_targets/lifecycle/desired_state_adoption_7a55c940.cpp",
+  "test_target": "tests/structural-closure/domains/configuration-management/lifecycle/test_desired_state_adoption_7a55c940.cpp",
+  "status": "SKELETON_MATERIALIZED",
+  "behavioral_credit": false,
+  "preservation": "PRESERVE_IMPLEMENT_EXTEND"
+}

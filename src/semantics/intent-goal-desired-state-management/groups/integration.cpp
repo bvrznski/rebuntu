@@ -1,0 +1,6 @@
+#include "semantics/intent-goal-desired-state-management/groups/integration.hpp"
+
+// Structural translation-unit slot only. No maturity credit.
+namespace rebuntu::structural_slots {
+static_assert(Skeleton_614c5fa31a_Integration::structural_revision == 25);
+}

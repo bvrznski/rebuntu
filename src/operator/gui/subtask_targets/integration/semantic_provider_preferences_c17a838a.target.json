@@ -1,0 +1,12 @@
+{
+  "source_prompt": ".phases/phases/phase-49-gui/prompts/49.294-semantic-provider-preferences.md",
+  "phase_task": ".phases/phases/phase-49-gui/TASK.md",
+  "canonical_root": "src/operator/gui",
+  "role": "integration",
+  "implementation_header": "src/operator/gui/subtask_targets/integration/semantic_provider_preferences_c17a838a.hpp",
+  "implementation_source": "src/operator/gui/subtask_targets/integration/semantic_provider_preferences_c17a838a.cpp",
+  "test_target": "tests/structural-closure/operator/gui/integration/test_semantic_provider_preferences_c17a838a.cpp",
+  "status": "SKELETON_MATERIALIZED",
+  "behavioral_credit": false,
+  "preservation": "PRESERVE_IMPLEMENT_EXTEND"
+}

@@ -1,0 +1,12 @@
+{
+  "source_prompt": ".phases/phases/phase-34-gpu-accelerator-management/prompts/34.29-ecc-memory-error-evidence.md",
+  "phase_task": ".phases/phases/phase-34-gpu-accelerator-management/TASK.md",
+  "canonical_root": "src/domains/gpu-accelerator-management",
+  "role": "verification",
+  "implementation_header": "src/domains/gpu-accelerator-management/subtask_targets/verification/ecc_memory_error_evidence_8f2ed9c7.hpp",
+  "implementation_source": "src/domains/gpu-accelerator-management/subtask_targets/verification/ecc_memory_error_evidence_8f2ed9c7.cpp",
+  "test_target": "tests/structural-closure/domains/gpu-accelerator-management/verification/test_ecc_memory_error_evidence_8f2ed9c7.cpp",
+  "status": "SKELETON_MATERIALIZED",
+  "behavioral_credit": false,
+  "preservation": "PRESERVE_IMPLEMENT_EXTEND"
+}

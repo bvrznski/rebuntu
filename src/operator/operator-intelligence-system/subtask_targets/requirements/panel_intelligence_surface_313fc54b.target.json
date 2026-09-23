@@ -1,0 +1,12 @@
+{
+  "source_prompt": ".phases/phases/phase-43-operator-intelligence-system/prompts/43.208-phase-25-panel-intelligence-surface.md",
+  "phase_task": ".phases/phases/phase-43-operator-intelligence-system/TASK.md",
+  "canonical_root": "src/operator/operator-intelligence-system",
+  "role": "requirements",
+  "implementation_header": "src/operator/operator-intelligence-system/subtask_targets/requirements/panel_intelligence_surface_313fc54b.hpp",
+  "implementation_source": "src/operator/operator-intelligence-system/subtask_targets/requirements/panel_intelligence_surface_313fc54b.cpp",
+  "test_target": "tests/structural-closure/operator/operator-intelligence-system/requirements/test_panel_intelligence_surface_313fc54b.cpp",
+  "status": "SKELETON_MATERIALIZED",
+  "behavioral_credit": false,
+  "preservation": "PRESERVE_IMPLEMENT_EXTEND"
+}

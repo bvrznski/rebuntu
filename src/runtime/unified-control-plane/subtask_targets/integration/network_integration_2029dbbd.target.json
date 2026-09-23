@@ -1,0 +1,12 @@
+{
+  "source_prompt": ".phases/phases/phase-45-unified-control-plane/prompts/45.101-phase-33-network-integration.md",
+  "phase_task": ".phases/phases/phase-45-unified-control-plane/TASK.md",
+  "canonical_root": "src/runtime/unified-control-plane",
+  "role": "integration",
+  "implementation_header": "src/runtime/unified-control-plane/subtask_targets/integration/network_integration_2029dbbd.hpp",
+  "implementation_source": "src/runtime/unified-control-plane/subtask_targets/integration/network_integration_2029dbbd.cpp",
+  "test_target": "tests/structural-closure/runtime/unified-control-plane/integration/test_network_integration_2029dbbd.cpp",
+  "status": "SKELETON_MATERIALIZED",
+  "behavioral_credit": false,
+  "preservation": "PRESERVE_IMPLEMENT_EXTEND"
+}

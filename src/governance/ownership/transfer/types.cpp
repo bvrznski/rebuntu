@@ -1,0 +1,11 @@
+// Generated structural translation-unit scaffold.
+// No behavioral maturity credit: this file only materializes the C++ ownership boundary.
+#include "governance/ownership/transfer/types.hpp"
+
+#include <string_view>
+
+namespace rebuntu::structural_translation_units {
+[[nodiscard]] std::string_view rebuntu_structural_translation_unit_anchor_df1d3912e1516789() noexcept {
+    return "src/governance/ownership/transfer/types.hpp";
+}
+}  // namespace rebuntu::structural_translation_units

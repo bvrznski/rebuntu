@@ -1,0 +1,12 @@
+{
+  "source_prompt": ".phases/phases/phase-52-associated-systems-hardware-rooted-trust/prompts/52.306-gui-grant-issuance.md",
+  "phase_task": ".phases/phases/phase-52-associated-systems-hardware-rooted-trust/TASK.md",
+  "canonical_root": "src/providers/associated-systems-hardware-rooted-trust",
+  "role": "requirements",
+  "implementation_header": "src/providers/associated-systems-hardware-rooted-trust/subtask_targets/requirements/gui_grant_issuance_76b96f19.hpp",
+  "implementation_source": "src/providers/associated-systems-hardware-rooted-trust/subtask_targets/requirements/gui_grant_issuance_76b96f19.cpp",
+  "test_target": "tests/structural-closure/providers/associated-systems-hardware-rooted-trust/requirements/test_gui_grant_issuance_76b96f19.cpp",
+  "status": "SKELETON_MATERIALIZED",
+  "behavioral_credit": false,
+  "preservation": "PRESERVE_IMPLEMENT_EXTEND"
+}

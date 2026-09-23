@@ -1,0 +1,6 @@
+#include "domains/adaptive-workstation-system/execution/dispatch/validation.hpp"
+
+// Structural translation-unit slot only. No maturity credit.
+namespace rebuntu::structural_slots {
+static_assert(Skeleton_ae15473061_Validation::structural_revision == 25);
+}

@@ -1,0 +1,12 @@
+{
+  "source_prompt": ".phases/phases/phase-55-goal-directed-planning-plan-synthesis-replanning/prompts/55.137-rebuntu-phase-55-137-observation-triggered-plan-invalidation.md",
+  "phase_task": ".phases/phases/phase-55-goal-directed-planning-plan-synthesis-replanning/TASK.md",
+  "canonical_root": "src/planning/goal-directed-planning-plan-synthesis-replanning",
+  "role": "observability",
+  "implementation_header": "src/planning/goal-directed-planning-plan-synthesis-replanning/subtask_targets/observability/observation_triggered_plan_invalidation_8ae139fc.hpp",
+  "implementation_source": "src/planning/goal-directed-planning-plan-synthesis-replanning/subtask_targets/observability/observation_triggered_plan_invalidation_8ae139fc.cpp",
+  "test_target": "tests/structural-closure/planning/goal-directed-planning-plan-synthesis-replanning/observability/test_observation_triggered_plan_invalidation_8ae139fc.cpp",
+  "status": "SKELETON_MATERIALIZED",
+  "behavioral_credit": false,
+  "preservation": "PRESERVE_IMPLEMENT_EXTEND"
+}

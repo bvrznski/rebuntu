@@ -1,0 +1,12 @@
+{
+  "source_prompt": ".phases/phases/phase-38-user-identity-management/prompts/38.41-uid-gid-change-planning.md",
+  "phase_task": ".phases/phases/phase-38-user-identity-management/TASK.md",
+  "canonical_root": "src/domains/user-identity-management",
+  "role": "planning",
+  "implementation_header": "src/domains/user-identity-management/subtask_targets/planning/uid_gid_change_planning_36cd4afc.hpp",
+  "implementation_source": "src/domains/user-identity-management/subtask_targets/planning/uid_gid_change_planning_36cd4afc.cpp",
+  "test_target": "tests/structural-closure/domains/user-identity-management/planning/test_uid_gid_change_planning_36cd4afc.cpp",
+  "status": "SKELETON_MATERIALIZED",
+  "behavioral_credit": false,
+  "preservation": "PRESERVE_IMPLEMENT_EXTEND"
+}

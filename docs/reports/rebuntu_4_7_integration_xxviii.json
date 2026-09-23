@@ -1,0 +1,9 @@
+{
+  "source": "rebuntu_4.7.zip",
+  "strategy": "aggregational morphing into canonical tree; no deletion",
+  "mapped_artifacts": 211,
+  "unique_targets": 210,
+  "headers": 58,
+  "cpp_sources": 44,
+  "tests": 47
+}

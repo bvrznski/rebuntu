@@ -1,0 +1,12 @@
+{
+  "source_prompt": ".phases/phases/phase-60-transactional-change-safe-transition/prompts/60.44-rebuntu-phase-60-44-audit-trail.md",
+  "phase_task": ".phases/phases/phase-60-transactional-change-safe-transition/TASK.md",
+  "canonical_root": "src/control/transactional-change-safe-transition",
+  "role": "verification",
+  "implementation_header": "src/control/transactional-change-safe-transition/subtask_targets/verification/audit_trail_39a2e554.hpp",
+  "implementation_source": "src/control/transactional-change-safe-transition/subtask_targets/verification/audit_trail_39a2e554.cpp",
+  "test_target": "tests/structural-closure/control/transactional-change-safe-transition/verification/test_audit_trail_39a2e554.cpp",
+  "status": "SKELETON_MATERIALIZED",
+  "behavioral_credit": false,
+  "preservation": "PRESERVE_IMPLEMENT_EXTEND"
+}

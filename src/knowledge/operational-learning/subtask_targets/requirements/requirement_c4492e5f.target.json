@@ -1,0 +1,12 @@
+{
+  "source_prompt": ".phases/phases/phase-93-operational-learning/prompts/93.3.md",
+  "phase_task": ".phases/phases/phase-93-operational-learning/TASK.md",
+  "canonical_root": "src/knowledge/operational-learning",
+  "role": "requirements",
+  "implementation_header": "src/knowledge/operational-learning/subtask_targets/requirements/requirement_c4492e5f.hpp",
+  "implementation_source": "src/knowledge/operational-learning/subtask_targets/requirements/requirement_c4492e5f.cpp",
+  "test_target": "tests/structural-closure/knowledge/operational-learning/requirements/test_requirement_c4492e5f.cpp",
+  "status": "SKELETON_MATERIALIZED",
+  "behavioral_credit": false,
+  "preservation": "PRESERVE_IMPLEMENT_EXTEND"
+}

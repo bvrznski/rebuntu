@@ -1,0 +1,12 @@
+{
+  "source_prompt": ".phases/phases/phase-44-adaptive-workstation-system/prompts/44.265-insufficient-evidence-behavior.md",
+  "phase_task": ".phases/phases/phase-44-adaptive-workstation-system/TASK.md",
+  "canonical_root": "src/domains/adaptive-workstation-system",
+  "role": "verification",
+  "implementation_header": "src/domains/adaptive-workstation-system/subtask_targets/verification/insufficient_evidence_behavior_4edf4937.hpp",
+  "implementation_source": "src/domains/adaptive-workstation-system/subtask_targets/verification/insufficient_evidence_behavior_4edf4937.cpp",
+  "test_target": "tests/structural-closure/domains/adaptive-workstation-system/verification/test_insufficient_evidence_behavior_4edf4937.cpp",
+  "status": "SKELETON_MATERIALIZED",
+  "behavioral_credit": false,
+  "preservation": "PRESERVE_IMPLEMENT_EXTEND"
+}

@@ -1,0 +1,12 @@
+{
+  "source_prompt": ".phases/phases/phase-54-dynamic-system-capability-affordance-model/prompts/54.134-rebuntu-phase-54-134-capability-recovery-semantics.md",
+  "phase_task": ".phases/phases/phase-54-dynamic-system-capability-affordance-model/TASK.md",
+  "canonical_root": "src/semantics/dynamic-system-capability-affordance-model",
+  "role": "recovery",
+  "implementation_header": "src/semantics/dynamic-system-capability-affordance-model/subtask_targets/recovery/capability_recovery_semantics_a8a970f0.hpp",
+  "implementation_source": "src/semantics/dynamic-system-capability-affordance-model/subtask_targets/recovery/capability_recovery_semantics_a8a970f0.cpp",
+  "test_target": "tests/structural-closure/semantics/dynamic-system-capability-affordance-model/recovery/test_capability_recovery_semantics_a8a970f0.cpp",
+  "status": "SKELETON_MATERIALIZED",
+  "behavioral_credit": false,
+  "preservation": "PRESERVE_IMPLEMENT_EXTEND"
+}

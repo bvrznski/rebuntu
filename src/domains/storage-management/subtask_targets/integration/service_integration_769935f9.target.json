@@ -1,0 +1,12 @@
+{
+  "source_prompt": ".phases/phases/phase-32-storage-management/prompts/32.51-phase-31-service-integration.md",
+  "phase_task": ".phases/phases/phase-32-storage-management/TASK.md",
+  "canonical_root": "src/domains/storage-management",
+  "role": "integration",
+  "implementation_header": "src/domains/storage-management/subtask_targets/integration/service_integration_769935f9.hpp",
+  "implementation_source": "src/domains/storage-management/subtask_targets/integration/service_integration_769935f9.cpp",
+  "test_target": "tests/structural-closure/domains/storage-management/integration/test_service_integration_769935f9.cpp",
+  "status": "SKELETON_MATERIALIZED",
+  "behavioral_credit": false,
+  "preservation": "PRESERVE_IMPLEMENT_EXTEND"
+}

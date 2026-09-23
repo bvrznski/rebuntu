@@ -1,0 +1,12 @@
+{
+  "source_prompt": ".phases/phases/phase-28-development-environment-management/prompts/28.35-cross-phase-integration-ownership-audit.md",
+  "phase_task": ".phases/phases/phase-28-development-environment-management/TASK.md",
+  "canonical_root": "src/domains/development-environment-management",
+  "role": "verification",
+  "implementation_header": "src/domains/development-environment-management/subtask_targets/verification/cross_phase_integration_ownership_audit_af87916c.hpp",
+  "implementation_source": "src/domains/development-environment-management/subtask_targets/verification/cross_phase_integration_ownership_audit_af87916c.cpp",
+  "test_target": "tests/structural-closure/domains/development-environment-management/verification/test_cross_phase_integration_ownership_audit_af87916c.cpp",
+  "status": "SKELETON_MATERIALIZED",
+  "behavioral_credit": false,
+  "preservation": "PRESERVE_IMPLEMENT_EXTEND"
+}

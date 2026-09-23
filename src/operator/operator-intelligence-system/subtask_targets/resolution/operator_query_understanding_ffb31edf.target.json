@@ -1,0 +1,12 @@
+{
+  "source_prompt": ".phases/phases/phase-43-operator-intelligence-system/prompts/43.125-operator-query-understanding.md",
+  "phase_task": ".phases/phases/phase-43-operator-intelligence-system/TASK.md",
+  "canonical_root": "src/operator/operator-intelligence-system",
+  "role": "resolution",
+  "implementation_header": "src/operator/operator-intelligence-system/subtask_targets/resolution/operator_query_understanding_ffb31edf.hpp",
+  "implementation_source": "src/operator/operator-intelligence-system/subtask_targets/resolution/operator_query_understanding_ffb31edf.cpp",
+  "test_target": "tests/structural-closure/operator/operator-intelligence-system/resolution/test_operator_query_understanding_ffb31edf.cpp",
+  "status": "SKELETON_MATERIALIZED",
+  "behavioral_credit": false,
+  "preservation": "PRESERVE_IMPLEMENT_EXTEND"
+}

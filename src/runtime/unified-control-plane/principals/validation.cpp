@@ -1,0 +1,6 @@
+#include "runtime/unified-control-plane/principals/validation.hpp"
+
+// Structural translation-unit slot only. No maturity credit.
+namespace rebuntu::structural_slots {
+static_assert(Skeleton_a8e7f9cf60_Validation::structural_revision == 25);
+}

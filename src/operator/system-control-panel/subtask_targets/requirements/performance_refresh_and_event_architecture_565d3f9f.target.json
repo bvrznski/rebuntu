@@ -1,0 +1,12 @@
+{
+  "source_prompt": ".phases/phases/phase-25-system-control-panel/prompts/25.21-performance,-refresh-and-event-architecture.md",
+  "phase_task": ".phases/phases/phase-25-system-control-panel/TASK.md",
+  "canonical_root": "src/operator/system-control-panel",
+  "role": "requirements",
+  "implementation_header": "src/operator/system-control-panel/subtask_targets/requirements/performance_refresh_and_event_architecture_565d3f9f.hpp",
+  "implementation_source": "src/operator/system-control-panel/subtask_targets/requirements/performance_refresh_and_event_architecture_565d3f9f.cpp",
+  "test_target": "tests/structural-closure/operator/system-control-panel/requirements/test_performance_refresh_and_event_architecture_565d3f9f.cpp",
+  "status": "SKELETON_MATERIALIZED",
+  "behavioral_credit": false,
+  "preservation": "PRESERVE_IMPLEMENT_EXTEND"
+}

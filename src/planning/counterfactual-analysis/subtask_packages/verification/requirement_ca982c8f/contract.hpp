@@ -1,0 +1,13 @@
+#pragma once
+
+// XXVII SUBTASK PACKAGE SKELETON — zero behavioral maturity credit.
+// Source: .phases/phases/phase-88-counterfactual-analysis/prompts/88.2.md
+// Preserve this architectural reservation and implement only after reading the source prompt.
+
+namespace rebuntu::subtask_packages::phase_88::s_ca982c8f::contract {
+struct ContractSlot final {
+    static constexpr const char* source_prompt = ".phases/phases/phase-88-counterfactual-analysis/prompts/88.2.md";
+    static constexpr const char* aspect = "contract";
+    static constexpr const char* status = "SKELETON_MATERIALIZED";
+};
+} // namespace rebuntu::subtask_packages::phase_88::s_ca982c8f::contract

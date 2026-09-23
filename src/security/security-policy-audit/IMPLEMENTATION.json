@@ -1,0 +1,9 @@
+{
+  "component": "security-policy-audit",
+  "canonical_root": "security",
+  "phase_tasks": [
+    ".phases/phases/phase-13-security-policy-audit/TASK.md"
+  ],
+  "status": "SKELETON",
+  "native_authority_rule": true
+}

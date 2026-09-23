@@ -1,0 +1,12 @@
+{
+  "source_prompt": ".phases/phases/phase-61-recovery-repair-self-healing/prompts/61.48-rebuntu-phase-61-48-build-runtime-audit.md",
+  "phase_task": ".phases/phases/phase-61-recovery-repair-self-healing/TASK.md",
+  "canonical_root": "src/control/recovery-repair-self-healing",
+  "role": "verification",
+  "implementation_header": "src/control/recovery-repair-self-healing/subtask_targets/verification/build_runtime_audit_b310d38f.hpp",
+  "implementation_source": "src/control/recovery-repair-self-healing/subtask_targets/verification/build_runtime_audit_b310d38f.cpp",
+  "test_target": "tests/structural-closure/control/recovery-repair-self-healing/verification/test_build_runtime_audit_b310d38f.cpp",
+  "status": "SKELETON_MATERIALIZED",
+  "behavioral_credit": false,
+  "preservation": "PRESERVE_IMPLEMENT_EXTEND"
+}

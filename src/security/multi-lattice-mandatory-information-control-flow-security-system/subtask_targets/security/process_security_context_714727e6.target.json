@@ -1,0 +1,12 @@
+{
+  "source_prompt": ".phases/phases/phase-53-multi-lattice-mandatory-information-control-flow-security-system/prompts/53.082-process-security-context.md",
+  "phase_task": ".phases/phases/phase-53-multi-lattice-mandatory-information-control-flow-security-system/TASK.md",
+  "canonical_root": "src/security/multi-lattice-mandatory-information-control-flow-security-system",
+  "role": "security",
+  "implementation_header": "src/security/multi-lattice-mandatory-information-control-flow-security-system/subtask_targets/security/process_security_context_714727e6.hpp",
+  "implementation_source": "src/security/multi-lattice-mandatory-information-control-flow-security-system/subtask_targets/security/process_security_context_714727e6.cpp",
+  "test_target": "tests/structural-closure/security/multi-lattice-mandatory-information-control-flow-security-system/security/test_process_security_context_714727e6.cpp",
+  "status": "SKELETON_MATERIALIZED",
+  "behavioral_credit": false,
+  "preservation": "PRESERVE_IMPLEMENT_EXTEND"
+}

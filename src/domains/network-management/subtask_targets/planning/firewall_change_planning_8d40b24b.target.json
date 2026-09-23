@@ -1,0 +1,12 @@
+{
+  "source_prompt": ".phases/phases/phase-33-network-management/prompts/33.37-firewall-change-planning.md",
+  "phase_task": ".phases/phases/phase-33-network-management/TASK.md",
+  "canonical_root": "src/domains/network-management",
+  "role": "planning",
+  "implementation_header": "src/domains/network-management/subtask_targets/planning/firewall_change_planning_8d40b24b.hpp",
+  "implementation_source": "src/domains/network-management/subtask_targets/planning/firewall_change_planning_8d40b24b.cpp",
+  "test_target": "tests/structural-closure/domains/network-management/planning/test_firewall_change_planning_8d40b24b.cpp",
+  "status": "SKELETON_MATERIALIZED",
+  "behavioral_credit": false,
+  "preservation": "PRESERVE_IMPLEMENT_EXTEND"
+}

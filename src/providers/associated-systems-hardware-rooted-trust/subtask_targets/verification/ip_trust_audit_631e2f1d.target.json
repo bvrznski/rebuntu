@@ -1,0 +1,12 @@
+{
+  "source_prompt": ".phases/phases/phase-52-associated-systems-hardware-rooted-trust/prompts/52.637-ip-trust-audit.md",
+  "phase_task": ".phases/phases/phase-52-associated-systems-hardware-rooted-trust/TASK.md",
+  "canonical_root": "src/providers/associated-systems-hardware-rooted-trust",
+  "role": "verification",
+  "implementation_header": "src/providers/associated-systems-hardware-rooted-trust/subtask_targets/verification/ip_trust_audit_631e2f1d.hpp",
+  "implementation_source": "src/providers/associated-systems-hardware-rooted-trust/subtask_targets/verification/ip_trust_audit_631e2f1d.cpp",
+  "test_target": "tests/structural-closure/providers/associated-systems-hardware-rooted-trust/verification/test_ip_trust_audit_631e2f1d.cpp",
+  "status": "SKELETON_MATERIALIZED",
+  "behavioral_credit": false,
+  "preservation": "PRESERVE_IMPLEMENT_EXTEND"
+}

@@ -1,0 +1,12 @@
+{
+  "source_prompt": ".phases/phases/phase-43-operator-intelligence-system/prompts/43.132-unknown-aware-answer-generation.md",
+  "phase_task": ".phases/phases/phase-43-operator-intelligence-system/TASK.md",
+  "canonical_root": "src/operator/operator-intelligence-system",
+  "role": "requirements",
+  "implementation_header": "src/operator/operator-intelligence-system/subtask_targets/requirements/unknown_aware_answer_generation_9121dc46.hpp",
+  "implementation_source": "src/operator/operator-intelligence-system/subtask_targets/requirements/unknown_aware_answer_generation_9121dc46.cpp",
+  "test_target": "tests/structural-closure/operator/operator-intelligence-system/requirements/test_unknown_aware_answer_generation_9121dc46.cpp",
+  "status": "SKELETON_MATERIALIZED",
+  "behavioral_credit": false,
+  "preservation": "PRESERVE_IMPLEMENT_EXTEND"
+}

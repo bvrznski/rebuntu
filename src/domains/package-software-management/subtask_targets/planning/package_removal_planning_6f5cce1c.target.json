@@ -1,0 +1,12 @@
+{
+  "source_prompt": ".phases/phases/phase-35-package-software-management/prompts/35.15-package-removal-planning.md",
+  "phase_task": ".phases/phases/phase-35-package-software-management/TASK.md",
+  "canonical_root": "src/domains/package-software-management",
+  "role": "planning",
+  "implementation_header": "src/domains/package-software-management/subtask_targets/planning/package_removal_planning_6f5cce1c.hpp",
+  "implementation_source": "src/domains/package-software-management/subtask_targets/planning/package_removal_planning_6f5cce1c.cpp",
+  "test_target": "tests/structural-closure/domains/package-software-management/planning/test_package_removal_planning_6f5cce1c.cpp",
+  "status": "SKELETON_MATERIALIZED",
+  "behavioral_credit": false,
+  "preservation": "PRESERVE_IMPLEMENT_EXTEND"
+}

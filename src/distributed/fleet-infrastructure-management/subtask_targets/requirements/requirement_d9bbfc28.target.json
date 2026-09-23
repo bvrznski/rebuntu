@@ -1,0 +1,12 @@
+{
+  "source_prompt": ".phases/phases/phase-85-fleet-infrastructure-management/prompts/85.7.md",
+  "phase_task": ".phases/phases/phase-85-fleet-infrastructure-management/TASK.md",
+  "canonical_root": "src/distributed/fleet-infrastructure-management",
+  "role": "requirements",
+  "implementation_header": "src/distributed/fleet-infrastructure-management/subtask_targets/requirements/requirement_d9bbfc28.hpp",
+  "implementation_source": "src/distributed/fleet-infrastructure-management/subtask_targets/requirements/requirement_d9bbfc28.cpp",
+  "test_target": "tests/structural-closure/distributed/fleet-infrastructure-management/requirements/test_requirement_d9bbfc28.cpp",
+  "status": "SKELETON_MATERIALIZED",
+  "behavioral_credit": false,
+  "preservation": "PRESERVE_IMPLEMENT_EXTEND"
+}

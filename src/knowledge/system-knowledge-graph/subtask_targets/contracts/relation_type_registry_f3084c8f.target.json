@@ -1,0 +1,12 @@
+{
+  "source_prompt": ".phases/phases/phase-42-system-knowledge-graph/prompts/42.007-relation-type-registry.md",
+  "phase_task": ".phases/phases/phase-42-system-knowledge-graph/TASK.md",
+  "canonical_root": "src/knowledge/system-knowledge-graph",
+  "role": "contracts",
+  "implementation_header": "src/knowledge/system-knowledge-graph/subtask_targets/contracts/relation_type_registry_f3084c8f.hpp",
+  "implementation_source": "src/knowledge/system-knowledge-graph/subtask_targets/contracts/relation_type_registry_f3084c8f.cpp",
+  "test_target": "tests/structural-closure/knowledge/system-knowledge-graph/contracts/test_relation_type_registry_f3084c8f.cpp",
+  "status": "SKELETON_MATERIALIZED",
+  "behavioral_credit": false,
+  "preservation": "PRESERVE_IMPLEMENT_EXTEND"
+}

@@ -1,0 +1,12 @@
+{
+  "source_prompt": ".phases/phases/phase-50-platform-abstraction-portability-foundation/prompts/50.145-powershell-compatibility-boundary.md",
+  "phase_task": ".phases/phases/phase-50-platform-abstraction-portability-foundation/TASK.md",
+  "canonical_root": "src/providers/platform-abstraction-portability-foundation",
+  "role": "requirements",
+  "implementation_header": "src/providers/platform-abstraction-portability-foundation/subtask_targets/requirements/powershell_compatibility_boundary_c311e55f.hpp",
+  "implementation_source": "src/providers/platform-abstraction-portability-foundation/subtask_targets/requirements/powershell_compatibility_boundary_c311e55f.cpp",
+  "test_target": "tests/structural-closure/providers/platform-abstraction-portability-foundation/requirements/test_powershell_compatibility_boundary_c311e55f.cpp",
+  "status": "SKELETON_MATERIALIZED",
+  "behavioral_credit": false,
+  "preservation": "PRESERVE_IMPLEMENT_EXTEND"
+}

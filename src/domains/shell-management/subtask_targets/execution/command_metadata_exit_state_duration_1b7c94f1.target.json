@@ -1,0 +1,12 @@
+{
+  "source_prompt": ".phases/phases/phase-26-shell-management/prompts/26.11-command-metadata-exit-state-duration.md",
+  "phase_task": ".phases/phases/phase-26-shell-management/TASK.md",
+  "canonical_root": "src/domains/shell-management",
+  "role": "execution",
+  "implementation_header": "src/domains/shell-management/subtask_targets/execution/command_metadata_exit_state_duration_1b7c94f1.hpp",
+  "implementation_source": "src/domains/shell-management/subtask_targets/execution/command_metadata_exit_state_duration_1b7c94f1.cpp",
+  "test_target": "tests/structural-closure/domains/shell-management/execution/test_command_metadata_exit_state_duration_1b7c94f1.cpp",
+  "status": "SKELETON_MATERIALIZED",
+  "behavioral_credit": false,
+  "preservation": "PRESERVE_IMPLEMENT_EXTEND"
+}

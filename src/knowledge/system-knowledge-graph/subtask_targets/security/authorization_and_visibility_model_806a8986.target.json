@@ -1,0 +1,12 @@
+{
+  "source_prompt": ".phases/phases/phase-42-system-knowledge-graph/prompts/42.096-authorization-and-visibility-model.md",
+  "phase_task": ".phases/phases/phase-42-system-knowledge-graph/TASK.md",
+  "canonical_root": "src/knowledge/system-knowledge-graph",
+  "role": "security",
+  "implementation_header": "src/knowledge/system-knowledge-graph/subtask_targets/security/authorization_and_visibility_model_806a8986.hpp",
+  "implementation_source": "src/knowledge/system-knowledge-graph/subtask_targets/security/authorization_and_visibility_model_806a8986.cpp",
+  "test_target": "tests/structural-closure/knowledge/system-knowledge-graph/security/test_authorization_and_visibility_model_806a8986.cpp",
+  "status": "SKELETON_MATERIALIZED",
+  "behavioral_credit": false,
+  "preservation": "PRESERVE_IMPLEMENT_EXTEND"
+}

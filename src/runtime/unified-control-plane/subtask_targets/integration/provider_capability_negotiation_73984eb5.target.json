@@ -1,0 +1,12 @@
+{
+  "source_prompt": ".phases/phases/phase-45-unified-control-plane/prompts/45.017-provider-capability-negotiation.md",
+  "phase_task": ".phases/phases/phase-45-unified-control-plane/TASK.md",
+  "canonical_root": "src/runtime/unified-control-plane",
+  "role": "integration",
+  "implementation_header": "src/runtime/unified-control-plane/subtask_targets/integration/provider_capability_negotiation_73984eb5.hpp",
+  "implementation_source": "src/runtime/unified-control-plane/subtask_targets/integration/provider_capability_negotiation_73984eb5.cpp",
+  "test_target": "tests/structural-closure/runtime/unified-control-plane/integration/test_provider_capability_negotiation_73984eb5.cpp",
+  "status": "SKELETON_MATERIALIZED",
+  "behavioral_credit": false,
+  "preservation": "PRESERVE_IMPLEMENT_EXTEND"
+}

@@ -1,0 +1,12 @@
+{
+  "source_prompt": ".phases/phases/phase-55-goal-directed-planning-plan-synthesis-replanning/prompts/55.100-rebuntu-phase-55-100-predicted-versus-observed-distinction.md",
+  "phase_task": ".phases/phases/phase-55-goal-directed-planning-plan-synthesis-replanning/TASK.md",
+  "canonical_root": "src/planning/goal-directed-planning-plan-synthesis-replanning",
+  "role": "observability",
+  "implementation_header": "src/planning/goal-directed-planning-plan-synthesis-replanning/subtask_targets/observability/predicted_versus_observed_distinction_52125106.hpp",
+  "implementation_source": "src/planning/goal-directed-planning-plan-synthesis-replanning/subtask_targets/observability/predicted_versus_observed_distinction_52125106.cpp",
+  "test_target": "tests/structural-closure/planning/goal-directed-planning-plan-synthesis-replanning/observability/test_predicted_versus_observed_distinction_52125106.cpp",
+  "status": "SKELETON_MATERIALIZED",
+  "behavioral_credit": false,
+  "preservation": "PRESERVE_IMPLEMENT_EXTEND"
+}

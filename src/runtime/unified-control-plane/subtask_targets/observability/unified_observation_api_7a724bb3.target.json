@@ -1,0 +1,12 @@
+{
+  "source_prompt": ".phases/phases/phase-45-unified-control-plane/prompts/45.116-unified-observation-api.md",
+  "phase_task": ".phases/phases/phase-45-unified-control-plane/TASK.md",
+  "canonical_root": "src/runtime/unified-control-plane",
+  "role": "observability",
+  "implementation_header": "src/runtime/unified-control-plane/subtask_targets/observability/unified_observation_api_7a724bb3.hpp",
+  "implementation_source": "src/runtime/unified-control-plane/subtask_targets/observability/unified_observation_api_7a724bb3.cpp",
+  "test_target": "tests/structural-closure/runtime/unified-control-plane/observability/test_unified_observation_api_7a724bb3.cpp",
+  "status": "SKELETON_MATERIALIZED",
+  "behavioral_credit": false,
+  "preservation": "PRESERVE_IMPLEMENT_EXTEND"
+}

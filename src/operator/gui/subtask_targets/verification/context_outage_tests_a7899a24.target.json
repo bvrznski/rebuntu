@@ -1,0 +1,12 @@
+{
+  "source_prompt": ".phases/phases/phase-49-gui/prompts/49.516-context-outage-tests.md",
+  "phase_task": ".phases/phases/phase-49-gui/TASK.md",
+  "canonical_root": "src/operator/gui",
+  "role": "verification",
+  "implementation_header": "src/operator/gui/subtask_targets/verification/context_outage_tests_a7899a24.hpp",
+  "implementation_source": "src/operator/gui/subtask_targets/verification/context_outage_tests_a7899a24.cpp",
+  "test_target": "tests/structural-closure/operator/gui/verification/test_context_outage_tests_a7899a24.cpp",
+  "status": "SKELETON_MATERIALIZED",
+  "behavioral_credit": false,
+  "preservation": "PRESERVE_IMPLEMENT_EXTEND"
+}

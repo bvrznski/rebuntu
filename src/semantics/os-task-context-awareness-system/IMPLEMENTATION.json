@@ -1,0 +1,9 @@
+{
+  "component": "os-task-context-awareness-system",
+  "canonical_root": "semantics",
+  "phase_tasks": [
+    ".phases/phases/phase-48-os-task-context-awareness-system/TASK.md"
+  ],
+  "status": "SKELETON",
+  "native_authority_rule": true
+}

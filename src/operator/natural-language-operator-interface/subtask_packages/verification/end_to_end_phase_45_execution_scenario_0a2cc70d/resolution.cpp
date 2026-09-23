@@ -1,0 +1,5 @@
+#include "resolution.hpp"
+
+// XXVII out-of-line implementation reservation for resolution.
+// Source: .phases/phases/phase-46-natural-language-operator-interface/prompts/46.415-end-to-end-phase-45-execution-scenario.md
+// Intentionally behavior-free until prompt-derived implementation is supplied.

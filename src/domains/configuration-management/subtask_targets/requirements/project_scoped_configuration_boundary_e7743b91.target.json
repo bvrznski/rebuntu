@@ -1,0 +1,12 @@
+{
+  "source_prompt": ".phases/phases/phase-36-configuration-management/prompts/36.37-project-scoped-configuration-boundary.md",
+  "phase_task": ".phases/phases/phase-36-configuration-management/TASK.md",
+  "canonical_root": "src/domains/configuration-management",
+  "role": "requirements",
+  "implementation_header": "src/domains/configuration-management/subtask_targets/requirements/project_scoped_configuration_boundary_e7743b91.hpp",
+  "implementation_source": "src/domains/configuration-management/subtask_targets/requirements/project_scoped_configuration_boundary_e7743b91.cpp",
+  "test_target": "tests/structural-closure/domains/configuration-management/requirements/test_project_scoped_configuration_boundary_e7743b91.cpp",
+  "status": "SKELETON_MATERIALIZED",
+  "behavioral_credit": false,
+  "preservation": "PRESERVE_IMPLEMENT_EXTEND"
+}

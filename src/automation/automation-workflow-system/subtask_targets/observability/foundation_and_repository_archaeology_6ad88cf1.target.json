@@ -1,0 +1,12 @@
+{
+  "source_prompt": ".phases/phases/phase-41-automation-workflow-system/prompts/41.000-foundation-and-repository-archaeology.md",
+  "phase_task": ".phases/phases/phase-41-automation-workflow-system/TASK.md",
+  "canonical_root": "src/automation/automation-workflow-system",
+  "role": "observability",
+  "implementation_header": "src/automation/automation-workflow-system/subtask_targets/observability/foundation_and_repository_archaeology_6ad88cf1.hpp",
+  "implementation_source": "src/automation/automation-workflow-system/subtask_targets/observability/foundation_and_repository_archaeology_6ad88cf1.cpp",
+  "test_target": "tests/structural-closure/automation/automation-workflow-system/observability/test_foundation_and_repository_archaeology_6ad88cf1.cpp",
+  "status": "SKELETON_MATERIALIZED",
+  "behavioral_credit": false,
+  "preservation": "PRESERVE_IMPLEMENT_EXTEND"
+}

@@ -1,0 +1,12 @@
+{
+  "source_prompt": ".phases/phases/phase-29-process-workload-management/prompts/29.6-process-tree-forest-model.md",
+  "phase_task": ".phases/phases/phase-29-process-workload-management/TASK.md",
+  "canonical_root": "src/domains/process-workload-management",
+  "role": "contracts",
+  "implementation_header": "src/domains/process-workload-management/subtask_targets/contracts/process_tree_forest_model_9f08b51f.hpp",
+  "implementation_source": "src/domains/process-workload-management/subtask_targets/contracts/process_tree_forest_model_9f08b51f.cpp",
+  "test_target": "tests/structural-closure/domains/process-workload-management/contracts/test_process_tree_forest_model_9f08b51f.cpp",
+  "status": "SKELETON_MATERIALIZED",
+  "behavioral_credit": false,
+  "preservation": "PRESERVE_IMPLEMENT_EXTEND"
+}

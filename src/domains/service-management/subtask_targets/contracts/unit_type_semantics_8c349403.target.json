@@ -1,0 +1,12 @@
+{
+  "source_prompt": ".phases/phases/phase-31-service-management/prompts/31.6-unit-type-semantics.md",
+  "phase_task": ".phases/phases/phase-31-service-management/TASK.md",
+  "canonical_root": "src/domains/service-management",
+  "role": "contracts",
+  "implementation_header": "src/domains/service-management/subtask_targets/contracts/unit_type_semantics_8c349403.hpp",
+  "implementation_source": "src/domains/service-management/subtask_targets/contracts/unit_type_semantics_8c349403.cpp",
+  "test_target": "tests/structural-closure/domains/service-management/contracts/test_unit_type_semantics_8c349403.cpp",
+  "status": "SKELETON_MATERIALIZED",
+  "behavioral_credit": false,
+  "preservation": "PRESERVE_IMPLEMENT_EXTEND"
+}

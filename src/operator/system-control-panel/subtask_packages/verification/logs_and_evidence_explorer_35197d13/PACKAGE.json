@@ -1,0 +1,41 @@
+{
+  "source_prompt": ".phases/phases/phase-25-system-control-panel/prompts/25.12-logs-and-evidence-explorer.md",
+  "phase_task": ".phases/phases/phase-25-system-control-panel/TASK.md",
+  "package_root": "src/operator/system-control-panel/subtask_packages/verification/logs_and_evidence_explorer_35197d13",
+  "role": "verification",
+  "aspects": [
+    "contract",
+    "model",
+    "state",
+    "errors",
+    "evidence",
+    "verification",
+    "integration",
+    "execution",
+    "recovery",
+    "policy",
+    "observability"
+  ],
+  "files": [
+    "src/operator/system-control-panel/subtask_packages/verification/logs_and_evidence_explorer_35197d13/contract.hpp",
+    "src/operator/system-control-panel/subtask_packages/verification/logs_and_evidence_explorer_35197d13/model.hpp",
+    "src/operator/system-control-panel/subtask_packages/verification/logs_and_evidence_explorer_35197d13/state.hpp",
+    "src/operator/system-control-panel/subtask_packages/verification/logs_and_evidence_explorer_35197d13/errors.hpp",
+    "src/operator/system-control-panel/subtask_packages/verification/logs_and_evidence_explorer_35197d13/evidence.hpp",
+    "src/operator/system-control-panel/subtask_packages/verification/logs_and_evidence_explorer_35197d13/verification.hpp",
+    "src/operator/system-control-panel/subtask_packages/verification/logs_and_evidence_explorer_35197d13/verification.cpp",
+    "src/operator/system-control-panel/subtask_packages/verification/logs_and_evidence_explorer_35197d13/integration.hpp",
+    "src/operator/system-control-panel/subtask_packages/verification/logs_and_evidence_explorer_35197d13/integration.cpp",
+    "src/operator/system-control-panel/subtask_packages/verification/logs_and_evidence_explorer_35197d13/execution.hpp",
+    "src/operator/system-control-panel/subtask_packages/verification/logs_and_evidence_explorer_35197d13/execution.cpp",
+    "src/operator/system-control-panel/subtask_packages/verification/logs_and_evidence_explorer_35197d13/recovery.hpp",
+    "src/operator/system-control-panel/subtask_packages/verification/logs_and_evidence_explorer_35197d13/recovery.cpp",
+    "src/operator/system-control-panel/subtask_packages/verification/logs_and_evidence_explorer_35197d13/policy.hpp",
+    "src/operator/system-control-panel/subtask_packages/verification/logs_and_evidence_explorer_35197d13/policy.cpp",
+    "src/operator/system-control-panel/subtask_packages/verification/logs_and_evidence_explorer_35197d13/observability.hpp",
+    "src/operator/system-control-panel/subtask_packages/verification/logs_and_evidence_explorer_35197d13/observability.cpp"
+  ],
+  "status": "SKELETON_MATERIALIZED",
+  "behavioral_credit": false,
+  "preservation": "PRESERVE_IMPLEMENT_EXTEND"
+}

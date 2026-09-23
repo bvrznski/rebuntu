@@ -1,0 +1,12 @@
+{
+  "source_prompt": ".phases/phases/phase-60-transactional-change-safe-transition/prompts/60.17-rebuntu-phase-60-17-security-gate.md",
+  "phase_task": ".phases/phases/phase-60-transactional-change-safe-transition/TASK.md",
+  "canonical_root": "src/control/transactional-change-safe-transition",
+  "role": "security",
+  "implementation_header": "src/control/transactional-change-safe-transition/subtask_targets/security/security_gate_dcd68762.hpp",
+  "implementation_source": "src/control/transactional-change-safe-transition/subtask_targets/security/security_gate_dcd68762.cpp",
+  "test_target": "tests/structural-closure/control/transactional-change-safe-transition/security/test_security_gate_dcd68762.cpp",
+  "status": "SKELETON_MATERIALIZED",
+  "behavioral_credit": false,
+  "preservation": "PRESERVE_IMPLEMENT_EXTEND"
+}

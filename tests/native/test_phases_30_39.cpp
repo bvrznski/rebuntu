@@ -1,0 +1,4 @@
+#include <runtime/phases_30_39.hpp>
+#include <cassert>
+using namespace rebuntu::platform::v3039;
+int main(){System3039 s;assert(s.phases.all().size()==624);assert(s.phases.complete());for(int m=30;m<=39;m++){auto d=s.phases.domain(m);assert(!d.empty());assert(d.front().minor==0);}assert(s.phases.find(39,88));assert(!s.resources.discover().empty());assert(!s.storage.discover().empty());assert(!s.network.discover().empty());assert(!s.identity.discover().empty());auto secret=s.secrets.discover();for(auto&o:secret)assert(o.attributes.find("material")==o.attributes.end()||o.attributes.at("material")=="<redacted>");Change c{"storage","format","/dev/example",{},true,true};assert(!s.storage.validate(c,false,true).allowed);assert(s.storage.validate(c,true,true).allowed);auto a=s.audit();assert(a.registered_phases==624);return 0;}

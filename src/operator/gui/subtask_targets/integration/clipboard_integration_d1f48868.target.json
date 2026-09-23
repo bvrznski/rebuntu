@@ -1,0 +1,12 @@
+{
+  "source_prompt": ".phases/phases/phase-49-gui/prompts/49.378-clipboard-integration.md",
+  "phase_task": ".phases/phases/phase-49-gui/TASK.md",
+  "canonical_root": "src/operator/gui",
+  "role": "integration",
+  "implementation_header": "src/operator/gui/subtask_targets/integration/clipboard_integration_d1f48868.hpp",
+  "implementation_source": "src/operator/gui/subtask_targets/integration/clipboard_integration_d1f48868.cpp",
+  "test_target": "tests/structural-closure/operator/gui/integration/test_clipboard_integration_d1f48868.cpp",
+  "status": "SKELETON_MATERIALIZED",
+  "behavioral_credit": false,
+  "preservation": "PRESERVE_IMPLEMENT_EXTEND"
+}

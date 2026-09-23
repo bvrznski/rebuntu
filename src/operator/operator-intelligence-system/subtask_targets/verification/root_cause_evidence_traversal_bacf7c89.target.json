@@ -1,0 +1,12 @@
+{
+  "source_prompt": ".phases/phases/phase-43-operator-intelligence-system/prompts/43.081-root-cause-evidence-traversal.md",
+  "phase_task": ".phases/phases/phase-43-operator-intelligence-system/TASK.md",
+  "canonical_root": "src/operator/operator-intelligence-system",
+  "role": "verification",
+  "implementation_header": "src/operator/operator-intelligence-system/subtask_targets/verification/root_cause_evidence_traversal_bacf7c89.hpp",
+  "implementation_source": "src/operator/operator-intelligence-system/subtask_targets/verification/root_cause_evidence_traversal_bacf7c89.cpp",
+  "test_target": "tests/structural-closure/operator/operator-intelligence-system/verification/test_root_cause_evidence_traversal_bacf7c89.cpp",
+  "status": "SKELETON_MATERIALIZED",
+  "behavioral_credit": false,
+  "preservation": "PRESERVE_IMPLEMENT_EXTEND"
+}

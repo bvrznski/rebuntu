@@ -1,0 +1,6 @@
+#include "control/backup-snapshot-disaster-recovery/policy/constraints/validation.hpp"
+
+// Structural translation-unit slot only. No maturity credit.
+namespace rebuntu::structural_slots {
+static_assert(Skeleton_3800f64bce_Validation::structural_revision == 25);
+}

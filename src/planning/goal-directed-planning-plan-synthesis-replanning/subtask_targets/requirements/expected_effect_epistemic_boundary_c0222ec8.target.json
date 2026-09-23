@@ -1,0 +1,12 @@
+{
+  "source_prompt": ".phases/phases/phase-55-goal-directed-planning-plan-synthesis-replanning/prompts/55.13-rebuntu-phase-55-13-expected-effect-epistemic-boundary.md",
+  "phase_task": ".phases/phases/phase-55-goal-directed-planning-plan-synthesis-replanning/TASK.md",
+  "canonical_root": "src/planning/goal-directed-planning-plan-synthesis-replanning",
+  "role": "requirements",
+  "implementation_header": "src/planning/goal-directed-planning-plan-synthesis-replanning/subtask_targets/requirements/expected_effect_epistemic_boundary_c0222ec8.hpp",
+  "implementation_source": "src/planning/goal-directed-planning-plan-synthesis-replanning/subtask_targets/requirements/expected_effect_epistemic_boundary_c0222ec8.cpp",
+  "test_target": "tests/structural-closure/planning/goal-directed-planning-plan-synthesis-replanning/requirements/test_expected_effect_epistemic_boundary_c0222ec8.cpp",
+  "status": "SKELETON_MATERIALIZED",
+  "behavioral_credit": false,
+  "preservation": "PRESERVE_IMPLEMENT_EXTEND"
+}

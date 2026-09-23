@@ -1,0 +1,12 @@
+{
+  "source_prompt": ".phases/phases/phase-51-distributed-rebuntu-system/prompts/51.255-search-partial-result-semantics.md",
+  "phase_task": ".phases/phases/phase-51-distributed-rebuntu-system/TASK.md",
+  "canonical_root": "src/distributed/distributed-rebuntu-system",
+  "role": "resolution",
+  "implementation_header": "src/distributed/distributed-rebuntu-system/subtask_targets/resolution/search_partial_result_semantics_646c6adc.hpp",
+  "implementation_source": "src/distributed/distributed-rebuntu-system/subtask_targets/resolution/search_partial_result_semantics_646c6adc.cpp",
+  "test_target": "tests/structural-closure/distributed/distributed-rebuntu-system/resolution/test_search_partial_result_semantics_646c6adc.cpp",
+  "status": "SKELETON_MATERIALIZED",
+  "behavioral_credit": false,
+  "preservation": "PRESERVE_IMPLEMENT_EXTEND"
+}

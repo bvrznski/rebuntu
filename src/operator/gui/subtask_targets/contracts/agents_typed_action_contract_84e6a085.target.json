@@ -1,0 +1,12 @@
+{
+  "source_prompt": ".phases/phases/phase-49-gui/prompts/49.612-agents-typed-action-contract.md",
+  "phase_task": ".phases/phases/phase-49-gui/TASK.md",
+  "canonical_root": "src/operator/gui",
+  "role": "contracts",
+  "implementation_header": "src/operator/gui/subtask_targets/contracts/agents_typed_action_contract_84e6a085.hpp",
+  "implementation_source": "src/operator/gui/subtask_targets/contracts/agents_typed_action_contract_84e6a085.cpp",
+  "test_target": "tests/structural-closure/operator/gui/contracts/test_agents_typed_action_contract_84e6a085.cpp",
+  "status": "SKELETON_MATERIALIZED",
+  "behavioral_credit": false,
+  "preservation": "PRESERVE_IMPLEMENT_EXTEND"
+}

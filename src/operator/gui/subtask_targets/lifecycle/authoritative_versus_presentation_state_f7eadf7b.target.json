@@ -1,0 +1,12 @@
+{
+  "source_prompt": ".phases/phases/phase-49-gui/prompts/49.330-authoritative-versus-presentation-state.md",
+  "phase_task": ".phases/phases/phase-49-gui/TASK.md",
+  "canonical_root": "src/operator/gui",
+  "role": "lifecycle",
+  "implementation_header": "src/operator/gui/subtask_targets/lifecycle/authoritative_versus_presentation_state_f7eadf7b.hpp",
+  "implementation_source": "src/operator/gui/subtask_targets/lifecycle/authoritative_versus_presentation_state_f7eadf7b.cpp",
+  "test_target": "tests/structural-closure/operator/gui/lifecycle/test_authoritative_versus_presentation_state_f7eadf7b.cpp",
+  "status": "SKELETON_MATERIALIZED",
+  "behavioral_credit": false,
+  "preservation": "PRESERVE_IMPLEMENT_EXTEND"
+}

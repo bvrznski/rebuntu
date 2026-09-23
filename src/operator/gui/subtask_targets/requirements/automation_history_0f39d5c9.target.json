@@ -1,0 +1,12 @@
+{
+  "source_prompt": ".phases/phases/phase-49-gui/prompts/49.176-automation-history.md",
+  "phase_task": ".phases/phases/phase-49-gui/TASK.md",
+  "canonical_root": "src/operator/gui",
+  "role": "requirements",
+  "implementation_header": "src/operator/gui/subtask_targets/requirements/automation_history_0f39d5c9.hpp",
+  "implementation_source": "src/operator/gui/subtask_targets/requirements/automation_history_0f39d5c9.cpp",
+  "test_target": "tests/structural-closure/operator/gui/requirements/test_automation_history_0f39d5c9.cpp",
+  "status": "SKELETON_MATERIALIZED",
+  "behavioral_credit": false,
+  "preservation": "PRESERVE_IMPLEMENT_EXTEND"
+}

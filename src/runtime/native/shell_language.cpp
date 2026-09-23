@@ -1,0 +1,11 @@
+#include <domains/shell/language.hpp>
+#include <algorithm>
+#include <cctype>
+#include <sstream>
+namespace rebuntu::shell {
+Vocabulary::Vocabulary():verbs_{"show","get","list","start","stop","restart","enable","disable","set","run","explain","watch"},predicates_{"is","has","uses","failed","running","enabled"},objects_{"system","service","process","disk","filesystem","device","network","cpu","memory","gpu","package","session","event","alert","workflow"}{}
+bool Vocabulary::verb(std::string_view s)const{return verbs_.contains(std::string(s));}bool Vocabulary::predicate(std::string_view s)const{return predicates_.contains(std::string(s));}bool Vocabulary::object(std::string_view s)const{return objects_.contains(std::string(s));}
+std::vector<std::string> Vocabulary::complete(std::string_view p)const{std::vector<std::string>o;auto add=[&](auto&s){for(auto&x:s)if(x.starts_with(p))o.push_back(x);};add(verbs_);add(predicates_);add(objects_);std::sort(o.begin(),o.end());return o;}
+Resolution Parser::parse(std::string_view line)const{std::istringstream in{std::string(line)};std::vector<std::string>t;for(std::string x;in>>x;)t.push_back(x);if(t.empty())return{false,{},"empty command",{}};CommandIR c;c.verb=t[0]; if(!v_.verb(c.verb)){c.native_fallback=true;c.intent=Intent::execute;c.arguments.assign(t.begin()+1,t.end());return{true,c,{},{}};} c.intent=(c.verb=="show"||c.verb=="get"||c.verb=="list"||c.verb=="watch")?Intent::query:(c.verb=="explain"?Intent::explain:Intent::mutate);if(t.size()>1)c.object=t[1];for(size_t i=2;i<t.size();++i){auto&s=t[i];if(s=="system-wide"||s=="system")c.scope=Scope::system;else if(s=="session")c.scope=Scope::session;else if(s.rfind("--",0)==0){auto eq=s.find('=');c.options[s.substr(2,eq==std::string::npos?eq:eq-2)]=eq==std::string::npos?"true":s.substr(eq+1);}else if(s=="all"||s=="failed"||s=="running")c.qualifiers.push_back(s);else c.arguments.push_back(s);}return{true,c,{},{}};}
+std::string render_json(const CommandIR&c){return "{\"verb\":\""+c.verb+"\",\"object\":\""+c.object+"\",\"native_fallback\":"+(c.native_fallback?"true":"false")+"}";}std::string render_human(const CommandIR&c){return c.verb+(c.object.empty()?"":" "+c.object);}
+}

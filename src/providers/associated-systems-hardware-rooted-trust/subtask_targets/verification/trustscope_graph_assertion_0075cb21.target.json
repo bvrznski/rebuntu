@@ -1,0 +1,12 @@
+{
+  "source_prompt": ".phases/phases/phase-52-associated-systems-hardware-rooted-trust/prompts/52.342-trustscope-graph-assertion.md",
+  "phase_task": ".phases/phases/phase-52-associated-systems-hardware-rooted-trust/TASK.md",
+  "canonical_root": "src/providers/associated-systems-hardware-rooted-trust",
+  "role": "verification",
+  "implementation_header": "src/providers/associated-systems-hardware-rooted-trust/subtask_targets/verification/trustscope_graph_assertion_0075cb21.hpp",
+  "implementation_source": "src/providers/associated-systems-hardware-rooted-trust/subtask_targets/verification/trustscope_graph_assertion_0075cb21.cpp",
+  "test_target": "tests/structural-closure/providers/associated-systems-hardware-rooted-trust/verification/test_trustscope_graph_assertion_0075cb21.cpp",
+  "status": "SKELETON_MATERIALIZED",
+  "behavioral_credit": false,
+  "preservation": "PRESERVE_IMPLEMENT_EXTEND"
+}

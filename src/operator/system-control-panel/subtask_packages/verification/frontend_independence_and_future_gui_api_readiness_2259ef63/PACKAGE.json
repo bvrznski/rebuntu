@@ -1,0 +1,41 @@
+{
+  "source_prompt": ".phases/phases/phase-25-system-control-panel/prompts/25.24-frontend-independence-and-future-gui-api-readiness.md",
+  "phase_task": ".phases/phases/phase-25-system-control-panel/TASK.md",
+  "package_root": "src/operator/system-control-panel/subtask_packages/verification/frontend_independence_and_future_gui_api_readiness_2259ef63",
+  "role": "verification",
+  "aspects": [
+    "contract",
+    "model",
+    "state",
+    "errors",
+    "evidence",
+    "verification",
+    "integration",
+    "execution",
+    "recovery",
+    "policy",
+    "observability"
+  ],
+  "files": [
+    "src/operator/system-control-panel/subtask_packages/verification/frontend_independence_and_future_gui_api_readiness_2259ef63/contract.hpp",
+    "src/operator/system-control-panel/subtask_packages/verification/frontend_independence_and_future_gui_api_readiness_2259ef63/model.hpp",
+    "src/operator/system-control-panel/subtask_packages/verification/frontend_independence_and_future_gui_api_readiness_2259ef63/state.hpp",
+    "src/operator/system-control-panel/subtask_packages/verification/frontend_independence_and_future_gui_api_readiness_2259ef63/errors.hpp",
+    "src/operator/system-control-panel/subtask_packages/verification/frontend_independence_and_future_gui_api_readiness_2259ef63/evidence.hpp",
+    "src/operator/system-control-panel/subtask_packages/verification/frontend_independence_and_future_gui_api_readiness_2259ef63/verification.hpp",
+    "src/operator/system-control-panel/subtask_packages/verification/frontend_independence_and_future_gui_api_readiness_2259ef63/verification.cpp",
+    "src/operator/system-control-panel/subtask_packages/verification/frontend_independence_and_future_gui_api_readiness_2259ef63/integration.hpp",
+    "src/operator/system-control-panel/subtask_packages/verification/frontend_independence_and_future_gui_api_readiness_2259ef63/integration.cpp",
+    "src/operator/system-control-panel/subtask_packages/verification/frontend_independence_and_future_gui_api_readiness_2259ef63/execution.hpp",
+    "src/operator/system-control-panel/subtask_packages/verification/frontend_independence_and_future_gui_api_readiness_2259ef63/execution.cpp",
+    "src/operator/system-control-panel/subtask_packages/verification/frontend_independence_and_future_gui_api_readiness_2259ef63/recovery.hpp",
+    "src/operator/system-control-panel/subtask_packages/verification/frontend_independence_and_future_gui_api_readiness_2259ef63/recovery.cpp",
+    "src/operator/system-control-panel/subtask_packages/verification/frontend_independence_and_future_gui_api_readiness_2259ef63/policy.hpp",
+    "src/operator/system-control-panel/subtask_packages/verification/frontend_independence_and_future_gui_api_readiness_2259ef63/policy.cpp",
+    "src/operator/system-control-panel/subtask_packages/verification/frontend_independence_and_future_gui_api_readiness_2259ef63/observability.hpp",
+    "src/operator/system-control-panel/subtask_packages/verification/frontend_independence_and_future_gui_api_readiness_2259ef63/observability.cpp"
+  ],
+  "status": "SKELETON_MATERIALIZED",
+  "behavioral_credit": false,
+  "preservation": "PRESERVE_IMPLEMENT_EXTEND"
+}

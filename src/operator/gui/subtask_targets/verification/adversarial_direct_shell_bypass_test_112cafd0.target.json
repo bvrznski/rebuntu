@@ -1,0 +1,12 @@
+{
+  "source_prompt": ".phases/phases/phase-49-gui/prompts/49.556-adversarial-direct-shell-bypass-test.md",
+  "phase_task": ".phases/phases/phase-49-gui/TASK.md",
+  "canonical_root": "src/operator/gui",
+  "role": "verification",
+  "implementation_header": "src/operator/gui/subtask_targets/verification/adversarial_direct_shell_bypass_test_112cafd0.hpp",
+  "implementation_source": "src/operator/gui/subtask_targets/verification/adversarial_direct_shell_bypass_test_112cafd0.cpp",
+  "test_target": "tests/structural-closure/operator/gui/verification/test_adversarial_direct_shell_bypass_test_112cafd0.cpp",
+  "status": "SKELETON_MATERIALIZED",
+  "behavioral_credit": false,
+  "preservation": "PRESERVE_IMPLEMENT_EXTEND"
+}

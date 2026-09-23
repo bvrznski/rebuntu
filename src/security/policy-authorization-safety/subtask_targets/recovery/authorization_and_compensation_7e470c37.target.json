@@ -1,0 +1,12 @@
+{
+  "source_prompt": ".phases/phases/phase-07-policy-authorization-safety/prompts/7.48_authorization_and_compensation.md",
+  "phase_task": ".phases/phases/phase-07-policy-authorization-safety/TASK.md",
+  "canonical_root": "src/security/policy-authorization-safety",
+  "role": "recovery",
+  "implementation_header": "src/security/policy-authorization-safety/subtask_targets/recovery/authorization_and_compensation_7e470c37.hpp",
+  "implementation_source": "src/security/policy-authorization-safety/subtask_targets/recovery/authorization_and_compensation_7e470c37.cpp",
+  "test_target": "tests/structural-closure/security/policy-authorization-safety/recovery/test_authorization_and_compensation_7e470c37.cpp",
+  "status": "SKELETON_MATERIALIZED",
+  "behavioral_credit": false,
+  "preservation": "PRESERVE_IMPLEMENT_EXTEND"
+}

@@ -1,0 +1,4 @@
+// STRUCTURAL TEST TARGET — no test evidence until assertions are implemented and executed.
+// Source subtask: .phases/phases/phase-43-operator-intelligence-system/prompts/43.219-agents-md-permanent-intelligence-contract.md
+// Intended implementation target: src/operator/operator-intelligence-system/subtask_targets/contracts/agents_md_permanent_intelligence_contract_bede93cf.hpp
+int main() { return 0; }

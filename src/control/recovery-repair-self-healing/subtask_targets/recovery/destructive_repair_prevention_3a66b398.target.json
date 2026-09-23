@@ -1,0 +1,12 @@
+{
+  "source_prompt": ".phases/phases/phase-61-recovery-repair-self-healing/prompts/61.47-rebuntu-phase-61-47-destructive-repair-prevention.md",
+  "phase_task": ".phases/phases/phase-61-recovery-repair-self-healing/TASK.md",
+  "canonical_root": "src/control/recovery-repair-self-healing",
+  "role": "recovery",
+  "implementation_header": "src/control/recovery-repair-self-healing/subtask_targets/recovery/destructive_repair_prevention_3a66b398.hpp",
+  "implementation_source": "src/control/recovery-repair-self-healing/subtask_targets/recovery/destructive_repair_prevention_3a66b398.cpp",
+  "test_target": "tests/structural-closure/control/recovery-repair-self-healing/recovery/test_destructive_repair_prevention_3a66b398.cpp",
+  "status": "SKELETON_MATERIALIZED",
+  "behavioral_credit": false,
+  "preservation": "PRESERVE_IMPLEMENT_EXTEND"
+}

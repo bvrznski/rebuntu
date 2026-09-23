@@ -1,0 +1,12 @@
+{
+  "source_prompt": ".phases/phases/phase-42-system-knowledge-graph/prompts/42.025-transactional-graph-updates.md",
+  "phase_task": ".phases/phases/phase-42-system-knowledge-graph/TASK.md",
+  "canonical_root": "src/knowledge/system-knowledge-graph",
+  "role": "requirements",
+  "implementation_header": "src/knowledge/system-knowledge-graph/subtask_targets/requirements/transactional_graph_updates_fa5655e8.hpp",
+  "implementation_source": "src/knowledge/system-knowledge-graph/subtask_targets/requirements/transactional_graph_updates_fa5655e8.cpp",
+  "test_target": "tests/structural-closure/knowledge/system-knowledge-graph/requirements/test_transactional_graph_updates_fa5655e8.cpp",
+  "status": "SKELETON_MATERIALIZED",
+  "behavioral_credit": false,
+  "preservation": "PRESERVE_IMPLEMENT_EXTEND"
+}

@@ -1,0 +1,12 @@
+{
+  "source_prompt": ".phases/phases/phase-49-gui/prompts/49.285-diagnostic-bundle-builder.md",
+  "phase_task": ".phases/phases/phase-49-gui/TASK.md",
+  "canonical_root": "src/operator/gui",
+  "role": "observability",
+  "implementation_header": "src/operator/gui/subtask_targets/observability/diagnostic_bundle_builder_03ae4bf9.hpp",
+  "implementation_source": "src/operator/gui/subtask_targets/observability/diagnostic_bundle_builder_03ae4bf9.cpp",
+  "test_target": "tests/structural-closure/operator/gui/observability/test_diagnostic_bundle_builder_03ae4bf9.cpp",
+  "status": "SKELETON_MATERIALIZED",
+  "behavioral_credit": false,
+  "preservation": "PRESERVE_IMPLEMENT_EXTEND"
+}

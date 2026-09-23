@@ -1,0 +1,12 @@
+{
+  "source_prompt": ".phases/phases/phase-41-automation-workflow-system/prompts/41.106-duplicate-authority-audit.md",
+  "phase_task": ".phases/phases/phase-41-automation-workflow-system/TASK.md",
+  "canonical_root": "src/automation/automation-workflow-system",
+  "role": "verification",
+  "implementation_header": "src/automation/automation-workflow-system/subtask_targets/verification/duplicate_authority_audit_709c706b.hpp",
+  "implementation_source": "src/automation/automation-workflow-system/subtask_targets/verification/duplicate_authority_audit_709c706b.cpp",
+  "test_target": "tests/structural-closure/automation/automation-workflow-system/verification/test_duplicate_authority_audit_709c706b.cpp",
+  "status": "SKELETON_MATERIALIZED",
+  "behavioral_credit": false,
+  "preservation": "PRESERVE_IMPLEMENT_EXTEND"
+}

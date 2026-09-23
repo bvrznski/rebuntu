@@ -1,0 +1,3 @@
+# Persistence
+
+Structural target for `system/shell/sources/state/persistence`. Implement behavior only when required by the owning phase prompts. Linux/native state remains authoritative.

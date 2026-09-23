@@ -1,0 +1,12 @@
+{
+  "source_prompt": ".phases/phases/phase-42-system-knowledge-graph/prompts/42.036-phase-39-event-linkage.md",
+  "phase_task": ".phases/phases/phase-42-system-knowledge-graph/TASK.md",
+  "canonical_root": "src/knowledge/system-knowledge-graph",
+  "role": "requirements",
+  "implementation_header": "src/knowledge/system-knowledge-graph/subtask_targets/requirements/event_linkage_2dabcdd3.hpp",
+  "implementation_source": "src/knowledge/system-knowledge-graph/subtask_targets/requirements/event_linkage_2dabcdd3.cpp",
+  "test_target": "tests/structural-closure/knowledge/system-knowledge-graph/requirements/test_event_linkage_2dabcdd3.cpp",
+  "status": "SKELETON_MATERIALIZED",
+  "behavioral_credit": false,
+  "preservation": "PRESERVE_IMPLEMENT_EXTEND"
+}

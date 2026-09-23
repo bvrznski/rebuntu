@@ -1,0 +1,12 @@
+{
+  "source_prompt": ".phases/phases/phase-49-gui/prompts/49.324-request-cancellation.md",
+  "phase_task": ".phases/phases/phase-49-gui/TASK.md",
+  "canonical_root": "src/operator/gui",
+  "role": "requirements",
+  "implementation_header": "src/operator/gui/subtask_targets/requirements/request_cancellation_b131fcd3.hpp",
+  "implementation_source": "src/operator/gui/subtask_targets/requirements/request_cancellation_b131fcd3.cpp",
+  "test_target": "tests/structural-closure/operator/gui/requirements/test_request_cancellation_b131fcd3.cpp",
+  "status": "SKELETON_MATERIALIZED",
+  "behavioral_credit": false,
+  "preservation": "PRESERVE_IMPLEMENT_EXTEND"
+}

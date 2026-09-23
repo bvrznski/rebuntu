@@ -1,0 +1,6 @@
+#include "domains/resource-intent-dynamic-allocation/authorization/lifecycle.hpp"
+
+// Structural translation-unit slot only. No maturity credit.
+namespace rebuntu::structural_slots {
+static_assert(Skeleton_e7ab1f8141_Lifecycle::structural_revision == 25);
+}

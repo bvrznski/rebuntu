@@ -1,0 +1,6 @@
+#include "runtime/unified-search-command-system/recovery/rollback/validation.hpp"
+
+// Structural translation-unit slot only. No maturity credit.
+namespace rebuntu::structural_slots {
+static_assert(Skeleton_5fbd0e0c2b_Validation::structural_revision == 25);
+}

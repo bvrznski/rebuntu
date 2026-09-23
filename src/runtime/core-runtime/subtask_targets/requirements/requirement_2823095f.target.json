@@ -1,0 +1,12 @@
+{
+  "source_prompt": ".phases/phases/phase-03-core-runtime/prompts/3.9.md",
+  "phase_task": ".phases/phases/phase-03-core-runtime/TASK.md",
+  "canonical_root": "src/runtime/core-runtime",
+  "role": "requirements",
+  "implementation_header": "src/runtime/core-runtime/subtask_targets/requirements/requirement_2823095f.hpp",
+  "implementation_source": "src/runtime/core-runtime/subtask_targets/requirements/requirement_2823095f.cpp",
+  "test_target": "tests/structural-closure/runtime/core-runtime/requirements/test_requirement_2823095f.cpp",
+  "status": "SKELETON_MATERIALIZED",
+  "behavioral_credit": false,
+  "preservation": "PRESERVE_IMPLEMENT_EXTEND"
+}

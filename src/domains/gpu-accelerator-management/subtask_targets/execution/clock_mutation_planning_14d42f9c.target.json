@@ -1,0 +1,12 @@
+{
+  "source_prompt": ".phases/phases/phase-34-gpu-accelerator-management/prompts/34.32-clock-mutation-planning.md",
+  "phase_task": ".phases/phases/phase-34-gpu-accelerator-management/TASK.md",
+  "canonical_root": "src/domains/gpu-accelerator-management",
+  "role": "execution",
+  "implementation_header": "src/domains/gpu-accelerator-management/subtask_targets/execution/clock_mutation_planning_14d42f9c.hpp",
+  "implementation_source": "src/domains/gpu-accelerator-management/subtask_targets/execution/clock_mutation_planning_14d42f9c.cpp",
+  "test_target": "tests/structural-closure/domains/gpu-accelerator-management/execution/test_clock_mutation_planning_14d42f9c.cpp",
+  "status": "SKELETON_MATERIALIZED",
+  "behavioral_credit": false,
+  "preservation": "PRESERVE_IMPLEMENT_EXTEND"
+}

@@ -1,0 +1,12 @@
+{
+  "source_prompt": ".phases/phases/phase-48-os-task-context-awareness-system/prompts/48.207-operator-input-trust.md",
+  "phase_task": ".phases/phases/phase-48-os-task-context-awareness-system/TASK.md",
+  "canonical_root": "src/semantics/os-task-context-awareness-system",
+  "role": "security",
+  "implementation_header": "src/semantics/os-task-context-awareness-system/subtask_targets/security/operator_input_trust_91f3accd.hpp",
+  "implementation_source": "src/semantics/os-task-context-awareness-system/subtask_targets/security/operator_input_trust_91f3accd.cpp",
+  "test_target": "tests/structural-closure/semantics/os-task-context-awareness-system/security/test_operator_input_trust_91f3accd.cpp",
+  "status": "SKELETON_MATERIALIZED",
+  "behavioral_credit": false,
+  "preservation": "PRESERVE_IMPLEMENT_EXTEND"
+}

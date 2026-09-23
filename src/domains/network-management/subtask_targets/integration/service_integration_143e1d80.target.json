@@ -1,0 +1,12 @@
+{
+  "source_prompt": ".phases/phases/phase-33-network-management/prompts/33.47-phase-31-service-integration.md",
+  "phase_task": ".phases/phases/phase-33-network-management/TASK.md",
+  "canonical_root": "src/domains/network-management",
+  "role": "integration",
+  "implementation_header": "src/domains/network-management/subtask_targets/integration/service_integration_143e1d80.hpp",
+  "implementation_source": "src/domains/network-management/subtask_targets/integration/service_integration_143e1d80.cpp",
+  "test_target": "tests/structural-closure/domains/network-management/integration/test_service_integration_143e1d80.cpp",
+  "status": "SKELETON_MATERIALIZED",
+  "behavioral_credit": false,
+  "preservation": "PRESERVE_IMPLEMENT_EXTEND"
+}

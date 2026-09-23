@@ -1,0 +1,41 @@
+{
+  "source_prompt": ".phases/phases/phase-25-system-control-panel/prompts/25.10-kernel,-driver-and-dkms-management.md",
+  "phase_task": ".phases/phases/phase-25-system-control-panel/TASK.md",
+  "package_root": "src/operator/system-control-panel/subtask_packages/verification/kernel_driver_and_dkms_management_8f5cf02f",
+  "role": "verification",
+  "aspects": [
+    "contract",
+    "model",
+    "state",
+    "errors",
+    "evidence",
+    "verification",
+    "integration",
+    "execution",
+    "recovery",
+    "policy",
+    "observability"
+  ],
+  "files": [
+    "src/operator/system-control-panel/subtask_packages/verification/kernel_driver_and_dkms_management_8f5cf02f/contract.hpp",
+    "src/operator/system-control-panel/subtask_packages/verification/kernel_driver_and_dkms_management_8f5cf02f/model.hpp",
+    "src/operator/system-control-panel/subtask_packages/verification/kernel_driver_and_dkms_management_8f5cf02f/state.hpp",
+    "src/operator/system-control-panel/subtask_packages/verification/kernel_driver_and_dkms_management_8f5cf02f/errors.hpp",
+    "src/operator/system-control-panel/subtask_packages/verification/kernel_driver_and_dkms_management_8f5cf02f/evidence.hpp",
+    "src/operator/system-control-panel/subtask_packages/verification/kernel_driver_and_dkms_management_8f5cf02f/verification.hpp",
+    "src/operator/system-control-panel/subtask_packages/verification/kernel_driver_and_dkms_management_8f5cf02f/verification.cpp",
+    "src/operator/system-control-panel/subtask_packages/verification/kernel_driver_and_dkms_management_8f5cf02f/integration.hpp",
+    "src/operator/system-control-panel/subtask_packages/verification/kernel_driver_and_dkms_management_8f5cf02f/integration.cpp",
+    "src/operator/system-control-panel/subtask_packages/verification/kernel_driver_and_dkms_management_8f5cf02f/execution.hpp",
+    "src/operator/system-control-panel/subtask_packages/verification/kernel_driver_and_dkms_management_8f5cf02f/execution.cpp",
+    "src/operator/system-control-panel/subtask_packages/verification/kernel_driver_and_dkms_management_8f5cf02f/recovery.hpp",
+    "src/operator/system-control-panel/subtask_packages/verification/kernel_driver_and_dkms_management_8f5cf02f/recovery.cpp",
+    "src/operator/system-control-panel/subtask_packages/verification/kernel_driver_and_dkms_management_8f5cf02f/policy.hpp",
+    "src/operator/system-control-panel/subtask_packages/verification/kernel_driver_and_dkms_management_8f5cf02f/policy.cpp",
+    "src/operator/system-control-panel/subtask_packages/verification/kernel_driver_and_dkms_management_8f5cf02f/observability.hpp",
+    "src/operator/system-control-panel/subtask_packages/verification/kernel_driver_and_dkms_management_8f5cf02f/observability.cpp"
+  ],
+  "status": "SKELETON_MATERIALIZED",
+  "behavioral_credit": false,
+  "preservation": "PRESERVE_IMPLEMENT_EXTEND"
+}

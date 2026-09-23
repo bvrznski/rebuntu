@@ -1,0 +1,12 @@
+{
+  "source_prompt": ".phases/phases/phase-42-system-knowledge-graph/prompts/42.000-foundation-and-repository-archaeology.md",
+  "phase_task": ".phases/phases/phase-42-system-knowledge-graph/TASK.md",
+  "canonical_root": "src/knowledge/system-knowledge-graph",
+  "role": "observability",
+  "implementation_header": "src/knowledge/system-knowledge-graph/subtask_targets/observability/foundation_and_repository_archaeology_7871d581.hpp",
+  "implementation_source": "src/knowledge/system-knowledge-graph/subtask_targets/observability/foundation_and_repository_archaeology_7871d581.cpp",
+  "test_target": "tests/structural-closure/knowledge/system-knowledge-graph/observability/test_foundation_and_repository_archaeology_7871d581.cpp",
+  "status": "SKELETON_MATERIALIZED",
+  "behavioral_credit": false,
+  "preservation": "PRESERVE_IMPLEMENT_EXTEND"
+}

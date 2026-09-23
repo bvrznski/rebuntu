@@ -1,0 +1,12 @@
+{
+  "source_prompt": ".phases/phases/phase-47-os-task-policy-system/prompts/47.215-semantic-provider-origin-handling.md",
+  "phase_task": ".phases/phases/phase-47-os-task-policy-system/TASK.md",
+  "canonical_root": "src/runtime/os-task-policy-system",
+  "role": "integration",
+  "implementation_header": "src/runtime/os-task-policy-system/subtask_targets/integration/semantic_provider_origin_handling_8e54940b.hpp",
+  "implementation_source": "src/runtime/os-task-policy-system/subtask_targets/integration/semantic_provider_origin_handling_8e54940b.cpp",
+  "test_target": "tests/structural-closure/runtime/os-task-policy-system/integration/test_semantic_provider_origin_handling_8e54940b.cpp",
+  "status": "SKELETON_MATERIALIZED",
+  "behavioral_credit": false,
+  "preservation": "PRESERVE_IMPLEMENT_EXTEND"
+}

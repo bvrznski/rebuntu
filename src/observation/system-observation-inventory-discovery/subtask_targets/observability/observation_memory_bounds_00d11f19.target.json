@@ -1,0 +1,12 @@
+{
+  "source_prompt": ".phases/phases/phase-05-system-observation-inventory-discovery/prompts/5.52_observation_memory_bounds.md",
+  "phase_task": ".phases/phases/phase-05-system-observation-inventory-discovery/TASK.md",
+  "canonical_root": "src/observation/system-observation-inventory-discovery",
+  "role": "observability",
+  "implementation_header": "src/observation/system-observation-inventory-discovery/subtask_targets/observability/observation_memory_bounds_00d11f19.hpp",
+  "implementation_source": "src/observation/system-observation-inventory-discovery/subtask_targets/observability/observation_memory_bounds_00d11f19.cpp",
+  "test_target": "tests/structural-closure/observation/system-observation-inventory-discovery/observability/test_observation_memory_bounds_00d11f19.cpp",
+  "status": "SKELETON_MATERIALIZED",
+  "behavioral_credit": false,
+  "preservation": "PRESERVE_IMPLEMENT_EXTEND"
+}

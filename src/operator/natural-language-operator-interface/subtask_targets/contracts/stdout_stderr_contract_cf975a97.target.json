@@ -1,0 +1,12 @@
+{
+  "source_prompt": ".phases/phases/phase-46-natural-language-operator-interface/prompts/46.016-stdout-stderr-contract.md",
+  "phase_task": ".phases/phases/phase-46-natural-language-operator-interface/TASK.md",
+  "canonical_root": "src/operator/natural-language-operator-interface",
+  "role": "contracts",
+  "implementation_header": "src/operator/natural-language-operator-interface/subtask_targets/contracts/stdout_stderr_contract_cf975a97.hpp",
+  "implementation_source": "src/operator/natural-language-operator-interface/subtask_targets/contracts/stdout_stderr_contract_cf975a97.cpp",
+  "test_target": "tests/structural-closure/operator/natural-language-operator-interface/contracts/test_stdout_stderr_contract_cf975a97.cpp",
+  "status": "SKELETON_MATERIALIZED",
+  "behavioral_credit": false,
+  "preservation": "PRESERVE_IMPLEMENT_EXTEND"
+}

@@ -1,0 +1,12 @@
+{
+  "source_prompt": ".phases/phases/phase-51-distributed-rebuntu-system/prompts/51.494-restored-snapshot-identity-handling.md",
+  "phase_task": ".phases/phases/phase-51-distributed-rebuntu-system/TASK.md",
+  "canonical_root": "src/distributed/distributed-rebuntu-system",
+  "role": "persistence",
+  "implementation_header": "src/distributed/distributed-rebuntu-system/subtask_targets/persistence/restored_snapshot_identity_handling_00a72c48.hpp",
+  "implementation_source": "src/distributed/distributed-rebuntu-system/subtask_targets/persistence/restored_snapshot_identity_handling_00a72c48.cpp",
+  "test_target": "tests/structural-closure/distributed/distributed-rebuntu-system/persistence/test_restored_snapshot_identity_handling_00a72c48.cpp",
+  "status": "SKELETON_MATERIALIZED",
+  "behavioral_credit": false,
+  "preservation": "PRESERVE_IMPLEMENT_EXTEND"
+}

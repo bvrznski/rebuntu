@@ -1,0 +1,12 @@
+{
+  "source_prompt": ".phases/phases/phase-47-os-task-policy-system/prompts/47.419-system-repair-policy.md",
+  "phase_task": ".phases/phases/phase-47-os-task-policy-system/TASK.md",
+  "canonical_root": "src/runtime/os-task-policy-system",
+  "role": "recovery",
+  "implementation_header": "src/runtime/os-task-policy-system/subtask_targets/recovery/system_repair_policy_d6687eab.hpp",
+  "implementation_source": "src/runtime/os-task-policy-system/subtask_targets/recovery/system_repair_policy_d6687eab.cpp",
+  "test_target": "tests/structural-closure/runtime/os-task-policy-system/recovery/test_system_repair_policy_d6687eab.cpp",
+  "status": "SKELETON_MATERIALIZED",
+  "behavioral_credit": false,
+  "preservation": "PRESERVE_IMPLEMENT_EXTEND"
+}

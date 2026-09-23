@@ -1,0 +1,12 @@
+{
+  "source_prompt": ".phases/phases/phase-07-policy-authorization-safety/prompts/7.74_build_and_runtime_reachability_audit.md",
+  "phase_task": ".phases/phases/phase-07-policy-authorization-safety/TASK.md",
+  "canonical_root": "src/security/policy-authorization-safety",
+  "role": "verification",
+  "implementation_header": "src/security/policy-authorization-safety/subtask_targets/verification/build_and_runtime_reachability_audit_26e7e80c.hpp",
+  "implementation_source": "src/security/policy-authorization-safety/subtask_targets/verification/build_and_runtime_reachability_audit_26e7e80c.cpp",
+  "test_target": "tests/structural-closure/security/policy-authorization-safety/verification/test_build_and_runtime_reachability_audit_26e7e80c.cpp",
+  "status": "SKELETON_MATERIALIZED",
+  "behavioral_credit": false,
+  "preservation": "PRESERVE_IMPLEMENT_EXTEND"
+}

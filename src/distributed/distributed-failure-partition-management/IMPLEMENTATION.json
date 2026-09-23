@@ -1,0 +1,9 @@
+{
+  "component": "distributed-failure-partition-management",
+  "canonical_root": "distributed",
+  "phase_tasks": [
+    ".phases/phases/phase-84-distributed-failure-partition-management/TASK.md"
+  ],
+  "status": "SKELETON",
+  "native_authority_rule": true
+}

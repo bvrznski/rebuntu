@@ -1,0 +1,9 @@
+{
+  "component": "active-evidence-acquisition",
+  "canonical_root": "observation",
+  "phase_tasks": [
+    ".phases/phases/phase-92-active-evidence-acquisition/TASK.md"
+  ],
+  "status": "SKELETON",
+  "native_authority_rule": true
+}

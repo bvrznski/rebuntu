@@ -1,0 +1,12 @@
+{
+  "source_prompt": ".phases/phases/phase-49-gui/prompts/49.609-c-first-gui-contract-audit.md",
+  "phase_task": ".phases/phases/phase-49-gui/TASK.md",
+  "canonical_root": "src/operator/gui",
+  "role": "verification",
+  "implementation_header": "src/operator/gui/subtask_targets/verification/c_first_gui_contract_audit_d140cd3f.hpp",
+  "implementation_source": "src/operator/gui/subtask_targets/verification/c_first_gui_contract_audit_d140cd3f.cpp",
+  "test_target": "tests/structural-closure/operator/gui/verification/test_c_first_gui_contract_audit_d140cd3f.cpp",
+  "status": "SKELETON_MATERIALIZED",
+  "behavioral_credit": false,
+  "preservation": "PRESERVE_IMPLEMENT_EXTEND"
+}

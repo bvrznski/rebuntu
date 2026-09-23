@@ -1,0 +1,12 @@
+{
+  "source_prompt": ".phases/phases/phase-43-operator-intelligence-system/prompts/43.022-artifact-versioning.md",
+  "phase_task": ".phases/phases/phase-43-operator-intelligence-system/TASK.md",
+  "canonical_root": "src/operator/operator-intelligence-system",
+  "role": "requirements",
+  "implementation_header": "src/operator/operator-intelligence-system/subtask_targets/requirements/artifact_versioning_bd7f5872.hpp",
+  "implementation_source": "src/operator/operator-intelligence-system/subtask_targets/requirements/artifact_versioning_bd7f5872.cpp",
+  "test_target": "tests/structural-closure/operator/operator-intelligence-system/requirements/test_artifact_versioning_bd7f5872.cpp",
+  "status": "SKELETON_MATERIALIZED",
+  "behavioral_credit": false,
+  "preservation": "PRESERVE_IMPLEMENT_EXTEND"
+}

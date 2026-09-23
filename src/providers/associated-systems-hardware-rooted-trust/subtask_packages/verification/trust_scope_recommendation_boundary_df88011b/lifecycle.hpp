@@ -1,0 +1,13 @@
+#pragma once
+
+// XXVII SUBTASK PACKAGE SKELETON — zero behavioral maturity credit.
+// Source: .phases/phases/phase-52-associated-systems-hardware-rooted-trust/prompts/52.366-trust-scope-recommendation-boundary.md
+// Preserve this architectural reservation and implement only after reading the source prompt.
+
+namespace rebuntu::subtask_packages::phase_52::s_df88011b::lifecycle {
+struct LifecycleSlot final {
+    static constexpr const char* source_prompt = ".phases/phases/phase-52-associated-systems-hardware-rooted-trust/prompts/52.366-trust-scope-recommendation-boundary.md";
+    static constexpr const char* aspect = "lifecycle";
+    static constexpr const char* status = "SKELETON_MATERIALIZED";
+};
+} // namespace rebuntu::subtask_packages::phase_52::s_df88011b::lifecycle

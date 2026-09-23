@@ -1,0 +1,12 @@
+{
+  "source_prompt": ".phases/phases/phase-51-distributed-rebuntu-system/prompts/51.332-gui-policy-and-authorization.md",
+  "phase_task": ".phases/phases/phase-51-distributed-rebuntu-system/TASK.md",
+  "canonical_root": "src/distributed/distributed-rebuntu-system",
+  "role": "security",
+  "implementation_header": "src/distributed/distributed-rebuntu-system/subtask_targets/security/gui_policy_and_authorization_e72be8dd.hpp",
+  "implementation_source": "src/distributed/distributed-rebuntu-system/subtask_targets/security/gui_policy_and_authorization_e72be8dd.cpp",
+  "test_target": "tests/structural-closure/distributed/distributed-rebuntu-system/security/test_gui_policy_and_authorization_e72be8dd.cpp",
+  "status": "SKELETON_MATERIALIZED",
+  "behavioral_credit": false,
+  "preservation": "PRESERVE_IMPLEMENT_EXTEND"
+}

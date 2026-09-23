@@ -1,0 +1,9 @@
+{
+  "component": "system-knowledge-graph",
+  "canonical_root": "knowledge",
+  "phase_tasks": [
+    ".phases/phases/phase-42-system-knowledge-graph/TASK.md"
+  ],
+  "status": "SKELETON",
+  "native_authority_rule": true
+}

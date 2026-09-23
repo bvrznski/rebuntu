@@ -1,0 +1,12 @@
+{
+  "source_prompt": ".phases/phases/phase-42-system-knowledge-graph/prompts/42.119-phase-42-closure-and-phase-43-handoff.md",
+  "phase_task": ".phases/phases/phase-42-system-knowledge-graph/TASK.md",
+  "canonical_root": "src/knowledge/system-knowledge-graph",
+  "role": "requirements",
+  "implementation_header": "src/knowledge/system-knowledge-graph/subtask_targets/requirements/closure_and_phase_43_handoff_7e250aa7.hpp",
+  "implementation_source": "src/knowledge/system-knowledge-graph/subtask_targets/requirements/closure_and_phase_43_handoff_7e250aa7.cpp",
+  "test_target": "tests/structural-closure/knowledge/system-knowledge-graph/requirements/test_closure_and_phase_43_handoff_7e250aa7.cpp",
+  "status": "SKELETON_MATERIALIZED",
+  "behavioral_credit": false,
+  "preservation": "PRESERVE_IMPLEMENT_EXTEND"
+}

@@ -1,0 +1,12 @@
+{
+  "source_prompt": ".phases/phases/phase-48-os-task-context-awareness-system/prompts/48.157-task-service-coherence.md",
+  "phase_task": ".phases/phases/phase-48-os-task-context-awareness-system/TASK.md",
+  "canonical_root": "src/semantics/os-task-context-awareness-system",
+  "role": "requirements",
+  "implementation_header": "src/semantics/os-task-context-awareness-system/subtask_targets/requirements/task_service_coherence_649b1580.hpp",
+  "implementation_source": "src/semantics/os-task-context-awareness-system/subtask_targets/requirements/task_service_coherence_649b1580.cpp",
+  "test_target": "tests/structural-closure/semantics/os-task-context-awareness-system/requirements/test_task_service_coherence_649b1580.cpp",
+  "status": "SKELETON_MATERIALIZED",
+  "behavioral_credit": false,
+  "preservation": "PRESERVE_IMPLEMENT_EXTEND"
+}

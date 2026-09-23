@@ -1,0 +1,12 @@
+{
+  "source_prompt": ".phases/phases/phase-43-operator-intelligence-system/prompts/43.230-phase-43-closure-and-phase-44-handoff.md",
+  "phase_task": ".phases/phases/phase-43-operator-intelligence-system/TASK.md",
+  "canonical_root": "src/operator/operator-intelligence-system",
+  "role": "requirements",
+  "implementation_header": "src/operator/operator-intelligence-system/subtask_targets/requirements/closure_and_phase_44_handoff_9d7c87a8.hpp",
+  "implementation_source": "src/operator/operator-intelligence-system/subtask_targets/requirements/closure_and_phase_44_handoff_9d7c87a8.cpp",
+  "test_target": "tests/structural-closure/operator/operator-intelligence-system/requirements/test_closure_and_phase_44_handoff_9d7c87a8.cpp",
+  "status": "SKELETON_MATERIALIZED",
+  "behavioral_credit": false,
+  "preservation": "PRESERVE_IMPLEMENT_EXTEND"
+}

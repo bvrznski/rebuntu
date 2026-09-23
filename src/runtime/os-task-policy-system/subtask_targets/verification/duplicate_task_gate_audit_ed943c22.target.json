@@ -1,0 +1,12 @@
+{
+  "source_prompt": ".phases/phases/phase-47-os-task-policy-system/prompts/47.532-duplicate-task-gate-audit.md",
+  "phase_task": ".phases/phases/phase-47-os-task-policy-system/TASK.md",
+  "canonical_root": "src/runtime/os-task-policy-system",
+  "role": "verification",
+  "implementation_header": "src/runtime/os-task-policy-system/subtask_targets/verification/duplicate_task_gate_audit_ed943c22.hpp",
+  "implementation_source": "src/runtime/os-task-policy-system/subtask_targets/verification/duplicate_task_gate_audit_ed943c22.cpp",
+  "test_target": "tests/structural-closure/runtime/os-task-policy-system/verification/test_duplicate_task_gate_audit_ed943c22.cpp",
+  "status": "SKELETON_MATERIALIZED",
+  "behavioral_credit": false,
+  "preservation": "PRESERVE_IMPLEMENT_EXTEND"
+}

@@ -1,0 +1,12 @@
+{
+  "source_prompt": ".phases/phases/phase-35-package-software-management/prompts/35.3-installed-package-identity.md",
+  "phase_task": ".phases/phases/phase-35-package-software-management/TASK.md",
+  "canonical_root": "src/domains/package-software-management",
+  "role": "contracts",
+  "implementation_header": "src/domains/package-software-management/subtask_targets/contracts/installed_package_identity_8e0d8a6b.hpp",
+  "implementation_source": "src/domains/package-software-management/subtask_targets/contracts/installed_package_identity_8e0d8a6b.cpp",
+  "test_target": "tests/structural-closure/domains/package-software-management/contracts/test_installed_package_identity_8e0d8a6b.cpp",
+  "status": "SKELETON_MATERIALIZED",
+  "behavioral_credit": false,
+  "preservation": "PRESERVE_IMPLEMENT_EXTEND"
+}

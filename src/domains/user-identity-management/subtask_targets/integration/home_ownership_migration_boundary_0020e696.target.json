@@ -1,0 +1,12 @@
+{
+  "source_prompt": ".phases/phases/phase-38-user-identity-management/prompts/38.46-home-ownership-migration-boundary.md",
+  "phase_task": ".phases/phases/phase-38-user-identity-management/TASK.md",
+  "canonical_root": "src/domains/user-identity-management",
+  "role": "integration",
+  "implementation_header": "src/domains/user-identity-management/subtask_targets/integration/home_ownership_migration_boundary_0020e696.hpp",
+  "implementation_source": "src/domains/user-identity-management/subtask_targets/integration/home_ownership_migration_boundary_0020e696.cpp",
+  "test_target": "tests/structural-closure/domains/user-identity-management/integration/test_home_ownership_migration_boundary_0020e696.cpp",
+  "status": "SKELETON_MATERIALIZED",
+  "behavioral_credit": false,
+  "preservation": "PRESERVE_IMPLEMENT_EXTEND"
+}

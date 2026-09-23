@@ -1,0 +1,12 @@
+{
+  "source_prompt": ".phases/phases/phase-35-package-software-management/prompts/35.46-software-change-planning.md",
+  "phase_task": ".phases/phases/phase-35-package-software-management/TASK.md",
+  "canonical_root": "src/domains/package-software-management",
+  "role": "planning",
+  "implementation_header": "src/domains/package-software-management/subtask_targets/planning/software_change_planning_b8567ecf.hpp",
+  "implementation_source": "src/domains/package-software-management/subtask_targets/planning/software_change_planning_b8567ecf.cpp",
+  "test_target": "tests/structural-closure/domains/package-software-management/planning/test_software_change_planning_b8567ecf.cpp",
+  "status": "SKELETON_MATERIALIZED",
+  "behavioral_credit": false,
+  "preservation": "PRESERVE_IMPLEMENT_EXTEND"
+}

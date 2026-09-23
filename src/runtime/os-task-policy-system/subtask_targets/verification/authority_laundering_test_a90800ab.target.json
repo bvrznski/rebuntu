@@ -1,0 +1,12 @@
+{
+  "source_prompt": ".phases/phases/phase-47-os-task-policy-system/prompts/47.506-authority-laundering-test.md",
+  "phase_task": ".phases/phases/phase-47-os-task-policy-system/TASK.md",
+  "canonical_root": "src/runtime/os-task-policy-system",
+  "role": "verification",
+  "implementation_header": "src/runtime/os-task-policy-system/subtask_targets/verification/authority_laundering_test_a90800ab.hpp",
+  "implementation_source": "src/runtime/os-task-policy-system/subtask_targets/verification/authority_laundering_test_a90800ab.cpp",
+  "test_target": "tests/structural-closure/runtime/os-task-policy-system/verification/test_authority_laundering_test_a90800ab.cpp",
+  "status": "SKELETON_MATERIALIZED",
+  "behavioral_credit": false,
+  "preservation": "PRESERVE_IMPLEMENT_EXTEND"
+}

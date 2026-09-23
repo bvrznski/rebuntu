@@ -1,0 +1,12 @@
+{
+  "source_prompt": ".phases/phases/phase-50-platform-abstraction-portability-foundation/prompts/50.176-recursive-rediscovery-pass-one.md",
+  "phase_task": ".phases/phases/phase-50-platform-abstraction-portability-foundation/TASK.md",
+  "canonical_root": "src/providers/platform-abstraction-portability-foundation",
+  "role": "resolution",
+  "implementation_header": "src/providers/platform-abstraction-portability-foundation/subtask_targets/resolution/recursive_rediscovery_pass_one_3eaa6fa2.hpp",
+  "implementation_source": "src/providers/platform-abstraction-portability-foundation/subtask_targets/resolution/recursive_rediscovery_pass_one_3eaa6fa2.cpp",
+  "test_target": "tests/structural-closure/providers/platform-abstraction-portability-foundation/resolution/test_recursive_rediscovery_pass_one_3eaa6fa2.cpp",
+  "status": "SKELETON_MATERIALIZED",
+  "behavioral_credit": false,
+  "preservation": "PRESERVE_IMPLEMENT_EXTEND"
+}

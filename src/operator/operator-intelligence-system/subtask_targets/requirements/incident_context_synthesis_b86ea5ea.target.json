@@ -1,0 +1,12 @@
+{
+  "source_prompt": ".phases/phases/phase-43-operator-intelligence-system/prompts/43.079-incident-context-synthesis.md",
+  "phase_task": ".phases/phases/phase-43-operator-intelligence-system/TASK.md",
+  "canonical_root": "src/operator/operator-intelligence-system",
+  "role": "requirements",
+  "implementation_header": "src/operator/operator-intelligence-system/subtask_targets/requirements/incident_context_synthesis_b86ea5ea.hpp",
+  "implementation_source": "src/operator/operator-intelligence-system/subtask_targets/requirements/incident_context_synthesis_b86ea5ea.cpp",
+  "test_target": "tests/structural-closure/operator/operator-intelligence-system/requirements/test_incident_context_synthesis_b86ea5ea.cpp",
+  "status": "SKELETON_MATERIALIZED",
+  "behavioral_credit": false,
+  "preservation": "PRESERVE_IMPLEMENT_EXTEND"
+}

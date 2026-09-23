@@ -1,0 +1,12 @@
+{
+  "source_prompt": ".phases/phases/phase-45-unified-control-plane/prompts/45.068-compensation-ordering.md",
+  "phase_task": ".phases/phases/phase-45-unified-control-plane/TASK.md",
+  "canonical_root": "src/runtime/unified-control-plane",
+  "role": "recovery",
+  "implementation_header": "src/runtime/unified-control-plane/subtask_targets/recovery/compensation_ordering_cb4ee4a1.hpp",
+  "implementation_source": "src/runtime/unified-control-plane/subtask_targets/recovery/compensation_ordering_cb4ee4a1.cpp",
+  "test_target": "tests/structural-closure/runtime/unified-control-plane/recovery/test_compensation_ordering_cb4ee4a1.cpp",
+  "status": "SKELETON_MATERIALIZED",
+  "behavioral_credit": false,
+  "preservation": "PRESERVE_IMPLEMENT_EXTEND"
+}

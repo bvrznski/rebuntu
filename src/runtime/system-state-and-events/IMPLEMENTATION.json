@@ -1,0 +1,9 @@
+{
+  "component": "system-state-and-events",
+  "canonical_root": "runtime",
+  "phase_tasks": [
+    ".phases/phases/phase-09-system-state-and-events/TASK.md"
+  ],
+  "status": "SKELETON",
+  "native_authority_rule": true
+}

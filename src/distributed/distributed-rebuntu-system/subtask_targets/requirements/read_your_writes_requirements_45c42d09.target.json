@@ -1,0 +1,12 @@
+{
+  "source_prompt": ".phases/phases/phase-51-distributed-rebuntu-system/prompts/51.385-read-your-writes-requirements.md",
+  "phase_task": ".phases/phases/phase-51-distributed-rebuntu-system/TASK.md",
+  "canonical_root": "src/distributed/distributed-rebuntu-system",
+  "role": "requirements",
+  "implementation_header": "src/distributed/distributed-rebuntu-system/subtask_targets/requirements/read_your_writes_requirements_45c42d09.hpp",
+  "implementation_source": "src/distributed/distributed-rebuntu-system/subtask_targets/requirements/read_your_writes_requirements_45c42d09.cpp",
+  "test_target": "tests/structural-closure/distributed/distributed-rebuntu-system/requirements/test_read_your_writes_requirements_45c42d09.cpp",
+  "status": "SKELETON_MATERIALIZED",
+  "behavioral_credit": false,
+  "preservation": "PRESERVE_IMPLEMENT_EXTEND"
+}

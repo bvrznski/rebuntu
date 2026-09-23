@@ -1,0 +1,12 @@
+{
+  "source_prompt": ".phases/phases/phase-49-gui/prompts/49.497-snapshot-tests-boundary.md",
+  "phase_task": ".phases/phases/phase-49-gui/TASK.md",
+  "canonical_root": "src/operator/gui",
+  "role": "verification",
+  "implementation_header": "src/operator/gui/subtask_targets/verification/snapshot_tests_boundary_cfbdb05d.hpp",
+  "implementation_source": "src/operator/gui/subtask_targets/verification/snapshot_tests_boundary_cfbdb05d.cpp",
+  "test_target": "tests/structural-closure/operator/gui/verification/test_snapshot_tests_boundary_cfbdb05d.cpp",
+  "status": "SKELETON_MATERIALIZED",
+  "behavioral_credit": false,
+  "preservation": "PRESERVE_IMPLEMENT_EXTEND"
+}

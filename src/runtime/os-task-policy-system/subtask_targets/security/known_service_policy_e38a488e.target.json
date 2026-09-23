@@ -1,0 +1,12 @@
+{
+  "source_prompt": ".phases/phases/phase-47-os-task-policy-system/prompts/47.104-known-service-policy.md",
+  "phase_task": ".phases/phases/phase-47-os-task-policy-system/TASK.md",
+  "canonical_root": "src/runtime/os-task-policy-system",
+  "role": "security",
+  "implementation_header": "src/runtime/os-task-policy-system/subtask_targets/security/known_service_policy_e38a488e.hpp",
+  "implementation_source": "src/runtime/os-task-policy-system/subtask_targets/security/known_service_policy_e38a488e.cpp",
+  "test_target": "tests/structural-closure/runtime/os-task-policy-system/security/test_known_service_policy_e38a488e.cpp",
+  "status": "SKELETON_MATERIALIZED",
+  "behavioral_credit": false,
+  "preservation": "PRESERVE_IMPLEMENT_EXTEND"
+}

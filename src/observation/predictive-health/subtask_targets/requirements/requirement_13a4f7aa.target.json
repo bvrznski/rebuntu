@@ -1,0 +1,12 @@
+{
+  "source_prompt": ".phases/phases/phase-21-predictive-health/prompts/21.13.md",
+  "phase_task": ".phases/phases/phase-21-predictive-health/TASK.md",
+  "canonical_root": "src/observation/predictive-health",
+  "role": "requirements",
+  "implementation_header": "src/observation/predictive-health/subtask_targets/requirements/requirement_13a4f7aa.hpp",
+  "implementation_source": "src/observation/predictive-health/subtask_targets/requirements/requirement_13a4f7aa.cpp",
+  "test_target": "tests/structural-closure/observation/predictive-health/requirements/test_requirement_13a4f7aa.cpp",
+  "status": "SKELETON_MATERIALIZED",
+  "behavioral_credit": false,
+  "preservation": "PRESERVE_IMPLEMENT_EXTEND"
+}

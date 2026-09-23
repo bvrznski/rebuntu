@@ -1,0 +1,12 @@
+{
+  "source_prompt": ".phases/phases/phase-32-storage-management/prompts/32.37-backup-integration-boundary.md",
+  "phase_task": ".phases/phases/phase-32-storage-management/TASK.md",
+  "canonical_root": "src/domains/storage-management",
+  "role": "integration",
+  "implementation_header": "src/domains/storage-management/subtask_targets/integration/backup_integration_boundary_f5f4b0ba.hpp",
+  "implementation_source": "src/domains/storage-management/subtask_targets/integration/backup_integration_boundary_f5f4b0ba.cpp",
+  "test_target": "tests/structural-closure/domains/storage-management/integration/test_backup_integration_boundary_f5f4b0ba.cpp",
+  "status": "SKELETON_MATERIALIZED",
+  "behavioral_credit": false,
+  "preservation": "PRESERVE_IMPLEMENT_EXTEND"
+}

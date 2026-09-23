@@ -1,0 +1,12 @@
+{
+  "source_prompt": ".phases/phases/phase-42-system-knowledge-graph/prompts/42.118-final-fixed-point-rediscovery.md",
+  "phase_task": ".phases/phases/phase-42-system-knowledge-graph/TASK.md",
+  "canonical_root": "src/knowledge/system-knowledge-graph",
+  "role": "resolution",
+  "implementation_header": "src/knowledge/system-knowledge-graph/subtask_targets/resolution/final_fixed_point_rediscovery_e0eab084.hpp",
+  "implementation_source": "src/knowledge/system-knowledge-graph/subtask_targets/resolution/final_fixed_point_rediscovery_e0eab084.cpp",
+  "test_target": "tests/structural-closure/knowledge/system-knowledge-graph/resolution/test_final_fixed_point_rediscovery_e0eab084.cpp",
+  "status": "SKELETON_MATERIALIZED",
+  "behavioral_credit": false,
+  "preservation": "PRESERVE_IMPLEMENT_EXTEND"
+}

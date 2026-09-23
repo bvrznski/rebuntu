@@ -1,0 +1,12 @@
+{
+  "source_prompt": ".phases/phases/phase-89-causal-system-analysis/prompts/89.16.md",
+  "phase_task": ".phases/phases/phase-89-causal-system-analysis/TASK.md",
+  "canonical_root": "src/knowledge/causal-system-analysis",
+  "role": "requirements",
+  "implementation_header": "src/knowledge/causal-system-analysis/subtask_targets/requirements/requirement_1da6ca53.hpp",
+  "implementation_source": "src/knowledge/causal-system-analysis/subtask_targets/requirements/requirement_1da6ca53.cpp",
+  "test_target": "tests/structural-closure/knowledge/causal-system-analysis/requirements/test_requirement_1da6ca53.cpp",
+  "status": "SKELETON_MATERIALIZED",
+  "behavioral_credit": false,
+  "preservation": "PRESERVE_IMPLEMENT_EXTEND"
+}

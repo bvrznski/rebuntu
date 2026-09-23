@@ -1,0 +1,9 @@
+{
+  "component": "capability-registry",
+  "canonical_root": "semantics",
+  "phase_tasks": [
+    ".phases/phases/phase-18-capability-registry/TASK.md"
+  ],
+  "status": "SKELETON",
+  "native_authority_rule": true
+}

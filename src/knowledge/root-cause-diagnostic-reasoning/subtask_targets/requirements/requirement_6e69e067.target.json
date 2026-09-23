@@ -1,0 +1,12 @@
+{
+  "source_prompt": ".phases/phases/phase-90-root-cause-diagnostic-reasoning/prompts/90.14.md",
+  "phase_task": ".phases/phases/phase-90-root-cause-diagnostic-reasoning/TASK.md",
+  "canonical_root": "src/knowledge/root-cause-diagnostic-reasoning",
+  "role": "requirements",
+  "implementation_header": "src/knowledge/root-cause-diagnostic-reasoning/subtask_targets/requirements/requirement_6e69e067.hpp",
+  "implementation_source": "src/knowledge/root-cause-diagnostic-reasoning/subtask_targets/requirements/requirement_6e69e067.cpp",
+  "test_target": "tests/structural-closure/knowledge/root-cause-diagnostic-reasoning/requirements/test_requirement_6e69e067.cpp",
+  "status": "SKELETON_MATERIALIZED",
+  "behavioral_credit": false,
+  "preservation": "PRESERVE_IMPLEMENT_EXTEND"
+}

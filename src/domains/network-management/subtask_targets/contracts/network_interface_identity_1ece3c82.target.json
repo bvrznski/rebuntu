@@ -1,0 +1,12 @@
+{
+  "source_prompt": ".phases/phases/phase-33-network-management/prompts/33.3-network-interface-identity.md",
+  "phase_task": ".phases/phases/phase-33-network-management/TASK.md",
+  "canonical_root": "src/domains/network-management",
+  "role": "contracts",
+  "implementation_header": "src/domains/network-management/subtask_targets/contracts/network_interface_identity_1ece3c82.hpp",
+  "implementation_source": "src/domains/network-management/subtask_targets/contracts/network_interface_identity_1ece3c82.cpp",
+  "test_target": "tests/structural-closure/domains/network-management/contracts/test_network_interface_identity_1ece3c82.cpp",
+  "status": "SKELETON_MATERIALIZED",
+  "behavioral_credit": false,
+  "preservation": "PRESERVE_IMPLEMENT_EXTEND"
+}

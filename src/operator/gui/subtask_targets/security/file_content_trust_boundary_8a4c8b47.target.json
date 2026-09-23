@@ -1,0 +1,12 @@
+{
+  "source_prompt": ".phases/phases/phase-49-gui/prompts/49.383-file-content-trust-boundary.md",
+  "phase_task": ".phases/phases/phase-49-gui/TASK.md",
+  "canonical_root": "src/operator/gui",
+  "role": "security",
+  "implementation_header": "src/operator/gui/subtask_targets/security/file_content_trust_boundary_8a4c8b47.hpp",
+  "implementation_source": "src/operator/gui/subtask_targets/security/file_content_trust_boundary_8a4c8b47.cpp",
+  "test_target": "tests/structural-closure/operator/gui/security/test_file_content_trust_boundary_8a4c8b47.cpp",
+  "status": "SKELETON_MATERIALIZED",
+  "behavioral_credit": false,
+  "preservation": "PRESERVE_IMPLEMENT_EXTEND"
+}

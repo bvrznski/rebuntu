@@ -1,0 +1,12 @@
+{
+  "source_prompt": ".phases/phases/phase-61-recovery-repair-self-healing/prompts/61.42-rebuntu-phase-61-42-recovery-history.md",
+  "phase_task": ".phases/phases/phase-61-recovery-repair-self-healing/TASK.md",
+  "canonical_root": "src/control/recovery-repair-self-healing",
+  "role": "recovery",
+  "implementation_header": "src/control/recovery-repair-self-healing/subtask_targets/recovery/recovery_history_36d5803c.hpp",
+  "implementation_source": "src/control/recovery-repair-self-healing/subtask_targets/recovery/recovery_history_36d5803c.cpp",
+  "test_target": "tests/structural-closure/control/recovery-repair-self-healing/recovery/test_recovery_history_36d5803c.cpp",
+  "status": "SKELETON_MATERIALIZED",
+  "behavioral_credit": false,
+  "preservation": "PRESERVE_IMPLEMENT_EXTEND"
+}

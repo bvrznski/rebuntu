@@ -1,0 +1,9 @@
+{
+  "component": "system-control-panel",
+  "canonical_root": "operator",
+  "phase_tasks": [
+    ".phases/phases/phase-25-system-control-panel/TASK.md"
+  ],
+  "status": "SKELETON",
+  "native_authority_rule": true
+}

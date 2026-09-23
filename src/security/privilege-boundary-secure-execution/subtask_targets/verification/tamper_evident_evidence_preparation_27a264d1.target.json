@@ -1,0 +1,12 @@
+{
+  "source_prompt": ".phases/phases/phase-08-privilege-boundary-secure-execution/prompts/8.51_tamper-evident_evidence_preparation.md",
+  "phase_task": ".phases/phases/phase-08-privilege-boundary-secure-execution/TASK.md",
+  "canonical_root": "src/security/privilege-boundary-secure-execution",
+  "role": "verification",
+  "implementation_header": "src/security/privilege-boundary-secure-execution/subtask_targets/verification/tamper_evident_evidence_preparation_27a264d1.hpp",
+  "implementation_source": "src/security/privilege-boundary-secure-execution/subtask_targets/verification/tamper_evident_evidence_preparation_27a264d1.cpp",
+  "test_target": "tests/structural-closure/security/privilege-boundary-secure-execution/verification/test_tamper_evident_evidence_preparation_27a264d1.cpp",
+  "status": "SKELETON_MATERIALIZED",
+  "behavioral_credit": false,
+  "preservation": "PRESERVE_IMPLEMENT_EXTEND"
+}

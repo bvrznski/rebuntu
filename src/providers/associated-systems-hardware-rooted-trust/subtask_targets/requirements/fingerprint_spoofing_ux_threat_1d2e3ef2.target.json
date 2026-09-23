@@ -1,0 +1,12 @@
+{
+  "source_prompt": ".phases/phases/phase-52-associated-systems-hardware-rooted-trust/prompts/52.522-fingerprint-spoofing-ux-threat.md",
+  "phase_task": ".phases/phases/phase-52-associated-systems-hardware-rooted-trust/TASK.md",
+  "canonical_root": "src/providers/associated-systems-hardware-rooted-trust",
+  "role": "requirements",
+  "implementation_header": "src/providers/associated-systems-hardware-rooted-trust/subtask_targets/requirements/fingerprint_spoofing_ux_threat_1d2e3ef2.hpp",
+  "implementation_source": "src/providers/associated-systems-hardware-rooted-trust/subtask_targets/requirements/fingerprint_spoofing_ux_threat_1d2e3ef2.cpp",
+  "test_target": "tests/structural-closure/providers/associated-systems-hardware-rooted-trust/requirements/test_fingerprint_spoofing_ux_threat_1d2e3ef2.cpp",
+  "status": "SKELETON_MATERIALIZED",
+  "behavioral_credit": false,
+  "preservation": "PRESERVE_IMPLEMENT_EXTEND"
+}

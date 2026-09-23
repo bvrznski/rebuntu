@@ -1,0 +1,12 @@
+{
+  "source_prompt": ".phases/phases/phase-99-autonomy-budget-delegation/prompts/99.10.md",
+  "phase_task": ".phases/phases/phase-99-autonomy-budget-delegation/TASK.md",
+  "canonical_root": "src/automation/autonomy-budget-delegation",
+  "role": "requirements",
+  "implementation_header": "src/automation/autonomy-budget-delegation/subtask_targets/requirements/requirement_0415cc61.hpp",
+  "implementation_source": "src/automation/autonomy-budget-delegation/subtask_targets/requirements/requirement_0415cc61.cpp",
+  "test_target": "tests/structural-closure/automation/autonomy-budget-delegation/requirements/test_requirement_0415cc61.cpp",
+  "status": "SKELETON_MATERIALIZED",
+  "behavioral_credit": false,
+  "preservation": "PRESERVE_IMPLEMENT_EXTEND"
+}

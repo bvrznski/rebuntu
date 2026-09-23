@@ -1,0 +1,12 @@
+{
+  "source_prompt": ".phases/phases/phase-38-user-identity-management/prompts/38.31-privilege-escalation-evidence.md",
+  "phase_task": ".phases/phases/phase-38-user-identity-management/TASK.md",
+  "canonical_root": "src/domains/user-identity-management",
+  "role": "verification",
+  "implementation_header": "src/domains/user-identity-management/subtask_targets/verification/privilege_escalation_evidence_3659626f.hpp",
+  "implementation_source": "src/domains/user-identity-management/subtask_targets/verification/privilege_escalation_evidence_3659626f.cpp",
+  "test_target": "tests/structural-closure/domains/user-identity-management/verification/test_privilege_escalation_evidence_3659626f.cpp",
+  "status": "SKELETON_MATERIALIZED",
+  "behavioral_credit": false,
+  "preservation": "PRESERVE_IMPLEMENT_EXTEND"
+}

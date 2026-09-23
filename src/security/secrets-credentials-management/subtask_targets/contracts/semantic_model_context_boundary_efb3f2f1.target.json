@@ -1,0 +1,12 @@
+{
+  "source_prompt": ".phases/phases/phase-37-secrets-credentials-management/prompts/37.29-semantic-model-context-boundary.md",
+  "phase_task": ".phases/phases/phase-37-secrets-credentials-management/TASK.md",
+  "canonical_root": "src/security/secrets-credentials-management",
+  "role": "contracts",
+  "implementation_header": "src/security/secrets-credentials-management/subtask_targets/contracts/semantic_model_context_boundary_efb3f2f1.hpp",
+  "implementation_source": "src/security/secrets-credentials-management/subtask_targets/contracts/semantic_model_context_boundary_efb3f2f1.cpp",
+  "test_target": "tests/structural-closure/security/secrets-credentials-management/contracts/test_semantic_model_context_boundary_efb3f2f1.cpp",
+  "status": "SKELETON_MATERIALIZED",
+  "behavioral_credit": false,
+  "preservation": "PRESERVE_IMPLEMENT_EXTEND"
+}

@@ -1,0 +1,12 @@
+{
+  "source_prompt": ".phases/phases/phase-55-goal-directed-planning-plan-synthesis-replanning/prompts/55.153-rebuntu-phase-55-153-safe-continuation-criteria.md",
+  "phase_task": ".phases/phases/phase-55-goal-directed-planning-plan-synthesis-replanning/TASK.md",
+  "canonical_root": "src/planning/goal-directed-planning-plan-synthesis-replanning",
+  "role": "requirements",
+  "implementation_header": "src/planning/goal-directed-planning-plan-synthesis-replanning/subtask_targets/requirements/safe_continuation_criteria_5fadfa9f.hpp",
+  "implementation_source": "src/planning/goal-directed-planning-plan-synthesis-replanning/subtask_targets/requirements/safe_continuation_criteria_5fadfa9f.cpp",
+  "test_target": "tests/structural-closure/planning/goal-directed-planning-plan-synthesis-replanning/requirements/test_safe_continuation_criteria_5fadfa9f.cpp",
+  "status": "SKELETON_MATERIALIZED",
+  "behavioral_credit": false,
+  "preservation": "PRESERVE_IMPLEMENT_EXTEND"
+}

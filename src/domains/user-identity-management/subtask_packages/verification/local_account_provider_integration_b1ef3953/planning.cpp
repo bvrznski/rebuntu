@@ -1,0 +1,5 @@
+#include "planning.hpp"
+
+// XXVII out-of-line implementation reservation for planning.
+// Source: .phases/phases/phase-38-user-identity-management/prompts/38.12-local-account-provider-integration.md
+// Intentionally behavior-free until prompt-derived implementation is supplied.

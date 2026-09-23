@@ -1,0 +1,12 @@
+{
+  "source_prompt": ".phases/phases/phase-05-system-observation-inventory-discovery/prompts/5.40_discovery_resynchronization.md",
+  "phase_task": ".phases/phases/phase-05-system-observation-inventory-discovery/TASK.md",
+  "canonical_root": "src/observation/system-observation-inventory-discovery",
+  "role": "resolution",
+  "implementation_header": "src/observation/system-observation-inventory-discovery/subtask_targets/resolution/discovery_resynchronization_34daae0b.hpp",
+  "implementation_source": "src/observation/system-observation-inventory-discovery/subtask_targets/resolution/discovery_resynchronization_34daae0b.cpp",
+  "test_target": "tests/structural-closure/observation/system-observation-inventory-discovery/resolution/test_discovery_resynchronization_34daae0b.cpp",
+  "status": "SKELETON_MATERIALIZED",
+  "behavioral_credit": false,
+  "preservation": "PRESERVE_IMPLEMENT_EXTEND"
+}

@@ -1,0 +1,12 @@
+{
+  "source_prompt": ".phases/phases/phase-30-resource-management/prompts/30.9-swap-virtual-memory-context.md",
+  "phase_task": ".phases/phases/phase-30-resource-management/TASK.md",
+  "canonical_root": "src/domains/resource-management",
+  "role": "requirements",
+  "implementation_header": "src/domains/resource-management/subtask_targets/requirements/swap_virtual_memory_context_8f5f48de.hpp",
+  "implementation_source": "src/domains/resource-management/subtask_targets/requirements/swap_virtual_memory_context_8f5f48de.cpp",
+  "test_target": "tests/structural-closure/domains/resource-management/requirements/test_swap_virtual_memory_context_8f5f48de.cpp",
+  "status": "SKELETON_MATERIALIZED",
+  "behavioral_credit": false,
+  "preservation": "PRESERVE_IMPLEMENT_EXTEND"
+}

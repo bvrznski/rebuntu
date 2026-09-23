@@ -1,0 +1,12 @@
+{
+  "source_prompt": ".phases/phases/phase-44-adaptive-workstation-system/prompts/44.153-phase-33-network-integration.md",
+  "phase_task": ".phases/phases/phase-44-adaptive-workstation-system/TASK.md",
+  "canonical_root": "src/domains/adaptive-workstation-system",
+  "role": "integration",
+  "implementation_header": "src/domains/adaptive-workstation-system/subtask_targets/integration/network_integration_7ff2cbe6.hpp",
+  "implementation_source": "src/domains/adaptive-workstation-system/subtask_targets/integration/network_integration_7ff2cbe6.cpp",
+  "test_target": "tests/structural-closure/domains/adaptive-workstation-system/integration/test_network_integration_7ff2cbe6.cpp",
+  "status": "SKELETON_MATERIALIZED",
+  "behavioral_credit": false,
+  "preservation": "PRESERVE_IMPLEMENT_EXTEND"
+}

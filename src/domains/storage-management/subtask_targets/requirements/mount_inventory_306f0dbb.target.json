@@ -1,0 +1,12 @@
+{
+  "source_prompt": ".phases/phases/phase-32-storage-management/prompts/32.14-mount-inventory.md",
+  "phase_task": ".phases/phases/phase-32-storage-management/TASK.md",
+  "canonical_root": "src/domains/storage-management",
+  "role": "requirements",
+  "implementation_header": "src/domains/storage-management/subtask_targets/requirements/mount_inventory_306f0dbb.hpp",
+  "implementation_source": "src/domains/storage-management/subtask_targets/requirements/mount_inventory_306f0dbb.cpp",
+  "test_target": "tests/structural-closure/domains/storage-management/requirements/test_mount_inventory_306f0dbb.cpp",
+  "status": "SKELETON_MATERIALIZED",
+  "behavioral_credit": false,
+  "preservation": "PRESERVE_IMPLEMENT_EXTEND"
+}

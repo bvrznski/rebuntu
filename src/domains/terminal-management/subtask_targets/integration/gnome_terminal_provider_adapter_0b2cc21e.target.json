@@ -1,0 +1,12 @@
+{
+  "source_prompt": ".phases/phases/phase-27-terminal-management/prompts/27.3-gnome-terminal-provider-adapter.md",
+  "phase_task": ".phases/phases/phase-27-terminal-management/TASK.md",
+  "canonical_root": "src/domains/terminal-management",
+  "role": "integration",
+  "implementation_header": "src/domains/terminal-management/subtask_targets/integration/gnome_terminal_provider_adapter_0b2cc21e.hpp",
+  "implementation_source": "src/domains/terminal-management/subtask_targets/integration/gnome_terminal_provider_adapter_0b2cc21e.cpp",
+  "test_target": "tests/structural-closure/domains/terminal-management/integration/test_gnome_terminal_provider_adapter_0b2cc21e.cpp",
+  "status": "SKELETON_MATERIALIZED",
+  "behavioral_credit": false,
+  "preservation": "PRESERVE_IMPLEMENT_EXTEND"
+}

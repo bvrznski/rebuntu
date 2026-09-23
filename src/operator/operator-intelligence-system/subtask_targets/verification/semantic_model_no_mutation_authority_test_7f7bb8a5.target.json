@@ -1,0 +1,12 @@
+{
+  "source_prompt": ".phases/phases/phase-43-operator-intelligence-system/prompts/43.191-semantic-model-no-mutation-authority-test.md",
+  "phase_task": ".phases/phases/phase-43-operator-intelligence-system/TASK.md",
+  "canonical_root": "src/operator/operator-intelligence-system",
+  "role": "verification",
+  "implementation_header": "src/operator/operator-intelligence-system/subtask_targets/verification/semantic_model_no_mutation_authority_test_7f7bb8a5.hpp",
+  "implementation_source": "src/operator/operator-intelligence-system/subtask_targets/verification/semantic_model_no_mutation_authority_test_7f7bb8a5.cpp",
+  "test_target": "tests/structural-closure/operator/operator-intelligence-system/verification/test_semantic_model_no_mutation_authority_test_7f7bb8a5.cpp",
+  "status": "SKELETON_MATERIALIZED",
+  "behavioral_credit": false,
+  "preservation": "PRESERVE_IMPLEMENT_EXTEND"
+}

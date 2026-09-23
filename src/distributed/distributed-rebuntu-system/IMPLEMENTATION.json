@@ -1,0 +1,9 @@
+{
+  "component": "distributed-rebuntu-system",
+  "canonical_root": "distributed",
+  "phase_tasks": [
+    ".phases/phases/phase-51-distributed-rebuntu-system/TASK.md"
+  ],
+  "status": "SKELETON",
+  "native_authority_rule": true
+}

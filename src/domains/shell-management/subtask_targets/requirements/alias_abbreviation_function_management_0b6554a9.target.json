@@ -1,0 +1,12 @@
+{
+  "source_prompt": ".phases/phases/phase-26-shell-management/prompts/26.14-alias-abbreviation-function-management.md",
+  "phase_task": ".phases/phases/phase-26-shell-management/TASK.md",
+  "canonical_root": "src/domains/shell-management",
+  "role": "requirements",
+  "implementation_header": "src/domains/shell-management/subtask_targets/requirements/alias_abbreviation_function_management_0b6554a9.hpp",
+  "implementation_source": "src/domains/shell-management/subtask_targets/requirements/alias_abbreviation_function_management_0b6554a9.cpp",
+  "test_target": "tests/structural-closure/domains/shell-management/requirements/test_alias_abbreviation_function_management_0b6554a9.cpp",
+  "status": "SKELETON_MATERIALIZED",
+  "behavioral_credit": false,
+  "preservation": "PRESERVE_IMPLEMENT_EXTEND"
+}

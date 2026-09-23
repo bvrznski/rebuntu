@@ -1,0 +1,12 @@
+{
+  "source_prompt": ".phases/phases/phase-43-operator-intelligence-system/prompts/43.026-deterministic-intelligence-provider.md",
+  "phase_task": ".phases/phases/phase-43-operator-intelligence-system/TASK.md",
+  "canonical_root": "src/operator/operator-intelligence-system",
+  "role": "integration",
+  "implementation_header": "src/operator/operator-intelligence-system/subtask_targets/integration/deterministic_intelligence_provider_9506a852.hpp",
+  "implementation_source": "src/operator/operator-intelligence-system/subtask_targets/integration/deterministic_intelligence_provider_9506a852.cpp",
+  "test_target": "tests/structural-closure/operator/operator-intelligence-system/integration/test_deterministic_intelligence_provider_9506a852.cpp",
+  "status": "SKELETON_MATERIALIZED",
+  "behavioral_credit": false,
+  "preservation": "PRESERVE_IMPLEMENT_EXTEND"
+}

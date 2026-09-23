@@ -1,0 +1,12 @@
+{
+  "source_prompt": ".phases/phases/phase-51-distributed-rebuntu-system/prompts/51.599-final-performance-suite.md",
+  "phase_task": ".phases/phases/phase-51-distributed-rebuntu-system/TASK.md",
+  "canonical_root": "src/distributed/distributed-rebuntu-system",
+  "role": "requirements",
+  "implementation_header": "src/distributed/distributed-rebuntu-system/subtask_targets/requirements/final_performance_suite_0353ae87.hpp",
+  "implementation_source": "src/distributed/distributed-rebuntu-system/subtask_targets/requirements/final_performance_suite_0353ae87.cpp",
+  "test_target": "tests/structural-closure/distributed/distributed-rebuntu-system/requirements/test_final_performance_suite_0353ae87.cpp",
+  "status": "SKELETON_MATERIALIZED",
+  "behavioral_credit": false,
+  "preservation": "PRESERVE_IMPLEMENT_EXTEND"
+}

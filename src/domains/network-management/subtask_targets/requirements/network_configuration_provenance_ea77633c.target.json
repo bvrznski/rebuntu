@@ -1,0 +1,12 @@
+{
+  "source_prompt": ".phases/phases/phase-33-network-management/prompts/33.19-network-configuration-provenance.md",
+  "phase_task": ".phases/phases/phase-33-network-management/TASK.md",
+  "canonical_root": "src/domains/network-management",
+  "role": "requirements",
+  "implementation_header": "src/domains/network-management/subtask_targets/requirements/network_configuration_provenance_ea77633c.hpp",
+  "implementation_source": "src/domains/network-management/subtask_targets/requirements/network_configuration_provenance_ea77633c.cpp",
+  "test_target": "tests/structural-closure/domains/network-management/requirements/test_network_configuration_provenance_ea77633c.cpp",
+  "status": "SKELETON_MATERIALIZED",
+  "behavioral_credit": false,
+  "preservation": "PRESERVE_IMPLEMENT_EXTEND"
+}

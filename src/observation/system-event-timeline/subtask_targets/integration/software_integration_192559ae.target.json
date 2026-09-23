@@ -1,0 +1,12 @@
+{
+  "source_prompt": ".phases/phases/phase-39-system-event-timeline/prompts/39.71-phase-35-software-integration.md",
+  "phase_task": ".phases/phases/phase-39-system-event-timeline/TASK.md",
+  "canonical_root": "src/observation/system-event-timeline",
+  "role": "integration",
+  "implementation_header": "src/observation/system-event-timeline/subtask_targets/integration/software_integration_192559ae.hpp",
+  "implementation_source": "src/observation/system-event-timeline/subtask_targets/integration/software_integration_192559ae.cpp",
+  "test_target": "tests/structural-closure/observation/system-event-timeline/integration/test_software_integration_192559ae.cpp",
+  "status": "SKELETON_MATERIALIZED",
+  "behavioral_credit": false,
+  "preservation": "PRESERVE_IMPLEMENT_EXTEND"
+}

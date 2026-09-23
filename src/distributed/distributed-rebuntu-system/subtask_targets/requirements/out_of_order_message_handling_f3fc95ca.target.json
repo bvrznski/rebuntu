@@ -1,0 +1,12 @@
+{
+  "source_prompt": ".phases/phases/phase-51-distributed-rebuntu-system/prompts/51.090-out-of-order-message-handling.md",
+  "phase_task": ".phases/phases/phase-51-distributed-rebuntu-system/TASK.md",
+  "canonical_root": "src/distributed/distributed-rebuntu-system",
+  "role": "requirements",
+  "implementation_header": "src/distributed/distributed-rebuntu-system/subtask_targets/requirements/out_of_order_message_handling_f3fc95ca.hpp",
+  "implementation_source": "src/distributed/distributed-rebuntu-system/subtask_targets/requirements/out_of_order_message_handling_f3fc95ca.cpp",
+  "test_target": "tests/structural-closure/distributed/distributed-rebuntu-system/requirements/test_out_of_order_message_handling_f3fc95ca.cpp",
+  "status": "SKELETON_MATERIALIZED",
+  "behavioral_credit": false,
+  "preservation": "PRESERVE_IMPLEMENT_EXTEND"
+}

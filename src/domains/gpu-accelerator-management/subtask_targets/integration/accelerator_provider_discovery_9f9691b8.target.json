@@ -1,0 +1,12 @@
+{
+  "source_prompt": ".phases/phases/phase-34-gpu-accelerator-management/prompts/34.2-accelerator-provider-discovery.md",
+  "phase_task": ".phases/phases/phase-34-gpu-accelerator-management/TASK.md",
+  "canonical_root": "src/domains/gpu-accelerator-management",
+  "role": "integration",
+  "implementation_header": "src/domains/gpu-accelerator-management/subtask_targets/integration/accelerator_provider_discovery_9f9691b8.hpp",
+  "implementation_source": "src/domains/gpu-accelerator-management/subtask_targets/integration/accelerator_provider_discovery_9f9691b8.cpp",
+  "test_target": "tests/structural-closure/domains/gpu-accelerator-management/integration/test_accelerator_provider_discovery_9f9691b8.cpp",
+  "status": "SKELETON_MATERIALIZED",
+  "behavioral_credit": false,
+  "preservation": "PRESERVE_IMPLEMENT_EXTEND"
+}

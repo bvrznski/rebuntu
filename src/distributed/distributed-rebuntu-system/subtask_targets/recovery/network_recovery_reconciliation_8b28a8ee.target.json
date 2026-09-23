@@ -1,0 +1,12 @@
+{
+  "source_prompt": ".phases/phases/phase-51-distributed-rebuntu-system/prompts/51.202-network-recovery-reconciliation.md",
+  "phase_task": ".phases/phases/phase-51-distributed-rebuntu-system/TASK.md",
+  "canonical_root": "src/distributed/distributed-rebuntu-system",
+  "role": "recovery",
+  "implementation_header": "src/distributed/distributed-rebuntu-system/subtask_targets/recovery/network_recovery_reconciliation_8b28a8ee.hpp",
+  "implementation_source": "src/distributed/distributed-rebuntu-system/subtask_targets/recovery/network_recovery_reconciliation_8b28a8ee.cpp",
+  "test_target": "tests/structural-closure/distributed/distributed-rebuntu-system/recovery/test_network_recovery_reconciliation_8b28a8ee.cpp",
+  "status": "SKELETON_MATERIALIZED",
+  "behavioral_credit": false,
+  "preservation": "PRESERVE_IMPLEMENT_EXTEND"
+}

@@ -1,0 +1,12 @@
+{
+  "source_prompt": ".phases/phases/phase-29-process-workload-management/prompts/29.31-signal-delivery-planning.md",
+  "phase_task": ".phases/phases/phase-29-process-workload-management/TASK.md",
+  "canonical_root": "src/domains/process-workload-management",
+  "role": "planning",
+  "implementation_header": "src/domains/process-workload-management/subtask_targets/planning/signal_delivery_planning_a8986ef8.hpp",
+  "implementation_source": "src/domains/process-workload-management/subtask_targets/planning/signal_delivery_planning_a8986ef8.cpp",
+  "test_target": "tests/structural-closure/domains/process-workload-management/planning/test_signal_delivery_planning_a8986ef8.cpp",
+  "status": "SKELETON_MATERIALIZED",
+  "behavioral_credit": false,
+  "preservation": "PRESERVE_IMPLEMENT_EXTEND"
+}

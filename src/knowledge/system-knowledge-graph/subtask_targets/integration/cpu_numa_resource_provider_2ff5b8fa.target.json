@@ -1,0 +1,12 @@
+{
+  "source_prompt": ".phases/phases/phase-42-system-knowledge-graph/prompts/42.057-cpu-numa-resource-provider.md",
+  "phase_task": ".phases/phases/phase-42-system-knowledge-graph/TASK.md",
+  "canonical_root": "src/knowledge/system-knowledge-graph",
+  "role": "integration",
+  "implementation_header": "src/knowledge/system-knowledge-graph/subtask_targets/integration/cpu_numa_resource_provider_2ff5b8fa.hpp",
+  "implementation_source": "src/knowledge/system-knowledge-graph/subtask_targets/integration/cpu_numa_resource_provider_2ff5b8fa.cpp",
+  "test_target": "tests/structural-closure/knowledge/system-knowledge-graph/integration/test_cpu_numa_resource_provider_2ff5b8fa.cpp",
+  "status": "SKELETON_MATERIALIZED",
+  "behavioral_credit": false,
+  "preservation": "PRESERVE_IMPLEMENT_EXTEND"
+}

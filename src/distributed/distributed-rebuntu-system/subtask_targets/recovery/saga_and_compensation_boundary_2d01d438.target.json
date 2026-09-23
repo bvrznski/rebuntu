@@ -1,0 +1,12 @@
+{
+  "source_prompt": ".phases/phases/phase-51-distributed-rebuntu-system/prompts/51.389-saga-and-compensation-boundary.md",
+  "phase_task": ".phases/phases/phase-51-distributed-rebuntu-system/TASK.md",
+  "canonical_root": "src/distributed/distributed-rebuntu-system",
+  "role": "recovery",
+  "implementation_header": "src/distributed/distributed-rebuntu-system/subtask_targets/recovery/saga_and_compensation_boundary_2d01d438.hpp",
+  "implementation_source": "src/distributed/distributed-rebuntu-system/subtask_targets/recovery/saga_and_compensation_boundary_2d01d438.cpp",
+  "test_target": "tests/structural-closure/distributed/distributed-rebuntu-system/recovery/test_saga_and_compensation_boundary_2d01d438.cpp",
+  "status": "SKELETON_MATERIALIZED",
+  "behavioral_credit": false,
+  "preservation": "PRESERVE_IMPLEMENT_EXTEND"
+}

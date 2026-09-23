@@ -1,0 +1,12 @@
+{
+  "source_prompt": ".phases/phases/phase-25-system-control-panel/prompts/25.19-search,-command-palette-and-cross-system-navigation.md",
+  "phase_task": ".phases/phases/phase-25-system-control-panel/TASK.md",
+  "canonical_root": "src/operator/system-control-panel",
+  "role": "execution",
+  "implementation_header": "src/operator/system-control-panel/subtask_targets/execution/search_command_palette_and_cross_system_navigation_30aa3d94.hpp",
+  "implementation_source": "src/operator/system-control-panel/subtask_targets/execution/search_command_palette_and_cross_system_navigation_30aa3d94.cpp",
+  "test_target": "tests/structural-closure/operator/system-control-panel/execution/test_search_command_palette_and_cross_system_navigation_30aa3d94.cpp",
+  "status": "SKELETON_MATERIALIZED",
+  "behavioral_credit": false,
+  "preservation": "PRESERVE_IMPLEMENT_EXTEND"
+}

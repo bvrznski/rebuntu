@@ -1,0 +1,9 @@
+{
+  "component": "operational-attention-priority",
+  "canonical_root": "operator",
+  "phase_tasks": [
+    ".phases/phases/phase-101-operational-attention-priority/TASK.md"
+  ],
+  "status": "SKELETON",
+  "native_authority_rule": true
+}

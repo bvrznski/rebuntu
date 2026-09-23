@@ -1,0 +1,12 @@
+{
+  "source_prompt": ".phases/phases/phase-45-unified-control-plane/prompts/45.214-lock-ordering.md",
+  "phase_task": ".phases/phases/phase-45-unified-control-plane/TASK.md",
+  "canonical_root": "src/runtime/unified-control-plane",
+  "role": "requirements",
+  "implementation_header": "src/runtime/unified-control-plane/subtask_targets/requirements/lock_ordering_551b8c1c.hpp",
+  "implementation_source": "src/runtime/unified-control-plane/subtask_targets/requirements/lock_ordering_551b8c1c.cpp",
+  "test_target": "tests/structural-closure/runtime/unified-control-plane/requirements/test_lock_ordering_551b8c1c.cpp",
+  "status": "SKELETON_MATERIALIZED",
+  "behavioral_credit": false,
+  "preservation": "PRESERVE_IMPLEMENT_EXTEND"
+}

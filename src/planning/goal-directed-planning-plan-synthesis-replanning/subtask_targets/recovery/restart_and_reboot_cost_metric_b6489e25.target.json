@@ -1,0 +1,12 @@
+{
+  "source_prompt": ".phases/phases/phase-55-goal-directed-planning-plan-synthesis-replanning/prompts/55.65-rebuntu-phase-55-65-restart-and-reboot-cost-metric.md",
+  "phase_task": ".phases/phases/phase-55-goal-directed-planning-plan-synthesis-replanning/TASK.md",
+  "canonical_root": "src/planning/goal-directed-planning-plan-synthesis-replanning",
+  "role": "recovery",
+  "implementation_header": "src/planning/goal-directed-planning-plan-synthesis-replanning/subtask_targets/recovery/restart_and_reboot_cost_metric_b6489e25.hpp",
+  "implementation_source": "src/planning/goal-directed-planning-plan-synthesis-replanning/subtask_targets/recovery/restart_and_reboot_cost_metric_b6489e25.cpp",
+  "test_target": "tests/structural-closure/planning/goal-directed-planning-plan-synthesis-replanning/recovery/test_restart_and_reboot_cost_metric_b6489e25.cpp",
+  "status": "SKELETON_MATERIALIZED",
+  "behavioral_credit": false,
+  "preservation": "PRESERVE_IMPLEMENT_EXTEND"
+}

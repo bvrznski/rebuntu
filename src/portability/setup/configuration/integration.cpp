@@ -1,0 +1,6 @@
+#include "portability/setup/configuration/integration.hpp"
+
+// Structural translation-unit slot only. No maturity credit.
+namespace rebuntu::structural_slots {
+static_assert(Skeleton_f700e50642_Integration::structural_revision == 25);
+}

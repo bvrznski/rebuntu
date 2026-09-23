@@ -1,0 +1,12 @@
+{
+  "source_prompt": ".phases/phases/phase-47-os-task-policy-system/prompts/47.034-conditional-task-class.md",
+  "phase_task": ".phases/phases/phase-47-os-task-policy-system/TASK.md",
+  "canonical_root": "src/runtime/os-task-policy-system",
+  "role": "requirements",
+  "implementation_header": "src/runtime/os-task-policy-system/subtask_targets/requirements/conditional_task_class_7eef1a48.hpp",
+  "implementation_source": "src/runtime/os-task-policy-system/subtask_targets/requirements/conditional_task_class_7eef1a48.cpp",
+  "test_target": "tests/structural-closure/runtime/os-task-policy-system/requirements/test_conditional_task_class_7eef1a48.cpp",
+  "status": "SKELETON_MATERIALIZED",
+  "behavioral_credit": false,
+  "preservation": "PRESERVE_IMPLEMENT_EXTEND"
+}

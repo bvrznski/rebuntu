@@ -1,0 +1,6 @@
+#include "operator/gui/transactions/rollback/lifecycle.hpp"
+
+// Structural translation-unit slot only. No maturity credit.
+namespace rebuntu::structural_slots {
+static_assert(Skeleton_d5fe8eb80f_Lifecycle::structural_revision == 25);
+}

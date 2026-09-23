@@ -1,0 +1,6 @@
+#include "domains/power-thermal-acoustic-optimization/roles/validation.hpp"
+
+// Structural translation-unit slot only. No maturity credit.
+namespace rebuntu::structural_slots {
+static_assert(Skeleton_84ce671ce3_Validation::structural_revision == 25);
+}

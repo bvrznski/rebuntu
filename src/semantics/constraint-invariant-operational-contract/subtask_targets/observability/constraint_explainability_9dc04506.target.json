@@ -1,0 +1,12 @@
+{
+  "source_prompt": ".phases/phases/phase-58-constraint-invariant-operational-contract/prompts/58.41-rebuntu-phase-58-41-constraint-explainability.md",
+  "phase_task": ".phases/phases/phase-58-constraint-invariant-operational-contract/TASK.md",
+  "canonical_root": "src/semantics/constraint-invariant-operational-contract",
+  "role": "observability",
+  "implementation_header": "src/semantics/constraint-invariant-operational-contract/subtask_targets/observability/constraint_explainability_9dc04506.hpp",
+  "implementation_source": "src/semantics/constraint-invariant-operational-contract/subtask_targets/observability/constraint_explainability_9dc04506.cpp",
+  "test_target": "tests/structural-closure/semantics/constraint-invariant-operational-contract/observability/test_constraint_explainability_9dc04506.cpp",
+  "status": "SKELETON_MATERIALIZED",
+  "behavioral_credit": false,
+  "preservation": "PRESERVE_IMPLEMENT_EXTEND"
+}

@@ -1,0 +1,12 @@
+{
+  "source_prompt": ".phases/phases/phase-43-operator-intelligence-system/prompts/43.011-candidate-plan-model.md",
+  "phase_task": ".phases/phases/phase-43-operator-intelligence-system/TASK.md",
+  "canonical_root": "src/operator/operator-intelligence-system",
+  "role": "planning",
+  "implementation_header": "src/operator/operator-intelligence-system/subtask_targets/planning/candidate_plan_model_6b865f3d.hpp",
+  "implementation_source": "src/operator/operator-intelligence-system/subtask_targets/planning/candidate_plan_model_6b865f3d.cpp",
+  "test_target": "tests/structural-closure/operator/operator-intelligence-system/planning/test_candidate_plan_model_6b865f3d.cpp",
+  "status": "SKELETON_MATERIALIZED",
+  "behavioral_credit": false,
+  "preservation": "PRESERVE_IMPLEMENT_EXTEND"
+}

@@ -1,0 +1,12 @@
+{
+  "source_prompt": ".phases/phases/phase-38-user-identity-management/prompts/38.11-nss-integration-boundary.md",
+  "phase_task": ".phases/phases/phase-38-user-identity-management/TASK.md",
+  "canonical_root": "src/domains/user-identity-management",
+  "role": "integration",
+  "implementation_header": "src/domains/user-identity-management/subtask_targets/integration/nss_integration_boundary_8cb281c2.hpp",
+  "implementation_source": "src/domains/user-identity-management/subtask_targets/integration/nss_integration_boundary_8cb281c2.cpp",
+  "test_target": "tests/structural-closure/domains/user-identity-management/integration/test_nss_integration_boundary_8cb281c2.cpp",
+  "status": "SKELETON_MATERIALIZED",
+  "behavioral_credit": false,
+  "preservation": "PRESERVE_IMPLEMENT_EXTEND"
+}

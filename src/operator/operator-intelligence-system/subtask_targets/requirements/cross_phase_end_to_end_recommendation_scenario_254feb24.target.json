@@ -1,0 +1,12 @@
+{
+  "source_prompt": ".phases/phases/phase-43-operator-intelligence-system/prompts/43.197-cross-phase-end-to-end-recommendation-scenario.md",
+  "phase_task": ".phases/phases/phase-43-operator-intelligence-system/TASK.md",
+  "canonical_root": "src/operator/operator-intelligence-system",
+  "role": "requirements",
+  "implementation_header": "src/operator/operator-intelligence-system/subtask_targets/requirements/cross_phase_end_to_end_recommendation_scenario_254feb24.hpp",
+  "implementation_source": "src/operator/operator-intelligence-system/subtask_targets/requirements/cross_phase_end_to_end_recommendation_scenario_254feb24.cpp",
+  "test_target": "tests/structural-closure/operator/operator-intelligence-system/requirements/test_cross_phase_end_to_end_recommendation_scenario_254feb24.cpp",
+  "status": "SKELETON_MATERIALIZED",
+  "behavioral_credit": false,
+  "preservation": "PRESERVE_IMPLEMENT_EXTEND"
+}

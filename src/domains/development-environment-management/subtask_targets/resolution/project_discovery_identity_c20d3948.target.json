@@ -1,0 +1,12 @@
+{
+  "source_prompt": ".phases/phases/phase-28-development-environment-management/prompts/28.2-project-discovery-identity.md",
+  "phase_task": ".phases/phases/phase-28-development-environment-management/TASK.md",
+  "canonical_root": "src/domains/development-environment-management",
+  "role": "resolution",
+  "implementation_header": "src/domains/development-environment-management/subtask_targets/resolution/project_discovery_identity_c20d3948.hpp",
+  "implementation_source": "src/domains/development-environment-management/subtask_targets/resolution/project_discovery_identity_c20d3948.cpp",
+  "test_target": "tests/structural-closure/domains/development-environment-management/resolution/test_project_discovery_identity_c20d3948.cpp",
+  "status": "SKELETON_MATERIALIZED",
+  "behavioral_credit": false,
+  "preservation": "PRESERVE_IMPLEMENT_EXTEND"
+}

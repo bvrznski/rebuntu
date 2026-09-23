@@ -1,0 +1,12 @@
+{
+  "source_prompt": ".phases/phases/phase-05-system-observation-inventory-discovery/prompts/5.45_inventory_indexing.md",
+  "phase_task": ".phases/phases/phase-05-system-observation-inventory-discovery/TASK.md",
+  "canonical_root": "src/observation/system-observation-inventory-discovery",
+  "role": "requirements",
+  "implementation_header": "src/observation/system-observation-inventory-discovery/subtask_targets/requirements/inventory_indexing_abf4de12.hpp",
+  "implementation_source": "src/observation/system-observation-inventory-discovery/subtask_targets/requirements/inventory_indexing_abf4de12.cpp",
+  "test_target": "tests/structural-closure/observation/system-observation-inventory-discovery/requirements/test_inventory_indexing_abf4de12.cpp",
+  "status": "SKELETON_MATERIALIZED",
+  "behavioral_credit": false,
+  "preservation": "PRESERVE_IMPLEMENT_EXTEND"
+}

@@ -1,0 +1,12 @@
+{
+  "source_prompt": ".phases/phases/phase-50-platform-abstraction-portability-foundation/prompts/50.246-service-provider-contract.md",
+  "phase_task": ".phases/phases/phase-50-platform-abstraction-portability-foundation/TASK.md",
+  "canonical_root": "src/providers/platform-abstraction-portability-foundation",
+  "role": "integration",
+  "implementation_header": "src/providers/platform-abstraction-portability-foundation/subtask_targets/integration/service_provider_contract_dff65d40.hpp",
+  "implementation_source": "src/providers/platform-abstraction-portability-foundation/subtask_targets/integration/service_provider_contract_dff65d40.cpp",
+  "test_target": "tests/structural-closure/providers/platform-abstraction-portability-foundation/integration/test_service_provider_contract_dff65d40.cpp",
+  "status": "SKELETON_MATERIALIZED",
+  "behavioral_credit": false,
+  "preservation": "PRESERVE_IMPLEMENT_EXTEND"
+}

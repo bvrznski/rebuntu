@@ -1,0 +1,6 @@
+#include "domains/gpu-accelerator-management/state/lifecycle.hpp"
+
+// Structural translation-unit slot only. No maturity credit.
+namespace rebuntu::structural_slots {
+static_assert(Skeleton_11b8c058cf_Lifecycle::structural_revision == 25);
+}

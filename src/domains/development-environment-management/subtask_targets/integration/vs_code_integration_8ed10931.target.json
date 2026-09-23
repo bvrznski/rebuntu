@@ -1,0 +1,12 @@
+{
+  "source_prompt": ".phases/phases/phase-28-development-environment-management/prompts/28.20-vs-code-integration.md",
+  "phase_task": ".phases/phases/phase-28-development-environment-management/TASK.md",
+  "canonical_root": "src/domains/development-environment-management",
+  "role": "integration",
+  "implementation_header": "src/domains/development-environment-management/subtask_targets/integration/vs_code_integration_8ed10931.hpp",
+  "implementation_source": "src/domains/development-environment-management/subtask_targets/integration/vs_code_integration_8ed10931.cpp",
+  "test_target": "tests/structural-closure/domains/development-environment-management/integration/test_vs_code_integration_8ed10931.cpp",
+  "status": "SKELETON_MATERIALIZED",
+  "behavioral_credit": false,
+  "preservation": "PRESERVE_IMPLEMENT_EXTEND"
+}

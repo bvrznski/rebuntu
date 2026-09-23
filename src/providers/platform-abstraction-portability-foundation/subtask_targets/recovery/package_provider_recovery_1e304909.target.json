@@ -1,0 +1,12 @@
+{
+  "source_prompt": ".phases/phases/phase-50-platform-abstraction-portability-foundation/prompts/50.291-package-provider-recovery.md",
+  "phase_task": ".phases/phases/phase-50-platform-abstraction-portability-foundation/TASK.md",
+  "canonical_root": "src/providers/platform-abstraction-portability-foundation",
+  "role": "recovery",
+  "implementation_header": "src/providers/platform-abstraction-portability-foundation/subtask_targets/recovery/package_provider_recovery_1e304909.hpp",
+  "implementation_source": "src/providers/platform-abstraction-portability-foundation/subtask_targets/recovery/package_provider_recovery_1e304909.cpp",
+  "test_target": "tests/structural-closure/providers/platform-abstraction-portability-foundation/recovery/test_package_provider_recovery_1e304909.cpp",
+  "status": "SKELETON_MATERIALIZED",
+  "behavioral_credit": false,
+  "preservation": "PRESERVE_IMPLEMENT_EXTEND"
+}

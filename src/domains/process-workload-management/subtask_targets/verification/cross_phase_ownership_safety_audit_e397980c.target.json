@@ -1,0 +1,12 @@
+{
+  "source_prompt": ".phases/phases/phase-29-process-workload-management/prompts/29.46-cross-phase-ownership-safety-audit.md",
+  "phase_task": ".phases/phases/phase-29-process-workload-management/TASK.md",
+  "canonical_root": "src/domains/process-workload-management",
+  "role": "verification",
+  "implementation_header": "src/domains/process-workload-management/subtask_targets/verification/cross_phase_ownership_safety_audit_e397980c.hpp",
+  "implementation_source": "src/domains/process-workload-management/subtask_targets/verification/cross_phase_ownership_safety_audit_e397980c.cpp",
+  "test_target": "tests/structural-closure/domains/process-workload-management/verification/test_cross_phase_ownership_safety_audit_e397980c.cpp",
+  "status": "SKELETON_MATERIALIZED",
+  "behavioral_credit": false,
+  "preservation": "PRESERVE_IMPLEMENT_EXTEND"
+}

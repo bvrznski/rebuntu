@@ -1,0 +1,5 @@
+#include "planning.hpp"
+
+// XXVII out-of-line implementation reservation for planning.
+// Source: .phases/phases/phase-55-goal-directed-planning-plan-synthesis-replanning/prompts/55.131-rebuntu-phase-55-131-distributed-failure-assumptions.md
+// Intentionally behavior-free until prompt-derived implementation is supplied.

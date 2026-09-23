@@ -1,0 +1,12 @@
+{
+  "source_prompt": ".phases/phases/phase-73-predictive-maintenance-failure-prevention/prompts/73.3.md",
+  "phase_task": ".phases/phases/phase-73-predictive-maintenance-failure-prevention/TASK.md",
+  "canonical_root": "src/runtime/predictive-maintenance-failure-prevention",
+  "role": "requirements",
+  "implementation_header": "src/runtime/predictive-maintenance-failure-prevention/subtask_targets/requirements/requirement_ff11ed3e.hpp",
+  "implementation_source": "src/runtime/predictive-maintenance-failure-prevention/subtask_targets/requirements/requirement_ff11ed3e.cpp",
+  "test_target": "tests/structural-closure/runtime/predictive-maintenance-failure-prevention/requirements/test_requirement_ff11ed3e.cpp",
+  "status": "SKELETON_MATERIALIZED",
+  "behavioral_credit": false,
+  "preservation": "PRESERVE_IMPLEMENT_EXTEND"
+}

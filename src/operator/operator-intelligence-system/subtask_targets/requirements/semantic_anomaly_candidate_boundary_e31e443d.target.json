@@ -1,0 +1,12 @@
+{
+  "source_prompt": ".phases/phases/phase-43-operator-intelligence-system/prompts/43.062-semantic-anomaly-candidate-boundary.md",
+  "phase_task": ".phases/phases/phase-43-operator-intelligence-system/TASK.md",
+  "canonical_root": "src/operator/operator-intelligence-system",
+  "role": "requirements",
+  "implementation_header": "src/operator/operator-intelligence-system/subtask_targets/requirements/semantic_anomaly_candidate_boundary_e31e443d.hpp",
+  "implementation_source": "src/operator/operator-intelligence-system/subtask_targets/requirements/semantic_anomaly_candidate_boundary_e31e443d.cpp",
+  "test_target": "tests/structural-closure/operator/operator-intelligence-system/requirements/test_semantic_anomaly_candidate_boundary_e31e443d.cpp",
+  "status": "SKELETON_MATERIALIZED",
+  "behavioral_credit": false,
+  "preservation": "PRESERVE_IMPLEMENT_EXTEND"
+}

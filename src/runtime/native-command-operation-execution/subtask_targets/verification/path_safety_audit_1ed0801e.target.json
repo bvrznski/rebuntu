@@ -1,0 +1,12 @@
+{
+  "source_prompt": ".phases/phases/phase-06-native-command-operation-execution/prompts/6.59_path_safety_audit.md",
+  "phase_task": ".phases/phases/phase-06-native-command-operation-execution/TASK.md",
+  "canonical_root": "src/runtime/native-command-operation-execution",
+  "role": "verification",
+  "implementation_header": "src/runtime/native-command-operation-execution/subtask_targets/verification/path_safety_audit_1ed0801e.hpp",
+  "implementation_source": "src/runtime/native-command-operation-execution/subtask_targets/verification/path_safety_audit_1ed0801e.cpp",
+  "test_target": "tests/structural-closure/runtime/native-command-operation-execution/verification/test_path_safety_audit_1ed0801e.cpp",
+  "status": "SKELETON_MATERIALIZED",
+  "behavioral_credit": false,
+  "preservation": "PRESERVE_IMPLEMENT_EXTEND"
+}

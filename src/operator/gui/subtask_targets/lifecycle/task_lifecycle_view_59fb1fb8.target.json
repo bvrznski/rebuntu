@@ -1,0 +1,12 @@
+{
+  "source_prompt": ".phases/phases/phase-49-gui/prompts/49.235-task-lifecycle-view.md",
+  "phase_task": ".phases/phases/phase-49-gui/TASK.md",
+  "canonical_root": "src/operator/gui",
+  "role": "lifecycle",
+  "implementation_header": "src/operator/gui/subtask_targets/lifecycle/task_lifecycle_view_59fb1fb8.hpp",
+  "implementation_source": "src/operator/gui/subtask_targets/lifecycle/task_lifecycle_view_59fb1fb8.cpp",
+  "test_target": "tests/structural-closure/operator/gui/lifecycle/test_task_lifecycle_view_59fb1fb8.cpp",
+  "status": "SKELETON_MATERIALIZED",
+  "behavioral_credit": false,
+  "preservation": "PRESERVE_IMPLEMENT_EXTEND"
+}

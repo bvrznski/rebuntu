@@ -1,0 +1,12 @@
+{
+  "source_prompt": ".phases/phases/phase-51-distributed-rebuntu-system/prompts/51.288-phase-44-adaptive-workstation-integration.md",
+  "phase_task": ".phases/phases/phase-51-distributed-rebuntu-system/TASK.md",
+  "canonical_root": "src/distributed/distributed-rebuntu-system",
+  "role": "integration",
+  "implementation_header": "src/distributed/distributed-rebuntu-system/subtask_targets/integration/adaptive_workstation_integration_2b0b4ebf.hpp",
+  "implementation_source": "src/distributed/distributed-rebuntu-system/subtask_targets/integration/adaptive_workstation_integration_2b0b4ebf.cpp",
+  "test_target": "tests/structural-closure/distributed/distributed-rebuntu-system/integration/test_adaptive_workstation_integration_2b0b4ebf.cpp",
+  "status": "SKELETON_MATERIALIZED",
+  "behavioral_credit": false,
+  "preservation": "PRESERVE_IMPLEMENT_EXTEND"
+}

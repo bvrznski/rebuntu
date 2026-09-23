@@ -1,0 +1,12 @@
+{
+  "source_prompt": ".phases/phases/phase-54-dynamic-system-capability-affordance-model/prompts/54.102-rebuntu-phase-54-102-capability-search-integration.md",
+  "phase_task": ".phases/phases/phase-54-dynamic-system-capability-affordance-model/TASK.md",
+  "canonical_root": "src/semantics/dynamic-system-capability-affordance-model",
+  "role": "integration",
+  "implementation_header": "src/semantics/dynamic-system-capability-affordance-model/subtask_targets/integration/capability_search_integration_f1ebf4e2.hpp",
+  "implementation_source": "src/semantics/dynamic-system-capability-affordance-model/subtask_targets/integration/capability_search_integration_f1ebf4e2.cpp",
+  "test_target": "tests/structural-closure/semantics/dynamic-system-capability-affordance-model/integration/test_capability_search_integration_f1ebf4e2.cpp",
+  "status": "SKELETON_MATERIALIZED",
+  "behavioral_credit": false,
+  "preservation": "PRESERVE_IMPLEMENT_EXTEND"
+}

@@ -1,0 +1,12 @@
+{
+  "source_prompt": ".phases/phases/phase-35-package-software-management/prompts/35.1-software-domain-model.md",
+  "phase_task": ".phases/phases/phase-35-package-software-management/TASK.md",
+  "canonical_root": "src/domains/package-software-management",
+  "role": "contracts",
+  "implementation_header": "src/domains/package-software-management/subtask_targets/contracts/software_domain_model_e4305262.hpp",
+  "implementation_source": "src/domains/package-software-management/subtask_targets/contracts/software_domain_model_e4305262.cpp",
+  "test_target": "tests/structural-closure/domains/package-software-management/contracts/test_software_domain_model_e4305262.cpp",
+  "status": "SKELETON_MATERIALIZED",
+  "behavioral_credit": false,
+  "preservation": "PRESERVE_IMPLEMENT_EXTEND"
+}

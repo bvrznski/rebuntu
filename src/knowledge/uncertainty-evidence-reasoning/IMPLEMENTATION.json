@@ -1,0 +1,9 @@
+{
+  "component": "uncertainty-evidence-reasoning",
+  "canonical_root": "knowledge",
+  "phase_tasks": [
+    ".phases/phases/phase-91-uncertainty-evidence-reasoning/TASK.md"
+  ],
+  "status": "SKELETON",
+  "native_authority_rule": true
+}

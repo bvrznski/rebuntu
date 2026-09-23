@@ -1,0 +1,6 @@
+#include "runtime/maintenance/desired_state/integration.hpp"
+
+// Structural translation-unit slot only. No maturity credit.
+namespace rebuntu::structural_slots {
+static_assert(Skeleton_2b3dc26e9a_Integration::structural_revision == 25);
+}

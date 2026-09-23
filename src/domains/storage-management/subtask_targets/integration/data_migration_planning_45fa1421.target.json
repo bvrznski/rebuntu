@@ -1,0 +1,12 @@
+{
+  "source_prompt": ".phases/phases/phase-32-storage-management/prompts/32.42-data-migration-planning.md",
+  "phase_task": ".phases/phases/phase-32-storage-management/TASK.md",
+  "canonical_root": "src/domains/storage-management",
+  "role": "integration",
+  "implementation_header": "src/domains/storage-management/subtask_targets/integration/data_migration_planning_45fa1421.hpp",
+  "implementation_source": "src/domains/storage-management/subtask_targets/integration/data_migration_planning_45fa1421.cpp",
+  "test_target": "tests/structural-closure/domains/storage-management/integration/test_data_migration_planning_45fa1421.cpp",
+  "status": "SKELETON_MATERIALIZED",
+  "behavioral_credit": false,
+  "preservation": "PRESERVE_IMPLEMENT_EXTEND"
+}

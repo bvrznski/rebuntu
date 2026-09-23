@@ -1,0 +1,12 @@
+{
+  "source_prompt": ".phases/phases/phase-39-system-event-timeline/prompts/39.77-phase-44-adaptive-system-integration.md",
+  "phase_task": ".phases/phases/phase-39-system-event-timeline/TASK.md",
+  "canonical_root": "src/observation/system-event-timeline",
+  "role": "integration",
+  "implementation_header": "src/observation/system-event-timeline/subtask_targets/integration/adaptive_system_integration_3fe57083.hpp",
+  "implementation_source": "src/observation/system-event-timeline/subtask_targets/integration/adaptive_system_integration_3fe57083.cpp",
+  "test_target": "tests/structural-closure/observation/system-event-timeline/integration/test_adaptive_system_integration_3fe57083.cpp",
+  "status": "SKELETON_MATERIALIZED",
+  "behavioral_credit": false,
+  "preservation": "PRESERVE_IMPLEMENT_EXTEND"
+}

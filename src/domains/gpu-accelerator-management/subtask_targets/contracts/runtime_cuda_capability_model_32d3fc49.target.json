@@ -1,0 +1,12 @@
+{
+  "source_prompt": ".phases/phases/phase-34-gpu-accelerator-management/prompts/34.8-runtime-cuda-capability-model.md",
+  "phase_task": ".phases/phases/phase-34-gpu-accelerator-management/TASK.md",
+  "canonical_root": "src/domains/gpu-accelerator-management",
+  "role": "contracts",
+  "implementation_header": "src/domains/gpu-accelerator-management/subtask_targets/contracts/runtime_cuda_capability_model_32d3fc49.hpp",
+  "implementation_source": "src/domains/gpu-accelerator-management/subtask_targets/contracts/runtime_cuda_capability_model_32d3fc49.cpp",
+  "test_target": "tests/structural-closure/domains/gpu-accelerator-management/contracts/test_runtime_cuda_capability_model_32d3fc49.cpp",
+  "status": "SKELETON_MATERIALIZED",
+  "behavioral_credit": false,
+  "preservation": "PRESERVE_IMPLEMENT_EXTEND"
+}

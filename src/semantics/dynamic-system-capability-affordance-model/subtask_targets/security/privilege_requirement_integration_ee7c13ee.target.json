@@ -1,0 +1,12 @@
+{
+  "source_prompt": ".phases/phases/phase-54-dynamic-system-capability-affordance-model/prompts/54.44-rebuntu-phase-54-44-privilege-requirement-integration.md",
+  "phase_task": ".phases/phases/phase-54-dynamic-system-capability-affordance-model/TASK.md",
+  "canonical_root": "src/semantics/dynamic-system-capability-affordance-model",
+  "role": "security",
+  "implementation_header": "src/semantics/dynamic-system-capability-affordance-model/subtask_targets/security/privilege_requirement_integration_ee7c13ee.hpp",
+  "implementation_source": "src/semantics/dynamic-system-capability-affordance-model/subtask_targets/security/privilege_requirement_integration_ee7c13ee.cpp",
+  "test_target": "tests/structural-closure/semantics/dynamic-system-capability-affordance-model/security/test_privilege_requirement_integration_ee7c13ee.cpp",
+  "status": "SKELETON_MATERIALIZED",
+  "behavioral_credit": false,
+  "preservation": "PRESERVE_IMPLEMENT_EXTEND"
+}

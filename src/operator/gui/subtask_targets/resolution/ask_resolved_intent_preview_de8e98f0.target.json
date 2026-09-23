@@ -1,0 +1,12 @@
+{
+  "source_prompt": ".phases/phases/phase-49-gui/prompts/49.213-ask-resolved-intent-preview.md",
+  "phase_task": ".phases/phases/phase-49-gui/TASK.md",
+  "canonical_root": "src/operator/gui",
+  "role": "resolution",
+  "implementation_header": "src/operator/gui/subtask_targets/resolution/ask_resolved_intent_preview_de8e98f0.hpp",
+  "implementation_source": "src/operator/gui/subtask_targets/resolution/ask_resolved_intent_preview_de8e98f0.cpp",
+  "test_target": "tests/structural-closure/operator/gui/resolution/test_ask_resolved_intent_preview_de8e98f0.cpp",
+  "status": "SKELETON_MATERIALIZED",
+  "behavioral_credit": false,
+  "preservation": "PRESERVE_IMPLEMENT_EXTEND"
+}

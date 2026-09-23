@@ -1,0 +1,6 @@
+#include "security/privilege-boundary-secure-execution/scheduling/dispatch/validation.hpp"
+
+// Structural translation-unit slot only. No maturity credit.
+namespace rebuntu::structural_slots {
+static_assert(Skeleton_14a423fafc_Validation::structural_revision == 25);
+}

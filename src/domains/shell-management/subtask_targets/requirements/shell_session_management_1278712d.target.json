@@ -1,0 +1,12 @@
+{
+  "source_prompt": ".phases/phases/phase-26-shell-management/prompts/26.12-shell-session-management.md",
+  "phase_task": ".phases/phases/phase-26-shell-management/TASK.md",
+  "canonical_root": "src/domains/shell-management",
+  "role": "requirements",
+  "implementation_header": "src/domains/shell-management/subtask_targets/requirements/shell_session_management_1278712d.hpp",
+  "implementation_source": "src/domains/shell-management/subtask_targets/requirements/shell_session_management_1278712d.cpp",
+  "test_target": "tests/structural-closure/domains/shell-management/requirements/test_shell_session_management_1278712d.cpp",
+  "status": "SKELETON_MATERIALIZED",
+  "behavioral_credit": false,
+  "preservation": "PRESERVE_IMPLEMENT_EXTEND"
+}

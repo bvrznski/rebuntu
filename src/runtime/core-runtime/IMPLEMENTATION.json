@@ -1,0 +1,9 @@
+{
+  "component": "core-runtime",
+  "canonical_root": "runtime",
+  "phase_tasks": [
+    ".phases/phases/phase-03-core-runtime/TASK.md"
+  ],
+  "status": "SKELETON",
+  "native_authority_rule": true
+}

@@ -1,0 +1,12 @@
+{
+  "source_prompt": ".phases/phases/phase-44-adaptive-workstation-system/prompts/44.308-agents-md-permanent-adaptive-contract.md",
+  "phase_task": ".phases/phases/phase-44-adaptive-workstation-system/TASK.md",
+  "canonical_root": "src/domains/adaptive-workstation-system",
+  "role": "contracts",
+  "implementation_header": "src/domains/adaptive-workstation-system/subtask_targets/contracts/agents_md_permanent_adaptive_contract_92efadad.hpp",
+  "implementation_source": "src/domains/adaptive-workstation-system/subtask_targets/contracts/agents_md_permanent_adaptive_contract_92efadad.cpp",
+  "test_target": "tests/structural-closure/domains/adaptive-workstation-system/contracts/test_agents_md_permanent_adaptive_contract_92efadad.cpp",
+  "status": "SKELETON_MATERIALIZED",
+  "behavioral_credit": false,
+  "preservation": "PRESERVE_IMPLEMENT_EXTEND"
+}

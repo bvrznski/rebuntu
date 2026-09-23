@@ -1,0 +1,12 @@
+{
+  "source_prompt": ".phases/phases/phase-43-operator-intelligence-system/prompts/43.198-crash-and-restart-recovery.md",
+  "phase_task": ".phases/phases/phase-43-operator-intelligence-system/TASK.md",
+  "canonical_root": "src/operator/operator-intelligence-system",
+  "role": "recovery",
+  "implementation_header": "src/operator/operator-intelligence-system/subtask_targets/recovery/crash_and_restart_recovery_829a2160.hpp",
+  "implementation_source": "src/operator/operator-intelligence-system/subtask_targets/recovery/crash_and_restart_recovery_829a2160.cpp",
+  "test_target": "tests/structural-closure/operator/operator-intelligence-system/recovery/test_crash_and_restart_recovery_829a2160.cpp",
+  "status": "SKELETON_MATERIALIZED",
+  "behavioral_credit": false,
+  "preservation": "PRESERVE_IMPLEMENT_EXTEND"
+}

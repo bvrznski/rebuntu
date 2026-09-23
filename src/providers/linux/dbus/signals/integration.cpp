@@ -1,0 +1,6 @@
+#include "providers/linux/dbus/signals/integration.hpp"
+
+// Structural translation-unit slot only. No maturity credit.
+namespace rebuntu::structural_slots {
+static_assert(Skeleton_30b8b7fdc6_Integration::structural_revision == 25);
+}

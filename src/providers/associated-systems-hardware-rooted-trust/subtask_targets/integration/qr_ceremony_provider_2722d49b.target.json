@@ -1,0 +1,12 @@
+{
+  "source_prompt": ".phases/phases/phase-52-associated-systems-hardware-rooted-trust/prompts/52.069-qr-ceremony-provider.md",
+  "phase_task": ".phases/phases/phase-52-associated-systems-hardware-rooted-trust/TASK.md",
+  "canonical_root": "src/providers/associated-systems-hardware-rooted-trust",
+  "role": "integration",
+  "implementation_header": "src/providers/associated-systems-hardware-rooted-trust/subtask_targets/integration/qr_ceremony_provider_2722d49b.hpp",
+  "implementation_source": "src/providers/associated-systems-hardware-rooted-trust/subtask_targets/integration/qr_ceremony_provider_2722d49b.cpp",
+  "test_target": "tests/structural-closure/providers/associated-systems-hardware-rooted-trust/integration/test_qr_ceremony_provider_2722d49b.cpp",
+  "status": "SKELETON_MATERIALIZED",
+  "behavioral_credit": false,
+  "preservation": "PRESERVE_IMPLEMENT_EXTEND"
+}

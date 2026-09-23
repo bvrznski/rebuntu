@@ -1,0 +1,12 @@
+{
+  "source_prompt": ".phases/phases/phase-24-evergreen-platform/prompts/24.8_transactional_platform_evolution_state_machine.md",
+  "phase_task": ".phases/phases/phase-24-evergreen-platform/TASK.md",
+  "canonical_root": "src/runtime/evergreen-platform",
+  "role": "lifecycle",
+  "implementation_header": "src/runtime/evergreen-platform/subtask_targets/lifecycle/transactional_platform_evolution_state_machine_816d63a8.hpp",
+  "implementation_source": "src/runtime/evergreen-platform/subtask_targets/lifecycle/transactional_platform_evolution_state_machine_816d63a8.cpp",
+  "test_target": "tests/structural-closure/runtime/evergreen-platform/lifecycle/test_transactional_platform_evolution_state_machine_816d63a8.cpp",
+  "status": "SKELETON_MATERIALIZED",
+  "behavioral_credit": false,
+  "preservation": "PRESERVE_IMPLEMENT_EXTEND"
+}

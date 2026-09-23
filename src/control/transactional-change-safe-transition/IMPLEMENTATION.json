@@ -1,0 +1,10 @@
+{
+  "component": "transactional-change-safe-transition",
+  "canonical_root": "control",
+  "phase_tasks": [
+    ".phases/phases/phase-60-transactional-change-safe-transition/TASK.md",
+    ".phases/phases/phase-66-transactional-change-safe-transition/TASK.md"
+  ],
+  "status": "SKELETON",
+  "native_authority_rule": true
+}

@@ -1,0 +1,12 @@
+{
+  "source_prompt": ".phases/phases/phase-41-automation-workflow-system/prompts/41.078-fallback-paths.md",
+  "phase_task": ".phases/phases/phase-41-automation-workflow-system/TASK.md",
+  "canonical_root": "src/automation/automation-workflow-system",
+  "role": "requirements",
+  "implementation_header": "src/automation/automation-workflow-system/subtask_targets/requirements/fallback_paths_193d4388.hpp",
+  "implementation_source": "src/automation/automation-workflow-system/subtask_targets/requirements/fallback_paths_193d4388.cpp",
+  "test_target": "tests/structural-closure/automation/automation-workflow-system/requirements/test_fallback_paths_193d4388.cpp",
+  "status": "SKELETON_MATERIALIZED",
+  "behavioral_credit": false,
+  "preservation": "PRESERVE_IMPLEMENT_EXTEND"
+}

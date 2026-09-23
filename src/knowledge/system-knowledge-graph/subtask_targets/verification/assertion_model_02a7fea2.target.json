@@ -1,0 +1,12 @@
+{
+  "source_prompt": ".phases/phases/phase-42-system-knowledge-graph/prompts/42.008-assertion-model.md",
+  "phase_task": ".phases/phases/phase-42-system-knowledge-graph/TASK.md",
+  "canonical_root": "src/knowledge/system-knowledge-graph",
+  "role": "verification",
+  "implementation_header": "src/knowledge/system-knowledge-graph/subtask_targets/verification/assertion_model_02a7fea2.hpp",
+  "implementation_source": "src/knowledge/system-knowledge-graph/subtask_targets/verification/assertion_model_02a7fea2.cpp",
+  "test_target": "tests/structural-closure/knowledge/system-knowledge-graph/verification/test_assertion_model_02a7fea2.cpp",
+  "status": "SKELETON_MATERIALIZED",
+  "behavioral_credit": false,
+  "preservation": "PRESERVE_IMPLEMENT_EXTEND"
+}

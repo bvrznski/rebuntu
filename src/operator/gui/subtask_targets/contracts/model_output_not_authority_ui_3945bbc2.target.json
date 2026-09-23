@@ -1,0 +1,12 @@
+{
+  "source_prompt": ".phases/phases/phase-49-gui/prompts/49.225-model-output-not-authority-ui.md",
+  "phase_task": ".phases/phases/phase-49-gui/TASK.md",
+  "canonical_root": "src/operator/gui",
+  "role": "contracts",
+  "implementation_header": "src/operator/gui/subtask_targets/contracts/model_output_not_authority_ui_3945bbc2.hpp",
+  "implementation_source": "src/operator/gui/subtask_targets/contracts/model_output_not_authority_ui_3945bbc2.cpp",
+  "test_target": "tests/structural-closure/operator/gui/contracts/test_model_output_not_authority_ui_3945bbc2.cpp",
+  "status": "SKELETON_MATERIALIZED",
+  "behavioral_credit": false,
+  "preservation": "PRESERVE_IMPLEMENT_EXTEND"
+}

@@ -1,0 +1,12 @@
+{
+  "source_prompt": ".phases/phases/phase-49-gui/prompts/49.309-ipc-inspector.md",
+  "phase_task": ".phases/phases/phase-49-gui/TASK.md",
+  "canonical_root": "src/operator/gui",
+  "role": "requirements",
+  "implementation_header": "src/operator/gui/subtask_targets/requirements/ipc_inspector_0f0a936e.hpp",
+  "implementation_source": "src/operator/gui/subtask_targets/requirements/ipc_inspector_0f0a936e.cpp",
+  "test_target": "tests/structural-closure/operator/gui/requirements/test_ipc_inspector_0f0a936e.cpp",
+  "status": "SKELETON_MATERIALIZED",
+  "behavioral_credit": false,
+  "preservation": "PRESERVE_IMPLEMENT_EXTEND"
+}

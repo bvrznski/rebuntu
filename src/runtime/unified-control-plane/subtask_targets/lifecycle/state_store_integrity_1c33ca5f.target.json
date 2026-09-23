@@ -1,0 +1,12 @@
+{
+  "source_prompt": ".phases/phases/phase-45-unified-control-plane/prompts/45.238-state-store-integrity.md",
+  "phase_task": ".phases/phases/phase-45-unified-control-plane/TASK.md",
+  "canonical_root": "src/runtime/unified-control-plane",
+  "role": "lifecycle",
+  "implementation_header": "src/runtime/unified-control-plane/subtask_targets/lifecycle/state_store_integrity_1c33ca5f.hpp",
+  "implementation_source": "src/runtime/unified-control-plane/subtask_targets/lifecycle/state_store_integrity_1c33ca5f.cpp",
+  "test_target": "tests/structural-closure/runtime/unified-control-plane/lifecycle/test_state_store_integrity_1c33ca5f.cpp",
+  "status": "SKELETON_MATERIALIZED",
+  "behavioral_credit": false,
+  "preservation": "PRESERVE_IMPLEMENT_EXTEND"
+}

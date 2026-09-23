@@ -1,0 +1,12 @@
+{
+  "source_prompt": ".phases/phases/phase-78-system-upgrade-release-migration/prompts/78.7.md",
+  "phase_task": ".phases/phases/phase-78-system-upgrade-release-migration/TASK.md",
+  "canonical_root": "src/domains/system-upgrade-release-migration",
+  "role": "requirements",
+  "implementation_header": "src/domains/system-upgrade-release-migration/subtask_targets/requirements/requirement_2cb4c383.hpp",
+  "implementation_source": "src/domains/system-upgrade-release-migration/subtask_targets/requirements/requirement_2cb4c383.cpp",
+  "test_target": "tests/structural-closure/domains/system-upgrade-release-migration/requirements/test_requirement_2cb4c383.cpp",
+  "status": "SKELETON_MATERIALIZED",
+  "behavioral_credit": false,
+  "preservation": "PRESERVE_IMPLEMENT_EXTEND"
+}

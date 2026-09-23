@@ -1,0 +1,12 @@
+{
+  "source_prompt": ".phases/phases/phase-43-operator-intelligence-system/prompts/43.110-recommendation-expected-effect-model.md",
+  "phase_task": ".phases/phases/phase-43-operator-intelligence-system/TASK.md",
+  "canonical_root": "src/operator/operator-intelligence-system",
+  "role": "contracts",
+  "implementation_header": "src/operator/operator-intelligence-system/subtask_targets/contracts/recommendation_expected_effect_model_26ff1500.hpp",
+  "implementation_source": "src/operator/operator-intelligence-system/subtask_targets/contracts/recommendation_expected_effect_model_26ff1500.cpp",
+  "test_target": "tests/structural-closure/operator/operator-intelligence-system/contracts/test_recommendation_expected_effect_model_26ff1500.cpp",
+  "status": "SKELETON_MATERIALIZED",
+  "behavioral_credit": false,
+  "preservation": "PRESERVE_IMPLEMENT_EXTEND"
+}

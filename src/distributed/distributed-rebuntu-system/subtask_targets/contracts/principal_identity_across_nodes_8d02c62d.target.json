@@ -1,0 +1,12 @@
+{
+  "source_prompt": ".phases/phases/phase-51-distributed-rebuntu-system/prompts/51.235-principal-identity-across-nodes.md",
+  "phase_task": ".phases/phases/phase-51-distributed-rebuntu-system/TASK.md",
+  "canonical_root": "src/distributed/distributed-rebuntu-system",
+  "role": "contracts",
+  "implementation_header": "src/distributed/distributed-rebuntu-system/subtask_targets/contracts/principal_identity_across_nodes_8d02c62d.hpp",
+  "implementation_source": "src/distributed/distributed-rebuntu-system/subtask_targets/contracts/principal_identity_across_nodes_8d02c62d.cpp",
+  "test_target": "tests/structural-closure/distributed/distributed-rebuntu-system/contracts/test_principal_identity_across_nodes_8d02c62d.cpp",
+  "status": "SKELETON_MATERIALIZED",
+  "behavioral_credit": false,
+  "preservation": "PRESERVE_IMPLEMENT_EXTEND"
+}

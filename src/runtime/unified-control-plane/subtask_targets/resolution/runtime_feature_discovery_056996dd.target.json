@@ -1,0 +1,12 @@
+{
+  "source_prompt": ".phases/phases/phase-45-unified-control-plane/prompts/45.187-runtime-feature-discovery.md",
+  "phase_task": ".phases/phases/phase-45-unified-control-plane/TASK.md",
+  "canonical_root": "src/runtime/unified-control-plane",
+  "role": "resolution",
+  "implementation_header": "src/runtime/unified-control-plane/subtask_targets/resolution/runtime_feature_discovery_056996dd.hpp",
+  "implementation_source": "src/runtime/unified-control-plane/subtask_targets/resolution/runtime_feature_discovery_056996dd.cpp",
+  "test_target": "tests/structural-closure/runtime/unified-control-plane/resolution/test_runtime_feature_discovery_056996dd.cpp",
+  "status": "SKELETON_MATERIALIZED",
+  "behavioral_credit": false,
+  "preservation": "PRESERVE_IMPLEMENT_EXTEND"
+}

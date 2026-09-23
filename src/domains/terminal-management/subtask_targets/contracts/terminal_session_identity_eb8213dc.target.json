@@ -1,0 +1,12 @@
+{
+  "source_prompt": ".phases/phases/phase-27-terminal-management/prompts/27.9-terminal-session-identity.md",
+  "phase_task": ".phases/phases/phase-27-terminal-management/TASK.md",
+  "canonical_root": "src/domains/terminal-management",
+  "role": "contracts",
+  "implementation_header": "src/domains/terminal-management/subtask_targets/contracts/terminal_session_identity_eb8213dc.hpp",
+  "implementation_source": "src/domains/terminal-management/subtask_targets/contracts/terminal_session_identity_eb8213dc.cpp",
+  "test_target": "tests/structural-closure/domains/terminal-management/contracts/test_terminal_session_identity_eb8213dc.cpp",
+  "status": "SKELETON_MATERIALIZED",
+  "behavioral_credit": false,
+  "preservation": "PRESERVE_IMPLEMENT_EXTEND"
+}

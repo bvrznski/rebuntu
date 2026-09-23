@@ -1,0 +1,12 @@
+{
+  "source_prompt": ".phases/phases/phase-41-automation-workflow-system/prompts/41.036-typed-workflow-inputs.md",
+  "phase_task": ".phases/phases/phase-41-automation-workflow-system/TASK.md",
+  "canonical_root": "src/automation/automation-workflow-system",
+  "role": "contracts",
+  "implementation_header": "src/automation/automation-workflow-system/subtask_targets/contracts/typed_workflow_inputs_82d66582.hpp",
+  "implementation_source": "src/automation/automation-workflow-system/subtask_targets/contracts/typed_workflow_inputs_82d66582.cpp",
+  "test_target": "tests/structural-closure/automation/automation-workflow-system/contracts/test_typed_workflow_inputs_82d66582.cpp",
+  "status": "SKELETON_MATERIALIZED",
+  "behavioral_credit": false,
+  "preservation": "PRESERVE_IMPLEMENT_EXTEND"
+}

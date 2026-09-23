@@ -1,0 +1,9 @@
+{
+  "component": "platform-abstraction-portability-foundation",
+  "canonical_root": "providers",
+  "phase_tasks": [
+    ".phases/phases/phase-50-platform-abstraction-portability-foundation/TASK.md"
+  ],
+  "status": "SKELETON",
+  "native_authority_rule": true
+}

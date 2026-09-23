@@ -1,0 +1,12 @@
+{
+  "source_prompt": ".phases/phases/phase-08-privilege-boundary-secure-execution/prompts/8.77_documentation_and_agents_synchronization.md",
+  "phase_task": ".phases/phases/phase-08-privilege-boundary-secure-execution/TASK.md",
+  "canonical_root": "src/security/privilege-boundary-secure-execution",
+  "role": "requirements",
+  "implementation_header": "src/security/privilege-boundary-secure-execution/subtask_targets/requirements/documentation_and_agents_synchronization_e119ba5e.hpp",
+  "implementation_source": "src/security/privilege-boundary-secure-execution/subtask_targets/requirements/documentation_and_agents_synchronization_e119ba5e.cpp",
+  "test_target": "tests/structural-closure/security/privilege-boundary-secure-execution/requirements/test_documentation_and_agents_synchronization_e119ba5e.cpp",
+  "status": "SKELETON_MATERIALIZED",
+  "behavioral_credit": false,
+  "preservation": "PRESERVE_IMPLEMENT_EXTEND"
+}

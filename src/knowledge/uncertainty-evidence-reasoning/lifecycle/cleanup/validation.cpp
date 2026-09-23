@@ -1,0 +1,6 @@
+#include "knowledge/uncertainty-evidence-reasoning/lifecycle/cleanup/validation.hpp"
+
+// Structural translation-unit slot only. No maturity credit.
+namespace rebuntu::structural_slots {
+static_assert(Skeleton_58922184d0_Validation::structural_revision == 25);
+}

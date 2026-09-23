@@ -1,0 +1,12 @@
+{
+  "source_prompt": ".phases/phases/phase-63-continuous-reconciliation-goal-maintenance/prompts/63.10.md",
+  "phase_task": ".phases/phases/phase-63-continuous-reconciliation-goal-maintenance/TASK.md",
+  "canonical_root": "src/control/continuous-reconciliation-goal-maintenance",
+  "role": "requirements",
+  "implementation_header": "src/control/continuous-reconciliation-goal-maintenance/subtask_targets/requirements/requirement_542f3f72.hpp",
+  "implementation_source": "src/control/continuous-reconciliation-goal-maintenance/subtask_targets/requirements/requirement_542f3f72.cpp",
+  "test_target": "tests/structural-closure/control/continuous-reconciliation-goal-maintenance/requirements/test_requirement_542f3f72.cpp",
+  "status": "SKELETON_MATERIALIZED",
+  "behavioral_credit": false,
+  "preservation": "PRESERVE_IMPLEMENT_EXTEND"
+}

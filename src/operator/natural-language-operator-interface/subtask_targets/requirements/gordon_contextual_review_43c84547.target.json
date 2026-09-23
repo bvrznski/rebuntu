@@ -1,0 +1,12 @@
+{
+  "source_prompt": ".phases/phases/phase-46-natural-language-operator-interface/prompts/46.206-gordon-contextual-review.md",
+  "phase_task": ".phases/phases/phase-46-natural-language-operator-interface/TASK.md",
+  "canonical_root": "src/operator/natural-language-operator-interface",
+  "role": "requirements",
+  "implementation_header": "src/operator/natural-language-operator-interface/subtask_targets/requirements/gordon_contextual_review_43c84547.hpp",
+  "implementation_source": "src/operator/natural-language-operator-interface/subtask_targets/requirements/gordon_contextual_review_43c84547.cpp",
+  "test_target": "tests/structural-closure/operator/natural-language-operator-interface/requirements/test_gordon_contextual_review_43c84547.cpp",
+  "status": "SKELETON_MATERIALIZED",
+  "behavioral_credit": false,
+  "preservation": "PRESERVE_IMPLEMENT_EXTEND"
+}

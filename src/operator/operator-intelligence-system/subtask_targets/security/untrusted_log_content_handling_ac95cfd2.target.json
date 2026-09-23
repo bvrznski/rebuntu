@@ -1,0 +1,12 @@
+{
+  "source_prompt": ".phases/phases/phase-43-operator-intelligence-system/prompts/43.185-untrusted-log-content-handling.md",
+  "phase_task": ".phases/phases/phase-43-operator-intelligence-system/TASK.md",
+  "canonical_root": "src/operator/operator-intelligence-system",
+  "role": "security",
+  "implementation_header": "src/operator/operator-intelligence-system/subtask_targets/security/untrusted_log_content_handling_ac95cfd2.hpp",
+  "implementation_source": "src/operator/operator-intelligence-system/subtask_targets/security/untrusted_log_content_handling_ac95cfd2.cpp",
+  "test_target": "tests/structural-closure/operator/operator-intelligence-system/security/test_untrusted_log_content_handling_ac95cfd2.cpp",
+  "status": "SKELETON_MATERIALIZED",
+  "behavioral_credit": false,
+  "preservation": "PRESERVE_IMPLEMENT_EXTEND"
+}

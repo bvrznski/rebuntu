@@ -1,0 +1,12 @@
+{
+  "source_prompt": ".phases/phases/phase-60-transactional-change-safe-transition/prompts/60.12-rebuntu-phase-60-12-point-of-no-return-model.md",
+  "phase_task": ".phases/phases/phase-60-transactional-change-safe-transition/TASK.md",
+  "canonical_root": "src/control/transactional-change-safe-transition",
+  "role": "contracts",
+  "implementation_header": "src/control/transactional-change-safe-transition/subtask_targets/contracts/point_of_no_return_model_93702b69.hpp",
+  "implementation_source": "src/control/transactional-change-safe-transition/subtask_targets/contracts/point_of_no_return_model_93702b69.cpp",
+  "test_target": "tests/structural-closure/control/transactional-change-safe-transition/contracts/test_point_of_no_return_model_93702b69.cpp",
+  "status": "SKELETON_MATERIALIZED",
+  "behavioral_credit": false,
+  "preservation": "PRESERVE_IMPLEMENT_EXTEND"
+}

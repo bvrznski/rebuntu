@@ -1,0 +1,12 @@
+{
+  "source_prompt": ".phases/phases/phase-98-bounded-autonomous-operations/prompts/98.11.md",
+  "phase_task": ".phases/phases/phase-98-bounded-autonomous-operations/TASK.md",
+  "canonical_root": "src/automation/bounded-autonomous-operations",
+  "role": "requirements",
+  "implementation_header": "src/automation/bounded-autonomous-operations/subtask_targets/requirements/requirement_a6f77b42.hpp",
+  "implementation_source": "src/automation/bounded-autonomous-operations/subtask_targets/requirements/requirement_a6f77b42.cpp",
+  "test_target": "tests/structural-closure/automation/bounded-autonomous-operations/requirements/test_requirement_a6f77b42.cpp",
+  "status": "SKELETON_MATERIALIZED",
+  "behavioral_credit": false,
+  "preservation": "PRESERVE_IMPLEMENT_EXTEND"
+}

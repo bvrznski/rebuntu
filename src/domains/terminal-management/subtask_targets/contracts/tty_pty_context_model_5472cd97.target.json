@@ -1,0 +1,12 @@
+{
+  "source_prompt": ".phases/phases/phase-27-terminal-management/prompts/27.8-tty-pty-context-model.md",
+  "phase_task": ".phases/phases/phase-27-terminal-management/TASK.md",
+  "canonical_root": "src/domains/terminal-management",
+  "role": "contracts",
+  "implementation_header": "src/domains/terminal-management/subtask_targets/contracts/tty_pty_context_model_5472cd97.hpp",
+  "implementation_source": "src/domains/terminal-management/subtask_targets/contracts/tty_pty_context_model_5472cd97.cpp",
+  "test_target": "tests/structural-closure/domains/terminal-management/contracts/test_tty_pty_context_model_5472cd97.cpp",
+  "status": "SKELETON_MATERIALIZED",
+  "behavioral_credit": false,
+  "preservation": "PRESERVE_IMPLEMENT_EXTEND"
+}

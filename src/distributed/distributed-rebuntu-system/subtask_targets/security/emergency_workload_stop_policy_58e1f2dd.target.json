@@ -1,0 +1,12 @@
+{
+  "source_prompt": ".phases/phases/phase-51-distributed-rebuntu-system/prompts/51.480-emergency-workload-stop-policy.md",
+  "phase_task": ".phases/phases/phase-51-distributed-rebuntu-system/TASK.md",
+  "canonical_root": "src/distributed/distributed-rebuntu-system",
+  "role": "security",
+  "implementation_header": "src/distributed/distributed-rebuntu-system/subtask_targets/security/emergency_workload_stop_policy_58e1f2dd.hpp",
+  "implementation_source": "src/distributed/distributed-rebuntu-system/subtask_targets/security/emergency_workload_stop_policy_58e1f2dd.cpp",
+  "test_target": "tests/structural-closure/distributed/distributed-rebuntu-system/security/test_emergency_workload_stop_policy_58e1f2dd.cpp",
+  "status": "SKELETON_MATERIALIZED",
+  "behavioral_credit": false,
+  "preservation": "PRESERVE_IMPLEMENT_EXTEND"
+}

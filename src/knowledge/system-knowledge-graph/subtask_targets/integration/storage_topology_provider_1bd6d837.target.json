@@ -1,0 +1,12 @@
+{
+  "source_prompt": ".phases/phases/phase-42-system-knowledge-graph/prompts/42.059-storage-topology-provider.md",
+  "phase_task": ".phases/phases/phase-42-system-knowledge-graph/TASK.md",
+  "canonical_root": "src/knowledge/system-knowledge-graph",
+  "role": "integration",
+  "implementation_header": "src/knowledge/system-knowledge-graph/subtask_targets/integration/storage_topology_provider_1bd6d837.hpp",
+  "implementation_source": "src/knowledge/system-knowledge-graph/subtask_targets/integration/storage_topology_provider_1bd6d837.cpp",
+  "test_target": "tests/structural-closure/knowledge/system-knowledge-graph/integration/test_storage_topology_provider_1bd6d837.cpp",
+  "status": "SKELETON_MATERIALIZED",
+  "behavioral_credit": false,
+  "preservation": "PRESERVE_IMPLEMENT_EXTEND"
+}

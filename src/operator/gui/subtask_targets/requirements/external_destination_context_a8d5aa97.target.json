@@ -1,0 +1,12 @@
+{
+  "source_prompt": ".phases/phases/phase-49-gui/prompts/49.282-external-destination-context.md",
+  "phase_task": ".phases/phases/phase-49-gui/TASK.md",
+  "canonical_root": "src/operator/gui",
+  "role": "requirements",
+  "implementation_header": "src/operator/gui/subtask_targets/requirements/external_destination_context_a8d5aa97.hpp",
+  "implementation_source": "src/operator/gui/subtask_targets/requirements/external_destination_context_a8d5aa97.cpp",
+  "test_target": "tests/structural-closure/operator/gui/requirements/test_external_destination_context_a8d5aa97.cpp",
+  "status": "SKELETON_MATERIALIZED",
+  "behavioral_credit": false,
+  "preservation": "PRESERVE_IMPLEMENT_EXTEND"
+}

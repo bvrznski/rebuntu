@@ -1,0 +1,5 @@
+#include "resolution.hpp"
+
+// XXVII out-of-line implementation reservation for resolution.
+// Source: .phases/phases/phase-54-dynamic-system-capability-affordance-model/prompts/54.93-rebuntu-phase-54-93-machine-readable-explanation-schema.md
+// Intentionally behavior-free until prompt-derived implementation is supplied.

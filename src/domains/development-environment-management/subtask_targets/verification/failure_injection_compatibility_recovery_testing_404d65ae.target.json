@@ -1,0 +1,12 @@
+{
+  "source_prompt": ".phases/phases/phase-28-development-environment-management/prompts/28.36-failure-injection-compatibility-recovery-testing.md",
+  "phase_task": ".phases/phases/phase-28-development-environment-management/TASK.md",
+  "canonical_root": "src/domains/development-environment-management",
+  "role": "verification",
+  "implementation_header": "src/domains/development-environment-management/subtask_targets/verification/failure_injection_compatibility_recovery_testing_404d65ae.hpp",
+  "implementation_source": "src/domains/development-environment-management/subtask_targets/verification/failure_injection_compatibility_recovery_testing_404d65ae.cpp",
+  "test_target": "tests/structural-closure/domains/development-environment-management/verification/test_failure_injection_compatibility_recovery_testing_404d65ae.cpp",
+  "status": "SKELETON_MATERIALIZED",
+  "behavioral_credit": false,
+  "preservation": "PRESERVE_IMPLEMENT_EXTEND"
+}

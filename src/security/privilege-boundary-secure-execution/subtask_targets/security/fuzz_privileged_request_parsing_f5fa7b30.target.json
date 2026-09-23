@@ -1,0 +1,12 @@
+{
+  "source_prompt": ".phases/phases/phase-08-privilege-boundary-secure-execution/prompts/8.54_fuzz_privileged_request_parsing.md",
+  "phase_task": ".phases/phases/phase-08-privilege-boundary-secure-execution/TASK.md",
+  "canonical_root": "src/security/privilege-boundary-secure-execution",
+  "role": "security",
+  "implementation_header": "src/security/privilege-boundary-secure-execution/subtask_targets/security/fuzz_privileged_request_parsing_f5fa7b30.hpp",
+  "implementation_source": "src/security/privilege-boundary-secure-execution/subtask_targets/security/fuzz_privileged_request_parsing_f5fa7b30.cpp",
+  "test_target": "tests/structural-closure/security/privilege-boundary-secure-execution/security/test_fuzz_privileged_request_parsing_f5fa7b30.cpp",
+  "status": "SKELETON_MATERIALIZED",
+  "behavioral_credit": false,
+  "preservation": "PRESERVE_IMPLEMENT_EXTEND"
+}

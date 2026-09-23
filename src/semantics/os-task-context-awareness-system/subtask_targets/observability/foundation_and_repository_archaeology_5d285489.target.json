@@ -1,0 +1,12 @@
+{
+  "source_prompt": ".phases/phases/phase-48-os-task-context-awareness-system/prompts/48.000-foundation-and-repository-archaeology.md",
+  "phase_task": ".phases/phases/phase-48-os-task-context-awareness-system/TASK.md",
+  "canonical_root": "src/semantics/os-task-context-awareness-system",
+  "role": "observability",
+  "implementation_header": "src/semantics/os-task-context-awareness-system/subtask_targets/observability/foundation_and_repository_archaeology_5d285489.hpp",
+  "implementation_source": "src/semantics/os-task-context-awareness-system/subtask_targets/observability/foundation_and_repository_archaeology_5d285489.cpp",
+  "test_target": "tests/structural-closure/semantics/os-task-context-awareness-system/observability/test_foundation_and_repository_archaeology_5d285489.cpp",
+  "status": "SKELETON_MATERIALIZED",
+  "behavioral_credit": false,
+  "preservation": "PRESERVE_IMPLEMENT_EXTEND"
+}

@@ -1,0 +1,12 @@
+{
+  "source_prompt": ".phases/phases/phase-54-dynamic-system-capability-affordance-model/prompts/54.11-rebuntu-phase-54-11-precondition-model.md",
+  "phase_task": ".phases/phases/phase-54-dynamic-system-capability-affordance-model/TASK.md",
+  "canonical_root": "src/semantics/dynamic-system-capability-affordance-model",
+  "role": "contracts",
+  "implementation_header": "src/semantics/dynamic-system-capability-affordance-model/subtask_targets/contracts/precondition_model_9f2cd918.hpp",
+  "implementation_source": "src/semantics/dynamic-system-capability-affordance-model/subtask_targets/contracts/precondition_model_9f2cd918.cpp",
+  "test_target": "tests/structural-closure/semantics/dynamic-system-capability-affordance-model/contracts/test_precondition_model_9f2cd918.cpp",
+  "status": "SKELETON_MATERIALIZED",
+  "behavioral_credit": false,
+  "preservation": "PRESERVE_IMPLEMENT_EXTEND"
+}

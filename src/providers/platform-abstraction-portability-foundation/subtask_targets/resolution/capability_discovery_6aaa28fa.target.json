@@ -1,0 +1,12 @@
+{
+  "source_prompt": ".phases/phases/phase-50-platform-abstraction-portability-foundation/prompts/50.007-capability-discovery.md",
+  "phase_task": ".phases/phases/phase-50-platform-abstraction-portability-foundation/TASK.md",
+  "canonical_root": "src/providers/platform-abstraction-portability-foundation",
+  "role": "resolution",
+  "implementation_header": "src/providers/platform-abstraction-portability-foundation/subtask_targets/resolution/capability_discovery_6aaa28fa.hpp",
+  "implementation_source": "src/providers/platform-abstraction-portability-foundation/subtask_targets/resolution/capability_discovery_6aaa28fa.cpp",
+  "test_target": "tests/structural-closure/providers/platform-abstraction-portability-foundation/resolution/test_capability_discovery_6aaa28fa.cpp",
+  "status": "SKELETON_MATERIALIZED",
+  "behavioral_credit": false,
+  "preservation": "PRESERVE_IMPLEMENT_EXTEND"
+}

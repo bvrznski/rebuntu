@@ -1,0 +1,12 @@
+{
+  "source_prompt": ".phases/phases/phase-33-network-management/prompts/33.10-connectivity-evidence-model.md",
+  "phase_task": ".phases/phases/phase-33-network-management/TASK.md",
+  "canonical_root": "src/domains/network-management",
+  "role": "verification",
+  "implementation_header": "src/domains/network-management/subtask_targets/verification/connectivity_evidence_model_6f793f65.hpp",
+  "implementation_source": "src/domains/network-management/subtask_targets/verification/connectivity_evidence_model_6f793f65.cpp",
+  "test_target": "tests/structural-closure/domains/network-management/verification/test_connectivity_evidence_model_6f793f65.cpp",
+  "status": "SKELETON_MATERIALIZED",
+  "behavioral_credit": false,
+  "preservation": "PRESERVE_IMPLEMENT_EXTEND"
+}

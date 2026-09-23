@@ -1,0 +1,12 @@
+{
+  "source_prompt": ".phases/phases/phase-51-distributed-rebuntu-system/prompts/51.334-gui-maintenance-operations.md",
+  "phase_task": ".phases/phases/phase-51-distributed-rebuntu-system/TASK.md",
+  "canonical_root": "src/distributed/distributed-rebuntu-system",
+  "role": "execution",
+  "implementation_header": "src/distributed/distributed-rebuntu-system/subtask_targets/execution/gui_maintenance_operations_1af87beb.hpp",
+  "implementation_source": "src/distributed/distributed-rebuntu-system/subtask_targets/execution/gui_maintenance_operations_1af87beb.cpp",
+  "test_target": "tests/structural-closure/distributed/distributed-rebuntu-system/execution/test_gui_maintenance_operations_1af87beb.cpp",
+  "status": "SKELETON_MATERIALIZED",
+  "behavioral_credit": false,
+  "preservation": "PRESERVE_IMPLEMENT_EXTEND"
+}

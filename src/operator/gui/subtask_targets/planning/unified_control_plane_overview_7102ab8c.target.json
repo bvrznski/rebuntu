@@ -1,0 +1,12 @@
+{
+  "source_prompt": ".phases/phases/phase-49-gui/prompts/49.199-unified-control-plane-overview.md",
+  "phase_task": ".phases/phases/phase-49-gui/TASK.md",
+  "canonical_root": "src/operator/gui",
+  "role": "planning",
+  "implementation_header": "src/operator/gui/subtask_targets/planning/unified_control_plane_overview_7102ab8c.hpp",
+  "implementation_source": "src/operator/gui/subtask_targets/planning/unified_control_plane_overview_7102ab8c.cpp",
+  "test_target": "tests/structural-closure/operator/gui/planning/test_unified_control_plane_overview_7102ab8c.cpp",
+  "status": "SKELETON_MATERIALIZED",
+  "behavioral_credit": false,
+  "preservation": "PRESERVE_IMPLEMENT_EXTEND"
+}

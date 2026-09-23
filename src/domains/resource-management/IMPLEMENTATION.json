@@ -1,0 +1,9 @@
+{
+  "component": "resource-management",
+  "canonical_root": "domains",
+  "phase_tasks": [
+    ".phases/phases/phase-30-resource-management/TASK.md"
+  ],
+  "status": "SKELETON",
+  "native_authority_rule": true
+}

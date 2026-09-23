@@ -1,0 +1,12 @@
+{
+  "source_prompt": ".phases/phases/phase-50-platform-abstraction-portability-foundation/prompts/50.192-final-linux-end-to-end-suite.md",
+  "phase_task": ".phases/phases/phase-50-platform-abstraction-portability-foundation/TASK.md",
+  "canonical_root": "src/providers/platform-abstraction-portability-foundation",
+  "role": "requirements",
+  "implementation_header": "src/providers/platform-abstraction-portability-foundation/subtask_targets/requirements/final_linux_end_to_end_suite_42ba3c5e.hpp",
+  "implementation_source": "src/providers/platform-abstraction-portability-foundation/subtask_targets/requirements/final_linux_end_to_end_suite_42ba3c5e.cpp",
+  "test_target": "tests/structural-closure/providers/platform-abstraction-portability-foundation/requirements/test_final_linux_end_to_end_suite_42ba3c5e.cpp",
+  "status": "SKELETON_MATERIALIZED",
+  "behavioral_credit": false,
+  "preservation": "PRESERVE_IMPLEMENT_EXTEND"
+}

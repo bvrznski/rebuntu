@@ -1,0 +1,12 @@
+{
+  "source_prompt": ".phases/phases/phase-52-associated-systems-hardware-rooted-trust/prompts/52.561-offline-ceremony-tests.md",
+  "phase_task": ".phases/phases/phase-52-associated-systems-hardware-rooted-trust/TASK.md",
+  "canonical_root": "src/providers/associated-systems-hardware-rooted-trust",
+  "role": "verification",
+  "implementation_header": "src/providers/associated-systems-hardware-rooted-trust/subtask_targets/verification/offline_ceremony_tests_3a99ac5f.hpp",
+  "implementation_source": "src/providers/associated-systems-hardware-rooted-trust/subtask_targets/verification/offline_ceremony_tests_3a99ac5f.cpp",
+  "test_target": "tests/structural-closure/providers/associated-systems-hardware-rooted-trust/verification/test_offline_ceremony_tests_3a99ac5f.cpp",
+  "status": "SKELETON_MATERIALIZED",
+  "behavioral_credit": false,
+  "preservation": "PRESERVE_IMPLEMENT_EXTEND"
+}

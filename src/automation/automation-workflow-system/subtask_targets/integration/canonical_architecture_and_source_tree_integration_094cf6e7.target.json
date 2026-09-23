@@ -1,0 +1,12 @@
+{
+  "source_prompt": ".phases/phases/phase-41-automation-workflow-system/prompts/41.002-canonical-architecture-and-source-tree-integration.md",
+  "phase_task": ".phases/phases/phase-41-automation-workflow-system/TASK.md",
+  "canonical_root": "src/automation/automation-workflow-system",
+  "role": "integration",
+  "implementation_header": "src/automation/automation-workflow-system/subtask_targets/integration/canonical_architecture_and_source_tree_integration_094cf6e7.hpp",
+  "implementation_source": "src/automation/automation-workflow-system/subtask_targets/integration/canonical_architecture_and_source_tree_integration_094cf6e7.cpp",
+  "test_target": "tests/structural-closure/automation/automation-workflow-system/integration/test_canonical_architecture_and_source_tree_integration_094cf6e7.cpp",
+  "status": "SKELETON_MATERIALIZED",
+  "behavioral_credit": false,
+  "preservation": "PRESERVE_IMPLEMENT_EXTEND"
+}

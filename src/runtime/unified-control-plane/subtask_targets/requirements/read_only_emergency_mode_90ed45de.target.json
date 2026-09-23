@@ -1,0 +1,12 @@
+{
+  "source_prompt": ".phases/phases/phase-45-unified-control-plane/prompts/45.190-read-only-emergency-mode.md",
+  "phase_task": ".phases/phases/phase-45-unified-control-plane/TASK.md",
+  "canonical_root": "src/runtime/unified-control-plane",
+  "role": "requirements",
+  "implementation_header": "src/runtime/unified-control-plane/subtask_targets/requirements/read_only_emergency_mode_90ed45de.hpp",
+  "implementation_source": "src/runtime/unified-control-plane/subtask_targets/requirements/read_only_emergency_mode_90ed45de.cpp",
+  "test_target": "tests/structural-closure/runtime/unified-control-plane/requirements/test_read_only_emergency_mode_90ed45de.cpp",
+  "status": "SKELETON_MATERIALIZED",
+  "behavioral_credit": false,
+  "preservation": "PRESERVE_IMPLEMENT_EXTEND"
+}

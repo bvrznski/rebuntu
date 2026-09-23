@@ -1,0 +1,12 @@
+{
+  "source_prompt": ".phases/phases/phase-35-package-software-management/prompts/35.39-kernel-driver-package-boundary.md",
+  "phase_task": ".phases/phases/phase-35-package-software-management/TASK.md",
+  "canonical_root": "src/domains/package-software-management",
+  "role": "requirements",
+  "implementation_header": "src/domains/package-software-management/subtask_targets/requirements/kernel_driver_package_boundary_f50ec7fc.hpp",
+  "implementation_source": "src/domains/package-software-management/subtask_targets/requirements/kernel_driver_package_boundary_f50ec7fc.cpp",
+  "test_target": "tests/structural-closure/domains/package-software-management/requirements/test_kernel_driver_package_boundary_f50ec7fc.cpp",
+  "status": "SKELETON_MATERIALIZED",
+  "behavioral_credit": false,
+  "preservation": "PRESERVE_IMPLEMENT_EXTEND"
+}

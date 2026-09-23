@@ -1,0 +1,12 @@
+{
+  "source_prompt": ".phases/phases/phase-26-shell-management/prompts/26.9-atuin-integration-backend-abstraction.md",
+  "phase_task": ".phases/phases/phase-26-shell-management/TASK.md",
+  "canonical_root": "src/domains/shell-management",
+  "role": "integration",
+  "implementation_header": "src/domains/shell-management/subtask_targets/integration/atuin_integration_backend_abstraction_1d4d107c.hpp",
+  "implementation_source": "src/domains/shell-management/subtask_targets/integration/atuin_integration_backend_abstraction_1d4d107c.cpp",
+  "test_target": "tests/structural-closure/domains/shell-management/integration/test_atuin_integration_backend_abstraction_1d4d107c.cpp",
+  "status": "SKELETON_MATERIALIZED",
+  "behavioral_credit": false,
+  "preservation": "PRESERVE_IMPLEMENT_EXTEND"
+}

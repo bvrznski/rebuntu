@@ -1,0 +1,12 @@
+{
+  "source_prompt": ".phases/phases/phase-48-os-task-context-awareness-system/prompts/48.107-relevance-explanation.md",
+  "phase_task": ".phases/phases/phase-48-os-task-context-awareness-system/TASK.md",
+  "canonical_root": "src/semantics/os-task-context-awareness-system",
+  "role": "planning",
+  "implementation_header": "src/semantics/os-task-context-awareness-system/subtask_targets/planning/relevance_explanation_92c717b2.hpp",
+  "implementation_source": "src/semantics/os-task-context-awareness-system/subtask_targets/planning/relevance_explanation_92c717b2.cpp",
+  "test_target": "tests/structural-closure/semantics/os-task-context-awareness-system/planning/test_relevance_explanation_92c717b2.cpp",
+  "status": "SKELETON_MATERIALIZED",
+  "behavioral_credit": false,
+  "preservation": "PRESERVE_IMPLEMENT_EXTEND"
+}

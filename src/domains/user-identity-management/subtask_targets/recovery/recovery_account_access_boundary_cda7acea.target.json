@@ -1,0 +1,12 @@
+{
+  "source_prompt": ".phases/phases/phase-38-user-identity-management/prompts/38.53-recovery-account-access-boundary.md",
+  "phase_task": ".phases/phases/phase-38-user-identity-management/TASK.md",
+  "canonical_root": "src/domains/user-identity-management",
+  "role": "recovery",
+  "implementation_header": "src/domains/user-identity-management/subtask_targets/recovery/recovery_account_access_boundary_cda7acea.hpp",
+  "implementation_source": "src/domains/user-identity-management/subtask_targets/recovery/recovery_account_access_boundary_cda7acea.cpp",
+  "test_target": "tests/structural-closure/domains/user-identity-management/recovery/test_recovery_account_access_boundary_cda7acea.cpp",
+  "status": "SKELETON_MATERIALIZED",
+  "behavioral_credit": false,
+  "preservation": "PRESERVE_IMPLEMENT_EXTEND"
+}

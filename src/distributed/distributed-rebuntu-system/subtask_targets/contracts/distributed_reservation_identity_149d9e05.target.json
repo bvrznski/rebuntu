@@ -1,0 +1,12 @@
+{
+  "source_prompt": ".phases/phases/phase-51-distributed-rebuntu-system/prompts/51.133-distributed-reservation-identity.md",
+  "phase_task": ".phases/phases/phase-51-distributed-rebuntu-system/TASK.md",
+  "canonical_root": "src/distributed/distributed-rebuntu-system",
+  "role": "contracts",
+  "implementation_header": "src/distributed/distributed-rebuntu-system/subtask_targets/contracts/distributed_reservation_identity_149d9e05.hpp",
+  "implementation_source": "src/distributed/distributed-rebuntu-system/subtask_targets/contracts/distributed_reservation_identity_149d9e05.cpp",
+  "test_target": "tests/structural-closure/distributed/distributed-rebuntu-system/contracts/test_distributed_reservation_identity_149d9e05.cpp",
+  "status": "SKELETON_MATERIALIZED",
+  "behavioral_credit": false,
+  "preservation": "PRESERVE_IMPLEMENT_EXTEND"
+}

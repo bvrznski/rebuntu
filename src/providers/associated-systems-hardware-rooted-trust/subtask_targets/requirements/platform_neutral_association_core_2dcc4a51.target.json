@@ -1,0 +1,12 @@
+{
+  "source_prompt": ".phases/phases/phase-52-associated-systems-hardware-rooted-trust/prompts/52.374-platform-neutral-association-core.md",
+  "phase_task": ".phases/phases/phase-52-associated-systems-hardware-rooted-trust/TASK.md",
+  "canonical_root": "src/providers/associated-systems-hardware-rooted-trust",
+  "role": "requirements",
+  "implementation_header": "src/providers/associated-systems-hardware-rooted-trust/subtask_targets/requirements/platform_neutral_association_core_2dcc4a51.hpp",
+  "implementation_source": "src/providers/associated-systems-hardware-rooted-trust/subtask_targets/requirements/platform_neutral_association_core_2dcc4a51.cpp",
+  "test_target": "tests/structural-closure/providers/associated-systems-hardware-rooted-trust/requirements/test_platform_neutral_association_core_2dcc4a51.cpp",
+  "status": "SKELETON_MATERIALIZED",
+  "behavioral_credit": false,
+  "preservation": "PRESERVE_IMPLEMENT_EXTEND"
+}

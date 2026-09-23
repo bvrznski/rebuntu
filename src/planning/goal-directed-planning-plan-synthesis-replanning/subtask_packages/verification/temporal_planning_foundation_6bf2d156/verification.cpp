@@ -1,0 +1,5 @@
+#include "verification.hpp"
+
+// XXVII out-of-line implementation reservation for verification.
+// Source: .phases/phases/phase-55-goal-directed-planning-plan-synthesis-replanning/prompts/55.36-rebuntu-phase-55-36-temporal-planning-foundation.md
+// Intentionally behavior-free until prompt-derived implementation is supplied.

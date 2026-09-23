@@ -1,0 +1,12 @@
+{
+  "source_prompt": ".phases/phases/phase-47-os-task-policy-system/prompts/47.445-package-install-policy.md",
+  "phase_task": ".phases/phases/phase-47-os-task-policy-system/TASK.md",
+  "canonical_root": "src/runtime/os-task-policy-system",
+  "role": "security",
+  "implementation_header": "src/runtime/os-task-policy-system/subtask_targets/security/package_install_policy_724ec853.hpp",
+  "implementation_source": "src/runtime/os-task-policy-system/subtask_targets/security/package_install_policy_724ec853.cpp",
+  "test_target": "tests/structural-closure/runtime/os-task-policy-system/security/test_package_install_policy_724ec853.cpp",
+  "status": "SKELETON_MATERIALIZED",
+  "behavioral_credit": false,
+  "preservation": "PRESERVE_IMPLEMENT_EXTEND"
+}

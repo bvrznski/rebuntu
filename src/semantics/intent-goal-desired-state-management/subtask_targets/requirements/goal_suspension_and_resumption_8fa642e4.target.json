@@ -1,0 +1,12 @@
+{
+  "source_prompt": ".phases/phases/phase-56-intent-goal-desired-state-management/prompts/56.10-rebuntu-phase-56-10-goal-suspension-and-resumption.md",
+  "phase_task": ".phases/phases/phase-56-intent-goal-desired-state-management/TASK.md",
+  "canonical_root": "src/semantics/intent-goal-desired-state-management",
+  "role": "requirements",
+  "implementation_header": "src/semantics/intent-goal-desired-state-management/subtask_targets/requirements/goal_suspension_and_resumption_8fa642e4.hpp",
+  "implementation_source": "src/semantics/intent-goal-desired-state-management/subtask_targets/requirements/goal_suspension_and_resumption_8fa642e4.cpp",
+  "test_target": "tests/structural-closure/semantics/intent-goal-desired-state-management/requirements/test_goal_suspension_and_resumption_8fa642e4.cpp",
+  "status": "SKELETON_MATERIALIZED",
+  "behavioral_credit": false,
+  "preservation": "PRESERVE_IMPLEMENT_EXTEND"
+}

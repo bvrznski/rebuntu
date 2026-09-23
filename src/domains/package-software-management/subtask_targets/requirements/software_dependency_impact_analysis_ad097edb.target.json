@@ -1,0 +1,12 @@
+{
+  "source_prompt": ".phases/phases/phase-35-package-software-management/prompts/35.36-software-dependency-impact-analysis.md",
+  "phase_task": ".phases/phases/phase-35-package-software-management/TASK.md",
+  "canonical_root": "src/domains/package-software-management",
+  "role": "requirements",
+  "implementation_header": "src/domains/package-software-management/subtask_targets/requirements/software_dependency_impact_analysis_ad097edb.hpp",
+  "implementation_source": "src/domains/package-software-management/subtask_targets/requirements/software_dependency_impact_analysis_ad097edb.cpp",
+  "test_target": "tests/structural-closure/domains/package-software-management/requirements/test_software_dependency_impact_analysis_ad097edb.cpp",
+  "status": "SKELETON_MATERIALIZED",
+  "behavioral_credit": false,
+  "preservation": "PRESERVE_IMPLEMENT_EXTEND"
+}

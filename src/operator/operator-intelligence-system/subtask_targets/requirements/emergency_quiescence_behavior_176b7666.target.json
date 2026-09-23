@@ -1,0 +1,12 @@
+{
+  "source_prompt": ".phases/phases/phase-43-operator-intelligence-system/prompts/43.216-emergency-quiescence-behavior.md",
+  "phase_task": ".phases/phases/phase-43-operator-intelligence-system/TASK.md",
+  "canonical_root": "src/operator/operator-intelligence-system",
+  "role": "requirements",
+  "implementation_header": "src/operator/operator-intelligence-system/subtask_targets/requirements/emergency_quiescence_behavior_176b7666.hpp",
+  "implementation_source": "src/operator/operator-intelligence-system/subtask_targets/requirements/emergency_quiescence_behavior_176b7666.cpp",
+  "test_target": "tests/structural-closure/operator/operator-intelligence-system/requirements/test_emergency_quiescence_behavior_176b7666.cpp",
+  "status": "SKELETON_MATERIALIZED",
+  "behavioral_credit": false,
+  "preservation": "PRESERVE_IMPLEMENT_EXTEND"
+}

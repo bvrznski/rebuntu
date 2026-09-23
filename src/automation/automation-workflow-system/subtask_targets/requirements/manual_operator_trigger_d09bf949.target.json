@@ -1,0 +1,12 @@
+{
+  "source_prompt": ".phases/phases/phase-41-automation-workflow-system/prompts/41.015-manual-operator-trigger.md",
+  "phase_task": ".phases/phases/phase-41-automation-workflow-system/TASK.md",
+  "canonical_root": "src/automation/automation-workflow-system",
+  "role": "requirements",
+  "implementation_header": "src/automation/automation-workflow-system/subtask_targets/requirements/manual_operator_trigger_d09bf949.hpp",
+  "implementation_source": "src/automation/automation-workflow-system/subtask_targets/requirements/manual_operator_trigger_d09bf949.cpp",
+  "test_target": "tests/structural-closure/automation/automation-workflow-system/requirements/test_manual_operator_trigger_d09bf949.cpp",
+  "status": "SKELETON_MATERIALIZED",
+  "behavioral_credit": false,
+  "preservation": "PRESERVE_IMPLEMENT_EXTEND"
+}

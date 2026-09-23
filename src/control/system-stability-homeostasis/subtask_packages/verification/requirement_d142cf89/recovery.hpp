@@ -1,0 +1,13 @@
+#pragma once
+
+// XXVII SUBTASK PACKAGE SKELETON — zero behavioral maturity credit.
+// Source: .phases/phases/phase-68-system-stability-homeostasis/prompts/68.13.md
+// Preserve this architectural reservation and implement only after reading the source prompt.
+
+namespace rebuntu::subtask_packages::phase_68::s_d142cf89::recovery {
+struct RecoverySlot final {
+    static constexpr const char* source_prompt = ".phases/phases/phase-68-system-stability-homeostasis/prompts/68.13.md";
+    static constexpr const char* aspect = "recovery";
+    static constexpr const char* status = "SKELETON_MATERIALIZED";
+};
+} // namespace rebuntu::subtask_packages::phase_68::s_d142cf89::recovery

@@ -1,0 +1,6 @@
+#include "automation/autonomy-budget-delegation/execution/dispatch/validation.hpp"
+
+// Structural translation-unit slot only. No maturity credit.
+namespace rebuntu::structural_slots {
+static_assert(Skeleton_047f6e5888_Validation::structural_revision == 25);
+}

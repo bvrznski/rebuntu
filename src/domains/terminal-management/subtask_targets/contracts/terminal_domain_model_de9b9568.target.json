@@ -1,0 +1,12 @@
+{
+  "source_prompt": ".phases/phases/phase-27-terminal-management/prompts/27.1-terminal-domain-model.md",
+  "phase_task": ".phases/phases/phase-27-terminal-management/TASK.md",
+  "canonical_root": "src/domains/terminal-management",
+  "role": "contracts",
+  "implementation_header": "src/domains/terminal-management/subtask_targets/contracts/terminal_domain_model_de9b9568.hpp",
+  "implementation_source": "src/domains/terminal-management/subtask_targets/contracts/terminal_domain_model_de9b9568.cpp",
+  "test_target": "tests/structural-closure/domains/terminal-management/contracts/test_terminal_domain_model_de9b9568.cpp",
+  "status": "SKELETON_MATERIALIZED",
+  "behavioral_credit": false,
+  "preservation": "PRESERVE_IMPLEMENT_EXTEND"
+}

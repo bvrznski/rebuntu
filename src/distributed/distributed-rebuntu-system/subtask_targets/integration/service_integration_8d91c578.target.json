@@ -1,0 +1,12 @@
+{
+  "source_prompt": ".phases/phases/phase-51-distributed-rebuntu-system/prompts/51.174-phase-31-service-integration.md",
+  "phase_task": ".phases/phases/phase-51-distributed-rebuntu-system/TASK.md",
+  "canonical_root": "src/distributed/distributed-rebuntu-system",
+  "role": "integration",
+  "implementation_header": "src/distributed/distributed-rebuntu-system/subtask_targets/integration/service_integration_8d91c578.hpp",
+  "implementation_source": "src/distributed/distributed-rebuntu-system/subtask_targets/integration/service_integration_8d91c578.cpp",
+  "test_target": "tests/structural-closure/distributed/distributed-rebuntu-system/integration/test_service_integration_8d91c578.cpp",
+  "status": "SKELETON_MATERIALIZED",
+  "behavioral_credit": false,
+  "preservation": "PRESERVE_IMPLEMENT_EXTEND"
+}

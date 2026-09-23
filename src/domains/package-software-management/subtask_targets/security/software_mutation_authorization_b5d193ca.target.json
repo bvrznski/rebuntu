@@ -1,0 +1,12 @@
+{
+  "source_prompt": ".phases/phases/phase-35-package-software-management/prompts/35.47-software-mutation-authorization.md",
+  "phase_task": ".phases/phases/phase-35-package-software-management/TASK.md",
+  "canonical_root": "src/domains/package-software-management",
+  "role": "security",
+  "implementation_header": "src/domains/package-software-management/subtask_targets/security/software_mutation_authorization_b5d193ca.hpp",
+  "implementation_source": "src/domains/package-software-management/subtask_targets/security/software_mutation_authorization_b5d193ca.cpp",
+  "test_target": "tests/structural-closure/domains/package-software-management/security/test_software_mutation_authorization_b5d193ca.cpp",
+  "status": "SKELETON_MATERIALIZED",
+  "behavioral_credit": false,
+  "preservation": "PRESERVE_IMPLEMENT_EXTEND"
+}

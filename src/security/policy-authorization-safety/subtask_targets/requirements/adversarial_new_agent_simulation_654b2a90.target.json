@@ -1,0 +1,12 @@
+{
+  "source_prompt": ".phases/phases/phase-07-policy-authorization-safety/prompts/7.81_adversarial_new-agent_simulation.md",
+  "phase_task": ".phases/phases/phase-07-policy-authorization-safety/TASK.md",
+  "canonical_root": "src/security/policy-authorization-safety",
+  "role": "requirements",
+  "implementation_header": "src/security/policy-authorization-safety/subtask_targets/requirements/adversarial_new_agent_simulation_654b2a90.hpp",
+  "implementation_source": "src/security/policy-authorization-safety/subtask_targets/requirements/adversarial_new_agent_simulation_654b2a90.cpp",
+  "test_target": "tests/structural-closure/security/policy-authorization-safety/requirements/test_adversarial_new_agent_simulation_654b2a90.cpp",
+  "status": "SKELETON_MATERIALIZED",
+  "behavioral_credit": false,
+  "preservation": "PRESERVE_IMPLEMENT_EXTEND"
+}

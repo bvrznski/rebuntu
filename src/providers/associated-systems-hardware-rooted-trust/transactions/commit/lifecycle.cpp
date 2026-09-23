@@ -1,0 +1,6 @@
+#include "providers/associated-systems-hardware-rooted-trust/transactions/commit/lifecycle.hpp"
+
+// Structural translation-unit slot only. No maturity credit.
+namespace rebuntu::structural_slots {
+static_assert(Skeleton_6651fecace_Lifecycle::structural_revision == 25);
+}

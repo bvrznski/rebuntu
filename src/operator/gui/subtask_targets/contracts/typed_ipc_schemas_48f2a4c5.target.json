@@ -1,0 +1,12 @@
+{
+  "source_prompt": ".phases/phases/phase-49-gui/prompts/49.357-typed-ipc-schemas.md",
+  "phase_task": ".phases/phases/phase-49-gui/TASK.md",
+  "canonical_root": "src/operator/gui",
+  "role": "contracts",
+  "implementation_header": "src/operator/gui/subtask_targets/contracts/typed_ipc_schemas_48f2a4c5.hpp",
+  "implementation_source": "src/operator/gui/subtask_targets/contracts/typed_ipc_schemas_48f2a4c5.cpp",
+  "test_target": "tests/structural-closure/operator/gui/contracts/test_typed_ipc_schemas_48f2a4c5.cpp",
+  "status": "SKELETON_MATERIALIZED",
+  "behavioral_credit": false,
+  "preservation": "PRESERVE_IMPLEMENT_EXTEND"
+}

@@ -1,0 +1,12 @@
+{
+  "source_prompt": ".phases/phases/phase-43-operator-intelligence-system/prompts/43.012-evidence-reference-model.md",
+  "phase_task": ".phases/phases/phase-43-operator-intelligence-system/TASK.md",
+  "canonical_root": "src/operator/operator-intelligence-system",
+  "role": "verification",
+  "implementation_header": "src/operator/operator-intelligence-system/subtask_targets/verification/evidence_reference_model_310719ac.hpp",
+  "implementation_source": "src/operator/operator-intelligence-system/subtask_targets/verification/evidence_reference_model_310719ac.cpp",
+  "test_target": "tests/structural-closure/operator/operator-intelligence-system/verification/test_evidence_reference_model_310719ac.cpp",
+  "status": "SKELETON_MATERIALIZED",
+  "behavioral_credit": false,
+  "preservation": "PRESERVE_IMPLEMENT_EXTEND"
+}

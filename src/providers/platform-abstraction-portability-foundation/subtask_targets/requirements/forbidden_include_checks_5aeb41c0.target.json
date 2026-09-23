@@ -1,0 +1,12 @@
+{
+  "source_prompt": ".phases/phases/phase-50-platform-abstraction-portability-foundation/prompts/50.122-forbidden-include-checks.md",
+  "phase_task": ".phases/phases/phase-50-platform-abstraction-portability-foundation/TASK.md",
+  "canonical_root": "src/providers/platform-abstraction-portability-foundation",
+  "role": "requirements",
+  "implementation_header": "src/providers/platform-abstraction-portability-foundation/subtask_targets/requirements/forbidden_include_checks_5aeb41c0.hpp",
+  "implementation_source": "src/providers/platform-abstraction-portability-foundation/subtask_targets/requirements/forbidden_include_checks_5aeb41c0.cpp",
+  "test_target": "tests/structural-closure/providers/platform-abstraction-portability-foundation/requirements/test_forbidden_include_checks_5aeb41c0.cpp",
+  "status": "SKELETON_MATERIALIZED",
+  "behavioral_credit": false,
+  "preservation": "PRESERVE_IMPLEMENT_EXTEND"
+}

@@ -1,0 +1,10 @@
+{
+  "component": "recovery-repair-self-healing",
+  "canonical_root": "control",
+  "phase_tasks": [
+    ".phases/phases/phase-61-recovery-repair-self-healing/TASK.md",
+    ".phases/phases/phase-67-recovery-repair-self-healing/TASK.md"
+  ],
+  "status": "SKELETON",
+  "native_authority_rule": true
+}

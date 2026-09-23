@@ -1,0 +1,12 @@
+{
+  "source_prompt": ".phases/phases/phase-43-operator-intelligence-system/prompts/43.004-intelligence-artifact-strong-types.md",
+  "phase_task": ".phases/phases/phase-43-operator-intelligence-system/TASK.md",
+  "canonical_root": "src/operator/operator-intelligence-system",
+  "role": "contracts",
+  "implementation_header": "src/operator/operator-intelligence-system/subtask_targets/contracts/intelligence_artifact_strong_types_a777b59f.hpp",
+  "implementation_source": "src/operator/operator-intelligence-system/subtask_targets/contracts/intelligence_artifact_strong_types_a777b59f.cpp",
+  "test_target": "tests/structural-closure/operator/operator-intelligence-system/contracts/test_intelligence_artifact_strong_types_a777b59f.cpp",
+  "status": "SKELETON_MATERIALIZED",
+  "behavioral_credit": false,
+  "preservation": "PRESERVE_IMPLEMENT_EXTEND"
+}

@@ -1,0 +1,12 @@
+{
+  "source_prompt": ".phases/phases/phase-48-os-task-context-awareness-system/prompts/48.182-baseline-free-anomaly-handling.md",
+  "phase_task": ".phases/phases/phase-48-os-task-context-awareness-system/TASK.md",
+  "canonical_root": "src/semantics/os-task-context-awareness-system",
+  "role": "requirements",
+  "implementation_header": "src/semantics/os-task-context-awareness-system/subtask_targets/requirements/baseline_free_anomaly_handling_2b3b787e.hpp",
+  "implementation_source": "src/semantics/os-task-context-awareness-system/subtask_targets/requirements/baseline_free_anomaly_handling_2b3b787e.cpp",
+  "test_target": "tests/structural-closure/semantics/os-task-context-awareness-system/requirements/test_baseline_free_anomaly_handling_2b3b787e.cpp",
+  "status": "SKELETON_MATERIALIZED",
+  "behavioral_credit": false,
+  "preservation": "PRESERVE_IMPLEMENT_EXTEND"
+}

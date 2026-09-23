@@ -1,0 +1,12 @@
+{
+  "source_prompt": ".phases/phases/phase-58-constraint-invariant-operational-contract/prompts/58.40-rebuntu-phase-58-40-override-expiry.md",
+  "phase_task": ".phases/phases/phase-58-constraint-invariant-operational-contract/TASK.md",
+  "canonical_root": "src/semantics/constraint-invariant-operational-contract",
+  "role": "requirements",
+  "implementation_header": "src/semantics/constraint-invariant-operational-contract/subtask_targets/requirements/override_expiry_072bf017.hpp",
+  "implementation_source": "src/semantics/constraint-invariant-operational-contract/subtask_targets/requirements/override_expiry_072bf017.cpp",
+  "test_target": "tests/structural-closure/semantics/constraint-invariant-operational-contract/requirements/test_override_expiry_072bf017.cpp",
+  "status": "SKELETON_MATERIALIZED",
+  "behavioral_credit": false,
+  "preservation": "PRESERVE_IMPLEMENT_EXTEND"
+}

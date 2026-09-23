@@ -1,0 +1,12 @@
+{
+  "source_prompt": ".phases/phases/phase-51-distributed-rebuntu-system/prompts/51.351-leader-election-necessity-audit.md",
+  "phase_task": ".phases/phases/phase-51-distributed-rebuntu-system/TASK.md",
+  "canonical_root": "src/distributed/distributed-rebuntu-system",
+  "role": "verification",
+  "implementation_header": "src/distributed/distributed-rebuntu-system/subtask_targets/verification/leader_election_necessity_audit_51ad8bcf.hpp",
+  "implementation_source": "src/distributed/distributed-rebuntu-system/subtask_targets/verification/leader_election_necessity_audit_51ad8bcf.cpp",
+  "test_target": "tests/structural-closure/distributed/distributed-rebuntu-system/verification/test_leader_election_necessity_audit_51ad8bcf.cpp",
+  "status": "SKELETON_MATERIALIZED",
+  "behavioral_credit": false,
+  "preservation": "PRESERVE_IMPLEMENT_EXTEND"
+}

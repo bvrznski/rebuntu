@@ -1,0 +1,12 @@
+{
+  "source_prompt": ".phases/phases/phase-37-secrets-credentials-management/prompts/37.24-audit-redaction-integration.md",
+  "phase_task": ".phases/phases/phase-37-secrets-credentials-management/TASK.md",
+  "canonical_root": "src/security/secrets-credentials-management",
+  "role": "verification",
+  "implementation_header": "src/security/secrets-credentials-management/subtask_targets/verification/audit_redaction_integration_2b659c20.hpp",
+  "implementation_source": "src/security/secrets-credentials-management/subtask_targets/verification/audit_redaction_integration_2b659c20.cpp",
+  "test_target": "tests/structural-closure/security/secrets-credentials-management/verification/test_audit_redaction_integration_2b659c20.cpp",
+  "status": "SKELETON_MATERIALIZED",
+  "behavioral_credit": false,
+  "preservation": "PRESERVE_IMPLEMENT_EXTEND"
+}

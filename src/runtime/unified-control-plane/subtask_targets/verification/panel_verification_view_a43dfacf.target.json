@@ -1,0 +1,12 @@
+{
+  "source_prompt": ".phases/phases/phase-45-unified-control-plane/prompts/45.144-panel-verification-view.md",
+  "phase_task": ".phases/phases/phase-45-unified-control-plane/TASK.md",
+  "canonical_root": "src/runtime/unified-control-plane",
+  "role": "verification",
+  "implementation_header": "src/runtime/unified-control-plane/subtask_targets/verification/panel_verification_view_a43dfacf.hpp",
+  "implementation_source": "src/runtime/unified-control-plane/subtask_targets/verification/panel_verification_view_a43dfacf.cpp",
+  "test_target": "tests/structural-closure/runtime/unified-control-plane/verification/test_panel_verification_view_a43dfacf.cpp",
+  "status": "SKELETON_MATERIALIZED",
+  "behavioral_credit": false,
+  "preservation": "PRESERVE_IMPLEMENT_EXTEND"
+}

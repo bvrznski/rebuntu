@@ -1,0 +1,6 @@
+#include "providers/associated-systems-hardware-rooted-trust/verification/reports/validation.hpp"
+
+// Structural translation-unit slot only. No maturity credit.
+namespace rebuntu::structural_slots {
+static_assert(Skeleton_1223468c31_Validation::structural_revision == 25);
+}

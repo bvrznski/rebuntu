@@ -1,0 +1,12 @@
+{
+  "source_prompt": ".phases/phases/phase-49-gui/prompts/49.395-html-rendering-prohibition-or-sandbox.md",
+  "phase_task": ".phases/phases/phase-49-gui/TASK.md",
+  "canonical_root": "src/operator/gui",
+  "role": "requirements",
+  "implementation_header": "src/operator/gui/subtask_targets/requirements/html_rendering_prohibition_or_sandbox_f2f6ed90.hpp",
+  "implementation_source": "src/operator/gui/subtask_targets/requirements/html_rendering_prohibition_or_sandbox_f2f6ed90.cpp",
+  "test_target": "tests/structural-closure/operator/gui/requirements/test_html_rendering_prohibition_or_sandbox_f2f6ed90.cpp",
+  "status": "SKELETON_MATERIALIZED",
+  "behavioral_credit": false,
+  "preservation": "PRESERVE_IMPLEMENT_EXTEND"
+}

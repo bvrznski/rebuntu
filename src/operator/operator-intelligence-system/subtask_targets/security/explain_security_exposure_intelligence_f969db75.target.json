@@ -1,0 +1,12 @@
+{
+  "source_prompt": ".phases/phases/phase-43-operator-intelligence-system/prompts/43.143-explain-security-exposure-intelligence.md",
+  "phase_task": ".phases/phases/phase-43-operator-intelligence-system/TASK.md",
+  "canonical_root": "src/operator/operator-intelligence-system",
+  "role": "security",
+  "implementation_header": "src/operator/operator-intelligence-system/subtask_targets/security/explain_security_exposure_intelligence_f969db75.hpp",
+  "implementation_source": "src/operator/operator-intelligence-system/subtask_targets/security/explain_security_exposure_intelligence_f969db75.cpp",
+  "test_target": "tests/structural-closure/operator/operator-intelligence-system/security/test_explain_security_exposure_intelligence_f969db75.cpp",
+  "status": "SKELETON_MATERIALIZED",
+  "behavioral_credit": false,
+  "preservation": "PRESERVE_IMPLEMENT_EXTEND"
+}

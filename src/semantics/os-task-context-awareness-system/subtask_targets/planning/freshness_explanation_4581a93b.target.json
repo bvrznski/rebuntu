@@ -1,0 +1,12 @@
+{
+  "source_prompt": ".phases/phases/phase-48-os-task-context-awareness-system/prompts/48.123-freshness-explanation.md",
+  "phase_task": ".phases/phases/phase-48-os-task-context-awareness-system/TASK.md",
+  "canonical_root": "src/semantics/os-task-context-awareness-system",
+  "role": "planning",
+  "implementation_header": "src/semantics/os-task-context-awareness-system/subtask_targets/planning/freshness_explanation_4581a93b.hpp",
+  "implementation_source": "src/semantics/os-task-context-awareness-system/subtask_targets/planning/freshness_explanation_4581a93b.cpp",
+  "test_target": "tests/structural-closure/semantics/os-task-context-awareness-system/planning/test_freshness_explanation_4581a93b.cpp",
+  "status": "SKELETON_MATERIALIZED",
+  "behavioral_credit": false,
+  "preservation": "PRESERVE_IMPLEMENT_EXTEND"
+}

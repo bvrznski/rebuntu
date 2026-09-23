@@ -1,0 +1,12 @@
+{
+  "source_prompt": ".phases/phases/phase-20-whole-system-integration/prompts/20.8.md",
+  "phase_task": ".phases/phases/phase-20-whole-system-integration/TASK.md",
+  "canonical_root": "src/runtime/whole-system-integration",
+  "role": "requirements",
+  "implementation_header": "src/runtime/whole-system-integration/subtask_targets/requirements/requirement_fdb051d3.hpp",
+  "implementation_source": "src/runtime/whole-system-integration/subtask_targets/requirements/requirement_fdb051d3.cpp",
+  "test_target": "tests/structural-closure/runtime/whole-system-integration/requirements/test_requirement_fdb051d3.cpp",
+  "status": "SKELETON_MATERIALIZED",
+  "behavioral_credit": false,
+  "preservation": "PRESERVE_IMPLEMENT_EXTEND"
+}

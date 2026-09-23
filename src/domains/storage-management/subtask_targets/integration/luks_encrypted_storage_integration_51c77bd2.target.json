@@ -1,0 +1,12 @@
+{
+  "source_prompt": ".phases/phases/phase-32-storage-management/prompts/32.7-luks-encrypted-storage-integration.md",
+  "phase_task": ".phases/phases/phase-32-storage-management/TASK.md",
+  "canonical_root": "src/domains/storage-management",
+  "role": "integration",
+  "implementation_header": "src/domains/storage-management/subtask_targets/integration/luks_encrypted_storage_integration_51c77bd2.hpp",
+  "implementation_source": "src/domains/storage-management/subtask_targets/integration/luks_encrypted_storage_integration_51c77bd2.cpp",
+  "test_target": "tests/structural-closure/domains/storage-management/integration/test_luks_encrypted_storage_integration_51c77bd2.cpp",
+  "status": "SKELETON_MATERIALIZED",
+  "behavioral_credit": false,
+  "preservation": "PRESERVE_IMPLEMENT_EXTEND"
+}

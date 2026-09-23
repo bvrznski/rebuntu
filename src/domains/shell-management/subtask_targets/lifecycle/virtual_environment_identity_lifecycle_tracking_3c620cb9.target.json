@@ -1,0 +1,12 @@
+{
+  "source_prompt": ".phases/phases/phase-26-shell-management/prompts/26.5-virtual-environment-identity-lifecycle-tracking.md",
+  "phase_task": ".phases/phases/phase-26-shell-management/TASK.md",
+  "canonical_root": "src/domains/shell-management",
+  "role": "lifecycle",
+  "implementation_header": "src/domains/shell-management/subtask_targets/lifecycle/virtual_environment_identity_lifecycle_tracking_3c620cb9.hpp",
+  "implementation_source": "src/domains/shell-management/subtask_targets/lifecycle/virtual_environment_identity_lifecycle_tracking_3c620cb9.cpp",
+  "test_target": "tests/structural-closure/domains/shell-management/lifecycle/test_virtual_environment_identity_lifecycle_tracking_3c620cb9.cpp",
+  "status": "SKELETON_MATERIALIZED",
+  "behavioral_credit": false,
+  "preservation": "PRESERVE_IMPLEMENT_EXTEND"
+}

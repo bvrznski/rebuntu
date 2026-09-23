@@ -1,0 +1,12 @@
+{
+  "source_prompt": ".phases/phases/phase-42-system-knowledge-graph/prompts/42.083-system-topology-view.md",
+  "phase_task": ".phases/phases/phase-42-system-knowledge-graph/TASK.md",
+  "canonical_root": "src/knowledge/system-knowledge-graph",
+  "role": "observability",
+  "implementation_header": "src/knowledge/system-knowledge-graph/subtask_targets/observability/system_topology_view_e8d0b783.hpp",
+  "implementation_source": "src/knowledge/system-knowledge-graph/subtask_targets/observability/system_topology_view_e8d0b783.cpp",
+  "test_target": "tests/structural-closure/knowledge/system-knowledge-graph/observability/test_system_topology_view_e8d0b783.cpp",
+  "status": "SKELETON_MATERIALIZED",
+  "behavioral_credit": false,
+  "preservation": "PRESERVE_IMPLEMENT_EXTEND"
+}

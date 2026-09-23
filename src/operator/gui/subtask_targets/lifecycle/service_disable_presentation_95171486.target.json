@@ -1,0 +1,12 @@
+{
+  "source_prompt": ".phases/phases/phase-49-gui/prompts/49.420-service-disable-presentation.md",
+  "phase_task": ".phases/phases/phase-49-gui/TASK.md",
+  "canonical_root": "src/operator/gui",
+  "role": "lifecycle",
+  "implementation_header": "src/operator/gui/subtask_targets/lifecycle/service_disable_presentation_95171486.hpp",
+  "implementation_source": "src/operator/gui/subtask_targets/lifecycle/service_disable_presentation_95171486.cpp",
+  "test_target": "tests/structural-closure/operator/gui/lifecycle/test_service_disable_presentation_95171486.cpp",
+  "status": "SKELETON_MATERIALIZED",
+  "behavioral_credit": false,
+  "preservation": "PRESERVE_IMPLEMENT_EXTEND"
+}

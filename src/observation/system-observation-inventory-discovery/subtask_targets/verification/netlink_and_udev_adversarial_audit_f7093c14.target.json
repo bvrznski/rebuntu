@@ -1,0 +1,12 @@
+{
+  "source_prompt": ".phases/phases/phase-05-system-observation-inventory-discovery/prompts/5.55_netlink_and_udev_adversarial_audit.md",
+  "phase_task": ".phases/phases/phase-05-system-observation-inventory-discovery/TASK.md",
+  "canonical_root": "src/observation/system-observation-inventory-discovery",
+  "role": "verification",
+  "implementation_header": "src/observation/system-observation-inventory-discovery/subtask_targets/verification/netlink_and_udev_adversarial_audit_f7093c14.hpp",
+  "implementation_source": "src/observation/system-observation-inventory-discovery/subtask_targets/verification/netlink_and_udev_adversarial_audit_f7093c14.cpp",
+  "test_target": "tests/structural-closure/observation/system-observation-inventory-discovery/verification/test_netlink_and_udev_adversarial_audit_f7093c14.cpp",
+  "status": "SKELETON_MATERIALIZED",
+  "behavioral_credit": false,
+  "preservation": "PRESERVE_IMPLEMENT_EXTEND"
+}

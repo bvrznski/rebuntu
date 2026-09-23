@@ -1,0 +1,9 @@
+{
+  "component": "stability-and-recovery",
+  "canonical_root": "control",
+  "phase_tasks": [
+    ".phases/phases/phase-12-stability-and-recovery/TASK.md"
+  ],
+  "status": "SKELETON",
+  "native_authority_rule": true
+}

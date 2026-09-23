@@ -1,0 +1,12 @@
+{
+  "source_prompt": ".phases/phases/phase-32-storage-management/prompts/32.38-storage-change-planning.md",
+  "phase_task": ".phases/phases/phase-32-storage-management/TASK.md",
+  "canonical_root": "src/domains/storage-management",
+  "role": "planning",
+  "implementation_header": "src/domains/storage-management/subtask_targets/planning/storage_change_planning_05cc97da.hpp",
+  "implementation_source": "src/domains/storage-management/subtask_targets/planning/storage_change_planning_05cc97da.cpp",
+  "test_target": "tests/structural-closure/domains/storage-management/planning/test_storage_change_planning_05cc97da.cpp",
+  "status": "SKELETON_MATERIALIZED",
+  "behavioral_credit": false,
+  "preservation": "PRESERVE_IMPLEMENT_EXTEND"
+}

@@ -1,0 +1,12 @@
+{
+  "source_prompt": ".phases/phases/phase-49-gui/prompts/49.131-package-overview.md",
+  "phase_task": ".phases/phases/phase-49-gui/TASK.md",
+  "canonical_root": "src/operator/gui",
+  "role": "requirements",
+  "implementation_header": "src/operator/gui/subtask_targets/requirements/package_overview_9016b797.hpp",
+  "implementation_source": "src/operator/gui/subtask_targets/requirements/package_overview_9016b797.cpp",
+  "test_target": "tests/structural-closure/operator/gui/requirements/test_package_overview_9016b797.cpp",
+  "status": "SKELETON_MATERIALIZED",
+  "behavioral_credit": false,
+  "preservation": "PRESERVE_IMPLEMENT_EXTEND"
+}

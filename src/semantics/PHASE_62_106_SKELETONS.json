@@ -1,0 +1,317 @@
+[
+  {
+    "phase": 62,
+    "slug": "intent-goal-desired-state-management",
+    "header": "cpp/include/system/semantic/phase_062_intent_goal_desired_state_management/contracts.hpp",
+    "prompt_dir": ".phases/PHASES/phase-62-intent-goal-desired-state-management/prompts",
+    "native_authority": "existing Rebuntu state contracts plus authoritative Linux observations"
+  },
+  {
+    "phase": 63,
+    "slug": "continuous-reconciliation-goal-maintenance",
+    "header": "cpp/include/system/semantic/phase_063_continuous_reconciliation_goal_maintenance/contracts.hpp",
+    "prompt_dir": ".phases/PHASES/phase-63-continuous-reconciliation-goal-maintenance/prompts",
+    "native_authority": "existing Rebuntu state contracts plus authoritative Linux observations"
+  },
+  {
+    "phase": 64,
+    "slug": "constraint-invariant-operational-contract",
+    "header": "cpp/include/system/semantic/phase_064_constraint_invariant_operational_contract/contracts.hpp",
+    "prompt_dir": ".phases/PHASES/phase-64-constraint-invariant-operational-contract/prompts",
+    "native_authority": "existing Rebuntu state contracts plus authoritative Linux observations"
+  },
+  {
+    "phase": 65,
+    "slug": "change-impact-consequence-analysis",
+    "header": "cpp/include/system/semantic/phase_065_change_impact_consequence_analysis/contracts.hpp",
+    "prompt_dir": ".phases/PHASES/phase-65-change-impact-consequence-analysis/prompts",
+    "native_authority": "existing Rebuntu state contracts plus authoritative Linux observations"
+  },
+  {
+    "phase": 66,
+    "slug": "transactional-change-safe-transition",
+    "header": "cpp/include/system/semantic/phase_066_transactional_change_safe_transition/contracts.hpp",
+    "prompt_dir": ".phases/PHASES/phase-66-transactional-change-safe-transition/prompts",
+    "native_authority": "existing Rebuntu state contracts plus authoritative Linux observations"
+  },
+  {
+    "phase": 67,
+    "slug": "recovery-repair-self-healing",
+    "header": "cpp/include/system/semantic/phase_067_recovery_repair_self_healing/contracts.hpp",
+    "prompt_dir": ".phases/PHASES/phase-67-recovery-repair-self-healing/prompts",
+    "native_authority": "existing Rebuntu state contracts plus authoritative Linux observations"
+  },
+  {
+    "phase": 68,
+    "slug": "system-stability-homeostasis",
+    "header": "cpp/include/system/semantic/phase_068_system_stability_homeostasis/contracts.hpp",
+    "prompt_dir": ".phases/PHASES/phase-68-system-stability-homeostasis/prompts",
+    "native_authority": "existing Rebuntu state contracts plus authoritative Linux observations"
+  },
+  {
+    "phase": 69,
+    "slug": "resource-intent-dynamic-allocation",
+    "header": "cpp/include/system/semantic/phase_069_resource_intent_dynamic_allocation/contracts.hpp",
+    "prompt_dir": ".phases/PHASES/phase-69-resource-intent-dynamic-allocation/prompts",
+    "native_authority": "kernel scheduler, cgroups, systemd, affinity/NUMA and hardware drivers"
+  },
+  {
+    "phase": 70,
+    "slug": "workload-placement-scheduling-intelligence",
+    "header": "cpp/include/system/semantic/phase_070_workload_placement_scheduling_intelligence/contracts.hpp",
+    "prompt_dir": ".phases/PHASES/phase-70-workload-placement-scheduling-intelligence/prompts",
+    "native_authority": "kernel scheduler, cgroups, systemd, affinity/NUMA and hardware drivers"
+  },
+  {
+    "phase": 71,
+    "slug": "performance-optimization-adaptive-tuning",
+    "header": "cpp/include/system/semantic/phase_071_performance_optimization_adaptive_tuning/contracts.hpp",
+    "prompt_dir": ".phases/PHASES/phase-71-performance-optimization-adaptive-tuning/prompts",
+    "native_authority": "kernel scheduler, cgroups, systemd, affinity/NUMA and hardware drivers"
+  },
+  {
+    "phase": 72,
+    "slug": "power-thermal-acoustic-optimization",
+    "header": "cpp/include/system/semantic/phase_072_power_thermal_acoustic_optimization/contracts.hpp",
+    "prompt_dir": ".phases/PHASES/phase-72-power-thermal-acoustic-optimization/prompts",
+    "native_authority": "kernel scheduler, cgroups, systemd, affinity/NUMA and hardware drivers"
+  },
+  {
+    "phase": 73,
+    "slug": "predictive-maintenance-failure-prevention",
+    "header": "cpp/include/system/semantic/phase_073_predictive_maintenance_failure_prevention/contracts.hpp",
+    "prompt_dir": ".phases/PHASES/phase-73-predictive-maintenance-failure-prevention/prompts",
+    "native_authority": "systemd, package managers, filesystems, snapshot/backup tools, kernel and drivers"
+  },
+  {
+    "phase": 74,
+    "slug": "system-experimentation-controlled-optimization",
+    "header": "cpp/include/system/semantic/phase_074_system_experimentation_controlled_optimization/contracts.hpp",
+    "prompt_dir": ".phases/PHASES/phase-74-system-experimentation-controlled-optimization/prompts",
+    "native_authority": "systemd, package managers, filesystems, snapshot/backup tools, kernel and drivers"
+  },
+  {
+    "phase": 75,
+    "slug": "configuration-evolution-drift-governance",
+    "header": "cpp/include/system/semantic/phase_075_configuration_evolution_drift_governance/contracts.hpp",
+    "prompt_dir": ".phases/PHASES/phase-75-configuration-evolution-drift-governance/prompts",
+    "native_authority": "systemd, package managers, filesystems, snapshot/backup tools, kernel and drivers"
+  },
+  {
+    "phase": 76,
+    "slug": "software-environment-evolution",
+    "header": "cpp/include/system/semantic/phase_076_software_environment_evolution/contracts.hpp",
+    "prompt_dir": ".phases/PHASES/phase-76-software-environment-evolution/prompts",
+    "native_authority": "systemd, package managers, filesystems, snapshot/backup tools, kernel and drivers"
+  },
+  {
+    "phase": 77,
+    "slug": "kernel-driver-hardware-evolution",
+    "header": "cpp/include/system/semantic/phase_077_kernel_driver_hardware_evolution/contracts.hpp",
+    "prompt_dir": ".phases/PHASES/phase-77-kernel-driver-hardware-evolution/prompts",
+    "native_authority": "systemd, package managers, filesystems, snapshot/backup tools, kernel and drivers"
+  },
+  {
+    "phase": 78,
+    "slug": "system-upgrade-release-migration",
+    "header": "cpp/include/system/semantic/phase_078_system_upgrade_release_migration/contracts.hpp",
+    "prompt_dir": ".phases/PHASES/phase-78-system-upgrade-release-migration/prompts",
+    "native_authority": "systemd, package managers, filesystems, snapshot/backup tools, kernel and drivers"
+  },
+  {
+    "phase": 79,
+    "slug": "backup-snapshot-disaster-recovery",
+    "header": "cpp/include/system/semantic/phase_079_backup_snapshot_disaster_recovery/contracts.hpp",
+    "prompt_dir": ".phases/PHASES/phase-79-backup-snapshot-disaster-recovery/prompts",
+    "native_authority": "systemd, package managers, filesystems, snapshot/backup tools, kernel and drivers"
+  },
+  {
+    "phase": 80,
+    "slug": "machine-reproducibility-reconstruction",
+    "header": "cpp/include/system/semantic/phase_080_machine_reproducibility_reconstruction/contracts.hpp",
+    "prompt_dir": ".phases/PHASES/phase-80-machine-reproducibility-reconstruction/prompts",
+    "native_authority": "systemd, package managers, filesystems, snapshot/backup tools, kernel and drivers"
+  },
+  {
+    "phase": 81,
+    "slug": "multi-machine-resource-federation",
+    "header": "cpp/include/system/semantic/phase_081_multi_machine_resource_federation/contracts.hpp",
+    "prompt_dir": ".phases/PHASES/phase-81-multi-machine-resource-federation/prompts",
+    "native_authority": "native host mechanisms plus configured transport/orchestration providers"
+  },
+  {
+    "phase": 82,
+    "slug": "distributed-workload-placement-execution",
+    "header": "cpp/include/system/semantic/phase_082_distributed_workload_placement_execution/contracts.hpp",
+    "prompt_dir": ".phases/PHASES/phase-82-distributed-workload-placement-execution/prompts",
+    "native_authority": "native host mechanisms plus configured transport/orchestration providers"
+  },
+  {
+    "phase": 83,
+    "slug": "distributed-goal-desired-state-coordination",
+    "header": "cpp/include/system/semantic/phase_083_distributed_goal_desired_state_coordination/contracts.hpp",
+    "prompt_dir": ".phases/PHASES/phase-83-distributed-goal-desired-state-coordination/prompts",
+    "native_authority": "native host mechanisms plus configured transport/orchestration providers"
+  },
+  {
+    "phase": 84,
+    "slug": "distributed-failure-partition-management",
+    "header": "cpp/include/system/semantic/phase_084_distributed_failure_partition_management/contracts.hpp",
+    "prompt_dir": ".phases/PHASES/phase-84-distributed-failure-partition-management/prompts",
+    "native_authority": "native host mechanisms plus configured transport/orchestration providers"
+  },
+  {
+    "phase": 85,
+    "slug": "fleet-infrastructure-management",
+    "header": "cpp/include/system/semantic/phase_085_fleet_infrastructure_management/contracts.hpp",
+    "prompt_dir": ".phases/PHASES/phase-85-fleet-infrastructure-management/prompts",
+    "native_authority": "native host mechanisms plus configured transport/orchestration providers"
+  },
+  {
+    "phase": 86,
+    "slug": "environment-situation-model",
+    "header": "cpp/include/system/semantic/phase_086_environment_situation_model/contracts.hpp",
+    "prompt_dir": ".phases/PHASES/phase-86-environment-situation-model/prompts",
+    "native_authority": "observations from native Linux facilities and existing Rebuntu evidence stores"
+  },
+  {
+    "phase": 87,
+    "slug": "operational-prediction-forward-simulation",
+    "header": "cpp/include/system/semantic/phase_087_operational_prediction_forward_simulation/contracts.hpp",
+    "prompt_dir": ".phases/PHASES/phase-87-operational-prediction-forward-simulation/prompts",
+    "native_authority": "observations from native Linux facilities and existing Rebuntu evidence stores"
+  },
+  {
+    "phase": 88,
+    "slug": "counterfactual-analysis",
+    "header": "cpp/include/system/semantic/phase_088_counterfactual_analysis/contracts.hpp",
+    "prompt_dir": ".phases/PHASES/phase-88-counterfactual-analysis/prompts",
+    "native_authority": "observations from native Linux facilities and existing Rebuntu evidence stores"
+  },
+  {
+    "phase": 89,
+    "slug": "causal-system-analysis",
+    "header": "cpp/include/system/semantic/phase_089_causal_system_analysis/contracts.hpp",
+    "prompt_dir": ".phases/PHASES/phase-89-causal-system-analysis/prompts",
+    "native_authority": "observations from native Linux facilities and existing Rebuntu evidence stores"
+  },
+  {
+    "phase": 90,
+    "slug": "root-cause-diagnostic-reasoning",
+    "header": "cpp/include/system/semantic/phase_090_root_cause_diagnostic_reasoning/contracts.hpp",
+    "prompt_dir": ".phases/PHASES/phase-90-root-cause-diagnostic-reasoning/prompts",
+    "native_authority": "observations from native Linux facilities and existing Rebuntu evidence stores"
+  },
+  {
+    "phase": 91,
+    "slug": "uncertainty-evidence-reasoning",
+    "header": "cpp/include/system/semantic/phase_091_uncertainty_evidence_reasoning/contracts.hpp",
+    "prompt_dir": ".phases/PHASES/phase-91-uncertainty-evidence-reasoning/prompts",
+    "native_authority": "observations from native Linux facilities and existing Rebuntu evidence stores"
+  },
+  {
+    "phase": 92,
+    "slug": "active-evidence-acquisition",
+    "header": "cpp/include/system/semantic/phase_092_active_evidence_acquisition/contracts.hpp",
+    "prompt_dir": ".phases/PHASES/phase-92-active-evidence-acquisition/prompts",
+    "native_authority": "observations from native Linux facilities and existing Rebuntu evidence stores"
+  },
+  {
+    "phase": 93,
+    "slug": "operational-learning",
+    "header": "cpp/include/system/semantic/phase_093_operational_learning/contracts.hpp",
+    "prompt_dir": ".phases/PHASES/phase-93-operational-learning/prompts",
+    "native_authority": "existing Rebuntu semantic/policy contracts and narrow native providers"
+  },
+  {
+    "phase": 94,
+    "slug": "experience-outcome-model",
+    "header": "cpp/include/system/semantic/phase_094_experience_outcome_model/contracts.hpp",
+    "prompt_dir": ".phases/PHASES/phase-94-experience-outcome-model/prompts",
+    "native_authority": "existing Rebuntu semantic/policy contracts and narrow native providers"
+  },
+  {
+    "phase": 95,
+    "slug": "adaptive-strategy-selection",
+    "header": "cpp/include/system/semantic/phase_095_adaptive_strategy_selection/contracts.hpp",
+    "prompt_dir": ".phases/PHASES/phase-95-adaptive-strategy-selection/prompts",
+    "native_authority": "existing Rebuntu semantic/policy contracts and narrow native providers"
+  },
+  {
+    "phase": 96,
+    "slug": "long-horizon-operational-planning",
+    "header": "cpp/include/system/semantic/phase_096_long_horizon_operational_planning/contracts.hpp",
+    "prompt_dir": ".phases/PHASES/phase-96-long-horizon-operational-planning/prompts",
+    "native_authority": "existing Rebuntu semantic/policy contracts and narrow native providers"
+  },
+  {
+    "phase": 97,
+    "slug": "proactive-operations",
+    "header": "cpp/include/system/semantic/phase_097_proactive_operations/contracts.hpp",
+    "prompt_dir": ".phases/PHASES/phase-97-proactive-operations/prompts",
+    "native_authority": "existing Rebuntu semantic/policy contracts and narrow native providers"
+  },
+  {
+    "phase": 98,
+    "slug": "bounded-autonomous-operations",
+    "header": "cpp/include/system/semantic/phase_098_bounded_autonomous_operations/contracts.hpp",
+    "prompt_dir": ".phases/PHASES/phase-98-bounded-autonomous-operations/prompts",
+    "native_authority": "existing Rebuntu semantic/policy contracts and narrow native providers"
+  },
+  {
+    "phase": 99,
+    "slug": "autonomy-budget-delegation",
+    "header": "cpp/include/system/semantic/phase_099_autonomy_budget_delegation/contracts.hpp",
+    "prompt_dir": ".phases/PHASES/phase-99-autonomy-budget-delegation/prompts",
+    "native_authority": "existing Rebuntu semantic/policy contracts and narrow native providers"
+  },
+  {
+    "phase": 100,
+    "slug": "human-rebuntu-collaborative-control",
+    "header": "cpp/include/system/semantic/phase_100_human_rebuntu_collaborative_control/contracts.hpp",
+    "prompt_dir": ".phases/PHASES/phase-100-human-rebuntu-collaborative-control/prompts",
+    "native_authority": "operator interfaces plus existing Rebuntu policy/evidence contracts"
+  },
+  {
+    "phase": 101,
+    "slug": "operational-attention-priority",
+    "header": "cpp/include/system/semantic/phase_101_operational_attention_priority/contracts.hpp",
+    "prompt_dir": ".phases/PHASES/phase-101-operational-attention-priority/prompts",
+    "native_authority": "operator interfaces plus existing Rebuntu policy/evidence contracts"
+  },
+  {
+    "phase": 102,
+    "slug": "interrupt-escalation-attention-arbitration",
+    "header": "cpp/include/system/semantic/phase_102_interrupt_escalation_attention_arbitration/contracts.hpp",
+    "prompt_dir": ".phases/PHASES/phase-102-interrupt-escalation-attention-arbitration/prompts",
+    "native_authority": "operator interfaces plus existing Rebuntu policy/evidence contracts"
+  },
+  {
+    "phase": 103,
+    "slug": "operator-preference-working-style",
+    "header": "cpp/include/system/semantic/phase_103_operator_preference_working_style/contracts.hpp",
+    "prompt_dir": ".phases/PHASES/phase-103-operator-preference-working-style/prompts",
+    "native_authority": "operator interfaces plus existing Rebuntu policy/evidence contracts"
+  },
+  {
+    "phase": 104,
+    "slug": "explainable-autonomous-operations",
+    "header": "cpp/include/system/semantic/phase_104_explainable_autonomous_operations/contracts.hpp",
+    "prompt_dir": ".phases/PHASES/phase-104-explainable-autonomous-operations/prompts",
+    "native_authority": "operator interfaces plus existing Rebuntu policy/evidence contracts"
+  },
+  {
+    "phase": 105,
+    "slug": "system-self-inspection-architecture-introspection",
+    "header": "cpp/include/system/semantic/phase_105_system_self_inspection_architecture_introspection/contracts.hpp",
+    "prompt_dir": ".phases/PHASES/phase-105-system-self-inspection-architecture-introspection/prompts",
+    "native_authority": "Rebuntu metadata/build/runtime evidence; Linux remains authority for machine state"
+  },
+  {
+    "phase": 106,
+    "slug": "self-validation-continuous-architecture-audit",
+    "header": "cpp/include/system/semantic/phase_106_self_validation_continuous_architecture_audit/contracts.hpp",
+    "prompt_dir": ".phases/PHASES/phase-106-self-validation-continuous-architecture-audit/prompts",
+    "native_authority": "Rebuntu metadata/build/runtime evidence; Linux remains authority for machine state"
+  }
+]

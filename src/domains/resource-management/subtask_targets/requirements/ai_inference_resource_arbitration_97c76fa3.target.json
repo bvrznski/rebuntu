@@ -1,0 +1,12 @@
+{
+  "source_prompt": ".phases/phases/phase-30-resource-management/prompts/30.40-ai-inference-resource-arbitration.md",
+  "phase_task": ".phases/phases/phase-30-resource-management/TASK.md",
+  "canonical_root": "src/domains/resource-management",
+  "role": "requirements",
+  "implementation_header": "src/domains/resource-management/subtask_targets/requirements/ai_inference_resource_arbitration_97c76fa3.hpp",
+  "implementation_source": "src/domains/resource-management/subtask_targets/requirements/ai_inference_resource_arbitration_97c76fa3.cpp",
+  "test_target": "tests/structural-closure/domains/resource-management/requirements/test_ai_inference_resource_arbitration_97c76fa3.cpp",
+  "status": "SKELETON_MATERIALIZED",
+  "behavioral_credit": false,
+  "preservation": "PRESERVE_IMPLEMENT_EXTEND"
+}

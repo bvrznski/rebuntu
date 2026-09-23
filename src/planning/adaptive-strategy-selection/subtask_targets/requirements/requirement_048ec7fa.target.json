@@ -1,0 +1,12 @@
+{
+  "source_prompt": ".phases/phases/phase-95-adaptive-strategy-selection/prompts/95.16.md",
+  "phase_task": ".phases/phases/phase-95-adaptive-strategy-selection/TASK.md",
+  "canonical_root": "src/planning/adaptive-strategy-selection",
+  "role": "requirements",
+  "implementation_header": "src/planning/adaptive-strategy-selection/subtask_targets/requirements/requirement_048ec7fa.hpp",
+  "implementation_source": "src/planning/adaptive-strategy-selection/subtask_targets/requirements/requirement_048ec7fa.cpp",
+  "test_target": "tests/structural-closure/planning/adaptive-strategy-selection/requirements/test_requirement_048ec7fa.cpp",
+  "status": "SKELETON_MATERIALIZED",
+  "behavioral_credit": false,
+  "preservation": "PRESERVE_IMPLEMENT_EXTEND"
+}

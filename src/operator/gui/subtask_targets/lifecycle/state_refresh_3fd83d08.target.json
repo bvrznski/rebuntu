@@ -1,0 +1,12 @@
+{
+  "source_prompt": ".phases/phases/phase-49-gui/prompts/49.335-state-refresh.md",
+  "phase_task": ".phases/phases/phase-49-gui/TASK.md",
+  "canonical_root": "src/operator/gui",
+  "role": "lifecycle",
+  "implementation_header": "src/operator/gui/subtask_targets/lifecycle/state_refresh_3fd83d08.hpp",
+  "implementation_source": "src/operator/gui/subtask_targets/lifecycle/state_refresh_3fd83d08.cpp",
+  "test_target": "tests/structural-closure/operator/gui/lifecycle/test_state_refresh_3fd83d08.cpp",
+  "status": "SKELETON_MATERIALIZED",
+  "behavioral_credit": false,
+  "preservation": "PRESERVE_IMPLEMENT_EXTEND"
+}

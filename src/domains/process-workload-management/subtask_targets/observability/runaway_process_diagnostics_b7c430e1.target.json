@@ -1,0 +1,12 @@
+{
+  "source_prompt": ".phases/phases/phase-29-process-workload-management/prompts/29.39-runaway-process-diagnostics.md",
+  "phase_task": ".phases/phases/phase-29-process-workload-management/TASK.md",
+  "canonical_root": "src/domains/process-workload-management",
+  "role": "observability",
+  "implementation_header": "src/domains/process-workload-management/subtask_targets/observability/runaway_process_diagnostics_b7c430e1.hpp",
+  "implementation_source": "src/domains/process-workload-management/subtask_targets/observability/runaway_process_diagnostics_b7c430e1.cpp",
+  "test_target": "tests/structural-closure/domains/process-workload-management/observability/test_runaway_process_diagnostics_b7c430e1.cpp",
+  "status": "SKELETON_MATERIALIZED",
+  "behavioral_credit": false,
+  "preservation": "PRESERVE_IMPLEMENT_EXTEND"
+}

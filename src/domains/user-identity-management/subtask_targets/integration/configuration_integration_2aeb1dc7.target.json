@@ -1,0 +1,12 @@
+{
+  "source_prompt": ".phases/phases/phase-38-user-identity-management/prompts/38.62-phase-36-configuration-integration.md",
+  "phase_task": ".phases/phases/phase-38-user-identity-management/TASK.md",
+  "canonical_root": "src/domains/user-identity-management",
+  "role": "integration",
+  "implementation_header": "src/domains/user-identity-management/subtask_targets/integration/configuration_integration_2aeb1dc7.hpp",
+  "implementation_source": "src/domains/user-identity-management/subtask_targets/integration/configuration_integration_2aeb1dc7.cpp",
+  "test_target": "tests/structural-closure/domains/user-identity-management/integration/test_configuration_integration_2aeb1dc7.cpp",
+  "status": "SKELETON_MATERIALIZED",
+  "behavioral_credit": false,
+  "preservation": "PRESERVE_IMPLEMENT_EXTEND"
+}

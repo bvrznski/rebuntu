@@ -1,0 +1,12 @@
+{
+  "source_prompt": ".phases/phases/phase-102-interrupt-escalation-attention-arbitration/prompts/102.11.md",
+  "phase_task": ".phases/phases/phase-102-interrupt-escalation-attention-arbitration/TASK.md",
+  "canonical_root": "src/operator/interrupt-escalation-attention-arbitration",
+  "role": "requirements",
+  "implementation_header": "src/operator/interrupt-escalation-attention-arbitration/subtask_targets/requirements/requirement_22fbeb48.hpp",
+  "implementation_source": "src/operator/interrupt-escalation-attention-arbitration/subtask_targets/requirements/requirement_22fbeb48.cpp",
+  "test_target": "tests/structural-closure/operator/interrupt-escalation-attention-arbitration/requirements/test_requirement_22fbeb48.cpp",
+  "status": "SKELETON_MATERIALIZED",
+  "behavioral_credit": false,
+  "preservation": "PRESERVE_IMPLEMENT_EXTEND"
+}

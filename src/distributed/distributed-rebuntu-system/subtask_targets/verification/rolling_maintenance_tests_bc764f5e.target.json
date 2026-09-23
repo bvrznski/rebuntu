@@ -1,0 +1,12 @@
+{
+  "source_prompt": ".phases/phases/phase-51-distributed-rebuntu-system/prompts/51.522-rolling-maintenance-tests.md",
+  "phase_task": ".phases/phases/phase-51-distributed-rebuntu-system/TASK.md",
+  "canonical_root": "src/distributed/distributed-rebuntu-system",
+  "role": "verification",
+  "implementation_header": "src/distributed/distributed-rebuntu-system/subtask_targets/verification/rolling_maintenance_tests_bc764f5e.hpp",
+  "implementation_source": "src/distributed/distributed-rebuntu-system/subtask_targets/verification/rolling_maintenance_tests_bc764f5e.cpp",
+  "test_target": "tests/structural-closure/distributed/distributed-rebuntu-system/verification/test_rolling_maintenance_tests_bc764f5e.cpp",
+  "status": "SKELETON_MATERIALIZED",
+  "behavioral_credit": false,
+  "preservation": "PRESERVE_IMPLEMENT_EXTEND"
+}

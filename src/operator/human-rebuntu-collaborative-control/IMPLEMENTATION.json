@@ -1,0 +1,9 @@
+{
+  "component": "human-rebuntu-collaborative-control",
+  "canonical_root": "operator",
+  "phase_tasks": [
+    ".phases/phases/phase-100-human-rebuntu-collaborative-control/TASK.md"
+  ],
+  "status": "SKELETON",
+  "native_authority_rule": true
+}

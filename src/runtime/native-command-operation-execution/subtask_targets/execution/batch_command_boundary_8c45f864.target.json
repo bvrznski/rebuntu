@@ -1,0 +1,12 @@
+{
+  "source_prompt": ".phases/phases/phase-06-native-command-operation-execution/prompts/6.42_batch_command_boundary.md",
+  "phase_task": ".phases/phases/phase-06-native-command-operation-execution/TASK.md",
+  "canonical_root": "src/runtime/native-command-operation-execution",
+  "role": "execution",
+  "implementation_header": "src/runtime/native-command-operation-execution/subtask_targets/execution/batch_command_boundary_8c45f864.hpp",
+  "implementation_source": "src/runtime/native-command-operation-execution/subtask_targets/execution/batch_command_boundary_8c45f864.cpp",
+  "test_target": "tests/structural-closure/runtime/native-command-operation-execution/execution/test_batch_command_boundary_8c45f864.cpp",
+  "status": "SKELETON_MATERIALIZED",
+  "behavioral_credit": false,
+  "preservation": "PRESERVE_IMPLEMENT_EXTEND"
+}

@@ -1,0 +1,12 @@
+{
+  "source_prompt": ".phases/phases/phase-28-development-environment-management/prompts/28.14-task-execution-boundary.md",
+  "phase_task": ".phases/phases/phase-28-development-environment-management/TASK.md",
+  "canonical_root": "src/domains/development-environment-management",
+  "role": "execution",
+  "implementation_header": "src/domains/development-environment-management/subtask_targets/execution/task_execution_boundary_eb9c7248.hpp",
+  "implementation_source": "src/domains/development-environment-management/subtask_targets/execution/task_execution_boundary_eb9c7248.cpp",
+  "test_target": "tests/structural-closure/domains/development-environment-management/execution/test_task_execution_boundary_eb9c7248.cpp",
+  "status": "SKELETON_MATERIALIZED",
+  "behavioral_credit": false,
+  "preservation": "PRESERVE_IMPLEMENT_EXTEND"
+}

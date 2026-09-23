@@ -1,0 +1,12 @@
+{
+  "source_prompt": ".phases/phases/phase-57-continuous-reconciliation-goal-maintenance/prompts/57.11-rebuntu-phase-57-11-oscillation-detection.md",
+  "phase_task": ".phases/phases/phase-57-continuous-reconciliation-goal-maintenance/TASK.md",
+  "canonical_root": "src/control/continuous-reconciliation-goal-maintenance",
+  "role": "requirements",
+  "implementation_header": "src/control/continuous-reconciliation-goal-maintenance/subtask_targets/requirements/oscillation_detection_2a3dae54.hpp",
+  "implementation_source": "src/control/continuous-reconciliation-goal-maintenance/subtask_targets/requirements/oscillation_detection_2a3dae54.cpp",
+  "test_target": "tests/structural-closure/control/continuous-reconciliation-goal-maintenance/requirements/test_oscillation_detection_2a3dae54.cpp",
+  "status": "SKELETON_MATERIALIZED",
+  "behavioral_credit": false,
+  "preservation": "PRESERVE_IMPLEMENT_EXTEND"
+}

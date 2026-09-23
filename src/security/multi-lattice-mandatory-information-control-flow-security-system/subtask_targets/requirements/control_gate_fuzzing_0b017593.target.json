@@ -1,0 +1,12 @@
+{
+  "source_prompt": ".phases/phases/phase-53-multi-lattice-mandatory-information-control-flow-security-system/prompts/53.115-control-gate-fuzzing.md",
+  "phase_task": ".phases/phases/phase-53-multi-lattice-mandatory-information-control-flow-security-system/TASK.md",
+  "canonical_root": "src/security/multi-lattice-mandatory-information-control-flow-security-system",
+  "role": "requirements",
+  "implementation_header": "src/security/multi-lattice-mandatory-information-control-flow-security-system/subtask_targets/requirements/control_gate_fuzzing_0b017593.hpp",
+  "implementation_source": "src/security/multi-lattice-mandatory-information-control-flow-security-system/subtask_targets/requirements/control_gate_fuzzing_0b017593.cpp",
+  "test_target": "tests/structural-closure/security/multi-lattice-mandatory-information-control-flow-security-system/requirements/test_control_gate_fuzzing_0b017593.cpp",
+  "status": "SKELETON_MATERIALIZED",
+  "behavioral_credit": false,
+  "preservation": "PRESERVE_IMPLEMENT_EXTEND"
+}

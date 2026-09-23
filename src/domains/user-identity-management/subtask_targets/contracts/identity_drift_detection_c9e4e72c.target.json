@@ -1,0 +1,12 @@
+{
+  "source_prompt": ".phases/phases/phase-38-user-identity-management/prompts/38.56-identity-drift-detection.md",
+  "phase_task": ".phases/phases/phase-38-user-identity-management/TASK.md",
+  "canonical_root": "src/domains/user-identity-management",
+  "role": "contracts",
+  "implementation_header": "src/domains/user-identity-management/subtask_targets/contracts/identity_drift_detection_c9e4e72c.hpp",
+  "implementation_source": "src/domains/user-identity-management/subtask_targets/contracts/identity_drift_detection_c9e4e72c.cpp",
+  "test_target": "tests/structural-closure/domains/user-identity-management/contracts/test_identity_drift_detection_c9e4e72c.cpp",
+  "status": "SKELETON_MATERIALIZED",
+  "behavioral_credit": false,
+  "preservation": "PRESERVE_IMPLEMENT_EXTEND"
+}

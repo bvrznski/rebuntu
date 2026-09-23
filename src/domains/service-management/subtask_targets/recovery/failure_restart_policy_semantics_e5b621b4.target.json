@@ -1,0 +1,12 @@
+{
+  "source_prompt": ".phases/phases/phase-31-service-management/prompts/31.31-failure-restart-policy-semantics.md",
+  "phase_task": ".phases/phases/phase-31-service-management/TASK.md",
+  "canonical_root": "src/domains/service-management",
+  "role": "recovery",
+  "implementation_header": "src/domains/service-management/subtask_targets/recovery/failure_restart_policy_semantics_e5b621b4.hpp",
+  "implementation_source": "src/domains/service-management/subtask_targets/recovery/failure_restart_policy_semantics_e5b621b4.cpp",
+  "test_target": "tests/structural-closure/domains/service-management/recovery/test_failure_restart_policy_semantics_e5b621b4.cpp",
+  "status": "SKELETON_MATERIALIZED",
+  "behavioral_credit": false,
+  "preservation": "PRESERVE_IMPLEMENT_EXTEND"
+}

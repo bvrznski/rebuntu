@@ -1,0 +1,6 @@
+#include "knowledge/semantic-log-understanding/scheduling/deadlines/validation.hpp"
+
+// Structural translation-unit slot only. No maturity credit.
+namespace rebuntu::structural_slots {
+static_assert(Skeleton_1d1f2cff1f_Validation::structural_revision == 25);
+}

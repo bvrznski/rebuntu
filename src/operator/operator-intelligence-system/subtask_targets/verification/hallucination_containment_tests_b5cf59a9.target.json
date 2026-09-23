@@ -1,0 +1,12 @@
+{
+  "source_prompt": ".phases/phases/phase-43-operator-intelligence-system/prompts/43.183-hallucination-containment-tests.md",
+  "phase_task": ".phases/phases/phase-43-operator-intelligence-system/TASK.md",
+  "canonical_root": "src/operator/operator-intelligence-system",
+  "role": "verification",
+  "implementation_header": "src/operator/operator-intelligence-system/subtask_targets/verification/hallucination_containment_tests_b5cf59a9.hpp",
+  "implementation_source": "src/operator/operator-intelligence-system/subtask_targets/verification/hallucination_containment_tests_b5cf59a9.cpp",
+  "test_target": "tests/structural-closure/operator/operator-intelligence-system/verification/test_hallucination_containment_tests_b5cf59a9.cpp",
+  "status": "SKELETON_MATERIALIZED",
+  "behavioral_credit": false,
+  "preservation": "PRESERVE_IMPLEMENT_EXTEND"
+}

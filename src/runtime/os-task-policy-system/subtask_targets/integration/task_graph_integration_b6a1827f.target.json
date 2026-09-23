@@ -1,0 +1,12 @@
+{
+  "source_prompt": ".phases/phases/phase-47-os-task-policy-system/prompts/47.237-phase-42-task-graph-integration.md",
+  "phase_task": ".phases/phases/phase-47-os-task-policy-system/TASK.md",
+  "canonical_root": "src/runtime/os-task-policy-system",
+  "role": "integration",
+  "implementation_header": "src/runtime/os-task-policy-system/subtask_targets/integration/task_graph_integration_b6a1827f.hpp",
+  "implementation_source": "src/runtime/os-task-policy-system/subtask_targets/integration/task_graph_integration_b6a1827f.cpp",
+  "test_target": "tests/structural-closure/runtime/os-task-policy-system/integration/test_task_graph_integration_b6a1827f.cpp",
+  "status": "SKELETON_MATERIALIZED",
+  "behavioral_credit": false,
+  "preservation": "PRESERVE_IMPLEMENT_EXTEND"
+}

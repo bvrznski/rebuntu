@@ -1,0 +1,12 @@
+{
+  "source_prompt": ".phases/phases/phase-49-gui/prompts/49.389-homoglyph-awareness.md",
+  "phase_task": ".phases/phases/phase-49-gui/TASK.md",
+  "canonical_root": "src/operator/gui",
+  "role": "requirements",
+  "implementation_header": "src/operator/gui/subtask_targets/requirements/homoglyph_awareness_1c7715ca.hpp",
+  "implementation_source": "src/operator/gui/subtask_targets/requirements/homoglyph_awareness_1c7715ca.cpp",
+  "test_target": "tests/structural-closure/operator/gui/requirements/test_homoglyph_awareness_1c7715ca.cpp",
+  "status": "SKELETON_MATERIALIZED",
+  "behavioral_credit": false,
+  "preservation": "PRESERVE_IMPLEMENT_EXTEND"
+}

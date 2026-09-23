@@ -1,0 +1,12 @@
+{
+  "source_prompt": ".phases/phases/phase-61-recovery-repair-self-healing/prompts/61.2-rebuntu-phase-61-2-failure-classification.md",
+  "phase_task": ".phases/phases/phase-61-recovery-repair-self-healing/TASK.md",
+  "canonical_root": "src/control/recovery-repair-self-healing",
+  "role": "requirements",
+  "implementation_header": "src/control/recovery-repair-self-healing/subtask_targets/requirements/failure_classification_2b07149a.hpp",
+  "implementation_source": "src/control/recovery-repair-self-healing/subtask_targets/requirements/failure_classification_2b07149a.cpp",
+  "test_target": "tests/structural-closure/control/recovery-repair-self-healing/requirements/test_failure_classification_2b07149a.cpp",
+  "status": "SKELETON_MATERIALIZED",
+  "behavioral_credit": false,
+  "preservation": "PRESERVE_IMPLEMENT_EXTEND"
+}

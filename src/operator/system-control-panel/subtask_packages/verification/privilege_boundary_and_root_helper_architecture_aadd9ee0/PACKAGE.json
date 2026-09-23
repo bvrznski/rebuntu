@@ -1,0 +1,41 @@
+{
+  "source_prompt": ".phases/phases/phase-25-system-control-panel/prompts/25.22-privilege-boundary-and-root-helper-architecture.md",
+  "phase_task": ".phases/phases/phase-25-system-control-panel/TASK.md",
+  "package_root": "src/operator/system-control-panel/subtask_packages/verification/privilege_boundary_and_root_helper_architecture_aadd9ee0",
+  "role": "verification",
+  "aspects": [
+    "contract",
+    "model",
+    "state",
+    "errors",
+    "evidence",
+    "verification",
+    "integration",
+    "execution",
+    "recovery",
+    "policy",
+    "observability"
+  ],
+  "files": [
+    "src/operator/system-control-panel/subtask_packages/verification/privilege_boundary_and_root_helper_architecture_aadd9ee0/contract.hpp",
+    "src/operator/system-control-panel/subtask_packages/verification/privilege_boundary_and_root_helper_architecture_aadd9ee0/model.hpp",
+    "src/operator/system-control-panel/subtask_packages/verification/privilege_boundary_and_root_helper_architecture_aadd9ee0/state.hpp",
+    "src/operator/system-control-panel/subtask_packages/verification/privilege_boundary_and_root_helper_architecture_aadd9ee0/errors.hpp",
+    "src/operator/system-control-panel/subtask_packages/verification/privilege_boundary_and_root_helper_architecture_aadd9ee0/evidence.hpp",
+    "src/operator/system-control-panel/subtask_packages/verification/privilege_boundary_and_root_helper_architecture_aadd9ee0/verification.hpp",
+    "src/operator/system-control-panel/subtask_packages/verification/privilege_boundary_and_root_helper_architecture_aadd9ee0/verification.cpp",
+    "src/operator/system-control-panel/subtask_packages/verification/privilege_boundary_and_root_helper_architecture_aadd9ee0/integration.hpp",
+    "src/operator/system-control-panel/subtask_packages/verification/privilege_boundary_and_root_helper_architecture_aadd9ee0/integration.cpp",
+    "src/operator/system-control-panel/subtask_packages/verification/privilege_boundary_and_root_helper_architecture_aadd9ee0/execution.hpp",
+    "src/operator/system-control-panel/subtask_packages/verification/privilege_boundary_and_root_helper_architecture_aadd9ee0/execution.cpp",
+    "src/operator/system-control-panel/subtask_packages/verification/privilege_boundary_and_root_helper_architecture_aadd9ee0/recovery.hpp",
+    "src/operator/system-control-panel/subtask_packages/verification/privilege_boundary_and_root_helper_architecture_aadd9ee0/recovery.cpp",
+    "src/operator/system-control-panel/subtask_packages/verification/privilege_boundary_and_root_helper_architecture_aadd9ee0/policy.hpp",
+    "src/operator/system-control-panel/subtask_packages/verification/privilege_boundary_and_root_helper_architecture_aadd9ee0/policy.cpp",
+    "src/operator/system-control-panel/subtask_packages/verification/privilege_boundary_and_root_helper_architecture_aadd9ee0/observability.hpp",
+    "src/operator/system-control-panel/subtask_packages/verification/privilege_boundary_and_root_helper_architecture_aadd9ee0/observability.cpp"
+  ],
+  "status": "SKELETON_MATERIALIZED",
+  "behavioral_credit": false,
+  "preservation": "PRESERVE_IMPLEMENT_EXTEND"
+}

@@ -1,0 +1,12 @@
+{
+  "source_prompt": ".phases/phases/phase-49-gui/prompts/49.044-background-operation-presentation.md",
+  "phase_task": ".phases/phases/phase-49-gui/TASK.md",
+  "canonical_root": "src/operator/gui",
+  "role": "execution",
+  "implementation_header": "src/operator/gui/subtask_targets/execution/background_operation_presentation_d48f8c4b.hpp",
+  "implementation_source": "src/operator/gui/subtask_targets/execution/background_operation_presentation_d48f8c4b.cpp",
+  "test_target": "tests/structural-closure/operator/gui/execution/test_background_operation_presentation_d48f8c4b.cpp",
+  "status": "SKELETON_MATERIALIZED",
+  "behavioral_credit": false,
+  "preservation": "PRESERVE_IMPLEMENT_EXTEND"
+}

@@ -1,0 +1,12 @@
+{
+  "source_prompt": ".phases/phases/phase-28-development-environment-management/prompts/28.3-repository-discovery-vcs-boundary.md",
+  "phase_task": ".phases/phases/phase-28-development-environment-management/TASK.md",
+  "canonical_root": "src/domains/development-environment-management",
+  "role": "resolution",
+  "implementation_header": "src/domains/development-environment-management/subtask_targets/resolution/repository_discovery_vcs_boundary_547a6125.hpp",
+  "implementation_source": "src/domains/development-environment-management/subtask_targets/resolution/repository_discovery_vcs_boundary_547a6125.cpp",
+  "test_target": "tests/structural-closure/domains/development-environment-management/resolution/test_repository_discovery_vcs_boundary_547a6125.cpp",
+  "status": "SKELETON_MATERIALIZED",
+  "behavioral_credit": false,
+  "preservation": "PRESERVE_IMPLEMENT_EXTEND"
+}

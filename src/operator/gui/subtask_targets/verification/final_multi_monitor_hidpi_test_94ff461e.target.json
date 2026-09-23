@@ -1,0 +1,12 @@
+{
+  "source_prompt": ".phases/phases/phase-49-gui/prompts/49.632-final-multi-monitor-hidpi-test.md",
+  "phase_task": ".phases/phases/phase-49-gui/TASK.md",
+  "canonical_root": "src/operator/gui",
+  "role": "verification",
+  "implementation_header": "src/operator/gui/subtask_targets/verification/final_multi_monitor_hidpi_test_94ff461e.hpp",
+  "implementation_source": "src/operator/gui/subtask_targets/verification/final_multi_monitor_hidpi_test_94ff461e.cpp",
+  "test_target": "tests/structural-closure/operator/gui/verification/test_final_multi_monitor_hidpi_test_94ff461e.cpp",
+  "status": "SKELETON_MATERIALIZED",
+  "behavioral_credit": false,
+  "preservation": "PRESERVE_IMPLEMENT_EXTEND"
+}

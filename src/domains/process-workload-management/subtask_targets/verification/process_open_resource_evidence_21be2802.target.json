@@ -1,0 +1,12 @@
+{
+  "source_prompt": ".phases/phases/phase-29-process-workload-management/prompts/29.12-process-open-resource-evidence.md",
+  "phase_task": ".phases/phases/phase-29-process-workload-management/TASK.md",
+  "canonical_root": "src/domains/process-workload-management",
+  "role": "verification",
+  "implementation_header": "src/domains/process-workload-management/subtask_targets/verification/process_open_resource_evidence_21be2802.hpp",
+  "implementation_source": "src/domains/process-workload-management/subtask_targets/verification/process_open_resource_evidence_21be2802.cpp",
+  "test_target": "tests/structural-closure/domains/process-workload-management/verification/test_process_open_resource_evidence_21be2802.cpp",
+  "status": "SKELETON_MATERIALIZED",
+  "behavioral_credit": false,
+  "preservation": "PRESERVE_IMPLEMENT_EXTEND"
+}

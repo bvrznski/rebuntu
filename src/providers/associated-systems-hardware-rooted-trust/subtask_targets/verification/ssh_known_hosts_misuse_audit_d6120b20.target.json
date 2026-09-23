@@ -1,0 +1,12 @@
+{
+  "source_prompt": ".phases/phases/phase-52-associated-systems-hardware-rooted-trust/prompts/52.632-ssh-known-hosts-misuse-audit.md",
+  "phase_task": ".phases/phases/phase-52-associated-systems-hardware-rooted-trust/TASK.md",
+  "canonical_root": "src/providers/associated-systems-hardware-rooted-trust",
+  "role": "verification",
+  "implementation_header": "src/providers/associated-systems-hardware-rooted-trust/subtask_targets/verification/ssh_known_hosts_misuse_audit_d6120b20.hpp",
+  "implementation_source": "src/providers/associated-systems-hardware-rooted-trust/subtask_targets/verification/ssh_known_hosts_misuse_audit_d6120b20.cpp",
+  "test_target": "tests/structural-closure/providers/associated-systems-hardware-rooted-trust/verification/test_ssh_known_hosts_misuse_audit_d6120b20.cpp",
+  "status": "SKELETON_MATERIALIZED",
+  "behavioral_credit": false,
+  "preservation": "PRESERVE_IMPLEMENT_EXTEND"
+}

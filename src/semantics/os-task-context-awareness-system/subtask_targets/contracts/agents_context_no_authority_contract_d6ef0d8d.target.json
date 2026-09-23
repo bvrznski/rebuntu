@@ -1,0 +1,12 @@
+{
+  "source_prompt": ".phases/phases/phase-48-os-task-context-awareness-system/prompts/48.383-agents-context-no-authority-contract.md",
+  "phase_task": ".phases/phases/phase-48-os-task-context-awareness-system/TASK.md",
+  "canonical_root": "src/semantics/os-task-context-awareness-system",
+  "role": "contracts",
+  "implementation_header": "src/semantics/os-task-context-awareness-system/subtask_targets/contracts/agents_context_no_authority_contract_d6ef0d8d.hpp",
+  "implementation_source": "src/semantics/os-task-context-awareness-system/subtask_targets/contracts/agents_context_no_authority_contract_d6ef0d8d.cpp",
+  "test_target": "tests/structural-closure/semantics/os-task-context-awareness-system/contracts/test_agents_context_no_authority_contract_d6ef0d8d.cpp",
+  "status": "SKELETON_MATERIALIZED",
+  "behavioral_credit": false,
+  "preservation": "PRESERVE_IMPLEMENT_EXTEND"
+}

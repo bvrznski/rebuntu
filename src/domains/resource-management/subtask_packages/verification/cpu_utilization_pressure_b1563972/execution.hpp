@@ -1,0 +1,13 @@
+#pragma once
+
+// XXVII SUBTASK PACKAGE SKELETON — zero behavioral maturity credit.
+// Source: .phases/phases/phase-30-resource-management/prompts/30.4-cpu-utilization-pressure.md
+// Preserve this architectural reservation and implement only after reading the source prompt.
+
+namespace rebuntu::subtask_packages::phase_30::s_b1563972::execution {
+struct ExecutionSlot final {
+    static constexpr const char* source_prompt = ".phases/phases/phase-30-resource-management/prompts/30.4-cpu-utilization-pressure.md";
+    static constexpr const char* aspect = "execution";
+    static constexpr const char* status = "SKELETON_MATERIALIZED";
+};
+} // namespace rebuntu::subtask_packages::phase_30::s_b1563972::execution

@@ -1,0 +1,12 @@
+{
+  "source_prompt": ".phases/phases/phase-61-recovery-repair-self-healing/prompts/61.49-rebuntu-phase-61-49-integration-matrix.md",
+  "phase_task": ".phases/phases/phase-61-recovery-repair-self-healing/TASK.md",
+  "canonical_root": "src/control/recovery-repair-self-healing",
+  "role": "integration",
+  "implementation_header": "src/control/recovery-repair-self-healing/subtask_targets/integration/integration_matrix_86033426.hpp",
+  "implementation_source": "src/control/recovery-repair-self-healing/subtask_targets/integration/integration_matrix_86033426.cpp",
+  "test_target": "tests/structural-closure/control/recovery-repair-self-healing/integration/test_integration_matrix_86033426.cpp",
+  "status": "SKELETON_MATERIALIZED",
+  "behavioral_credit": false,
+  "preservation": "PRESERVE_IMPLEMENT_EXTEND"
+}

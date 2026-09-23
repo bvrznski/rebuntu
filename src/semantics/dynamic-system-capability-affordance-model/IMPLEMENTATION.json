@@ -1,0 +1,9 @@
+{
+  "component": "dynamic-system-capability-affordance-model",
+  "canonical_root": "semantics",
+  "phase_tasks": [
+    ".phases/phases/phase-54-dynamic-system-capability-affordance-model/TASK.md"
+  ],
+  "status": "SKELETON",
+  "native_authority_rule": true
+}

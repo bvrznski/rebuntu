@@ -1,0 +1,5 @@
+#include "recovery.hpp"
+
+// XXVII out-of-line implementation reservation for recovery.
+// Source: .phases/phases/phase-88-counterfactual-analysis/prompts/88.23.md
+// Intentionally behavior-free until prompt-derived implementation is supplied.

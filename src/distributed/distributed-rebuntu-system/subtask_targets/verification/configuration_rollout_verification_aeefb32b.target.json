@@ -1,0 +1,12 @@
+{
+  "source_prompt": ".phases/phases/phase-51-distributed-rebuntu-system/prompts/51.226-configuration-rollout-verification.md",
+  "phase_task": ".phases/phases/phase-51-distributed-rebuntu-system/TASK.md",
+  "canonical_root": "src/distributed/distributed-rebuntu-system",
+  "role": "verification",
+  "implementation_header": "src/distributed/distributed-rebuntu-system/subtask_targets/verification/configuration_rollout_verification_aeefb32b.hpp",
+  "implementation_source": "src/distributed/distributed-rebuntu-system/subtask_targets/verification/configuration_rollout_verification_aeefb32b.cpp",
+  "test_target": "tests/structural-closure/distributed/distributed-rebuntu-system/verification/test_configuration_rollout_verification_aeefb32b.cpp",
+  "status": "SKELETON_MATERIALIZED",
+  "behavioral_credit": false,
+  "preservation": "PRESERVE_IMPLEMENT_EXTEND"
+}

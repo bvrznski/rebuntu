@@ -1,0 +1,12 @@
+{
+  "source_prompt": ".phases/phases/phase-46-natural-language-operator-interface/prompts/46.351-re-authorization-after-drift.md",
+  "phase_task": ".phases/phases/phase-46-natural-language-operator-interface/TASK.md",
+  "canonical_root": "src/operator/natural-language-operator-interface",
+  "role": "security",
+  "implementation_header": "src/operator/natural-language-operator-interface/subtask_targets/security/re_authorization_after_drift_2dcb9ae8.hpp",
+  "implementation_source": "src/operator/natural-language-operator-interface/subtask_targets/security/re_authorization_after_drift_2dcb9ae8.cpp",
+  "test_target": "tests/structural-closure/operator/natural-language-operator-interface/security/test_re_authorization_after_drift_2dcb9ae8.cpp",
+  "status": "SKELETON_MATERIALIZED",
+  "behavioral_credit": false,
+  "preservation": "PRESERVE_IMPLEMENT_EXTEND"
+}

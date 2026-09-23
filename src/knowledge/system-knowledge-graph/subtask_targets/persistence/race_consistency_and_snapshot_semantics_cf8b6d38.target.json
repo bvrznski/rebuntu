@@ -1,0 +1,12 @@
+{
+  "source_prompt": ".phases/phases/phase-42-system-knowledge-graph/prompts/42.097-race-consistency-and-snapshot-semantics.md",
+  "phase_task": ".phases/phases/phase-42-system-knowledge-graph/TASK.md",
+  "canonical_root": "src/knowledge/system-knowledge-graph",
+  "role": "persistence",
+  "implementation_header": "src/knowledge/system-knowledge-graph/subtask_targets/persistence/race_consistency_and_snapshot_semantics_cf8b6d38.hpp",
+  "implementation_source": "src/knowledge/system-knowledge-graph/subtask_targets/persistence/race_consistency_and_snapshot_semantics_cf8b6d38.cpp",
+  "test_target": "tests/structural-closure/knowledge/system-knowledge-graph/persistence/test_race_consistency_and_snapshot_semantics_cf8b6d38.cpp",
+  "status": "SKELETON_MATERIALIZED",
+  "behavioral_credit": false,
+  "preservation": "PRESERVE_IMPLEMENT_EXTEND"
+}

@@ -1,0 +1,10 @@
+{
+  "component": "constraint-invariant-operational-contract",
+  "canonical_root": "semantics",
+  "phase_tasks": [
+    ".phases/phases/phase-58-constraint-invariant-operational-contract/TASK.md",
+    ".phases/phases/phase-64-constraint-invariant-operational-contract/TASK.md"
+  ],
+  "status": "SKELETON",
+  "native_authority_rule": true
+}

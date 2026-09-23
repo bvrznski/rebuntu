@@ -1,0 +1,12 @@
+{
+  "source_prompt": ".phases/phases/phase-38-user-identity-management/prompts/38.66-user-identity-management-system-closure-readiness-gate.md",
+  "phase_task": ".phases/phases/phase-38-user-identity-management/TASK.md",
+  "canonical_root": "src/domains/user-identity-management",
+  "role": "contracts",
+  "implementation_header": "src/domains/user-identity-management/subtask_targets/contracts/user_identity_management_system_closure_readiness_gate_c1561bc2.hpp",
+  "implementation_source": "src/domains/user-identity-management/subtask_targets/contracts/user_identity_management_system_closure_readiness_gate_c1561bc2.cpp",
+  "test_target": "tests/structural-closure/domains/user-identity-management/contracts/test_user_identity_management_system_closure_readiness_gate_c1561bc2.cpp",
+  "status": "SKELETON_MATERIALIZED",
+  "behavioral_credit": false,
+  "preservation": "PRESERVE_IMPLEMENT_EXTEND"
+}

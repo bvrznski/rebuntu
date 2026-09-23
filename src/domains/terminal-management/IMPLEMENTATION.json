@@ -1,0 +1,9 @@
+{
+  "component": "terminal-management",
+  "canonical_root": "domains",
+  "phase_tasks": [
+    ".phases/phases/phase-27-terminal-management/TASK.md"
+  ],
+  "status": "SKELETON",
+  "native_authority_rule": true
+}

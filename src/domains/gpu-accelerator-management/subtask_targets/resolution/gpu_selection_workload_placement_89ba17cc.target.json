@@ -1,0 +1,12 @@
+{
+  "source_prompt": ".phases/phases/phase-34-gpu-accelerator-management/prompts/34.34-gpu-selection-workload-placement.md",
+  "phase_task": ".phases/phases/phase-34-gpu-accelerator-management/TASK.md",
+  "canonical_root": "src/domains/gpu-accelerator-management",
+  "role": "resolution",
+  "implementation_header": "src/domains/gpu-accelerator-management/subtask_targets/resolution/gpu_selection_workload_placement_89ba17cc.hpp",
+  "implementation_source": "src/domains/gpu-accelerator-management/subtask_targets/resolution/gpu_selection_workload_placement_89ba17cc.cpp",
+  "test_target": "tests/structural-closure/domains/gpu-accelerator-management/resolution/test_gpu_selection_workload_placement_89ba17cc.cpp",
+  "status": "SKELETON_MATERIALIZED",
+  "behavioral_credit": false,
+  "preservation": "PRESERVE_IMPLEMENT_EXTEND"
+}

@@ -1,0 +1,12 @@
+{
+  "source_prompt": ".phases/phases/phase-25-system-control-panel/prompts/25.13-semantic-analysis-and-hypothesis-view.md",
+  "phase_task": ".phases/phases/phase-25-system-control-panel/TASK.md",
+  "canonical_root": "src/operator/system-control-panel",
+  "role": "requirements",
+  "implementation_header": "src/operator/system-control-panel/subtask_targets/requirements/semantic_analysis_and_hypothesis_view_b0c23e4a.hpp",
+  "implementation_source": "src/operator/system-control-panel/subtask_targets/requirements/semantic_analysis_and_hypothesis_view_b0c23e4a.cpp",
+  "test_target": "tests/structural-closure/operator/system-control-panel/requirements/test_semantic_analysis_and_hypothesis_view_b0c23e4a.cpp",
+  "status": "SKELETON_MATERIALIZED",
+  "behavioral_credit": false,
+  "preservation": "PRESERVE_IMPLEMENT_EXTEND"
+}

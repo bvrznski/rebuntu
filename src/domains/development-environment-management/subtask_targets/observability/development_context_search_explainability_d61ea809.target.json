@@ -1,0 +1,12 @@
+{
+  "source_prompt": ".phases/phases/phase-28-development-environment-management/prompts/28.27-development-context-search-explainability.md",
+  "phase_task": ".phases/phases/phase-28-development-environment-management/TASK.md",
+  "canonical_root": "src/domains/development-environment-management",
+  "role": "observability",
+  "implementation_header": "src/domains/development-environment-management/subtask_targets/observability/development_context_search_explainability_d61ea809.hpp",
+  "implementation_source": "src/domains/development-environment-management/subtask_targets/observability/development_context_search_explainability_d61ea809.cpp",
+  "test_target": "tests/structural-closure/domains/development-environment-management/observability/test_development_context_search_explainability_d61ea809.cpp",
+  "status": "SKELETON_MATERIALIZED",
+  "behavioral_credit": false,
+  "preservation": "PRESERVE_IMPLEMENT_EXTEND"
+}

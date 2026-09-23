@@ -1,0 +1,12 @@
+{
+  "source_prompt": ".phases/phases/phase-44-adaptive-workstation-system/prompts/44.085-experiment-control-variables.md",
+  "phase_task": ".phases/phases/phase-44-adaptive-workstation-system/TASK.md",
+  "canonical_root": "src/domains/adaptive-workstation-system",
+  "role": "requirements",
+  "implementation_header": "src/domains/adaptive-workstation-system/subtask_targets/requirements/experiment_control_variables_4044d1c3.hpp",
+  "implementation_source": "src/domains/adaptive-workstation-system/subtask_targets/requirements/experiment_control_variables_4044d1c3.cpp",
+  "test_target": "tests/structural-closure/domains/adaptive-workstation-system/requirements/test_experiment_control_variables_4044d1c3.cpp",
+  "status": "SKELETON_MATERIALIZED",
+  "behavioral_credit": false,
+  "preservation": "PRESERVE_IMPLEMENT_EXTEND"
+}

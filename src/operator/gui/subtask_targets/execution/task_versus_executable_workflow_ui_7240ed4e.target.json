@@ -1,0 +1,12 @@
+{
+  "source_prompt": ".phases/phases/phase-49-gui/prompts/49.243-task-versus-executable-workflow-ui.md",
+  "phase_task": ".phases/phases/phase-49-gui/TASK.md",
+  "canonical_root": "src/operator/gui",
+  "role": "execution",
+  "implementation_header": "src/operator/gui/subtask_targets/execution/task_versus_executable_workflow_ui_7240ed4e.hpp",
+  "implementation_source": "src/operator/gui/subtask_targets/execution/task_versus_executable_workflow_ui_7240ed4e.cpp",
+  "test_target": "tests/structural-closure/operator/gui/execution/test_task_versus_executable_workflow_ui_7240ed4e.cpp",
+  "status": "SKELETON_MATERIALIZED",
+  "behavioral_credit": false,
+  "preservation": "PRESERVE_IMPLEMENT_EXTEND"
+}

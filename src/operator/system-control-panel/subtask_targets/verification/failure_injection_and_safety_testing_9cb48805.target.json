@@ -1,0 +1,12 @@
+{
+  "source_prompt": ".phases/phases/phase-25-system-control-panel/prompts/25.25-failure-injection-and-safety-testing.md",
+  "phase_task": ".phases/phases/phase-25-system-control-panel/TASK.md",
+  "canonical_root": "src/operator/system-control-panel",
+  "role": "verification",
+  "implementation_header": "src/operator/system-control-panel/subtask_targets/verification/failure_injection_and_safety_testing_9cb48805.hpp",
+  "implementation_source": "src/operator/system-control-panel/subtask_targets/verification/failure_injection_and_safety_testing_9cb48805.cpp",
+  "test_target": "tests/structural-closure/operator/system-control-panel/verification/test_failure_injection_and_safety_testing_9cb48805.cpp",
+  "status": "SKELETON_MATERIALIZED",
+  "behavioral_credit": false,
+  "preservation": "PRESERVE_IMPLEMENT_EXTEND"
+}

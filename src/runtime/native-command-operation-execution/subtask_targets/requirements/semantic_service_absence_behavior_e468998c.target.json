@@ -1,0 +1,12 @@
+{
+  "source_prompt": ".phases/phases/phase-06-native-command-operation-execution/prompts/6.51_semantic_service_absence_behavior.md",
+  "phase_task": ".phases/phases/phase-06-native-command-operation-execution/TASK.md",
+  "canonical_root": "src/runtime/native-command-operation-execution",
+  "role": "requirements",
+  "implementation_header": "src/runtime/native-command-operation-execution/subtask_targets/requirements/semantic_service_absence_behavior_e468998c.hpp",
+  "implementation_source": "src/runtime/native-command-operation-execution/subtask_targets/requirements/semantic_service_absence_behavior_e468998c.cpp",
+  "test_target": "tests/structural-closure/runtime/native-command-operation-execution/requirements/test_semantic_service_absence_behavior_e468998c.cpp",
+  "status": "SKELETON_MATERIALIZED",
+  "behavioral_credit": false,
+  "preservation": "PRESERVE_IMPLEMENT_EXTEND"
+}

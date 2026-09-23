@@ -1,0 +1,5 @@
+#include "events.hpp"
+
+// XXVII out-of-line implementation reservation for events.
+// Source: .phases/phases/phase-29-process-workload-management/prompts/29.38-orphan-reparenting-semantics.md
+// Intentionally behavior-free until prompt-derived implementation is supplied.

@@ -1,0 +1,6 @@
+#include "observation/active-evidence-acquisition/execution/requests/validation.hpp"
+
+// Structural translation-unit slot only. No maturity credit.
+namespace rebuntu::structural_slots {
+static_assert(Skeleton_10bf7ba28e_Validation::structural_revision == 25);
+}

@@ -1,0 +1,12 @@
+{
+  "source_prompt": ".phases/phases/phase-38-user-identity-management/prompts/38.21-tty-pty-terminal-session-model.md",
+  "phase_task": ".phases/phases/phase-38-user-identity-management/TASK.md",
+  "canonical_root": "src/domains/user-identity-management",
+  "role": "contracts",
+  "implementation_header": "src/domains/user-identity-management/subtask_targets/contracts/tty_pty_terminal_session_model_d52a1f48.hpp",
+  "implementation_source": "src/domains/user-identity-management/subtask_targets/contracts/tty_pty_terminal_session_model_d52a1f48.cpp",
+  "test_target": "tests/structural-closure/domains/user-identity-management/contracts/test_tty_pty_terminal_session_model_d52a1f48.cpp",
+  "status": "SKELETON_MATERIALIZED",
+  "behavioral_credit": false,
+  "preservation": "PRESERVE_IMPLEMENT_EXTEND"
+}

@@ -1,0 +1,6 @@
+#include "providers/kernel-driver-hardware-evolution/recovery/detection/validation.hpp"
+
+// Structural translation-unit slot only. No maturity credit.
+namespace rebuntu::structural_slots {
+static_assert(Skeleton_689453e7d0_Validation::structural_revision == 25);
+}

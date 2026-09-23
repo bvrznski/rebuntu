@@ -1,0 +1,9 @@
+{
+  "component": "stability-and-shell",
+  "canonical_root": "runtime",
+  "phase_tasks": [
+    ".phases/phases/phase-04-stability-and-shell/TASK.md"
+  ],
+  "status": "SKELETON",
+  "native_authority_rule": true
+}

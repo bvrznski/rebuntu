@@ -1,0 +1,12 @@
+{
+  "source_prompt": ".phases/phases/phase-50-platform-abstraction-portability-foundation/prompts/50.071-workflow-actions.md",
+  "phase_task": ".phases/phases/phase-50-platform-abstraction-portability-foundation/TASK.md",
+  "canonical_root": "src/providers/platform-abstraction-portability-foundation",
+  "role": "requirements",
+  "implementation_header": "src/providers/platform-abstraction-portability-foundation/subtask_targets/requirements/workflow_actions_83870dfe.hpp",
+  "implementation_source": "src/providers/platform-abstraction-portability-foundation/subtask_targets/requirements/workflow_actions_83870dfe.cpp",
+  "test_target": "tests/structural-closure/providers/platform-abstraction-portability-foundation/requirements/test_workflow_actions_83870dfe.cpp",
+  "status": "SKELETON_MATERIALIZED",
+  "behavioral_credit": false,
+  "preservation": "PRESERVE_IMPLEMENT_EXTEND"
+}

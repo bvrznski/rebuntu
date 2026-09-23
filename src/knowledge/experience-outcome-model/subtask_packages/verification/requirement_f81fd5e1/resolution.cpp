@@ -1,0 +1,5 @@
+#include "resolution.hpp"
+
+// XXVII out-of-line implementation reservation for resolution.
+// Source: .phases/phases/phase-94-experience-outcome-model/prompts/94.17.md
+// Intentionally behavior-free until prompt-derived implementation is supplied.

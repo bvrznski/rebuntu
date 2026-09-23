@@ -1,0 +1,12 @@
+{
+  "source_prompt": ".phases/phases/phase-28-development-environment-management/prompts/28.30-development-environment-snapshot-reproduction-metadata.md",
+  "phase_task": ".phases/phases/phase-28-development-environment-management/TASK.md",
+  "canonical_root": "src/domains/development-environment-management",
+  "role": "persistence",
+  "implementation_header": "src/domains/development-environment-management/subtask_targets/persistence/development_environment_snapshot_reproduction_metadata_b0e83294.hpp",
+  "implementation_source": "src/domains/development-environment-management/subtask_targets/persistence/development_environment_snapshot_reproduction_metadata_b0e83294.cpp",
+  "test_target": "tests/structural-closure/domains/development-environment-management/persistence/test_development_environment_snapshot_reproduction_metadata_b0e83294.cpp",
+  "status": "SKELETON_MATERIALIZED",
+  "behavioral_credit": false,
+  "preservation": "PRESERVE_IMPLEMENT_EXTEND"
+}

@@ -1,0 +1,12 @@
+{
+  "source_prompt": ".phases/phases/phase-26-shell-management/prompts/26.6-contextual-history-search-retrieval.md",
+  "phase_task": ".phases/phases/phase-26-shell-management/TASK.md",
+  "canonical_root": "src/domains/shell-management",
+  "role": "resolution",
+  "implementation_header": "src/domains/shell-management/subtask_targets/resolution/contextual_history_search_retrieval_8df462cd.hpp",
+  "implementation_source": "src/domains/shell-management/subtask_targets/resolution/contextual_history_search_retrieval_8df462cd.cpp",
+  "test_target": "tests/structural-closure/domains/shell-management/resolution/test_contextual_history_search_retrieval_8df462cd.cpp",
+  "status": "SKELETON_MATERIALIZED",
+  "behavioral_credit": false,
+  "preservation": "PRESERVE_IMPLEMENT_EXTEND"
+}

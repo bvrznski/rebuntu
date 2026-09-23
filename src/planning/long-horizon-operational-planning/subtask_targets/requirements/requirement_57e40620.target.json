@@ -1,0 +1,12 @@
+{
+  "source_prompt": ".phases/phases/phase-96-long-horizon-operational-planning/prompts/96.21.md",
+  "phase_task": ".phases/phases/phase-96-long-horizon-operational-planning/TASK.md",
+  "canonical_root": "src/planning/long-horizon-operational-planning",
+  "role": "requirements",
+  "implementation_header": "src/planning/long-horizon-operational-planning/subtask_targets/requirements/requirement_57e40620.hpp",
+  "implementation_source": "src/planning/long-horizon-operational-planning/subtask_targets/requirements/requirement_57e40620.cpp",
+  "test_target": "tests/structural-closure/planning/long-horizon-operational-planning/requirements/test_requirement_57e40620.cpp",
+  "status": "SKELETON_MATERIALIZED",
+  "behavioral_credit": false,
+  "preservation": "PRESERVE_IMPLEMENT_EXTEND"
+}

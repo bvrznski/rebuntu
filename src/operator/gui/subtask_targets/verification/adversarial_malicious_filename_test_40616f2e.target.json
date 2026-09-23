@@ -1,0 +1,12 @@
+{
+  "source_prompt": ".phases/phases/phase-49-gui/prompts/49.550-adversarial-malicious-filename-test.md",
+  "phase_task": ".phases/phases/phase-49-gui/TASK.md",
+  "canonical_root": "src/operator/gui",
+  "role": "verification",
+  "implementation_header": "src/operator/gui/subtask_targets/verification/adversarial_malicious_filename_test_40616f2e.hpp",
+  "implementation_source": "src/operator/gui/subtask_targets/verification/adversarial_malicious_filename_test_40616f2e.cpp",
+  "test_target": "tests/structural-closure/operator/gui/verification/test_adversarial_malicious_filename_test_40616f2e.cpp",
+  "status": "SKELETON_MATERIALIZED",
+  "behavioral_credit": false,
+  "preservation": "PRESERVE_IMPLEMENT_EXTEND"
+}

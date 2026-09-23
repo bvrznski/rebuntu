@@ -1,0 +1,12 @@
+{
+  "source_prompt": ".phases/phases/phase-51-distributed-rebuntu-system/prompts/51.540-recovery-convergence-budget.md",
+  "phase_task": ".phases/phases/phase-51-distributed-rebuntu-system/TASK.md",
+  "canonical_root": "src/distributed/distributed-rebuntu-system",
+  "role": "recovery",
+  "implementation_header": "src/distributed/distributed-rebuntu-system/subtask_targets/recovery/recovery_convergence_budget_9f475dfc.hpp",
+  "implementation_source": "src/distributed/distributed-rebuntu-system/subtask_targets/recovery/recovery_convergence_budget_9f475dfc.cpp",
+  "test_target": "tests/structural-closure/distributed/distributed-rebuntu-system/recovery/test_recovery_convergence_budget_9f475dfc.cpp",
+  "status": "SKELETON_MATERIALIZED",
+  "behavioral_credit": false,
+  "preservation": "PRESERVE_IMPLEMENT_EXTEND"
+}

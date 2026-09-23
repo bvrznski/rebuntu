@@ -1,0 +1,12 @@
+{
+  "source_prompt": ".phases/phases/phase-57-continuous-reconciliation-goal-maintenance/prompts/57.41-rebuntu-phase-57-41-adversarial-drift-tests.md",
+  "phase_task": ".phases/phases/phase-57-continuous-reconciliation-goal-maintenance/TASK.md",
+  "canonical_root": "src/control/continuous-reconciliation-goal-maintenance",
+  "role": "verification",
+  "implementation_header": "src/control/continuous-reconciliation-goal-maintenance/subtask_targets/verification/adversarial_drift_tests_80d6d46d.hpp",
+  "implementation_source": "src/control/continuous-reconciliation-goal-maintenance/subtask_targets/verification/adversarial_drift_tests_80d6d46d.cpp",
+  "test_target": "tests/structural-closure/control/continuous-reconciliation-goal-maintenance/verification/test_adversarial_drift_tests_80d6d46d.cpp",
+  "status": "SKELETON_MATERIALIZED",
+  "behavioral_credit": false,
+  "preservation": "PRESERVE_IMPLEMENT_EXTEND"
+}

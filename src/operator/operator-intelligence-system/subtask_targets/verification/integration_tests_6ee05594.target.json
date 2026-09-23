@@ -1,0 +1,12 @@
+{
+  "source_prompt": ".phases/phases/phase-43-operator-intelligence-system/prompts/43.192-phase-39-integration-tests.md",
+  "phase_task": ".phases/phases/phase-43-operator-intelligence-system/TASK.md",
+  "canonical_root": "src/operator/operator-intelligence-system",
+  "role": "verification",
+  "implementation_header": "src/operator/operator-intelligence-system/subtask_targets/verification/integration_tests_6ee05594.hpp",
+  "implementation_source": "src/operator/operator-intelligence-system/subtask_targets/verification/integration_tests_6ee05594.cpp",
+  "test_target": "tests/structural-closure/operator/operator-intelligence-system/verification/test_integration_tests_6ee05594.cpp",
+  "status": "SKELETON_MATERIALIZED",
+  "behavioral_credit": false,
+  "preservation": "PRESERVE_IMPLEMENT_EXTEND"
+}

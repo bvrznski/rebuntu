@@ -1,0 +1,12 @@
+{
+  "source_prompt": ".phases/phases/phase-54-dynamic-system-capability-affordance-model/prompts/54.39-rebuntu-phase-54-39-phase-48-context-integration.md",
+  "phase_task": ".phases/phases/phase-54-dynamic-system-capability-affordance-model/TASK.md",
+  "canonical_root": "src/semantics/dynamic-system-capability-affordance-model",
+  "role": "integration",
+  "implementation_header": "src/semantics/dynamic-system-capability-affordance-model/subtask_targets/integration/phase_48_context_integration_b91f1f2e.hpp",
+  "implementation_source": "src/semantics/dynamic-system-capability-affordance-model/subtask_targets/integration/phase_48_context_integration_b91f1f2e.cpp",
+  "test_target": "tests/structural-closure/semantics/dynamic-system-capability-affordance-model/integration/test_phase_48_context_integration_b91f1f2e.cpp",
+  "status": "SKELETON_MATERIALIZED",
+  "behavioral_credit": false,
+  "preservation": "PRESERVE_IMPLEMENT_EXTEND"
+}

@@ -1,0 +1,12 @@
+{
+  "source_prompt": ".phases/phases/phase-37-secrets-credentials-management/prompts/37.23-log-redaction-integration.md",
+  "phase_task": ".phases/phases/phase-37-secrets-credentials-management/TASK.md",
+  "canonical_root": "src/security/secrets-credentials-management",
+  "role": "integration",
+  "implementation_header": "src/security/secrets-credentials-management/subtask_targets/integration/log_redaction_integration_26586fd2.hpp",
+  "implementation_source": "src/security/secrets-credentials-management/subtask_targets/integration/log_redaction_integration_26586fd2.cpp",
+  "test_target": "tests/structural-closure/security/secrets-credentials-management/integration/test_log_redaction_integration_26586fd2.cpp",
+  "status": "SKELETON_MATERIALIZED",
+  "behavioral_credit": false,
+  "preservation": "PRESERVE_IMPLEMENT_EXTEND"
+}

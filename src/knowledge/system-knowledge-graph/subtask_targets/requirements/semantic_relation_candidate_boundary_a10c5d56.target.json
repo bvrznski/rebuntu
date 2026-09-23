@@ -1,0 +1,12 @@
+{
+  "source_prompt": ".phases/phases/phase-42-system-knowledge-graph/prompts/42.080-semantic-relation-candidate-boundary.md",
+  "phase_task": ".phases/phases/phase-42-system-knowledge-graph/TASK.md",
+  "canonical_root": "src/knowledge/system-knowledge-graph",
+  "role": "requirements",
+  "implementation_header": "src/knowledge/system-knowledge-graph/subtask_targets/requirements/semantic_relation_candidate_boundary_a10c5d56.hpp",
+  "implementation_source": "src/knowledge/system-knowledge-graph/subtask_targets/requirements/semantic_relation_candidate_boundary_a10c5d56.cpp",
+  "test_target": "tests/structural-closure/knowledge/system-knowledge-graph/requirements/test_semantic_relation_candidate_boundary_a10c5d56.cpp",
+  "status": "SKELETON_MATERIALIZED",
+  "behavioral_credit": false,
+  "preservation": "PRESERVE_IMPLEMENT_EXTEND"
+}

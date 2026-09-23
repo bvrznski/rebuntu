@@ -1,0 +1,12 @@
+{
+  "source_prompt": ".phases/phases/phase-53-multi-lattice-mandatory-information-control-flow-security-system/prompts/53.047-postcondition-verification.md",
+  "phase_task": ".phases/phases/phase-53-multi-lattice-mandatory-information-control-flow-security-system/TASK.md",
+  "canonical_root": "src/security/multi-lattice-mandatory-information-control-flow-security-system",
+  "role": "verification",
+  "implementation_header": "src/security/multi-lattice-mandatory-information-control-flow-security-system/subtask_targets/verification/postcondition_verification_d0b88e41.hpp",
+  "implementation_source": "src/security/multi-lattice-mandatory-information-control-flow-security-system/subtask_targets/verification/postcondition_verification_d0b88e41.cpp",
+  "test_target": "tests/structural-closure/security/multi-lattice-mandatory-information-control-flow-security-system/verification/test_postcondition_verification_d0b88e41.cpp",
+  "status": "SKELETON_MATERIALIZED",
+  "behavioral_credit": false,
+  "preservation": "PRESERVE_IMPLEMENT_EXTEND"
+}

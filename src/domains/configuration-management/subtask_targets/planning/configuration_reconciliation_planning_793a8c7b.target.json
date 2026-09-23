@@ -1,0 +1,12 @@
+{
+  "source_prompt": ".phases/phases/phase-36-configuration-management/prompts/36.29-configuration-reconciliation-planning.md",
+  "phase_task": ".phases/phases/phase-36-configuration-management/TASK.md",
+  "canonical_root": "src/domains/configuration-management",
+  "role": "planning",
+  "implementation_header": "src/domains/configuration-management/subtask_targets/planning/configuration_reconciliation_planning_793a8c7b.hpp",
+  "implementation_source": "src/domains/configuration-management/subtask_targets/planning/configuration_reconciliation_planning_793a8c7b.cpp",
+  "test_target": "tests/structural-closure/domains/configuration-management/planning/test_configuration_reconciliation_planning_793a8c7b.cpp",
+  "status": "SKELETON_MATERIALIZED",
+  "behavioral_credit": false,
+  "preservation": "PRESERVE_IMPLEMENT_EXTEND"
+}

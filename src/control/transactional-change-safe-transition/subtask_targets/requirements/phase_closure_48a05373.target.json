@@ -1,0 +1,12 @@
+{
+  "source_prompt": ".phases/phases/phase-60-transactional-change-safe-transition/prompts/60.52-rebuntu-phase-60-52-phase-closure.md",
+  "phase_task": ".phases/phases/phase-60-transactional-change-safe-transition/TASK.md",
+  "canonical_root": "src/control/transactional-change-safe-transition",
+  "role": "requirements",
+  "implementation_header": "src/control/transactional-change-safe-transition/subtask_targets/requirements/phase_closure_48a05373.hpp",
+  "implementation_source": "src/control/transactional-change-safe-transition/subtask_targets/requirements/phase_closure_48a05373.cpp",
+  "test_target": "tests/structural-closure/control/transactional-change-safe-transition/requirements/test_phase_closure_48a05373.cpp",
+  "status": "SKELETON_MATERIALIZED",
+  "behavioral_credit": false,
+  "preservation": "PRESERVE_IMPLEMENT_EXTEND"
+}

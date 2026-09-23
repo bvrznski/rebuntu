@@ -1,0 +1,12 @@
+{
+  "source_prompt": ".phases/phases/phase-39-system-event-timeline/prompts/39.53-timeline-indexing-model.md",
+  "phase_task": ".phases/phases/phase-39-system-event-timeline/TASK.md",
+  "canonical_root": "src/observation/system-event-timeline",
+  "role": "contracts",
+  "implementation_header": "src/observation/system-event-timeline/subtask_targets/contracts/timeline_indexing_model_853facb1.hpp",
+  "implementation_source": "src/observation/system-event-timeline/subtask_targets/contracts/timeline_indexing_model_853facb1.cpp",
+  "test_target": "tests/structural-closure/observation/system-event-timeline/contracts/test_timeline_indexing_model_853facb1.cpp",
+  "status": "SKELETON_MATERIALIZED",
+  "behavioral_credit": false,
+  "preservation": "PRESERVE_IMPLEMENT_EXTEND"
+}

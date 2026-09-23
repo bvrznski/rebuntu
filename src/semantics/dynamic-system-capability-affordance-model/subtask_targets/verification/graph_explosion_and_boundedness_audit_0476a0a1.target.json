@@ -1,0 +1,12 @@
+{
+  "source_prompt": ".phases/phases/phase-54-dynamic-system-capability-affordance-model/prompts/54.146-rebuntu-phase-54-146-graph-explosion-and-boundedness-audit.md",
+  "phase_task": ".phases/phases/phase-54-dynamic-system-capability-affordance-model/TASK.md",
+  "canonical_root": "src/semantics/dynamic-system-capability-affordance-model",
+  "role": "verification",
+  "implementation_header": "src/semantics/dynamic-system-capability-affordance-model/subtask_targets/verification/graph_explosion_and_boundedness_audit_0476a0a1.hpp",
+  "implementation_source": "src/semantics/dynamic-system-capability-affordance-model/subtask_targets/verification/graph_explosion_and_boundedness_audit_0476a0a1.cpp",
+  "test_target": "tests/structural-closure/semantics/dynamic-system-capability-affordance-model/verification/test_graph_explosion_and_boundedness_audit_0476a0a1.cpp",
+  "status": "SKELETON_MATERIALIZED",
+  "behavioral_credit": false,
+  "preservation": "PRESERVE_IMPLEMENT_EXTEND"
+}

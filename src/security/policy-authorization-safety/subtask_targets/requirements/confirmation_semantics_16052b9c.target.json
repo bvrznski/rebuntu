@@ -1,0 +1,12 @@
+{
+  "source_prompt": ".phases/phases/phase-07-policy-authorization-safety/prompts/7.20_confirmation_semantics.md",
+  "phase_task": ".phases/phases/phase-07-policy-authorization-safety/TASK.md",
+  "canonical_root": "src/security/policy-authorization-safety",
+  "role": "requirements",
+  "implementation_header": "src/security/policy-authorization-safety/subtask_targets/requirements/confirmation_semantics_16052b9c.hpp",
+  "implementation_source": "src/security/policy-authorization-safety/subtask_targets/requirements/confirmation_semantics_16052b9c.cpp",
+  "test_target": "tests/structural-closure/security/policy-authorization-safety/requirements/test_confirmation_semantics_16052b9c.cpp",
+  "status": "SKELETON_MATERIALIZED",
+  "behavioral_credit": false,
+  "preservation": "PRESERVE_IMPLEMENT_EXTEND"
+}

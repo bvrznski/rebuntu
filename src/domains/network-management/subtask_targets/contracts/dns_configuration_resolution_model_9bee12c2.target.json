@@ -1,0 +1,12 @@
+{
+  "source_prompt": ".phases/phases/phase-33-network-management/prompts/33.9-dns-configuration-resolution-model.md",
+  "phase_task": ".phases/phases/phase-33-network-management/TASK.md",
+  "canonical_root": "src/domains/network-management",
+  "role": "contracts",
+  "implementation_header": "src/domains/network-management/subtask_targets/contracts/dns_configuration_resolution_model_9bee12c2.hpp",
+  "implementation_source": "src/domains/network-management/subtask_targets/contracts/dns_configuration_resolution_model_9bee12c2.cpp",
+  "test_target": "tests/structural-closure/domains/network-management/contracts/test_dns_configuration_resolution_model_9bee12c2.cpp",
+  "status": "SKELETON_MATERIALIZED",
+  "behavioral_credit": false,
+  "preservation": "PRESERVE_IMPLEMENT_EXTEND"
+}

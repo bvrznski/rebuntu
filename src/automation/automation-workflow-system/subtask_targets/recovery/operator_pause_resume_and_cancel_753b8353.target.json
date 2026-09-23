@@ -1,0 +1,12 @@
+{
+  "source_prompt": ".phases/phases/phase-41-automation-workflow-system/prompts/41.081-operator-pause-resume-and-cancel.md",
+  "phase_task": ".phases/phases/phase-41-automation-workflow-system/TASK.md",
+  "canonical_root": "src/automation/automation-workflow-system",
+  "role": "recovery",
+  "implementation_header": "src/automation/automation-workflow-system/subtask_targets/recovery/operator_pause_resume_and_cancel_753b8353.hpp",
+  "implementation_source": "src/automation/automation-workflow-system/subtask_targets/recovery/operator_pause_resume_and_cancel_753b8353.cpp",
+  "test_target": "tests/structural-closure/automation/automation-workflow-system/recovery/test_operator_pause_resume_and_cancel_753b8353.cpp",
+  "status": "SKELETON_MATERIALIZED",
+  "behavioral_credit": false,
+  "preservation": "PRESERVE_IMPLEMENT_EXTEND"
+}

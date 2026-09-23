@@ -1,0 +1,12 @@
+{
+  "source_prompt": ".phases/phases/phase-38-user-identity-management/prompts/38.1-identity-domain-model.md",
+  "phase_task": ".phases/phases/phase-38-user-identity-management/TASK.md",
+  "canonical_root": "src/domains/user-identity-management",
+  "role": "contracts",
+  "implementation_header": "src/domains/user-identity-management/subtask_targets/contracts/identity_domain_model_1ef777ed.hpp",
+  "implementation_source": "src/domains/user-identity-management/subtask_targets/contracts/identity_domain_model_1ef777ed.cpp",
+  "test_target": "tests/structural-closure/domains/user-identity-management/contracts/test_identity_domain_model_1ef777ed.cpp",
+  "status": "SKELETON_MATERIALIZED",
+  "behavioral_credit": false,
+  "preservation": "PRESERVE_IMPLEMENT_EXTEND"
+}

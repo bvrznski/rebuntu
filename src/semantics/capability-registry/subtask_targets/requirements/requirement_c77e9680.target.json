@@ -1,0 +1,12 @@
+{
+  "source_prompt": ".phases/phases/phase-18-capability-registry/prompts/18.20.md",
+  "phase_task": ".phases/phases/phase-18-capability-registry/TASK.md",
+  "canonical_root": "src/semantics/capability-registry",
+  "role": "requirements",
+  "implementation_header": "src/semantics/capability-registry/subtask_targets/requirements/requirement_c77e9680.hpp",
+  "implementation_source": "src/semantics/capability-registry/subtask_targets/requirements/requirement_c77e9680.cpp",
+  "test_target": "tests/structural-closure/semantics/capability-registry/requirements/test_requirement_c77e9680.cpp",
+  "status": "SKELETON_MATERIALIZED",
+  "behavioral_credit": false,
+  "preservation": "PRESERVE_IMPLEMENT_EXTEND"
+}

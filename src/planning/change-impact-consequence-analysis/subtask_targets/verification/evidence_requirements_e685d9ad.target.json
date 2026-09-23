@@ -1,0 +1,12 @@
+{
+  "source_prompt": ".phases/phases/phase-59-change-impact-consequence-analysis/prompts/59.24-rebuntu-phase-59-24-evidence-requirements.md",
+  "phase_task": ".phases/phases/phase-59-change-impact-consequence-analysis/TASK.md",
+  "canonical_root": "src/planning/change-impact-consequence-analysis",
+  "role": "verification",
+  "implementation_header": "src/planning/change-impact-consequence-analysis/subtask_targets/verification/evidence_requirements_e685d9ad.hpp",
+  "implementation_source": "src/planning/change-impact-consequence-analysis/subtask_targets/verification/evidence_requirements_e685d9ad.cpp",
+  "test_target": "tests/structural-closure/planning/change-impact-consequence-analysis/verification/test_evidence_requirements_e685d9ad.cpp",
+  "status": "SKELETON_MATERIALIZED",
+  "behavioral_credit": false,
+  "preservation": "PRESERVE_IMPLEMENT_EXTEND"
+}

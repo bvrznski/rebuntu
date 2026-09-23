@@ -1,0 +1,12 @@
+{
+  "source_prompt": ".phases/phases/phase-24-evergreen-platform/prompts/24.19_predictive_upgrade_risk_&_historical_learning.md",
+  "phase_task": ".phases/phases/phase-24-evergreen-platform/TASK.md",
+  "canonical_root": "src/runtime/evergreen-platform",
+  "role": "requirements",
+  "implementation_header": "src/runtime/evergreen-platform/subtask_targets/requirements/predictive_upgrade_risk_historical_learning_79023c90.hpp",
+  "implementation_source": "src/runtime/evergreen-platform/subtask_targets/requirements/predictive_upgrade_risk_historical_learning_79023c90.cpp",
+  "test_target": "tests/structural-closure/runtime/evergreen-platform/requirements/test_predictive_upgrade_risk_historical_learning_79023c90.cpp",
+  "status": "SKELETON_MATERIALIZED",
+  "behavioral_credit": false,
+  "preservation": "PRESERVE_IMPLEMENT_EXTEND"
+}

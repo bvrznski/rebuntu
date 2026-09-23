@@ -1,0 +1,12 @@
+{
+  "source_prompt": ".phases/phases/phase-45-unified-control-plane/prompts/45.046-authorization-revalidation.md",
+  "phase_task": ".phases/phases/phase-45-unified-control-plane/TASK.md",
+  "canonical_root": "src/runtime/unified-control-plane",
+  "role": "security",
+  "implementation_header": "src/runtime/unified-control-plane/subtask_targets/security/authorization_revalidation_a3e59f58.hpp",
+  "implementation_source": "src/runtime/unified-control-plane/subtask_targets/security/authorization_revalidation_a3e59f58.cpp",
+  "test_target": "tests/structural-closure/runtime/unified-control-plane/security/test_authorization_revalidation_a3e59f58.cpp",
+  "status": "SKELETON_MATERIALIZED",
+  "behavioral_credit": false,
+  "preservation": "PRESERVE_IMPLEMENT_EXTEND"
+}

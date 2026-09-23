@@ -1,0 +1,12 @@
+{
+  "source_prompt": ".phases/phases/phase-51-distributed-rebuntu-system/prompts/51.249-causal-relation-representation.md",
+  "phase_task": ".phases/phases/phase-51-distributed-rebuntu-system/TASK.md",
+  "canonical_root": "src/distributed/distributed-rebuntu-system",
+  "role": "requirements",
+  "implementation_header": "src/distributed/distributed-rebuntu-system/subtask_targets/requirements/causal_relation_representation_e67d83be.hpp",
+  "implementation_source": "src/distributed/distributed-rebuntu-system/subtask_targets/requirements/causal_relation_representation_e67d83be.cpp",
+  "test_target": "tests/structural-closure/distributed/distributed-rebuntu-system/requirements/test_causal_relation_representation_e67d83be.cpp",
+  "status": "SKELETON_MATERIALIZED",
+  "behavioral_credit": false,
+  "preservation": "PRESERVE_IMPLEMENT_EXTEND"
+}

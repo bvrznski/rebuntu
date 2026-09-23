@@ -1,0 +1,12 @@
+{
+  "source_prompt": ".phases/phases/phase-49-gui/prompts/49.617-resolve-rediscovery-pass-one.md",
+  "phase_task": ".phases/phases/phase-49-gui/TASK.md",
+  "canonical_root": "src/operator/gui",
+  "role": "resolution",
+  "implementation_header": "src/operator/gui/subtask_targets/resolution/resolve_rediscovery_pass_one_7a76b0fe.hpp",
+  "implementation_source": "src/operator/gui/subtask_targets/resolution/resolve_rediscovery_pass_one_7a76b0fe.cpp",
+  "test_target": "tests/structural-closure/operator/gui/resolution/test_resolve_rediscovery_pass_one_7a76b0fe.cpp",
+  "status": "SKELETON_MATERIALIZED",
+  "behavioral_credit": false,
+  "preservation": "PRESERVE_IMPLEMENT_EXTEND"
+}

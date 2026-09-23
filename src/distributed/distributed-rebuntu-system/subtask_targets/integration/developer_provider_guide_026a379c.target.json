@@ -1,0 +1,12 @@
+{
+  "source_prompt": ".phases/phases/phase-51-distributed-rebuntu-system/prompts/51.561-developer-provider-guide.md",
+  "phase_task": ".phases/phases/phase-51-distributed-rebuntu-system/TASK.md",
+  "canonical_root": "src/distributed/distributed-rebuntu-system",
+  "role": "integration",
+  "implementation_header": "src/distributed/distributed-rebuntu-system/subtask_targets/integration/developer_provider_guide_026a379c.hpp",
+  "implementation_source": "src/distributed/distributed-rebuntu-system/subtask_targets/integration/developer_provider_guide_026a379c.cpp",
+  "test_target": "tests/structural-closure/distributed/distributed-rebuntu-system/integration/test_developer_provider_guide_026a379c.cpp",
+  "status": "SKELETON_MATERIALIZED",
+  "behavioral_credit": false,
+  "preservation": "PRESERVE_IMPLEMENT_EXTEND"
+}

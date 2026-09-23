@@ -1,0 +1,12 @@
+{
+  "source_prompt": ".phases/phases/phase-47-os-task-policy-system/prompts/47.221-delegation-provenance.md",
+  "phase_task": ".phases/phases/phase-47-os-task-policy-system/TASK.md",
+  "canonical_root": "src/runtime/os-task-policy-system",
+  "role": "requirements",
+  "implementation_header": "src/runtime/os-task-policy-system/subtask_targets/requirements/delegation_provenance_d7e7529f.hpp",
+  "implementation_source": "src/runtime/os-task-policy-system/subtask_targets/requirements/delegation_provenance_d7e7529f.cpp",
+  "test_target": "tests/structural-closure/runtime/os-task-policy-system/requirements/test_delegation_provenance_d7e7529f.cpp",
+  "status": "SKELETON_MATERIALIZED",
+  "behavioral_credit": false,
+  "preservation": "PRESERVE_IMPLEMENT_EXTEND"
+}

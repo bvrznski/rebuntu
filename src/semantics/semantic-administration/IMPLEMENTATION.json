@@ -1,0 +1,9 @@
+{
+  "component": "semantic-administration",
+  "canonical_root": "semantics",
+  "phase_tasks": [
+    ".phases/phases/phase-17-semantic-administration/TASK.md"
+  ],
+  "status": "SKELETON",
+  "native_authority_rule": true
+}

@@ -1,0 +1,12 @@
+{
+  "source_prompt": ".phases/phases/phase-33-network-management/prompts/33.15-firewall-integration-boundary.md",
+  "phase_task": ".phases/phases/phase-33-network-management/TASK.md",
+  "canonical_root": "src/domains/network-management",
+  "role": "integration",
+  "implementation_header": "src/domains/network-management/subtask_targets/integration/firewall_integration_boundary_e7e7b6ad.hpp",
+  "implementation_source": "src/domains/network-management/subtask_targets/integration/firewall_integration_boundary_e7e7b6ad.cpp",
+  "test_target": "tests/structural-closure/domains/network-management/integration/test_firewall_integration_boundary_e7e7b6ad.cpp",
+  "status": "SKELETON_MATERIALIZED",
+  "behavioral_credit": false,
+  "preservation": "PRESERVE_IMPLEMENT_EXTEND"
+}

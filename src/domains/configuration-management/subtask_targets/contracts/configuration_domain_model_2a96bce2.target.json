@@ -1,0 +1,12 @@
+{
+  "source_prompt": ".phases/phases/phase-36-configuration-management/prompts/36.1-configuration-domain-model.md",
+  "phase_task": ".phases/phases/phase-36-configuration-management/TASK.md",
+  "canonical_root": "src/domains/configuration-management",
+  "role": "contracts",
+  "implementation_header": "src/domains/configuration-management/subtask_targets/contracts/configuration_domain_model_2a96bce2.hpp",
+  "implementation_source": "src/domains/configuration-management/subtask_targets/contracts/configuration_domain_model_2a96bce2.cpp",
+  "test_target": "tests/structural-closure/domains/configuration-management/contracts/test_configuration_domain_model_2a96bce2.cpp",
+  "status": "SKELETON_MATERIALIZED",
+  "behavioral_credit": false,
+  "preservation": "PRESERVE_IMPLEMENT_EXTEND"
+}

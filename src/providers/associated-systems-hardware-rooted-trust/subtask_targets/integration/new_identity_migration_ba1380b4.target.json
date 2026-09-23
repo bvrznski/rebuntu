@@ -1,0 +1,12 @@
+{
+  "source_prompt": ".phases/phases/phase-52-associated-systems-hardware-rooted-trust/prompts/52.491-new-identity-migration.md",
+  "phase_task": ".phases/phases/phase-52-associated-systems-hardware-rooted-trust/TASK.md",
+  "canonical_root": "src/providers/associated-systems-hardware-rooted-trust",
+  "role": "integration",
+  "implementation_header": "src/providers/associated-systems-hardware-rooted-trust/subtask_targets/integration/new_identity_migration_ba1380b4.hpp",
+  "implementation_source": "src/providers/associated-systems-hardware-rooted-trust/subtask_targets/integration/new_identity_migration_ba1380b4.cpp",
+  "test_target": "tests/structural-closure/providers/associated-systems-hardware-rooted-trust/integration/test_new_identity_migration_ba1380b4.cpp",
+  "status": "SKELETON_MATERIALIZED",
+  "behavioral_credit": false,
+  "preservation": "PRESERVE_IMPLEMENT_EXTEND"
+}

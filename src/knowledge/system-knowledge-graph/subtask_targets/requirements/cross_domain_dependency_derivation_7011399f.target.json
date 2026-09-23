@@ -1,0 +1,12 @@
+{
+  "source_prompt": ".phases/phases/phase-42-system-knowledge-graph/prompts/42.078-cross-domain-dependency-derivation.md",
+  "phase_task": ".phases/phases/phase-42-system-knowledge-graph/TASK.md",
+  "canonical_root": "src/knowledge/system-knowledge-graph",
+  "role": "requirements",
+  "implementation_header": "src/knowledge/system-knowledge-graph/subtask_targets/requirements/cross_domain_dependency_derivation_7011399f.hpp",
+  "implementation_source": "src/knowledge/system-knowledge-graph/subtask_targets/requirements/cross_domain_dependency_derivation_7011399f.cpp",
+  "test_target": "tests/structural-closure/knowledge/system-knowledge-graph/requirements/test_cross_domain_dependency_derivation_7011399f.cpp",
+  "status": "SKELETON_MATERIALIZED",
+  "behavioral_credit": false,
+  "preservation": "PRESERVE_IMPLEMENT_EXTEND"
+}

@@ -1,0 +1,41 @@
+{
+  "source_prompt": ".phases/phases/phase-25-system-control-panel/prompts/25.14-security-and-exposure-view.md",
+  "phase_task": ".phases/phases/phase-25-system-control-panel/TASK.md",
+  "package_root": "src/operator/system-control-panel/subtask_packages/verification/security_and_exposure_view_ff6020c2",
+  "role": "verification",
+  "aspects": [
+    "contract",
+    "model",
+    "state",
+    "errors",
+    "evidence",
+    "verification",
+    "integration",
+    "execution",
+    "recovery",
+    "policy",
+    "observability"
+  ],
+  "files": [
+    "src/operator/system-control-panel/subtask_packages/verification/security_and_exposure_view_ff6020c2/contract.hpp",
+    "src/operator/system-control-panel/subtask_packages/verification/security_and_exposure_view_ff6020c2/model.hpp",
+    "src/operator/system-control-panel/subtask_packages/verification/security_and_exposure_view_ff6020c2/state.hpp",
+    "src/operator/system-control-panel/subtask_packages/verification/security_and_exposure_view_ff6020c2/errors.hpp",
+    "src/operator/system-control-panel/subtask_packages/verification/security_and_exposure_view_ff6020c2/evidence.hpp",
+    "src/operator/system-control-panel/subtask_packages/verification/security_and_exposure_view_ff6020c2/verification.hpp",
+    "src/operator/system-control-panel/subtask_packages/verification/security_and_exposure_view_ff6020c2/verification.cpp",
+    "src/operator/system-control-panel/subtask_packages/verification/security_and_exposure_view_ff6020c2/integration.hpp",
+    "src/operator/system-control-panel/subtask_packages/verification/security_and_exposure_view_ff6020c2/integration.cpp",
+    "src/operator/system-control-panel/subtask_packages/verification/security_and_exposure_view_ff6020c2/execution.hpp",
+    "src/operator/system-control-panel/subtask_packages/verification/security_and_exposure_view_ff6020c2/execution.cpp",
+    "src/operator/system-control-panel/subtask_packages/verification/security_and_exposure_view_ff6020c2/recovery.hpp",
+    "src/operator/system-control-panel/subtask_packages/verification/security_and_exposure_view_ff6020c2/recovery.cpp",
+    "src/operator/system-control-panel/subtask_packages/verification/security_and_exposure_view_ff6020c2/policy.hpp",
+    "src/operator/system-control-panel/subtask_packages/verification/security_and_exposure_view_ff6020c2/policy.cpp",
+    "src/operator/system-control-panel/subtask_packages/verification/security_and_exposure_view_ff6020c2/observability.hpp",
+    "src/operator/system-control-panel/subtask_packages/verification/security_and_exposure_view_ff6020c2/observability.cpp"
+  ],
+  "status": "SKELETON_MATERIALIZED",
+  "behavioral_credit": false,
+  "preservation": "PRESERVE_IMPLEMENT_EXTEND"
+}

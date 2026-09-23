@@ -1,0 +1,12 @@
+{
+  "source_prompt": ".phases/phases/phase-56-intent-goal-desired-state-management/prompts/56.2-rebuntu-phase-56-2-goal-identity.md",
+  "phase_task": ".phases/phases/phase-56-intent-goal-desired-state-management/TASK.md",
+  "canonical_root": "src/semantics/intent-goal-desired-state-management",
+  "role": "contracts",
+  "implementation_header": "src/semantics/intent-goal-desired-state-management/subtask_targets/contracts/goal_identity_3cef8c4b.hpp",
+  "implementation_source": "src/semantics/intent-goal-desired-state-management/subtask_targets/contracts/goal_identity_3cef8c4b.cpp",
+  "test_target": "tests/structural-closure/semantics/intent-goal-desired-state-management/contracts/test_goal_identity_3cef8c4b.cpp",
+  "status": "SKELETON_MATERIALIZED",
+  "behavioral_credit": false,
+  "preservation": "PRESERVE_IMPLEMENT_EXTEND"
+}

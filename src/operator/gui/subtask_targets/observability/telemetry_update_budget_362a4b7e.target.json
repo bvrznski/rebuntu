@@ -1,0 +1,12 @@
+{
+  "source_prompt": ".phases/phases/phase-49-gui/prompts/49.574-telemetry-update-budget.md",
+  "phase_task": ".phases/phases/phase-49-gui/TASK.md",
+  "canonical_root": "src/operator/gui",
+  "role": "observability",
+  "implementation_header": "src/operator/gui/subtask_targets/observability/telemetry_update_budget_362a4b7e.hpp",
+  "implementation_source": "src/operator/gui/subtask_targets/observability/telemetry_update_budget_362a4b7e.cpp",
+  "test_target": "tests/structural-closure/operator/gui/observability/test_telemetry_update_budget_362a4b7e.cpp",
+  "status": "SKELETON_MATERIALIZED",
+  "behavioral_credit": false,
+  "preservation": "PRESERVE_IMPLEMENT_EXTEND"
+}

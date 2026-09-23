@@ -1,0 +1,12 @@
+{
+  "source_prompt": ".phases/phases/phase-42-system-knowledge-graph/prompts/42.098-graph-cache-policy.md",
+  "phase_task": ".phases/phases/phase-42-system-knowledge-graph/TASK.md",
+  "canonical_root": "src/knowledge/system-knowledge-graph",
+  "role": "security",
+  "implementation_header": "src/knowledge/system-knowledge-graph/subtask_targets/security/graph_cache_policy_f86ab3d9.hpp",
+  "implementation_source": "src/knowledge/system-knowledge-graph/subtask_targets/security/graph_cache_policy_f86ab3d9.cpp",
+  "test_target": "tests/structural-closure/knowledge/system-knowledge-graph/security/test_graph_cache_policy_f86ab3d9.cpp",
+  "status": "SKELETON_MATERIALIZED",
+  "behavioral_credit": false,
+  "preservation": "PRESERVE_IMPLEMENT_EXTEND"
+}

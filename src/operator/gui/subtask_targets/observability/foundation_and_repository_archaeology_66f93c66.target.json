@@ -1,0 +1,12 @@
+{
+  "source_prompt": ".phases/phases/phase-49-gui/prompts/49.000-foundation-and-repository-archaeology.md",
+  "phase_task": ".phases/phases/phase-49-gui/TASK.md",
+  "canonical_root": "src/operator/gui",
+  "role": "observability",
+  "implementation_header": "src/operator/gui/subtask_targets/observability/foundation_and_repository_archaeology_66f93c66.hpp",
+  "implementation_source": "src/operator/gui/subtask_targets/observability/foundation_and_repository_archaeology_66f93c66.cpp",
+  "test_target": "tests/structural-closure/operator/gui/observability/test_foundation_and_repository_archaeology_66f93c66.cpp",
+  "status": "SKELETON_MATERIALIZED",
+  "behavioral_credit": false,
+  "preservation": "PRESERVE_IMPLEMENT_EXTEND"
+}

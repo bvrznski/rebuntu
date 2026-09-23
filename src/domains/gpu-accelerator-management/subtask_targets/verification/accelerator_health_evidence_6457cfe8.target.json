@@ -1,0 +1,12 @@
+{
+  "source_prompt": ".phases/phases/phase-34-gpu-accelerator-management/prompts/34.27-accelerator-health-evidence.md",
+  "phase_task": ".phases/phases/phase-34-gpu-accelerator-management/TASK.md",
+  "canonical_root": "src/domains/gpu-accelerator-management",
+  "role": "verification",
+  "implementation_header": "src/domains/gpu-accelerator-management/subtask_targets/verification/accelerator_health_evidence_6457cfe8.hpp",
+  "implementation_source": "src/domains/gpu-accelerator-management/subtask_targets/verification/accelerator_health_evidence_6457cfe8.cpp",
+  "test_target": "tests/structural-closure/domains/gpu-accelerator-management/verification/test_accelerator_health_evidence_6457cfe8.cpp",
+  "status": "SKELETON_MATERIALIZED",
+  "behavioral_credit": false,
+  "preservation": "PRESERVE_IMPLEMENT_EXTEND"
+}

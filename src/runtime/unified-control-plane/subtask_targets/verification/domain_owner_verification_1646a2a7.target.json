@@ -1,0 +1,12 @@
+{
+  "source_prompt": ".phases/phases/phase-45-unified-control-plane/prompts/45.308-domain-owner-verification.md",
+  "phase_task": ".phases/phases/phase-45-unified-control-plane/TASK.md",
+  "canonical_root": "src/runtime/unified-control-plane",
+  "role": "verification",
+  "implementation_header": "src/runtime/unified-control-plane/subtask_targets/verification/domain_owner_verification_1646a2a7.hpp",
+  "implementation_source": "src/runtime/unified-control-plane/subtask_targets/verification/domain_owner_verification_1646a2a7.cpp",
+  "test_target": "tests/structural-closure/runtime/unified-control-plane/verification/test_domain_owner_verification_1646a2a7.cpp",
+  "status": "SKELETON_MATERIALIZED",
+  "behavioral_credit": false,
+  "preservation": "PRESERVE_IMPLEMENT_EXTEND"
+}

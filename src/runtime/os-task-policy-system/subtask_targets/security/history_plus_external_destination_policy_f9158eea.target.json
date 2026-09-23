@@ -1,0 +1,12 @@
+{
+  "source_prompt": ".phases/phases/phase-47-os-task-policy-system/prompts/47.151-history-plus-external-destination-policy.md",
+  "phase_task": ".phases/phases/phase-47-os-task-policy-system/TASK.md",
+  "canonical_root": "src/runtime/os-task-policy-system",
+  "role": "security",
+  "implementation_header": "src/runtime/os-task-policy-system/subtask_targets/security/history_plus_external_destination_policy_f9158eea.hpp",
+  "implementation_source": "src/runtime/os-task-policy-system/subtask_targets/security/history_plus_external_destination_policy_f9158eea.cpp",
+  "test_target": "tests/structural-closure/runtime/os-task-policy-system/security/test_history_plus_external_destination_policy_f9158eea.cpp",
+  "status": "SKELETON_MATERIALIZED",
+  "behavioral_credit": false,
+  "preservation": "PRESERVE_IMPLEMENT_EXTEND"
+}

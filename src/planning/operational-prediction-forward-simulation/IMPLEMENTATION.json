@@ -1,0 +1,9 @@
+{
+  "component": "operational-prediction-forward-simulation",
+  "canonical_root": "planning",
+  "phase_tasks": [
+    ".phases/phases/phase-87-operational-prediction-forward-simulation/TASK.md"
+  ],
+  "status": "SKELETON",
+  "native_authority_rule": true
+}

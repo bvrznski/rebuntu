@@ -1,0 +1,12 @@
+{
+  "source_prompt": ".phases/phases/phase-52-associated-systems-hardware-rooted-trust/prompts/52.482-identity-key-loss-recovery.md",
+  "phase_task": ".phases/phases/phase-52-associated-systems-hardware-rooted-trust/TASK.md",
+  "canonical_root": "src/providers/associated-systems-hardware-rooted-trust",
+  "role": "recovery",
+  "implementation_header": "src/providers/associated-systems-hardware-rooted-trust/subtask_targets/recovery/identity_key_loss_recovery_2154da21.hpp",
+  "implementation_source": "src/providers/associated-systems-hardware-rooted-trust/subtask_targets/recovery/identity_key_loss_recovery_2154da21.cpp",
+  "test_target": "tests/structural-closure/providers/associated-systems-hardware-rooted-trust/recovery/test_identity_key_loss_recovery_2154da21.cpp",
+  "status": "SKELETON_MATERIALIZED",
+  "behavioral_credit": false,
+  "preservation": "PRESERVE_IMPLEMENT_EXTEND"
+}

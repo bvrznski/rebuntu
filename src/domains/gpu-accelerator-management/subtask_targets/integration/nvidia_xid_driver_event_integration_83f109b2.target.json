@@ -1,0 +1,12 @@
+{
+  "source_prompt": ".phases/phases/phase-34-gpu-accelerator-management/prompts/34.28-nvidia-xid-driver-event-integration.md",
+  "phase_task": ".phases/phases/phase-34-gpu-accelerator-management/TASK.md",
+  "canonical_root": "src/domains/gpu-accelerator-management",
+  "role": "integration",
+  "implementation_header": "src/domains/gpu-accelerator-management/subtask_targets/integration/nvidia_xid_driver_event_integration_83f109b2.hpp",
+  "implementation_source": "src/domains/gpu-accelerator-management/subtask_targets/integration/nvidia_xid_driver_event_integration_83f109b2.cpp",
+  "test_target": "tests/structural-closure/domains/gpu-accelerator-management/integration/test_nvidia_xid_driver_event_integration_83f109b2.cpp",
+  "status": "SKELETON_MATERIALIZED",
+  "behavioral_credit": false,
+  "preservation": "PRESERVE_IMPLEMENT_EXTEND"
+}

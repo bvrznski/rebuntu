@@ -1,0 +1,12 @@
+{
+  "source_prompt": ".phases/phases/phase-39-system-event-timeline/prompts/39.51-event-storm-handling.md",
+  "phase_task": ".phases/phases/phase-39-system-event-timeline/TASK.md",
+  "canonical_root": "src/observation/system-event-timeline",
+  "role": "requirements",
+  "implementation_header": "src/observation/system-event-timeline/subtask_targets/requirements/event_storm_handling_c908ca22.hpp",
+  "implementation_source": "src/observation/system-event-timeline/subtask_targets/requirements/event_storm_handling_c908ca22.cpp",
+  "test_target": "tests/structural-closure/observation/system-event-timeline/requirements/test_event_storm_handling_c908ca22.cpp",
+  "status": "SKELETON_MATERIALIZED",
+  "behavioral_credit": false,
+  "preservation": "PRESERVE_IMPLEMENT_EXTEND"
+}

@@ -1,0 +1,12 @@
+{
+  "source_prompt": ".phases/phases/phase-69-resource-intent-dynamic-allocation/prompts/69.9.md",
+  "phase_task": ".phases/phases/phase-69-resource-intent-dynamic-allocation/TASK.md",
+  "canonical_root": "src/domains/resource-intent-dynamic-allocation",
+  "role": "requirements",
+  "implementation_header": "src/domains/resource-intent-dynamic-allocation/subtask_targets/requirements/requirement_2664b0c9.hpp",
+  "implementation_source": "src/domains/resource-intent-dynamic-allocation/subtask_targets/requirements/requirement_2664b0c9.cpp",
+  "test_target": "tests/structural-closure/domains/resource-intent-dynamic-allocation/requirements/test_requirement_2664b0c9.cpp",
+  "status": "SKELETON_MATERIALIZED",
+  "behavioral_credit": false,
+  "preservation": "PRESERVE_IMPLEMENT_EXTEND"
+}

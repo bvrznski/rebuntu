@@ -1,0 +1,12 @@
+{
+  "source_prompt": ".phases/phases/phase-46-natural-language-operator-interface/prompts/46.017-exit-status-contract.md",
+  "phase_task": ".phases/phases/phase-46-natural-language-operator-interface/TASK.md",
+  "canonical_root": "src/operator/natural-language-operator-interface",
+  "role": "contracts",
+  "implementation_header": "src/operator/natural-language-operator-interface/subtask_targets/contracts/exit_status_contract_5e86956a.hpp",
+  "implementation_source": "src/operator/natural-language-operator-interface/subtask_targets/contracts/exit_status_contract_5e86956a.cpp",
+  "test_target": "tests/structural-closure/operator/natural-language-operator-interface/contracts/test_exit_status_contract_5e86956a.cpp",
+  "status": "SKELETON_MATERIALIZED",
+  "behavioral_credit": false,
+  "preservation": "PRESERVE_IMPLEMENT_EXTEND"
+}

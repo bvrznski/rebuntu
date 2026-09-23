@@ -1,0 +1,12 @@
+{
+  "source_prompt": ".phases/phases/phase-42-system-knowledge-graph/prompts/42.013-contradictory-assertion-preservation.md",
+  "phase_task": ".phases/phases/phase-42-system-knowledge-graph/TASK.md",
+  "canonical_root": "src/knowledge/system-knowledge-graph",
+  "role": "verification",
+  "implementation_header": "src/knowledge/system-knowledge-graph/subtask_targets/verification/contradictory_assertion_preservation_d5a59d4d.hpp",
+  "implementation_source": "src/knowledge/system-knowledge-graph/subtask_targets/verification/contradictory_assertion_preservation_d5a59d4d.cpp",
+  "test_target": "tests/structural-closure/knowledge/system-knowledge-graph/verification/test_contradictory_assertion_preservation_d5a59d4d.cpp",
+  "status": "SKELETON_MATERIALIZED",
+  "behavioral_credit": false,
+  "preservation": "PRESERVE_IMPLEMENT_EXTEND"
+}

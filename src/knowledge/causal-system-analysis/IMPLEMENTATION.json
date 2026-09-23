@@ -1,0 +1,9 @@
+{
+  "component": "causal-system-analysis",
+  "canonical_root": "knowledge",
+  "phase_tasks": [
+    ".phases/phases/phase-89-causal-system-analysis/TASK.md"
+  ],
+  "status": "SKELETON",
+  "native_authority_rule": true
+}

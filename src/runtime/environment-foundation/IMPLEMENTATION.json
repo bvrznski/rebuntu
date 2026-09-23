@@ -1,0 +1,9 @@
+{
+  "component": "environment-foundation",
+  "canonical_root": "runtime",
+  "phase_tasks": [
+    ".phases/phases/phase-02-environment-foundation/TASK.md"
+  ],
+  "status": "SKELETON",
+  "native_authority_rule": true
+}

@@ -1,0 +1,12 @@
+{
+  "source_prompt": ".phases/phases/phase-38-user-identity-management/prompts/38.20-seat-graphical-session-model.md",
+  "phase_task": ".phases/phases/phase-38-user-identity-management/TASK.md",
+  "canonical_root": "src/domains/user-identity-management",
+  "role": "contracts",
+  "implementation_header": "src/domains/user-identity-management/subtask_targets/contracts/seat_graphical_session_model_8b8f18f0.hpp",
+  "implementation_source": "src/domains/user-identity-management/subtask_targets/contracts/seat_graphical_session_model_8b8f18f0.cpp",
+  "test_target": "tests/structural-closure/domains/user-identity-management/contracts/test_seat_graphical_session_model_8b8f18f0.cpp",
+  "status": "SKELETON_MATERIALIZED",
+  "behavioral_credit": false,
+  "preservation": "PRESERVE_IMPLEMENT_EXTEND"
+}

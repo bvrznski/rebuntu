@@ -1,0 +1,12 @@
+{
+  "source_prompt": ".phases/phases/phase-47-os-task-policy-system/prompts/47.083-policy-decision-plan-binding.md",
+  "phase_task": ".phases/phases/phase-47-os-task-policy-system/TASK.md",
+  "canonical_root": "src/runtime/os-task-policy-system",
+  "role": "security",
+  "implementation_header": "src/runtime/os-task-policy-system/subtask_targets/security/policy_decision_plan_binding_4744884c.hpp",
+  "implementation_source": "src/runtime/os-task-policy-system/subtask_targets/security/policy_decision_plan_binding_4744884c.cpp",
+  "test_target": "tests/structural-closure/runtime/os-task-policy-system/security/test_policy_decision_plan_binding_4744884c.cpp",
+  "status": "SKELETON_MATERIALIZED",
+  "behavioral_credit": false,
+  "preservation": "PRESERVE_IMPLEMENT_EXTEND"
+}

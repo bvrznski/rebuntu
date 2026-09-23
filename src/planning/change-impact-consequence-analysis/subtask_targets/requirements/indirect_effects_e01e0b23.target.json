@@ -1,0 +1,12 @@
+{
+  "source_prompt": ".phases/phases/phase-59-change-impact-consequence-analysis/prompts/59.3-rebuntu-phase-59-3-indirect-effects.md",
+  "phase_task": ".phases/phases/phase-59-change-impact-consequence-analysis/TASK.md",
+  "canonical_root": "src/planning/change-impact-consequence-analysis",
+  "role": "requirements",
+  "implementation_header": "src/planning/change-impact-consequence-analysis/subtask_targets/requirements/indirect_effects_e01e0b23.hpp",
+  "implementation_source": "src/planning/change-impact-consequence-analysis/subtask_targets/requirements/indirect_effects_e01e0b23.cpp",
+  "test_target": "tests/structural-closure/planning/change-impact-consequence-analysis/requirements/test_indirect_effects_e01e0b23.cpp",
+  "status": "SKELETON_MATERIALIZED",
+  "behavioral_credit": false,
+  "preservation": "PRESERVE_IMPLEMENT_EXTEND"
+}

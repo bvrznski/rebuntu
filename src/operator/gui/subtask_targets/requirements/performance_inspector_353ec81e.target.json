@@ -1,0 +1,12 @@
+{
+  "source_prompt": ".phases/phases/phase-49-gui/prompts/49.312-performance-inspector.md",
+  "phase_task": ".phases/phases/phase-49-gui/TASK.md",
+  "canonical_root": "src/operator/gui",
+  "role": "requirements",
+  "implementation_header": "src/operator/gui/subtask_targets/requirements/performance_inspector_353ec81e.hpp",
+  "implementation_source": "src/operator/gui/subtask_targets/requirements/performance_inspector_353ec81e.cpp",
+  "test_target": "tests/structural-closure/operator/gui/requirements/test_performance_inspector_353ec81e.cpp",
+  "status": "SKELETON_MATERIALIZED",
+  "behavioral_credit": false,
+  "preservation": "PRESERVE_IMPLEMENT_EXTEND"
+}

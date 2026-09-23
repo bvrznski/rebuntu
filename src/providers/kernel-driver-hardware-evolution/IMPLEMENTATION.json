@@ -1,0 +1,9 @@
+{
+  "component": "kernel-driver-hardware-evolution",
+  "canonical_root": "providers",
+  "phase_tasks": [
+    ".phases/phases/phase-77-kernel-driver-hardware-evolution/TASK.md"
+  ],
+  "status": "SKELETON",
+  "native_authority_rule": true
+}

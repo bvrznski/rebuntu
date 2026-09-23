@@ -1,0 +1,2 @@
+#include <runtime/transactions/change_executor.hpp>
+namespace rebuntu::transactions { ExecutionResult ChangeExecutor::execute(const platform::v0040::ChangePlan&p,const policy::Decision&d,StepFn apply,StepFn rollback)const{ExecutionResult r;if(!d.allowed){r.steps.push_back({"authorization",false,"denied"});return r;}for(auto&s:p.steps){bool ok=apply(s);r.steps.push_back({s,ok,ok?"ok":"failed"});if(!ok){for(auto i=p.rollback.rbegin();i!=p.rollback.rend();++i)r.rolled_back=rollback(*i)||r.rolled_back;return r;}}r.ok=true;return r;} }

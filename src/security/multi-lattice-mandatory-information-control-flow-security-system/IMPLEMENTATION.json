@@ -1,0 +1,9 @@
+{
+  "component": "multi-lattice-mandatory-information-control-flow-security-system",
+  "canonical_root": "security",
+  "phase_tasks": [
+    ".phases/phases/phase-53-multi-lattice-mandatory-information-control-flow-security-system/TASK.md"
+  ],
+  "status": "SKELETON",
+  "native_authority_rule": true
+}

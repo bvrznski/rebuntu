@@ -1,0 +1,12 @@
+{
+  "source_prompt": ".phases/phases/phase-10-workflow-foundation/prompts/10.3.md",
+  "phase_task": ".phases/phases/phase-10-workflow-foundation/TASK.md",
+  "canonical_root": "src/automation/workflow-foundation",
+  "role": "requirements",
+  "implementation_header": "src/automation/workflow-foundation/subtask_targets/requirements/requirement_94b9da59.hpp",
+  "implementation_source": "src/automation/workflow-foundation/subtask_targets/requirements/requirement_94b9da59.cpp",
+  "test_target": "tests/structural-closure/automation/workflow-foundation/requirements/test_requirement_94b9da59.cpp",
+  "status": "SKELETON_MATERIALIZED",
+  "behavioral_credit": false,
+  "preservation": "PRESERVE_IMPLEMENT_EXTEND"
+}

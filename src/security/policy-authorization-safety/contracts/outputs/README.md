@@ -1,0 +1,3 @@
+# Outputs
+
+Structural target for `security/policy-authorization-safety/contracts/outputs`. Implement behavior only when required by the owning phase prompts. Linux/native state remains authoritative.

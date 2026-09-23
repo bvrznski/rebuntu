@@ -1,0 +1,9 @@
+{
+  "component": "resource-foundation",
+  "canonical_root": "runtime",
+  "phase_tasks": [
+    ".phases/phases/phase-14-resource-foundation/TASK.md"
+  ],
+  "status": "SKELETON",
+  "native_authority_rule": true
+}

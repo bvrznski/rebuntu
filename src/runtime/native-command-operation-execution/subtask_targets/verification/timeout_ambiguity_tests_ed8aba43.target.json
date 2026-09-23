@@ -1,0 +1,12 @@
+{
+  "source_prompt": ".phases/phases/phase-06-native-command-operation-execution/prompts/6.63_timeout_ambiguity_tests.md",
+  "phase_task": ".phases/phases/phase-06-native-command-operation-execution/TASK.md",
+  "canonical_root": "src/runtime/native-command-operation-execution",
+  "role": "verification",
+  "implementation_header": "src/runtime/native-command-operation-execution/subtask_targets/verification/timeout_ambiguity_tests_ed8aba43.hpp",
+  "implementation_source": "src/runtime/native-command-operation-execution/subtask_targets/verification/timeout_ambiguity_tests_ed8aba43.cpp",
+  "test_target": "tests/structural-closure/runtime/native-command-operation-execution/verification/test_timeout_ambiguity_tests_ed8aba43.cpp",
+  "status": "SKELETON_MATERIALIZED",
+  "behavioral_credit": false,
+  "preservation": "PRESERVE_IMPLEMENT_EXTEND"
+}

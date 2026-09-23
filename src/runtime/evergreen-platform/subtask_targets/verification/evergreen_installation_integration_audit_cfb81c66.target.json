@@ -1,0 +1,12 @@
+{
+  "source_prompt": ".phases/phases/phase-24-evergreen-platform/prompts/24.20_evergreen_installation_integration_audit.md",
+  "phase_task": ".phases/phases/phase-24-evergreen-platform/TASK.md",
+  "canonical_root": "src/runtime/evergreen-platform",
+  "role": "verification",
+  "implementation_header": "src/runtime/evergreen-platform/subtask_targets/verification/evergreen_installation_integration_audit_cfb81c66.hpp",
+  "implementation_source": "src/runtime/evergreen-platform/subtask_targets/verification/evergreen_installation_integration_audit_cfb81c66.cpp",
+  "test_target": "tests/structural-closure/runtime/evergreen-platform/verification/test_evergreen_installation_integration_audit_cfb81c66.cpp",
+  "status": "SKELETON_MATERIALIZED",
+  "behavioral_credit": false,
+  "preservation": "PRESERVE_IMPLEMENT_EXTEND"
+}

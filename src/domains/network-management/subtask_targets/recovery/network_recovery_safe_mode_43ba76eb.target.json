@@ -1,0 +1,12 @@
+{
+  "source_prompt": ".phases/phases/phase-33-network-management/prompts/33.40-network-recovery-safe-mode.md",
+  "phase_task": ".phases/phases/phase-33-network-management/TASK.md",
+  "canonical_root": "src/domains/network-management",
+  "role": "recovery",
+  "implementation_header": "src/domains/network-management/subtask_targets/recovery/network_recovery_safe_mode_43ba76eb.hpp",
+  "implementation_source": "src/domains/network-management/subtask_targets/recovery/network_recovery_safe_mode_43ba76eb.cpp",
+  "test_target": "tests/structural-closure/domains/network-management/recovery/test_network_recovery_safe_mode_43ba76eb.cpp",
+  "status": "SKELETON_MATERIALIZED",
+  "behavioral_credit": false,
+  "preservation": "PRESERVE_IMPLEMENT_EXTEND"
+}

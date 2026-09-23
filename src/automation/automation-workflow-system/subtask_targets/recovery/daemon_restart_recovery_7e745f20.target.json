@@ -1,0 +1,12 @@
+{
+  "source_prompt": ".phases/phases/phase-41-automation-workflow-system/prompts/41.065-daemon-restart-recovery.md",
+  "phase_task": ".phases/phases/phase-41-automation-workflow-system/TASK.md",
+  "canonical_root": "src/automation/automation-workflow-system",
+  "role": "recovery",
+  "implementation_header": "src/automation/automation-workflow-system/subtask_targets/recovery/daemon_restart_recovery_7e745f20.hpp",
+  "implementation_source": "src/automation/automation-workflow-system/subtask_targets/recovery/daemon_restart_recovery_7e745f20.cpp",
+  "test_target": "tests/structural-closure/automation/automation-workflow-system/recovery/test_daemon_restart_recovery_7e745f20.cpp",
+  "status": "SKELETON_MATERIALIZED",
+  "behavioral_credit": false,
+  "preservation": "PRESERVE_IMPLEMENT_EXTEND"
+}

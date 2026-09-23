@@ -1,0 +1,12 @@
+{
+  "source_prompt": ".phases/phases/phase-47-os-task-policy-system/prompts/47.000-foundation-and-repository-archaeology.md",
+  "phase_task": ".phases/phases/phase-47-os-task-policy-system/TASK.md",
+  "canonical_root": "src/runtime/os-task-policy-system",
+  "role": "observability",
+  "implementation_header": "src/runtime/os-task-policy-system/subtask_targets/observability/foundation_and_repository_archaeology_3c3e8e7c.hpp",
+  "implementation_source": "src/runtime/os-task-policy-system/subtask_targets/observability/foundation_and_repository_archaeology_3c3e8e7c.cpp",
+  "test_target": "tests/structural-closure/runtime/os-task-policy-system/observability/test_foundation_and_repository_archaeology_3c3e8e7c.cpp",
+  "status": "SKELETON_MATERIALIZED",
+  "behavioral_credit": false,
+  "preservation": "PRESERVE_IMPLEMENT_EXTEND"
+}

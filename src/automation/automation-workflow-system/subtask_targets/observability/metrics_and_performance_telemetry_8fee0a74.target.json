@@ -1,0 +1,12 @@
+{
+  "source_prompt": ".phases/phases/phase-41-automation-workflow-system/prompts/41.095-metrics-and-performance-telemetry.md",
+  "phase_task": ".phases/phases/phase-41-automation-workflow-system/TASK.md",
+  "canonical_root": "src/automation/automation-workflow-system",
+  "role": "observability",
+  "implementation_header": "src/automation/automation-workflow-system/subtask_targets/observability/metrics_and_performance_telemetry_8fee0a74.hpp",
+  "implementation_source": "src/automation/automation-workflow-system/subtask_targets/observability/metrics_and_performance_telemetry_8fee0a74.cpp",
+  "test_target": "tests/structural-closure/automation/automation-workflow-system/observability/test_metrics_and_performance_telemetry_8fee0a74.cpp",
+  "status": "SKELETON_MATERIALIZED",
+  "behavioral_credit": false,
+  "preservation": "PRESERVE_IMPLEMENT_EXTEND"
+}

@@ -1,0 +1,12 @@
+{
+  "source_prompt": ".phases/phases/phase-46-natural-language-operator-interface/prompts/46.338-semantic-inference-limits.md",
+  "phase_task": ".phases/phases/phase-46-natural-language-operator-interface/TASK.md",
+  "canonical_root": "src/operator/natural-language-operator-interface",
+  "role": "requirements",
+  "implementation_header": "src/operator/natural-language-operator-interface/subtask_targets/requirements/semantic_inference_limits_f7f3dd3a.hpp",
+  "implementation_source": "src/operator/natural-language-operator-interface/subtask_targets/requirements/semantic_inference_limits_f7f3dd3a.cpp",
+  "test_target": "tests/structural-closure/operator/natural-language-operator-interface/requirements/test_semantic_inference_limits_f7f3dd3a.cpp",
+  "status": "SKELETON_MATERIALIZED",
+  "behavioral_credit": false,
+  "preservation": "PRESERVE_IMPLEMENT_EXTEND"
+}

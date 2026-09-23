@@ -1,0 +1,12 @@
+{
+  "source_prompt": ".phases/phases/phase-42-system-knowledge-graph/prompts/42.015-canonical-identity-resolution.md",
+  "phase_task": ".phases/phases/phase-42-system-knowledge-graph/TASK.md",
+  "canonical_root": "src/knowledge/system-knowledge-graph",
+  "role": "contracts",
+  "implementation_header": "src/knowledge/system-knowledge-graph/subtask_targets/contracts/canonical_identity_resolution_c0279934.hpp",
+  "implementation_source": "src/knowledge/system-knowledge-graph/subtask_targets/contracts/canonical_identity_resolution_c0279934.cpp",
+  "test_target": "tests/structural-closure/knowledge/system-knowledge-graph/contracts/test_canonical_identity_resolution_c0279934.cpp",
+  "status": "SKELETON_MATERIALIZED",
+  "behavioral_credit": false,
+  "preservation": "PRESERVE_IMPLEMENT_EXTEND"
+}

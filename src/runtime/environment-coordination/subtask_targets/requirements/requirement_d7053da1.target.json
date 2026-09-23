@@ -1,0 +1,12 @@
+{
+  "source_prompt": ".phases/phases/phase-15-environment-coordination/prompts/15.0.md",
+  "phase_task": ".phases/phases/phase-15-environment-coordination/TASK.md",
+  "canonical_root": "src/runtime/environment-coordination",
+  "role": "requirements",
+  "implementation_header": "src/runtime/environment-coordination/subtask_targets/requirements/requirement_d7053da1.hpp",
+  "implementation_source": "src/runtime/environment-coordination/subtask_targets/requirements/requirement_d7053da1.cpp",
+  "test_target": "tests/structural-closure/runtime/environment-coordination/requirements/test_requirement_d7053da1.cpp",
+  "status": "SKELETON_MATERIALIZED",
+  "behavioral_credit": false,
+  "preservation": "PRESERVE_IMPLEMENT_EXTEND"
+}

@@ -1,0 +1,12 @@
+{
+  "source_prompt": ".phases/phases/phase-49-gui/prompts/49.023-provider-outage-mode.md",
+  "phase_task": ".phases/phases/phase-49-gui/TASK.md",
+  "canonical_root": "src/operator/gui",
+  "role": "integration",
+  "implementation_header": "src/operator/gui/subtask_targets/integration/provider_outage_mode_33db322b.hpp",
+  "implementation_source": "src/operator/gui/subtask_targets/integration/provider_outage_mode_33db322b.cpp",
+  "test_target": "tests/structural-closure/operator/gui/integration/test_provider_outage_mode_33db322b.cpp",
+  "status": "SKELETON_MATERIALIZED",
+  "behavioral_credit": false,
+  "preservation": "PRESERVE_IMPLEMENT_EXTEND"
+}

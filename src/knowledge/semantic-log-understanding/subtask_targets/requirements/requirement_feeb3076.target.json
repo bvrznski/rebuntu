@@ -1,0 +1,12 @@
+{
+  "source_prompt": ".phases/phases/phase-23-semantic-log-understanding/prompts/23.7.md",
+  "phase_task": ".phases/phases/phase-23-semantic-log-understanding/TASK.md",
+  "canonical_root": "src/knowledge/semantic-log-understanding",
+  "role": "requirements",
+  "implementation_header": "src/knowledge/semantic-log-understanding/subtask_targets/requirements/requirement_feeb3076.hpp",
+  "implementation_source": "src/knowledge/semantic-log-understanding/subtask_targets/requirements/requirement_feeb3076.cpp",
+  "test_target": "tests/structural-closure/knowledge/semantic-log-understanding/requirements/test_requirement_feeb3076.cpp",
+  "status": "SKELETON_MATERIALIZED",
+  "behavioral_credit": false,
+  "preservation": "PRESERVE_IMPLEMENT_EXTEND"
+}

@@ -1,0 +1,12 @@
+{
+  "source_prompt": ".phases/phases/phase-48-os-task-context-awareness-system/prompts/48.028-authoritative-observation-integration.md",
+  "phase_task": ".phases/phases/phase-48-os-task-context-awareness-system/TASK.md",
+  "canonical_root": "src/semantics/os-task-context-awareness-system",
+  "role": "integration",
+  "implementation_header": "src/semantics/os-task-context-awareness-system/subtask_targets/integration/authoritative_observation_integration_59c9a3c7.hpp",
+  "implementation_source": "src/semantics/os-task-context-awareness-system/subtask_targets/integration/authoritative_observation_integration_59c9a3c7.cpp",
+  "test_target": "tests/structural-closure/semantics/os-task-context-awareness-system/integration/test_authoritative_observation_integration_59c9a3c7.cpp",
+  "status": "SKELETON_MATERIALIZED",
+  "behavioral_credit": false,
+  "preservation": "PRESERVE_IMPLEMENT_EXTEND"
+}

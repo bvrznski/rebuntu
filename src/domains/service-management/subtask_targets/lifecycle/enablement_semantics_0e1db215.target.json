@@ -1,0 +1,12 @@
+{
+  "source_prompt": ".phases/phases/phase-31-service-management/prompts/31.12-enablement-semantics.md",
+  "phase_task": ".phases/phases/phase-31-service-management/TASK.md",
+  "canonical_root": "src/domains/service-management",
+  "role": "lifecycle",
+  "implementation_header": "src/domains/service-management/subtask_targets/lifecycle/enablement_semantics_0e1db215.hpp",
+  "implementation_source": "src/domains/service-management/subtask_targets/lifecycle/enablement_semantics_0e1db215.cpp",
+  "test_target": "tests/structural-closure/domains/service-management/lifecycle/test_enablement_semantics_0e1db215.cpp",
+  "status": "SKELETON_MATERIALIZED",
+  "behavioral_credit": false,
+  "preservation": "PRESERVE_IMPLEMENT_EXTEND"
+}

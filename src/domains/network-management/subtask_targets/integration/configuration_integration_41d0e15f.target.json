@@ -1,0 +1,12 @@
+{
+  "source_prompt": ".phases/phases/phase-33-network-management/prompts/33.48-phase-36-configuration-integration.md",
+  "phase_task": ".phases/phases/phase-33-network-management/TASK.md",
+  "canonical_root": "src/domains/network-management",
+  "role": "integration",
+  "implementation_header": "src/domains/network-management/subtask_targets/integration/configuration_integration_41d0e15f.hpp",
+  "implementation_source": "src/domains/network-management/subtask_targets/integration/configuration_integration_41d0e15f.cpp",
+  "test_target": "tests/structural-closure/domains/network-management/integration/test_configuration_integration_41d0e15f.cpp",
+  "status": "SKELETON_MATERIALIZED",
+  "behavioral_credit": false,
+  "preservation": "PRESERVE_IMPLEMENT_EXTEND"
+}

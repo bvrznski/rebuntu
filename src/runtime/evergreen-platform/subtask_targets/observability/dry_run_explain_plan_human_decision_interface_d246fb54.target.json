@@ -1,0 +1,12 @@
+{
+  "source_prompt": ".phases/phases/phase-24-evergreen-platform/prompts/24.15_dry-run,_explain-plan_&_human_decision_interface.md",
+  "phase_task": ".phases/phases/phase-24-evergreen-platform/TASK.md",
+  "canonical_root": "src/runtime/evergreen-platform",
+  "role": "observability",
+  "implementation_header": "src/runtime/evergreen-platform/subtask_targets/observability/dry_run_explain_plan_human_decision_interface_d246fb54.hpp",
+  "implementation_source": "src/runtime/evergreen-platform/subtask_targets/observability/dry_run_explain_plan_human_decision_interface_d246fb54.cpp",
+  "test_target": "tests/structural-closure/runtime/evergreen-platform/observability/test_dry_run_explain_plan_human_decision_interface_d246fb54.cpp",
+  "status": "SKELETON_MATERIALIZED",
+  "behavioral_credit": false,
+  "preservation": "PRESERVE_IMPLEMENT_EXTEND"
+}

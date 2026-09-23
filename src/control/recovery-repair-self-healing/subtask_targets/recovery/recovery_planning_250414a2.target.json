@@ -1,0 +1,12 @@
+{
+  "source_prompt": ".phases/phases/phase-61-recovery-repair-self-healing/prompts/61.7-rebuntu-phase-61-7-recovery-planning.md",
+  "phase_task": ".phases/phases/phase-61-recovery-repair-self-healing/TASK.md",
+  "canonical_root": "src/control/recovery-repair-self-healing",
+  "role": "recovery",
+  "implementation_header": "src/control/recovery-repair-self-healing/subtask_targets/recovery/recovery_planning_250414a2.hpp",
+  "implementation_source": "src/control/recovery-repair-self-healing/subtask_targets/recovery/recovery_planning_250414a2.cpp",
+  "test_target": "tests/structural-closure/control/recovery-repair-self-healing/recovery/test_recovery_planning_250414a2.cpp",
+  "status": "SKELETON_MATERIALIZED",
+  "behavioral_credit": false,
+  "preservation": "PRESERVE_IMPLEMENT_EXTEND"
+}

@@ -1,0 +1,12 @@
+{
+  "source_prompt": ".phases/phases/phase-52-associated-systems-hardware-rooted-trust/prompts/52.428-association-endpoint-discovery.md",
+  "phase_task": ".phases/phases/phase-52-associated-systems-hardware-rooted-trust/TASK.md",
+  "canonical_root": "src/providers/associated-systems-hardware-rooted-trust",
+  "role": "resolution",
+  "implementation_header": "src/providers/associated-systems-hardware-rooted-trust/subtask_targets/resolution/association_endpoint_discovery_fff0a730.hpp",
+  "implementation_source": "src/providers/associated-systems-hardware-rooted-trust/subtask_targets/resolution/association_endpoint_discovery_fff0a730.cpp",
+  "test_target": "tests/structural-closure/providers/associated-systems-hardware-rooted-trust/resolution/test_association_endpoint_discovery_fff0a730.cpp",
+  "status": "SKELETON_MATERIALIZED",
+  "behavioral_credit": false,
+  "preservation": "PRESERVE_IMPLEMENT_EXTEND"
+}

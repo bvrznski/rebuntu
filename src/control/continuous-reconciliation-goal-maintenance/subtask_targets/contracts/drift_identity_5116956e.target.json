@@ -1,0 +1,12 @@
+{
+  "source_prompt": ".phases/phases/phase-57-continuous-reconciliation-goal-maintenance/prompts/57.2-rebuntu-phase-57-2-drift-identity.md",
+  "phase_task": ".phases/phases/phase-57-continuous-reconciliation-goal-maintenance/TASK.md",
+  "canonical_root": "src/control/continuous-reconciliation-goal-maintenance",
+  "role": "contracts",
+  "implementation_header": "src/control/continuous-reconciliation-goal-maintenance/subtask_targets/contracts/drift_identity_5116956e.hpp",
+  "implementation_source": "src/control/continuous-reconciliation-goal-maintenance/subtask_targets/contracts/drift_identity_5116956e.cpp",
+  "test_target": "tests/structural-closure/control/continuous-reconciliation-goal-maintenance/contracts/test_drift_identity_5116956e.cpp",
+  "status": "SKELETON_MATERIALIZED",
+  "behavioral_credit": false,
+  "preservation": "PRESERVE_IMPLEMENT_EXTEND"
+}

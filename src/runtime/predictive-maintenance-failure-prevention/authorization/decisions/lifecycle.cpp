@@ -1,0 +1,6 @@
+#include "runtime/predictive-maintenance-failure-prevention/authorization/decisions/lifecycle.hpp"
+
+// Structural translation-unit slot only. No maturity credit.
+namespace rebuntu::structural_slots {
+static_assert(Skeleton_9b953141f6_Lifecycle::structural_revision == 25);
+}

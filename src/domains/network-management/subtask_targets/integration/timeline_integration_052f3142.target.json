@@ -1,0 +1,12 @@
+{
+  "source_prompt": ".phases/phases/phase-33-network-management/prompts/33.51-phase-39-timeline-integration.md",
+  "phase_task": ".phases/phases/phase-33-network-management/TASK.md",
+  "canonical_root": "src/domains/network-management",
+  "role": "integration",
+  "implementation_header": "src/domains/network-management/subtask_targets/integration/timeline_integration_052f3142.hpp",
+  "implementation_source": "src/domains/network-management/subtask_targets/integration/timeline_integration_052f3142.cpp",
+  "test_target": "tests/structural-closure/domains/network-management/integration/test_timeline_integration_052f3142.cpp",
+  "status": "SKELETON_MATERIALIZED",
+  "behavioral_credit": false,
+  "preservation": "PRESERVE_IMPLEMENT_EXTEND"
+}

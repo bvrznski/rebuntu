@@ -1,0 +1,12 @@
+{
+  "source_prompt": ".phases/phases/phase-32-storage-management/prompts/32.1-storage-domain-model.md",
+  "phase_task": ".phases/phases/phase-32-storage-management/TASK.md",
+  "canonical_root": "src/domains/storage-management",
+  "role": "contracts",
+  "implementation_header": "src/domains/storage-management/subtask_targets/contracts/storage_domain_model_4963b0d2.hpp",
+  "implementation_source": "src/domains/storage-management/subtask_targets/contracts/storage_domain_model_4963b0d2.cpp",
+  "test_target": "tests/structural-closure/domains/storage-management/contracts/test_storage_domain_model_4963b0d2.cpp",
+  "status": "SKELETON_MATERIALIZED",
+  "behavioral_credit": false,
+  "preservation": "PRESERVE_IMPLEMENT_EXTEND"
+}

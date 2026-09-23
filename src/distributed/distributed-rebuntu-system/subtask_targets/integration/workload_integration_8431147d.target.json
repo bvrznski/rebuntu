@@ -1,0 +1,12 @@
+{
+  "source_prompt": ".phases/phases/phase-51-distributed-rebuntu-system/prompts/51.114-phase-29-workload-integration.md",
+  "phase_task": ".phases/phases/phase-51-distributed-rebuntu-system/TASK.md",
+  "canonical_root": "src/distributed/distributed-rebuntu-system",
+  "role": "integration",
+  "implementation_header": "src/distributed/distributed-rebuntu-system/subtask_targets/integration/workload_integration_8431147d.hpp",
+  "implementation_source": "src/distributed/distributed-rebuntu-system/subtask_targets/integration/workload_integration_8431147d.cpp",
+  "test_target": "tests/structural-closure/distributed/distributed-rebuntu-system/integration/test_workload_integration_8431147d.cpp",
+  "status": "SKELETON_MATERIALIZED",
+  "behavioral_credit": false,
+  "preservation": "PRESERVE_IMPLEMENT_EXTEND"
+}

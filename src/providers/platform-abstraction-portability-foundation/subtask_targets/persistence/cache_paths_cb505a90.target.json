@@ -1,0 +1,12 @@
+{
+  "source_prompt": ".phases/phases/phase-50-platform-abstraction-portability-foundation/prompts/50.105-cache-paths.md",
+  "phase_task": ".phases/phases/phase-50-platform-abstraction-portability-foundation/TASK.md",
+  "canonical_root": "src/providers/platform-abstraction-portability-foundation",
+  "role": "persistence",
+  "implementation_header": "src/providers/platform-abstraction-portability-foundation/subtask_targets/persistence/cache_paths_cb505a90.hpp",
+  "implementation_source": "src/providers/platform-abstraction-portability-foundation/subtask_targets/persistence/cache_paths_cb505a90.cpp",
+  "test_target": "tests/structural-closure/providers/platform-abstraction-portability-foundation/persistence/test_cache_paths_cb505a90.cpp",
+  "status": "SKELETON_MATERIALIZED",
+  "behavioral_credit": false,
+  "preservation": "PRESERVE_IMPLEMENT_EXTEND"
+}

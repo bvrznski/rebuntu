@@ -1,0 +1,12 @@
+{
+  "source_prompt": ".phases/phases/phase-35-package-software-management/prompts/35.29-local-manual-package-discovery.md",
+  "phase_task": ".phases/phases/phase-35-package-software-management/TASK.md",
+  "canonical_root": "src/domains/package-software-management",
+  "role": "resolution",
+  "implementation_header": "src/domains/package-software-management/subtask_targets/resolution/local_manual_package_discovery_6bf5ee56.hpp",
+  "implementation_source": "src/domains/package-software-management/subtask_targets/resolution/local_manual_package_discovery_6bf5ee56.cpp",
+  "test_target": "tests/structural-closure/domains/package-software-management/resolution/test_local_manual_package_discovery_6bf5ee56.cpp",
+  "status": "SKELETON_MATERIALIZED",
+  "behavioral_credit": false,
+  "preservation": "PRESERVE_IMPLEMENT_EXTEND"
+}

@@ -1,0 +1,4 @@
+#include "task_result_model_11c108f6.hpp"
+
+// STRUCTURAL CLOSURE SLOT — intentionally behavior-free.
+// Implement prompt-derived out-of-line behavior here when applicable.

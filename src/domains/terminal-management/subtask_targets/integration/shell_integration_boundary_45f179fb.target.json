@@ -1,0 +1,12 @@
+{
+  "source_prompt": ".phases/phases/phase-27-terminal-management/prompts/27.27-phase-26-shell-integration-boundary.md",
+  "phase_task": ".phases/phases/phase-27-terminal-management/TASK.md",
+  "canonical_root": "src/domains/terminal-management",
+  "role": "integration",
+  "implementation_header": "src/domains/terminal-management/subtask_targets/integration/shell_integration_boundary_45f179fb.hpp",
+  "implementation_source": "src/domains/terminal-management/subtask_targets/integration/shell_integration_boundary_45f179fb.cpp",
+  "test_target": "tests/structural-closure/domains/terminal-management/integration/test_shell_integration_boundary_45f179fb.cpp",
+  "status": "SKELETON_MATERIALIZED",
+  "behavioral_credit": false,
+  "preservation": "PRESERVE_IMPLEMENT_EXTEND"
+}

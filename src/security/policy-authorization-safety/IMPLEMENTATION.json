@@ -1,0 +1,9 @@
+{
+  "component": "policy-authorization-safety",
+  "canonical_root": "security",
+  "phase_tasks": [
+    ".phases/phases/phase-07-policy-authorization-safety/TASK.md"
+  ],
+  "status": "SKELETON",
+  "native_authority_rule": true
+}

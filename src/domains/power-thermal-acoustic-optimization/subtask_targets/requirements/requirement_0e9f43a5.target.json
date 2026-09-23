@@ -1,0 +1,12 @@
+{
+  "source_prompt": ".phases/phases/phase-72-power-thermal-acoustic-optimization/prompts/72.19.md",
+  "phase_task": ".phases/phases/phase-72-power-thermal-acoustic-optimization/TASK.md",
+  "canonical_root": "src/domains/power-thermal-acoustic-optimization",
+  "role": "requirements",
+  "implementation_header": "src/domains/power-thermal-acoustic-optimization/subtask_targets/requirements/requirement_0e9f43a5.hpp",
+  "implementation_source": "src/domains/power-thermal-acoustic-optimization/subtask_targets/requirements/requirement_0e9f43a5.cpp",
+  "test_target": "tests/structural-closure/domains/power-thermal-acoustic-optimization/requirements/test_requirement_0e9f43a5.cpp",
+  "status": "SKELETON_MATERIALIZED",
+  "behavioral_credit": false,
+  "preservation": "PRESERVE_IMPLEMENT_EXTEND"
+}

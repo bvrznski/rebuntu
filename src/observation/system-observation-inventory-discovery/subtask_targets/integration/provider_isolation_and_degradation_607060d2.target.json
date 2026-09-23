@@ -1,0 +1,12 @@
+{
+  "source_prompt": ".phases/phases/phase-05-system-observation-inventory-discovery/prompts/5.50_provider_isolation_and_degradation.md",
+  "phase_task": ".phases/phases/phase-05-system-observation-inventory-discovery/TASK.md",
+  "canonical_root": "src/observation/system-observation-inventory-discovery",
+  "role": "integration",
+  "implementation_header": "src/observation/system-observation-inventory-discovery/subtask_targets/integration/provider_isolation_and_degradation_607060d2.hpp",
+  "implementation_source": "src/observation/system-observation-inventory-discovery/subtask_targets/integration/provider_isolation_and_degradation_607060d2.cpp",
+  "test_target": "tests/structural-closure/observation/system-observation-inventory-discovery/integration/test_provider_isolation_and_degradation_607060d2.cpp",
+  "status": "SKELETON_MATERIALIZED",
+  "behavioral_credit": false,
+  "preservation": "PRESERVE_IMPLEMENT_EXTEND"
+}

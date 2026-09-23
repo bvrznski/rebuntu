@@ -1,0 +1,12 @@
+{
+  "source_prompt": ".phases/phases/phase-60-transactional-change-safe-transition/prompts/60.9-rebuntu-phase-60-9-durability-semantics.md",
+  "phase_task": ".phases/phases/phase-60-transactional-change-safe-transition/TASK.md",
+  "canonical_root": "src/control/transactional-change-safe-transition",
+  "role": "persistence",
+  "implementation_header": "src/control/transactional-change-safe-transition/subtask_targets/persistence/durability_semantics_5abc4925.hpp",
+  "implementation_source": "src/control/transactional-change-safe-transition/subtask_targets/persistence/durability_semantics_5abc4925.cpp",
+  "test_target": "tests/structural-closure/control/transactional-change-safe-transition/persistence/test_durability_semantics_5abc4925.cpp",
+  "status": "SKELETON_MATERIALIZED",
+  "behavioral_credit": false,
+  "preservation": "PRESERVE_IMPLEMENT_EXTEND"
+}

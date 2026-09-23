@@ -1,0 +1,12 @@
+{
+  "source_prompt": ".phases/phases/phase-17-semantic-administration/prompts/17.2.md",
+  "phase_task": ".phases/phases/phase-17-semantic-administration/TASK.md",
+  "canonical_root": "src/semantics/semantic-administration",
+  "role": "requirements",
+  "implementation_header": "src/semantics/semantic-administration/subtask_targets/requirements/requirement_633339f0.hpp",
+  "implementation_source": "src/semantics/semantic-administration/subtask_targets/requirements/requirement_633339f0.cpp",
+  "test_target": "tests/structural-closure/semantics/semantic-administration/requirements/test_requirement_633339f0.cpp",
+  "status": "SKELETON_MATERIALIZED",
+  "behavioral_credit": false,
+  "preservation": "PRESERVE_IMPLEMENT_EXTEND"
+}

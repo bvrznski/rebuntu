@@ -1,0 +1,9 @@
+{
+  "component": "process-workload-management",
+  "canonical_root": "domains",
+  "phase_tasks": [
+    ".phases/phases/phase-29-process-workload-management/TASK.md"
+  ],
+  "status": "SKELETON",
+  "native_authority_rule": true
+}

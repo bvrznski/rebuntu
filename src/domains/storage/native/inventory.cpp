@@ -1,0 +1,12 @@
+#include <domains/storage/inventory.hpp>
+#include <algorithm>
+#include <fstream>
+#include <sstream>
+namespace rebuntu::domains::storage {
+static std::string read(const std::filesystem::path&p){std::ifstream f(p);std::string s;std::getline(f,s);return s;}
+static std::uint64_t u64(const std::filesystem::path&p,std::uint64_t d=0){try{auto s=read(p);return s.empty()?d:std::stoull(s);}catch(...){return d;}}
+static std::string unescape(std::string s){for(auto [a,b]:{std::pair{"\\040"," "}, {"\\011","\t"}, {"\\134","\\"}}){for(size_t p=0;(p=s.find(a,p))!=std::string::npos;)s.replace(p,4,b);}return s;}
+std::vector<BlockDevice> Inventory::block_devices()const{std::vector<BlockDevice> out;auto root=sys_/"class/block";if(!std::filesystem::exists(root))return out;for(auto&e:std::filesystem::directory_iterator(root)){BlockDevice d;d.name=e.path().filename();d.path="/dev/"+d.name;d.sectors=u64(e.path()/"size");d.logical_block_size=u64(e.path()/"queue/logical_block_size",512);d.size_bytes=d.sectors*512ULL;d.rotational=u64(e.path()/"queue/rotational")!=0;d.removable=u64(e.path()/"removable")!=0;d.read_only=u64(e.path()/"ro")!=0;auto m=read(e.path()/"device/model");if(!m.empty())d.model=m;auto v=read(e.path()/"device/vendor");if(!v.empty())d.vendor=v;out.push_back(std::move(d));}std::sort(out.begin(),out.end(),[](auto&a,auto&b){return a.name<b.name;});return out;}
+std::vector<Mount> Inventory::mounts()const{std::ifstream f(proc_/"self/mountinfo");std::vector<Mount> out;std::string line;while(std::getline(f,line)){std::istringstream in(line);std::vector<std::string> x;for(std::string s;in>>s;)x.push_back(s);auto dash=std::find(x.begin(),x.end(),"-");if(x.size()<7||dash==x.end()||std::distance(dash,x.end())<4)continue;Mount m;auto c=x[2].find(':');if(c!=std::string::npos){try{m.major=std::stoi(x[2].substr(0,c));m.minor=std::stoi(x[2].substr(c+1));}catch(...){}}m.target=unescape(x[4]);m.options=x[5];m.filesystem=*(dash+1);m.source=unescape(*(dash+2));out.push_back(std::move(m));}return out;}
+std::optional<Mount> Inventory::mount_for(const std::filesystem::path&p)const{auto q=std::filesystem::absolute(p).lexically_normal().string();std::optional<Mount> best;for(auto&m:mounts()){auto t=std::filesystem::path(m.target).lexically_normal().string();bool hit=q==t||(t=="/"&&q.starts_with('/'))||(q.size()>t.size()&&q.compare(0,t.size(),t)==0&&q[t.size()]=='/');if(hit&&(!best||t.size()>best->target.size()))best=m;}return best;}
+}

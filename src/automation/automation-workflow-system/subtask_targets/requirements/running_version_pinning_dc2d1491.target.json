@@ -1,0 +1,12 @@
+{
+  "source_prompt": ".phases/phases/phase-41-automation-workflow-system/prompts/41.084-running-version-pinning.md",
+  "phase_task": ".phases/phases/phase-41-automation-workflow-system/TASK.md",
+  "canonical_root": "src/automation/automation-workflow-system",
+  "role": "requirements",
+  "implementation_header": "src/automation/automation-workflow-system/subtask_targets/requirements/running_version_pinning_dc2d1491.hpp",
+  "implementation_source": "src/automation/automation-workflow-system/subtask_targets/requirements/running_version_pinning_dc2d1491.cpp",
+  "test_target": "tests/structural-closure/automation/automation-workflow-system/requirements/test_running_version_pinning_dc2d1491.cpp",
+  "status": "SKELETON_MATERIALIZED",
+  "behavioral_credit": false,
+  "preservation": "PRESERVE_IMPLEMENT_EXTEND"
+}

@@ -1,0 +1,12 @@
+{
+  "source_prompt": ".phases/phases/phase-42-system-knowledge-graph/prompts/42.077-cross-domain-entity-linking.md",
+  "phase_task": ".phases/phases/phase-42-system-knowledge-graph/TASK.md",
+  "canonical_root": "src/knowledge/system-knowledge-graph",
+  "role": "requirements",
+  "implementation_header": "src/knowledge/system-knowledge-graph/subtask_targets/requirements/cross_domain_entity_linking_2492a66c.hpp",
+  "implementation_source": "src/knowledge/system-knowledge-graph/subtask_targets/requirements/cross_domain_entity_linking_2492a66c.cpp",
+  "test_target": "tests/structural-closure/knowledge/system-knowledge-graph/requirements/test_cross_domain_entity_linking_2492a66c.cpp",
+  "status": "SKELETON_MATERIALIZED",
+  "behavioral_credit": false,
+  "preservation": "PRESERVE_IMPLEMENT_EXTEND"
+}

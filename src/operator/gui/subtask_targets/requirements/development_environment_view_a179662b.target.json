@@ -1,0 +1,12 @@
+{
+  "source_prompt": ".phases/phases/phase-49-gui/prompts/49.103-development-environment-view.md",
+  "phase_task": ".phases/phases/phase-49-gui/TASK.md",
+  "canonical_root": "src/operator/gui",
+  "role": "requirements",
+  "implementation_header": "src/operator/gui/subtask_targets/requirements/development_environment_view_a179662b.hpp",
+  "implementation_source": "src/operator/gui/subtask_targets/requirements/development_environment_view_a179662b.cpp",
+  "test_target": "tests/structural-closure/operator/gui/requirements/test_development_environment_view_a179662b.cpp",
+  "status": "SKELETON_MATERIALIZED",
+  "behavioral_credit": false,
+  "preservation": "PRESERVE_IMPLEMENT_EXTEND"
+}

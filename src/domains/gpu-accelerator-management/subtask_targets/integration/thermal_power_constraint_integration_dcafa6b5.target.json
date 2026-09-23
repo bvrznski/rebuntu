@@ -1,0 +1,12 @@
+{
+  "source_prompt": ".phases/phases/phase-34-gpu-accelerator-management/prompts/34.40-thermal-power-constraint-integration.md",
+  "phase_task": ".phases/phases/phase-34-gpu-accelerator-management/TASK.md",
+  "canonical_root": "src/domains/gpu-accelerator-management",
+  "role": "integration",
+  "implementation_header": "src/domains/gpu-accelerator-management/subtask_targets/integration/thermal_power_constraint_integration_dcafa6b5.hpp",
+  "implementation_source": "src/domains/gpu-accelerator-management/subtask_targets/integration/thermal_power_constraint_integration_dcafa6b5.cpp",
+  "test_target": "tests/structural-closure/domains/gpu-accelerator-management/integration/test_thermal_power_constraint_integration_dcafa6b5.cpp",
+  "status": "SKELETON_MATERIALIZED",
+  "behavioral_credit": false,
+  "preservation": "PRESERVE_IMPLEMENT_EXTEND"
+}

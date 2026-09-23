@@ -1,0 +1,12 @@
+{
+  "source_prompt": ".phases/phases/phase-51-distributed-rebuntu-system/prompts/51.537-scheduler-decision-budget.md",
+  "phase_task": ".phases/phases/phase-51-distributed-rebuntu-system/TASK.md",
+  "canonical_root": "src/distributed/distributed-rebuntu-system",
+  "role": "planning",
+  "implementation_header": "src/distributed/distributed-rebuntu-system/subtask_targets/planning/scheduler_decision_budget_a3e04908.hpp",
+  "implementation_source": "src/distributed/distributed-rebuntu-system/subtask_targets/planning/scheduler_decision_budget_a3e04908.cpp",
+  "test_target": "tests/structural-closure/distributed/distributed-rebuntu-system/planning/test_scheduler_decision_budget_a3e04908.cpp",
+  "status": "SKELETON_MATERIALIZED",
+  "behavioral_credit": false,
+  "preservation": "PRESERVE_IMPLEMENT_EXTEND"
+}

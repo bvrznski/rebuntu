@@ -1,0 +1,12 @@
+{
+  "source_prompt": ".phases/phases/phase-07-policy-authorization-safety/prompts/7.68_malformed-policy-input_fuzzing.md",
+  "phase_task": ".phases/phases/phase-07-policy-authorization-safety/TASK.md",
+  "canonical_root": "src/security/policy-authorization-safety",
+  "role": "security",
+  "implementation_header": "src/security/policy-authorization-safety/subtask_targets/security/malformed_policy_input_fuzzing_3b003d9f.hpp",
+  "implementation_source": "src/security/policy-authorization-safety/subtask_targets/security/malformed_policy_input_fuzzing_3b003d9f.cpp",
+  "test_target": "tests/structural-closure/security/policy-authorization-safety/security/test_malformed_policy_input_fuzzing_3b003d9f.cpp",
+  "status": "SKELETON_MATERIALIZED",
+  "behavioral_credit": false,
+  "preservation": "PRESERVE_IMPLEMENT_EXTEND"
+}

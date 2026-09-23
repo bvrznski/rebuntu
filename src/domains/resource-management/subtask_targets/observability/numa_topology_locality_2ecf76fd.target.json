@@ -1,0 +1,12 @@
+{
+  "source_prompt": ".phases/phases/phase-30-resource-management/prompts/30.11-numa-topology-locality.md",
+  "phase_task": ".phases/phases/phase-30-resource-management/TASK.md",
+  "canonical_root": "src/domains/resource-management",
+  "role": "observability",
+  "implementation_header": "src/domains/resource-management/subtask_targets/observability/numa_topology_locality_2ecf76fd.hpp",
+  "implementation_source": "src/domains/resource-management/subtask_targets/observability/numa_topology_locality_2ecf76fd.cpp",
+  "test_target": "tests/structural-closure/domains/resource-management/observability/test_numa_topology_locality_2ecf76fd.cpp",
+  "status": "SKELETON_MATERIALIZED",
+  "behavioral_credit": false,
+  "preservation": "PRESERVE_IMPLEMENT_EXTEND"
+}

@@ -1,0 +1,12 @@
+{
+  "source_prompt": ".phases/phases/phase-05-system-observation-inventory-discovery/prompts/5.17_filesystem_observation.md",
+  "phase_task": ".phases/phases/phase-05-system-observation-inventory-discovery/TASK.md",
+  "canonical_root": "src/observation/system-observation-inventory-discovery",
+  "role": "observability",
+  "implementation_header": "src/observation/system-observation-inventory-discovery/subtask_targets/observability/filesystem_observation_875f33c8.hpp",
+  "implementation_source": "src/observation/system-observation-inventory-discovery/subtask_targets/observability/filesystem_observation_875f33c8.cpp",
+  "test_target": "tests/structural-closure/observation/system-observation-inventory-discovery/observability/test_filesystem_observation_875f33c8.cpp",
+  "status": "SKELETON_MATERIALIZED",
+  "behavioral_credit": false,
+  "preservation": "PRESERVE_IMPLEMENT_EXTEND"
+}

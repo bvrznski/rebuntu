@@ -1,0 +1,12 @@
+{
+  "source_prompt": ".phases/phases/phase-49-gui/prompts/49.271-context-coherence-view.md",
+  "phase_task": ".phases/phases/phase-49-gui/TASK.md",
+  "canonical_root": "src/operator/gui",
+  "role": "requirements",
+  "implementation_header": "src/operator/gui/subtask_targets/requirements/context_coherence_view_a5a23a91.hpp",
+  "implementation_source": "src/operator/gui/subtask_targets/requirements/context_coherence_view_a5a23a91.cpp",
+  "test_target": "tests/structural-closure/operator/gui/requirements/test_context_coherence_view_a5a23a91.cpp",
+  "status": "SKELETON_MATERIALIZED",
+  "behavioral_credit": false,
+  "preservation": "PRESERVE_IMPLEMENT_EXTEND"
+}

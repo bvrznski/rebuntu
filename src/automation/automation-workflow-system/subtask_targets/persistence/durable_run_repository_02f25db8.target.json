@@ -1,0 +1,12 @@
+{
+  "source_prompt": ".phases/phases/phase-41-automation-workflow-system/prompts/41.013-durable-run-repository.md",
+  "phase_task": ".phases/phases/phase-41-automation-workflow-system/TASK.md",
+  "canonical_root": "src/automation/automation-workflow-system",
+  "role": "persistence",
+  "implementation_header": "src/automation/automation-workflow-system/subtask_targets/persistence/durable_run_repository_02f25db8.hpp",
+  "implementation_source": "src/automation/automation-workflow-system/subtask_targets/persistence/durable_run_repository_02f25db8.cpp",
+  "test_target": "tests/structural-closure/automation/automation-workflow-system/persistence/test_durable_run_repository_02f25db8.cpp",
+  "status": "SKELETON_MATERIALIZED",
+  "behavioral_credit": false,
+  "preservation": "PRESERVE_IMPLEMENT_EXTEND"
+}

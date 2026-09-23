@@ -1,0 +1,12 @@
+{
+  "source_prompt": ".phases/phases/phase-51-distributed-rebuntu-system/prompts/51.117-workload-migration-semantics.md",
+  "phase_task": ".phases/phases/phase-51-distributed-rebuntu-system/TASK.md",
+  "canonical_root": "src/distributed/distributed-rebuntu-system",
+  "role": "integration",
+  "implementation_header": "src/distributed/distributed-rebuntu-system/subtask_targets/integration/workload_migration_semantics_ffc9e4bf.hpp",
+  "implementation_source": "src/distributed/distributed-rebuntu-system/subtask_targets/integration/workload_migration_semantics_ffc9e4bf.cpp",
+  "test_target": "tests/structural-closure/distributed/distributed-rebuntu-system/integration/test_workload_migration_semantics_ffc9e4bf.cpp",
+  "status": "SKELETON_MATERIALIZED",
+  "behavioral_credit": false,
+  "preservation": "PRESERVE_IMPLEMENT_EXTEND"
+}

@@ -1,0 +1,12 @@
+{
+  "source_prompt": ".phases/phases/phase-57-continuous-reconciliation-goal-maintenance/prompts/57.18-rebuntu-phase-57-18-policy-revalidation.md",
+  "phase_task": ".phases/phases/phase-57-continuous-reconciliation-goal-maintenance/TASK.md",
+  "canonical_root": "src/control/continuous-reconciliation-goal-maintenance",
+  "role": "security",
+  "implementation_header": "src/control/continuous-reconciliation-goal-maintenance/subtask_targets/security/policy_revalidation_df38dcfd.hpp",
+  "implementation_source": "src/control/continuous-reconciliation-goal-maintenance/subtask_targets/security/policy_revalidation_df38dcfd.cpp",
+  "test_target": "tests/structural-closure/control/continuous-reconciliation-goal-maintenance/security/test_policy_revalidation_df38dcfd.cpp",
+  "status": "SKELETON_MATERIALIZED",
+  "behavioral_credit": false,
+  "preservation": "PRESERVE_IMPLEMENT_EXTEND"
+}

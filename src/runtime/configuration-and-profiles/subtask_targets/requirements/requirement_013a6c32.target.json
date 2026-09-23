@@ -1,0 +1,12 @@
+{
+  "source_prompt": ".phases/phases/phase-11-configuration-and-profiles/prompts/11.10.md",
+  "phase_task": ".phases/phases/phase-11-configuration-and-profiles/TASK.md",
+  "canonical_root": "src/runtime/configuration-and-profiles",
+  "role": "requirements",
+  "implementation_header": "src/runtime/configuration-and-profiles/subtask_targets/requirements/requirement_013a6c32.hpp",
+  "implementation_source": "src/runtime/configuration-and-profiles/subtask_targets/requirements/requirement_013a6c32.cpp",
+  "test_target": "tests/structural-closure/runtime/configuration-and-profiles/requirements/test_requirement_013a6c32.cpp",
+  "status": "SKELETON_MATERIALIZED",
+  "behavioral_credit": false,
+  "preservation": "PRESERVE_IMPLEMENT_EXTEND"
+}

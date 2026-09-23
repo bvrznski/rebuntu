@@ -1,0 +1,12 @@
+{
+  "source_prompt": ".phases/phases/phase-38-user-identity-management/prompts/38.50-session-lifecycle-boundary.md",
+  "phase_task": ".phases/phases/phase-38-user-identity-management/TASK.md",
+  "canonical_root": "src/domains/user-identity-management",
+  "role": "lifecycle",
+  "implementation_header": "src/domains/user-identity-management/subtask_targets/lifecycle/session_lifecycle_boundary_73158609.hpp",
+  "implementation_source": "src/domains/user-identity-management/subtask_targets/lifecycle/session_lifecycle_boundary_73158609.cpp",
+  "test_target": "tests/structural-closure/domains/user-identity-management/lifecycle/test_session_lifecycle_boundary_73158609.cpp",
+  "status": "SKELETON_MATERIALIZED",
+  "behavioral_credit": false,
+  "preservation": "PRESERVE_IMPLEMENT_EXTEND"
+}

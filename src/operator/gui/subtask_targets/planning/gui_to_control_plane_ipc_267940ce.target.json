@@ -1,0 +1,12 @@
+{
+  "source_prompt": ".phases/phases/phase-49-gui/prompts/49.349-gui-to-control-plane-ipc.md",
+  "phase_task": ".phases/phases/phase-49-gui/TASK.md",
+  "canonical_root": "src/operator/gui",
+  "role": "planning",
+  "implementation_header": "src/operator/gui/subtask_targets/planning/gui_to_control_plane_ipc_267940ce.hpp",
+  "implementation_source": "src/operator/gui/subtask_targets/planning/gui_to_control_plane_ipc_267940ce.cpp",
+  "test_target": "tests/structural-closure/operator/gui/planning/test_gui_to_control_plane_ipc_267940ce.cpp",
+  "status": "SKELETON_MATERIALIZED",
+  "behavioral_credit": false,
+  "preservation": "PRESERVE_IMPLEMENT_EXTEND"
+}

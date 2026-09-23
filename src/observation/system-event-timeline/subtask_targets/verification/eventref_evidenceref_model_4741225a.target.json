@@ -1,0 +1,12 @@
+{
+  "source_prompt": ".phases/phases/phase-39-system-event-timeline/prompts/39.4-eventref-evidenceref-model.md",
+  "phase_task": ".phases/phases/phase-39-system-event-timeline/TASK.md",
+  "canonical_root": "src/observation/system-event-timeline",
+  "role": "verification",
+  "implementation_header": "src/observation/system-event-timeline/subtask_targets/verification/eventref_evidenceref_model_4741225a.hpp",
+  "implementation_source": "src/observation/system-event-timeline/subtask_targets/verification/eventref_evidenceref_model_4741225a.cpp",
+  "test_target": "tests/structural-closure/observation/system-event-timeline/verification/test_eventref_evidenceref_model_4741225a.cpp",
+  "status": "SKELETON_MATERIALIZED",
+  "behavioral_credit": false,
+  "preservation": "PRESERVE_IMPLEMENT_EXTEND"
+}

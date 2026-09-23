@@ -1,0 +1,12 @@
+{
+  "source_prompt": ".phases/phases/phase-60-transactional-change-safe-transition/prompts/60.11-rebuntu-phase-60-11-irreversible-step-boundary.md",
+  "phase_task": ".phases/phases/phase-60-transactional-change-safe-transition/TASK.md",
+  "canonical_root": "src/control/transactional-change-safe-transition",
+  "role": "requirements",
+  "implementation_header": "src/control/transactional-change-safe-transition/subtask_targets/requirements/irreversible_step_boundary_f7f53bf9.hpp",
+  "implementation_source": "src/control/transactional-change-safe-transition/subtask_targets/requirements/irreversible_step_boundary_f7f53bf9.cpp",
+  "test_target": "tests/structural-closure/control/transactional-change-safe-transition/requirements/test_irreversible_step_boundary_f7f53bf9.cpp",
+  "status": "SKELETON_MATERIALIZED",
+  "behavioral_credit": false,
+  "preservation": "PRESERVE_IMPLEMENT_EXTEND"
+}

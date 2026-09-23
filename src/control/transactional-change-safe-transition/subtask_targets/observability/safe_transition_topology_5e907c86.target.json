@@ -1,0 +1,12 @@
+{
+  "source_prompt": ".phases/phases/phase-60-transactional-change-safe-transition/prompts/60.0-rebuntu-phase-60-0-safe-transition-topology.md",
+  "phase_task": ".phases/phases/phase-60-transactional-change-safe-transition/TASK.md",
+  "canonical_root": "src/control/transactional-change-safe-transition",
+  "role": "observability",
+  "implementation_header": "src/control/transactional-change-safe-transition/subtask_targets/observability/safe_transition_topology_5e907c86.hpp",
+  "implementation_source": "src/control/transactional-change-safe-transition/subtask_targets/observability/safe_transition_topology_5e907c86.cpp",
+  "test_target": "tests/structural-closure/control/transactional-change-safe-transition/observability/test_safe_transition_topology_5e907c86.cpp",
+  "status": "SKELETON_MATERIALIZED",
+  "behavioral_credit": false,
+  "preservation": "PRESERVE_IMPLEMENT_EXTEND"
+}

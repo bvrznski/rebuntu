@@ -1,0 +1,12 @@
+{
+  "source_prompt": ".phases/phases/phase-36-configuration-management/prompts/36.12-unknown-key-comment-preservation.md",
+  "phase_task": ".phases/phases/phase-36-configuration-management/TASK.md",
+  "canonical_root": "src/domains/configuration-management",
+  "role": "requirements",
+  "implementation_header": "src/domains/configuration-management/subtask_targets/requirements/unknown_key_comment_preservation_09ee4bdf.hpp",
+  "implementation_source": "src/domains/configuration-management/subtask_targets/requirements/unknown_key_comment_preservation_09ee4bdf.cpp",
+  "test_target": "tests/structural-closure/domains/configuration-management/requirements/test_unknown_key_comment_preservation_09ee4bdf.cpp",
+  "status": "SKELETON_MATERIALIZED",
+  "behavioral_credit": false,
+  "preservation": "PRESERVE_IMPLEMENT_EXTEND"
+}

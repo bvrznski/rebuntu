@@ -1,0 +1,12 @@
+{
+  "source_prompt": ".phases/phases/phase-43-operator-intelligence-system/prompts/43.059-rule-explanation-generation.md",
+  "phase_task": ".phases/phases/phase-43-operator-intelligence-system/TASK.md",
+  "canonical_root": "src/operator/operator-intelligence-system",
+  "role": "planning",
+  "implementation_header": "src/operator/operator-intelligence-system/subtask_targets/planning/rule_explanation_generation_ec77569f.hpp",
+  "implementation_source": "src/operator/operator-intelligence-system/subtask_targets/planning/rule_explanation_generation_ec77569f.cpp",
+  "test_target": "tests/structural-closure/operator/operator-intelligence-system/planning/test_rule_explanation_generation_ec77569f.cpp",
+  "status": "SKELETON_MATERIALIZED",
+  "behavioral_credit": false,
+  "preservation": "PRESERVE_IMPLEMENT_EXTEND"
+}

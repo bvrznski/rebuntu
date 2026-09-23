@@ -1,0 +1,12 @@
+{
+  "source_prompt": ".phases/phases/phase-37-secrets-credentials-management/prompts/37.60-phase-38-identity-integration.md",
+  "phase_task": ".phases/phases/phase-37-secrets-credentials-management/TASK.md",
+  "canonical_root": "src/security/secrets-credentials-management",
+  "role": "integration",
+  "implementation_header": "src/security/secrets-credentials-management/subtask_targets/integration/identity_integration_18cb6221.hpp",
+  "implementation_source": "src/security/secrets-credentials-management/subtask_targets/integration/identity_integration_18cb6221.cpp",
+  "test_target": "tests/structural-closure/security/secrets-credentials-management/integration/test_identity_integration_18cb6221.cpp",
+  "status": "SKELETON_MATERIALIZED",
+  "behavioral_credit": false,
+  "preservation": "PRESERVE_IMPLEMENT_EXTEND"
+}

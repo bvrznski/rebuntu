@@ -1,0 +1,12 @@
+{
+  "source_prompt": ".phases/phases/phase-07-policy-authorization-safety/prompts/7.62_replay_tests.md",
+  "phase_task": ".phases/phases/phase-07-policy-authorization-safety/TASK.md",
+  "canonical_root": "src/security/policy-authorization-safety",
+  "role": "verification",
+  "implementation_header": "src/security/policy-authorization-safety/subtask_targets/verification/replay_tests_fca2aa2a.hpp",
+  "implementation_source": "src/security/policy-authorization-safety/subtask_targets/verification/replay_tests_fca2aa2a.cpp",
+  "test_target": "tests/structural-closure/security/policy-authorization-safety/verification/test_replay_tests_fca2aa2a.cpp",
+  "status": "SKELETON_MATERIALIZED",
+  "behavioral_credit": false,
+  "preservation": "PRESERVE_IMPLEMENT_EXTEND"
+}

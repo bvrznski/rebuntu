@@ -1,0 +1,12 @@
+{
+  "source_prompt": ".phases/phases/phase-06-native-command-operation-execution/prompts/6.4.md",
+  "phase_task": ".phases/phases/phase-06-native-command-operation-execution/TASK.md",
+  "canonical_root": "src/runtime/native-command-operation-execution",
+  "role": "requirements",
+  "implementation_header": "src/runtime/native-command-operation-execution/subtask_targets/requirements/requirement_948cc852.hpp",
+  "implementation_source": "src/runtime/native-command-operation-execution/subtask_targets/requirements/requirement_948cc852.cpp",
+  "test_target": "tests/structural-closure/runtime/native-command-operation-execution/requirements/test_requirement_948cc852.cpp",
+  "status": "SKELETON_MATERIALIZED",
+  "behavioral_credit": false,
+  "preservation": "PRESERVE_IMPLEMENT_EXTEND"
+}

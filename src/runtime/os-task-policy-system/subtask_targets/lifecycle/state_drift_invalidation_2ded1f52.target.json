@@ -1,0 +1,12 @@
+{
+  "source_prompt": ".phases/phases/phase-47-os-task-policy-system/prompts/47.096-state-drift-invalidation.md",
+  "phase_task": ".phases/phases/phase-47-os-task-policy-system/TASK.md",
+  "canonical_root": "src/runtime/os-task-policy-system",
+  "role": "lifecycle",
+  "implementation_header": "src/runtime/os-task-policy-system/subtask_targets/lifecycle/state_drift_invalidation_2ded1f52.hpp",
+  "implementation_source": "src/runtime/os-task-policy-system/subtask_targets/lifecycle/state_drift_invalidation_2ded1f52.cpp",
+  "test_target": "tests/structural-closure/runtime/os-task-policy-system/lifecycle/test_state_drift_invalidation_2ded1f52.cpp",
+  "status": "SKELETON_MATERIALIZED",
+  "behavioral_credit": false,
+  "preservation": "PRESERVE_IMPLEMENT_EXTEND"
+}

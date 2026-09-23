@@ -1,0 +1,12 @@
+{
+  "source_prompt": ".phases/phases/phase-49-gui/prompts/49.201-plan-inspector.md",
+  "phase_task": ".phases/phases/phase-49-gui/TASK.md",
+  "canonical_root": "src/operator/gui",
+  "role": "planning",
+  "implementation_header": "src/operator/gui/subtask_targets/planning/plan_inspector_8acf17ee.hpp",
+  "implementation_source": "src/operator/gui/subtask_targets/planning/plan_inspector_8acf17ee.cpp",
+  "test_target": "tests/structural-closure/operator/gui/planning/test_plan_inspector_8acf17ee.cpp",
+  "status": "SKELETON_MATERIALIZED",
+  "behavioral_credit": false,
+  "preservation": "PRESERVE_IMPLEMENT_EXTEND"
+}

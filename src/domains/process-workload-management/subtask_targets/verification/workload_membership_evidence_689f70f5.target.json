@@ -1,0 +1,12 @@
+{
+  "source_prompt": ".phases/phases/phase-29-process-workload-management/prompts/29.17-workload-membership-evidence.md",
+  "phase_task": ".phases/phases/phase-29-process-workload-management/TASK.md",
+  "canonical_root": "src/domains/process-workload-management",
+  "role": "verification",
+  "implementation_header": "src/domains/process-workload-management/subtask_targets/verification/workload_membership_evidence_689f70f5.hpp",
+  "implementation_source": "src/domains/process-workload-management/subtask_targets/verification/workload_membership_evidence_689f70f5.cpp",
+  "test_target": "tests/structural-closure/domains/process-workload-management/verification/test_workload_membership_evidence_689f70f5.cpp",
+  "status": "SKELETON_MATERIALIZED",
+  "behavioral_credit": false,
+  "preservation": "PRESERVE_IMPLEMENT_EXTEND"
+}

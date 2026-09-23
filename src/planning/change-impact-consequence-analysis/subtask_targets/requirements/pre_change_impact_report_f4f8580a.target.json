@@ -1,0 +1,12 @@
+{
+  "source_prompt": ".phases/phases/phase-59-change-impact-consequence-analysis/prompts/59.37-rebuntu-phase-59-37-pre-change-impact-report.md",
+  "phase_task": ".phases/phases/phase-59-change-impact-consequence-analysis/TASK.md",
+  "canonical_root": "src/planning/change-impact-consequence-analysis",
+  "role": "requirements",
+  "implementation_header": "src/planning/change-impact-consequence-analysis/subtask_targets/requirements/pre_change_impact_report_f4f8580a.hpp",
+  "implementation_source": "src/planning/change-impact-consequence-analysis/subtask_targets/requirements/pre_change_impact_report_f4f8580a.cpp",
+  "test_target": "tests/structural-closure/planning/change-impact-consequence-analysis/requirements/test_pre_change_impact_report_f4f8580a.cpp",
+  "status": "SKELETON_MATERIALIZED",
+  "behavioral_credit": false,
+  "preservation": "PRESERVE_IMPLEMENT_EXTEND"
+}

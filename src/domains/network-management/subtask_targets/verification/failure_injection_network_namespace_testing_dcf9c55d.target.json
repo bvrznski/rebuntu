@@ -1,0 +1,12 @@
+{
+  "source_prompt": ".phases/phases/phase-33-network-management/prompts/33.54-failure-injection-network-namespace-testing.md",
+  "phase_task": ".phases/phases/phase-33-network-management/TASK.md",
+  "canonical_root": "src/domains/network-management",
+  "role": "verification",
+  "implementation_header": "src/domains/network-management/subtask_targets/verification/failure_injection_network_namespace_testing_dcf9c55d.hpp",
+  "implementation_source": "src/domains/network-management/subtask_targets/verification/failure_injection_network_namespace_testing_dcf9c55d.cpp",
+  "test_target": "tests/structural-closure/domains/network-management/verification/test_failure_injection_network_namespace_testing_dcf9c55d.cpp",
+  "status": "SKELETON_MATERIALIZED",
+  "behavioral_credit": false,
+  "preservation": "PRESERVE_IMPLEMENT_EXTEND"
+}

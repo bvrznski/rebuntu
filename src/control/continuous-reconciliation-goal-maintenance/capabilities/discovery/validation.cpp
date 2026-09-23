@@ -1,0 +1,6 @@
+#include "control/continuous-reconciliation-goal-maintenance/capabilities/discovery/validation.hpp"
+
+// Structural translation-unit slot only. No maturity credit.
+namespace rebuntu::structural_slots {
+static_assert(Skeleton_11e9e917e1_Validation::structural_revision == 25);
+}

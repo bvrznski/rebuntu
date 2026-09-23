@@ -1,0 +1,12 @@
+{
+  "source_prompt": ".phases/phases/phase-61-recovery-repair-self-healing/prompts/61.38-rebuntu-phase-61-38-operator-handoff.md",
+  "phase_task": ".phases/phases/phase-61-recovery-repair-self-healing/TASK.md",
+  "canonical_root": "src/control/recovery-repair-self-healing",
+  "role": "requirements",
+  "implementation_header": "src/control/recovery-repair-self-healing/subtask_targets/requirements/operator_handoff_51168bbd.hpp",
+  "implementation_source": "src/control/recovery-repair-self-healing/subtask_targets/requirements/operator_handoff_51168bbd.cpp",
+  "test_target": "tests/structural-closure/control/recovery-repair-self-healing/requirements/test_operator_handoff_51168bbd.cpp",
+  "status": "SKELETON_MATERIALIZED",
+  "behavioral_credit": false,
+  "preservation": "PRESERVE_IMPLEMENT_EXTEND"
+}

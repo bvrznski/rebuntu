@@ -1,0 +1,12 @@
+{
+  "source_prompt": ".phases/phases/phase-32-storage-management/prompts/32.19-storage-topology-dependency-analysis.md",
+  "phase_task": ".phases/phases/phase-32-storage-management/TASK.md",
+  "canonical_root": "src/domains/storage-management",
+  "role": "observability",
+  "implementation_header": "src/domains/storage-management/subtask_targets/observability/storage_topology_dependency_analysis_80b9cfe3.hpp",
+  "implementation_source": "src/domains/storage-management/subtask_targets/observability/storage_topology_dependency_analysis_80b9cfe3.cpp",
+  "test_target": "tests/structural-closure/domains/storage-management/observability/test_storage_topology_dependency_analysis_80b9cfe3.cpp",
+  "status": "SKELETON_MATERIALIZED",
+  "behavioral_credit": false,
+  "preservation": "PRESERVE_IMPLEMENT_EXTEND"
+}

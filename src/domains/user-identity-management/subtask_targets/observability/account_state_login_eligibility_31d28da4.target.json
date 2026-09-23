@@ -1,0 +1,12 @@
+{
+  "source_prompt": ".phases/phases/phase-38-user-identity-management/prompts/38.24-account-state-login-eligibility.md",
+  "phase_task": ".phases/phases/phase-38-user-identity-management/TASK.md",
+  "canonical_root": "src/domains/user-identity-management",
+  "role": "observability",
+  "implementation_header": "src/domains/user-identity-management/subtask_targets/observability/account_state_login_eligibility_31d28da4.hpp",
+  "implementation_source": "src/domains/user-identity-management/subtask_targets/observability/account_state_login_eligibility_31d28da4.cpp",
+  "test_target": "tests/structural-closure/domains/user-identity-management/observability/test_account_state_login_eligibility_31d28da4.cpp",
+  "status": "SKELETON_MATERIALIZED",
+  "behavioral_credit": false,
+  "preservation": "PRESERVE_IMPLEMENT_EXTEND"
+}

@@ -1,0 +1,12 @@
+{
+  "source_prompt": ".phases/phases/phase-29-process-workload-management/prompts/29.43-phase-25-panel-integration-api.md",
+  "phase_task": ".phases/phases/phase-29-process-workload-management/TASK.md",
+  "canonical_root": "src/domains/process-workload-management",
+  "role": "integration",
+  "implementation_header": "src/domains/process-workload-management/subtask_targets/integration/panel_integration_api_12afff40.hpp",
+  "implementation_source": "src/domains/process-workload-management/subtask_targets/integration/panel_integration_api_12afff40.cpp",
+  "test_target": "tests/structural-closure/domains/process-workload-management/integration/test_panel_integration_api_12afff40.cpp",
+  "status": "SKELETON_MATERIALIZED",
+  "behavioral_credit": false,
+  "preservation": "PRESERVE_IMPLEMENT_EXTEND"
+}

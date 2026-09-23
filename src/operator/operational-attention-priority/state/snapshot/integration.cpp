@@ -1,0 +1,6 @@
+#include "operator/operational-attention-priority/state/snapshot/integration.hpp"
+
+// Structural translation-unit slot only. No maturity credit.
+namespace rebuntu::structural_slots {
+static_assert(Skeleton_e467ea8889_Integration::structural_revision == 25);
+}

@@ -1,0 +1,9 @@
+{
+  "component": "os-task-policy-system",
+  "canonical_root": "runtime",
+  "phase_tasks": [
+    ".phases/phases/phase-47-os-task-policy-system/TASK.md"
+  ],
+  "status": "SKELETON",
+  "native_authority_rule": true
+}

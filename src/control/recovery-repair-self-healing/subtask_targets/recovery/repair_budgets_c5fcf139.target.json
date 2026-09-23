@@ -1,0 +1,12 @@
+{
+  "source_prompt": ".phases/phases/phase-61-recovery-repair-self-healing/prompts/61.41-rebuntu-phase-61-41-repair-budgets.md",
+  "phase_task": ".phases/phases/phase-61-recovery-repair-self-healing/TASK.md",
+  "canonical_root": "src/control/recovery-repair-self-healing",
+  "role": "recovery",
+  "implementation_header": "src/control/recovery-repair-self-healing/subtask_targets/recovery/repair_budgets_c5fcf139.hpp",
+  "implementation_source": "src/control/recovery-repair-self-healing/subtask_targets/recovery/repair_budgets_c5fcf139.cpp",
+  "test_target": "tests/structural-closure/control/recovery-repair-self-healing/recovery/test_repair_budgets_c5fcf139.cpp",
+  "status": "SKELETON_MATERIALIZED",
+  "behavioral_credit": false,
+  "preservation": "PRESERVE_IMPLEMENT_EXTEND"
+}

@@ -1,0 +1,12 @@
+{
+  "source_prompt": ".phases/phases/phase-56-intent-goal-desired-state-management/prompts/56.40-rebuntu-phase-56-40-python-authority-audit.md",
+  "phase_task": ".phases/phases/phase-56-intent-goal-desired-state-management/TASK.md",
+  "canonical_root": "src/semantics/intent-goal-desired-state-management",
+  "role": "verification",
+  "implementation_header": "src/semantics/intent-goal-desired-state-management/subtask_targets/verification/python_authority_audit_dbb62e7e.hpp",
+  "implementation_source": "src/semantics/intent-goal-desired-state-management/subtask_targets/verification/python_authority_audit_dbb62e7e.cpp",
+  "test_target": "tests/structural-closure/semantics/intent-goal-desired-state-management/verification/test_python_authority_audit_dbb62e7e.cpp",
+  "status": "SKELETON_MATERIALIZED",
+  "behavioral_credit": false,
+  "preservation": "PRESERVE_IMPLEMENT_EXTEND"
+}

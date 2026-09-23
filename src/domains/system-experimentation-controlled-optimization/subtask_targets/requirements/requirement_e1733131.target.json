@@ -1,0 +1,12 @@
+{
+  "source_prompt": ".phases/phases/phase-74-system-experimentation-controlled-optimization/prompts/74.16.md",
+  "phase_task": ".phases/phases/phase-74-system-experimentation-controlled-optimization/TASK.md",
+  "canonical_root": "src/domains/system-experimentation-controlled-optimization",
+  "role": "requirements",
+  "implementation_header": "src/domains/system-experimentation-controlled-optimization/subtask_targets/requirements/requirement_e1733131.hpp",
+  "implementation_source": "src/domains/system-experimentation-controlled-optimization/subtask_targets/requirements/requirement_e1733131.cpp",
+  "test_target": "tests/structural-closure/domains/system-experimentation-controlled-optimization/requirements/test_requirement_e1733131.cpp",
+  "status": "SKELETON_MATERIALIZED",
+  "behavioral_credit": false,
+  "preservation": "PRESERVE_IMPLEMENT_EXTEND"
+}

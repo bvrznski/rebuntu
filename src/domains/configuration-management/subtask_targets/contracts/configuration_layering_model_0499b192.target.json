@@ -1,0 +1,12 @@
+{
+  "source_prompt": ".phases/phases/phase-36-configuration-management/prompts/36.6-configuration-layering-model.md",
+  "phase_task": ".phases/phases/phase-36-configuration-management/TASK.md",
+  "canonical_root": "src/domains/configuration-management",
+  "role": "contracts",
+  "implementation_header": "src/domains/configuration-management/subtask_targets/contracts/configuration_layering_model_0499b192.hpp",
+  "implementation_source": "src/domains/configuration-management/subtask_targets/contracts/configuration_layering_model_0499b192.cpp",
+  "test_target": "tests/structural-closure/domains/configuration-management/contracts/test_configuration_layering_model_0499b192.cpp",
+  "status": "SKELETON_MATERIALIZED",
+  "behavioral_credit": false,
+  "preservation": "PRESERVE_IMPLEMENT_EXTEND"
+}

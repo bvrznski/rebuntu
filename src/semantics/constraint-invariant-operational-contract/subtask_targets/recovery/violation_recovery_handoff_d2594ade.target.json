@@ -1,0 +1,12 @@
+{
+  "source_prompt": ".phases/phases/phase-58-constraint-invariant-operational-contract/prompts/58.38-rebuntu-phase-58-38-violation-recovery-handoff.md",
+  "phase_task": ".phases/phases/phase-58-constraint-invariant-operational-contract/TASK.md",
+  "canonical_root": "src/semantics/constraint-invariant-operational-contract",
+  "role": "recovery",
+  "implementation_header": "src/semantics/constraint-invariant-operational-contract/subtask_targets/recovery/violation_recovery_handoff_d2594ade.hpp",
+  "implementation_source": "src/semantics/constraint-invariant-operational-contract/subtask_targets/recovery/violation_recovery_handoff_d2594ade.cpp",
+  "test_target": "tests/structural-closure/semantics/constraint-invariant-operational-contract/recovery/test_violation_recovery_handoff_d2594ade.cpp",
+  "status": "SKELETON_MATERIALIZED",
+  "behavioral_credit": false,
+  "preservation": "PRESERVE_IMPLEMENT_EXTEND"
+}

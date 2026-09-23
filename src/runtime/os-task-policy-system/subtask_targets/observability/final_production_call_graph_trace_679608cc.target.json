@@ -1,0 +1,12 @@
+{
+  "source_prompt": ".phases/phases/phase-47-os-task-policy-system/prompts/47.565-final-production-call-graph-trace.md",
+  "phase_task": ".phases/phases/phase-47-os-task-policy-system/TASK.md",
+  "canonical_root": "src/runtime/os-task-policy-system",
+  "role": "observability",
+  "implementation_header": "src/runtime/os-task-policy-system/subtask_targets/observability/final_production_call_graph_trace_679608cc.hpp",
+  "implementation_source": "src/runtime/os-task-policy-system/subtask_targets/observability/final_production_call_graph_trace_679608cc.cpp",
+  "test_target": "tests/structural-closure/runtime/os-task-policy-system/observability/test_final_production_call_graph_trace_679608cc.cpp",
+  "status": "SKELETON_MATERIALIZED",
+  "behavioral_credit": false,
+  "preservation": "PRESERVE_IMPLEMENT_EXTEND"
+}

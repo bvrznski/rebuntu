@@ -1,0 +1,5 @@
+#include "planning.hpp"
+
+// XXVII out-of-line implementation reservation for planning.
+// Source: .phases/phases/phase-49-gui/prompts/49.466-desktop-search-integration-boundary.md
+// Intentionally behavior-free until prompt-derived implementation is supplied.

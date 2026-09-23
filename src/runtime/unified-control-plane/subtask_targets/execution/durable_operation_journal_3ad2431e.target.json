@@ -1,0 +1,12 @@
+{
+  "source_prompt": ".phases/phases/phase-45-unified-control-plane/prompts/45.076-durable-operation-journal.md",
+  "phase_task": ".phases/phases/phase-45-unified-control-plane/TASK.md",
+  "canonical_root": "src/runtime/unified-control-plane",
+  "role": "execution",
+  "implementation_header": "src/runtime/unified-control-plane/subtask_targets/execution/durable_operation_journal_3ad2431e.hpp",
+  "implementation_source": "src/runtime/unified-control-plane/subtask_targets/execution/durable_operation_journal_3ad2431e.cpp",
+  "test_target": "tests/structural-closure/runtime/unified-control-plane/execution/test_durable_operation_journal_3ad2431e.cpp",
+  "status": "SKELETON_MATERIALIZED",
+  "behavioral_credit": false,
+  "preservation": "PRESERVE_IMPLEMENT_EXTEND"
+}

@@ -1,0 +1,6 @@
+#include "security/security-policy-audit/scheduling/dispatch/integration.hpp"
+
+// Structural translation-unit slot only. No maturity credit.
+namespace rebuntu::structural_slots {
+static_assert(Skeleton_e79e05f0a0_Integration::structural_revision == 25);
+}

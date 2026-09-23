@@ -1,0 +1,12 @@
+{
+  "source_prompt": ".phases/phases/phase-46-natural-language-operator-interface/prompts/46.448-resolve-rediscovery-pass-two.md",
+  "phase_task": ".phases/phases/phase-46-natural-language-operator-interface/TASK.md",
+  "canonical_root": "src/operator/natural-language-operator-interface",
+  "role": "resolution",
+  "implementation_header": "src/operator/natural-language-operator-interface/subtask_targets/resolution/resolve_rediscovery_pass_two_d5dfe77c.hpp",
+  "implementation_source": "src/operator/natural-language-operator-interface/subtask_targets/resolution/resolve_rediscovery_pass_two_d5dfe77c.cpp",
+  "test_target": "tests/structural-closure/operator/natural-language-operator-interface/resolution/test_resolve_rediscovery_pass_two_d5dfe77c.cpp",
+  "status": "SKELETON_MATERIALIZED",
+  "behavioral_credit": false,
+  "preservation": "PRESERVE_IMPLEMENT_EXTEND"
+}

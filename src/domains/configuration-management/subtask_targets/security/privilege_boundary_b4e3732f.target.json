@@ -1,0 +1,12 @@
+{
+  "source_prompt": ".phases/phases/phase-36-configuration-management/prompts/36.49-privilege-boundary.md",
+  "phase_task": ".phases/phases/phase-36-configuration-management/TASK.md",
+  "canonical_root": "src/domains/configuration-management",
+  "role": "security",
+  "implementation_header": "src/domains/configuration-management/subtask_targets/security/privilege_boundary_b4e3732f.hpp",
+  "implementation_source": "src/domains/configuration-management/subtask_targets/security/privilege_boundary_b4e3732f.cpp",
+  "test_target": "tests/structural-closure/domains/configuration-management/security/test_privilege_boundary_b4e3732f.cpp",
+  "status": "SKELETON_MATERIALIZED",
+  "behavioral_credit": false,
+  "preservation": "PRESERVE_IMPLEMENT_EXTEND"
+}

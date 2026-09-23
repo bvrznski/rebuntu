@@ -1,0 +1,12 @@
+{
+  "source_prompt": ".phases/phases/phase-06-native-command-operation-execution/prompts/6.38_execution_journald_diagnostics.md",
+  "phase_task": ".phases/phases/phase-06-native-command-operation-execution/TASK.md",
+  "canonical_root": "src/runtime/native-command-operation-execution",
+  "role": "observability",
+  "implementation_header": "src/runtime/native-command-operation-execution/subtask_targets/observability/execution_journald_diagnostics_8e9fdc7a.hpp",
+  "implementation_source": "src/runtime/native-command-operation-execution/subtask_targets/observability/execution_journald_diagnostics_8e9fdc7a.cpp",
+  "test_target": "tests/structural-closure/runtime/native-command-operation-execution/observability/test_execution_journald_diagnostics_8e9fdc7a.cpp",
+  "status": "SKELETON_MATERIALIZED",
+  "behavioral_credit": false,
+  "preservation": "PRESERVE_IMPLEMENT_EXTEND"
+}

@@ -1,0 +1,12 @@
+{
+  "source_prompt": ".phases/phases/phase-45-unified-control-plane/prompts/45.292-direct-domain-bypass-audit.md",
+  "phase_task": ".phases/phases/phase-45-unified-control-plane/TASK.md",
+  "canonical_root": "src/runtime/unified-control-plane",
+  "role": "verification",
+  "implementation_header": "src/runtime/unified-control-plane/subtask_targets/verification/direct_domain_bypass_audit_a67c414f.hpp",
+  "implementation_source": "src/runtime/unified-control-plane/subtask_targets/verification/direct_domain_bypass_audit_a67c414f.cpp",
+  "test_target": "tests/structural-closure/runtime/unified-control-plane/verification/test_direct_domain_bypass_audit_a67c414f.cpp",
+  "status": "SKELETON_MATERIALIZED",
+  "behavioral_credit": false,
+  "preservation": "PRESERVE_IMPLEMENT_EXTEND"
+}

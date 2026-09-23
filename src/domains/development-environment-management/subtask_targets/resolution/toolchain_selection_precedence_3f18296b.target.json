@@ -1,0 +1,12 @@
+{
+  "source_prompt": ".phases/phases/phase-28-development-environment-management/prompts/28.10-toolchain-selection-precedence.md",
+  "phase_task": ".phases/phases/phase-28-development-environment-management/TASK.md",
+  "canonical_root": "src/domains/development-environment-management",
+  "role": "resolution",
+  "implementation_header": "src/domains/development-environment-management/subtask_targets/resolution/toolchain_selection_precedence_3f18296b.hpp",
+  "implementation_source": "src/domains/development-environment-management/subtask_targets/resolution/toolchain_selection_precedence_3f18296b.cpp",
+  "test_target": "tests/structural-closure/domains/development-environment-management/resolution/test_toolchain_selection_precedence_3f18296b.cpp",
+  "status": "SKELETON_MATERIALIZED",
+  "behavioral_credit": false,
+  "preservation": "PRESERVE_IMPLEMENT_EXTEND"
+}

@@ -1,0 +1,12 @@
+{
+  "source_prompt": ".phases/phases/phase-07-policy-authorization-safety/prompts/7.23_policy_input_model.md",
+  "phase_task": ".phases/phases/phase-07-policy-authorization-safety/TASK.md",
+  "canonical_root": "src/security/policy-authorization-safety",
+  "role": "security",
+  "implementation_header": "src/security/policy-authorization-safety/subtask_targets/security/policy_input_model_66e4eb62.hpp",
+  "implementation_source": "src/security/policy-authorization-safety/subtask_targets/security/policy_input_model_66e4eb62.cpp",
+  "test_target": "tests/structural-closure/security/policy-authorization-safety/security/test_policy_input_model_66e4eb62.cpp",
+  "status": "SKELETON_MATERIALIZED",
+  "behavioral_credit": false,
+  "preservation": "PRESERVE_IMPLEMENT_EXTEND"
+}

@@ -1,0 +1,12 @@
+{
+  "source_prompt": ".phases/phases/phase-49-gui/prompts/49.025-global-navigation.md",
+  "phase_task": ".phases/phases/phase-49-gui/TASK.md",
+  "canonical_root": "src/operator/gui",
+  "role": "requirements",
+  "implementation_header": "src/operator/gui/subtask_targets/requirements/global_navigation_1d214e0a.hpp",
+  "implementation_source": "src/operator/gui/subtask_targets/requirements/global_navigation_1d214e0a.cpp",
+  "test_target": "tests/structural-closure/operator/gui/requirements/test_global_navigation_1d214e0a.cpp",
+  "status": "SKELETON_MATERIALIZED",
+  "behavioral_credit": false,
+  "preservation": "PRESERVE_IMPLEMENT_EXTEND"
+}

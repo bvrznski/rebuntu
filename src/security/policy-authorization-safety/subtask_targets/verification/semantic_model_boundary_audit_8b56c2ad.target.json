@@ -1,0 +1,12 @@
+{
+  "source_prompt": ".phases/phases/phase-07-policy-authorization-safety/prompts/7.36_semantic_model_boundary_audit.md",
+  "phase_task": ".phases/phases/phase-07-policy-authorization-safety/TASK.md",
+  "canonical_root": "src/security/policy-authorization-safety",
+  "role": "verification",
+  "implementation_header": "src/security/policy-authorization-safety/subtask_targets/verification/semantic_model_boundary_audit_8b56c2ad.hpp",
+  "implementation_source": "src/security/policy-authorization-safety/subtask_targets/verification/semantic_model_boundary_audit_8b56c2ad.cpp",
+  "test_target": "tests/structural-closure/security/policy-authorization-safety/verification/test_semantic_model_boundary_audit_8b56c2ad.cpp",
+  "status": "SKELETON_MATERIALIZED",
+  "behavioral_credit": false,
+  "preservation": "PRESERVE_IMPLEMENT_EXTEND"
+}

@@ -1,0 +1,14 @@
+#pragma once
+
+// STRUCTURAL CLOSURE SLOT — no behavioral maturity credit.
+// Source subtask: .phases/phases/phase-35-package-software-management/prompts/35.3-installed-package-identity.md
+// Preserve this target and implement it in place after reading the source prompt.
+
+namespace rebuntu::src::domains::package_software_management::subtask_targets::contracts {
+
+struct SubtaskTarget_8e0d8a6b final {
+    static constexpr const char* source_prompt = ".phases/phases/phase-35-package-software-management/prompts/35.3-installed-package-identity.md";
+    static constexpr const char* structural_status = "SKELETON_MATERIALIZED";
+};
+
+} // namespace rebuntu::src::domains::package_software_management::subtask_targets::contracts

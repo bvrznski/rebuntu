@@ -1,0 +1,12 @@
+{
+  "source_prompt": ".phases/phases/phase-41-automation-workflow-system/prompts/41.009-workflow-compiler-and-executable-plan.md",
+  "phase_task": ".phases/phases/phase-41-automation-workflow-system/TASK.md",
+  "canonical_root": "src/automation/automation-workflow-system",
+  "role": "execution",
+  "implementation_header": "src/automation/automation-workflow-system/subtask_targets/execution/workflow_compiler_and_executable_plan_dd1aae3f.hpp",
+  "implementation_source": "src/automation/automation-workflow-system/subtask_targets/execution/workflow_compiler_and_executable_plan_dd1aae3f.cpp",
+  "test_target": "tests/structural-closure/automation/automation-workflow-system/execution/test_workflow_compiler_and_executable_plan_dd1aae3f.cpp",
+  "status": "SKELETON_MATERIALIZED",
+  "behavioral_credit": false,
+  "preservation": "PRESERVE_IMPLEMENT_EXTEND"
+}

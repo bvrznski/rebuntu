@@ -1,0 +1,12 @@
+{
+  "source_prompt": ".phases/phases/phase-49-gui/prompts/49.204-execution-inspector.md",
+  "phase_task": ".phases/phases/phase-49-gui/TASK.md",
+  "canonical_root": "src/operator/gui",
+  "role": "execution",
+  "implementation_header": "src/operator/gui/subtask_targets/execution/execution_inspector_bc6c1a06.hpp",
+  "implementation_source": "src/operator/gui/subtask_targets/execution/execution_inspector_bc6c1a06.cpp",
+  "test_target": "tests/structural-closure/operator/gui/execution/test_execution_inspector_bc6c1a06.cpp",
+  "status": "SKELETON_MATERIALIZED",
+  "behavioral_credit": false,
+  "preservation": "PRESERVE_IMPLEMENT_EXTEND"
+}

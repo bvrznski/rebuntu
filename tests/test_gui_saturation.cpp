@@ -1,0 +1,5 @@
+#include "../src/operator/gui/runtime.hpp"
+#include <cassert>
+#include <iostream>
+using namespace rebuntu::operator_ui::gui;
+int main(){GuiRuntime g; Action a{"svc-stop","Stop service","service.stop","nginx.service","systemd",Risk::destructive,ActionState::proposed,false,false,{}};a.policy_allowed=true;assert(g.register_action(a));assert(!g.request_execution("svc-stop"));assert(g.action("svc-stop")->state==ActionState::awaiting_confirmation);assert(g.confirm("svc-stop"));assert(g.mark_dispatched("svc-stop"));assert(g.complete("svc-stop",true,{"systemd","inactive",7}));assert(g.action("svc-stop")->evidence.size()==1);std::cout<<"GUI_ACTION_LIFECYCLE_PASS\n";Action denied{"x","Delete","delete","/","filesystem",Risk::destructive,ActionState::proposed,false,false,{}};assert(g.register_action(denied));assert(!g.request_execution("x"));std::cout<<"GUI_POLICY_BOUNDARY_PASS\n";assert(g.navigate("services"));assert(!g.navigate("../escape"));assert(g.select("svc-stop"));g.set_query("nginx");assert(g.searchable_actions().size()==1);std::cout<<"GUI_NAV_SEARCH_PASS\n";g.notify({"n","done",false});assert(g.notifications().size()==1);std::cout<<"GUI_NOTIFICATION_PASS\n";}

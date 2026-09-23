@@ -1,0 +1,12 @@
+{
+  "source_prompt": ".phases/phases/phase-46-natural-language-operator-interface/prompts/46.457-adversarial-shell-authority-audit.md",
+  "phase_task": ".phases/phases/phase-46-natural-language-operator-interface/TASK.md",
+  "canonical_root": "src/operator/natural-language-operator-interface",
+  "role": "verification",
+  "implementation_header": "src/operator/natural-language-operator-interface/subtask_targets/verification/adversarial_shell_authority_audit_ba891a04.hpp",
+  "implementation_source": "src/operator/natural-language-operator-interface/subtask_targets/verification/adversarial_shell_authority_audit_ba891a04.cpp",
+  "test_target": "tests/structural-closure/operator/natural-language-operator-interface/verification/test_adversarial_shell_authority_audit_ba891a04.cpp",
+  "status": "SKELETON_MATERIALIZED",
+  "behavioral_credit": false,
+  "preservation": "PRESERVE_IMPLEMENT_EXTEND"
+}

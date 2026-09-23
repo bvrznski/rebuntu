@@ -1,0 +1,12 @@
+{
+  "source_prompt": ".phases/phases/phase-33-network-management/prompts/33.27-vpn-tunnel-integration-boundary.md",
+  "phase_task": ".phases/phases/phase-33-network-management/TASK.md",
+  "canonical_root": "src/domains/network-management",
+  "role": "integration",
+  "implementation_header": "src/domains/network-management/subtask_targets/integration/vpn_tunnel_integration_boundary_7ddfd14c.hpp",
+  "implementation_source": "src/domains/network-management/subtask_targets/integration/vpn_tunnel_integration_boundary_7ddfd14c.cpp",
+  "test_target": "tests/structural-closure/domains/network-management/integration/test_vpn_tunnel_integration_boundary_7ddfd14c.cpp",
+  "status": "SKELETON_MATERIALIZED",
+  "behavioral_credit": false,
+  "preservation": "PRESERVE_IMPLEMENT_EXTEND"
+}

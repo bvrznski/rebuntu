@@ -1,0 +1,9 @@
+{
+  "component": "configuration-and-profiles",
+  "canonical_root": "runtime",
+  "phase_tasks": [
+    ".phases/phases/phase-11-configuration-and-profiles/TASK.md"
+  ],
+  "status": "SKELETON",
+  "native_authority_rule": true
+}

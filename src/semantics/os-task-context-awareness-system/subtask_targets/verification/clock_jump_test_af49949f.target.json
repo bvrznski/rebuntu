@@ -1,0 +1,12 @@
+{
+  "source_prompt": ".phases/phases/phase-48-os-task-context-awareness-system/prompts/48.338-clock-jump-test.md",
+  "phase_task": ".phases/phases/phase-48-os-task-context-awareness-system/TASK.md",
+  "canonical_root": "src/semantics/os-task-context-awareness-system",
+  "role": "verification",
+  "implementation_header": "src/semantics/os-task-context-awareness-system/subtask_targets/verification/clock_jump_test_af49949f.hpp",
+  "implementation_source": "src/semantics/os-task-context-awareness-system/subtask_targets/verification/clock_jump_test_af49949f.cpp",
+  "test_target": "tests/structural-closure/semantics/os-task-context-awareness-system/verification/test_clock_jump_test_af49949f.cpp",
+  "status": "SKELETON_MATERIALIZED",
+  "behavioral_credit": false,
+  "preservation": "PRESERVE_IMPLEMENT_EXTEND"
+}

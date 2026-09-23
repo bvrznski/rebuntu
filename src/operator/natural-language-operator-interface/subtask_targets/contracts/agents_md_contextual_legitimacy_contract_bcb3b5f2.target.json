@@ -1,0 +1,12 @@
+{
+  "source_prompt": ".phases/phases/phase-46-natural-language-operator-interface/prompts/46.443-agents-md-contextual-legitimacy-contract.md",
+  "phase_task": ".phases/phases/phase-46-natural-language-operator-interface/TASK.md",
+  "canonical_root": "src/operator/natural-language-operator-interface",
+  "role": "contracts",
+  "implementation_header": "src/operator/natural-language-operator-interface/subtask_targets/contracts/agents_md_contextual_legitimacy_contract_bcb3b5f2.hpp",
+  "implementation_source": "src/operator/natural-language-operator-interface/subtask_targets/contracts/agents_md_contextual_legitimacy_contract_bcb3b5f2.cpp",
+  "test_target": "tests/structural-closure/operator/natural-language-operator-interface/contracts/test_agents_md_contextual_legitimacy_contract_bcb3b5f2.cpp",
+  "status": "SKELETON_MATERIALIZED",
+  "behavioral_credit": false,
+  "preservation": "PRESERVE_IMPLEMENT_EXTEND"
+}

@@ -1,0 +1,12 @@
+{
+  "source_prompt": ".phases/phases/phase-41-automation-workflow-system/prompts/41.040-phase-40-commandintent-action-adapter.md",
+  "phase_task": ".phases/phases/phase-41-automation-workflow-system/TASK.md",
+  "canonical_root": "src/automation/automation-workflow-system",
+  "role": "integration",
+  "implementation_header": "src/automation/automation-workflow-system/subtask_targets/integration/commandintent_action_adapter_64a03e04.hpp",
+  "implementation_source": "src/automation/automation-workflow-system/subtask_targets/integration/commandintent_action_adapter_64a03e04.cpp",
+  "test_target": "tests/structural-closure/automation/automation-workflow-system/integration/test_commandintent_action_adapter_64a03e04.cpp",
+  "status": "SKELETON_MATERIALIZED",
+  "behavioral_credit": false,
+  "preservation": "PRESERVE_IMPLEMENT_EXTEND"
+}

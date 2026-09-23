@@ -1,0 +1,12 @@
+{
+  "source_prompt": ".phases/phases/phase-31-service-management/prompts/31.39-service-configuration-mutation.md",
+  "phase_task": ".phases/phases/phase-31-service-management/TASK.md",
+  "canonical_root": "src/domains/service-management",
+  "role": "execution",
+  "implementation_header": "src/domains/service-management/subtask_targets/execution/service_configuration_mutation_8d8aa0be.hpp",
+  "implementation_source": "src/domains/service-management/subtask_targets/execution/service_configuration_mutation_8d8aa0be.cpp",
+  "test_target": "tests/structural-closure/domains/service-management/execution/test_service_configuration_mutation_8d8aa0be.cpp",
+  "status": "SKELETON_MATERIALIZED",
+  "behavioral_credit": false,
+  "preservation": "PRESERVE_IMPLEMENT_EXTEND"
+}

@@ -1,0 +1,12 @@
+{
+  "source_prompt": ".phases/phases/phase-51-distributed-rebuntu-system/prompts/51.470-distributed-audit-records.md",
+  "phase_task": ".phases/phases/phase-51-distributed-rebuntu-system/TASK.md",
+  "canonical_root": "src/distributed/distributed-rebuntu-system",
+  "role": "verification",
+  "implementation_header": "src/distributed/distributed-rebuntu-system/subtask_targets/verification/distributed_audit_records_43488b51.hpp",
+  "implementation_source": "src/distributed/distributed-rebuntu-system/subtask_targets/verification/distributed_audit_records_43488b51.cpp",
+  "test_target": "tests/structural-closure/distributed/distributed-rebuntu-system/verification/test_distributed_audit_records_43488b51.cpp",
+  "status": "SKELETON_MATERIALIZED",
+  "behavioral_credit": false,
+  "preservation": "PRESERVE_IMPLEMENT_EXTEND"
+}

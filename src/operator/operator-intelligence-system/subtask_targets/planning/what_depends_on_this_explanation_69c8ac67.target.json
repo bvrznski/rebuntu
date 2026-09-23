@@ -1,0 +1,12 @@
+{
+  "source_prompt": ".phases/phases/phase-43-operator-intelligence-system/prompts/43.136-what-depends-on-this-explanation.md",
+  "phase_task": ".phases/phases/phase-43-operator-intelligence-system/TASK.md",
+  "canonical_root": "src/operator/operator-intelligence-system",
+  "role": "planning",
+  "implementation_header": "src/operator/operator-intelligence-system/subtask_targets/planning/what_depends_on_this_explanation_69c8ac67.hpp",
+  "implementation_source": "src/operator/operator-intelligence-system/subtask_targets/planning/what_depends_on_this_explanation_69c8ac67.cpp",
+  "test_target": "tests/structural-closure/operator/operator-intelligence-system/planning/test_what_depends_on_this_explanation_69c8ac67.cpp",
+  "status": "SKELETON_MATERIALIZED",
+  "behavioral_credit": false,
+  "preservation": "PRESERVE_IMPLEMENT_EXTEND"
+}

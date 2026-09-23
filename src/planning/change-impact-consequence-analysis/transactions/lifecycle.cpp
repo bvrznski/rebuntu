@@ -1,0 +1,6 @@
+#include "planning/change-impact-consequence-analysis/transactions/lifecycle.hpp"
+
+// Structural translation-unit slot only. No maturity credit.
+namespace rebuntu::structural_slots {
+static_assert(Skeleton_aa60432e39_Lifecycle::structural_revision == 25);
+}

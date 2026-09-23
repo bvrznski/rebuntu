@@ -1,0 +1,12 @@
+{
+  "source_prompt": ".phases/phases/phase-50-platform-abstraction-portability-foundation/prompts/50.024-services.md",
+  "phase_task": ".phases/phases/phase-50-platform-abstraction-portability-foundation/TASK.md",
+  "canonical_root": "src/providers/platform-abstraction-portability-foundation",
+  "role": "requirements",
+  "implementation_header": "src/providers/platform-abstraction-portability-foundation/subtask_targets/requirements/services_12d229ab.hpp",
+  "implementation_source": "src/providers/platform-abstraction-portability-foundation/subtask_targets/requirements/services_12d229ab.cpp",
+  "test_target": "tests/structural-closure/providers/platform-abstraction-portability-foundation/requirements/test_services_12d229ab.cpp",
+  "status": "SKELETON_MATERIALIZED",
+  "behavioral_credit": false,
+  "preservation": "PRESERVE_IMPLEMENT_EXTEND"
+}

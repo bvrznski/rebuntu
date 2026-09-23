@@ -1,0 +1,12 @@
+{
+  "source_prompt": ".phases/phases/phase-38-user-identity-management/prompts/38.3-stable-user-identity.md",
+  "phase_task": ".phases/phases/phase-38-user-identity-management/TASK.md",
+  "canonical_root": "src/domains/user-identity-management",
+  "role": "contracts",
+  "implementation_header": "src/domains/user-identity-management/subtask_targets/contracts/stable_user_identity_afdf0ccf.hpp",
+  "implementation_source": "src/domains/user-identity-management/subtask_targets/contracts/stable_user_identity_afdf0ccf.cpp",
+  "test_target": "tests/structural-closure/domains/user-identity-management/contracts/test_stable_user_identity_afdf0ccf.cpp",
+  "status": "SKELETON_MATERIALIZED",
+  "behavioral_credit": false,
+  "preservation": "PRESERVE_IMPLEMENT_EXTEND"
+}

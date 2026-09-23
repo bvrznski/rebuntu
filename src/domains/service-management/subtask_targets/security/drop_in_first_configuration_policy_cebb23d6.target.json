@@ -1,0 +1,12 @@
+{
+  "source_prompt": ".phases/phases/phase-31-service-management/prompts/31.40-drop-in-first-configuration-policy.md",
+  "phase_task": ".phases/phases/phase-31-service-management/TASK.md",
+  "canonical_root": "src/domains/service-management",
+  "role": "security",
+  "implementation_header": "src/domains/service-management/subtask_targets/security/drop_in_first_configuration_policy_cebb23d6.hpp",
+  "implementation_source": "src/domains/service-management/subtask_targets/security/drop_in_first_configuration_policy_cebb23d6.cpp",
+  "test_target": "tests/structural-closure/domains/service-management/security/test_drop_in_first_configuration_policy_cebb23d6.cpp",
+  "status": "SKELETON_MATERIALIZED",
+  "behavioral_credit": false,
+  "preservation": "PRESERVE_IMPLEMENT_EXTEND"
+}

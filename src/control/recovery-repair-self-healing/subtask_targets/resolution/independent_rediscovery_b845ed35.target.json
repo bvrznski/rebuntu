@@ -1,0 +1,12 @@
+{
+  "source_prompt": ".phases/phases/phase-61-recovery-repair-self-healing/prompts/61.50-rebuntu-phase-61-50-independent-rediscovery.md",
+  "phase_task": ".phases/phases/phase-61-recovery-repair-self-healing/TASK.md",
+  "canonical_root": "src/control/recovery-repair-self-healing",
+  "role": "resolution",
+  "implementation_header": "src/control/recovery-repair-self-healing/subtask_targets/resolution/independent_rediscovery_b845ed35.hpp",
+  "implementation_source": "src/control/recovery-repair-self-healing/subtask_targets/resolution/independent_rediscovery_b845ed35.cpp",
+  "test_target": "tests/structural-closure/control/recovery-repair-self-healing/resolution/test_independent_rediscovery_b845ed35.cpp",
+  "status": "SKELETON_MATERIALIZED",
+  "behavioral_credit": false,
+  "preservation": "PRESERVE_IMPLEMENT_EXTEND"
+}

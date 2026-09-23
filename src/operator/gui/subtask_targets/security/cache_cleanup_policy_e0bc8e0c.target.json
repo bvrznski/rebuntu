@@ -1,0 +1,12 @@
+{
+  "source_prompt": ".phases/phases/phase-49-gui/prompts/49.582-cache-cleanup-policy.md",
+  "phase_task": ".phases/phases/phase-49-gui/TASK.md",
+  "canonical_root": "src/operator/gui",
+  "role": "security",
+  "implementation_header": "src/operator/gui/subtask_targets/security/cache_cleanup_policy_e0bc8e0c.hpp",
+  "implementation_source": "src/operator/gui/subtask_targets/security/cache_cleanup_policy_e0bc8e0c.cpp",
+  "test_target": "tests/structural-closure/operator/gui/security/test_cache_cleanup_policy_e0bc8e0c.cpp",
+  "status": "SKELETON_MATERIALIZED",
+  "behavioral_credit": false,
+  "preservation": "PRESERVE_IMPLEMENT_EXTEND"
+}

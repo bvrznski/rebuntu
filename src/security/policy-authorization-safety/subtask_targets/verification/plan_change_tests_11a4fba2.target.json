@@ -1,0 +1,12 @@
+{
+  "source_prompt": ".phases/phases/phase-07-policy-authorization-safety/prompts/7.60_plan-change_tests.md",
+  "phase_task": ".phases/phases/phase-07-policy-authorization-safety/TASK.md",
+  "canonical_root": "src/security/policy-authorization-safety",
+  "role": "verification",
+  "implementation_header": "src/security/policy-authorization-safety/subtask_targets/verification/plan_change_tests_11a4fba2.hpp",
+  "implementation_source": "src/security/policy-authorization-safety/subtask_targets/verification/plan_change_tests_11a4fba2.cpp",
+  "test_target": "tests/structural-closure/security/policy-authorization-safety/verification/test_plan_change_tests_11a4fba2.cpp",
+  "status": "SKELETON_MATERIALIZED",
+  "behavioral_credit": false,
+  "preservation": "PRESERVE_IMPLEMENT_EXTEND"
+}

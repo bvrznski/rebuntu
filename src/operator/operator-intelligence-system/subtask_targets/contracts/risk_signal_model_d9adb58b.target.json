@@ -1,0 +1,12 @@
+{
+  "source_prompt": ".phases/phases/phase-43-operator-intelligence-system/prompts/43.099-risk-signal-model.md",
+  "phase_task": ".phases/phases/phase-43-operator-intelligence-system/TASK.md",
+  "canonical_root": "src/operator/operator-intelligence-system",
+  "role": "contracts",
+  "implementation_header": "src/operator/operator-intelligence-system/subtask_targets/contracts/risk_signal_model_d9adb58b.hpp",
+  "implementation_source": "src/operator/operator-intelligence-system/subtask_targets/contracts/risk_signal_model_d9adb58b.cpp",
+  "test_target": "tests/structural-closure/operator/operator-intelligence-system/contracts/test_risk_signal_model_d9adb58b.cpp",
+  "status": "SKELETON_MATERIALIZED",
+  "behavioral_credit": false,
+  "preservation": "PRESERVE_IMPLEMENT_EXTEND"
+}

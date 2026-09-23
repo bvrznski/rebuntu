@@ -1,0 +1,12 @@
+{
+  "source_prompt": ".phases/phases/phase-28-development-environment-management/prompts/28.34-phase-25-panel-integration-api.md",
+  "phase_task": ".phases/phases/phase-28-development-environment-management/TASK.md",
+  "canonical_root": "src/domains/development-environment-management",
+  "role": "integration",
+  "implementation_header": "src/domains/development-environment-management/subtask_targets/integration/panel_integration_api_3efb4c70.hpp",
+  "implementation_source": "src/domains/development-environment-management/subtask_targets/integration/panel_integration_api_3efb4c70.cpp",
+  "test_target": "tests/structural-closure/domains/development-environment-management/integration/test_panel_integration_api_3efb4c70.cpp",
+  "status": "SKELETON_MATERIALIZED",
+  "behavioral_credit": false,
+  "preservation": "PRESERVE_IMPLEMENT_EXTEND"
+}

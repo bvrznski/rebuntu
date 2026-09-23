@@ -1,0 +1,12 @@
+{
+  "source_prompt": ".phases/phases/phase-25-system-control-panel/prompts/25.2-tui-runtime,-navigation-and-layout.md",
+  "phase_task": ".phases/phases/phase-25-system-control-panel/TASK.md",
+  "canonical_root": "src/operator/system-control-panel",
+  "role": "requirements",
+  "implementation_header": "src/operator/system-control-panel/subtask_targets/requirements/tui_runtime_navigation_and_layout_d04ce818.hpp",
+  "implementation_source": "src/operator/system-control-panel/subtask_targets/requirements/tui_runtime_navigation_and_layout_d04ce818.cpp",
+  "test_target": "tests/structural-closure/operator/system-control-panel/requirements/test_tui_runtime_navigation_and_layout_d04ce818.cpp",
+  "status": "SKELETON_MATERIALIZED",
+  "behavioral_credit": false,
+  "preservation": "PRESERVE_IMPLEMENT_EXTEND"
+}

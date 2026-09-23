@@ -1,0 +1,12 @@
+{
+  "source_prompt": ".phases/phases/phase-28-development-environment-management/prompts/28.24-agent-repository-discovery-guidance.md",
+  "phase_task": ".phases/phases/phase-28-development-environment-management/TASK.md",
+  "canonical_root": "src/domains/development-environment-management",
+  "role": "resolution",
+  "implementation_header": "src/domains/development-environment-management/subtask_targets/resolution/agent_repository_discovery_guidance_c014523c.hpp",
+  "implementation_source": "src/domains/development-environment-management/subtask_targets/resolution/agent_repository_discovery_guidance_c014523c.cpp",
+  "test_target": "tests/structural-closure/domains/development-environment-management/resolution/test_agent_repository_discovery_guidance_c014523c.cpp",
+  "status": "SKELETON_MATERIALIZED",
+  "behavioral_credit": false,
+  "preservation": "PRESERVE_IMPLEMENT_EXTEND"
+}

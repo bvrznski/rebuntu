@@ -1,0 +1,12 @@
+{
+  "source_prompt": ".phases/phases/phase-07-policy-authorization-safety/prompts/7.80_adversarial_fail-open_audit.md",
+  "phase_task": ".phases/phases/phase-07-policy-authorization-safety/TASK.md",
+  "canonical_root": "src/security/policy-authorization-safety",
+  "role": "verification",
+  "implementation_header": "src/security/policy-authorization-safety/subtask_targets/verification/adversarial_fail_open_audit_960182ca.hpp",
+  "implementation_source": "src/security/policy-authorization-safety/subtask_targets/verification/adversarial_fail_open_audit_960182ca.cpp",
+  "test_target": "tests/structural-closure/security/policy-authorization-safety/verification/test_adversarial_fail_open_audit_960182ca.cpp",
+  "status": "SKELETON_MATERIALIZED",
+  "behavioral_credit": false,
+  "preservation": "PRESERVE_IMPLEMENT_EXTEND"
+}

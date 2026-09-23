@@ -1,0 +1,12 @@
+{
+  "source_prompt": ".phases/phases/phase-32-storage-management/prompts/32.43-home-migration-support.md",
+  "phase_task": ".phases/phases/phase-32-storage-management/TASK.md",
+  "canonical_root": "src/domains/storage-management",
+  "role": "integration",
+  "implementation_header": "src/domains/storage-management/subtask_targets/integration/home_migration_support_36261a23.hpp",
+  "implementation_source": "src/domains/storage-management/subtask_targets/integration/home_migration_support_36261a23.cpp",
+  "test_target": "tests/structural-closure/domains/storage-management/integration/test_home_migration_support_36261a23.cpp",
+  "status": "SKELETON_MATERIALIZED",
+  "behavioral_credit": false,
+  "preservation": "PRESERVE_IMPLEMENT_EXTEND"
+}

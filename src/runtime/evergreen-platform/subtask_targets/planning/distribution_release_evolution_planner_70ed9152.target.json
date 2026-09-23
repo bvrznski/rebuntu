@@ -1,0 +1,12 @@
+{
+  "source_prompt": ".phases/phases/phase-24-evergreen-platform/prompts/24.14_distribution_release_evolution_planner.md",
+  "phase_task": ".phases/phases/phase-24-evergreen-platform/TASK.md",
+  "canonical_root": "src/runtime/evergreen-platform",
+  "role": "planning",
+  "implementation_header": "src/runtime/evergreen-platform/subtask_targets/planning/distribution_release_evolution_planner_70ed9152.hpp",
+  "implementation_source": "src/runtime/evergreen-platform/subtask_targets/planning/distribution_release_evolution_planner_70ed9152.cpp",
+  "test_target": "tests/structural-closure/runtime/evergreen-platform/planning/test_distribution_release_evolution_planner_70ed9152.cpp",
+  "status": "SKELETON_MATERIALIZED",
+  "behavioral_credit": false,
+  "preservation": "PRESERVE_IMPLEMENT_EXTEND"
+}

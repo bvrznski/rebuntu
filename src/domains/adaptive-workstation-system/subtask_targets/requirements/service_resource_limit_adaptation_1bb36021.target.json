@@ -1,0 +1,12 @@
+{
+  "source_prompt": ".phases/phases/phase-44-adaptive-workstation-system/prompts/44.146-service-resource-limit-adaptation.md",
+  "phase_task": ".phases/phases/phase-44-adaptive-workstation-system/TASK.md",
+  "canonical_root": "src/domains/adaptive-workstation-system",
+  "role": "requirements",
+  "implementation_header": "src/domains/adaptive-workstation-system/subtask_targets/requirements/service_resource_limit_adaptation_1bb36021.hpp",
+  "implementation_source": "src/domains/adaptive-workstation-system/subtask_targets/requirements/service_resource_limit_adaptation_1bb36021.cpp",
+  "test_target": "tests/structural-closure/domains/adaptive-workstation-system/requirements/test_service_resource_limit_adaptation_1bb36021.cpp",
+  "status": "SKELETON_MATERIALIZED",
+  "behavioral_credit": false,
+  "preservation": "PRESERVE_IMPLEMENT_EXTEND"
+}

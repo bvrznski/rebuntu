@@ -1,0 +1,12 @@
+{
+  "source_prompt": ".phases/phases/phase-42-system-knowledge-graph/prompts/42.040-entity-search-and-lookup.md",
+  "phase_task": ".phases/phases/phase-42-system-knowledge-graph/TASK.md",
+  "canonical_root": "src/knowledge/system-knowledge-graph",
+  "role": "resolution",
+  "implementation_header": "src/knowledge/system-knowledge-graph/subtask_targets/resolution/entity_search_and_lookup_8d3d13bb.hpp",
+  "implementation_source": "src/knowledge/system-knowledge-graph/subtask_targets/resolution/entity_search_and_lookup_8d3d13bb.cpp",
+  "test_target": "tests/structural-closure/knowledge/system-knowledge-graph/resolution/test_entity_search_and_lookup_8d3d13bb.cpp",
+  "status": "SKELETON_MATERIALIZED",
+  "behavioral_credit": false,
+  "preservation": "PRESERVE_IMPLEMENT_EXTEND"
+}

@@ -1,0 +1,12 @@
+{
+  "source_prompt": ".phases/phases/phase-52-associated-systems-hardware-rooted-trust/prompts/52.174-crypto-logging-prohibition.md",
+  "phase_task": ".phases/phases/phase-52-associated-systems-hardware-rooted-trust/TASK.md",
+  "canonical_root": "src/providers/associated-systems-hardware-rooted-trust",
+  "role": "observability",
+  "implementation_header": "src/providers/associated-systems-hardware-rooted-trust/subtask_targets/observability/crypto_logging_prohibition_7582df7a.hpp",
+  "implementation_source": "src/providers/associated-systems-hardware-rooted-trust/subtask_targets/observability/crypto_logging_prohibition_7582df7a.cpp",
+  "test_target": "tests/structural-closure/providers/associated-systems-hardware-rooted-trust/observability/test_crypto_logging_prohibition_7582df7a.cpp",
+  "status": "SKELETON_MATERIALIZED",
+  "behavioral_credit": false,
+  "preservation": "PRESERVE_IMPLEMENT_EXTEND"
+}

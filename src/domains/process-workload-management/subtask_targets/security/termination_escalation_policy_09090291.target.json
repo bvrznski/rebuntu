@@ -1,0 +1,12 @@
+{
+  "source_prompt": ".phases/phases/phase-29-process-workload-management/prompts/29.32-termination-escalation-policy.md",
+  "phase_task": ".phases/phases/phase-29-process-workload-management/TASK.md",
+  "canonical_root": "src/domains/process-workload-management",
+  "role": "security",
+  "implementation_header": "src/domains/process-workload-management/subtask_targets/security/termination_escalation_policy_09090291.hpp",
+  "implementation_source": "src/domains/process-workload-management/subtask_targets/security/termination_escalation_policy_09090291.cpp",
+  "test_target": "tests/structural-closure/domains/process-workload-management/security/test_termination_escalation_policy_09090291.cpp",
+  "status": "SKELETON_MATERIALIZED",
+  "behavioral_credit": false,
+  "preservation": "PRESERVE_IMPLEMENT_EXTEND"
+}

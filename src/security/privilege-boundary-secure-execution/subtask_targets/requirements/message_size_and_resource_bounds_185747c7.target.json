@@ -1,0 +1,12 @@
+{
+  "source_prompt": ".phases/phases/phase-08-privilege-boundary-secure-execution/prompts/8.37_message_size_and_resource_bounds.md",
+  "phase_task": ".phases/phases/phase-08-privilege-boundary-secure-execution/TASK.md",
+  "canonical_root": "src/security/privilege-boundary-secure-execution",
+  "role": "requirements",
+  "implementation_header": "src/security/privilege-boundary-secure-execution/subtask_targets/requirements/message_size_and_resource_bounds_185747c7.hpp",
+  "implementation_source": "src/security/privilege-boundary-secure-execution/subtask_targets/requirements/message_size_and_resource_bounds_185747c7.cpp",
+  "test_target": "tests/structural-closure/security/privilege-boundary-secure-execution/requirements/test_message_size_and_resource_bounds_185747c7.cpp",
+  "status": "SKELETON_MATERIALIZED",
+  "behavioral_credit": false,
+  "preservation": "PRESERVE_IMPLEMENT_EXTEND"
+}

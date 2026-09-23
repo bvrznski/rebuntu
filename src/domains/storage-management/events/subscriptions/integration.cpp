@@ -1,0 +1,6 @@
+#include "domains/storage-management/events/subscriptions/integration.hpp"
+
+// Structural translation-unit slot only. No maturity credit.
+namespace rebuntu::structural_slots {
+static_assert(Skeleton_d3a7808209_Integration::structural_revision == 25);
+}

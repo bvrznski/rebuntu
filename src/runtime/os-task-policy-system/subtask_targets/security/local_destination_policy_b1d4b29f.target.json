@@ -1,0 +1,12 @@
+{
+  "source_prompt": ".phases/phases/phase-47-os-task-policy-system/prompts/47.144-local-destination-policy.md",
+  "phase_task": ".phases/phases/phase-47-os-task-policy-system/TASK.md",
+  "canonical_root": "src/runtime/os-task-policy-system",
+  "role": "security",
+  "implementation_header": "src/runtime/os-task-policy-system/subtask_targets/security/local_destination_policy_b1d4b29f.hpp",
+  "implementation_source": "src/runtime/os-task-policy-system/subtask_targets/security/local_destination_policy_b1d4b29f.cpp",
+  "test_target": "tests/structural-closure/runtime/os-task-policy-system/security/test_local_destination_policy_b1d4b29f.cpp",
+  "status": "SKELETON_MATERIALIZED",
+  "behavioral_credit": false,
+  "preservation": "PRESERVE_IMPLEMENT_EXTEND"
+}

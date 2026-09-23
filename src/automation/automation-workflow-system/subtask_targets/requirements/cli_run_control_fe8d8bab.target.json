@@ -1,0 +1,12 @@
+{
+  "source_prompt": ".phases/phases/phase-41-automation-workflow-system/prompts/41.089-cli-run-control.md",
+  "phase_task": ".phases/phases/phase-41-automation-workflow-system/TASK.md",
+  "canonical_root": "src/automation/automation-workflow-system",
+  "role": "requirements",
+  "implementation_header": "src/automation/automation-workflow-system/subtask_targets/requirements/cli_run_control_fe8d8bab.hpp",
+  "implementation_source": "src/automation/automation-workflow-system/subtask_targets/requirements/cli_run_control_fe8d8bab.cpp",
+  "test_target": "tests/structural-closure/automation/automation-workflow-system/requirements/test_cli_run_control_fe8d8bab.cpp",
+  "status": "SKELETON_MATERIALIZED",
+  "behavioral_credit": false,
+  "preservation": "PRESERVE_IMPLEMENT_EXTEND"
+}

@@ -1,0 +1,12 @@
+{
+  "source_prompt": ".phases/phases/phase-49-gui/prompts/49.220-ask-execution-handoff.md",
+  "phase_task": ".phases/phases/phase-49-gui/TASK.md",
+  "canonical_root": "src/operator/gui",
+  "role": "execution",
+  "implementation_header": "src/operator/gui/subtask_targets/execution/ask_execution_handoff_7949957d.hpp",
+  "implementation_source": "src/operator/gui/subtask_targets/execution/ask_execution_handoff_7949957d.cpp",
+  "test_target": "tests/structural-closure/operator/gui/execution/test_ask_execution_handoff_7949957d.cpp",
+  "status": "SKELETON_MATERIALIZED",
+  "behavioral_credit": false,
+  "preservation": "PRESERVE_IMPLEMENT_EXTEND"
+}

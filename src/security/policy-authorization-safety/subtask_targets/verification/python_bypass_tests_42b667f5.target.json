@@ -1,0 +1,12 @@
+{
+  "source_prompt": ".phases/phases/phase-07-policy-authorization-safety/prompts/7.65_python-bypass_tests.md",
+  "phase_task": ".phases/phases/phase-07-policy-authorization-safety/TASK.md",
+  "canonical_root": "src/security/policy-authorization-safety",
+  "role": "verification",
+  "implementation_header": "src/security/policy-authorization-safety/subtask_targets/verification/python_bypass_tests_42b667f5.hpp",
+  "implementation_source": "src/security/policy-authorization-safety/subtask_targets/verification/python_bypass_tests_42b667f5.cpp",
+  "test_target": "tests/structural-closure/security/policy-authorization-safety/verification/test_python_bypass_tests_42b667f5.cpp",
+  "status": "SKELETON_MATERIALIZED",
+  "behavioral_credit": false,
+  "preservation": "PRESERVE_IMPLEMENT_EXTEND"
+}

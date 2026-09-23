@@ -1,0 +1,9 @@
+{
+  "component": "workflow-foundation",
+  "canonical_root": "automation",
+  "phase_tasks": [
+    ".phases/phases/phase-10-workflow-foundation/TASK.md"
+  ],
+  "status": "SKELETON",
+  "native_authority_rule": true
+}

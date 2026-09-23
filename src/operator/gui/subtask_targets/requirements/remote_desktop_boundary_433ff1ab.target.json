@@ -1,0 +1,12 @@
+{
+  "source_prompt": ".phases/phases/phase-49-gui/prompts/49.472-remote-desktop-boundary.md",
+  "phase_task": ".phases/phases/phase-49-gui/TASK.md",
+  "canonical_root": "src/operator/gui",
+  "role": "requirements",
+  "implementation_header": "src/operator/gui/subtask_targets/requirements/remote_desktop_boundary_433ff1ab.hpp",
+  "implementation_source": "src/operator/gui/subtask_targets/requirements/remote_desktop_boundary_433ff1ab.cpp",
+  "test_target": "tests/structural-closure/operator/gui/requirements/test_remote_desktop_boundary_433ff1ab.cpp",
+  "status": "SKELETON_MATERIALIZED",
+  "behavioral_credit": false,
+  "preservation": "PRESERVE_IMPLEMENT_EXTEND"
+}

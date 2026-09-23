@@ -1,0 +1,12 @@
+{
+  "source_prompt": ".phases/phases/phase-47-os-task-policy-system/prompts/47.518-agent-bypass-test.md",
+  "phase_task": ".phases/phases/phase-47-os-task-policy-system/TASK.md",
+  "canonical_root": "src/runtime/os-task-policy-system",
+  "role": "verification",
+  "implementation_header": "src/runtime/os-task-policy-system/subtask_targets/verification/agent_bypass_test_788df34c.hpp",
+  "implementation_source": "src/runtime/os-task-policy-system/subtask_targets/verification/agent_bypass_test_788df34c.cpp",
+  "test_target": "tests/structural-closure/runtime/os-task-policy-system/verification/test_agent_bypass_test_788df34c.cpp",
+  "status": "SKELETON_MATERIALIZED",
+  "behavioral_credit": false,
+  "preservation": "PRESERVE_IMPLEMENT_EXTEND"
+}

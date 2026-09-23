@@ -1,0 +1,12 @@
+{
+  "source_prompt": ".phases/phases/phase-86-environment-situation-model/prompts/86.14.md",
+  "phase_task": ".phases/phases/phase-86-environment-situation-model/TASK.md",
+  "canonical_root": "src/semantics/environment-situation-model",
+  "role": "requirements",
+  "implementation_header": "src/semantics/environment-situation-model/subtask_targets/requirements/requirement_e29ce4ee.hpp",
+  "implementation_source": "src/semantics/environment-situation-model/subtask_targets/requirements/requirement_e29ce4ee.cpp",
+  "test_target": "tests/structural-closure/semantics/environment-situation-model/requirements/test_requirement_e29ce4ee.cpp",
+  "status": "SKELETON_MATERIALIZED",
+  "behavioral_credit": false,
+  "preservation": "PRESERVE_IMPLEMENT_EXTEND"
+}

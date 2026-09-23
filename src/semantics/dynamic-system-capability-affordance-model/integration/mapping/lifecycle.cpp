@@ -1,0 +1,6 @@
+#include "semantics/dynamic-system-capability-affordance-model/integration/mapping/lifecycle.hpp"
+
+// Structural translation-unit slot only. No maturity credit.
+namespace rebuntu::structural_slots {
+static_assert(Skeleton_60aa2c908b_Lifecycle::structural_revision == 25);
+}

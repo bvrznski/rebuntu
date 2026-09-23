@@ -1,0 +1,5 @@
+#include "integration.hpp"
+
+// XXVII out-of-line implementation reservation for integration.
+// Source: .phases/phases/phase-54-dynamic-system-capability-affordance-model/prompts/54.15-rebuntu-phase-54-15-dependency-model.md
+// Intentionally behavior-free until prompt-derived implementation is supplied.

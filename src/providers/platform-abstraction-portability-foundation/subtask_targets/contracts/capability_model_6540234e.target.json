@@ -1,0 +1,12 @@
+{
+  "source_prompt": ".phases/phases/phase-50-platform-abstraction-portability-foundation/prompts/50.006-capability-model.md",
+  "phase_task": ".phases/phases/phase-50-platform-abstraction-portability-foundation/TASK.md",
+  "canonical_root": "src/providers/platform-abstraction-portability-foundation",
+  "role": "contracts",
+  "implementation_header": "src/providers/platform-abstraction-portability-foundation/subtask_targets/contracts/capability_model_6540234e.hpp",
+  "implementation_source": "src/providers/platform-abstraction-portability-foundation/subtask_targets/contracts/capability_model_6540234e.cpp",
+  "test_target": "tests/structural-closure/providers/platform-abstraction-portability-foundation/contracts/test_capability_model_6540234e.cpp",
+  "status": "SKELETON_MATERIALIZED",
+  "behavioral_credit": false,
+  "preservation": "PRESERVE_IMPLEMENT_EXTEND"
+}

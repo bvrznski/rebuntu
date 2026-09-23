@@ -1,0 +1,12 @@
+{
+  "source_prompt": ".phases/phases/phase-30-resource-management/prompts/30.1-resource-domain-model.md",
+  "phase_task": ".phases/phases/phase-30-resource-management/TASK.md",
+  "canonical_root": "src/domains/resource-management",
+  "role": "contracts",
+  "implementation_header": "src/domains/resource-management/subtask_targets/contracts/resource_domain_model_d5f9e2a1.hpp",
+  "implementation_source": "src/domains/resource-management/subtask_targets/contracts/resource_domain_model_d5f9e2a1.cpp",
+  "test_target": "tests/structural-closure/domains/resource-management/contracts/test_resource_domain_model_d5f9e2a1.cpp",
+  "status": "SKELETON_MATERIALIZED",
+  "behavioral_credit": false,
+  "preservation": "PRESERVE_IMPLEMENT_EXTEND"
+}

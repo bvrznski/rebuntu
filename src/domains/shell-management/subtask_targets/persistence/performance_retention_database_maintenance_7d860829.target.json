@@ -1,0 +1,12 @@
+{
+  "source_prompt": ".phases/phases/phase-26-shell-management/prompts/26.26-performance-retention-database-maintenance.md",
+  "phase_task": ".phases/phases/phase-26-shell-management/TASK.md",
+  "canonical_root": "src/domains/shell-management",
+  "role": "persistence",
+  "implementation_header": "src/domains/shell-management/subtask_targets/persistence/performance_retention_database_maintenance_7d860829.hpp",
+  "implementation_source": "src/domains/shell-management/subtask_targets/persistence/performance_retention_database_maintenance_7d860829.cpp",
+  "test_target": "tests/structural-closure/domains/shell-management/persistence/test_performance_retention_database_maintenance_7d860829.cpp",
+  "status": "SKELETON_MATERIALIZED",
+  "behavioral_credit": false,
+  "preservation": "PRESERVE_IMPLEMENT_EXTEND"
+}

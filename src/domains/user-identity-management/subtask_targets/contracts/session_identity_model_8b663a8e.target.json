@@ -1,0 +1,12 @@
+{
+  "source_prompt": ".phases/phases/phase-38-user-identity-management/prompts/38.17-session-identity-model.md",
+  "phase_task": ".phases/phases/phase-38-user-identity-management/TASK.md",
+  "canonical_root": "src/domains/user-identity-management",
+  "role": "contracts",
+  "implementation_header": "src/domains/user-identity-management/subtask_targets/contracts/session_identity_model_8b663a8e.hpp",
+  "implementation_source": "src/domains/user-identity-management/subtask_targets/contracts/session_identity_model_8b663a8e.cpp",
+  "test_target": "tests/structural-closure/domains/user-identity-management/contracts/test_session_identity_model_8b663a8e.cpp",
+  "status": "SKELETON_MATERIALIZED",
+  "behavioral_credit": false,
+  "preservation": "PRESERVE_IMPLEMENT_EXTEND"
+}

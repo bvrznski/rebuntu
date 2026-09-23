@@ -1,0 +1,12 @@
+{
+  "source_prompt": ".phases/phases/phase-45-unified-control-plane/prompts/45.192-control-plane-resume.md",
+  "phase_task": ".phases/phases/phase-45-unified-control-plane/TASK.md",
+  "canonical_root": "src/runtime/unified-control-plane",
+  "role": "recovery",
+  "implementation_header": "src/runtime/unified-control-plane/subtask_targets/recovery/control_plane_resume_8c4426ba.hpp",
+  "implementation_source": "src/runtime/unified-control-plane/subtask_targets/recovery/control_plane_resume_8c4426ba.cpp",
+  "test_target": "tests/structural-closure/runtime/unified-control-plane/recovery/test_control_plane_resume_8c4426ba.cpp",
+  "status": "SKELETON_MATERIALIZED",
+  "behavioral_credit": false,
+  "preservation": "PRESERVE_IMPLEMENT_EXTEND"
+}

@@ -1,0 +1,12 @@
+{
+  "source_prompt": ".phases/phases/phase-44-adaptive-workstation-system/prompts/44.088-experiment-stop-conditions.md",
+  "phase_task": ".phases/phases/phase-44-adaptive-workstation-system/TASK.md",
+  "canonical_root": "src/domains/adaptive-workstation-system",
+  "role": "lifecycle",
+  "implementation_header": "src/domains/adaptive-workstation-system/subtask_targets/lifecycle/experiment_stop_conditions_f959ee10.hpp",
+  "implementation_source": "src/domains/adaptive-workstation-system/subtask_targets/lifecycle/experiment_stop_conditions_f959ee10.cpp",
+  "test_target": "tests/structural-closure/domains/adaptive-workstation-system/lifecycle/test_experiment_stop_conditions_f959ee10.cpp",
+  "status": "SKELETON_MATERIALIZED",
+  "behavioral_credit": false,
+  "preservation": "PRESERVE_IMPLEMENT_EXTEND"
+}

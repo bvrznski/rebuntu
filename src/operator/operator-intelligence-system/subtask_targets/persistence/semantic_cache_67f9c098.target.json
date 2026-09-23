@@ -1,0 +1,12 @@
+{
+  "source_prompt": ".phases/phases/phase-43-operator-intelligence-system/prompts/43.149-semantic-cache.md",
+  "phase_task": ".phases/phases/phase-43-operator-intelligence-system/TASK.md",
+  "canonical_root": "src/operator/operator-intelligence-system",
+  "role": "persistence",
+  "implementation_header": "src/operator/operator-intelligence-system/subtask_targets/persistence/semantic_cache_67f9c098.hpp",
+  "implementation_source": "src/operator/operator-intelligence-system/subtask_targets/persistence/semantic_cache_67f9c098.cpp",
+  "test_target": "tests/structural-closure/operator/operator-intelligence-system/persistence/test_semantic_cache_67f9c098.cpp",
+  "status": "SKELETON_MATERIALIZED",
+  "behavioral_credit": false,
+  "preservation": "PRESERVE_IMPLEMENT_EXTEND"
+}

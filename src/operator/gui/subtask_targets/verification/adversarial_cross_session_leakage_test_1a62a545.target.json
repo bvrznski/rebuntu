@@ -1,0 +1,12 @@
+{
+  "source_prompt": ".phases/phases/phase-49-gui/prompts/49.562-adversarial-cross-session-leakage-test.md",
+  "phase_task": ".phases/phases/phase-49-gui/TASK.md",
+  "canonical_root": "src/operator/gui",
+  "role": "verification",
+  "implementation_header": "src/operator/gui/subtask_targets/verification/adversarial_cross_session_leakage_test_1a62a545.hpp",
+  "implementation_source": "src/operator/gui/subtask_targets/verification/adversarial_cross_session_leakage_test_1a62a545.cpp",
+  "test_target": "tests/structural-closure/operator/gui/verification/test_adversarial_cross_session_leakage_test_1a62a545.cpp",
+  "status": "SKELETON_MATERIALIZED",
+  "behavioral_credit": false,
+  "preservation": "PRESERVE_IMPLEMENT_EXTEND"
+}

@@ -1,0 +1,12 @@
+{
+  "source_prompt": ".phases/phases/phase-32-storage-management/prompts/32.8-filesystem-identity-capabilities.md",
+  "phase_task": ".phases/phases/phase-32-storage-management/TASK.md",
+  "canonical_root": "src/domains/storage-management",
+  "role": "contracts",
+  "implementation_header": "src/domains/storage-management/subtask_targets/contracts/filesystem_identity_capabilities_62c1a129.hpp",
+  "implementation_source": "src/domains/storage-management/subtask_targets/contracts/filesystem_identity_capabilities_62c1a129.cpp",
+  "test_target": "tests/structural-closure/domains/storage-management/contracts/test_filesystem_identity_capabilities_62c1a129.cpp",
+  "status": "SKELETON_MATERIALIZED",
+  "behavioral_credit": false,
+  "preservation": "PRESERVE_IMPLEMENT_EXTEND"
+}

@@ -1,0 +1,12 @@
+{
+  "source_prompt": ".phases/phases/phase-33-network-management/prompts/33.35-address-change-planning.md",
+  "phase_task": ".phases/phases/phase-33-network-management/TASK.md",
+  "canonical_root": "src/domains/network-management",
+  "role": "planning",
+  "implementation_header": "src/domains/network-management/subtask_targets/planning/address_change_planning_16dad9f0.hpp",
+  "implementation_source": "src/domains/network-management/subtask_targets/planning/address_change_planning_16dad9f0.cpp",
+  "test_target": "tests/structural-closure/domains/network-management/planning/test_address_change_planning_16dad9f0.cpp",
+  "status": "SKELETON_MATERIALIZED",
+  "behavioral_credit": false,
+  "preservation": "PRESERVE_IMPLEMENT_EXTEND"
+}

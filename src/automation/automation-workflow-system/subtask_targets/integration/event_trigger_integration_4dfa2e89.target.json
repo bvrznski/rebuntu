@@ -1,0 +1,12 @@
+{
+  "source_prompt": ".phases/phases/phase-41-automation-workflow-system/prompts/41.020-phase-39-event-trigger-integration.md",
+  "phase_task": ".phases/phases/phase-41-automation-workflow-system/TASK.md",
+  "canonical_root": "src/automation/automation-workflow-system",
+  "role": "integration",
+  "implementation_header": "src/automation/automation-workflow-system/subtask_targets/integration/event_trigger_integration_4dfa2e89.hpp",
+  "implementation_source": "src/automation/automation-workflow-system/subtask_targets/integration/event_trigger_integration_4dfa2e89.cpp",
+  "test_target": "tests/structural-closure/automation/automation-workflow-system/integration/test_event_trigger_integration_4dfa2e89.cpp",
+  "status": "SKELETON_MATERIALIZED",
+  "behavioral_credit": false,
+  "preservation": "PRESERVE_IMPLEMENT_EXTEND"
+}

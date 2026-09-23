@@ -1,0 +1,12 @@
+{
+  "source_prompt": ".phases/phases/phase-36-configuration-management/prompts/36.2-configuration-provider-discovery.md",
+  "phase_task": ".phases/phases/phase-36-configuration-management/TASK.md",
+  "canonical_root": "src/domains/configuration-management",
+  "role": "integration",
+  "implementation_header": "src/domains/configuration-management/subtask_targets/integration/configuration_provider_discovery_3c09fdca.hpp",
+  "implementation_source": "src/domains/configuration-management/subtask_targets/integration/configuration_provider_discovery_3c09fdca.cpp",
+  "test_target": "tests/structural-closure/domains/configuration-management/integration/test_configuration_provider_discovery_3c09fdca.cpp",
+  "status": "SKELETON_MATERIALIZED",
+  "behavioral_credit": false,
+  "preservation": "PRESERVE_IMPLEMENT_EXTEND"
+}

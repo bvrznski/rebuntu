@@ -1,0 +1,12 @@
+{
+  "source_prompt": ".phases/phases/phase-41-automation-workflow-system/prompts/41.067-run-resumption-policy.md",
+  "phase_task": ".phases/phases/phase-41-automation-workflow-system/TASK.md",
+  "canonical_root": "src/automation/automation-workflow-system",
+  "role": "security",
+  "implementation_header": "src/automation/automation-workflow-system/subtask_targets/security/run_resumption_policy_dce1320d.hpp",
+  "implementation_source": "src/automation/automation-workflow-system/subtask_targets/security/run_resumption_policy_dce1320d.cpp",
+  "test_target": "tests/structural-closure/automation/automation-workflow-system/security/test_run_resumption_policy_dce1320d.cpp",
+  "status": "SKELETON_MATERIALIZED",
+  "behavioral_credit": false,
+  "preservation": "PRESERVE_IMPLEMENT_EXTEND"
+}

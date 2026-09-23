@@ -1,0 +1,12 @@
+{
+  "source_prompt": ".phases/phases/phase-57-continuous-reconciliation-goal-maintenance/prompts/57.1-rebuntu-phase-57-1-desired-observed-comparison.md",
+  "phase_task": ".phases/phases/phase-57-continuous-reconciliation-goal-maintenance/TASK.md",
+  "canonical_root": "src/control/continuous-reconciliation-goal-maintenance",
+  "role": "observability",
+  "implementation_header": "src/control/continuous-reconciliation-goal-maintenance/subtask_targets/observability/desired_observed_comparison_0dbc1978.hpp",
+  "implementation_source": "src/control/continuous-reconciliation-goal-maintenance/subtask_targets/observability/desired_observed_comparison_0dbc1978.cpp",
+  "test_target": "tests/structural-closure/control/continuous-reconciliation-goal-maintenance/observability/test_desired_observed_comparison_0dbc1978.cpp",
+  "status": "SKELETON_MATERIALIZED",
+  "behavioral_credit": false,
+  "preservation": "PRESERVE_IMPLEMENT_EXTEND"
+}

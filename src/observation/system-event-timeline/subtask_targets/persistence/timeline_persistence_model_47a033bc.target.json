@@ -1,0 +1,12 @@
+{
+  "source_prompt": ".phases/phases/phase-39-system-event-timeline/prompts/39.52-timeline-persistence-model.md",
+  "phase_task": ".phases/phases/phase-39-system-event-timeline/TASK.md",
+  "canonical_root": "src/observation/system-event-timeline",
+  "role": "persistence",
+  "implementation_header": "src/observation/system-event-timeline/subtask_targets/persistence/timeline_persistence_model_47a033bc.hpp",
+  "implementation_source": "src/observation/system-event-timeline/subtask_targets/persistence/timeline_persistence_model_47a033bc.cpp",
+  "test_target": "tests/structural-closure/observation/system-event-timeline/persistence/test_timeline_persistence_model_47a033bc.cpp",
+  "status": "SKELETON_MATERIALIZED",
+  "behavioral_credit": false,
+  "preservation": "PRESERVE_IMPLEMENT_EXTEND"
+}

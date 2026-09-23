@@ -1,0 +1,12 @@
+{
+  "source_prompt": ".phases/phases/phase-49-gui/prompts/49.301-integration-status-page.md",
+  "phase_task": ".phases/phases/phase-49-gui/TASK.md",
+  "canonical_root": "src/operator/gui",
+  "role": "integration",
+  "implementation_header": "src/operator/gui/subtask_targets/integration/integration_status_page_a51396ac.hpp",
+  "implementation_source": "src/operator/gui/subtask_targets/integration/integration_status_page_a51396ac.cpp",
+  "test_target": "tests/structural-closure/operator/gui/integration/test_integration_status_page_a51396ac.cpp",
+  "status": "SKELETON_MATERIALIZED",
+  "behavioral_credit": false,
+  "preservation": "PRESERVE_IMPLEMENT_EXTEND"
+}

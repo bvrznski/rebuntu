@@ -1,0 +1,12 @@
+{
+  "source_prompt": ".phases/phases/phase-105-system-self-inspection-architecture-introspection/prompts/105.13.md",
+  "phase_task": ".phases/phases/phase-105-system-self-inspection-architecture-introspection/TASK.md",
+  "canonical_root": "src/observation/system-self-inspection-architecture-introspection",
+  "role": "requirements",
+  "implementation_header": "src/observation/system-self-inspection-architecture-introspection/subtask_targets/requirements/requirement_55116c77.hpp",
+  "implementation_source": "src/observation/system-self-inspection-architecture-introspection/subtask_targets/requirements/requirement_55116c77.cpp",
+  "test_target": "tests/structural-closure/observation/system-self-inspection-architecture-introspection/requirements/test_requirement_55116c77.cpp",
+  "status": "SKELETON_MATERIALIZED",
+  "behavioral_credit": false,
+  "preservation": "PRESERVE_IMPLEMENT_EXTEND"
+}

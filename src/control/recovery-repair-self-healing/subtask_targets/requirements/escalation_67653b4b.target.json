@@ -1,0 +1,12 @@
+{
+  "source_prompt": ".phases/phases/phase-61-recovery-repair-self-healing/prompts/61.37-rebuntu-phase-61-37-escalation.md",
+  "phase_task": ".phases/phases/phase-61-recovery-repair-self-healing/TASK.md",
+  "canonical_root": "src/control/recovery-repair-self-healing",
+  "role": "requirements",
+  "implementation_header": "src/control/recovery-repair-self-healing/subtask_targets/requirements/escalation_67653b4b.hpp",
+  "implementation_source": "src/control/recovery-repair-self-healing/subtask_targets/requirements/escalation_67653b4b.cpp",
+  "test_target": "tests/structural-closure/control/recovery-repair-self-healing/requirements/test_escalation_67653b4b.cpp",
+  "status": "SKELETON_MATERIALIZED",
+  "behavioral_credit": false,
+  "preservation": "PRESERVE_IMPLEMENT_EXTEND"
+}

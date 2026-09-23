@@ -1,0 +1,41 @@
+{
+  "source_prompt": ".phases/phases/phase-25-system-control-panel/prompts/25.23-panel-configuration-and-personalization.md",
+  "phase_task": ".phases/phases/phase-25-system-control-panel/TASK.md",
+  "package_root": "src/operator/system-control-panel/subtask_packages/verification/panel_configuration_and_personalization_d57ef430",
+  "role": "verification",
+  "aspects": [
+    "contract",
+    "model",
+    "state",
+    "errors",
+    "evidence",
+    "verification",
+    "integration",
+    "execution",
+    "recovery",
+    "policy",
+    "observability"
+  ],
+  "files": [
+    "src/operator/system-control-panel/subtask_packages/verification/panel_configuration_and_personalization_d57ef430/contract.hpp",
+    "src/operator/system-control-panel/subtask_packages/verification/panel_configuration_and_personalization_d57ef430/model.hpp",
+    "src/operator/system-control-panel/subtask_packages/verification/panel_configuration_and_personalization_d57ef430/state.hpp",
+    "src/operator/system-control-panel/subtask_packages/verification/panel_configuration_and_personalization_d57ef430/errors.hpp",
+    "src/operator/system-control-panel/subtask_packages/verification/panel_configuration_and_personalization_d57ef430/evidence.hpp",
+    "src/operator/system-control-panel/subtask_packages/verification/panel_configuration_and_personalization_d57ef430/verification.hpp",
+    "src/operator/system-control-panel/subtask_packages/verification/panel_configuration_and_personalization_d57ef430/verification.cpp",
+    "src/operator/system-control-panel/subtask_packages/verification/panel_configuration_and_personalization_d57ef430/integration.hpp",
+    "src/operator/system-control-panel/subtask_packages/verification/panel_configuration_and_personalization_d57ef430/integration.cpp",
+    "src/operator/system-control-panel/subtask_packages/verification/panel_configuration_and_personalization_d57ef430/execution.hpp",
+    "src/operator/system-control-panel/subtask_packages/verification/panel_configuration_and_personalization_d57ef430/execution.cpp",
+    "src/operator/system-control-panel/subtask_packages/verification/panel_configuration_and_personalization_d57ef430/recovery.hpp",
+    "src/operator/system-control-panel/subtask_packages/verification/panel_configuration_and_personalization_d57ef430/recovery.cpp",
+    "src/operator/system-control-panel/subtask_packages/verification/panel_configuration_and_personalization_d57ef430/policy.hpp",
+    "src/operator/system-control-panel/subtask_packages/verification/panel_configuration_and_personalization_d57ef430/policy.cpp",
+    "src/operator/system-control-panel/subtask_packages/verification/panel_configuration_and_personalization_d57ef430/observability.hpp",
+    "src/operator/system-control-panel/subtask_packages/verification/panel_configuration_and_personalization_d57ef430/observability.cpp"
+  ],
+  "status": "SKELETON_MATERIALIZED",
+  "behavioral_credit": false,
+  "preservation": "PRESERVE_IMPLEMENT_EXTEND"
+}

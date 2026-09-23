@@ -1,0 +1,12 @@
+{
+  "source_prompt": ".phases/phases/phase-28-development-environment-management/prompts/28.15-test-framework-discovery.md",
+  "phase_task": ".phases/phases/phase-28-development-environment-management/TASK.md",
+  "canonical_root": "src/domains/development-environment-management",
+  "role": "verification",
+  "implementation_header": "src/domains/development-environment-management/subtask_targets/verification/test_framework_discovery_84c3c303.hpp",
+  "implementation_source": "src/domains/development-environment-management/subtask_targets/verification/test_framework_discovery_84c3c303.cpp",
+  "test_target": "tests/structural-closure/domains/development-environment-management/verification/test_test_framework_discovery_84c3c303.cpp",
+  "status": "SKELETON_MATERIALIZED",
+  "behavioral_credit": false,
+  "preservation": "PRESERVE_IMPLEMENT_EXTEND"
+}

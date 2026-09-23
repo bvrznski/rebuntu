@@ -1,0 +1,12 @@
+{
+  "source_prompt": ".phases/phases/phase-30-resource-management/prompts/30.30-resource-placement-planning.md",
+  "phase_task": ".phases/phases/phase-30-resource-management/TASK.md",
+  "canonical_root": "src/domains/resource-management",
+  "role": "planning",
+  "implementation_header": "src/domains/resource-management/subtask_targets/planning/resource_placement_planning_6828b6c5.hpp",
+  "implementation_source": "src/domains/resource-management/subtask_targets/planning/resource_placement_planning_6828b6c5.cpp",
+  "test_target": "tests/structural-closure/domains/resource-management/planning/test_resource_placement_planning_6828b6c5.cpp",
+  "status": "SKELETON_MATERIALIZED",
+  "behavioral_credit": false,
+  "preservation": "PRESERVE_IMPLEMENT_EXTEND"
+}

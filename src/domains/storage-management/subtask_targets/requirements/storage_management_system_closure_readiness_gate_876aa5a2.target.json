@@ -1,0 +1,12 @@
+{
+  "source_prompt": ".phases/phases/phase-32-storage-management/prompts/32.56-storage-management-system-closure-readiness-gate.md",
+  "phase_task": ".phases/phases/phase-32-storage-management/TASK.md",
+  "canonical_root": "src/domains/storage-management",
+  "role": "requirements",
+  "implementation_header": "src/domains/storage-management/subtask_targets/requirements/storage_management_system_closure_readiness_gate_876aa5a2.hpp",
+  "implementation_source": "src/domains/storage-management/subtask_targets/requirements/storage_management_system_closure_readiness_gate_876aa5a2.cpp",
+  "test_target": "tests/structural-closure/domains/storage-management/requirements/test_storage_management_system_closure_readiness_gate_876aa5a2.cpp",
+  "status": "SKELETON_MATERIALIZED",
+  "behavioral_credit": false,
+  "preservation": "PRESERVE_IMPLEMENT_EXTEND"
+}

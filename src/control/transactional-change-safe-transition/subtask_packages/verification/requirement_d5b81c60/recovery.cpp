@@ -1,0 +1,5 @@
+#include "recovery.hpp"
+
+// XXVII out-of-line implementation reservation for recovery.
+// Source: .phases/phases/phase-66-transactional-change-safe-transition/prompts/66.15.md
+// Intentionally behavior-free until prompt-derived implementation is supplied.

@@ -1,0 +1,12 @@
+{
+  "source_prompt": ".phases/phases/phase-51-distributed-rebuntu-system/prompts/51.254-remote-search-result-provenance.md",
+  "phase_task": ".phases/phases/phase-51-distributed-rebuntu-system/TASK.md",
+  "canonical_root": "src/distributed/distributed-rebuntu-system",
+  "role": "resolution",
+  "implementation_header": "src/distributed/distributed-rebuntu-system/subtask_targets/resolution/remote_search_result_provenance_765f6334.hpp",
+  "implementation_source": "src/distributed/distributed-rebuntu-system/subtask_targets/resolution/remote_search_result_provenance_765f6334.cpp",
+  "test_target": "tests/structural-closure/distributed/distributed-rebuntu-system/resolution/test_remote_search_result_provenance_765f6334.cpp",
+  "status": "SKELETON_MATERIALIZED",
+  "behavioral_credit": false,
+  "preservation": "PRESERVE_IMPLEMENT_EXTEND"
+}

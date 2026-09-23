@@ -1,0 +1,12 @@
+{
+  "source_prompt": ".phases/phases/phase-49-gui/prompts/49.576-semantic-request-ux-latency.md",
+  "phase_task": ".phases/phases/phase-49-gui/TASK.md",
+  "canonical_root": "src/operator/gui",
+  "role": "requirements",
+  "implementation_header": "src/operator/gui/subtask_targets/requirements/semantic_request_ux_latency_d9c48511.hpp",
+  "implementation_source": "src/operator/gui/subtask_targets/requirements/semantic_request_ux_latency_d9c48511.cpp",
+  "test_target": "tests/structural-closure/operator/gui/requirements/test_semantic_request_ux_latency_d9c48511.cpp",
+  "status": "SKELETON_MATERIALIZED",
+  "behavioral_credit": false,
+  "preservation": "PRESERVE_IMPLEMENT_EXTEND"
+}

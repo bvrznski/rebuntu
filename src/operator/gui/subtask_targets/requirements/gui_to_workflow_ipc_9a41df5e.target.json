@@ -1,0 +1,12 @@
+{
+  "source_prompt": ".phases/phases/phase-49-gui/prompts/49.353-gui-to-workflow-ipc.md",
+  "phase_task": ".phases/phases/phase-49-gui/TASK.md",
+  "canonical_root": "src/operator/gui",
+  "role": "requirements",
+  "implementation_header": "src/operator/gui/subtask_targets/requirements/gui_to_workflow_ipc_9a41df5e.hpp",
+  "implementation_source": "src/operator/gui/subtask_targets/requirements/gui_to_workflow_ipc_9a41df5e.cpp",
+  "test_target": "tests/structural-closure/operator/gui/requirements/test_gui_to_workflow_ipc_9a41df5e.cpp",
+  "status": "SKELETON_MATERIALIZED",
+  "behavioral_credit": false,
+  "preservation": "PRESERVE_IMPLEMENT_EXTEND"
+}

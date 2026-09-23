@@ -1,0 +1,12 @@
+{
+  "source_prompt": ".phases/phases/phase-33-network-management/prompts/33.44-phase-25-panel-integration-api.md",
+  "phase_task": ".phases/phases/phase-33-network-management/TASK.md",
+  "canonical_root": "src/domains/network-management",
+  "role": "integration",
+  "implementation_header": "src/domains/network-management/subtask_targets/integration/panel_integration_api_76d487ed.hpp",
+  "implementation_source": "src/domains/network-management/subtask_targets/integration/panel_integration_api_76d487ed.cpp",
+  "test_target": "tests/structural-closure/domains/network-management/integration/test_panel_integration_api_76d487ed.cpp",
+  "status": "SKELETON_MATERIALIZED",
+  "behavioral_credit": false,
+  "preservation": "PRESERVE_IMPLEMENT_EXTEND"
+}

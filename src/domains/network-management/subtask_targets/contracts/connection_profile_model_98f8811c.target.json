@@ -1,0 +1,12 @@
+{
+  "source_prompt": ".phases/phases/phase-33-network-management/prompts/33.20-connection-profile-model.md",
+  "phase_task": ".phases/phases/phase-33-network-management/TASK.md",
+  "canonical_root": "src/domains/network-management",
+  "role": "contracts",
+  "implementation_header": "src/domains/network-management/subtask_targets/contracts/connection_profile_model_98f8811c.hpp",
+  "implementation_source": "src/domains/network-management/subtask_targets/contracts/connection_profile_model_98f8811c.cpp",
+  "test_target": "tests/structural-closure/domains/network-management/contracts/test_connection_profile_model_98f8811c.cpp",
+  "status": "SKELETON_MATERIALIZED",
+  "behavioral_credit": false,
+  "preservation": "PRESERVE_IMPLEMENT_EXTEND"
+}

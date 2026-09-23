@@ -1,0 +1,4 @@
+// STRUCTURAL TEST TARGET — no test evidence until assertions are implemented and executed.
+// Source subtask: .phases/phases/phase-37-secrets-credentials-management/prompts/37.60-phase-38-identity-integration.md
+// Intended implementation target: src/security/secrets-credentials-management/subtask_targets/integration/identity_integration_18cb6221.hpp
+int main() { return 0; }

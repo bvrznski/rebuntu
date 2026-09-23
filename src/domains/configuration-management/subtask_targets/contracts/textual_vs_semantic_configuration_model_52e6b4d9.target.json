@@ -1,0 +1,12 @@
+{
+  "source_prompt": ".phases/phases/phase-36-configuration-management/prompts/36.10-textual-vs-semantic-configuration-model.md",
+  "phase_task": ".phases/phases/phase-36-configuration-management/TASK.md",
+  "canonical_root": "src/domains/configuration-management",
+  "role": "contracts",
+  "implementation_header": "src/domains/configuration-management/subtask_targets/contracts/textual_vs_semantic_configuration_model_52e6b4d9.hpp",
+  "implementation_source": "src/domains/configuration-management/subtask_targets/contracts/textual_vs_semantic_configuration_model_52e6b4d9.cpp",
+  "test_target": "tests/structural-closure/domains/configuration-management/contracts/test_textual_vs_semantic_configuration_model_52e6b4d9.cpp",
+  "status": "SKELETON_MATERIALIZED",
+  "behavioral_credit": false,
+  "preservation": "PRESERVE_IMPLEMENT_EXTEND"
+}

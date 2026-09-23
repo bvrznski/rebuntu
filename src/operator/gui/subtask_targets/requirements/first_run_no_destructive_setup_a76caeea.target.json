@@ -1,0 +1,12 @@
+{
+  "source_prompt": ".phases/phases/phase-49-gui/prompts/49.446-first-run-no-destructive-setup.md",
+  "phase_task": ".phases/phases/phase-49-gui/TASK.md",
+  "canonical_root": "src/operator/gui",
+  "role": "requirements",
+  "implementation_header": "src/operator/gui/subtask_targets/requirements/first_run_no_destructive_setup_a76caeea.hpp",
+  "implementation_source": "src/operator/gui/subtask_targets/requirements/first_run_no_destructive_setup_a76caeea.cpp",
+  "test_target": "tests/structural-closure/operator/gui/requirements/test_first_run_no_destructive_setup_a76caeea.cpp",
+  "status": "SKELETON_MATERIALIZED",
+  "behavioral_credit": false,
+  "preservation": "PRESERVE_IMPLEMENT_EXTEND"
+}

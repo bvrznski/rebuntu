@@ -1,0 +1,13 @@
+#pragma once
+
+// XXVII SUBTASK PACKAGE SKELETON — zero behavioral maturity credit.
+// Source: .phases/phases/phase-45-unified-control-plane/prompts/45.192-control-plane-resume.md
+// Preserve this architectural reservation and implement only after reading the source prompt.
+
+namespace rebuntu::subtask_packages::phase_45::s_8c4426ba::verification {
+struct VerificationSlot final {
+    static constexpr const char* source_prompt = ".phases/phases/phase-45-unified-control-plane/prompts/45.192-control-plane-resume.md";
+    static constexpr const char* aspect = "verification";
+    static constexpr const char* status = "SKELETON_MATERIALIZED";
+};
+} // namespace rebuntu::subtask_packages::phase_45::s_8c4426ba::verification

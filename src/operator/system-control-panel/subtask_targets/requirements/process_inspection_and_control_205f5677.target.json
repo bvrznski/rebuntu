@@ -1,0 +1,12 @@
+{
+  "source_prompt": ".phases/phases/phase-25-system-control-panel/prompts/25.5-process-inspection-and-control.md",
+  "phase_task": ".phases/phases/phase-25-system-control-panel/TASK.md",
+  "canonical_root": "src/operator/system-control-panel",
+  "role": "requirements",
+  "implementation_header": "src/operator/system-control-panel/subtask_targets/requirements/process_inspection_and_control_205f5677.hpp",
+  "implementation_source": "src/operator/system-control-panel/subtask_targets/requirements/process_inspection_and_control_205f5677.cpp",
+  "test_target": "tests/structural-closure/operator/system-control-panel/requirements/test_process_inspection_and_control_205f5677.cpp",
+  "status": "SKELETON_MATERIALIZED",
+  "behavioral_credit": false,
+  "preservation": "PRESERVE_IMPLEMENT_EXTEND"
+}

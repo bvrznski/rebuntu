@@ -1,0 +1,12 @@
+{
+  "source_prompt": ".phases/phases/phase-42-system-knowledge-graph/prompts/42.067-development-environment-provider.md",
+  "phase_task": ".phases/phases/phase-42-system-knowledge-graph/TASK.md",
+  "canonical_root": "src/knowledge/system-knowledge-graph",
+  "role": "integration",
+  "implementation_header": "src/knowledge/system-knowledge-graph/subtask_targets/integration/development_environment_provider_cd2a71fd.hpp",
+  "implementation_source": "src/knowledge/system-knowledge-graph/subtask_targets/integration/development_environment_provider_cd2a71fd.cpp",
+  "test_target": "tests/structural-closure/knowledge/system-knowledge-graph/integration/test_development_environment_provider_cd2a71fd.cpp",
+  "status": "SKELETON_MATERIALIZED",
+  "behavioral_credit": false,
+  "preservation": "PRESERVE_IMPLEMENT_EXTEND"
+}

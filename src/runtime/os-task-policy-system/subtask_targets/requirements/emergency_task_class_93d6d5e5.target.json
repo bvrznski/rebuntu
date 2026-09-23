@@ -1,0 +1,12 @@
+{
+  "source_prompt": ".phases/phases/phase-47-os-task-policy-system/prompts/47.041-emergency-task-class.md",
+  "phase_task": ".phases/phases/phase-47-os-task-policy-system/TASK.md",
+  "canonical_root": "src/runtime/os-task-policy-system",
+  "role": "requirements",
+  "implementation_header": "src/runtime/os-task-policy-system/subtask_targets/requirements/emergency_task_class_93d6d5e5.hpp",
+  "implementation_source": "src/runtime/os-task-policy-system/subtask_targets/requirements/emergency_task_class_93d6d5e5.cpp",
+  "test_target": "tests/structural-closure/runtime/os-task-policy-system/requirements/test_emergency_task_class_93d6d5e5.cpp",
+  "status": "SKELETON_MATERIALIZED",
+  "behavioral_credit": false,
+  "preservation": "PRESERVE_IMPLEMENT_EXTEND"
+}

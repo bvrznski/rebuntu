@@ -1,0 +1,12 @@
+{
+  "source_prompt": ".phases/phases/phase-43-operator-intelligence-system/prompts/43.146-hierarchical-evidence-summarization.md",
+  "phase_task": ".phases/phases/phase-43-operator-intelligence-system/TASK.md",
+  "canonical_root": "src/operator/operator-intelligence-system",
+  "role": "verification",
+  "implementation_header": "src/operator/operator-intelligence-system/subtask_targets/verification/hierarchical_evidence_summarization_3bbe1810.hpp",
+  "implementation_source": "src/operator/operator-intelligence-system/subtask_targets/verification/hierarchical_evidence_summarization_3bbe1810.cpp",
+  "test_target": "tests/structural-closure/operator/operator-intelligence-system/verification/test_hierarchical_evidence_summarization_3bbe1810.cpp",
+  "status": "SKELETON_MATERIALIZED",
+  "behavioral_credit": false,
+  "preservation": "PRESERVE_IMPLEMENT_EXTEND"
+}

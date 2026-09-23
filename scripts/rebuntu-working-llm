@@ -1,0 +1,16 @@
+#!/usr/bin/env bash
+set -euo pipefail
+ROOT="$(cd "$(dirname "${BASH_SOURCE[0]}")/.." && pwd)"
+DEPLOY="$ROOT/deploy/bitnet-falcon10b"
+case "${1:-status}" in
+  up)     exec docker compose -f "$DEPLOY/compose.yaml" up -d --build ;;
+  down)   exec docker compose -f "$DEPLOY/compose.yaml" down ;;
+  logs)   exec docker logs rebuntu-bitnet-falcon10b "${@:2}" ;;
+  status) exec docker ps --filter name=^/rebuntu-bitnet-falcon10b$ --format 'table {{.Names}}\t{{.Image}}\t{{.Ports}}\t{{.Status}}' ;;
+  verify)
+    response="$(curl --fail --silent --show-error --max-time 60 http://127.0.0.1:8082/v1/chat/completions -H 'Content-Type: application/json' -d '{"messages":[{"role":"user","content":"Reply with exactly REBUNTU_BITNET_READY"}],"temperature":0,"max_tokens":32}')"
+    grep -q 'Falcon3-10B-Instruct-1.58bit' <<<"$response" || { echo 'wrong model loaded' >&2; exit 2; }
+    printf '%s\n' "$response"
+    ;;
+  *) echo "usage: $0 {up|down|status|logs|verify}" >&2; exit 64 ;;
+esac

@@ -1,0 +1,12 @@
+{
+  "source_prompt": ".phases/phases/phase-30-resource-management/prompts/30.47-resource-action-planning-verification.md",
+  "phase_task": ".phases/phases/phase-30-resource-management/TASK.md",
+  "canonical_root": "src/domains/resource-management",
+  "role": "verification",
+  "implementation_header": "src/domains/resource-management/subtask_targets/verification/resource_action_planning_verification_a8106ab1.hpp",
+  "implementation_source": "src/domains/resource-management/subtask_targets/verification/resource_action_planning_verification_a8106ab1.cpp",
+  "test_target": "tests/structural-closure/domains/resource-management/verification/test_resource_action_planning_verification_a8106ab1.cpp",
+  "status": "SKELETON_MATERIALIZED",
+  "behavioral_credit": false,
+  "preservation": "PRESERVE_IMPLEMENT_EXTEND"
+}

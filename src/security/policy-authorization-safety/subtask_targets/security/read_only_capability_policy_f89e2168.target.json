@@ -1,0 +1,12 @@
+{
+  "source_prompt": ".phases/phases/phase-07-policy-authorization-safety/prompts/7.52_read-only_capability_policy.md",
+  "phase_task": ".phases/phases/phase-07-policy-authorization-safety/TASK.md",
+  "canonical_root": "src/security/policy-authorization-safety",
+  "role": "security",
+  "implementation_header": "src/security/policy-authorization-safety/subtask_targets/security/read_only_capability_policy_f89e2168.hpp",
+  "implementation_source": "src/security/policy-authorization-safety/subtask_targets/security/read_only_capability_policy_f89e2168.cpp",
+  "test_target": "tests/structural-closure/security/policy-authorization-safety/security/test_read_only_capability_policy_f89e2168.cpp",
+  "status": "SKELETON_MATERIALIZED",
+  "behavioral_credit": false,
+  "preservation": "PRESERVE_IMPLEMENT_EXTEND"
+}

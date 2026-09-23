@@ -1,0 +1,12 @@
+{
+  "source_prompt": ".phases/phases/phase-49-gui/prompts/49.601-duplicate-ask-ui-audit.md",
+  "phase_task": ".phases/phases/phase-49-gui/TASK.md",
+  "canonical_root": "src/operator/gui",
+  "role": "verification",
+  "implementation_header": "src/operator/gui/subtask_targets/verification/duplicate_ask_ui_audit_648559a6.hpp",
+  "implementation_source": "src/operator/gui/subtask_targets/verification/duplicate_ask_ui_audit_648559a6.cpp",
+  "test_target": "tests/structural-closure/operator/gui/verification/test_duplicate_ask_ui_audit_648559a6.cpp",
+  "status": "SKELETON_MATERIALIZED",
+  "behavioral_credit": false,
+  "preservation": "PRESERVE_IMPLEMENT_EXTEND"
+}

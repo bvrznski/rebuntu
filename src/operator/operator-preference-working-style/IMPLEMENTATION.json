@@ -1,0 +1,9 @@
+{
+  "component": "operator-preference-working-style",
+  "canonical_root": "operator",
+  "phase_tasks": [
+    ".phases/phases/phase-103-operator-preference-working-style/TASK.md"
+  ],
+  "status": "SKELETON",
+  "native_authority_rule": true
+}

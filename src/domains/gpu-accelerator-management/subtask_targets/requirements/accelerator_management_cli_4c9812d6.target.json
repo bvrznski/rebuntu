@@ -1,0 +1,12 @@
+{
+  "source_prompt": ".phases/phases/phase-34-gpu-accelerator-management/prompts/34.47-accelerator-management-cli.md",
+  "phase_task": ".phases/phases/phase-34-gpu-accelerator-management/TASK.md",
+  "canonical_root": "src/domains/gpu-accelerator-management",
+  "role": "requirements",
+  "implementation_header": "src/domains/gpu-accelerator-management/subtask_targets/requirements/accelerator_management_cli_4c9812d6.hpp",
+  "implementation_source": "src/domains/gpu-accelerator-management/subtask_targets/requirements/accelerator_management_cli_4c9812d6.cpp",
+  "test_target": "tests/structural-closure/domains/gpu-accelerator-management/requirements/test_accelerator_management_cli_4c9812d6.cpp",
+  "status": "SKELETON_MATERIALIZED",
+  "behavioral_credit": false,
+  "preservation": "PRESERVE_IMPLEMENT_EXTEND"
+}

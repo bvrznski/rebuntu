@@ -1,0 +1,12 @@
+{
+  "source_prompt": ".phases/phases/phase-58-constraint-invariant-operational-contract/prompts/58.42-rebuntu-phase-58-42-why-blocked-integration.md",
+  "phase_task": ".phases/phases/phase-58-constraint-invariant-operational-contract/TASK.md",
+  "canonical_root": "src/semantics/constraint-invariant-operational-contract",
+  "role": "integration",
+  "implementation_header": "src/semantics/constraint-invariant-operational-contract/subtask_targets/integration/why_blocked_integration_32a88f25.hpp",
+  "implementation_source": "src/semantics/constraint-invariant-operational-contract/subtask_targets/integration/why_blocked_integration_32a88f25.cpp",
+  "test_target": "tests/structural-closure/semantics/constraint-invariant-operational-contract/integration/test_why_blocked_integration_32a88f25.cpp",
+  "status": "SKELETON_MATERIALIZED",
+  "behavioral_credit": false,
+  "preservation": "PRESERVE_IMPLEMENT_EXTEND"
+}

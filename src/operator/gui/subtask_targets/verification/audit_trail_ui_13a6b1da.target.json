@@ -1,0 +1,12 @@
+{
+  "source_prompt": ".phases/phases/phase-49-gui/prompts/49.424-audit-trail-ui.md",
+  "phase_task": ".phases/phases/phase-49-gui/TASK.md",
+  "canonical_root": "src/operator/gui",
+  "role": "verification",
+  "implementation_header": "src/operator/gui/subtask_targets/verification/audit_trail_ui_13a6b1da.hpp",
+  "implementation_source": "src/operator/gui/subtask_targets/verification/audit_trail_ui_13a6b1da.cpp",
+  "test_target": "tests/structural-closure/operator/gui/verification/test_audit_trail_ui_13a6b1da.cpp",
+  "status": "SKELETON_MATERIALIZED",
+  "behavioral_credit": false,
+  "preservation": "PRESERVE_IMPLEMENT_EXTEND"
+}

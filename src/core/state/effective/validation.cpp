@@ -1,0 +1,6 @@
+#include "core/state/effective/validation.hpp"
+
+// Structural translation-unit slot only. No maturity credit.
+namespace rebuntu::structural_slots {
+static_assert(Skeleton_a971b6584d_Validation::structural_revision == 25);
+}

@@ -1,0 +1,12 @@
+{
+  "source_prompt": ".phases/phases/phase-57-continuous-reconciliation-goal-maintenance/prompts/57.21-rebuntu-phase-57-21-concurrent-mutation-handling.md",
+  "phase_task": ".phases/phases/phase-57-continuous-reconciliation-goal-maintenance/TASK.md",
+  "canonical_root": "src/control/continuous-reconciliation-goal-maintenance",
+  "role": "execution",
+  "implementation_header": "src/control/continuous-reconciliation-goal-maintenance/subtask_targets/execution/concurrent_mutation_handling_ec69354a.hpp",
+  "implementation_source": "src/control/continuous-reconciliation-goal-maintenance/subtask_targets/execution/concurrent_mutation_handling_ec69354a.cpp",
+  "test_target": "tests/structural-closure/control/continuous-reconciliation-goal-maintenance/execution/test_concurrent_mutation_handling_ec69354a.cpp",
+  "status": "SKELETON_MATERIALIZED",
+  "behavioral_credit": false,
+  "preservation": "PRESERVE_IMPLEMENT_EXTEND"
+}

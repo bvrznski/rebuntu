@@ -1,0 +1,12 @@
+{
+  "source_prompt": ".phases/phases/phase-33-network-management/prompts/33.13-listening-vs-exposure-separation.md",
+  "phase_task": ".phases/phases/phase-33-network-management/TASK.md",
+  "canonical_root": "src/domains/network-management",
+  "role": "requirements",
+  "implementation_header": "src/domains/network-management/subtask_targets/requirements/listening_vs_exposure_separation_ddcadaba.hpp",
+  "implementation_source": "src/domains/network-management/subtask_targets/requirements/listening_vs_exposure_separation_ddcadaba.cpp",
+  "test_target": "tests/structural-closure/domains/network-management/requirements/test_listening_vs_exposure_separation_ddcadaba.cpp",
+  "status": "SKELETON_MATERIALIZED",
+  "behavioral_credit": false,
+  "preservation": "PRESERVE_IMPLEMENT_EXTEND"
+}

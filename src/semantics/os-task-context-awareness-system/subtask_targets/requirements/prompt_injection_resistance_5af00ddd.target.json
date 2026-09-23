@@ -1,0 +1,12 @@
+{
+  "source_prompt": ".phases/phases/phase-48-os-task-context-awareness-system/prompts/48.222-prompt-injection-resistance.md",
+  "phase_task": ".phases/phases/phase-48-os-task-context-awareness-system/TASK.md",
+  "canonical_root": "src/semantics/os-task-context-awareness-system",
+  "role": "requirements",
+  "implementation_header": "src/semantics/os-task-context-awareness-system/subtask_targets/requirements/prompt_injection_resistance_5af00ddd.hpp",
+  "implementation_source": "src/semantics/os-task-context-awareness-system/subtask_targets/requirements/prompt_injection_resistance_5af00ddd.cpp",
+  "test_target": "tests/structural-closure/semantics/os-task-context-awareness-system/requirements/test_prompt_injection_resistance_5af00ddd.cpp",
+  "status": "SKELETON_MATERIALIZED",
+  "behavioral_credit": false,
+  "preservation": "PRESERVE_IMPLEMENT_EXTEND"
+}

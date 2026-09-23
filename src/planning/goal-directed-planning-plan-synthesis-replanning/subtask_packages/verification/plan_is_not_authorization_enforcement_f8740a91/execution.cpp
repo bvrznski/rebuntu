@@ -1,0 +1,5 @@
+#include "execution.hpp"
+
+// XXVII out-of-line implementation reservation for execution.
+// Source: .phases/phases/phase-55-goal-directed-planning-plan-synthesis-replanning/prompts/55.91-rebuntu-phase-55-91-plan-is-not-authorization-enforcement.md
+// Intentionally behavior-free until prompt-derived implementation is supplied.

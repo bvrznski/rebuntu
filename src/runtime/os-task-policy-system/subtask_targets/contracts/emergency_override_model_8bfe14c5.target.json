@@ -1,0 +1,12 @@
+{
+  "source_prompt": ".phases/phases/phase-47-os-task-policy-system/prompts/47.198-emergency-override-model.md",
+  "phase_task": ".phases/phases/phase-47-os-task-policy-system/TASK.md",
+  "canonical_root": "src/runtime/os-task-policy-system",
+  "role": "contracts",
+  "implementation_header": "src/runtime/os-task-policy-system/subtask_targets/contracts/emergency_override_model_8bfe14c5.hpp",
+  "implementation_source": "src/runtime/os-task-policy-system/subtask_targets/contracts/emergency_override_model_8bfe14c5.cpp",
+  "test_target": "tests/structural-closure/runtime/os-task-policy-system/contracts/test_emergency_override_model_8bfe14c5.cpp",
+  "status": "SKELETON_MATERIALIZED",
+  "behavioral_credit": false,
+  "preservation": "PRESERVE_IMPLEMENT_EXTEND"
+}

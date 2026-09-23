@@ -1,0 +1,12 @@
+{
+  "source_prompt": ".phases/phases/phase-47-os-task-policy-system/prompts/47.098-phase-46-contextual-legitimacy-integration.md",
+  "phase_task": ".phases/phases/phase-47-os-task-policy-system/TASK.md",
+  "canonical_root": "src/runtime/os-task-policy-system",
+  "role": "integration",
+  "implementation_header": "src/runtime/os-task-policy-system/subtask_targets/integration/contextual_legitimacy_integration_2820898e.hpp",
+  "implementation_source": "src/runtime/os-task-policy-system/subtask_targets/integration/contextual_legitimacy_integration_2820898e.cpp",
+  "test_target": "tests/structural-closure/runtime/os-task-policy-system/integration/test_contextual_legitimacy_integration_2820898e.cpp",
+  "status": "SKELETON_MATERIALIZED",
+  "behavioral_credit": false,
+  "preservation": "PRESERVE_IMPLEMENT_EXTEND"
+}

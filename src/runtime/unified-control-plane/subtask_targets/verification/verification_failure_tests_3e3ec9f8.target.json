@@ -1,0 +1,12 @@
+{
+  "source_prompt": ".phases/phases/phase-45-unified-control-plane/prompts/45.249-verification-failure-tests.md",
+  "phase_task": ".phases/phases/phase-45-unified-control-plane/TASK.md",
+  "canonical_root": "src/runtime/unified-control-plane",
+  "role": "verification",
+  "implementation_header": "src/runtime/unified-control-plane/subtask_targets/verification/verification_failure_tests_3e3ec9f8.hpp",
+  "implementation_source": "src/runtime/unified-control-plane/subtask_targets/verification/verification_failure_tests_3e3ec9f8.cpp",
+  "test_target": "tests/structural-closure/runtime/unified-control-plane/verification/test_verification_failure_tests_3e3ec9f8.cpp",
+  "status": "SKELETON_MATERIALIZED",
+  "behavioral_credit": false,
+  "preservation": "PRESERVE_IMPLEMENT_EXTEND"
+}

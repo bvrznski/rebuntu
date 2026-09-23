@@ -1,0 +1,13 @@
+#pragma once
+
+// XXVII SUBTASK PACKAGE SKELETON — zero behavioral maturity credit.
+// Source: .phases/phases/phase-60-transactional-change-safe-transition/prompts/60.29-rebuntu-phase-60-29-restart-reconciliation.md
+// Preserve this architectural reservation and implement only after reading the source prompt.
+
+namespace rebuntu::subtask_packages::phase_60::s_192db1d3::model {
+struct ModelSlot final {
+    static constexpr const char* source_prompt = ".phases/phases/phase-60-transactional-change-safe-transition/prompts/60.29-rebuntu-phase-60-29-restart-reconciliation.md";
+    static constexpr const char* aspect = "model";
+    static constexpr const char* status = "SKELETON_MATERIALIZED";
+};
+} // namespace rebuntu::subtask_packages::phase_60::s_192db1d3::model

@@ -1,0 +1,4 @@
+// STRUCTURAL TEST TARGET — no test evidence until assertions are implemented and executed.
+// Source subtask: .phases/phases/phase-45-unified-control-plane/prompts/45.176-provider-error-normalization.md
+// Intended implementation target: src/runtime/unified-control-plane/subtask_targets/integration/provider_error_normalization_3625d165.hpp
+int main() { return 0; }

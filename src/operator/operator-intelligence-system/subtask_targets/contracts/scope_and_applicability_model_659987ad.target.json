@@ -1,0 +1,12 @@
+{
+  "source_prompt": ".phases/phases/phase-43-operator-intelligence-system/prompts/43.019-scope-and-applicability-model.md",
+  "phase_task": ".phases/phases/phase-43-operator-intelligence-system/TASK.md",
+  "canonical_root": "src/operator/operator-intelligence-system",
+  "role": "contracts",
+  "implementation_header": "src/operator/operator-intelligence-system/subtask_targets/contracts/scope_and_applicability_model_659987ad.hpp",
+  "implementation_source": "src/operator/operator-intelligence-system/subtask_targets/contracts/scope_and_applicability_model_659987ad.cpp",
+  "test_target": "tests/structural-closure/operator/operator-intelligence-system/contracts/test_scope_and_applicability_model_659987ad.cpp",
+  "status": "SKELETON_MATERIALIZED",
+  "behavioral_credit": false,
+  "preservation": "PRESERVE_IMPLEMENT_EXTEND"
+}

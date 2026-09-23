@@ -1,0 +1,12 @@
+{
+  "source_prompt": ".phases/phases/phase-25-system-control-panel/prompts/25.17-unified-action-planning-and-authorization-ux.md",
+  "phase_task": ".phases/phases/phase-25-system-control-panel/TASK.md",
+  "canonical_root": "src/operator/system-control-panel",
+  "role": "security",
+  "implementation_header": "src/operator/system-control-panel/subtask_targets/security/unified_action_planning_and_authorization_ux_093aadde.hpp",
+  "implementation_source": "src/operator/system-control-panel/subtask_targets/security/unified_action_planning_and_authorization_ux_093aadde.cpp",
+  "test_target": "tests/structural-closure/operator/system-control-panel/security/test_unified_action_planning_and_authorization_ux_093aadde.cpp",
+  "status": "SKELETON_MATERIALIZED",
+  "behavioral_credit": false,
+  "preservation": "PRESERVE_IMPLEMENT_EXTEND"
+}

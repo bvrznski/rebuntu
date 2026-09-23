@@ -1,0 +1,12 @@
+{
+  "source_prompt": ".phases/phases/phase-65-change-impact-consequence-analysis/prompts/65.17.md",
+  "phase_task": ".phases/phases/phase-65-change-impact-consequence-analysis/TASK.md",
+  "canonical_root": "src/planning/change-impact-consequence-analysis",
+  "role": "requirements",
+  "implementation_header": "src/planning/change-impact-consequence-analysis/subtask_targets/requirements/requirement_388d3887.hpp",
+  "implementation_source": "src/planning/change-impact-consequence-analysis/subtask_targets/requirements/requirement_388d3887.cpp",
+  "test_target": "tests/structural-closure/planning/change-impact-consequence-analysis/requirements/test_requirement_388d3887.cpp",
+  "status": "SKELETON_MATERIALIZED",
+  "behavioral_credit": false,
+  "preservation": "PRESERVE_IMPLEMENT_EXTEND"
+}

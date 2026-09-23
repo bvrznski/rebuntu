@@ -1,0 +1,12 @@
+{
+  "source_prompt": ".phases/phases/phase-24-evergreen-platform/prompts/24.5_recovery_contract_&_rollback_capability_model.md",
+  "phase_task": ".phases/phases/phase-24-evergreen-platform/TASK.md",
+  "canonical_root": "src/runtime/evergreen-platform",
+  "role": "recovery",
+  "implementation_header": "src/runtime/evergreen-platform/subtask_targets/recovery/recovery_contract_rollback_capability_model_9a1f6741.hpp",
+  "implementation_source": "src/runtime/evergreen-platform/subtask_targets/recovery/recovery_contract_rollback_capability_model_9a1f6741.cpp",
+  "test_target": "tests/structural-closure/runtime/evergreen-platform/recovery/test_recovery_contract_rollback_capability_model_9a1f6741.cpp",
+  "status": "SKELETON_MATERIALIZED",
+  "behavioral_credit": false,
+  "preservation": "PRESERVE_IMPLEMENT_EXTEND"
+}

@@ -1,0 +1,12 @@
+{
+  "source_prompt": ".phases/phases/phase-53-multi-lattice-mandatory-information-control-flow-security-system/prompts/53.016-individual-l3-to-l0-denial.md",
+  "phase_task": ".phases/phases/phase-53-multi-lattice-mandatory-information-control-flow-security-system/TASK.md",
+  "canonical_root": "src/security/multi-lattice-mandatory-information-control-flow-security-system",
+  "role": "requirements",
+  "implementation_header": "src/security/multi-lattice-mandatory-information-control-flow-security-system/subtask_targets/requirements/individual_l3_to_l0_denial_0c759777.hpp",
+  "implementation_source": "src/security/multi-lattice-mandatory-information-control-flow-security-system/subtask_targets/requirements/individual_l3_to_l0_denial_0c759777.cpp",
+  "test_target": "tests/structural-closure/security/multi-lattice-mandatory-information-control-flow-security-system/requirements/test_individual_l3_to_l0_denial_0c759777.cpp",
+  "status": "SKELETON_MATERIALIZED",
+  "behavioral_credit": false,
+  "preservation": "PRESERVE_IMPLEMENT_EXTEND"
+}

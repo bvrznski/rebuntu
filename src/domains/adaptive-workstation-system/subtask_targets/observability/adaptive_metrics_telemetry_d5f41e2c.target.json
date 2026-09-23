@@ -1,0 +1,12 @@
+{
+  "source_prompt": ".phases/phases/phase-44-adaptive-workstation-system/prompts/44.230-adaptive-metrics-telemetry.md",
+  "phase_task": ".phases/phases/phase-44-adaptive-workstation-system/TASK.md",
+  "canonical_root": "src/domains/adaptive-workstation-system",
+  "role": "observability",
+  "implementation_header": "src/domains/adaptive-workstation-system/subtask_targets/observability/adaptive_metrics_telemetry_d5f41e2c.hpp",
+  "implementation_source": "src/domains/adaptive-workstation-system/subtask_targets/observability/adaptive_metrics_telemetry_d5f41e2c.cpp",
+  "test_target": "tests/structural-closure/domains/adaptive-workstation-system/observability/test_adaptive_metrics_telemetry_d5f41e2c.cpp",
+  "status": "SKELETON_MATERIALIZED",
+  "behavioral_credit": false,
+  "preservation": "PRESERVE_IMPLEMENT_EXTEND"
+}

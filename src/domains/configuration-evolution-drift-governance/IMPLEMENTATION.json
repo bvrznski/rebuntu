@@ -1,0 +1,9 @@
+{
+  "component": "configuration-evolution-drift-governance",
+  "canonical_root": "domains",
+  "phase_tasks": [
+    ".phases/phases/phase-75-configuration-evolution-drift-governance/TASK.md"
+  ],
+  "status": "SKELETON",
+  "native_authority_rule": true
+}

@@ -1,0 +1,12 @@
+{
+  "source_prompt": ".phases/phases/phase-36-configuration-management/prompts/36.24-concurrent-edit-detection.md",
+  "phase_task": ".phases/phases/phase-36-configuration-management/TASK.md",
+  "canonical_root": "src/domains/configuration-management",
+  "role": "requirements",
+  "implementation_header": "src/domains/configuration-management/subtask_targets/requirements/concurrent_edit_detection_cf488408.hpp",
+  "implementation_source": "src/domains/configuration-management/subtask_targets/requirements/concurrent_edit_detection_cf488408.cpp",
+  "test_target": "tests/structural-closure/domains/configuration-management/requirements/test_concurrent_edit_detection_cf488408.cpp",
+  "status": "SKELETON_MATERIALIZED",
+  "behavioral_credit": false,
+  "preservation": "PRESERVE_IMPLEMENT_EXTEND"
+}

@@ -1,0 +1,12 @@
+{
+  "source_prompt": ".phases/phases/phase-29-process-workload-management/prompts/29.26-development-workload-integration.md",
+  "phase_task": ".phases/phases/phase-29-process-workload-management/TASK.md",
+  "canonical_root": "src/domains/process-workload-management",
+  "role": "integration",
+  "implementation_header": "src/domains/process-workload-management/subtask_targets/integration/development_workload_integration_c67b852a.hpp",
+  "implementation_source": "src/domains/process-workload-management/subtask_targets/integration/development_workload_integration_c67b852a.cpp",
+  "test_target": "tests/structural-closure/domains/process-workload-management/integration/test_development_workload_integration_c67b852a.cpp",
+  "status": "SKELETON_MATERIALIZED",
+  "behavioral_credit": false,
+  "preservation": "PRESERVE_IMPLEMENT_EXTEND"
+}

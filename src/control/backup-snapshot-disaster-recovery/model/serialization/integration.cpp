@@ -1,0 +1,6 @@
+#include "control/backup-snapshot-disaster-recovery/model/serialization/integration.hpp"
+
+// Structural translation-unit slot only. No maturity credit.
+namespace rebuntu::structural_slots {
+static_assert(Skeleton_ff5b10a137_Integration::structural_revision == 25);
+}

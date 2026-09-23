@@ -1,0 +1,12 @@
+{
+  "source_prompt": ".phases/phases/phase-45-unified-control-plane/prompts/45.200-semantic-explanation-boundary.md",
+  "phase_task": ".phases/phases/phase-45-unified-control-plane/TASK.md",
+  "canonical_root": "src/runtime/unified-control-plane",
+  "role": "planning",
+  "implementation_header": "src/runtime/unified-control-plane/subtask_targets/planning/semantic_explanation_boundary_6b4a75cb.hpp",
+  "implementation_source": "src/runtime/unified-control-plane/subtask_targets/planning/semantic_explanation_boundary_6b4a75cb.cpp",
+  "test_target": "tests/structural-closure/runtime/unified-control-plane/planning/test_semantic_explanation_boundary_6b4a75cb.cpp",
+  "status": "SKELETON_MATERIALIZED",
+  "behavioral_credit": false,
+  "preservation": "PRESERVE_IMPLEMENT_EXTEND"
+}

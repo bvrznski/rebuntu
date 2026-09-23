@@ -1,0 +1,5 @@
+#include "policy.hpp"
+
+// XXVII out-of-line implementation reservation for policy.
+// Source: .phases/phases/phase-05-system-observation-inventory-discovery/prompts/5.70_independent_second_rediscovery.md
+// Intentionally behavior-free until prompt-derived implementation is supplied.

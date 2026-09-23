@@ -1,0 +1,12 @@
+{
+  "source_prompt": ".phases/phases/phase-07-policy-authorization-safety/prompts/7.29_configuration_versus_policy.md",
+  "phase_task": ".phases/phases/phase-07-policy-authorization-safety/TASK.md",
+  "canonical_root": "src/security/policy-authorization-safety",
+  "role": "security",
+  "implementation_header": "src/security/policy-authorization-safety/subtask_targets/security/configuration_versus_policy_f0148a5f.hpp",
+  "implementation_source": "src/security/policy-authorization-safety/subtask_targets/security/configuration_versus_policy_f0148a5f.cpp",
+  "test_target": "tests/structural-closure/security/policy-authorization-safety/security/test_configuration_versus_policy_f0148a5f.cpp",
+  "status": "SKELETON_MATERIALIZED",
+  "behavioral_credit": false,
+  "preservation": "PRESERVE_IMPLEMENT_EXTEND"
+}

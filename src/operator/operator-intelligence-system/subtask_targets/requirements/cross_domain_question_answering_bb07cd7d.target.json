@@ -1,0 +1,12 @@
+{
+  "source_prompt": ".phases/phases/phase-43-operator-intelligence-system/prompts/43.130-cross-domain-question-answering.md",
+  "phase_task": ".phases/phases/phase-43-operator-intelligence-system/TASK.md",
+  "canonical_root": "src/operator/operator-intelligence-system",
+  "role": "requirements",
+  "implementation_header": "src/operator/operator-intelligence-system/subtask_targets/requirements/cross_domain_question_answering_bb07cd7d.hpp",
+  "implementation_source": "src/operator/operator-intelligence-system/subtask_targets/requirements/cross_domain_question_answering_bb07cd7d.cpp",
+  "test_target": "tests/structural-closure/operator/operator-intelligence-system/requirements/test_cross_domain_question_answering_bb07cd7d.cpp",
+  "status": "SKELETON_MATERIALIZED",
+  "behavioral_credit": false,
+  "preservation": "PRESERVE_IMPLEMENT_EXTEND"
+}

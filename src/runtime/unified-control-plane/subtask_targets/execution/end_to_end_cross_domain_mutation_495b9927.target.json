@@ -1,0 +1,12 @@
+{
+  "source_prompt": ".phases/phases/phase-45-unified-control-plane/prompts/45.272-end-to-end-cross-domain-mutation.md",
+  "phase_task": ".phases/phases/phase-45-unified-control-plane/TASK.md",
+  "canonical_root": "src/runtime/unified-control-plane",
+  "role": "execution",
+  "implementation_header": "src/runtime/unified-control-plane/subtask_targets/execution/end_to_end_cross_domain_mutation_495b9927.hpp",
+  "implementation_source": "src/runtime/unified-control-plane/subtask_targets/execution/end_to_end_cross_domain_mutation_495b9927.cpp",
+  "test_target": "tests/structural-closure/runtime/unified-control-plane/execution/test_end_to_end_cross_domain_mutation_495b9927.cpp",
+  "status": "SKELETON_MATERIALIZED",
+  "behavioral_credit": false,
+  "preservation": "PRESERVE_IMPLEMENT_EXTEND"
+}

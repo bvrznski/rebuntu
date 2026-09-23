@@ -1,0 +1,12 @@
+{
+  "source_prompt": ".phases/phases/phase-26-shell-management/prompts/26.17-shell-configuration-registry-ownership.md",
+  "phase_task": ".phases/phases/phase-26-shell-management/TASK.md",
+  "canonical_root": "src/domains/shell-management",
+  "role": "requirements",
+  "implementation_header": "src/domains/shell-management/subtask_targets/requirements/shell_configuration_registry_ownership_99dc4aa8.hpp",
+  "implementation_source": "src/domains/shell-management/subtask_targets/requirements/shell_configuration_registry_ownership_99dc4aa8.cpp",
+  "test_target": "tests/structural-closure/domains/shell-management/requirements/test_shell_configuration_registry_ownership_99dc4aa8.cpp",
+  "status": "SKELETON_MATERIALIZED",
+  "behavioral_credit": false,
+  "preservation": "PRESERVE_IMPLEMENT_EXTEND"
+}

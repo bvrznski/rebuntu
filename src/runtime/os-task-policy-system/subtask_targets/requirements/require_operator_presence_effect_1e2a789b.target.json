@@ -1,0 +1,12 @@
+{
+  "source_prompt": ".phases/phases/phase-47-os-task-policy-system/prompts/47.077-require-operator-presence-effect.md",
+  "phase_task": ".phases/phases/phase-47-os-task-policy-system/TASK.md",
+  "canonical_root": "src/runtime/os-task-policy-system",
+  "role": "requirements",
+  "implementation_header": "src/runtime/os-task-policy-system/subtask_targets/requirements/require_operator_presence_effect_1e2a789b.hpp",
+  "implementation_source": "src/runtime/os-task-policy-system/subtask_targets/requirements/require_operator_presence_effect_1e2a789b.cpp",
+  "test_target": "tests/structural-closure/runtime/os-task-policy-system/requirements/test_require_operator_presence_effect_1e2a789b.cpp",
+  "status": "SKELETON_MATERIALIZED",
+  "behavioral_credit": false,
+  "preservation": "PRESERVE_IMPLEMENT_EXTEND"
+}

@@ -1,0 +1,12 @@
+{
+  "source_prompt": ".phases/phases/phase-49-gui/prompts/49.226-os-task-overview.md",
+  "phase_task": ".phases/phases/phase-49-gui/TASK.md",
+  "canonical_root": "src/operator/gui",
+  "role": "requirements",
+  "implementation_header": "src/operator/gui/subtask_targets/requirements/os_task_overview_6e396b01.hpp",
+  "implementation_source": "src/operator/gui/subtask_targets/requirements/os_task_overview_6e396b01.cpp",
+  "test_target": "tests/structural-closure/operator/gui/requirements/test_os_task_overview_6e396b01.cpp",
+  "status": "SKELETON_MATERIALIZED",
+  "behavioral_credit": false,
+  "preservation": "PRESERVE_IMPLEMENT_EXTEND"
+}

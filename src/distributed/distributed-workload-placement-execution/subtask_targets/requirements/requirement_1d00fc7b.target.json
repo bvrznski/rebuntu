@@ -1,0 +1,12 @@
+{
+  "source_prompt": ".phases/phases/phase-82-distributed-workload-placement-execution/prompts/82.22.md",
+  "phase_task": ".phases/phases/phase-82-distributed-workload-placement-execution/TASK.md",
+  "canonical_root": "src/distributed/distributed-workload-placement-execution",
+  "role": "requirements",
+  "implementation_header": "src/distributed/distributed-workload-placement-execution/subtask_targets/requirements/requirement_1d00fc7b.hpp",
+  "implementation_source": "src/distributed/distributed-workload-placement-execution/subtask_targets/requirements/requirement_1d00fc7b.cpp",
+  "test_target": "tests/structural-closure/distributed/distributed-workload-placement-execution/requirements/test_requirement_1d00fc7b.cpp",
+  "status": "SKELETON_MATERIALIZED",
+  "behavioral_credit": false,
+  "preservation": "PRESERVE_IMPLEMENT_EXTEND"
+}

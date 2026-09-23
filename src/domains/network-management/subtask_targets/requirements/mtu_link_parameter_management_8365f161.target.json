@@ -1,0 +1,12 @@
+{
+  "source_prompt": ".phases/phases/phase-33-network-management/prompts/33.28-mtu-link-parameter-management.md",
+  "phase_task": ".phases/phases/phase-33-network-management/TASK.md",
+  "canonical_root": "src/domains/network-management",
+  "role": "requirements",
+  "implementation_header": "src/domains/network-management/subtask_targets/requirements/mtu_link_parameter_management_8365f161.hpp",
+  "implementation_source": "src/domains/network-management/subtask_targets/requirements/mtu_link_parameter_management_8365f161.cpp",
+  "test_target": "tests/structural-closure/domains/network-management/requirements/test_mtu_link_parameter_management_8365f161.cpp",
+  "status": "SKELETON_MATERIALIZED",
+  "behavioral_credit": false,
+  "preservation": "PRESERVE_IMPLEMENT_EXTEND"
+}

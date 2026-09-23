@@ -1,0 +1,12 @@
+{
+  "source_prompt": ".phases/phases/phase-45-unified-control-plane/prompts/45.285-control-plane-overhead.md",
+  "phase_task": ".phases/phases/phase-45-unified-control-plane/TASK.md",
+  "canonical_root": "src/runtime/unified-control-plane",
+  "role": "planning",
+  "implementation_header": "src/runtime/unified-control-plane/subtask_targets/planning/control_plane_overhead_64ae070e.hpp",
+  "implementation_source": "src/runtime/unified-control-plane/subtask_targets/planning/control_plane_overhead_64ae070e.cpp",
+  "test_target": "tests/structural-closure/runtime/unified-control-plane/planning/test_control_plane_overhead_64ae070e.cpp",
+  "status": "SKELETON_MATERIALIZED",
+  "behavioral_credit": false,
+  "preservation": "PRESERVE_IMPLEMENT_EXTEND"
+}

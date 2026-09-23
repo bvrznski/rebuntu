@@ -1,0 +1,12 @@
+{
+  "source_prompt": ".phases/phases/phase-54-dynamic-system-capability-affordance-model/prompts/54.52-rebuntu-phase-54-52-remote-capability-trust-boundary.md",
+  "phase_task": ".phases/phases/phase-54-dynamic-system-capability-affordance-model/TASK.md",
+  "canonical_root": "src/semantics/dynamic-system-capability-affordance-model",
+  "role": "security",
+  "implementation_header": "src/semantics/dynamic-system-capability-affordance-model/subtask_targets/security/remote_capability_trust_boundary_4bbb3372.hpp",
+  "implementation_source": "src/semantics/dynamic-system-capability-affordance-model/subtask_targets/security/remote_capability_trust_boundary_4bbb3372.cpp",
+  "test_target": "tests/structural-closure/semantics/dynamic-system-capability-affordance-model/security/test_remote_capability_trust_boundary_4bbb3372.cpp",
+  "status": "SKELETON_MATERIALIZED",
+  "behavioral_credit": false,
+  "preservation": "PRESERVE_IMPLEMENT_EXTEND"
+}

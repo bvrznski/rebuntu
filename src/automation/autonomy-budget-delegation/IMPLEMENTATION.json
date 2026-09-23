@@ -1,0 +1,9 @@
+{
+  "component": "autonomy-budget-delegation",
+  "canonical_root": "automation",
+  "phase_tasks": [
+    ".phases/phases/phase-99-autonomy-budget-delegation/TASK.md"
+  ],
+  "status": "SKELETON",
+  "native_authority_rule": true
+}

@@ -1,0 +1,12 @@
+{
+  "source_prompt": ".phases/phases/phase-42-system-knowledge-graph/prompts/42.088-dependency-blast-radius-analysis.md",
+  "phase_task": ".phases/phases/phase-42-system-knowledge-graph/TASK.md",
+  "canonical_root": "src/knowledge/system-knowledge-graph",
+  "role": "requirements",
+  "implementation_header": "src/knowledge/system-knowledge-graph/subtask_targets/requirements/dependency_blast_radius_analysis_aa2c68bf.hpp",
+  "implementation_source": "src/knowledge/system-knowledge-graph/subtask_targets/requirements/dependency_blast_radius_analysis_aa2c68bf.cpp",
+  "test_target": "tests/structural-closure/knowledge/system-knowledge-graph/requirements/test_dependency_blast_radius_analysis_aa2c68bf.cpp",
+  "status": "SKELETON_MATERIALIZED",
+  "behavioral_credit": false,
+  "preservation": "PRESERVE_IMPLEMENT_EXTEND"
+}

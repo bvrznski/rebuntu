@@ -1,0 +1,4 @@
+#include "public_key_distribution_da52dad2.hpp"
+
+// STRUCTURAL CLOSURE SLOT — intentionally behavior-free.
+// Implement prompt-derived out-of-line behavior here when applicable.

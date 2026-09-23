@@ -1,0 +1,12 @@
+{
+  "source_prompt": ".phases/phases/phase-09-system-state-and-events/prompts/9.6.md",
+  "phase_task": ".phases/phases/phase-09-system-state-and-events/TASK.md",
+  "canonical_root": "src/runtime/system-state-and-events",
+  "role": "requirements",
+  "implementation_header": "src/runtime/system-state-and-events/subtask_targets/requirements/requirement_b9dd0103.hpp",
+  "implementation_source": "src/runtime/system-state-and-events/subtask_targets/requirements/requirement_b9dd0103.cpp",
+  "test_target": "tests/structural-closure/runtime/system-state-and-events/requirements/test_requirement_b9dd0103.cpp",
+  "status": "SKELETON_MATERIALIZED",
+  "behavioral_credit": false,
+  "preservation": "PRESERVE_IMPLEMENT_EXTEND"
+}

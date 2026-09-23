@@ -1,0 +1,12 @@
+{
+  "source_prompt": ".phases/phases/phase-49-gui/prompts/49.500-hidpi-tests.md",
+  "phase_task": ".phases/phases/phase-49-gui/TASK.md",
+  "canonical_root": "src/operator/gui",
+  "role": "verification",
+  "implementation_header": "src/operator/gui/subtask_targets/verification/hidpi_tests_0393eaa4.hpp",
+  "implementation_source": "src/operator/gui/subtask_targets/verification/hidpi_tests_0393eaa4.cpp",
+  "test_target": "tests/structural-closure/operator/gui/verification/test_hidpi_tests_0393eaa4.cpp",
+  "status": "SKELETON_MATERIALIZED",
+  "behavioral_credit": false,
+  "preservation": "PRESERVE_IMPLEMENT_EXTEND"
+}

@@ -1,0 +1,12 @@
+{
+  "source_prompt": ".phases/phases/phase-32-storage-management/prompts/32.36-snapshot-vs-backup-separation.md",
+  "phase_task": ".phases/phases/phase-32-storage-management/TASK.md",
+  "canonical_root": "src/domains/storage-management",
+  "role": "persistence",
+  "implementation_header": "src/domains/storage-management/subtask_targets/persistence/snapshot_vs_backup_separation_dfd4946a.hpp",
+  "implementation_source": "src/domains/storage-management/subtask_targets/persistence/snapshot_vs_backup_separation_dfd4946a.cpp",
+  "test_target": "tests/structural-closure/domains/storage-management/persistence/test_snapshot_vs_backup_separation_dfd4946a.cpp",
+  "status": "SKELETON_MATERIALIZED",
+  "behavioral_credit": false,
+  "preservation": "PRESERVE_IMPLEMENT_EXTEND"
+}

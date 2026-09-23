@@ -1,0 +1,12 @@
+{
+  "source_prompt": ".phases/phases/phase-53-multi-lattice-mandatory-information-control-flow-security-system/prompts/53.087-boot-recovery.md",
+  "phase_task": ".phases/phases/phase-53-multi-lattice-mandatory-information-control-flow-security-system/TASK.md",
+  "canonical_root": "src/security/multi-lattice-mandatory-information-control-flow-security-system",
+  "role": "recovery",
+  "implementation_header": "src/security/multi-lattice-mandatory-information-control-flow-security-system/subtask_targets/recovery/boot_recovery_cdef7bb1.hpp",
+  "implementation_source": "src/security/multi-lattice-mandatory-information-control-flow-security-system/subtask_targets/recovery/boot_recovery_cdef7bb1.cpp",
+  "test_target": "tests/structural-closure/security/multi-lattice-mandatory-information-control-flow-security-system/recovery/test_boot_recovery_cdef7bb1.cpp",
+  "status": "SKELETON_MATERIALIZED",
+  "behavioral_credit": false,
+  "preservation": "PRESERVE_IMPLEMENT_EXTEND"
+}

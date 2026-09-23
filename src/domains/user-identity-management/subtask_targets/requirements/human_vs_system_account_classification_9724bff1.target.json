@@ -1,0 +1,12 @@
+{
+  "source_prompt": ".phases/phases/phase-38-user-identity-management/prompts/38.7-human-vs-system-account-classification.md",
+  "phase_task": ".phases/phases/phase-38-user-identity-management/TASK.md",
+  "canonical_root": "src/domains/user-identity-management",
+  "role": "requirements",
+  "implementation_header": "src/domains/user-identity-management/subtask_targets/requirements/human_vs_system_account_classification_9724bff1.hpp",
+  "implementation_source": "src/domains/user-identity-management/subtask_targets/requirements/human_vs_system_account_classification_9724bff1.cpp",
+  "test_target": "tests/structural-closure/domains/user-identity-management/requirements/test_human_vs_system_account_classification_9724bff1.cpp",
+  "status": "SKELETON_MATERIALIZED",
+  "behavioral_credit": false,
+  "preservation": "PRESERVE_IMPLEMENT_EXTEND"
+}

@@ -1,0 +1,5 @@
+#include "observability.hpp"
+
+// XXVII out-of-line implementation reservation for observability.
+// Source: .phases/phases/phase-55-goal-directed-planning-plan-synthesis-replanning/prompts/55.12-rebuntu-phase-55-12-operation-effect-model.md
+// Intentionally behavior-free until prompt-derived implementation is supplied.

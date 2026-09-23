@@ -1,0 +1,12 @@
+{
+  "source_prompt": ".phases/phases/phase-43-operator-intelligence-system/prompts/43.177-model-provider-comparison-framework.md",
+  "phase_task": ".phases/phases/phase-43-operator-intelligence-system/TASK.md",
+  "canonical_root": "src/operator/operator-intelligence-system",
+  "role": "integration",
+  "implementation_header": "src/operator/operator-intelligence-system/subtask_targets/integration/model_provider_comparison_framework_afeb360a.hpp",
+  "implementation_source": "src/operator/operator-intelligence-system/subtask_targets/integration/model_provider_comparison_framework_afeb360a.cpp",
+  "test_target": "tests/structural-closure/operator/operator-intelligence-system/integration/test_model_provider_comparison_framework_afeb360a.cpp",
+  "status": "SKELETON_MATERIALIZED",
+  "behavioral_credit": false,
+  "preservation": "PRESERVE_IMPLEMENT_EXTEND"
+}

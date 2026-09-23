@@ -1,0 +1,12 @@
+{
+  "source_prompt": ".phases/phases/phase-71-performance-optimization-adaptive-tuning/prompts/71.17.md",
+  "phase_task": ".phases/phases/phase-71-performance-optimization-adaptive-tuning/TASK.md",
+  "canonical_root": "src/domains/performance-optimization-adaptive-tuning",
+  "role": "requirements",
+  "implementation_header": "src/domains/performance-optimization-adaptive-tuning/subtask_targets/requirements/requirement_4ed70a90.hpp",
+  "implementation_source": "src/domains/performance-optimization-adaptive-tuning/subtask_targets/requirements/requirement_4ed70a90.cpp",
+  "test_target": "tests/structural-closure/domains/performance-optimization-adaptive-tuning/requirements/test_requirement_4ed70a90.cpp",
+  "status": "SKELETON_MATERIALIZED",
+  "behavioral_credit": false,
+  "preservation": "PRESERVE_IMPLEMENT_EXTEND"
+}

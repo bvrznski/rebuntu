@@ -1,0 +1,12 @@
+{
+  "source_prompt": ".phases/phases/phase-49-gui/prompts/49.317-log-virtualization.md",
+  "phase_task": ".phases/phases/phase-49-gui/TASK.md",
+  "canonical_root": "src/operator/gui",
+  "role": "observability",
+  "implementation_header": "src/operator/gui/subtask_targets/observability/log_virtualization_00f2649c.hpp",
+  "implementation_source": "src/operator/gui/subtask_targets/observability/log_virtualization_00f2649c.cpp",
+  "test_target": "tests/structural-closure/operator/gui/observability/test_log_virtualization_00f2649c.cpp",
+  "status": "SKELETON_MATERIALIZED",
+  "behavioral_credit": false,
+  "preservation": "PRESERVE_IMPLEMENT_EXTEND"
+}

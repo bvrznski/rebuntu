@@ -1,0 +1,12 @@
+{
+  "source_prompt": ".phases/phases/phase-39-system-event-timeline/prompts/39.29-service-lifecycle-events.md",
+  "phase_task": ".phases/phases/phase-39-system-event-timeline/TASK.md",
+  "canonical_root": "src/observation/system-event-timeline",
+  "role": "lifecycle",
+  "implementation_header": "src/observation/system-event-timeline/subtask_targets/lifecycle/service_lifecycle_events_24c692b0.hpp",
+  "implementation_source": "src/observation/system-event-timeline/subtask_targets/lifecycle/service_lifecycle_events_24c692b0.cpp",
+  "test_target": "tests/structural-closure/observation/system-event-timeline/lifecycle/test_service_lifecycle_events_24c692b0.cpp",
+  "status": "SKELETON_MATERIALIZED",
+  "behavioral_credit": false,
+  "preservation": "PRESERVE_IMPLEMENT_EXTEND"
+}

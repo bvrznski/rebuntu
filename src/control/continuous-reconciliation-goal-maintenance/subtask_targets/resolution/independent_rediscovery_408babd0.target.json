@@ -1,0 +1,12 @@
+{
+  "source_prompt": ".phases/phases/phase-57-continuous-reconciliation-goal-maintenance/prompts/57.46-rebuntu-phase-57-46-independent-rediscovery.md",
+  "phase_task": ".phases/phases/phase-57-continuous-reconciliation-goal-maintenance/TASK.md",
+  "canonical_root": "src/control/continuous-reconciliation-goal-maintenance",
+  "role": "resolution",
+  "implementation_header": "src/control/continuous-reconciliation-goal-maintenance/subtask_targets/resolution/independent_rediscovery_408babd0.hpp",
+  "implementation_source": "src/control/continuous-reconciliation-goal-maintenance/subtask_targets/resolution/independent_rediscovery_408babd0.cpp",
+  "test_target": "tests/structural-closure/control/continuous-reconciliation-goal-maintenance/resolution/test_independent_rediscovery_408babd0.cpp",
+  "status": "SKELETON_MATERIALIZED",
+  "behavioral_credit": false,
+  "preservation": "PRESERVE_IMPLEMENT_EXTEND"
+}

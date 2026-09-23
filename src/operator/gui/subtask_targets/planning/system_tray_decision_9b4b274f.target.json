@@ -1,0 +1,12 @@
+{
+  "source_prompt": ".phases/phases/phase-49-gui/prompts/49.462-system-tray-decision.md",
+  "phase_task": ".phases/phases/phase-49-gui/TASK.md",
+  "canonical_root": "src/operator/gui",
+  "role": "planning",
+  "implementation_header": "src/operator/gui/subtask_targets/planning/system_tray_decision_9b4b274f.hpp",
+  "implementation_source": "src/operator/gui/subtask_targets/planning/system_tray_decision_9b4b274f.cpp",
+  "test_target": "tests/structural-closure/operator/gui/planning/test_system_tray_decision_9b4b274f.cpp",
+  "status": "SKELETON_MATERIALIZED",
+  "behavioral_credit": false,
+  "preservation": "PRESERVE_IMPLEMENT_EXTEND"
+}

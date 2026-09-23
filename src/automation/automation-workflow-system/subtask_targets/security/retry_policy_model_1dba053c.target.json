@@ -1,0 +1,12 @@
+{
+  "source_prompt": ".phases/phases/phase-41-automation-workflow-system/prompts/41.055-retry-policy-model.md",
+  "phase_task": ".phases/phases/phase-41-automation-workflow-system/TASK.md",
+  "canonical_root": "src/automation/automation-workflow-system",
+  "role": "security",
+  "implementation_header": "src/automation/automation-workflow-system/subtask_targets/security/retry_policy_model_1dba053c.hpp",
+  "implementation_source": "src/automation/automation-workflow-system/subtask_targets/security/retry_policy_model_1dba053c.cpp",
+  "test_target": "tests/structural-closure/automation/automation-workflow-system/security/test_retry_policy_model_1dba053c.cpp",
+  "status": "SKELETON_MATERIALIZED",
+  "behavioral_credit": false,
+  "preservation": "PRESERVE_IMPLEMENT_EXTEND"
+}

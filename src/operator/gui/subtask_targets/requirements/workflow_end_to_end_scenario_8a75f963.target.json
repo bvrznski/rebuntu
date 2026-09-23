@@ -1,0 +1,12 @@
+{
+  "source_prompt": ".phases/phases/phase-49-gui/prompts/49.541-workflow-end-to-end-scenario.md",
+  "phase_task": ".phases/phases/phase-49-gui/TASK.md",
+  "canonical_root": "src/operator/gui",
+  "role": "requirements",
+  "implementation_header": "src/operator/gui/subtask_targets/requirements/workflow_end_to_end_scenario_8a75f963.hpp",
+  "implementation_source": "src/operator/gui/subtask_targets/requirements/workflow_end_to_end_scenario_8a75f963.cpp",
+  "test_target": "tests/structural-closure/operator/gui/requirements/test_workflow_end_to_end_scenario_8a75f963.cpp",
+  "status": "SKELETON_MATERIALIZED",
+  "behavioral_credit": false,
+  "preservation": "PRESERVE_IMPLEMENT_EXTEND"
+}

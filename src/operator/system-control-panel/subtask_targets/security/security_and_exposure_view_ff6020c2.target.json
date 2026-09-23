@@ -1,0 +1,12 @@
+{
+  "source_prompt": ".phases/phases/phase-25-system-control-panel/prompts/25.14-security-and-exposure-view.md",
+  "phase_task": ".phases/phases/phase-25-system-control-panel/TASK.md",
+  "canonical_root": "src/operator/system-control-panel",
+  "role": "security",
+  "implementation_header": "src/operator/system-control-panel/subtask_targets/security/security_and_exposure_view_ff6020c2.hpp",
+  "implementation_source": "src/operator/system-control-panel/subtask_targets/security/security_and_exposure_view_ff6020c2.cpp",
+  "test_target": "tests/structural-closure/operator/system-control-panel/security/test_security_and_exposure_view_ff6020c2.cpp",
+  "status": "SKELETON_MATERIALIZED",
+  "behavioral_credit": false,
+  "preservation": "PRESERVE_IMPLEMENT_EXTEND"
+}

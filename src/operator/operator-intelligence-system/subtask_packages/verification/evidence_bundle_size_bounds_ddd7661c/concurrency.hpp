@@ -1,0 +1,13 @@
+#pragma once
+
+// XXVII SUBTASK PACKAGE SKELETON — zero behavioral maturity credit.
+// Source: .phases/phases/phase-43-operator-intelligence-system/prompts/43.041-evidence-bundle-size-bounds.md
+// Preserve this architectural reservation and implement only after reading the source prompt.
+
+namespace rebuntu::subtask_packages::phase_43::s_ddd7661c::concurrency {
+struct ConcurrencySlot final {
+    static constexpr const char* source_prompt = ".phases/phases/phase-43-operator-intelligence-system/prompts/43.041-evidence-bundle-size-bounds.md";
+    static constexpr const char* aspect = "concurrency";
+    static constexpr const char* status = "SKELETON_MATERIALIZED";
+};
+} // namespace rebuntu::subtask_packages::phase_43::s_ddd7661c::concurrency

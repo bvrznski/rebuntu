@@ -1,0 +1,12 @@
+{
+  "source_prompt": ".phases/phases/phase-49-gui/prompts/49.451-desktop-notification-permissions.md",
+  "phase_task": ".phases/phases/phase-49-gui/TASK.md",
+  "canonical_root": "src/operator/gui",
+  "role": "security",
+  "implementation_header": "src/operator/gui/subtask_targets/security/desktop_notification_permissions_2d248236.hpp",
+  "implementation_source": "src/operator/gui/subtask_targets/security/desktop_notification_permissions_2d248236.cpp",
+  "test_target": "tests/structural-closure/operator/gui/security/test_desktop_notification_permissions_2d248236.cpp",
+  "status": "SKELETON_MATERIALIZED",
+  "behavioral_credit": false,
+  "preservation": "PRESERVE_IMPLEMENT_EXTEND"
+}

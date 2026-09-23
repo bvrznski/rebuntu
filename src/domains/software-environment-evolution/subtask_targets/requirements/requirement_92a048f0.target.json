@@ -1,0 +1,12 @@
+{
+  "source_prompt": ".phases/phases/phase-76-software-environment-evolution/prompts/76.2.md",
+  "phase_task": ".phases/phases/phase-76-software-environment-evolution/TASK.md",
+  "canonical_root": "src/domains/software-environment-evolution",
+  "role": "requirements",
+  "implementation_header": "src/domains/software-environment-evolution/subtask_targets/requirements/requirement_92a048f0.hpp",
+  "implementation_source": "src/domains/software-environment-evolution/subtask_targets/requirements/requirement_92a048f0.cpp",
+  "test_target": "tests/structural-closure/domains/software-environment-evolution/requirements/test_requirement_92a048f0.cpp",
+  "status": "SKELETON_MATERIALIZED",
+  "behavioral_credit": false,
+  "preservation": "PRESERVE_IMPLEMENT_EXTEND"
+}

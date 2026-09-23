@@ -1,0 +1,12 @@
+{
+  "source_prompt": ".phases/phases/phase-28-development-environment-management/prompts/28.25-development-session-model.md",
+  "phase_task": ".phases/phases/phase-28-development-environment-management/TASK.md",
+  "canonical_root": "src/domains/development-environment-management",
+  "role": "contracts",
+  "implementation_header": "src/domains/development-environment-management/subtask_targets/contracts/development_session_model_b1a50d2a.hpp",
+  "implementation_source": "src/domains/development-environment-management/subtask_targets/contracts/development_session_model_b1a50d2a.cpp",
+  "test_target": "tests/structural-closure/domains/development-environment-management/contracts/test_development_session_model_b1a50d2a.cpp",
+  "status": "SKELETON_MATERIALIZED",
+  "behavioral_credit": false,
+  "preservation": "PRESERVE_IMPLEMENT_EXTEND"
+}

@@ -1,0 +1,12 @@
+{
+  "source_prompt": ".phases/phases/phase-56-intent-goal-desired-state-management/prompts/56.11-rebuntu-phase-56-11-goal-cancellation.md",
+  "phase_task": ".phases/phases/phase-56-intent-goal-desired-state-management/TASK.md",
+  "canonical_root": "src/semantics/intent-goal-desired-state-management",
+  "role": "requirements",
+  "implementation_header": "src/semantics/intent-goal-desired-state-management/subtask_targets/requirements/goal_cancellation_62af39be.hpp",
+  "implementation_source": "src/semantics/intent-goal-desired-state-management/subtask_targets/requirements/goal_cancellation_62af39be.cpp",
+  "test_target": "tests/structural-closure/semantics/intent-goal-desired-state-management/requirements/test_goal_cancellation_62af39be.cpp",
+  "status": "SKELETON_MATERIALIZED",
+  "behavioral_credit": false,
+  "preservation": "PRESERVE_IMPLEMENT_EXTEND"
+}

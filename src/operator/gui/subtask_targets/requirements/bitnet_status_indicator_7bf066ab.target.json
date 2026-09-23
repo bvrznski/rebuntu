@@ -1,0 +1,12 @@
+{
+  "source_prompt": ".phases/phases/phase-49-gui/prompts/49.221-bitnet-status-indicator.md",
+  "phase_task": ".phases/phases/phase-49-gui/TASK.md",
+  "canonical_root": "src/operator/gui",
+  "role": "requirements",
+  "implementation_header": "src/operator/gui/subtask_targets/requirements/bitnet_status_indicator_7bf066ab.hpp",
+  "implementation_source": "src/operator/gui/subtask_targets/requirements/bitnet_status_indicator_7bf066ab.cpp",
+  "test_target": "tests/structural-closure/operator/gui/requirements/test_bitnet_status_indicator_7bf066ab.cpp",
+  "status": "SKELETON_MATERIALIZED",
+  "behavioral_credit": false,
+  "preservation": "PRESERVE_IMPLEMENT_EXTEND"
+}

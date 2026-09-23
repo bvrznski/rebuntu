@@ -1,0 +1,12 @@
+{
+  "source_prompt": ".phases/phases/phase-25-system-control-panel/prompts/25.27-system-control-panel-closure-and-readiness-gate.md",
+  "phase_task": ".phases/phases/phase-25-system-control-panel/TASK.md",
+  "canonical_root": "src/operator/system-control-panel",
+  "role": "requirements",
+  "implementation_header": "src/operator/system-control-panel/subtask_targets/requirements/system_control_panel_closure_and_readiness_gate_37168a7e.hpp",
+  "implementation_source": "src/operator/system-control-panel/subtask_targets/requirements/system_control_panel_closure_and_readiness_gate_37168a7e.cpp",
+  "test_target": "tests/structural-closure/operator/system-control-panel/requirements/test_system_control_panel_closure_and_readiness_gate_37168a7e.cpp",
+  "status": "SKELETON_MATERIALIZED",
+  "behavioral_credit": false,
+  "preservation": "PRESERVE_IMPLEMENT_EXTEND"
+}

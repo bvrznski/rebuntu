@@ -1,0 +1,9 @@
+{
+  "component": "automation-workflow-system",
+  "canonical_root": "automation",
+  "phase_tasks": [
+    ".phases/phases/phase-41-automation-workflow-system/TASK.md"
+  ],
+  "status": "SKELETON",
+  "native_authority_rule": true
+}

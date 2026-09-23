@@ -1,0 +1,12 @@
+{
+  "source_prompt": ".phases/phases/phase-46-natural-language-operator-interface/prompts/46.318-no-policy-self-modification.md",
+  "phase_task": ".phases/phases/phase-46-natural-language-operator-interface/TASK.md",
+  "canonical_root": "src/operator/natural-language-operator-interface",
+  "role": "security",
+  "implementation_header": "src/operator/natural-language-operator-interface/subtask_targets/security/no_policy_self_modification_d99b455d.hpp",
+  "implementation_source": "src/operator/natural-language-operator-interface/subtask_targets/security/no_policy_self_modification_d99b455d.cpp",
+  "test_target": "tests/structural-closure/operator/natural-language-operator-interface/security/test_no_policy_self_modification_d99b455d.cpp",
+  "status": "SKELETON_MATERIALIZED",
+  "behavioral_credit": false,
+  "preservation": "PRESERVE_IMPLEMENT_EXTEND"
+}

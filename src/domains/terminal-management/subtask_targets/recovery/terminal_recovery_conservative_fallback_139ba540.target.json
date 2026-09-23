@@ -1,0 +1,12 @@
+{
+  "source_prompt": ".phases/phases/phase-27-terminal-management/prompts/27.23-terminal-recovery-conservative-fallback.md",
+  "phase_task": ".phases/phases/phase-27-terminal-management/TASK.md",
+  "canonical_root": "src/domains/terminal-management",
+  "role": "recovery",
+  "implementation_header": "src/domains/terminal-management/subtask_targets/recovery/terminal_recovery_conservative_fallback_139ba540.hpp",
+  "implementation_source": "src/domains/terminal-management/subtask_targets/recovery/terminal_recovery_conservative_fallback_139ba540.cpp",
+  "test_target": "tests/structural-closure/domains/terminal-management/recovery/test_terminal_recovery_conservative_fallback_139ba540.cpp",
+  "status": "SKELETON_MATERIALIZED",
+  "behavioral_credit": false,
+  "preservation": "PRESERVE_IMPLEMENT_EXTEND"
+}

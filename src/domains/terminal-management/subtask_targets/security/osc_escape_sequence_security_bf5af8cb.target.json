@@ -1,0 +1,12 @@
+{
+  "source_prompt": ".phases/phases/phase-27-terminal-management/prompts/27.19-osc-escape-sequence-security.md",
+  "phase_task": ".phases/phases/phase-27-terminal-management/TASK.md",
+  "canonical_root": "src/domains/terminal-management",
+  "role": "security",
+  "implementation_header": "src/domains/terminal-management/subtask_targets/security/osc_escape_sequence_security_bf5af8cb.hpp",
+  "implementation_source": "src/domains/terminal-management/subtask_targets/security/osc_escape_sequence_security_bf5af8cb.cpp",
+  "test_target": "tests/structural-closure/domains/terminal-management/security/test_osc_escape_sequence_security_bf5af8cb.cpp",
+  "status": "SKELETON_MATERIALIZED",
+  "behavioral_credit": false,
+  "preservation": "PRESERVE_IMPLEMENT_EXTEND"
+}

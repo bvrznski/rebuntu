@@ -1,0 +1,12 @@
+{
+  "source_prompt": ".phases/phases/phase-84-distributed-failure-partition-management/prompts/84.13.md",
+  "phase_task": ".phases/phases/phase-84-distributed-failure-partition-management/TASK.md",
+  "canonical_root": "src/distributed/distributed-failure-partition-management",
+  "role": "requirements",
+  "implementation_header": "src/distributed/distributed-failure-partition-management/subtask_targets/requirements/requirement_217e9bc1.hpp",
+  "implementation_source": "src/distributed/distributed-failure-partition-management/subtask_targets/requirements/requirement_217e9bc1.cpp",
+  "test_target": "tests/structural-closure/distributed/distributed-failure-partition-management/requirements/test_requirement_217e9bc1.cpp",
+  "status": "SKELETON_MATERIALIZED",
+  "behavioral_credit": false,
+  "preservation": "PRESERVE_IMPLEMENT_EXTEND"
+}

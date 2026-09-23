@@ -1,0 +1,9 @@
+{
+  "component": "environment-situation-model",
+  "canonical_root": "semantics",
+  "phase_tasks": [
+    ".phases/phases/phase-86-environment-situation-model/TASK.md"
+  ],
+  "status": "SKELETON",
+  "native_authority_rule": true
+}

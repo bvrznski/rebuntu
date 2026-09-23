@@ -1,0 +1,12 @@
+{
+  "source_prompt": ".phases/phases/phase-56-intent-goal-desired-state-management/prompts/56.21-rebuntu-phase-56-21-goal-freshness.md",
+  "phase_task": ".phases/phases/phase-56-intent-goal-desired-state-management/TASK.md",
+  "canonical_root": "src/semantics/intent-goal-desired-state-management",
+  "role": "requirements",
+  "implementation_header": "src/semantics/intent-goal-desired-state-management/subtask_targets/requirements/goal_freshness_7b1fcb1d.hpp",
+  "implementation_source": "src/semantics/intent-goal-desired-state-management/subtask_targets/requirements/goal_freshness_7b1fcb1d.cpp",
+  "test_target": "tests/structural-closure/semantics/intent-goal-desired-state-management/requirements/test_goal_freshness_7b1fcb1d.cpp",
+  "status": "SKELETON_MATERIALIZED",
+  "behavioral_credit": false,
+  "preservation": "PRESERVE_IMPLEMENT_EXTEND"
+}

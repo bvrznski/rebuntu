@@ -1,0 +1,12 @@
+{
+  "source_prompt": ".phases/phases/phase-42-system-knowledge-graph/prompts/42.094-graph-metrics-and-telemetry.md",
+  "phase_task": ".phases/phases/phase-42-system-knowledge-graph/TASK.md",
+  "canonical_root": "src/knowledge/system-knowledge-graph",
+  "role": "observability",
+  "implementation_header": "src/knowledge/system-knowledge-graph/subtask_targets/observability/graph_metrics_and_telemetry_1ab48206.hpp",
+  "implementation_source": "src/knowledge/system-knowledge-graph/subtask_targets/observability/graph_metrics_and_telemetry_1ab48206.cpp",
+  "test_target": "tests/structural-closure/knowledge/system-knowledge-graph/observability/test_graph_metrics_and_telemetry_1ab48206.cpp",
+  "status": "SKELETON_MATERIALIZED",
+  "behavioral_credit": false,
+  "preservation": "PRESERVE_IMPLEMENT_EXTEND"
+}

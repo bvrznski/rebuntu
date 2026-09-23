@@ -1,0 +1,13 @@
+#pragma once
+
+// XXVII SUBTASK PACKAGE SKELETON — zero behavioral maturity credit.
+// Source: .phases/phases/phase-36-configuration-management/prompts/36.2-configuration-provider-discovery.md
+// Preserve this architectural reservation and implement only after reading the source prompt.
+
+namespace rebuntu::subtask_packages::phase_36::s_3c09fdca::observability {
+struct ObservabilitySlot final {
+    static constexpr const char* source_prompt = ".phases/phases/phase-36-configuration-management/prompts/36.2-configuration-provider-discovery.md";
+    static constexpr const char* aspect = "observability";
+    static constexpr const char* status = "SKELETON_MATERIALIZED";
+};
+} // namespace rebuntu::subtask_packages::phase_36::s_3c09fdca::observability

@@ -1,0 +1,12 @@
+{
+  "source_prompt": ".phases/phases/phase-42-system-knowledge-graph/prompts/42.019-relation-lifecycle.md",
+  "phase_task": ".phases/phases/phase-42-system-knowledge-graph/TASK.md",
+  "canonical_root": "src/knowledge/system-knowledge-graph",
+  "role": "lifecycle",
+  "implementation_header": "src/knowledge/system-knowledge-graph/subtask_targets/lifecycle/relation_lifecycle_a33a0009.hpp",
+  "implementation_source": "src/knowledge/system-knowledge-graph/subtask_targets/lifecycle/relation_lifecycle_a33a0009.cpp",
+  "test_target": "tests/structural-closure/knowledge/system-knowledge-graph/lifecycle/test_relation_lifecycle_a33a0009.cpp",
+  "status": "SKELETON_MATERIALIZED",
+  "behavioral_credit": false,
+  "preservation": "PRESERVE_IMPLEMENT_EXTEND"
+}

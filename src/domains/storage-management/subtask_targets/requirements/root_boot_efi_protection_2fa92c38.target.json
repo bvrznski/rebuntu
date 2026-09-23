@@ -1,0 +1,12 @@
+{
+  "source_prompt": ".phases/phases/phase-32-storage-management/prompts/32.20-root-boot-efi-protection.md",
+  "phase_task": ".phases/phases/phase-32-storage-management/TASK.md",
+  "canonical_root": "src/domains/storage-management",
+  "role": "requirements",
+  "implementation_header": "src/domains/storage-management/subtask_targets/requirements/root_boot_efi_protection_2fa92c38.hpp",
+  "implementation_source": "src/domains/storage-management/subtask_targets/requirements/root_boot_efi_protection_2fa92c38.cpp",
+  "test_target": "tests/structural-closure/domains/storage-management/requirements/test_root_boot_efi_protection_2fa92c38.cpp",
+  "status": "SKELETON_MATERIALIZED",
+  "behavioral_credit": false,
+  "preservation": "PRESERVE_IMPLEMENT_EXTEND"
+}

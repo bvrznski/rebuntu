@@ -1,0 +1,12 @@
+{
+  "source_prompt": ".phases/phases/phase-39-system-event-timeline/prompts/39.54-timeline-integrity-corruption-handling.md",
+  "phase_task": ".phases/phases/phase-39-system-event-timeline/TASK.md",
+  "canonical_root": "src/observation/system-event-timeline",
+  "role": "requirements",
+  "implementation_header": "src/observation/system-event-timeline/subtask_targets/requirements/timeline_integrity_corruption_handling_d71d75b4.hpp",
+  "implementation_source": "src/observation/system-event-timeline/subtask_targets/requirements/timeline_integrity_corruption_handling_d71d75b4.cpp",
+  "test_target": "tests/structural-closure/observation/system-event-timeline/requirements/test_timeline_integrity_corruption_handling_d71d75b4.cpp",
+  "status": "SKELETON_MATERIALIZED",
+  "behavioral_credit": false,
+  "preservation": "PRESERVE_IMPLEMENT_EXTEND"
+}

@@ -1,0 +1,12 @@
+{
+  "source_prompt": ".phases/phases/phase-47-os-task-policy-system/prompts/47.039-system-originated-task-class.md",
+  "phase_task": ".phases/phases/phase-47-os-task-policy-system/TASK.md",
+  "canonical_root": "src/runtime/os-task-policy-system",
+  "role": "requirements",
+  "implementation_header": "src/runtime/os-task-policy-system/subtask_targets/requirements/system_originated_task_class_1818a56a.hpp",
+  "implementation_source": "src/runtime/os-task-policy-system/subtask_targets/requirements/system_originated_task_class_1818a56a.cpp",
+  "test_target": "tests/structural-closure/runtime/os-task-policy-system/requirements/test_system_originated_task_class_1818a56a.cpp",
+  "status": "SKELETON_MATERIALIZED",
+  "behavioral_credit": false,
+  "preservation": "PRESERVE_IMPLEMENT_EXTEND"
+}

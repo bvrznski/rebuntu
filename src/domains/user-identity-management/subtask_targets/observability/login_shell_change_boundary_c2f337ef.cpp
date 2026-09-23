@@ -1,0 +1,4 @@
+#include "login_shell_change_boundary_c2f337ef.hpp"
+
+// STRUCTURAL CLOSURE SLOT — intentionally behavior-free.
+// Implement prompt-derived out-of-line behavior here when applicable.

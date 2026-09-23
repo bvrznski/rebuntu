@@ -1,0 +1,12 @@
+{
+  "source_prompt": ".phases/phases/phase-51-distributed-rebuntu-system/prompts/51.570-repository-duplicate-cluster-manager-audit.md",
+  "phase_task": ".phases/phases/phase-51-distributed-rebuntu-system/TASK.md",
+  "canonical_root": "src/distributed/distributed-rebuntu-system",
+  "role": "verification",
+  "implementation_header": "src/distributed/distributed-rebuntu-system/subtask_targets/verification/repository_duplicate_cluster_manager_audit_f2784518.hpp",
+  "implementation_source": "src/distributed/distributed-rebuntu-system/subtask_targets/verification/repository_duplicate_cluster_manager_audit_f2784518.cpp",
+  "test_target": "tests/structural-closure/distributed/distributed-rebuntu-system/verification/test_repository_duplicate_cluster_manager_audit_f2784518.cpp",
+  "status": "SKELETON_MATERIALIZED",
+  "behavioral_credit": false,
+  "preservation": "PRESERVE_IMPLEMENT_EXTEND"
+}

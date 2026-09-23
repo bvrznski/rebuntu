@@ -1,0 +1,5 @@
+#include "lifecycle.hpp"
+
+// XXVII out-of-line implementation reservation for lifecycle.
+// Source: .phases/phases/phase-77-kernel-driver-hardware-evolution/prompts/77.3.md
+// Intentionally behavior-free until prompt-derived implementation is supplied.

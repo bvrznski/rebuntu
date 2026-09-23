@@ -1,0 +1,9 @@
+{
+  "component": "secrets-credentials-management",
+  "canonical_root": "security",
+  "phase_tasks": [
+    ".phases/phases/phase-37-secrets-credentials-management/TASK.md"
+  ],
+  "status": "SKELETON",
+  "native_authority_rule": true
+}

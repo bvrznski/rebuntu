@@ -1,0 +1,12 @@
+{
+  "source_prompt": ".phases/phases/phase-35-package-software-management/prompts/35.38-service-impact-integration.md",
+  "phase_task": ".phases/phases/phase-35-package-software-management/TASK.md",
+  "canonical_root": "src/domains/package-software-management",
+  "role": "integration",
+  "implementation_header": "src/domains/package-software-management/subtask_targets/integration/service_impact_integration_1203169f.hpp",
+  "implementation_source": "src/domains/package-software-management/subtask_targets/integration/service_impact_integration_1203169f.cpp",
+  "test_target": "tests/structural-closure/domains/package-software-management/integration/test_service_impact_integration_1203169f.cpp",
+  "status": "SKELETON_MATERIALIZED",
+  "behavioral_credit": false,
+  "preservation": "PRESERVE_IMPLEMENT_EXTEND"
+}

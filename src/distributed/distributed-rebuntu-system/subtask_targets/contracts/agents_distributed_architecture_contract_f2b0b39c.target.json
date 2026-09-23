@@ -1,0 +1,12 @@
+{
+  "source_prompt": ".phases/phases/phase-51-distributed-rebuntu-system/prompts/51.563-agents-distributed-architecture-contract.md",
+  "phase_task": ".phases/phases/phase-51-distributed-rebuntu-system/TASK.md",
+  "canonical_root": "src/distributed/distributed-rebuntu-system",
+  "role": "contracts",
+  "implementation_header": "src/distributed/distributed-rebuntu-system/subtask_targets/contracts/agents_distributed_architecture_contract_f2b0b39c.hpp",
+  "implementation_source": "src/distributed/distributed-rebuntu-system/subtask_targets/contracts/agents_distributed_architecture_contract_f2b0b39c.cpp",
+  "test_target": "tests/structural-closure/distributed/distributed-rebuntu-system/contracts/test_agents_distributed_architecture_contract_f2b0b39c.cpp",
+  "status": "SKELETON_MATERIALIZED",
+  "behavioral_credit": false,
+  "preservation": "PRESERVE_IMPLEMENT_EXTEND"
+}

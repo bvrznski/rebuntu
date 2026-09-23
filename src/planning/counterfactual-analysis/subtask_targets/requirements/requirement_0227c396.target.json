@@ -1,0 +1,12 @@
+{
+  "source_prompt": ".phases/phases/phase-88-counterfactual-analysis/prompts/88.8.md",
+  "phase_task": ".phases/phases/phase-88-counterfactual-analysis/TASK.md",
+  "canonical_root": "src/planning/counterfactual-analysis",
+  "role": "requirements",
+  "implementation_header": "src/planning/counterfactual-analysis/subtask_targets/requirements/requirement_0227c396.hpp",
+  "implementation_source": "src/planning/counterfactual-analysis/subtask_targets/requirements/requirement_0227c396.cpp",
+  "test_target": "tests/structural-closure/planning/counterfactual-analysis/requirements/test_requirement_0227c396.cpp",
+  "status": "SKELETON_MATERIALIZED",
+  "behavioral_credit": false,
+  "preservation": "PRESERVE_IMPLEMENT_EXTEND"
+}

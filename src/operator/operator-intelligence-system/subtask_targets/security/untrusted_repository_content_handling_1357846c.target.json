@@ -1,0 +1,12 @@
+{
+  "source_prompt": ".phases/phases/phase-43-operator-intelligence-system/prompts/43.187-untrusted-repository-content-handling.md",
+  "phase_task": ".phases/phases/phase-43-operator-intelligence-system/TASK.md",
+  "canonical_root": "src/operator/operator-intelligence-system",
+  "role": "security",
+  "implementation_header": "src/operator/operator-intelligence-system/subtask_targets/security/untrusted_repository_content_handling_1357846c.hpp",
+  "implementation_source": "src/operator/operator-intelligence-system/subtask_targets/security/untrusted_repository_content_handling_1357846c.cpp",
+  "test_target": "tests/structural-closure/operator/operator-intelligence-system/security/test_untrusted_repository_content_handling_1357846c.cpp",
+  "status": "SKELETON_MATERIALIZED",
+  "behavioral_credit": false,
+  "preservation": "PRESERVE_IMPLEMENT_EXTEND"
+}

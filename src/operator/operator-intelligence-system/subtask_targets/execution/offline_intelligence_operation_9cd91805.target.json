@@ -1,0 +1,12 @@
+{
+  "source_prompt": ".phases/phases/phase-43-operator-intelligence-system/prompts/43.161-offline-intelligence-operation.md",
+  "phase_task": ".phases/phases/phase-43-operator-intelligence-system/TASK.md",
+  "canonical_root": "src/operator/operator-intelligence-system",
+  "role": "execution",
+  "implementation_header": "src/operator/operator-intelligence-system/subtask_targets/execution/offline_intelligence_operation_9cd91805.hpp",
+  "implementation_source": "src/operator/operator-intelligence-system/subtask_targets/execution/offline_intelligence_operation_9cd91805.cpp",
+  "test_target": "tests/structural-closure/operator/operator-intelligence-system/execution/test_offline_intelligence_operation_9cd91805.cpp",
+  "status": "SKELETON_MATERIALIZED",
+  "behavioral_credit": false,
+  "preservation": "PRESERVE_IMPLEMENT_EXTEND"
+}

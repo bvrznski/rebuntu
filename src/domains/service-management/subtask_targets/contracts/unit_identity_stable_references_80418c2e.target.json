@@ -1,0 +1,12 @@
+{
+  "source_prompt": ".phases/phases/phase-31-service-management/prompts/31.5-unit-identity-stable-references.md",
+  "phase_task": ".phases/phases/phase-31-service-management/TASK.md",
+  "canonical_root": "src/domains/service-management",
+  "role": "contracts",
+  "implementation_header": "src/domains/service-management/subtask_targets/contracts/unit_identity_stable_references_80418c2e.hpp",
+  "implementation_source": "src/domains/service-management/subtask_targets/contracts/unit_identity_stable_references_80418c2e.cpp",
+  "test_target": "tests/structural-closure/domains/service-management/contracts/test_unit_identity_stable_references_80418c2e.cpp",
+  "status": "SKELETON_MATERIALIZED",
+  "behavioral_credit": false,
+  "preservation": "PRESERVE_IMPLEMENT_EXTEND"
+}

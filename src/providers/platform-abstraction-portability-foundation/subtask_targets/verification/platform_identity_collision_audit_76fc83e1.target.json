@@ -1,0 +1,12 @@
+{
+  "source_prompt": ".phases/phases/phase-50-platform-abstraction-portability-foundation/prompts/50.184-platform-identity-collision-audit.md",
+  "phase_task": ".phases/phases/phase-50-platform-abstraction-portability-foundation/TASK.md",
+  "canonical_root": "src/providers/platform-abstraction-portability-foundation",
+  "role": "verification",
+  "implementation_header": "src/providers/platform-abstraction-portability-foundation/subtask_targets/verification/platform_identity_collision_audit_76fc83e1.hpp",
+  "implementation_source": "src/providers/platform-abstraction-portability-foundation/subtask_targets/verification/platform_identity_collision_audit_76fc83e1.cpp",
+  "test_target": "tests/structural-closure/providers/platform-abstraction-portability-foundation/verification/test_platform_identity_collision_audit_76fc83e1.cpp",
+  "status": "SKELETON_MATERIALIZED",
+  "behavioral_credit": false,
+  "preservation": "PRESERVE_IMPLEMENT_EXTEND"
+}

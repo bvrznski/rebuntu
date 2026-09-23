@@ -1,0 +1,12 @@
+{
+  "source_prompt": ".phases/phases/phase-08-privilege-boundary-secure-execution/prompts/8.30_polkit_subject_binding.md",
+  "phase_task": ".phases/phases/phase-08-privilege-boundary-secure-execution/TASK.md",
+  "canonical_root": "src/security/privilege-boundary-secure-execution",
+  "role": "requirements",
+  "implementation_header": "src/security/privilege-boundary-secure-execution/subtask_targets/requirements/polkit_subject_binding_1cb19eef.hpp",
+  "implementation_source": "src/security/privilege-boundary-secure-execution/subtask_targets/requirements/polkit_subject_binding_1cb19eef.cpp",
+  "test_target": "tests/structural-closure/security/privilege-boundary-secure-execution/requirements/test_polkit_subject_binding_1cb19eef.cpp",
+  "status": "SKELETON_MATERIALIZED",
+  "behavioral_credit": false,
+  "preservation": "PRESERVE_IMPLEMENT_EXTEND"
+}

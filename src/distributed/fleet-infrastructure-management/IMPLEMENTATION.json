@@ -1,0 +1,9 @@
+{
+  "component": "fleet-infrastructure-management",
+  "canonical_root": "distributed",
+  "phase_tasks": [
+    ".phases/phases/phase-85-fleet-infrastructure-management/TASK.md"
+  ],
+  "status": "SKELETON",
+  "native_authority_rule": true
+}

@@ -1,0 +1,12 @@
+{
+  "source_prompt": ".phases/phases/phase-48-os-task-context-awareness-system/prompts/48.031-phase-43-intelligence-integration.md",
+  "phase_task": ".phases/phases/phase-48-os-task-context-awareness-system/TASK.md",
+  "canonical_root": "src/semantics/os-task-context-awareness-system",
+  "role": "integration",
+  "implementation_header": "src/semantics/os-task-context-awareness-system/subtask_targets/integration/intelligence_integration_6ec2ff05.hpp",
+  "implementation_source": "src/semantics/os-task-context-awareness-system/subtask_targets/integration/intelligence_integration_6ec2ff05.cpp",
+  "test_target": "tests/structural-closure/semantics/os-task-context-awareness-system/integration/test_intelligence_integration_6ec2ff05.cpp",
+  "status": "SKELETON_MATERIALIZED",
+  "behavioral_credit": false,
+  "preservation": "PRESERVE_IMPLEMENT_EXTEND"
+}

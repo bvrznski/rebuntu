@@ -1,0 +1,12 @@
+{
+  "source_prompt": ".phases/phases/phase-45-unified-control-plane/prompts/45.126-explain-plan-path.md",
+  "phase_task": ".phases/phases/phase-45-unified-control-plane/TASK.md",
+  "canonical_root": "src/runtime/unified-control-plane",
+  "role": "observability",
+  "implementation_header": "src/runtime/unified-control-plane/subtask_targets/observability/explain_plan_path_e2c32112.hpp",
+  "implementation_source": "src/runtime/unified-control-plane/subtask_targets/observability/explain_plan_path_e2c32112.cpp",
+  "test_target": "tests/structural-closure/runtime/unified-control-plane/observability/test_explain_plan_path_e2c32112.cpp",
+  "status": "SKELETON_MATERIALIZED",
+  "behavioral_credit": false,
+  "preservation": "PRESERVE_IMPLEMENT_EXTEND"
+}

@@ -1,0 +1,12 @@
+{
+  "source_prompt": ".phases/phases/phase-02-environment-foundation/prompts/2.10.md",
+  "phase_task": ".phases/phases/phase-02-environment-foundation/TASK.md",
+  "canonical_root": "src/runtime/environment-foundation",
+  "role": "requirements",
+  "implementation_header": "src/runtime/environment-foundation/subtask_targets/requirements/requirement_a14da32a.hpp",
+  "implementation_source": "src/runtime/environment-foundation/subtask_targets/requirements/requirement_a14da32a.cpp",
+  "test_target": "tests/structural-closure/runtime/environment-foundation/requirements/test_requirement_a14da32a.cpp",
+  "status": "SKELETON_MATERIALIZED",
+  "behavioral_credit": false,
+  "preservation": "PRESERVE_IMPLEMENT_EXTEND"
+}

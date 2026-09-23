@@ -1,0 +1,12 @@
+{
+  "source_prompt": ".phases/phases/phase-60-transactional-change-safe-transition/prompts/60.24-rebuntu-phase-60-24-compensation-execution-handoff.md",
+  "phase_task": ".phases/phases/phase-60-transactional-change-safe-transition/TASK.md",
+  "canonical_root": "src/control/transactional-change-safe-transition",
+  "role": "recovery",
+  "implementation_header": "src/control/transactional-change-safe-transition/subtask_targets/recovery/compensation_execution_handoff_77ac0e6f.hpp",
+  "implementation_source": "src/control/transactional-change-safe-transition/subtask_targets/recovery/compensation_execution_handoff_77ac0e6f.cpp",
+  "test_target": "tests/structural-closure/control/transactional-change-safe-transition/recovery/test_compensation_execution_handoff_77ac0e6f.cpp",
+  "status": "SKELETON_MATERIALIZED",
+  "behavioral_credit": false,
+  "preservation": "PRESERVE_IMPLEMENT_EXTEND"
+}

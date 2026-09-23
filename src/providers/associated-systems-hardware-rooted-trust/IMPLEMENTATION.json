@@ -1,0 +1,9 @@
+{
+  "component": "associated-systems-hardware-rooted-trust",
+  "canonical_root": "providers",
+  "phase_tasks": [
+    ".phases/phases/phase-52-associated-systems-hardware-rooted-trust/TASK.md"
+  ],
+  "status": "SKELETON",
+  "native_authority_rule": true
+}

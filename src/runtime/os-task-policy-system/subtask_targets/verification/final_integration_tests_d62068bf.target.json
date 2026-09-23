@@ -1,0 +1,12 @@
+{
+  "source_prompt": ".phases/phases/phase-47-os-task-policy-system/prompts/47.559-final-integration-tests.md",
+  "phase_task": ".phases/phases/phase-47-os-task-policy-system/TASK.md",
+  "canonical_root": "src/runtime/os-task-policy-system",
+  "role": "verification",
+  "implementation_header": "src/runtime/os-task-policy-system/subtask_targets/verification/final_integration_tests_d62068bf.hpp",
+  "implementation_source": "src/runtime/os-task-policy-system/subtask_targets/verification/final_integration_tests_d62068bf.cpp",
+  "test_target": "tests/structural-closure/runtime/os-task-policy-system/verification/test_final_integration_tests_d62068bf.cpp",
+  "status": "SKELETON_MATERIALIZED",
+  "behavioral_credit": false,
+  "preservation": "PRESERVE_IMPLEMENT_EXTEND"
+}

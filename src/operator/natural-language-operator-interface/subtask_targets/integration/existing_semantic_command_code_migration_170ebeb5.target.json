@@ -1,0 +1,12 @@
+{
+  "source_prompt": ".phases/phases/phase-46-natural-language-operator-interface/prompts/46.429-existing-semantic-command-code-migration.md",
+  "phase_task": ".phases/phases/phase-46-natural-language-operator-interface/TASK.md",
+  "canonical_root": "src/operator/natural-language-operator-interface",
+  "role": "integration",
+  "implementation_header": "src/operator/natural-language-operator-interface/subtask_targets/integration/existing_semantic_command_code_migration_170ebeb5.hpp",
+  "implementation_source": "src/operator/natural-language-operator-interface/subtask_targets/integration/existing_semantic_command_code_migration_170ebeb5.cpp",
+  "test_target": "tests/structural-closure/operator/natural-language-operator-interface/integration/test_existing_semantic_command_code_migration_170ebeb5.cpp",
+  "status": "SKELETON_MATERIALIZED",
+  "behavioral_credit": false,
+  "preservation": "PRESERVE_IMPLEMENT_EXTEND"
+}

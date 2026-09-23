@@ -1,0 +1,12 @@
+{
+  "source_prompt": ".phases/phases/phase-49-gui/prompts/49.184-graph-path-explanation.md",
+  "phase_task": ".phases/phases/phase-49-gui/TASK.md",
+  "canonical_root": "src/operator/gui",
+  "role": "planning",
+  "implementation_header": "src/operator/gui/subtask_targets/planning/graph_path_explanation_6f41ac0e.hpp",
+  "implementation_source": "src/operator/gui/subtask_targets/planning/graph_path_explanation_6f41ac0e.cpp",
+  "test_target": "tests/structural-closure/operator/gui/planning/test_graph_path_explanation_6f41ac0e.cpp",
+  "status": "SKELETON_MATERIALIZED",
+  "behavioral_credit": false,
+  "preservation": "PRESERVE_IMPLEMENT_EXTEND"
+}

@@ -1,0 +1,10 @@
+{
+  "component": "intent-goal-desired-state-management",
+  "canonical_root": "semantics",
+  "phase_tasks": [
+    ".phases/phases/phase-56-intent-goal-desired-state-management/TASK.md",
+    ".phases/phases/phase-62-intent-goal-desired-state-management/TASK.md"
+  ],
+  "status": "SKELETON",
+  "native_authority_rule": true
+}

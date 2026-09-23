@@ -1,0 +1,12 @@
+{
+  "source_prompt": ".phases/phases/phase-06-native-command-operation-execution/prompts/6.24_retry_mechanics_integration.md",
+  "phase_task": ".phases/phases/phase-06-native-command-operation-execution/TASK.md",
+  "canonical_root": "src/runtime/native-command-operation-execution",
+  "role": "integration",
+  "implementation_header": "src/runtime/native-command-operation-execution/subtask_targets/integration/retry_mechanics_integration_6ab2bcd2.hpp",
+  "implementation_source": "src/runtime/native-command-operation-execution/subtask_targets/integration/retry_mechanics_integration_6ab2bcd2.cpp",
+  "test_target": "tests/structural-closure/runtime/native-command-operation-execution/integration/test_retry_mechanics_integration_6ab2bcd2.cpp",
+  "status": "SKELETON_MATERIALIZED",
+  "behavioral_credit": false,
+  "preservation": "PRESERVE_IMPLEMENT_EXTEND"
+}

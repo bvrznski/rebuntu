@@ -1,0 +1,12 @@
+{
+  "source_prompt": ".phases/phases/phase-43-operator-intelligence-system/prompts/43.196-cross-phase-end-to-end-incident-scenario.md",
+  "phase_task": ".phases/phases/phase-43-operator-intelligence-system/TASK.md",
+  "canonical_root": "src/operator/operator-intelligence-system",
+  "role": "requirements",
+  "implementation_header": "src/operator/operator-intelligence-system/subtask_targets/requirements/cross_phase_end_to_end_incident_scenario_3cc84015.hpp",
+  "implementation_source": "src/operator/operator-intelligence-system/subtask_targets/requirements/cross_phase_end_to_end_incident_scenario_3cc84015.cpp",
+  "test_target": "tests/structural-closure/operator/operator-intelligence-system/requirements/test_cross_phase_end_to_end_incident_scenario_3cc84015.cpp",
+  "status": "SKELETON_MATERIALIZED",
+  "behavioral_credit": false,
+  "preservation": "PRESERVE_IMPLEMENT_EXTEND"
+}

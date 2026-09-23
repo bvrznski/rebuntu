@@ -1,0 +1,12 @@
+{
+  "source_prompt": ".phases/phases/phase-25-system-control-panel/prompts/25.16-recovery-and-rollback-center.md",
+  "phase_task": ".phases/phases/phase-25-system-control-panel/TASK.md",
+  "canonical_root": "src/operator/system-control-panel",
+  "role": "recovery",
+  "implementation_header": "src/operator/system-control-panel/subtask_targets/recovery/recovery_and_rollback_center_77aad223.hpp",
+  "implementation_source": "src/operator/system-control-panel/subtask_targets/recovery/recovery_and_rollback_center_77aad223.cpp",
+  "test_target": "tests/structural-closure/operator/system-control-panel/recovery/test_recovery_and_rollback_center_77aad223.cpp",
+  "status": "SKELETON_MATERIALIZED",
+  "behavioral_credit": false,
+  "preservation": "PRESERVE_IMPLEMENT_EXTEND"
+}

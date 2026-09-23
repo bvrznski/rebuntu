@@ -1,0 +1,9 @@
+{
+  "component": "multi-machine-resource-federation",
+  "canonical_root": "distributed",
+  "phase_tasks": [
+    ".phases/phases/phase-81-multi-machine-resource-federation/TASK.md"
+  ],
+  "status": "SKELETON",
+  "native_authority_rule": true
+}

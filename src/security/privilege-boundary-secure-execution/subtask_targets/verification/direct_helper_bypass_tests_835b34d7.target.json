@@ -1,0 +1,12 @@
+{
+  "source_prompt": ".phases/phases/phase-08-privilege-boundary-secure-execution/prompts/8.61_direct-helper_bypass_tests.md",
+  "phase_task": ".phases/phases/phase-08-privilege-boundary-secure-execution/TASK.md",
+  "canonical_root": "src/security/privilege-boundary-secure-execution",
+  "role": "verification",
+  "implementation_header": "src/security/privilege-boundary-secure-execution/subtask_targets/verification/direct_helper_bypass_tests_835b34d7.hpp",
+  "implementation_source": "src/security/privilege-boundary-secure-execution/subtask_targets/verification/direct_helper_bypass_tests_835b34d7.cpp",
+  "test_target": "tests/structural-closure/security/privilege-boundary-secure-execution/verification/test_direct_helper_bypass_tests_835b34d7.cpp",
+  "status": "SKELETON_MATERIALIZED",
+  "behavioral_credit": false,
+  "preservation": "PRESERVE_IMPLEMENT_EXTEND"
+}

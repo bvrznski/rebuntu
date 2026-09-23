@@ -1,0 +1,12 @@
+{
+  "source_prompt": ".phases/phases/phase-07-policy-authorization-safety/prompts/7.55_journald_diagnostics.md",
+  "phase_task": ".phases/phases/phase-07-policy-authorization-safety/TASK.md",
+  "canonical_root": "src/security/policy-authorization-safety",
+  "role": "observability",
+  "implementation_header": "src/security/policy-authorization-safety/subtask_targets/observability/journald_diagnostics_65d5ad9c.hpp",
+  "implementation_source": "src/security/policy-authorization-safety/subtask_targets/observability/journald_diagnostics_65d5ad9c.cpp",
+  "test_target": "tests/structural-closure/security/policy-authorization-safety/observability/test_journald_diagnostics_65d5ad9c.cpp",
+  "status": "SKELETON_MATERIALIZED",
+  "behavioral_credit": false,
+  "preservation": "PRESERVE_IMPLEMENT_EXTEND"
+}

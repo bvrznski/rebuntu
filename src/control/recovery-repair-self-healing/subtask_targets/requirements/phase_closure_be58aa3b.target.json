@@ -1,0 +1,12 @@
+{
+  "source_prompt": ".phases/phases/phase-61-recovery-repair-self-healing/prompts/61.51-rebuntu-phase-61-51-phase-closure.md",
+  "phase_task": ".phases/phases/phase-61-recovery-repair-self-healing/TASK.md",
+  "canonical_root": "src/control/recovery-repair-self-healing",
+  "role": "requirements",
+  "implementation_header": "src/control/recovery-repair-self-healing/subtask_targets/requirements/phase_closure_be58aa3b.hpp",
+  "implementation_source": "src/control/recovery-repair-self-healing/subtask_targets/requirements/phase_closure_be58aa3b.cpp",
+  "test_target": "tests/structural-closure/control/recovery-repair-self-healing/requirements/test_phase_closure_be58aa3b.cpp",
+  "status": "SKELETON_MATERIALIZED",
+  "behavioral_credit": false,
+  "preservation": "PRESERVE_IMPLEMENT_EXTEND"
+}

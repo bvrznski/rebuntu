@@ -1,0 +1,12 @@
+{
+  "source_prompt": ".phases/phases/phase-19-reconciliation/prompts/19.10.md",
+  "phase_task": ".phases/phases/phase-19-reconciliation/TASK.md",
+  "canonical_root": "src/control/reconciliation",
+  "role": "requirements",
+  "implementation_header": "src/control/reconciliation/subtask_targets/requirements/requirement_efbb1bce.hpp",
+  "implementation_source": "src/control/reconciliation/subtask_targets/requirements/requirement_efbb1bce.cpp",
+  "test_target": "tests/structural-closure/control/reconciliation/requirements/test_requirement_efbb1bce.cpp",
+  "status": "SKELETON_MATERIALIZED",
+  "behavioral_credit": false,
+  "preservation": "PRESERVE_IMPLEMENT_EXTEND"
+}

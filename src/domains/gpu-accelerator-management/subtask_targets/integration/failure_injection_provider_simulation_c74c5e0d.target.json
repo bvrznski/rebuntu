@@ -1,0 +1,12 @@
+{
+  "source_prompt": ".phases/phases/phase-34-gpu-accelerator-management/prompts/34.54-failure-injection-provider-simulation.md",
+  "phase_task": ".phases/phases/phase-34-gpu-accelerator-management/TASK.md",
+  "canonical_root": "src/domains/gpu-accelerator-management",
+  "role": "integration",
+  "implementation_header": "src/domains/gpu-accelerator-management/subtask_targets/integration/failure_injection_provider_simulation_c74c5e0d.hpp",
+  "implementation_source": "src/domains/gpu-accelerator-management/subtask_targets/integration/failure_injection_provider_simulation_c74c5e0d.cpp",
+  "test_target": "tests/structural-closure/domains/gpu-accelerator-management/integration/test_failure_injection_provider_simulation_c74c5e0d.cpp",
+  "status": "SKELETON_MATERIALIZED",
+  "behavioral_credit": false,
+  "preservation": "PRESERVE_IMPLEMENT_EXTEND"
+}

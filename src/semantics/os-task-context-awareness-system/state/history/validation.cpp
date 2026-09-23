@@ -1,0 +1,6 @@
+#include "semantics/os-task-context-awareness-system/state/history/validation.hpp"
+
+// Structural translation-unit slot only. No maturity credit.
+namespace rebuntu::structural_slots {
+static_assert(Skeleton_10432c34f1_Validation::structural_revision == 25);
+}

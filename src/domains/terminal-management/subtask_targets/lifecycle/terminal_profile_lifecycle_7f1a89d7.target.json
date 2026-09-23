@@ -1,0 +1,12 @@
+{
+  "source_prompt": ".phases/phases/phase-27-terminal-management/prompts/27.5-terminal-profile-lifecycle.md",
+  "phase_task": ".phases/phases/phase-27-terminal-management/TASK.md",
+  "canonical_root": "src/domains/terminal-management",
+  "role": "lifecycle",
+  "implementation_header": "src/domains/terminal-management/subtask_targets/lifecycle/terminal_profile_lifecycle_7f1a89d7.hpp",
+  "implementation_source": "src/domains/terminal-management/subtask_targets/lifecycle/terminal_profile_lifecycle_7f1a89d7.cpp",
+  "test_target": "tests/structural-closure/domains/terminal-management/lifecycle/test_terminal_profile_lifecycle_7f1a89d7.cpp",
+  "status": "SKELETON_MATERIALIZED",
+  "behavioral_credit": false,
+  "preservation": "PRESERVE_IMPLEMENT_EXTEND"
+}

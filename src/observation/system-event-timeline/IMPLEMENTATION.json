@@ -1,0 +1,9 @@
+{
+  "component": "system-event-timeline",
+  "canonical_root": "observation",
+  "phase_tasks": [
+    ".phases/phases/phase-39-system-event-timeline/TASK.md"
+  ],
+  "status": "SKELETON",
+  "native_authority_rule": true
+}

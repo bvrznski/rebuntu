@@ -1,0 +1,12 @@
+{
+  "source_prompt": ".phases/phases/phase-32-storage-management/prompts/32.28-removable-hotplug-storage.md",
+  "phase_task": ".phases/phases/phase-32-storage-management/TASK.md",
+  "canonical_root": "src/domains/storage-management",
+  "role": "requirements",
+  "implementation_header": "src/domains/storage-management/subtask_targets/requirements/removable_hotplug_storage_c9c81a37.hpp",
+  "implementation_source": "src/domains/storage-management/subtask_targets/requirements/removable_hotplug_storage_c9c81a37.cpp",
+  "test_target": "tests/structural-closure/domains/storage-management/requirements/test_removable_hotplug_storage_c9c81a37.cpp",
+  "status": "SKELETON_MATERIALIZED",
+  "behavioral_credit": false,
+  "preservation": "PRESERVE_IMPLEMENT_EXTEND"
+}

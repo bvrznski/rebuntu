@@ -1,0 +1,12 @@
+{
+  "source_prompt": ".phases/phases/phase-52-associated-systems-hardware-rooted-trust/prompts/52.486-backup-restore-recovery.md",
+  "phase_task": ".phases/phases/phase-52-associated-systems-hardware-rooted-trust/TASK.md",
+  "canonical_root": "src/providers/associated-systems-hardware-rooted-trust",
+  "role": "recovery",
+  "implementation_header": "src/providers/associated-systems-hardware-rooted-trust/subtask_targets/recovery/backup_restore_recovery_0b8c66b7.hpp",
+  "implementation_source": "src/providers/associated-systems-hardware-rooted-trust/subtask_targets/recovery/backup_restore_recovery_0b8c66b7.cpp",
+  "test_target": "tests/structural-closure/providers/associated-systems-hardware-rooted-trust/recovery/test_backup_restore_recovery_0b8c66b7.cpp",
+  "status": "SKELETON_MATERIALIZED",
+  "behavioral_credit": false,
+  "preservation": "PRESERVE_IMPLEMENT_EXTEND"
+}

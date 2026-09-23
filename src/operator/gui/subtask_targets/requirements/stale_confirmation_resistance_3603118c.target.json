@@ -1,0 +1,12 @@
+{
+  "source_prompt": ".phases/phases/phase-49-gui/prompts/49.401-stale-confirmation-resistance.md",
+  "phase_task": ".phases/phases/phase-49-gui/TASK.md",
+  "canonical_root": "src/operator/gui",
+  "role": "requirements",
+  "implementation_header": "src/operator/gui/subtask_targets/requirements/stale_confirmation_resistance_3603118c.hpp",
+  "implementation_source": "src/operator/gui/subtask_targets/requirements/stale_confirmation_resistance_3603118c.cpp",
+  "test_target": "tests/structural-closure/operator/gui/requirements/test_stale_confirmation_resistance_3603118c.cpp",
+  "status": "SKELETON_MATERIALIZED",
+  "behavioral_credit": false,
+  "preservation": "PRESERVE_IMPLEMENT_EXTEND"
+}

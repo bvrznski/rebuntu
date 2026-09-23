@@ -1,0 +1,12 @@
+{
+  "source_prompt": ".phases/phases/phase-91-uncertainty-evidence-reasoning/prompts/91.15.md",
+  "phase_task": ".phases/phases/phase-91-uncertainty-evidence-reasoning/TASK.md",
+  "canonical_root": "src/knowledge/uncertainty-evidence-reasoning",
+  "role": "requirements",
+  "implementation_header": "src/knowledge/uncertainty-evidence-reasoning/subtask_targets/requirements/requirement_7b33fd56.hpp",
+  "implementation_source": "src/knowledge/uncertainty-evidence-reasoning/subtask_targets/requirements/requirement_7b33fd56.cpp",
+  "test_target": "tests/structural-closure/knowledge/uncertainty-evidence-reasoning/requirements/test_requirement_7b33fd56.cpp",
+  "status": "SKELETON_MATERIALIZED",
+  "behavioral_credit": false,
+  "preservation": "PRESERVE_IMPLEMENT_EXTEND"
+}

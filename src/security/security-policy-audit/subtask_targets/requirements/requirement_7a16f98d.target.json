@@ -1,0 +1,12 @@
+{
+  "source_prompt": ".phases/phases/phase-13-security-policy-audit/prompts/13.2.md",
+  "phase_task": ".phases/phases/phase-13-security-policy-audit/TASK.md",
+  "canonical_root": "src/security/security-policy-audit",
+  "role": "requirements",
+  "implementation_header": "src/security/security-policy-audit/subtask_targets/requirements/requirement_7a16f98d.hpp",
+  "implementation_source": "src/security/security-policy-audit/subtask_targets/requirements/requirement_7a16f98d.cpp",
+  "test_target": "tests/structural-closure/security/security-policy-audit/requirements/test_requirement_7a16f98d.cpp",
+  "status": "SKELETON_MATERIALIZED",
+  "behavioral_credit": false,
+  "preservation": "PRESERVE_IMPLEMENT_EXTEND"
+}

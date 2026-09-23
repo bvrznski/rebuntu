@@ -1,0 +1,12 @@
+{
+  "source_prompt": ".phases/phases/phase-29-process-workload-management/prompts/29.8-process-command-executable-provenance.md",
+  "phase_task": ".phases/phases/phase-29-process-workload-management/TASK.md",
+  "canonical_root": "src/domains/process-workload-management",
+  "role": "execution",
+  "implementation_header": "src/domains/process-workload-management/subtask_targets/execution/process_command_executable_provenance_038d6019.hpp",
+  "implementation_source": "src/domains/process-workload-management/subtask_targets/execution/process_command_executable_provenance_038d6019.cpp",
+  "test_target": "tests/structural-closure/domains/process-workload-management/execution/test_process_command_executable_provenance_038d6019.cpp",
+  "status": "SKELETON_MATERIALIZED",
+  "behavioral_credit": false,
+  "preservation": "PRESERVE_IMPLEMENT_EXTEND"
+}

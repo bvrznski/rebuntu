@@ -1,0 +1,12 @@
+{
+  "source_prompt": ".phases/phases/phase-49-gui/prompts/49.461-rebuntu-gui-command.md",
+  "phase_task": ".phases/phases/phase-49-gui/TASK.md",
+  "canonical_root": "src/operator/gui",
+  "role": "execution",
+  "implementation_header": "src/operator/gui/subtask_targets/execution/rebuntu_gui_command_c6349b79.hpp",
+  "implementation_source": "src/operator/gui/subtask_targets/execution/rebuntu_gui_command_c6349b79.cpp",
+  "test_target": "tests/structural-closure/operator/gui/execution/test_rebuntu_gui_command_c6349b79.cpp",
+  "status": "SKELETON_MATERIALIZED",
+  "behavioral_credit": false,
+  "preservation": "PRESERVE_IMPLEMENT_EXTEND"
+}

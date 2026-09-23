@@ -1,0 +1,12 @@
+{
+  "source_prompt": ".phases/phases/phase-44-adaptive-workstation-system/prompts/44.089-experiment-rollback.md",
+  "phase_task": ".phases/phases/phase-44-adaptive-workstation-system/TASK.md",
+  "canonical_root": "src/domains/adaptive-workstation-system",
+  "role": "recovery",
+  "implementation_header": "src/domains/adaptive-workstation-system/subtask_targets/recovery/experiment_rollback_a805c41f.hpp",
+  "implementation_source": "src/domains/adaptive-workstation-system/subtask_targets/recovery/experiment_rollback_a805c41f.cpp",
+  "test_target": "tests/structural-closure/domains/adaptive-workstation-system/recovery/test_experiment_rollback_a805c41f.cpp",
+  "status": "SKELETON_MATERIALIZED",
+  "behavioral_credit": false,
+  "preservation": "PRESERVE_IMPLEMENT_EXTEND"
+}

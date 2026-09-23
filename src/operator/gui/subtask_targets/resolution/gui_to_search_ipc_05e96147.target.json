@@ -1,0 +1,12 @@
+{
+  "source_prompt": ".phases/phases/phase-49-gui/prompts/49.350-gui-to-search-ipc.md",
+  "phase_task": ".phases/phases/phase-49-gui/TASK.md",
+  "canonical_root": "src/operator/gui",
+  "role": "resolution",
+  "implementation_header": "src/operator/gui/subtask_targets/resolution/gui_to_search_ipc_05e96147.hpp",
+  "implementation_source": "src/operator/gui/subtask_targets/resolution/gui_to_search_ipc_05e96147.cpp",
+  "test_target": "tests/structural-closure/operator/gui/resolution/test_gui_to_search_ipc_05e96147.cpp",
+  "status": "SKELETON_MATERIALIZED",
+  "behavioral_credit": false,
+  "preservation": "PRESERVE_IMPLEMENT_EXTEND"
+}

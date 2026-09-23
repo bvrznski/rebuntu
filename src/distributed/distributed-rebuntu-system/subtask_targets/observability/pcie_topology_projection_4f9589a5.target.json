@@ -1,0 +1,12 @@
+{
+  "source_prompt": ".phases/phases/phase-51-distributed-rebuntu-system/prompts/51.131-pcie-topology-projection.md",
+  "phase_task": ".phases/phases/phase-51-distributed-rebuntu-system/TASK.md",
+  "canonical_root": "src/distributed/distributed-rebuntu-system",
+  "role": "observability",
+  "implementation_header": "src/distributed/distributed-rebuntu-system/subtask_targets/observability/pcie_topology_projection_4f9589a5.hpp",
+  "implementation_source": "src/distributed/distributed-rebuntu-system/subtask_targets/observability/pcie_topology_projection_4f9589a5.cpp",
+  "test_target": "tests/structural-closure/distributed/distributed-rebuntu-system/observability/test_pcie_topology_projection_4f9589a5.cpp",
+  "status": "SKELETON_MATERIALIZED",
+  "behavioral_credit": false,
+  "preservation": "PRESERVE_IMPLEMENT_EXTEND"
+}

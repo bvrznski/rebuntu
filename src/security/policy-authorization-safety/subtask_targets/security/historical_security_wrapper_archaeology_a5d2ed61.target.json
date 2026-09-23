@@ -1,0 +1,12 @@
+{
+  "source_prompt": ".phases/phases/phase-07-policy-authorization-safety/prompts/7.72_historical_security-wrapper_archaeology.md",
+  "phase_task": ".phases/phases/phase-07-policy-authorization-safety/TASK.md",
+  "canonical_root": "src/security/policy-authorization-safety",
+  "role": "security",
+  "implementation_header": "src/security/policy-authorization-safety/subtask_targets/security/historical_security_wrapper_archaeology_a5d2ed61.hpp",
+  "implementation_source": "src/security/policy-authorization-safety/subtask_targets/security/historical_security_wrapper_archaeology_a5d2ed61.cpp",
+  "test_target": "tests/structural-closure/security/policy-authorization-safety/security/test_historical_security_wrapper_archaeology_a5d2ed61.cpp",
+  "status": "SKELETON_MATERIALIZED",
+  "behavioral_credit": false,
+  "preservation": "PRESERVE_IMPLEMENT_EXTEND"
+}

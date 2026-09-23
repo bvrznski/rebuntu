@@ -1,0 +1,12 @@
+{
+  "source_prompt": ".phases/phases/phase-35-package-software-management/prompts/35.19-package-configuration-state.md",
+  "phase_task": ".phases/phases/phase-35-package-software-management/TASK.md",
+  "canonical_root": "src/domains/package-software-management",
+  "role": "lifecycle",
+  "implementation_header": "src/domains/package-software-management/subtask_targets/lifecycle/package_configuration_state_961f58f8.hpp",
+  "implementation_source": "src/domains/package-software-management/subtask_targets/lifecycle/package_configuration_state_961f58f8.cpp",
+  "test_target": "tests/structural-closure/domains/package-software-management/lifecycle/test_package_configuration_state_961f58f8.cpp",
+  "status": "SKELETON_MATERIALIZED",
+  "behavioral_credit": false,
+  "preservation": "PRESERVE_IMPLEMENT_EXTEND"
+}

@@ -1,0 +1,12 @@
+{
+  "source_prompt": ".phases/phases/phase-49-gui/prompts/49.175-scheduled-automation-view.md",
+  "phase_task": ".phases/phases/phase-49-gui/TASK.md",
+  "canonical_root": "src/operator/gui",
+  "role": "planning",
+  "implementation_header": "src/operator/gui/subtask_targets/planning/scheduled_automation_view_e2dbb8b9.hpp",
+  "implementation_source": "src/operator/gui/subtask_targets/planning/scheduled_automation_view_e2dbb8b9.cpp",
+  "test_target": "tests/structural-closure/operator/gui/planning/test_scheduled_automation_view_e2dbb8b9.cpp",
+  "status": "SKELETON_MATERIALIZED",
+  "behavioral_credit": false,
+  "preservation": "PRESERVE_IMPLEMENT_EXTEND"
+}

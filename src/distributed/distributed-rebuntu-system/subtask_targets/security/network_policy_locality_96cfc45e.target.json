@@ -1,0 +1,12 @@
+{
+  "source_prompt": ".phases/phases/phase-51-distributed-rebuntu-system/prompts/51.197-network-policy-locality.md",
+  "phase_task": ".phases/phases/phase-51-distributed-rebuntu-system/TASK.md",
+  "canonical_root": "src/distributed/distributed-rebuntu-system",
+  "role": "security",
+  "implementation_header": "src/distributed/distributed-rebuntu-system/subtask_targets/security/network_policy_locality_96cfc45e.hpp",
+  "implementation_source": "src/distributed/distributed-rebuntu-system/subtask_targets/security/network_policy_locality_96cfc45e.cpp",
+  "test_target": "tests/structural-closure/distributed/distributed-rebuntu-system/security/test_network_policy_locality_96cfc45e.cpp",
+  "status": "SKELETON_MATERIALIZED",
+  "behavioral_credit": false,
+  "preservation": "PRESERVE_IMPLEMENT_EXTEND"
+}

@@ -1,0 +1,6 @@
+#include "automation/autonomy-budget-delegation/authorization/enforcement/lifecycle.hpp"
+
+// Structural translation-unit slot only. No maturity credit.
+namespace rebuntu::structural_slots {
+static_assert(Skeleton_ea07cc1189_Lifecycle::structural_revision == 25);
+}

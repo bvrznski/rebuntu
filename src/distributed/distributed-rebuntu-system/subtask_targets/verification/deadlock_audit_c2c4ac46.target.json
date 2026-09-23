@@ -1,0 +1,12 @@
+{
+  "source_prompt": ".phases/phases/phase-51-distributed-rebuntu-system/prompts/51.428-deadlock-audit.md",
+  "phase_task": ".phases/phases/phase-51-distributed-rebuntu-system/TASK.md",
+  "canonical_root": "src/distributed/distributed-rebuntu-system",
+  "role": "verification",
+  "implementation_header": "src/distributed/distributed-rebuntu-system/subtask_targets/verification/deadlock_audit_c2c4ac46.hpp",
+  "implementation_source": "src/distributed/distributed-rebuntu-system/subtask_targets/verification/deadlock_audit_c2c4ac46.cpp",
+  "test_target": "tests/structural-closure/distributed/distributed-rebuntu-system/verification/test_deadlock_audit_c2c4ac46.cpp",
+  "status": "SKELETON_MATERIALIZED",
+  "behavioral_credit": false,
+  "preservation": "PRESERVE_IMPLEMENT_EXTEND"
+}

@@ -1,0 +1,12 @@
+{
+  "source_prompt": ".phases/phases/phase-27-terminal-management/prompts/27.13-verified-glyph-compatibility-policy.md",
+  "phase_task": ".phases/phases/phase-27-terminal-management/TASK.md",
+  "canonical_root": "src/domains/terminal-management",
+  "role": "security",
+  "implementation_header": "src/domains/terminal-management/subtask_targets/security/verified_glyph_compatibility_policy_6e598e31.hpp",
+  "implementation_source": "src/domains/terminal-management/subtask_targets/security/verified_glyph_compatibility_policy_6e598e31.cpp",
+  "test_target": "tests/structural-closure/domains/terminal-management/security/test_verified_glyph_compatibility_policy_6e598e31.cpp",
+  "status": "SKELETON_MATERIALIZED",
+  "behavioral_credit": false,
+  "preservation": "PRESERVE_IMPLEMENT_EXTEND"
+}

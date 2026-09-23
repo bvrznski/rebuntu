@@ -1,0 +1,41 @@
+{
+  "source_prompt": ".phases/phases/phase-25-system-control-panel/prompts/25.18-execution-progress,-verification-and-audit-trail.md",
+  "phase_task": ".phases/phases/phase-25-system-control-panel/TASK.md",
+  "package_root": "src/operator/system-control-panel/subtask_packages/verification/execution_progress_verification_and_audit_trail_643ec7f5",
+  "role": "verification",
+  "aspects": [
+    "contract",
+    "model",
+    "state",
+    "errors",
+    "evidence",
+    "verification",
+    "integration",
+    "execution",
+    "recovery",
+    "policy",
+    "observability"
+  ],
+  "files": [
+    "src/operator/system-control-panel/subtask_packages/verification/execution_progress_verification_and_audit_trail_643ec7f5/contract.hpp",
+    "src/operator/system-control-panel/subtask_packages/verification/execution_progress_verification_and_audit_trail_643ec7f5/model.hpp",
+    "src/operator/system-control-panel/subtask_packages/verification/execution_progress_verification_and_audit_trail_643ec7f5/state.hpp",
+    "src/operator/system-control-panel/subtask_packages/verification/execution_progress_verification_and_audit_trail_643ec7f5/errors.hpp",
+    "src/operator/system-control-panel/subtask_packages/verification/execution_progress_verification_and_audit_trail_643ec7f5/evidence.hpp",
+    "src/operator/system-control-panel/subtask_packages/verification/execution_progress_verification_and_audit_trail_643ec7f5/verification.hpp",
+    "src/operator/system-control-panel/subtask_packages/verification/execution_progress_verification_and_audit_trail_643ec7f5/verification.cpp",
+    "src/operator/system-control-panel/subtask_packages/verification/execution_progress_verification_and_audit_trail_643ec7f5/integration.hpp",
+    "src/operator/system-control-panel/subtask_packages/verification/execution_progress_verification_and_audit_trail_643ec7f5/integration.cpp",
+    "src/operator/system-control-panel/subtask_packages/verification/execution_progress_verification_and_audit_trail_643ec7f5/execution.hpp",
+    "src/operator/system-control-panel/subtask_packages/verification/execution_progress_verification_and_audit_trail_643ec7f5/execution.cpp",
+    "src/operator/system-control-panel/subtask_packages/verification/execution_progress_verification_and_audit_trail_643ec7f5/recovery.hpp",
+    "src/operator/system-control-panel/subtask_packages/verification/execution_progress_verification_and_audit_trail_643ec7f5/recovery.cpp",
+    "src/operator/system-control-panel/subtask_packages/verification/execution_progress_verification_and_audit_trail_643ec7f5/policy.hpp",
+    "src/operator/system-control-panel/subtask_packages/verification/execution_progress_verification_and_audit_trail_643ec7f5/policy.cpp",
+    "src/operator/system-control-panel/subtask_packages/verification/execution_progress_verification_and_audit_trail_643ec7f5/observability.hpp",
+    "src/operator/system-control-panel/subtask_packages/verification/execution_progress_verification_and_audit_trail_643ec7f5/observability.cpp"
+  ],
+  "status": "SKELETON_MATERIALIZED",
+  "behavioral_credit": false,
+  "preservation": "PRESERVE_IMPLEMENT_EXTEND"
+}

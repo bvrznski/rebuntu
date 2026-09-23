@@ -1,0 +1,6 @@
+#include "domains/shell-management/policy/rules/lifecycle.hpp"
+
+// Structural translation-unit slot only. No maturity credit.
+namespace rebuntu::structural_slots {
+static_assert(Skeleton_c2aecef09a_Lifecycle::structural_revision == 25);
+}

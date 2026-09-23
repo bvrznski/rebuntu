@@ -1,0 +1,12 @@
+{
+  "source_prompt": ".phases/phases/phase-05-system-observation-inventory-discovery/prompts/5.46_cross-domain_entity_references.md",
+  "phase_task": ".phases/phases/phase-05-system-observation-inventory-discovery/TASK.md",
+  "canonical_root": "src/observation/system-observation-inventory-discovery",
+  "role": "requirements",
+  "implementation_header": "src/observation/system-observation-inventory-discovery/subtask_targets/requirements/cross_domain_entity_references_ea3981ba.hpp",
+  "implementation_source": "src/observation/system-observation-inventory-discovery/subtask_targets/requirements/cross_domain_entity_references_ea3981ba.cpp",
+  "test_target": "tests/structural-closure/observation/system-observation-inventory-discovery/requirements/test_cross_domain_entity_references_ea3981ba.cpp",
+  "status": "SKELETON_MATERIALIZED",
+  "behavioral_credit": false,
+  "preservation": "PRESERVE_IMPLEMENT_EXTEND"
+}

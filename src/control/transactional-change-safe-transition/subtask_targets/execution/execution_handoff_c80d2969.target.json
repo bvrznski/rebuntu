@@ -1,0 +1,12 @@
+{
+  "source_prompt": ".phases/phases/phase-60-transactional-change-safe-transition/prompts/60.19-rebuntu-phase-60-19-execution-handoff.md",
+  "phase_task": ".phases/phases/phase-60-transactional-change-safe-transition/TASK.md",
+  "canonical_root": "src/control/transactional-change-safe-transition",
+  "role": "execution",
+  "implementation_header": "src/control/transactional-change-safe-transition/subtask_targets/execution/execution_handoff_c80d2969.hpp",
+  "implementation_source": "src/control/transactional-change-safe-transition/subtask_targets/execution/execution_handoff_c80d2969.cpp",
+  "test_target": "tests/structural-closure/control/transactional-change-safe-transition/execution/test_execution_handoff_c80d2969.cpp",
+  "status": "SKELETON_MATERIALIZED",
+  "behavioral_credit": false,
+  "preservation": "PRESERVE_IMPLEMENT_EXTEND"
+}

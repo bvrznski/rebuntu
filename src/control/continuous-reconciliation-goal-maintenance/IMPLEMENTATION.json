@@ -1,0 +1,10 @@
+{
+  "component": "continuous-reconciliation-goal-maintenance",
+  "canonical_root": "control",
+  "phase_tasks": [
+    ".phases/phases/phase-57-continuous-reconciliation-goal-maintenance/TASK.md",
+    ".phases/phases/phase-63-continuous-reconciliation-goal-maintenance/TASK.md"
+  ],
+  "status": "SKELETON",
+  "native_authority_rule": true
+}

@@ -1,0 +1,12 @@
+{
+  "source_prompt": ".phases/phases/phase-51-distributed-rebuntu-system/prompts/51.487-single-node-degraded-operation.md",
+  "phase_task": ".phases/phases/phase-51-distributed-rebuntu-system/TASK.md",
+  "canonical_root": "src/distributed/distributed-rebuntu-system",
+  "role": "execution",
+  "implementation_header": "src/distributed/distributed-rebuntu-system/subtask_targets/execution/single_node_degraded_operation_8fbaba93.hpp",
+  "implementation_source": "src/distributed/distributed-rebuntu-system/subtask_targets/execution/single_node_degraded_operation_8fbaba93.cpp",
+  "test_target": "tests/structural-closure/distributed/distributed-rebuntu-system/execution/test_single_node_degraded_operation_8fbaba93.cpp",
+  "status": "SKELETON_MATERIALIZED",
+  "behavioral_credit": false,
+  "preservation": "PRESERVE_IMPLEMENT_EXTEND"
+}

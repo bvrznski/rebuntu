@@ -1,0 +1,12 @@
+{
+  "source_prompt": ".phases/phases/phase-67-recovery-repair-self-healing/prompts/67.17.md",
+  "phase_task": ".phases/phases/phase-67-recovery-repair-self-healing/TASK.md",
+  "canonical_root": "src/control/recovery-repair-self-healing",
+  "role": "requirements",
+  "implementation_header": "src/control/recovery-repair-self-healing/subtask_targets/requirements/requirement_52568a51.hpp",
+  "implementation_source": "src/control/recovery-repair-self-healing/subtask_targets/requirements/requirement_52568a51.cpp",
+  "test_target": "tests/structural-closure/control/recovery-repair-self-healing/requirements/test_requirement_52568a51.cpp",
+  "status": "SKELETON_MATERIALIZED",
+  "behavioral_credit": false,
+  "preservation": "PRESERVE_IMPLEMENT_EXTEND"
+}

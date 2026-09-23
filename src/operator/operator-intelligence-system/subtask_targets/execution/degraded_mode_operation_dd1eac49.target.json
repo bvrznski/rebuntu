@@ -1,0 +1,12 @@
+{
+  "source_prompt": ".phases/phases/phase-43-operator-intelligence-system/prompts/43.160-degraded-mode-operation.md",
+  "phase_task": ".phases/phases/phase-43-operator-intelligence-system/TASK.md",
+  "canonical_root": "src/operator/operator-intelligence-system",
+  "role": "execution",
+  "implementation_header": "src/operator/operator-intelligence-system/subtask_targets/execution/degraded_mode_operation_dd1eac49.hpp",
+  "implementation_source": "src/operator/operator-intelligence-system/subtask_targets/execution/degraded_mode_operation_dd1eac49.cpp",
+  "test_target": "tests/structural-closure/operator/operator-intelligence-system/execution/test_degraded_mode_operation_dd1eac49.cpp",
+  "status": "SKELETON_MATERIALIZED",
+  "behavioral_credit": false,
+  "preservation": "PRESERVE_IMPLEMENT_EXTEND"
+}

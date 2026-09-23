@@ -1,0 +1,12 @@
+{
+  "source_prompt": ".phases/phases/phase-41-automation-workflow-system/prompts/41.004-strong-identifiers-and-core-types.md",
+  "phase_task": ".phases/phases/phase-41-automation-workflow-system/TASK.md",
+  "canonical_root": "src/automation/automation-workflow-system",
+  "role": "contracts",
+  "implementation_header": "src/automation/automation-workflow-system/subtask_targets/contracts/strong_identifiers_and_core_types_3cbb774d.hpp",
+  "implementation_source": "src/automation/automation-workflow-system/subtask_targets/contracts/strong_identifiers_and_core_types_3cbb774d.cpp",
+  "test_target": "tests/structural-closure/automation/automation-workflow-system/contracts/test_strong_identifiers_and_core_types_3cbb774d.cpp",
+  "status": "SKELETON_MATERIALIZED",
+  "behavioral_credit": false,
+  "preservation": "PRESERVE_IMPLEMENT_EXTEND"
+}

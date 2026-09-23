@@ -1,0 +1,5 @@
+#include "resolution.hpp"
+
+// XXVII out-of-line implementation reservation for resolution.
+// Source: .phases/phases/phase-17-semantic-administration/prompts/17.1.md
+// Intentionally behavior-free until prompt-derived implementation is supplied.

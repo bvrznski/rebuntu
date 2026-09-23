@@ -1,0 +1,12 @@
+{
+  "source_prompt": ".phases/phases/phase-52-associated-systems-hardware-rooted-trust/prompts/52.671-final-phase-50-portability-audit.md",
+  "phase_task": ".phases/phases/phase-52-associated-systems-hardware-rooted-trust/TASK.md",
+  "canonical_root": "src/providers/associated-systems-hardware-rooted-trust",
+  "role": "verification",
+  "implementation_header": "src/providers/associated-systems-hardware-rooted-trust/subtask_targets/verification/final_phase_50_portability_audit_f30367c7.hpp",
+  "implementation_source": "src/providers/associated-systems-hardware-rooted-trust/subtask_targets/verification/final_phase_50_portability_audit_f30367c7.cpp",
+  "test_target": "tests/structural-closure/providers/associated-systems-hardware-rooted-trust/verification/test_final_phase_50_portability_audit_f30367c7.cpp",
+  "status": "SKELETON_MATERIALIZED",
+  "behavioral_credit": false,
+  "preservation": "PRESERVE_IMPLEMENT_EXTEND"
+}

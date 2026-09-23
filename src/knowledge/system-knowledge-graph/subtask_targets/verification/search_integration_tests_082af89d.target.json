@@ -1,0 +1,12 @@
+{
+  "source_prompt": ".phases/phases/phase-42-system-knowledge-graph/prompts/42.108-phase-40-search-integration-tests.md",
+  "phase_task": ".phases/phases/phase-42-system-knowledge-graph/TASK.md",
+  "canonical_root": "src/knowledge/system-knowledge-graph",
+  "role": "verification",
+  "implementation_header": "src/knowledge/system-knowledge-graph/subtask_targets/verification/search_integration_tests_082af89d.hpp",
+  "implementation_source": "src/knowledge/system-knowledge-graph/subtask_targets/verification/search_integration_tests_082af89d.cpp",
+  "test_target": "tests/structural-closure/knowledge/system-knowledge-graph/verification/test_search_integration_tests_082af89d.cpp",
+  "status": "SKELETON_MATERIALIZED",
+  "behavioral_credit": false,
+  "preservation": "PRESERVE_IMPLEMENT_EXTEND"
+}

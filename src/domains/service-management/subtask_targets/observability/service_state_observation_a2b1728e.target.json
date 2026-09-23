@@ -1,0 +1,12 @@
+{
+  "source_prompt": ".phases/phases/phase-31-service-management/prompts/31.9-service-state-observation.md",
+  "phase_task": ".phases/phases/phase-31-service-management/TASK.md",
+  "canonical_root": "src/domains/service-management",
+  "role": "observability",
+  "implementation_header": "src/domains/service-management/subtask_targets/observability/service_state_observation_a2b1728e.hpp",
+  "implementation_source": "src/domains/service-management/subtask_targets/observability/service_state_observation_a2b1728e.cpp",
+  "test_target": "tests/structural-closure/domains/service-management/observability/test_service_state_observation_a2b1728e.cpp",
+  "status": "SKELETON_MATERIALIZED",
+  "behavioral_credit": false,
+  "preservation": "PRESERVE_IMPLEMENT_EXTEND"
+}

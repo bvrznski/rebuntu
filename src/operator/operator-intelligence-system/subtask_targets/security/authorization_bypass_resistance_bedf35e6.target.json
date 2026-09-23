@@ -1,0 +1,12 @@
+{
+  "source_prompt": ".phases/phases/phase-43-operator-intelligence-system/prompts/43.189-authorization-bypass-resistance.md",
+  "phase_task": ".phases/phases/phase-43-operator-intelligence-system/TASK.md",
+  "canonical_root": "src/operator/operator-intelligence-system",
+  "role": "security",
+  "implementation_header": "src/operator/operator-intelligence-system/subtask_targets/security/authorization_bypass_resistance_bedf35e6.hpp",
+  "implementation_source": "src/operator/operator-intelligence-system/subtask_targets/security/authorization_bypass_resistance_bedf35e6.cpp",
+  "test_target": "tests/structural-closure/operator/operator-intelligence-system/security/test_authorization_bypass_resistance_bedf35e6.cpp",
+  "status": "SKELETON_MATERIALIZED",
+  "behavioral_credit": false,
+  "preservation": "PRESERVE_IMPLEMENT_EXTEND"
+}

@@ -1,0 +1,12 @@
+{
+  "source_prompt": ".phases/phases/phase-49-gui/prompts/49.369-no-gui-root-execution.md",
+  "phase_task": ".phases/phases/phase-49-gui/TASK.md",
+  "canonical_root": "src/operator/gui",
+  "role": "execution",
+  "implementation_header": "src/operator/gui/subtask_targets/execution/no_gui_root_execution_e301ea73.hpp",
+  "implementation_source": "src/operator/gui/subtask_targets/execution/no_gui_root_execution_e301ea73.cpp",
+  "test_target": "tests/structural-closure/operator/gui/execution/test_no_gui_root_execution_e301ea73.cpp",
+  "status": "SKELETON_MATERIALIZED",
+  "behavioral_credit": false,
+  "preservation": "PRESERVE_IMPLEMENT_EXTEND"
+}

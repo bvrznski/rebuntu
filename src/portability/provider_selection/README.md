@@ -1,0 +1,3 @@
+# provider_selection
+
+Responsibility within `portability`. This component must not become a second source of truth for a native Linux facility.

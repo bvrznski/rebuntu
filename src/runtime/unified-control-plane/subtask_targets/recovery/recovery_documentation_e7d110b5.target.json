@@ -1,0 +1,12 @@
+{
+  "source_prompt": ".phases/phases/phase-45-unified-control-plane/prompts/45.318-recovery-documentation.md",
+  "phase_task": ".phases/phases/phase-45-unified-control-plane/TASK.md",
+  "canonical_root": "src/runtime/unified-control-plane",
+  "role": "recovery",
+  "implementation_header": "src/runtime/unified-control-plane/subtask_targets/recovery/recovery_documentation_e7d110b5.hpp",
+  "implementation_source": "src/runtime/unified-control-plane/subtask_targets/recovery/recovery_documentation_e7d110b5.cpp",
+  "test_target": "tests/structural-closure/runtime/unified-control-plane/recovery/test_recovery_documentation_e7d110b5.cpp",
+  "status": "SKELETON_MATERIALIZED",
+  "behavioral_credit": false,
+  "preservation": "PRESERVE_IMPLEMENT_EXTEND"
+}

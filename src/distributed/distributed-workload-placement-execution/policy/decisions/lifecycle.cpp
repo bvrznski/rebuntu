@@ -1,0 +1,6 @@
+#include "distributed/distributed-workload-placement-execution/policy/decisions/lifecycle.hpp"
+
+// Structural translation-unit slot only. No maturity credit.
+namespace rebuntu::structural_slots {
+static_assert(Skeleton_78a1a7d621_Lifecycle::structural_revision == 25);
+}

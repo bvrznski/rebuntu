@@ -1,0 +1,12 @@
+{
+  "source_prompt": ".phases/phases/phase-42-system-knowledge-graph/prompts/42.024-persistent-graph-storage.md",
+  "phase_task": ".phases/phases/phase-42-system-knowledge-graph/TASK.md",
+  "canonical_root": "src/knowledge/system-knowledge-graph",
+  "role": "persistence",
+  "implementation_header": "src/knowledge/system-knowledge-graph/subtask_targets/persistence/persistent_graph_storage_cec59708.hpp",
+  "implementation_source": "src/knowledge/system-knowledge-graph/subtask_targets/persistence/persistent_graph_storage_cec59708.cpp",
+  "test_target": "tests/structural-closure/knowledge/system-knowledge-graph/persistence/test_persistent_graph_storage_cec59708.cpp",
+  "status": "SKELETON_MATERIALIZED",
+  "behavioral_credit": false,
+  "preservation": "PRESERVE_IMPLEMENT_EXTEND"
+}

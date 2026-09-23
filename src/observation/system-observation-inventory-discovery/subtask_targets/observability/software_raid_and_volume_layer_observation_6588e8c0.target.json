@@ -1,0 +1,12 @@
+{
+  "source_prompt": ".phases/phases/phase-05-system-observation-inventory-discovery/prompts/5.20_software_raid_and_volume_layer_observation.md",
+  "phase_task": ".phases/phases/phase-05-system-observation-inventory-discovery/TASK.md",
+  "canonical_root": "src/observation/system-observation-inventory-discovery",
+  "role": "observability",
+  "implementation_header": "src/observation/system-observation-inventory-discovery/subtask_targets/observability/software_raid_and_volume_layer_observation_6588e8c0.hpp",
+  "implementation_source": "src/observation/system-observation-inventory-discovery/subtask_targets/observability/software_raid_and_volume_layer_observation_6588e8c0.cpp",
+  "test_target": "tests/structural-closure/observation/system-observation-inventory-discovery/observability/test_software_raid_and_volume_layer_observation_6588e8c0.cpp",
+  "status": "SKELETON_MATERIALIZED",
+  "behavioral_credit": false,
+  "preservation": "PRESERVE_IMPLEMENT_EXTEND"
+}

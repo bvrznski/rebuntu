@@ -1,0 +1,6 @@
+#include "domains/accelerators/model/serialization/validation.hpp"
+
+// Structural translation-unit slot only. No maturity credit.
+namespace rebuntu::structural_slots {
+static_assert(Skeleton_73ce2609b2_Validation::structural_revision == 25);
+}

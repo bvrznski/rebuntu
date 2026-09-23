@@ -1,0 +1,9 @@
+{
+  "component": "development-environment-management",
+  "canonical_root": "domains",
+  "phase_tasks": [
+    ".phases/phases/phase-28-development-environment-management/TASK.md"
+  ],
+  "status": "SKELETON",
+  "native_authority_rule": true
+}

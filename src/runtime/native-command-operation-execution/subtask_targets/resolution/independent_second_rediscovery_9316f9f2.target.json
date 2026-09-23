@@ -1,0 +1,12 @@
+{
+  "source_prompt": ".phases/phases/phase-06-native-command-operation-execution/prompts/6.78_independent_second_rediscovery.md",
+  "phase_task": ".phases/phases/phase-06-native-command-operation-execution/TASK.md",
+  "canonical_root": "src/runtime/native-command-operation-execution",
+  "role": "resolution",
+  "implementation_header": "src/runtime/native-command-operation-execution/subtask_targets/resolution/independent_second_rediscovery_9316f9f2.hpp",
+  "implementation_source": "src/runtime/native-command-operation-execution/subtask_targets/resolution/independent_second_rediscovery_9316f9f2.cpp",
+  "test_target": "tests/structural-closure/runtime/native-command-operation-execution/resolution/test_independent_second_rediscovery_9316f9f2.cpp",
+  "status": "SKELETON_MATERIALIZED",
+  "behavioral_credit": false,
+  "preservation": "PRESERVE_IMPLEMENT_EXTEND"
+}

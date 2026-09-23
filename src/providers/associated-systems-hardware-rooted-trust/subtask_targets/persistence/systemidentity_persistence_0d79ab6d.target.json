@@ -1,0 +1,12 @@
+{
+  "source_prompt": ".phases/phases/phase-52-associated-systems-hardware-rooted-trust/prompts/52.006-systemidentity-persistence.md",
+  "phase_task": ".phases/phases/phase-52-associated-systems-hardware-rooted-trust/TASK.md",
+  "canonical_root": "src/providers/associated-systems-hardware-rooted-trust",
+  "role": "persistence",
+  "implementation_header": "src/providers/associated-systems-hardware-rooted-trust/subtask_targets/persistence/systemidentity_persistence_0d79ab6d.hpp",
+  "implementation_source": "src/providers/associated-systems-hardware-rooted-trust/subtask_targets/persistence/systemidentity_persistence_0d79ab6d.cpp",
+  "test_target": "tests/structural-closure/providers/associated-systems-hardware-rooted-trust/persistence/test_systemidentity_persistence_0d79ab6d.cpp",
+  "status": "SKELETON_MATERIALIZED",
+  "behavioral_credit": false,
+  "preservation": "PRESERVE_IMPLEMENT_EXTEND"
+}

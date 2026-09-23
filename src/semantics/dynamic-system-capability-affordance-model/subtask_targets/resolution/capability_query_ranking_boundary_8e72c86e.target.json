@@ -1,0 +1,12 @@
+{
+  "source_prompt": ".phases/phases/phase-54-dynamic-system-capability-affordance-model/prompts/54.104-rebuntu-phase-54-104-capability-query-ranking-boundary.md",
+  "phase_task": ".phases/phases/phase-54-dynamic-system-capability-affordance-model/TASK.md",
+  "canonical_root": "src/semantics/dynamic-system-capability-affordance-model",
+  "role": "resolution",
+  "implementation_header": "src/semantics/dynamic-system-capability-affordance-model/subtask_targets/resolution/capability_query_ranking_boundary_8e72c86e.hpp",
+  "implementation_source": "src/semantics/dynamic-system-capability-affordance-model/subtask_targets/resolution/capability_query_ranking_boundary_8e72c86e.cpp",
+  "test_target": "tests/structural-closure/semantics/dynamic-system-capability-affordance-model/resolution/test_capability_query_ranking_boundary_8e72c86e.cpp",
+  "status": "SKELETON_MATERIALIZED",
+  "behavioral_credit": false,
+  "preservation": "PRESERVE_IMPLEMENT_EXTEND"
+}

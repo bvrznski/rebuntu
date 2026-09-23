@@ -1,0 +1,12 @@
+{
+  "source_prompt": ".phases/phases/phase-26-shell-management/prompts/26.21-backup-snapshot-rollback.md",
+  "phase_task": ".phases/phases/phase-26-shell-management/TASK.md",
+  "canonical_root": "src/domains/shell-management",
+  "role": "recovery",
+  "implementation_header": "src/domains/shell-management/subtask_targets/recovery/backup_snapshot_rollback_30a81bb9.hpp",
+  "implementation_source": "src/domains/shell-management/subtask_targets/recovery/backup_snapshot_rollback_30a81bb9.cpp",
+  "test_target": "tests/structural-closure/domains/shell-management/recovery/test_backup_snapshot_rollback_30a81bb9.cpp",
+  "status": "SKELETON_MATERIALIZED",
+  "behavioral_credit": false,
+  "preservation": "PRESERVE_IMPLEMENT_EXTEND"
+}

@@ -1,0 +1,9 @@
+{
+  "component": "interrupt-escalation-attention-arbitration",
+  "canonical_root": "operator",
+  "phase_tasks": [
+    ".phases/phases/phase-102-interrupt-escalation-attention-arbitration/TASK.md"
+  ],
+  "status": "SKELETON",
+  "native_authority_rule": true
+}

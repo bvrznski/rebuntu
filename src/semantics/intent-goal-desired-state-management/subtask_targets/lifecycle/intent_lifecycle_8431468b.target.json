@@ -1,0 +1,12 @@
+{
+  "source_prompt": ".phases/phases/phase-56-intent-goal-desired-state-management/prompts/56.0-rebuntu-phase-56-0-intent-lifecycle.md",
+  "phase_task": ".phases/phases/phase-56-intent-goal-desired-state-management/TASK.md",
+  "canonical_root": "src/semantics/intent-goal-desired-state-management",
+  "role": "lifecycle",
+  "implementation_header": "src/semantics/intent-goal-desired-state-management/subtask_targets/lifecycle/intent_lifecycle_8431468b.hpp",
+  "implementation_source": "src/semantics/intent-goal-desired-state-management/subtask_targets/lifecycle/intent_lifecycle_8431468b.cpp",
+  "test_target": "tests/structural-closure/semantics/intent-goal-desired-state-management/lifecycle/test_intent_lifecycle_8431468b.cpp",
+  "status": "SKELETON_MATERIALIZED",
+  "behavioral_credit": false,
+  "preservation": "PRESERVE_IMPLEMENT_EXTEND"
+}

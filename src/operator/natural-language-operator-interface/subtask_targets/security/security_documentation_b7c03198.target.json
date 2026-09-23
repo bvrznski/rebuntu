@@ -1,0 +1,12 @@
+{
+  "source_prompt": ".phases/phases/phase-46-natural-language-operator-interface/prompts/46.421-security-documentation.md",
+  "phase_task": ".phases/phases/phase-46-natural-language-operator-interface/TASK.md",
+  "canonical_root": "src/operator/natural-language-operator-interface",
+  "role": "security",
+  "implementation_header": "src/operator/natural-language-operator-interface/subtask_targets/security/security_documentation_b7c03198.hpp",
+  "implementation_source": "src/operator/natural-language-operator-interface/subtask_targets/security/security_documentation_b7c03198.cpp",
+  "test_target": "tests/structural-closure/operator/natural-language-operator-interface/security/test_security_documentation_b7c03198.cpp",
+  "status": "SKELETON_MATERIALIZED",
+  "behavioral_credit": false,
+  "preservation": "PRESERVE_IMPLEMENT_EXTEND"
+}

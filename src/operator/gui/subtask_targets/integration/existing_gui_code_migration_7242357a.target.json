@@ -1,0 +1,12 @@
+{
+  "source_prompt": ".phases/phases/phase-49-gui/prompts/49.595-existing-gui-code-migration.md",
+  "phase_task": ".phases/phases/phase-49-gui/TASK.md",
+  "canonical_root": "src/operator/gui",
+  "role": "integration",
+  "implementation_header": "src/operator/gui/subtask_targets/integration/existing_gui_code_migration_7242357a.hpp",
+  "implementation_source": "src/operator/gui/subtask_targets/integration/existing_gui_code_migration_7242357a.cpp",
+  "test_target": "tests/structural-closure/operator/gui/integration/test_existing_gui_code_migration_7242357a.cpp",
+  "status": "SKELETON_MATERIALIZED",
+  "behavioral_credit": false,
+  "preservation": "PRESERVE_IMPLEMENT_EXTEND"
+}

@@ -1,0 +1,3 @@
+#include <domains/services/systemd.hpp>
+#include <sstream>
+namespace rebuntu::domains::service {UnitState parse_systemctl_show(const std::string&t){std::map<std::string,std::string>m;std::istringstream s(t);for(std::string l;std::getline(s,l);){auto p=l.find('=');if(p!=std::string::npos)m[l.substr(0,p)]=l.substr(p+1);}return{m["Id"],m["LoadState"],m["ActiveState"],m["SubState"],m["UnitFileState"]};}bool valid_unit_name(const std::string&s){if(s.empty()||s.size()>256||s.front()=='.')return false;for(unsigned char c:s)if(!(std::isalnum(c)||c=='_'||c=='-'||c=='.'||c=='@'||c==':'||c=='\\'))return false;return s.find("..") == std::string::npos;}}

@@ -1,0 +1,55 @@
+# Rebuntu Native Semantic Service (Phase 3.3)
+#
+# This is a persistent service that hosts Rebuntu's small semantic model
+# capability. It provides:
+#
+#   * Local-only IPC via Unix domain socket
+#   * CPU-only execution (GPU use blocked by policy)
+#   * Request timeout enforcement
+#   * Readiness separate from running state
+#
+# Architecture:
+#   Service controller -> cpp/include/system/semantic/service.hpp
+#   Service runtime     -> cpp/src/semantic/service.cpp
+#   IPC transport       -> cpp/include/system/environment/ipc.hpp
+#   Model provider      -> cpp/include/system/semantic/provider.hpp
+
+[Unit]
+Description=Rebuntu Native Semantic Service (BitNet b1.58 2B4T)
+Documentation=https://github.com/rebuntu/rebuntu/
+After=local-fs.target
+Wants=local-fs.target
+
+[Service]
+Type=simple
+ExecStart=/usr/bin/rebuntu-semanticd --foreground
+ExecReload=/bin/kill -HUP $MAINPID
+Restart=on-failure
+RestartSec=5s
+
+# Resource constraints (CPU-only policy)
+Environment=CUDA_VISIBLE_DEVICES=
+
+# IPC socket directory (owned by systemd-tmpfiles in Phase 3.4)
+RuntimeDirectory=rebuntu-semantic
+RuntimeDirectoryMode=0755
+
+# Security hardening
+NoNewPrivileges=yes
+ProtectSystem=strict
+ProtectHome=read-only
+PrivateTmp=yes
+PrivateUsers=yes
+RemoveIPC=yes
+
+# Logging to journald
+StandardOutput=journal
+StandardError=journal
+SyslogIdentifier=rebuntu-semantic
+
+# Capability restrictions
+CapabilityBoundingSet=
+AmbientCapabilities=
+
+[Install]
+WantedBy=multi-user.target

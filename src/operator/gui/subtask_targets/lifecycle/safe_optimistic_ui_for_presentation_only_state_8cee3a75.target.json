@@ -1,0 +1,12 @@
+{
+  "source_prompt": ".phases/phases/phase-49-gui/prompts/49.333-safe-optimistic-ui-for-presentation-only-state.md",
+  "phase_task": ".phases/phases/phase-49-gui/TASK.md",
+  "canonical_root": "src/operator/gui",
+  "role": "lifecycle",
+  "implementation_header": "src/operator/gui/subtask_targets/lifecycle/safe_optimistic_ui_for_presentation_only_state_8cee3a75.hpp",
+  "implementation_source": "src/operator/gui/subtask_targets/lifecycle/safe_optimistic_ui_for_presentation_only_state_8cee3a75.cpp",
+  "test_target": "tests/structural-closure/operator/gui/lifecycle/test_safe_optimistic_ui_for_presentation_only_state_8cee3a75.cpp",
+  "status": "SKELETON_MATERIALIZED",
+  "behavioral_credit": false,
+  "preservation": "PRESERVE_IMPLEMENT_EXTEND"
+}

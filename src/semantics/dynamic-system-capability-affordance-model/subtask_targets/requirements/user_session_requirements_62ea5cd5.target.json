@@ -1,0 +1,12 @@
+{
+  "source_prompt": ".phases/phases/phase-54-dynamic-system-capability-affordance-model/prompts/54.69-rebuntu-phase-54-69-user-session-requirements.md",
+  "phase_task": ".phases/phases/phase-54-dynamic-system-capability-affordance-model/TASK.md",
+  "canonical_root": "src/semantics/dynamic-system-capability-affordance-model",
+  "role": "requirements",
+  "implementation_header": "src/semantics/dynamic-system-capability-affordance-model/subtask_targets/requirements/user_session_requirements_62ea5cd5.hpp",
+  "implementation_source": "src/semantics/dynamic-system-capability-affordance-model/subtask_targets/requirements/user_session_requirements_62ea5cd5.cpp",
+  "test_target": "tests/structural-closure/semantics/dynamic-system-capability-affordance-model/requirements/test_user_session_requirements_62ea5cd5.cpp",
+  "status": "SKELETON_MATERIALIZED",
+  "behavioral_credit": false,
+  "preservation": "PRESERVE_IMPLEMENT_EXTEND"
+}

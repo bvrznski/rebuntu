@@ -1,0 +1,12 @@
+{
+  "source_prompt": ".phases/phases/phase-41-automation-workflow-system/prompts/41.068-ambiguous-outcome-and-unknown-handling.md",
+  "phase_task": ".phases/phases/phase-41-automation-workflow-system/TASK.md",
+  "canonical_root": "src/automation/automation-workflow-system",
+  "role": "requirements",
+  "implementation_header": "src/automation/automation-workflow-system/subtask_targets/requirements/ambiguous_outcome_and_unknown_handling_e51c5846.hpp",
+  "implementation_source": "src/automation/automation-workflow-system/subtask_targets/requirements/ambiguous_outcome_and_unknown_handling_e51c5846.cpp",
+  "test_target": "tests/structural-closure/automation/automation-workflow-system/requirements/test_ambiguous_outcome_and_unknown_handling_e51c5846.cpp",
+  "status": "SKELETON_MATERIALIZED",
+  "behavioral_credit": false,
+  "preservation": "PRESERVE_IMPLEMENT_EXTEND"
+}

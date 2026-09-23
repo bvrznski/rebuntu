@@ -1,0 +1,12 @@
+{
+  "source_prompt": ".phases/phases/phase-32-storage-management/prompts/32.35-snapshot-discovery-semantics.md",
+  "phase_task": ".phases/phases/phase-32-storage-management/TASK.md",
+  "canonical_root": "src/domains/storage-management",
+  "role": "resolution",
+  "implementation_header": "src/domains/storage-management/subtask_targets/resolution/snapshot_discovery_semantics_ced26ac7.hpp",
+  "implementation_source": "src/domains/storage-management/subtask_targets/resolution/snapshot_discovery_semantics_ced26ac7.cpp",
+  "test_target": "tests/structural-closure/domains/storage-management/resolution/test_snapshot_discovery_semantics_ced26ac7.cpp",
+  "status": "SKELETON_MATERIALIZED",
+  "behavioral_credit": false,
+  "preservation": "PRESERVE_IMPLEMENT_EXTEND"
+}

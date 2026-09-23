@@ -1,0 +1,12 @@
+{
+  "source_prompt": ".phases/phases/phase-51-distributed-rebuntu-system/prompts/51.345-distributed-explain-plan.md",
+  "phase_task": ".phases/phases/phase-51-distributed-rebuntu-system/TASK.md",
+  "canonical_root": "src/distributed/distributed-rebuntu-system",
+  "role": "observability",
+  "implementation_header": "src/distributed/distributed-rebuntu-system/subtask_targets/observability/distributed_explain_plan_0a9a8b1b.hpp",
+  "implementation_source": "src/distributed/distributed-rebuntu-system/subtask_targets/observability/distributed_explain_plan_0a9a8b1b.cpp",
+  "test_target": "tests/structural-closure/distributed/distributed-rebuntu-system/observability/test_distributed_explain_plan_0a9a8b1b.cpp",
+  "status": "SKELETON_MATERIALIZED",
+  "behavioral_credit": false,
+  "preservation": "PRESERVE_IMPLEMENT_EXTEND"
+}

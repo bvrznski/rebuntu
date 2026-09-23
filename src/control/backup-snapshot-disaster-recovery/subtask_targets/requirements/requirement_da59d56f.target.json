@@ -1,0 +1,12 @@
+{
+  "source_prompt": ".phases/phases/phase-79-backup-snapshot-disaster-recovery/prompts/79.13.md",
+  "phase_task": ".phases/phases/phase-79-backup-snapshot-disaster-recovery/TASK.md",
+  "canonical_root": "src/control/backup-snapshot-disaster-recovery",
+  "role": "requirements",
+  "implementation_header": "src/control/backup-snapshot-disaster-recovery/subtask_targets/requirements/requirement_da59d56f.hpp",
+  "implementation_source": "src/control/backup-snapshot-disaster-recovery/subtask_targets/requirements/requirement_da59d56f.cpp",
+  "test_target": "tests/structural-closure/control/backup-snapshot-disaster-recovery/requirements/test_requirement_da59d56f.cpp",
+  "status": "SKELETON_MATERIALIZED",
+  "behavioral_credit": false,
+  "preservation": "PRESERVE_IMPLEMENT_EXTEND"
+}

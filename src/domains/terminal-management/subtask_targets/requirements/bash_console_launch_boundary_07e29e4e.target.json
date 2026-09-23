@@ -1,0 +1,12 @@
+{
+  "source_prompt": ".phases/phases/phase-27-terminal-management/prompts/27.7-bash-console-launch-boundary.md",
+  "phase_task": ".phases/phases/phase-27-terminal-management/TASK.md",
+  "canonical_root": "src/domains/terminal-management",
+  "role": "requirements",
+  "implementation_header": "src/domains/terminal-management/subtask_targets/requirements/bash_console_launch_boundary_07e29e4e.hpp",
+  "implementation_source": "src/domains/terminal-management/subtask_targets/requirements/bash_console_launch_boundary_07e29e4e.cpp",
+  "test_target": "tests/structural-closure/domains/terminal-management/requirements/test_bash_console_launch_boundary_07e29e4e.cpp",
+  "status": "SKELETON_MATERIALIZED",
+  "behavioral_credit": false,
+  "preservation": "PRESERVE_IMPLEMENT_EXTEND"
+}

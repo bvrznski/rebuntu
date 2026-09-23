@@ -1,0 +1,12 @@
+{
+  "source_prompt": ".phases/phases/phase-51-distributed-rebuntu-system/prompts/51.220-phase-36-configuration-integration.md",
+  "phase_task": ".phases/phases/phase-51-distributed-rebuntu-system/TASK.md",
+  "canonical_root": "src/distributed/distributed-rebuntu-system",
+  "role": "integration",
+  "implementation_header": "src/distributed/distributed-rebuntu-system/subtask_targets/integration/configuration_integration_ca67b90a.hpp",
+  "implementation_source": "src/distributed/distributed-rebuntu-system/subtask_targets/integration/configuration_integration_ca67b90a.cpp",
+  "test_target": "tests/structural-closure/distributed/distributed-rebuntu-system/integration/test_configuration_integration_ca67b90a.cpp",
+  "status": "SKELETON_MATERIALIZED",
+  "behavioral_credit": false,
+  "preservation": "PRESERVE_IMPLEMENT_EXTEND"
+}

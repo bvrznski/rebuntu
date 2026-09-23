@@ -1,0 +1,12 @@
+{
+  "source_prompt": ".phases/phases/phase-44-adaptive-workstation-system/prompts/44.249-semantic-explanation-boundary.md",
+  "phase_task": ".phases/phases/phase-44-adaptive-workstation-system/TASK.md",
+  "canonical_root": "src/domains/adaptive-workstation-system",
+  "role": "planning",
+  "implementation_header": "src/domains/adaptive-workstation-system/subtask_targets/planning/semantic_explanation_boundary_d317a03a.hpp",
+  "implementation_source": "src/domains/adaptive-workstation-system/subtask_targets/planning/semantic_explanation_boundary_d317a03a.cpp",
+  "test_target": "tests/structural-closure/domains/adaptive-workstation-system/planning/test_semantic_explanation_boundary_d317a03a.cpp",
+  "status": "SKELETON_MATERIALIZED",
+  "behavioral_credit": false,
+  "preservation": "PRESERVE_IMPLEMENT_EXTEND"
+}

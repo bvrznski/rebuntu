@@ -1,0 +1,12 @@
+{
+  "source_prompt": ".phases/phases/phase-49-gui/prompts/49.455-panel-ui-state-migration.md",
+  "phase_task": ".phases/phases/phase-49-gui/TASK.md",
+  "canonical_root": "src/operator/gui",
+  "role": "integration",
+  "implementation_header": "src/operator/gui/subtask_targets/integration/panel_ui_state_migration_53952f05.hpp",
+  "implementation_source": "src/operator/gui/subtask_targets/integration/panel_ui_state_migration_53952f05.cpp",
+  "test_target": "tests/structural-closure/operator/gui/integration/test_panel_ui_state_migration_53952f05.cpp",
+  "status": "SKELETON_MATERIALIZED",
+  "behavioral_credit": false,
+  "preservation": "PRESERVE_IMPLEMENT_EXTEND"
+}

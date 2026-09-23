@@ -1,0 +1,12 @@
+{
+  "source_prompt": ".phases/phases/phase-26-shell-management/prompts/26.23-shell-management-cli.md",
+  "phase_task": ".phases/phases/phase-26-shell-management/TASK.md",
+  "canonical_root": "src/domains/shell-management",
+  "role": "requirements",
+  "implementation_header": "src/domains/shell-management/subtask_targets/requirements/shell_management_cli_999ef644.hpp",
+  "implementation_source": "src/domains/shell-management/subtask_targets/requirements/shell_management_cli_999ef644.cpp",
+  "test_target": "tests/structural-closure/domains/shell-management/requirements/test_shell_management_cli_999ef644.cpp",
+  "status": "SKELETON_MATERIALIZED",
+  "behavioral_credit": false,
+  "preservation": "PRESERVE_IMPLEMENT_EXTEND"
+}

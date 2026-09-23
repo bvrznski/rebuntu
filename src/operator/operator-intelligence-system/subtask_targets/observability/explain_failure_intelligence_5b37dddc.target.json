@@ -1,0 +1,12 @@
+{
+  "source_prompt": ".phases/phases/phase-43-operator-intelligence-system/prompts/43.140-explain-failure-intelligence.md",
+  "phase_task": ".phases/phases/phase-43-operator-intelligence-system/TASK.md",
+  "canonical_root": "src/operator/operator-intelligence-system",
+  "role": "observability",
+  "implementation_header": "src/operator/operator-intelligence-system/subtask_targets/observability/explain_failure_intelligence_5b37dddc.hpp",
+  "implementation_source": "src/operator/operator-intelligence-system/subtask_targets/observability/explain_failure_intelligence_5b37dddc.cpp",
+  "test_target": "tests/structural-closure/operator/operator-intelligence-system/observability/test_explain_failure_intelligence_5b37dddc.cpp",
+  "status": "SKELETON_MATERIALIZED",
+  "behavioral_credit": false,
+  "preservation": "PRESERVE_IMPLEMENT_EXTEND"
+}

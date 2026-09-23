@@ -1,0 +1,12 @@
+{
+  "source_prompt": ".phases/phases/phase-49-gui/prompts/49.056-typography-system.md",
+  "phase_task": ".phases/phases/phase-49-gui/TASK.md",
+  "canonical_root": "src/operator/gui",
+  "role": "requirements",
+  "implementation_header": "src/operator/gui/subtask_targets/requirements/typography_system_e0417f89.hpp",
+  "implementation_source": "src/operator/gui/subtask_targets/requirements/typography_system_e0417f89.cpp",
+  "test_target": "tests/structural-closure/operator/gui/requirements/test_typography_system_e0417f89.cpp",
+  "status": "SKELETON_MATERIALIZED",
+  "behavioral_credit": false,
+  "preservation": "PRESERVE_IMPLEMENT_EXTEND"
+}

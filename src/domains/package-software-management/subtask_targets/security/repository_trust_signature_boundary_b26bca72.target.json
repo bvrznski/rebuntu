@@ -1,0 +1,12 @@
+{
+  "source_prompt": ".phases/phases/phase-35-package-software-management/prompts/35.8-repository-trust-signature-boundary.md",
+  "phase_task": ".phases/phases/phase-35-package-software-management/TASK.md",
+  "canonical_root": "src/domains/package-software-management",
+  "role": "security",
+  "implementation_header": "src/domains/package-software-management/subtask_targets/security/repository_trust_signature_boundary_b26bca72.hpp",
+  "implementation_source": "src/domains/package-software-management/subtask_targets/security/repository_trust_signature_boundary_b26bca72.cpp",
+  "test_target": "tests/structural-closure/domains/package-software-management/security/test_repository_trust_signature_boundary_b26bca72.cpp",
+  "status": "SKELETON_MATERIALIZED",
+  "behavioral_credit": false,
+  "preservation": "PRESERVE_IMPLEMENT_EXTEND"
+}

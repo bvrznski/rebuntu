@@ -1,0 +1,12 @@
+{
+  "source_prompt": ".phases/phases/phase-29-process-workload-management/prompts/29.3-process-discovery-provider.md",
+  "phase_task": ".phases/phases/phase-29-process-workload-management/TASK.md",
+  "canonical_root": "src/domains/process-workload-management",
+  "role": "integration",
+  "implementation_header": "src/domains/process-workload-management/subtask_targets/integration/process_discovery_provider_5ec5003b.hpp",
+  "implementation_source": "src/domains/process-workload-management/subtask_targets/integration/process_discovery_provider_5ec5003b.cpp",
+  "test_target": "tests/structural-closure/domains/process-workload-management/integration/test_process_discovery_provider_5ec5003b.cpp",
+  "status": "SKELETON_MATERIALIZED",
+  "behavioral_credit": false,
+  "preservation": "PRESERVE_IMPLEMENT_EXTEND"
+}

@@ -1,0 +1,12 @@
+{
+  "source_prompt": ".phases/phases/phase-39-system-event-timeline/prompts/39.9-time-synchronization-evidence.md",
+  "phase_task": ".phases/phases/phase-39-system-event-timeline/TASK.md",
+  "canonical_root": "src/observation/system-event-timeline",
+  "role": "verification",
+  "implementation_header": "src/observation/system-event-timeline/subtask_targets/verification/time_synchronization_evidence_150d6823.hpp",
+  "implementation_source": "src/observation/system-event-timeline/subtask_targets/verification/time_synchronization_evidence_150d6823.cpp",
+  "test_target": "tests/structural-closure/observation/system-event-timeline/verification/test_time_synchronization_evidence_150d6823.cpp",
+  "status": "SKELETON_MATERIALIZED",
+  "behavioral_credit": false,
+  "preservation": "PRESERVE_IMPLEMENT_EXTEND"
+}

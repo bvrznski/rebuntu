@@ -1,0 +1,12 @@
+{
+  "source_prompt": ".phases/phases/phase-05-system-observation-inventory-discovery/prompts/5.63_unit_and_provider_test_matrix.md",
+  "phase_task": ".phases/phases/phase-05-system-observation-inventory-discovery/TASK.md",
+  "canonical_root": "src/observation/system-observation-inventory-discovery",
+  "role": "verification",
+  "implementation_header": "src/observation/system-observation-inventory-discovery/subtask_targets/verification/unit_and_provider_test_matrix_bdbbf278.hpp",
+  "implementation_source": "src/observation/system-observation-inventory-discovery/subtask_targets/verification/unit_and_provider_test_matrix_bdbbf278.cpp",
+  "test_target": "tests/structural-closure/observation/system-observation-inventory-discovery/verification/test_unit_and_provider_test_matrix_bdbbf278.cpp",
+  "status": "SKELETON_MATERIALIZED",
+  "behavioral_credit": false,
+  "preservation": "PRESERVE_IMPLEMENT_EXTEND"
+}

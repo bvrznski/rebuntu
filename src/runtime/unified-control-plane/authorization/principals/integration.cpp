@@ -1,0 +1,6 @@
+#include "runtime/unified-control-plane/authorization/principals/integration.hpp"
+
+// Structural translation-unit slot only. No maturity credit.
+namespace rebuntu::structural_slots {
+static_assert(Skeleton_2bf10feec2_Integration::structural_revision == 25);
+}

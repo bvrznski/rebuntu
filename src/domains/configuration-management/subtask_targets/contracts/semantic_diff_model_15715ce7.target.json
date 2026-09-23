@@ -1,0 +1,12 @@
+{
+  "source_prompt": ".phases/phases/phase-36-configuration-management/prompts/36.16-semantic-diff-model.md",
+  "phase_task": ".phases/phases/phase-36-configuration-management/TASK.md",
+  "canonical_root": "src/domains/configuration-management",
+  "role": "contracts",
+  "implementation_header": "src/domains/configuration-management/subtask_targets/contracts/semantic_diff_model_15715ce7.hpp",
+  "implementation_source": "src/domains/configuration-management/subtask_targets/contracts/semantic_diff_model_15715ce7.cpp",
+  "test_target": "tests/structural-closure/domains/configuration-management/contracts/test_semantic_diff_model_15715ce7.cpp",
+  "status": "SKELETON_MATERIALIZED",
+  "behavioral_credit": false,
+  "preservation": "PRESERVE_IMPLEMENT_EXTEND"
+}

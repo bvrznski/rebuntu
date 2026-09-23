@@ -1,0 +1,12 @@
+{
+  "source_prompt": ".phases/phases/phase-49-gui/prompts/49.332-optimistic-ui-prohibition-for-consequential-state.md",
+  "phase_task": ".phases/phases/phase-49-gui/TASK.md",
+  "canonical_root": "src/operator/gui",
+  "role": "lifecycle",
+  "implementation_header": "src/operator/gui/subtask_targets/lifecycle/optimistic_ui_prohibition_for_consequential_state_a442f17f.hpp",
+  "implementation_source": "src/operator/gui/subtask_targets/lifecycle/optimistic_ui_prohibition_for_consequential_state_a442f17f.cpp",
+  "test_target": "tests/structural-closure/operator/gui/lifecycle/test_optimistic_ui_prohibition_for_consequential_state_a442f17f.cpp",
+  "status": "SKELETON_MATERIALIZED",
+  "behavioral_credit": false,
+  "preservation": "PRESERVE_IMPLEMENT_EXTEND"
+}

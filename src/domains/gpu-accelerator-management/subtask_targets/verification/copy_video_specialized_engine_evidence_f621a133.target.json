@@ -1,0 +1,12 @@
+{
+  "source_prompt": ".phases/phases/phase-34-gpu-accelerator-management/prompts/34.12-copy-video-specialized-engine-evidence.md",
+  "phase_task": ".phases/phases/phase-34-gpu-accelerator-management/TASK.md",
+  "canonical_root": "src/domains/gpu-accelerator-management",
+  "role": "verification",
+  "implementation_header": "src/domains/gpu-accelerator-management/subtask_targets/verification/copy_video_specialized_engine_evidence_f621a133.hpp",
+  "implementation_source": "src/domains/gpu-accelerator-management/subtask_targets/verification/copy_video_specialized_engine_evidence_f621a133.cpp",
+  "test_target": "tests/structural-closure/domains/gpu-accelerator-management/verification/test_copy_video_specialized_engine_evidence_f621a133.cpp",
+  "status": "SKELETON_MATERIALIZED",
+  "behavioral_credit": false,
+  "preservation": "PRESERVE_IMPLEMENT_EXTEND"
+}

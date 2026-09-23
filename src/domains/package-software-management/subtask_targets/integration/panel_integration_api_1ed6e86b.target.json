@@ -1,0 +1,12 @@
+{
+  "source_prompt": ".phases/phases/phase-35-package-software-management/prompts/35.53-phase-25-panel-integration-api.md",
+  "phase_task": ".phases/phases/phase-35-package-software-management/TASK.md",
+  "canonical_root": "src/domains/package-software-management",
+  "role": "integration",
+  "implementation_header": "src/domains/package-software-management/subtask_targets/integration/panel_integration_api_1ed6e86b.hpp",
+  "implementation_source": "src/domains/package-software-management/subtask_targets/integration/panel_integration_api_1ed6e86b.cpp",
+  "test_target": "tests/structural-closure/domains/package-software-management/integration/test_panel_integration_api_1ed6e86b.cpp",
+  "status": "SKELETON_MATERIALIZED",
+  "behavioral_credit": false,
+  "preservation": "PRESERVE_IMPLEMENT_EXTEND"
+}

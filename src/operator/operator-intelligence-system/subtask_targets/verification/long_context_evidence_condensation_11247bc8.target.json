@@ -1,0 +1,12 @@
+{
+  "source_prompt": ".phases/phases/phase-43-operator-intelligence-system/prompts/43.145-long-context-evidence-condensation.md",
+  "phase_task": ".phases/phases/phase-43-operator-intelligence-system/TASK.md",
+  "canonical_root": "src/operator/operator-intelligence-system",
+  "role": "verification",
+  "implementation_header": "src/operator/operator-intelligence-system/subtask_targets/verification/long_context_evidence_condensation_11247bc8.hpp",
+  "implementation_source": "src/operator/operator-intelligence-system/subtask_targets/verification/long_context_evidence_condensation_11247bc8.cpp",
+  "test_target": "tests/structural-closure/operator/operator-intelligence-system/verification/test_long_context_evidence_condensation_11247bc8.cpp",
+  "status": "SKELETON_MATERIALIZED",
+  "behavioral_credit": false,
+  "preservation": "PRESERVE_IMPLEMENT_EXTEND"
+}

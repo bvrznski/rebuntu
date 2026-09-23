@@ -1,0 +1,12 @@
+{
+  "source_prompt": ".phases/phases/phase-28-development-environment-management/prompts/28.23-codex-coding-agent-integration.md",
+  "phase_task": ".phases/phases/phase-28-development-environment-management/TASK.md",
+  "canonical_root": "src/domains/development-environment-management",
+  "role": "integration",
+  "implementation_header": "src/domains/development-environment-management/subtask_targets/integration/codex_coding_agent_integration_1ddd8375.hpp",
+  "implementation_source": "src/domains/development-environment-management/subtask_targets/integration/codex_coding_agent_integration_1ddd8375.cpp",
+  "test_target": "tests/structural-closure/domains/development-environment-management/integration/test_codex_coding_agent_integration_1ddd8375.cpp",
+  "status": "SKELETON_MATERIALIZED",
+  "behavioral_credit": false,
+  "preservation": "PRESERVE_IMPLEMENT_EXTEND"
+}

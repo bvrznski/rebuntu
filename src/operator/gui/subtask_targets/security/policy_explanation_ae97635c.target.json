@@ -1,0 +1,12 @@
+{
+  "source_prompt": ".phases/phases/phase-49-gui/prompts/49.249-policy-explanation.md",
+  "phase_task": ".phases/phases/phase-49-gui/TASK.md",
+  "canonical_root": "src/operator/gui",
+  "role": "security",
+  "implementation_header": "src/operator/gui/subtask_targets/security/policy_explanation_ae97635c.hpp",
+  "implementation_source": "src/operator/gui/subtask_targets/security/policy_explanation_ae97635c.cpp",
+  "test_target": "tests/structural-closure/operator/gui/security/test_policy_explanation_ae97635c.cpp",
+  "status": "SKELETON_MATERIALIZED",
+  "behavioral_credit": false,
+  "preservation": "PRESERVE_IMPLEMENT_EXTEND"
+}

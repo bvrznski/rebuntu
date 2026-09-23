@@ -1,0 +1,5 @@
+#include "recovery.hpp"
+
+// XXVII out-of-line implementation reservation for recovery.
+// Source: .phases/phases/phase-42-system-knowledge-graph/prompts/42.032-replay-and-duplicate-handling.md
+// Intentionally behavior-free until prompt-derived implementation is supplied.

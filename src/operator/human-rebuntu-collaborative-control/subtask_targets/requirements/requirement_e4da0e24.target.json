@@ -1,0 +1,12 @@
+{
+  "source_prompt": ".phases/phases/phase-100-human-rebuntu-collaborative-control/prompts/100.3.md",
+  "phase_task": ".phases/phases/phase-100-human-rebuntu-collaborative-control/TASK.md",
+  "canonical_root": "src/operator/human-rebuntu-collaborative-control",
+  "role": "requirements",
+  "implementation_header": "src/operator/human-rebuntu-collaborative-control/subtask_targets/requirements/requirement_e4da0e24.hpp",
+  "implementation_source": "src/operator/human-rebuntu-collaborative-control/subtask_targets/requirements/requirement_e4da0e24.cpp",
+  "test_target": "tests/structural-closure/operator/human-rebuntu-collaborative-control/requirements/test_requirement_e4da0e24.cpp",
+  "status": "SKELETON_MATERIALIZED",
+  "behavioral_credit": false,
+  "preservation": "PRESERVE_IMPLEMENT_EXTEND"
+}

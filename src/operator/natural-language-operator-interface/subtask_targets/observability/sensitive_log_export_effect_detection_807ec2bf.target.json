@@ -1,0 +1,12 @@
+{
+  "source_prompt": ".phases/phases/phase-46-natural-language-operator-interface/prompts/46.150-sensitive-log-export-effect-detection.md",
+  "phase_task": ".phases/phases/phase-46-natural-language-operator-interface/TASK.md",
+  "canonical_root": "src/operator/natural-language-operator-interface",
+  "role": "observability",
+  "implementation_header": "src/operator/natural-language-operator-interface/subtask_targets/observability/sensitive_log_export_effect_detection_807ec2bf.hpp",
+  "implementation_source": "src/operator/natural-language-operator-interface/subtask_targets/observability/sensitive_log_export_effect_detection_807ec2bf.cpp",
+  "test_target": "tests/structural-closure/operator/natural-language-operator-interface/observability/test_sensitive_log_export_effect_detection_807ec2bf.cpp",
+  "status": "SKELETON_MATERIALIZED",
+  "behavioral_credit": false,
+  "preservation": "PRESERVE_IMPLEMENT_EXTEND"
+}

@@ -1,0 +1,12 @@
+{
+  "source_prompt": ".phases/phases/phase-29-process-workload-management/prompts/29.18-workload-discovery.md",
+  "phase_task": ".phases/phases/phase-29-process-workload-management/TASK.md",
+  "canonical_root": "src/domains/process-workload-management",
+  "role": "resolution",
+  "implementation_header": "src/domains/process-workload-management/subtask_targets/resolution/workload_discovery_80255e90.hpp",
+  "implementation_source": "src/domains/process-workload-management/subtask_targets/resolution/workload_discovery_80255e90.cpp",
+  "test_target": "tests/structural-closure/domains/process-workload-management/resolution/test_workload_discovery_80255e90.cpp",
+  "status": "SKELETON_MATERIALIZED",
+  "behavioral_credit": false,
+  "preservation": "PRESERVE_IMPLEMENT_EXTEND"
+}

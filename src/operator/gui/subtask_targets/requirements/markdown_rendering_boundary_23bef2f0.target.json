@@ -1,0 +1,12 @@
+{
+  "source_prompt": ".phases/phases/phase-49-gui/prompts/49.394-markdown-rendering-boundary.md",
+  "phase_task": ".phases/phases/phase-49-gui/TASK.md",
+  "canonical_root": "src/operator/gui",
+  "role": "requirements",
+  "implementation_header": "src/operator/gui/subtask_targets/requirements/markdown_rendering_boundary_23bef2f0.hpp",
+  "implementation_source": "src/operator/gui/subtask_targets/requirements/markdown_rendering_boundary_23bef2f0.cpp",
+  "test_target": "tests/structural-closure/operator/gui/requirements/test_markdown_rendering_boundary_23bef2f0.cpp",
+  "status": "SKELETON_MATERIALIZED",
+  "behavioral_credit": false,
+  "preservation": "PRESERVE_IMPLEMENT_EXTEND"
+}

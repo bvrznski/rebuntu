@@ -1,0 +1,12 @@
+{
+  "source_prompt": ".phases/phases/phase-34-gpu-accelerator-management/prompts/34.31-power-limit-mutation-planning.md",
+  "phase_task": ".phases/phases/phase-34-gpu-accelerator-management/TASK.md",
+  "canonical_root": "src/domains/gpu-accelerator-management",
+  "role": "execution",
+  "implementation_header": "src/domains/gpu-accelerator-management/subtask_targets/execution/power_limit_mutation_planning_08a25e21.hpp",
+  "implementation_source": "src/domains/gpu-accelerator-management/subtask_targets/execution/power_limit_mutation_planning_08a25e21.cpp",
+  "test_target": "tests/structural-closure/domains/gpu-accelerator-management/execution/test_power_limit_mutation_planning_08a25e21.cpp",
+  "status": "SKELETON_MATERIALIZED",
+  "behavioral_credit": false,
+  "preservation": "PRESERVE_IMPLEMENT_EXTEND"
+}

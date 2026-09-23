@@ -1,0 +1,12 @@
+{
+  "source_prompt": ".phases/phases/phase-77-kernel-driver-hardware-evolution/prompts/77.14.md",
+  "phase_task": ".phases/phases/phase-77-kernel-driver-hardware-evolution/TASK.md",
+  "canonical_root": "src/providers/kernel-driver-hardware-evolution",
+  "role": "requirements",
+  "implementation_header": "src/providers/kernel-driver-hardware-evolution/subtask_targets/requirements/requirement_034c4d31.hpp",
+  "implementation_source": "src/providers/kernel-driver-hardware-evolution/subtask_targets/requirements/requirement_034c4d31.cpp",
+  "test_target": "tests/structural-closure/providers/kernel-driver-hardware-evolution/requirements/test_requirement_034c4d31.cpp",
+  "status": "SKELETON_MATERIALIZED",
+  "behavioral_credit": false,
+  "preservation": "PRESERVE_IMPLEMENT_EXTEND"
+}

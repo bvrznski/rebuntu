@@ -1,0 +1,12 @@
+{
+  "source_prompt": ".phases/phases/phase-35-package-software-management/prompts/35.2-package-provider-discovery.md",
+  "phase_task": ".phases/phases/phase-35-package-software-management/TASK.md",
+  "canonical_root": "src/domains/package-software-management",
+  "role": "integration",
+  "implementation_header": "src/domains/package-software-management/subtask_targets/integration/package_provider_discovery_73a6b04a.hpp",
+  "implementation_source": "src/domains/package-software-management/subtask_targets/integration/package_provider_discovery_73a6b04a.cpp",
+  "test_target": "tests/structural-closure/domains/package-software-management/integration/test_package_provider_discovery_73a6b04a.cpp",
+  "status": "SKELETON_MATERIALIZED",
+  "behavioral_credit": false,
+  "preservation": "PRESERVE_IMPLEMENT_EXTEND"
+}

@@ -1,0 +1,12 @@
+{
+  "source_prompt": ".phases/phases/phase-80-machine-reproducibility-reconstruction/prompts/80.22.md",
+  "phase_task": ".phases/phases/phase-80-machine-reproducibility-reconstruction/TASK.md",
+  "canonical_root": "src/domains/machine-reproducibility-reconstruction",
+  "role": "requirements",
+  "implementation_header": "src/domains/machine-reproducibility-reconstruction/subtask_targets/requirements/requirement_1e98974b.hpp",
+  "implementation_source": "src/domains/machine-reproducibility-reconstruction/subtask_targets/requirements/requirement_1e98974b.cpp",
+  "test_target": "tests/structural-closure/domains/machine-reproducibility-reconstruction/requirements/test_requirement_1e98974b.cpp",
+  "status": "SKELETON_MATERIALIZED",
+  "behavioral_credit": false,
+  "preservation": "PRESERVE_IMPLEMENT_EXTEND"
+}

@@ -1,0 +1,12 @@
+{
+  "source_prompt": ".phases/phases/phase-49-gui/prompts/49.393-model-text-rendering-safety.md",
+  "phase_task": ".phases/phases/phase-49-gui/TASK.md",
+  "canonical_root": "src/operator/gui",
+  "role": "contracts",
+  "implementation_header": "src/operator/gui/subtask_targets/contracts/model_text_rendering_safety_129b644f.hpp",
+  "implementation_source": "src/operator/gui/subtask_targets/contracts/model_text_rendering_safety_129b644f.cpp",
+  "test_target": "tests/structural-closure/operator/gui/contracts/test_model_text_rendering_safety_129b644f.cpp",
+  "status": "SKELETON_MATERIALIZED",
+  "behavioral_credit": false,
+  "preservation": "PRESERVE_IMPLEMENT_EXTEND"
+}

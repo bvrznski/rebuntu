@@ -1,0 +1,12 @@
+{
+  "source_prompt": ".phases/phases/phase-43-operator-intelligence-system/prompts/43.025-provider-discovery-and-registration.md",
+  "phase_task": ".phases/phases/phase-43-operator-intelligence-system/TASK.md",
+  "canonical_root": "src/operator/operator-intelligence-system",
+  "role": "integration",
+  "implementation_header": "src/operator/operator-intelligence-system/subtask_targets/integration/provider_discovery_and_registration_d0d2939d.hpp",
+  "implementation_source": "src/operator/operator-intelligence-system/subtask_targets/integration/provider_discovery_and_registration_d0d2939d.cpp",
+  "test_target": "tests/structural-closure/operator/operator-intelligence-system/integration/test_provider_discovery_and_registration_d0d2939d.cpp",
+  "status": "SKELETON_MATERIALIZED",
+  "behavioral_credit": false,
+  "preservation": "PRESERVE_IMPLEMENT_EXTEND"
+}

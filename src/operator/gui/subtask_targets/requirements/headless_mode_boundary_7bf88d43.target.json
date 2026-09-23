@@ -1,0 +1,12 @@
+{
+  "source_prompt": ".phases/phases/phase-49-gui/prompts/49.473-headless-mode-boundary.md",
+  "phase_task": ".phases/phases/phase-49-gui/TASK.md",
+  "canonical_root": "src/operator/gui",
+  "role": "requirements",
+  "implementation_header": "src/operator/gui/subtask_targets/requirements/headless_mode_boundary_7bf88d43.hpp",
+  "implementation_source": "src/operator/gui/subtask_targets/requirements/headless_mode_boundary_7bf88d43.cpp",
+  "test_target": "tests/structural-closure/operator/gui/requirements/test_headless_mode_boundary_7bf88d43.cpp",
+  "status": "SKELETON_MATERIALIZED",
+  "behavioral_credit": false,
+  "preservation": "PRESERVE_IMPLEMENT_EXTEND"
+}

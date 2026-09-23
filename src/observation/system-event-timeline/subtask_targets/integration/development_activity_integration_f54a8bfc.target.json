@@ -1,0 +1,12 @@
+{
+  "source_prompt": ".phases/phases/phase-39-system-event-timeline/prompts/39.38-development-activity-integration.md",
+  "phase_task": ".phases/phases/phase-39-system-event-timeline/TASK.md",
+  "canonical_root": "src/observation/system-event-timeline",
+  "role": "integration",
+  "implementation_header": "src/observation/system-event-timeline/subtask_targets/integration/development_activity_integration_f54a8bfc.hpp",
+  "implementation_source": "src/observation/system-event-timeline/subtask_targets/integration/development_activity_integration_f54a8bfc.cpp",
+  "test_target": "tests/structural-closure/observation/system-event-timeline/integration/test_development_activity_integration_f54a8bfc.cpp",
+  "status": "SKELETON_MATERIALIZED",
+  "behavioral_credit": false,
+  "preservation": "PRESERVE_IMPLEMENT_EXTEND"
+}

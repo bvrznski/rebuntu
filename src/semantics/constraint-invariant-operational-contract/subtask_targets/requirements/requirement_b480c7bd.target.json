@@ -1,0 +1,12 @@
+{
+  "source_prompt": ".phases/phases/phase-64-constraint-invariant-operational-contract/prompts/64.21.md",
+  "phase_task": ".phases/phases/phase-64-constraint-invariant-operational-contract/TASK.md",
+  "canonical_root": "src/semantics/constraint-invariant-operational-contract",
+  "role": "requirements",
+  "implementation_header": "src/semantics/constraint-invariant-operational-contract/subtask_targets/requirements/requirement_b480c7bd.hpp",
+  "implementation_source": "src/semantics/constraint-invariant-operational-contract/subtask_targets/requirements/requirement_b480c7bd.cpp",
+  "test_target": "tests/structural-closure/semantics/constraint-invariant-operational-contract/requirements/test_requirement_b480c7bd.cpp",
+  "status": "SKELETON_MATERIALIZED",
+  "behavioral_credit": false,
+  "preservation": "PRESERVE_IMPLEMENT_EXTEND"
+}

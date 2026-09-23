@@ -1,0 +1,12 @@
+{
+  "source_prompt": ".phases/phases/phase-35-package-software-management/prompts/35.4-application-vs-package-vs-executable-model.md",
+  "phase_task": ".phases/phases/phase-35-package-software-management/TASK.md",
+  "canonical_root": "src/domains/package-software-management",
+  "role": "execution",
+  "implementation_header": "src/domains/package-software-management/subtask_targets/execution/application_vs_package_vs_executable_model_c7a4f4e6.hpp",
+  "implementation_source": "src/domains/package-software-management/subtask_targets/execution/application_vs_package_vs_executable_model_c7a4f4e6.cpp",
+  "test_target": "tests/structural-closure/domains/package-software-management/execution/test_application_vs_package_vs_executable_model_c7a4f4e6.cpp",
+  "status": "SKELETON_MATERIALIZED",
+  "behavioral_credit": false,
+  "preservation": "PRESERVE_IMPLEMENT_EXTEND"
+}

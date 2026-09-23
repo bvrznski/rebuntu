@@ -1,0 +1,12 @@
+{
+  "source_prompt": ".phases/phases/phase-54-dynamic-system-capability-affordance-model/prompts/54.9-rebuntu-phase-54-9-readiness-semantics.md",
+  "phase_task": ".phases/phases/phase-54-dynamic-system-capability-affordance-model/TASK.md",
+  "canonical_root": "src/semantics/dynamic-system-capability-affordance-model",
+  "role": "requirements",
+  "implementation_header": "src/semantics/dynamic-system-capability-affordance-model/subtask_targets/requirements/readiness_semantics_5bd0b83e.hpp",
+  "implementation_source": "src/semantics/dynamic-system-capability-affordance-model/subtask_targets/requirements/readiness_semantics_5bd0b83e.cpp",
+  "test_target": "tests/structural-closure/semantics/dynamic-system-capability-affordance-model/requirements/test_readiness_semantics_5bd0b83e.cpp",
+  "status": "SKELETON_MATERIALIZED",
+  "behavioral_credit": false,
+  "preservation": "PRESERVE_IMPLEMENT_EXTEND"
+}

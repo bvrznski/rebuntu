@@ -1,0 +1,41 @@
+{
+  "source_prompt": ".phases/phases/phase-25-system-control-panel/prompts/25.13-semantic-analysis-and-hypothesis-view.md",
+  "phase_task": ".phases/phases/phase-25-system-control-panel/TASK.md",
+  "package_root": "src/operator/system-control-panel/subtask_packages/verification/semantic_analysis_and_hypothesis_view_b0c23e4a",
+  "role": "verification",
+  "aspects": [
+    "contract",
+    "model",
+    "state",
+    "errors",
+    "evidence",
+    "verification",
+    "integration",
+    "execution",
+    "recovery",
+    "policy",
+    "observability"
+  ],
+  "files": [
+    "src/operator/system-control-panel/subtask_packages/verification/semantic_analysis_and_hypothesis_view_b0c23e4a/contract.hpp",
+    "src/operator/system-control-panel/subtask_packages/verification/semantic_analysis_and_hypothesis_view_b0c23e4a/model.hpp",
+    "src/operator/system-control-panel/subtask_packages/verification/semantic_analysis_and_hypothesis_view_b0c23e4a/state.hpp",
+    "src/operator/system-control-panel/subtask_packages/verification/semantic_analysis_and_hypothesis_view_b0c23e4a/errors.hpp",
+    "src/operator/system-control-panel/subtask_packages/verification/semantic_analysis_and_hypothesis_view_b0c23e4a/evidence.hpp",
+    "src/operator/system-control-panel/subtask_packages/verification/semantic_analysis_and_hypothesis_view_b0c23e4a/verification.hpp",
+    "src/operator/system-control-panel/subtask_packages/verification/semantic_analysis_and_hypothesis_view_b0c23e4a/verification.cpp",
+    "src/operator/system-control-panel/subtask_packages/verification/semantic_analysis_and_hypothesis_view_b0c23e4a/integration.hpp",
+    "src/operator/system-control-panel/subtask_packages/verification/semantic_analysis_and_hypothesis_view_b0c23e4a/integration.cpp",
+    "src/operator/system-control-panel/subtask_packages/verification/semantic_analysis_and_hypothesis_view_b0c23e4a/execution.hpp",
+    "src/operator/system-control-panel/subtask_packages/verification/semantic_analysis_and_hypothesis_view_b0c23e4a/execution.cpp",
+    "src/operator/system-control-panel/subtask_packages/verification/semantic_analysis_and_hypothesis_view_b0c23e4a/recovery.hpp",
+    "src/operator/system-control-panel/subtask_packages/verification/semantic_analysis_and_hypothesis_view_b0c23e4a/recovery.cpp",
+    "src/operator/system-control-panel/subtask_packages/verification/semantic_analysis_and_hypothesis_view_b0c23e4a/policy.hpp",
+    "src/operator/system-control-panel/subtask_packages/verification/semantic_analysis_and_hypothesis_view_b0c23e4a/policy.cpp",
+    "src/operator/system-control-panel/subtask_packages/verification/semantic_analysis_and_hypothesis_view_b0c23e4a/observability.hpp",
+    "src/operator/system-control-panel/subtask_packages/verification/semantic_analysis_and_hypothesis_view_b0c23e4a/observability.cpp"
+  ],
+  "status": "SKELETON_MATERIALIZED",
+  "behavioral_credit": false,
+  "preservation": "PRESERVE_IMPLEMENT_EXTEND"
+}

@@ -1,0 +1,12 @@
+{
+  "source_prompt": ".phases/phases/phase-45-unified-control-plane/prompts/45.104-phase-36-configuration-integration.md",
+  "phase_task": ".phases/phases/phase-45-unified-control-plane/TASK.md",
+  "canonical_root": "src/runtime/unified-control-plane",
+  "role": "integration",
+  "implementation_header": "src/runtime/unified-control-plane/subtask_targets/integration/configuration_integration_1a40ce65.hpp",
+  "implementation_source": "src/runtime/unified-control-plane/subtask_targets/integration/configuration_integration_1a40ce65.cpp",
+  "test_target": "tests/structural-closure/runtime/unified-control-plane/integration/test_configuration_integration_1a40ce65.cpp",
+  "status": "SKELETON_MATERIALIZED",
+  "behavioral_credit": false,
+  "preservation": "PRESERVE_IMPLEMENT_EXTEND"
+}

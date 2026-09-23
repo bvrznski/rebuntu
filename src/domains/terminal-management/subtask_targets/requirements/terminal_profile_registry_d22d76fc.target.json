@@ -1,0 +1,12 @@
+{
+  "source_prompt": ".phases/phases/phase-27-terminal-management/prompts/27.4-terminal-profile-registry.md",
+  "phase_task": ".phases/phases/phase-27-terminal-management/TASK.md",
+  "canonical_root": "src/domains/terminal-management",
+  "role": "requirements",
+  "implementation_header": "src/domains/terminal-management/subtask_targets/requirements/terminal_profile_registry_d22d76fc.hpp",
+  "implementation_source": "src/domains/terminal-management/subtask_targets/requirements/terminal_profile_registry_d22d76fc.cpp",
+  "test_target": "tests/structural-closure/domains/terminal-management/requirements/test_terminal_profile_registry_d22d76fc.cpp",
+  "status": "SKELETON_MATERIALIZED",
+  "behavioral_credit": false,
+  "preservation": "PRESERVE_IMPLEMENT_EXTEND"
+}

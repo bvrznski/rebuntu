@@ -1,0 +1,12 @@
+{
+  "source_prompt": ".phases/phases/phase-28-development-environment-management/prompts/28.21-coding-agent-runtime-boundary.md",
+  "phase_task": ".phases/phases/phase-28-development-environment-management/TASK.md",
+  "canonical_root": "src/domains/development-environment-management",
+  "role": "requirements",
+  "implementation_header": "src/domains/development-environment-management/subtask_targets/requirements/coding_agent_runtime_boundary_6124435e.hpp",
+  "implementation_source": "src/domains/development-environment-management/subtask_targets/requirements/coding_agent_runtime_boundary_6124435e.cpp",
+  "test_target": "tests/structural-closure/domains/development-environment-management/requirements/test_coding_agent_runtime_boundary_6124435e.cpp",
+  "status": "SKELETON_MATERIALIZED",
+  "behavioral_credit": false,
+  "preservation": "PRESERVE_IMPLEMENT_EXTEND"
+}

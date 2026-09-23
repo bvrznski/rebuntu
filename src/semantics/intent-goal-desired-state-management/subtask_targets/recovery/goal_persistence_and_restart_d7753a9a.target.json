@@ -1,0 +1,12 @@
+{
+  "source_prompt": ".phases/phases/phase-56-intent-goal-desired-state-management/prompts/56.32-rebuntu-phase-56-32-goal-persistence-and-restart.md",
+  "phase_task": ".phases/phases/phase-56-intent-goal-desired-state-management/TASK.md",
+  "canonical_root": "src/semantics/intent-goal-desired-state-management",
+  "role": "recovery",
+  "implementation_header": "src/semantics/intent-goal-desired-state-management/subtask_targets/recovery/goal_persistence_and_restart_d7753a9a.hpp",
+  "implementation_source": "src/semantics/intent-goal-desired-state-management/subtask_targets/recovery/goal_persistence_and_restart_d7753a9a.cpp",
+  "test_target": "tests/structural-closure/semantics/intent-goal-desired-state-management/recovery/test_goal_persistence_and_restart_d7753a9a.cpp",
+  "status": "SKELETON_MATERIALIZED",
+  "behavioral_credit": false,
+  "preservation": "PRESERVE_IMPLEMENT_EXTEND"
+}

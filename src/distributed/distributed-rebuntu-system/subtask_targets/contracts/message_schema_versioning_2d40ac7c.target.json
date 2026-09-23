@@ -1,0 +1,12 @@
+{
+  "source_prompt": ".phases/phases/phase-51-distributed-rebuntu-system/prompts/51.092-message-schema-versioning.md",
+  "phase_task": ".phases/phases/phase-51-distributed-rebuntu-system/TASK.md",
+  "canonical_root": "src/distributed/distributed-rebuntu-system",
+  "role": "contracts",
+  "implementation_header": "src/distributed/distributed-rebuntu-system/subtask_targets/contracts/message_schema_versioning_2d40ac7c.hpp",
+  "implementation_source": "src/distributed/distributed-rebuntu-system/subtask_targets/contracts/message_schema_versioning_2d40ac7c.cpp",
+  "test_target": "tests/structural-closure/distributed/distributed-rebuntu-system/contracts/test_message_schema_versioning_2d40ac7c.cpp",
+  "status": "SKELETON_MATERIALIZED",
+  "behavioral_credit": false,
+  "preservation": "PRESERVE_IMPLEMENT_EXTEND"
+}

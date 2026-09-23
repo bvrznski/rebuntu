@@ -1,0 +1,12 @@
+{
+  "source_prompt": ".phases/phases/phase-43-operator-intelligence-system/prompts/43.001-existing-intelligence-capability-inventory.md",
+  "phase_task": ".phases/phases/phase-43-operator-intelligence-system/TASK.md",
+  "canonical_root": "src/operator/operator-intelligence-system",
+  "role": "requirements",
+  "implementation_header": "src/operator/operator-intelligence-system/subtask_targets/requirements/existing_intelligence_capability_inventory_1237ce0e.hpp",
+  "implementation_source": "src/operator/operator-intelligence-system/subtask_targets/requirements/existing_intelligence_capability_inventory_1237ce0e.cpp",
+  "test_target": "tests/structural-closure/operator/operator-intelligence-system/requirements/test_existing_intelligence_capability_inventory_1237ce0e.cpp",
+  "status": "SKELETON_MATERIALIZED",
+  "behavioral_credit": false,
+  "preservation": "PRESERVE_IMPLEMENT_EXTEND"
+}

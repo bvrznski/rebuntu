@@ -1,0 +1,9 @@
+{
+  "component": "distributed-workload-placement-execution",
+  "canonical_root": "distributed",
+  "phase_tasks": [
+    ".phases/phases/phase-82-distributed-workload-placement-execution/TASK.md"
+  ],
+  "status": "SKELETON",
+  "native_authority_rule": true
+}

@@ -1,0 +1,12 @@
+{
+  "source_prompt": ".phases/phases/phase-49-gui/prompts/49.331-snapshot-versioning.md",
+  "phase_task": ".phases/phases/phase-49-gui/TASK.md",
+  "canonical_root": "src/operator/gui",
+  "role": "persistence",
+  "implementation_header": "src/operator/gui/subtask_targets/persistence/snapshot_versioning_a67fb0ba.hpp",
+  "implementation_source": "src/operator/gui/subtask_targets/persistence/snapshot_versioning_a67fb0ba.cpp",
+  "test_target": "tests/structural-closure/operator/gui/persistence/test_snapshot_versioning_a67fb0ba.cpp",
+  "status": "SKELETON_MATERIALIZED",
+  "behavioral_credit": false,
+  "preservation": "PRESERVE_IMPLEMENT_EXTEND"
+}

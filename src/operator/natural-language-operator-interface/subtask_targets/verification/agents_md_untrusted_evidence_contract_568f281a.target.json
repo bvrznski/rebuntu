@@ -1,0 +1,12 @@
+{
+  "source_prompt": ".phases/phases/phase-46-natural-language-operator-interface/prompts/46.444-agents-md-untrusted-evidence-contract.md",
+  "phase_task": ".phases/phases/phase-46-natural-language-operator-interface/TASK.md",
+  "canonical_root": "src/operator/natural-language-operator-interface",
+  "role": "verification",
+  "implementation_header": "src/operator/natural-language-operator-interface/subtask_targets/verification/agents_md_untrusted_evidence_contract_568f281a.hpp",
+  "implementation_source": "src/operator/natural-language-operator-interface/subtask_targets/verification/agents_md_untrusted_evidence_contract_568f281a.cpp",
+  "test_target": "tests/structural-closure/operator/natural-language-operator-interface/verification/test_agents_md_untrusted_evidence_contract_568f281a.cpp",
+  "status": "SKELETON_MATERIALIZED",
+  "behavioral_credit": false,
+  "preservation": "PRESERVE_IMPLEMENT_EXTEND"
+}

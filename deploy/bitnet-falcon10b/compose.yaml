@@ -1,0 +1,26 @@
+services:
+  falcon10b:
+    build:
+      context: .
+      dockerfile: Dockerfile
+    image: rebuntu-bitnet-falcon10b:local
+    container_name: rebuntu-bitnet-falcon10b
+    restart: unless-stopped
+    init: true
+
+    ports:
+      - "127.0.0.1:8082:8082"
+
+    environment:
+      BITNET_THREADS: "4"
+      BITNET_CTX: "4096"
+      BITNET_PORT: "8082"
+
+    cpus: 4
+    mem_limit: 16g
+    pids_limit: 512
+
+    security_opt:
+      - no-new-privileges:true
+    cap_drop:
+      - ALL

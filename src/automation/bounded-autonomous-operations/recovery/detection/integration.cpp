@@ -1,0 +1,6 @@
+#include "automation/bounded-autonomous-operations/recovery/detection/integration.hpp"
+
+// Structural translation-unit slot only. No maturity credit.
+namespace rebuntu::structural_slots {
+static_assert(Skeleton_54e1046048_Integration::structural_revision == 25);
+}

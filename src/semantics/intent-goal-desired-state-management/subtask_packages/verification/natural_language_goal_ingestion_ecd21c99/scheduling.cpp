@@ -1,0 +1,5 @@
+#include "scheduling.hpp"
+
+// XXVII out-of-line implementation reservation for scheduling.
+// Source: .phases/phases/phase-56-intent-goal-desired-state-management/prompts/56.30-rebuntu-phase-56-30-natural-language-goal-ingestion.md
+// Intentionally behavior-free until prompt-derived implementation is supplied.

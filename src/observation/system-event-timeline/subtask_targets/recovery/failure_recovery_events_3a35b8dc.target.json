@@ -1,0 +1,12 @@
+{
+  "source_prompt": ".phases/phases/phase-39-system-event-timeline/prompts/39.26-failure-recovery-events.md",
+  "phase_task": ".phases/phases/phase-39-system-event-timeline/TASK.md",
+  "canonical_root": "src/observation/system-event-timeline",
+  "role": "recovery",
+  "implementation_header": "src/observation/system-event-timeline/subtask_targets/recovery/failure_recovery_events_3a35b8dc.hpp",
+  "implementation_source": "src/observation/system-event-timeline/subtask_targets/recovery/failure_recovery_events_3a35b8dc.cpp",
+  "test_target": "tests/structural-closure/observation/system-event-timeline/recovery/test_failure_recovery_events_3a35b8dc.cpp",
+  "status": "SKELETON_MATERIALIZED",
+  "behavioral_credit": false,
+  "preservation": "PRESERVE_IMPLEMENT_EXTEND"
+}

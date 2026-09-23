@@ -1,0 +1,12 @@
+{
+  "source_prompt": ".phases/phases/phase-30-resource-management/prompts/30.46-stale-evidence-control-loop-safety.md",
+  "phase_task": ".phases/phases/phase-30-resource-management/TASK.md",
+  "canonical_root": "src/domains/resource-management",
+  "role": "verification",
+  "implementation_header": "src/domains/resource-management/subtask_targets/verification/stale_evidence_control_loop_safety_3d58d589.hpp",
+  "implementation_source": "src/domains/resource-management/subtask_targets/verification/stale_evidence_control_loop_safety_3d58d589.cpp",
+  "test_target": "tests/structural-closure/domains/resource-management/verification/test_stale_evidence_control_loop_safety_3d58d589.cpp",
+  "status": "SKELETON_MATERIALIZED",
+  "behavioral_credit": false,
+  "preservation": "PRESERVE_IMPLEMENT_EXTEND"
+}

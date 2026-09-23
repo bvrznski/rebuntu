@@ -1,0 +1,12 @@
+{
+  "source_prompt": ".phases/phases/phase-47-os-task-policy-system/prompts/47.530-existing-policy-code-migration.md",
+  "phase_task": ".phases/phases/phase-47-os-task-policy-system/TASK.md",
+  "canonical_root": "src/runtime/os-task-policy-system",
+  "role": "security",
+  "implementation_header": "src/runtime/os-task-policy-system/subtask_targets/security/existing_policy_code_migration_50bca583.hpp",
+  "implementation_source": "src/runtime/os-task-policy-system/subtask_targets/security/existing_policy_code_migration_50bca583.cpp",
+  "test_target": "tests/structural-closure/runtime/os-task-policy-system/security/test_existing_policy_code_migration_50bca583.cpp",
+  "status": "SKELETON_MATERIALIZED",
+  "behavioral_credit": false,
+  "preservation": "PRESERVE_IMPLEMENT_EXTEND"
+}

@@ -1,0 +1,12 @@
+{
+  "source_prompt": ".phases/phases/phase-43-operator-intelligence-system/prompts/43.071-possible-cause-hypothesis-generation.md",
+  "phase_task": ".phases/phases/phase-43-operator-intelligence-system/TASK.md",
+  "canonical_root": "src/operator/operator-intelligence-system",
+  "role": "requirements",
+  "implementation_header": "src/operator/operator-intelligence-system/subtask_targets/requirements/possible_cause_hypothesis_generation_634daf16.hpp",
+  "implementation_source": "src/operator/operator-intelligence-system/subtask_targets/requirements/possible_cause_hypothesis_generation_634daf16.cpp",
+  "test_target": "tests/structural-closure/operator/operator-intelligence-system/requirements/test_possible_cause_hypothesis_generation_634daf16.cpp",
+  "status": "SKELETON_MATERIALIZED",
+  "behavioral_credit": false,
+  "preservation": "PRESERVE_IMPLEMENT_EXTEND"
+}

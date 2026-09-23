@@ -1,0 +1,12 @@
+{
+  "source_prompt": ".phases/phases/phase-35-package-software-management/prompts/35.0-package-software-management-system-foundation.md",
+  "phase_task": ".phases/phases/phase-35-package-software-management/TASK.md",
+  "canonical_root": "src/domains/package-software-management",
+  "role": "requirements",
+  "implementation_header": "src/domains/package-software-management/subtask_targets/requirements/package_software_management_system_foundation_c7bac8bd.hpp",
+  "implementation_source": "src/domains/package-software-management/subtask_targets/requirements/package_software_management_system_foundation_c7bac8bd.cpp",
+  "test_target": "tests/structural-closure/domains/package-software-management/requirements/test_package_software_management_system_foundation_c7bac8bd.cpp",
+  "status": "SKELETON_MATERIALIZED",
+  "behavioral_credit": false,
+  "preservation": "PRESERVE_IMPLEMENT_EXTEND"
+}

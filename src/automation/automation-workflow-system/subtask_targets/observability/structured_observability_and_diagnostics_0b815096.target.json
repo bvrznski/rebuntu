@@ -1,0 +1,12 @@
+{
+  "source_prompt": ".phases/phases/phase-41-automation-workflow-system/prompts/41.094-structured-observability-and-diagnostics.md",
+  "phase_task": ".phases/phases/phase-41-automation-workflow-system/TASK.md",
+  "canonical_root": "src/automation/automation-workflow-system",
+  "role": "observability",
+  "implementation_header": "src/automation/automation-workflow-system/subtask_targets/observability/structured_observability_and_diagnostics_0b815096.hpp",
+  "implementation_source": "src/automation/automation-workflow-system/subtask_targets/observability/structured_observability_and_diagnostics_0b815096.cpp",
+  "test_target": "tests/structural-closure/automation/automation-workflow-system/observability/test_structured_observability_and_diagnostics_0b815096.cpp",
+  "status": "SKELETON_MATERIALIZED",
+  "behavioral_credit": false,
+  "preservation": "PRESERVE_IMPLEMENT_EXTEND"
+}

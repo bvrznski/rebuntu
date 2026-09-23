@@ -1,0 +1,12 @@
+{
+  "source_prompt": ".phases/phases/phase-29-process-workload-management/prompts/29.19-workload-hierarchy-composition.md",
+  "phase_task": ".phases/phases/phase-29-process-workload-management/TASK.md",
+  "canonical_root": "src/domains/process-workload-management",
+  "role": "requirements",
+  "implementation_header": "src/domains/process-workload-management/subtask_targets/requirements/workload_hierarchy_composition_53953c36.hpp",
+  "implementation_source": "src/domains/process-workload-management/subtask_targets/requirements/workload_hierarchy_composition_53953c36.cpp",
+  "test_target": "tests/structural-closure/domains/process-workload-management/requirements/test_workload_hierarchy_composition_53953c36.cpp",
+  "status": "SKELETON_MATERIALIZED",
+  "behavioral_credit": false,
+  "preservation": "PRESERVE_IMPLEMENT_EXTEND"
+}

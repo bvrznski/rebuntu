@@ -1,0 +1,9 @@
+{
+  "component": "system-experimentation-controlled-optimization",
+  "canonical_root": "domains",
+  "phase_tasks": [
+    ".phases/phases/phase-74-system-experimentation-controlled-optimization/TASK.md"
+  ],
+  "status": "SKELETON",
+  "native_authority_rule": true
+}

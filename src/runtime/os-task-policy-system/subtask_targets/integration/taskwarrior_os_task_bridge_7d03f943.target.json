@@ -1,0 +1,12 @@
+{
+  "source_prompt": ".phases/phases/phase-47-os-task-policy-system/prompts/47.248-taskwarrior-os-task-bridge.md",
+  "phase_task": ".phases/phases/phase-47-os-task-policy-system/TASK.md",
+  "canonical_root": "src/runtime/os-task-policy-system",
+  "role": "integration",
+  "implementation_header": "src/runtime/os-task-policy-system/subtask_targets/integration/taskwarrior_os_task_bridge_7d03f943.hpp",
+  "implementation_source": "src/runtime/os-task-policy-system/subtask_targets/integration/taskwarrior_os_task_bridge_7d03f943.cpp",
+  "test_target": "tests/structural-closure/runtime/os-task-policy-system/integration/test_taskwarrior_os_task_bridge_7d03f943.cpp",
+  "status": "SKELETON_MATERIALIZED",
+  "behavioral_credit": false,
+  "preservation": "PRESERVE_IMPLEMENT_EXTEND"
+}

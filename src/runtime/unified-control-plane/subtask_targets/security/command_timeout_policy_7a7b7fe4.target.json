@@ -1,0 +1,12 @@
+{
+  "source_prompt": ".phases/phases/phase-45-unified-control-plane/prompts/45.157-command-timeout-policy.md",
+  "phase_task": ".phases/phases/phase-45-unified-control-plane/TASK.md",
+  "canonical_root": "src/runtime/unified-control-plane",
+  "role": "security",
+  "implementation_header": "src/runtime/unified-control-plane/subtask_targets/security/command_timeout_policy_7a7b7fe4.hpp",
+  "implementation_source": "src/runtime/unified-control-plane/subtask_targets/security/command_timeout_policy_7a7b7fe4.cpp",
+  "test_target": "tests/structural-closure/runtime/unified-control-plane/security/test_command_timeout_policy_7a7b7fe4.cpp",
+  "status": "SKELETON_MATERIALIZED",
+  "behavioral_credit": false,
+  "preservation": "PRESERVE_IMPLEMENT_EXTEND"
+}

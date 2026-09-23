@@ -1,0 +1,12 @@
+{
+  "source_prompt": ".phases/phases/phase-46-natural-language-operator-interface/prompts/46.096-authorization-context.md",
+  "phase_task": ".phases/phases/phase-46-natural-language-operator-interface/TASK.md",
+  "canonical_root": "src/operator/natural-language-operator-interface",
+  "role": "security",
+  "implementation_header": "src/operator/natural-language-operator-interface/subtask_targets/security/authorization_context_f35f451e.hpp",
+  "implementation_source": "src/operator/natural-language-operator-interface/subtask_targets/security/authorization_context_f35f451e.cpp",
+  "test_target": "tests/structural-closure/operator/natural-language-operator-interface/security/test_authorization_context_f35f451e.cpp",
+  "status": "SKELETON_MATERIALIZED",
+  "behavioral_credit": false,
+  "preservation": "PRESERVE_IMPLEMENT_EXTEND"
+}

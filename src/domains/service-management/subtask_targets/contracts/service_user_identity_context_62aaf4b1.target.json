@@ -1,0 +1,12 @@
+{
+  "source_prompt": ".phases/phases/phase-31-service-management/prompts/31.26-service-user-identity-context.md",
+  "phase_task": ".phases/phases/phase-31-service-management/TASK.md",
+  "canonical_root": "src/domains/service-management",
+  "role": "contracts",
+  "implementation_header": "src/domains/service-management/subtask_targets/contracts/service_user_identity_context_62aaf4b1.hpp",
+  "implementation_source": "src/domains/service-management/subtask_targets/contracts/service_user_identity_context_62aaf4b1.cpp",
+  "test_target": "tests/structural-closure/domains/service-management/contracts/test_service_user_identity_context_62aaf4b1.cpp",
+  "status": "SKELETON_MATERIALIZED",
+  "behavioral_credit": false,
+  "preservation": "PRESERVE_IMPLEMENT_EXTEND"
+}

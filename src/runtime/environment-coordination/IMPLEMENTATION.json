@@ -1,0 +1,9 @@
+{
+  "component": "environment-coordination",
+  "canonical_root": "runtime",
+  "phase_tasks": [
+    ".phases/phases/phase-15-environment-coordination/TASK.md"
+  ],
+  "status": "SKELETON",
+  "native_authority_rule": true
+}

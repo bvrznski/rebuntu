@@ -1,0 +1,12 @@
+{
+  "source_prompt": ".phases/phases/phase-39-system-event-timeline/prompts/39.17-event-deduplication-semantics.md",
+  "phase_task": ".phases/phases/phase-39-system-event-timeline/TASK.md",
+  "canonical_root": "src/observation/system-event-timeline",
+  "role": "requirements",
+  "implementation_header": "src/observation/system-event-timeline/subtask_targets/requirements/event_deduplication_semantics_08de7019.hpp",
+  "implementation_source": "src/observation/system-event-timeline/subtask_targets/requirements/event_deduplication_semantics_08de7019.cpp",
+  "test_target": "tests/structural-closure/observation/system-event-timeline/requirements/test_event_deduplication_semantics_08de7019.cpp",
+  "status": "SKELETON_MATERIALIZED",
+  "behavioral_credit": false,
+  "preservation": "PRESERVE_IMPLEMENT_EXTEND"
+}

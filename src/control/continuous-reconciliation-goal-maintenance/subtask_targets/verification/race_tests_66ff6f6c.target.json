@@ -1,0 +1,12 @@
+{
+  "source_prompt": ".phases/phases/phase-57-continuous-reconciliation-goal-maintenance/prompts/57.42-rebuntu-phase-57-42-race-tests.md",
+  "phase_task": ".phases/phases/phase-57-continuous-reconciliation-goal-maintenance/TASK.md",
+  "canonical_root": "src/control/continuous-reconciliation-goal-maintenance",
+  "role": "verification",
+  "implementation_header": "src/control/continuous-reconciliation-goal-maintenance/subtask_targets/verification/race_tests_66ff6f6c.hpp",
+  "implementation_source": "src/control/continuous-reconciliation-goal-maintenance/subtask_targets/verification/race_tests_66ff6f6c.cpp",
+  "test_target": "tests/structural-closure/control/continuous-reconciliation-goal-maintenance/verification/test_race_tests_66ff6f6c.cpp",
+  "status": "SKELETON_MATERIALIZED",
+  "behavioral_credit": false,
+  "preservation": "PRESERVE_IMPLEMENT_EXTEND"
+}

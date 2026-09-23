@@ -1,0 +1,6 @@
+#include "providers/linux/dbus/calls/validation.hpp"
+
+// Structural translation-unit slot only. No maturity credit.
+namespace rebuntu::structural_slots {
+static_assert(Skeleton_5f142638cb_Validation::structural_revision == 25);
+}

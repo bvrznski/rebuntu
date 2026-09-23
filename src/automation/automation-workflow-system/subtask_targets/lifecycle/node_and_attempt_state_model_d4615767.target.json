@@ -1,0 +1,12 @@
+{
+  "source_prompt": ".phases/phases/phase-41-automation-workflow-system/prompts/41.011-node-and-attempt-state-model.md",
+  "phase_task": ".phases/phases/phase-41-automation-workflow-system/TASK.md",
+  "canonical_root": "src/automation/automation-workflow-system",
+  "role": "lifecycle",
+  "implementation_header": "src/automation/automation-workflow-system/subtask_targets/lifecycle/node_and_attempt_state_model_d4615767.hpp",
+  "implementation_source": "src/automation/automation-workflow-system/subtask_targets/lifecycle/node_and_attempt_state_model_d4615767.cpp",
+  "test_target": "tests/structural-closure/automation/automation-workflow-system/lifecycle/test_node_and_attempt_state_model_d4615767.cpp",
+  "status": "SKELETON_MATERIALIZED",
+  "behavioral_credit": false,
+  "preservation": "PRESERVE_IMPLEMENT_EXTEND"
+}

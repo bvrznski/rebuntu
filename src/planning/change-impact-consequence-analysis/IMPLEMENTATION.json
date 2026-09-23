@@ -1,0 +1,10 @@
+{
+  "component": "change-impact-consequence-analysis",
+  "canonical_root": "planning",
+  "phase_tasks": [
+    ".phases/phases/phase-59-change-impact-consequence-analysis/TASK.md",
+    ".phases/phases/phase-65-change-impact-consequence-analysis/TASK.md"
+  ],
+  "status": "SKELETON",
+  "native_authority_rule": true
+}

@@ -1,0 +1,12 @@
+{
+  "source_prompt": ".phases/phases/phase-49-gui/prompts/49.637-final-desktop-integration-validation.md",
+  "phase_task": ".phases/phases/phase-49-gui/TASK.md",
+  "canonical_root": "src/operator/gui",
+  "role": "integration",
+  "implementation_header": "src/operator/gui/subtask_targets/integration/final_desktop_integration_validation_d7681b93.hpp",
+  "implementation_source": "src/operator/gui/subtask_targets/integration/final_desktop_integration_validation_d7681b93.cpp",
+  "test_target": "tests/structural-closure/operator/gui/integration/test_final_desktop_integration_validation_d7681b93.cpp",
+  "status": "SKELETON_MATERIALIZED",
+  "behavioral_credit": false,
+  "preservation": "PRESERVE_IMPLEMENT_EXTEND"
+}

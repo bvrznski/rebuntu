@@ -1,0 +1,12 @@
+{
+  "source_prompt": ".phases/phases/phase-42-system-knowledge-graph/prompts/42.109-phase-41-workflow-integration-tests.md",
+  "phase_task": ".phases/phases/phase-42-system-knowledge-graph/TASK.md",
+  "canonical_root": "src/knowledge/system-knowledge-graph",
+  "role": "verification",
+  "implementation_header": "src/knowledge/system-knowledge-graph/subtask_targets/verification/workflow_integration_tests_1f8af90b.hpp",
+  "implementation_source": "src/knowledge/system-knowledge-graph/subtask_targets/verification/workflow_integration_tests_1f8af90b.cpp",
+  "test_target": "tests/structural-closure/knowledge/system-knowledge-graph/verification/test_workflow_integration_tests_1f8af90b.cpp",
+  "status": "SKELETON_MATERIALIZED",
+  "behavioral_credit": false,
+  "preservation": "PRESERVE_IMPLEMENT_EXTEND"
+}

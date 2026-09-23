@@ -1,0 +1,6 @@
+#include "domains/process-workload-management/state/snapshot/integration.hpp"
+
+// Structural translation-unit slot only. No maturity credit.
+namespace rebuntu::structural_slots {
+static_assert(Skeleton_26ee7fa53c_Integration::structural_revision == 25);
+}

@@ -1,0 +1,12 @@
+{
+  "source_prompt": ".phases/phases/phase-50-platform-abstraction-portability-foundation/prompts/50.201-final-windows-readiness-audit.md",
+  "phase_task": ".phases/phases/phase-50-platform-abstraction-portability-foundation/TASK.md",
+  "canonical_root": "src/providers/platform-abstraction-portability-foundation",
+  "role": "verification",
+  "implementation_header": "src/providers/platform-abstraction-portability-foundation/subtask_targets/verification/final_windows_readiness_audit_7109364b.hpp",
+  "implementation_source": "src/providers/platform-abstraction-portability-foundation/subtask_targets/verification/final_windows_readiness_audit_7109364b.cpp",
+  "test_target": "tests/structural-closure/providers/platform-abstraction-portability-foundation/verification/test_final_windows_readiness_audit_7109364b.cpp",
+  "status": "SKELETON_MATERIALIZED",
+  "behavioral_credit": false,
+  "preservation": "PRESERVE_IMPLEMENT_EXTEND"
+}

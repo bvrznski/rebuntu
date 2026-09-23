@@ -1,0 +1,12 @@
+{
+  "source_prompt": ".phases/phases/phase-49-gui/prompts/49.619-resolve-rediscovery-pass-two.md",
+  "phase_task": ".phases/phases/phase-49-gui/TASK.md",
+  "canonical_root": "src/operator/gui",
+  "role": "resolution",
+  "implementation_header": "src/operator/gui/subtask_targets/resolution/resolve_rediscovery_pass_two_5892cb26.hpp",
+  "implementation_source": "src/operator/gui/subtask_targets/resolution/resolve_rediscovery_pass_two_5892cb26.cpp",
+  "test_target": "tests/structural-closure/operator/gui/resolution/test_resolve_rediscovery_pass_two_5892cb26.cpp",
+  "status": "SKELETON_MATERIALIZED",
+  "behavioral_credit": false,
+  "preservation": "PRESERVE_IMPLEMENT_EXTEND"
+}

@@ -1,0 +1,12 @@
+{
+  "source_prompt": ".phases/phases/phase-104-explainable-autonomous-operations/prompts/104.19.md",
+  "phase_task": ".phases/phases/phase-104-explainable-autonomous-operations/TASK.md",
+  "canonical_root": "src/operator/explainable-autonomous-operations",
+  "role": "requirements",
+  "implementation_header": "src/operator/explainable-autonomous-operations/subtask_targets/requirements/requirement_7bda1856.hpp",
+  "implementation_source": "src/operator/explainable-autonomous-operations/subtask_targets/requirements/requirement_7bda1856.cpp",
+  "test_target": "tests/structural-closure/operator/explainable-autonomous-operations/requirements/test_requirement_7bda1856.cpp",
+  "status": "SKELETON_MATERIALIZED",
+  "behavioral_credit": false,
+  "preservation": "PRESERVE_IMPLEMENT_EXTEND"
+}

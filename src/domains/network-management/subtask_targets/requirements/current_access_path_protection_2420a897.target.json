@@ -1,0 +1,12 @@
+{
+  "source_prompt": ".phases/phases/phase-33-network-management/prompts/33.32-current-access-path-protection.md",
+  "phase_task": ".phases/phases/phase-33-network-management/TASK.md",
+  "canonical_root": "src/domains/network-management",
+  "role": "requirements",
+  "implementation_header": "src/domains/network-management/subtask_targets/requirements/current_access_path_protection_2420a897.hpp",
+  "implementation_source": "src/domains/network-management/subtask_targets/requirements/current_access_path_protection_2420a897.cpp",
+  "test_target": "tests/structural-closure/domains/network-management/requirements/test_current_access_path_protection_2420a897.cpp",
+  "status": "SKELETON_MATERIALIZED",
+  "behavioral_credit": false,
+  "preservation": "PRESERVE_IMPLEMENT_EXTEND"
+}

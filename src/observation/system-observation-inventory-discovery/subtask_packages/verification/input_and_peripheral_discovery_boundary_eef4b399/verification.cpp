@@ -1,0 +1,5 @@
+#include "verification.hpp"
+
+// XXVII out-of-line implementation reservation for verification.
+// Source: .phases/phases/phase-05-system-observation-inventory-discovery/prompts/5.36_input_and_peripheral_discovery_boundary.md
+// Intentionally behavior-free until prompt-derived implementation is supplied.

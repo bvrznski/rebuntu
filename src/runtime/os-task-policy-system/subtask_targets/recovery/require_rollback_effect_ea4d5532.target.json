@@ -1,0 +1,12 @@
+{
+  "source_prompt": ".phases/phases/phase-47-os-task-policy-system/prompts/47.075-require-rollback-effect.md",
+  "phase_task": ".phases/phases/phase-47-os-task-policy-system/TASK.md",
+  "canonical_root": "src/runtime/os-task-policy-system",
+  "role": "recovery",
+  "implementation_header": "src/runtime/os-task-policy-system/subtask_targets/recovery/require_rollback_effect_ea4d5532.hpp",
+  "implementation_source": "src/runtime/os-task-policy-system/subtask_targets/recovery/require_rollback_effect_ea4d5532.cpp",
+  "test_target": "tests/structural-closure/runtime/os-task-policy-system/recovery/test_require_rollback_effect_ea4d5532.cpp",
+  "status": "SKELETON_MATERIALIZED",
+  "behavioral_credit": false,
+  "preservation": "PRESERVE_IMPLEMENT_EXTEND"
+}

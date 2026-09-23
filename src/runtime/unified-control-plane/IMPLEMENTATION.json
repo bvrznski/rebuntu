@@ -1,0 +1,9 @@
+{
+  "component": "unified-control-plane",
+  "canonical_root": "runtime",
+  "phase_tasks": [
+    ".phases/phases/phase-45-unified-control-plane/TASK.md"
+  ],
+  "status": "SKELETON",
+  "native_authority_rule": true
+}

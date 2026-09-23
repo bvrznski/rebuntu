@@ -1,0 +1,9 @@
+{
+  "component": "distributed-goal-desired-state-coordination",
+  "canonical_root": "distributed",
+  "phase_tasks": [
+    ".phases/phases/phase-83-distributed-goal-desired-state-coordination/TASK.md"
+  ],
+  "status": "SKELETON",
+  "native_authority_rule": true
+}

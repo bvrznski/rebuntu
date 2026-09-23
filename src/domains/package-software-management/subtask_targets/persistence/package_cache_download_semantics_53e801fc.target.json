@@ -1,0 +1,12 @@
+{
+  "source_prompt": ".phases/phases/phase-35-package-software-management/prompts/35.43-package-cache-download-semantics.md",
+  "phase_task": ".phases/phases/phase-35-package-software-management/TASK.md",
+  "canonical_root": "src/domains/package-software-management",
+  "role": "persistence",
+  "implementation_header": "src/domains/package-software-management/subtask_targets/persistence/package_cache_download_semantics_53e801fc.hpp",
+  "implementation_source": "src/domains/package-software-management/subtask_targets/persistence/package_cache_download_semantics_53e801fc.cpp",
+  "test_target": "tests/structural-closure/domains/package-software-management/persistence/test_package_cache_download_semantics_53e801fc.cpp",
+  "status": "SKELETON_MATERIALIZED",
+  "behavioral_credit": false,
+  "preservation": "PRESERVE_IMPLEMENT_EXTEND"
+}

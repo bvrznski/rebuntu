@@ -1,0 +1,9 @@
+{
+  "component": "power-thermal-acoustic-optimization",
+  "canonical_root": "domains",
+  "phase_tasks": [
+    ".phases/phases/phase-72-power-thermal-acoustic-optimization/TASK.md"
+  ],
+  "status": "SKELETON",
+  "native_authority_rule": true
+}

@@ -1,0 +1,12 @@
+{
+  "source_prompt": ".phases/phases/phase-43-operator-intelligence-system/prompts/43.091-security-exposure-analysis.md",
+  "phase_task": ".phases/phases/phase-43-operator-intelligence-system/TASK.md",
+  "canonical_root": "src/operator/operator-intelligence-system",
+  "role": "security",
+  "implementation_header": "src/operator/operator-intelligence-system/subtask_targets/security/security_exposure_analysis_210a8a48.hpp",
+  "implementation_source": "src/operator/operator-intelligence-system/subtask_targets/security/security_exposure_analysis_210a8a48.cpp",
+  "test_target": "tests/structural-closure/operator/operator-intelligence-system/security/test_security_exposure_analysis_210a8a48.cpp",
+  "status": "SKELETON_MATERIALIZED",
+  "behavioral_credit": false,
+  "preservation": "PRESERVE_IMPLEMENT_EXTEND"
+}

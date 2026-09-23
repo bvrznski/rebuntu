@@ -1,0 +1,12 @@
+{
+  "source_prompt": ".phases/phases/phase-29-process-workload-management/prompts/29.5-parent-child-process-relationships.md",
+  "phase_task": ".phases/phases/phase-29-process-workload-management/TASK.md",
+  "canonical_root": "src/domains/process-workload-management",
+  "role": "requirements",
+  "implementation_header": "src/domains/process-workload-management/subtask_targets/requirements/parent_child_process_relationships_c21db9dd.hpp",
+  "implementation_source": "src/domains/process-workload-management/subtask_targets/requirements/parent_child_process_relationships_c21db9dd.cpp",
+  "test_target": "tests/structural-closure/domains/process-workload-management/requirements/test_parent_child_process_relationships_c21db9dd.cpp",
+  "status": "SKELETON_MATERIALIZED",
+  "behavioral_credit": false,
+  "preservation": "PRESERVE_IMPLEMENT_EXTEND"
+}

@@ -1,0 +1,12 @@
+{
+  "source_prompt": ".phases/phases/phase-45-unified-control-plane/prompts/45.197-semantic-provider-isolation.md",
+  "phase_task": ".phases/phases/phase-45-unified-control-plane/TASK.md",
+  "canonical_root": "src/runtime/unified-control-plane",
+  "role": "integration",
+  "implementation_header": "src/runtime/unified-control-plane/subtask_targets/integration/semantic_provider_isolation_4f73ed9c.hpp",
+  "implementation_source": "src/runtime/unified-control-plane/subtask_targets/integration/semantic_provider_isolation_4f73ed9c.cpp",
+  "test_target": "tests/structural-closure/runtime/unified-control-plane/integration/test_semantic_provider_isolation_4f73ed9c.cpp",
+  "status": "SKELETON_MATERIALIZED",
+  "behavioral_credit": false,
+  "preservation": "PRESERVE_IMPLEMENT_EXTEND"
+}

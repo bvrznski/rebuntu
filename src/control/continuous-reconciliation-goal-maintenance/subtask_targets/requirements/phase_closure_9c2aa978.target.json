@@ -1,0 +1,12 @@
+{
+  "source_prompt": ".phases/phases/phase-57-continuous-reconciliation-goal-maintenance/prompts/57.47-rebuntu-phase-57-47-phase-closure.md",
+  "phase_task": ".phases/phases/phase-57-continuous-reconciliation-goal-maintenance/TASK.md",
+  "canonical_root": "src/control/continuous-reconciliation-goal-maintenance",
+  "role": "requirements",
+  "implementation_header": "src/control/continuous-reconciliation-goal-maintenance/subtask_targets/requirements/phase_closure_9c2aa978.hpp",
+  "implementation_source": "src/control/continuous-reconciliation-goal-maintenance/subtask_targets/requirements/phase_closure_9c2aa978.cpp",
+  "test_target": "tests/structural-closure/control/continuous-reconciliation-goal-maintenance/requirements/test_phase_closure_9c2aa978.cpp",
+  "status": "SKELETON_MATERIALIZED",
+  "behavioral_credit": false,
+  "preservation": "PRESERVE_IMPLEMENT_EXTEND"
+}

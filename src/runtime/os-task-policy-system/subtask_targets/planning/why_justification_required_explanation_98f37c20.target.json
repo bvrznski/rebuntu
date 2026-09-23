@@ -1,0 +1,12 @@
+{
+  "source_prompt": ".phases/phases/phase-47-os-task-policy-system/prompts/47.301-why-justification-required-explanation.md",
+  "phase_task": ".phases/phases/phase-47-os-task-policy-system/TASK.md",
+  "canonical_root": "src/runtime/os-task-policy-system",
+  "role": "planning",
+  "implementation_header": "src/runtime/os-task-policy-system/subtask_targets/planning/why_justification_required_explanation_98f37c20.hpp",
+  "implementation_source": "src/runtime/os-task-policy-system/subtask_targets/planning/why_justification_required_explanation_98f37c20.cpp",
+  "test_target": "tests/structural-closure/runtime/os-task-policy-system/planning/test_why_justification_required_explanation_98f37c20.cpp",
+  "status": "SKELETON_MATERIALIZED",
+  "behavioral_credit": false,
+  "preservation": "PRESERVE_IMPLEMENT_EXTEND"
+}

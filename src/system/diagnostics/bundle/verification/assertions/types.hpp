@@ -1,0 +1,10 @@
+#pragma once
+
+#include <string_view>
+
+namespace rebuntu::skeleton::system::diagnostics::bundle::verification::assertions {
+struct AssertionsSkeleton final {
+    static constexpr std::string_view path = "src/system/diagnostics/bundle/verification/assertions";
+    static constexpr bool behavioral_implementation = false;
+};
+}  // namespace rebuntu::skeleton::system::diagnostics::bundle::verification::assertions

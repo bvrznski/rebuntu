@@ -1,0 +1,12 @@
+{
+  "source_prompt": ".phases/phases/phase-47-os-task-policy-system/prompts/47.524-reboot-policy-continuity-test.md",
+  "phase_task": ".phases/phases/phase-47-os-task-policy-system/TASK.md",
+  "canonical_root": "src/runtime/os-task-policy-system",
+  "role": "verification",
+  "implementation_header": "src/runtime/os-task-policy-system/subtask_targets/verification/reboot_policy_continuity_test_b5662759.hpp",
+  "implementation_source": "src/runtime/os-task-policy-system/subtask_targets/verification/reboot_policy_continuity_test_b5662759.cpp",
+  "test_target": "tests/structural-closure/runtime/os-task-policy-system/verification/test_reboot_policy_continuity_test_b5662759.cpp",
+  "status": "SKELETON_MATERIALIZED",
+  "behavioral_credit": false,
+  "preservation": "PRESERVE_IMPLEMENT_EXTEND"
+}

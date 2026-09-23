@@ -1,0 +1,12 @@
+{
+  "source_prompt": ".phases/phases/phase-05-system-observation-inventory-discovery/prompts/5.64_integration_test_matrix.md",
+  "phase_task": ".phases/phases/phase-05-system-observation-inventory-discovery/TASK.md",
+  "canonical_root": "src/observation/system-observation-inventory-discovery",
+  "role": "verification",
+  "implementation_header": "src/observation/system-observation-inventory-discovery/subtask_targets/verification/integration_test_matrix_663ffebf.hpp",
+  "implementation_source": "src/observation/system-observation-inventory-discovery/subtask_targets/verification/integration_test_matrix_663ffebf.cpp",
+  "test_target": "tests/structural-closure/observation/system-observation-inventory-discovery/verification/test_integration_test_matrix_663ffebf.cpp",
+  "status": "SKELETON_MATERIALIZED",
+  "behavioral_credit": false,
+  "preservation": "PRESERVE_IMPLEMENT_EXTEND"
+}

@@ -1,0 +1,5 @@
+#include "observability.hpp"
+
+// XXVII out-of-line implementation reservation for observability.
+// Source: .phases/phases/phase-83-distributed-goal-desired-state-coordination/prompts/83.19.md
+// Intentionally behavior-free until prompt-derived implementation is supplied.

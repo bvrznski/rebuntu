@@ -1,0 +1,9 @@
+{
+  "component": "predictive-health",
+  "canonical_root": "observation",
+  "phase_tasks": [
+    ".phases/phases/phase-21-predictive-health/TASK.md"
+  ],
+  "status": "SKELETON",
+  "native_authority_rule": true
+}

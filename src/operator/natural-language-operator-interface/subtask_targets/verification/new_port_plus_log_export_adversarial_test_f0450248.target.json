@@ -1,0 +1,12 @@
+{
+  "source_prompt": ".phases/phases/phase-46-natural-language-operator-interface/prompts/46.382-new-port-plus-log-export-adversarial-test.md",
+  "phase_task": ".phases/phases/phase-46-natural-language-operator-interface/TASK.md",
+  "canonical_root": "src/operator/natural-language-operator-interface",
+  "role": "verification",
+  "implementation_header": "src/operator/natural-language-operator-interface/subtask_targets/verification/new_port_plus_log_export_adversarial_test_f0450248.hpp",
+  "implementation_source": "src/operator/natural-language-operator-interface/subtask_targets/verification/new_port_plus_log_export_adversarial_test_f0450248.cpp",
+  "test_target": "tests/structural-closure/operator/natural-language-operator-interface/verification/test_new_port_plus_log_export_adversarial_test_f0450248.cpp",
+  "status": "SKELETON_MATERIALIZED",
+  "behavioral_credit": false,
+  "preservation": "PRESERVE_IMPLEMENT_EXTEND"
+}

@@ -1,0 +1,12 @@
+{
+  "source_prompt": ".phases/phases/phase-49-gui/prompts/49.608-remaining-python-boundary-inventory.md",
+  "phase_task": ".phases/phases/phase-49-gui/TASK.md",
+  "canonical_root": "src/operator/gui",
+  "role": "requirements",
+  "implementation_header": "src/operator/gui/subtask_targets/requirements/remaining_python_boundary_inventory_6df60bd6.hpp",
+  "implementation_source": "src/operator/gui/subtask_targets/requirements/remaining_python_boundary_inventory_6df60bd6.cpp",
+  "test_target": "tests/structural-closure/operator/gui/requirements/test_remaining_python_boundary_inventory_6df60bd6.cpp",
+  "status": "SKELETON_MATERIALIZED",
+  "behavioral_credit": false,
+  "preservation": "PRESERVE_IMPLEMENT_EXTEND"
+}

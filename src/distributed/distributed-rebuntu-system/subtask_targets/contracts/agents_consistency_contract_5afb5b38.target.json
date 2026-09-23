@@ -1,0 +1,12 @@
+{
+  "source_prompt": ".phases/phases/phase-51-distributed-rebuntu-system/prompts/51.567-agents-consistency-contract.md",
+  "phase_task": ".phases/phases/phase-51-distributed-rebuntu-system/TASK.md",
+  "canonical_root": "src/distributed/distributed-rebuntu-system",
+  "role": "contracts",
+  "implementation_header": "src/distributed/distributed-rebuntu-system/subtask_targets/contracts/agents_consistency_contract_5afb5b38.hpp",
+  "implementation_source": "src/distributed/distributed-rebuntu-system/subtask_targets/contracts/agents_consistency_contract_5afb5b38.cpp",
+  "test_target": "tests/structural-closure/distributed/distributed-rebuntu-system/contracts/test_agents_consistency_contract_5afb5b38.cpp",
+  "status": "SKELETON_MATERIALIZED",
+  "behavioral_credit": false,
+  "preservation": "PRESERVE_IMPLEMENT_EXTEND"
+}

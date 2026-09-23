@@ -1,0 +1,12 @@
+{
+  "source_prompt": ".phases/phases/phase-46-natural-language-operator-interface/prompts/46.311-automation-authority-boundary.md",
+  "phase_task": ".phases/phases/phase-46-natural-language-operator-interface/TASK.md",
+  "canonical_root": "src/operator/natural-language-operator-interface",
+  "role": "requirements",
+  "implementation_header": "src/operator/natural-language-operator-interface/subtask_targets/requirements/automation_authority_boundary_f75fb5a4.hpp",
+  "implementation_source": "src/operator/natural-language-operator-interface/subtask_targets/requirements/automation_authority_boundary_f75fb5a4.cpp",
+  "test_target": "tests/structural-closure/operator/natural-language-operator-interface/requirements/test_automation_authority_boundary_f75fb5a4.cpp",
+  "status": "SKELETON_MATERIALIZED",
+  "behavioral_credit": false,
+  "preservation": "PRESERVE_IMPLEMENT_EXTEND"
+}

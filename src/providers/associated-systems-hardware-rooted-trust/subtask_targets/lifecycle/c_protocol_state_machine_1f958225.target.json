@@ -1,0 +1,12 @@
+{
+  "source_prompt": ".phases/phases/phase-52-associated-systems-hardware-rooted-trust/prompts/52.599-c-protocol-state-machine.md",
+  "phase_task": ".phases/phases/phase-52-associated-systems-hardware-rooted-trust/TASK.md",
+  "canonical_root": "src/providers/associated-systems-hardware-rooted-trust",
+  "role": "lifecycle",
+  "implementation_header": "src/providers/associated-systems-hardware-rooted-trust/subtask_targets/lifecycle/c_protocol_state_machine_1f958225.hpp",
+  "implementation_source": "src/providers/associated-systems-hardware-rooted-trust/subtask_targets/lifecycle/c_protocol_state_machine_1f958225.cpp",
+  "test_target": "tests/structural-closure/providers/associated-systems-hardware-rooted-trust/lifecycle/test_c_protocol_state_machine_1f958225.cpp",
+  "status": "SKELETON_MATERIALIZED",
+  "behavioral_credit": false,
+  "preservation": "PRESERVE_IMPLEMENT_EXTEND"
+}

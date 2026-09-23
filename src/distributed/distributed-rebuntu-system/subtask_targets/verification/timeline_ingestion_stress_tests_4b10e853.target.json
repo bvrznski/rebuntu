@@ -1,0 +1,12 @@
+{
+  "source_prompt": ".phases/phases/phase-51-distributed-rebuntu-system/prompts/51.530-timeline-ingestion-stress-tests.md",
+  "phase_task": ".phases/phases/phase-51-distributed-rebuntu-system/TASK.md",
+  "canonical_root": "src/distributed/distributed-rebuntu-system",
+  "role": "verification",
+  "implementation_header": "src/distributed/distributed-rebuntu-system/subtask_targets/verification/timeline_ingestion_stress_tests_4b10e853.hpp",
+  "implementation_source": "src/distributed/distributed-rebuntu-system/subtask_targets/verification/timeline_ingestion_stress_tests_4b10e853.cpp",
+  "test_target": "tests/structural-closure/distributed/distributed-rebuntu-system/verification/test_timeline_ingestion_stress_tests_4b10e853.cpp",
+  "status": "SKELETON_MATERIALIZED",
+  "behavioral_credit": false,
+  "preservation": "PRESERVE_IMPLEMENT_EXTEND"
+}

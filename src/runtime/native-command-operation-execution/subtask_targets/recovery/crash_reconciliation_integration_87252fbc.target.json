@@ -1,0 +1,12 @@
+{
+  "source_prompt": ".phases/phases/phase-06-native-command-operation-execution/prompts/6.40_crash_reconciliation_integration.md",
+  "phase_task": ".phases/phases/phase-06-native-command-operation-execution/TASK.md",
+  "canonical_root": "src/runtime/native-command-operation-execution",
+  "role": "recovery",
+  "implementation_header": "src/runtime/native-command-operation-execution/subtask_targets/recovery/crash_reconciliation_integration_87252fbc.hpp",
+  "implementation_source": "src/runtime/native-command-operation-execution/subtask_targets/recovery/crash_reconciliation_integration_87252fbc.cpp",
+  "test_target": "tests/structural-closure/runtime/native-command-operation-execution/recovery/test_crash_reconciliation_integration_87252fbc.cpp",
+  "status": "SKELETON_MATERIALIZED",
+  "behavioral_credit": false,
+  "preservation": "PRESERVE_IMPLEMENT_EXTEND"
+}

@@ -1,0 +1,12 @@
+{
+  "source_prompt": ".phases/phases/phase-14-resource-foundation/prompts/14.3.md",
+  "phase_task": ".phases/phases/phase-14-resource-foundation/TASK.md",
+  "canonical_root": "src/runtime/resource-foundation",
+  "role": "requirements",
+  "implementation_header": "src/runtime/resource-foundation/subtask_targets/requirements/requirement_a704539a.hpp",
+  "implementation_source": "src/runtime/resource-foundation/subtask_targets/requirements/requirement_a704539a.cpp",
+  "test_target": "tests/structural-closure/runtime/resource-foundation/requirements/test_requirement_a704539a.cpp",
+  "status": "SKELETON_MATERIALIZED",
+  "behavioral_credit": false,
+  "preservation": "PRESERVE_IMPLEMENT_EXTEND"
+}

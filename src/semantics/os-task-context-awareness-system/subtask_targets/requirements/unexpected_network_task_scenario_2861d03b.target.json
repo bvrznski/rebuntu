@@ -1,0 +1,12 @@
+{
+  "source_prompt": ".phases/phases/phase-48-os-task-context-awareness-system/prompts/48.320-unexpected-network-task-scenario.md",
+  "phase_task": ".phases/phases/phase-48-os-task-context-awareness-system/TASK.md",
+  "canonical_root": "src/semantics/os-task-context-awareness-system",
+  "role": "requirements",
+  "implementation_header": "src/semantics/os-task-context-awareness-system/subtask_targets/requirements/unexpected_network_task_scenario_2861d03b.hpp",
+  "implementation_source": "src/semantics/os-task-context-awareness-system/subtask_targets/requirements/unexpected_network_task_scenario_2861d03b.cpp",
+  "test_target": "tests/structural-closure/semantics/os-task-context-awareness-system/requirements/test_unexpected_network_task_scenario_2861d03b.cpp",
+  "status": "SKELETON_MATERIALIZED",
+  "behavioral_credit": false,
+  "preservation": "PRESERVE_IMPLEMENT_EXTEND"
+}

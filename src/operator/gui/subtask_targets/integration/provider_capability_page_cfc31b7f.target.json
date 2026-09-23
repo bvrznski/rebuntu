@@ -1,0 +1,12 @@
+{
+  "source_prompt": ".phases/phases/phase-49-gui/prompts/49.299-provider-capability-page.md",
+  "phase_task": ".phases/phases/phase-49-gui/TASK.md",
+  "canonical_root": "src/operator/gui",
+  "role": "integration",
+  "implementation_header": "src/operator/gui/subtask_targets/integration/provider_capability_page_cfc31b7f.hpp",
+  "implementation_source": "src/operator/gui/subtask_targets/integration/provider_capability_page_cfc31b7f.cpp",
+  "test_target": "tests/structural-closure/operator/gui/integration/test_provider_capability_page_cfc31b7f.cpp",
+  "status": "SKELETON_MATERIALIZED",
+  "behavioral_credit": false,
+  "preservation": "PRESERVE_IMPLEMENT_EXTEND"
+}

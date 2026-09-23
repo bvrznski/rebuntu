@@ -1,0 +1,12 @@
+{
+  "source_prompt": ".phases/phases/phase-43-operator-intelligence-system/prompts/43.214-feature-capability-discovery.md",
+  "phase_task": ".phases/phases/phase-43-operator-intelligence-system/TASK.md",
+  "canonical_root": "src/operator/operator-intelligence-system",
+  "role": "resolution",
+  "implementation_header": "src/operator/operator-intelligence-system/subtask_targets/resolution/feature_capability_discovery_2019b43a.hpp",
+  "implementation_source": "src/operator/operator-intelligence-system/subtask_targets/resolution/feature_capability_discovery_2019b43a.cpp",
+  "test_target": "tests/structural-closure/operator/operator-intelligence-system/resolution/test_feature_capability_discovery_2019b43a.cpp",
+  "status": "SKELETON_MATERIALIZED",
+  "behavioral_credit": false,
+  "preservation": "PRESERVE_IMPLEMENT_EXTEND"
+}

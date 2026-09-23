@@ -1,0 +1,12 @@
+{
+  "source_prompt": ".phases/phases/phase-48-os-task-context-awareness-system/prompts/48.213-process-output-trust.md",
+  "phase_task": ".phases/phases/phase-48-os-task-context-awareness-system/TASK.md",
+  "canonical_root": "src/semantics/os-task-context-awareness-system",
+  "role": "security",
+  "implementation_header": "src/semantics/os-task-context-awareness-system/subtask_targets/security/process_output_trust_6cba830b.hpp",
+  "implementation_source": "src/semantics/os-task-context-awareness-system/subtask_targets/security/process_output_trust_6cba830b.cpp",
+  "test_target": "tests/structural-closure/semantics/os-task-context-awareness-system/security/test_process_output_trust_6cba830b.cpp",
+  "status": "SKELETON_MATERIALIZED",
+  "behavioral_credit": false,
+  "preservation": "PRESERVE_IMPLEMENT_EXTEND"
+}

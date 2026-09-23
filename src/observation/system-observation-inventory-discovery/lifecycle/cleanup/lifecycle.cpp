@@ -1,0 +1,6 @@
+#include "observation/system-observation-inventory-discovery/lifecycle/cleanup/lifecycle.hpp"
+
+// Structural translation-unit slot only. No maturity credit.
+namespace rebuntu::structural_slots {
+static_assert(Skeleton_cdbd502b4e_Lifecycle::structural_revision == 25);
+}

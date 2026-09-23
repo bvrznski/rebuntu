@@ -1,0 +1,12 @@
+{
+  "source_prompt": ".phases/phases/phase-35-package-software-management/prompts/35.45-repository-change-planning.md",
+  "phase_task": ".phases/phases/phase-35-package-software-management/TASK.md",
+  "canonical_root": "src/domains/package-software-management",
+  "role": "planning",
+  "implementation_header": "src/domains/package-software-management/subtask_targets/planning/repository_change_planning_23c2796d.hpp",
+  "implementation_source": "src/domains/package-software-management/subtask_targets/planning/repository_change_planning_23c2796d.cpp",
+  "test_target": "tests/structural-closure/domains/package-software-management/planning/test_repository_change_planning_23c2796d.cpp",
+  "status": "SKELETON_MATERIALIZED",
+  "behavioral_credit": false,
+  "preservation": "PRESERVE_IMPLEMENT_EXTEND"
+}

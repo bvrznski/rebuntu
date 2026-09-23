@@ -1,0 +1,12 @@
+{
+  "source_prompt": ".phases/phases/phase-48-os-task-context-awareness-system/prompts/48.334-gpu-index-identity-test.md",
+  "phase_task": ".phases/phases/phase-48-os-task-context-awareness-system/TASK.md",
+  "canonical_root": "src/semantics/os-task-context-awareness-system",
+  "role": "verification",
+  "implementation_header": "src/semantics/os-task-context-awareness-system/subtask_targets/verification/gpu_index_identity_test_1cde247e.hpp",
+  "implementation_source": "src/semantics/os-task-context-awareness-system/subtask_targets/verification/gpu_index_identity_test_1cde247e.cpp",
+  "test_target": "tests/structural-closure/semantics/os-task-context-awareness-system/verification/test_gpu_index_identity_test_1cde247e.cpp",
+  "status": "SKELETON_MATERIALIZED",
+  "behavioral_credit": false,
+  "preservation": "PRESERVE_IMPLEMENT_EXTEND"
+}

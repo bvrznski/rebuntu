@@ -1,0 +1,12 @@
+{
+  "source_prompt": ".phases/phases/phase-33-network-management/prompts/33.25-bonding-teaming-integration.md",
+  "phase_task": ".phases/phases/phase-33-network-management/TASK.md",
+  "canonical_root": "src/domains/network-management",
+  "role": "integration",
+  "implementation_header": "src/domains/network-management/subtask_targets/integration/bonding_teaming_integration_cc212282.hpp",
+  "implementation_source": "src/domains/network-management/subtask_targets/integration/bonding_teaming_integration_cc212282.cpp",
+  "test_target": "tests/structural-closure/domains/network-management/integration/test_bonding_teaming_integration_cc212282.cpp",
+  "status": "SKELETON_MATERIALIZED",
+  "behavioral_credit": false,
+  "preservation": "PRESERVE_IMPLEMENT_EXTEND"
+}

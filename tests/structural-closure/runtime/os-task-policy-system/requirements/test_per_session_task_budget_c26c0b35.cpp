@@ -1,0 +1,4 @@
+// STRUCTURAL TEST TARGET — no test evidence until assertions are implemented and executed.
+// Source subtask: .phases/phases/phase-47-os-task-policy-system/prompts/47.175-per-session-task-budget.md
+// Intended implementation target: src/runtime/os-task-policy-system/subtask_targets/requirements/per_session_task_budget_c26c0b35.hpp
+int main() { return 0; }

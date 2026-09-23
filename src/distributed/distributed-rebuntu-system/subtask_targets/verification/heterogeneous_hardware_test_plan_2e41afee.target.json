@@ -1,0 +1,12 @@
+{
+  "source_prompt": ".phases/phases/phase-51-distributed-rebuntu-system/prompts/51.507-heterogeneous-hardware-test-plan.md",
+  "phase_task": ".phases/phases/phase-51-distributed-rebuntu-system/TASK.md",
+  "canonical_root": "src/distributed/distributed-rebuntu-system",
+  "role": "verification",
+  "implementation_header": "src/distributed/distributed-rebuntu-system/subtask_targets/verification/heterogeneous_hardware_test_plan_2e41afee.hpp",
+  "implementation_source": "src/distributed/distributed-rebuntu-system/subtask_targets/verification/heterogeneous_hardware_test_plan_2e41afee.cpp",
+  "test_target": "tests/structural-closure/distributed/distributed-rebuntu-system/verification/test_heterogeneous_hardware_test_plan_2e41afee.cpp",
+  "status": "SKELETON_MATERIALIZED",
+  "behavioral_credit": false,
+  "preservation": "PRESERVE_IMPLEMENT_EXTEND"
+}

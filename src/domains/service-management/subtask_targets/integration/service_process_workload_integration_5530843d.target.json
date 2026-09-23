@@ -1,0 +1,12 @@
+{
+  "source_prompt": ".phases/phases/phase-31-service-management/prompts/31.24-service-process-workload-integration.md",
+  "phase_task": ".phases/phases/phase-31-service-management/TASK.md",
+  "canonical_root": "src/domains/service-management",
+  "role": "integration",
+  "implementation_header": "src/domains/service-management/subtask_targets/integration/service_process_workload_integration_5530843d.hpp",
+  "implementation_source": "src/domains/service-management/subtask_targets/integration/service_process_workload_integration_5530843d.cpp",
+  "test_target": "tests/structural-closure/domains/service-management/integration/test_service_process_workload_integration_5530843d.cpp",
+  "status": "SKELETON_MATERIALIZED",
+  "behavioral_credit": false,
+  "preservation": "PRESERVE_IMPLEMENT_EXTEND"
+}

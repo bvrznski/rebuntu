@@ -1,0 +1,12 @@
+{
+  "source_prompt": ".phases/phases/phase-51-distributed-rebuntu-system/prompts/51.505-virtual-node-test-harness.md",
+  "phase_task": ".phases/phases/phase-51-distributed-rebuntu-system/TASK.md",
+  "canonical_root": "src/distributed/distributed-rebuntu-system",
+  "role": "verification",
+  "implementation_header": "src/distributed/distributed-rebuntu-system/subtask_targets/verification/virtual_node_test_harness_3e71962e.hpp",
+  "implementation_source": "src/distributed/distributed-rebuntu-system/subtask_targets/verification/virtual_node_test_harness_3e71962e.cpp",
+  "test_target": "tests/structural-closure/distributed/distributed-rebuntu-system/verification/test_virtual_node_test_harness_3e71962e.cpp",
+  "status": "SKELETON_MATERIALIZED",
+  "behavioral_credit": false,
+  "preservation": "PRESERVE_IMPLEMENT_EXTEND"
+}

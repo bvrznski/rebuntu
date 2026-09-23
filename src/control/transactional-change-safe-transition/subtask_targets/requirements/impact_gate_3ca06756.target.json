@@ -1,0 +1,12 @@
+{
+  "source_prompt": ".phases/phases/phase-60-transactional-change-safe-transition/prompts/60.15-rebuntu-phase-60-15-impact-gate.md",
+  "phase_task": ".phases/phases/phase-60-transactional-change-safe-transition/TASK.md",
+  "canonical_root": "src/control/transactional-change-safe-transition",
+  "role": "requirements",
+  "implementation_header": "src/control/transactional-change-safe-transition/subtask_targets/requirements/impact_gate_3ca06756.hpp",
+  "implementation_source": "src/control/transactional-change-safe-transition/subtask_targets/requirements/impact_gate_3ca06756.cpp",
+  "test_target": "tests/structural-closure/control/transactional-change-safe-transition/requirements/test_impact_gate_3ca06756.cpp",
+  "status": "SKELETON_MATERIALIZED",
+  "behavioral_credit": false,
+  "preservation": "PRESERVE_IMPLEMENT_EXTEND"
+}

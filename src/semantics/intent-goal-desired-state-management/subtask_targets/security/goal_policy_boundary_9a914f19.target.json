@@ -1,0 +1,12 @@
+{
+  "source_prompt": ".phases/phases/phase-56-intent-goal-desired-state-management/prompts/56.23-rebuntu-phase-56-23-goal-policy-boundary.md",
+  "phase_task": ".phases/phases/phase-56-intent-goal-desired-state-management/TASK.md",
+  "canonical_root": "src/semantics/intent-goal-desired-state-management",
+  "role": "security",
+  "implementation_header": "src/semantics/intent-goal-desired-state-management/subtask_targets/security/goal_policy_boundary_9a914f19.hpp",
+  "implementation_source": "src/semantics/intent-goal-desired-state-management/subtask_targets/security/goal_policy_boundary_9a914f19.cpp",
+  "test_target": "tests/structural-closure/semantics/intent-goal-desired-state-management/security/test_goal_policy_boundary_9a914f19.cpp",
+  "status": "SKELETON_MATERIALIZED",
+  "behavioral_credit": false,
+  "preservation": "PRESERVE_IMPLEMENT_EXTEND"
+}

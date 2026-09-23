@@ -1,0 +1,12 @@
+{
+  "source_prompt": ".phases/phases/phase-30-resource-management/prompts/30.21-resource-time-series-windows.md",
+  "phase_task": ".phases/phases/phase-30-resource-management/TASK.md",
+  "canonical_root": "src/domains/resource-management",
+  "role": "requirements",
+  "implementation_header": "src/domains/resource-management/subtask_targets/requirements/resource_time_series_windows_a1e180a4.hpp",
+  "implementation_source": "src/domains/resource-management/subtask_targets/requirements/resource_time_series_windows_a1e180a4.cpp",
+  "test_target": "tests/structural-closure/domains/resource-management/requirements/test_resource_time_series_windows_a1e180a4.cpp",
+  "status": "SKELETON_MATERIALIZED",
+  "behavioral_credit": false,
+  "preservation": "PRESERVE_IMPLEMENT_EXTEND"
+}

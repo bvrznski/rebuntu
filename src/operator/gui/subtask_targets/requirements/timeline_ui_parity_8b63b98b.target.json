@@ -1,0 +1,12 @@
+{
+  "source_prompt": ".phases/phases/phase-49-gui/prompts/49.482-timeline-ui-parity.md",
+  "phase_task": ".phases/phases/phase-49-gui/TASK.md",
+  "canonical_root": "src/operator/gui",
+  "role": "requirements",
+  "implementation_header": "src/operator/gui/subtask_targets/requirements/timeline_ui_parity_8b63b98b.hpp",
+  "implementation_source": "src/operator/gui/subtask_targets/requirements/timeline_ui_parity_8b63b98b.cpp",
+  "test_target": "tests/structural-closure/operator/gui/requirements/test_timeline_ui_parity_8b63b98b.cpp",
+  "status": "SKELETON_MATERIALIZED",
+  "behavioral_credit": false,
+  "preservation": "PRESERVE_IMPLEMENT_EXTEND"
+}

@@ -1,0 +1,12 @@
+{
+  "source_prompt": ".phases/phases/phase-31-service-management/prompts/31.42-boot-time-service-analysis.md",
+  "phase_task": ".phases/phases/phase-31-service-management/TASK.md",
+  "canonical_root": "src/domains/service-management",
+  "role": "requirements",
+  "implementation_header": "src/domains/service-management/subtask_targets/requirements/boot_time_service_analysis_1750934a.hpp",
+  "implementation_source": "src/domains/service-management/subtask_targets/requirements/boot_time_service_analysis_1750934a.cpp",
+  "test_target": "tests/structural-closure/domains/service-management/requirements/test_boot_time_service_analysis_1750934a.cpp",
+  "status": "SKELETON_MATERIALIZED",
+  "behavioral_credit": false,
+  "preservation": "PRESERVE_IMPLEMENT_EXTEND"
+}

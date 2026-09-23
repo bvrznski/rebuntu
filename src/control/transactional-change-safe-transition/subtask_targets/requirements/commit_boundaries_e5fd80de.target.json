@@ -1,0 +1,12 @@
+{
+  "source_prompt": ".phases/phases/phase-60-transactional-change-safe-transition/prompts/60.4-rebuntu-phase-60-4-commit-boundaries.md",
+  "phase_task": ".phases/phases/phase-60-transactional-change-safe-transition/TASK.md",
+  "canonical_root": "src/control/transactional-change-safe-transition",
+  "role": "requirements",
+  "implementation_header": "src/control/transactional-change-safe-transition/subtask_targets/requirements/commit_boundaries_e5fd80de.hpp",
+  "implementation_source": "src/control/transactional-change-safe-transition/subtask_targets/requirements/commit_boundaries_e5fd80de.cpp",
+  "test_target": "tests/structural-closure/control/transactional-change-safe-transition/requirements/test_commit_boundaries_e5fd80de.cpp",
+  "status": "SKELETON_MATERIALIZED",
+  "behavioral_credit": false,
+  "preservation": "PRESERVE_IMPLEMENT_EXTEND"
+}

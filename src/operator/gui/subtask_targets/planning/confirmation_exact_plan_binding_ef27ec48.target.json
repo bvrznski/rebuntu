@@ -1,0 +1,12 @@
+{
+  "source_prompt": ".phases/phases/phase-49-gui/prompts/49.402-confirmation-exact-plan-binding.md",
+  "phase_task": ".phases/phases/phase-49-gui/TASK.md",
+  "canonical_root": "src/operator/gui",
+  "role": "planning",
+  "implementation_header": "src/operator/gui/subtask_targets/planning/confirmation_exact_plan_binding_ef27ec48.hpp",
+  "implementation_source": "src/operator/gui/subtask_targets/planning/confirmation_exact_plan_binding_ef27ec48.cpp",
+  "test_target": "tests/structural-closure/operator/gui/planning/test_confirmation_exact_plan_binding_ef27ec48.cpp",
+  "status": "SKELETON_MATERIALIZED",
+  "behavioral_credit": false,
+  "preservation": "PRESERVE_IMPLEMENT_EXTEND"
+}

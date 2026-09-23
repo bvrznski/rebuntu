@@ -1,0 +1,12 @@
+{
+  "source_prompt": ".phases/phases/phase-48-os-task-context-awareness-system/prompts/48.355-oversized-context-dos-test.md",
+  "phase_task": ".phases/phases/phase-48-os-task-context-awareness-system/TASK.md",
+  "canonical_root": "src/semantics/os-task-context-awareness-system",
+  "role": "verification",
+  "implementation_header": "src/semantics/os-task-context-awareness-system/subtask_targets/verification/oversized_context_dos_test_270a775b.hpp",
+  "implementation_source": "src/semantics/os-task-context-awareness-system/subtask_targets/verification/oversized_context_dos_test_270a775b.cpp",
+  "test_target": "tests/structural-closure/semantics/os-task-context-awareness-system/verification/test_oversized_context_dos_test_270a775b.cpp",
+  "status": "SKELETON_MATERIALIZED",
+  "behavioral_credit": false,
+  "preservation": "PRESERVE_IMPLEMENT_EXTEND"
+}

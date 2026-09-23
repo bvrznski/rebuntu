@@ -1,0 +1,12 @@
+{
+  "source_prompt": ".phases/phases/phase-43-operator-intelligence-system/prompts/43.080-root-cause-candidate-representation.md",
+  "phase_task": ".phases/phases/phase-43-operator-intelligence-system/TASK.md",
+  "canonical_root": "src/operator/operator-intelligence-system",
+  "role": "requirements",
+  "implementation_header": "src/operator/operator-intelligence-system/subtask_targets/requirements/root_cause_candidate_representation_8dc935eb.hpp",
+  "implementation_source": "src/operator/operator-intelligence-system/subtask_targets/requirements/root_cause_candidate_representation_8dc935eb.cpp",
+  "test_target": "tests/structural-closure/operator/operator-intelligence-system/requirements/test_root_cause_candidate_representation_8dc935eb.cpp",
+  "status": "SKELETON_MATERIALIZED",
+  "behavioral_credit": false,
+  "preservation": "PRESERVE_IMPLEMENT_EXTEND"
+}

@@ -1,0 +1,12 @@
+{
+  "source_prompt": ".phases/phases/phase-35-package-software-management/prompts/35.25-flatpak-remote-ref-model.md",
+  "phase_task": ".phases/phases/phase-35-package-software-management/TASK.md",
+  "canonical_root": "src/domains/package-software-management",
+  "role": "contracts",
+  "implementation_header": "src/domains/package-software-management/subtask_targets/contracts/flatpak_remote_ref_model_9bba534a.hpp",
+  "implementation_source": "src/domains/package-software-management/subtask_targets/contracts/flatpak_remote_ref_model_9bba534a.cpp",
+  "test_target": "tests/structural-closure/domains/package-software-management/contracts/test_flatpak_remote_ref_model_9bba534a.cpp",
+  "status": "SKELETON_MATERIALIZED",
+  "behavioral_credit": false,
+  "preservation": "PRESERVE_IMPLEMENT_EXTEND"
+}

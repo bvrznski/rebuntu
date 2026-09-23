@@ -1,0 +1,12 @@
+{
+  "source_prompt": ".phases/phases/phase-52-associated-systems-hardware-rooted-trust/prompts/52.274-phase-45-control-plane-integration.md",
+  "phase_task": ".phases/phases/phase-52-associated-systems-hardware-rooted-trust/TASK.md",
+  "canonical_root": "src/providers/associated-systems-hardware-rooted-trust",
+  "role": "integration",
+  "implementation_header": "src/providers/associated-systems-hardware-rooted-trust/subtask_targets/integration/control_plane_integration_4462e578.hpp",
+  "implementation_source": "src/providers/associated-systems-hardware-rooted-trust/subtask_targets/integration/control_plane_integration_4462e578.cpp",
+  "test_target": "tests/structural-closure/providers/associated-systems-hardware-rooted-trust/integration/test_control_plane_integration_4462e578.cpp",
+  "status": "SKELETON_MATERIALIZED",
+  "behavioral_credit": false,
+  "preservation": "PRESERVE_IMPLEMENT_EXTEND"
+}

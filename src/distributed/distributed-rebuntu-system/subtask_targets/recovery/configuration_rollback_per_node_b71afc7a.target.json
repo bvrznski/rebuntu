@@ -1,0 +1,12 @@
+{
+  "source_prompt": ".phases/phases/phase-51-distributed-rebuntu-system/prompts/51.227-configuration-rollback-per-node.md",
+  "phase_task": ".phases/phases/phase-51-distributed-rebuntu-system/TASK.md",
+  "canonical_root": "src/distributed/distributed-rebuntu-system",
+  "role": "recovery",
+  "implementation_header": "src/distributed/distributed-rebuntu-system/subtask_targets/recovery/configuration_rollback_per_node_b71afc7a.hpp",
+  "implementation_source": "src/distributed/distributed-rebuntu-system/subtask_targets/recovery/configuration_rollback_per_node_b71afc7a.cpp",
+  "test_target": "tests/structural-closure/distributed/distributed-rebuntu-system/recovery/test_configuration_rollback_per_node_b71afc7a.cpp",
+  "status": "SKELETON_MATERIALIZED",
+  "behavioral_credit": false,
+  "preservation": "PRESERVE_IMPLEMENT_EXTEND"
+}

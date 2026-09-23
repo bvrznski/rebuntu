@@ -1,0 +1,11 @@
+// Generated structural translation-unit scaffold.
+// No behavioral maturity credit: this file only materializes the C++ ownership boundary.
+#include "portability/migration/translation/model/value_objects/types.hpp"
+
+#include <string_view>
+
+namespace rebuntu::structural_translation_units {
+[[nodiscard]] std::string_view rebuntu_structural_translation_unit_anchor_e16a2038008e5192() noexcept {
+    return "src/portability/migration/translation/model/value_objects/types.hpp";
+}
+}  // namespace rebuntu::structural_translation_units

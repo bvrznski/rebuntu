@@ -1,0 +1,6 @@
+#include "portability/capabilities/discovery/validation.hpp"
+
+// Structural translation-unit slot only. No maturity credit.
+namespace rebuntu::structural_slots {
+static_assert(Skeleton_59e9e18d97_Validation::structural_revision == 25);
+}

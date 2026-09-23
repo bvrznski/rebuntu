@@ -1,0 +1,12 @@
+{
+  "source_prompt": ".phases/phases/phase-24-evergreen-platform/prompts/24.1_known-good_baseline_&_platform_fingerprint.md",
+  "phase_task": ".phases/phases/phase-24-evergreen-platform/TASK.md",
+  "canonical_root": "src/runtime/evergreen-platform",
+  "role": "requirements",
+  "implementation_header": "src/runtime/evergreen-platform/subtask_targets/requirements/known_good_baseline_platform_fingerprint_b8cf025b.hpp",
+  "implementation_source": "src/runtime/evergreen-platform/subtask_targets/requirements/known_good_baseline_platform_fingerprint_b8cf025b.cpp",
+  "test_target": "tests/structural-closure/runtime/evergreen-platform/requirements/test_known_good_baseline_platform_fingerprint_b8cf025b.cpp",
+  "status": "SKELETON_MATERIALIZED",
+  "behavioral_credit": false,
+  "preservation": "PRESERVE_IMPLEMENT_EXTEND"
+}

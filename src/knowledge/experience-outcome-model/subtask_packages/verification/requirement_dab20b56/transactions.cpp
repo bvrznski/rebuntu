@@ -1,0 +1,5 @@
+#include "transactions.hpp"
+
+// XXVII out-of-line implementation reservation for transactions.
+// Source: .phases/phases/phase-94-experience-outcome-model/prompts/94.12.md
+// Intentionally behavior-free until prompt-derived implementation is supplied.

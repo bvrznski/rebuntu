@@ -1,0 +1,12 @@
+{
+  "source_prompt": ".phases/phases/phase-35-package-software-management/prompts/35.62-failure-injection-disposable-package-testing.md",
+  "phase_task": ".phases/phases/phase-35-package-software-management/TASK.md",
+  "canonical_root": "src/domains/package-software-management",
+  "role": "verification",
+  "implementation_header": "src/domains/package-software-management/subtask_targets/verification/failure_injection_disposable_package_testing_3b02d46a.hpp",
+  "implementation_source": "src/domains/package-software-management/subtask_targets/verification/failure_injection_disposable_package_testing_3b02d46a.cpp",
+  "test_target": "tests/structural-closure/domains/package-software-management/verification/test_failure_injection_disposable_package_testing_3b02d46a.cpp",
+  "status": "SKELETON_MATERIALIZED",
+  "behavioral_credit": false,
+  "preservation": "PRESERVE_IMPLEMENT_EXTEND"
+}

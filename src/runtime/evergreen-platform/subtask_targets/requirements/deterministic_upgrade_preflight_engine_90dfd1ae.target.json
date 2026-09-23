@@ -1,0 +1,12 @@
+{
+  "source_prompt": ".phases/phases/phase-24-evergreen-platform/prompts/24.4_deterministic_upgrade_preflight_engine.md",
+  "phase_task": ".phases/phases/phase-24-evergreen-platform/TASK.md",
+  "canonical_root": "src/runtime/evergreen-platform",
+  "role": "requirements",
+  "implementation_header": "src/runtime/evergreen-platform/subtask_targets/requirements/deterministic_upgrade_preflight_engine_90dfd1ae.hpp",
+  "implementation_source": "src/runtime/evergreen-platform/subtask_targets/requirements/deterministic_upgrade_preflight_engine_90dfd1ae.cpp",
+  "test_target": "tests/structural-closure/runtime/evergreen-platform/requirements/test_deterministic_upgrade_preflight_engine_90dfd1ae.cpp",
+  "status": "SKELETON_MATERIALIZED",
+  "behavioral_credit": false,
+  "preservation": "PRESERVE_IMPLEMENT_EXTEND"
+}

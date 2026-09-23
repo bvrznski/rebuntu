@@ -1,0 +1,5 @@
+#include "transactions.hpp"
+
+// XXVII out-of-line implementation reservation for transactions.
+// Source: .phases/phases/phase-44-adaptive-workstation-system/prompts/44.052-phase-42-impact-graph-integration.md
+// Intentionally behavior-free until prompt-derived implementation is supplied.

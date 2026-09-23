@@ -1,0 +1,12 @@
+{
+  "source_prompt": ".phases/phases/phase-33-network-management/prompts/33.50-phase-38-identity-integration.md",
+  "phase_task": ".phases/phases/phase-33-network-management/TASK.md",
+  "canonical_root": "src/domains/network-management",
+  "role": "integration",
+  "implementation_header": "src/domains/network-management/subtask_targets/integration/identity_integration_3e6721a9.hpp",
+  "implementation_source": "src/domains/network-management/subtask_targets/integration/identity_integration_3e6721a9.cpp",
+  "test_target": "tests/structural-closure/domains/network-management/integration/test_identity_integration_3e6721a9.cpp",
+  "status": "SKELETON_MATERIALIZED",
+  "behavioral_credit": false,
+  "preservation": "PRESERVE_IMPLEMENT_EXTEND"
+}

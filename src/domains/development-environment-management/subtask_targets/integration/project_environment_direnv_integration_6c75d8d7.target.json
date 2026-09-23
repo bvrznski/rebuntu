@@ -1,0 +1,12 @@
+{
+  "source_prompt": ".phases/phases/phase-28-development-environment-management/prompts/28.18-project-environment-direnv-integration.md",
+  "phase_task": ".phases/phases/phase-28-development-environment-management/TASK.md",
+  "canonical_root": "src/domains/development-environment-management",
+  "role": "integration",
+  "implementation_header": "src/domains/development-environment-management/subtask_targets/integration/project_environment_direnv_integration_6c75d8d7.hpp",
+  "implementation_source": "src/domains/development-environment-management/subtask_targets/integration/project_environment_direnv_integration_6c75d8d7.cpp",
+  "test_target": "tests/structural-closure/domains/development-environment-management/integration/test_project_environment_direnv_integration_6c75d8d7.cpp",
+  "status": "SKELETON_MATERIALIZED",
+  "behavioral_credit": false,
+  "preservation": "PRESERVE_IMPLEMENT_EXTEND"
+}

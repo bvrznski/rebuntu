@@ -1,0 +1,12 @@
+{
+  "source_prompt": ".phases/phases/phase-43-operator-intelligence-system/prompts/43.205-audit-and-provenance-inspection.md",
+  "phase_task": ".phases/phases/phase-43-operator-intelligence-system/TASK.md",
+  "canonical_root": "src/operator/operator-intelligence-system",
+  "role": "verification",
+  "implementation_header": "src/operator/operator-intelligence-system/subtask_targets/verification/audit_and_provenance_inspection_d41849cf.hpp",
+  "implementation_source": "src/operator/operator-intelligence-system/subtask_targets/verification/audit_and_provenance_inspection_d41849cf.cpp",
+  "test_target": "tests/structural-closure/operator/operator-intelligence-system/verification/test_audit_and_provenance_inspection_d41849cf.cpp",
+  "status": "SKELETON_MATERIALIZED",
+  "behavioral_credit": false,
+  "preservation": "PRESERVE_IMPLEMENT_EXTEND"
+}

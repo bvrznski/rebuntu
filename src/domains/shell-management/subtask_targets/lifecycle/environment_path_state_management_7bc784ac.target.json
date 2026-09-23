@@ -1,0 +1,12 @@
+{
+  "source_prompt": ".phases/phases/phase-26-shell-management/prompts/26.13-environment-path-state-management.md",
+  "phase_task": ".phases/phases/phase-26-shell-management/TASK.md",
+  "canonical_root": "src/domains/shell-management",
+  "role": "lifecycle",
+  "implementation_header": "src/domains/shell-management/subtask_targets/lifecycle/environment_path_state_management_7bc784ac.hpp",
+  "implementation_source": "src/domains/shell-management/subtask_targets/lifecycle/environment_path_state_management_7bc784ac.cpp",
+  "test_target": "tests/structural-closure/domains/shell-management/lifecycle/test_environment_path_state_management_7bc784ac.cpp",
+  "status": "SKELETON_MATERIALIZED",
+  "behavioral_credit": false,
+  "preservation": "PRESERVE_IMPLEMENT_EXTEND"
+}

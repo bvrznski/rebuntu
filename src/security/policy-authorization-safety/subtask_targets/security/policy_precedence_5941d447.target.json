@@ -1,0 +1,12 @@
+{
+  "source_prompt": ".phases/phases/phase-07-policy-authorization-safety/prompts/7.25_policy_precedence.md",
+  "phase_task": ".phases/phases/phase-07-policy-authorization-safety/TASK.md",
+  "canonical_root": "src/security/policy-authorization-safety",
+  "role": "security",
+  "implementation_header": "src/security/policy-authorization-safety/subtask_targets/security/policy_precedence_5941d447.hpp",
+  "implementation_source": "src/security/policy-authorization-safety/subtask_targets/security/policy_precedence_5941d447.cpp",
+  "test_target": "tests/structural-closure/security/policy-authorization-safety/security/test_policy_precedence_5941d447.cpp",
+  "status": "SKELETON_MATERIALIZED",
+  "behavioral_credit": false,
+  "preservation": "PRESERVE_IMPLEMENT_EXTEND"
+}

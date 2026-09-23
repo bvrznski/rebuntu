@@ -1,0 +1,12 @@
+{
+  "source_prompt": ".phases/phases/phase-06-native-command-operation-execution/prompts/6.34_privilege_requirement_metadata.md",
+  "phase_task": ".phases/phases/phase-06-native-command-operation-execution/TASK.md",
+  "canonical_root": "src/runtime/native-command-operation-execution",
+  "role": "security",
+  "implementation_header": "src/runtime/native-command-operation-execution/subtask_targets/security/privilege_requirement_metadata_1cf555d4.hpp",
+  "implementation_source": "src/runtime/native-command-operation-execution/subtask_targets/security/privilege_requirement_metadata_1cf555d4.cpp",
+  "test_target": "tests/structural-closure/runtime/native-command-operation-execution/security/test_privilege_requirement_metadata_1cf555d4.cpp",
+  "status": "SKELETON_MATERIALIZED",
+  "behavioral_credit": false,
+  "preservation": "PRESERVE_IMPLEMENT_EXTEND"
+}

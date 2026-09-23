@@ -1,0 +1,12 @@
+{
+  "source_prompt": ".phases/phases/phase-51-distributed-rebuntu-system/prompts/51.520-certificate-rotation-tests.md",
+  "phase_task": ".phases/phases/phase-51-distributed-rebuntu-system/TASK.md",
+  "canonical_root": "src/distributed/distributed-rebuntu-system",
+  "role": "verification",
+  "implementation_header": "src/distributed/distributed-rebuntu-system/subtask_targets/verification/certificate_rotation_tests_4e1e5e54.hpp",
+  "implementation_source": "src/distributed/distributed-rebuntu-system/subtask_targets/verification/certificate_rotation_tests_4e1e5e54.cpp",
+  "test_target": "tests/structural-closure/distributed/distributed-rebuntu-system/verification/test_certificate_rotation_tests_4e1e5e54.cpp",
+  "status": "SKELETON_MATERIALIZED",
+  "behavioral_credit": false,
+  "preservation": "PRESERVE_IMPLEMENT_EXTEND"
+}

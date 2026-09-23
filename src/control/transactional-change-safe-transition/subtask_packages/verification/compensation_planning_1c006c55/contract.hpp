@@ -1,0 +1,13 @@
+#pragma once
+
+// XXVII SUBTASK PACKAGE SKELETON — zero behavioral maturity credit.
+// Source: .phases/phases/phase-60-transactional-change-safe-transition/prompts/60.23-rebuntu-phase-60-23-compensation-planning.md
+// Preserve this architectural reservation and implement only after reading the source prompt.
+
+namespace rebuntu::subtask_packages::phase_60::s_1c006c55::contract {
+struct ContractSlot final {
+    static constexpr const char* source_prompt = ".phases/phases/phase-60-transactional-change-safe-transition/prompts/60.23-rebuntu-phase-60-23-compensation-planning.md";
+    static constexpr const char* aspect = "contract";
+    static constexpr const char* status = "SKELETON_MATERIALIZED";
+};
+} // namespace rebuntu::subtask_packages::phase_60::s_1c006c55::contract

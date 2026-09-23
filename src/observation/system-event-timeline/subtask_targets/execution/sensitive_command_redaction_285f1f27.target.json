@@ -1,0 +1,12 @@
+{
+  "source_prompt": ".phases/phases/phase-39-system-event-timeline/prompts/39.58-sensitive-command-redaction.md",
+  "phase_task": ".phases/phases/phase-39-system-event-timeline/TASK.md",
+  "canonical_root": "src/observation/system-event-timeline",
+  "role": "execution",
+  "implementation_header": "src/observation/system-event-timeline/subtask_targets/execution/sensitive_command_redaction_285f1f27.hpp",
+  "implementation_source": "src/observation/system-event-timeline/subtask_targets/execution/sensitive_command_redaction_285f1f27.cpp",
+  "test_target": "tests/structural-closure/observation/system-event-timeline/execution/test_sensitive_command_redaction_285f1f27.cpp",
+  "status": "SKELETON_MATERIALIZED",
+  "behavioral_credit": false,
+  "preservation": "PRESERVE_IMPLEMENT_EXTEND"
+}

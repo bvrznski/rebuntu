@@ -1,0 +1,12 @@
+{
+  "source_prompt": ".phases/phases/phase-92-active-evidence-acquisition/prompts/92.5.md",
+  "phase_task": ".phases/phases/phase-92-active-evidence-acquisition/TASK.md",
+  "canonical_root": "src/observation/active-evidence-acquisition",
+  "role": "requirements",
+  "implementation_header": "src/observation/active-evidence-acquisition/subtask_targets/requirements/requirement_07a1912e.hpp",
+  "implementation_source": "src/observation/active-evidence-acquisition/subtask_targets/requirements/requirement_07a1912e.cpp",
+  "test_target": "tests/structural-closure/observation/active-evidence-acquisition/requirements/test_requirement_07a1912e.cpp",
+  "status": "SKELETON_MATERIALIZED",
+  "behavioral_credit": false,
+  "preservation": "PRESERVE_IMPLEMENT_EXTEND"
+}

@@ -1,0 +1,12 @@
+{
+  "source_prompt": ".phases/phases/phase-35-package-software-management/prompts/35.57-phase-31-service-integration.md",
+  "phase_task": ".phases/phases/phase-35-package-software-management/TASK.md",
+  "canonical_root": "src/domains/package-software-management",
+  "role": "integration",
+  "implementation_header": "src/domains/package-software-management/subtask_targets/integration/service_integration_66998557.hpp",
+  "implementation_source": "src/domains/package-software-management/subtask_targets/integration/service_integration_66998557.cpp",
+  "test_target": "tests/structural-closure/domains/package-software-management/integration/test_service_integration_66998557.cpp",
+  "status": "SKELETON_MATERIALIZED",
+  "behavioral_credit": false,
+  "preservation": "PRESERVE_IMPLEMENT_EXTEND"
+}

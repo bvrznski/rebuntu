@@ -1,0 +1,12 @@
+{
+  "source_prompt": ".phases/phases/phase-51-distributed-rebuntu-system/prompts/51.484-protect-network-control-plane.md",
+  "phase_task": ".phases/phases/phase-51-distributed-rebuntu-system/TASK.md",
+  "canonical_root": "src/distributed/distributed-rebuntu-system",
+  "role": "planning",
+  "implementation_header": "src/distributed/distributed-rebuntu-system/subtask_targets/planning/protect_network_control_plane_d8a8e117.hpp",
+  "implementation_source": "src/distributed/distributed-rebuntu-system/subtask_targets/planning/protect_network_control_plane_d8a8e117.cpp",
+  "test_target": "tests/structural-closure/distributed/distributed-rebuntu-system/planning/test_protect_network_control_plane_d8a8e117.cpp",
+  "status": "SKELETON_MATERIALIZED",
+  "behavioral_credit": false,
+  "preservation": "PRESERVE_IMPLEMENT_EXTEND"
+}

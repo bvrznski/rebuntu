@@ -1,0 +1,12 @@
+{
+  "source_prompt": ".phases/phases/phase-36-configuration-management/prompts/36.56-phase-32-storage-configuration-integration.md",
+  "phase_task": ".phases/phases/phase-36-configuration-management/TASK.md",
+  "canonical_root": "src/domains/configuration-management",
+  "role": "integration",
+  "implementation_header": "src/domains/configuration-management/subtask_targets/integration/storage_configuration_integration_c5c9c648.hpp",
+  "implementation_source": "src/domains/configuration-management/subtask_targets/integration/storage_configuration_integration_c5c9c648.cpp",
+  "test_target": "tests/structural-closure/domains/configuration-management/integration/test_storage_configuration_integration_c5c9c648.cpp",
+  "status": "SKELETON_MATERIALIZED",
+  "behavioral_credit": false,
+  "preservation": "PRESERVE_IMPLEMENT_EXTEND"
+}

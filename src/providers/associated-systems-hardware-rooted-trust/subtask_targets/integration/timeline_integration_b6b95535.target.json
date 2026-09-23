@@ -1,0 +1,12 @@
+{
+  "source_prompt": ".phases/phases/phase-52-associated-systems-hardware-rooted-trust/prompts/52.326-phase-39-timeline-integration.md",
+  "phase_task": ".phases/phases/phase-52-associated-systems-hardware-rooted-trust/TASK.md",
+  "canonical_root": "src/providers/associated-systems-hardware-rooted-trust",
+  "role": "integration",
+  "implementation_header": "src/providers/associated-systems-hardware-rooted-trust/subtask_targets/integration/timeline_integration_b6b95535.hpp",
+  "implementation_source": "src/providers/associated-systems-hardware-rooted-trust/subtask_targets/integration/timeline_integration_b6b95535.cpp",
+  "test_target": "tests/structural-closure/providers/associated-systems-hardware-rooted-trust/integration/test_timeline_integration_b6b95535.cpp",
+  "status": "SKELETON_MATERIALIZED",
+  "behavioral_credit": false,
+  "preservation": "PRESERVE_IMPLEMENT_EXTEND"
+}

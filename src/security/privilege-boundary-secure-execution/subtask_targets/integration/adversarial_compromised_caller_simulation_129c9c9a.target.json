@@ -1,0 +1,12 @@
+{
+  "source_prompt": ".phases/phases/phase-08-privilege-boundary-secure-execution/prompts/8.80_adversarial_compromised-caller_simulation.md",
+  "phase_task": ".phases/phases/phase-08-privilege-boundary-secure-execution/TASK.md",
+  "canonical_root": "src/security/privilege-boundary-secure-execution",
+  "role": "integration",
+  "implementation_header": "src/security/privilege-boundary-secure-execution/subtask_targets/integration/adversarial_compromised_caller_simulation_129c9c9a.hpp",
+  "implementation_source": "src/security/privilege-boundary-secure-execution/subtask_targets/integration/adversarial_compromised_caller_simulation_129c9c9a.cpp",
+  "test_target": "tests/structural-closure/security/privilege-boundary-secure-execution/integration/test_adversarial_compromised_caller_simulation_129c9c9a.cpp",
+  "status": "SKELETON_MATERIALIZED",
+  "behavioral_credit": false,
+  "preservation": "PRESERVE_IMPLEMENT_EXTEND"
+}

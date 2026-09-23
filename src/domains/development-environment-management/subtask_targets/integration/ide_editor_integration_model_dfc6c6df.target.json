@@ -1,0 +1,12 @@
+{
+  "source_prompt": ".phases/phases/phase-28-development-environment-management/prompts/28.19-ide-editor-integration-model.md",
+  "phase_task": ".phases/phases/phase-28-development-environment-management/TASK.md",
+  "canonical_root": "src/domains/development-environment-management",
+  "role": "integration",
+  "implementation_header": "src/domains/development-environment-management/subtask_targets/integration/ide_editor_integration_model_dfc6c6df.hpp",
+  "implementation_source": "src/domains/development-environment-management/subtask_targets/integration/ide_editor_integration_model_dfc6c6df.cpp",
+  "test_target": "tests/structural-closure/domains/development-environment-management/integration/test_ide_editor_integration_model_dfc6c6df.cpp",
+  "status": "SKELETON_MATERIALIZED",
+  "behavioral_credit": false,
+  "preservation": "PRESERVE_IMPLEMENT_EXTEND"
+}

@@ -1,0 +1,12 @@
+{
+  "source_prompt": ".phases/phases/phase-43-operator-intelligence-system/prompts/43.103-forecast-invalidation.md",
+  "phase_task": ".phases/phases/phase-43-operator-intelligence-system/TASK.md",
+  "canonical_root": "src/operator/operator-intelligence-system",
+  "role": "requirements",
+  "implementation_header": "src/operator/operator-intelligence-system/subtask_targets/requirements/forecast_invalidation_5207446d.hpp",
+  "implementation_source": "src/operator/operator-intelligence-system/subtask_targets/requirements/forecast_invalidation_5207446d.cpp",
+  "test_target": "tests/structural-closure/operator/operator-intelligence-system/requirements/test_forecast_invalidation_5207446d.cpp",
+  "status": "SKELETON_MATERIALIZED",
+  "behavioral_credit": false,
+  "preservation": "PRESERVE_IMPLEMENT_EXTEND"
+}

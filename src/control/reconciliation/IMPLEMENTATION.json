@@ -1,0 +1,9 @@
+{
+  "component": "reconciliation",
+  "canonical_root": "control",
+  "phase_tasks": [
+    ".phases/phases/phase-19-reconciliation/TASK.md"
+  ],
+  "status": "SKELETON",
+  "native_authority_rule": true
+}

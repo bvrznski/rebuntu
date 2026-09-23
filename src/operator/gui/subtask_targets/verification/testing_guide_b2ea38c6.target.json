@@ -1,0 +1,12 @@
+{
+  "source_prompt": ".phases/phases/phase-49-gui/prompts/49.593-testing-guide.md",
+  "phase_task": ".phases/phases/phase-49-gui/TASK.md",
+  "canonical_root": "src/operator/gui",
+  "role": "verification",
+  "implementation_header": "src/operator/gui/subtask_targets/verification/testing_guide_b2ea38c6.hpp",
+  "implementation_source": "src/operator/gui/subtask_targets/verification/testing_guide_b2ea38c6.cpp",
+  "test_target": "tests/structural-closure/operator/gui/verification/test_testing_guide_b2ea38c6.cpp",
+  "status": "SKELETON_MATERIALIZED",
+  "behavioral_credit": false,
+  "preservation": "PRESERVE_IMPLEMENT_EXTEND"
+}

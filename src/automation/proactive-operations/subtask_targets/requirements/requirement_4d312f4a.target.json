@@ -1,0 +1,12 @@
+{
+  "source_prompt": ".phases/phases/phase-97-proactive-operations/prompts/97.18.md",
+  "phase_task": ".phases/phases/phase-97-proactive-operations/TASK.md",
+  "canonical_root": "src/automation/proactive-operations",
+  "role": "requirements",
+  "implementation_header": "src/automation/proactive-operations/subtask_targets/requirements/requirement_4d312f4a.hpp",
+  "implementation_source": "src/automation/proactive-operations/subtask_targets/requirements/requirement_4d312f4a.cpp",
+  "test_target": "tests/structural-closure/automation/proactive-operations/requirements/test_requirement_4d312f4a.cpp",
+  "status": "SKELETON_MATERIALIZED",
+  "behavioral_credit": false,
+  "preservation": "PRESERVE_IMPLEMENT_EXTEND"
+}

@@ -1,0 +1,12 @@
+{
+  "source_prompt": ".phases/phases/phase-05-system-observation-inventory-discovery/prompts/5.39_incremental_discovery.md",
+  "phase_task": ".phases/phases/phase-05-system-observation-inventory-discovery/TASK.md",
+  "canonical_root": "src/observation/system-observation-inventory-discovery",
+  "role": "resolution",
+  "implementation_header": "src/observation/system-observation-inventory-discovery/subtask_targets/resolution/incremental_discovery_a6fe59b4.hpp",
+  "implementation_source": "src/observation/system-observation-inventory-discovery/subtask_targets/resolution/incremental_discovery_a6fe59b4.cpp",
+  "test_target": "tests/structural-closure/observation/system-observation-inventory-discovery/resolution/test_incremental_discovery_a6fe59b4.cpp",
+  "status": "SKELETON_MATERIALIZED",
+  "behavioral_credit": false,
+  "preservation": "PRESERVE_IMPLEMENT_EXTEND"
+}

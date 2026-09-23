@@ -1,0 +1,12 @@
+{
+  "source_prompt": ".phases/phases/phase-49-gui/prompts/49.173-automation-overview.md",
+  "phase_task": ".phases/phases/phase-49-gui/TASK.md",
+  "canonical_root": "src/operator/gui",
+  "role": "requirements",
+  "implementation_header": "src/operator/gui/subtask_targets/requirements/automation_overview_3298a14d.hpp",
+  "implementation_source": "src/operator/gui/subtask_targets/requirements/automation_overview_3298a14d.cpp",
+  "test_target": "tests/structural-closure/operator/gui/requirements/test_automation_overview_3298a14d.cpp",
+  "status": "SKELETON_MATERIALIZED",
+  "behavioral_credit": false,
+  "preservation": "PRESERVE_IMPLEMENT_EXTEND"
+}

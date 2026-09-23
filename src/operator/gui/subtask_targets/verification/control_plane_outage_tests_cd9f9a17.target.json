@@ -1,0 +1,12 @@
+{
+  "source_prompt": ".phases/phases/phase-49-gui/prompts/49.512-control-plane-outage-tests.md",
+  "phase_task": ".phases/phases/phase-49-gui/TASK.md",
+  "canonical_root": "src/operator/gui",
+  "role": "verification",
+  "implementation_header": "src/operator/gui/subtask_targets/verification/control_plane_outage_tests_cd9f9a17.hpp",
+  "implementation_source": "src/operator/gui/subtask_targets/verification/control_plane_outage_tests_cd9f9a17.cpp",
+  "test_target": "tests/structural-closure/operator/gui/verification/test_control_plane_outage_tests_cd9f9a17.cpp",
+  "status": "SKELETON_MATERIALIZED",
+  "behavioral_credit": false,
+  "preservation": "PRESERVE_IMPLEMENT_EXTEND"
+}

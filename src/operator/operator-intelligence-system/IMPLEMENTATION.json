@@ -1,0 +1,9 @@
+{
+  "component": "operator-intelligence-system",
+  "canonical_root": "operator",
+  "phase_tasks": [
+    ".phases/phases/phase-43-operator-intelligence-system/TASK.md"
+  ],
+  "status": "SKELETON",
+  "native_authority_rule": true
+}

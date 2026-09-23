@@ -1,0 +1,12 @@
+{
+  "source_prompt": ".phases/phases/phase-56-intent-goal-desired-state-management/prompts/56.31-rebuntu-phase-56-31-semantic-goal-proposal-boundary.md",
+  "phase_task": ".phases/phases/phase-56-intent-goal-desired-state-management/TASK.md",
+  "canonical_root": "src/semantics/intent-goal-desired-state-management",
+  "role": "requirements",
+  "implementation_header": "src/semantics/intent-goal-desired-state-management/subtask_targets/requirements/semantic_goal_proposal_boundary_053df4ef.hpp",
+  "implementation_source": "src/semantics/intent-goal-desired-state-management/subtask_targets/requirements/semantic_goal_proposal_boundary_053df4ef.cpp",
+  "test_target": "tests/structural-closure/semantics/intent-goal-desired-state-management/requirements/test_semantic_goal_proposal_boundary_053df4ef.cpp",
+  "status": "SKELETON_MATERIALIZED",
+  "behavioral_credit": false,
+  "preservation": "PRESERVE_IMPLEMENT_EXTEND"
+}

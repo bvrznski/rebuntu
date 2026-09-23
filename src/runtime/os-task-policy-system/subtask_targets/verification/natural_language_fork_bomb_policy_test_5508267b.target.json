@@ -1,0 +1,12 @@
+{
+  "source_prompt": ".phases/phases/phase-47-os-task-policy-system/prompts/47.499-natural-language-fork-bomb-policy-test.md",
+  "phase_task": ".phases/phases/phase-47-os-task-policy-system/TASK.md",
+  "canonical_root": "src/runtime/os-task-policy-system",
+  "role": "verification",
+  "implementation_header": "src/runtime/os-task-policy-system/subtask_targets/verification/natural_language_fork_bomb_policy_test_5508267b.hpp",
+  "implementation_source": "src/runtime/os-task-policy-system/subtask_targets/verification/natural_language_fork_bomb_policy_test_5508267b.cpp",
+  "test_target": "tests/structural-closure/runtime/os-task-policy-system/verification/test_natural_language_fork_bomb_policy_test_5508267b.cpp",
+  "status": "SKELETON_MATERIALIZED",
+  "behavioral_credit": false,
+  "preservation": "PRESERVE_IMPLEMENT_EXTEND"
+}

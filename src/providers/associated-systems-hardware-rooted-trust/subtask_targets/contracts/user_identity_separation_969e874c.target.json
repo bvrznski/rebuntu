@@ -1,0 +1,12 @@
+{
+  "source_prompt": ".phases/phases/phase-52-associated-systems-hardware-rooted-trust/prompts/52.020-user-identity-separation.md",
+  "phase_task": ".phases/phases/phase-52-associated-systems-hardware-rooted-trust/TASK.md",
+  "canonical_root": "src/providers/associated-systems-hardware-rooted-trust",
+  "role": "contracts",
+  "implementation_header": "src/providers/associated-systems-hardware-rooted-trust/subtask_targets/contracts/user_identity_separation_969e874c.hpp",
+  "implementation_source": "src/providers/associated-systems-hardware-rooted-trust/subtask_targets/contracts/user_identity_separation_969e874c.cpp",
+  "test_target": "tests/structural-closure/providers/associated-systems-hardware-rooted-trust/contracts/test_user_identity_separation_969e874c.cpp",
+  "status": "SKELETON_MATERIALIZED",
+  "behavioral_credit": false,
+  "preservation": "PRESERVE_IMPLEMENT_EXTEND"
+}

@@ -1,0 +1,9 @@
+{
+  "component": "system-observation-inventory-discovery",
+  "canonical_root": "observation",
+  "phase_tasks": [
+    ".phases/phases/phase-05-system-observation-inventory-discovery/TASK.md"
+  ],
+  "status": "SKELETON",
+  "native_authority_rule": true
+}

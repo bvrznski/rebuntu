@@ -1,0 +1,12 @@
+{
+  "source_prompt": ".phases/phases/phase-51-distributed-rebuntu-system/prompts/51.491-state-reconciliation-after-rejoin.md",
+  "phase_task": ".phases/phases/phase-51-distributed-rebuntu-system/TASK.md",
+  "canonical_root": "src/distributed/distributed-rebuntu-system",
+  "role": "lifecycle",
+  "implementation_header": "src/distributed/distributed-rebuntu-system/subtask_targets/lifecycle/state_reconciliation_after_rejoin_aec4f674.hpp",
+  "implementation_source": "src/distributed/distributed-rebuntu-system/subtask_targets/lifecycle/state_reconciliation_after_rejoin_aec4f674.cpp",
+  "test_target": "tests/structural-closure/distributed/distributed-rebuntu-system/lifecycle/test_state_reconciliation_after_rejoin_aec4f674.cpp",
+  "status": "SKELETON_MATERIALIZED",
+  "behavioral_credit": false,
+  "preservation": "PRESERVE_IMPLEMENT_EXTEND"
+}

@@ -1,0 +1,12 @@
+{
+  "source_prompt": ".phases/phases/phase-54-dynamic-system-capability-affordance-model/prompts/54.128-rebuntu-phase-54-128-post-execution-capability-refresh.md",
+  "phase_task": ".phases/phases/phase-54-dynamic-system-capability-affordance-model/TASK.md",
+  "canonical_root": "src/semantics/dynamic-system-capability-affordance-model",
+  "role": "execution",
+  "implementation_header": "src/semantics/dynamic-system-capability-affordance-model/subtask_targets/execution/post_execution_capability_refresh_0749d7b4.hpp",
+  "implementation_source": "src/semantics/dynamic-system-capability-affordance-model/subtask_targets/execution/post_execution_capability_refresh_0749d7b4.cpp",
+  "test_target": "tests/structural-closure/semantics/dynamic-system-capability-affordance-model/execution/test_post_execution_capability_refresh_0749d7b4.cpp",
+  "status": "SKELETON_MATERIALIZED",
+  "behavioral_credit": false,
+  "preservation": "PRESERVE_IMPLEMENT_EXTEND"
+}

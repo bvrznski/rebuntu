@@ -1,0 +1,12 @@
+{
+  "source_prompt": ".phases/phases/phase-49-gui/prompts/49.305-runtime-environment-information.md",
+  "phase_task": ".phases/phases/phase-49-gui/TASK.md",
+  "canonical_root": "src/operator/gui",
+  "role": "requirements",
+  "implementation_header": "src/operator/gui/subtask_targets/requirements/runtime_environment_information_c15c8a94.hpp",
+  "implementation_source": "src/operator/gui/subtask_targets/requirements/runtime_environment_information_c15c8a94.cpp",
+  "test_target": "tests/structural-closure/operator/gui/requirements/test_runtime_environment_information_c15c8a94.cpp",
+  "status": "SKELETON_MATERIALIZED",
+  "behavioral_credit": false,
+  "preservation": "PRESERVE_IMPLEMENT_EXTEND"
+}

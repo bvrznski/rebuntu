@@ -1,0 +1,4 @@
+#include "schema_inspector_bd839b1d.hpp"
+
+// STRUCTURAL CLOSURE SLOT — intentionally behavior-free.
+// Implement prompt-derived out-of-line behavior here when applicable.

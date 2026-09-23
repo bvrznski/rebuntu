@@ -1,0 +1,12 @@
+{
+  "source_prompt": ".phases/phases/phase-70-workload-placement-scheduling-intelligence/prompts/70.21.md",
+  "phase_task": ".phases/phases/phase-70-workload-placement-scheduling-intelligence/TASK.md",
+  "canonical_root": "src/domains/workload-placement-scheduling-intelligence",
+  "role": "requirements",
+  "implementation_header": "src/domains/workload-placement-scheduling-intelligence/subtask_targets/requirements/requirement_cc200f58.hpp",
+  "implementation_source": "src/domains/workload-placement-scheduling-intelligence/subtask_targets/requirements/requirement_cc200f58.cpp",
+  "test_target": "tests/structural-closure/domains/workload-placement-scheduling-intelligence/requirements/test_requirement_cc200f58.cpp",
+  "status": "SKELETON_MATERIALIZED",
+  "behavioral_credit": false,
+  "preservation": "PRESERVE_IMPLEMENT_EXTEND"
+}

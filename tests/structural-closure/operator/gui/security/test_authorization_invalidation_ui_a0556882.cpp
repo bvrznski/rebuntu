@@ -1,0 +1,4 @@
+// STRUCTURAL TEST TARGET — no test evidence until assertions are implemented and executed.
+// Source subtask: .phases/phases/phase-49-gui/prompts/49.342-authorization-invalidation-ui.md
+// Intended implementation target: src/operator/gui/subtask_targets/security/authorization_invalidation_ui_a0556882.hpp
+int main() { return 0; }

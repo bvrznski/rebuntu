@@ -1,0 +1,9 @@
+{
+  "component": "gpu-accelerator-management",
+  "canonical_root": "domains",
+  "phase_tasks": [
+    ".phases/phases/phase-34-gpu-accelerator-management/TASK.md"
+  ],
+  "status": "SKELETON",
+  "native_authority_rule": true
+}

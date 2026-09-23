@@ -1,0 +1,12 @@
+{
+  "source_prompt": ".phases/phases/phase-49-gui/prompts/49.115-disk-topology-view.md",
+  "phase_task": ".phases/phases/phase-49-gui/TASK.md",
+  "canonical_root": "src/operator/gui",
+  "role": "observability",
+  "implementation_header": "src/operator/gui/subtask_targets/observability/disk_topology_view_bdd6c044.hpp",
+  "implementation_source": "src/operator/gui/subtask_targets/observability/disk_topology_view_bdd6c044.cpp",
+  "test_target": "tests/structural-closure/operator/gui/observability/test_disk_topology_view_bdd6c044.cpp",
+  "status": "SKELETON_MATERIALIZED",
+  "behavioral_credit": false,
+  "preservation": "PRESERVE_IMPLEMENT_EXTEND"
+}

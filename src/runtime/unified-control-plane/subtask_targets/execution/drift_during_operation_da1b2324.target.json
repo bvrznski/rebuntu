@@ -1,0 +1,12 @@
+{
+  "source_prompt": ".phases/phases/phase-45-unified-control-plane/prompts/45.209-drift-during-operation.md",
+  "phase_task": ".phases/phases/phase-45-unified-control-plane/TASK.md",
+  "canonical_root": "src/runtime/unified-control-plane",
+  "role": "execution",
+  "implementation_header": "src/runtime/unified-control-plane/subtask_targets/execution/drift_during_operation_da1b2324.hpp",
+  "implementation_source": "src/runtime/unified-control-plane/subtask_targets/execution/drift_during_operation_da1b2324.cpp",
+  "test_target": "tests/structural-closure/runtime/unified-control-plane/execution/test_drift_during_operation_da1b2324.cpp",
+  "status": "SKELETON_MATERIALIZED",
+  "behavioral_credit": false,
+  "preservation": "PRESERVE_IMPLEMENT_EXTEND"
+}

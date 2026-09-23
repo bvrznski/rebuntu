@@ -1,0 +1,12 @@
+{
+  "source_prompt": ".phases/phases/phase-87-operational-prediction-forward-simulation/prompts/87.16.md",
+  "phase_task": ".phases/phases/phase-87-operational-prediction-forward-simulation/TASK.md",
+  "canonical_root": "src/planning/operational-prediction-forward-simulation",
+  "role": "requirements",
+  "implementation_header": "src/planning/operational-prediction-forward-simulation/subtask_targets/requirements/requirement_6d923aaf.hpp",
+  "implementation_source": "src/planning/operational-prediction-forward-simulation/subtask_targets/requirements/requirement_6d923aaf.cpp",
+  "test_target": "tests/structural-closure/planning/operational-prediction-forward-simulation/requirements/test_requirement_6d923aaf.cpp",
+  "status": "SKELETON_MATERIALIZED",
+  "behavioral_credit": false,
+  "preservation": "PRESERVE_IMPLEMENT_EXTEND"
+}

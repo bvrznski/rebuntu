@@ -1,0 +1,12 @@
+{
+  "source_prompt": ".phases/phases/phase-39-system-event-timeline/prompts/39.69-phase-33-network-integration.md",
+  "phase_task": ".phases/phases/phase-39-system-event-timeline/TASK.md",
+  "canonical_root": "src/observation/system-event-timeline",
+  "role": "integration",
+  "implementation_header": "src/observation/system-event-timeline/subtask_targets/integration/network_integration_4332d86a.hpp",
+  "implementation_source": "src/observation/system-event-timeline/subtask_targets/integration/network_integration_4332d86a.cpp",
+  "test_target": "tests/structural-closure/observation/system-event-timeline/integration/test_network_integration_4332d86a.cpp",
+  "status": "SKELETON_MATERIALIZED",
+  "behavioral_credit": false,
+  "preservation": "PRESERVE_IMPLEMENT_EXTEND"
+}

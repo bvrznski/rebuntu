@@ -1,0 +1,12 @@
+{
+  "source_prompt": ".phases/phases/phase-35-package-software-management/prompts/35.51-software-health-diagnostics.md",
+  "phase_task": ".phases/phases/phase-35-package-software-management/TASK.md",
+  "canonical_root": "src/domains/package-software-management",
+  "role": "observability",
+  "implementation_header": "src/domains/package-software-management/subtask_targets/observability/software_health_diagnostics_1ee0a297.hpp",
+  "implementation_source": "src/domains/package-software-management/subtask_targets/observability/software_health_diagnostics_1ee0a297.cpp",
+  "test_target": "tests/structural-closure/domains/package-software-management/observability/test_software_health_diagnostics_1ee0a297.cpp",
+  "status": "SKELETON_MATERIALIZED",
+  "behavioral_credit": false,
+  "preservation": "PRESERVE_IMPLEMENT_EXTEND"
+}

@@ -1,0 +1,6 @@
+#include "operator/human-rebuntu-collaborative-control/recovery/repair/integration.hpp"
+
+// Structural translation-unit slot only. No maturity credit.
+namespace rebuntu::structural_slots {
+static_assert(Skeleton_4e414e9e0b_Integration::structural_revision == 25);
+}

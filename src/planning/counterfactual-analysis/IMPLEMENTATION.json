@@ -1,0 +1,9 @@
+{
+  "component": "counterfactual-analysis",
+  "canonical_root": "planning",
+  "phase_tasks": [
+    ".phases/phases/phase-88-counterfactual-analysis/TASK.md"
+  ],
+  "status": "SKELETON",
+  "native_authority_rule": true
+}

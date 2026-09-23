@@ -1,0 +1,12 @@
+{
+  "source_prompt": ".phases/phases/phase-45-unified-control-plane/prompts/45.061-unknown-verification-handling.md",
+  "phase_task": ".phases/phases/phase-45-unified-control-plane/TASK.md",
+  "canonical_root": "src/runtime/unified-control-plane",
+  "role": "verification",
+  "implementation_header": "src/runtime/unified-control-plane/subtask_targets/verification/unknown_verification_handling_d76a6e6e.hpp",
+  "implementation_source": "src/runtime/unified-control-plane/subtask_targets/verification/unknown_verification_handling_d76a6e6e.cpp",
+  "test_target": "tests/structural-closure/runtime/unified-control-plane/verification/test_unknown_verification_handling_d76a6e6e.cpp",
+  "status": "SKELETON_MATERIALIZED",
+  "behavioral_credit": false,
+  "preservation": "PRESERVE_IMPLEMENT_EXTEND"
+}

@@ -1,0 +1,12 @@
+{
+  "source_prompt": ".phases/phases/phase-34-gpu-accelerator-management/prompts/34.20-process-gpu-context-integration.md",
+  "phase_task": ".phases/phases/phase-34-gpu-accelerator-management/TASK.md",
+  "canonical_root": "src/domains/gpu-accelerator-management",
+  "role": "integration",
+  "implementation_header": "src/domains/gpu-accelerator-management/subtask_targets/integration/process_gpu_context_integration_8cb6ad76.hpp",
+  "implementation_source": "src/domains/gpu-accelerator-management/subtask_targets/integration/process_gpu_context_integration_8cb6ad76.cpp",
+  "test_target": "tests/structural-closure/domains/gpu-accelerator-management/integration/test_process_gpu_context_integration_8cb6ad76.cpp",
+  "status": "SKELETON_MATERIALIZED",
+  "behavioral_credit": false,
+  "preservation": "PRESERVE_IMPLEMENT_EXTEND"
+}

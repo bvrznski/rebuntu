@@ -1,0 +1,3 @@
+# signals
+
+Responsibility within `providers/linux/kernel`. This component must not become a second source of truth for a native Linux facility.

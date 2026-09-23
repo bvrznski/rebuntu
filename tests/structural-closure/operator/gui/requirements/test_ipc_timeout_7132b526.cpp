@@ -1,0 +1,4 @@
+// STRUCTURAL TEST TARGET — no test evidence until assertions are implemented and executed.
+// Source subtask: .phases/phases/phase-49-gui/prompts/49.363-ipc-timeout.md
+// Intended implementation target: src/operator/gui/subtask_targets/requirements/ipc_timeout_7132b526.hpp
+int main() { return 0; }

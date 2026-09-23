@@ -1,0 +1,12 @@
+{
+  "source_prompt": ".phases/phases/phase-61-recovery-repair-self-healing/prompts/61.12-rebuntu-phase-61-12-self-healing-delegation-boundary.md",
+  "phase_task": ".phases/phases/phase-61-recovery-repair-self-healing/TASK.md",
+  "canonical_root": "src/control/recovery-repair-self-healing",
+  "role": "requirements",
+  "implementation_header": "src/control/recovery-repair-self-healing/subtask_targets/requirements/self_healing_delegation_boundary_e94db24f.hpp",
+  "implementation_source": "src/control/recovery-repair-self-healing/subtask_targets/requirements/self_healing_delegation_boundary_e94db24f.cpp",
+  "test_target": "tests/structural-closure/control/recovery-repair-self-healing/requirements/test_self_healing_delegation_boundary_e94db24f.cpp",
+  "status": "SKELETON_MATERIALIZED",
+  "behavioral_credit": false,
+  "preservation": "PRESERVE_IMPLEMENT_EXTEND"
+}

@@ -1,0 +1,12 @@
+{
+  "source_prompt": ".phases/phases/phase-25-system-control-panel/prompts/25.18-execution-progress,-verification-and-audit-trail.md",
+  "phase_task": ".phases/phases/phase-25-system-control-panel/TASK.md",
+  "canonical_root": "src/operator/system-control-panel",
+  "role": "verification",
+  "implementation_header": "src/operator/system-control-panel/subtask_targets/verification/execution_progress_verification_and_audit_trail_643ec7f5.hpp",
+  "implementation_source": "src/operator/system-control-panel/subtask_targets/verification/execution_progress_verification_and_audit_trail_643ec7f5.cpp",
+  "test_target": "tests/structural-closure/operator/system-control-panel/verification/test_execution_progress_verification_and_audit_trail_643ec7f5.cpp",
+  "status": "SKELETON_MATERIALIZED",
+  "behavioral_credit": false,
+  "preservation": "PRESERVE_IMPLEMENT_EXTEND"
+}

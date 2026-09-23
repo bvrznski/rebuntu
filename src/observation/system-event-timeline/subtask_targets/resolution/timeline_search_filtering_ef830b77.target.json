@@ -1,0 +1,12 @@
+{
+  "source_prompt": ".phases/phases/phase-39-system-event-timeline/prompts/39.46-timeline-search-filtering.md",
+  "phase_task": ".phases/phases/phase-39-system-event-timeline/TASK.md",
+  "canonical_root": "src/observation/system-event-timeline",
+  "role": "resolution",
+  "implementation_header": "src/observation/system-event-timeline/subtask_targets/resolution/timeline_search_filtering_ef830b77.hpp",
+  "implementation_source": "src/observation/system-event-timeline/subtask_targets/resolution/timeline_search_filtering_ef830b77.cpp",
+  "test_target": "tests/structural-closure/observation/system-event-timeline/resolution/test_timeline_search_filtering_ef830b77.cpp",
+  "status": "SKELETON_MATERIALIZED",
+  "behavioral_credit": false,
+  "preservation": "PRESERVE_IMPLEMENT_EXTEND"
+}

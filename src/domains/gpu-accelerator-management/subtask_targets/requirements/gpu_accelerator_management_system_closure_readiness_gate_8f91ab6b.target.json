@@ -1,0 +1,12 @@
+{
+  "source_prompt": ".phases/phases/phase-34-gpu-accelerator-management/prompts/34.55-gpu-accelerator-management-system-closure-readiness-gate.md",
+  "phase_task": ".phases/phases/phase-34-gpu-accelerator-management/TASK.md",
+  "canonical_root": "src/domains/gpu-accelerator-management",
+  "role": "requirements",
+  "implementation_header": "src/domains/gpu-accelerator-management/subtask_targets/requirements/gpu_accelerator_management_system_closure_readiness_gate_8f91ab6b.hpp",
+  "implementation_source": "src/domains/gpu-accelerator-management/subtask_targets/requirements/gpu_accelerator_management_system_closure_readiness_gate_8f91ab6b.cpp",
+  "test_target": "tests/structural-closure/domains/gpu-accelerator-management/requirements/test_gpu_accelerator_management_system_closure_readiness_gate_8f91ab6b.cpp",
+  "status": "SKELETON_MATERIALIZED",
+  "behavioral_credit": false,
+  "preservation": "PRESERVE_IMPLEMENT_EXTEND"
+}

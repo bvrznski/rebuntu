@@ -1,0 +1,4 @@
+#include "operation_inspector_8ef3b3e9.hpp"
+
+// STRUCTURAL CLOSURE SLOT — intentionally behavior-free.
+// Implement prompt-derived out-of-line behavior here when applicable.

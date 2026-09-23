@@ -1,0 +1,5 @@
+#include "verification.hpp"
+
+// XXVII out-of-line implementation reservation for verification.
+// Source: .phases/phases/phase-43-operator-intelligence-system/prompts/43.019-scope-and-applicability-model.md
+// Intentionally behavior-free until prompt-derived implementation is supplied.

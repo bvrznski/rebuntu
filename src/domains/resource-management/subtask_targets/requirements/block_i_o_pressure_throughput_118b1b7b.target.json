@@ -1,0 +1,12 @@
+{
+  "source_prompt": ".phases/phases/phase-30-resource-management/prompts/30.17-block-i-o-pressure-throughput.md",
+  "phase_task": ".phases/phases/phase-30-resource-management/TASK.md",
+  "canonical_root": "src/domains/resource-management",
+  "role": "requirements",
+  "implementation_header": "src/domains/resource-management/subtask_targets/requirements/block_i_o_pressure_throughput_118b1b7b.hpp",
+  "implementation_source": "src/domains/resource-management/subtask_targets/requirements/block_i_o_pressure_throughput_118b1b7b.cpp",
+  "test_target": "tests/structural-closure/domains/resource-management/requirements/test_block_i_o_pressure_throughput_118b1b7b.cpp",
+  "status": "SKELETON_MATERIALIZED",
+  "behavioral_credit": false,
+  "preservation": "PRESERVE_IMPLEMENT_EXTEND"
+}

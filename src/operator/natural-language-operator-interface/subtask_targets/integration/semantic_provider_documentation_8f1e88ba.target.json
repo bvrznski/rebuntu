@@ -1,0 +1,12 @@
+{
+  "source_prompt": ".phases/phases/phase-46-natural-language-operator-interface/prompts/46.423-semantic-provider-documentation.md",
+  "phase_task": ".phases/phases/phase-46-natural-language-operator-interface/TASK.md",
+  "canonical_root": "src/operator/natural-language-operator-interface",
+  "role": "integration",
+  "implementation_header": "src/operator/natural-language-operator-interface/subtask_targets/integration/semantic_provider_documentation_8f1e88ba.hpp",
+  "implementation_source": "src/operator/natural-language-operator-interface/subtask_targets/integration/semantic_provider_documentation_8f1e88ba.cpp",
+  "test_target": "tests/structural-closure/operator/natural-language-operator-interface/integration/test_semantic_provider_documentation_8f1e88ba.cpp",
+  "status": "SKELETON_MATERIALIZED",
+  "behavioral_credit": false,
+  "preservation": "PRESERVE_IMPLEMENT_EXTEND"
+}

@@ -1,0 +1,12 @@
+{
+  "source_prompt": ".phases/phases/phase-35-package-software-management/prompts/35.14-package-upgrade-planning.md",
+  "phase_task": ".phases/phases/phase-35-package-software-management/TASK.md",
+  "canonical_root": "src/domains/package-software-management",
+  "role": "planning",
+  "implementation_header": "src/domains/package-software-management/subtask_targets/planning/package_upgrade_planning_166e09fb.hpp",
+  "implementation_source": "src/domains/package-software-management/subtask_targets/planning/package_upgrade_planning_166e09fb.cpp",
+  "test_target": "tests/structural-closure/domains/package-software-management/planning/test_package_upgrade_planning_166e09fb.cpp",
+  "status": "SKELETON_MATERIALIZED",
+  "behavioral_credit": false,
+  "preservation": "PRESERVE_IMPLEMENT_EXTEND"
+}

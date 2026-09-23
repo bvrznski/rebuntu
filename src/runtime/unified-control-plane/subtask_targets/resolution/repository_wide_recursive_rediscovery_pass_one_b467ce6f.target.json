@@ -1,0 +1,12 @@
+{
+  "source_prompt": ".phases/phases/phase-45-unified-control-plane/prompts/45.320-repository-wide-recursive-rediscovery-pass-one.md",
+  "phase_task": ".phases/phases/phase-45-unified-control-plane/TASK.md",
+  "canonical_root": "src/runtime/unified-control-plane",
+  "role": "resolution",
+  "implementation_header": "src/runtime/unified-control-plane/subtask_targets/resolution/repository_wide_recursive_rediscovery_pass_one_b467ce6f.hpp",
+  "implementation_source": "src/runtime/unified-control-plane/subtask_targets/resolution/repository_wide_recursive_rediscovery_pass_one_b467ce6f.cpp",
+  "test_target": "tests/structural-closure/runtime/unified-control-plane/resolution/test_repository_wide_recursive_rediscovery_pass_one_b467ce6f.cpp",
+  "status": "SKELETON_MATERIALIZED",
+  "behavioral_credit": false,
+  "preservation": "PRESERVE_IMPLEMENT_EXTEND"
+}

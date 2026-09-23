@@ -1,0 +1,12 @@
+{
+  "source_prompt": ".phases/phases/phase-49-gui/prompts/49.430-operator-feedback-ui.md",
+  "phase_task": ".phases/phases/phase-49-gui/TASK.md",
+  "canonical_root": "src/operator/gui",
+  "role": "requirements",
+  "implementation_header": "src/operator/gui/subtask_targets/requirements/operator_feedback_ui_ff8bac09.hpp",
+  "implementation_source": "src/operator/gui/subtask_targets/requirements/operator_feedback_ui_ff8bac09.cpp",
+  "test_target": "tests/structural-closure/operator/gui/requirements/test_operator_feedback_ui_ff8bac09.cpp",
+  "status": "SKELETON_MATERIALIZED",
+  "behavioral_credit": false,
+  "preservation": "PRESERVE_IMPLEMENT_EXTEND"
+}

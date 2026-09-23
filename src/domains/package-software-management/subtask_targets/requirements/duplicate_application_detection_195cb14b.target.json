@@ -1,0 +1,12 @@
+{
+  "source_prompt": ".phases/phases/phase-35-package-software-management/prompts/35.32-duplicate-application-detection.md",
+  "phase_task": ".phases/phases/phase-35-package-software-management/TASK.md",
+  "canonical_root": "src/domains/package-software-management",
+  "role": "requirements",
+  "implementation_header": "src/domains/package-software-management/subtask_targets/requirements/duplicate_application_detection_195cb14b.hpp",
+  "implementation_source": "src/domains/package-software-management/subtask_targets/requirements/duplicate_application_detection_195cb14b.cpp",
+  "test_target": "tests/structural-closure/domains/package-software-management/requirements/test_duplicate_application_detection_195cb14b.cpp",
+  "status": "SKELETON_MATERIALIZED",
+  "behavioral_credit": false,
+  "preservation": "PRESERVE_IMPLEMENT_EXTEND"
+}

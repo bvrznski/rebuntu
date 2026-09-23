@@ -1,0 +1,12 @@
+{
+  "source_prompt": ".phases/phases/phase-36-configuration-management/prompts/36.44-reload-restart-impact-boundary.md",
+  "phase_task": ".phases/phases/phase-36-configuration-management/TASK.md",
+  "canonical_root": "src/domains/configuration-management",
+  "role": "recovery",
+  "implementation_header": "src/domains/configuration-management/subtask_targets/recovery/reload_restart_impact_boundary_f3d0efa5.hpp",
+  "implementation_source": "src/domains/configuration-management/subtask_targets/recovery/reload_restart_impact_boundary_f3d0efa5.cpp",
+  "test_target": "tests/structural-closure/domains/configuration-management/recovery/test_reload_restart_impact_boundary_f3d0efa5.cpp",
+  "status": "SKELETON_MATERIALIZED",
+  "behavioral_credit": false,
+  "preservation": "PRESERVE_IMPLEMENT_EXTEND"
+}

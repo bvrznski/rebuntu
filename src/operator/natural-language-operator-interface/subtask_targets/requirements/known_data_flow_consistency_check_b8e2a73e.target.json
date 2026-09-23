@@ -1,0 +1,12 @@
+{
+  "source_prompt": ".phases/phases/phase-46-natural-language-operator-interface/prompts/46.115-known-data-flow-consistency-check.md",
+  "phase_task": ".phases/phases/phase-46-natural-language-operator-interface/TASK.md",
+  "canonical_root": "src/operator/natural-language-operator-interface",
+  "role": "requirements",
+  "implementation_header": "src/operator/natural-language-operator-interface/subtask_targets/requirements/known_data_flow_consistency_check_b8e2a73e.hpp",
+  "implementation_source": "src/operator/natural-language-operator-interface/subtask_targets/requirements/known_data_flow_consistency_check_b8e2a73e.cpp",
+  "test_target": "tests/structural-closure/operator/natural-language-operator-interface/requirements/test_known_data_flow_consistency_check_b8e2a73e.cpp",
+  "status": "SKELETON_MATERIALIZED",
+  "behavioral_credit": false,
+  "preservation": "PRESERVE_IMPLEMENT_EXTEND"
+}

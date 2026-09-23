@@ -1,0 +1,12 @@
+{
+  "source_prompt": ".phases/phases/phase-46-natural-language-operator-interface/prompts/46.120-new-persistence-detection.md",
+  "phase_task": ".phases/phases/phase-46-natural-language-operator-interface/TASK.md",
+  "canonical_root": "src/operator/natural-language-operator-interface",
+  "role": "persistence",
+  "implementation_header": "src/operator/natural-language-operator-interface/subtask_targets/persistence/new_persistence_detection_75c8742f.hpp",
+  "implementation_source": "src/operator/natural-language-operator-interface/subtask_targets/persistence/new_persistence_detection_75c8742f.cpp",
+  "test_target": "tests/structural-closure/operator/natural-language-operator-interface/persistence/test_new_persistence_detection_75c8742f.cpp",
+  "status": "SKELETON_MATERIALIZED",
+  "behavioral_credit": false,
+  "preservation": "PRESERVE_IMPLEMENT_EXTEND"
+}

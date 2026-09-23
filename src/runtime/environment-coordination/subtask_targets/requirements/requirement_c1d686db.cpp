@@ -1,0 +1,4 @@
+#include "requirement_c1d686db.hpp"
+
+// STRUCTURAL CLOSURE SLOT — intentionally behavior-free.
+// Implement prompt-derived out-of-line behavior here when applicable.

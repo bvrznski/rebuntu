@@ -1,0 +1,12 @@
+{
+  "source_prompt": ".phases/phases/phase-47-os-task-policy-system/prompts/47.422-system-update-policy.md",
+  "phase_task": ".phases/phases/phase-47-os-task-policy-system/TASK.md",
+  "canonical_root": "src/runtime/os-task-policy-system",
+  "role": "security",
+  "implementation_header": "src/runtime/os-task-policy-system/subtask_targets/security/system_update_policy_e5f9fe6e.hpp",
+  "implementation_source": "src/runtime/os-task-policy-system/subtask_targets/security/system_update_policy_e5f9fe6e.cpp",
+  "test_target": "tests/structural-closure/runtime/os-task-policy-system/security/test_system_update_policy_e5f9fe6e.cpp",
+  "status": "SKELETON_MATERIALIZED",
+  "behavioral_credit": false,
+  "preservation": "PRESERVE_IMPLEMENT_EXTEND"
+}

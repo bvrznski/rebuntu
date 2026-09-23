@@ -1,0 +1,6 @@
+#include "governance/native_authority/boundary/lifecycle.hpp"
+
+// Structural translation-unit slot only. No maturity credit.
+namespace rebuntu::structural_slots {
+static_assert(Skeleton_84313c64f9_Lifecycle::structural_revision == 25);
+}

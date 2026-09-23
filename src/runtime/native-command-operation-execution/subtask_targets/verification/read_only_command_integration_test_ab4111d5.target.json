@@ -1,0 +1,12 @@
+{
+  "source_prompt": ".phases/phases/phase-06-native-command-operation-execution/prompts/6.71_read-only_command_integration_test.md",
+  "phase_task": ".phases/phases/phase-06-native-command-operation-execution/TASK.md",
+  "canonical_root": "src/runtime/native-command-operation-execution",
+  "role": "verification",
+  "implementation_header": "src/runtime/native-command-operation-execution/subtask_targets/verification/read_only_command_integration_test_ab4111d5.hpp",
+  "implementation_source": "src/runtime/native-command-operation-execution/subtask_targets/verification/read_only_command_integration_test_ab4111d5.cpp",
+  "test_target": "tests/structural-closure/runtime/native-command-operation-execution/verification/test_read_only_command_integration_test_ab4111d5.cpp",
+  "status": "SKELETON_MATERIALIZED",
+  "behavioral_credit": false,
+  "preservation": "PRESERVE_IMPLEMENT_EXTEND"
+}

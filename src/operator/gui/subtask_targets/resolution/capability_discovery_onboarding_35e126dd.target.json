@@ -1,0 +1,12 @@
+{
+  "source_prompt": ".phases/phases/phase-49-gui/prompts/49.447-capability-discovery-onboarding.md",
+  "phase_task": ".phases/phases/phase-49-gui/TASK.md",
+  "canonical_root": "src/operator/gui",
+  "role": "resolution",
+  "implementation_header": "src/operator/gui/subtask_targets/resolution/capability_discovery_onboarding_35e126dd.hpp",
+  "implementation_source": "src/operator/gui/subtask_targets/resolution/capability_discovery_onboarding_35e126dd.cpp",
+  "test_target": "tests/structural-closure/operator/gui/resolution/test_capability_discovery_onboarding_35e126dd.cpp",
+  "status": "SKELETON_MATERIALIZED",
+  "behavioral_credit": false,
+  "preservation": "PRESERVE_IMPLEMENT_EXTEND"
+}

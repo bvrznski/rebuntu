@@ -1,0 +1,12 @@
+{
+  "source_prompt": ".phases/phases/phase-49-gui/prompts/49.240-taskwarrior-task-editing.md",
+  "phase_task": ".phases/phases/phase-49-gui/TASK.md",
+  "canonical_root": "src/operator/gui",
+  "role": "requirements",
+  "implementation_header": "src/operator/gui/subtask_targets/requirements/taskwarrior_task_editing_ef99aca5.hpp",
+  "implementation_source": "src/operator/gui/subtask_targets/requirements/taskwarrior_task_editing_ef99aca5.cpp",
+  "test_target": "tests/structural-closure/operator/gui/requirements/test_taskwarrior_task_editing_ef99aca5.cpp",
+  "status": "SKELETON_MATERIALIZED",
+  "behavioral_credit": false,
+  "preservation": "PRESERVE_IMPLEMENT_EXTEND"
+}

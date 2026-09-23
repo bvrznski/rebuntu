@@ -1,0 +1,12 @@
+{
+  "source_prompt": ".phases/phases/phase-42-system-knowledge-graph/prompts/42.041-relation-filtered-search.md",
+  "phase_task": ".phases/phases/phase-42-system-knowledge-graph/TASK.md",
+  "canonical_root": "src/knowledge/system-knowledge-graph",
+  "role": "resolution",
+  "implementation_header": "src/knowledge/system-knowledge-graph/subtask_targets/resolution/relation_filtered_search_9e092ff5.hpp",
+  "implementation_source": "src/knowledge/system-knowledge-graph/subtask_targets/resolution/relation_filtered_search_9e092ff5.cpp",
+  "test_target": "tests/structural-closure/knowledge/system-knowledge-graph/resolution/test_relation_filtered_search_9e092ff5.cpp",
+  "status": "SKELETON_MATERIALIZED",
+  "behavioral_credit": false,
+  "preservation": "PRESERVE_IMPLEMENT_EXTEND"
+}

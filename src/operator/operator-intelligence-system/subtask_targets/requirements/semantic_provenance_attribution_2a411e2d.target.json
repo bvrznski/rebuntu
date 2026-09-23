@@ -1,0 +1,12 @@
+{
+  "source_prompt": ".phases/phases/phase-43-operator-intelligence-system/prompts/43.049-semantic-provenance-attribution.md",
+  "phase_task": ".phases/phases/phase-43-operator-intelligence-system/TASK.md",
+  "canonical_root": "src/operator/operator-intelligence-system",
+  "role": "requirements",
+  "implementation_header": "src/operator/operator-intelligence-system/subtask_targets/requirements/semantic_provenance_attribution_2a411e2d.hpp",
+  "implementation_source": "src/operator/operator-intelligence-system/subtask_targets/requirements/semantic_provenance_attribution_2a411e2d.cpp",
+  "test_target": "tests/structural-closure/operator/operator-intelligence-system/requirements/test_semantic_provenance_attribution_2a411e2d.cpp",
+  "status": "SKELETON_MATERIALIZED",
+  "behavioral_credit": false,
+  "preservation": "PRESERVE_IMPLEMENT_EXTEND"
+}

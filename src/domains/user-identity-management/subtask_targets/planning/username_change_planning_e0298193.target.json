@@ -1,0 +1,12 @@
+{
+  "source_prompt": ".phases/phases/phase-38-user-identity-management/prompts/38.40-username-change-planning.md",
+  "phase_task": ".phases/phases/phase-38-user-identity-management/TASK.md",
+  "canonical_root": "src/domains/user-identity-management",
+  "role": "planning",
+  "implementation_header": "src/domains/user-identity-management/subtask_targets/planning/username_change_planning_e0298193.hpp",
+  "implementation_source": "src/domains/user-identity-management/subtask_targets/planning/username_change_planning_e0298193.cpp",
+  "test_target": "tests/structural-closure/domains/user-identity-management/planning/test_username_change_planning_e0298193.cpp",
+  "status": "SKELETON_MATERIALIZED",
+  "behavioral_credit": false,
+  "preservation": "PRESERVE_IMPLEMENT_EXTEND"
+}

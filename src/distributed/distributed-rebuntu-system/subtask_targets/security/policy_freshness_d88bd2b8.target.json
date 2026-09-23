@@ -1,0 +1,12 @@
+{
+  "source_prompt": ".phases/phases/phase-51-distributed-rebuntu-system/prompts/51.313-policy-freshness.md",
+  "phase_task": ".phases/phases/phase-51-distributed-rebuntu-system/TASK.md",
+  "canonical_root": "src/distributed/distributed-rebuntu-system",
+  "role": "security",
+  "implementation_header": "src/distributed/distributed-rebuntu-system/subtask_targets/security/policy_freshness_d88bd2b8.hpp",
+  "implementation_source": "src/distributed/distributed-rebuntu-system/subtask_targets/security/policy_freshness_d88bd2b8.cpp",
+  "test_target": "tests/structural-closure/distributed/distributed-rebuntu-system/security/test_policy_freshness_d88bd2b8.cpp",
+  "status": "SKELETON_MATERIALIZED",
+  "behavioral_credit": false,
+  "preservation": "PRESERVE_IMPLEMENT_EXTEND"
+}

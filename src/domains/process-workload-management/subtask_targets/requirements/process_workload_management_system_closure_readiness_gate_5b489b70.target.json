@@ -1,0 +1,12 @@
+{
+  "source_prompt": ".phases/phases/phase-29-process-workload-management/prompts/29.47-process-workload-management-system-closure-readiness-gate.md",
+  "phase_task": ".phases/phases/phase-29-process-workload-management/TASK.md",
+  "canonical_root": "src/domains/process-workload-management",
+  "role": "requirements",
+  "implementation_header": "src/domains/process-workload-management/subtask_targets/requirements/process_workload_management_system_closure_readiness_gate_5b489b70.hpp",
+  "implementation_source": "src/domains/process-workload-management/subtask_targets/requirements/process_workload_management_system_closure_readiness_gate_5b489b70.cpp",
+  "test_target": "tests/structural-closure/domains/process-workload-management/requirements/test_process_workload_management_system_closure_readiness_gate_5b489b70.cpp",
+  "status": "SKELETON_MATERIALIZED",
+  "behavioral_credit": false,
+  "preservation": "PRESERVE_IMPLEMENT_EXTEND"
+}

@@ -1,0 +1,13 @@
+#pragma once
+
+// XXVII SUBTASK PACKAGE SKELETON — zero behavioral maturity credit.
+// Source: .phases/phases/phase-71-performance-optimization-adaptive-tuning/prompts/71.16.md
+// Preserve this architectural reservation and implement only after reading the source prompt.
+
+namespace rebuntu::subtask_packages::phase_71::s_9b7e098d::observability {
+struct ObservabilitySlot final {
+    static constexpr const char* source_prompt = ".phases/phases/phase-71-performance-optimization-adaptive-tuning/prompts/71.16.md";
+    static constexpr const char* aspect = "observability";
+    static constexpr const char* status = "SKELETON_MATERIALIZED";
+};
+} // namespace rebuntu::subtask_packages::phase_71::s_9b7e098d::observability

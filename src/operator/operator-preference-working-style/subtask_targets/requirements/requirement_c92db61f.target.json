@@ -1,0 +1,12 @@
+{
+  "source_prompt": ".phases/phases/phase-103-operator-preference-working-style/prompts/103.22.md",
+  "phase_task": ".phases/phases/phase-103-operator-preference-working-style/TASK.md",
+  "canonical_root": "src/operator/operator-preference-working-style",
+  "role": "requirements",
+  "implementation_header": "src/operator/operator-preference-working-style/subtask_targets/requirements/requirement_c92db61f.hpp",
+  "implementation_source": "src/operator/operator-preference-working-style/subtask_targets/requirements/requirement_c92db61f.cpp",
+  "test_target": "tests/structural-closure/operator/operator-preference-working-style/requirements/test_requirement_c92db61f.cpp",
+  "status": "SKELETON_MATERIALIZED",
+  "behavioral_credit": false,
+  "preservation": "PRESERVE_IMPLEMENT_EXTEND"
+}

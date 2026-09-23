@@ -1,0 +1,12 @@
+{
+  "source_prompt": ".phases/phases/phase-29-process-workload-management/prompts/29.9-process-user-identity-context.md",
+  "phase_task": ".phases/phases/phase-29-process-workload-management/TASK.md",
+  "canonical_root": "src/domains/process-workload-management",
+  "role": "contracts",
+  "implementation_header": "src/domains/process-workload-management/subtask_targets/contracts/process_user_identity_context_c8b595d4.hpp",
+  "implementation_source": "src/domains/process-workload-management/subtask_targets/contracts/process_user_identity_context_c8b595d4.cpp",
+  "test_target": "tests/structural-closure/domains/process-workload-management/contracts/test_process_user_identity_context_c8b595d4.cpp",
+  "status": "SKELETON_MATERIALIZED",
+  "behavioral_credit": false,
+  "preservation": "PRESERVE_IMPLEMENT_EXTEND"
+}

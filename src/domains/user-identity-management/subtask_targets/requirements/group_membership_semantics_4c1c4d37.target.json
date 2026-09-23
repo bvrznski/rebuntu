@@ -1,0 +1,12 @@
+{
+  "source_prompt": ".phases/phases/phase-38-user-identity-management/prompts/38.9-group-membership-semantics.md",
+  "phase_task": ".phases/phases/phase-38-user-identity-management/TASK.md",
+  "canonical_root": "src/domains/user-identity-management",
+  "role": "requirements",
+  "implementation_header": "src/domains/user-identity-management/subtask_targets/requirements/group_membership_semantics_4c1c4d37.hpp",
+  "implementation_source": "src/domains/user-identity-management/subtask_targets/requirements/group_membership_semantics_4c1c4d37.cpp",
+  "test_target": "tests/structural-closure/domains/user-identity-management/requirements/test_group_membership_semantics_4c1c4d37.cpp",
+  "status": "SKELETON_MATERIALIZED",
+  "behavioral_credit": false,
+  "preservation": "PRESERVE_IMPLEMENT_EXTEND"
+}

@@ -1,0 +1,12 @@
+{
+  "source_prompt": ".phases/phases/phase-42-system-knowledge-graph/prompts/42.070-event-and-timeline-context-provider.md",
+  "phase_task": ".phases/phases/phase-42-system-knowledge-graph/TASK.md",
+  "canonical_root": "src/knowledge/system-knowledge-graph",
+  "role": "integration",
+  "implementation_header": "src/knowledge/system-knowledge-graph/subtask_targets/integration/event_and_timeline_context_provider_558f2234.hpp",
+  "implementation_source": "src/knowledge/system-knowledge-graph/subtask_targets/integration/event_and_timeline_context_provider_558f2234.cpp",
+  "test_target": "tests/structural-closure/knowledge/system-knowledge-graph/integration/test_event_and_timeline_context_provider_558f2234.cpp",
+  "status": "SKELETON_MATERIALIZED",
+  "behavioral_credit": false,
+  "preservation": "PRESERVE_IMPLEMENT_EXTEND"
+}

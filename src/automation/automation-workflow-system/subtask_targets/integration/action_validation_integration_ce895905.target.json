@@ -1,0 +1,12 @@
+{
+  "source_prompt": ".phases/phases/phase-41-automation-workflow-system/prompts/41.044-action-validation-integration.md",
+  "phase_task": ".phases/phases/phase-41-automation-workflow-system/TASK.md",
+  "canonical_root": "src/automation/automation-workflow-system",
+  "role": "integration",
+  "implementation_header": "src/automation/automation-workflow-system/subtask_targets/integration/action_validation_integration_ce895905.hpp",
+  "implementation_source": "src/automation/automation-workflow-system/subtask_targets/integration/action_validation_integration_ce895905.cpp",
+  "test_target": "tests/structural-closure/automation/automation-workflow-system/integration/test_action_validation_integration_ce895905.cpp",
+  "status": "SKELETON_MATERIALIZED",
+  "behavioral_credit": false,
+  "preservation": "PRESERVE_IMPLEMENT_EXTEND"
+}

@@ -1,0 +1,6 @@
+#include "domains/gpu-accelerator-management/state/persistence/integration.hpp"
+
+// Structural translation-unit slot only. No maturity credit.
+namespace rebuntu::structural_slots {
+static_assert(Skeleton_0a1535b5b2_Integration::structural_revision == 25);
+}

@@ -1,0 +1,5 @@
+#include "recovery.hpp"
+
+// XXVII out-of-line implementation reservation for recovery.
+// Source: .phases/phases/phase-100-human-rebuntu-collaborative-control/prompts/100.20.md
+// Intentionally behavior-free until prompt-derived implementation is supplied.

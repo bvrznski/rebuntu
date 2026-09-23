@@ -1,0 +1,12 @@
+{
+  "source_prompt": ".phases/phases/phase-45-unified-control-plane/prompts/45.332-adversarial-unknown-semantics-audit.md",
+  "phase_task": ".phases/phases/phase-45-unified-control-plane/TASK.md",
+  "canonical_root": "src/runtime/unified-control-plane",
+  "role": "verification",
+  "implementation_header": "src/runtime/unified-control-plane/subtask_targets/verification/adversarial_unknown_semantics_audit_68351d7b.hpp",
+  "implementation_source": "src/runtime/unified-control-plane/subtask_targets/verification/adversarial_unknown_semantics_audit_68351d7b.cpp",
+  "test_target": "tests/structural-closure/runtime/unified-control-plane/verification/test_adversarial_unknown_semantics_audit_68351d7b.cpp",
+  "status": "SKELETON_MATERIALIZED",
+  "behavioral_credit": false,
+  "preservation": "PRESERVE_IMPLEMENT_EXTEND"
+}

@@ -1,0 +1,12 @@
+{
+  "source_prompt": ".phases/phases/phase-06-native-command-operation-execution/prompts/6.1_typed_command_model.md",
+  "phase_task": ".phases/phases/phase-06-native-command-operation-execution/TASK.md",
+  "canonical_root": "src/runtime/native-command-operation-execution",
+  "role": "execution",
+  "implementation_header": "src/runtime/native-command-operation-execution/subtask_targets/execution/typed_command_model_05e208a7.hpp",
+  "implementation_source": "src/runtime/native-command-operation-execution/subtask_targets/execution/typed_command_model_05e208a7.cpp",
+  "test_target": "tests/structural-closure/runtime/native-command-operation-execution/execution/test_typed_command_model_05e208a7.cpp",
+  "status": "SKELETON_MATERIALIZED",
+  "behavioral_credit": false,
+  "preservation": "PRESERVE_IMPLEMENT_EXTEND"
+}

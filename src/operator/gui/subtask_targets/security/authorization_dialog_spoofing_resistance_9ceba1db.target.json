@@ -1,0 +1,12 @@
+{
+  "source_prompt": ".phases/phases/phase-49-gui/prompts/49.398-authorization-dialog-spoofing-resistance.md",
+  "phase_task": ".phases/phases/phase-49-gui/TASK.md",
+  "canonical_root": "src/operator/gui",
+  "role": "security",
+  "implementation_header": "src/operator/gui/subtask_targets/security/authorization_dialog_spoofing_resistance_9ceba1db.hpp",
+  "implementation_source": "src/operator/gui/subtask_targets/security/authorization_dialog_spoofing_resistance_9ceba1db.cpp",
+  "test_target": "tests/structural-closure/operator/gui/security/test_authorization_dialog_spoofing_resistance_9ceba1db.cpp",
+  "status": "SKELETON_MATERIALIZED",
+  "behavioral_credit": false,
+  "preservation": "PRESERVE_IMPLEMENT_EXTEND"
+}

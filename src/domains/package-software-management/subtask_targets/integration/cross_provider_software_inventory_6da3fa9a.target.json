@@ -1,0 +1,12 @@
+{
+  "source_prompt": ".phases/phases/phase-35-package-software-management/prompts/35.61-cross-provider-software-inventory.md",
+  "phase_task": ".phases/phases/phase-35-package-software-management/TASK.md",
+  "canonical_root": "src/domains/package-software-management",
+  "role": "integration",
+  "implementation_header": "src/domains/package-software-management/subtask_targets/integration/cross_provider_software_inventory_6da3fa9a.hpp",
+  "implementation_source": "src/domains/package-software-management/subtask_targets/integration/cross_provider_software_inventory_6da3fa9a.cpp",
+  "test_target": "tests/structural-closure/domains/package-software-management/integration/test_cross_provider_software_inventory_6da3fa9a.cpp",
+  "status": "SKELETON_MATERIALIZED",
+  "behavioral_credit": false,
+  "preservation": "PRESERVE_IMPLEMENT_EXTEND"
+}

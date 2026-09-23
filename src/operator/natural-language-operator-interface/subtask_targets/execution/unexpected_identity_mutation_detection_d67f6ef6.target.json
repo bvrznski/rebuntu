@@ -1,0 +1,12 @@
+{
+  "source_prompt": ".phases/phases/phase-46-natural-language-operator-interface/prompts/46.126-unexpected-identity-mutation-detection.md",
+  "phase_task": ".phases/phases/phase-46-natural-language-operator-interface/TASK.md",
+  "canonical_root": "src/operator/natural-language-operator-interface",
+  "role": "execution",
+  "implementation_header": "src/operator/natural-language-operator-interface/subtask_targets/execution/unexpected_identity_mutation_detection_d67f6ef6.hpp",
+  "implementation_source": "src/operator/natural-language-operator-interface/subtask_targets/execution/unexpected_identity_mutation_detection_d67f6ef6.cpp",
+  "test_target": "tests/structural-closure/operator/natural-language-operator-interface/execution/test_unexpected_identity_mutation_detection_d67f6ef6.cpp",
+  "status": "SKELETON_MATERIALIZED",
+  "behavioral_credit": false,
+  "preservation": "PRESERVE_IMPLEMENT_EXTEND"
+}

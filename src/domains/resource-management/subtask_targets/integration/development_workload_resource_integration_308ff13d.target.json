@@ -1,0 +1,12 @@
+{
+  "source_prompt": ".phases/phases/phase-30-resource-management/prompts/30.41-development-workload-resource-integration.md",
+  "phase_task": ".phases/phases/phase-30-resource-management/TASK.md",
+  "canonical_root": "src/domains/resource-management",
+  "role": "integration",
+  "implementation_header": "src/domains/resource-management/subtask_targets/integration/development_workload_resource_integration_308ff13d.hpp",
+  "implementation_source": "src/domains/resource-management/subtask_targets/integration/development_workload_resource_integration_308ff13d.cpp",
+  "test_target": "tests/structural-closure/domains/resource-management/integration/test_development_workload_resource_integration_308ff13d.cpp",
+  "status": "SKELETON_MATERIALIZED",
+  "behavioral_credit": false,
+  "preservation": "PRESERVE_IMPLEMENT_EXTEND"
+}

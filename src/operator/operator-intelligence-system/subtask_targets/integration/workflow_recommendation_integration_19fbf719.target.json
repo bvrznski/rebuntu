@@ -1,0 +1,12 @@
+{
+  "source_prompt": ".phases/phases/phase-43-operator-intelligence-system/prompts/43.118-phase-41-workflow-recommendation-integration.md",
+  "phase_task": ".phases/phases/phase-43-operator-intelligence-system/TASK.md",
+  "canonical_root": "src/operator/operator-intelligence-system",
+  "role": "integration",
+  "implementation_header": "src/operator/operator-intelligence-system/subtask_targets/integration/workflow_recommendation_integration_19fbf719.hpp",
+  "implementation_source": "src/operator/operator-intelligence-system/subtask_targets/integration/workflow_recommendation_integration_19fbf719.cpp",
+  "test_target": "tests/structural-closure/operator/operator-intelligence-system/integration/test_workflow_recommendation_integration_19fbf719.cpp",
+  "status": "SKELETON_MATERIALIZED",
+  "behavioral_credit": false,
+  "preservation": "PRESERVE_IMPLEMENT_EXTEND"
+}

@@ -1,0 +1,12 @@
+{
+  "source_prompt": ".phases/phases/phase-54-dynamic-system-capability-affordance-model/prompts/54.47-rebuntu-phase-54-47-phase-46-natural-language-operator-integration.md",
+  "phase_task": ".phases/phases/phase-54-dynamic-system-capability-affordance-model/TASK.md",
+  "canonical_root": "src/semantics/dynamic-system-capability-affordance-model",
+  "role": "integration",
+  "implementation_header": "src/semantics/dynamic-system-capability-affordance-model/subtask_targets/integration/phase_46_natural_language_operator_integration_25db873c.hpp",
+  "implementation_source": "src/semantics/dynamic-system-capability-affordance-model/subtask_targets/integration/phase_46_natural_language_operator_integration_25db873c.cpp",
+  "test_target": "tests/structural-closure/semantics/dynamic-system-capability-affordance-model/integration/test_phase_46_natural_language_operator_integration_25db873c.cpp",
+  "status": "SKELETON_MATERIALIZED",
+  "behavioral_credit": false,
+  "preservation": "PRESERVE_IMPLEMENT_EXTEND"
+}

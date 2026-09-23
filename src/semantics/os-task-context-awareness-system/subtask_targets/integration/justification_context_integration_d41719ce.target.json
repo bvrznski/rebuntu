@@ -1,0 +1,12 @@
+{
+  "source_prompt": ".phases/phases/phase-48-os-task-context-awareness-system/prompts/48.185-justification-context-integration.md",
+  "phase_task": ".phases/phases/phase-48-os-task-context-awareness-system/TASK.md",
+  "canonical_root": "src/semantics/os-task-context-awareness-system",
+  "role": "integration",
+  "implementation_header": "src/semantics/os-task-context-awareness-system/subtask_targets/integration/justification_context_integration_d41719ce.hpp",
+  "implementation_source": "src/semantics/os-task-context-awareness-system/subtask_targets/integration/justification_context_integration_d41719ce.cpp",
+  "test_target": "tests/structural-closure/semantics/os-task-context-awareness-system/integration/test_justification_context_integration_d41719ce.cpp",
+  "status": "SKELETON_MATERIALIZED",
+  "behavioral_credit": false,
+  "preservation": "PRESERVE_IMPLEMENT_EXTEND"
+}

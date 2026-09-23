@@ -1,0 +1,12 @@
+{
+  "source_prompt": ".phases/phases/phase-52-associated-systems-hardware-rooted-trust/prompts/52.217-hardware-authenticator-recovery.md",
+  "phase_task": ".phases/phases/phase-52-associated-systems-hardware-rooted-trust/TASK.md",
+  "canonical_root": "src/providers/associated-systems-hardware-rooted-trust",
+  "role": "recovery",
+  "implementation_header": "src/providers/associated-systems-hardware-rooted-trust/subtask_targets/recovery/hardware_authenticator_recovery_00366346.hpp",
+  "implementation_source": "src/providers/associated-systems-hardware-rooted-trust/subtask_targets/recovery/hardware_authenticator_recovery_00366346.cpp",
+  "test_target": "tests/structural-closure/providers/associated-systems-hardware-rooted-trust/recovery/test_hardware_authenticator_recovery_00366346.cpp",
+  "status": "SKELETON_MATERIALIZED",
+  "behavioral_credit": false,
+  "preservation": "PRESERVE_IMPLEMENT_EXTEND"
+}

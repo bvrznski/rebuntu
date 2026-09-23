@@ -1,0 +1,12 @@
+{
+  "source_prompt": ".phases/phases/phase-43-operator-intelligence-system/prompts/43.114-phase-40-candidate-plan-conversion.md",
+  "phase_task": ".phases/phases/phase-43-operator-intelligence-system/TASK.md",
+  "canonical_root": "src/operator/operator-intelligence-system",
+  "role": "planning",
+  "implementation_header": "src/operator/operator-intelligence-system/subtask_targets/planning/candidate_plan_conversion_817b49e6.hpp",
+  "implementation_source": "src/operator/operator-intelligence-system/subtask_targets/planning/candidate_plan_conversion_817b49e6.cpp",
+  "test_target": "tests/structural-closure/operator/operator-intelligence-system/planning/test_candidate_plan_conversion_817b49e6.cpp",
+  "status": "SKELETON_MATERIALIZED",
+  "behavioral_credit": false,
+  "preservation": "PRESERVE_IMPLEMENT_EXTEND"
+}

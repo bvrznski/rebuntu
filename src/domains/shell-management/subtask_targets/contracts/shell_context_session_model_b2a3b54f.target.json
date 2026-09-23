@@ -1,0 +1,12 @@
+{
+  "source_prompt": ".phases/phases/phase-26-shell-management/prompts/26.1-shell-context-session-model.md",
+  "phase_task": ".phases/phases/phase-26-shell-management/TASK.md",
+  "canonical_root": "src/domains/shell-management",
+  "role": "contracts",
+  "implementation_header": "src/domains/shell-management/subtask_targets/contracts/shell_context_session_model_b2a3b54f.hpp",
+  "implementation_source": "src/domains/shell-management/subtask_targets/contracts/shell_context_session_model_b2a3b54f.cpp",
+  "test_target": "tests/structural-closure/domains/shell-management/contracts/test_shell_context_session_model_b2a3b54f.cpp",
+  "status": "SKELETON_MATERIALIZED",
+  "behavioral_credit": false,
+  "preservation": "PRESERVE_IMPLEMENT_EXTEND"
+}

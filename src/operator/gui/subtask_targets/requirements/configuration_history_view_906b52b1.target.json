@@ -1,0 +1,12 @@
+{
+  "source_prompt": ".phases/phases/phase-49-gui/prompts/49.137-configuration-history-view.md",
+  "phase_task": ".phases/phases/phase-49-gui/TASK.md",
+  "canonical_root": "src/operator/gui",
+  "role": "requirements",
+  "implementation_header": "src/operator/gui/subtask_targets/requirements/configuration_history_view_906b52b1.hpp",
+  "implementation_source": "src/operator/gui/subtask_targets/requirements/configuration_history_view_906b52b1.cpp",
+  "test_target": "tests/structural-closure/operator/gui/requirements/test_configuration_history_view_906b52b1.cpp",
+  "status": "SKELETON_MATERIALIZED",
+  "behavioral_credit": false,
+  "preservation": "PRESERVE_IMPLEMENT_EXTEND"
+}

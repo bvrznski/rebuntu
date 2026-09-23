@@ -1,0 +1,12 @@
+{
+  "source_prompt": ".phases/phases/phase-47-os-task-policy-system/prompts/47.065-require-clarification-effect.md",
+  "phase_task": ".phases/phases/phase-47-os-task-policy-system/TASK.md",
+  "canonical_root": "src/runtime/os-task-policy-system",
+  "role": "requirements",
+  "implementation_header": "src/runtime/os-task-policy-system/subtask_targets/requirements/require_clarification_effect_6c4d19ae.hpp",
+  "implementation_source": "src/runtime/os-task-policy-system/subtask_targets/requirements/require_clarification_effect_6c4d19ae.cpp",
+  "test_target": "tests/structural-closure/runtime/os-task-policy-system/requirements/test_require_clarification_effect_6c4d19ae.cpp",
+  "status": "SKELETON_MATERIALIZED",
+  "behavioral_credit": false,
+  "preservation": "PRESERVE_IMPLEMENT_EXTEND"
+}

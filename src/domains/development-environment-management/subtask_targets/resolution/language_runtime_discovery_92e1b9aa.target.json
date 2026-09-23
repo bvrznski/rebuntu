@@ -1,0 +1,12 @@
+{
+  "source_prompt": ".phases/phases/phase-28-development-environment-management/prompts/28.6-language-runtime-discovery.md",
+  "phase_task": ".phases/phases/phase-28-development-environment-management/TASK.md",
+  "canonical_root": "src/domains/development-environment-management",
+  "role": "resolution",
+  "implementation_header": "src/domains/development-environment-management/subtask_targets/resolution/language_runtime_discovery_92e1b9aa.hpp",
+  "implementation_source": "src/domains/development-environment-management/subtask_targets/resolution/language_runtime_discovery_92e1b9aa.cpp",
+  "test_target": "tests/structural-closure/domains/development-environment-management/resolution/test_language_runtime_discovery_92e1b9aa.cpp",
+  "status": "SKELETON_MATERIALIZED",
+  "behavioral_credit": false,
+  "preservation": "PRESERVE_IMPLEMENT_EXTEND"
+}

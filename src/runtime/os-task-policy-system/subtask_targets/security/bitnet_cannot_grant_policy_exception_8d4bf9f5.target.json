@@ -1,0 +1,12 @@
+{
+  "source_prompt": ".phases/phases/phase-47-os-task-policy-system/prompts/47.360-bitnet-cannot-grant-policy-exception.md",
+  "phase_task": ".phases/phases/phase-47-os-task-policy-system/TASK.md",
+  "canonical_root": "src/runtime/os-task-policy-system",
+  "role": "security",
+  "implementation_header": "src/runtime/os-task-policy-system/subtask_targets/security/bitnet_cannot_grant_policy_exception_8d4bf9f5.hpp",
+  "implementation_source": "src/runtime/os-task-policy-system/subtask_targets/security/bitnet_cannot_grant_policy_exception_8d4bf9f5.cpp",
+  "test_target": "tests/structural-closure/runtime/os-task-policy-system/security/test_bitnet_cannot_grant_policy_exception_8d4bf9f5.cpp",
+  "status": "SKELETON_MATERIALIZED",
+  "behavioral_credit": false,
+  "preservation": "PRESERVE_IMPLEMENT_EXTEND"
+}

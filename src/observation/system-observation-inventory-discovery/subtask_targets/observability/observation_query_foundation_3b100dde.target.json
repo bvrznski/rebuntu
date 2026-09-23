@@ -1,0 +1,12 @@
+{
+  "source_prompt": ".phases/phases/phase-05-system-observation-inventory-discovery/prompts/5.44_observation_query_foundation.md",
+  "phase_task": ".phases/phases/phase-05-system-observation-inventory-discovery/TASK.md",
+  "canonical_root": "src/observation/system-observation-inventory-discovery",
+  "role": "observability",
+  "implementation_header": "src/observation/system-observation-inventory-discovery/subtask_targets/observability/observation_query_foundation_3b100dde.hpp",
+  "implementation_source": "src/observation/system-observation-inventory-discovery/subtask_targets/observability/observation_query_foundation_3b100dde.cpp",
+  "test_target": "tests/structural-closure/observation/system-observation-inventory-discovery/observability/test_observation_query_foundation_3b100dde.cpp",
+  "status": "SKELETON_MATERIALIZED",
+  "behavioral_credit": false,
+  "preservation": "PRESERVE_IMPLEMENT_EXTEND"
+}

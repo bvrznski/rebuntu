@@ -1,0 +1,12 @@
+{
+  "source_prompt": ".phases/phases/phase-43-operator-intelligence-system/prompts/43.030-phase-39-temporal-evidence-adapter.md",
+  "phase_task": ".phases/phases/phase-43-operator-intelligence-system/TASK.md",
+  "canonical_root": "src/operator/operator-intelligence-system",
+  "role": "verification",
+  "implementation_header": "src/operator/operator-intelligence-system/subtask_targets/verification/temporal_evidence_adapter_a256a9f4.hpp",
+  "implementation_source": "src/operator/operator-intelligence-system/subtask_targets/verification/temporal_evidence_adapter_a256a9f4.cpp",
+  "test_target": "tests/structural-closure/operator/operator-intelligence-system/verification/test_temporal_evidence_adapter_a256a9f4.cpp",
+  "status": "SKELETON_MATERIALIZED",
+  "behavioral_credit": false,
+  "preservation": "PRESERVE_IMPLEMENT_EXTEND"
+}

@@ -1,0 +1,12 @@
+{
+  "source_prompt": ".phases/phases/phase-31-service-management/prompts/31.22-template-instance-unit-semantics.md",
+  "phase_task": ".phases/phases/phase-31-service-management/TASK.md",
+  "canonical_root": "src/domains/service-management",
+  "role": "requirements",
+  "implementation_header": "src/domains/service-management/subtask_targets/requirements/template_instance_unit_semantics_377c62bb.hpp",
+  "implementation_source": "src/domains/service-management/subtask_targets/requirements/template_instance_unit_semantics_377c62bb.cpp",
+  "test_target": "tests/structural-closure/domains/service-management/requirements/test_template_instance_unit_semantics_377c62bb.cpp",
+  "status": "SKELETON_MATERIALIZED",
+  "behavioral_credit": false,
+  "preservation": "PRESERVE_IMPLEMENT_EXTEND"
+}

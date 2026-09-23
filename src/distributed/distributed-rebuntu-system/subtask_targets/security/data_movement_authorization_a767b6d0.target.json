@@ -1,0 +1,12 @@
+{
+  "source_prompt": ".phases/phases/phase-51-distributed-rebuntu-system/prompts/51.110-data-movement-authorization.md",
+  "phase_task": ".phases/phases/phase-51-distributed-rebuntu-system/TASK.md",
+  "canonical_root": "src/distributed/distributed-rebuntu-system",
+  "role": "security",
+  "implementation_header": "src/distributed/distributed-rebuntu-system/subtask_targets/security/data_movement_authorization_a767b6d0.hpp",
+  "implementation_source": "src/distributed/distributed-rebuntu-system/subtask_targets/security/data_movement_authorization_a767b6d0.cpp",
+  "test_target": "tests/structural-closure/distributed/distributed-rebuntu-system/security/test_data_movement_authorization_a767b6d0.cpp",
+  "status": "SKELETON_MATERIALIZED",
+  "behavioral_credit": false,
+  "preservation": "PRESERVE_IMPLEMENT_EXTEND"
+}

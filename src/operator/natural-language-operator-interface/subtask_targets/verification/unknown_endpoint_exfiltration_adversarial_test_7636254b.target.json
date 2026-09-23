@@ -1,0 +1,12 @@
+{
+  "source_prompt": ".phases/phases/phase-46-natural-language-operator-interface/prompts/46.383-unknown-endpoint-exfiltration-adversarial-test.md",
+  "phase_task": ".phases/phases/phase-46-natural-language-operator-interface/TASK.md",
+  "canonical_root": "src/operator/natural-language-operator-interface",
+  "role": "verification",
+  "implementation_header": "src/operator/natural-language-operator-interface/subtask_targets/verification/unknown_endpoint_exfiltration_adversarial_test_7636254b.hpp",
+  "implementation_source": "src/operator/natural-language-operator-interface/subtask_targets/verification/unknown_endpoint_exfiltration_adversarial_test_7636254b.cpp",
+  "test_target": "tests/structural-closure/operator/natural-language-operator-interface/verification/test_unknown_endpoint_exfiltration_adversarial_test_7636254b.cpp",
+  "status": "SKELETON_MATERIALIZED",
+  "behavioral_credit": false,
+  "preservation": "PRESERVE_IMPLEMENT_EXTEND"
+}

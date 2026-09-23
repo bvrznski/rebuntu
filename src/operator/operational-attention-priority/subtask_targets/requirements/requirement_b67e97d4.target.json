@@ -1,0 +1,12 @@
+{
+  "source_prompt": ".phases/phases/phase-101-operational-attention-priority/prompts/101.2.md",
+  "phase_task": ".phases/phases/phase-101-operational-attention-priority/TASK.md",
+  "canonical_root": "src/operator/operational-attention-priority",
+  "role": "requirements",
+  "implementation_header": "src/operator/operational-attention-priority/subtask_targets/requirements/requirement_b67e97d4.hpp",
+  "implementation_source": "src/operator/operational-attention-priority/subtask_targets/requirements/requirement_b67e97d4.cpp",
+  "test_target": "tests/structural-closure/operator/operational-attention-priority/requirements/test_requirement_b67e97d4.cpp",
+  "status": "SKELETON_MATERIALIZED",
+  "behavioral_credit": false,
+  "preservation": "PRESERVE_IMPLEMENT_EXTEND"
+}

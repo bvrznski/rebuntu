@@ -1,0 +1,12 @@
+{
+  "source_prompt": ".phases/phases/phase-34-gpu-accelerator-management/prompts/34.1-accelerator-domain-model.md",
+  "phase_task": ".phases/phases/phase-34-gpu-accelerator-management/TASK.md",
+  "canonical_root": "src/domains/gpu-accelerator-management",
+  "role": "contracts",
+  "implementation_header": "src/domains/gpu-accelerator-management/subtask_targets/contracts/accelerator_domain_model_3be2f9c4.hpp",
+  "implementation_source": "src/domains/gpu-accelerator-management/subtask_targets/contracts/accelerator_domain_model_3be2f9c4.cpp",
+  "test_target": "tests/structural-closure/domains/gpu-accelerator-management/contracts/test_accelerator_domain_model_3be2f9c4.cpp",
+  "status": "SKELETON_MATERIALIZED",
+  "behavioral_credit": false,
+  "preservation": "PRESERVE_IMPLEMENT_EXTEND"
+}

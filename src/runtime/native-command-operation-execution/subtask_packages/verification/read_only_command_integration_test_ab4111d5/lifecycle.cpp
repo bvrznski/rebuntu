@@ -1,0 +1,5 @@
+#include "lifecycle.hpp"
+
+// XXVII out-of-line implementation reservation for lifecycle.
+// Source: .phases/phases/phase-06-native-command-operation-execution/prompts/6.71_read-only_command_integration_test.md
+// Intentionally behavior-free until prompt-derived implementation is supplied.

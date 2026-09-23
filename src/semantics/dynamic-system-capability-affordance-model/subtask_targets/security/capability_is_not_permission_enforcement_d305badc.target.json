@@ -1,0 +1,12 @@
+{
+  "source_prompt": ".phases/phases/phase-54-dynamic-system-capability-affordance-model/prompts/54.109-rebuntu-phase-54-109-capability-is-not-permission-enforcement.md",
+  "phase_task": ".phases/phases/phase-54-dynamic-system-capability-affordance-model/TASK.md",
+  "canonical_root": "src/semantics/dynamic-system-capability-affordance-model",
+  "role": "security",
+  "implementation_header": "src/semantics/dynamic-system-capability-affordance-model/subtask_targets/security/capability_is_not_permission_enforcement_d305badc.hpp",
+  "implementation_source": "src/semantics/dynamic-system-capability-affordance-model/subtask_targets/security/capability_is_not_permission_enforcement_d305badc.cpp",
+  "test_target": "tests/structural-closure/semantics/dynamic-system-capability-affordance-model/security/test_capability_is_not_permission_enforcement_d305badc.cpp",
+  "status": "SKELETON_MATERIALIZED",
+  "behavioral_credit": false,
+  "preservation": "PRESERVE_IMPLEMENT_EXTEND"
+}

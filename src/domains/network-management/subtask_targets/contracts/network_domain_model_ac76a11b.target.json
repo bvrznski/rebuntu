@@ -1,0 +1,12 @@
+{
+  "source_prompt": ".phases/phases/phase-33-network-management/prompts/33.1-network-domain-model.md",
+  "phase_task": ".phases/phases/phase-33-network-management/TASK.md",
+  "canonical_root": "src/domains/network-management",
+  "role": "contracts",
+  "implementation_header": "src/domains/network-management/subtask_targets/contracts/network_domain_model_ac76a11b.hpp",
+  "implementation_source": "src/domains/network-management/subtask_targets/contracts/network_domain_model_ac76a11b.cpp",
+  "test_target": "tests/structural-closure/domains/network-management/contracts/test_network_domain_model_ac76a11b.cpp",
+  "status": "SKELETON_MATERIALIZED",
+  "behavioral_credit": false,
+  "preservation": "PRESERVE_IMPLEMENT_EXTEND"
+}

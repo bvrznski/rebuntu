@@ -1,0 +1,12 @@
+{
+  "source_prompt": ".phases/phases/phase-32-storage-management/prompts/32.15-capacity-free-space-allocation-semantics.md",
+  "phase_task": ".phases/phases/phase-32-storage-management/TASK.md",
+  "canonical_root": "src/domains/storage-management",
+  "role": "requirements",
+  "implementation_header": "src/domains/storage-management/subtask_targets/requirements/capacity_free_space_allocation_semantics_b04ff226.hpp",
+  "implementation_source": "src/domains/storage-management/subtask_targets/requirements/capacity_free_space_allocation_semantics_b04ff226.cpp",
+  "test_target": "tests/structural-closure/domains/storage-management/requirements/test_capacity_free_space_allocation_semantics_b04ff226.cpp",
+  "status": "SKELETON_MATERIALIZED",
+  "behavioral_credit": false,
+  "preservation": "PRESERVE_IMPLEMENT_EXTEND"
+}

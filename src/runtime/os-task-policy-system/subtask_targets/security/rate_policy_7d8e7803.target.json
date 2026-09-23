@@ -1,0 +1,12 @@
+{
+  "source_prompt": ".phases/phases/phase-47-os-task-policy-system/prompts/47.173-rate-policy.md",
+  "phase_task": ".phases/phases/phase-47-os-task-policy-system/TASK.md",
+  "canonical_root": "src/runtime/os-task-policy-system",
+  "role": "security",
+  "implementation_header": "src/runtime/os-task-policy-system/subtask_targets/security/rate_policy_7d8e7803.hpp",
+  "implementation_source": "src/runtime/os-task-policy-system/subtask_targets/security/rate_policy_7d8e7803.cpp",
+  "test_target": "tests/structural-closure/runtime/os-task-policy-system/security/test_rate_policy_7d8e7803.cpp",
+  "status": "SKELETON_MATERIALIZED",
+  "behavioral_credit": false,
+  "preservation": "PRESERVE_IMPLEMENT_EXTEND"
+}

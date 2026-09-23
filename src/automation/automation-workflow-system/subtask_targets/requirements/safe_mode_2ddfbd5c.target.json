@@ -1,0 +1,12 @@
+{
+  "source_prompt": ".phases/phases/phase-41-automation-workflow-system/prompts/41.079-safe-mode.md",
+  "phase_task": ".phases/phases/phase-41-automation-workflow-system/TASK.md",
+  "canonical_root": "src/automation/automation-workflow-system",
+  "role": "requirements",
+  "implementation_header": "src/automation/automation-workflow-system/subtask_targets/requirements/safe_mode_2ddfbd5c.hpp",
+  "implementation_source": "src/automation/automation-workflow-system/subtask_targets/requirements/safe_mode_2ddfbd5c.cpp",
+  "test_target": "tests/structural-closure/automation/automation-workflow-system/requirements/test_safe_mode_2ddfbd5c.cpp",
+  "status": "SKELETON_MATERIALIZED",
+  "behavioral_credit": false,
+  "preservation": "PRESERVE_IMPLEMENT_EXTEND"
+}

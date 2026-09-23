@@ -1,0 +1,12 @@
+{
+  "source_prompt": ".phases/phases/phase-51-distributed-rebuntu-system/prompts/51.259-search-capability-filters.md",
+  "phase_task": ".phases/phases/phase-51-distributed-rebuntu-system/TASK.md",
+  "canonical_root": "src/distributed/distributed-rebuntu-system",
+  "role": "resolution",
+  "implementation_header": "src/distributed/distributed-rebuntu-system/subtask_targets/resolution/search_capability_filters_63ce2458.hpp",
+  "implementation_source": "src/distributed/distributed-rebuntu-system/subtask_targets/resolution/search_capability_filters_63ce2458.cpp",
+  "test_target": "tests/structural-closure/distributed/distributed-rebuntu-system/resolution/test_search_capability_filters_63ce2458.cpp",
+  "status": "SKELETON_MATERIALIZED",
+  "behavioral_credit": false,
+  "preservation": "PRESERVE_IMPLEMENT_EXTEND"
+}

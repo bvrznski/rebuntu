@@ -1,0 +1,12 @@
+{
+  "source_prompt": ".phases/phases/phase-49-gui/prompts/49.191-forecast-uncertainty-view.md",
+  "phase_task": ".phases/phases/phase-49-gui/TASK.md",
+  "canonical_root": "src/operator/gui",
+  "role": "requirements",
+  "implementation_header": "src/operator/gui/subtask_targets/requirements/forecast_uncertainty_view_91719623.hpp",
+  "implementation_source": "src/operator/gui/subtask_targets/requirements/forecast_uncertainty_view_91719623.cpp",
+  "test_target": "tests/structural-closure/operator/gui/requirements/test_forecast_uncertainty_view_91719623.cpp",
+  "status": "SKELETON_MATERIALIZED",
+  "behavioral_credit": false,
+  "preservation": "PRESERVE_IMPLEMENT_EXTEND"
+}

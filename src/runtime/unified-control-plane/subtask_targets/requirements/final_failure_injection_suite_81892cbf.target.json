@@ -1,0 +1,12 @@
+{
+  "source_prompt": ".phases/phases/phase-45-unified-control-plane/prompts/45.337-final-failure-injection-suite.md",
+  "phase_task": ".phases/phases/phase-45-unified-control-plane/TASK.md",
+  "canonical_root": "src/runtime/unified-control-plane",
+  "role": "requirements",
+  "implementation_header": "src/runtime/unified-control-plane/subtask_targets/requirements/final_failure_injection_suite_81892cbf.hpp",
+  "implementation_source": "src/runtime/unified-control-plane/subtask_targets/requirements/final_failure_injection_suite_81892cbf.cpp",
+  "test_target": "tests/structural-closure/runtime/unified-control-plane/requirements/test_final_failure_injection_suite_81892cbf.cpp",
+  "status": "SKELETON_MATERIALIZED",
+  "behavioral_credit": false,
+  "preservation": "PRESERVE_IMPLEMENT_EXTEND"
+}

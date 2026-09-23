@@ -1,0 +1,12 @@
+{
+  "source_prompt": ".phases/phases/phase-83-distributed-goal-desired-state-coordination/prompts/83.14.md",
+  "phase_task": ".phases/phases/phase-83-distributed-goal-desired-state-coordination/TASK.md",
+  "canonical_root": "src/distributed/distributed-goal-desired-state-coordination",
+  "role": "requirements",
+  "implementation_header": "src/distributed/distributed-goal-desired-state-coordination/subtask_targets/requirements/requirement_e7ab4230.hpp",
+  "implementation_source": "src/distributed/distributed-goal-desired-state-coordination/subtask_targets/requirements/requirement_e7ab4230.cpp",
+  "test_target": "tests/structural-closure/distributed/distributed-goal-desired-state-coordination/requirements/test_requirement_e7ab4230.cpp",
+  "status": "SKELETON_MATERIALIZED",
+  "behavioral_credit": false,
+  "preservation": "PRESERVE_IMPLEMENT_EXTEND"
+}

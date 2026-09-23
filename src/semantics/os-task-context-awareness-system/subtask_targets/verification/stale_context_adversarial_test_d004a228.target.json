@@ -1,0 +1,12 @@
+{
+  "source_prompt": ".phases/phases/phase-48-os-task-context-awareness-system/prompts/48.328-stale-context-adversarial-test.md",
+  "phase_task": ".phases/phases/phase-48-os-task-context-awareness-system/TASK.md",
+  "canonical_root": "src/semantics/os-task-context-awareness-system",
+  "role": "verification",
+  "implementation_header": "src/semantics/os-task-context-awareness-system/subtask_targets/verification/stale_context_adversarial_test_d004a228.hpp",
+  "implementation_source": "src/semantics/os-task-context-awareness-system/subtask_targets/verification/stale_context_adversarial_test_d004a228.cpp",
+  "test_target": "tests/structural-closure/semantics/os-task-context-awareness-system/verification/test_stale_context_adversarial_test_d004a228.cpp",
+  "status": "SKELETON_MATERIALIZED",
+  "behavioral_credit": false,
+  "preservation": "PRESERVE_IMPLEMENT_EXTEND"
+}

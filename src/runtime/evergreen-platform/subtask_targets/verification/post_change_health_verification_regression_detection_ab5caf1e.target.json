@@ -1,0 +1,12 @@
+{
+  "source_prompt": ".phases/phases/phase-24-evergreen-platform/prompts/24.10_post-change_health_verification_&_regression_detection.md",
+  "phase_task": ".phases/phases/phase-24-evergreen-platform/TASK.md",
+  "canonical_root": "src/runtime/evergreen-platform",
+  "role": "verification",
+  "implementation_header": "src/runtime/evergreen-platform/subtask_targets/verification/post_change_health_verification_regression_detection_ab5caf1e.hpp",
+  "implementation_source": "src/runtime/evergreen-platform/subtask_targets/verification/post_change_health_verification_regression_detection_ab5caf1e.cpp",
+  "test_target": "tests/structural-closure/runtime/evergreen-platform/verification/test_post_change_health_verification_regression_detection_ab5caf1e.cpp",
+  "status": "SKELETON_MATERIALIZED",
+  "behavioral_credit": false,
+  "preservation": "PRESERVE_IMPLEMENT_EXTEND"
+}

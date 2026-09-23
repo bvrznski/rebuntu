@@ -1,0 +1,12 @@
+{
+  "source_prompt": ".phases/phases/phase-106-self-validation-continuous-architecture-audit/prompts/106.9.md",
+  "phase_task": ".phases/phases/phase-106-self-validation-continuous-architecture-audit/TASK.md",
+  "canonical_root": "src/observation/self-validation-continuous-architecture-audit",
+  "role": "requirements",
+  "implementation_header": "src/observation/self-validation-continuous-architecture-audit/subtask_targets/requirements/requirement_82691d72.hpp",
+  "implementation_source": "src/observation/self-validation-continuous-architecture-audit/subtask_targets/requirements/requirement_82691d72.cpp",
+  "test_target": "tests/structural-closure/observation/self-validation-continuous-architecture-audit/requirements/test_requirement_82691d72.cpp",
+  "status": "SKELETON_MATERIALIZED",
+  "behavioral_credit": false,
+  "preservation": "PRESERVE_IMPLEMENT_EXTEND"
+}

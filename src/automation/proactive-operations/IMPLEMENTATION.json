@@ -1,0 +1,9 @@
+{
+  "component": "proactive-operations",
+  "canonical_root": "automation",
+  "phase_tasks": [
+    ".phases/phases/phase-97-proactive-operations/TASK.md"
+  ],
+  "status": "SKELETON",
+  "native_authority_rule": true
+}

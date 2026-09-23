@@ -1,0 +1,9 @@
+{
+  "component": "native-command-operation-execution",
+  "canonical_root": "runtime",
+  "phase_tasks": [
+    ".phases/phases/phase-06-native-command-operation-execution/TASK.md"
+  ],
+  "status": "SKELETON",
+  "native_authority_rule": true
+}

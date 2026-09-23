@@ -1,0 +1,12 @@
+{
+  "source_prompt": ".phases/phases/phase-38-user-identity-management/prompts/38.18-login-session-discovery.md",
+  "phase_task": ".phases/phases/phase-38-user-identity-management/TASK.md",
+  "canonical_root": "src/domains/user-identity-management",
+  "role": "observability",
+  "implementation_header": "src/domains/user-identity-management/subtask_targets/observability/login_session_discovery_4e57aaee.hpp",
+  "implementation_source": "src/domains/user-identity-management/subtask_targets/observability/login_session_discovery_4e57aaee.cpp",
+  "test_target": "tests/structural-closure/domains/user-identity-management/observability/test_login_session_discovery_4e57aaee.cpp",
+  "status": "SKELETON_MATERIALIZED",
+  "behavioral_credit": false,
+  "preservation": "PRESERVE_IMPLEMENT_EXTEND"
+}

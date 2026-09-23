@@ -1,0 +1,12 @@
+{
+  "source_prompt": ".phases/phases/phase-49-gui/prompts/49.094-unit-formatting.md",
+  "phase_task": ".phases/phases/phase-49-gui/TASK.md",
+  "canonical_root": "src/operator/gui",
+  "role": "requirements",
+  "implementation_header": "src/operator/gui/subtask_targets/requirements/unit_formatting_f4f2cf6d.hpp",
+  "implementation_source": "src/operator/gui/subtask_targets/requirements/unit_formatting_f4f2cf6d.cpp",
+  "test_target": "tests/structural-closure/operator/gui/requirements/test_unit_formatting_f4f2cf6d.cpp",
+  "status": "SKELETON_MATERIALIZED",
+  "behavioral_credit": false,
+  "preservation": "PRESERVE_IMPLEMENT_EXTEND"
+}

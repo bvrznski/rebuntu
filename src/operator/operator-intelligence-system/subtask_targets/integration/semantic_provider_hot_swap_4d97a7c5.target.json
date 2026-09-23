@@ -1,0 +1,12 @@
+{
+  "source_prompt": ".phases/phases/phase-43-operator-intelligence-system/prompts/43.162-semantic-provider-hot-swap.md",
+  "phase_task": ".phases/phases/phase-43-operator-intelligence-system/TASK.md",
+  "canonical_root": "src/operator/operator-intelligence-system",
+  "role": "integration",
+  "implementation_header": "src/operator/operator-intelligence-system/subtask_targets/integration/semantic_provider_hot_swap_4d97a7c5.hpp",
+  "implementation_source": "src/operator/operator-intelligence-system/subtask_targets/integration/semantic_provider_hot_swap_4d97a7c5.cpp",
+  "test_target": "tests/structural-closure/operator/operator-intelligence-system/integration/test_semantic_provider_hot_swap_4d97a7c5.cpp",
+  "status": "SKELETON_MATERIALIZED",
+  "behavioral_credit": false,
+  "preservation": "PRESERVE_IMPLEMENT_EXTEND"
+}

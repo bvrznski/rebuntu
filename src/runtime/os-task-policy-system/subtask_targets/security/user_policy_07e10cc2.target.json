@@ -1,0 +1,12 @@
+{
+  "source_prompt": ".phases/phases/phase-47-os-task-policy-system/prompts/47.286-user-policy.md",
+  "phase_task": ".phases/phases/phase-47-os-task-policy-system/TASK.md",
+  "canonical_root": "src/runtime/os-task-policy-system",
+  "role": "security",
+  "implementation_header": "src/runtime/os-task-policy-system/subtask_targets/security/user_policy_07e10cc2.hpp",
+  "implementation_source": "src/runtime/os-task-policy-system/subtask_targets/security/user_policy_07e10cc2.cpp",
+  "test_target": "tests/structural-closure/runtime/os-task-policy-system/security/test_user_policy_07e10cc2.cpp",
+  "status": "SKELETON_MATERIALIZED",
+  "behavioral_credit": false,
+  "preservation": "PRESERVE_IMPLEMENT_EXTEND"
+}

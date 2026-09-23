@@ -1,0 +1,12 @@
+{
+  "source_prompt": ".phases/phases/phase-38-user-identity-management/prompts/38.33-process-identity-integration.md",
+  "phase_task": ".phases/phases/phase-38-user-identity-management/TASK.md",
+  "canonical_root": "src/domains/user-identity-management",
+  "role": "integration",
+  "implementation_header": "src/domains/user-identity-management/subtask_targets/integration/process_identity_integration_17339a79.hpp",
+  "implementation_source": "src/domains/user-identity-management/subtask_targets/integration/process_identity_integration_17339a79.cpp",
+  "test_target": "tests/structural-closure/domains/user-identity-management/integration/test_process_identity_integration_17339a79.cpp",
+  "status": "SKELETON_MATERIALIZED",
+  "behavioral_credit": false,
+  "preservation": "PRESERVE_IMPLEMENT_EXTEND"
+}

@@ -1,0 +1,12 @@
+{
+  "source_prompt": ".phases/phases/phase-47-os-task-policy-system/prompts/47.162-resource-policy-foundation.md",
+  "phase_task": ".phases/phases/phase-47-os-task-policy-system/TASK.md",
+  "canonical_root": "src/runtime/os-task-policy-system",
+  "role": "security",
+  "implementation_header": "src/runtime/os-task-policy-system/subtask_targets/security/resource_policy_foundation_25f35cc0.hpp",
+  "implementation_source": "src/runtime/os-task-policy-system/subtask_targets/security/resource_policy_foundation_25f35cc0.cpp",
+  "test_target": "tests/structural-closure/runtime/os-task-policy-system/security/test_resource_policy_foundation_25f35cc0.cpp",
+  "status": "SKELETON_MATERIALIZED",
+  "behavioral_credit": false,
+  "preservation": "PRESERVE_IMPLEMENT_EXTEND"
+}

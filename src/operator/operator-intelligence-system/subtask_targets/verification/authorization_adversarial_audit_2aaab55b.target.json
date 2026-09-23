@@ -1,0 +1,12 @@
+{
+  "source_prompt": ".phases/phases/phase-43-operator-intelligence-system/prompts/43.228-authorization-adversarial-audit.md",
+  "phase_task": ".phases/phases/phase-43-operator-intelligence-system/TASK.md",
+  "canonical_root": "src/operator/operator-intelligence-system",
+  "role": "verification",
+  "implementation_header": "src/operator/operator-intelligence-system/subtask_targets/verification/authorization_adversarial_audit_2aaab55b.hpp",
+  "implementation_source": "src/operator/operator-intelligence-system/subtask_targets/verification/authorization_adversarial_audit_2aaab55b.cpp",
+  "test_target": "tests/structural-closure/operator/operator-intelligence-system/verification/test_authorization_adversarial_audit_2aaab55b.cpp",
+  "status": "SKELETON_MATERIALIZED",
+  "behavioral_credit": false,
+  "preservation": "PRESERVE_IMPLEMENT_EXTEND"
+}

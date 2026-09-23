@@ -1,0 +1,12 @@
+{
+  "source_prompt": ".phases/phases/phase-49-gui/prompts/49.155-search-result-freshness.md",
+  "phase_task": ".phases/phases/phase-49-gui/TASK.md",
+  "canonical_root": "src/operator/gui",
+  "role": "resolution",
+  "implementation_header": "src/operator/gui/subtask_targets/resolution/search_result_freshness_1e8e3fb8.hpp",
+  "implementation_source": "src/operator/gui/subtask_targets/resolution/search_result_freshness_1e8e3fb8.cpp",
+  "test_target": "tests/structural-closure/operator/gui/resolution/test_search_result_freshness_1e8e3fb8.cpp",
+  "status": "SKELETON_MATERIALIZED",
+  "behavioral_credit": false,
+  "preservation": "PRESERVE_IMPLEMENT_EXTEND"
+}

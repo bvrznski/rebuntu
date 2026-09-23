@@ -1,0 +1,12 @@
+{
+  "source_prompt": ".phases/phases/phase-47-os-task-policy-system/prompts/47.009-task-identity.md",
+  "phase_task": ".phases/phases/phase-47-os-task-policy-system/TASK.md",
+  "canonical_root": "src/runtime/os-task-policy-system",
+  "role": "contracts",
+  "implementation_header": "src/runtime/os-task-policy-system/subtask_targets/contracts/task_identity_6f3454a9.hpp",
+  "implementation_source": "src/runtime/os-task-policy-system/subtask_targets/contracts/task_identity_6f3454a9.cpp",
+  "test_target": "tests/structural-closure/runtime/os-task-policy-system/contracts/test_task_identity_6f3454a9.cpp",
+  "status": "SKELETON_MATERIALIZED",
+  "behavioral_credit": false,
+  "preservation": "PRESERVE_IMPLEMENT_EXTEND"
+}

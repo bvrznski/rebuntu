@@ -1,0 +1,12 @@
+{
+  "source_prompt": ".phases/phases/phase-41-automation-workflow-system/prompts/41.052-environment-and-working-directory-policy.md",
+  "phase_task": ".phases/phases/phase-41-automation-workflow-system/TASK.md",
+  "canonical_root": "src/automation/automation-workflow-system",
+  "role": "security",
+  "implementation_header": "src/automation/automation-workflow-system/subtask_targets/security/environment_and_working_directory_policy_b2b99bbb.hpp",
+  "implementation_source": "src/automation/automation-workflow-system/subtask_targets/security/environment_and_working_directory_policy_b2b99bbb.cpp",
+  "test_target": "tests/structural-closure/automation/automation-workflow-system/security/test_environment_and_working_directory_policy_b2b99bbb.cpp",
+  "status": "SKELETON_MATERIALIZED",
+  "behavioral_credit": false,
+  "preservation": "PRESERVE_IMPLEMENT_EXTEND"
+}

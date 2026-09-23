@@ -1,0 +1,12 @@
+{
+  "source_prompt": ".phases/phases/phase-27-terminal-management/prompts/27.6-interactive-shell-launch-policy.md",
+  "phase_task": ".phases/phases/phase-27-terminal-management/TASK.md",
+  "canonical_root": "src/domains/terminal-management",
+  "role": "security",
+  "implementation_header": "src/domains/terminal-management/subtask_targets/security/interactive_shell_launch_policy_727c94d5.hpp",
+  "implementation_source": "src/domains/terminal-management/subtask_targets/security/interactive_shell_launch_policy_727c94d5.cpp",
+  "test_target": "tests/structural-closure/domains/terminal-management/security/test_interactive_shell_launch_policy_727c94d5.cpp",
+  "status": "SKELETON_MATERIALIZED",
+  "behavioral_credit": false,
+  "preservation": "PRESERVE_IMPLEMENT_EXTEND"
+}

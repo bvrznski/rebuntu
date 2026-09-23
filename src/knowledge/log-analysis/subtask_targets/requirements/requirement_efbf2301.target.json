@@ -1,0 +1,12 @@
+{
+  "source_prompt": ".phases/phases/phase-22-log-analysis/prompts/22.20.md",
+  "phase_task": ".phases/phases/phase-22-log-analysis/TASK.md",
+  "canonical_root": "src/knowledge/log-analysis",
+  "role": "requirements",
+  "implementation_header": "src/knowledge/log-analysis/subtask_targets/requirements/requirement_efbf2301.hpp",
+  "implementation_source": "src/knowledge/log-analysis/subtask_targets/requirements/requirement_efbf2301.cpp",
+  "test_target": "tests/structural-closure/knowledge/log-analysis/requirements/test_requirement_efbf2301.cpp",
+  "status": "SKELETON_MATERIALIZED",
+  "behavioral_credit": false,
+  "preservation": "PRESERVE_IMPLEMENT_EXTEND"
+}

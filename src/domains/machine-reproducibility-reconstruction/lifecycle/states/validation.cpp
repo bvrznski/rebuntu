@@ -1,0 +1,6 @@
+#include "domains/machine-reproducibility-reconstruction/lifecycle/states/validation.hpp"
+
+// Structural translation-unit slot only. No maturity credit.
+namespace rebuntu::structural_slots {
+static_assert(Skeleton_7c324c089b_Validation::structural_revision == 25);
+}

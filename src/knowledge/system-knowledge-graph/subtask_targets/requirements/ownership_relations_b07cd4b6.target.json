@@ -1,0 +1,12 @@
+{
+  "source_prompt": ".phases/phases/phase-42-system-knowledge-graph/prompts/42.050-ownership-relations.md",
+  "phase_task": ".phases/phases/phase-42-system-knowledge-graph/TASK.md",
+  "canonical_root": "src/knowledge/system-knowledge-graph",
+  "role": "requirements",
+  "implementation_header": "src/knowledge/system-knowledge-graph/subtask_targets/requirements/ownership_relations_b07cd4b6.hpp",
+  "implementation_source": "src/knowledge/system-knowledge-graph/subtask_targets/requirements/ownership_relations_b07cd4b6.cpp",
+  "test_target": "tests/structural-closure/knowledge/system-knowledge-graph/requirements/test_ownership_relations_b07cd4b6.cpp",
+  "status": "SKELETON_MATERIALIZED",
+  "behavioral_credit": false,
+  "preservation": "PRESERVE_IMPLEMENT_EXTEND"
+}

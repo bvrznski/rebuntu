@@ -1,0 +1,9 @@
+{
+  "component": "natural-language-operator-interface",
+  "canonical_root": "operator",
+  "phase_tasks": [
+    ".phases/phases/phase-46-natural-language-operator-interface/TASK.md"
+  ],
+  "status": "SKELETON",
+  "native_authority_rule": true
+}

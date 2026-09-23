@@ -1,0 +1,12 @@
+{
+  "source_prompt": ".phases/phases/phase-51-distributed-rebuntu-system/prompts/51.327-gui-resource-topology.md",
+  "phase_task": ".phases/phases/phase-51-distributed-rebuntu-system/TASK.md",
+  "canonical_root": "src/distributed/distributed-rebuntu-system",
+  "role": "observability",
+  "implementation_header": "src/distributed/distributed-rebuntu-system/subtask_targets/observability/gui_resource_topology_ee7b2043.hpp",
+  "implementation_source": "src/distributed/distributed-rebuntu-system/subtask_targets/observability/gui_resource_topology_ee7b2043.cpp",
+  "test_target": "tests/structural-closure/distributed/distributed-rebuntu-system/observability/test_gui_resource_topology_ee7b2043.cpp",
+  "status": "SKELETON_MATERIALIZED",
+  "behavioral_credit": false,
+  "preservation": "PRESERVE_IMPLEMENT_EXTEND"
+}

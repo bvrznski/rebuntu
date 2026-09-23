@@ -1,0 +1,12 @@
+{
+  "source_prompt": ".phases/phases/phase-49-gui/prompts/49.470-display-server-discovery.md",
+  "phase_task": ".phases/phases/phase-49-gui/TASK.md",
+  "canonical_root": "src/operator/gui",
+  "role": "resolution",
+  "implementation_header": "src/operator/gui/subtask_targets/resolution/display_server_discovery_6ece957c.hpp",
+  "implementation_source": "src/operator/gui/subtask_targets/resolution/display_server_discovery_6ece957c.cpp",
+  "test_target": "tests/structural-closure/operator/gui/resolution/test_display_server_discovery_6ece957c.cpp",
+  "status": "SKELETON_MATERIALIZED",
+  "behavioral_credit": false,
+  "preservation": "PRESERVE_IMPLEMENT_EXTEND"
+}

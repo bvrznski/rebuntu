@@ -1,0 +1,9 @@
+{
+  "component": "long-horizon-operational-planning",
+  "canonical_root": "planning",
+  "phase_tasks": [
+    ".phases/phases/phase-96-long-horizon-operational-planning/TASK.md"
+  ],
+  "status": "SKELETON",
+  "native_authority_rule": true
+}

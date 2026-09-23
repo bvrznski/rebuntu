@@ -1,0 +1,12 @@
+{
+  "source_prompt": ".phases/phases/phase-51-distributed-rebuntu-system/prompts/51.355-coordination-state-ownership.md",
+  "phase_task": ".phases/phases/phase-51-distributed-rebuntu-system/TASK.md",
+  "canonical_root": "src/distributed/distributed-rebuntu-system",
+  "role": "lifecycle",
+  "implementation_header": "src/distributed/distributed-rebuntu-system/subtask_targets/lifecycle/coordination_state_ownership_5699f9bb.hpp",
+  "implementation_source": "src/distributed/distributed-rebuntu-system/subtask_targets/lifecycle/coordination_state_ownership_5699f9bb.cpp",
+  "test_target": "tests/structural-closure/distributed/distributed-rebuntu-system/lifecycle/test_coordination_state_ownership_5699f9bb.cpp",
+  "status": "SKELETON_MATERIALIZED",
+  "behavioral_credit": false,
+  "preservation": "PRESERVE_IMPLEMENT_EXTEND"
+}

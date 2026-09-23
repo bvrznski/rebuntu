@@ -1,0 +1,3 @@
+# roles
+
+Responsibility within `domains/identity`. This component must not become a second source of truth for a native Linux facility.

@@ -1,0 +1,12 @@
+{
+  "source_prompt": ".phases/phases/phase-45-unified-control-plane/prompts/45.155-working-directory-policy.md",
+  "phase_task": ".phases/phases/phase-45-unified-control-plane/TASK.md",
+  "canonical_root": "src/runtime/unified-control-plane",
+  "role": "security",
+  "implementation_header": "src/runtime/unified-control-plane/subtask_targets/security/working_directory_policy_ed0f7b35.hpp",
+  "implementation_source": "src/runtime/unified-control-plane/subtask_targets/security/working_directory_policy_ed0f7b35.cpp",
+  "test_target": "tests/structural-closure/runtime/unified-control-plane/security/test_working_directory_policy_ed0f7b35.cpp",
+  "status": "SKELETON_MATERIALIZED",
+  "behavioral_credit": false,
+  "preservation": "PRESERVE_IMPLEMENT_EXTEND"
+}

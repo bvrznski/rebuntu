@@ -1,0 +1,12 @@
+{
+  "source_prompt": ".phases/phases/phase-56-intent-goal-desired-state-management/prompts/56.44-rebuntu-phase-56-44-independent-rediscovery.md",
+  "phase_task": ".phases/phases/phase-56-intent-goal-desired-state-management/TASK.md",
+  "canonical_root": "src/semantics/intent-goal-desired-state-management",
+  "role": "resolution",
+  "implementation_header": "src/semantics/intent-goal-desired-state-management/subtask_targets/resolution/independent_rediscovery_1c285719.hpp",
+  "implementation_source": "src/semantics/intent-goal-desired-state-management/subtask_targets/resolution/independent_rediscovery_1c285719.cpp",
+  "test_target": "tests/structural-closure/semantics/intent-goal-desired-state-management/resolution/test_independent_rediscovery_1c285719.cpp",
+  "status": "SKELETON_MATERIALIZED",
+  "behavioral_credit": false,
+  "preservation": "PRESERVE_IMPLEMENT_EXTEND"
+}

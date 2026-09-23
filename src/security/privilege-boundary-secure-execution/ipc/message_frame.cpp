@@ -1,0 +1,7 @@
+#include "message_frame.hpp"
+namespace rebuntu::security::privilege_boundary_secure_execution {
+static void put32(std::vector<std::byte>& o,std::uint32_t v){for(int s=24;s>=0;s-=8)o.push_back(static_cast<std::byte>((v>>s)&0xff));}
+static std::uint32_t get32(std::span<const std::byte> b,std::size_t p){std::uint32_t v=0;for(int i=0;i<4;++i)v=(v<<8)|std::to_integer<std::uint8_t>(b[p+i]);return v;}
+std::optional<std::vector<std::byte>> MessageFramer::encode(const MessageFrame& f)const{if(f.version!=1||f.payload.size()>max_)return std::nullopt;std::vector<std::byte> o;o.reserve(8+f.payload.size());o.push_back(static_cast<std::byte>(f.version>>8));o.push_back(static_cast<std::byte>(f.version));o.push_back(static_cast<std::byte>(f.type>>8));o.push_back(static_cast<std::byte>(f.type));put32(o,static_cast<std::uint32_t>(f.payload.size()));o.insert(o.end(),f.payload.begin(),f.payload.end());return o;}
+std::optional<MessageFrame> MessageFramer::decode(std::span<const std::byte> b)const{if(b.size()<8)return std::nullopt;auto ver=static_cast<std::uint16_t>((std::to_integer<std::uint8_t>(b[0])<<8)|std::to_integer<std::uint8_t>(b[1]));auto type=static_cast<std::uint16_t>((std::to_integer<std::uint8_t>(b[2])<<8)|std::to_integer<std::uint8_t>(b[3]));auto n=get32(b,4);if(ver!=1||n>max_||b.size()!=8ULL+n)return std::nullopt;return MessageFrame{ver,type,std::vector<std::byte>(b.begin()+8,b.end())};}
+}

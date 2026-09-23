@@ -1,0 +1,12 @@
+{
+  "source_prompt": ".phases/phases/phase-54-dynamic-system-capability-affordance-model/prompts/54.124-rebuntu-phase-54-124-distributed-change-invalidation.md",
+  "phase_task": ".phases/phases/phase-54-dynamic-system-capability-affordance-model/TASK.md",
+  "canonical_root": "src/semantics/dynamic-system-capability-affordance-model",
+  "role": "requirements",
+  "implementation_header": "src/semantics/dynamic-system-capability-affordance-model/subtask_targets/requirements/distributed_change_invalidation_6dea4c9a.hpp",
+  "implementation_source": "src/semantics/dynamic-system-capability-affordance-model/subtask_targets/requirements/distributed_change_invalidation_6dea4c9a.cpp",
+  "test_target": "tests/structural-closure/semantics/dynamic-system-capability-affordance-model/requirements/test_distributed_change_invalidation_6dea4c9a.cpp",
+  "status": "SKELETON_MATERIALIZED",
+  "behavioral_credit": false,
+  "preservation": "PRESERVE_IMPLEMENT_EXTEND"
+}

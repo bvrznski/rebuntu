@@ -1,0 +1,12 @@
+{
+  "source_prompt": ".phases/phases/phase-38-user-identity-management/prompts/38.29-sudoers-configuration-safety.md",
+  "phase_task": ".phases/phases/phase-38-user-identity-management/TASK.md",
+  "canonical_root": "src/domains/user-identity-management",
+  "role": "requirements",
+  "implementation_header": "src/domains/user-identity-management/subtask_targets/requirements/sudoers_configuration_safety_d6668c32.hpp",
+  "implementation_source": "src/domains/user-identity-management/subtask_targets/requirements/sudoers_configuration_safety_d6668c32.cpp",
+  "test_target": "tests/structural-closure/domains/user-identity-management/requirements/test_sudoers_configuration_safety_d6668c32.cpp",
+  "status": "SKELETON_MATERIALIZED",
+  "behavioral_credit": false,
+  "preservation": "PRESERVE_IMPLEMENT_EXTEND"
+}

@@ -1,0 +1,3 @@
+# hosts
+
+Responsibility within `providers/linux/nss`. This component must not become a second source of truth for a native Linux facility.

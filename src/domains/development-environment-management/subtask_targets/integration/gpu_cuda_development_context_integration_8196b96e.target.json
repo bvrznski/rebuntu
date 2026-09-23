@@ -1,0 +1,12 @@
+{
+  "source_prompt": ".phases/phases/phase-28-development-environment-management/prompts/28.31-gpu-cuda-development-context-integration.md",
+  "phase_task": ".phases/phases/phase-28-development-environment-management/TASK.md",
+  "canonical_root": "src/domains/development-environment-management",
+  "role": "integration",
+  "implementation_header": "src/domains/development-environment-management/subtask_targets/integration/gpu_cuda_development_context_integration_8196b96e.hpp",
+  "implementation_source": "src/domains/development-environment-management/subtask_targets/integration/gpu_cuda_development_context_integration_8196b96e.cpp",
+  "test_target": "tests/structural-closure/domains/development-environment-management/integration/test_gpu_cuda_development_context_integration_8196b96e.cpp",
+  "status": "SKELETON_MATERIALIZED",
+  "behavioral_credit": false,
+  "preservation": "PRESERVE_IMPLEMENT_EXTEND"
+}

@@ -1,0 +1,12 @@
+{
+  "source_prompt": ".phases/phases/phase-38-user-identity-management/prompts/38.39-account-modification-planning.md",
+  "phase_task": ".phases/phases/phase-38-user-identity-management/TASK.md",
+  "canonical_root": "src/domains/user-identity-management",
+  "role": "planning",
+  "implementation_header": "src/domains/user-identity-management/subtask_targets/planning/account_modification_planning_277bb529.hpp",
+  "implementation_source": "src/domains/user-identity-management/subtask_targets/planning/account_modification_planning_277bb529.cpp",
+  "test_target": "tests/structural-closure/domains/user-identity-management/planning/test_account_modification_planning_277bb529.cpp",
+  "status": "SKELETON_MATERIALIZED",
+  "behavioral_credit": false,
+  "preservation": "PRESERVE_IMPLEMENT_EXTEND"
+}

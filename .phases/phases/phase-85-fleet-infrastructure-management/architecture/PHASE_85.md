@@ -1,0 +1,26 @@
+# Phase 85 — Fleet & Infrastructure Management System
+
+- 85.0: Bootstrap and repository reality audit
+- 85.1: Canonical ontology and identity
+- 85.2: Definitions and lifecycle
+- 85.3: State ownership and persistence
+- 85.4: Observation evidence provenance freshness
+- 85.5: UNKNOWN and conflicting evidence
+- 85.6: Capability and affordance integration
+- 85.7: Goal and desired-state integration
+- 85.8: Planning and operation integration
+- 85.9: Constraints and invariants
+- 85.10: Resources and topology
+- 85.11: Policy authorization
+- 85.12: Mandatory security
+- 85.13: Privilege and native providers
+- 85.14: Failure timeout cancellation partial effects
+- 85.15: Crash restart reconciliation recovery
+- 85.16: Concurrency races replacement TOCTOU
+- 85.17: Boundedness and budgets
+- 85.18: CLI GUI natural-language integration
+- 85.19: Timeline graph context integration
+- 85.20: Distributed and associated systems
+- 85.21: Python model shell authority audit
+- 85.22: Adversarial build runtime migration audit
+- 85.23: Documentation rediscovery and closure

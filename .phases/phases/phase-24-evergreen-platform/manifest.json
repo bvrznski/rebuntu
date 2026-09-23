@@ -1,0 +1,119 @@
+{
+  "phase": 24,
+  "slug": "evergreen-platform",
+  "directory": "phase-24-evergreen-platform",
+  "prompt_count": 22,
+  "layout_version": 2,
+  "prompts": [
+    {
+      "file": "24.0_evergreen_platform_foundation.md",
+      "title": "Phase 24.0 — Evergreen Platform Foundation",
+      "sha256": "4c2c76a8119857efc4b5aa1670c677671ce27ab997d84cef710fef3e4113246c"
+    },
+    {
+      "file": "24.1_known-good_baseline_&_platform_fingerprint.md",
+      "title": "Phase 24.1 — Known-Good Baseline & Platform Fingerprint",
+      "sha256": "575518e5131eae83823f64b2b3df638351ddbe6e0f6a158bfb9c0c0bdaef65e7"
+    },
+    {
+      "file": "24.2_platform_drift_&_evolution_candidate_discovery.md",
+      "title": "Phase 24.2 — Platform Drift & Evolution Candidate Discovery",
+      "sha256": "903d73d81d600aad564d0a7178b210c49898ace2dea1de2431fa5374cc6bffd5"
+    },
+    {
+      "file": "24.3_compatibility_&_dependency_graph.md",
+      "title": "Phase 24.3 — Compatibility & Dependency Graph",
+      "sha256": "cf2f4a8ce3de8f52dac7408715c11b6f4326217f4c157a5d29b444d505851e5c"
+    },
+    {
+      "file": "24.4_deterministic_upgrade_preflight_engine.md",
+      "title": "Phase 24.4 — Deterministic Upgrade Preflight Engine",
+      "sha256": "63ad4559fb830e6129f9a608568a8fe07aa23c23cfb9b0e07f7ce98d5d1deaa5"
+    },
+    {
+      "file": "24.5_recovery_contract_&_rollback_capability_model.md",
+      "title": "Phase 24.5 — Recovery Contract & Rollback Capability Model",
+      "sha256": "639be3eb417f72574f3388dcaa732e8fb6e88601e1544a19987b3fa26822baff"
+    },
+    {
+      "file": "24.6_boot-safe_kernel_evolution.md",
+      "title": "Phase 24.6 — Boot-Safe Kernel Evolution",
+      "sha256": "f2268e599eb003fad0964703f0c31fb68b12011b39964cb21ce0f6d21a5b4372"
+    },
+    {
+      "file": "24.7_kerneldriverdkms_coupling.md",
+      "title": "Phase 24.7 — Kernel–Driver–DKMS Coupling",
+      "sha256": "d9fc93a30cd3f0889fddf12eee8153b4a9cdebacfe7bb5e7d74ca8fe79c7c530"
+    },
+    {
+      "file": "24.8_transactional_platform_evolution_state_machine.md",
+      "title": "Phase 24.8 — Transactional Platform Evolution State Machine",
+      "sha256": "f0c902fea3755fdb6b3344aa07adc161d33b7d4347bbbd76180b25f5d0839d49"
+    },
+    {
+      "file": "24.9_authorization_&_bounded_mutation_boundary.md",
+      "title": "Phase 24.9 — Authorization & Bounded Mutation Boundary",
+      "sha256": "489d44825048aada56253a62e201807427815593ce79506f9a31b2d267e0033c"
+    },
+    {
+      "file": "24.10_post-change_health_verification_&_regression_detection.md",
+      "title": "Phase 24.10 — Post-Change Health Verification & Regression Detection",
+      "sha256": "f2f03c60e29b4dd46b29e5b40b66ea63b87159557569898f0c93264ffef53385"
+    },
+    {
+      "file": "24.11_automated_recovery_orchestration__safe_scaffold.md",
+      "title": "Phase 24.11 — Automated Recovery Orchestration — Safe Scaffold",
+      "sha256": "e28f145b892e23c14abeae186327e1bdf7ec81eafc0fd9674628b9ac4c3cb6dd"
+    },
+    {
+      "file": "24.12_snapshot,_filesystem_&_state_preservation_integration.md",
+      "title": "Phase 24.12 — Snapshot, Filesystem & State Preservation Integration",
+      "sha256": "5ccdd856f80c14b3866ecd8cc04a87ff56f11b1894abcf1697a44dde3702249c"
+    },
+    {
+      "file": "24.13_package_&_repository_evolution.md",
+      "title": "Phase 24.13 — Package & Repository Evolution",
+      "sha256": "b39afe58c2f81585bc1dce8c2c2e228da58492616ead92fb656e940683cc6bce"
+    },
+    {
+      "file": "24.14_distribution_release_evolution_planner.md",
+      "title": "Phase 24.14 — Distribution Release Evolution Planner",
+      "sha256": "f22957354beb454451be4a8e2d65b80075f8b53f5f459ede4fcc168fac56c938"
+    },
+    {
+      "file": "24.15_dry-run,_explain-plan_&_human_decision_interface.md",
+      "title": "Phase 24.15 — Dry-Run, Explain-Plan & Human Decision Interface",
+      "sha256": "3ceececce89806b3633f88ecd0b8e689357190aad24fc3b3b6d7fa72c9901d50"
+    },
+    {
+      "file": "24.16_reboot_continuity_&_cross-boot_transaction_resume.md",
+      "title": "Phase 24.16 — Reboot Continuity & Cross-Boot Transaction Resume",
+      "sha256": "593950f39fa8f8dc7fbfe7f31cd2db91d60ca5f3a1bb00dc798686b6cf314c17"
+    },
+    {
+      "file": "24.17_failure_injection_&_recovery_simulation.md",
+      "title": "Phase 24.17 — Failure Injection & Recovery Simulation",
+      "sha256": "4a3c315bcb60f51b763fcea8eb4d45197ba3b4d0763a9e64cb96fc105c69109b"
+    },
+    {
+      "file": "24.18_semantic_platform_analysis_integration.md",
+      "title": "Phase 24.18 — Semantic Platform Analysis Integration",
+      "sha256": "f1aa616be93da97015373e3a8b76d0132044dcdb0d1deba3a8ba3745dab5a20b"
+    },
+    {
+      "file": "24.19_predictive_upgrade_risk_&_historical_learning.md",
+      "title": "Phase 24.19 — Predictive Upgrade Risk & Historical Learning",
+      "sha256": "ff158e8d7bb3d6ff7013eb705e007481fe8954a5cdbea92cf0b67ff0e3c09d24"
+    },
+    {
+      "file": "24.20_evergreen_installation_integration_audit.md",
+      "title": "Phase 24.20 — Evergreen Installation Integration Audit",
+      "sha256": "a11ec906f0cb357205917bbd057ded77c68b63a9cbe48b5a9f2df18b0c40f2a3"
+    },
+    {
+      "file": "24.21_evergreen_platform_closure_&_readiness_gate.md",
+      "title": "Phase 24.21 — Evergreen Platform Closure & Readiness Gate",
+      "sha256": "56ce20ce17fff7b07e34dd08bdf1ca9bbca5d542321b0df2fe3d9c500fb7eb4e"
+    }
+  ]
+}

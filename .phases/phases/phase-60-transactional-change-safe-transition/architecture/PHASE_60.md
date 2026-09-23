@@ -1,0 +1,55 @@
+# Phase 60 — Transactional Change & Safe Transition System
+
+- **60.0** — Safe-transition topology
+- **60.1** — Change transaction identity
+- **60.2** — Transaction scope
+- **60.3** — Step boundaries
+- **60.4** — Commit boundaries
+- **60.5** — Checkpoint semantics
+- **60.6** — Compensation semantics
+- **60.7** — Rollback truthfulness
+- **60.8** — Atomicity truthfulness
+- **60.9** — Durability semantics
+- **60.10** — Partial-commit semantics
+- **60.11** — Irreversible-step boundary
+- **60.12** — Point-of-no-return model
+- **60.13** — Preflight validation
+- **60.14** — Invariant gate
+- **60.15** — Impact gate
+- **60.16** — Policy gate
+- **60.17** — Security gate
+- **60.18** — Resource reservation boundary
+- **60.19** — Execution handoff
+- **60.20** — Step verification
+- **60.21** — Commit verification
+- **60.22** — Failure classification
+- **60.23** — Compensation planning
+- **60.24** — Compensation execution handoff
+- **60.25** — Failed compensation
+- **60.26** — Ambiguous effect handling
+- **60.27** — Timeout handling
+- **60.28** — Crash handling
+- **60.29** — Restart reconciliation
+- **60.30** — Interrupted transaction
+- **60.31** — Idempotency
+- **60.32** — Replay safety
+- **60.33** — Concurrent change conflict
+- **60.34** — External mutation conflict
+- **60.35** — Locking boundary
+- **60.36** — Optimistic generation checks
+- **60.37** — Filesystem-safe transition
+- **60.38** — Service-safe transition
+- **60.39** — Network-safe transition
+- **60.40** — Storage-safe transition
+- **60.41** — GPU-safe transition
+- **60.42** — Distributed transition boundary
+- **60.43** — No-global-ACID enforcement
+- **60.44** — Audit trail
+- **60.45** — CLI
+- **60.46** — GUI
+- **60.47** — Dry-run
+- **60.48** — Adversarial crash windows
+- **60.49** — Build/runtime audit
+- **60.50** — Integration matrix
+- **60.51** — Independent rediscovery
+- **60.52** — Phase closure

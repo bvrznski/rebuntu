@@ -1,0 +1,356 @@
+{
+  "project": "Rebuntu",
+  "phase": "40",
+  "title": "Unified Search & Command System",
+  "prompt_count": 80,
+  "architecture_doc_count": 12,
+  "implementation_language_policy": "C++-first native runtime; Python only at explicit semantic/ML/research/justified adapter boundaries",
+  "entrypoint": "40.0-unified-search-command-system-foundation.md",
+  "prompts": [
+    {
+      "phase": "40.0",
+      "title": "Unified Search & Command System Foundation"
+    },
+    {
+      "phase": "40.1",
+      "title": "Repository & Existing Search Capability Audit"
+    },
+    {
+      "phase": "40.2",
+      "title": "Search Domain Model"
+    },
+    {
+      "phase": "40.3",
+      "title": "Command Domain Model"
+    },
+    {
+      "phase": "40.4",
+      "title": "Unified Query Language Foundation"
+    },
+    {
+      "phase": "40.5",
+      "title": "Query Parser & AST"
+    },
+    {
+      "phase": "40.6",
+      "title": "Query Normalization & Canonicalization"
+    },
+    {
+      "phase": "40.7",
+      "title": "Scope Resolution"
+    },
+    {
+      "phase": "40.8",
+      "title": "Entity Reference Resolution"
+    },
+    {
+      "phase": "40.9",
+      "title": "Search Provider Interface"
+    },
+    {
+      "phase": "40.10",
+      "title": "Provider Registry & Capability Discovery"
+    },
+    {
+      "phase": "40.11",
+      "title": "Result Envelope & Provenance"
+    },
+    {
+      "phase": "40.12",
+      "title": "Exact Lookup Engine"
+    },
+    {
+      "phase": "40.13",
+      "title": "Lexical Search Engine"
+    },
+    {
+      "phase": "40.14",
+      "title": "Fuzzy Search Engine"
+    },
+    {
+      "phase": "40.15",
+      "title": "Structured Filter Engine"
+    },
+    {
+      "phase": "40.16",
+      "title": "Temporal Query Integration"
+    },
+    {
+      "phase": "40.17",
+      "title": "System Timeline Search Provider"
+    },
+    {
+      "phase": "40.18",
+      "title": "Process & Workload Search Provider"
+    },
+    {
+      "phase": "40.19",
+      "title": "Resource Search Provider"
+    },
+    {
+      "phase": "40.20",
+      "title": "Service Search Provider"
+    },
+    {
+      "phase": "40.21",
+      "title": "Storage Search Provider"
+    },
+    {
+      "phase": "40.22",
+      "title": "Network Search Provider"
+    },
+    {
+      "phase": "40.23",
+      "title": "GPU & Accelerator Search Provider"
+    },
+    {
+      "phase": "40.24",
+      "title": "Package & Software Search Provider"
+    },
+    {
+      "phase": "40.25",
+      "title": "Configuration Search Provider"
+    },
+    {
+      "phase": "40.26",
+      "title": "Secrets Metadata Search Provider"
+    },
+    {
+      "phase": "40.27",
+      "title": "Identity Search Provider"
+    },
+    {
+      "phase": "40.28",
+      "title": "Shell Search Provider"
+    },
+    {
+      "phase": "40.29",
+      "title": "Terminal Search Provider"
+    },
+    {
+      "phase": "40.30",
+      "title": "Development Environment Search Provider"
+    },
+    {
+      "phase": "40.31",
+      "title": "Health & Evidence Search Provider"
+    },
+    {
+      "phase": "40.32",
+      "title": "Evergreen Platform Search Provider"
+    },
+    {
+      "phase": "40.33",
+      "title": "Cross-Domain Federated Search"
+    },
+    {
+      "phase": "40.34",
+      "title": "Search Planning"
+    },
+    {
+      "phase": "40.35",
+      "title": "Search Cost & Budget Model"
+    },
+    {
+      "phase": "40.36",
+      "title": "Cancellation, Deadlines & Backpressure"
+    },
+    {
+      "phase": "40.37",
+      "title": "Partial Results & UNKNOWN Semantics"
+    },
+    {
+      "phase": "40.38",
+      "title": "Result De-Duplication"
+    },
+    {
+      "phase": "40.39",
+      "title": "Cross-Domain Result Correlation"
+    },
+    {
+      "phase": "40.40",
+      "title": "Deterministic Ranking Foundation"
+    },
+    {
+      "phase": "40.41",
+      "title": "Context-Aware Ranking"
+    },
+    {
+      "phase": "40.42",
+      "title": "Ranking Explainability"
+    },
+    {
+      "phase": "40.43",
+      "title": "Facets & Aggregations"
+    },
+    {
+      "phase": "40.44",
+      "title": "Result Projection & Detail Levels"
+    },
+    {
+      "phase": "40.45",
+      "title": "Search Sessions & Continuations"
+    },
+    {
+      "phase": "40.46",
+      "title": "Saved Queries & Operator Views"
+    },
+    {
+      "phase": "40.47",
+      "title": "Search History & Privacy"
+    },
+    {
+      "phase": "40.48",
+      "title": "Unified Command Registry"
+    },
+    {
+      "phase": "40.49",
+      "title": "Command Discovery"
+    },
+    {
+      "phase": "40.50",
+      "title": "Command Intent Parsing"
+    },
+    {
+      "phase": "40.51",
+      "title": "Command Argument Resolution"
+    },
+    {
+      "phase": "40.52",
+      "title": "Command Applicability & Preconditions"
+    },
+    {
+      "phase": "40.53",
+      "title": "Read-Only Command Execution"
+    },
+    {
+      "phase": "40.54",
+      "title": "Mutating Command Planning Boundary"
+    },
+    {
+      "phase": "40.55",
+      "title": "Authorization Integration"
+    },
+    {
+      "phase": "40.56",
+      "title": "Command Preview & Explain Plan"
+    },
+    {
+      "phase": "40.57",
+      "title": "Command Execution Tracking"
+    },
+    {
+      "phase": "40.58",
+      "title": "Command Result Model"
+    },
+    {
+      "phase": "40.59",
+      "title": "Command Aliases & Synonyms"
+    },
+    {
+      "phase": "40.60",
+      "title": "Shell & CLI Interface"
+    },
+    {
+      "phase": "40.61",
+      "title": "Fish Interactive Integration"
+    },
+    {
+      "phase": "40.62",
+      "title": "Panel Search & Command Palette API"
+    },
+    {
+      "phase": "40.63",
+      "title": "Future GUI & Remote API Boundary"
+    },
+    {
+      "phase": "40.64",
+      "title": "Machine-Readable Output Contract"
+    },
+    {
+      "phase": "40.65",
+      "title": "Interactive Completion Engine"
+    },
+    {
+      "phase": "40.66",
+      "title": "Help, Introspection & Schema Discovery"
+    },
+    {
+      "phase": "40.67",
+      "title": "Semantic Search Provider Boundary"
+    },
+    {
+      "phase": "40.68",
+      "title": "Natural-Language Command Proposal Boundary"
+    },
+    {
+      "phase": "40.69",
+      "title": "Semantic Failure & Hallucination Containment"
+    },
+    {
+      "phase": "40.70",
+      "title": "Sensitive Data & Secret-Safe Indexing"
+    },
+    {
+      "phase": "40.71",
+      "title": "Search Security & Input Hardening"
+    },
+    {
+      "phase": "40.72",
+      "title": "Index Architecture & Persistence Policy"
+    },
+    {
+      "phase": "40.73",
+      "title": "Index Freshness & Invalidation"
+    },
+    {
+      "phase": "40.74",
+      "title": "Performance & Latency Architecture"
+    },
+    {
+      "phase": "40.75",
+      "title": "Observability & Phase 39 Event Emission"
+    },
+    {
+      "phase": "40.76",
+      "title": "Failure Injection & Resilience Testing"
+    },
+    {
+      "phase": "40.77",
+      "title": "Cross-Phase Integration Audit"
+    },
+    {
+      "phase": "40.78",
+      "title": "Repository De-Bordellization & Duplicate Search Audit"
+    },
+    {
+      "phase": "40.79",
+      "title": "Unified Search & Command System Closure & Readiness Gate"
+    }
+  ],
+  "architecture_docs": [
+    "01-system-boundary.md",
+    "02-search-domain-model.md",
+    "03-command-domain-model.md",
+    "04-query-language.md",
+    "05-provider-contract.md",
+    "06-ranking-correlation.md",
+    "07-command-safety.md",
+    "08-security-privacy.md",
+    "09-index-persistence.md",
+    "10-phase-integration.md",
+    "11-cli-panel-contract.md",
+    "12-validation-matrix.md"
+  ],
+  "hard_invariants": [
+    "repository-first discovery",
+    "aggregational morphing; no parallel subsystem",
+    "domain systems retain state/mutation ownership",
+    "Phase 39 remains timeline authority",
+    "typed command intents, never arbitrary shell strings",
+    "semantic providers never authorize or execute",
+    "UNKNOWN != PASS",
+    "secret material never indexed",
+    "consequential actions use plan/validate/authorize/execute/verify/record"
+  ]
+}

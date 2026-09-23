@@ -1,0 +1,26 @@
+# Phase 65 — Change Impact & Consequence Analysis System
+
+- 65.0: Bootstrap and repository reality audit
+- 65.1: Canonical ontology and identity
+- 65.2: Definitions and lifecycle
+- 65.3: State ownership and persistence
+- 65.4: Observation evidence provenance freshness
+- 65.5: UNKNOWN and conflicting evidence
+- 65.6: Capability and affordance integration
+- 65.7: Goal and desired-state integration
+- 65.8: Planning and operation integration
+- 65.9: Constraints and invariants
+- 65.10: Resources and topology
+- 65.11: Policy authorization
+- 65.12: Mandatory security
+- 65.13: Privilege and native providers
+- 65.14: Failure timeout cancellation partial effects
+- 65.15: Crash restart reconciliation recovery
+- 65.16: Concurrency races replacement TOCTOU
+- 65.17: Boundedness and budgets
+- 65.18: CLI GUI natural-language integration
+- 65.19: Timeline graph context integration
+- 65.20: Distributed and associated systems
+- 65.21: Python model shell authority audit
+- 65.22: Adversarial build runtime migration audit
+- 65.23: Documentation rediscovery and closure

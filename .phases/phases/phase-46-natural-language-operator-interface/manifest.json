@@ -1,0 +1,12 @@
+{
+  "phase": "46",
+  "name": "Natural Language Operator Interface (ask)",
+  "full_prompt_count": 472,
+  "architecture_document_count": 12,
+  "entrypoint": "README.md",
+  "runtime_policy": "C++-first deterministic operator/control boundary",
+  "semantic_provider": "BitNet NLU provider; no authority",
+  "advisory_provider": "Gordon optional advisory reasoner; no authority",
+  "core_rule": "natural language may broaden understanding but never authority",
+  "security_rule": "unexpected consequential use requires contextual legitimacy and policy-consistent justification before semantic execution"
+}

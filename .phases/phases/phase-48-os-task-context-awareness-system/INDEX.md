@@ -1,0 +1,427 @@
+# Phase 48 Index
+
+## Normative architecture
+- `architecture/01-system-boundary.md`
+- `architecture/02-context-model.md`
+- `architecture/03-context-sources.md`
+- `architecture/04-relevance.md`
+- `architecture/05-temporal-awareness.md`
+- `architecture/06-structural-awareness.md`
+- `architecture/07-operator-task-awareness.md`
+- `architecture/08-anomaly-legitimacy.md`
+- `architecture/09-trust-security.md`
+- `architecture/10-semantic-projection.md`
+- `architecture/11-cross-phase-integration.md`
+- `architecture/12-closure.md`
+
+## Full executable prompts
+- `48.0` — foundation and repository archaeology
+- `48.1` — existing context inventory
+- `48.2` — canonical architecture
+- `48.3` — C++-first context runtime
+- `48.4` — context strong types
+- `48.5` — context identity
+- `48.6` — context snapshot
+- `48.7` — context fact
+- `48.8` — context reference
+- `48.9` — context scope
+- `48.10` — context window
+- `48.11` — context provenance
+- `48.12` — context freshness
+- `48.13` — context uncertainty
+- `48.14` — context epistemic class
+- `48.15` — context gaps
+- `48.16` — context conflicts
+- `48.17` — context hypotheses
+- `48.18` — context projections
+- `48.19` — context budgets
+- `48.20` — context lifecycle
+- `48.21` — context invalidation
+- `48.22` — context cache
+- `48.23` — cache freshness
+- `48.24` — cache isolation
+- `48.25` — cache invalidation
+- `48.26` — context persistence boundary
+- `48.27` — context serialization
+- `48.28` — authoritative observation integration
+- `48.29` — Phase 39 temporal integration
+- `48.30` — Phase 42 structural integration
+- `48.31` — Phase 43 intelligence integration
+- `48.32` — Phase 44 adaptation integration
+- `48.33` — Phase 45 control-plane integration
+- `48.34` — Phase 46 ask integration
+- `48.35` — Phase 47 policy integration
+- `48.36` — Phase 41 workflow integration
+- `48.37` — Phase 29 workload integration
+- `48.38` — Phase 30 resource integration
+- `48.39` — identity and session context
+- `48.40` — cwd context
+- `48.41` — project context
+- `48.42` — repository context
+- `48.43` — development workspace context
+- `48.44` — active task context
+- `48.45` — Taskwarrior context
+- `48.46` — active workflow context
+- `48.47` — automation context
+- `48.48` — recent operator context
+- `48.49` — explicit referent context
+- `48.50` — pronoun referent context
+- `48.51` — ordinal referent context
+- `48.52` — selected-target context
+- `48.53` — recent-object context
+- `48.54` — shell context
+- `48.55` — terminal context
+- `48.56` — process context
+- `48.57` — service context
+- `48.58` — network context
+- `48.59` — storage context
+- `48.60` — filesystem context
+- `48.61` — mount context
+- `48.62` — package context
+- `48.63` — configuration context
+- `48.64` — GPU context
+- `48.65` — accelerator context
+- `48.66` — CPU context
+- `48.67` — memory context
+- `48.68` — resource-pressure context
+- `48.69` — user identity context
+- `48.70` — security context
+- `48.71` — credential-reference context
+- `48.72` — system health context
+- `48.73` — boot context
+- `48.74` — session context
+- `48.75` — maintenance context
+- `48.76` — power-state context
+- `48.77` — kernel context
+- `48.78` — driver context
+- `48.79` — container context
+- `48.80` — model-service context
+- `48.81` — AI workload context
+- `48.82` — dependency context
+- `48.83` — ownership context
+- `48.84` — containment context
+- `48.85` — attachment context
+- `48.86` — data-flow context
+- `48.87` — endpoint context
+- `48.88` — listener context
+- `48.89` — external-destination context
+- `48.90` — persistence context
+- `48.91` — privilege context
+- `48.92` — protected-resource context
+- `48.93` — relevance engine
+- `48.94` — relevance seeds
+- `48.95` — entity relevance
+- `48.96` — domain relevance
+- `48.97` — dependency relevance
+- `48.98` — temporal relevance
+- `48.99` — structural relevance
+- `48.100` — workflow relevance
+- `48.101` — operator-focus relevance
+- `48.102` — task-goal relevance
+- `48.103` — risk-driven relevance
+- `48.104` — relevance expansion
+- `48.105` — relevance stopping criteria
+- `48.106` — relevance budgets
+- `48.107` — relevance explanation
+- `48.108` — irrelevant-context exclusion
+- `48.109` — context minimization
+- `48.110` — context prioritization
+- `48.111` — context ranking
+- `48.112` — context deduplication
+- `48.113` — context normalization
+- `48.114` — context merge
+- `48.115` — context contradiction preservation
+- `48.116` — context conflict resolution boundary
+- `48.117` — context missing-data handling
+- `48.118` — fresh observation requests
+- `48.119` — stale observation detection
+- `48.120` — staleness thresholds
+- `48.121` — domain-specific freshness
+- `48.122` — freshness propagation
+- `48.123` — freshness explanation
+- `48.124` — boot-bound freshness
+- `48.125` — session-bound freshness
+- `48.126` — task-bound freshness
+- `48.127` — plan-bound freshness
+- `48.128` — event-time awareness
+- `48.129` — observation-time awareness
+- `48.130` — clock-jump handling
+- `48.131` — clock-skew handling
+- `48.132` — out-of-order context
+- `48.133` — replayed context
+- `48.134` — temporal gaps
+- `48.135` — temporal neighborhood
+- `48.136` — recent-change context
+- `48.137` — before-after relations
+- `48.138` — causality non-inference
+- `48.139` — causal-evidence references
+- `48.140` — structural neighborhood
+- `48.141` — graph traversal bounds
+- `48.142` — identity resolution context
+- `48.143` — ambiguous identity context
+- `48.144` — persistent device identity
+- `48.145` — GPU identity context
+- `48.146` — network interface identity
+- `48.147` — storage identity
+- `48.148` — process identity lifecycle
+- `48.149` — service identity
+- `48.150` — user identity mapping
+- `48.151` — task identity mapping
+- `48.152` — workflow identity mapping
+- `48.153` — contextual coherence engine
+- `48.154` — task-state coherence
+- `48.155` — task-project coherence
+- `48.156` — task-workflow coherence
+- `48.157` — task-service coherence
+- `48.158` — task-endpoint coherence
+- `48.159` — task-dataflow coherence
+- `48.160` — task-resource coherence
+- `48.161` — task-security coherence
+- `48.162` — task-maintenance coherence
+- `48.163` — task-history coherence
+- `48.164` — prerequisite coherence
+- `48.165` — expected-state coherence
+- `48.166` — unexpected novelty detection
+- `48.167` — novel endpoint detection
+- `48.168` — novel listener detection
+- `48.169` — novel persistence detection
+- `48.170` — novel privilege-use detection
+- `48.171` — novel data-access detection
+- `48.172` — novel secret-access detection
+- `48.173` — novel bulk-export detection
+- `48.174` — novel destructive-mutation detection
+- `48.175` — cross-domain novelty
+- `48.176` — coherence explanation
+- `48.177` — contextual anomaly evidence
+- `48.178` — anomaly severity semantics
+- `48.179` — anomaly uncertainty
+- `48.180` — anomaly provenance
+- `48.181` — anomaly not maliciousness invariant
+- `48.182` — baseline-free anomaly handling
+- `48.183` — expected-use baseline boundary
+- `48.184` — operator explanation integration
+- `48.185` — justification context integration
+- `48.186` — justification consistency context
+- `48.187` — Phase 47 policy-context projection
+- `48.188` — policy-relevant context extraction
+- `48.189` — authorization-relevant context boundary
+- `48.190` — capability-relevant context extraction
+- `48.191` — data-flow policy context
+- `48.192` — resource policy context
+- `48.193` — delegation policy context
+- `48.194` — scheduled-task context
+- `48.195` — unattended-task context
+- `48.196` — interactive-task context
+- `48.197` — agent-originated task context
+- `48.198` — semantic-originated task context
+- `48.199` — workflow child-task context
+- `48.200` — cross-task context
+- `48.201` — cross-step context
+- `48.202` — task-splitting context
+- `48.203` — multi-stage data-flow context
+- `48.204` — delegation-chain context
+- `48.205` — origin-chain context
+- `48.206` — trust-domain model
+- `48.207` — operator-input trust
+- `48.208` — local authoritative-state trust
+- `48.209` — remote-data trust
+- `48.210` — log-content trust
+- `48.211` — file-content trust
+- `48.212` — README-content trust
+- `48.213` — process-output trust
+- `48.214` — web-content trust
+- `48.215` — model-output trust
+- `48.216` — quoted-text trust
+- `48.217` — copied-command trust
+- `48.218` — taint propagation
+- `48.219` — taint merge
+- `48.220` — taint projection
+- `48.221` — instruction-data separation
+- `48.222` — prompt-injection resistance
+- `48.223` — context poisoning resistance
+- `48.224` — context laundering resistance
+- `48.225` — authority laundering resistance
+- `48.226` — cross-session poisoning resistance
+- `48.227` — cross-user context isolation
+- `48.228` — cross-project context isolation
+- `48.229` — stale-context poisoning resistance
+- `48.230` — semantic context projection schema
+- `48.231` — BitNet context projection
+- `48.232` — Gordon EvidenceBundle context
+- `48.233` — semantic redaction
+- `48.234` — semantic minimization
+- `48.235` — semantic token budget
+- `48.236` — semantic provenance labels
+- `48.237` — semantic untrusted-content labels
+- `48.238` — semantic projection freshness
+- `48.239` — semantic projection invalidation
+- `48.240` — model-returned context candidates
+- `48.241` — candidate validation
+- `48.242` — model hallucination containment
+- `48.243` — model outage fallback
+- `48.244` — model compromise containment
+- `48.245` — no model authority
+- `48.246` — secret-safe context
+- `48.247` — SecretRef context
+- `48.248` — secret-value exclusion
+- `48.249` — credential-value exclusion
+- `48.250` — environment redaction
+- `48.251` — history redaction
+- `48.252` — log redaction
+- `48.253` — path sensitivity policy
+- `48.254` — PII minimization boundary
+- `48.255` — context privacy controls
+- `48.256` — context access control
+- `48.257` — context query authorization
+- `48.258` — context projection authorization
+- `48.259` — context audit
+- `48.260` — context observability
+- `48.261` — context metrics
+- `48.262` — context tracing
+- `48.263` — context decision trace
+- `48.264` — why-this-context explanation
+- `48.265` — why-not-this-context explanation
+- `48.266` — show-context CLI
+- `48.267` — show-context-sources CLI
+- `48.268` — show-context-freshness CLI
+- `48.269` — show-context-conflicts CLI
+- `48.270` — show-context-gaps CLI
+- `48.271` — show-context-relevance CLI
+- `48.272` — context dry-run
+- `48.273` — context explain
+- `48.274` — Panel context overview
+- `48.275` — Panel task-context view
+- `48.276` — Panel freshness view
+- `48.277` — Panel anomaly view
+- `48.278` — Panel provenance view
+- `48.279` — context API
+- `48.280` — context IPC
+- `48.281` — context provider API
+- `48.282` — context source registration
+- `48.283` — context source capability discovery
+- `48.284` — context source health
+- `48.285` — context source timeout
+- `48.286` — context source cancellation
+- `48.287` — context source backpressure
+- `48.288` — context source partial failure
+- `48.289` — context source UNKNOWN
+- `48.290` — parallel context collection
+- `48.291` — bounded concurrency
+- `48.292` — context latency budget
+- `48.293` — context memory budget
+- `48.294` — context size budget
+- `48.295` — context collection timeout
+- `48.296` — context cancellation
+- `48.297` — context crash recovery
+- `48.298` — context restart behavior
+- `48.299` — context reboot behavior
+- `48.300` — context schema versioning
+- `48.301` — context migration
+- `48.302` — context compatibility
+- `48.303` — context testing framework
+- `48.304` — synthetic context fixtures
+- `48.305` — recorded context fixtures
+- `48.306` — holdout context corpus
+- `48.307` — benign context corpus
+- `48.308` — ambiguous context corpus
+- `48.309` — stale context corpus
+- `48.310` — poisoned context corpus
+- `48.311` — adversarial context corpus
+- `48.312` — read-only task scenario
+- `48.313` — mutating task scenario
+- `48.314` — ask referent scenario
+- `48.315` — Taskwarrior scenario
+- `48.316` — workflow scenario
+- `48.317` — automation scenario
+- `48.318` — agent scenario
+- `48.319` — maintenance scenario
+- `48.320` — unexpected network task scenario
+- `48.321` — log export context scenario
+- `48.322` — fork-bomb intent context scenario
+- `48.323` — GPU task context scenario
+- `48.324` — storage task context scenario
+- `48.325` — service task context scenario
+- `48.326` — package task context scenario
+- `48.327` — configuration task context scenario
+- `48.328` — stale context adversarial test
+- `48.329` — cross-session leakage test
+- `48.330` — cross-user leakage test
+- `48.331` — ambiguous referent test
+- `48.332` — ordinal referent confusion test
+- `48.333` — device renumbering test
+- `48.334` — GPU index identity test
+- `48.335` — PID reuse context test
+- `48.336` — network interface rename test
+- `48.337` — mount identity test
+- `48.338` — clock jump test
+- `48.339` — reboot freshness test
+- `48.340` — out-of-order event test
+- `48.341` — missing event test
+- `48.342` — graph contradiction test
+- `48.343` — graph path causality test
+- `48.344` — prompt injection from log test
+- `48.345` — prompt injection from README test
+- `48.346` — prompt injection from process output test
+- `48.347` — prompt injection from remote content test
+- `48.348` — context poisoning test
+- `48.349` — context laundering test
+- `48.350` — authority laundering via context test
+- `48.351` — fake operator-context test
+- `48.352` — semantic hallucinated-context test
+- `48.353` — Gordon hallucinated-context test
+- `48.354` — secret leakage projection test
+- `48.355` — oversized context DoS test
+- `48.356` — context source timeout test
+- `48.357` — context source compromise test
+- `48.358` — cache poisoning test
+- `48.359` — cache staleness test
+- `48.360` — TOCTOU context test
+- `48.361` — state drift test
+- `48.362` — changed target after context test
+- `48.363` — changed destination after context test
+- `48.364` — changed requester after context test
+- `48.365` — concurrent task context test
+- `48.366` — concurrent session context test
+- `48.367` — performance regression test
+- `48.368` — repository source-tree normalization
+- `48.369` — existing context code migration
+- `48.370` — duplicate context store audit
+- `48.371` — duplicate context cache audit
+- `48.372` — duplicate referent resolver audit
+- `48.373` — duplicate relevance engine audit
+- `48.374` — implicit global context audit
+- `48.375` — direct semantic raw-state dump audit
+- `48.376` — direct model context authority audit
+- `48.377` — stale Python context ownership audit
+- `48.378` — remaining Python boundary inventory
+- `48.379` — C++-first context contract audit
+- `48.380` — AGENTS context architecture contract
+- `48.381` — AGENTS provenance contract
+- `48.382` — AGENTS freshness contract
+- `48.383` — AGENTS context-no-authority contract
+- `48.384` — AGENTS semantic projection contract
+- `48.385` — recursive rediscovery pass one
+- `48.386` — resolve rediscovery pass one
+- `48.387` — recursive rediscovery pass two
+- `48.388` — resolve rediscovery pass two
+- `48.389` — adversarial context-bypass audit
+- `48.390` — adversarial poisoning audit
+- `48.391` — adversarial freshness audit
+- `48.392` — adversarial isolation audit
+- `48.393` — adversarial referent audit
+- `48.394` — adversarial secret-safety audit
+- `48.395` — adversarial semantic-provider audit
+- `48.396` — final native build
+- `48.397` — final unit tests
+- `48.398` — final integration tests
+- `48.399` — final end-to-end tests
+- `48.400` — final adversarial suite
+- `48.401` — final performance validation
+- `48.402` — final context-source inventory
+- `48.403` — final source-tree audit
+- `48.404` — final production call-graph trace
+- `48.405` — final context-flow graph
+- `48.406` — final trust graph
+- `48.407` — final remaining Python inventory
+- `48.408` — final fixed-point rediscovery
+- `48.409` — Phase 48 closure and future handoff

@@ -1,0 +1,26 @@
+# Phase 101 — Operational Attention & Priority System
+
+- 101.0: Bootstrap and repository reality audit
+- 101.1: Canonical ontology and identity
+- 101.2: Definitions and lifecycle
+- 101.3: State ownership and persistence
+- 101.4: Observation evidence provenance freshness
+- 101.5: UNKNOWN and conflicting evidence
+- 101.6: Capability and affordance integration
+- 101.7: Goal and desired-state integration
+- 101.8: Planning and operation integration
+- 101.9: Constraints and invariants
+- 101.10: Resources and topology
+- 101.11: Policy authorization
+- 101.12: Mandatory security
+- 101.13: Privilege and native providers
+- 101.14: Failure timeout cancellation partial effects
+- 101.15: Crash restart reconciliation recovery
+- 101.16: Concurrency races replacement TOCTOU
+- 101.17: Boundedness and budgets
+- 101.18: CLI GUI natural-language integration
+- 101.19: Timeline graph context integration
+- 101.20: Distributed and associated systems
+- 101.21: Python model shell authority audit
+- 101.22: Adversarial build runtime migration audit
+- 101.23: Documentation rediscovery and closure

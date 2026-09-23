@@ -1,0 +1,114 @@
+{
+  "phase": 4,
+  "slug": "stability-and-shell",
+  "directory": "phase-04-stability-and-shell",
+  "prompt_count": 21,
+  "layout_version": 2,
+  "prompts": [
+    {
+      "file": "4.0.md",
+      "title": "Rebuntu — Phase 4.0 — Runtime Foundation",
+      "sha256": "92640899b60273206bcccb99a444ad5823db006be15a82a71d9caafcf0a9791f"
+    },
+    {
+      "file": "4.1.md",
+      "title": "Rebuntu — Phase 4.1 — Core Initialization",
+      "sha256": "da77e763e50032728eafb4cbad1d022cc6ba7159555593d7378a5152fa61ef50"
+    },
+    {
+      "file": "4.2.md",
+      "title": "Rebuntu — Phase 4.2 — Engine",
+      "sha256": "a067cb136a3fdc5f69665eb0b91ec20655a1957967736135948c4eacc95403a4"
+    },
+    {
+      "file": "4.3.md",
+      "title": "Rebuntu — Phase 4.3 — Executor",
+      "sha256": "0918534acaf036b976ac025fb7523a84259ece3d9b84224b87262b9e3879af1c"
+    },
+    {
+      "file": "4.4.md",
+      "title": "Rebuntu — Phase 4.4 — Runner",
+      "sha256": "fdfd54bc00416eb069cde1a187e3261045aae55ef243ad2e2c6b0695f3cbcbcb"
+    },
+    {
+      "file": "4.5.md",
+      "title": "Rebuntu — Phase 4.5 — Dispatcher",
+      "sha256": "d725402a32884b0f1b1aa60b840a6b996b372a19a2c4e3020e42fa6192f12635"
+    },
+    {
+      "file": "4.6.md",
+      "title": "Rebuntu — Phase 4.6 — Controller",
+      "sha256": "0643f1295abeb02863ba0a9b68c81d1790e80872b1cc26151dd5504360433d79"
+    },
+    {
+      "file": "4.7.md",
+      "title": "Rebuntu — Phase 4.7 — Coordinator",
+      "sha256": "4beef7a0064c6490bcc3cbee3251589c8f6aafdd4953e7edc81bc9aaab018197"
+    },
+    {
+      "file": "4.8.md",
+      "title": "Rebuntu — Phase 4.8 — Resolver",
+      "sha256": "27ae0f466bf6669c4f9a781cf194b8eed25f0e645f247a518a4b02a18689ae1d"
+    },
+    {
+      "file": "4.9.md",
+      "title": "Rebuntu — Phase 4.9 — Loader",
+      "sha256": "4a3d324a84abac762b641de1e5b33ca16592a00be926ed8a3b97b6315d6698cb"
+    },
+    {
+      "file": "4.10.md",
+      "title": "Rebuntu — Phase 4.10 — Registry / Catalog Runtime Integration",
+      "sha256": "2162137e8efcab82c52c8c0eff3f1f0a484773196875e1b559daa96ee7f77c21"
+    },
+    {
+      "file": "4.11.md",
+      "title": "Rebuntu — Phase 4.11 — Unit Execution",
+      "sha256": "b70198bfa5e74841264b1c324febe1716ce81300a416aa59c30e7ad257f50e5d"
+    },
+    {
+      "file": "4.12.md",
+      "title": "Rebuntu — Phase 4.12 — Operation Execution",
+      "sha256": "a72fa5d69881027336e35252e5a300803a3061134066231e754f8b42d28ab26e"
+    },
+    {
+      "file": "4.13.md",
+      "title": "Rebuntu — Phase 4.13 — Task / Job Runtime",
+      "sha256": "3ba318b1beef8abdd97459512bfae27ff34424ec99b7b02ba4655621c1c65769"
+    },
+    {
+      "file": "4.14.md",
+      "title": "Rebuntu — Phase 4.14 — Workflow Runtime",
+      "sha256": "eb716376666b77819431f9c8acb045d99f33f4fb028bd5e2e5fbc2d56081755b"
+    },
+    {
+      "file": "4.15.md",
+      "title": "Rebuntu — Phase 4.15 — Shell Source Loading & Runtime Integration",
+      "sha256": "e0dcfdc3e6bebe656a16dce34b405c636c3d89fb4726450801af727b837bf83f"
+    },
+    {
+      "file": "4.16.md",
+      "title": "Rebuntu — Phase 4.16 — Native Event Activation",
+      "sha256": "da105aec8a5d8244f466694473edc996dbb930a8d1019b0a168daffdb5b95a69"
+    },
+    {
+      "file": "4.17.md",
+      "title": "Rebuntu — Phase 4.17 — Kernel / udev / systemd Initiated Chains",
+      "sha256": "08902dea1b06b346e6ed9ea3f8df87b0583af7d054d9daffa3fc4132ce87b3f9"
+    },
+    {
+      "file": "4.18.md",
+      "title": "Rebuntu — Phase 4.18 — Startup, Init & Dependency Chains",
+      "sha256": "6d9993d798f9aaf544a33271b72f0bf5dc4fddf6027ed10f78878a2d8d6f9d08"
+    },
+    {
+      "file": "4.19.md",
+      "title": "Rebuntu — Phase 4.19 — Shutdown, Cancellation & Runtime Recovery",
+      "sha256": "a7a94c616afa334f97404eb0ec2126e1faa6811e7c9d46a2503161c430cf59f8"
+    },
+    {
+      "file": "4.20.md",
+      "title": "Rebuntu — Phase 4.20 — Runtime Integration & Readiness Audit",
+      "sha256": "92453aff2bc11c675bf25858861e05038c24eb0f71e839866eeac02c2db6cb86"
+    }
+  ]
+}

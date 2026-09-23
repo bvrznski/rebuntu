@@ -1,0 +1,23 @@
+# Prompt Index
+
+- `23.0.md` — Rebuntu — Phase 23.0 — BitNet-Coupled Log Understanding Architecture
+- `23.1.md` — Rebuntu — Phase 23.1 — BitNet Docker Runtime & Provider Contract
+- `23.2.md` — Rebuntu — Phase 23.2 — BitNet Service Discovery, Readiness & Health
+- `23.3.md` — Rebuntu — Phase 23.3 — Log Evidence Packaging & Context Construction
+- `23.4.md` — Rebuntu — Phase 23.4 — Token / Context Budgeting & Evidence Compression
+- `23.5.md` — Rebuntu — Phase 23.5 — Typed Semantic Log Interpretation
+- `23.6.md` — Rebuntu — Phase 23.6 — Kernel / Driver Semantic Understanding
+- `23.7.md` — Rebuntu — Phase 23.7 — systemd / Service Failure Understanding
+- `23.8.md` — Rebuntu — Phase 23.8 — Storage / NVMe / Filesystem Semantic Understanding
+- `23.9.md` — Rebuntu — Phase 23.9 — GPU / NVIDIA / PCIe Semantic Understanding
+- `23.10.md` — Rebuntu — Phase 23.10 — Cross-Source Semantic Correlation
+- `23.11.md` — Rebuntu — Phase 23.11 — Incident Narrative Construction
+- `23.12.md` — Rebuntu — Phase 23.12 — Root-Cause Hypothesis Generation & Ranking
+- `23.13.md` — Rebuntu — Phase 23.13 — Missing-Evidence Reasoning & Evidence Requests
+- `23.14.md` — Rebuntu — Phase 23.14 — Historical Incident Comparison & Recurrence Understanding
+- `23.15.md` — Rebuntu — Phase 23.15 — Phase 21 Predictive-Health Semantic Assistance
+- `23.16.md` — Rebuntu — Phase 23.16 — Semantic Safety, Prompt-Injection & Trust Boundary
+- `23.17.md` — Rebuntu — Phase 23.17 — Deterministic Fallback & BitNet-Unavailable Operation
+- `23.18.md` — Rebuntu — Phase 23.18 — Evaluation, Calibration & Hallucination Testing
+- `23.19.md` — Rebuntu — Phase 23.19 — Operator Explain / Ask-Logs Interface
+- `23.20.md` — Rebuntu — Phase 23.20 — BitNet Log-Understanding Integration & Soak Audit

@@ -1,0 +1,26 @@
+# Phase 94 — Experience & Outcome Model
+
+- 94.0: Bootstrap and repository reality audit
+- 94.1: Canonical ontology and identity
+- 94.2: Definitions and lifecycle
+- 94.3: State ownership and persistence
+- 94.4: Observation evidence provenance freshness
+- 94.5: UNKNOWN and conflicting evidence
+- 94.6: Capability and affordance integration
+- 94.7: Goal and desired-state integration
+- 94.8: Planning and operation integration
+- 94.9: Constraints and invariants
+- 94.10: Resources and topology
+- 94.11: Policy authorization
+- 94.12: Mandatory security
+- 94.13: Privilege and native providers
+- 94.14: Failure timeout cancellation partial effects
+- 94.15: Crash restart reconciliation recovery
+- 94.16: Concurrency races replacement TOCTOU
+- 94.17: Boundedness and budgets
+- 94.18: CLI GUI natural-language integration
+- 94.19: Timeline graph context integration
+- 94.20: Distributed and associated systems
+- 94.21: Python model shell authority audit
+- 94.22: Adversarial build runtime migration audit
+- 94.23: Documentation rediscovery and closure

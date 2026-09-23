@@ -1,0 +1,114 @@
+{
+  "phase": 18,
+  "slug": "capability-registry",
+  "directory": "phase-18-capability-registry",
+  "prompt_count": 21,
+  "layout_version": 2,
+  "prompts": [
+    {
+      "file": "18.0.md",
+      "title": "Rebuntu --- Phase 18.0 --- Capability Architecture",
+      "sha256": "378b88512f8699c571b564d9e9ecb15db26c4e025dbf9d0d2c1baea4931ccd9e"
+    },
+    {
+      "file": "18.1.md",
+      "title": "Rebuntu --- Phase 18.1 --- Capability Inventory",
+      "sha256": "fe6344be0213780eef8e08168813768f8eac566cff18313a40e03b0144b1c1f2"
+    },
+    {
+      "file": "18.2.md",
+      "title": "Rebuntu --- Phase 18.2 --- Capability Discovery",
+      "sha256": "7c0953e4915a2785fef728c653bebaf2c7c6b577a50cc04c014c0cc3cefebcd3"
+    },
+    {
+      "file": "18.3.md",
+      "title": "Rebuntu --- Phase 18.3 --- Capability Search",
+      "sha256": "d18f21046e9fa876e86fa71e6014b9cc049615a240ca3e5db7b17c5c7ede33a5"
+    },
+    {
+      "file": "18.4.md",
+      "title": "Rebuntu --- Phase 18.4 --- Composition Search",
+      "sha256": "d3602f0a6be8dd72dd4075770cc70d41cb84064c4daa32dac80b35813d14baf3"
+    },
+    {
+      "file": "18.5.md",
+      "title": "Rebuntu --- Phase 18.5 --- Native Linux Capability Discovery",
+      "sha256": "a502ca7ed80d6c8b5f1859c6085264d039e85ea420ed9436b25d587e8377f567"
+    },
+    {
+      "file": "18.6.md",
+      "title": "Rebuntu --- Phase 18.6 --- Provider Discovery",
+      "sha256": "a72203c87496ca365c8ad6d043398824a2b88187e1532438badc999f1ba007b4"
+    },
+    {
+      "file": "18.7.md",
+      "title": "Rebuntu --- Phase 18.7 --- Missing-Capability Detection",
+      "sha256": "86b250ff2c481983b975398037f9247155da4ba30d41ed4fd8494d97c1e121a4"
+    },
+    {
+      "file": "18.8.md",
+      "title": "Rebuntu --- Phase 18.8 --- Gap Classification",
+      "sha256": "34269de94ce6cf47b6a510d349088251fbe5d4e93b1141e0b9f3bf3996e1e3a6"
+    },
+    {
+      "file": "18.9.md",
+      "title": "Rebuntu --- Phase 18.9 --- Research Pipeline",
+      "sha256": "1d52cdf2ba5330f693305b3247527dcedc201fd084f0e8fb7958a7193aa31546"
+    },
+    {
+      "file": "18.10.md",
+      "title": "Rebuntu --- Phase 18.10 --- Candidate Implementation",
+      "sha256": "db7263d5f9c5b0e9865f6df9964c7c35c5c3f65aae919796d8096d42ccd647f4"
+    },
+    {
+      "file": "18.11.md",
+      "title": "Rebuntu --- Phase 18.11 --- Sandbox",
+      "sha256": "8bc91d0e5c81bbf6adf87ab34ca2188ca53038f7d3531ddd2ce13ec846d77771"
+    },
+    {
+      "file": "18.12.md",
+      "title": "Rebuntu --- Phase 18.12 --- Test Generation",
+      "sha256": "2ecda8f9f39798a085c9e93739f1bb491788d787f2761f4fba41f039cf637a81"
+    },
+    {
+      "file": "18.13.md",
+      "title": "Rebuntu --- Phase 18.13 --- Capability Verification",
+      "sha256": "5dc0fcc15c3b39eaa8587313c4d0af77caa295eb98069076baa993e247f2d6ae"
+    },
+    {
+      "file": "18.14.md",
+      "title": "Rebuntu --- Phase 18.14 --- Safety Evaluation",
+      "sha256": "a234910b6323806a2b6513dfc44057972ff684f7c26c92649b6748716635c07d"
+    },
+    {
+      "file": "18.15.md",
+      "title": "Rebuntu --- Phase 18.15 --- Acceptance",
+      "sha256": "2750abcdaeb82d20ab20bdf880f3ec9768cdedf69f069dc40ddbfc338755a5f0"
+    },
+    {
+      "file": "18.16.md",
+      "title": "Rebuntu --- Phase 18.16 --- Registration",
+      "sha256": "3ebeed5f7789fa25292bca31d423fd06cedb8c44153d03b06046877d137e4e27"
+    },
+    {
+      "file": "18.17.md",
+      "title": "Rebuntu --- Phase 18.17 --- Capability Versioning",
+      "sha256": "750716e0e7679c5e8eefacf615caa0ef1f86c241cc26223e2f719d113315e60b"
+    },
+    {
+      "file": "18.18.md",
+      "title": "Rebuntu --- Phase 18.18 --- Replacement / Supersession",
+      "sha256": "7b2df414ed2d61d0b819faafce22a0ec7587cfb7b5aa82cb7d87bf2d8ec9dad2"
+    },
+    {
+      "file": "18.19.md",
+      "title": "Rebuntu --- Phase 18.19 --- Capability Learning from Reuse",
+      "sha256": "a115813fef177c264ebfdf698e6cfe22e6f793d28cb9c85de3da8ccb26ba7e30"
+    },
+    {
+      "file": "18.20.md",
+      "title": "Rebuntu --- Phase 18.20 --- Controlled Extension Audit",
+      "sha256": "453bf528492b858c13f4f156675d0c70e31183a9d2ef405bd10a8aa0af9e0629"
+    }
+  ]
+}

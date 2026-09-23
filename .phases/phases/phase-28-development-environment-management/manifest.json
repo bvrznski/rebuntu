@@ -1,0 +1,199 @@
+{
+  "phase": 28,
+  "slug": "development-environment-management",
+  "directory": "phase-28-development-environment-management",
+  "prompt_count": 38,
+  "layout_version": 2,
+  "prompts": [
+    {
+      "file": "28.0-development-environment-management-system-foundation.md",
+      "title": "Phase 28.0 — Development Environment Management System Foundation",
+      "sha256": "6d610a8e20a0b0c8704974fb313c709944924c08266b09f7fefc1835e0965a97"
+    },
+    {
+      "file": "28.1-development-domain-model.md",
+      "title": "Phase 28.1 — Development Domain Model",
+      "sha256": "98b4e4ac4a3922dd3378e7557ed5b25389dea054f95a501ebe033da098fd3342"
+    },
+    {
+      "file": "28.2-project-discovery-identity.md",
+      "title": "Phase 28.2 — Project Discovery & Identity",
+      "sha256": "db7532f73caf43c9f62e45617f7234e2be8c3038af305d97e7a81baea4e7806a"
+    },
+    {
+      "file": "28.3-repository-discovery-vcs-boundary.md",
+      "title": "Phase 28.3 — Repository Discovery & VCS Boundary",
+      "sha256": "9d9ecb6d1b227b7a75395ab685f60b944c086d9a0a501d042f7761669a601d38"
+    },
+    {
+      "file": "28.4-project-repository-relationship-model.md",
+      "title": "Phase 28.4 — Project / Repository Relationship Model",
+      "sha256": "43752b90f7c2311be358492ba57221468e842626a275f5ed23771c1803852398"
+    },
+    {
+      "file": "28.5-development-environment-fingerprint.md",
+      "title": "Phase 28.5 — Development Environment Fingerprint",
+      "sha256": "58448b5d9637fe6c43ef0f2308b3da2ad1ec5c891918ba907f83e84396750619"
+    },
+    {
+      "file": "28.6-language-runtime-discovery.md",
+      "title": "Phase 28.6 — Language Runtime Discovery",
+      "sha256": "0e4d6026def20a8c560f7ec19688d3839d7e3c6a5a28de6899a4bec354f2bc76"
+    },
+    {
+      "file": "28.7-python-environment-integration.md",
+      "title": "Phase 28.7 — Python Environment Integration",
+      "sha256": "244361dab2ac9ec30ec965a9c3bf14ee0bb8adfcb059eab64cf97372e916280b"
+    },
+    {
+      "file": "28.8-c-c-toolchain-integration.md",
+      "title": "Phase 28.8 — C & C++ Toolchain Integration",
+      "sha256": "83df7851deb3e8237f4e67f08e2e5ccb1a44406c754888593058ca87d8945928"
+    },
+    {
+      "file": "28.9-node-js-typescript-toolchain-integration.md",
+      "title": "Phase 28.9 — Node.js & TypeScript Toolchain Integration",
+      "sha256": "bf2337fb06de4fbf35eb49044bd4fda57d81dbae3a9e49bd49422a70b6c99fe3"
+    },
+    {
+      "file": "28.10-toolchain-selection-precedence.md",
+      "title": "Phase 28.10 — Toolchain Selection & Precedence",
+      "sha256": "3d0fea66337e29029c59dd2e0200da1c0d620d49046baf01b038a73e8d79d5d7"
+    },
+    {
+      "file": "28.11-build-system-discovery.md",
+      "title": "Phase 28.11 — Build System Discovery",
+      "sha256": "5150feab8cb41fda8cb26af466cadbcd77d8302b5fb4aaebd6b96bdd5b9c2b59"
+    },
+    {
+      "file": "28.12-build-configuration-model.md",
+      "title": "Phase 28.12 — Build Configuration Model",
+      "sha256": "6d2cfd1f981f9a9f56e5628594205a6070295f158c6c17dfd4b2cc5eb72368a8"
+    },
+    {
+      "file": "28.13-task-discovery-registry.md",
+      "title": "Phase 28.13 — Task Discovery & Registry",
+      "sha256": "adc2aabdfae5fa3e405038bbb6dea7091ac8eb786f1091f1a90141e3112af51d"
+    },
+    {
+      "file": "28.14-task-execution-boundary.md",
+      "title": "Phase 28.14 — Task Execution Boundary",
+      "sha256": "1b3d05a767e4ec7e9929562d501b08699267d70b6af1427a7475e16610db0c55"
+    },
+    {
+      "file": "28.15-test-framework-discovery.md",
+      "title": "Phase 28.15 — Test Framework Discovery",
+      "sha256": "64159c02b8fd932accde9d8ed6c48412a4992c02fe387e8f14c8a0328a9e64a7"
+    },
+    {
+      "file": "28.16-linting-formatting-integration.md",
+      "title": "Phase 28.16 — Linting & Formatting Integration",
+      "sha256": "74b0321fbb978c7bae9ad29f2e59be51d6eb6f76b6aca515620a7955a4ffdf1e"
+    },
+    {
+      "file": "28.17-dependency-lockfile-inventory.md",
+      "title": "Phase 28.17 — Dependency & Lockfile Inventory",
+      "sha256": "3c75b7c672bfcde30aa2c0a8519fc8ab58bf52c33b2380065046fdcae413b0ac"
+    },
+    {
+      "file": "28.18-project-environment-direnv-integration.md",
+      "title": "Phase 28.18 — Project Environment & direnv Integration",
+      "sha256": "21fddb314d110aaf4d38a456647748f5036f75fef707638c7832658863c8fa0b"
+    },
+    {
+      "file": "28.19-ide-editor-integration-model.md",
+      "title": "Phase 28.19 — IDE & Editor Integration Model",
+      "sha256": "030946ce7ffcfe41a425a3166993fd5a47277a0b7b94952e30ea159e846e40ee"
+    },
+    {
+      "file": "28.20-vs-code-integration.md",
+      "title": "Phase 28.20 — VS Code Integration",
+      "sha256": "3d4a52b6e56b64e78d46c53e3028a6f43323c97acfc3b39cdcbe4ad4fc1458e0"
+    },
+    {
+      "file": "28.21-coding-agent-runtime-boundary.md",
+      "title": "Phase 28.21 — Coding Agent Runtime Boundary",
+      "sha256": "b952aa7f67f52527bb5a3944c603df373806e88820bf8a61516637255cfc30b9"
+    },
+    {
+      "file": "28.22-cline-integration.md",
+      "title": "Phase 28.22 — Cline Integration",
+      "sha256": "ede082fca45707a2d8cf771e0f9d5e60c8cb98b1724a1d50af14222b7a7884be"
+    },
+    {
+      "file": "28.23-codex-coding-agent-integration.md",
+      "title": "Phase 28.23 — Codex / Coding Agent Integration",
+      "sha256": "712c4830418db0c24669d76f3525c9c10d5cbb22ac67113688a398ca4a7347d1"
+    },
+    {
+      "file": "28.24-agent-repository-discovery-guidance.md",
+      "title": "Phase 28.24 — Agent Repository Discovery Guidance",
+      "sha256": "5e96a96bea511c3738975ff6bf28831f5baf46ae87b87e6fe3b3d52c6abefd96"
+    },
+    {
+      "file": "28.25-development-session-model.md",
+      "title": "Phase 28.25 — Development Session Model",
+      "sha256": "fc5784ab0f3f67bcaf73d23aa044bcf2a7454114c2741db54fbe70410cd949e2"
+    },
+    {
+      "file": "28.26-project-context-resolution.md",
+      "title": "Phase 28.26 — Project Context Resolution",
+      "sha256": "b8f4042b0e296484514c91838023b794d748330ec0b94d287eb138d3d8a6b9c3"
+    },
+    {
+      "file": "28.27-development-context-search-explainability.md",
+      "title": "Phase 28.27 — Development Context Search & Explainability",
+      "sha256": "698cc5cb65f0d9fe093d956dfbc61be7d1bc7d56864ef5c5acfef6cf9e93a627"
+    },
+    {
+      "file": "28.28-development-environment-health.md",
+      "title": "Phase 28.28 — Development Environment Health",
+      "sha256": "87a31b5368e6974166ab96c8a6ae5996e7ee08e41a867dee73d2ea255dc586f2"
+    },
+    {
+      "file": "28.29-development-configuration-ownership-drift.md",
+      "title": "Phase 28.29 — Development Configuration Ownership & Drift",
+      "sha256": "a7661b8c01ca3ccd820dd7f7a4555d086c7c340cb51c065af212f5dd583a2bb7"
+    },
+    {
+      "file": "28.30-development-environment-snapshot-reproduction-metadata.md",
+      "title": "Phase 28.30 — Development Environment Snapshot & Reproduction Metadata",
+      "sha256": "f1275ddfb481964d176c1c1e8e5733779316343dce946a2e8fadaf2cf6e2abfe"
+    },
+    {
+      "file": "28.31-gpu-cuda-development-context-integration.md",
+      "title": "Phase 28.31 — GPU / CUDA Development Context Integration",
+      "sha256": "a26e6de5569b52da92b6a321dd23ab562b2d9bdae4133f3cb3699cc15b45a009"
+    },
+    {
+      "file": "28.32-containerized-development-context.md",
+      "title": "Phase 28.32 — Containerized Development Context",
+      "sha256": "f0565659a24037b6bff37815ff02cbe63dd2c8f4ae05d0dde61462ba3a44d550"
+    },
+    {
+      "file": "28.33-development-management-cli.md",
+      "title": "Phase 28.33 — Development Management CLI",
+      "sha256": "e5d74bf15dab652babb09dcee19492c5fb987f0fa4ed8934b2a47d6be2433037"
+    },
+    {
+      "file": "28.34-phase-25-panel-integration-api.md",
+      "title": "Phase 28.34 — Phase 25 Panel Integration API",
+      "sha256": "98471e5bb0b5c385e2c424a946f781dcc3c01f6ba1b665585b8a0a36c401fa82"
+    },
+    {
+      "file": "28.35-cross-phase-integration-ownership-audit.md",
+      "title": "Phase 28.35 — Cross-Phase Integration & Ownership Audit",
+      "sha256": "d621c0e9969fcc0aa39381b515970cbc8491232ecf3b88075d29f8f2cf62695d"
+    },
+    {
+      "file": "28.36-failure-injection-compatibility-recovery-testing.md",
+      "title": "Phase 28.36 — Failure Injection, Compatibility & Recovery Testing",
+      "sha256": "b681a9272fd63f28a717eaedfcaf931d4cf62948ffd1e2aca890cd2923fe70a7"
+    },
+    {
+      "file": "28.37-development-environment-management-system-closure-readiness-gate.md",
+      "title": "Phase 28.37 — Development Environment Management System Closure & Readiness Gate",
+      "sha256": "b2ad98349587f2efe0725a4f27610aa894ac2245c9007b1dfdc3e5fc741e5a73"
+    }
+  ]
+}

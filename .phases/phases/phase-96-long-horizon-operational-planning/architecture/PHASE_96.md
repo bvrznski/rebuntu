@@ -1,0 +1,26 @@
+# Phase 96 — Long-Horizon Operational Planning System
+
+- 96.0: Bootstrap and repository reality audit
+- 96.1: Canonical ontology and identity
+- 96.2: Definitions and lifecycle
+- 96.3: State ownership and persistence
+- 96.4: Observation evidence provenance freshness
+- 96.5: UNKNOWN and conflicting evidence
+- 96.6: Capability and affordance integration
+- 96.7: Goal and desired-state integration
+- 96.8: Planning and operation integration
+- 96.9: Constraints and invariants
+- 96.10: Resources and topology
+- 96.11: Policy authorization
+- 96.12: Mandatory security
+- 96.13: Privilege and native providers
+- 96.14: Failure timeout cancellation partial effects
+- 96.15: Crash restart reconciliation recovery
+- 96.16: Concurrency races replacement TOCTOU
+- 96.17: Boundedness and budgets
+- 96.18: CLI GUI natural-language integration
+- 96.19: Timeline graph context integration
+- 96.20: Distributed and associated systems
+- 96.21: Python model shell authority audit
+- 96.22: Adversarial build runtime migration audit
+- 96.23: Documentation rediscovery and closure

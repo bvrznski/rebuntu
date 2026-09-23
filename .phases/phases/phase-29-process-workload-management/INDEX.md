@@ -1,0 +1,50 @@
+# Prompt Index
+
+- `29.0-process-workload-management-system-foundation.md` — Phase 29.0 — Process & Workload Management System Foundation
+- `29.1-process-domain-model.md` — Phase 29.1 — Process Domain Model
+- `29.2-stable-process-identity.md` — Phase 29.2 — Stable Process Identity
+- `29.3-process-discovery-provider.md` — Phase 29.3 — Process Discovery Provider
+- `29.4-process-lifecycle-observation.md` — Phase 29.4 — Process Lifecycle Observation
+- `29.5-parent-child-process-relationships.md` — Phase 29.5 — Parent / Child Process Relationships
+- `29.6-process-tree-forest-model.md` — Phase 29.6 — Process Tree & Forest Model
+- `29.7-process-state-semantics.md` — Phase 29.7 — Process State Semantics
+- `29.8-process-command-executable-provenance.md` — Phase 29.8 — Process Command & Executable Provenance
+- `29.9-process-user-identity-context.md` — Phase 29.9 — Process User / Identity Context
+- `29.10-process-session-tty-context.md` — Phase 29.10 — Process Session / TTY Context
+- `29.11-process-resource-observation.md` — Phase 29.11 — Process Resource Observation
+- `29.12-process-open-resource-evidence.md` — Phase 29.12 — Process Open-Resource Evidence
+- `29.13-process-namespace-container-context.md` — Phase 29.13 — Process Namespace & Container Context
+- `29.14-process-group-session-semantics.md` — Phase 29.14 — Process Group & Session Semantics
+- `29.15-workload-domain-model.md` — Phase 29.15 — Workload Domain Model
+- `29.16-workload-identity.md` — Phase 29.16 — Workload Identity
+- `29.17-workload-membership-evidence.md` — Phase 29.17 — Workload Membership Evidence
+- `29.18-workload-discovery.md` — Phase 29.18 — Workload Discovery
+- `29.19-workload-hierarchy-composition.md` — Phase 29.19 — Workload Hierarchy & Composition
+- `29.20-workload-classification.md` — Phase 29.20 — Workload Classification
+- `29.21-workload-priority-protection.md` — Phase 29.21 — Workload Priority & Protection
+- `29.22-foreground-interactive-workload-protection.md` — Phase 29.22 — Foreground & Interactive Workload Protection
+- `29.23-desktop-display-critical-protection.md` — Phase 29.23 — Desktop / Display Critical Protection
+- `29.24-rebuntu-control-plane-protection.md` — Phase 29.24 — Rebuntu Control Plane Protection
+- `29.25-service-workload-integration.md` — Phase 29.25 — Service Workload Integration
+- `29.26-development-workload-integration.md` — Phase 29.26 — Development Workload Integration
+- `29.27-container-workload-integration.md` — Phase 29.27 — Container Workload Integration
+- `29.28-gpu-accelerator-workload-integration.md` — Phase 29.28 — GPU / Accelerator Workload Integration
+- `29.29-lifecycle-action-model.md` — Phase 29.29 — Lifecycle Action Model
+- `29.30-graceful-stop-semantics.md` — Phase 29.30 — Graceful Stop Semantics
+- `29.31-signal-delivery-planning.md` — Phase 29.31 — Signal Delivery Planning
+- `29.32-termination-escalation-policy.md` — Phase 29.32 — Termination Escalation Policy
+- `29.33-suspend-resume-semantics.md` — Phase 29.33 — Suspend / Resume Semantics
+- `29.34-bulk-action-safety.md` — Phase 29.34 — Bulk Action Safety
+- `29.35-dependency-impact-analysis.md` — Phase 29.35 — Dependency & Impact Analysis
+- `29.36-race-safe-target-revalidation.md` — Phase 29.36 — Race-Safe Target Revalidation
+- `29.37-process-exit-zombie-handling.md` — Phase 29.37 — Process Exit & Zombie Handling
+- `29.38-orphan-reparenting-semantics.md` — Phase 29.38 — Orphan / Reparenting Semantics
+- `29.39-runaway-process-diagnostics.md` — Phase 29.39 — Runaway Process Diagnostics
+- `29.40-stuck-unresponsive-workload-diagnostics.md` — Phase 29.40 — Stuck / Unresponsive Workload Diagnostics
+- `29.41-process-workload-search-explainability.md` — Phase 29.41 — Process & Workload Search / Explainability
+- `29.42-process-workload-management-cli.md` — Phase 29.42 — Process & Workload Management CLI
+- `29.43-phase-25-panel-integration-api.md` — Phase 29.43 — Phase 25 Panel Integration API
+- `29.44-event-timeline-integration.md` — Phase 29.44 — Event / Timeline Integration
+- `29.45-failure-injection-race-testing.md` — Phase 29.45 — Failure Injection & Race Testing
+- `29.46-cross-phase-ownership-safety-audit.md` — Phase 29.46 — Cross-Phase Ownership & Safety Audit
+- `29.47-process-workload-management-system-closure-readiness-gate.md` — Phase 29.47 — Process & Workload Management System Closure & Readiness Gate

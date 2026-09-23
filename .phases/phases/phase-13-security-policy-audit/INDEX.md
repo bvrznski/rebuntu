@@ -1,0 +1,21 @@
+# Prompt Index
+
+- `13.0.md` — Rebuntu --- Phase 13.0 --- Security Architecture
+- `13.1.md` — Rebuntu --- Phase 13.1 --- Identity & Authentication Boundaries
+- `13.2.md` — Rebuntu --- Phase 13.2 --- Authorization
+- `13.3.md` — Rebuntu --- Phase 13.3 --- Privilege
+- `13.4.md` — Rebuntu --- Phase 13.4 --- Capability-Based Access
+- `13.5.md` — Rebuntu --- Phase 13.5 --- Scope Enforcement
+- `13.6.md` — Rebuntu --- Phase 13.6 --- Policy Enforcement
+- `13.7.md` — Rebuntu --- Phase 13.7 --- Secrets
+- `13.8.md` — Rebuntu --- Phase 13.8 --- Filesystem Protection
+- `13.9.md` — Rebuntu --- Phase 13.9 --- Process / Service Protection
+- `13.10.md` — Rebuntu --- Phase 13.10 --- Network Protection
+- `13.11.md` — Rebuntu --- Phase 13.11 --- Operation Safety
+- `13.12.md` — Rebuntu --- Phase 13.12 --- Destructive-Action Controls
+- `13.13.md` — Rebuntu --- Phase 13.13 --- Audit Trail
+- `13.14.md` — Rebuntu --- Phase 13.14 --- Security Assertions
+- `13.15.md` — Rebuntu --- Phase 13.15 --- Anomaly Response
+- `13.16.md` — Rebuntu --- Phase 13.16 --- Quarantine
+- `13.17.md` — Rebuntu --- Phase 13.17 --- Security Recovery
+- `13.18.md` — Rebuntu --- Phase 13.18 --- Security Hardening Audit

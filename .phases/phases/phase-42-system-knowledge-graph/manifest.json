@@ -1,0 +1,9 @@
+{
+  "phase": "42",
+  "name": "System Knowledge Graph",
+  "full_prompt_count": 120,
+  "architecture_documents": 12,
+  "entrypoint": "README.md",
+  "runtime": "C++-first",
+  "core_invariant": "graph path != causality"
+}

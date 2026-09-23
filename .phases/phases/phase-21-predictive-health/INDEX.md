@@ -1,0 +1,23 @@
+# Prompt Index
+
+- `21.0.md` — Rebuntu — Phase 21.0 — Predictive System Health Architecture
+- `21.1.md` — Rebuntu — Phase 21.1 — Health Signal Acquisition
+- `21.2.md` — Rebuntu — Phase 21.2 — Kernel Health & Stall Signals
+- `21.3.md` — Rebuntu — Phase 21.3 — CPU Load, Scheduler Pressure & Starvation
+- `21.4.md` — Rebuntu — Phase 21.4 — Memory Pressure, Reclaim, Swap & OOM Risk
+- `21.5.md` — Rebuntu — Phase 21.5 — Storage / NVMe / Filesystem Failure Precursors
+- `21.6.md` — Rebuntu — Phase 21.6 — GPU / Driver / PCIe Failure Precursors
+- `21.7.md` — Rebuntu — Phase 21.7 — Thermal & Power Instability
+- `21.8.md` — Rebuntu — Phase 21.8 — Process / Service Resource Pathology
+- `21.9.md` — Rebuntu — Phase 21.9 — PSI Integration
+- `21.10.md` — Rebuntu — Phase 21.10 — Health Baseline & Host-Specific Normality
+- `21.11.md` — Rebuntu — Phase 21.11 — Trend, Rate-of-Change & Persistence Analysis
+- `21.12.md` — Rebuntu — Phase 21.12 — Cross-Signal Correlation
+- `21.13.md` — Rebuntu — Phase 21.13 — System Health State Model
+- `21.14.md` — Rebuntu — Phase 21.14 — Failure-Risk Estimation
+- `21.15.md` — Rebuntu — Phase 21.15 — Crash / Hang Prediction
+- `21.16.md` — Rebuntu — Phase 21.16 — Preventive Intervention Planning
+- `21.17.md` — Rebuntu — Phase 21.17 — Preventive Operations & Load Shedding
+- `21.18.md` — Rebuntu — Phase 21.18 — Emergency Evidence Preservation
+- `21.19.md` — Rebuntu — Phase 21.19 — Post-Reboot Prediction Validation & Learning
+- `21.20.md` — Rebuntu — Phase 21.20 — Predictive Health Soak / Fault-Injection Audit

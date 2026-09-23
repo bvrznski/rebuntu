@@ -1,0 +1,86 @@
+# Prompt Index
+
+- `8.0.md` — Rebuntu — Phase 8.0 — Event Architecture
+- `8.1.md` — Rebuntu — Phase 8.1 — Event Sources
+- `8.2.md` — Rebuntu — Phase 8.2 — Event Normalization
+- `8.3.md` — Rebuntu — Phase 8.3 — Fact Generation
+- `8.4.md` — Rebuntu — Phase 8.4 — Assertions
+- `8.5.md` — Rebuntu — Phase 8.5 — Conditions
+- `8.6.md` — Rebuntu — Phase 8.6 — Invariants
+- `8.7.md` — Rebuntu — Phase 8.7 — Constraints
+- `8.8.md` — Rebuntu — Phase 8.8 — Rules
+- `8.9.md` — Rebuntu — Phase 8.9 — Violations
+- `8.10.md` — Rebuntu — Phase 8.10 — Temporal Conditions
+- `8.11.md` — Rebuntu — Phase 8.11 — Event Correlation
+- `8.12.md` — Rebuntu — Phase 8.12 — Temporal Correlation
+- `8.13.md` — Rebuntu — Phase 8.13 — Causal Chains
+- `8.14.md` — Rebuntu — Phase 8.14 — Event Storm Handling
+- `8.15.md` — Rebuntu — Phase 8.15 — Internal Alerts
+- `8.16.md` — Rebuntu — Phase 8.16 — Evidence Requests
+- `8.17.md` — Rebuntu — Phase 8.17 — Escalation
+- `8.18.md` — Rebuntu — Phase 8.18 — Event / Assertion Integration Audit
+- `8.19_systemd_sandboxing_profile.md` — Rebuntu — Phase 8
+- `8.20_seccomp_boundary_assessment.md` — Rebuntu — Phase 8
+- `8.21_filesystem_namespace_restriction.md` — Rebuntu — Phase 8
+- `8.22_environment_sanitization.md` — Rebuntu — Phase 8
+- `8.23_executable_identity.md` — Rebuntu — Phase 8
+- `8.24_file_descriptor_hygiene.md` — Rebuntu — Phase 8
+- `8.25_working-directory_and_umask_hygiene.md` — Rebuntu — Phase 8
+- `8.26_temporary-file_safety.md` — Rebuntu — Phase 8
+- `8.27_secret_material_isolation.md` — Rebuntu — Phase 8
+- `8.28_credential_provider_boundary.md` — Rebuntu — Phase 8
+- `8.29_polkit_action_design.md` — Rebuntu — Phase 8
+- `8.30_polkit_subject_binding.md` — Rebuntu — Phase 8
+- `8.31_interactive_authentication_separation.md` — Rebuntu — Phase 8
+- `8.32_sudo_eradication_from_core.md` — Rebuntu — Phase 8
+- `8.33_setuid_audit.md` — Rebuntu — Phase 8
+- `8.34_root-daemon_necessity_audit.md` — Rebuntu — Phase 8
+- `8.35_split-process_architecture.md` — Rebuntu — Phase 8
+- `8.36_privilege-boundary_protocol_versioning.md` — Rebuntu — Phase 8
+- `8.37_message_size_and_resource_bounds.md` — Rebuntu — Phase 8
+- `8.38_rate_limiting_and_abuse_bounds.md` — Rebuntu — Phase 8
+- `8.39_cancellation_semantics.md` — Rebuntu — Phase 8
+- `8.40_timeout_semantics.md` — Rebuntu — Phase 8
+- `8.41_partial_failure_semantics.md` — Rebuntu — Phase 8
+- `8.42_verification_after_privilege_boundary.md` — Rebuntu — Phase 8
+- `8.43_helper_crash_recovery.md` — Rebuntu — Phase 8
+- `8.44_helper_restart_semantics.md` — Rebuntu — Phase 8
+- `8.45_ipc_transport_selection.md` — Rebuntu — Phase 8
+- `8.46_unix_socket_hardening.md` — Rebuntu — Phase 8
+- `8.47_d-bus_hardening.md` — Rebuntu — Phase 8
+- `8.48_socket_activation.md` — Rebuntu — Phase 8
+- `8.49_privileged_service_readiness.md` — Rebuntu — Phase 8
+- `8.50_privilege_audit_logging.md` — Rebuntu — Phase 8
+- `8.51_tamper-evident_evidence_preparation.md` — Rebuntu — Phase 8
+- `8.52_error_disclosure_control.md` — Rebuntu — Phase 8
+- `8.53_untrusted_input_parser_audit.md` — Rebuntu — Phase 8
+- `8.54_fuzz_privileged_request_parsing.md` — Rebuntu — Phase 8
+- `8.55_command_injection_tests.md` — Rebuntu — Phase 8
+- `8.56_path_traversal_and_symlink_tests.md` — Rebuntu — Phase 8
+- `8.57_toctou_race_tests.md` — Rebuntu — Phase 8
+- `8.58_replay_and_stale-authorization_tests.md` — Rebuntu — Phase 8
+- `8.59_peer_spoofing_tests.md` — Rebuntu — Phase 8
+- `8.60_privilege_escalation_tests.md` — Rebuntu — Phase 8
+- `8.61_direct-helper_bypass_tests.md` — Rebuntu — Phase 8
+- `8.62_provider_bypass_tests.md` — Rebuntu — Phase 8
+- `8.63_python_privilege_eradication.md` — Rebuntu — Phase 8
+- `8.64_shell_privilege_eradication.md` — Rebuntu — Phase 8
+- `8.65_historical_privilege_archaeology.md` — Rebuntu — Phase 8
+- `8.66_privilege_tcb_inventory.md` — Rebuntu — Phase 8
+- `8.67_attack-surface_reduction_audit.md` — Rebuntu — Phase 8
+- `8.68_dependency_trust_audit.md` — Rebuntu — Phase 8
+- `8.69_build_hardening.md` — Rebuntu — Phase 8
+- `8.70_sanitizer_pass.md` — Rebuntu — Phase 8
+- `8.71_contained_privileged-operation_test_harness.md` — Rebuntu — Phase 8
+- `8.72_end-to-end_privilege_integration_test.md` — Rebuntu — Phase 8
+- `8.73_denied-operation_no-effect_test.md` — Rebuntu — Phase 8
+- `8.74_helper-unavailable_degradation_test.md` — Rebuntu — Phase 8
+- `8.75_python_semantic_absence_test.md` — Rebuntu — Phase 8
+- `8.76_build_and_runtime_reachability_audit.md` — Rebuntu — Phase 8
+- `8.77_documentation_and_agents_synchronization.md` — Rebuntu — Phase 8
+- `8.78_first_closure_audit.md` — Rebuntu — Phase 8
+- `8.79_adversarial_confused-deputy_audit.md` — Rebuntu — Phase 8
+- `8.80_adversarial_compromised-caller_simulation.md` — Rebuntu — Phase 8
+- `8.81_adversarial_compromised-semantic-service_simulation.md` — Rebuntu — Phase 8
+- `8.82_independent_second_rediscovery.md` — Rebuntu — Phase 8
+- `8.83_phase_8_final_closure.md` — Rebuntu — Phase 8

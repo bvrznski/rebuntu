@@ -1,0 +1,26 @@
+# Phase 67 — Recovery, Repair & Self-Healing System
+
+- 67.0: Bootstrap and repository reality audit
+- 67.1: Canonical ontology and identity
+- 67.2: Definitions and lifecycle
+- 67.3: State ownership and persistence
+- 67.4: Observation evidence provenance freshness
+- 67.5: UNKNOWN and conflicting evidence
+- 67.6: Capability and affordance integration
+- 67.7: Goal and desired-state integration
+- 67.8: Planning and operation integration
+- 67.9: Constraints and invariants
+- 67.10: Resources and topology
+- 67.11: Policy authorization
+- 67.12: Mandatory security
+- 67.13: Privilege and native providers
+- 67.14: Failure timeout cancellation partial effects
+- 67.15: Crash restart reconciliation recovery
+- 67.16: Concurrency races replacement TOCTOU
+- 67.17: Boundedness and budgets
+- 67.18: CLI GUI natural-language integration
+- 67.19: Timeline graph context integration
+- 67.20: Distributed and associated systems
+- 67.21: Python model shell authority audit
+- 67.22: Adversarial build runtime migration audit
+- 67.23: Documentation rediscovery and closure

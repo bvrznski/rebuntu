@@ -1,0 +1,254 @@
+{
+  "phase": 31,
+  "slug": "service-management",
+  "directory": "phase-31-service-management",
+  "prompt_count": 49,
+  "layout_version": 2,
+  "prompts": [
+    {
+      "file": "31.0-service-management-system-foundation.md",
+      "title": "Phase 31.0 — Service Management System Foundation",
+      "sha256": "1e8cda0b9c23c7633d3d6477e1fb57806a453b63820ec0bfc273f7811075968b"
+    },
+    {
+      "file": "31.1-service-domain-model.md",
+      "title": "Phase 31.1 — Service Domain Model",
+      "sha256": "cc3776897454def69d14c85709268b2586bfe692403a53da64ee2c5bd1f65dd9"
+    },
+    {
+      "file": "31.2-service-provider-discovery.md",
+      "title": "Phase 31.2 — Service Provider Discovery",
+      "sha256": "787014785a0e02bce1ac91c0d0f1c9a5ec4c115c0435a4e5fdaadd7b7d7db7ab"
+    },
+    {
+      "file": "31.3-systemd-provider-adapter.md",
+      "title": "Phase 31.3 — systemd Provider Adapter",
+      "sha256": "af8023334216756141f168fe970f383f8cfa62148f6627676819c0c87c0bc31c"
+    },
+    {
+      "file": "31.4-system-vs-user-service-managers.md",
+      "title": "Phase 31.4 — System vs User Service Managers",
+      "sha256": "9fc95dc9bf917cef7794b638e3407c8c402493cfb11d0af22d4e1c0bbca0f0ca"
+    },
+    {
+      "file": "31.5-unit-identity-stable-references.md",
+      "title": "Phase 31.5 — Unit Identity & Stable References",
+      "sha256": "80923c2b8fbd8073160467fa84dfcfc8851a9d5bb33529a8438be301f8b5a991"
+    },
+    {
+      "file": "31.6-unit-type-semantics.md",
+      "title": "Phase 31.6 — Unit Type Semantics",
+      "sha256": "2a95d03c9856fa0aa200f05befb68481f8ce832bcbddef50d5bb01f11038fc59"
+    },
+    {
+      "file": "31.7-service-discovery-inventory.md",
+      "title": "Phase 31.7 — Service Discovery & Inventory",
+      "sha256": "a8d2f06aa809a2f3d64fd1cfa9ed26195aff3f4572c3151230394182dc9d5967"
+    },
+    {
+      "file": "31.8-loaded-enabled-running-healthy-separation.md",
+      "title": "Phase 31.8 — Loaded / Enabled / Running / Healthy Separation",
+      "sha256": "7f48f6c525d0264af4a92df52e9dce7372071e5e45b8aec59865a5922b173c19"
+    },
+    {
+      "file": "31.9-service-state-observation.md",
+      "title": "Phase 31.9 — Service State Observation",
+      "sha256": "cc612bf3b239b231ff9a8c5a5b445e56ec013baad985e7e6274f5f678e762a5d"
+    },
+    {
+      "file": "31.10-service-configuration-provenance.md",
+      "title": "Phase 31.10 — Service Configuration Provenance",
+      "sha256": "f711a0d51a6ed098da03b5a1644be604a5715277b2dd3b00937c828dce3845dd"
+    },
+    {
+      "file": "31.11-unit-file-drop-in-discovery.md",
+      "title": "Phase 31.11 — Unit File & Drop-In Discovery",
+      "sha256": "335bf18f15c1ffdff50ca42738ac68b6999126334e7bf7933291ad5e5ad2f9f6"
+    },
+    {
+      "file": "31.12-enablement-semantics.md",
+      "title": "Phase 31.12 — Enablement Semantics",
+      "sha256": "ef5a4d7839a567fc368580a943e34f8fc58690a1feb34af560f8761beb56e279"
+    },
+    {
+      "file": "31.13-activation-semantics.md",
+      "title": "Phase 31.13 — Activation Semantics",
+      "sha256": "9adcb82aae6735fe6ce89aa7186a63548b36333b85b4f334430498ee70f72253"
+    },
+    {
+      "file": "31.14-start-stop-restart-lifecycle-model.md",
+      "title": "Phase 31.14 — Start / Stop / Restart Lifecycle Model",
+      "sha256": "507bb3e2723f7bc6336b4f29e1f92ed774c3b15247057ec438d1d88b47fe2bc0"
+    },
+    {
+      "file": "31.15-reload-semantics.md",
+      "title": "Phase 31.15 — Reload Semantics",
+      "sha256": "40286c1582c365d2167d665e788ca9daf722c34c68124ea8d6337b626f2e4d73"
+    },
+    {
+      "file": "31.16-daemon-reload-boundary.md",
+      "title": "Phase 31.16 — Daemon Reload Boundary",
+      "sha256": "c7cfb8d5664306d9bd158982df4065dfba2eb726ed7a547fda59a834ffc31607"
+    },
+    {
+      "file": "31.17-service-dependency-model.md",
+      "title": "Phase 31.17 — Service Dependency Model",
+      "sha256": "ac8fe0720b149f2907ed68e19b238c39dbd8ad809929d9e4c3883f12159762a5"
+    },
+    {
+      "file": "31.18-ordering-vs-requirement-semantics.md",
+      "title": "Phase 31.18 — Ordering vs Requirement Semantics",
+      "sha256": "a7f3b29c0e5b23a2f1b96451c2d1c87fef96ebbd264303a10aabb03c49e61ca4"
+    },
+    {
+      "file": "31.19-socket-activation-integration.md",
+      "title": "Phase 31.19 — Socket Activation Integration",
+      "sha256": "7504ffb43da6369d2b412f365c47538971e5c75b3d60060a9f4e5768018c4973"
+    },
+    {
+      "file": "31.20-timer-activation-integration.md",
+      "title": "Phase 31.20 — Timer Activation Integration",
+      "sha256": "7ff595013c23f067cfd91f1b0095e0f547bd61f3f9e884bfc57056ca0b5134d1"
+    },
+    {
+      "file": "31.21-path-device-bus-activation-context.md",
+      "title": "Phase 31.21 — Path / Device / Bus Activation Context",
+      "sha256": "c31f1292257ace78f6aa9fa63695419d87cd1ffc0d587e4309237b1219876da5"
+    },
+    {
+      "file": "31.22-template-instance-unit-semantics.md",
+      "title": "Phase 31.22 — Template & Instance Unit Semantics",
+      "sha256": "8a79923230ab3cfecc01f7e26f91706e21c27ed732a437dccb0dab1d3feddc93"
+    },
+    {
+      "file": "31.23-transient-units-scopes.md",
+      "title": "Phase 31.23 — Transient Units & Scopes",
+      "sha256": "1113683641605635516313ea772c004f48a585477c18eddefb1d29a969ba37d4"
+    },
+    {
+      "file": "31.24-service-process-workload-integration.md",
+      "title": "Phase 31.24 — Service Process / Workload Integration",
+      "sha256": "471f93b95e9cbde295693ad9285866ab2c2ca0d6b17c2948bc625e3267d912c6"
+    },
+    {
+      "file": "31.25-service-resource-integration.md",
+      "title": "Phase 31.25 — Service Resource Integration",
+      "sha256": "4c8f7e18f5e410cc1a826b49b19ae38145e59b924b22f38b86101fc3f9628d96"
+    },
+    {
+      "file": "31.26-service-user-identity-context.md",
+      "title": "Phase 31.26 — Service User & Identity Context",
+      "sha256": "88a03da7ac1843d6bf65a72bea57ecf27a5c9dbd3efb4ea7983f299c04b5b117"
+    },
+    {
+      "file": "31.27-service-environment-secret-boundary.md",
+      "title": "Phase 31.27 — Service Environment & Secret Boundary",
+      "sha256": "358ccd4429a234a71c2ee0bd5f69a2d70c692653eb779f1bdc15a7dcc619b0ec"
+    },
+    {
+      "file": "31.28-service-logging-journal-integration.md",
+      "title": "Phase 31.28 — Service Logging & Journal Integration",
+      "sha256": "1311d5a37c763eeec65e5fcd93fc71c5dc2c4a8bf68bd2eb1d6d0257e14f0ce5"
+    },
+    {
+      "file": "31.29-service-health-model.md",
+      "title": "Phase 31.29 — Service Health Model",
+      "sha256": "9c9ea5258cce1e5793bd2852c7ce2aa3c3d892c9db808c8900574982ee0b39eb"
+    },
+    {
+      "file": "31.30-readiness-vs-liveness-semantics.md",
+      "title": "Phase 31.30 — Readiness vs Liveness Semantics",
+      "sha256": "52863687f081d5f6a5b4efd0756b658508e15c0a64361045139e0dd105639a48"
+    },
+    {
+      "file": "31.31-failure-restart-policy-semantics.md",
+      "title": "Phase 31.31 — Failure & Restart Policy Semantics",
+      "sha256": "1be2166ba42208ee86ac01cef220a3536542537fbeab1ae73fae338dcf1be66c"
+    },
+    {
+      "file": "31.32-crash-loop-detection.md",
+      "title": "Phase 31.32 — Crash Loop Detection",
+      "sha256": "aa39896e94d4ecae4f2b1e14761e9d32b2f496a5c5b547a14132a85f5c569d0c"
+    },
+    {
+      "file": "31.33-service-dependency-impact-analysis.md",
+      "title": "Phase 31.33 — Service Dependency Impact Analysis",
+      "sha256": "0ec90b81c839c43f2e547ee51eb4133573ed1a34fd6802b480aebad60f44b3aa"
+    },
+    {
+      "file": "31.34-service-change-planning.md",
+      "title": "Phase 31.34 — Service Change Planning",
+      "sha256": "9a86ff20ff208d03cac5021c472d06e59995d0b46efb975d3e8b4a4d2133c735"
+    },
+    {
+      "file": "31.35-service-lifecycle-authorization.md",
+      "title": "Phase 31.35 — Service Lifecycle Authorization",
+      "sha256": "d4350e959cc7f691548b39ef1269e028170913c05ddcaf00c172202426c5b335"
+    },
+    {
+      "file": "31.36-protected-critical-services.md",
+      "title": "Phase 31.36 — Protected & Critical Services",
+      "sha256": "98611793f44b5bc8237d29cbaeaeae9137d14938767d90c3529598f41afaa067"
+    },
+    {
+      "file": "31.37-desktop-operator-session-protection.md",
+      "title": "Phase 31.37 — Desktop / Operator Session Protection",
+      "sha256": "a60f57f4867fd18247780d866c8d515d59a8020cb5ccc2ca1f8fc98205773c8f"
+    },
+    {
+      "file": "31.38-rebuntu-control-plane-protection.md",
+      "title": "Phase 31.38 — Rebuntu Control Plane Protection",
+      "sha256": "d6cec934be40c62e14d31f9057f2109a5eb28172c165febd9bb0a2e54c44f520"
+    },
+    {
+      "file": "31.39-service-configuration-mutation.md",
+      "title": "Phase 31.39 — Service Configuration Mutation",
+      "sha256": "03f8653acba212279c525653bedffe2407411ec7cbffcc5aacb10b495fd6c7f0"
+    },
+    {
+      "file": "31.40-drop-in-first-configuration-policy.md",
+      "title": "Phase 31.40 — Drop-In First Configuration Policy",
+      "sha256": "fd4a03bb65ce8c59d3d45fa56c1bfd8006315d839b0d7957bdd4133ad392a908"
+    },
+    {
+      "file": "31.41-service-recovery-rollback.md",
+      "title": "Phase 31.41 — Service Recovery & Rollback",
+      "sha256": "9cec7bd7f8de174cf2846dfabdba25ab7a05e2a8c4dc0b3462e58adc11213f28"
+    },
+    {
+      "file": "31.42-boot-time-service-analysis.md",
+      "title": "Phase 31.42 — Boot-Time Service Analysis",
+      "sha256": "2d5dcc429c277003495da5ea4dee0efb775f40b4eb2b341c9dc075e64d32d006"
+    },
+    {
+      "file": "31.43-service-management-cli.md",
+      "title": "Phase 31.43 — Service Management CLI",
+      "sha256": "53f38c3c145577622703ef0ed12e524994768e830d0022e873d18e85c6aa1988"
+    },
+    {
+      "file": "31.44-phase-25-panel-integration-api.md",
+      "title": "Phase 31.44 — Phase 25 Panel Integration API",
+      "sha256": "47d720540fd047fbb87acacd8e3b28d9a5cc3c72c63f9948f6f660f29d773e28"
+    },
+    {
+      "file": "31.45-phase-29-process-workload-integration.md",
+      "title": "Phase 31.45 — Phase 29 Process / Workload Integration",
+      "sha256": "193794bf47ffcc709206b4149852d354103050667d1cf8c56f28cafc8a8a3c64"
+    },
+    {
+      "file": "31.46-phase-30-resource-integration.md",
+      "title": "Phase 31.46 — Phase 30 Resource Integration",
+      "sha256": "1b8e74a0ab2a6e6b6009ba06f82edfd19201e316114e812752c5b9b2436f5272"
+    },
+    {
+      "file": "31.47-phase-39-timeline-integration.md",
+      "title": "Phase 31.47 — Phase 39 Timeline Integration",
+      "sha256": "43aa1dc715833d251c2727dbb54ff0aaf36f01ec51b36d620bd5a994a97bcab4"
+    },
+    {
+      "file": "31.48-service-management-system-closure-readiness-gate.md",
+      "title": "Phase 31.48 — Service Management System Closure & Readiness Gate",
+      "sha256": "110ad05c880a5c364120e3b2d3030622583cf517a71e9c36e3b624b905c5b543"
+    }
+  ]
+}

@@ -1,0 +1,429 @@
+{
+  "phase": 7,
+  "slug": "policy-authorization-safety",
+  "directory": "phase-07-policy-authorization-safety",
+  "prompt_count": 84,
+  "layout_version": 2,
+  "prompts": [
+    {
+      "file": "7.0.md",
+      "title": "Rebuntu — Phase 7.0 — Observation Architecture",
+      "sha256": "8662abd4d2067fb5762709eb312738ca32b527a3989b075dac9128318f0c5556"
+    },
+    {
+      "file": "7.1.md",
+      "title": "Rebuntu — Phase 7.1 — Facts & Observations",
+      "sha256": "f20546d42287bfc50e447bda4aca32b5a63140055736464c9ae586443643c6dc"
+    },
+    {
+      "file": "7.2.md",
+      "title": "Rebuntu — Phase 7.2 — State Acquisition",
+      "sha256": "55a02eda4644fa8eea2d63bae84da392fbbc6f4f072d3a73df9a364c9d9c66b7"
+    },
+    {
+      "file": "7.3.md",
+      "title": "Rebuntu — Phase 7.3 — State Normalization",
+      "sha256": "d5cf6747a32791da24311b1283923a59804ca952c6bc9562c9a4d77ebecdf02a"
+    },
+    {
+      "file": "7.4.md",
+      "title": "Rebuntu — Phase 7.4 — State Provenance & Freshness",
+      "sha256": "f39fac402814fd986910cd41df2a25d3e907ea9d8932de97d871985e0508d9b8"
+    },
+    {
+      "file": "7.5.md",
+      "title": "Rebuntu — Phase 7.5 — Process Observation",
+      "sha256": "5e02c81f74ae390e9c5f7f08018de52b5e1ab4b4be2038162252153c0fed8321"
+    },
+    {
+      "file": "7.6.md",
+      "title": "Rebuntu — Phase 7.6 — Service Observation",
+      "sha256": "97fcb01735bb3e4b4568303ed350cebce2f325b4e4ac6ce7945d9e0e498a101c"
+    },
+    {
+      "file": "7.7.md",
+      "title": "Rebuntu — Phase 7.7 — Filesystem & Storage Observation",
+      "sha256": "3405f925cd8083c689f7158ec75503c0309d3716a3417b5c2b922e592c2220ea"
+    },
+    {
+      "file": "7.8.md",
+      "title": "Rebuntu — Phase 7.8 — Device Observation",
+      "sha256": "a51bb9cbe170b673d6f1eb465d10ed840a21d6b7b821c628a2f7a6cada1fea1e"
+    },
+    {
+      "file": "7.9.md",
+      "title": "Rebuntu — Phase 7.9 — Network Observation",
+      "sha256": "c171cb15f0e65c5117c73eb66afb2100cb775057a9a7ff894c0cba806eb4baa7"
+    },
+    {
+      "file": "7.10.md",
+      "title": "Rebuntu — Phase 7.10 — CPU / Memory Observation",
+      "sha256": "b8afe9a76a582501a00a0366d2a85316d2adb0a9b6e5141bea2a2e478b53dd67"
+    },
+    {
+      "file": "7.11.md",
+      "title": "Rebuntu — Phase 7.11 — GPU Observation",
+      "sha256": "7ebe09bb6f8fc2bd1f7ca8617a41eed02a1033b6b81af834225d1270c1bd363c"
+    },
+    {
+      "file": "7.12.md",
+      "title": "Rebuntu — Phase 7.12 — Power / Thermal Observation",
+      "sha256": "7b2ec94ff7f07e987f2275bc0d3fab723c1495ecb757a0c2251c3e4987949570"
+    },
+    {
+      "file": "7.13.md",
+      "title": "Rebuntu — Phase 7.13 — Desktop / Session Observation",
+      "sha256": "7a22de98757a7534d13dc8c43543c175a32a55ce6c4e70e3f21febf200a1edc1"
+    },
+    {
+      "file": "7.14.md",
+      "title": "Rebuntu — Phase 7.14 — Package / Software Observation",
+      "sha256": "5bb89921a609a50c715788a27ffa682d1b2e8bc1246b9887f20662e542cf7cc5"
+    },
+    {
+      "file": "7.15.md",
+      "title": "Rebuntu — Phase 7.15 — Security-State Observation",
+      "sha256": "bb839b1b69724b61370a1e194ff5892eb1903b88218bf75d5f0738d20f84b145"
+    },
+    {
+      "file": "7.16.md",
+      "title": "Rebuntu — Phase 7.16 — Unified Current-State View",
+      "sha256": "49ac00e7645b19a974fa4e0c705f70eb8f3b5a85e5ba854a2ff23d0d7203388c"
+    },
+    {
+      "file": "7.17.md",
+      "title": "Rebuntu — Phase 7.17 — Historical State & Change Tracking",
+      "sha256": "1ac4b8e4c6881ddb2f2406b1d5ef4fafefa448be1b659d7ff18b0d95ee58fae2"
+    },
+    {
+      "file": "7.18.md",
+      "title": "Rebuntu — Phase 7.18 — Observation Coverage Audit",
+      "sha256": "32271786b74e368a51658fb29f1bd1c47ad6d953b24c2afb0fdb998cf9a80c34"
+    },
+    {
+      "file": "7.19_destructive_operation_gate.md",
+      "title": "Rebuntu — Phase 7",
+      "sha256": "e318f5d869f491605a1f126f06e3d8fc9ab2e3978e971302f106834dba4b8073"
+    },
+    {
+      "file": "7.20_confirmation_semantics.md",
+      "title": "Rebuntu — Phase 7",
+      "sha256": "701e51aa90061e4c4e8a64c65297f187cdeb5e66485c6ec603a24cb4b893e745"
+    },
+    {
+      "file": "7.21_reauthentication_semantics.md",
+      "title": "Rebuntu — Phase 7",
+      "sha256": "fb3462d366197b215179827d551f5e2e52ab508d9ff68316f05305c00effa971"
+    },
+    {
+      "file": "7.22_authorization_cache_rules.md",
+      "title": "Rebuntu — Phase 7",
+      "sha256": "02ba82f6df9537d35fac9e5895706228b89b6e09da045a023fd677e14b590d01"
+    },
+    {
+      "file": "7.23_policy_input_model.md",
+      "title": "Rebuntu — Phase 7",
+      "sha256": "105ffdc01d8b929b542733e7c462496bf1dee4a00d7970af41e132c2382722df"
+    },
+    {
+      "file": "7.24_minimal_policy_rule_representation.md",
+      "title": "Rebuntu — Phase 7",
+      "sha256": "ac9a14250b82bf1ceac260c44412edd0bbc6696bae89c68928e38d4744eaa961"
+    },
+    {
+      "file": "7.25_policy_precedence.md",
+      "title": "Rebuntu — Phase 7",
+      "sha256": "2ddb5e6e4bf37f7c274cfba3c689f0a29c0c9488025ed5094f248f0aef6668db"
+    },
+    {
+      "file": "7.26_policy_scope.md",
+      "title": "Rebuntu — Phase 7",
+      "sha256": "2ecd43583a62fb207c8a989a9db06d67d1ea666c6e5cfbf3456d82feac48d01d"
+    },
+    {
+      "file": "7.27_default_behavior.md",
+      "title": "Rebuntu — Phase 7",
+      "sha256": "3698956754b55fd6e15c8b3c452297634d0bec3279869ba08e0172890205bd22"
+    },
+    {
+      "file": "7.28_policy_version_binding.md",
+      "title": "Rebuntu — Phase 7",
+      "sha256": "683efb57bc9ae046d27edade98e920434fab8a25d7d7da5460e41fecae5b3994"
+    },
+    {
+      "file": "7.29_configuration_versus_policy.md",
+      "title": "Rebuntu — Phase 7",
+      "sha256": "ada10657fb7b2ce31bbf2cc239550eb8a654461718feaf8be9749b371b90c125"
+    },
+    {
+      "file": "7.30_environment_versus_authority.md",
+      "title": "Rebuntu — Phase 7",
+      "sha256": "d2dd700de39584cf727a98731e992f8d980ec58607c6d32d3465d30581672092"
+    },
+    {
+      "file": "7.31_ui_versus_authority.md",
+      "title": "Rebuntu — Phase 7",
+      "sha256": "475520b02c74c27b2a89e427225602230d4c5aa4145de4a0d6c3f76eca1ec6ba"
+    },
+    {
+      "file": "7.32_service_versus_authority.md",
+      "title": "Rebuntu — Phase 7",
+      "sha256": "3e2551ce0125ba5c041e07c6172e6f81ff20c3fce105e1a58653c898ba2d69f4"
+    },
+    {
+      "file": "7.33_ipc_authentication_versus_authorization.md",
+      "title": "Rebuntu — Phase 7",
+      "sha256": "e3f4c1f8add06a081671dd48f559e372823c4b9ee1db42afd4cb8d7a2b774383"
+    },
+    {
+      "file": "7.34_local_socket_permissions.md",
+      "title": "Rebuntu — Phase 7",
+      "sha256": "7a8107ce526874e066792cb11d2ebf258e97bcf04072625cbb44159bf27987dd"
+    },
+    {
+      "file": "7.35_data-to-control_authorization_gate.md",
+      "title": "Rebuntu — Phase 7",
+      "sha256": "6818d40cf98f20b44841057be4fd3d5dca264ea633492b17106992b0ec9ee9d6"
+    },
+    {
+      "file": "7.36_semantic_model_boundary_audit.md",
+      "title": "Rebuntu — Phase 7",
+      "sha256": "e5c7a31eb4f0c8a74050c67c21c3915db0f9e63e41e7c54ac50f0c5e7258fd41"
+    },
+    {
+      "file": "7.37_policy_explanation.md",
+      "title": "Rebuntu — Phase 7",
+      "sha256": "45c6bc1afdf806e188e44d1409c5f5b28556e9a416921eaab38b28778809dc04"
+    },
+    {
+      "file": "7.38_denial_semantics.md",
+      "title": "Rebuntu — Phase 7",
+      "sha256": "de8cfdde2fc25e24edd27c4224c77cd8563dac74648ea82b5b91c6e5e6a41eaf"
+    },
+    {
+      "file": "7.39_clarification_semantics.md",
+      "title": "Rebuntu — Phase 7",
+      "sha256": "553c39e6857a0cd761f979e47a2ee125e48a61f0407844397ab0c96829271f4b"
+    },
+    {
+      "file": "7.40_approval_token_reference_semantics.md",
+      "title": "Rebuntu — Phase 7",
+      "sha256": "dc39255b4b58853df9a93629dcb9a698f8d226bfcecd12118820177f89b475ba"
+    },
+    {
+      "file": "7.41_replay_resistance.md",
+      "title": "Rebuntu — Phase 7",
+      "sha256": "5aa27ed98ae6afdd86f3d9d0fc5b5191551193b02a9361cea463a1528338781c"
+    },
+    {
+      "file": "7.42_toctou_authorization_audit.md",
+      "title": "Rebuntu — Phase 7",
+      "sha256": "3968330f81846d43a358fd237d6d1c5c77447cf244f27bbf9b858c56b723ca48"
+    },
+    {
+      "file": "7.43_process_target_safety.md",
+      "title": "Rebuntu — Phase 7",
+      "sha256": "26a260e72498eed9049f0e10cb019bcfe845898df35f430258da5846c39970a7"
+    },
+    {
+      "file": "7.44_filesystem_target_safety.md",
+      "title": "Rebuntu — Phase 7",
+      "sha256": "5e9bffcfbff1b2d3be07d2da8ad71bab60b101393f236018b3a7dfda8ab4fdeb"
+    },
+    {
+      "file": "7.45_device_target_safety.md",
+      "title": "Rebuntu — Phase 7",
+      "sha256": "d41bf6dba2d15c5eaa744c14e7f690f3608252fe4925213d1f43c56ff61d1161"
+    },
+    {
+      "file": "7.46_service_target_safety.md",
+      "title": "Rebuntu — Phase 7",
+      "sha256": "fef409d24293a9e0efaf9af2ef8a9a88546756290217899f3787d0be26fd5304"
+    },
+    {
+      "file": "7.47_authorization_and_retries.md",
+      "title": "Rebuntu — Phase 7",
+      "sha256": "ee010c53e36bfe2e92e6a5f50c1e92143c492f65756b0a3bb8f4ece68c2adf8d"
+    },
+    {
+      "file": "7.48_authorization_and_compensation.md",
+      "title": "Rebuntu — Phase 7",
+      "sha256": "9b3f5ea2fa3797c618236dcf52b1611010a32420538567870690366ab26dafde"
+    },
+    {
+      "file": "7.49_authorization_and_restart_recovery.md",
+      "title": "Rebuntu — Phase 7",
+      "sha256": "a271d38c5aab2895c196fc730c5b8cba4b51af81ecc3be54b642dcc484fc2a90"
+    },
+    {
+      "file": "7.50_authorization_and_scheduled_work.md",
+      "title": "Rebuntu — Phase 7",
+      "sha256": "00071e5009df6265f49b411d7c02665ee6354903aaba1a9a5a75f89994ea8f97"
+    },
+    {
+      "file": "7.51_delegation_boundary_preparation.md",
+      "title": "Rebuntu — Phase 7",
+      "sha256": "c8dac563dead3b76b4a4dd0e701363e96b7a9b9d3df6f750c0bdc5c2b4752506"
+    },
+    {
+      "file": "7.52_read-only_capability_policy.md",
+      "title": "Rebuntu — Phase 7",
+      "sha256": "6ecae74069aaf27898a07dc66b4aeb987129bbc30c1991bfb01aecaa8e763bce"
+    },
+    {
+      "file": "7.53_secret-reference_handling.md",
+      "title": "Rebuntu — Phase 7",
+      "sha256": "ba4609c028d4a3a83bcc502100e4277007353e758ad2de639814ca319208869e"
+    },
+    {
+      "file": "7.54_audit_record_semantics.md",
+      "title": "Rebuntu — Phase 7",
+      "sha256": "248b1a5369b27f6d2294eec0938243eccbea4ea8d72f88061ee7c5bc80f9a5f1"
+    },
+    {
+      "file": "7.55_journald_diagnostics.md",
+      "title": "Rebuntu — Phase 7",
+      "sha256": "9d37c72e69326a2ef2b18fe935e5b6df2f11aeb6092e5dc9e95b86afe5311c35"
+    },
+    {
+      "file": "7.56_policy_test_harness.md",
+      "title": "Rebuntu — Phase 7",
+      "sha256": "017739d3c149f52ad2f6e3da3811da32e3698bc50484b81628f273018dad478b"
+    },
+    {
+      "file": "7.57_allow-path_tests.md",
+      "title": "Rebuntu — Phase 7",
+      "sha256": "d493ca5c2092bfd2e7482b13f5f623fdbae62321b6d92ba17dd98cb0904c9d4e"
+    },
+    {
+      "file": "7.58_deny-path_tests.md",
+      "title": "Rebuntu — Phase 7",
+      "sha256": "c5fedd81bb9c85cfc03263298e857c746b7af3fd8ebf733e3bf6d4a1d84a6280"
+    },
+    {
+      "file": "7.59_unknown-path_tests.md",
+      "title": "Rebuntu — Phase 7",
+      "sha256": "71a7426ce8e0532e3bab1ca8bdd590e8771f32c54eebaafd3b845b07a5a4e751"
+    },
+    {
+      "file": "7.60_plan-change_tests.md",
+      "title": "Rebuntu — Phase 7",
+      "sha256": "0a0d3aa5c0a4707a22d836073b8bd83603022532065f18b43ac99f5837e362e8"
+    },
+    {
+      "file": "7.61_target-change_tests.md",
+      "title": "Rebuntu — Phase 7",
+      "sha256": "88f21683bf7957b8268e31678956aae2152ff9b2741ed797a86d1c3950ebc69a"
+    },
+    {
+      "file": "7.62_replay_tests.md",
+      "title": "Rebuntu — Phase 7",
+      "sha256": "8d955fd4f7b77c3eb95184c2fc11f11fb80b5b6084d81d7c3f7e17a83b5c2394"
+    },
+    {
+      "file": "7.63_privilege-bypass_tests.md",
+      "title": "Rebuntu — Phase 7",
+      "sha256": "4c1cdbf996cc5756ef9e3f31a7780d4b2d4ee1e508e4b011d84ffec6b0b7c061"
+    },
+    {
+      "file": "7.64_shell-bypass_tests.md",
+      "title": "Rebuntu — Phase 7",
+      "sha256": "74cc769988273e7cd2f0a6e6c5e0f656d77c31938d71d7fdb41e93fcda831e9f"
+    },
+    {
+      "file": "7.65_python-bypass_tests.md",
+      "title": "Rebuntu — Phase 7",
+      "sha256": "20f47de55a03894fad388c8c1dde3e12dd322d844ee6ce3733f710f364a6710d"
+    },
+    {
+      "file": "7.66_provider-self-authorization_tests.md",
+      "title": "Rebuntu — Phase 7",
+      "sha256": "3d984dab2d14b66b1df94e332ebe9af0f3a6966e34fa949a84047034ec13faf9"
+    },
+    {
+      "file": "7.67_context-injection_tests.md",
+      "title": "Rebuntu — Phase 7",
+      "sha256": "fe18bd4cd2616ab1043cab8a27f59ec80e79c8712196a7f537fc35e1055ae790"
+    },
+    {
+      "file": "7.68_malformed-policy-input_fuzzing.md",
+      "title": "Rebuntu — Phase 7",
+      "sha256": "73cd6ac45df27637ca0a9db740c83d86b5b7033347d1f307f6e12fc2bab0f4aa"
+    },
+    {
+      "file": "7.69_concurrency_and_double-authorization_audit.md",
+      "title": "Rebuntu — Phase 7",
+      "sha256": "9edb44f52cbc6721c961f6ce5b821c5f78be8de45b14b13da8501b1d59d79e86"
+    },
+    {
+      "file": "7.70_policy_state_persistence_audit.md",
+      "title": "Rebuntu — Phase 7",
+      "sha256": "79021b415f78d4c8a0f84d18a1f5b6fe80e07bca7d9f57930813f7b589345eee"
+    },
+    {
+      "file": "7.71_python_policy-engine_eradication.md",
+      "title": "Rebuntu — Phase 7",
+      "sha256": "7c63d79e63eb0677d0d944b701ccbcdd4f533b2da4e27d41f6e47a0767d58ea2"
+    },
+    {
+      "file": "7.72_historical_security-wrapper_archaeology.md",
+      "title": "Rebuntu — Phase 7",
+      "sha256": "0dc68bba65a02a79761d73d08243750214d305ac4daa2aa6614ff0a7f4668842"
+    },
+    {
+      "file": "7.73_duplicate_authorization-path_audit.md",
+      "title": "Rebuntu — Phase 7",
+      "sha256": "dfd95e09266542f6fcf7716c117cb8bcfc9af3ce65b2b2614e9bd791c67944c3"
+    },
+    {
+      "file": "7.74_build_and_runtime_reachability_audit.md",
+      "title": "Rebuntu — Phase 7",
+      "sha256": "2ba0a00213b202bc083e91962de46fdd0c2eb5568cf45fba2df47826425d9766"
+    },
+    {
+      "file": "7.75_end-to-end_contained_mutation_test.md",
+      "title": "Rebuntu — Phase 7",
+      "sha256": "a77d02d48c8f56bc8900344215b13cfa1f5fcbb126b997a03dca1e638418c82d"
+    },
+    {
+      "file": "7.76_optional_semantic_service_absence_test.md",
+      "title": "Rebuntu — Phase 7",
+      "sha256": "7d566c432c71a74b99901b7eb6c6c7569a0341b485017aa26e906dd81be1162a"
+    },
+    {
+      "file": "7.77_documentation_and_agents_synchronization.md",
+      "title": "Rebuntu — Phase 7",
+      "sha256": "ef9001f148d6869d25e5bc2a39ea36293a10ce7ed9d17d4c23cd7f949ac10ad9"
+    },
+    {
+      "file": "7.78_first_closure_audit.md",
+      "title": "Rebuntu — Phase 7",
+      "sha256": "dfe301e01c47fd383889816ecd7f67b3a9a1aae710ef65beed2c1b140055d5a8"
+    },
+    {
+      "file": "7.79_adversarial_confused-deputy_audit.md",
+      "title": "Rebuntu — Phase 7",
+      "sha256": "26fa26fe6d3111c7a73a92cc758fd56a7f00ee54ca906305ea484912b24ccfe4"
+    },
+    {
+      "file": "7.80_adversarial_fail-open_audit.md",
+      "title": "Rebuntu — Phase 7",
+      "sha256": "42711bc80cade88f557a6482b03660b573a34bceab788d50f72b722ec7bd8bb5"
+    },
+    {
+      "file": "7.81_adversarial_new-agent_simulation.md",
+      "title": "Rebuntu — Phase 7",
+      "sha256": "41c42a6ce6f1da321cd8d97379dd12d323b458547c9125ad12f17c645ec65f17"
+    },
+    {
+      "file": "7.82_independent_second_rediscovery.md",
+      "title": "Rebuntu — Phase 7",
+      "sha256": "3a85b417ac49a9d6fae555b1e1f6ca5a87bffa4875cd45e9016936e44713ef58"
+    },
+    {
+      "file": "7.83_phase_7_final_closure.md",
+      "title": "Rebuntu — Phase 7",
+      "sha256": "881fe12d9518f7045c18a12d4bd71b9f877a3534c4ec17c6290a740d58899a40"
+    }
+  ]
+}

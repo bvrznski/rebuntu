@@ -1,0 +1,26 @@
+# Phase 76 — Software Environment Evolution System
+
+- 76.0: Bootstrap and repository reality audit
+- 76.1: Canonical ontology and identity
+- 76.2: Definitions and lifecycle
+- 76.3: State ownership and persistence
+- 76.4: Observation evidence provenance freshness
+- 76.5: UNKNOWN and conflicting evidence
+- 76.6: Capability and affordance integration
+- 76.7: Goal and desired-state integration
+- 76.8: Planning and operation integration
+- 76.9: Constraints and invariants
+- 76.10: Resources and topology
+- 76.11: Policy authorization
+- 76.12: Mandatory security
+- 76.13: Privilege and native providers
+- 76.14: Failure timeout cancellation partial effects
+- 76.15: Crash restart reconciliation recovery
+- 76.16: Concurrency races replacement TOCTOU
+- 76.17: Boundedness and budgets
+- 76.18: CLI GUI natural-language integration
+- 76.19: Timeline graph context integration
+- 76.20: Distributed and associated systems
+- 76.21: Python model shell authority audit
+- 76.22: Adversarial build runtime migration audit
+- 76.23: Documentation rediscovery and closure

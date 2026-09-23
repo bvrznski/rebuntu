@@ -1,0 +1,26 @@
+# Phase 66 — Transactional Change & Safe Transition System
+
+- 66.0: Bootstrap and repository reality audit
+- 66.1: Canonical ontology and identity
+- 66.2: Definitions and lifecycle
+- 66.3: State ownership and persistence
+- 66.4: Observation evidence provenance freshness
+- 66.5: UNKNOWN and conflicting evidence
+- 66.6: Capability and affordance integration
+- 66.7: Goal and desired-state integration
+- 66.8: Planning and operation integration
+- 66.9: Constraints and invariants
+- 66.10: Resources and topology
+- 66.11: Policy authorization
+- 66.12: Mandatory security
+- 66.13: Privilege and native providers
+- 66.14: Failure timeout cancellation partial effects
+- 66.15: Crash restart reconciliation recovery
+- 66.16: Concurrency races replacement TOCTOU
+- 66.17: Boundedness and budgets
+- 66.18: CLI GUI natural-language integration
+- 66.19: Timeline graph context integration
+- 66.20: Distributed and associated systems
+- 66.21: Python model shell authority audit
+- 66.22: Adversarial build runtime migration audit
+- 66.23: Documentation rediscovery and closure

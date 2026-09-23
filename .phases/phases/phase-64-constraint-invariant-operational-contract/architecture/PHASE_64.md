@@ -1,0 +1,26 @@
+# Phase 64 — Constraint, Invariant & Operational Contract System
+
+- 64.0: Bootstrap and repository reality audit
+- 64.1: Canonical ontology and identity
+- 64.2: Definitions and lifecycle
+- 64.3: State ownership and persistence
+- 64.4: Observation evidence provenance freshness
+- 64.5: UNKNOWN and conflicting evidence
+- 64.6: Capability and affordance integration
+- 64.7: Goal and desired-state integration
+- 64.8: Planning and operation integration
+- 64.9: Constraints and invariants
+- 64.10: Resources and topology
+- 64.11: Policy authorization
+- 64.12: Mandatory security
+- 64.13: Privilege and native providers
+- 64.14: Failure timeout cancellation partial effects
+- 64.15: Crash restart reconciliation recovery
+- 64.16: Concurrency races replacement TOCTOU
+- 64.17: Boundedness and budgets
+- 64.18: CLI GUI natural-language integration
+- 64.19: Timeline graph context integration
+- 64.20: Distributed and associated systems
+- 64.21: Python model shell authority audit
+- 64.22: Adversarial build runtime migration audit
+- 64.23: Documentation rediscovery and closure

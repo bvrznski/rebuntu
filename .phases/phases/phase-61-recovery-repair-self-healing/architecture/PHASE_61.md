@@ -1,0 +1,54 @@
+# Phase 61 — Recovery, Repair & Self-Healing System
+
+- **61.0** — Recovery topology
+- **61.1** — Failure observation
+- **61.2** — Failure classification
+- **61.3** — Repairability model
+- **61.4** — Recovery goal construction
+- **61.5** — Recovery capability discovery
+- **61.6** — Recovery affordance evaluation
+- **61.7** — Recovery planning
+- **61.8** — Repair planning
+- **61.9** — Recovery policy boundary
+- **61.10** — Recovery security boundary
+- **61.11** — Recovery authorization boundary
+- **61.12** — Self-healing delegation boundary
+- **61.13** — Evidence acquisition
+- **61.14** — Root-cause handoff
+- **61.15** — Minimal repair principle
+- **61.16** — Repair alternatives
+- **61.17** — Repair impact analysis
+- **61.18** — Invariant-preserving repair
+- **61.19** — Resource-aware repair
+- **61.20** — Service recovery
+- **61.21** — Process/workload recovery
+- **61.22** — Storage recovery
+- **61.23** — Network recovery
+- **61.24** — GPU recovery
+- **61.25** — Configuration recovery
+- **61.26** — Package/software recovery
+- **61.27** — Distributed recovery
+- **61.28** — Partition-aware recovery
+- **61.29** — Crash recovery
+- **61.30** — Boot recovery
+- **61.31** — Degraded-mode recovery
+- **61.32** — Compensation recovery
+- **61.33** — Failed-repair handling
+- **61.34** — Repair verification
+- **61.35** — Post-repair observation
+- **61.36** — Recurrence detection
+- **61.37** — Escalation
+- **61.38** — Operator handoff
+- **61.39** — Repair cooldown
+- **61.40** — Loop prevention
+- **61.41** — Repair budgets
+- **61.42** — Recovery history
+- **61.43** — Explainability
+- **61.44** — CLI
+- **61.45** — GUI
+- **61.46** — Adversarial false-positive audit
+- **61.47** — Destructive-repair prevention
+- **61.48** — Build/runtime audit
+- **61.49** — Integration matrix
+- **61.50** — Independent rediscovery
+- **61.51** — Phase closure

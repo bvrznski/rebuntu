@@ -1,0 +1,248 @@
+# Phase 43 Index
+
+## Architecture
+- `architecture/01-system-boundary.md`
+- `architecture/02-intelligence-model.md`
+- `architecture/03-evidence-grounding.md`
+- `architecture/04-causality.md`
+- `architecture/05-semantic-provider.md`
+- `architecture/06-decision-support.md`
+- `architecture/07-feedback-learning.md`
+- `architecture/08-native-runtime.md`
+- `architecture/09-security-privacy.md`
+- `architecture/10-performance-resource.md`
+- `architecture/11-operator-experience.md`
+- `architecture/12-closure.md`
+
+## Full prompts
+- `43.0` — Foundation and repository archaeology
+- `43.1` — Existing intelligence capability inventory
+- `43.2` — Intelligence ownership map
+- `43.3` — Canonical C++ intelligence architecture
+- `43.4` — Intelligence artifact strong types
+- `43.5` — Finding model
+- `43.6` — Explanation model
+- `43.7` — Correlation model
+- `43.8` — Hypothesis model
+- `43.9` — Forecast model
+- `43.10` — Recommendation model
+- `43.11` — Candidate plan model
+- `43.12` — Evidence reference model
+- `43.13` — Evidence bundle model
+- `43.14` — Provenance propagation
+- `43.15` — Epistemic-class propagation
+- `43.16` — Freshness propagation
+- `43.17` — Uncertainty representation
+- `43.18` — Confidence semantics
+- `43.19` — Scope and applicability model
+- `43.20` — Validation status model
+- `43.21` — Intelligence artifact lifecycle
+- `43.22` — Artifact versioning
+- `43.23` — Artifact persistence policy
+- `43.24` — Intelligence provider contract
+- `43.25` — Provider discovery and registration
+- `43.26` — Deterministic intelligence provider
+- `43.27` — Semantic intelligence provider
+- `43.28` — Provider capability negotiation
+- `43.29` — Provider health and fallback
+- `43.30` — Phase 39 temporal evidence adapter
+- `43.31` — Phase 42 structural evidence adapter
+- `43.32` — Phase 40 federated retrieval adapter
+- `43.33` — Phase 21 predictive-health integration
+- `43.34` — Phase 22 log-analysis integration
+- `43.35` — Phase 23 semantic-log integration
+- `43.36` — Evidence collection planner
+- `43.37` — Evidence completeness assessment
+- `43.38` — Evidence contradiction detection
+- `43.39` — Evidence deduplication
+- `43.40` — Evidence ranking without authority loss
+- `43.41` — Evidence-bundle size bounds
+- `43.42` — Secret-safe evidence projection
+- `43.43` — Semantic prompt construction
+- `43.44` — Structured semantic output schema
+- `43.45` — Semantic output parser
+- `43.46` — Semantic output validation
+- `43.47` — Hallucination containment
+- `43.48` — Unsupported-claim detection
+- `43.49` — Semantic provenance attribution
+- `43.50` — Semantic timeout and failure handling
+- `43.51` — Semantic provider isolation
+- `43.52` — Model unavailability degradation
+- `43.53` — Deterministic fallback behavior
+- `43.54` — Rule engine foundation
+- `43.55` — Typed rule registry
+- `43.56` — Rule applicability
+- `43.57` — Rule evidence requirements
+- `43.58` — Rule conflict handling
+- `43.59` — Rule explanation generation
+- `43.60` — Anomaly detection interface
+- `43.61` — Deterministic anomaly detectors
+- `43.62` — Semantic anomaly candidate boundary
+- `43.63` — Baseline comparison
+- `43.64` — Drift interpretation
+- `43.65` — Cross-domain anomaly correlation
+- `43.66` — Temporal correlation engine
+- `43.67` — Structural correlation engine
+- `43.68` — Correlation strength semantics
+- `43.69` — Correlation explanation
+- `43.70` — Causal-claim gate
+- `43.71` — Possible-cause hypothesis generation
+- `43.72` — Causal evidence requirements
+- `43.73` — Counterevidence handling
+- `43.74` — Alternative hypothesis generation
+- `43.75` — Hypothesis ranking representation
+- `43.76` — Hypothesis validation workflow
+- `43.77` — Hypothesis retirement
+- `43.78` — Incident intelligence assembly
+- `43.79` — Incident context synthesis
+- `43.80` — Root-cause candidate representation
+- `43.81` — Root-cause evidence traversal
+- `43.82` — Root-cause uncertainty handling
+- `43.83` — Change-to-incident correlation
+- `43.84` — Configuration-change analysis
+- `43.85` — Software-change analysis
+- `43.86` — Service-failure analysis
+- `43.87` — Resource-contention analysis
+- `43.88` — Storage-failure analysis
+- `43.89` — Network-failure analysis
+- `43.90` — GPU-accelerator failure analysis
+- `43.91` — Security-exposure analysis
+- `43.92` — User-session failure analysis
+- `43.93` — Development-environment failure analysis
+- `43.94` — Workflow-failure analysis
+- `43.95` — System health synthesis
+- `43.96` — Health dimension model
+- `43.97` — Health finding aggregation
+- `43.98` — Health trend analysis
+- `43.99` — Risk signal model
+- `43.100` — Predictive risk synthesis
+- `43.101` — Forecast horizon semantics
+- `43.102` — Forecast calibration
+- `43.103` — Forecast invalidation
+- `43.104` — Recommendation engine foundation
+- `43.105` — Recommendation applicability
+- `43.106` — Recommendation prerequisites
+- `43.107` — Recommendation alternatives
+- `43.108` — Recommendation tradeoff representation
+- `43.109` — Recommendation risk representation
+- `43.110` — Recommendation expected-effect model
+- `43.111` — Recommendation evidence trace
+- `43.112` — Recommendation conflict handling
+- `43.113` — Recommendation expiration
+- `43.114` — Phase 40 candidate-plan conversion
+- `43.115` — Plan preview integration
+- `43.116` — Plan consequence explanation
+- `43.117` — Authorization boundary preservation
+- `43.118` — Phase 41 workflow recommendation integration
+- `43.119` — Workflow candidate generation
+- `43.120` — Operator notification intelligence
+- `43.121` — Notification salience model
+- `43.122` — Notification deduplication
+- `43.123` — Notification fatigue controls
+- `43.124` — Escalation semantics
+- `43.125` — Operator query understanding
+- `43.126` — Natural-language operator query boundary
+- `43.127` — Query intent candidate validation
+- `43.128` — Graph-aware question answering
+- `43.129` — Timeline-aware question answering
+- `43.130` — Cross-domain question answering
+- `43.131` — Evidence-cited answer assembly
+- `43.132` — UNKNOWN-aware answer generation
+- `43.133` — Operator drill-down navigation
+- `43.134` — Why-this-finding explanation
+- `43.135` — What-changed explanation
+- `43.136` — What-depends-on-this explanation
+- `43.137` — What-might-break impact explanation
+- `43.138` — What-can-I-do option generation
+- `43.139` — Explain-plan intelligence
+- `43.140` — Explain-failure intelligence
+- `43.141` — Explain-recovery intelligence
+- `43.142` — Explain-resource-contention intelligence
+- `43.143` — Explain-security-exposure intelligence
+- `43.144` — Semantic summarization boundary
+- `43.145` — Long-context evidence condensation
+- `43.146` — Hierarchical evidence summarization
+- `43.147` — Summary provenance retention
+- `43.148` — Summary contradiction retention
+- `43.149` — Semantic cache
+- `43.150` — Deterministic cache
+- `43.151` — Cache invalidation
+- `43.152` — Intelligence freshness policy
+- `43.153` — Background intelligence scheduling
+- `43.154` — Resource-aware inference scheduling
+- `43.155` — Phase 29 workload integration
+- `43.156` — Phase 30 resource integration
+- `43.157` — GPU placement for semantic providers
+- `43.158` — Inference budget policy
+- `43.159` — Latency budget policy
+- `43.160` — Degraded-mode operation
+- `43.161` — Offline intelligence operation
+- `43.162` — Semantic provider hot-swap
+- `43.163` — Provider quality telemetry
+- `43.164` — Calibration dataset model
+- `43.165` — Outcome verification capture
+- `43.166` — Recommendation outcome tracking
+- `43.167` — Forecast outcome tracking
+- `43.168` — Operator feedback capture
+- `43.169` — Accepted recommendation feedback
+- `43.170` — Rejected recommendation feedback
+- `43.171` — Feedback provenance
+- `43.172` — Feedback privacy boundary
+- `43.173` — Calibration metrics
+- `43.174` — Confidence calibration
+- `43.175` — False-positive analysis
+- `43.176` — False-negative analysis
+- `43.177` — Model/provider comparison framework
+- `43.178` — Regression corpus
+- `43.179` — Golden evidence scenarios
+- `43.180` — Adversarial evidence scenarios
+- `43.181` — Contradiction stress tests
+- `43.182` — Causal-overclaim tests
+- `43.183` — Hallucination containment tests
+- `43.184` — Prompt-injection resistance
+- `43.185` — Untrusted log-content handling
+- `43.186` — Untrusted configuration-content handling
+- `43.187` — Untrusted repository-content handling
+- `43.188` — Secret-exfiltration resistance
+- `43.189` — Authorization bypass resistance
+- `43.190` — Semantic model no-shell-authority test
+- `43.191` — Semantic model no-mutation-authority test
+- `43.192` — Phase 39 integration tests
+- `43.193` — Phase 40 integration tests
+- `43.194` — Phase 41 integration tests
+- `43.195` — Phase 42 integration tests
+- `43.196` — Cross-phase end-to-end incident scenario
+- `43.197` — Cross-phase end-to-end recommendation scenario
+- `43.198` — Crash and restart recovery
+- `43.199` — Concurrent intelligence jobs
+- `43.200` — Backpressure and overload tests
+- `43.201` — Performance profiling
+- `43.202` — Memory and cache bounds
+- `43.203` — Observability and diagnostics
+- `43.204` — Intelligence metrics
+- `43.205` — Audit and provenance inspection
+- `43.206` — CLI intelligence inspection
+- `43.207` — CLI evidence drill-down
+- `43.208` — Phase 25 Panel intelligence surface
+- `43.209` — Panel evidence drill-down
+- `43.210` — Panel recommendation presentation
+- `43.211` — Panel uncertainty presentation
+- `43.212` — Panel provider status
+- `43.213` — Configuration model
+- `43.214` — Feature capability discovery
+- `43.215` — Safe-mode intelligence behavior
+- `43.216` — Emergency quiescence behavior
+- `43.217` — Documentation reconciliation
+- `43.218` — Architecture reconciliation
+- `43.219` — AGENTS.md permanent intelligence contract
+- `43.220` — Repository-wide recursive rediscovery
+- `43.221` — Duplicate intelligence authority audit
+- `43.222` — Remaining Python-boundary audit
+- `43.223` — Semantic-provider boundary audit
+- `43.224` — Evidence-grounding audit
+- `43.225` — Epistemic-integrity audit
+- `43.226` — Causality adversarial audit
+- `43.227` — Secret-safety adversarial audit
+- `43.228` — Authorization adversarial audit
+- `43.229` — Final fixed-point rediscovery
+- `43.230` — Phase 43 closure and Phase 44 handoff

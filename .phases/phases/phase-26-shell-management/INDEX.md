@@ -1,0 +1,33 @@
+# Prompt Index
+
+- `26.0-shell-management-system-foundation.md` — Phase 26.0 — Shell Management System Foundation
+- `26.1-shell-context-session-model.md` — Phase 26.1 — Shell Context & Session Model
+- `26.2-command-lifecycle-execution-context-capture.md` — Phase 26.2 — Command Lifecycle & Execution Context Capture
+- `26.3-unified-history-backend.md` — Phase 26.3 — Unified History Backend
+- `26.4-system-vs-virtual-environment-history-separation.md` — Phase 26.4 — System vs Virtual-Environment History Separation
+- `26.5-virtual-environment-identity-lifecycle-tracking.md` — Phase 26.5 — Virtual Environment Identity & Lifecycle Tracking
+- `26.6-contextual-history-search-retrieval.md` — Phase 26.6 — Contextual History Search & Retrieval
+- `26.7-interactive-history-manager.md` — Phase 26.7 — Interactive History Manager
+- `26.8-fzf-coupled-history-navigation.md` — Phase 26.8 — FZF-Coupled History Navigation
+- `26.9-atuin-integration-backend-abstraction.md` — Phase 26.9 — Atuin Integration & Backend Abstraction
+- `26.10-directory-project-aware-command-memory.md` — Phase 26.10 — Directory / Project-Aware Command Memory
+- `26.11-command-metadata-exit-state-duration.md` — Phase 26.11 — Command Metadata, Exit State & Duration
+- `26.12-shell-session-management.md` — Phase 26.12 — Shell Session Management
+- `26.13-environment-path-state-management.md` — Phase 26.13 — Environment & PATH State Management
+- `26.14-alias-abbreviation-function-management.md` — Phase 26.14 — Alias, Abbreviation & Function Management
+- `26.15-fish-plugin-oh-my-fish-management.md` — Phase 26.15 — Fish Plugin & Oh My Fish Management
+- `26.16-cli-tool-integration-registry.md` — Phase 26.16 — CLI Tool Integration Registry
+- `26.17-shell-configuration-registry-ownership.md` — Phase 26.17 — Shell Configuration Registry & Ownership
+- `26.18-shell-configuration-drift-detection.md` — Phase 26.18 — Shell Configuration Drift Detection
+- `26.19-shell-health-diagnostics.md` — Phase 26.19 — Shell Health Diagnostics
+- `26.20-shell-recovery-safe-mode-console.md` — Phase 26.20 — Shell Recovery & Safe-Mode Console
+- `26.21-backup-snapshot-rollback.md` — Phase 26.21 — Backup, Snapshot & Rollback
+- `26.22-search-inspection-explainability.md` — Phase 26.22 — Search, Inspection & Explainability
+- `26.23-shell-management-cli.md` — Phase 26.23 — Shell Management CLI
+- `26.24-panel-integration-api.md` — Phase 26.24 — Panel Integration API
+- `26.25-privacy-secrets-sensitive-command-handling.md` — Phase 26.25 — Privacy, Secrets & Sensitive Command Handling
+- `26.26-performance-retention-database-maintenance.md` — Phase 26.26 — Performance, Retention & Database Maintenance
+- `26.27-cross-shell-bash-compatibility-boundary.md` — Phase 26.27 — Cross-Shell / Bash Compatibility Boundary
+- `26.28-failure-injection-recovery-testing.md` — Phase 26.28 — Failure Injection & Recovery Testing
+- `26.29-cross-phase-integration-audit.md` — Phase 26.29 — Cross-Phase Integration Audit
+- `26.30-shell-management-system-closure-readiness-gate.md` — Phase 26.30 — Shell Management System Closure & Readiness Gate

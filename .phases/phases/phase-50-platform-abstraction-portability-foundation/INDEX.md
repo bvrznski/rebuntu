@@ -1,0 +1,431 @@
+# Phase 50 Index
+
+## Architecture
+- `architecture/01-boundary.md`
+- `architecture/02-capabilities.md`
+- `architecture/03-portable-core.md`
+- `architecture/04-providers.md`
+- `architecture/05-linux.md`
+- `architecture/06-windows-readiness.md`
+- `architecture/07-build.md`
+- `architecture/08-security.md`
+- `architecture/09-python.md`
+- `architecture/10-integration.md`
+- `architecture/11-testing.md`
+- `architecture/12-closure.md`
+
+## Full prompts
+- `50.0` — repository archaeology
+- `50.1` — platform dependency inventory
+- `50.2` — Linux assumption inventory
+- `50.3` — portable core inventory
+- `50.4` — canonical platform architecture
+- `50.5` — platform identity
+- `50.6` — capability model
+- `50.7` — capability discovery
+- `50.8` — capability provenance
+- `50.9` — provider registry
+- `50.10` — provider selection
+- `50.11` — provider lifecycle
+- `50.12` — portable error model
+- `50.13` — native error translation
+- `50.14` — time and clocks
+- `50.15` — boot identity
+- `50.16` — session identity
+- `50.17` — path semantics
+- `50.18` — filesystem identity
+- `50.19` — environment and locale
+- `50.20` — system identity
+- `50.21` — OS discovery
+- `50.22` — hardware discovery
+- `50.23` — processes
+- `50.24` — services
+- `50.25` — events and logs
+- `50.26` — network
+- `50.27` — firewall
+- `50.28` — storage
+- `50.29` — filesystems
+- `50.30` — mounts
+- `50.31` — encryption
+- `50.32` — RAID
+- `50.33` — packages
+- `50.34` — package trust
+- `50.35` — configuration
+- `50.36` — users and groups
+- `50.37` — authentication boundary
+- `50.38` — authorization boundary
+- `50.39` — power
+- `50.40` — accelerators
+- `50.41` — GPU telemetry
+- `50.42` — PCIe topology
+- `50.43` — CPU resources
+- `50.44` — memory resources
+- `50.45` — NUMA
+- `50.46` — resource control
+- `50.47` — desktop integration
+- `50.48` — displays
+- `50.49` — notifications
+- `50.50` — clipboard
+- `50.51` — file dialogs
+- `50.52` — terminal
+- `50.53` — shell
+- `50.54` — development environments
+- `50.55` — toolchains
+- `50.56` — containers
+- `50.57` — IPC
+- `50.58` — privilege helper
+- `50.59` — security principals
+- `50.60` — permissions and ACLs
+- `50.61` — secrets
+- `50.62` — filesystem watching
+- `50.63` — device events
+- `50.64` — kernel events
+- `50.65` — sensors and thermals
+- `50.66` — typed commands
+- `50.67` — plans
+- `50.68` — validation
+- `50.69` — verification
+- `50.70` — rollback
+- `50.71` — workflow actions
+- `50.72` — task capability requirements
+- `50.73` — policy platform selectors
+- `50.74` — context platform facts
+- `50.75` — graph platform entities
+- `50.76` — timeline platform events
+- `50.77` — GUI capability rendering
+- `50.78` — ask capability awareness
+- `50.79` — semantic context projection
+- `50.80` — procfs isolation
+- `50.81` — sysfs isolation
+- `50.82` — systemd isolation
+- `50.83` — journald isolation
+- `50.84` — udev isolation
+- `50.85` — netlink isolation
+- `50.86` — cgroups isolation
+- `50.87` — POSIX signals
+- `50.88` — fork exec
+- `50.89` — file descriptors
+- `50.90` — epoll
+- `50.91` — inotify
+- `50.92` — Unix sockets
+- `50.93` — UID GID
+- `50.94` — POSIX permissions
+- `50.95` — Linux errno
+- `50.96` — Linux header leakage
+- `50.97` — platform macro containment
+- `50.98` — architecture-first source tree
+- `50.99` — CMake platform selection
+- `50.100` — compiler feature detection
+- `50.101` — C++ standard baseline
+- `50.102` — dependency portability
+- `50.103` — install paths
+- `50.104` — configuration paths
+- `50.105` — cache paths
+- `50.106` — state paths
+- `50.107` — log paths
+- `50.108` — temporary paths
+- `50.109` — XDG boundary
+- `50.110` — future Windows known folders
+- `50.111` — packaging boundary
+- `50.112` — Unicode
+- `50.113` — UTF-8 contract
+- `50.114` — future Windows UTF-16 boundary
+- `50.115` — line endings
+- `50.116` — timezone and DST
+- `50.117` — capability matrix
+- `50.118` — provider diagnostics
+- `50.119` — Linux reference capability matrix
+- `50.120` — future Windows matrix skeleton
+- `50.121` — portable core compile tests
+- `50.122` — forbidden include checks
+- `50.123` — forbidden path checks
+- `50.124` — forbidden shell fallback checks
+- `50.125` — Windows native API mapping
+- `50.126` — Windows SCM mapping
+- `50.127` — Windows ETW mapping
+- `50.128` — Windows Event Log mapping
+- `50.129` — Windows WMI CIM mapping
+- `50.130` — Windows Registry mapping
+- `50.131` — Windows Firewall mapping
+- `50.132` — Windows process API mapping
+- `50.133` — Windows network API mapping
+- `50.134` — Windows storage API mapping
+- `50.135` — Windows token and ACL mapping
+- `50.136` — Windows power API mapping
+- `50.137` — Windows GPU mapping
+- `50.138` — Windows desktop mapping
+- `50.139` — Windows notifications mapping
+- `50.140` — Windows named pipes mapping
+- `50.141` — Windows elevation mapping
+- `50.142` — Windows package ecosystem mapping
+- `50.143` — winget boundary
+- `50.144` — MSI boundary
+- `50.145` — PowerShell compatibility boundary
+- `50.146` — no WSL shortcut
+- `50.147` — provider process isolation
+- `50.148` — portable cancellation
+- `50.149` — portable threading
+- `50.150` — GUI toolkit portability
+- `50.151` — sleep wake abstraction
+- `50.152` — session lock unlock abstraction
+- `50.153` — provider reconciliation
+- `50.154` — operator portability documentation
+- `50.155` — developer portability guide
+- `50.156` — provider implementation guide
+- `50.157` — new-platform onboarding guide
+- `50.158` — AGENTS portability contract
+- `50.159` — AGENTS provider contract
+- `50.160` — AGENTS no-platform-silo contract
+- `50.161` — AGENTS no-shell-port contract
+- `50.162` — AGENTS C++-first contract
+- `50.163` — AGENTS Python boundary
+- `50.164` — source-tree normalization
+- `50.165` — existing Linux code extraction
+- `50.166` — duplicate provider audit
+- `50.167` — leaky abstraction audit
+- `50.168` — lowest-common-denominator audit
+- `50.169` — premature Windows implementation audit
+- `50.170` — Linux capability preservation audit
+- `50.171` — direct platform bypass audit
+- `50.172` — direct shell bypass audit
+- `50.173` — privilege bypass audit
+- `50.174` — stale Python ownership audit
+- `50.175` — remaining Python inventory
+- `50.176` — recursive rediscovery pass one
+- `50.177` — resolve pass one
+- `50.178` — recursive rediscovery pass two
+- `50.179` — resolve pass two
+- `50.180` — adversarial portability audit
+- `50.181` — capability confusion audit
+- `50.182` — unsupported-as-success audit
+- `50.183` — provider substitution audit
+- `50.184` — platform identity collision audit
+- `50.185` — privilege abstraction audit
+- `50.186` — path assumption audit
+- `50.187` — shell fallback audit
+- `50.188` — final Linux native build
+- `50.189` — final unit suite
+- `50.190` — final provider suite
+- `50.191` — final Linux integration suite
+- `50.192` — final Linux end-to-end suite
+- `50.193` — final regression suite
+- `50.194` — final performance validation
+- `50.195` — final capability matrix
+- `50.196` — final source-tree audit
+- `50.197` — final production call graph
+- `50.198` — final platform dependency graph
+- `50.199` — final provider ownership graph
+- `50.200` — final Linux parity audit
+- `50.201` — final Windows-readiness audit
+- `50.202` — final remaining Python inventory
+- `50.203` — final fixed-point rediscovery
+- `50.204` — Phase 50 closure and Phase 51 handoff
+- `50.205` — Phase 21 portability audit
+- `50.206` — Phase 22 portability audit
+- `50.207` — Phase 23 portability audit
+- `50.208` — Phase 24 portability audit
+- `50.209` — Phase 25 portability audit
+- `50.210` — Phase 26 portability audit
+- `50.211` — Phase 27 portability audit
+- `50.212` — Phase 28 portability audit
+- `50.213` — Phase 29 portability audit
+- `50.214` — Phase 30 portability audit
+- `50.215` — Phase 31 portability audit
+- `50.216` — Phase 32 portability audit
+- `50.217` — Phase 33 portability audit
+- `50.218` — Phase 34 portability audit
+- `50.219` — Phase 35 portability audit
+- `50.220` — Phase 36 portability audit
+- `50.221` — Phase 37 portability audit
+- `50.222` — Phase 38 portability audit
+- `50.223` — Phase 39 portability audit
+- `50.224` — Phase 40 portability audit
+- `50.225` — Phase 41 portability audit
+- `50.226` — Phase 42 portability audit
+- `50.227` — Phase 43 portability audit
+- `50.228` — Phase 44 portability audit
+- `50.229` — Phase 45 portability audit
+- `50.230` — Phase 46 portability audit
+- `50.231` — Phase 47 portability audit
+- `50.232` — Phase 48 portability audit
+- `50.233` — Phase 49 portability audit
+- `50.234` — process provider contract
+- `50.235` — process provider identity
+- `50.236` — process provider observation
+- `50.237` — process provider mutation
+- `50.238` — process provider applicability
+- `50.239` — process provider errors
+- `50.240` — process provider freshness
+- `50.241` — process provider authorization handoff
+- `50.242` — process provider verification
+- `50.243` — process provider recovery
+- `50.244` — process provider diagnostics
+- `50.245` — process provider tests
+- `50.246` — service provider contract
+- `50.247` — service provider identity
+- `50.248` — service provider observation
+- `50.249` — service provider mutation
+- `50.250` — service provider applicability
+- `50.251` — service provider errors
+- `50.252` — service provider freshness
+- `50.253` — service provider authorization handoff
+- `50.254` — service provider verification
+- `50.255` — service provider recovery
+- `50.256` — service provider diagnostics
+- `50.257` — service provider tests
+- `50.258` — network provider contract
+- `50.259` — network provider identity
+- `50.260` — network provider observation
+- `50.261` — network provider mutation
+- `50.262` — network provider applicability
+- `50.263` — network provider errors
+- `50.264` — network provider freshness
+- `50.265` — network provider authorization handoff
+- `50.266` — network provider verification
+- `50.267` — network provider recovery
+- `50.268` — network provider diagnostics
+- `50.269` — network provider tests
+- `50.270` — storage provider contract
+- `50.271` — storage provider identity
+- `50.272` — storage provider observation
+- `50.273` — storage provider mutation
+- `50.274` — storage provider applicability
+- `50.275` — storage provider errors
+- `50.276` — storage provider freshness
+- `50.277` — storage provider authorization handoff
+- `50.278` — storage provider verification
+- `50.279` — storage provider recovery
+- `50.280` — storage provider diagnostics
+- `50.281` — storage provider tests
+- `50.282` — package provider contract
+- `50.283` — package provider identity
+- `50.284` — package provider observation
+- `50.285` — package provider mutation
+- `50.286` — package provider applicability
+- `50.287` — package provider errors
+- `50.288` — package provider freshness
+- `50.289` — package provider authorization handoff
+- `50.290` — package provider verification
+- `50.291` — package provider recovery
+- `50.292` — package provider diagnostics
+- `50.293` — package provider tests
+- `50.294` — identity provider contract
+- `50.295` — identity provider identity
+- `50.296` — identity provider observation
+- `50.297` — identity provider mutation
+- `50.298` — identity provider applicability
+- `50.299` — identity provider errors
+- `50.300` — identity provider freshness
+- `50.301` — identity provider authorization handoff
+- `50.302` — identity provider verification
+- `50.303` — identity provider recovery
+- `50.304` — identity provider diagnostics
+- `50.305` — identity provider tests
+- `50.306` — power provider contract
+- `50.307` — power provider identity
+- `50.308` — power provider observation
+- `50.309` — power provider mutation
+- `50.310` — power provider applicability
+- `50.311` — power provider errors
+- `50.312` — power provider freshness
+- `50.313` — power provider authorization handoff
+- `50.314` — power provider verification
+- `50.315` — power provider recovery
+- `50.316` — power provider diagnostics
+- `50.317` — power provider tests
+- `50.318` — accelerator provider contract
+- `50.319` — accelerator provider identity
+- `50.320` — accelerator provider observation
+- `50.321` — accelerator provider mutation
+- `50.322` — accelerator provider applicability
+- `50.323` — accelerator provider errors
+- `50.324` — accelerator provider freshness
+- `50.325` — accelerator provider authorization handoff
+- `50.326` — accelerator provider verification
+- `50.327` — accelerator provider recovery
+- `50.328` — accelerator provider diagnostics
+- `50.329` — accelerator provider tests
+- `50.330` — event-log provider contract
+- `50.331` — event-log provider identity
+- `50.332` — event-log provider observation
+- `50.333` — event-log provider mutation
+- `50.334` — event-log provider applicability
+- `50.335` — event-log provider errors
+- `50.336` — event-log provider freshness
+- `50.337` — event-log provider authorization handoff
+- `50.338` — event-log provider verification
+- `50.339` — event-log provider recovery
+- `50.340` — event-log provider diagnostics
+- `50.341` — event-log provider tests
+- `50.342` — desktop provider contract
+- `50.343` — desktop provider identity
+- `50.344` — desktop provider observation
+- `50.345` — desktop provider mutation
+- `50.346` — desktop provider applicability
+- `50.347` — desktop provider errors
+- `50.348` — desktop provider freshness
+- `50.349` — desktop provider authorization handoff
+- `50.350` — desktop provider verification
+- `50.351` — desktop provider recovery
+- `50.352` — desktop provider diagnostics
+- `50.353` — desktop provider tests
+- `50.354` — configuration provider contract
+- `50.355` — configuration provider identity
+- `50.356` — configuration provider observation
+- `50.357` — configuration provider mutation
+- `50.358` — configuration provider applicability
+- `50.359` — configuration provider errors
+- `50.360` — configuration provider freshness
+- `50.361` — configuration provider authorization handoff
+- `50.362` — configuration provider verification
+- `50.363` — configuration provider recovery
+- `50.364` — configuration provider diagnostics
+- `50.365` — configuration provider tests
+- `50.366` — resource provider contract
+- `50.367` — resource provider identity
+- `50.368` — resource provider observation
+- `50.369` — resource provider mutation
+- `50.370` — resource provider applicability
+- `50.371` — resource provider errors
+- `50.372` — resource provider freshness
+- `50.373` — resource provider authorization handoff
+- `50.374` — resource provider verification
+- `50.375` — resource provider recovery
+- `50.376` — resource provider diagnostics
+- `50.377` — resource provider tests
+- `50.378` — security provider contract
+- `50.379` — security provider identity
+- `50.380` — security provider observation
+- `50.381` — security provider mutation
+- `50.382` — security provider applicability
+- `50.383` — security provider errors
+- `50.384` — security provider freshness
+- `50.385` — security provider authorization handoff
+- `50.386` — security provider verification
+- `50.387` — security provider recovery
+- `50.388` — security provider diagnostics
+- `50.389` — security provider tests
+- `50.390` — filesystem provider contract
+- `50.391` — filesystem provider identity
+- `50.392` — filesystem provider observation
+- `50.393` — filesystem provider mutation
+- `50.394` — filesystem provider applicability
+- `50.395` — filesystem provider errors
+- `50.396` — filesystem provider freshness
+- `50.397` — filesystem provider authorization handoff
+- `50.398` — filesystem provider verification
+- `50.399` — filesystem provider recovery
+- `50.400` — filesystem provider diagnostics
+- `50.401` — filesystem provider tests
+- `50.402` — device provider contract
+- `50.403` — device provider identity
+- `50.404` — device provider observation
+- `50.405` — device provider mutation
+- `50.406` — device provider applicability
+- `50.407` — device provider errors
+- `50.408` — device provider freshness
+- `50.409` — device provider authorization handoff
+- `50.410` — device provider verification
+- `50.411` — device provider recovery
+- `50.412` — device provider diagnostics
+- `50.413` — device provider tests

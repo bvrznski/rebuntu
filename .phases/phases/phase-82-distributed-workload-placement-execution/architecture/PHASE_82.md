@@ -1,0 +1,26 @@
+# Phase 82 — Distributed Workload Placement & Execution System
+
+- 82.0: Bootstrap and repository reality audit
+- 82.1: Canonical ontology and identity
+- 82.2: Definitions and lifecycle
+- 82.3: State ownership and persistence
+- 82.4: Observation evidence provenance freshness
+- 82.5: UNKNOWN and conflicting evidence
+- 82.6: Capability and affordance integration
+- 82.7: Goal and desired-state integration
+- 82.8: Planning and operation integration
+- 82.9: Constraints and invariants
+- 82.10: Resources and topology
+- 82.11: Policy authorization
+- 82.12: Mandatory security
+- 82.13: Privilege and native providers
+- 82.14: Failure timeout cancellation partial effects
+- 82.15: Crash restart reconciliation recovery
+- 82.16: Concurrency races replacement TOCTOU
+- 82.17: Boundedness and budgets
+- 82.18: CLI GUI natural-language integration
+- 82.19: Timeline graph context integration
+- 82.20: Distributed and associated systems
+- 82.21: Python model shell authority audit
+- 82.22: Adversarial build runtime migration audit
+- 82.23: Documentation rediscovery and closure

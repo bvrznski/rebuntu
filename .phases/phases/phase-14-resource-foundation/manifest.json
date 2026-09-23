@@ -1,0 +1,104 @@
+{
+  "phase": 14,
+  "slug": "resource-foundation",
+  "directory": "phase-14-resource-foundation",
+  "prompt_count": 19,
+  "layout_version": 2,
+  "prompts": [
+    {
+      "file": "14.0.md",
+      "title": "Rebuntu --- Phase 14.0 --- Resource Architecture",
+      "sha256": "281625e610c9af9a4c4eba26ea26170933970879cef9ea20c633d09219fb8313"
+    },
+    {
+      "file": "14.1.md",
+      "title": "Rebuntu --- Phase 14.1 --- CPU Discovery & Control",
+      "sha256": "317d18802b3d0e1114b02b740b09b35a8b49d6f45fdc4d66a1e14e0666496f38"
+    },
+    {
+      "file": "14.2.md",
+      "title": "Rebuntu --- Phase 14.2 --- CPU Scheduling / Affinity",
+      "sha256": "4866aabcac099b3661a736947aa035afb1d6c1aacfe96674c528297a27a2299f"
+    },
+    {
+      "file": "14.3.md",
+      "title": "Rebuntu --- Phase 14.3 --- Memory",
+      "sha256": "9250491d8d3666d57ec0341fe65c919ea89005950877cecfa05af270c82f9910"
+    },
+    {
+      "file": "14.4.md",
+      "title": "Rebuntu --- Phase 14.4 --- cgroups",
+      "sha256": "08ac35a814af441e1c99934b1057189bfdaed67a6d2d07c14e5eb03587809e73"
+    },
+    {
+      "file": "14.5.md",
+      "title": "Rebuntu --- Phase 14.5 --- Process Priorities",
+      "sha256": "0e435162a9c05dee083c6234ccb1a02a60551c9dee2b376a954603e12ab7511f"
+    },
+    {
+      "file": "14.6.md",
+      "title": "Rebuntu --- Phase 14.6 --- I/O Scheduling",
+      "sha256": "0a3554757ff800ee0f6f2d930369c4a6c8ae8d710954dc9af7bbda70fb2a02f5"
+    },
+    {
+      "file": "14.7.md",
+      "title": "Rebuntu --- Phase 14.7 --- Storage Performance",
+      "sha256": "fdc5d028cc9c7d52bf346272ab7a36cda99d3bce4b8611c630f2175e86c40805"
+    },
+    {
+      "file": "14.8.md",
+      "title": "Rebuntu --- Phase 14.8 --- GPU Discovery",
+      "sha256": "40ef2ea4150bb60894264f6cf56d900d7c474f8e4997f60096f5e067312891ff"
+    },
+    {
+      "file": "14.9.md",
+      "title": "Rebuntu --- Phase 14.9 --- GPU Selection / Assignment",
+      "sha256": "035b73c3fc9458dbd25b3edacd411c850d7d8119dfb56f96f44ba75a6a79e837"
+    },
+    {
+      "file": "14.10.md",
+      "title": "Rebuntu --- Phase 14.10 --- GPU Power / Clock Policy",
+      "sha256": "cc69849e6dbdf513a9cfd04cecfe68e54bd7642130a49e8f3a2169ca3a0df24e"
+    },
+    {
+      "file": "14.11.md",
+      "title": "Rebuntu --- Phase 14.11 --- Thermal Management",
+      "sha256": "96c3c84ae0efeef9e653139396c54e789da81de4246f206ba258fc8546087744"
+    },
+    {
+      "file": "14.12.md",
+      "title": "Rebuntu --- Phase 14.12 --- Power Management",
+      "sha256": "6fee1326e7de950b16ab949f5f4b04afe337059a24c04f55f3b584f30c8e5f29"
+    },
+    {
+      "file": "14.13.md",
+      "title": "Rebuntu --- Phase 14.13 --- Workload Detection",
+      "sha256": "fd3a7ff4675493de36c9ff4068a95cbc6931a75f9656a304e86b7db61e645bbd"
+    },
+    {
+      "file": "14.14.md",
+      "title": "Rebuntu --- Phase 14.14 --- Resource Profiles",
+      "sha256": "aaf24211c0718ce3f4c7343d64d2ce6da75be09f11c7abca40e00f544873a618"
+    },
+    {
+      "file": "14.15.md",
+      "title": "Rebuntu --- Phase 14.15 --- Resource Arbitration",
+      "sha256": "777911b2f68396ae18b3d802fffd1271ca1bf2d2fad71f9075b2d6528f30b40f"
+    },
+    {
+      "file": "14.16.md",
+      "title": "Rebuntu --- Phase 14.16 --- Performance Observation",
+      "sha256": "16ad87a00dfe0cc78ed3f3bc931fec699359f658e344844e16f95942f13ab7de"
+    },
+    {
+      "file": "14.17.md",
+      "title": "Rebuntu --- Phase 14.17 --- Benchmarking & Verification",
+      "sha256": "9624d92bf8395dd93dfa942ae6b48ab9620fe3678255a0640f5ef4998772a8bd"
+    },
+    {
+      "file": "14.18.md",
+      "title": "Rebuntu --- Phase 14.18 --- Resource Control Integration Audit",
+      "sha256": "47fe4d9cbcbb06d8cb02d3da324f9e301f1b53f246ed814cd76bfb0aa308c73b"
+    }
+  ]
+}

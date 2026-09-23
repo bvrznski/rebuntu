@@ -1,0 +1,59 @@
+# Prompt Index
+
+- `32.0-storage-management-system-foundation.md` — Phase 32.0 — Storage Management System Foundation
+- `32.1-storage-domain-model.md` — Phase 32.1 — Storage Domain Model
+- `32.2-storage-provider-discovery.md` — Phase 32.2 — Storage Provider Discovery
+- `32.3-physical-device-identity.md` — Phase 32.3 — Physical Device Identity
+- `32.4-partition-table-partition-model.md` — Phase 32.4 — Partition Table & Partition Model
+- `32.5-device-mapper-integration.md` — Phase 32.5 — Device Mapper Integration
+- `32.6-software-raid-integration.md` — Phase 32.6 — Software RAID Integration
+- `32.7-luks-encrypted-storage-integration.md` — Phase 32.7 — LUKS & Encrypted Storage Integration
+- `32.8-filesystem-identity-capabilities.md` — Phase 32.8 — Filesystem Identity & Capabilities
+- `32.9-mount-identity-state.md` — Phase 32.9 — Mount Identity & State
+- `32.10-storage-stack-relationship-model.md` — Phase 32.10 — Storage Stack Relationship Model
+- `32.11-stable-storage-references.md` — Phase 32.11 — Stable Storage References
+- `32.12-block-device-inventory.md` — Phase 32.12 — Block Device Inventory
+- `32.13-filesystem-inventory.md` — Phase 32.13 — Filesystem Inventory
+- `32.14-mount-inventory.md` — Phase 32.14 — Mount Inventory
+- `32.15-capacity-free-space-allocation-semantics.md` — Phase 32.15 — Capacity / Free Space / Allocation Semantics
+- `32.16-storage-health-evidence.md` — Phase 32.16 — Storage Health Evidence
+- `32.17-smart-nvme-health-integration.md` — Phase 32.17 — SMART & NVMe Health Integration
+- `32.18-storage-i-o-integration.md` — Phase 32.18 — Storage I/O Integration
+- `32.19-storage-topology-dependency-analysis.md` — Phase 32.19 — Storage Topology & Dependency Analysis
+- `32.20-root-boot-efi-protection.md` — Phase 32.20 — Root / Boot / EFI Protection
+- `32.21-home-storage-protection.md` — Phase 32.21 — Home Storage Protection
+- `32.22-active-workload-storage-protection.md` — Phase 32.22 — Active Workload Storage Protection
+- `32.23-mount-planning.md` — Phase 32.23 — Mount Planning
+- `32.24-mount-unmount-lifecycle.md` — Phase 32.24 — Mount / Unmount Lifecycle
+- `32.25-persistent-mount-configuration.md` — Phase 32.25 — Persistent Mount Configuration
+- `32.26-fstab-integration.md` — Phase 32.26 — fstab Integration
+- `32.27-automount-systemd-mount-integration.md` — Phase 32.27 — Automount & systemd Mount Integration
+- `32.28-removable-hotplug-storage.md` — Phase 32.28 — Removable & Hotplug Storage
+- `32.29-storage-permission-ownership-context.md` — Phase 32.29 — Storage Permission & Ownership Context
+- `32.30-filesystem-check-boundary.md` — Phase 32.30 — Filesystem Check Boundary
+- `32.31-filesystem-resize-boundary.md` — Phase 32.31 — Filesystem Resize Boundary
+- `32.32-partition-resize-boundary.md` — Phase 32.32 — Partition Resize Boundary
+- `32.33-encrypted-volume-lifecycle.md` — Phase 32.33 — Encrypted Volume Lifecycle
+- `32.34-raid-lifecycle-boundary.md` — Phase 32.34 — RAID Lifecycle Boundary
+- `32.35-snapshot-discovery-semantics.md` — Phase 32.35 — Snapshot Discovery & Semantics
+- `32.36-snapshot-vs-backup-separation.md` — Phase 32.36 — Snapshot vs Backup Separation
+- `32.37-backup-integration-boundary.md` — Phase 32.37 — Backup Integration Boundary
+- `32.38-storage-change-planning.md` — Phase 32.38 — Storage Change Planning
+- `32.39-destructive-action-classification.md` — Phase 32.39 — Destructive Action Classification
+- `32.40-format-reformat-safety-boundary.md` — Phase 32.40 — Format / Reformat Safety Boundary
+- `32.41-partition-table-mutation-safety.md` — Phase 32.41 — Partition Table Mutation Safety
+- `32.42-data-migration-planning.md` — Phase 32.42 — Data Migration Planning
+- `32.43-home-migration-support.md` — Phase 32.43 — Home Migration Support
+- `32.44-storage-recovery-rollback.md` — Phase 32.44 — Storage Recovery & Rollback
+- `32.45-boot-recovery-for-storage-changes.md` — Phase 32.45 — Boot Recovery for Storage Changes
+- `32.46-storage-drift-detection.md` — Phase 32.46 — Storage Drift Detection
+- `32.47-storage-management-cli.md` — Phase 32.47 — Storage Management CLI
+- `32.48-phase-25-panel-integration-api.md` — Phase 32.48 — Phase 25 Panel Integration API
+- `32.49-phase-29-workload-integration.md` — Phase 32.49 — Phase 29 Workload Integration
+- `32.50-phase-30-resource-integration.md` — Phase 32.50 — Phase 30 Resource Integration
+- `32.51-phase-31-service-integration.md` — Phase 32.51 — Phase 31 Service Integration
+- `32.52-phase-36-configuration-integration.md` — Phase 32.52 — Phase 36 Configuration Integration
+- `32.53-phase-37-secrets-integration.md` — Phase 32.53 — Phase 37 Secrets Integration
+- `32.54-phase-39-timeline-integration.md` — Phase 32.54 — Phase 39 Timeline Integration
+- `32.55-failure-injection-disposable-storage-testing.md` — Phase 32.55 — Failure Injection & Disposable Storage Testing
+- `32.56-storage-management-system-closure-readiness-gate.md` — Phase 32.56 — Storage Management System Closure & Readiness Gate

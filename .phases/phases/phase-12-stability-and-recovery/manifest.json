@@ -1,0 +1,114 @@
+{
+  "phase": 12,
+  "slug": "stability-and-recovery",
+  "directory": "phase-12-stability-and-recovery",
+  "prompt_count": 21,
+  "layout_version": 2,
+  "prompts": [
+    {
+      "file": "12.0.md",
+      "title": "Rebuntu --- Phase 12.0 --- Stability Architecture",
+      "sha256": "1592633b2dc1b1efee1e480bf3820a55dcca4cf3fc4774ca5d1c6e0a7ef14afe"
+    },
+    {
+      "file": "12.1.md",
+      "title": "Rebuntu --- Phase 12.1 --- Healthy Baseline / Known-Good State",
+      "sha256": "2d4ef888622a0b202c40d7b4af2cdabbe2d8195352e0d2b1d069a01b11d9b350"
+    },
+    {
+      "file": "12.2.md",
+      "title": "Rebuntu --- Phase 12.2 --- Deviation Detection",
+      "sha256": "db95c95ded06d081cd943c053cc7db825de38b0f1e44a388e64e247e6615dfa5"
+    },
+    {
+      "file": "12.3.md",
+      "title": "Rebuntu --- Phase 12.3 --- Degradation Detection",
+      "sha256": "8b3e5b37fd676309045ae88a1846b4870dd59b94a2affad0c9eb254a7b391731"
+    },
+    {
+      "file": "12.4.md",
+      "title": "Rebuntu --- Phase 12.4 --- Stall / Jam Detection",
+      "sha256": "f82d0ff47d3fa9b5113b40cb6090d2ea9aa1cc77e9f8bdec6149f8c52466a5fe"
+    },
+    {
+      "file": "12.5.md",
+      "title": "Rebuntu --- Phase 12.5 --- Failure Classification",
+      "sha256": "aaff4f3cbcbab8bb206548a0c75b76b76a0e0ec430fb0936920478d98175efb5"
+    },
+    {
+      "file": "12.6.md",
+      "title": "Rebuntu --- Phase 12.6 --- Root-Cause Evidence Correlation",
+      "sha256": "781399d0bc4c7bf09b1a34d07b861e78fb0e66f565577fd53844fa86529aa2ec"
+    },
+    {
+      "file": "12.7.md",
+      "title": "Rebuntu --- Phase 12.7 --- Recovery Planning",
+      "sha256": "c48e28b1077ceef42948940cf65c492acfd12a1767449cb4e89a31ac062cbf2b"
+    },
+    {
+      "file": "12.8.md",
+      "title": "Rebuntu --- Phase 12.8 --- Retry",
+      "sha256": "0e892504d843e7560b960cc603a1f27d2da032b957a9c4b68c1f0a52e8410a46"
+    },
+    {
+      "file": "12.9.md",
+      "title": "Rebuntu --- Phase 12.9 --- Restart",
+      "sha256": "c48fb481330319cc907bad7dd843a1ed70ccfb4e41cce79367d4f2b78a54eb35"
+    },
+    {
+      "file": "12.10.md",
+      "title": "Rebuntu --- Phase 12.10 --- Repair",
+      "sha256": "5f2285ca6d0d5dde9d5a957f4c3b6c9270af3b61a0fd5363be91dd86671249fb"
+    },
+    {
+      "file": "12.11.md",
+      "title": "Rebuntu --- Phase 12.11 --- Restore",
+      "sha256": "fce683036324a9d546e604937f6c2080628784aa9d93f1a99f4056aaffe08d1f"
+    },
+    {
+      "file": "12.12.md",
+      "title": "Rebuntu --- Phase 12.12 --- Rollback",
+      "sha256": "f9f748a9fb94dfa40de18c2c00ba03da5c683fd75c3156fd9d3dd9bb75efba5b"
+    },
+    {
+      "file": "12.13.md",
+      "title": "Rebuntu --- Phase 12.13 --- Compensation",
+      "sha256": "828de6ba385cf5d65e3767aaa12a0e01c96ecc57ae38da7ae658eeedb4b38c08"
+    },
+    {
+      "file": "12.14.md",
+      "title": "Rebuntu --- Phase 12.14 --- Degraded Mode",
+      "sha256": "23a08d84fb084cad60b900ddbb3cc72757c7ffc9de8ef791bff35ed4d0caf048"
+    },
+    {
+      "file": "12.15.md",
+      "title": "Rebuntu --- Phase 12.15 --- Recovery Verification",
+      "sha256": "892e2ccb6b8cbafbe0a6c5f540a4e9bc334f7fb1d6b2c52723d2c33c7c4d2222"
+    },
+    {
+      "file": "12.16.md",
+      "title": "Rebuntu --- Phase 12.16 --- Crash Recovery",
+      "sha256": "d7c22ddc63d9e04baee5fe2a68e968a9f50ab03e0abfcc41f4641bddec4925e5"
+    },
+    {
+      "file": "12.17.md",
+      "title": "Rebuntu --- Phase 12.17 --- Boot Failure Recovery",
+      "sha256": "4f7b14377508683425418b5b69bc7c336f24454ad6b6729b68af8651ab0f1ad7"
+    },
+    {
+      "file": "12.18.md",
+      "title": "Rebuntu --- Phase 12.18 --- Filesystem / Storage Recovery",
+      "sha256": "d80e8e4166fcbe0a55146f82676fa76fff3dac74045fc6da0b37743eca4febbd"
+    },
+    {
+      "file": "12.19.md",
+      "title": "Rebuntu --- Phase 12.19 --- Recovery Policy & Safety",
+      "sha256": "44ea5be7d7a33b9153e65634a4e7ec83497ae79fa32bdfc9e2e637fda166afbb"
+    },
+    {
+      "file": "12.20.md",
+      "title": "Rebuntu --- Phase 12.20 --- Resilience / Fault-Injection Audit",
+      "sha256": "4f15a5e50099855a8d4eecdbb8b025e1b6cfa79318880cbc5bcc4390938e825b"
+    }
+  ]
+}

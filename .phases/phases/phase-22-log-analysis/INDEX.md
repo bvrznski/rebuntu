@@ -1,0 +1,23 @@
+# Prompt Index
+
+- `22.0.md` — Rebuntu — Phase 22.0 — Log Analysis System Architecture
+- `22.1.md` — Rebuntu — Phase 22.1 — Log Source Discovery & Inventory
+- `22.2.md` — Rebuntu — Phase 22.2 — Journald & Boot-Aware Acquisition
+- `22.3.md` — Rebuntu — Phase 22.3 — Kernel / Driver Log Analysis
+- `22.4.md` — Rebuntu — Phase 22.4 — systemd Service & Unit Log Analysis
+- `22.5.md` — Rebuntu — Phase 22.5 — Application & Process Log Analysis
+- `22.6.md` — Rebuntu — Phase 22.6 — Storage / NVMe / Filesystem Log Analysis
+- `22.7.md` — Rebuntu — Phase 22.7 — GPU / NVIDIA / PCIe Log Analysis
+- `22.8.md` — Rebuntu — Phase 22.8 — Network & Connectivity Log Analysis
+- `22.9.md` — Rebuntu — Phase 22.9 — Security / Authentication Log Analysis
+- `22.10.md` — Rebuntu — Phase 22.10 — Parsing, Normalization & Typed Log Records
+- `22.11.md` — Rebuntu — Phase 22.11 — Deduplication, Noise Reduction & Rate Analysis
+- `22.12.md` — Rebuntu — Phase 22.12 — Temporal Correlation & Incident Windows
+- `22.13.md` — Rebuntu — Phase 22.13 — Cross-Source Correlation & Causal Hypotheses
+- `22.14.md` — Rebuntu — Phase 22.14 — Pattern, Signature & Anomaly Detection
+- `22.15.md` — Rebuntu — Phase 22.15 — Semantic Log Interpretation & Summarization
+- `22.16.md` — Rebuntu — Phase 22.16 — Evidence Extraction & Diagnostic Narratives
+- `22.17.md` — Rebuntu — Phase 22.17 — Incident Reconstruction & Root-Cause Assistance
+- `22.18.md` — Rebuntu — Phase 22.18 — Historical Comparison & Recurrence Detection
+- `22.19.md` — Rebuntu — Phase 22.19 — Query, Explain, Report & Operator Interface
+- `22.20.md` — Rebuntu — Phase 22.20 — Log Analysis Validation, Soak & Closure Audit

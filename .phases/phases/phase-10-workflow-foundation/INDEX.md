@@ -1,0 +1,21 @@
+# Prompt Index
+
+- `10.0.md` — Rebuntu --- Phase 10.0 --- Workflow Foundation
+- `10.1.md` — Rebuntu --- Phase 10.1 --- Workflow Definitions
+- `10.2.md` — Rebuntu --- Phase 10.2 --- Phases
+- `10.3.md` — Rebuntu --- Phase 10.3 --- Stages
+- `10.4.md` — Rebuntu --- Phase 10.4 --- Steps
+- `10.5.md` — Rebuntu --- Phase 10.5 --- Sequential Composition
+- `10.6.md` — Rebuntu --- Phase 10.6 --- Parallel Composition
+- `10.7.md` — Rebuntu --- Phase 10.7 --- Branching
+- `10.8.md` — Rebuntu --- Phase 10.8 --- Join / Synchronization
+- `10.9.md` — Rebuntu --- Phase 10.9 --- Data Flow
+- `10.10.md` — Rebuntu --- Phase 10.10 --- Preconditions & Gates
+- `10.11.md` — Rebuntu --- Phase 10.11 --- Checkpoints
+- `10.12.md` — Rebuntu --- Phase 10.12 --- Retry & Resume
+- `10.13.md` — Rebuntu --- Phase 10.13 --- Rollback
+- `10.14.md` — Rebuntu --- Phase 10.14 --- Compensation
+- `10.15.md` — Rebuntu --- Phase 10.15 --- Cancellation
+- `10.16.md` — Rebuntu --- Phase 10.16 --- Workflow Verification
+- `10.17.md` — Rebuntu --- Phase 10.17 --- Workflow Evidence & Reporting
+- `10.18.md` — Rebuntu --- Phase 10.18 --- Workflow Runtime Audit

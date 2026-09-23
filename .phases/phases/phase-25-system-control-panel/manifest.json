@@ -1,0 +1,149 @@
+{
+  "phase": 25,
+  "slug": "system-control-panel",
+  "directory": "phase-25-system-control-panel",
+  "prompt_count": 28,
+  "layout_version": 2,
+  "prompts": [
+    {
+      "file": "25.0-system-control-panel-foundation.md",
+      "title": "Phase 25.0 — System Control Panel Foundation",
+      "sha256": "65173f5fd922d0d836f0f38d92f592dc866f67f9b3a47e54e4cd7174986c0cd5"
+    },
+    {
+      "file": "25.1-panel-domain-model-and-typed-control-api.md",
+      "title": "Phase 25.1 — Panel Domain Model & Typed Control API",
+      "sha256": "37c3139888778a2ae43218419f02c69283636449ba72cdac9b44df5e1e7fb6e1"
+    },
+    {
+      "file": "25.2-tui-runtime,-navigation-and-layout.md",
+      "title": "Phase 25.2 — TUI Runtime, Navigation & Layout",
+      "sha256": "026ceb21f48559ee5f25019ac9ac8b4d0024cc3a1c024b2d5bb9655f189558c1"
+    },
+    {
+      "file": "25.3-system-overview-and-health-dashboard.md",
+      "title": "Phase 25.3 — System Overview & Health Dashboard",
+      "sha256": "c35c4cb7bd0f8b47dd9f3707f3f05ecfaaf8bdc895f33a6a526eed589c1f9a73"
+    },
+    {
+      "file": "25.4-hardware-and-sensor-control-surface.md",
+      "title": "Phase 25.4 — Hardware & Sensor Control Surface",
+      "sha256": "179cf7c21a1f5582429f4f811ea0b06376d3beb72deda233a4fd6ca1ba977e09"
+    },
+    {
+      "file": "25.5-process-inspection-and-control.md",
+      "title": "Phase 25.5 — Process Inspection & Control",
+      "sha256": "8c11d202098609222819dc66ae89cb2328c40878d22af22b8b732d3d25df932e"
+    },
+    {
+      "file": "25.6-systemd-services-and-units.md",
+      "title": "Phase 25.6 — systemd Services & Units",
+      "sha256": "e748520a8bfa45a7bf58732576d198b546cb565bcc4ce7559d1f3870df7d671f"
+    },
+    {
+      "file": "25.7-storage,-filesystems-and-mounts.md",
+      "title": "Phase 25.7 — Storage, Filesystems & Mounts",
+      "sha256": "22ae3513cfbdb59d9056213907ff0c6241bd828dd7bb1b89e3dcc8fda5486999"
+    },
+    {
+      "file": "25.8-network-control-surface.md",
+      "title": "Phase 25.8 — Network Control Surface",
+      "sha256": "d3d6106d531fa9f404306c40cff353e55745dcfac1a3307623df5a07fecdd47c"
+    },
+    {
+      "file": "25.9-package-and-repository-management.md",
+      "title": "Phase 25.9 — Package & Repository Management",
+      "sha256": "1b48a75fd8e8896116a609699fdc32eb6557163526051107b2d15b0dbc6c24f3"
+    },
+    {
+      "file": "25.10-kernel,-driver-and-dkms-management.md",
+      "title": "Phase 25.10 — Kernel, Driver & DKMS Management",
+      "sha256": "80c7f354d54ccbaf853e16853f4ff6b34b18689e1f47994e0b062d8bd674fc88"
+    },
+    {
+      "file": "25.11-containers-and-docker.md",
+      "title": "Phase 25.11 — Containers & Docker",
+      "sha256": "950c982e394ba981e0a0313a3e24ecc5c058ffa442f6e84eb6e18639ba5ea970"
+    },
+    {
+      "file": "25.12-logs-and-evidence-explorer.md",
+      "title": "Phase 25.12 — Logs & Evidence Explorer",
+      "sha256": "d98db9d66333c9d0e031a0aa8783524ccfe409f3b1ae415855015953d138c51b"
+    },
+    {
+      "file": "25.13-semantic-analysis-and-hypothesis-view.md",
+      "title": "Phase 25.13 — Semantic Analysis & Hypothesis View",
+      "sha256": "b7975a38babb35670d76d07145d3f28cf525ddb1f290ca834ac98eff83f93cf6"
+    },
+    {
+      "file": "25.14-security-and-exposure-view.md",
+      "title": "Phase 25.14 — Security & Exposure View",
+      "sha256": "d360724f8de349a846869104eb359100ae47c56dc31a04cb0f4475e365d63329"
+    },
+    {
+      "file": "25.15-updates-and-evergreen-evolution-center.md",
+      "title": "Phase 25.15 — Updates & Evergreen Evolution Center",
+      "sha256": "7227d8199ebf70118dbfec3ded53da2d86becfe2500b7881b6fb0ffad17ccbf0"
+    },
+    {
+      "file": "25.16-recovery-and-rollback-center.md",
+      "title": "Phase 25.16 — Recovery & Rollback Center",
+      "sha256": "9a8f6544684ffcecf2e18dec64b70519a3fc726b3363d71802552a009e8c6abe"
+    },
+    {
+      "file": "25.17-unified-action-planning-and-authorization-ux.md",
+      "title": "Phase 25.17 — Unified Action Planning & Authorization UX",
+      "sha256": "40eb841b3c6d0434ff9121609621c0328e1db6c5c39e07c23f8ca7a7bad6d166"
+    },
+    {
+      "file": "25.18-execution-progress,-verification-and-audit-trail.md",
+      "title": "Phase 25.18 — Execution Progress, Verification & Audit Trail",
+      "sha256": "50dc01635d826a41dbe3db465a560f5b88e64f54ca604fc64bd4ebc8885cc5e6"
+    },
+    {
+      "file": "25.19-search,-command-palette-and-cross-system-navigation.md",
+      "title": "Phase 25.19 — Search, Command Palette & Cross-System Navigation",
+      "sha256": "cf274c7674b7945de95ae987c084f50a912b1397efdf21534c2bd3162010183f"
+    },
+    {
+      "file": "25.20-contextual-help-and-explainability.md",
+      "title": "Phase 25.20 — Contextual Help & Explainability",
+      "sha256": "d22ea1a91cb2c387b6aa2694579ddb20beeb03aa4f8bdcf96d075095983ce834"
+    },
+    {
+      "file": "25.21-performance,-refresh-and-event-architecture.md",
+      "title": "Phase 25.21 — Performance, Refresh & Event Architecture",
+      "sha256": "6789b94e57a9168dc61447f999c95c88a3aeb8a3ab86d8ee79f28e61487cb78d"
+    },
+    {
+      "file": "25.22-privilege-boundary-and-root-helper-architecture.md",
+      "title": "Phase 25.22 — Privilege Boundary & Root Helper Architecture",
+      "sha256": "d28ee7387aebc0e764b823de1d9ba47af17a13bd5c121e1d6403598c5a95c0a9"
+    },
+    {
+      "file": "25.23-panel-configuration-and-personalization.md",
+      "title": "Phase 25.23 — Panel Configuration & Personalization",
+      "sha256": "f8f2f41061863df66c77ed586cd0967cf268e3698f3f224ec04978aae73ac932"
+    },
+    {
+      "file": "25.24-frontend-independence-and-future-gui-api-readiness.md",
+      "title": "Phase 25.24 — Frontend Independence & Future GUI/API Readiness",
+      "sha256": "37870e4669415b31fc989ea76b2677c4370638cdd61290084ec8e6dace23b330"
+    },
+    {
+      "file": "25.25-failure-injection-and-safety-testing.md",
+      "title": "Phase 25.25 — Failure Injection & Safety Testing",
+      "sha256": "733f18c542ac66e47461fccda0012edf42f25e7e5e3efba36f0a2c2c4b664d61"
+    },
+    {
+      "file": "25.26-cross-phase-integration-audit.md",
+      "title": "Phase 25.26 — Cross-Phase Integration Audit",
+      "sha256": "c6f8e73ce1709db55dbbee8d15aca995caafcec8c0bb51b3d07e4f54ad5123a6"
+    },
+    {
+      "file": "25.27-system-control-panel-closure-and-readiness-gate.md",
+      "title": "Phase 25.27 — System Control Panel Closure & Readiness Gate",
+      "sha256": "bf710e11d9c1e09099e8ee2ef35d346811adae157973ae819c4537592e38dcc9"
+    }
+  ]
+}

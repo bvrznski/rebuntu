@@ -1,0 +1,89 @@
+{
+  "phase": 2,
+  "slug": "environment-foundation",
+  "directory": "phase-02-environment-foundation",
+  "prompt_count": 16,
+  "layout_version": 2,
+  "prompts": [
+    {
+      "file": "2.0.md",
+      "title": "Rebuntu — Phase 2.0 — Linux Host Foundation",
+      "sha256": "f1088c21b361c1f5f1d1c6ed93b21b566805a5f8bb77ba3df8eb65a2ac79ed75"
+    },
+    {
+      "file": "2.1.md",
+      "title": "Rebuntu — Phase 2.1 — Users & Identity",
+      "sha256": "312bf63270bb44ab2bf38043a0d6736c81c787805505aa2ffe76570e6954dd8c"
+    },
+    {
+      "file": "2.2.md",
+      "title": "Rebuntu — Phase 2.2 — Groups, Membership & Roles",
+      "sha256": "f9ba98201d84461b4239c3bf38bce03ed4af32137361dbb029e19cadf27d5b21"
+    },
+    {
+      "file": "2.3.md",
+      "title": "Rebuntu — Phase 2.3 — Ownership & Permissions",
+      "sha256": "748fb56e4ec9be7fb2d9278b23fe6325a2aa7e36e1ff95bd3c4b0df94fd9b6e9"
+    },
+    {
+      "file": "2.4.md",
+      "title": "Rebuntu — Phase 2.4 — Privilege & Elevation",
+      "sha256": "2d214967d587f97ee0f782cca9b0f73d27a38c46a43515ea02c7408461808d3d"
+    },
+    {
+      "file": "2.5.md",
+      "title": "Rebuntu — Phase 2.5 — Linux Capabilities",
+      "sha256": "5977c5acf02dcb9cd298f85fb0d67f0f0b864da0e8a68c4746a6f36eb3c91a27"
+    },
+    {
+      "file": "2.6.md",
+      "title": "Rebuntu — Phase 2.6 — Authorization & Scope",
+      "sha256": "afc7343c186bc6243d491df09a42e751ddbd6a244252f98bb278f7fd6ecb9127"
+    },
+    {
+      "file": "2.7.md",
+      "title": "Rebuntu — Phase 2.7 — System Scope vs User Scope",
+      "sha256": "2d6e2be5759de754dc7d7f7bf51cfc4233333526734f47069e3ed96a724ca452"
+    },
+    {
+      "file": "2.8.md",
+      "title": "Rebuntu — Phase 2.8 — Sessions & Runtime Identity",
+      "sha256": "8f5f05534927e41ba541f2c559555f0a3017be645d9c933f95c5f507c4366e86"
+    },
+    {
+      "file": "2.9.md",
+      "title": "Rebuntu — Phase 2.9 — Operational Directory Layout",
+      "sha256": "2daa199869809223368aee1f10416bd4de856e55bef1ef39cc5000c5c60a9a68"
+    },
+    {
+      "file": "2.10.md",
+      "title": "Rebuntu — Phase 2.10 — Runtime, State, Cache & Data Directories",
+      "sha256": "d6f89790ec95aade00f5966c75fd022be16eb5d3b762c86ef5cc02baaf3848ad"
+    },
+    {
+      "file": "2.11.md",
+      "title": "Rebuntu — Phase 2.11 — Configuration & Secrets Locations",
+      "sha256": "cef14e96a5500004a786e795ae0f4afc220a2e8c2ac89a94668c627ab20bafed"
+    },
+    {
+      "file": "2.12.md",
+      "title": "Rebuntu — Phase 2.12 — Temporary Storage, Locks & IPC Locations",
+      "sha256": "3c12b75f6355410c4254f77329d1c1f3ae08d9626b04f76828d5ef67231fded5"
+    },
+    {
+      "file": "2.13.md",
+      "title": "Rebuntu — Phase 2.13 — Filesystem Ownership & Isolation",
+      "sha256": "78da75c64111c13f5c720defcb7c278c09fd20a0daacc12f6627576e39bc7afc"
+    },
+    {
+      "file": "2.14.md",
+      "title": "Rebuntu — Phase 2.14 — systemd User/System Boundary",
+      "sha256": "93a51493cd54524b0ccf2d820195b0b5b8b4bfe9e6f95724613db095705f874b"
+    },
+    {
+      "file": "2.15.md",
+      "title": "Rebuntu — Phase 2.15 — Foundation Security & Consistency Audit",
+      "sha256": "c1e578ce7c70401e2b2247a926c0654c0b08e35876136d042409a01de8b9f93d"
+    }
+  ]
+}

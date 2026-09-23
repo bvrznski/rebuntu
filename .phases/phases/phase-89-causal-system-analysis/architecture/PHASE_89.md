@@ -1,0 +1,26 @@
+# Phase 89 — Causal System Analysis
+
+- 89.0: Bootstrap and repository reality audit
+- 89.1: Canonical ontology and identity
+- 89.2: Definitions and lifecycle
+- 89.3: State ownership and persistence
+- 89.4: Observation evidence provenance freshness
+- 89.5: UNKNOWN and conflicting evidence
+- 89.6: Capability and affordance integration
+- 89.7: Goal and desired-state integration
+- 89.8: Planning and operation integration
+- 89.9: Constraints and invariants
+- 89.10: Resources and topology
+- 89.11: Policy authorization
+- 89.12: Mandatory security
+- 89.13: Privilege and native providers
+- 89.14: Failure timeout cancellation partial effects
+- 89.15: Crash restart reconciliation recovery
+- 89.16: Concurrency races replacement TOCTOU
+- 89.17: Boundedness and budgets
+- 89.18: CLI GUI natural-language integration
+- 89.19: Timeline graph context integration
+- 89.20: Distributed and associated systems
+- 89.21: Python model shell authority audit
+- 89.22: Adversarial build runtime migration audit
+- 89.23: Documentation rediscovery and closure

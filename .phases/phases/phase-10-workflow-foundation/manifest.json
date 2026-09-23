@@ -1,0 +1,104 @@
+{
+  "phase": 10,
+  "slug": "workflow-foundation",
+  "directory": "phase-10-workflow-foundation",
+  "prompt_count": 19,
+  "layout_version": 2,
+  "prompts": [
+    {
+      "file": "10.0.md",
+      "title": "Rebuntu --- Phase 10.0 --- Workflow Foundation",
+      "sha256": "4818ca84034c0984b5d02f228e507454a895bedacaf090190f5670a600e728cb"
+    },
+    {
+      "file": "10.1.md",
+      "title": "Rebuntu --- Phase 10.1 --- Workflow Definitions",
+      "sha256": "e3951ee2c00557c502aa305510809627ad1a37afeb0e5023128a0202f75ff13f"
+    },
+    {
+      "file": "10.2.md",
+      "title": "Rebuntu --- Phase 10.2 --- Phases",
+      "sha256": "9ac5e678e31c649a41482a8812515dd00fe62618e27406d4977a1725ad2be5cd"
+    },
+    {
+      "file": "10.3.md",
+      "title": "Rebuntu --- Phase 10.3 --- Stages",
+      "sha256": "9faebd184bf388546fe26ecf335e064fd8f24d3d6748c8cc565be47a4727d187"
+    },
+    {
+      "file": "10.4.md",
+      "title": "Rebuntu --- Phase 10.4 --- Steps",
+      "sha256": "26ae31089a6d7da6446eb1733fb96aa53f6cf14d7bfec74ccf7759cf83755f82"
+    },
+    {
+      "file": "10.5.md",
+      "title": "Rebuntu --- Phase 10.5 --- Sequential Composition",
+      "sha256": "99d6c8546dbea6133a148f3c71715814c83e269d28aff5d33cd26ad945cd4df3"
+    },
+    {
+      "file": "10.6.md",
+      "title": "Rebuntu --- Phase 10.6 --- Parallel Composition",
+      "sha256": "664ddd798da6676b7daef342c6742f0581f13a4c6a3f4a2b77a7ad2fff309905"
+    },
+    {
+      "file": "10.7.md",
+      "title": "Rebuntu --- Phase 10.7 --- Branching",
+      "sha256": "445d2ed9ac93b781e4a0fee659ec835306593950108a806ed904fef52b27b95c"
+    },
+    {
+      "file": "10.8.md",
+      "title": "Rebuntu --- Phase 10.8 --- Join / Synchronization",
+      "sha256": "fbb834e583aa4b58de175e4f9bc55553e6a22659cf6c9218c229ea921a03e61c"
+    },
+    {
+      "file": "10.9.md",
+      "title": "Rebuntu --- Phase 10.9 --- Data Flow",
+      "sha256": "1ef1b4a781fd3ee33b5ec808b670b274eef20e80829280cf46e690cf088e08c9"
+    },
+    {
+      "file": "10.10.md",
+      "title": "Rebuntu --- Phase 10.10 --- Preconditions & Gates",
+      "sha256": "9fbd377c75ff868a79448f06ef6e5a82aec962a866f97a1923fa73669fd01d7d"
+    },
+    {
+      "file": "10.11.md",
+      "title": "Rebuntu --- Phase 10.11 --- Checkpoints",
+      "sha256": "4aedb3575bce07b7ba23085d550c380e36bfa7067c1d7531bbb42753030078fe"
+    },
+    {
+      "file": "10.12.md",
+      "title": "Rebuntu --- Phase 10.12 --- Retry & Resume",
+      "sha256": "e1850274a0893f02748e8799ebcdf6c57a2f2cb4bfcafec5bebc20d2d10344e9"
+    },
+    {
+      "file": "10.13.md",
+      "title": "Rebuntu --- Phase 10.13 --- Rollback",
+      "sha256": "026597272982a9ee0f8545ab393e94708cb6bc15fb6ee7866fc127dc6e78bd09"
+    },
+    {
+      "file": "10.14.md",
+      "title": "Rebuntu --- Phase 10.14 --- Compensation",
+      "sha256": "9349701dbd633434bdd60ee41080803f2df07e3463b0fae443fbcf42950f71a7"
+    },
+    {
+      "file": "10.15.md",
+      "title": "Rebuntu --- Phase 10.15 --- Cancellation",
+      "sha256": "241118b3f1f3ea991dea9c3d9574d15324b691e4086bc1e8377ce9e25e83304f"
+    },
+    {
+      "file": "10.16.md",
+      "title": "Rebuntu --- Phase 10.16 --- Workflow Verification",
+      "sha256": "f8d4346dc170bf0f81951a62ff3c4e6e05be599383c4d09fa877abf086375494"
+    },
+    {
+      "file": "10.17.md",
+      "title": "Rebuntu --- Phase 10.17 --- Workflow Evidence & Reporting",
+      "sha256": "651f5841c68f6d2d174c701df08840c276483db9ceab99f7ccd642b6f75d1f9a"
+    },
+    {
+      "file": "10.18.md",
+      "title": "Rebuntu --- Phase 10.18 --- Workflow Runtime Audit",
+      "sha256": "e46dbb9048cf3e02c47a322d6de6703d3be555ac4cca2e899a9cc1fba97b9b23"
+    }
+  ]
+}

@@ -1,0 +1,392 @@
+| Phase     | Macro Phase                                         | Subject                                                               |
+|-----------|-----------------------------------------------------|-----------------------------------------------------------------------|
+| **0.0**   | Architecture & Skeleton                             | Repository Architecture, Project Skeleton & Evolution Contract        |
+| **0.1**   | Architecture & Skeleton                             | Structural Taxonomy / Structural Grammar                              |
+| **0.2**   | Architecture & Skeleton                             | Runtime, Execution, Control & Coordination / Operational Grammar      |
+| **0.3**   | Architecture & Skeleton                             | Shell Sources Architecture & Source Library                           |
+| **0.4**   | Architecture & Skeleton                             | Scripts Architecture, Classification & Contracts                      |
+| **0.5**   | Architecture & Skeleton                             | Daemons Architecture, Lifecycle & Supervision                         |
+| **0.6**   | Architecture & Skeleton                             | Services Architecture, Activation & Dependencies                      |
+| **0.7**   | Architecture & Skeleton                             | Units Architecture, Taxonomy & Composition                            |
+| **0.8**   | Architecture & Skeleton                             | Tasks, Jobs, Executions & Attempts                                    |
+| **0.9**   | Architecture & Skeleton                             | Scheduling & Temporal Grammar                                         |
+| **0.10**  | Architecture & Skeleton                             | Operations — Contracts, Effects, Verification & Evidence              |
+| **0.11**  | Architecture & Skeleton                             | Workflows — Composition, Phases, Stages & Steps                       |
+| **0.12**  | Architecture & Skeleton                             | Automation & Automatons                                               |
+| **0.13**  | Architecture & Skeleton                             | Execution Runtime — Runner, Executor, Dispatcher & Activation         |
+| **0.14**  | Architecture & Skeleton                             | State, Status, Lifecycle, Activity, Health & Readiness                |
+| **0.15**  | Architecture & Skeleton                             | Events, Signals, Requests, Messages & Communication                   |
+| **0.16**  | Architecture & Skeleton                             | Interfaces, Adapters, Providers & System Boundaries                   |
+| **0.17**  | Architecture & Skeleton                             | Results, Outcomes, Errors, Verification & Evidence                    |
+| **0.18**  | Architecture & Skeleton                             | Configuration & Specification Grammar                                 |
+| **0.19**  | Architecture & Skeleton                             | Naming, Namespaces, Registries, Catalogs & Discovery                  |
+| **0.20**  | Architecture & Skeleton                             | Architecture Closure, Ontology Compression & Skeleton Audit           |
+| **1.0**   | Installation & User Definition                      | Installation Architecture & Bootstrap                                |
+| **1.1**   | Installation & User Definition                      | Host Discovery & Installation Preconditions                          |
+| **1.2**   | Installation & User Definition                      | Installation Planning & Environment Preparation                      |
+| **1.3**   | Installation & User Definition                      | Installation Forms & Structured Setup Input                          |
+| **1.4**   | Installation & User Definition                      | User Definition & User Context                                       |
+| **1.5**   | Installation & User Definition                      | Settings Model                                                       |
+| **1.6**   | Installation & User Definition                      | Options Model                                                        |
+| **1.7**   | Installation & User Definition                      | Preferences Model                                                    |
+| **1.8**   | Installation & User Definition                      | Setup & Configuration Model                                          |
+| **1.9**   | Installation & User Definition                      | Hardware / Software Environment Discovery                            |
+| **1.10**  | Installation & User Definition                      | Initial Profile Generation & Application                             |
+| **1.11**  | Installation & User Definition                      | Reconfigure, Repair, Upgrade & Uninstall                             |
+| **1.12**  | Installation & User Definition                      | Installation Verification & Phase Closure                            |
+| **2.0**   | System Foundation                                   | Linux Host Foundation                                                |
+| **2.1**   | System Foundation                                   | Users & Identity                                                     |
+| **2.2**   | System Foundation                                   | Groups, Membership & Roles                                           |
+| **2.3**   | System Foundation                                   | Ownership & Permissions                                              |
+| **2.4**   | System Foundation                                   | Privilege & Elevation                                                |
+| **2.5**   | System Foundation                                   | Linux Capabilities                                                   |
+| **2.6**   | System Foundation                                   | Authorization & Scope                                                |
+| **2.7**   | System Foundation                                   | System Scope vs User Scope                                           |
+| **2.8**   | System Foundation                                   | Sessions & Runtime Identity                                          |
+| **2.9**   | System Foundation                                   | Operational Directory Layout                                        |
+| **2.10**  | System Foundation                                   | Runtime, State, Cache & Data Directories                             |
+| **2.11**  | System Foundation                                   | Configuration & Secrets Locations                                   |
+| **2.12**  | System Foundation                                   | Temporary Storage, Locks & IPC Locations                             |
+| **2.13**  | System Foundation                                   | Filesystem Ownership & Isolation                                    |
+| **2.14**  | System Foundation                                   | systemd User/System Boundary                                        |
+| **2.15**  | System Foundation                                   | Foundation Security & Consistency Audit                              |
+| **3.0**   | Semantic, Container & Engineering Infrastructure    | Engineering Infrastructure Foundation                               |
+| **3.1**   | Semantic, Container & Engineering Infrastructure    | BitNet Runtime Bootstrap                                            |
+| **3.2**   | Semantic, Container & Engineering Infrastructure    | BitNet CPU-Only Provider                                            |
+| **3.3**   | Semantic, Container & Engineering Infrastructure    | Native Semantic Service                                             |
+| **3.4**   | Semantic, Container & Engineering Infrastructure    | Semantic IPC & Structured Contracts                                 |
+| **3.5**   | Semantic, Container & Engineering Infrastructure    | Docker Integration                                                  |
+| **3.6**   | Semantic, Container & Engineering Infrastructure    | Container Runtime Contracts                                         |
+| **3.7**   | Semantic, Container & Engineering Infrastructure    | Ansible Integration                                                 |
+| **3.8**   | Semantic, Container & Engineering Infrastructure    | Ansible Provider & Execution Boundary                               |
+| **3.9**   | Semantic, Container & Engineering Infrastructure    | Jenkins Integration                                                 |
+| **3.10**  | Semantic, Container & Engineering Infrastructure    | Build / Test / Deployment Pipeline                                  |
+| **3.11**  | Semantic, Container & Engineering Infrastructure    | Packaging & Environment Reproducibility                             |
+| **3.12**  | Semantic, Container & Engineering Infrastructure    | Development / Testing Environments                                  |
+| **3.13**  | Semantic, Container & Engineering Infrastructure    | Provider Selection & Infrastructure Integration                     |
+| **3.14**  | Semantic, Container & Engineering Infrastructure    | Infrastructure Readiness Audit                                      |
+| **4.0**   | Core Runtime & Coordination                         | Runtime Foundation                                                  |
+| **4.1**   | Core Runtime & Coordination                         | Core Initialization                                                 |
+| **4.2**   | Core Runtime & Coordination                         | Engine                                                              |
+| **4.3**   | Core Runtime & Coordination                         | Executor                                                            |
+| **4.4**   | Core Runtime & Coordination                         | Runner                                                              |
+| **4.5**   | Core Runtime & Coordination                         | Dispatcher                                                          |
+| **4.6**   | Core Runtime & Coordination                         | Controller                                                          |
+| **4.7**   | Core Runtime & Coordination                         | Coordinator                                                         |
+| **4.8**   | Core Runtime & Coordination                         | Resolver                                                            |
+| **4.9**   | Core Runtime & Coordination                         | Loader                                                              |
+| **4.10**  | Core Runtime & Coordination                         | Registry / Catalog Runtime Integration                              |
+| **4.11**  | Core Runtime & Coordination                         | Unit Execution                                                      |
+| **4.12**  | Core Runtime & Coordination                         | Operation Execution                                                 |
+| **4.13**  | Core Runtime & Coordination                         | Task / Job Runtime                                                  |
+| **4.14**  | Core Runtime & Coordination                         | Workflow Runtime                                                    |
+| **4.15**  | Core Runtime & Coordination                         | Shell Source Loading & Runtime Integration                           |
+| **4.16**  | Core Runtime & Coordination                         | Native Event Activation                                             |
+| **4.17**  | Core Runtime & Coordination                         | Kernel / udev / systemd Initiated Chains                            |
+| **4.18**  | Core Runtime & Coordination                         | Startup, Init & Dependency Chains                                   |
+| **4.19**  | Core Runtime & Coordination                         | Shutdown, Cancellation & Runtime Recovery                           |
+| **4.20**  | Core Runtime & Coordination                         | Runtime Integration & Readiness Audit                               |
+| **5.0**   | Foundational System Services                        | Foundational Services Framework                                     |
+| **5.1**   | Foundational System Services                        | System Event Collector                                              |
+| **5.2**   | Foundational System Services                        | Journald Acquisition Service                                        |
+| **5.3**   | Foundational System Services                        | Journal Filtering & Normalization                                   |
+| **5.4**   | Foundational System Services                        | Journal Analyzer                                                    |
+| **5.5**   | Foundational System Services                        | System Stability Monitor                                            |
+| **5.6**   | Foundational System Services                        | Process & Service Health Monitor                                    |
+| **5.7**   | Foundational System Services                        | Kernel / Driver Fault Monitor                                       |
+| **5.8**   | Foundational System Services                        | Storage & Filesystem Health Monitor                                 |
+| **5.9**   | Foundational System Services                        | CPU / Memory / Thermal Monitor                                      |
+| **5.10**  | Foundational System Services                        | GPU Health Monitor                                                  |
+| **5.11**  | Foundational System Services                        | Hang / Stall / Jam Detection                                        |
+| **5.12**  | Foundational System Services                        | Evidence Collector                                                  |
+| **5.13**  | Foundational System Services                        | Diagnostic Snapshot Service                                         |
+| **5.14**  | Foundational System Services                        | Internal Alert Service                                              |
+| **5.15**  | Foundational System Services                        | Reporting & Notification                                            |
+| **5.16**  | Foundational System Services                        | Stability Services Integration & Soak Test                          |
+| **6.0**   | Shell Language & Command Mesh                       | Rebuntu Shell Language Foundation                                   |
+| **6.1**   | Shell Language & Command Mesh                       | Canonical Verb Dictionary                                           |
+| **6.2**   | Shell Language & Command Mesh                       | Predicate Dictionary                                                |
+| **6.3**   | Shell Language & Command Mesh                       | Object / Subject Vocabulary                                         |
+| **6.4**   | Shell Language & Command Mesh                       | Qualifiers & Modifiers                                              |
+| **6.5**   | Shell Language & Command Mesh                       | Scope Grammar                                                       |
+| **6.6**   | Shell Language & Command Mesh                       | Arguments & Options Grammar                                         |
+| **6.7**   | Shell Language & Command Mesh                       | Command Resolution                                                  |
+| **6.8**   | Shell Language & Command Mesh                       | Verb → Operation Mapping                                            |
+| **6.9**   | Shell Language & Command Mesh                       | Predicates → Query / State Mapping                                  |
+| **6.10**  | Shell Language & Command Mesh                       | Pipeline Semantics                                                  |
+| **6.11**  | Shell Language & Command Mesh                       | Structured Output                                                   |
+| **6.12**  | Shell Language & Command Mesh                       | Human Output & Rendering                                            |
+| **6.13**  | Shell Language & Command Mesh                       | Completion & Discovery                                              |
+| **6.14**  | Shell Language & Command Mesh                       | Command Collision Protection                                        |
+| **6.15**  | Shell Language & Command Mesh                       | Contextual Command Resolution                                       |
+| **6.16**  | Shell Language & Command Mesh                       | Semi-Natural Command Grammar                                        |
+| **6.17**  | Shell Language & Command Mesh                       | Semantic Interpretation Boundary                                    |
+| **6.18**  | Shell Language & Command Mesh                       | Shell Language Closure & UX Audit                                   |
+| **7.0**   | Observation & Unified System State                  | Observation Architecture                                            |
+| **7.1**   | Observation & Unified System State                  | Facts & Observations                                                 |
+| **7.2**   | Observation & Unified System State                  | State Acquisition                                                   |
+| **7.3**   | Observation & Unified System State                  | State Normalization                                                 |
+| **7.4**   | Observation & Unified System State                  | State Provenance & Freshness                                        |
+| **7.5**   | Observation & Unified System State                  | Process Observation                                                 |
+| **7.6**   | Observation & Unified System State                  | Service Observation                                                 |
+| **7.7**   | Observation & Unified System State                  | Filesystem & Storage Observation                                    |
+| **7.8**   | Observation & Unified System State                  | Device Observation                                                  |
+| **7.9**   | Observation & Unified System State                  | Network Observation                                                 |
+| **7.10**  | Observation & Unified System State                  | CPU / Memory Observation                                            |
+| **7.11**  | Observation & Unified System State                  | GPU Observation                                                     |
+| **7.12**  | Observation & Unified System State                  | Power / Thermal Observation                                         |
+| **7.13**  | Observation & Unified System State                  | Desktop / Session Observation                                       |
+| **7.14**  | Observation & Unified System State                  | Package / Software Observation                                      |
+| **7.15**  | Observation & Unified System State                  | Security-State Observation                                          |
+| **7.16**  | Observation & Unified System State                  | Unified Current-State View                                          |
+| **7.17**  | Observation & Unified System State                  | Historical State & Change Tracking                                  |
+| **7.18**  | Observation & Unified System State                  | Observation Coverage Audit                                          |
+| **8.0**   | Events, Assertions & Correlation                    | Event Architecture                                                  |
+| **8.1**   | Events, Assertions & Correlation                    | Event Sources                                                       |
+| **8.2**   | Events, Assertions & Correlation                    | Event Normalization                                                 |
+| **8.3**   | Events, Assertions & Correlation                    | Fact Generation                                                     |
+| **8.4**   | Events, Assertions & Correlation                    | Assertions                                                          |
+| **8.5**   | Events, Assertions & Correlation                    | Conditions                                                          |
+| **8.6**   | Events, Assertions & Correlation                    | Invariants                                                          |
+| **8.7**   | Events, Assertions & Correlation                    | Constraints                                                         |
+| **8.8**   | Events, Assertions & Correlation                    | Rules                                                               |
+| **8.9**   | Events, Assertions & Correlation                    | Violations                                                          |
+| **8.10**  | Events, Assertions & Correlation                    | Temporal Conditions                                                 |
+| **8.11**  | Events, Assertions & Correlation                    | Event Correlation                                                   |
+| **8.12**  | Events, Assertions & Correlation                    | Temporal Correlation                                                |
+| **8.13**  | Events, Assertions & Correlation                    | Causal Chains                                                       |
+| **8.14**  | Events, Assertions & Correlation                    | Event Storm Handling                                                |
+| **8.15**  | Events, Assertions & Correlation                    | Internal Alerts                                                     |
+| **8.16**  | Events, Assertions & Correlation                    | Evidence Requests                                                   |
+| **8.17**  | Events, Assertions & Correlation                    | Escalation                                                          |
+| **8.18**  | Events, Assertions & Correlation                    | Event / Assertion Integration Audit                                 |
+| **9.0**   | Automation & Scheduling                             | Automation Runtime                                                  |
+| **9.1**   | Automation & Scheduling                             | Automaton Definition                                                |
+| **9.2**   | Automation & Scheduling                             | Trigger Binding                                                     |
+| **9.3**   | Automation & Scheduling                             | Event-Driven Automation                                             |
+| **9.4**   | Automation & Scheduling                             | Condition-Driven Automation                                         |
+| **9.5**   | Automation & Scheduling                             | Scheduled Automation                                                |
+| **9.6**   | Automation & Scheduling                             | systemd Timer Provider                                              |
+| **9.7**   | Automation & Scheduling                             | Kernel / udev Activation                                            |
+| **9.8**   | Automation & Scheduling                             | Path / Device / Socket Activation                                   |
+| **9.9**   | Automation & Scheduling                             | Debounce / Coalescing                                               |
+| **9.10**  | Automation & Scheduling                             | Throttling / Cooldown                                               |
+| **9.11**  | Automation & Scheduling                             | Automation State                                                    |
+| **9.12**  | Automation & Scheduling                             | Automation Policy                                                   |
+| **9.13**  | Automation & Scheduling                             | Failure & Retry                                                     |
+| **9.14**  | Automation & Scheduling                             | Automation Verification                                            |
+| **9.15**  | Automation & Scheduling                             | Automation Evidence                                                |
+| **9.16**  | Automation & Scheduling                             | Historical Automaton Migration                                      |
+| **9.17**  | Automation & Scheduling                             | Automation Discovery & Management                                   |
+| **9.18**  | Automation & Scheduling                             | Automation Integration Audit                                        |
+| **10.0**  | Operational Composition & Workflows                 | Workflow Foundation                                                 |
+| **10.1**  | Operational Composition & Workflows                 | Workflow Definitions                                                |
+| **10.2**  | Operational Composition & Workflows                 | Phases                                                              |
+| **10.3**  | Operational Composition & Workflows                 | Stages                                                              |
+| **10.4**  | Operational Composition & Workflows                 | Steps                                                               |
+| **10.5**  | Operational Composition & Workflows                 | Sequential Composition                                              |
+| **10.6**  | Operational Composition & Workflows                 | Parallel Composition                                                |
+| **10.7**  | Operational Composition & Workflows                 | Branching                                                           |
+| **10.8**  | Operational Composition & Workflows                 | Join / Synchronization                                              |
+| **10.9**  | Operational Composition & Workflows                 | Data Flow                                                           |
+| **10.10** | Operational Composition & Workflows                 | Preconditions & Gates                                               |
+| **10.11** | Operational Composition & Workflows                 | Checkpoints                                                         |
+| **10.12** | Operational Composition & Workflows                 | Retry & Resume                                                      |
+| **10.13** | Operational Composition & Workflows                 | Rollback                                                            |
+| **10.14** | Operational Composition & Workflows                 | Compensation                                                        |
+| **10.15** | Operational Composition & Workflows                 | Cancellation                                                        |
+| **10.16** | Operational Composition & Workflows                 | Workflow Verification                                               |
+| **10.17** | Operational Composition & Workflows                 | Workflow Evidence & Reporting                                       |
+| **10.18** | Operational Composition & Workflows                 | Workflow Runtime Audit                                              |
+| **11.0**  | Configuration & Profiles                            | Configuration System                                                |
+| **11.1**  | Configuration & Profiles                            | Configuration Sources                                               |
+| **11.2**  | Configuration & Profiles                            | Configuration Schema                                                |
+| **11.3**  | Configuration & Profiles                            | Layering & Overrides                                                |
+| **11.4**  | Configuration & Profiles                            | Preferences Integration                                             |
+| **11.5**  | Configuration & Profiles                            | Profiles                                                            |
+| **11.6**  | Configuration & Profiles                            | Host Profiles                                                       |
+| **11.7**  | Configuration & Profiles                            | User Profiles                                                       |
+| **11.8**  | Configuration & Profiles                            | Workload Profiles                                                   |
+| **11.9**  | Configuration & Profiles                            | Environment Profiles                                                |
+| **11.10** | Configuration & Profiles                            | Profile Activation                                                  |
+| **11.11** | Configuration & Profiles                            | Profile Composition                                                 |
+| **11.12** | Configuration & Profiles                            | Configuration Diff                                                  |
+| **11.13** | Configuration & Profiles                            | Configuration Validation                                            |
+| **11.14** | Configuration & Profiles                            | Configuration Application                                           |
+| **11.15** | Configuration & Profiles                            | Configuration Verification                                          |
+| **11.16** | Configuration & Profiles                            | Configuration / Profile Closure                                     |
+| **12.0**  | Stability & Recovery                                | Stability Architecture                                              |
+| **12.1**  | Stability & Recovery                                | Healthy Baseline / Known-Good State                                 |
+| **12.2**  | Stability & Recovery                                | Deviation Detection                                                 |
+| **12.3**  | Stability & Recovery                                | Degradation Detection                                               |
+| **12.4**  | Stability & Recovery                                | Stall / Jam Detection                                               |
+| **12.5**  | Stability & Recovery                                | Failure Classification                                              |
+| **12.6**  | Stability & Recovery                                | Root-Cause Evidence Correlation                                     |
+| **12.7**  | Stability & Recovery                                | Recovery Planning                                                   |
+| **12.8**  | Stability & Recovery                                | Retry                                                               |
+| **12.9**  | Stability & Recovery                                | Restart                                                             |
+| **12.10** | Stability & Recovery                                | Repair                                                              |
+| **12.11** | Stability & Recovery                                | Restore                                                             |
+| **12.12** | Stability & Recovery                                | Rollback                                                            |
+| **12.13** | Stability & Recovery                                | Compensation                                                        |
+| **12.14** | Stability & Recovery                                | Degraded Mode                                                       |
+| **12.15** | Stability & Recovery                                | Recovery Verification                                               |
+| **12.16** | Stability & Recovery                                | Crash Recovery                                                      |
+| **12.17** | Stability & Recovery                                | Boot Failure Recovery                                               |
+| **12.18** | Stability & Recovery                                | Filesystem / Storage Recovery                                       |
+| **12.19** | Stability & Recovery                                | Recovery Policy & Safety                                            |
+| **12.20** | Stability & Recovery                                | Resilience / Fault-Injection Audit                                  |
+| **13.0**  | Security & System Protection                        | Security Architecture                                               |
+| **13.1**  | Security & System Protection                        | Identity & Authentication Boundaries                                |
+| **13.2**  | Security & System Protection                        | Authorization                                                       |
+| **13.3**  | Security & System Protection                        | Privilege                                                           |
+| **13.4**  | Security & System Protection                        | Capability-Based Access                                             |
+| **13.5**  | Security & System Protection                        | Scope Enforcement                                                   |
+| **13.6**  | Security & System Protection                        | Policy Enforcement                                                  |
+| **13.7**  | Security & System Protection                        | Secrets                                                             |
+| **13.8**  | Security & System Protection                        | Filesystem Protection                                               |
+| **13.9**  | Security & System Protection                        | Process / Service Protection                                        |
+| **13.10** | Security & System Protection                        | Network Protection                                                  |
+| **13.11** | Security & System Protection                        | Operation Safety                                                    |
+| **13.12** | Security & System Protection                        | Destructive-Action Controls                                         |
+| **13.13** | Security & System Protection                        | Audit Trail                                                         |
+| **13.14** | Security & System Protection                        | Security Assertions                                                 |
+| **13.15** | Security & System Protection                        | Anomaly Response                                                    |
+| **13.16** | Security & System Protection                        | Quarantine                                                          |
+| **13.17** | Security & System Protection                        | Security Recovery                                                   |
+| **13.18** | Security & System Protection                        | Security Hardening Audit                                            |
+| **14.0**  | Resources & Performance                             | Resource Architecture                                               |
+| **14.1**  | Resources & Performance                             | CPU Discovery & Control                                             |
+| **14.2**  | Resources & Performance                             | CPU Scheduling / Affinity                                           |
+| **14.3**  | Resources & Performance                             | Memory                                                              |
+| **14.4**  | Resources & Performance                             | cgroups                                                             |
+| **14.5**  | Resources & Performance                             | Process Priorities                                                  |
+| **14.6**  | Resources & Performance                             | I/O Scheduling                                                      |
+| **14.7**  | Resources & Performance                             | Storage Performance                                                 |
+| **14.8**  | Resources & Performance                             | GPU Discovery                                                       |
+| **14.9**  | Resources & Performance                             | GPU Selection / Assignment                                          |
+| **14.10** | Resources & Performance                             | GPU Power / Clock Policy                                            |
+| **14.11** | Resources & Performance                             | Thermal Management                                                  |
+| **14.12** | Resources & Performance                             | Power Management                                                    |
+| **14.13** | Resources & Performance                             | Workload Detection                                                  |
+| **14.14** | Resources & Performance                             | Resource Profiles                                                   |
+| **14.15** | Resources & Performance                             | Resource Arbitration                                                |
+| **14.16** | Resources & Performance                             | Performance Observation                                             |
+| **14.17** | Resources & Performance                             | Benchmarking & Verification                                         |
+| **14.18** | Resources & Performance                             | Resource Control Integration Audit                                  |
+| **15.0**  | Devices, Desktop & Environment                      | Environment Coordination                                            |
+| **15.1**  | Devices, Desktop & Environment                      | Device Discovery                                                    |
+| **15.2**  | Devices, Desktop & Environment                      | Device Lifecycle                                                    |
+| **15.3**  | Devices, Desktop & Environment                      | Displays                                                            |
+| **15.4**  | Devices, Desktop & Environment                      | Display Layout / Properties                                         |
+| **15.5**  | Devices, Desktop & Environment                      | Audio                                                               |
+| **15.6**  | Devices, Desktop & Environment                      | Input Devices                                                       |
+| **15.7**  | Devices, Desktop & Environment                      | Storage Devices                                                     |
+| **15.8**  | Devices, Desktop & Environment                      | Mounts                                                              |
+| **15.9**  | Devices, Desktop & Environment                      | Network Interfaces                                                  |
+| **15.10** | Devices, Desktop & Environment                      | Bluetooth / Peripheral Integration                                  |
+| **15.11** | Devices, Desktop & Environment                      | GPU / Display Coordination                                          |
+| **15.12** | Devices, Desktop & Environment                      | Desktop Session                                                     |
+| **15.13** | Devices, Desktop & Environment                      | Wayland / X11 Integration                                           |
+| **15.14** | Devices, Desktop & Environment                      | Clipboard                                                           |
+| **15.15** | Devices, Desktop & Environment                      | User Environment                                                    |
+| **15.16** | Devices, Desktop & Environment                      | Hotplug & Dynamic Reconfiguration                                   |
+| **15.17** | Devices, Desktop & Environment                      | Environment Profiles                                                |
+| **15.18** | Devices, Desktop & Environment                      | Environment Integration Audit                                       |
+| **16.0**  | Maintenance & Long-Term Integrity                   | Maintenance Architecture                                            |
+| **16.1**  | Maintenance & Long-Term Integrity                   | Package Maintenance                                                 |
+| **16.2**  | Maintenance & Long-Term Integrity                   | Update Management                                                   |
+| **16.3**  | Maintenance & Long-Term Integrity                   | Configuration Drift                                                 |
+| **16.4**  | Maintenance & Long-Term Integrity                   | Filesystem Maintenance                                              |
+| **16.5**  | Maintenance & Long-Term Integrity                   | Storage Capacity                                                    |
+| **16.6**  | Maintenance & Long-Term Integrity                   | Log Maintenance                                                     |
+| **16.7**  | Maintenance & Long-Term Integrity                   | Cache Maintenance                                                   |
+| **16.8**  | Maintenance & Long-Term Integrity                   | Temporary Data                                                      |
+| **16.9**  | Maintenance & Long-Term Integrity                   | Backup Maintenance                                                  |
+| **16.10** | Maintenance & Long-Term Integrity                   | Integrity Verification                                              |
+| **16.11** | Maintenance & Long-Term Integrity                   | Service Maintenance                                                 |
+| **16.12** | Maintenance & Long-Term Integrity                   | Dependency Maintenance                                              |
+| **16.13** | Maintenance & Long-Term Integrity                   | Orphan Detection                                                    |
+| **16.14** | Maintenance & Long-Term Integrity                   | Safe Cleanup / Quarantine                                           |
+| **16.15** | Maintenance & Long-Term Integrity                   | Maintenance Automation                                              |
+| **16.16** | Maintenance & Long-Term Integrity                   | Long-Running Maintenance Audit                                      |
+| **17.0**  | Semantic System Administration                      | Semantic Administration Architecture                                |
+| **17.1**  | Semantic System Administration                      | Semantic Intent Parsing                                             |
+| **17.2**  | Semantic System Administration                      | Intent → Typed IR                                                   |
+| **17.3**  | Semantic System Administration                      | Semantic Object Resolution                                          |
+| **17.4**  | Semantic System Administration                      | Ambiguity Resolution                                                |
+| **17.5**  | Semantic System Administration                      | Log Interpretation                                                  |
+| **17.6**  | Semantic System Administration                      | Event Interpretation                                                |
+| **17.7**  | Semantic System Administration                      | Alert Interpretation                                                |
+| **17.8**  | Semantic System Administration                      | Diagnostic Summarization                                            |
+| **17.9**  | Semantic System Administration                      | Evidence Selection / Request                                        |
+| **17.10** | Semantic System Administration                      | Semantic Classification                                             |
+| **17.11** | Semantic System Administration                      | Semantic Correlation Assistance                                     |
+| **17.12** | Semantic System Administration                      | Suggested Operations                                                |
+| **17.13** | Semantic System Administration                      | Semantic Shell Integration                                          |
+| **17.14** | Semantic System Administration                      | BitNet Specialization                                               |
+| **17.15** | Semantic System Administration                      | Structured Output Reliability                                       |
+| **17.16** | Semantic System Administration                      | Semantic Safety Boundary                                            |
+| **17.17** | Semantic System Administration                      | Deterministic Fallback                                               |
+| **17.18** | Semantic System Administration                      | Semantic Administration Evaluation                                  |
+| **18.0**  | Capability Discovery & Extension                    | Capability Architecture                                             |
+| **18.1**  | Capability Discovery & Extension                    | Capability Inventory                                                |
+| **18.2**  | Capability Discovery & Extension                    | Capability Discovery                                                |
+| **18.3**  | Capability Discovery & Extension                    | Capability Search                                                   |
+| **18.4**  | Capability Discovery & Extension                    | Composition Search                                                  |
+| **18.5**  | Capability Discovery & Extension                    | Native Linux Capability Discovery                                   |
+| **18.6**  | Capability Discovery & Extension                    | Provider Discovery                                                  |
+| **18.7**  | Capability Discovery & Extension                    | Missing-Capability Detection                                        |
+| **18.8**  | Capability Discovery & Extension                    | Gap Classification                                                  |
+| **18.9**  | Capability Discovery & Extension                    | Research Pipeline                                                   |
+| **18.10** | Capability Discovery & Extension                    | Candidate Implementation                                            |
+| **18.11** | Capability Discovery & Extension                    | Sandbox                                                             |
+| **18.12** | Capability Discovery & Extension                    | Test Generation                                                     |
+| **18.13** | Capability Discovery & Extension                    | Capability Verification                                             |
+| **18.14** | Capability Discovery & Extension                    | Safety Evaluation                                                   |
+| **18.15** | Capability Discovery & Extension                    | Acceptance                                                          |
+| **18.16** | Capability Discovery & Extension                    | Registration                                                        |
+| **18.17** | Capability Discovery & Extension                    | Capability Versioning                                               |
+| **18.18** | Capability Discovery & Extension                    | Replacement / Supersession                                          |
+| **18.19** | Capability Discovery & Extension                    | Capability Learning from Reuse                                      |
+| **18.20** | Capability Discovery & Extension                    | Controlled Extension Audit                                          |
+| **19.0**  | Desired-State Reconciliation                        | Reconciliation Architecture                                         |
+| **19.1**  | Desired-State Reconciliation                        | Desired State                                                       |
+| **19.2**  | Desired-State Reconciliation                        | Observed State                                                      |
+| **19.3**  | Desired-State Reconciliation                        | State Comparison                                                    |
+| **19.4**  | Desired-State Reconciliation                        | Drift                                                               |
+| **19.5**  | Desired-State Reconciliation                        | Delta                                                               |
+| **19.6**  | Desired-State Reconciliation                        | Reconciliation Planning                                             |
+| **19.7**  | Desired-State Reconciliation                        | Reconciliation Operations                                           |
+| **19.8**  | Desired-State Reconciliation                        | Idempotent Convergence                                              |
+| **19.9**  | Desired-State Reconciliation                        | Conflict Detection                                                  |
+| **19.10** | Desired-State Reconciliation                        | Policy Constraints                                                  |
+| **19.11** | Desired-State Reconciliation                        | Resource Constraints                                                |
+| **19.12** | Desired-State Reconciliation                        | Reconciliation Scheduling                                           |
+| **19.13** | Desired-State Reconciliation                        | Event-Driven Reconciliation                                         |
+| **19.14** | Desired-State Reconciliation                        | Recovery vs Reconciliation                                          |
+| **19.15** | Desired-State Reconciliation                        | Verification                                                        |
+| **19.16** | Desired-State Reconciliation                        | Evidence                                                            |
+| **19.17** | Desired-State Reconciliation                        | Continuous Reconciliation                                           |
+| **19.18** | Desired-State Reconciliation                        | Convergence / Stability Audit                                       |
+| **20.0**  | Integration, Hardening & System Closure             | Whole-System Integration                                            |
+| **20.1**  | Integration, Hardening & System Closure             | Architecture Conformance Audit                                      |
+| **20.2**  | Integration, Hardening & System Closure             | Ontology Compression                                                |
+| **20.3**  | Integration, Hardening & System Closure             | Duplicate Mechanism Elimination                                     |
+| **20.4**  | Integration, Hardening & System Closure             | Native-Linux Substitution Audit                                     |
+| **20.5**  | Integration, Hardening & System Closure             | Dependency Graph Audit                                              |
+| **20.6**  | Integration, Hardening & System Closure             | Startup / Shutdown Integration                                      |
+| **20.7**  | Integration, Hardening & System Closure             | Failure Propagation Audit                                           |
+| **20.8**  | Integration, Hardening & System Closure             | Security Integration                                                |
+| **20.9**  | Integration, Hardening & System Closure             | Performance Integration                                             |
+| **20.10** | Integration, Hardening & System Closure             | Resource-Leak Audit                                                 |
+| **20.11** | Integration, Hardening & System Closure             | Crash Testing                                                       |
+| **20.12** | Integration, Hardening & System Closure             | Fault Injection                                                     |
+| **20.13** | Integration, Hardening & System Closure             | Recovery Testing                                                    |
+| **20.14** | Integration, Hardening & System Closure             | Reconciliation Testing                                              |
+| **20.15** | Integration, Hardening & System Closure             | Upgrade / Migration Testing                                         |
+| **20.16** | Integration, Hardening & System Closure             | Long-Running Soak Testing                                           |
+| **20.17** | Integration, Hardening & System Closure             | User Experience Integration                                         |
+| **20.18** | Integration, Hardening & System Closure             | Documentation & Operational Manual                                  |
+| **20.19** | Integration, Hardening & System Closure             | Release Readiness Audit                                             |
+| **20.20** | Integration, Hardening & System Closure             | Architecture Closure & Stable Baseline                              |

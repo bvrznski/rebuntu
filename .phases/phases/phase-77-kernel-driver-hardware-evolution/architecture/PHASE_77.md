@@ -1,0 +1,26 @@
+# Phase 77 — Kernel, Driver & Hardware Evolution System
+
+- 77.0: Bootstrap and repository reality audit
+- 77.1: Canonical ontology and identity
+- 77.2: Definitions and lifecycle
+- 77.3: State ownership and persistence
+- 77.4: Observation evidence provenance freshness
+- 77.5: UNKNOWN and conflicting evidence
+- 77.6: Capability and affordance integration
+- 77.7: Goal and desired-state integration
+- 77.8: Planning and operation integration
+- 77.9: Constraints and invariants
+- 77.10: Resources and topology
+- 77.11: Policy authorization
+- 77.12: Mandatory security
+- 77.13: Privilege and native providers
+- 77.14: Failure timeout cancellation partial effects
+- 77.15: Crash restart reconciliation recovery
+- 77.16: Concurrency races replacement TOCTOU
+- 77.17: Boundedness and budgets
+- 77.18: CLI GUI natural-language integration
+- 77.19: Timeline graph context integration
+- 77.20: Distributed and associated systems
+- 77.21: Python model shell authority audit
+- 77.22: Adversarial build runtime migration audit
+- 77.23: Documentation rediscovery and closure

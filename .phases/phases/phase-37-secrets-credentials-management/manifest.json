@@ -1,0 +1,329 @@
+{
+  "phase": 37,
+  "slug": "secrets-credentials-management",
+  "directory": "phase-37-secrets-credentials-management",
+  "prompt_count": 64,
+  "layout_version": 2,
+  "prompts": [
+    {
+      "file": "37.0-secrets-credentials-management-system-foundation.md",
+      "title": "Phase 37.0 — Secrets & Credentials Management System Foundation",
+      "sha256": "ca69ef71e860e7b215d3c64d038e02e7cae7f9d16b1858ecd3fafdec840abea7"
+    },
+    {
+      "file": "37.1-secret-domain-model.md",
+      "title": "Phase 37.1 — Secret Domain Model",
+      "sha256": "49210aedc08280d08adfd46bf3bddb1dfe550f6e610fb5d74aa760a7d034545c"
+    },
+    {
+      "file": "37.2-secret-provider-discovery.md",
+      "title": "Phase 37.2 — Secret Provider Discovery",
+      "sha256": "890917e01191b4e7ec00be0de35105f7703cc3717108904929d241bd74c90e3b"
+    },
+    {
+      "file": "37.3-secretref-stable-secret-identity.md",
+      "title": "Phase 37.3 — SecretRef & Stable Secret Identity",
+      "sha256": "34a37011aa707ae56de4726ee21e4d929c2f4bca7d5cc53defa7ce6e51207ddb"
+    },
+    {
+      "file": "37.4-secret-material-custody-boundary.md",
+      "title": "Phase 37.4 — Secret Material Custody Boundary",
+      "sha256": "d23dacf2e42f933279b60a1d6a30461f1161857809fea4622725d118a9c21fbc"
+    },
+    {
+      "file": "37.5-secret-classification-model.md",
+      "title": "Phase 37.5 — Secret Classification Model",
+      "sha256": "c92cc6a616997d2f4a7a9d3527194273082e513a618e5c09fed3cf7caf55d1fa"
+    },
+    {
+      "file": "37.6-credential-type-model.md",
+      "title": "Phase 37.6 — Credential Type Model",
+      "sha256": "a91c583fe507c618fcb03f06574eada5b4155b09f0013f24321f90214d2cfe3e"
+    },
+    {
+      "file": "37.7-secret-scope-ownership.md",
+      "title": "Phase 37.7 — Secret Scope & Ownership",
+      "sha256": "80c979b94673b08bc1d2abb7954698ed474174d5756f1f1b7205e1320b66f789"
+    },
+    {
+      "file": "37.8-secret-metadata-model.md",
+      "title": "Phase 37.8 — Secret Metadata Model",
+      "sha256": "ee9bb68d5736ec6cd007ad2906028aa9bffebb1e690318e8b9f66540a907f05a"
+    },
+    {
+      "file": "37.9-secret-status-lifecycle-state.md",
+      "title": "Phase 37.9 — Secret Status & Lifecycle State",
+      "sha256": "c206f74b1ae4eba075acbd8b9b672b27210522983d65446b0d0849396525569e"
+    },
+    {
+      "file": "37.10-secret-access-capability-model.md",
+      "title": "Phase 37.10 — Secret Access Capability Model",
+      "sha256": "78b921d00245d137f9dc2510a29b69f7e5a473d22cc3cbee1287fbf24b579d32"
+    },
+    {
+      "file": "37.11-secret-access-policy.md",
+      "title": "Phase 37.11 — Secret Access Policy",
+      "sha256": "5c595a6c99e9a660363f0351db8ea748449114cb994e9532461f68aeb1e0f43a"
+    },
+    {
+      "file": "37.12-secret-resolution-boundary.md",
+      "title": "Phase 37.12 — Secret Resolution Boundary",
+      "sha256": "e84478845f56ec0f61e3c2cc3a76c5997b32e9a6becb07a924d2a68d4b614e7a"
+    },
+    {
+      "file": "37.13-secret-injection-boundary.md",
+      "title": "Phase 37.13 — Secret Injection Boundary",
+      "sha256": "a3d579d2c6601ab7246d794cc2faadc8a02abbe97b887af11da0d27dc94ccbc5"
+    },
+    {
+      "file": "37.14-secret-environment-variable-boundary.md",
+      "title": "Phase 37.14 — Secret Environment Variable Boundary",
+      "sha256": "71f8bf245cfc0f27f33e4f7c967757076cd4fb333c92bb41b61b8180aba42164"
+    },
+    {
+      "file": "37.15-secret-file-keyfile-boundary.md",
+      "title": "Phase 37.15 — Secret File & Keyfile Boundary",
+      "sha256": "e9f26ec1fc7f7ccbfccd973efc7576cfed76466ee9cffb51fb60d50936212ec6"
+    },
+    {
+      "file": "37.16-secret-command-line-argument-boundary.md",
+      "title": "Phase 37.16 — Secret Command-Line Argument Boundary",
+      "sha256": "8aa8f6eb50d3afd2f54d12ac7fa3fc2fb3d8917f7bd02da96e029db2be9f2076"
+    },
+    {
+      "file": "37.17-secret-standard-input-boundary.md",
+      "title": "Phase 37.17 — Secret Standard Input Boundary",
+      "sha256": "e6557e97288fdba14130b0d5d27f47c297c212afad20a3b7b1ac7f39bcc880bc"
+    },
+    {
+      "file": "37.18-secret-ipc-temporary-transport-boundary.md",
+      "title": "Phase 37.18 — Secret IPC & Temporary Transport Boundary",
+      "sha256": "2629abec01cda7d68b1458e36c56ce784e6803354d6e1a600b7764355746c212"
+    },
+    {
+      "file": "37.19-secret-memory-handling-boundary.md",
+      "title": "Phase 37.19 — Secret Memory Handling Boundary",
+      "sha256": "72e9c25c1aa416c4a01983a9e729391d9cbbe015a37d4beb0da9603e8b45730a"
+    },
+    {
+      "file": "37.20-secret-cache-boundary.md",
+      "title": "Phase 37.20 — Secret Cache Boundary",
+      "sha256": "4b50954797bbe84b0cfbcb586fca1972b9b832adcef9ab2ed64e483105f4983a"
+    },
+    {
+      "file": "37.21-secret-persistence-boundary.md",
+      "title": "Phase 37.21 — Secret Persistence Boundary",
+      "sha256": "da170f679c60d33744675a169ca100646238f6601cd7f732aac1224ddfd67aaf"
+    },
+    {
+      "file": "37.22-structural-redaction-engine.md",
+      "title": "Phase 37.22 — Structural Redaction Engine",
+      "sha256": "c040a933e48e2cbcbd38b93620052f95d054b8e8e17c39e154b48a9d79bbb433"
+    },
+    {
+      "file": "37.23-log-redaction-integration.md",
+      "title": "Phase 37.23 — Log Redaction Integration",
+      "sha256": "2f34aebec8d77affb4203a5f854d3b81695f03f24bdacb010ade08d758c87c18"
+    },
+    {
+      "file": "37.24-audit-redaction-integration.md",
+      "title": "Phase 37.24 — Audit Redaction Integration",
+      "sha256": "e04ce6056e038ede63a1bc0a56204d752d141db13e505d4ca3eeac27ec9ca348"
+    },
+    {
+      "file": "37.25-configuration-redaction-integration.md",
+      "title": "Phase 37.25 — Configuration Redaction Integration",
+      "sha256": "c37917f7f5d2b0e2ff9673acb5806acecf226ebf5835a8527ca495daf839f2ef"
+    },
+    {
+      "file": "37.26-timeline-redaction-integration.md",
+      "title": "Phase 37.26 — Timeline Redaction Integration",
+      "sha256": "f6bb9efbb932ef5f69e65df2654b43303ae6bcf0698e0a66508c2e57036f186d"
+    },
+    {
+      "file": "37.27-panel-ui-redaction-integration.md",
+      "title": "Phase 37.27 — Panel & UI Redaction Integration",
+      "sha256": "34e51d215827ccbb8c817f5c560b3030c9336346ab6cc2dbe2979b7c3e3bece8"
+    },
+    {
+      "file": "37.28-cli-redaction-integration.md",
+      "title": "Phase 37.28 — CLI Redaction Integration",
+      "sha256": "785cb9fb6c083270350d7bdb4f62630e268cd9155cb94f6b9b49d3058257940f"
+    },
+    {
+      "file": "37.29-semantic-model-context-boundary.md",
+      "title": "Phase 37.29 — Semantic Model Context Boundary",
+      "sha256": "2d3c1e805402cae186642fde1bb09fb96768964c1b7495337f89fc0edd7bfeea"
+    },
+    {
+      "file": "37.30-agent-context-boundary.md",
+      "title": "Phase 37.30 — Agent Context Boundary",
+      "sha256": "96540cfa4fbb887b55236fef07c364b844061c0a1f7470ca167a70970019ad34"
+    },
+    {
+      "file": "37.31-secret-search-indexing-boundary.md",
+      "title": "Phase 37.31 — Secret Search & Indexing Boundary",
+      "sha256": "368f9ffe37b153a79b0ac80f7516d4b41f69b64e4d0e0f283f0f4a4688a4bdc5"
+    },
+    {
+      "file": "37.32-secret-export-boundary.md",
+      "title": "Phase 37.32 — Secret Export Boundary",
+      "sha256": "51db1d41c99516636d573dbfb19c859e43e903eeb5ea2897a01ee0b8078dd3a7"
+    },
+    {
+      "file": "37.33-secret-import-boundary.md",
+      "title": "Phase 37.33 — Secret Import Boundary",
+      "sha256": "15666a8feea6ce74baa5d297af40e09411092ec2ac38abc6bf1e5b52f2dab4d8"
+    },
+    {
+      "file": "37.34-secret-creation-planning.md",
+      "title": "Phase 37.34 — Secret Creation Planning",
+      "sha256": "1e8c715a30ed86e1849a44d895770eec2526761ce3be83720f4935df2661fab5"
+    },
+    {
+      "file": "37.35-secret-update-planning.md",
+      "title": "Phase 37.35 — Secret Update Planning",
+      "sha256": "65eafb889677ccef8ff47dfd70c6ea265dd6cee6040b0cf5a2e1e5b056271de0"
+    },
+    {
+      "file": "37.36-secret-rotation-planning.md",
+      "title": "Phase 37.36 — Secret Rotation Planning",
+      "sha256": "2ec50baa125d66c8866462332e7e53cf37459458d3fca067d4c1a7ea86754380"
+    },
+    {
+      "file": "37.37-secret-revocation-planning.md",
+      "title": "Phase 37.37 — Secret Revocation Planning",
+      "sha256": "41425b691c818610bdad5ca5cdebf18b2a5c419eb928da1118e062a7d9d8a8d6"
+    },
+    {
+      "file": "37.38-secret-deletion-safety-boundary.md",
+      "title": "Phase 37.38 — Secret Deletion Safety Boundary",
+      "sha256": "844bd689247644a1de8e5f1b5db6063db6fc7048b59c751a528b34644263a50d"
+    },
+    {
+      "file": "37.39-secret-expiration-validity.md",
+      "title": "Phase 37.39 — Secret Expiration & Validity",
+      "sha256": "49dbe7d9c13384330617661f21ededb50c80a5f0ba1f47bfcc1e69e8f66113be"
+    },
+    {
+      "file": "37.40-credential-verification-boundary.md",
+      "title": "Phase 37.40 — Credential Verification Boundary",
+      "sha256": "0be36a5c6097a8c04c4c99acd7b297a144be5a379ab687cbcafe5ab7d3982266"
+    },
+    {
+      "file": "37.41-secret-provider-health.md",
+      "title": "Phase 37.41 — Secret Provider Health",
+      "sha256": "5619e314536350982fef40c799480b4e9ffbc9ffde514ba318ea80480368f850"
+    },
+    {
+      "file": "37.42-secret-access-failure-semantics.md",
+      "title": "Phase 37.42 — Secret Access Failure Semantics",
+      "sha256": "41b80e5049b2feb2d2b5e7cb2119ab10b3da0c83fa1482217acd39df6fdf491b"
+    },
+    {
+      "file": "37.43-secret-lease-session-semantics.md",
+      "title": "Phase 37.43 — Secret Lease / Session Semantics",
+      "sha256": "f6b217ce80704be4fb56549723b1926faaab7fc3a8c7bc99c8d763a1939137dc"
+    },
+    {
+      "file": "37.44-secret-authorization-model.md",
+      "title": "Phase 37.44 — Secret Authorization Model",
+      "sha256": "50ee5d1d283fe2eadfc18128a5019a640a745bee45f84e93293ca06441c47b63"
+    },
+    {
+      "file": "37.45-privilege-least-authority-boundary.md",
+      "title": "Phase 37.45 — Privilege & Least-Authority Boundary",
+      "sha256": "63632b1d4990b51cd371f09f53b0f2013249370fedfd86ee2f60c29ad8edb83f"
+    },
+    {
+      "file": "37.46-user-service-credential-separation.md",
+      "title": "Phase 37.46 — User & Service Credential Separation",
+      "sha256": "4641c92b43e6a03e2c38ba8fc4e75c11cb0ab26918d1fbe6d104820026b8a913"
+    },
+    {
+      "file": "37.47-machine-host-credential-boundary.md",
+      "title": "Phase 37.47 — Machine / Host Credential Boundary",
+      "sha256": "6c38e2def0fc84401883fd4a98797076ae16b944cdb0341728fa007fb872270e"
+    },
+    {
+      "file": "37.48-repository-package-credentials-integration.md",
+      "title": "Phase 37.48 — Repository & Package Credentials Integration",
+      "sha256": "0b4a279fecc0ef6c3aec3cefcc48b4e6b39fb3f67b07b576aaff9bf13531c567"
+    },
+    {
+      "file": "37.49-network-wi-fi-vpn-credentials-integration.md",
+      "title": "Phase 37.49 — Network / Wi-Fi / VPN Credentials Integration",
+      "sha256": "e925e9f4eb4e1bf35960b3b5d36294e2f0a39105854f77d3b3161e9763d9e4dd"
+    },
+    {
+      "file": "37.50-storage-encryption-credentials-integration.md",
+      "title": "Phase 37.50 — Storage Encryption Credentials Integration",
+      "sha256": "3969ff121f15dd03b6edc5ce8b7151d465ca82aff135608ccd68a4174e56bccd"
+    },
+    {
+      "file": "37.51-development-credentials-integration.md",
+      "title": "Phase 37.51 — Development Credentials Integration",
+      "sha256": "1367b66e37cc63ec787e1ae9a9e8ef2d0c85980106f97947d79101fdf2be331f"
+    },
+    {
+      "file": "37.52-service-credentials-integration.md",
+      "title": "Phase 37.52 — Service Credentials Integration",
+      "sha256": "196a53a9cac6a55784c3078c70326d4fa6818f9824c81da9582c30c10067eddf"
+    },
+    {
+      "file": "37.53-container-secret-integration.md",
+      "title": "Phase 37.53 — Container Secret Integration",
+      "sha256": "b6167250328cfd7127114cf43ce4bc9bd284e78777ff9360497c471b69503cd1"
+    },
+    {
+      "file": "37.54-ssh-credential-integration.md",
+      "title": "Phase 37.54 — SSH Credential Integration",
+      "sha256": "2d5c548b9d4cc01553bfe3241fe92f20a031d98216f0e5c1491c6a907a8b26c6"
+    },
+    {
+      "file": "37.55-api-token-application-credential-integration.md",
+      "title": "Phase 37.55 — API Token & Application Credential Integration",
+      "sha256": "cfb485fdc5f3a01b9393ea1f00dab7755beaabc6cda9e6656378ab72ddcdca47"
+    },
+    {
+      "file": "37.56-secret-drift-orphan-detection.md",
+      "title": "Phase 37.56 — Secret Drift & Orphan Detection",
+      "sha256": "acc4f647edb7ea487db720effe9047ffb823e57d2adfbfab0e9b1cae0a0d97b2"
+    },
+    {
+      "file": "37.57-secret-management-cli.md",
+      "title": "Phase 37.57 — Secret Management CLI",
+      "sha256": "7146d0974f20dedc6819c53259fd5edc1fedbdb2332b51ef2cd8dc214240718c"
+    },
+    {
+      "file": "37.58-phase-25-panel-integration-api.md",
+      "title": "Phase 37.58 — Phase 25 Panel Integration API",
+      "sha256": "0d8573c46e132d205a36f787b175ab08b793e5beabe2fc8a821078994952c172"
+    },
+    {
+      "file": "37.59-phase-36-configuration-integration.md",
+      "title": "Phase 37.59 — Phase 36 Configuration Integration",
+      "sha256": "26ce4708bb3d2aecb114e78d7fe9e65ebd004fcd77a013d5bda9aa669b91dee4"
+    },
+    {
+      "file": "37.60-phase-38-identity-integration.md",
+      "title": "Phase 37.60 — Phase 38 Identity Integration",
+      "sha256": "11121c714c4e6e5c8cc748b745a98f7eb06270ae10674d2fe1d61ad152447dcc"
+    },
+    {
+      "file": "37.61-phase-39-timeline-integration.md",
+      "title": "Phase 37.61 — Phase 39 Timeline Integration",
+      "sha256": "1bcaddc043ee2db20a59f8cf2afc165eac8f1f5d71e107a6b36e0b6f2a03dee0"
+    },
+    {
+      "file": "37.62-failure-injection-secret-leak-testing.md",
+      "title": "Phase 37.62 — Failure Injection & Secret-Leak Testing",
+      "sha256": "f3e4284498c551943db71cd438c8789b817cce7b8239663049fb399e8d9d6303"
+    },
+    {
+      "file": "37.63-secrets-credentials-management-system-closure-readiness-gate.md",
+      "title": "Phase 37.63 — Secrets & Credentials Management System Closure & Readiness Gate",
+      "sha256": "cc9adcbc7adcdd25f683cee00c2a130586cc3f296e319045ec0a3665c7e90693"
+    }
+  ]
+}

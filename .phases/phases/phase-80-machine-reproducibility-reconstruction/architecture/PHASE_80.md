@@ -1,0 +1,26 @@
+# Phase 80 — Machine Reproducibility & Reconstruction System
+
+- 80.0: Bootstrap and repository reality audit
+- 80.1: Canonical ontology and identity
+- 80.2: Definitions and lifecycle
+- 80.3: State ownership and persistence
+- 80.4: Observation evidence provenance freshness
+- 80.5: UNKNOWN and conflicting evidence
+- 80.6: Capability and affordance integration
+- 80.7: Goal and desired-state integration
+- 80.8: Planning and operation integration
+- 80.9: Constraints and invariants
+- 80.10: Resources and topology
+- 80.11: Policy authorization
+- 80.12: Mandatory security
+- 80.13: Privilege and native providers
+- 80.14: Failure timeout cancellation partial effects
+- 80.15: Crash restart reconciliation recovery
+- 80.16: Concurrency races replacement TOCTOU
+- 80.17: Boundedness and budgets
+- 80.18: CLI GUI natural-language integration
+- 80.19: Timeline graph context integration
+- 80.20: Distributed and associated systems
+- 80.21: Python model shell authority audit
+- 80.22: Adversarial build runtime migration audit
+- 80.23: Documentation rediscovery and closure

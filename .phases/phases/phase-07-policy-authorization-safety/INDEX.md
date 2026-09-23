@@ -1,0 +1,86 @@
+# Prompt Index
+
+- `7.0.md` — Rebuntu — Phase 7.0 — Observation Architecture
+- `7.1.md` — Rebuntu — Phase 7.1 — Facts & Observations
+- `7.2.md` — Rebuntu — Phase 7.2 — State Acquisition
+- `7.3.md` — Rebuntu — Phase 7.3 — State Normalization
+- `7.4.md` — Rebuntu — Phase 7.4 — State Provenance & Freshness
+- `7.5.md` — Rebuntu — Phase 7.5 — Process Observation
+- `7.6.md` — Rebuntu — Phase 7.6 — Service Observation
+- `7.7.md` — Rebuntu — Phase 7.7 — Filesystem & Storage Observation
+- `7.8.md` — Rebuntu — Phase 7.8 — Device Observation
+- `7.9.md` — Rebuntu — Phase 7.9 — Network Observation
+- `7.10.md` — Rebuntu — Phase 7.10 — CPU / Memory Observation
+- `7.11.md` — Rebuntu — Phase 7.11 — GPU Observation
+- `7.12.md` — Rebuntu — Phase 7.12 — Power / Thermal Observation
+- `7.13.md` — Rebuntu — Phase 7.13 — Desktop / Session Observation
+- `7.14.md` — Rebuntu — Phase 7.14 — Package / Software Observation
+- `7.15.md` — Rebuntu — Phase 7.15 — Security-State Observation
+- `7.16.md` — Rebuntu — Phase 7.16 — Unified Current-State View
+- `7.17.md` — Rebuntu — Phase 7.17 — Historical State & Change Tracking
+- `7.18.md` — Rebuntu — Phase 7.18 — Observation Coverage Audit
+- `7.19_destructive_operation_gate.md` — Rebuntu — Phase 7
+- `7.20_confirmation_semantics.md` — Rebuntu — Phase 7
+- `7.21_reauthentication_semantics.md` — Rebuntu — Phase 7
+- `7.22_authorization_cache_rules.md` — Rebuntu — Phase 7
+- `7.23_policy_input_model.md` — Rebuntu — Phase 7
+- `7.24_minimal_policy_rule_representation.md` — Rebuntu — Phase 7
+- `7.25_policy_precedence.md` — Rebuntu — Phase 7
+- `7.26_policy_scope.md` — Rebuntu — Phase 7
+- `7.27_default_behavior.md` — Rebuntu — Phase 7
+- `7.28_policy_version_binding.md` — Rebuntu — Phase 7
+- `7.29_configuration_versus_policy.md` — Rebuntu — Phase 7
+- `7.30_environment_versus_authority.md` — Rebuntu — Phase 7
+- `7.31_ui_versus_authority.md` — Rebuntu — Phase 7
+- `7.32_service_versus_authority.md` — Rebuntu — Phase 7
+- `7.33_ipc_authentication_versus_authorization.md` — Rebuntu — Phase 7
+- `7.34_local_socket_permissions.md` — Rebuntu — Phase 7
+- `7.35_data-to-control_authorization_gate.md` — Rebuntu — Phase 7
+- `7.36_semantic_model_boundary_audit.md` — Rebuntu — Phase 7
+- `7.37_policy_explanation.md` — Rebuntu — Phase 7
+- `7.38_denial_semantics.md` — Rebuntu — Phase 7
+- `7.39_clarification_semantics.md` — Rebuntu — Phase 7
+- `7.40_approval_token_reference_semantics.md` — Rebuntu — Phase 7
+- `7.41_replay_resistance.md` — Rebuntu — Phase 7
+- `7.42_toctou_authorization_audit.md` — Rebuntu — Phase 7
+- `7.43_process_target_safety.md` — Rebuntu — Phase 7
+- `7.44_filesystem_target_safety.md` — Rebuntu — Phase 7
+- `7.45_device_target_safety.md` — Rebuntu — Phase 7
+- `7.46_service_target_safety.md` — Rebuntu — Phase 7
+- `7.47_authorization_and_retries.md` — Rebuntu — Phase 7
+- `7.48_authorization_and_compensation.md` — Rebuntu — Phase 7
+- `7.49_authorization_and_restart_recovery.md` — Rebuntu — Phase 7
+- `7.50_authorization_and_scheduled_work.md` — Rebuntu — Phase 7
+- `7.51_delegation_boundary_preparation.md` — Rebuntu — Phase 7
+- `7.52_read-only_capability_policy.md` — Rebuntu — Phase 7
+- `7.53_secret-reference_handling.md` — Rebuntu — Phase 7
+- `7.54_audit_record_semantics.md` — Rebuntu — Phase 7
+- `7.55_journald_diagnostics.md` — Rebuntu — Phase 7
+- `7.56_policy_test_harness.md` — Rebuntu — Phase 7
+- `7.57_allow-path_tests.md` — Rebuntu — Phase 7
+- `7.58_deny-path_tests.md` — Rebuntu — Phase 7
+- `7.59_unknown-path_tests.md` — Rebuntu — Phase 7
+- `7.60_plan-change_tests.md` — Rebuntu — Phase 7
+- `7.61_target-change_tests.md` — Rebuntu — Phase 7
+- `7.62_replay_tests.md` — Rebuntu — Phase 7
+- `7.63_privilege-bypass_tests.md` — Rebuntu — Phase 7
+- `7.64_shell-bypass_tests.md` — Rebuntu — Phase 7
+- `7.65_python-bypass_tests.md` — Rebuntu — Phase 7
+- `7.66_provider-self-authorization_tests.md` — Rebuntu — Phase 7
+- `7.67_context-injection_tests.md` — Rebuntu — Phase 7
+- `7.68_malformed-policy-input_fuzzing.md` — Rebuntu — Phase 7
+- `7.69_concurrency_and_double-authorization_audit.md` — Rebuntu — Phase 7
+- `7.70_policy_state_persistence_audit.md` — Rebuntu — Phase 7
+- `7.71_python_policy-engine_eradication.md` — Rebuntu — Phase 7
+- `7.72_historical_security-wrapper_archaeology.md` — Rebuntu — Phase 7
+- `7.73_duplicate_authorization-path_audit.md` — Rebuntu — Phase 7
+- `7.74_build_and_runtime_reachability_audit.md` — Rebuntu — Phase 7
+- `7.75_end-to-end_contained_mutation_test.md` — Rebuntu — Phase 7
+- `7.76_optional_semantic_service_absence_test.md` — Rebuntu — Phase 7
+- `7.77_documentation_and_agents_synchronization.md` — Rebuntu — Phase 7
+- `7.78_first_closure_audit.md` — Rebuntu — Phase 7
+- `7.79_adversarial_confused-deputy_audit.md` — Rebuntu — Phase 7
+- `7.80_adversarial_fail-open_audit.md` — Rebuntu — Phase 7
+- `7.81_adversarial_new-agent_simulation.md` — Rebuntu — Phase 7
+- `7.82_independent_second_rediscovery.md` — Rebuntu — Phase 7
+- `7.83_phase_7_final_closure.md` — Rebuntu — Phase 7

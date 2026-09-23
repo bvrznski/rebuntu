@@ -1,0 +1,289 @@
+{
+  "phase": 33,
+  "slug": "network-management",
+  "directory": "phase-33-network-management",
+  "prompt_count": 56,
+  "layout_version": 2,
+  "prompts": [
+    {
+      "file": "33.0-network-management-system-foundation.md",
+      "title": "Phase 33.0 — Network Management System Foundation",
+      "sha256": "e0ae0d71c1eafe95a02161a4418403dc3d493072f69759c6a9534f9fa40951d2"
+    },
+    {
+      "file": "33.1-network-domain-model.md",
+      "title": "Phase 33.1 — Network Domain Model",
+      "sha256": "c2ca3999e940b866748c8d76491803196ba15e1fd864d6eb4c3ac0900893ecb8"
+    },
+    {
+      "file": "33.2-network-provider-discovery.md",
+      "title": "Phase 33.2 — Network Provider Discovery",
+      "sha256": "98627e0db1b19771c71e9e31915135056d96c8d33a31fcf16b7c4a4faed9e13b"
+    },
+    {
+      "file": "33.3-network-interface-identity.md",
+      "title": "Phase 33.3 — Network Interface Identity",
+      "sha256": "66047bace15738588c6419cd19fc2888447b3bf6fa92404f49c985e80fc29342"
+    },
+    {
+      "file": "33.4-physical-link-state.md",
+      "title": "Phase 33.4 — Physical Link State",
+      "sha256": "0bf0d2aba1fb40a1f4e43462da246d35c91cd0bb1ef2fc474050b44f2cd69acb"
+    },
+    {
+      "file": "33.5-address-configuration-model.md",
+      "title": "Phase 33.5 — Address Configuration Model",
+      "sha256": "937c47744c45b9b0fce9baef9e8429bbcb821cc04d9e6e3c6cde32d6f069e424"
+    },
+    {
+      "file": "33.6-ipv4-ipv6-semantics.md",
+      "title": "Phase 33.6 — IPv4 & IPv6 Semantics",
+      "sha256": "0aa810904b6e0b3cafe453c74ea076dcb24f4e5e43d3550fe175bfc9cedc99e7"
+    },
+    {
+      "file": "33.7-route-policy-routing-model.md",
+      "title": "Phase 33.7 — Route & Policy Routing Model",
+      "sha256": "2cd945a338f5c033b93c809e1d2812d428143cdd5b66bdbfedba591115a6947f"
+    },
+    {
+      "file": "33.8-default-route-semantics.md",
+      "title": "Phase 33.8 — Default Route Semantics",
+      "sha256": "dfbdeba13b9e202cda100cd9981e0ba5c65f88a390d6e879d2fd1c4c7aa7a59f"
+    },
+    {
+      "file": "33.9-dns-configuration-resolution-model.md",
+      "title": "Phase 33.9 — DNS Configuration & Resolution Model",
+      "sha256": "6e06f660c283360cd8cf6d82ae4466fe5f5ccfc0908b7636c8034ca0b62532ec"
+    },
+    {
+      "file": "33.10-connectivity-evidence-model.md",
+      "title": "Phase 33.10 — Connectivity Evidence Model",
+      "sha256": "bc31a9533dd20e985df5601aecd353e20a340fb53f303f1a5f5cad802c0c1487"
+    },
+    {
+      "file": "33.11-reachability-vs-connectivity-separation.md",
+      "title": "Phase 33.11 — Reachability vs Connectivity Separation",
+      "sha256": "e3bcf2c84b7219a8501e47a5a85041f41d43b089a65bd14d11040621714e697d"
+    },
+    {
+      "file": "33.12-socket-listener-evidence.md",
+      "title": "Phase 33.12 — Socket & Listener Evidence",
+      "sha256": "e44cd58d56a15c816e938865cf25ab1eb42b96526340be87e87a8b2989ceff78"
+    },
+    {
+      "file": "33.13-listening-vs-exposure-separation.md",
+      "title": "Phase 33.13 — Listening vs Exposure Separation",
+      "sha256": "e6c9429a4b71a0ba39664f70b94be8264528831ddde81d28a02d88ca1a701d46"
+    },
+    {
+      "file": "33.14-network-exposure-model.md",
+      "title": "Phase 33.14 — Network Exposure Model",
+      "sha256": "6d2106c520dd507cce59cab842771f46c0bdfa01e9ba3f0c432f061e1d5c2779"
+    },
+    {
+      "file": "33.15-firewall-integration-boundary.md",
+      "title": "Phase 33.15 — Firewall Integration Boundary",
+      "sha256": "6a3248798f0da3a102a90edcaee382566116a1a84420da928f28fc4820a9cb2b"
+    },
+    {
+      "file": "33.16-ufw-provider-integration.md",
+      "title": "Phase 33.16 — UFW Provider Integration",
+      "sha256": "1c643262454c83c10312965b30ad72423e81ddef018b4df250f65a47584956c8"
+    },
+    {
+      "file": "33.17-nftables-netfilter-evidence.md",
+      "title": "Phase 33.17 — nftables & Netfilter Evidence",
+      "sha256": "c87a4f930f04a7e129d5684004066108944688a91367acdf49c19df2b821709f"
+    },
+    {
+      "file": "33.18-networkmanager-provider-integration.md",
+      "title": "Phase 33.18 — NetworkManager Provider Integration",
+      "sha256": "5e7ee5dcb145de78bc8067188ab5bf25b4e6cd1539c9e81d4c2d00ea3bc4b1e8"
+    },
+    {
+      "file": "33.19-network-configuration-provenance.md",
+      "title": "Phase 33.19 — Network Configuration Provenance",
+      "sha256": "c05f571648a6532c4c084b32ae1ea5f42da02dc34108a67d7e98d1c37c5e0c84"
+    },
+    {
+      "file": "33.20-connection-profile-model.md",
+      "title": "Phase 33.20 — Connection Profile Model",
+      "sha256": "58cb2434ff0d1897a53b9fb97fba432484b9d65bc6efa581c9c05635d700abc9"
+    },
+    {
+      "file": "33.21-ethernet-link-management.md",
+      "title": "Phase 33.21 — Ethernet Link Management",
+      "sha256": "81c96ca24acbb1095aaa84faeb9ecdd39560ba53247730b8774365bdd3c2a664"
+    },
+    {
+      "file": "33.22-wi-fi-integration-boundary.md",
+      "title": "Phase 33.22 — Wi-Fi Integration Boundary",
+      "sha256": "35049ce7148654ae4abcfa4772563b89b3f8dc5314deebef41f14c13e1223e01"
+    },
+    {
+      "file": "33.23-vlan-integration.md",
+      "title": "Phase 33.23 — VLAN Integration",
+      "sha256": "c9ea33f583a537d93582bdfbd911c703642c0d380c41757c5e8dd0495e2fe09c"
+    },
+    {
+      "file": "33.24-bridge-integration.md",
+      "title": "Phase 33.24 — Bridge Integration",
+      "sha256": "928399d5f69f4f6d8dc7d66e3571efee15167ffaf8feaf45fcc0ff29bce358d8"
+    },
+    {
+      "file": "33.25-bonding-teaming-integration.md",
+      "title": "Phase 33.25 — Bonding & Teaming Integration",
+      "sha256": "4ddd793eb929ce1762feac390879384d194ddbb6391d4d8d1b465076cad1ea22"
+    },
+    {
+      "file": "33.26-virtual-ethernet-namespace-integration.md",
+      "title": "Phase 33.26 — Virtual Ethernet & Namespace Integration",
+      "sha256": "fd1dee46670fb23315c60cf39aec05f5503cef3b089c9ba8d03a58deb07861be"
+    },
+    {
+      "file": "33.27-vpn-tunnel-integration-boundary.md",
+      "title": "Phase 33.27 — VPN & Tunnel Integration Boundary",
+      "sha256": "4d07e71c7fc328628bef7e7e5dd9d3db8c37f162bd1e2472c5c0b19ff1a1b69c"
+    },
+    {
+      "file": "33.28-mtu-link-parameter-management.md",
+      "title": "Phase 33.28 — MTU & Link Parameter Management",
+      "sha256": "e0bb93a10afdbe17903c2d52c37066d428de16b825fc25fe76fe57f8215ac66b"
+    },
+    {
+      "file": "33.29-network-performance-evidence.md",
+      "title": "Phase 33.29 — Network Performance Evidence",
+      "sha256": "9c9ed6d1d2ee85a31b903ef5a809b37b90462a76b0e191e0320f45b33b779891"
+    },
+    {
+      "file": "33.30-network-resource-integration.md",
+      "title": "Phase 33.30 — Network Resource Integration",
+      "sha256": "9740a6583539d4b4156764926a97f563c7689b6c204912e9aca9dccce52e2729"
+    },
+    {
+      "file": "33.31-interface-dependency-analysis.md",
+      "title": "Phase 33.31 — Interface Dependency Analysis",
+      "sha256": "713b6941138cf2935ccba0f5d6d295b9febbce569ed3fd7af61df3d2e7f673ea"
+    },
+    {
+      "file": "33.32-current-access-path-protection.md",
+      "title": "Phase 33.32 — Current Access Path Protection",
+      "sha256": "fb4117b0de3e5ab3c7f0dc4a9ecdc7ba89e639e5e48d99a06f2c5c0694884494"
+    },
+    {
+      "file": "33.33-ssh-remote-maintenance-protection.md",
+      "title": "Phase 33.33 — SSH & Remote Maintenance Protection",
+      "sha256": "81c9e5aa6b3619cf48d698349aed782d3af644555f86f7de61a3de25d6c31712"
+    },
+    {
+      "file": "33.34-dns-change-planning.md",
+      "title": "Phase 33.34 — DNS Change Planning",
+      "sha256": "a43862dbdd6c01574e3af3528893a39efc31e9021c0db0ee30acb5c4d6e94bfb"
+    },
+    {
+      "file": "33.35-address-change-planning.md",
+      "title": "Phase 33.35 — Address Change Planning",
+      "sha256": "498682c0b77877b249c9e67ba51333c2cb65c1affc38a4bb3e8d9c7009fe48b3"
+    },
+    {
+      "file": "33.36-route-change-planning.md",
+      "title": "Phase 33.36 — Route Change Planning",
+      "sha256": "9924791142fc40899d6918c7c13990ad6a504ae4ce36a845d2716a89bb6c9255"
+    },
+    {
+      "file": "33.37-firewall-change-planning.md",
+      "title": "Phase 33.37 — Firewall Change Planning",
+      "sha256": "f5c289e7fd982b303d3f466cfc96365f157696639fa59a6fd928725085179b55"
+    },
+    {
+      "file": "33.38-network-mutation-transaction-model.md",
+      "title": "Phase 33.38 — Network Mutation Transaction Model",
+      "sha256": "2712e9ef609f743731c3b1a30bfd1ae66ca92c11ad1bc89efabfe97991eb3c57"
+    },
+    {
+      "file": "33.39-timed-rollback-connectivity-guard.md",
+      "title": "Phase 33.39 — Timed Rollback & Connectivity Guard",
+      "sha256": "01ef35636a9e4d54711b52d818be5cd2aefce34e6de246d792a8191557391bb8"
+    },
+    {
+      "file": "33.40-network-recovery-safe-mode.md",
+      "title": "Phase 33.40 — Network Recovery & Safe Mode",
+      "sha256": "4926f5aef8eac340c33f7975fdd825d8ea9bf75c120de4a62c38f782acc966d6"
+    },
+    {
+      "file": "33.41-boot-time-network-analysis.md",
+      "title": "Phase 33.41 — Boot-Time Network Analysis",
+      "sha256": "923c6863fb88a4fbbf4dd667a7365add7eacc06d025f8b76f4b0c0168a9b8f85"
+    },
+    {
+      "file": "33.42-network-drift-detection.md",
+      "title": "Phase 33.42 — Network Drift Detection",
+      "sha256": "409460388bd391bdaaf58df2c8f00305ff906f7deef90f92fb47282a687dbb85"
+    },
+    {
+      "file": "33.43-network-management-cli.md",
+      "title": "Phase 33.43 — Network Management CLI",
+      "sha256": "c3d797b2f767094e39c0dec5abf1dee5be79a5692e3f916a4cf91caee97a294a"
+    },
+    {
+      "file": "33.44-phase-25-panel-integration-api.md",
+      "title": "Phase 33.44 — Phase 25 Panel Integration API",
+      "sha256": "8dda1d737b32f40285578bf3137e50e685e087d690794e4d9a719c778b7c81db"
+    },
+    {
+      "file": "33.45-phase-29-workload-integration.md",
+      "title": "Phase 33.45 — Phase 29 Workload Integration",
+      "sha256": "c08ebc6f7ab4b44866b704756fdfb70078e9547fedb5e7a3eaea4ebb9e664c34"
+    },
+    {
+      "file": "33.46-phase-30-resource-integration.md",
+      "title": "Phase 33.46 — Phase 30 Resource Integration",
+      "sha256": "489aeac65ad32ef720082c4ecdb83cf1abfab63fba48ac6da149518217e7f824"
+    },
+    {
+      "file": "33.47-phase-31-service-integration.md",
+      "title": "Phase 33.47 — Phase 31 Service Integration",
+      "sha256": "817f9b9282d3eaf51e3fe66448cdceafb08cae9a129b430abb16df1a1d308707"
+    },
+    {
+      "file": "33.48-phase-36-configuration-integration.md",
+      "title": "Phase 33.48 — Phase 36 Configuration Integration",
+      "sha256": "acc15743a5b59f7b25b967af0fcdfb40df27b15c19a0d0208c1e192877d4feae"
+    },
+    {
+      "file": "33.49-phase-37-secrets-integration.md",
+      "title": "Phase 33.49 — Phase 37 Secrets Integration",
+      "sha256": "faec3e96b3aaad3cac2fa3abc256f79e0257233d54fa2fb988de0319380b79c1"
+    },
+    {
+      "file": "33.50-phase-38-identity-integration.md",
+      "title": "Phase 33.50 — Phase 38 Identity Integration",
+      "sha256": "e3045c9c53e007a4334bdbd5c6283fd8b61e58fd95c8aba6339747d1cd98a665"
+    },
+    {
+      "file": "33.51-phase-39-timeline-integration.md",
+      "title": "Phase 33.51 — Phase 39 Timeline Integration",
+      "sha256": "f1455cab888f2aec2ae55b46672a19b4b1b2e4daa80c6bdb4a609bb842778ffa"
+    },
+    {
+      "file": "33.52-phase-42-graph-integration.md",
+      "title": "Phase 33.52 — Phase 42 Graph Integration",
+      "sha256": "2807b148f29f0802b5140680fa957c9728a6cc3d469baee7da55f6296c5dd21b"
+    },
+    {
+      "file": "33.53-network-security-exposure-audit.md",
+      "title": "Phase 33.53 — Network Security & Exposure Audit",
+      "sha256": "d68d91b409814f8d3b3d537d30aede37a1b8b06a8967d4cea2b64041bbe449fd"
+    },
+    {
+      "file": "33.54-failure-injection-network-namespace-testing.md",
+      "title": "Phase 33.54 — Failure Injection & Network Namespace Testing",
+      "sha256": "d51328bb033019c84591bf5ab3cb43d4bd748f49d0e6ef32a9cd758d963d97f3"
+    },
+    {
+      "file": "33.55-network-management-system-closure-readiness-gate.md",
+      "title": "Phase 33.55 — Network Management System Closure & Readiness Gate",
+      "sha256": "d9101d8cd0f8a217a90cbae48fd282904e72080c60483f50b98b6e5c157c2f5c"
+    }
+  ]
+}

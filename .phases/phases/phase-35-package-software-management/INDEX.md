@@ -1,0 +1,66 @@
+# Prompt Index
+
+- `35.0-package-software-management-system-foundation.md` — Phase 35.0 — Package & Software Management System Foundation
+- `35.1-software-domain-model.md` — Phase 35.1 — Software Domain Model
+- `35.2-package-provider-discovery.md` — Phase 35.2 — Package Provider Discovery
+- `35.3-installed-package-identity.md` — Phase 35.3 — Installed Package Identity
+- `35.4-application-vs-package-vs-executable-model.md` — Phase 35.4 — Application vs Package vs Executable Model
+- `35.5-apt-dpkg-provider-integration.md` — Phase 35.5 — APT & dpkg Provider Integration
+- `35.6-apt-repository-discovery.md` — Phase 35.6 — APT Repository Discovery
+- `35.7-apt-source-configuration-provenance.md` — Phase 35.7 — APT Source Configuration Provenance
+- `35.8-repository-trust-signature-boundary.md` — Phase 35.8 — Repository Trust & Signature Boundary
+- `35.9-package-candidate-version-model.md` — Phase 35.9 — Package Candidate & Version Model
+- `35.10-installed-vs-available-version-semantics.md` — Phase 35.10 — Installed vs Available Version Semantics
+- `35.11-package-dependency-evidence.md` — Phase 35.11 — Package Dependency Evidence
+- `35.12-native-dependency-resolution-boundary.md` — Phase 35.12 — Native Dependency Resolution Boundary
+- `35.13-package-install-planning.md` — Phase 35.13 — Package Install Planning
+- `35.14-package-upgrade-planning.md` — Phase 35.14 — Package Upgrade Planning
+- `35.15-package-removal-planning.md` — Phase 35.15 — Package Removal Planning
+- `35.16-purge-semantics-safety-boundary.md` — Phase 35.16 — Purge Semantics & Safety Boundary
+- `35.17-autoremove-safety-boundary.md` — Phase 35.17 — Autoremove Safety Boundary
+- `35.18-package-hold-pin-preference-semantics.md` — Phase 35.18 — Package Hold / Pin / Preference Semantics
+- `35.19-package-configuration-state.md` — Phase 35.19 — Package Configuration State
+- `35.20-conffile-conflict-handling.md` — Phase 35.20 — Conffile Conflict Handling
+- `35.21-package-transaction-model.md` — Phase 35.21 — Package Transaction Model
+- `35.22-package-transaction-verification.md` — Phase 35.22 — Package Transaction Verification
+- `35.23-interrupted-dpkg-apt-recovery.md` — Phase 35.23 — Interrupted dpkg / APT Recovery
+- `35.24-flatpak-provider-integration.md` — Phase 35.24 — Flatpak Provider Integration
+- `35.25-flatpak-remote-ref-model.md` — Phase 35.25 — Flatpak Remote & Ref Model
+- `35.26-flatpak-permission-evidence.md` — Phase 35.26 — Flatpak Permission Evidence
+- `35.27-snap-provider-integration.md` — Phase 35.27 — Snap Provider Integration
+- `35.28-standalone-software-discovery.md` — Phase 35.28 — Standalone Software Discovery
+- `35.29-local-manual-package-discovery.md` — Phase 35.29 — Local / Manual Package Discovery
+- `35.30-executable-provenance-resolution.md` — Phase 35.30 — Executable Provenance Resolution
+- `35.31-desktop-application-discovery.md` — Phase 35.31 — Desktop Application Discovery
+- `35.32-duplicate-application-detection.md` — Phase 35.32 — Duplicate Application Detection
+- `35.33-duplicate-installation-analysis.md` — Phase 35.33 — Duplicate Installation Analysis
+- `35.34-software-ownership-origin.md` — Phase 35.34 — Software Ownership & Origin
+- `35.35-package-file-ownership-evidence.md` — Phase 35.35 — Package File Ownership Evidence
+- `35.36-software-dependency-impact-analysis.md` — Phase 35.36 — Software Dependency Impact Analysis
+- `35.37-running-workload-impact-analysis.md` — Phase 35.37 — Running Workload Impact Analysis
+- `35.38-service-impact-integration.md` — Phase 35.38 — Service Impact Integration
+- `35.39-kernel-driver-package-boundary.md` — Phase 35.39 — Kernel / Driver Package Boundary
+- `35.40-development-dependency-boundary.md` — Phase 35.40 — Development Dependency Boundary
+- `35.41-container-software-boundary.md` — Phase 35.41 — Container Software Boundary
+- `35.42-software-configuration-boundary.md` — Phase 35.42 — Software Configuration Boundary
+- `35.43-package-cache-download-semantics.md` — Phase 35.43 — Package Cache & Download Semantics
+- `35.44-package-cleanup-safety.md` — Phase 35.44 — Package Cleanup Safety
+- `35.45-repository-change-planning.md` — Phase 35.45 — Repository Change Planning
+- `35.46-software-change-planning.md` — Phase 35.46 — Software Change Planning
+- `35.47-software-mutation-authorization.md` — Phase 35.47 — Software Mutation Authorization
+- `35.48-package-manager-locking-concurrency.md` — Phase 35.48 — Package Manager Locking & Concurrency
+- `35.49-offline-partial-network-behavior.md` — Phase 35.49 — Offline / Partial Network Behavior
+- `35.50-software-drift-detection.md` — Phase 35.50 — Software Drift Detection
+- `35.51-software-health-diagnostics.md` — Phase 35.51 — Software Health Diagnostics
+- `35.52-software-management-cli.md` — Phase 35.52 — Software Management CLI
+- `35.53-phase-25-panel-integration-api.md` — Phase 35.53 — Phase 25 Panel Integration API
+- `35.54-phase-24-platform-integration.md` — Phase 35.54 — Phase 24 Platform Integration
+- `35.55-phase-28-development-integration.md` — Phase 35.55 — Phase 28 Development Integration
+- `35.56-phase-29-workload-integration.md` — Phase 35.56 — Phase 29 Workload Integration
+- `35.57-phase-31-service-integration.md` — Phase 35.57 — Phase 31 Service Integration
+- `35.58-phase-36-configuration-integration.md` — Phase 35.58 — Phase 36 Configuration Integration
+- `35.59-phase-37-secrets-integration.md` — Phase 35.59 — Phase 37 Secrets Integration
+- `35.60-phase-39-timeline-integration.md` — Phase 35.60 — Phase 39 Timeline Integration
+- `35.61-cross-provider-software-inventory.md` — Phase 35.61 — Cross-Provider Software Inventory
+- `35.62-failure-injection-disposable-package-testing.md` — Phase 35.62 — Failure Injection & Disposable Package Testing
+- `35.63-package-software-management-system-closure-readiness-gate.md` — Phase 35.63 — Package & Software Management System Closure & Readiness Gate

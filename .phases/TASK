@@ -1,0 +1,1155 @@
+# TASK — Repository-Wide Refactoring of All Rebuntu Phase Specifications from Python to Native C++20
+
+## Mission
+
+Perform a complete repository-wide audit and refactoring of **all Rebuntu phase specifications** located recursively under:
+
+`/home/bvrznski/rebuntu/.phases/PHASES/`
+
+The historical specifications were written across different stages of Rebuntu development and may contain Python-oriented implementation assumptions.
+
+The current Rebuntu implementation language is **native C++20**.
+
+Your task is to transform the entire phase specification corpus so that it consistently describes the current **C++20/Linux Rebuntu architecture**, while preserving the original semantic intent, engineering depth, safety requirements, acceptance criteria and phase organization.
+
+This is a **specification migration task**.
+
+It is NOT an implementation task.
+
+Do not modify production Rebuntu code as part of this task.
+
+---
+
+# 1. Discover the Complete Phase Corpus
+
+Do not assume phase numbers or directory layout in advance.
+
+Recursively inventory:
+
+`/home/bvrznski/rebuntu/.phases/PHASES/`
+
+Find all specification files, including nested phases and subphases.
+
+Examples may include:
+
+`0/0.0.md`
+`0/0.1.md`
+...
+`5/5.16.md`
+`6/6.18.md`
+
+but the actual filesystem is authoritative.
+
+Use filesystem discovery to determine the complete corpus.
+
+Before modifying anything, produce an internal inventory containing:
+
+* relative path;
+* phase identifier;
+* file size;
+* apparent implementation-language orientation;
+* whether Python-specific assumptions are present;
+* whether C++ assumptions are already present;
+* whether the specification appears language-neutral;
+* whether it contains historical implementation references that should remain as archaeology.
+
+Do not skip large files.
+
+Do not inspect only headings or excerpts.
+
+**READ EVERY PHASE SPECIFICATION COMPLETELY.**
+
+---
+
+# 2. Primary Objective
+
+For every specification under:
+
+`/home/bvrznski/rebuntu/.phases/PHASES/`
+
+determine whether it contains obsolete assumptions about implementing Rebuntu in Python.
+
+Where such assumptions exist, refactor them into appropriate native C++20/Linux requirements.
+
+The final corpus should read as a coherent specification suite for a C++20 system.
+
+It must NOT look like a Python architecture with:
+
+* `Python` replaced by `C++`;
+* `.py` replaced by `.cpp`;
+* `pytest` replaced by `CTest`;
+* `asyncio` replaced by `std::thread`.
+
+This is a **semantic and architectural migration**, not textual substitution.
+
+---
+
+# 3. Mandatory Engineering Method
+
+Throughout this task follow:
+
+**SEARCH BEFORE MODIFYING.**
+
+**UNDERSTAND BEFORE REWRITING.**
+
+**COMPOSE BEFORE GENERATING.**
+
+**PRESERVE SEMANTICS BEFORE CHANGING MECHANICS.**
+
+**USE EXISTING REBUNTU ARCHITECTURE BEFORE INVENTING NEW ARCHITECTURE.**
+
+**USE LINUX BEFORE EMULATING LINUX.**
+
+**VERIFY BEFORE CLAIMING COMPLETION.**
+
+For every specification requirement:
+
+1. understand what behavior/invariant it actually requires;
+2. determine whether the mechanism described is Python-specific;
+3. search the current Rebuntu C++ repository for the corresponding architecture;
+4. choose the appropriate C++20/Linux formulation;
+5. rewrite only then.
+
+---
+
+# 4. Inspect Current Rebuntu Before Migration
+
+Before rewriting specifications, inspect the current repository sufficiently to understand what already exists.
+
+Search especially for:
+
+* CMake targets;
+* public/private headers;
+* namespaces;
+* core Result structures;
+* Evidence;
+* Verification;
+* semantic identifiers;
+* state models;
+* runtime;
+* executor;
+* runner;
+* dispatcher;
+* resolver;
+* controller;
+* coordinator;
+* registries/catalogs;
+* Operations;
+* Workflows;
+* Tasks/Jobs/Executions/Attempts;
+* providers;
+* Linux adapters;
+* filesystem utilities;
+* process execution;
+* authorization;
+* configuration;
+* monitoring;
+* diagnostics;
+* shell-language infrastructure;
+* tests.
+
+The rewritten specifications should reference and reuse the **actual current architecture** where appropriate.
+
+Do not preserve an obsolete Python abstraction merely because an old prompt names it.
+
+Do not invent a second C++ abstraction when the repository already contains the capability.
+
+---
+
+# 5. Target Implementation Baseline
+
+Unless a particular specification explicitly has a justified different boundary, assume:
+
+* C++20;
+* Linux;
+* CMake;
+* CTest;
+* RAII;
+* deterministic lifetime;
+* explicit ownership;
+* strong typing;
+* const correctness;
+* value semantics where appropriate;
+* explicit concurrency;
+* bounded resources;
+* explicit cancellation;
+* explicit error/result semantics;
+* native Linux integration.
+
+Use where appropriate:
+
+* `std::unique_ptr`;
+* `std::shared_ptr` only for genuine shared ownership;
+* `std::weak_ptr`;
+* `std::optional`;
+* `std::variant`;
+* `std::span`;
+* `std::string_view`;
+* `std::filesystem`;
+* `std::chrono`;
+* `std::jthread`;
+* `std::stop_token`;
+* atomics;
+* mutexes;
+* condition variables;
+* bounded queues;
+* POSIX APIs;
+* procfs;
+* sysfs;
+* netlink;
+* udev;
+* Unix sockets;
+* D-Bus;
+* systemd APIs.
+
+These are tools, not mandatory decorations.
+
+Do not sprinkle C++ terminology into specifications where it provides no engineering value.
+
+---
+
+# 6. Semantic Migration Rule
+
+For every Python-oriented requirement identify:
+
+### A. Semantic intent
+
+What capability or invariant was actually required?
+
+### B. Historical mechanism
+
+How did the old specification expect Python to provide it?
+
+### C. Current realization
+
+How should native C++20 Rebuntu provide the same semantic behavior?
+
+Preserve **A**.
+
+Replace **B** with **C**.
+
+For example, do NOT assume:
+
+`Python module → C++ class`
+
+`Python package → C++ library`
+
+`dict → std::unordered_map`
+
+`async def → std::async`
+
+`asyncio task → std::thread`
+
+`exception → throw`
+
+`Protocol → abstract base class`
+
+`decorator → macro`
+
+`context manager → arbitrary RAII wrapper`
+
+Determine the actual requirement first.
+
+---
+
+# 7. Concepts Are Not C++ Classes
+
+Do not convert Rebuntu's ontology into a giant class hierarchy.
+
+Preserve distinctions such as:
+
+* shell source;
+* script;
+* process;
+* service;
+* daemon;
+* Unit;
+* Task;
+* Job;
+* Execution;
+* Attempt;
+* Operation;
+* Workflow;
+* Automation;
+* schedule;
+* event;
+* message;
+* provider;
+* configuration;
+* desired state;
+* observed state;
+* lifecycle;
+* activity;
+* control;
+* readiness;
+* health;
+* outcome;
+* evidence;
+* verification;
+* scope;
+* authorization.
+
+Remember:
+
+**concept != class**
+
+**concept != directory**
+
+**concept != process**
+
+**concept != thread**
+
+**semantic modularity != process modularity**
+
+Do not produce Java-style C++ architecture.
+
+---
+
+# 8. Preserve Established Rebuntu Contracts
+
+The migration must preserve or reinforce established contracts wherever relevant:
+
+**exit status 0 != verified semantic success**
+
+**UNKNOWN != FALSE != FAILED**
+
+**desired state != observed state**
+
+**service != daemon**
+
+**Task != Job != Execution != Attempt**
+
+**Automation != Workflow**
+
+**Schedule != Automation**
+
+**Privilege != Authorization**
+
+**Execution != Verification**
+
+**Model output != authority**
+
+**Shell language != runtime**
+
+**Provider selection != policy authorization**
+
+**Parsing/resolution must not execute**
+
+Consequential mutations must continue to follow the established pattern:
+
+`DISCOVER`
+`→ RESOLVE TARGET`
+`→ VALIDATE`
+`→ PLAN`
+`→ AUTHORIZE`
+`→ CHECKPOINT/BACKUP IF WARRANTED`
+`→ EXECUTE`
+`→ OBSERVE`
+`→ VERIFY`
+`→ EVIDENCE`
+`→ RESULT`
+
+Do not weaken these contracts during language migration.
+
+---
+
+# 9. Python Constructs to Audit
+
+Search recursively for Python-oriented assumptions including, but not limited to:
+
+`Python`
+`python`
+`.py`
+`__init__.py`
+`__main__.py`
+`pytest`
+`pip`
+`venv`
+`virtualenv`
+`Poetry`
+`poetry`
+`uv`
+`asyncio`
+`async def`
+`await`
+`dataclass`
+`typing`
+`Protocol`
+`ABC`
+`abstractmethod`
+`dict`
+`list`
+`tuple`
+`set`
+`generator`
+`yield`
+`decorator`
+`contextmanager`
+`multiprocessing`
+`threading`
+`subprocess`
+`importlib`
+`entry_points`
+`requirements.txt`
+`pyproject.toml`
+
+Do NOT blindly replace every occurrence.
+
+Classify each occurrence as:
+
+1. obsolete implementation requirement;
+2. legitimate historical reference;
+3. discussion of an external Python component;
+4. language-independent concept expressed using Python terminology;
+5. still-valid interoperability requirement.
+
+Only category 1 and appropriate parts of category 4 should normally be rewritten.
+
+---
+
+# 10. Historical References
+
+Historical Rebuntu is requirements archaeology.
+
+Historical references may be useful and should not be erased merely because they mention Python.
+
+Where appropriate transform wording such as:
+
+> The Python implementation uses X.
+
+into:
+
+> Historical Rebuntu used X to provide Y semantics. The current C++ implementation must preserve Y; X is not an architectural requirement.
+
+Clearly distinguish:
+
+**historical implementation evidence**
+
+from:
+
+**current implementation requirements**.
+
+---
+
+# 11. External Python Components
+
+Do not incorrectly remove Python from specifications describing genuinely external components that remain Python-based.
+
+For example, if Rebuntu integrates with:
+
+* an external ML runtime;
+* Ansible;
+* a Python-only external tool;
+* an external provider whose implementation language is irrelevant to Rebuntu;
+
+then Python may legitimately remain mentioned.
+
+The rule is:
+
+**Rebuntu core implementation is C++20.**
+
+It does NOT mean:
+
+**No Python program may exist anywhere in Rebuntu's ecosystem.**
+
+Preserve provider boundaries.
+
+---
+
+# 12. Build and Packaging Migration
+
+Where specifications describe building Rebuntu itself, migrate Python build/package assumptions to the current C++ build architecture.
+
+Prefer:
+
+* CMake;
+* explicit targets;
+* CTest;
+* install rules where appropriate;
+* explicit dependency discovery;
+* compile warnings;
+* reproducible build configuration.
+
+Do not mechanically map each historical Python package to a separate CMake library.
+
+Library boundaries must correspond to actual architectural boundaries.
+
+---
+
+# 13. Testing Migration
+
+Refactor Python-specific testing requirements into C++ testing requirements.
+
+Use the testing framework already established in Rebuntu and integrate through CTest.
+
+Preserve test intent.
+
+Where relevant require testing of:
+
+* success paths;
+* failure paths;
+* UNKNOWN;
+* unsupported capability;
+* invalid input;
+* malformed input;
+* timeouts;
+* cancellation;
+* concurrency;
+* lifecycle;
+* idempotency;
+* postcondition verification;
+* evidence;
+* resource cleanup;
+* filesystem safety;
+* process termination;
+* authorization;
+* Linux integration;
+* parser/resolver determinism;
+* fuzz/property boundaries;
+* bounded-resource behavior.
+
+Tests must remain **host-safe**.
+
+Never satisfy a test requirement by mutating the developer's real:
+
+* `/etc`;
+* systemd configuration;
+* firewall;
+* networking;
+* disks;
+* mounts;
+* bootloader;
+* users/groups;
+* hardware configuration;
+* unrelated services.
+
+Use controlled fixtures and isolated temporary environments.
+
+---
+
+# 14. Concurrency Migration
+
+Do not translate Python concurrency mechanically.
+
+For every occurrence of:
+
+* asyncio;
+* futures;
+* threads;
+* multiprocessing;
+* queues;
+* workers;
+
+identify the actual concurrency requirement first.
+
+Determine whether it should be:
+
+* synchronous;
+* event-driven;
+* blocking I/O;
+* asynchronous I/O;
+* CPU parallel;
+* background worker;
+* persistent service;
+* externally supervised process.
+
+Reuse existing Rebuntu runtime facilities.
+
+Where native C++ concurrency is required, prefer deterministic lifecycle:
+
+* `std::jthread`;
+* `std::stop_token`;
+* bounded queues;
+* explicit backpressure;
+* explicit ownership;
+* deterministic shutdown.
+
+Do not introduce detached threads unless an extraordinary requirement justifies them.
+
+---
+
+# 15. Error Handling Migration
+
+Do not mechanically turn every Python exception into a C++ exception.
+
+Distinguish:
+
+* expected operational error;
+* malformed input;
+* unavailable provider;
+* unsupported operation;
+* acquisition failure;
+* authorization denial;
+* timeout;
+* cancellation;
+* verification failure;
+* invariant violation;
+* programmer error.
+
+Reuse Rebuntu's existing typed Result/Evidence/Verification semantics.
+
+Exceptions, where used, should primarily represent exceptional programming/construction/invariant situations rather than ordinary runtime state.
+
+---
+
+# 16. Resource Ownership
+
+Where migration to C++ makes lifetime important, specifications should explicitly address it.
+
+Audit relevant phases for:
+
+* file descriptors;
+* sockets;
+* subprocesses;
+* threads;
+* locks;
+* mappings;
+* temporary files;
+* filesystem handles;
+* D-Bus connections;
+* provider handles;
+* runtime registrations.
+
+Require deterministic cleanup.
+
+Prefer RAII.
+
+Avoid:
+
+* raw owning pointers;
+* manual `new/delete`;
+* unclear ownership;
+* uncontrolled global state;
+* pervasive `shared_ptr`.
+
+---
+
+# 17. Linux-Native Refactoring
+
+Historical Python specifications may shell out to Linux commands.
+
+Do not preserve that merely because it is easy.
+
+Ask:
+
+> Does Linux expose an appropriate native interface?
+
+Prefer as applicable:
+
+* POSIX;
+* procfs;
+* sysfs;
+* netlink;
+* udev;
+* D-Bus;
+* systemd APIs;
+* Unix sockets;
+* `SO_PEERCRED`;
+* `openat*`;
+* `stat*`;
+* `renameat*`;
+* `unlinkat`;
+* `flock`.
+
+Where external processes remain appropriate, specifications must require:
+
+* explicit executable;
+* explicit argv;
+* no shell interpolation;
+* bounded output;
+* timeout;
+* cancellation;
+* signal/exit evidence;
+* process-tree handling where necessary;
+* independent semantic verification for consequential actions.
+
+---
+
+# 18. Security Preservation
+
+Never introduce or preserve patterns equivalent to:
+
+`free text -> LLM -> shell`
+
+`LLM -> sudo`
+
+`string -> eval`
+
+`string -> system()`
+
+`untrusted input -> shell -c`
+
+`successful subprocess -> verified success`
+
+Do not allow specification migration to weaken authorization, validation, scope or verification.
+
+Model output remains advisory/candidate data and must pass normal deterministic validation.
+
+---
+
+# 19. Shell Language Is Not C++ Syntax
+
+Do not rewrite user-facing Rebuntu commands merely because implementation language changed.
+
+For example:
+
+`install foo`
+
+must remain a user-facing semantic command if that is the specified UX.
+
+It must not become:
+
+`rebuntu::install(foo)`
+
+The shell language is a frontend to Rebuntu.
+
+Implementation language and user language are independent.
+
+---
+
+# 20. Preserve Phase Organization
+
+Do not renumber phases.
+
+Do not merge phases merely because they overlap.
+
+Do not split phases unless absolutely necessary to repair a malformed specification, and if so report it rather than silently restructuring the corpus.
+
+Preserve:
+
+* phase numbers;
+* subphase numbers;
+* filenames;
+* ordering;
+* mission;
+* acceptance criteria;
+* engineering matrices;
+* negative requirements;
+* completion reports.
+
+Modify the existing files **in place**.
+
+Do not generate parallel files such as:
+
+`6.5_cpp.md`
+
+or:
+
+`cpp/6.5.md`.
+
+---
+
+# 21. Do Not Rewrite Already-Correct Specifications Needlessly
+
+Some later phases may already be:
+
+* C++ aware;
+* language-neutral;
+* architecturally compatible with current Rebuntu.
+
+Do not churn them just to produce a diff.
+
+For each file classify:
+
+### REWRITE
+
+Contains obsolete Python implementation assumptions.
+
+### NORMALIZE
+
+Mostly correct but contains terminology or tooling inconsistent with C++ Rebuntu.
+
+### REVIEW ONLY
+
+Already compatible; no change necessary.
+
+Every file must still be read and audited.
+
+---
+
+# 22. Per-File Procedure
+
+For every discovered phase specification:
+
+### 1. Read completely
+
+Do not rely on grep alone.
+
+### 2. Identify implementation-language assumptions
+
+Mark Python-specific requirements.
+
+### 3. Identify semantic requirements
+
+Determine what must remain invariant.
+
+### 4. Search current repository
+
+Find existing C++ implementation architecture relevant to the phase.
+
+### 5. Select migration strategy
+
+REWRITE / NORMALIZE / REVIEW ONLY.
+
+### 6. Refactor
+
+Rewrite obsolete assumptions.
+
+### 7. Inspect diff
+
+Ensure semantic requirements were not accidentally removed.
+
+### 8. Python-remnant audit
+
+Review remaining Python references individually.
+
+### 9. Architecture audit
+
+Check for accidental duplicate architecture.
+
+### 10. Save in place
+
+Preserve filename and phase number.
+
+---
+
+# 23. Cross-Phase Consistency
+
+After processing every file, perform a second complete pass over the entire phase corpus.
+
+The corpus must behave as **one specification system**.
+
+Check especially for contradictions involving:
+
+* C++ standard;
+* naming;
+* namespaces;
+* Result;
+* Evidence;
+* Verification;
+* semantic IDs;
+* state;
+* ownership;
+* lifecycle;
+* concurrency;
+* cancellation;
+* runtime;
+* Operations;
+* Tasks/Jobs/Executions/Attempts;
+* Workflows;
+* providers;
+* configuration;
+* Linux adapters;
+* filesystem operations;
+* process execution;
+* shell language;
+* authorization;
+* scope;
+* monitoring;
+* diagnostics;
+* build;
+* tests.
+
+Later phases may legitimately refine earlier phases.
+
+Do not flatten intentional architectural evolution.
+
+Where a later phase supersedes an earlier implementation detail, rewrite the earlier phase so that it establishes the appropriate foundation without contradicting the later refinement.
+
+---
+
+# 24. Avoid Retroactive Architecture Corruption
+
+Do not rewrite an early phase to assume every component introduced by later phases already exists.
+
+Phase progression still matters.
+
+For example, an early specification may establish a basic abstraction that is extended later.
+
+Preserve that progression.
+
+The final corpus should be:
+
+**chronologically coherent**
+
+and:
+
+**architecturally coherent**.
+
+Do not make Phase 0 depend directly on an implementation that only appears in Phase 6 unless the later architecture merely clarifies a global invariant that should always have existed.
+
+---
+
+# 25. Preserve Detail and Depth
+
+Do not shorten specifications as part of migration.
+
+These files are implementation prompts.
+
+Preserve useful:
+
+* rationale;
+* invariants;
+* architecture constraints;
+* failure semantics;
+* edge cases;
+* examples;
+* negative requirements;
+* testing requirements;
+* acceptance criteria;
+* audit matrices;
+* completion-report requirements.
+
+If a Python-specific section contains important engineering information, rewrite it at equivalent or greater C++/Linux depth.
+
+---
+
+# 26. C++-Specific Strengthening
+
+Where genuinely relevant, strengthen requirements to cover concerns hidden by Python:
+
+* ownership;
+* lifetime;
+* RAII;
+* move/copy semantics;
+* thread lifetime;
+* data races;
+* dangling references;
+* iterator invalidation;
+* descriptor ownership;
+* process ownership;
+* signal behavior;
+* exception safety;
+* partial construction;
+* deterministic destruction;
+* integer conversions;
+* buffer bounds;
+* ABI boundaries;
+* filesystem TOCTOU;
+* shutdown ordering.
+
+Do not add generic C++ boilerplate to phases unrelated to these concerns.
+
+---
+
+# 27. No Fake Migration
+
+The following is unacceptable:
+
+* global search-and-replace;
+* Python architecture expressed using C++ vocabulary;
+* one C++ class for every historical Python module;
+* one CMake target for every Python package;
+* `asyncio` mechanically replaced with threads;
+* decorators mechanically replaced with macros;
+* protocols mechanically replaced with abstract base classes;
+* Python exceptions mechanically replaced with C++ exceptions;
+* every collection mechanically replaced with an STL container;
+* every Python object mechanically replaced with heap allocation.
+
+The final prompts must be suitable for implementation by a senior C++/Linux engineer without requiring another conceptual translation.
+
+---
+
+# 28. Scope Restriction
+
+This task modifies only specification files under:
+
+`/home/bvrznski/rebuntu/.phases/PHASES/`
+
+Do not modify production source code.
+
+Do not implement the phases.
+
+Do not fix unrelated repository bugs.
+
+Do not reorganize the source tree.
+
+Do not update generated artifacts outside `.phases/PHASES`.
+
+Repository source may and should be **read** to understand architecture.
+
+It must not be modified during this task.
+
+---
+
+# 29. Git Discipline
+
+Before modifications:
+
+1. determine repository root;
+2. inspect `git status`;
+3. record current branch;
+4. record current HEAD;
+5. identify unrelated working-tree changes.
+
+Never overwrite or discard user changes.
+
+Use **one commit per modified phase specification**.
+
+Examples:
+
+`phases: refactor 0.0 specification for C++20`
+
+`phases: refactor 3.7 specification for C++20`
+
+`phases: normalize 6.4 specification for C++20`
+
+Files classified REVIEW ONLY do not require empty commits.
+
+After the final corpus-wide consistency pass, if additional cross-phase normalization changes are required, make one final commit:
+
+`phases: normalize C++20 specification corpus`
+
+Do not squash commits.
+
+---
+
+# 30. Required Automated Audit
+
+After migration recursively search:
+
+`/home/bvrznski/rebuntu/.phases/PHASES/`
+
+for Python-oriented terminology.
+
+Generate a final classification of every remaining occurrence.
+
+No occurrence should remain unexplained.
+
+Also search for suspicious migration artifacts such as:
+
+* `std::thread` everywhere;
+* excessive `shared_ptr`;
+* `system(`;
+* `popen(`;
+* `shell -c`;
+* generic `Manager`;
+* giant service locators;
+* newly invented parallel runtimes;
+* Python paths surviving as current requirements;
+* contradictory build instructions;
+* contradictory testing instructions.
+
+---
+
+# 31. Corpus Integrity Verification
+
+Verify after modifications:
+
+* every original phase file still exists;
+* no phase file is accidentally empty;
+* no file is unexpectedly truncated;
+* no filename changed unintentionally;
+* no phase disappeared;
+* no duplicate `*_cpp` specification was created;
+* Markdown remains structurally readable;
+* phase ordering remains intact;
+* no production source changed;
+* unrelated repository changes remain untouched.
+
+Compare the pre-migration and post-migration inventories.
+
+---
+
+# 32. Required Completion Report
+
+At completion provide:
+
+## A. Corpus inventory
+
+Total:
+
+* phase directories;
+* specification files;
+* files read;
+* files rewritten;
+* files normalized;
+* files reviewed without modification;
+* files blocked.
+
+## B. Phase table
+
+For every specification:
+
+`path | classification | changed? | primary migration`
+
+## C. Python migration summary
+
+Summarize removed/replaced assumptions.
+
+## D. C++ architecture mapping
+
+Describe major historical Python mechanisms and their new C++20/Linux equivalents.
+
+## E. Existing Rebuntu architecture reused
+
+List current repository abstractions that informed the rewritten prompts.
+
+## F. Historical references retained
+
+Explain remaining intentional Python references.
+
+## G. Cross-phase findings
+
+Describe contradictions, outdated assumptions and architectural drift discovered.
+
+## H. Safety findings
+
+Report any old prompt that encouraged:
+
+* unsafe shell execution;
+* implicit privilege;
+* missing verification;
+* unsafe filesystem operations;
+* unbounded concurrency;
+* ambiguous ownership.
+
+Explain how its specification was corrected.
+
+## I. Verification
+
+Report:
+
+* recursive audit;
+* remaining Python references;
+* corpus integrity;
+* git diff;
+* commits;
+* confirmation that production code was untouched.
+
+## J. Remaining ambiguities
+
+List anything requiring a human architectural decision.
+
+Do not silently guess.
+
+---
+
+# 33. Definition of Done
+
+The task is complete only when:
+
+* every specification recursively under `.phases/PHASES/` has been discovered;
+* every specification has been read completely;
+* every specification has been classified;
+* obsolete Python implementation assumptions have been removed or rewritten;
+* intentional historical/external Python references are preserved and explained;
+* semantic intent and acceptance criteria remain intact;
+* current Rebuntu C++ architecture has been consulted;
+* duplicate architecture has not been introduced;
+* native Linux integration remains preferred;
+* build requirements are coherent with CMake;
+* testing requirements are coherent with CTest/current C++ test infrastructure;
+* C++ ownership/lifetime/concurrency concerns are explicit where relevant;
+* phase chronology remains coherent;
+* cross-phase terminology is consistent;
+* production code has not been modified;
+* each modified phase has its own Git commit;
+* final corpus-wide audit has passed.
+
+## Final quality criterion
+
+After completion, a competent C++/Linux implementation agent must be able to start at the earliest Rebuntu phase and proceed through the **entire specification corpus** without having to mentally translate historical Python architecture into C++.
+
+The specifications should read as if Rebuntu's implementation had been intended for native C++20/Linux from the beginning, while still preserving the useful engineering history, semantic contracts and progressive architecture encoded by the original phases.

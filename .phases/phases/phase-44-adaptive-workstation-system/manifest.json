@@ -1,0 +1,9 @@
+{
+  "phase": "44",
+  "name": "Adaptive Workstation System",
+  "full_prompt_count": 320,
+  "architecture_document_count": 12,
+  "entrypoint": "README.md",
+  "runtime_policy": "C++-first deterministic adaptive runtime",
+  "core_rule": "adaptation is policy-bounded, measured, reversible and never self-authorizing"
+}

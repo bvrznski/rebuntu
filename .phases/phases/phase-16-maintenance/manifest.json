@@ -1,0 +1,94 @@
+{
+  "phase": 16,
+  "slug": "maintenance",
+  "directory": "phase-16-maintenance",
+  "prompt_count": 17,
+  "layout_version": 2,
+  "prompts": [
+    {
+      "file": "16.0.md",
+      "title": "Rebuntu --- Phase 16.0 --- Maintenance Architecture",
+      "sha256": "ecce21dcc580656e5fc628666a97e4d9dfbe2fdb94c26917e680a5733f530bfb"
+    },
+    {
+      "file": "16.1.md",
+      "title": "Rebuntu --- Phase 16.1 --- Package Maintenance",
+      "sha256": "b0f35e624d37f455c3fd0fbe89892bb90d421c0723bc31635afa6a26bb88ce28"
+    },
+    {
+      "file": "16.2.md",
+      "title": "Rebuntu --- Phase 16.2 --- Update Management",
+      "sha256": "472699d107ef0259940111060f07dbe99d9043683f35724d6f9ad6503f1d0038"
+    },
+    {
+      "file": "16.3.md",
+      "title": "Rebuntu --- Phase 16.3 --- Configuration Drift",
+      "sha256": "6001b18a10b019549254990ee9b8b34c67d041bc6670b5fd0584d1d4898573c8"
+    },
+    {
+      "file": "16.4.md",
+      "title": "Rebuntu --- Phase 16.4 --- Filesystem Maintenance",
+      "sha256": "259d46ea4d5494c979deb70632c223e4b0c3e925cafb66b4c7f4800443c37250"
+    },
+    {
+      "file": "16.5.md",
+      "title": "Rebuntu --- Phase 16.5 --- Storage Capacity",
+      "sha256": "36752fa34c7f7464e9aaeb3df29a2435cb94e2366dd160c2e8120fd630e12f13"
+    },
+    {
+      "file": "16.6.md",
+      "title": "Rebuntu --- Phase 16.6 --- Log Maintenance",
+      "sha256": "6b168dd08c1e950e6601c54a193d45a11c287c91831334a383bc59dfd0b70262"
+    },
+    {
+      "file": "16.7.md",
+      "title": "Rebuntu --- Phase 16.7 --- Cache Maintenance",
+      "sha256": "cb47f5ce8e084b76c1bfd0a200497eb069a6f0503bc22ec7936de9930b879eec"
+    },
+    {
+      "file": "16.8.md",
+      "title": "Rebuntu --- Phase 16.8 --- Temporary Data",
+      "sha256": "5cee7c8c9e71231c0cc28c092344063738237f3cc3e3357830cda57a0879b663"
+    },
+    {
+      "file": "16.9.md",
+      "title": "Rebuntu --- Phase 16.9 --- Backup Maintenance",
+      "sha256": "7c191bbf0bcac061cd56297d066cb09b0e9e3b8ccfdee11ba5c5312ba26e4735"
+    },
+    {
+      "file": "16.10.md",
+      "title": "Rebuntu --- Phase 16.10 --- Integrity Verification",
+      "sha256": "ea013e3a46c01ff84beb9c5c31c67fd8cae17c7e754502e92a9c274463333c4c"
+    },
+    {
+      "file": "16.11.md",
+      "title": "Rebuntu --- Phase 16.11 --- Service Maintenance",
+      "sha256": "cc8441c1b415b53564d46be29ce13c59da6d8b76d1789d7b14efc0eae13008c0"
+    },
+    {
+      "file": "16.12.md",
+      "title": "Rebuntu --- Phase 16.12 --- Dependency Maintenance",
+      "sha256": "243025591f3d0590155732265c7f1e483f34014c07085aa2a7a6576ff34212e5"
+    },
+    {
+      "file": "16.13.md",
+      "title": "Rebuntu --- Phase 16.13 --- Orphan Detection",
+      "sha256": "9b86d662a18bc445ca7195bab74445bda36db1e5e96328d1740a510e03af15d2"
+    },
+    {
+      "file": "16.14.md",
+      "title": "Rebuntu --- Phase 16.14 --- Safe Cleanup / Quarantine",
+      "sha256": "f4f4a67c02aa44047b4d80c37da7d3ad5bbe4a2b053a92a712f80083972dd9c5"
+    },
+    {
+      "file": "16.15.md",
+      "title": "Rebuntu --- Phase 16.15 --- Maintenance Automation",
+      "sha256": "f1bc363577a977494879be32a27aa6f13638ee4f6f99206089548bb019aef917"
+    },
+    {
+      "file": "16.16.md",
+      "title": "Rebuntu --- Phase 16.16 --- Long-Running Maintenance Audit",
+      "sha256": "0a6129a170fbd43b5eb8633a24d6eb46c89d7947319f8feb409da0f5d342585e"
+    }
+  ]
+}

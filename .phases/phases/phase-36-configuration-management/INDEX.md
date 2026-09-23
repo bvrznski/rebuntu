@@ -1,0 +1,68 @@
+# Prompt Index
+
+- `36.0-configuration-management-system-foundation.md` — Phase 36.0 — Configuration Management System Foundation
+- `36.1-configuration-domain-model.md` — Phase 36.1 — Configuration Domain Model
+- `36.2-configuration-provider-discovery.md` — Phase 36.2 — Configuration Provider Discovery
+- `36.3-configuration-object-identity.md` — Phase 36.3 — Configuration Object Identity
+- `36.4-configuration-source-vs-effective-state.md` — Phase 36.4 — Configuration Source vs Effective State
+- `36.5-desired-vs-observed-configuration.md` — Phase 36.5 — Desired vs Observed Configuration
+- `36.6-configuration-layering-model.md` — Phase 36.6 — Configuration Layering Model
+- `36.7-precedence-override-semantics.md` — Phase 36.7 — Precedence & Override Semantics
+- `36.8-configuration-provenance.md` — Phase 36.8 — Configuration Provenance
+- `36.9-filesystem-ownership-vs-configuration-ownership.md` — Phase 36.9 — Filesystem Ownership vs Configuration Ownership
+- `36.10-textual-vs-semantic-configuration-model.md` — Phase 36.10 — Textual vs Semantic Configuration Model
+- `36.11-configuration-parser-adapter-boundary.md` — Phase 36.11 — Configuration Parser & Adapter Boundary
+- `36.12-unknown-key-comment-preservation.md` — Phase 36.12 — Unknown Key & Comment Preservation
+- `36.13-configuration-schema-integration.md` — Phase 36.13 — Configuration Schema Integration
+- `36.14-configuration-validation-model.md` — Phase 36.14 — Configuration Validation Model
+- `36.15-configuration-diff-model.md` — Phase 36.15 — Configuration Diff Model
+- `36.16-semantic-diff-model.md` — Phase 36.16 — Semantic Diff Model
+- `36.17-configuration-changeset-model.md` — Phase 36.17 — Configuration ChangeSet Model
+- `36.18-minimal-patch-planning.md` — Phase 36.18 — Minimal Patch Planning
+- `36.19-atomic-file-mutation.md` — Phase 36.19 — Atomic File Mutation
+- `36.20-configuration-transaction-model.md` — Phase 36.20 — Configuration Transaction Model
+- `36.21-configuration-backup-model.md` — Phase 36.21 — Configuration Backup Model
+- `36.22-backup-vs-rollback-separation.md` — Phase 36.22 — Backup vs Rollback Separation
+- `36.23-configuration-rollback-model.md` — Phase 36.23 — Configuration Rollback Model
+- `36.24-concurrent-edit-detection.md` — Phase 36.24 — Concurrent Edit Detection
+- `36.25-external-change-reconciliation.md` — Phase 36.25 — External Change Reconciliation
+- `36.26-configuration-drift-detection.md` — Phase 36.26 — Configuration Drift Detection
+- `36.27-drift-classification.md` — Phase 36.27 — Drift Classification
+- `36.28-desired-state-adoption.md` — Phase 36.28 — Desired-State Adoption
+- `36.29-configuration-reconciliation-planning.md` — Phase 36.29 — Configuration Reconciliation Planning
+- `36.30-configuration-history-versioning.md` — Phase 36.30 — Configuration History & Versioning
+- `36.31-configuration-snapshot-semantics.md` — Phase 36.31 — Configuration Snapshot Semantics
+- `36.32-secret-reference-integration.md` — Phase 36.32 — Secret Reference Integration
+- `36.33-sensitive-configuration-redaction.md` — Phase 36.33 — Sensitive Configuration Redaction
+- `36.34-environment-variable-configuration.md` — Phase 36.34 — Environment Variable Configuration
+- `36.35-user-scoped-configuration.md` — Phase 36.35 — User-Scoped Configuration
+- `36.36-system-scoped-configuration.md` — Phase 36.36 — System-Scoped Configuration
+- `36.37-project-scoped-configuration-boundary.md` — Phase 36.37 — Project-Scoped Configuration Boundary
+- `36.38-runtime-configuration-boundary.md` — Phase 36.38 — Runtime Configuration Boundary
+- `36.39-generated-configuration-boundary.md` — Phase 36.39 — Generated Configuration Boundary
+- `36.40-symlink-indirection-handling.md` — Phase 36.40 — Symlink & Indirection Handling
+- `36.41-directory-fragment-configuration.md` — Phase 36.41 — Directory & Fragment Configuration
+- `36.42-drop-in-override-semantics.md` — Phase 36.42 — Drop-In / Override Semantics
+- `36.43-configuration-activation-model.md` — Phase 36.43 — Configuration Activation Model
+- `36.44-reload-restart-impact-boundary.md` — Phase 36.44 — Reload / Restart Impact Boundary
+- `36.45-configuration-dependency-analysis.md` — Phase 36.45 — Configuration Dependency Analysis
+- `36.46-configuration-impact-analysis.md` — Phase 36.46 — Configuration Impact Analysis
+- `36.47-configuration-policy-constraints.md` — Phase 36.47 — Configuration Policy & Constraints
+- `36.48-configuration-mutation-authorization.md` — Phase 36.48 — Configuration Mutation Authorization
+- `36.49-privilege-boundary.md` — Phase 36.49 — Privilege Boundary
+- `36.50-configuration-search-explainability.md` — Phase 36.50 — Configuration Search & Explainability
+- `36.51-configuration-management-cli.md` — Phase 36.51 — Configuration Management CLI
+- `36.52-phase-25-panel-integration-api.md` — Phase 36.52 — Phase 25 Panel Integration API
+- `36.53-phase-27-terminal-configuration-integration.md` — Phase 36.53 — Phase 27 Terminal Configuration Integration
+- `36.54-phase-28-development-configuration-integration.md` — Phase 36.54 — Phase 28 Development Configuration Integration
+- `36.55-phase-31-service-configuration-integration.md` — Phase 36.55 — Phase 31 Service Configuration Integration
+- `36.56-phase-32-storage-configuration-integration.md` — Phase 36.56 — Phase 32 Storage Configuration Integration
+- `36.57-phase-33-network-configuration-integration.md` — Phase 36.57 — Phase 33 Network Configuration Integration
+- `36.58-phase-34-accelerator-configuration-integration.md` — Phase 36.58 — Phase 34 Accelerator Configuration Integration
+- `36.59-phase-35-package-configuration-integration.md` — Phase 36.59 — Phase 35 Package Configuration Integration
+- `36.60-phase-37-secrets-integration.md` — Phase 36.60 — Phase 37 Secrets Integration
+- `36.61-phase-38-identity-integration.md` — Phase 36.61 — Phase 38 Identity Integration
+- `36.62-phase-39-timeline-integration.md` — Phase 36.62 — Phase 39 Timeline Integration
+- `36.63-phase-42-knowledge-graph-integration.md` — Phase 36.63 — Phase 42 Knowledge Graph Integration
+- `36.64-failure-injection-transaction-testing.md` — Phase 36.64 — Failure Injection & Transaction Testing
+- `36.65-configuration-management-system-closure-readiness-gate.md` — Phase 36.65 — Configuration Management System Closure & Readiness Gate

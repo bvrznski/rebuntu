@@ -1,0 +1,26 @@
+# Phase 81 — Multi-Machine Resource Federation System
+
+- 81.0: Bootstrap and repository reality audit
+- 81.1: Canonical ontology and identity
+- 81.2: Definitions and lifecycle
+- 81.3: State ownership and persistence
+- 81.4: Observation evidence provenance freshness
+- 81.5: UNKNOWN and conflicting evidence
+- 81.6: Capability and affordance integration
+- 81.7: Goal and desired-state integration
+- 81.8: Planning and operation integration
+- 81.9: Constraints and invariants
+- 81.10: Resources and topology
+- 81.11: Policy authorization
+- 81.12: Mandatory security
+- 81.13: Privilege and native providers
+- 81.14: Failure timeout cancellation partial effects
+- 81.15: Crash restart reconciliation recovery
+- 81.16: Concurrency races replacement TOCTOU
+- 81.17: Boundedness and budgets
+- 81.18: CLI GUI natural-language integration
+- 81.19: Timeline graph context integration
+- 81.20: Distributed and associated systems
+- 81.21: Python model shell authority audit
+- 81.22: Adversarial build runtime migration audit
+- 81.23: Documentation rediscovery and closure

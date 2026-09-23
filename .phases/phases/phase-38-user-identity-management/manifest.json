@@ -1,0 +1,344 @@
+{
+  "phase": 38,
+  "slug": "user-identity-management",
+  "directory": "phase-38-user-identity-management",
+  "prompt_count": 67,
+  "layout_version": 2,
+  "prompts": [
+    {
+      "file": "38.0-user-identity-management-system-foundation.md",
+      "title": "Phase 38.0 — User & Identity Management System Foundation",
+      "sha256": "73a078e7839067e939dcc22dddbb31d7be297ad61e893bd536c7fda907636132"
+    },
+    {
+      "file": "38.1-identity-domain-model.md",
+      "title": "Phase 38.1 — Identity Domain Model",
+      "sha256": "e1a758425ae5a8faad27d0151a7bf87aace750815a89a466e9e50dd2494c7744"
+    },
+    {
+      "file": "38.2-identity-provider-discovery.md",
+      "title": "Phase 38.2 — Identity Provider Discovery",
+      "sha256": "6d0a08ed310e09820122234e3e449b78d071cd060c2e19d46f608208e8418ff9"
+    },
+    {
+      "file": "38.3-stable-user-identity.md",
+      "title": "Phase 38.3 — Stable User Identity",
+      "sha256": "14c660b054b4ebd9d64d3d7dfdc4d3a13a50796e00574d2e329920ae2bb79e2b"
+    },
+    {
+      "file": "38.4-username-vs-identity-separation.md",
+      "title": "Phase 38.4 — Username vs Identity Separation",
+      "sha256": "e7f7432d508b5f31f8cdea2ffc5d35045baf71d8e0055f6d24be8bc652b43b0d"
+    },
+    {
+      "file": "38.5-uid-gid-identity-semantics.md",
+      "title": "Phase 38.5 — UID / GID Identity Semantics",
+      "sha256": "2e4be796395ffe65070be548dd382ac9181351e92293bbf4fe072a4b70f9903d"
+    },
+    {
+      "file": "38.6-account-model.md",
+      "title": "Phase 38.6 — Account Model",
+      "sha256": "b61b72231ae0732746f008d5145e3333c96139335d7fd1fe8a8e2e898b0b8fef"
+    },
+    {
+      "file": "38.7-human-vs-system-account-classification.md",
+      "title": "Phase 38.7 — Human vs System Account Classification",
+      "sha256": "907404877b0ed980290c8531e728da9abf841d7277801a0973180617092deb6d"
+    },
+    {
+      "file": "38.8-group-identity-model.md",
+      "title": "Phase 38.8 — Group Identity Model",
+      "sha256": "30493d69e936aa16de317f08ed3f3bf040c4725f34dc1318c37e2ad7440b4afd"
+    },
+    {
+      "file": "38.9-group-membership-semantics.md",
+      "title": "Phase 38.9 — Group Membership Semantics",
+      "sha256": "f50e6e8b139e5a19f72dc853675494900af80728f4dd5181ff224f4910907b2f"
+    },
+    {
+      "file": "38.10-primary-vs-supplementary-group-semantics.md",
+      "title": "Phase 38.10 — Primary vs Supplementary Group Semantics",
+      "sha256": "cd5053c7ca001e32e8959ec5bf9ed6d38ed219d40a471a64ca22e827f46f4bf9"
+    },
+    {
+      "file": "38.11-nss-integration-boundary.md",
+      "title": "Phase 38.11 — NSS Integration Boundary",
+      "sha256": "efca295e11bb2119cee93c93def851527498215b4936ddcfef7e01db83e68df7"
+    },
+    {
+      "file": "38.12-local-account-provider-integration.md",
+      "title": "Phase 38.12 — Local Account Provider Integration",
+      "sha256": "bebb230e63cd24b0cb67e22ef6d6e15f1e85d09b6c098b5c39d46cb67e754cee"
+    },
+    {
+      "file": "38.13-external-identity-provider-boundary.md",
+      "title": "Phase 38.13 — External Identity Provider Boundary",
+      "sha256": "718d67faa9a315f9e9c942a82e1a32d04a4ea977576a88fff7b2209dff47403e"
+    },
+    {
+      "file": "38.14-authentication-vs-authorization-separation.md",
+      "title": "Phase 38.14 — Authentication vs Authorization Separation",
+      "sha256": "c867861e7ad4872487b89d761978e66b189131c233c3645e0d8b51e521159540"
+    },
+    {
+      "file": "38.15-pam-integration-boundary.md",
+      "title": "Phase 38.15 — PAM Integration Boundary",
+      "sha256": "497ed69d6bae368d675da0c57b1389308b49d46751eabe600dda8e3bf71c4ef1"
+    },
+    {
+      "file": "38.16-password-authentication-secret-boundary.md",
+      "title": "Phase 38.16 — Password & Authentication Secret Boundary",
+      "sha256": "b1e05bef4b0301c0b106a4ecf3bbef093aeb6fd31e7d8309c73c5a281706a630"
+    },
+    {
+      "file": "38.17-session-identity-model.md",
+      "title": "Phase 38.17 — Session Identity Model",
+      "sha256": "89b2c82ee1f7871c4a016e32438aecf5ac94e53d9a7b12df175fb89d85713884"
+    },
+    {
+      "file": "38.18-login-session-discovery.md",
+      "title": "Phase 38.18 — Login Session Discovery",
+      "sha256": "ae15886d00952d3072a1b6795db195133a715f52cfc9ee1153681e20e988f3da"
+    },
+    {
+      "file": "38.19-systemd-logind-integration.md",
+      "title": "Phase 38.19 — systemd-logind Integration",
+      "sha256": "a2a1c8ad78783325205ca4bb15868cdbc00eceb6d94921ff7223ee24bdc78bde"
+    },
+    {
+      "file": "38.20-seat-graphical-session-model.md",
+      "title": "Phase 38.20 — Seat & Graphical Session Model",
+      "sha256": "a24f77c239d9a61f72c60c59ba43774fb0c0da539f9f63bb9409e87cda026c16"
+    },
+    {
+      "file": "38.21-tty-pty-terminal-session-model.md",
+      "title": "Phase 38.21 — TTY / PTY / Terminal Session Model",
+      "sha256": "c92ff68e2897d543ae63432d5703c27e5a848a24068135bd3166dbdad760e072"
+    },
+    {
+      "file": "38.22-login-shell-vs-interactive-shell-separation.md",
+      "title": "Phase 38.22 — Login Shell vs Interactive Shell Separation",
+      "sha256": "9bb0e35f83d61dfe4585b6c153b9c23e3053a04714e79134b12aa881873a4842"
+    },
+    {
+      "file": "38.23-fish-bash-compatibility-boundary.md",
+      "title": "Phase 38.23 — Fish / Bash Compatibility Boundary",
+      "sha256": "f47e9458b0572d309fb01a10a17bf634851fc7de569d721189721cb1794bd7c4"
+    },
+    {
+      "file": "38.24-account-state-login-eligibility.md",
+      "title": "Phase 38.24 — Account State & Login Eligibility",
+      "sha256": "f99d9ab4093fb1afc83c78b5ffb31815eed570d32d07c1f45238bb84a658abff"
+    },
+    {
+      "file": "38.25-account-locking-safety-boundary.md",
+      "title": "Phase 38.25 — Account Locking Safety Boundary",
+      "sha256": "a260732fa03a70dd91c926c24a44ab8c2a321ab9c637a2b6504608e615ac7e69"
+    },
+    {
+      "file": "38.26-account-expiration-semantics.md",
+      "title": "Phase 38.26 — Account Expiration Semantics",
+      "sha256": "ce2278e3e1e0e49756dcd70574d8f9464310cd8f9decde0b4031e3578b46c479"
+    },
+    {
+      "file": "38.27-privilege-context-model.md",
+      "title": "Phase 38.27 — Privilege Context Model",
+      "sha256": "10f5f03bd2998852050479b2038dcbdc0d5e595abff2b9dcb803521651bf220f"
+    },
+    {
+      "file": "38.28-sudo-integration-boundary.md",
+      "title": "Phase 38.28 — sudo Integration Boundary",
+      "sha256": "2f4132c6be714880a30d9b8ba61a97cccbafcc344214119259d87c45614d56ca"
+    },
+    {
+      "file": "38.29-sudoers-configuration-safety.md",
+      "title": "Phase 38.29 — sudoers Configuration Safety",
+      "sha256": "d3f9143647c318b28226da306bb514d7beeec61c53d9b78e62b37dd5ceeb7e1c"
+    },
+    {
+      "file": "38.30-polkit-integration-boundary.md",
+      "title": "Phase 38.30 — polkit Integration Boundary",
+      "sha256": "f76d3895dfdcb0079c21690e70632c9b4664d4204b429e6a2050cb200859a9d4"
+    },
+    {
+      "file": "38.31-privilege-escalation-evidence.md",
+      "title": "Phase 38.31 — Privilege Escalation Evidence",
+      "sha256": "484ecf37233708ed76618815f4f50b218416c6340ee9c53ffbf222af84e9459a"
+    },
+    {
+      "file": "38.32-effective-real-saved-identity-context.md",
+      "title": "Phase 38.32 — Effective / Real / Saved Identity Context",
+      "sha256": "673d64263ef0f4d2751b62c0789f817c3ab9f9082fd7664d2e97557fa661f8d4"
+    },
+    {
+      "file": "38.33-process-identity-integration.md",
+      "title": "Phase 38.33 — Process Identity Integration",
+      "sha256": "3fc853669b7a1e7aa12a9ff2301a736db564d6e6c69a51c09f54b18416797099"
+    },
+    {
+      "file": "38.34-service-identity-integration.md",
+      "title": "Phase 38.34 — Service Identity Integration",
+      "sha256": "2e45796010409e727b9bb04162b4fb71e4ade575d69e2b2b12c4b6689c1631e4"
+    },
+    {
+      "file": "38.35-filesystem-ownership-integration.md",
+      "title": "Phase 38.35 — Filesystem Ownership Integration",
+      "sha256": "1ccdd740137e7d7f3ab9d567ead7a5ebb30776831a6bff0a43162cc032f537ff"
+    },
+    {
+      "file": "38.36-uid-gid-collision-detection.md",
+      "title": "Phase 38.36 — UID / GID Collision Detection",
+      "sha256": "2c7504a9ffd7363c9a25c84a74e531eed68f0906eb4fcc5d3eccff7839dc4dde"
+    },
+    {
+      "file": "38.37-ownership-impact-analysis.md",
+      "title": "Phase 38.37 — Ownership Impact Analysis",
+      "sha256": "479526b70102e8dee87ede9f7d648007390438ecbdc92cbe73e985efa656af18"
+    },
+    {
+      "file": "38.38-account-creation-planning.md",
+      "title": "Phase 38.38 — Account Creation Planning",
+      "sha256": "2143f80ab2ff1d9625cafa118ff4ae110030f6bf525341094b8a700e1ad68392"
+    },
+    {
+      "file": "38.39-account-modification-planning.md",
+      "title": "Phase 38.39 — Account Modification Planning",
+      "sha256": "8285fbb0f3556300959d24d134b73d7bc81b88e8eb90ffbedb533eda66be501f"
+    },
+    {
+      "file": "38.40-username-change-planning.md",
+      "title": "Phase 38.40 — Username Change Planning",
+      "sha256": "5ebd07970ab23a8ee91f529939b8fd8f13ffae6aa494a609922fd3f6535b8afe"
+    },
+    {
+      "file": "38.41-uid-gid-change-planning.md",
+      "title": "Phase 38.41 — UID / GID Change Planning",
+      "sha256": "fc8328f4b2d7d1ce8a40efa2b0105d2551b322c38fbfab2f42d2e394bae25bf2"
+    },
+    {
+      "file": "38.42-group-membership-change-planning.md",
+      "title": "Phase 38.42 — Group Membership Change Planning",
+      "sha256": "57b437cba25a83f8ced22d545b2b596abc2f7ea7a79895ef49b44d2190725038"
+    },
+    {
+      "file": "38.43-account-lock-unlock-planning.md",
+      "title": "Phase 38.43 — Account Lock / Unlock Planning",
+      "sha256": "ac192e45be2cb96e4f087da79a37bcafd4a529b3fe7dcb6e04fc9146494791f4"
+    },
+    {
+      "file": "38.44-account-deletion-safety-boundary.md",
+      "title": "Phase 38.44 — Account Deletion Safety Boundary",
+      "sha256": "5bbe0aca5feffb31ec972b8af948b3dc9dca774fe0e4af7d702f2cf7bface8e9"
+    },
+    {
+      "file": "38.45-home-directory-lifecycle-boundary.md",
+      "title": "Phase 38.45 — Home Directory Lifecycle Boundary",
+      "sha256": "b29b48fc6911ddaff6ebd4da7d438216794fb64ece6fbc346efee35eebd38a79"
+    },
+    {
+      "file": "38.46-home-ownership-migration-boundary.md",
+      "title": "Phase 38.46 — Home Ownership Migration Boundary",
+      "sha256": "12d45618f2368b4a036ceed52e3a9a475b4016787bc5df22352f01e7520f9c46"
+    },
+    {
+      "file": "38.47-login-shell-change-boundary.md",
+      "title": "Phase 38.47 — Login Shell Change Boundary",
+      "sha256": "68720baf71d80b8e839c0217f0e5ed5a0a3949ba69838a443eeaddb30314d043"
+    },
+    {
+      "file": "38.48-user-environment-boundary.md",
+      "title": "Phase 38.48 — User Environment Boundary",
+      "sha256": "2374109eafc6d1fd2de3186f343f5be53b486463ad224420eff4cc21f4ea97d9"
+    },
+    {
+      "file": "38.49-user-scoped-service-integration.md",
+      "title": "Phase 38.49 — User-Scoped Service Integration",
+      "sha256": "ea2eeec56f9e0ee9bb24cef639a93c03c2e6b6703306bbd8aceb7ad65679ce03"
+    },
+    {
+      "file": "38.50-session-lifecycle-boundary.md",
+      "title": "Phase 38.50 — Session Lifecycle Boundary",
+      "sha256": "681a22b60690fe3385eed1746d3491a6886698f0881547802daf6cddb9133412"
+    },
+    {
+      "file": "38.51-current-operator-protection.md",
+      "title": "Phase 38.51 — Current Operator Protection",
+      "sha256": "62f168c024b80b4eda6bff2a5dca0acb46f047670d43d42253b5265cec9872c6"
+    },
+    {
+      "file": "38.52-administrative-access-protection.md",
+      "title": "Phase 38.52 — Administrative Access Protection",
+      "sha256": "5d8465b73c73cce975644c639f4a1c40d832f140d3dcf03713972745ddd8551d"
+    },
+    {
+      "file": "38.53-recovery-account-access-boundary.md",
+      "title": "Phase 38.53 — Recovery Account & Access Boundary",
+      "sha256": "1f05e570410729fef61cb49bf1c87ffdc8960c08d736374b455be3fbdda6a894"
+    },
+    {
+      "file": "38.54-identity-mutation-authorization.md",
+      "title": "Phase 38.54 — Identity Mutation Authorization",
+      "sha256": "ad1aa322daa2c2985f07e0b372da4dfcf1c383aba2c663d6ea73153dbae4929b"
+    },
+    {
+      "file": "38.55-identity-configuration-provenance.md",
+      "title": "Phase 38.55 — Identity Configuration Provenance",
+      "sha256": "85966fab19ef0e04beb9d5f9e6fe20972a3e4d11dc0b449ad06056b4ade4ad63"
+    },
+    {
+      "file": "38.56-identity-drift-detection.md",
+      "title": "Phase 38.56 — Identity Drift Detection",
+      "sha256": "34a204c5174e9cb9214f41f387567c1b175232249726b5c203be1fef1a3ecc24"
+    },
+    {
+      "file": "38.57-identity-management-cli.md",
+      "title": "Phase 38.57 — Identity Management CLI",
+      "sha256": "4fd4b00e272d7709707156c25e1c59e5f17c1c34f3f160b1cd354b44d2a21072"
+    },
+    {
+      "file": "38.58-phase-25-panel-integration-api.md",
+      "title": "Phase 38.58 — Phase 25 Panel Integration API",
+      "sha256": "8877711f9e3b276a00f8a2bb770b4fadc7e737d64419cb947fd1a94f34058dea"
+    },
+    {
+      "file": "38.59-phase-29-process-workload-integration.md",
+      "title": "Phase 38.59 — Phase 29 Process / Workload Integration",
+      "sha256": "92834e42fbf14771f328748a097cbe16bb7a10562113324bd0d81865561ca76b"
+    },
+    {
+      "file": "38.60-phase-31-service-integration.md",
+      "title": "Phase 38.60 — Phase 31 Service Integration",
+      "sha256": "b4cd6d40c6d6a5485adf35bca124d4e3ab603718bf034f937fadad9d1d3b77ea"
+    },
+    {
+      "file": "38.61-phase-32-storage-integration.md",
+      "title": "Phase 38.61 — Phase 32 Storage Integration",
+      "sha256": "635af2c414da91177b242cece97a3d00a8bb3e2fd00e556221cd34196b9f9124"
+    },
+    {
+      "file": "38.62-phase-36-configuration-integration.md",
+      "title": "Phase 38.62 — Phase 36 Configuration Integration",
+      "sha256": "0c9980f696ae95330dbdaf6d36cd045521106687368c92a53904694e450e7fdb"
+    },
+    {
+      "file": "38.63-phase-37-secrets-integration.md",
+      "title": "Phase 38.63 — Phase 37 Secrets Integration",
+      "sha256": "d34f688c440da35b5426fbefff8416928a7feeef2801403408e461585c2a8d7b"
+    },
+    {
+      "file": "38.64-phase-39-timeline-integration.md",
+      "title": "Phase 38.64 — Phase 39 Timeline Integration",
+      "sha256": "ba1f0df1a2298075c78516f7fcfd9f459fee14766f6496320755bce81d52f7a5"
+    },
+    {
+      "file": "38.65-failure-injection-disposable-identity-testing.md",
+      "title": "Phase 38.65 — Failure Injection & Disposable Identity Testing",
+      "sha256": "627f47c8abc100c7911465039cbbe7df1d43de2c3c903dfafb4a28a413b2684c"
+    },
+    {
+      "file": "38.66-user-identity-management-system-closure-readiness-gate.md",
+      "title": "Phase 38.66 — User & Identity Management System Closure & Readiness Gate",
+      "sha256": "3406053f556190e353ac355c6743a4449bc0f791fef801832e584919012f6449"
+    }
+  ]
+}

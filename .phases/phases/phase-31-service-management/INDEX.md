@@ -1,0 +1,51 @@
+# Prompt Index
+
+- `31.0-service-management-system-foundation.md` — Phase 31.0 — Service Management System Foundation
+- `31.1-service-domain-model.md` — Phase 31.1 — Service Domain Model
+- `31.2-service-provider-discovery.md` — Phase 31.2 — Service Provider Discovery
+- `31.3-systemd-provider-adapter.md` — Phase 31.3 — systemd Provider Adapter
+- `31.4-system-vs-user-service-managers.md` — Phase 31.4 — System vs User Service Managers
+- `31.5-unit-identity-stable-references.md` — Phase 31.5 — Unit Identity & Stable References
+- `31.6-unit-type-semantics.md` — Phase 31.6 — Unit Type Semantics
+- `31.7-service-discovery-inventory.md` — Phase 31.7 — Service Discovery & Inventory
+- `31.8-loaded-enabled-running-healthy-separation.md` — Phase 31.8 — Loaded / Enabled / Running / Healthy Separation
+- `31.9-service-state-observation.md` — Phase 31.9 — Service State Observation
+- `31.10-service-configuration-provenance.md` — Phase 31.10 — Service Configuration Provenance
+- `31.11-unit-file-drop-in-discovery.md` — Phase 31.11 — Unit File & Drop-In Discovery
+- `31.12-enablement-semantics.md` — Phase 31.12 — Enablement Semantics
+- `31.13-activation-semantics.md` — Phase 31.13 — Activation Semantics
+- `31.14-start-stop-restart-lifecycle-model.md` — Phase 31.14 — Start / Stop / Restart Lifecycle Model
+- `31.15-reload-semantics.md` — Phase 31.15 — Reload Semantics
+- `31.16-daemon-reload-boundary.md` — Phase 31.16 — Daemon Reload Boundary
+- `31.17-service-dependency-model.md` — Phase 31.17 — Service Dependency Model
+- `31.18-ordering-vs-requirement-semantics.md` — Phase 31.18 — Ordering vs Requirement Semantics
+- `31.19-socket-activation-integration.md` — Phase 31.19 — Socket Activation Integration
+- `31.20-timer-activation-integration.md` — Phase 31.20 — Timer Activation Integration
+- `31.21-path-device-bus-activation-context.md` — Phase 31.21 — Path / Device / Bus Activation Context
+- `31.22-template-instance-unit-semantics.md` — Phase 31.22 — Template & Instance Unit Semantics
+- `31.23-transient-units-scopes.md` — Phase 31.23 — Transient Units & Scopes
+- `31.24-service-process-workload-integration.md` — Phase 31.24 — Service Process / Workload Integration
+- `31.25-service-resource-integration.md` — Phase 31.25 — Service Resource Integration
+- `31.26-service-user-identity-context.md` — Phase 31.26 — Service User & Identity Context
+- `31.27-service-environment-secret-boundary.md` — Phase 31.27 — Service Environment & Secret Boundary
+- `31.28-service-logging-journal-integration.md` — Phase 31.28 — Service Logging & Journal Integration
+- `31.29-service-health-model.md` — Phase 31.29 — Service Health Model
+- `31.30-readiness-vs-liveness-semantics.md` — Phase 31.30 — Readiness vs Liveness Semantics
+- `31.31-failure-restart-policy-semantics.md` — Phase 31.31 — Failure & Restart Policy Semantics
+- `31.32-crash-loop-detection.md` — Phase 31.32 — Crash Loop Detection
+- `31.33-service-dependency-impact-analysis.md` — Phase 31.33 — Service Dependency Impact Analysis
+- `31.34-service-change-planning.md` — Phase 31.34 — Service Change Planning
+- `31.35-service-lifecycle-authorization.md` — Phase 31.35 — Service Lifecycle Authorization
+- `31.36-protected-critical-services.md` — Phase 31.36 — Protected & Critical Services
+- `31.37-desktop-operator-session-protection.md` — Phase 31.37 — Desktop / Operator Session Protection
+- `31.38-rebuntu-control-plane-protection.md` — Phase 31.38 — Rebuntu Control Plane Protection
+- `31.39-service-configuration-mutation.md` — Phase 31.39 — Service Configuration Mutation
+- `31.40-drop-in-first-configuration-policy.md` — Phase 31.40 — Drop-In First Configuration Policy
+- `31.41-service-recovery-rollback.md` — Phase 31.41 — Service Recovery & Rollback
+- `31.42-boot-time-service-analysis.md` — Phase 31.42 — Boot-Time Service Analysis
+- `31.43-service-management-cli.md` — Phase 31.43 — Service Management CLI
+- `31.44-phase-25-panel-integration-api.md` — Phase 31.44 — Phase 25 Panel Integration API
+- `31.45-phase-29-process-workload-integration.md` — Phase 31.45 — Phase 29 Process / Workload Integration
+- `31.46-phase-30-resource-integration.md` — Phase 31.46 — Phase 30 Resource Integration
+- `31.47-phase-39-timeline-integration.md` — Phase 31.47 — Phase 39 Timeline Integration
+- `31.48-service-management-system-closure-readiness-gate.md` — Phase 31.48 — Service Management System Closure & Readiness Gate

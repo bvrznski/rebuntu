@@ -1,0 +1,114 @@
+{
+  "phase": 22,
+  "slug": "log-analysis",
+  "directory": "phase-22-log-analysis",
+  "prompt_count": 21,
+  "layout_version": 2,
+  "prompts": [
+    {
+      "file": "22.0.md",
+      "title": "Rebuntu — Phase 22.0 — Log Analysis System Architecture",
+      "sha256": "e063a0eac550fe248c3278f9a024f1ad51d0991c3ac9f4b1d091a89ea983169e"
+    },
+    {
+      "file": "22.1.md",
+      "title": "Rebuntu — Phase 22.1 — Log Source Discovery & Inventory",
+      "sha256": "09ce8e6de32852c5d0f87ea057eb996a74e244abe50c3130947325f628307285"
+    },
+    {
+      "file": "22.2.md",
+      "title": "Rebuntu — Phase 22.2 — Journald & Boot-Aware Acquisition",
+      "sha256": "396142930f4411797849823dbdf2124c740b67505c832849492034c46703a494"
+    },
+    {
+      "file": "22.3.md",
+      "title": "Rebuntu — Phase 22.3 — Kernel / Driver Log Analysis",
+      "sha256": "ae1c15a8bc7568dcce0ba379f324e59fab1c34e3fa26b2e54388b2836777dc60"
+    },
+    {
+      "file": "22.4.md",
+      "title": "Rebuntu — Phase 22.4 — systemd Service & Unit Log Analysis",
+      "sha256": "5d9dc477d246480328d361d67d48e37653ddbd5791f9b69209260b88be3ffe19"
+    },
+    {
+      "file": "22.5.md",
+      "title": "Rebuntu — Phase 22.5 — Application & Process Log Analysis",
+      "sha256": "da028cad45d9c3b29342f06f2007787d6833f80f7ea234f344baf99ff6452fd5"
+    },
+    {
+      "file": "22.6.md",
+      "title": "Rebuntu — Phase 22.6 — Storage / NVMe / Filesystem Log Analysis",
+      "sha256": "cf837b9ef5ea30e6e7d4296f1ce69737d64130a6f74b71fa9f847ce0e1ec77b4"
+    },
+    {
+      "file": "22.7.md",
+      "title": "Rebuntu — Phase 22.7 — GPU / NVIDIA / PCIe Log Analysis",
+      "sha256": "c6d6ea5f52653c0ee032337e38fd218cd94d92193f8c1458310227d7444f7feb"
+    },
+    {
+      "file": "22.8.md",
+      "title": "Rebuntu — Phase 22.8 — Network & Connectivity Log Analysis",
+      "sha256": "440e7c9dd35fa56ab5606b78c2296f775229dc377d59125b33cef69b621435c8"
+    },
+    {
+      "file": "22.9.md",
+      "title": "Rebuntu — Phase 22.9 — Security / Authentication Log Analysis",
+      "sha256": "bb80113c3bfa1be611a2ab3a95d19bc56a87a551e089da12c0bad772792f096b"
+    },
+    {
+      "file": "22.10.md",
+      "title": "Rebuntu — Phase 22.10 — Parsing, Normalization & Typed Log Records",
+      "sha256": "9044a846b423e64b1e0b191bf066da7cb26093eecad9bd572d68245846bdcb41"
+    },
+    {
+      "file": "22.11.md",
+      "title": "Rebuntu — Phase 22.11 — Deduplication, Noise Reduction & Rate Analysis",
+      "sha256": "cf9773e25af12b9d5e37b8ca62f59f39062ece60e7b27d2ccb804d7ef36ab309"
+    },
+    {
+      "file": "22.12.md",
+      "title": "Rebuntu — Phase 22.12 — Temporal Correlation & Incident Windows",
+      "sha256": "921c45ca47ae82dab55962516d5e15a0b232bf99c41174dc60c3a6f36e3c325f"
+    },
+    {
+      "file": "22.13.md",
+      "title": "Rebuntu — Phase 22.13 — Cross-Source Correlation & Causal Hypotheses",
+      "sha256": "433dac6ac295d53608924b444f07be8f9853ed0a790c7ba22b314f80a93983ab"
+    },
+    {
+      "file": "22.14.md",
+      "title": "Rebuntu — Phase 22.14 — Pattern, Signature & Anomaly Detection",
+      "sha256": "0b8c7e6f6a84f488207d5869664ff4a4795981e6c31410a5dd55b5a0360bd1b9"
+    },
+    {
+      "file": "22.15.md",
+      "title": "Rebuntu — Phase 22.15 — Semantic Log Interpretation & Summarization",
+      "sha256": "6580d924f87fc852f24315e38f58472fc465d58e806d7883eef260ae269e6317"
+    },
+    {
+      "file": "22.16.md",
+      "title": "Rebuntu — Phase 22.16 — Evidence Extraction & Diagnostic Narratives",
+      "sha256": "935970ed8d63fcb26b271743aa0823d739881f449273fe2116c4afbf48db8cf4"
+    },
+    {
+      "file": "22.17.md",
+      "title": "Rebuntu — Phase 22.17 — Incident Reconstruction & Root-Cause Assistance",
+      "sha256": "35a6997e2927a449e9546a7ba4e2b796faafa222a70e8022e2f8f87c16198fab"
+    },
+    {
+      "file": "22.18.md",
+      "title": "Rebuntu — Phase 22.18 — Historical Comparison & Recurrence Detection",
+      "sha256": "ec57347913ac2d8675e879f6a6528e9bb8f50d171675b20e1095d2335d79daed"
+    },
+    {
+      "file": "22.19.md",
+      "title": "Rebuntu — Phase 22.19 — Query, Explain, Report & Operator Interface",
+      "sha256": "71281256903e88856813b59e2c024cfce8ecf639f2a2213593ae508883fee537"
+    },
+    {
+      "file": "22.20.md",
+      "title": "Rebuntu — Phase 22.20 — Log Analysis Validation, Soak & Closure Audit",
+      "sha256": "87583db52a6194be4827f24948aff8c8cdd1efe610464ae192dbd60989fac4d3"
+    }
+  ]
+}

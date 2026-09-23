@@ -1,0 +1,58 @@
+# Prompt Index
+
+- `34.0-gpu-accelerator-management-system-foundation.md` — Phase 34.0 — GPU & Accelerator Management System Foundation
+- `34.1-accelerator-domain-model.md` — Phase 34.1 — Accelerator Domain Model
+- `34.2-accelerator-provider-discovery.md` — Phase 34.2 — Accelerator Provider Discovery
+- `34.3-stable-accelerator-identity.md` — Phase 34.3 — Stable Accelerator Identity
+- `34.4-pcie-topology-discovery.md` — Phase 34.4 — PCIe Topology Discovery
+- `34.5-numa-locality-integration.md` — Phase 34.5 — NUMA Locality Integration
+- `34.6-provider-ordinal-separation.md` — Phase 34.6 — Provider Ordinal Separation
+- `34.7-driver-state-compatibility.md` — Phase 34.7 — Driver State & Compatibility
+- `34.8-runtime-cuda-capability-model.md` — Phase 34.8 — Runtime & CUDA Capability Model
+- `34.9-accelerator-inventory.md` — Phase 34.9 — Accelerator Inventory
+- `34.10-vram-capacity-usage-evidence.md` — Phase 34.10 — VRAM Capacity & Usage Evidence
+- `34.11-compute-engine-utilization.md` — Phase 34.11 — Compute Engine Utilization
+- `34.12-copy-video-specialized-engine-evidence.md` — Phase 34.12 — Copy / Video / Specialized Engine Evidence
+- `34.13-power-state-power-limits.md` — Phase 34.13 — Power State & Power Limits
+- `34.14-thermal-state-throttling-evidence.md` — Phase 34.14 — Thermal State & Throttling Evidence
+- `34.15-clock-state-clock-policy-boundary.md` — Phase 34.15 — Clock State & Clock Policy Boundary
+- `34.16-performance-state-semantics.md` — Phase 34.16 — Performance State Semantics
+- `34.17-display-vs-compute-role-model.md` — Phase 34.17 — Display vs Compute Role Model
+- `34.18-display-critical-accelerator-protection.md` — Phase 34.18 — Display-Critical Accelerator Protection
+- `34.19-workload-to-accelerator-attribution.md` — Phase 34.19 — Workload-to-Accelerator Attribution
+- `34.20-process-gpu-context-integration.md` — Phase 34.20 — Process / GPU Context Integration
+- `34.21-container-accelerator-visibility.md` — Phase 34.21 — Container Accelerator Visibility
+- `34.22-cuda-visibility-ordinal-translation.md` — Phase 34.22 — CUDA Visibility & Ordinal Translation
+- `34.23-multi-gpu-topology-model.md` — Phase 34.23 — Multi-GPU Topology Model
+- `34.24-peer-to-peer-capability-discovery.md` — Phase 34.24 — Peer-to-Peer Capability Discovery
+- `34.25-nvlink-interconnect-provider-model.md` — Phase 34.25 — NVLink / Interconnect Provider Model
+- `34.26-pcie-link-width-speed-evidence.md` — Phase 34.26 — PCIe Link Width & Speed Evidence
+- `34.27-accelerator-health-evidence.md` — Phase 34.27 — Accelerator Health Evidence
+- `34.28-nvidia-xid-driver-event-integration.md` — Phase 34.28 — NVIDIA Xid & Driver Event Integration
+- `34.29-ecc-memory-error-evidence.md` — Phase 34.29 — ECC & Memory Error Evidence
+- `34.30-reset-capability-safety-boundary.md` — Phase 34.30 — Reset Capability & Safety Boundary
+- `34.31-power-limit-mutation-planning.md` — Phase 34.31 — Power-Limit Mutation Planning
+- `34.32-clock-mutation-planning.md` — Phase 34.32 — Clock Mutation Planning
+- `34.33-persistence-mode-boundary.md` — Phase 34.33 — Persistence Mode Boundary
+- `34.34-gpu-selection-workload-placement.md` — Phase 34.34 — GPU Selection & Workload Placement
+- `34.35-vram-admission-planning.md` — Phase 34.35 — VRAM Admission Planning
+- `34.36-multi-gpu-workload-placement.md` — Phase 34.36 — Multi-GPU Workload Placement
+- `34.37-inference-workload-integration.md` — Phase 34.37 — Inference Workload Integration
+- `34.38-display-workload-integration.md` — Phase 34.38 — Display Workload Integration
+- `34.39-accelerator-resource-integration.md` — Phase 34.39 — Accelerator Resource Integration
+- `34.40-thermal-power-constraint-integration.md` — Phase 34.40 — Thermal / Power Constraint Integration
+- `34.41-driver-lifecycle-integration.md` — Phase 34.41 — Driver Lifecycle Integration
+- `34.42-accelerator-configuration-provenance.md` — Phase 34.42 — Accelerator Configuration Provenance
+- `34.43-accelerator-change-planning.md` — Phase 34.43 — Accelerator Change Planning
+- `34.44-accelerator-authorization-model.md` — Phase 34.44 — Accelerator Authorization Model
+- `34.45-hotplug-provider-reorder-safety.md` — Phase 34.45 — Hotplug / Provider Reorder Safety
+- `34.46-accelerator-drift-detection.md` — Phase 34.46 — Accelerator Drift Detection
+- `34.47-accelerator-management-cli.md` — Phase 34.47 — Accelerator Management CLI
+- `34.48-phase-25-panel-integration-api.md` — Phase 34.48 — Phase 25 Panel Integration API
+- `34.49-phase-29-workload-integration.md` — Phase 34.49 — Phase 29 Workload Integration
+- `34.50-phase-30-resource-integration.md` — Phase 34.50 — Phase 30 Resource Integration
+- `34.51-phase-31-service-integration.md` — Phase 34.51 — Phase 31 Service Integration
+- `34.52-phase-39-timeline-integration.md` — Phase 34.52 — Phase 39 Timeline Integration
+- `34.53-phase-42-graph-integration.md` — Phase 34.53 — Phase 42 Graph Integration
+- `34.54-failure-injection-provider-simulation.md` — Phase 34.54 — Failure Injection & Provider Simulation
+- `34.55-gpu-accelerator-management-system-closure-readiness-gate.md` — Phase 34.55 — GPU & Accelerator Management System Closure & Readiness Gate

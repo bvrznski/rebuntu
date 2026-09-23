@@ -1,0 +1,249 @@
+{
+  "phase": 29,
+  "slug": "process-workload-management",
+  "directory": "phase-29-process-workload-management",
+  "prompt_count": 48,
+  "layout_version": 2,
+  "prompts": [
+    {
+      "file": "29.0-process-workload-management-system-foundation.md",
+      "title": "Phase 29.0 — Process & Workload Management System Foundation",
+      "sha256": "8a0076bd847646c48f5b81ae11995094a19baa159344f5e3bd04c13e3e398543"
+    },
+    {
+      "file": "29.1-process-domain-model.md",
+      "title": "Phase 29.1 — Process Domain Model",
+      "sha256": "af2be94eaf5d6649ae78003267ac731b501ac7c5d67f98792c15ad3bec8a382c"
+    },
+    {
+      "file": "29.2-stable-process-identity.md",
+      "title": "Phase 29.2 — Stable Process Identity",
+      "sha256": "09aabd208ac390372e2cdb6ec5cfa846407631ca4a1fe9cc15156b007669161e"
+    },
+    {
+      "file": "29.3-process-discovery-provider.md",
+      "title": "Phase 29.3 — Process Discovery Provider",
+      "sha256": "9543022b3c7e1be5e4b807dae788b304485038c93de7020f868e6acd222e6d7c"
+    },
+    {
+      "file": "29.4-process-lifecycle-observation.md",
+      "title": "Phase 29.4 — Process Lifecycle Observation",
+      "sha256": "da6e23e158a5f54204d4183364f2aa9e23016f895563ef974b31d47e5088b0a5"
+    },
+    {
+      "file": "29.5-parent-child-process-relationships.md",
+      "title": "Phase 29.5 — Parent / Child Process Relationships",
+      "sha256": "a04fe574b9c851c57e5ce415bab6dd6122da4c4d278a997c605148bc3b482e01"
+    },
+    {
+      "file": "29.6-process-tree-forest-model.md",
+      "title": "Phase 29.6 — Process Tree & Forest Model",
+      "sha256": "1f3562cfc4c65626f2c1b86e6b6ce3a79d08c7f2eedf78a88f6d630028de6e8f"
+    },
+    {
+      "file": "29.7-process-state-semantics.md",
+      "title": "Phase 29.7 — Process State Semantics",
+      "sha256": "f1ea560ead742c6e1d05674f6bbc79fc44af1d79cc23119817f0f8f61862211b"
+    },
+    {
+      "file": "29.8-process-command-executable-provenance.md",
+      "title": "Phase 29.8 — Process Command & Executable Provenance",
+      "sha256": "e8a9c56a4f051eb03df38ec4a95e09c5b827491ae8df266f15cd06e578fb7ea4"
+    },
+    {
+      "file": "29.9-process-user-identity-context.md",
+      "title": "Phase 29.9 — Process User / Identity Context",
+      "sha256": "273c7e96fb9aad55c640f4f8ecf1f4cdbf42cb08f56073fc8e53cae8279af871"
+    },
+    {
+      "file": "29.10-process-session-tty-context.md",
+      "title": "Phase 29.10 — Process Session / TTY Context",
+      "sha256": "bb96b90a908c7a4cbb99870283edca5e662a6e5c2b989791af1d472a5069229c"
+    },
+    {
+      "file": "29.11-process-resource-observation.md",
+      "title": "Phase 29.11 — Process Resource Observation",
+      "sha256": "af5d7631cdebb96318ef540ba2b6a1a93f1682415de1cf0cf35dc7e2df11d319"
+    },
+    {
+      "file": "29.12-process-open-resource-evidence.md",
+      "title": "Phase 29.12 — Process Open-Resource Evidence",
+      "sha256": "a29f17aa873a137717c59f37c467556bb4c1f215859695d2a98c8a35112b5007"
+    },
+    {
+      "file": "29.13-process-namespace-container-context.md",
+      "title": "Phase 29.13 — Process Namespace & Container Context",
+      "sha256": "cc4dc784d5bf6075e9a239bf81f0219e0d23795ffe28b8c42e8325eae117c23e"
+    },
+    {
+      "file": "29.14-process-group-session-semantics.md",
+      "title": "Phase 29.14 — Process Group & Session Semantics",
+      "sha256": "85fb0840246869f4c047558cbd7a69abb7dd60fb5556d3b9655d4adbf2efb97e"
+    },
+    {
+      "file": "29.15-workload-domain-model.md",
+      "title": "Phase 29.15 — Workload Domain Model",
+      "sha256": "888fc7d83234b5a7d52b28a4b85c1fb554720ef6c9403c52141859f358a3450b"
+    },
+    {
+      "file": "29.16-workload-identity.md",
+      "title": "Phase 29.16 — Workload Identity",
+      "sha256": "eefbeb194c50f2dfc3f825c094cd1f1b4c320cb5c025ffca3b2e71f043360e5f"
+    },
+    {
+      "file": "29.17-workload-membership-evidence.md",
+      "title": "Phase 29.17 — Workload Membership Evidence",
+      "sha256": "9cdc574236fe0c16ca1c62ba942a89caf1d852362f43d35bbb2aa8229bd20198"
+    },
+    {
+      "file": "29.18-workload-discovery.md",
+      "title": "Phase 29.18 — Workload Discovery",
+      "sha256": "1360b8180097aa321cf33810589bff4a01dd0bb6c7dd58f4b19ff398c4ce50a8"
+    },
+    {
+      "file": "29.19-workload-hierarchy-composition.md",
+      "title": "Phase 29.19 — Workload Hierarchy & Composition",
+      "sha256": "6909f5150e6b63b84176b23cb2a54dd69bcbd73c6370d76eb40fb5360f5830c5"
+    },
+    {
+      "file": "29.20-workload-classification.md",
+      "title": "Phase 29.20 — Workload Classification",
+      "sha256": "8161917a7375f2793386e1fa964ae588abbdbd70fbaef472f3d6f48d80874f96"
+    },
+    {
+      "file": "29.21-workload-priority-protection.md",
+      "title": "Phase 29.21 — Workload Priority & Protection",
+      "sha256": "f5941e880fb68215f6a4a6d3fcb83b30d131b1e4a903dd7a95954211b607d1cf"
+    },
+    {
+      "file": "29.22-foreground-interactive-workload-protection.md",
+      "title": "Phase 29.22 — Foreground & Interactive Workload Protection",
+      "sha256": "f9ef5ba7b1cd4e8b22caecf18e96d8f544f1fcca20b46d05c6f0a8f3466779ad"
+    },
+    {
+      "file": "29.23-desktop-display-critical-protection.md",
+      "title": "Phase 29.23 — Desktop / Display Critical Protection",
+      "sha256": "ff0e7e5b4ad257fa53d9cf0c2b3434d0af4061e21e007d979f8efd9d3196aeae"
+    },
+    {
+      "file": "29.24-rebuntu-control-plane-protection.md",
+      "title": "Phase 29.24 — Rebuntu Control Plane Protection",
+      "sha256": "d01ff56ed1134a8e58b69f192a743ecd05205f6e0ae3fb40bb8b97aadee8eb52"
+    },
+    {
+      "file": "29.25-service-workload-integration.md",
+      "title": "Phase 29.25 — Service Workload Integration",
+      "sha256": "f353679a512c15b1d7c2083df4c45e1efe5da789522dd76ef24369775b73d83f"
+    },
+    {
+      "file": "29.26-development-workload-integration.md",
+      "title": "Phase 29.26 — Development Workload Integration",
+      "sha256": "83d5fe604ea6cfb6ace8c56eece8b92bb18a517e9a1fe00fc89ee29c7631efc0"
+    },
+    {
+      "file": "29.27-container-workload-integration.md",
+      "title": "Phase 29.27 — Container Workload Integration",
+      "sha256": "4bb8fdb6188a1f9dac1e4b95b582d1669eb93c6d11d2fce3cb4c7a8fd4d4adf3"
+    },
+    {
+      "file": "29.28-gpu-accelerator-workload-integration.md",
+      "title": "Phase 29.28 — GPU / Accelerator Workload Integration",
+      "sha256": "0f7e4ebdf61e9615a81bd2c796c74237af4575f09b1a69bc246cd260d7e0860e"
+    },
+    {
+      "file": "29.29-lifecycle-action-model.md",
+      "title": "Phase 29.29 — Lifecycle Action Model",
+      "sha256": "1d326451a23fc4e466fa946bea09c6684d0f35f651690d7da50fe4c367767fdd"
+    },
+    {
+      "file": "29.30-graceful-stop-semantics.md",
+      "title": "Phase 29.30 — Graceful Stop Semantics",
+      "sha256": "a444567f4cea633d59d2990290ca0faf688e0fcbb49befd8584ee3e43a02d0ed"
+    },
+    {
+      "file": "29.31-signal-delivery-planning.md",
+      "title": "Phase 29.31 — Signal Delivery Planning",
+      "sha256": "5ae8884d5a660bed786d43c5c10f2f18f519d69736406e326ebf6bf59ba34066"
+    },
+    {
+      "file": "29.32-termination-escalation-policy.md",
+      "title": "Phase 29.32 — Termination Escalation Policy",
+      "sha256": "b66774a1aae30d2a8b0c8373511d470f4b3c0267038c54c0f2780535d91260a4"
+    },
+    {
+      "file": "29.33-suspend-resume-semantics.md",
+      "title": "Phase 29.33 — Suspend / Resume Semantics",
+      "sha256": "2e9e8dfbc86cb6685cfe9ab3163ddf64be8d47c996defb8d3a74638eaf0abbbc"
+    },
+    {
+      "file": "29.34-bulk-action-safety.md",
+      "title": "Phase 29.34 — Bulk Action Safety",
+      "sha256": "3915d5ceecd7c8f040aa7ab3adedc5e9c14f48da1c64b14442968b2a757fb6d1"
+    },
+    {
+      "file": "29.35-dependency-impact-analysis.md",
+      "title": "Phase 29.35 — Dependency & Impact Analysis",
+      "sha256": "e25c9e1c1c97d43fd9d125ea36988ddfe6724255ec12a75dfc3d0df236341421"
+    },
+    {
+      "file": "29.36-race-safe-target-revalidation.md",
+      "title": "Phase 29.36 — Race-Safe Target Revalidation",
+      "sha256": "11ea734e7096c75a6dbc682f0ea486fd12862aef87451a6ddd96742ec1db8978"
+    },
+    {
+      "file": "29.37-process-exit-zombie-handling.md",
+      "title": "Phase 29.37 — Process Exit & Zombie Handling",
+      "sha256": "f13fb3d50a60cb3c4febf278ec8b4aa39efdcef4e62351e125082c356b8452dd"
+    },
+    {
+      "file": "29.38-orphan-reparenting-semantics.md",
+      "title": "Phase 29.38 — Orphan / Reparenting Semantics",
+      "sha256": "78e6103f145f62ecac8715bd9821403002bbb5101d26d2dc3c38d2f473e7f379"
+    },
+    {
+      "file": "29.39-runaway-process-diagnostics.md",
+      "title": "Phase 29.39 — Runaway Process Diagnostics",
+      "sha256": "ab683357fb5d0aafea8351b4c4315601c1b7c6e25e3b5f6a13d0cdcb86563910"
+    },
+    {
+      "file": "29.40-stuck-unresponsive-workload-diagnostics.md",
+      "title": "Phase 29.40 — Stuck / Unresponsive Workload Diagnostics",
+      "sha256": "88755ee74d9056c8555b14a29f4a8d3e4572916f93326101212958e1c1506218"
+    },
+    {
+      "file": "29.41-process-workload-search-explainability.md",
+      "title": "Phase 29.41 — Process & Workload Search / Explainability",
+      "sha256": "0be05deec1d7b73122f2d275be2c1160e99347956f08dfeb0e763c9c509f212f"
+    },
+    {
+      "file": "29.42-process-workload-management-cli.md",
+      "title": "Phase 29.42 — Process & Workload Management CLI",
+      "sha256": "41261dca7623e62e09f52878363547789997c8a9c77adaf16db77b224cdebbe2"
+    },
+    {
+      "file": "29.43-phase-25-panel-integration-api.md",
+      "title": "Phase 29.43 — Phase 25 Panel Integration API",
+      "sha256": "3b002475cd5fddf599b3f618f9f7a990787892701e7386d03759b7a03171eb36"
+    },
+    {
+      "file": "29.44-event-timeline-integration.md",
+      "title": "Phase 29.44 — Event / Timeline Integration",
+      "sha256": "437f9586e8ef9771df29bbd4d858a63a6311bec459002763e6583fa45f3fc0fa"
+    },
+    {
+      "file": "29.45-failure-injection-race-testing.md",
+      "title": "Phase 29.45 — Failure Injection & Race Testing",
+      "sha256": "814dd52faecbe261fe6c3b0c6d3c95def91646f6c3c5e26de133b11da63e31dd"
+    },
+    {
+      "file": "29.46-cross-phase-ownership-safety-audit.md",
+      "title": "Phase 29.46 — Cross-Phase Ownership & Safety Audit",
+      "sha256": "b10fea40036633af3d03a92a5e0e4e76ccc946e61d60d4d36d3e71a502701e37"
+    },
+    {
+      "file": "29.47-process-workload-management-system-closure-readiness-gate.md",
+      "title": "Phase 29.47 — Process & Workload Management System Closure & Readiness Gate",
+      "sha256": "40f0d61355959903f5dd9ef42a58117f3a89d3faf0cb47c97f44c1da59fe13c5"
+    }
+  ]
+}

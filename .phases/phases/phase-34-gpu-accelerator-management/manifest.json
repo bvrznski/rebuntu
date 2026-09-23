@@ -1,0 +1,289 @@
+{
+  "phase": 34,
+  "slug": "gpu-accelerator-management",
+  "directory": "phase-34-gpu-accelerator-management",
+  "prompt_count": 56,
+  "layout_version": 2,
+  "prompts": [
+    {
+      "file": "34.0-gpu-accelerator-management-system-foundation.md",
+      "title": "Phase 34.0 — GPU & Accelerator Management System Foundation",
+      "sha256": "19e4bb9b935b8aa99b118cdb8bca1511a17e7e566556b85bf4a1a13721ed6186"
+    },
+    {
+      "file": "34.1-accelerator-domain-model.md",
+      "title": "Phase 34.1 — Accelerator Domain Model",
+      "sha256": "c97c01683a4aba7032d0af2ad77607d8bf2542bdbc196e0df1971e737a766720"
+    },
+    {
+      "file": "34.2-accelerator-provider-discovery.md",
+      "title": "Phase 34.2 — Accelerator Provider Discovery",
+      "sha256": "11d319b9f927251a27717f0d5d0ba6135c56fd0d99164ae0690636de60dfe5ca"
+    },
+    {
+      "file": "34.3-stable-accelerator-identity.md",
+      "title": "Phase 34.3 — Stable Accelerator Identity",
+      "sha256": "96c014de712058fdbb1d4b7bee27addf9941bc5d1f0408eed7193c55740d8ee7"
+    },
+    {
+      "file": "34.4-pcie-topology-discovery.md",
+      "title": "Phase 34.4 — PCIe Topology Discovery",
+      "sha256": "08fb20d1ec2d74788f88b233084394c3d296598e9a5cb004fc3961d36d18bc93"
+    },
+    {
+      "file": "34.5-numa-locality-integration.md",
+      "title": "Phase 34.5 — NUMA Locality Integration",
+      "sha256": "8d0da4acdd31eb03a0ecad73c0fabe29147bab1cc5b86d2d1b56f7bfc8571161"
+    },
+    {
+      "file": "34.6-provider-ordinal-separation.md",
+      "title": "Phase 34.6 — Provider Ordinal Separation",
+      "sha256": "591fa74d347c464a627f2435674ca5accec91ac6d11e4ba067c0a2c1dc1839e7"
+    },
+    {
+      "file": "34.7-driver-state-compatibility.md",
+      "title": "Phase 34.7 — Driver State & Compatibility",
+      "sha256": "2712b1ff7101b5794a128a3fcf3891f306a26a23f58274eaf481112385636884"
+    },
+    {
+      "file": "34.8-runtime-cuda-capability-model.md",
+      "title": "Phase 34.8 — Runtime & CUDA Capability Model",
+      "sha256": "c5ad80525b9b69c0679c70acc1b0d5010f39cd4e2fae47335e1f13674c62f25d"
+    },
+    {
+      "file": "34.9-accelerator-inventory.md",
+      "title": "Phase 34.9 — Accelerator Inventory",
+      "sha256": "6ee9a2efd1b1f22b0ce3e8bd5729711d53a69a05be1a5d779d8e57c0a533bce5"
+    },
+    {
+      "file": "34.10-vram-capacity-usage-evidence.md",
+      "title": "Phase 34.10 — VRAM Capacity & Usage Evidence",
+      "sha256": "d5f859209eb5cd2554b07702d9ed8007ffc1301ff24bc5ba105dae9c098323df"
+    },
+    {
+      "file": "34.11-compute-engine-utilization.md",
+      "title": "Phase 34.11 — Compute Engine Utilization",
+      "sha256": "45eb58f1538830923bd3e210b50d244d73c0525017dea3faf5a848d16f730d93"
+    },
+    {
+      "file": "34.12-copy-video-specialized-engine-evidence.md",
+      "title": "Phase 34.12 — Copy / Video / Specialized Engine Evidence",
+      "sha256": "b8510a4f86794b5ec10e4eec4420dac6cc782da3a0728b7f3ab1eed9578bf573"
+    },
+    {
+      "file": "34.13-power-state-power-limits.md",
+      "title": "Phase 34.13 — Power State & Power Limits",
+      "sha256": "0f8ab9b3c776f3aefb95b66a0356eed96e18f4934db98554a3870d20c744c226"
+    },
+    {
+      "file": "34.14-thermal-state-throttling-evidence.md",
+      "title": "Phase 34.14 — Thermal State & Throttling Evidence",
+      "sha256": "12217b401481a4bc2a527efb3099cbe99ca40d3fc148ef2e5a8f38f284b1bec8"
+    },
+    {
+      "file": "34.15-clock-state-clock-policy-boundary.md",
+      "title": "Phase 34.15 — Clock State & Clock Policy Boundary",
+      "sha256": "876f114092380fe06e7540b0b7462a0d460e2666073cb7718aba998552119a94"
+    },
+    {
+      "file": "34.16-performance-state-semantics.md",
+      "title": "Phase 34.16 — Performance State Semantics",
+      "sha256": "9da60c2975efc2f521333f62cdd4fa0c7b7b462b3854957b4d13aef01e32676f"
+    },
+    {
+      "file": "34.17-display-vs-compute-role-model.md",
+      "title": "Phase 34.17 — Display vs Compute Role Model",
+      "sha256": "61ef47405d885ff9ad17625fb3df48a6a80a5a01609433ab6f8b93d8032418a8"
+    },
+    {
+      "file": "34.18-display-critical-accelerator-protection.md",
+      "title": "Phase 34.18 — Display-Critical Accelerator Protection",
+      "sha256": "09d27fec220375b965d20941d5edc441fff29ebac2b6b8c13f45c545f4b56e41"
+    },
+    {
+      "file": "34.19-workload-to-accelerator-attribution.md",
+      "title": "Phase 34.19 — Workload-to-Accelerator Attribution",
+      "sha256": "5c6678e0655b697686f1d8d2b22bba8e4f637202ddaa998db653319e8492834f"
+    },
+    {
+      "file": "34.20-process-gpu-context-integration.md",
+      "title": "Phase 34.20 — Process / GPU Context Integration",
+      "sha256": "7210ac1e1524ae96ca9ebde85b98d939f06a30cec950c749aeb78cb3a8d618b9"
+    },
+    {
+      "file": "34.21-container-accelerator-visibility.md",
+      "title": "Phase 34.21 — Container Accelerator Visibility",
+      "sha256": "9ee07095e1e748dac5ff8775976a0aadaf704d92f1f5061ffddd6fbb6e48adb7"
+    },
+    {
+      "file": "34.22-cuda-visibility-ordinal-translation.md",
+      "title": "Phase 34.22 — CUDA Visibility & Ordinal Translation",
+      "sha256": "8b9f9aa723ddd97217bf01af5923242ccddade2a72d680c82742ddbfb533480b"
+    },
+    {
+      "file": "34.23-multi-gpu-topology-model.md",
+      "title": "Phase 34.23 — Multi-GPU Topology Model",
+      "sha256": "8970d07a95190f1ea50b44cc1074a47a5a67827ab9d7c9a8f5c1b0faa50af39b"
+    },
+    {
+      "file": "34.24-peer-to-peer-capability-discovery.md",
+      "title": "Phase 34.24 — Peer-to-Peer Capability Discovery",
+      "sha256": "8ca3583c6f2dedea94491f58930fd01f3f482b4909c24abb11eafd48ef9a39e8"
+    },
+    {
+      "file": "34.25-nvlink-interconnect-provider-model.md",
+      "title": "Phase 34.25 — NVLink / Interconnect Provider Model",
+      "sha256": "daf65d7e2d9582859461ae06677e44e831b1f7e37123f6548b4b7842d0a3dc35"
+    },
+    {
+      "file": "34.26-pcie-link-width-speed-evidence.md",
+      "title": "Phase 34.26 — PCIe Link Width & Speed Evidence",
+      "sha256": "6b8a7c3d11d8fa60d737d940a2a8b2335ca3fd40c0e49df62497934011ad3d07"
+    },
+    {
+      "file": "34.27-accelerator-health-evidence.md",
+      "title": "Phase 34.27 — Accelerator Health Evidence",
+      "sha256": "67df91534f876a54fd0c2fc662c9428ecc9d2e5d2362b57d5787defa5a789dce"
+    },
+    {
+      "file": "34.28-nvidia-xid-driver-event-integration.md",
+      "title": "Phase 34.28 — NVIDIA Xid & Driver Event Integration",
+      "sha256": "2955eef651f8af59c4d10afceca59d0980d1b722aa892aedebb17ab73c435aa0"
+    },
+    {
+      "file": "34.29-ecc-memory-error-evidence.md",
+      "title": "Phase 34.29 — ECC & Memory Error Evidence",
+      "sha256": "34b57b3150579c3dc1b8e601b463bf0c07a734dc1d7e4616935bb195f642061a"
+    },
+    {
+      "file": "34.30-reset-capability-safety-boundary.md",
+      "title": "Phase 34.30 — Reset Capability & Safety Boundary",
+      "sha256": "c2abf6707b956ded19785940971b8f102423159f389834153eb039ab01290b6c"
+    },
+    {
+      "file": "34.31-power-limit-mutation-planning.md",
+      "title": "Phase 34.31 — Power-Limit Mutation Planning",
+      "sha256": "d2dd3d3c0da1a8190446a119b147c69d83f4fb100c9a9cffd7310b495083dcd4"
+    },
+    {
+      "file": "34.32-clock-mutation-planning.md",
+      "title": "Phase 34.32 — Clock Mutation Planning",
+      "sha256": "c79b4ae65aa36a679975723eb90c1454eede8904ec9b41b5124a093a73b5ad8c"
+    },
+    {
+      "file": "34.33-persistence-mode-boundary.md",
+      "title": "Phase 34.33 — Persistence Mode Boundary",
+      "sha256": "ee4a779127094c0984f779a1dec102a2424b86cc528804718cfc72d5307b9e43"
+    },
+    {
+      "file": "34.34-gpu-selection-workload-placement.md",
+      "title": "Phase 34.34 — GPU Selection & Workload Placement",
+      "sha256": "3845330c9be11488b5208d91fbe46dd1841ca35250391d042e2f2bcf7b330b1e"
+    },
+    {
+      "file": "34.35-vram-admission-planning.md",
+      "title": "Phase 34.35 — VRAM Admission Planning",
+      "sha256": "54eba3c2e692fbb771a5f4265179b524d07281606d482613854aee44541d558b"
+    },
+    {
+      "file": "34.36-multi-gpu-workload-placement.md",
+      "title": "Phase 34.36 — Multi-GPU Workload Placement",
+      "sha256": "1684e88e43eff66f35e7325c9b72487fb871692242378f2e70729f54b5a18b2a"
+    },
+    {
+      "file": "34.37-inference-workload-integration.md",
+      "title": "Phase 34.37 — Inference Workload Integration",
+      "sha256": "68ade255acf622966087cc53f5c27d2dbd73247de8363731c43aad3d42faf0c1"
+    },
+    {
+      "file": "34.38-display-workload-integration.md",
+      "title": "Phase 34.38 — Display Workload Integration",
+      "sha256": "4767633e6029246e613aaa1d701855960f29eb5d661cba8c3e446d0ccd7b4172"
+    },
+    {
+      "file": "34.39-accelerator-resource-integration.md",
+      "title": "Phase 34.39 — Accelerator Resource Integration",
+      "sha256": "237a8e1b5d2f215176c125646aab7a0827653b45e7b97a8199aee52ae0c4b8de"
+    },
+    {
+      "file": "34.40-thermal-power-constraint-integration.md",
+      "title": "Phase 34.40 — Thermal / Power Constraint Integration",
+      "sha256": "0157c2c8e75112e7fa996062e581465816d19c09a16cf28d7900e5539020624e"
+    },
+    {
+      "file": "34.41-driver-lifecycle-integration.md",
+      "title": "Phase 34.41 — Driver Lifecycle Integration",
+      "sha256": "5f6bc5d39d7c8e3a1135028035c34baeae1d3148f60b4897a816475815649cb0"
+    },
+    {
+      "file": "34.42-accelerator-configuration-provenance.md",
+      "title": "Phase 34.42 — Accelerator Configuration Provenance",
+      "sha256": "1035b003916e9ceafaef2bfce22015cecac7bda32239c3a26d5b26c90377c51a"
+    },
+    {
+      "file": "34.43-accelerator-change-planning.md",
+      "title": "Phase 34.43 — Accelerator Change Planning",
+      "sha256": "1a77939ba28eac32fca308a438640c4db64cc843a3b3c99ab24097243a8b3c71"
+    },
+    {
+      "file": "34.44-accelerator-authorization-model.md",
+      "title": "Phase 34.44 — Accelerator Authorization Model",
+      "sha256": "a7111d8342650d109c34349d431a16728aa50d797835eb70c96de21c3d8e84a5"
+    },
+    {
+      "file": "34.45-hotplug-provider-reorder-safety.md",
+      "title": "Phase 34.45 — Hotplug / Provider Reorder Safety",
+      "sha256": "31612ef77df5ab75b2c909f2aa0cd053a1ee9646812db301f68eabedaad21b40"
+    },
+    {
+      "file": "34.46-accelerator-drift-detection.md",
+      "title": "Phase 34.46 — Accelerator Drift Detection",
+      "sha256": "1d51928543e68e97c1555fe523ac281163b72540d3314bc3159d4dbd1270ed90"
+    },
+    {
+      "file": "34.47-accelerator-management-cli.md",
+      "title": "Phase 34.47 — Accelerator Management CLI",
+      "sha256": "541efec0181864b31b272c640e01e29cb3a19c2d233f6a27fc92b38956597847"
+    },
+    {
+      "file": "34.48-phase-25-panel-integration-api.md",
+      "title": "Phase 34.48 — Phase 25 Panel Integration API",
+      "sha256": "79b77dfde26292a0da37849f620a77d2e73845c40e62e98e918fecd16f704bf6"
+    },
+    {
+      "file": "34.49-phase-29-workload-integration.md",
+      "title": "Phase 34.49 — Phase 29 Workload Integration",
+      "sha256": "f9899178545dc683ee3bbf78dc44f09d2fd43b35a54bd0231b6e2f1b6120a026"
+    },
+    {
+      "file": "34.50-phase-30-resource-integration.md",
+      "title": "Phase 34.50 — Phase 30 Resource Integration",
+      "sha256": "414eadf6a9443a7039005533baa6f029a565d79313d32543108c28183f4487c5"
+    },
+    {
+      "file": "34.51-phase-31-service-integration.md",
+      "title": "Phase 34.51 — Phase 31 Service Integration",
+      "sha256": "3186bc4aa927efe0e3b0f9245a674583adea18797e5f8b6bc2d21e634047f0f8"
+    },
+    {
+      "file": "34.52-phase-39-timeline-integration.md",
+      "title": "Phase 34.52 — Phase 39 Timeline Integration",
+      "sha256": "ab8249510f01152d4c2a18c849f171feb0ce6dbf92ad9839f2dc27feada81f8a"
+    },
+    {
+      "file": "34.53-phase-42-graph-integration.md",
+      "title": "Phase 34.53 — Phase 42 Graph Integration",
+      "sha256": "6646c55b9bef4e2be55f13543f30fe1a4b2cede55c96ce59db81453d5e655d2e"
+    },
+    {
+      "file": "34.54-failure-injection-provider-simulation.md",
+      "title": "Phase 34.54 — Failure Injection & Provider Simulation",
+      "sha256": "8385c056ba3102fb447604e0f608998c08379a06c25738a723a832422d83cd19"
+    },
+    {
+      "file": "34.55-gpu-accelerator-management-system-closure-readiness-gate.md",
+      "title": "Phase 34.55 — GPU & Accelerator Management System Closure & Readiness Gate",
+      "sha256": "5365fad1cc004c17cf264e41d6e1dc05dddd2886296542215bcf34b0c35b35de"
+    }
+  ]
+}

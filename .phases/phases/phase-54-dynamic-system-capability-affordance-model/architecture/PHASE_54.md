@@ -1,0 +1,161 @@
+# Phase 54 — Dynamic System Capability & Affordance Model
+
+- **54.0** — Phase bootstrap and capability topology audit
+- **54.1** — Capability ontology
+- **54.2** — Capability identity
+- **54.3** — Capability definition contract
+- **54.4** — Capability instance contract
+- **54.5** — Capability provider binding
+- **54.6** — Capability availability semantics
+- **54.7** — Target applicability semantics
+- **54.8** — Feasibility semantics
+- **54.9** — Readiness semantics
+- **54.10** — Requirement model
+- **54.11** — Precondition model
+- **54.12** — Postcondition model
+- **54.13** — Constraint model
+- **54.14** — Blocker model
+- **54.15** — Dependency model
+- **54.16** — Prerequisite model
+- **54.17** — Capability composition
+- **54.18** — Capability alternatives
+- **54.19** — Provider alternatives
+- **54.20** — Capability degradation
+- **54.21** — UNKNOWN capability semantics
+- **54.22** — Capability evidence and provenance
+- **54.23** — Capability freshness and invalidation
+- **54.24** — Capability snapshot model
+- **54.25** — Dynamic capability registry boundary
+- **54.26** — Affordance ontology
+- **54.27** — Affordance identity and scope
+- **54.28** — Affordance evaluation request
+- **54.29** — Affordance evaluation result
+- **54.30** — Affordance evaluator architecture
+- **54.31** — Affordance evidence binding
+- **54.32** — Affordance freshness
+- **54.33** — Affordance invalidation
+- **54.34** — Affordance caching boundary
+- **54.35** — Target-state integration
+- **54.36** — Phase-5 observation integration
+- **54.37** — Phase-39 timeline integration
+- **54.38** — Phase-42 knowledge-graph integration
+- **54.39** — Phase-48 context integration
+- **54.40** — Phase-47 task-policy integration
+- **54.41** — Phase-53 mandatory-security integration
+- **54.42** — Phase-50 platform-capability integration
+- **54.43** — Phase-30 resource-capacity integration
+- **54.44** — Privilege requirement integration
+- **54.45** — Phase-45 control-plane integration
+- **54.46** — Phase-40 command integration
+- **54.47** — Phase-46 natural-language operator integration
+- **54.48** — Phase-49 GUI integration
+- **54.49** — Phase-41 automation/workflow integration
+- **54.50** — Phase-51 distributed capability discovery
+- **54.51** — Phase-52 associated-system capability integration
+- **54.52** — Remote capability trust boundary
+- **54.53** — Capability advertisement contract
+- **54.54** — Capability discovery federation
+- **54.55** — Capability provenance across nodes
+- **54.56** — Remote freshness and expiry
+- **54.57** — Remote UNKNOWN semantics
+- **54.58** — Resource requirement model
+- **54.59** — Resource sufficiency evaluation
+- **54.60** — Resource contention blocker
+- **54.61** — Resource reservation boundary
+- **54.62** — Temporal requirements
+- **54.63** — Schedule-dependent affordances
+- **54.64** — Service-state requirements
+- **54.65** — Storage-state requirements
+- **54.66** — Network-state requirements
+- **54.67** — GPU/accelerator requirements
+- **54.68** — Process/workload requirements
+- **54.69** — User/session requirements
+- **54.70** — Configuration requirements
+- **54.71** — Secret-reference requirements
+- **54.72** — Capability conflict model
+- **54.73** — Mutual-exclusion constraints
+- **54.74** — Capability dependency graph
+- **54.75** — Prerequisite graph
+- **54.76** — Prerequisite graph construction
+- **54.77** — Prerequisite cycle detection
+- **54.78** — Prerequisite alternative paths
+- **54.79** — Prerequisite satisfiability
+- **54.80** — Prerequisite blocker propagation
+- **54.81** — Prerequisite evidence propagation
+- **54.82** — Prerequisite freshness propagation
+- **54.83** — Prerequisite graph invalidation
+- **54.84** — Prerequisite planning boundary
+- **54.85** — Plan-synthesis boundary
+- **54.86** — Why-not query contract
+- **54.87** — Why-not explanation engine
+- **54.88** — Blocked-by explanation model
+- **54.89** — Missing-requirement explanation model
+- **54.90** — Alternative-capability explanation
+- **54.91** — Capability explainability
+- **54.92** — Affordance explainability
+- **54.93** — Machine-readable explanation schema
+- **54.94** — Human-readable explanation renderer
+- **54.95** — CLI capability query
+- **54.96** — CLI affordance query
+- **54.97** — CLI why-not command
+- **54.98** — GUI capability explorer
+- **54.99** — GUI blocker/prerequisite visualization
+- **54.100** — Natural-language capability questions
+- **54.101** — Natural-language why-not questions
+- **54.102** — Capability search integration
+- **54.103** — Capability query filtering
+- **54.104** — Capability query ranking boundary
+- **54.105** — Semantic candidate boundary
+- **54.106** — Model-assisted explanation boundary
+- **54.107** — DATA-to-CONTROL capability gate
+- **54.108** — Affordance-is-not-authorization enforcement
+- **54.109** — Capability-is-not-permission enforcement
+- **54.110** — Availability-is-not-readiness enforcement
+- **54.111** — Feasibility-is-not-authorization enforcement
+- **54.112** — Context-is-not-authority enforcement
+- **54.113** — Trust-is-not-execution-authority enforcement
+- **54.114** — Capability evaluation concurrency
+- **54.115** — Evaluation deadlines and cancellation
+- **54.116** — Evaluation resource bounds
+- **54.117** — Evaluation memoization safety
+- **54.118** — Hotplug invalidation
+- **54.119** — Topology-change invalidation
+- **54.120** — Policy-change invalidation
+- **54.121** — Security-label-change invalidation
+- **54.122** — Resource-change invalidation
+- **54.123** — Service-state-change invalidation
+- **54.124** — Distributed-change invalidation
+- **54.125** — Stale-result rejection
+- **54.126** — TOCTOU protection boundary
+- **54.127** — Pre-execution affordance revalidation
+- **54.128** — Post-execution capability refresh
+- **54.129** — Failure classification
+- **54.130** — Degraded capability behavior
+- **54.131** — Provider failure behavior
+- **54.132** — Partial evidence behavior
+- **54.133** — Conflicting evidence behavior
+- **54.134** — Capability recovery semantics
+- **54.135** — Affordance recovery semantics
+- **54.136** — Audit and event emission
+- **54.137** — Privacy and secret-safety audit
+- **54.138** — Capability spoofing adversarial audit
+- **54.139** — Target-substitution adversarial audit
+- **54.140** — Stale-affordance adversarial audit
+- **54.141** — Policy-bypass adversarial audit
+- **54.142** — Security-bypass adversarial audit
+- **54.143** — Distributed-trust adversarial audit
+- **54.144** — Resource-race adversarial audit
+- **54.145** — Prerequisite-cycle adversarial audit
+- **54.146** — Graph-explosion and boundedness audit
+- **54.147** — Capability registry boundedness audit
+- **54.148** — Evaluation performance audit
+- **54.149** — Python authority audit
+- **54.150** — Shell authority audit
+- **54.151** — Duplicate capability model audit
+- **54.152** — Build and runtime reachability audit
+- **54.153** — Integration test matrix
+- **54.154** — Documentation and AGENTS synchronization
+- **54.155** — Independent capability rediscovery
+- **54.156** — Independent affordance rediscovery
+- **54.157** — Fixed-point architecture audit
+- **54.158** — Phase-54 final closure

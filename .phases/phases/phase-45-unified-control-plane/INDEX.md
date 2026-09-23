@@ -1,0 +1,370 @@
+# Phase 45 Index
+
+## Normative architecture
+- `architecture/01-system-boundary.md`
+- `architecture/02-authority-model.md`
+- `architecture/03-command-capability-model.md`
+- `architecture/04-transaction-model.md`
+- `architecture/05-state-observation.md`
+- `architecture/06-security-privilege.md`
+- `architecture/07-cross-phase-integration.md`
+- `architecture/08-native-runtime.md`
+- `architecture/09-resilience.md`
+- `architecture/10-observability-audit.md`
+- `architecture/11-operator-surfaces.md`
+- `architecture/12-closure.md`
+
+## Full executable prompts
+- `45.0` — Foundation and repository archaeology
+- `45.1` — Control-plane inventory
+- `45.2` — Authority ownership map
+- `45.3` — Cross-phase contract inventory
+- `45.4` — Canonical C++ control-plane architecture
+- `45.5` — Control-plane strong types
+- `45.6` — Entity and capability references
+- `45.7` — Typed intent envelope
+- `45.8` — Intent provenance
+- `45.9` — Intent lifecycle
+- `45.10` — Capability registry
+- `45.11` — Capability discovery
+- `45.12` — Capability metadata
+- `45.13` — Capability applicability
+- `45.14` — Capability versioning
+- `45.15` — Domain owner routing
+- `45.16` — Provider routing
+- `45.17` — Provider capability negotiation
+- `45.18` — Provider health
+- `45.19` — Provider fallback semantics
+- `45.20` — Observation request model
+- `45.21` — Observation result model
+- `45.22` — Observation freshness
+- `45.23` — Observation provenance
+- `45.24` — Authoritative re-observation
+- `45.25` — Plan request model
+- `45.26` — Typed plan model
+- `45.27` — Plan step model
+- `45.28` — Plan dependency model
+- `45.29` — Plan preconditions
+- `45.30` — Plan postconditions
+- `45.31` — Plan invariants
+- `45.32` — Plan risk metadata
+- `45.33` — Plan reversibility metadata
+- `45.34` — Plan preview
+- `45.35` — Plan explanation
+- `45.36` — Plan normalization
+- `45.37` — Plan validation
+- `45.38` — Cross-domain plan composition
+- `45.39` — Cross-domain dependency ordering
+- `45.40` — Cross-domain partial-failure semantics
+- `45.41` — Authorization request model
+- `45.42` — Authorization decision model
+- `45.43` — Authorization provenance
+- `45.44` — Authorization expiry
+- `45.45` — Authorization scope
+- `45.46` — Authorization revalidation
+- `45.47` — Least-privilege execution
+- `45.48` — Privilege-helper integration
+- `45.49` — Typed privileged IPC
+- `45.50` — Execution request model
+- `45.51` — Execution attempt model
+- `45.52` — Execution result model
+- `45.53` — Execution cancellation
+- `45.54` — Execution timeout
+- `45.55` — Execution idempotency
+- `45.56` — Execution deduplication
+- `45.57` — Verification request model
+- `45.58` — Verification result model
+- `45.59` — Verification freshness
+- `45.60` — Verification failure
+- `45.61` — UNKNOWN verification handling
+- `45.62` — Postcondition verification
+- `45.63` — Rollback eligibility
+- `45.64` — Rollback plan
+- `45.65` — Rollback execution
+- `45.66` — Rollback verification
+- `45.67` — Compensation model
+- `45.68` — Compensation ordering
+- `45.69` — Compensation failure
+- `45.70` — Partial success representation
+- `45.71` — Ambiguous outcome representation
+- `45.72` — Crash reconciliation
+- `45.73` — Daemon restart reconciliation
+- `45.74` — Reboot continuity
+- `45.75` — Interrupted-operation recovery
+- `45.76` — Durable operation journal
+- `45.77` — Operation checkpointing
+- `45.78` — Control-plane state machine
+- `45.79` — Control-plane event bus
+- `45.80` — Bounded concurrency
+- `45.81` — Backpressure
+- `45.82` — Priority and fairness
+- `45.83` — Cancellation propagation
+- `45.84` — Deadline propagation
+- `45.85` — Phase 29 workload integration
+- `45.86` — Phase 30 resource integration
+- `45.87` — Resource admission control
+- `45.88` — Resource reservation integration
+- `45.89` — Protected-resource registry
+- `45.90` — Protected maintenance path
+- `45.91` — Boot protection
+- `45.92` — Storage protection
+- `45.93` — Network access protection
+- `45.94` — SSH maintenance protection
+- `45.95` — Graphical session protection
+- `45.96` — Security control protection
+- `45.97` — Package trust protection
+- `45.98` — Rebuntu self-protection
+- `45.99` — Phase 31 service integration
+- `45.100` — Phase 32 storage integration
+- `45.101` — Phase 33 network integration
+- `45.102` — Phase 34 GPU integration
+- `45.103` — Phase 35 package integration
+- `45.104` — Phase 36 configuration integration
+- `45.105` — Phase 37 secrets integration
+- `45.106` — Phase 38 identity integration
+- `45.107` — Phase 39 event recording
+- `45.108` — Phase 40 search integration
+- `45.109` — Phase 40 command reconciliation
+- `45.110` — Phase 41 workflow integration
+- `45.111` — Phase 42 graph integration
+- `45.112` — Phase 43 intelligence integration
+- `45.113` — Phase 44 adaptation integration
+- `45.114` — Earlier phase capability reconciliation
+- `45.115` — Unified capability API
+- `45.116` — Unified observation API
+- `45.117` — Unified planning API
+- `45.118` — Unified validation API
+- `45.119` — Unified authorization API
+- `45.120` — Unified execution API
+- `45.121` — Unified verification API
+- `45.122` — Unified audit API
+- `45.123` — Read-only capability path
+- `45.124` — Mutating capability path
+- `45.125` — Dry-run path
+- `45.126` — Explain-plan path
+- `45.127` — Simulation boundary
+- `45.128` — CLI control-plane client
+- `45.129` — CLI capability discovery
+- `45.130` — CLI inspect
+- `45.131` — CLI plan
+- `45.132` — CLI validate
+- `45.133` — CLI authorize boundary
+- `45.134` — CLI execute
+- `45.135` — CLI verify
+- `45.136` — CLI rollback
+- `45.137` — CLI operation history
+- `45.138` — Phase 25 Panel control integration
+- `45.139` — Panel capability browser
+- `45.140` — Panel observation view
+- `45.141` — Panel plan preview
+- `45.142` — Panel authorization surface
+- `45.143` — Panel execution progress
+- `45.144` — Panel verification view
+- `45.145` — Panel rollback surface
+- `45.146` — Panel operation history
+- `45.147` — Fish shell integration boundary
+- `45.148` — Bash console compatibility
+- `45.149` — Coding-agent control boundary
+- `45.150` — Automation-agent control boundary
+- `45.151` — No arbitrary shell command authority
+- `45.152` — Process execution compatibility boundary
+- `45.153` — Executable argv representation
+- `45.154` — Environment policy
+- `45.155` — Working-directory policy
+- `45.156` — Output capture bounds
+- `45.157` — Command timeout policy
+- `45.158` — Command audit
+- `45.159` — D-Bus integration
+- `45.160` — systemd integration
+- `45.161` — udev integration
+- `45.162` — netlink integration
+- `45.163` — procfs sysfs integration
+- `45.164` — Filesystem native integration
+- `45.165` — NVML accelerator integration
+- `45.166` — APT dpkg integration
+- `45.167` — NetworkManager integration
+- `45.168` — Firewall provider integration
+- `45.169` — NSS PAM logind integration
+- `45.170` — Polkit integration
+- `45.171` — Native provider abstraction
+- `45.172` — Provider lifecycle
+- `45.173` — Provider discovery
+- `45.174` — Provider registration
+- `45.175` — Provider isolation
+- `45.176` — Provider error normalization
+- `45.177` — Provider UNKNOWN semantics
+- `45.178` — Provider observability
+- `45.179` — IPC schema versioning
+- `45.180` — Serialization contracts
+- `45.181` — Backward compatibility policy
+- `45.182` — Control-plane protocol versioning
+- `45.183` — Client compatibility negotiation
+- `45.184` — Feature capability negotiation
+- `45.185` — Schema migration
+- `45.186` — Configuration model
+- `45.187` — Runtime feature discovery
+- `45.188` — Safe mode
+- `45.189` — Emergency quiescence
+- `45.190` — Read-only emergency mode
+- `45.191` — Control-plane freeze
+- `45.192` — Control-plane resume
+- `45.193` — Recovery console boundary
+- `45.194` — Offline inspection
+- `45.195` — Degraded provider operation
+- `45.196` — Partial subsystem availability
+- `45.197` — Semantic provider isolation
+- `45.198` — Semantic no-authority enforcement
+- `45.199` — Semantic candidate-plan boundary
+- `45.200` — Semantic explanation boundary
+- `45.201` — Prompt injection resistance
+- `45.202` — Untrusted output handling
+- `45.203` — Secret exfiltration resistance
+- `45.204` — Authorization bypass resistance
+- `45.205` — TOCTOU protection
+- `45.206` — Race-condition audit
+- `45.207` — Concurrent mutation locking
+- `45.208` — External change detection
+- `45.209` — Drift during operation
+- `45.210` — Reconciliation after drift
+- `45.211` — Operation conflict detection
+- `45.212` — Conflict resolution
+- `45.213` — Deadlock prevention
+- `45.214` — Lock ordering
+- `45.215` — Distributed-lock non-goal
+- `45.216` — Local transaction semantics
+- `45.217` — Cross-domain transaction semantics
+- `45.218` — No false ACID guarantees
+- `45.219` — Audit provenance chain
+- `45.220` — Evidence-to-action trace
+- `45.221` — Phase 39 operation timeline
+- `45.222` — Phase 42 operation graph links
+- `45.223` — Phase 43 explanation links
+- `45.224` — Phase 44 outcome links
+- `45.225` — Structured logging
+- `45.226` — Secret-safe logging
+- `45.227` — Metrics
+- `45.228` — Tracing
+- `45.229` — Performance telemetry
+- `45.230` — Control-plane health
+- `45.231` — Self-diagnostics
+- `45.232` — Watchdog boundary
+- `45.233` — Startup sequencing
+- `45.234` — Shutdown sequencing
+- `45.235` — Service lifecycle
+- `45.236` — Crash handling
+- `45.237` — Core dump secret safety
+- `45.238` — State-store integrity
+- `45.239` — State-store backup boundary
+- `45.240` — State-store migration
+- `45.241` — Corruption detection
+- `45.242` — Corruption recovery
+- `45.243` — Failure injection framework
+- `45.244` — Provider failure tests
+- `45.245` — Authorization denial tests
+- `45.246` — Privilege boundary tests
+- `45.247` — Plan validation tests
+- `45.248` — Execution failure tests
+- `45.249` — Verification failure tests
+- `45.250` — Rollback tests
+- `45.251` — Compensation tests
+- `45.252` — Crash restart tests
+- `45.253` — Reboot continuity tests
+- `45.254` — Race and concurrency tests
+- `45.255` — TOCTOU adversarial tests
+- `45.256` — Protected-resource tests
+- `45.257` — Secret-safety tests
+- `45.258` — Semantic authority tests
+- `45.259` — Shell-injection tests
+- `45.260` — IPC fuzzing
+- `45.261` — Schema compatibility tests
+- `45.262` — Provider contract tests
+- `45.263` — Cross-domain integration tests
+- `45.264` — Phase 39 integration tests
+- `45.265` — Phase 40 integration tests
+- `45.266` — Phase 41 integration tests
+- `45.267` — Phase 42 integration tests
+- `45.268` — Phase 43 integration tests
+- `45.269` — Phase 44 integration tests
+- `45.270` — End-to-end read-only scenario
+- `45.271` — End-to-end single-domain mutation
+- `45.272` — End-to-end cross-domain mutation
+- `45.273` — End-to-end rollback scenario
+- `45.274` — End-to-end partial-failure scenario
+- `45.275` — End-to-end recovery scenario
+- `45.276` — End-to-end workflow scenario
+- `45.277` — End-to-end intelligence recommendation scenario
+- `45.278` — End-to-end adaptive scenario
+- `45.279` — Performance baseline
+- `45.280` — Latency budget
+- `45.281` — Throughput validation
+- `45.282` — Memory bounds
+- `45.283` — Queue bounds
+- `45.284` — Scalability validation
+- `45.285` — Control-plane overhead
+- `45.286` — Repository source-tree normalization
+- `45.287` — C prefix migration-era cleanup
+- `45.288` — Legacy Python runtime audit
+- `45.289` — Remaining Python-boundary classification
+- `45.290` — Duplicate native implementation audit
+- `45.291` — Duplicate authority audit
+- `45.292` — Direct domain bypass audit
+- `45.293` — Direct privileged-call bypass audit
+- `45.294` — Direct shell-execution bypass audit
+- `45.295` — Presentation-layer mutation audit
+- `45.296` — Workflow bypass audit
+- `45.297` — Intelligence bypass audit
+- `45.298` — Adaptive bypass audit
+- `45.299` — Stale entrypoint audit
+- `45.300` — Stale caller audit
+- `45.301` — Stale CMake audit
+- `45.302` — Stale packaging audit
+- `45.303` — Stale service definition audit
+- `45.304` — Stale documentation audit
+- `45.305` — Test-only legacy path audit
+- `45.306` — Canonical entrypoint verification
+- `45.307` — Production call-graph verification
+- `45.308` — Domain-owner verification
+- `45.309` — Authority-path verification
+- `45.310` — AGENTS.md hierarchy reconciliation
+- `45.311` — AGENTS.md permanent C++-first contract
+- `45.312` — AGENTS.md control-plane contract
+- `45.313` — Architecture documentation reconciliation
+- `45.314` — Operator documentation
+- `45.315` — Developer documentation
+- `45.316` — Provider authoring documentation
+- `45.317` — Capability authoring documentation
+- `45.318` — Recovery documentation
+- `45.319` — Security documentation
+- `45.320` — Repository-wide recursive rediscovery pass one
+- `45.321` — Resolve rediscovery pass one
+- `45.322` — Repository-wide recursive rediscovery pass two
+- `45.323` — Resolve rediscovery pass two
+- `45.324` — Fixed-point confirmation
+- `45.325` — Adversarial authority audit
+- `45.326` — Adversarial bypass audit
+- `45.327` — Adversarial duplicate-control-plane audit
+- `45.328` — Adversarial Python-ownership audit
+- `45.329` — Adversarial shell-authority audit
+- `45.330` — Adversarial privilege audit
+- `45.331` — Adversarial recovery audit
+- `45.332` — Adversarial UNKNOWN-semantics audit
+- `45.333` — Final build
+- `45.334` — Final unit tests
+- `45.335` — Final integration tests
+- `45.336` — Final end-to-end tests
+- `45.337` — Final failure-injection suite
+- `45.338` — Final performance validation
+- `45.339` — Final security validation
+- `45.340` — Final source-tree audit
+- `45.341` — Final documentation audit
+- `45.342` — Final AGENTS.md audit
+- `45.343` — Final production-path trace
+- `45.344` — Final authority graph
+- `45.345` — Final remaining Python inventory
+- `45.346` — Final retained-boundary justification
+- `45.347` — Final obsolete-code retirement
+- `45.348` — Final compatibility-shim retirement
+- `45.349` — Final migration-debt audit
+- `45.350` — Final fixed-point rediscovery
+- `45.351` — Unified control-plane closure
+- `45.352` — Rebuntu architecture closure and future handoff

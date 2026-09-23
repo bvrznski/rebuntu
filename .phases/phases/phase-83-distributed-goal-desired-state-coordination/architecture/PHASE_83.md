@@ -1,0 +1,26 @@
+# Phase 83 — Distributed Goal & Desired-State Coordination
+
+- 83.0: Bootstrap and repository reality audit
+- 83.1: Canonical ontology and identity
+- 83.2: Definitions and lifecycle
+- 83.3: State ownership and persistence
+- 83.4: Observation evidence provenance freshness
+- 83.5: UNKNOWN and conflicting evidence
+- 83.6: Capability and affordance integration
+- 83.7: Goal and desired-state integration
+- 83.8: Planning and operation integration
+- 83.9: Constraints and invariants
+- 83.10: Resources and topology
+- 83.11: Policy authorization
+- 83.12: Mandatory security
+- 83.13: Privilege and native providers
+- 83.14: Failure timeout cancellation partial effects
+- 83.15: Crash restart reconciliation recovery
+- 83.16: Concurrency races replacement TOCTOU
+- 83.17: Boundedness and budgets
+- 83.18: CLI GUI natural-language integration
+- 83.19: Timeline graph context integration
+- 83.20: Distributed and associated systems
+- 83.21: Python model shell authority audit
+- 83.22: Adversarial build runtime migration audit
+- 83.23: Documentation rediscovery and closure

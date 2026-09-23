@@ -1,0 +1,26 @@
+# Phase 72 — Power, Thermal & Acoustic Optimization System
+
+- 72.0: Bootstrap and repository reality audit
+- 72.1: Canonical ontology and identity
+- 72.2: Definitions and lifecycle
+- 72.3: State ownership and persistence
+- 72.4: Observation evidence provenance freshness
+- 72.5: UNKNOWN and conflicting evidence
+- 72.6: Capability and affordance integration
+- 72.7: Goal and desired-state integration
+- 72.8: Planning and operation integration
+- 72.9: Constraints and invariants
+- 72.10: Resources and topology
+- 72.11: Policy authorization
+- 72.12: Mandatory security
+- 72.13: Privilege and native providers
+- 72.14: Failure timeout cancellation partial effects
+- 72.15: Crash restart reconciliation recovery
+- 72.16: Concurrency races replacement TOCTOU
+- 72.17: Boundedness and budgets
+- 72.18: CLI GUI natural-language integration
+- 72.19: Timeline graph context integration
+- 72.20: Distributed and associated systems
+- 72.21: Python model shell authority audit
+- 72.22: Adversarial build runtime migration audit
+- 72.23: Documentation rediscovery and closure

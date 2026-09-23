@@ -1,0 +1,13 @@
+{
+  "phase": 52,
+  "name": "Associated Systems & Hardware-Rooted Trust",
+  "full_prompt_count": 681,
+  "architecture_document_count": 12,
+  "core_model": "autonomous systems establish bounded authenticated associations",
+  "crypto_policy": "reviewed constructions/libraries; authenticated key agreement; no custom primitives",
+  "hardware_policy": "optional assurance provider; never assumed exportable/clonable/arbitrary-DH",
+  "authority": "association does not grant execution authority; Phase 47 policy + Phase 45 authorization remain authoritative",
+  "previous_boundary": "Phase 51 single administrative distributed fabric",
+  "future_boundary": "Phase 53 federation",
+  "closure": "crypto/protocol review + adversarial tests + two clean rediscovery passes"
+}

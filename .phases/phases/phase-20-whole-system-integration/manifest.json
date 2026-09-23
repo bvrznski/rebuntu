@@ -1,0 +1,114 @@
+{
+  "phase": 20,
+  "slug": "whole-system-integration",
+  "directory": "phase-20-whole-system-integration",
+  "prompt_count": 21,
+  "layout_version": 2,
+  "prompts": [
+    {
+      "file": "20.0.md",
+      "title": "Rebuntu --- Phase 20.0 --- Whole-System Integration",
+      "sha256": "d40ea32a00d7bf64d296638862b59d8d1a9aca54288e60710a7f98ee32c3ffad"
+    },
+    {
+      "file": "20.1.md",
+      "title": "Rebuntu --- Phase 20.1 --- Architecture Conformance Audit",
+      "sha256": "2ff45b69e0f8044ed3df8691a849ba9d84f56170273b43b36e14173d2cb9ad92"
+    },
+    {
+      "file": "20.2.md",
+      "title": "Rebuntu --- Phase 20.2 --- Ontology Compression",
+      "sha256": "b3912c003808bd22319a94e1ef932e4d6596943fc3a062a92895b448549c88c6"
+    },
+    {
+      "file": "20.3.md",
+      "title": "Rebuntu --- Phase 20.3 --- Duplicate Mechanism Elimination",
+      "sha256": "5e596446b927de2b1cdf71b4d5fb1bfcfca9361ca3dd91b3676a72583dc789aa"
+    },
+    {
+      "file": "20.4.md",
+      "title": "Rebuntu --- Phase 20.4 --- Native-Linux Substitution Audit",
+      "sha256": "c8fb1172f98e6fe1e3f2793aa4c5e95c61adf725e82715e120857a7b1acd83e5"
+    },
+    {
+      "file": "20.5.md",
+      "title": "Rebuntu --- Phase 20.5 --- Dependency Graph Audit",
+      "sha256": "f10c3ead87fb5fb585c764ee888f3b48e42537e3017a10df92a22e3f779bc375"
+    },
+    {
+      "file": "20.6.md",
+      "title": "Rebuntu --- Phase 20.6 --- Startup / Shutdown Integration",
+      "sha256": "db9c41d2cdb6e493b876eafbf48d4f5206ea76df3dfecb92f045bccbea834c05"
+    },
+    {
+      "file": "20.7.md",
+      "title": "Rebuntu --- Phase 20.7 --- Failure Propagation Audit",
+      "sha256": "a1baaba2fc9d4f93e066c9144e1949db9473c8845ecc850dd46f4412a0d06219"
+    },
+    {
+      "file": "20.8.md",
+      "title": "Rebuntu --- Phase 20.8 --- Security Integration",
+      "sha256": "40525b098823fe6453525881373fbb9fb964cd4e407fe2bc8dc490994c932111"
+    },
+    {
+      "file": "20.9.md",
+      "title": "Rebuntu --- Phase 20.9 --- Performance Integration",
+      "sha256": "fb49798675d62fcedc7052486521d3b0550612a5421200b9c19f9af5cf368b5e"
+    },
+    {
+      "file": "20.10.md",
+      "title": "Rebuntu --- Phase 20.10 --- Resource-Leak Audit",
+      "sha256": "9be9e2ab87ac6fc92b0ecbd9a55736b60366628c5d5a2d4e4afcc0a810ef61bf"
+    },
+    {
+      "file": "20.11.md",
+      "title": "Rebuntu --- Phase 20.11 --- Crash Testing",
+      "sha256": "d6d30cdc33d02ea0300bdef49fd8d4c4bbf419ae0c0a020a94f7fdfaeb2192ab"
+    },
+    {
+      "file": "20.12.md",
+      "title": "Rebuntu --- Phase 20.12 --- Fault Injection",
+      "sha256": "bcee417056b7d108b91e37fcb4ccedb865f2690fa5b289f5c790554d50a24c6f"
+    },
+    {
+      "file": "20.13.md",
+      "title": "Rebuntu --- Phase 20.13 --- Recovery Testing",
+      "sha256": "6dcdb4c786d80aea48464a3c18b4f285e62af54d27953dcf6be40d7c52d8e0bd"
+    },
+    {
+      "file": "20.14.md",
+      "title": "Rebuntu --- Phase 20.14 --- Reconciliation Testing",
+      "sha256": "1c77dd0fbcf538f2ad2102df6bddaac6afa321a9d1faec07f4189b0ae159ec11"
+    },
+    {
+      "file": "20.15.md",
+      "title": "Rebuntu --- Phase 20.15 --- Upgrade / Migration Testing",
+      "sha256": "d9e0c6b6b4d17b120c6d1d9e2ac5de0e92db6a31bd13ae27d450dfae3eac17f8"
+    },
+    {
+      "file": "20.16.md",
+      "title": "Rebuntu --- Phase 20.16 --- Long-Running Soak Testing",
+      "sha256": "343aea5460dfdf99db11ba3d66dad98205ad41c6e9496e091fb502d912eb6b1d"
+    },
+    {
+      "file": "20.17.md",
+      "title": "Rebuntu --- Phase 20.17 --- User Experience Integration",
+      "sha256": "19ca4b91316c48084a2faa8765612588d61b0fbf84cccc218a8beb48ed2fe7d8"
+    },
+    {
+      "file": "20.18.md",
+      "title": "Rebuntu --- Phase 20.18 --- Documentation & Operational Manual",
+      "sha256": "ce71d51dad8b9d4cea41f697e930743209177af6af4960132248fb1403d7e3a3"
+    },
+    {
+      "file": "20.19.md",
+      "title": "Rebuntu --- Phase 20.19 --- Release Readiness Audit",
+      "sha256": "2af3f33eb4f0aef2ef28fd3f2a2e49aed9b4b31589c03cc9fa4a5b7636920a72"
+    },
+    {
+      "file": "20.20.md",
+      "title": "Rebuntu --- Phase 20.20 --- Architecture Closure & Stable Baseline",
+      "sha256": "11ba465f45c13c493ef12f8dccd9fc7d9de3a02b2d96fe3c36f3a73b82659bbb"
+    }
+  ]
+}

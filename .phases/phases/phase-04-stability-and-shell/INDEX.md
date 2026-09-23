@@ -1,0 +1,23 @@
+# Prompt Index
+
+- `4.0.md` — Rebuntu — Phase 4.0 — Runtime Foundation
+- `4.1.md` — Rebuntu — Phase 4.1 — Core Initialization
+- `4.2.md` — Rebuntu — Phase 4.2 — Engine
+- `4.3.md` — Rebuntu — Phase 4.3 — Executor
+- `4.4.md` — Rebuntu — Phase 4.4 — Runner
+- `4.5.md` — Rebuntu — Phase 4.5 — Dispatcher
+- `4.6.md` — Rebuntu — Phase 4.6 — Controller
+- `4.7.md` — Rebuntu — Phase 4.7 — Coordinator
+- `4.8.md` — Rebuntu — Phase 4.8 — Resolver
+- `4.9.md` — Rebuntu — Phase 4.9 — Loader
+- `4.10.md` — Rebuntu — Phase 4.10 — Registry / Catalog Runtime Integration
+- `4.11.md` — Rebuntu — Phase 4.11 — Unit Execution
+- `4.12.md` — Rebuntu — Phase 4.12 — Operation Execution
+- `4.13.md` — Rebuntu — Phase 4.13 — Task / Job Runtime
+- `4.14.md` — Rebuntu — Phase 4.14 — Workflow Runtime
+- `4.15.md` — Rebuntu — Phase 4.15 — Shell Source Loading & Runtime Integration
+- `4.16.md` — Rebuntu — Phase 4.16 — Native Event Activation
+- `4.17.md` — Rebuntu — Phase 4.17 — Kernel / udev / systemd Initiated Chains
+- `4.18.md` — Rebuntu — Phase 4.18 — Startup, Init & Dependency Chains
+- `4.19.md` — Rebuntu — Phase 4.19 — Shutdown, Cancellation & Runtime Recovery
+- `4.20.md` — Rebuntu — Phase 4.20 — Runtime Integration & Readiness Audit

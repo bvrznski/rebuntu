@@ -1,0 +1,861 @@
+[
+  {
+    "phase": 0,
+    "dir": "phase-00-foundation",
+    "markdown_specs": 27,
+    "depth": 2,
+    "src_evidence": 4,
+    "test_evidence": 3
+  },
+  {
+    "phase": 1,
+    "dir": "phase-01-runtime-contracts",
+    "markdown_specs": 19,
+    "depth": 3,
+    "src_evidence": 12,
+    "test_evidence": 5,
+    "implementation_depth": 3,
+    "status": "FUNCTIONAL-PARTIAL",
+    "last_pass": "IMPLEMENTATION SATURATION III"
+  },
+  {
+    "phase": 2,
+    "dir": "phase-02-environment-foundation",
+    "markdown_specs": 22,
+    "depth": 2,
+    "src_evidence": 14,
+    "test_evidence": 6
+  },
+  {
+    "phase": 3,
+    "dir": "phase-03-core-runtime",
+    "markdown_specs": 21,
+    "depth": 3,
+    "src_evidence": 12,
+    "test_evidence": 4
+  },
+  {
+    "phase": 4,
+    "dir": "phase-04-stability-and-shell",
+    "markdown_specs": 27,
+    "depth": 2,
+    "src_evidence": 12,
+    "test_evidence": 0
+  },
+  {
+    "phase": 5,
+    "dir": "phase-05-system-observation-inventory-discovery",
+    "markdown_specs": 78,
+    "depth": 3,
+    "src_evidence": 12,
+    "test_evidence": 3
+  },
+  {
+    "phase": 6,
+    "dir": "phase-06-native-command-operation-execution",
+    "markdown_specs": 86,
+    "depth": 3,
+    "src_evidence": 4,
+    "test_evidence": 1
+  },
+  {
+    "phase": 7,
+    "dir": "phase-07-policy-authorization-safety",
+    "markdown_specs": 90,
+    "depth": 3,
+    "src_evidence": 11,
+    "test_evidence": 1
+  },
+  {
+    "phase": 8,
+    "dir": "phase-08-privilege-boundary-secure-execution",
+    "markdown_specs": 90,
+    "depth": 0,
+    "src_evidence": 0,
+    "test_evidence": 1
+  },
+  {
+    "phase": 9,
+    "dir": "phase-09-system-state-and-events",
+    "markdown_specs": 25,
+    "depth": 3,
+    "src_evidence": 12,
+    "test_evidence": 2
+  },
+  {
+    "phase": 10,
+    "dir": "phase-10-workflow-foundation",
+    "markdown_specs": 25,
+    "depth": 2,
+    "src_evidence": 1,
+    "test_evidence": 1
+  },
+  {
+    "phase": 100,
+    "dir": "phase-100-human-rebuntu-collaborative-control",
+    "markdown_specs": 26,
+    "depth": 2,
+    "src_evidence": 12,
+    "test_evidence": 0
+  },
+  {
+    "phase": 101,
+    "dir": "phase-101-operational-attention-priority",
+    "markdown_specs": 26,
+    "depth": 0,
+    "src_evidence": 0,
+    "test_evidence": 0
+  },
+  {
+    "phase": 102,
+    "dir": "phase-102-interrupt-escalation-attention-arbitration",
+    "markdown_specs": 26,
+    "depth": 0,
+    "src_evidence": 0,
+    "test_evidence": 0
+  },
+  {
+    "phase": 103,
+    "dir": "phase-103-operator-preference-working-style",
+    "markdown_specs": 26,
+    "depth": 0,
+    "src_evidence": 0,
+    "test_evidence": 1
+  },
+  {
+    "phase": 104,
+    "dir": "phase-104-explainable-autonomous-operations",
+    "markdown_specs": 26,
+    "depth": 3,
+    "src_evidence": 4,
+    "test_evidence": 1
+  },
+  {
+    "phase": 105,
+    "dir": "phase-105-system-self-inspection-architecture-introspection",
+    "markdown_specs": 26,
+    "depth": 0,
+    "src_evidence": 0,
+    "test_evidence": 0
+  },
+  {
+    "phase": 106,
+    "dir": "phase-106-self-validation-continuous-architecture-audit",
+    "markdown_specs": 26,
+    "depth": 0,
+    "src_evidence": 0,
+    "test_evidence": 0
+  },
+  {
+    "phase": 11,
+    "dir": "phase-11-configuration-and-profiles",
+    "markdown_specs": 23,
+    "depth": 2,
+    "src_evidence": 12,
+    "test_evidence": 0
+  },
+  {
+    "phase": 12,
+    "dir": "phase-12-stability-and-recovery",
+    "markdown_specs": 27,
+    "depth": 2,
+    "src_evidence": 12,
+    "test_evidence": 0
+  },
+  {
+    "phase": 13,
+    "dir": "phase-13-security-policy-audit",
+    "markdown_specs": 25,
+    "depth": 2,
+    "src_evidence": 12,
+    "test_evidence": 0
+  },
+  {
+    "phase": 14,
+    "dir": "phase-14-resource-foundation",
+    "markdown_specs": 25,
+    "depth": 0,
+    "src_evidence": 0,
+    "test_evidence": 0
+  },
+  {
+    "phase": 15,
+    "dir": "phase-15-environment-coordination",
+    "markdown_specs": 25,
+    "depth": 2,
+    "src_evidence": 12,
+    "test_evidence": 0
+  },
+  {
+    "phase": 16,
+    "dir": "phase-16-maintenance",
+    "markdown_specs": 23,
+    "depth": 0,
+    "src_evidence": 0,
+    "test_evidence": 0
+  },
+  {
+    "phase": 17,
+    "dir": "phase-17-semantic-administration",
+    "markdown_specs": 25,
+    "depth": 2,
+    "src_evidence": 1,
+    "test_evidence": 1
+  },
+  {
+    "phase": 18,
+    "dir": "phase-18-capability-registry",
+    "markdown_specs": 27,
+    "depth": 2,
+    "src_evidence": 2,
+    "test_evidence": 1
+  },
+  {
+    "phase": 19,
+    "dir": "phase-19-reconciliation",
+    "markdown_specs": 25,
+    "depth": 3,
+    "src_evidence": 12,
+    "test_evidence": 3
+  },
+  {
+    "phase": 20,
+    "dir": "phase-20-whole-system-integration",
+    "markdown_specs": 27,
+    "depth": 2,
+    "src_evidence": 2,
+    "test_evidence": 2
+  },
+  {
+    "phase": 21,
+    "dir": "phase-21-predictive-health",
+    "markdown_specs": 27,
+    "depth": 2,
+    "src_evidence": 12,
+    "test_evidence": 0
+  },
+  {
+    "phase": 22,
+    "dir": "phase-22-log-analysis",
+    "markdown_specs": 27,
+    "depth": 2,
+    "src_evidence": 2,
+    "test_evidence": 0
+  },
+  {
+    "phase": 23,
+    "dir": "phase-23-semantic-log-understanding",
+    "markdown_specs": 27,
+    "depth": 0,
+    "src_evidence": 0,
+    "test_evidence": 1
+  },
+  {
+    "phase": 24,
+    "dir": "phase-24-evergreen-platform",
+    "markdown_specs": 28,
+    "depth": 0,
+    "src_evidence": 0,
+    "test_evidence": 0
+  },
+  {
+    "phase": 25,
+    "dir": "phase-25-system-control-panel",
+    "markdown_specs": 34,
+    "depth": 2,
+    "src_evidence": 12,
+    "test_evidence": 0
+  },
+  {
+    "phase": 26,
+    "dir": "phase-26-shell-management",
+    "markdown_specs": 37,
+    "depth": 2,
+    "src_evidence": 12,
+    "test_evidence": 0
+  },
+  {
+    "phase": 27,
+    "dir": "phase-27-terminal-management",
+    "markdown_specs": 38,
+    "depth": 2,
+    "src_evidence": 12,
+    "test_evidence": 0
+  },
+  {
+    "phase": 28,
+    "dir": "phase-28-development-environment-management",
+    "markdown_specs": 44,
+    "depth": 2,
+    "src_evidence": 12,
+    "test_evidence": 0
+  },
+  {
+    "phase": 29,
+    "dir": "phase-29-process-workload-management",
+    "markdown_specs": 54,
+    "depth": 3,
+    "src_evidence": 4,
+    "test_evidence": 1
+  },
+  {
+    "phase": 30,
+    "dir": "phase-30-resource-management",
+    "markdown_specs": 62,
+    "depth": 0,
+    "src_evidence": 0,
+    "test_evidence": 0
+  },
+  {
+    "phase": 31,
+    "dir": "phase-31-service-management",
+    "markdown_specs": 55,
+    "depth": 3,
+    "src_evidence": 4,
+    "test_evidence": 1
+  },
+  {
+    "phase": 32,
+    "dir": "phase-32-storage-management",
+    "markdown_specs": 63,
+    "depth": 3,
+    "src_evidence": 12,
+    "test_evidence": 2
+  },
+  {
+    "phase": 33,
+    "dir": "phase-33-network-management",
+    "markdown_specs": 62,
+    "depth": 2,
+    "src_evidence": 2,
+    "test_evidence": 0
+  },
+  {
+    "phase": 34,
+    "dir": "phase-34-gpu-accelerator-management",
+    "markdown_specs": 62,
+    "depth": 0,
+    "src_evidence": 0,
+    "test_evidence": 0
+  },
+  {
+    "phase": 35,
+    "dir": "phase-35-package-software-management",
+    "markdown_specs": 70,
+    "depth": 3,
+    "src_evidence": 12,
+    "test_evidence": 1
+  },
+  {
+    "phase": 36,
+    "dir": "phase-36-configuration-management",
+    "markdown_specs": 72,
+    "depth": 2,
+    "src_evidence": 12,
+    "test_evidence": 0
+  },
+  {
+    "phase": 37,
+    "dir": "phase-37-secrets-credentials-management",
+    "markdown_specs": 70,
+    "depth": 2,
+    "src_evidence": 4,
+    "test_evidence": 0
+  },
+  {
+    "phase": 38,
+    "dir": "phase-38-user-identity-management",
+    "markdown_specs": 73,
+    "depth": 2,
+    "src_evidence": 12,
+    "test_evidence": 0
+  },
+  {
+    "phase": 39,
+    "dir": "phase-39-system-event-timeline",
+    "markdown_specs": 95,
+    "depth": 2,
+    "src_evidence": 1,
+    "test_evidence": 0
+  },
+  {
+    "phase": 40,
+    "dir": "phase-40-unified-search-command-system",
+    "markdown_specs": 95,
+    "depth": 2,
+    "src_evidence": 4,
+    "test_evidence": 0
+  },
+  {
+    "phase": 41,
+    "dir": "phase-41-automation-workflow-system",
+    "markdown_specs": 139,
+    "depth": 3,
+    "src_evidence": 12,
+    "test_evidence": 2
+  },
+  {
+    "phase": 42,
+    "dir": "phase-42-system-knowledge-graph",
+    "markdown_specs": 135,
+    "depth": 2,
+    "src_evidence": 12,
+    "test_evidence": 0
+  },
+  {
+    "phase": 43,
+    "dir": "phase-43-operator-intelligence-system",
+    "markdown_specs": 246,
+    "depth": 2,
+    "src_evidence": 12,
+    "test_evidence": 0
+  },
+  {
+    "phase": 44,
+    "dir": "phase-44-adaptive-workstation-system",
+    "markdown_specs": 335,
+    "depth": 0,
+    "src_evidence": 0,
+    "test_evidence": 0
+  },
+  {
+    "phase": 45,
+    "dir": "phase-45-unified-control-plane",
+    "markdown_specs": 368,
+    "depth": 2,
+    "src_evidence": 12,
+    "test_evidence": 0
+  },
+  {
+    "phase": 46,
+    "dir": "phase-46-natural-language-operator-interface",
+    "markdown_specs": 487,
+    "depth": 2,
+    "src_evidence": 4,
+    "test_evidence": 0
+  },
+  {
+    "phase": 47,
+    "dir": "phase-47-os-task-policy-system",
+    "markdown_specs": 586,
+    "depth": 2,
+    "src_evidence": 5,
+    "test_evidence": 0
+  },
+  {
+    "phase": 48,
+    "dir": "phase-48-os-task-context-awareness-system",
+    "markdown_specs": 425,
+    "depth": 2,
+    "src_evidence": 4,
+    "test_evidence": 0
+  },
+  {
+    "phase": 49,
+    "dir": "phase-49-gui",
+    "markdown_specs": 660,
+    "depth": 0,
+    "src_evidence": 0,
+    "test_evidence": 0
+  },
+  {
+    "phase": 50,
+    "dir": "phase-50-platform-abstraction-portability-foundation",
+    "markdown_specs": 429,
+    "depth": 2,
+    "src_evidence": 12,
+    "test_evidence": 0
+  },
+  {
+    "phase": 51,
+    "dir": "phase-51-distributed-rebuntu-system",
+    "markdown_specs": 625,
+    "depth": 2,
+    "src_evidence": 12,
+    "test_evidence": 0
+  },
+  {
+    "phase": 52,
+    "dir": "phase-52-associated-systems-hardware-rooted-trust",
+    "markdown_specs": 696,
+    "depth": 0,
+    "src_evidence": 0,
+    "test_evidence": 0
+  },
+  {
+    "phase": 53,
+    "dir": "phase-53-multi-lattice-mandatory-information-control-flow-security-system",
+    "markdown_specs": 143,
+    "depth": 2,
+    "src_evidence": 2,
+    "test_evidence": 1
+  },
+  {
+    "phase": 54,
+    "dir": "phase-54-dynamic-system-capability-affordance-model",
+    "markdown_specs": 168,
+    "depth": 0,
+    "src_evidence": 0,
+    "test_evidence": 1
+  },
+  {
+    "phase": 55,
+    "dir": "phase-55-goal-directed-planning-plan-synthesis-replanning",
+    "markdown_specs": 200,
+    "depth": 3,
+    "src_evidence": 5,
+    "test_evidence": 1
+  },
+  {
+    "phase": 56,
+    "dir": "phase-56-intent-goal-desired-state-management",
+    "markdown_specs": 50,
+    "depth": 0,
+    "src_evidence": 0,
+    "test_evidence": 2
+  },
+  {
+    "phase": 57,
+    "dir": "phase-57-continuous-reconciliation-goal-maintenance",
+    "markdown_specs": 52,
+    "depth": 0,
+    "src_evidence": 0,
+    "test_evidence": 3
+  },
+  {
+    "phase": 58,
+    "dir": "phase-58-constraint-invariant-operational-contract",
+    "markdown_specs": 54,
+    "depth": 0,
+    "src_evidence": 0,
+    "test_evidence": 2
+  },
+  {
+    "phase": 59,
+    "dir": "phase-59-change-impact-consequence-analysis",
+    "markdown_specs": 53,
+    "depth": 0,
+    "src_evidence": 0,
+    "test_evidence": 0
+  },
+  {
+    "phase": 60,
+    "dir": "phase-60-transactional-change-safe-transition",
+    "markdown_specs": 57,
+    "depth": 0,
+    "src_evidence": 0,
+    "test_evidence": 0
+  },
+  {
+    "phase": 61,
+    "dir": "phase-61-recovery-repair-self-healing",
+    "markdown_specs": 56,
+    "depth": 0,
+    "src_evidence": 0,
+    "test_evidence": 0
+  },
+  {
+    "phase": 62,
+    "dir": "phase-62-intent-goal-desired-state-management",
+    "markdown_specs": 26,
+    "depth": 0,
+    "src_evidence": 0,
+    "test_evidence": 2
+  },
+  {
+    "phase": 63,
+    "dir": "phase-63-continuous-reconciliation-goal-maintenance",
+    "markdown_specs": 26,
+    "depth": 0,
+    "src_evidence": 0,
+    "test_evidence": 3
+  },
+  {
+    "phase": 64,
+    "dir": "phase-64-constraint-invariant-operational-contract",
+    "markdown_specs": 26,
+    "depth": 0,
+    "src_evidence": 0,
+    "test_evidence": 2
+  },
+  {
+    "phase": 65,
+    "dir": "phase-65-change-impact-consequence-analysis",
+    "markdown_specs": 26,
+    "depth": 0,
+    "src_evidence": 0,
+    "test_evidence": 0
+  },
+  {
+    "phase": 66,
+    "dir": "phase-66-transactional-change-safe-transition",
+    "markdown_specs": 26,
+    "depth": 0,
+    "src_evidence": 0,
+    "test_evidence": 0
+  },
+  {
+    "phase": 67,
+    "dir": "phase-67-recovery-repair-self-healing",
+    "markdown_specs": 26,
+    "depth": 0,
+    "src_evidence": 0,
+    "test_evidence": 0
+  },
+  {
+    "phase": 68,
+    "dir": "phase-68-system-stability-homeostasis",
+    "markdown_specs": 26,
+    "depth": 2,
+    "src_evidence": 4,
+    "test_evidence": 0
+  },
+  {
+    "phase": 69,
+    "dir": "phase-69-resource-intent-dynamic-allocation",
+    "markdown_specs": 26,
+    "depth": 0,
+    "src_evidence": 0,
+    "test_evidence": 0
+  },
+  {
+    "phase": 70,
+    "dir": "phase-70-workload-placement-scheduling-intelligence",
+    "markdown_specs": 26,
+    "depth": 2,
+    "src_evidence": 2,
+    "test_evidence": 0
+  },
+  {
+    "phase": 71,
+    "dir": "phase-71-performance-optimization-adaptive-tuning",
+    "markdown_specs": 26,
+    "depth": 0,
+    "src_evidence": 0,
+    "test_evidence": 0
+  },
+  {
+    "phase": 72,
+    "dir": "phase-72-power-thermal-acoustic-optimization",
+    "markdown_specs": 26,
+    "depth": 0,
+    "src_evidence": 0,
+    "test_evidence": 0
+  },
+  {
+    "phase": 73,
+    "dir": "phase-73-predictive-maintenance-failure-prevention",
+    "markdown_specs": 26,
+    "depth": 0,
+    "src_evidence": 0,
+    "test_evidence": 0
+  },
+  {
+    "phase": 74,
+    "dir": "phase-74-system-experimentation-controlled-optimization",
+    "markdown_specs": 26,
+    "depth": 0,
+    "src_evidence": 0,
+    "test_evidence": 0
+  },
+  {
+    "phase": 75,
+    "dir": "phase-75-configuration-evolution-drift-governance",
+    "markdown_specs": 26,
+    "depth": 0,
+    "src_evidence": 0,
+    "test_evidence": 0
+  },
+  {
+    "phase": 76,
+    "dir": "phase-76-software-environment-evolution",
+    "markdown_specs": 26,
+    "depth": 2,
+    "src_evidence": 12,
+    "test_evidence": 0
+  },
+  {
+    "phase": 77,
+    "dir": "phase-77-kernel-driver-hardware-evolution",
+    "markdown_specs": 26,
+    "depth": 0,
+    "src_evidence": 0,
+    "test_evidence": 0
+  },
+  {
+    "phase": 78,
+    "dir": "phase-78-system-upgrade-release-migration",
+    "markdown_specs": 26,
+    "depth": 2,
+    "src_evidence": 2,
+    "test_evidence": 0
+  },
+  {
+    "phase": 79,
+    "dir": "phase-79-backup-snapshot-disaster-recovery",
+    "markdown_specs": 26,
+    "depth": 0,
+    "src_evidence": 0,
+    "test_evidence": 0
+  },
+  {
+    "phase": 80,
+    "dir": "phase-80-machine-reproducibility-reconstruction",
+    "markdown_specs": 26,
+    "depth": 0,
+    "src_evidence": 0,
+    "test_evidence": 0
+  },
+  {
+    "phase": 81,
+    "dir": "phase-81-multi-machine-resource-federation",
+    "markdown_specs": 26,
+    "depth": 0,
+    "src_evidence": 0,
+    "test_evidence": 0
+  },
+  {
+    "phase": 82,
+    "dir": "phase-82-distributed-workload-placement-execution",
+    "markdown_specs": 26,
+    "depth": 2,
+    "src_evidence": 4,
+    "test_evidence": 0
+  },
+  {
+    "phase": 83,
+    "dir": "phase-83-distributed-goal-desired-state-coordination",
+    "markdown_specs": 26,
+    "depth": 2,
+    "src_evidence": 2,
+    "test_evidence": 2
+  },
+  {
+    "phase": 84,
+    "dir": "phase-84-distributed-failure-partition-management",
+    "markdown_specs": 26,
+    "depth": 2,
+    "src_evidence": 12,
+    "test_evidence": 0
+  },
+  {
+    "phase": 85,
+    "dir": "phase-85-fleet-infrastructure-management",
+    "markdown_specs": 26,
+    "depth": 3,
+    "src_evidence": 12,
+    "test_evidence": 2
+  },
+  {
+    "phase": 86,
+    "dir": "phase-86-environment-situation-model",
+    "markdown_specs": 26,
+    "depth": 2,
+    "src_evidence": 12,
+    "test_evidence": 0
+  },
+  {
+    "phase": 87,
+    "dir": "phase-87-operational-prediction-forward-simulation",
+    "markdown_specs": 26,
+    "depth": 0,
+    "src_evidence": 0,
+    "test_evidence": 0
+  },
+  {
+    "phase": 88,
+    "dir": "phase-88-counterfactual-analysis",
+    "markdown_specs": 26,
+    "depth": 2,
+    "src_evidence": 2,
+    "test_evidence": 0
+  },
+  {
+    "phase": 89,
+    "dir": "phase-89-causal-system-analysis",
+    "markdown_specs": 26,
+    "depth": 2,
+    "src_evidence": 2,
+    "test_evidence": 0
+  },
+  {
+    "phase": 90,
+    "dir": "phase-90-root-cause-diagnostic-reasoning",
+    "markdown_specs": 26,
+    "depth": 0,
+    "src_evidence": 0,
+    "test_evidence": 0
+  },
+  {
+    "phase": 91,
+    "dir": "phase-91-uncertainty-evidence-reasoning",
+    "markdown_specs": 26,
+    "depth": 2,
+    "src_evidence": 2,
+    "test_evidence": 0
+  },
+  {
+    "phase": 92,
+    "dir": "phase-92-active-evidence-acquisition",
+    "markdown_specs": 26,
+    "depth": 2,
+    "src_evidence": 2,
+    "test_evidence": 0
+  },
+  {
+    "phase": 93,
+    "dir": "phase-93-operational-learning",
+    "markdown_specs": 26,
+    "depth": 0,
+    "src_evidence": 0,
+    "test_evidence": 0
+  },
+  {
+    "phase": 94,
+    "dir": "phase-94-experience-outcome-model",
+    "markdown_specs": 26,
+    "depth": 0,
+    "src_evidence": 0,
+    "test_evidence": 0
+  },
+  {
+    "phase": 95,
+    "dir": "phase-95-adaptive-strategy-selection",
+    "markdown_specs": 26,
+    "depth": 0,
+    "src_evidence": 0,
+    "test_evidence": 0
+  },
+  {
+    "phase": 96,
+    "dir": "phase-96-long-horizon-operational-planning",
+    "markdown_specs": 26,
+    "depth": 0,
+    "src_evidence": 0,
+    "test_evidence": 1
+  },
+  {
+    "phase": 97,
+    "dir": "phase-97-proactive-operations",
+    "markdown_specs": 26,
+    "depth": 3,
+    "src_evidence": 4,
+    "test_evidence": 1
+  },
+  {
+    "phase": 98,
+    "dir": "phase-98-bounded-autonomous-operations",
+    "markdown_specs": 26,
+    "depth": 3,
+    "src_evidence": 4,
+    "test_evidence": 1
+  },
+  {
+    "phase": 99,
+    "dir": "phase-99-autonomy-budget-delegation",
+    "markdown_specs": 26,
+    "depth": 0,
+    "src_evidence": 0,
+    "test_evidence": 0
+  }
+]

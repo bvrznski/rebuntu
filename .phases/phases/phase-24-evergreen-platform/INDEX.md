@@ -1,0 +1,24 @@
+# Prompt Index
+
+- `24.0_evergreen_platform_foundation.md` — Phase 24.0 — Evergreen Platform Foundation
+- `24.1_known-good_baseline_&_platform_fingerprint.md` — Phase 24.1 — Known-Good Baseline & Platform Fingerprint
+- `24.2_platform_drift_&_evolution_candidate_discovery.md` — Phase 24.2 — Platform Drift & Evolution Candidate Discovery
+- `24.3_compatibility_&_dependency_graph.md` — Phase 24.3 — Compatibility & Dependency Graph
+- `24.4_deterministic_upgrade_preflight_engine.md` — Phase 24.4 — Deterministic Upgrade Preflight Engine
+- `24.5_recovery_contract_&_rollback_capability_model.md` — Phase 24.5 — Recovery Contract & Rollback Capability Model
+- `24.6_boot-safe_kernel_evolution.md` — Phase 24.6 — Boot-Safe Kernel Evolution
+- `24.7_kerneldriverdkms_coupling.md` — Phase 24.7 — Kernel–Driver–DKMS Coupling
+- `24.8_transactional_platform_evolution_state_machine.md` — Phase 24.8 — Transactional Platform Evolution State Machine
+- `24.9_authorization_&_bounded_mutation_boundary.md` — Phase 24.9 — Authorization & Bounded Mutation Boundary
+- `24.10_post-change_health_verification_&_regression_detection.md` — Phase 24.10 — Post-Change Health Verification & Regression Detection
+- `24.11_automated_recovery_orchestration__safe_scaffold.md` — Phase 24.11 — Automated Recovery Orchestration — Safe Scaffold
+- `24.12_snapshot,_filesystem_&_state_preservation_integration.md` — Phase 24.12 — Snapshot, Filesystem & State Preservation Integration
+- `24.13_package_&_repository_evolution.md` — Phase 24.13 — Package & Repository Evolution
+- `24.14_distribution_release_evolution_planner.md` — Phase 24.14 — Distribution Release Evolution Planner
+- `24.15_dry-run,_explain-plan_&_human_decision_interface.md` — Phase 24.15 — Dry-Run, Explain-Plan & Human Decision Interface
+- `24.16_reboot_continuity_&_cross-boot_transaction_resume.md` — Phase 24.16 — Reboot Continuity & Cross-Boot Transaction Resume
+- `24.17_failure_injection_&_recovery_simulation.md` — Phase 24.17 — Failure Injection & Recovery Simulation
+- `24.18_semantic_platform_analysis_integration.md` — Phase 24.18 — Semantic Platform Analysis Integration
+- `24.19_predictive_upgrade_risk_&_historical_learning.md` — Phase 24.19 — Predictive Upgrade Risk & Historical Learning
+- `24.20_evergreen_installation_integration_audit.md` — Phase 24.20 — Evergreen Installation Integration Audit
+- `24.21_evergreen_platform_closure_&_readiness_gate.md` — Phase 24.21 — Evergreen Platform Closure & Readiness Gate

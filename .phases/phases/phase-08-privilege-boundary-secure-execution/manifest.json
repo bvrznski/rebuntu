@@ -1,0 +1,429 @@
+{
+  "phase": 8,
+  "slug": "privilege-boundary-secure-execution",
+  "directory": "phase-08-privilege-boundary-secure-execution",
+  "prompt_count": 84,
+  "layout_version": 2,
+  "prompts": [
+    {
+      "file": "8.0.md",
+      "title": "Rebuntu — Phase 8.0 — Event Architecture",
+      "sha256": "f0d657c0f0ee448c575c30b110cd1618688b47e8dbae7f74f962f63c2a6e5f25"
+    },
+    {
+      "file": "8.1.md",
+      "title": "Rebuntu — Phase 8.1 — Event Sources",
+      "sha256": "6b55f0b72224350b6fef65b8d59599f2d52ff98b377fa786a1a23e925e6eaca6"
+    },
+    {
+      "file": "8.2.md",
+      "title": "Rebuntu — Phase 8.2 — Event Normalization",
+      "sha256": "51b9498462e3e8f1acc51d5343a212bf9217d08d46cdb7f7584f1b959fb4a408"
+    },
+    {
+      "file": "8.3.md",
+      "title": "Rebuntu — Phase 8.3 — Fact Generation",
+      "sha256": "a1f5945d32aa9432aa0bcfb5b98f851d5b16bead4a062dca1c929a3f7ce3f294"
+    },
+    {
+      "file": "8.4.md",
+      "title": "Rebuntu — Phase 8.4 — Assertions",
+      "sha256": "899c002c8e60b46a095d78ac6f7ccb26f9dddf407ee35ff7ecd8710a7e8b46dc"
+    },
+    {
+      "file": "8.5.md",
+      "title": "Rebuntu — Phase 8.5 — Conditions",
+      "sha256": "634f5b84d486caab5bd6bdecd35934960eec324257aab850d3a9f0b3947a54cc"
+    },
+    {
+      "file": "8.6.md",
+      "title": "Rebuntu — Phase 8.6 — Invariants",
+      "sha256": "510a3a032fa20fa533e776e947bc364847232c52912d550a37947bfe10dceae8"
+    },
+    {
+      "file": "8.7.md",
+      "title": "Rebuntu — Phase 8.7 — Constraints",
+      "sha256": "5a0f914d4cfd899e1bd6ceb2e7ba3e95b1af5c1c99596cef9b013ce901a2792e"
+    },
+    {
+      "file": "8.8.md",
+      "title": "Rebuntu — Phase 8.8 — Rules",
+      "sha256": "74c2f858ebebe489c1cbacce6cd05b31c0367b1596acc19d737c9dd8563d3f37"
+    },
+    {
+      "file": "8.9.md",
+      "title": "Rebuntu — Phase 8.9 — Violations",
+      "sha256": "9a2faed5f1d5049a35bc8446a4a48d1af463a1d8a3474f383e17d26eee4d8c5c"
+    },
+    {
+      "file": "8.10.md",
+      "title": "Rebuntu — Phase 8.10 — Temporal Conditions",
+      "sha256": "fac375ac3a221e2a08efa91d80f9155b62a419e6822a7ae248ced32d472f8ca4"
+    },
+    {
+      "file": "8.11.md",
+      "title": "Rebuntu — Phase 8.11 — Event Correlation",
+      "sha256": "0e9a404a34ebf48b34d4049037bfc7c9bfe1e718cca469f529c9dfae3a7acf1a"
+    },
+    {
+      "file": "8.12.md",
+      "title": "Rebuntu — Phase 8.12 — Temporal Correlation",
+      "sha256": "f4a5dab015df522911c19d308b19a5d9c6facb877f65cf0798ec2aee79c138f0"
+    },
+    {
+      "file": "8.13.md",
+      "title": "Rebuntu — Phase 8.13 — Causal Chains",
+      "sha256": "d42153f3c137cf9fff1065c78eadafea00ea8cceb9f3fbc28793304cf45c2895"
+    },
+    {
+      "file": "8.14.md",
+      "title": "Rebuntu — Phase 8.14 — Event Storm Handling",
+      "sha256": "79b9c3b838bcc05b0bfa2c29057e23a35372156087f1a8b544535ab074032e30"
+    },
+    {
+      "file": "8.15.md",
+      "title": "Rebuntu — Phase 8.15 — Internal Alerts",
+      "sha256": "bd05f519527f68a3866ad68a1fb32c1b20cbdaaadab711a50b92b28bf090030c"
+    },
+    {
+      "file": "8.16.md",
+      "title": "Rebuntu — Phase 8.16 — Evidence Requests",
+      "sha256": "95b8c32b6b1c7c299ad076237795826c7bb6eccf5a52875927576ac612546a22"
+    },
+    {
+      "file": "8.17.md",
+      "title": "Rebuntu — Phase 8.17 — Escalation",
+      "sha256": "7f6c5fb23f2725294ebe663e18a9f267c9c515438bdd8eb0b2042bd55d06fc75"
+    },
+    {
+      "file": "8.18.md",
+      "title": "Rebuntu — Phase 8.18 — Event / Assertion Integration Audit",
+      "sha256": "5f398c3c21df6c4475e01553c10b5b00aeaa43dded545f2b978657b6fb0b67a0"
+    },
+    {
+      "file": "8.19_systemd_sandboxing_profile.md",
+      "title": "Rebuntu — Phase 8",
+      "sha256": "7853cd9ff9b2ef5546a404ec4d3c843b6748c7b19bb08237da2faefee4caf90c"
+    },
+    {
+      "file": "8.20_seccomp_boundary_assessment.md",
+      "title": "Rebuntu — Phase 8",
+      "sha256": "b83cefc60a33abe09dc197a32efaf844e6dac5bd049ddb0bc3b6b9c243c022f5"
+    },
+    {
+      "file": "8.21_filesystem_namespace_restriction.md",
+      "title": "Rebuntu — Phase 8",
+      "sha256": "d858204ff7a77471e471f8c54594a0cd1117b7e3db98110c601946f48304b3f6"
+    },
+    {
+      "file": "8.22_environment_sanitization.md",
+      "title": "Rebuntu — Phase 8",
+      "sha256": "9dd1b7f5a91fa347d011ad2cd7833467464b1a13888a424c25274479cba43597"
+    },
+    {
+      "file": "8.23_executable_identity.md",
+      "title": "Rebuntu — Phase 8",
+      "sha256": "8d00f06e6d10f5c1dd07943e08bc5ced8c1763909bbd04003cc52dbaa6396ea4"
+    },
+    {
+      "file": "8.24_file_descriptor_hygiene.md",
+      "title": "Rebuntu — Phase 8",
+      "sha256": "73b51ef1d245a46c2ec63462bbaea00ad7063d6c027df68832bc11cb235a5ee7"
+    },
+    {
+      "file": "8.25_working-directory_and_umask_hygiene.md",
+      "title": "Rebuntu — Phase 8",
+      "sha256": "494b557acf5142db65cc37a0eca24fe06b19196ba9e70756c9a5710277f00178"
+    },
+    {
+      "file": "8.26_temporary-file_safety.md",
+      "title": "Rebuntu — Phase 8",
+      "sha256": "b77adedffa204933f410d6ba9d305aadb81a9d9e157832c7f0f30ed8bb684eb0"
+    },
+    {
+      "file": "8.27_secret_material_isolation.md",
+      "title": "Rebuntu — Phase 8",
+      "sha256": "870a4b2bc4d55c466cd54b2ba9b29e1abcbcb84b7fddf37b04b12c642b828b11"
+    },
+    {
+      "file": "8.28_credential_provider_boundary.md",
+      "title": "Rebuntu — Phase 8",
+      "sha256": "ae28d3c6c7c690b11bd9249be9a98d08a60523379f5d81a5f15f73802e94a5db"
+    },
+    {
+      "file": "8.29_polkit_action_design.md",
+      "title": "Rebuntu — Phase 8",
+      "sha256": "b3185cfa6e37a9836c1857745a3161c80f01b897c0daee48c38196f368855813"
+    },
+    {
+      "file": "8.30_polkit_subject_binding.md",
+      "title": "Rebuntu — Phase 8",
+      "sha256": "30df594ef076ecfd17bfbd6d1cb0c4a120c68c327dea06dc26566c1d17cac92c"
+    },
+    {
+      "file": "8.31_interactive_authentication_separation.md",
+      "title": "Rebuntu — Phase 8",
+      "sha256": "33789b59309e28e2030122e6c5d1cb178bcba44d5aa82542187e82563266d2bf"
+    },
+    {
+      "file": "8.32_sudo_eradication_from_core.md",
+      "title": "Rebuntu — Phase 8",
+      "sha256": "8e70aff08552813551736d24adb77cbb39dcf4727ad71a2871d9f3f9d8cb07eb"
+    },
+    {
+      "file": "8.33_setuid_audit.md",
+      "title": "Rebuntu — Phase 8",
+      "sha256": "b91389dcb2a6c041c760e8f5a6ea482c77aba477f47388bf2649e5a12f6d67cf"
+    },
+    {
+      "file": "8.34_root-daemon_necessity_audit.md",
+      "title": "Rebuntu — Phase 8",
+      "sha256": "b7a314b526915e4511c516be011706473b51c5b63b44d2b1f10281a4bde05aa0"
+    },
+    {
+      "file": "8.35_split-process_architecture.md",
+      "title": "Rebuntu — Phase 8",
+      "sha256": "36047d551b1961e1f17ec105e92705b9b977dc9346b0c4cac267cad0c91475b0"
+    },
+    {
+      "file": "8.36_privilege-boundary_protocol_versioning.md",
+      "title": "Rebuntu — Phase 8",
+      "sha256": "44cfa87b22138f6ef1ea26ad6e748e7008ab1bf9fe0592622d522e3785889922"
+    },
+    {
+      "file": "8.37_message_size_and_resource_bounds.md",
+      "title": "Rebuntu — Phase 8",
+      "sha256": "c80cef1e1f37edb171deb2600e2bd4b3100eb1130f308b74cd7bfe6c575d6e67"
+    },
+    {
+      "file": "8.38_rate_limiting_and_abuse_bounds.md",
+      "title": "Rebuntu — Phase 8",
+      "sha256": "9fc4a0798604346c45c321e3dcf31bb7c9ed25013cbb168f033ac62da7b84f18"
+    },
+    {
+      "file": "8.39_cancellation_semantics.md",
+      "title": "Rebuntu — Phase 8",
+      "sha256": "4e6f8e438fd5a38554641941cc4e51f6ae87cf9f553285c38da3553c0e03ac44"
+    },
+    {
+      "file": "8.40_timeout_semantics.md",
+      "title": "Rebuntu — Phase 8",
+      "sha256": "870341dc9b7b6954b8b0c458b154c45799acd1169e2453f2252b7c805838959b"
+    },
+    {
+      "file": "8.41_partial_failure_semantics.md",
+      "title": "Rebuntu — Phase 8",
+      "sha256": "7cae1ff8f50e5bb39544ef9bd3d6872cc16880b955a8eb61bfdb50fa2872734e"
+    },
+    {
+      "file": "8.42_verification_after_privilege_boundary.md",
+      "title": "Rebuntu — Phase 8",
+      "sha256": "6ef27f9659184f77f2e298e120a54642167ee2cf76b26d2bbb29231288b328f4"
+    },
+    {
+      "file": "8.43_helper_crash_recovery.md",
+      "title": "Rebuntu — Phase 8",
+      "sha256": "e4501a3c49f6c37f7fb2ff8b2065be0b7e8cddafd919303d3a19d06195281975"
+    },
+    {
+      "file": "8.44_helper_restart_semantics.md",
+      "title": "Rebuntu — Phase 8",
+      "sha256": "7af4e8235045397c5e3d23e70a5105c662cfaa8a8e437d0998f429109fb43ea9"
+    },
+    {
+      "file": "8.45_ipc_transport_selection.md",
+      "title": "Rebuntu — Phase 8",
+      "sha256": "9c6550fcbf3c9aeb89e948188f9da942b735e51f6368fad6b21066d84d838300"
+    },
+    {
+      "file": "8.46_unix_socket_hardening.md",
+      "title": "Rebuntu — Phase 8",
+      "sha256": "44e45ac2510d0214847ef50f4da78dcba95c47a6aafa059ea5ef010fe2bf1183"
+    },
+    {
+      "file": "8.47_d-bus_hardening.md",
+      "title": "Rebuntu — Phase 8",
+      "sha256": "42580f3ef244f8489a9beab64e84b1b068a419eb2583b01b5b939b124746bcae"
+    },
+    {
+      "file": "8.48_socket_activation.md",
+      "title": "Rebuntu — Phase 8",
+      "sha256": "1deffd8ec35dc5cf536b1dfe7ceb09c40569f3de5e76ec1821d2adf35282b571"
+    },
+    {
+      "file": "8.49_privileged_service_readiness.md",
+      "title": "Rebuntu — Phase 8",
+      "sha256": "6cb79a2690575824867bd685771edd9e7b5b0d120aad9ab95ebb6eac10d8c46a"
+    },
+    {
+      "file": "8.50_privilege_audit_logging.md",
+      "title": "Rebuntu — Phase 8",
+      "sha256": "7514481be38b6ddc12b686ef767e6a2c190d4e6990bce53b51e748953c63ab2a"
+    },
+    {
+      "file": "8.51_tamper-evident_evidence_preparation.md",
+      "title": "Rebuntu — Phase 8",
+      "sha256": "7eccfc64ef09b7da659a20d0dc3a04a6adbdf2916d0bb84d48ee671c83127798"
+    },
+    {
+      "file": "8.52_error_disclosure_control.md",
+      "title": "Rebuntu — Phase 8",
+      "sha256": "6f8ad6c288b6130ca86ad702beb14650d33279d2ed1f51db9d48493e959b84ff"
+    },
+    {
+      "file": "8.53_untrusted_input_parser_audit.md",
+      "title": "Rebuntu — Phase 8",
+      "sha256": "b2817c5925ec2310fbf513352d4ad98c8541b4c674b7da9bdb523c8bd18ddf25"
+    },
+    {
+      "file": "8.54_fuzz_privileged_request_parsing.md",
+      "title": "Rebuntu — Phase 8",
+      "sha256": "861450500516fe7f2153fbaa9533290dde84ce691090e5401d55b345b9e153a6"
+    },
+    {
+      "file": "8.55_command_injection_tests.md",
+      "title": "Rebuntu — Phase 8",
+      "sha256": "ca97bf961e77b485fdbd3b4d13ea58e618f75858cf681c7c98277a92abe4a6f0"
+    },
+    {
+      "file": "8.56_path_traversal_and_symlink_tests.md",
+      "title": "Rebuntu — Phase 8",
+      "sha256": "a907c0cbaccff5c91f3f4de7d01cc2a4a5cba5d2309782c6d7dfd2df907c4b23"
+    },
+    {
+      "file": "8.57_toctou_race_tests.md",
+      "title": "Rebuntu — Phase 8",
+      "sha256": "bd868848d955275735e3541ff0947150a5b3fccadc5f8ee282573204c807af6c"
+    },
+    {
+      "file": "8.58_replay_and_stale-authorization_tests.md",
+      "title": "Rebuntu — Phase 8",
+      "sha256": "09a6da565423cd3ffe5470a1e6b24e25e6bac71ad73889c78e3ca30d7ec36aee"
+    },
+    {
+      "file": "8.59_peer_spoofing_tests.md",
+      "title": "Rebuntu — Phase 8",
+      "sha256": "bdb2e7361363a792fc62b49b394b52b7e0e586cabaed57bc72e43398208d0e14"
+    },
+    {
+      "file": "8.60_privilege_escalation_tests.md",
+      "title": "Rebuntu — Phase 8",
+      "sha256": "e3d10c8e8a8c855282808541f51002bd3df779b15b5889410c9d3f42c52f09cc"
+    },
+    {
+      "file": "8.61_direct-helper_bypass_tests.md",
+      "title": "Rebuntu — Phase 8",
+      "sha256": "60f46627a90500d844e3147e2f366b8aeffdfa6e620737b8a19611149ff39957"
+    },
+    {
+      "file": "8.62_provider_bypass_tests.md",
+      "title": "Rebuntu — Phase 8",
+      "sha256": "6e678174fe36c42281c597a1cc7f899260507f7e4e45f5a5e8da3dc7099eeb54"
+    },
+    {
+      "file": "8.63_python_privilege_eradication.md",
+      "title": "Rebuntu — Phase 8",
+      "sha256": "428cbb5f4641adf6b4829ee6437fdf26ee17f15cd1ef6c026715ced490d4e554"
+    },
+    {
+      "file": "8.64_shell_privilege_eradication.md",
+      "title": "Rebuntu — Phase 8",
+      "sha256": "4efc8f230a2aeed4f7226cdf6cffeff63d30de994e94ff5dd3e40b2525901dfb"
+    },
+    {
+      "file": "8.65_historical_privilege_archaeology.md",
+      "title": "Rebuntu — Phase 8",
+      "sha256": "58922385db8e3f4a41e2e3ce234392aff805f92ec10fc1a072f5fc22f162ed1a"
+    },
+    {
+      "file": "8.66_privilege_tcb_inventory.md",
+      "title": "Rebuntu — Phase 8",
+      "sha256": "9428ad4cbf5c2dea3ba139921629e6b95b6ad53a6fee12e4dd4412f154c9791d"
+    },
+    {
+      "file": "8.67_attack-surface_reduction_audit.md",
+      "title": "Rebuntu — Phase 8",
+      "sha256": "0cd5c4065377c15c08b0ccac0a47fab5fba58cc9c521b4537c1015cd653c8122"
+    },
+    {
+      "file": "8.68_dependency_trust_audit.md",
+      "title": "Rebuntu — Phase 8",
+      "sha256": "40f19479eeaf68d8b92e77c0bd165dfd48209a1787347bb6031cce8af1b708c2"
+    },
+    {
+      "file": "8.69_build_hardening.md",
+      "title": "Rebuntu — Phase 8",
+      "sha256": "1f32e3a56c164a0b6cf983afb520b4228140bc0c9c18f951ec3fe6124c20334d"
+    },
+    {
+      "file": "8.70_sanitizer_pass.md",
+      "title": "Rebuntu — Phase 8",
+      "sha256": "ac63c1ca162d69d97a6d67f7cb2b5943f8d5d344a1a60aa345676b9d71ca4388"
+    },
+    {
+      "file": "8.71_contained_privileged-operation_test_harness.md",
+      "title": "Rebuntu — Phase 8",
+      "sha256": "294adfc634e648b7b42739076e1bd943205141e47f43e2e0d087e1b9ca3c0ab7"
+    },
+    {
+      "file": "8.72_end-to-end_privilege_integration_test.md",
+      "title": "Rebuntu — Phase 8",
+      "sha256": "de8a8ab52a7da8a4e80cf24277135ce078f7b20ca77679063287d3788f00b759"
+    },
+    {
+      "file": "8.73_denied-operation_no-effect_test.md",
+      "title": "Rebuntu — Phase 8",
+      "sha256": "33d4820da0ed37025c8a083055e40e32d319d2387f240b732c578194714402b4"
+    },
+    {
+      "file": "8.74_helper-unavailable_degradation_test.md",
+      "title": "Rebuntu — Phase 8",
+      "sha256": "47cbd94a1da7849b6b41d0db36c9512cef4400b4c2e90bbed5f4f1f998ddf6d8"
+    },
+    {
+      "file": "8.75_python_semantic_absence_test.md",
+      "title": "Rebuntu — Phase 8",
+      "sha256": "53f904b752dc7df11cd39325d8b207cc152d0e432d84c674261c308b81bc7851"
+    },
+    {
+      "file": "8.76_build_and_runtime_reachability_audit.md",
+      "title": "Rebuntu — Phase 8",
+      "sha256": "4e5f0a51772f75f585b503d994d1ea8334206fc7ed9f863d8d13cc62f274f70e"
+    },
+    {
+      "file": "8.77_documentation_and_agents_synchronization.md",
+      "title": "Rebuntu — Phase 8",
+      "sha256": "23b759d373441341eaac731091a0a138fd483d2bbd193549c9b453d0a8d14e58"
+    },
+    {
+      "file": "8.78_first_closure_audit.md",
+      "title": "Rebuntu — Phase 8",
+      "sha256": "3d2a26ebbdc3b9e30abebe385a82361dd84561aa0f647f9244dd3a640b75b030"
+    },
+    {
+      "file": "8.79_adversarial_confused-deputy_audit.md",
+      "title": "Rebuntu — Phase 8",
+      "sha256": "f3c242a27bc4335dcabaf3db05e8fd82124cda436aebe83c1bc4b1515e9f0bed"
+    },
+    {
+      "file": "8.80_adversarial_compromised-caller_simulation.md",
+      "title": "Rebuntu — Phase 8",
+      "sha256": "e76367fdd0539944e7fc9fb81b0c9fa9905192d950f125ce2fa25854114a0d25"
+    },
+    {
+      "file": "8.81_adversarial_compromised-semantic-service_simulation.md",
+      "title": "Rebuntu — Phase 8",
+      "sha256": "0dcf392e99c7379127fa65ffa9cf871caafb888fb821ceb3b4950616fb0aa718"
+    },
+    {
+      "file": "8.82_independent_second_rediscovery.md",
+      "title": "Rebuntu — Phase 8",
+      "sha256": "5b3e7b5fd762e58230bb5cdb3671a687c8fcfe78ec31f49e580ee24d77d2a2fe"
+    },
+    {
+      "file": "8.83_phase_8_final_closure.md",
+      "title": "Rebuntu — Phase 8",
+      "sha256": "11010281b910b42b51fae9ba91f6131586469db4838c34cf6fbaa051c4533856"
+    }
+  ]
+}

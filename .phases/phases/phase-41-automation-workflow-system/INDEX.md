@@ -1,0 +1,141 @@
+# Phase 41 Index
+
+## Architecture
+- `architecture/01-system-boundary.md`
+- `architecture/02-workflow-model.md`
+- `architecture/03-execution-semantics.md`
+- `architecture/04-trigger-time-model.md`
+- `architecture/05-security-authorization.md`
+- `architecture/06-persistence-recovery.md`
+- `architecture/07-phase-integration.md`
+- `architecture/08-native-runtime.md`
+- `architecture/09-shell-boundary.md`
+- `architecture/10-resource-concurrency.md`
+- `architecture/11-observability.md`
+- `architecture/12-migration-closure.md`
+
+## Full prompts
+- `41.0` — Foundation and repository archaeology
+- `41.1` — Ownership map and automation inventory
+- `41.2` — Canonical architecture and source-tree integration
+- `41.3` — Native C++ workflow runtime foundation
+- `41.4` — Strong identifiers and core types
+- `41.5` — Workflow definition schema
+- `41.6` — Workflow definition parser and serializer
+- `41.7` — Definition normalization
+- `41.8` — Static workflow validation
+- `41.9` — Workflow compiler and executable plan
+- `41.10` — Run state model
+- `41.11` — Node and attempt state model
+- `41.12` — Durable definition repository
+- `41.13` — Durable run repository
+- `41.14` — Transactional state transitions
+- `41.15` — Manual operator trigger
+- `41.16` — Schedule trigger foundation
+- `41.17` — Timezone model
+- `41.18` — DST transition semantics
+- `41.19` — Missed schedules and reboot catch-up
+- `41.20` — Phase 39 event trigger integration
+- `41.21` — Condition-watch trigger foundation
+- `41.22` — Condition evaluation semantics
+- `41.23` — Trigger deduplication
+- `41.24` — Trigger coalescing
+- `41.25` — Debounce semantics
+- `41.26` — Cooldown semantics
+- `41.27` — Hysteresis semantics
+- `41.28` — DAG execution engine
+- `41.29` — Node readiness and dependency resolution
+- `41.30` — Parallel branch execution
+- `41.31` — Join semantics
+- `41.32` — Conditional branching
+- `41.33` — Bounded loops
+- `41.34` — Loop termination and safety
+- `41.35` — Subworkflow invocation
+- `41.36` — Typed workflow inputs
+- `41.37` — Typed workflow outputs
+- `41.38` — Node dataflow
+- `41.39` — Expression and predicate boundary
+- `41.40` — Phase 40 CommandIntent action adapter
+- `41.41` — Domain capability action adapter
+- `41.42` — Action applicability checks
+- `41.43` — Action planning integration
+- `41.44` — Action validation integration
+- `41.45` — Execution-time authorization
+- `41.46` — Scoped delegation
+- `41.47` — Delegation expiry and revocation
+- `41.48` — Phase 37 SecretRef integration
+- `41.49` — Secret-safe workflow state
+- `41.50` — Shell compatibility boundary
+- `41.51` — Safe process execution
+- `41.52` — Environment and working-directory policy
+- `41.53` — Timeouts and deadlines
+- `41.54` — Cancellation propagation
+- `41.55` — Retry policy model
+- `41.56` — Backoff and jitter
+- `41.57` — Retry classification
+- `41.58` — Idempotency keys
+- `41.59` — Action deduplication
+- `41.60` — External side-effect reconciliation
+- `41.61` — Compensation model
+- `41.62` — Compensation ordering and failure
+- `41.63` — Checkpointing
+- `41.64` — Crash recovery
+- `41.65` — Daemon restart recovery
+- `41.66` — Reboot continuity
+- `41.67` — Run resumption policy
+- `41.68` — Ambiguous outcome and UNKNOWN handling
+- `41.69` — Bounded concurrency
+- `41.70` — Queueing and backpressure
+- `41.71` — Priority and fairness
+- `41.72` — Phase 29 workload integration
+- `41.73` — Phase 30 resource-aware scheduling
+- `41.74` — Resource admission control
+- `41.75` — Resource reservations
+- `41.76` — Workflow failure policy
+- `41.77` — Node failure policy
+- `41.78` — Fallback paths
+- `41.79` — Safe mode
+- `41.80` — Emergency quiescence
+- `41.81` — Operator pause resume and cancel
+- `41.82` — Workflow enable disable lifecycle
+- `41.83` — Definition versioning
+- `41.84` — Running-version pinning
+- `41.85` — Definition migration
+- `41.86` — Import and export representation
+- `41.87` — CLI workflow inspection
+- `41.88` — CLI workflow authoring
+- `41.89` — CLI run control
+- `41.90` — Phase 25 Panel integration
+- `41.91` — Phase 40 unified search integration
+- `41.92` — Workflow search facets and references
+- `41.93` — Phase 39 timeline recording
+- `41.94` — Structured observability and diagnostics
+- `41.95` — Metrics and performance telemetry
+- `41.96` — Audit and provenance
+- `41.97` — Secret-safe logging and redaction
+- `41.98` — Semantic workflow authoring boundary
+- `41.99` — Semantic explanation and annotation boundary
+- `41.100` — Semantic candidate validation
+- `41.101` — Cron discovery and migration
+- `41.102` — Systemd timer discovery and migration
+- `41.103` — Legacy script automation migration
+- `41.104` — Existing Rebuntu workflow reconciliation
+- `41.105` — Existing automation package reconciliation
+- `41.106` — Duplicate authority audit
+- `41.107` — Security threat model
+- `41.108` — Privilege-boundary audit
+- `41.109` — Race and TOCTOU audit
+- `41.110` — Failure injection framework
+- `41.111` — Trigger determinism tests
+- `41.112` — DST clock-jump and reboot tests
+- `41.113` — Crash restart recovery tests
+- `41.114` — Retry idempotency reconciliation tests
+- `41.115` — Authorization and delegation tests
+- `41.116` — Resource and backpressure tests
+- `41.117` — End-to-end workflow scenarios
+- `41.118` — Performance and scalability validation
+- `41.119` — Documentation reconciliation
+- `41.120` — AGENTS.md permanent contract
+- `41.121` — Repository-wide recursive rediscovery
+- `41.122` — Adversarial closure audit
+- `41.123` — Phase 41 closure and handoff

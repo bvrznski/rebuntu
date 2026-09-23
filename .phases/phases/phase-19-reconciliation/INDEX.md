@@ -1,0 +1,21 @@
+# Prompt Index
+
+- `19.0.md` — Rebuntu --- Phase 19.0 --- Reconciliation Architecture
+- `19.1.md` — Rebuntu --- Phase 19.1 --- Desired State
+- `19.2.md` — Rebuntu --- Phase 19.2 --- Observed State
+- `19.3.md` — Rebuntu --- Phase 19.3 --- State Comparison
+- `19.4.md` — Rebuntu --- Phase 19.4 --- Drift
+- `19.5.md` — Rebuntu --- Phase 19.5 --- Delta
+- `19.6.md` — Rebuntu --- Phase 19.6 --- Reconciliation Planning
+- `19.7.md` — Rebuntu --- Phase 19.7 --- Reconciliation Operations
+- `19.8.md` — Rebuntu --- Phase 19.8 --- Idempotent Convergence
+- `19.9.md` — Rebuntu --- Phase 19.9 --- Conflict Detection
+- `19.10.md` — Rebuntu --- Phase 19.10 --- Policy Constraints
+- `19.11.md` — Rebuntu --- Phase 19.11 --- Resource Constraints
+- `19.12.md` — Rebuntu --- Phase 19.12 --- Reconciliation Scheduling
+- `19.13.md` — Rebuntu --- Phase 19.13 --- Event-Driven Reconciliation
+- `19.14.md` — Rebuntu --- Phase 19.14 --- Recovery vs Reconciliation
+- `19.15.md` — Rebuntu --- Phase 19.15 --- Verification
+- `19.16.md` — Rebuntu --- Phase 19.16 --- Evidence
+- `19.17.md` — Rebuntu --- Phase 19.17 --- Continuous Reconciliation
+- `19.18.md` — Rebuntu --- Phase 19.18 --- Convergence / Stability Audit

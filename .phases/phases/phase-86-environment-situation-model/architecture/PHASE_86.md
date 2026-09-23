@@ -1,0 +1,26 @@
+# Phase 86 — Environment & Situation Model
+
+- 86.0: Bootstrap and repository reality audit
+- 86.1: Canonical ontology and identity
+- 86.2: Definitions and lifecycle
+- 86.3: State ownership and persistence
+- 86.4: Observation evidence provenance freshness
+- 86.5: UNKNOWN and conflicting evidence
+- 86.6: Capability and affordance integration
+- 86.7: Goal and desired-state integration
+- 86.8: Planning and operation integration
+- 86.9: Constraints and invariants
+- 86.10: Resources and topology
+- 86.11: Policy authorization
+- 86.12: Mandatory security
+- 86.13: Privilege and native providers
+- 86.14: Failure timeout cancellation partial effects
+- 86.15: Crash restart reconciliation recovery
+- 86.16: Concurrency races replacement TOCTOU
+- 86.17: Boundedness and budgets
+- 86.18: CLI GUI natural-language integration
+- 86.19: Timeline graph context integration
+- 86.20: Distributed and associated systems
+- 86.21: Python model shell authority audit
+- 86.22: Adversarial build runtime migration audit
+- 86.23: Documentation rediscovery and closure

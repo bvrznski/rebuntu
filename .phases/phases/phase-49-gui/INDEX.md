@@ -1,0 +1,662 @@
+# Phase 49 Index
+
+## Normative architecture
+- `architecture/01-system-boundary.md`
+- `architecture/02-information-architecture.md`
+- `architecture/03-ui-state-model.md`
+- `architecture/04-action-contract.md`
+- `architecture/05-ask-integration.md`
+- `architecture/06-task-policy-context.md`
+- `architecture/07-visual-language.md`
+- `architecture/08-desktop-integration.md`
+- `architecture/09-security.md`
+- `architecture/10-performance-resilience.md`
+- `architecture/11-cross-phase-integration.md`
+- `architecture/12-closure.md`
+
+## Full executable prompts
+- `49.0` — foundation and repository archaeology
+- `49.1` — existing Panel inventory
+- `49.2` — existing UI and TUI inventory
+- `49.3` — existing dashboard inventory
+- `49.4` — canonical GUI architecture
+- `49.5` — GUI toolkit evaluation from installed toolchain
+- `49.6` — native Linux GUI technology decision
+- `49.7` — C++-first GUI application shell
+- `49.8` — GUI source-tree architecture
+- `49.9` — build system integration
+- `49.10` — packaging integration
+- `49.11` — desktop entry
+- `49.12` — application metadata
+- `49.13` — application icon boundary
+- `49.14` — single-instance policy
+- `49.15` — multi-window policy
+- `49.16` — window lifecycle
+- `49.17` — session lifecycle
+- `49.18` — startup sequence
+- `49.19` — shutdown sequence
+- `49.20` — crash recovery
+- `49.21` — safe mode startup
+- `49.22` — read-only degraded mode
+- `49.23` — provider outage mode
+- `49.24` — main window shell
+- `49.25` — global navigation
+- `49.26` — information architecture
+- `49.27` — domain navigation
+- `49.28` — command palette
+- `49.29` — unified search surface
+- `49.30` — keyboard navigation
+- `49.31` — keyboard shortcuts
+- `49.32` — focus management
+- `49.33` — back navigation
+- `49.34` — deep links
+- `49.35` — URI routing
+- `49.36` — breadcrumbs
+- `49.37` — status bar
+- `49.38` — global system status
+- `49.39` — notification center
+- `49.40` — toast policy
+- `49.41` — modal policy
+- `49.42` — non-modal confirmation policy
+- `49.43` — progress presentation
+- `49.44` — background operation presentation
+- `49.45` — error presentation
+- `49.46` — warning presentation
+- `49.47` — UNKNOWN presentation
+- `49.48` — stale-state presentation
+- `49.49` — partial-state presentation
+- `49.50` — degraded-state presentation
+- `49.51` — unavailable-state presentation
+- `49.52` — loading-state presentation
+- `49.53` — empty-state presentation
+- `49.54` — visual design tokens
+- `49.55` — spacing system
+- `49.56` — typography system
+- `49.57` — monospace usage
+- `49.58` — retro-tech visual language
+- `49.59` — ASCII-inspired motifs
+- `49.60` — iconography system
+- `49.61` — glyph fallback
+- `49.62` — theme architecture
+- `49.63` — system theme integration
+- `49.64` — dark mode
+- `49.65` — light mode
+- `49.66` — high contrast
+- `49.67` — accent integration
+- `49.68` — density modes
+- `49.69` — compact workstation density
+- `49.70` — responsive layout
+- `49.71` — minimum window sizing
+- `49.72` — HiDPI
+- `49.73` — fractional scaling
+- `49.74` — multi-monitor
+- `49.75` — six-monitor workstation behavior
+- `49.76` — window placement persistence
+- `49.77` — display topology changes
+- `49.78` — accessibility foundation
+- `49.79` — screen reader semantics
+- `49.80` — accessible names
+- `49.81` — keyboard-only operation
+- `49.82` — focus visibility
+- `49.83` — contrast validation
+- `49.84` — reduced motion
+- `49.85` — motion policy
+- `49.86` — animation budget
+- `49.87` — color-independent status encoding
+- `49.88` — localization foundation
+- `49.89` — Polish UI
+- `49.90` — English UI
+- `49.91` — locale switching
+- `49.92` — date time localization
+- `49.93` — number localization
+- `49.94` — unit formatting
+- `49.95` — overview dashboard
+- `49.96` — system identity card
+- `49.97` — health overview
+- `49.98` — predictive health view
+- `49.99` — log intelligence view
+- `49.100` — platform lifecycle view
+- `49.101` — shell management view
+- `49.102` — terminal management view
+- `49.103` — development environment view
+- `49.104` — process workload view
+- `49.105` — resource overview
+- `49.106` — CPU view
+- `49.107` — NUMA view
+- `49.108` — memory view
+- `49.109` — GPU accelerator overview
+- `49.110` — per-GPU view
+- `49.111` — VRAM view
+- `49.112` — PCIe topology view
+- `49.113` — GPU workload placement view
+- `49.114` — storage overview
+- `49.115` — disk topology view
+- `49.116` — filesystem view
+- `49.117` — mount view
+- `49.118` — LUKS view
+- `49.119` — RAID view
+- `49.120` — storage health view
+- `49.121` — network overview
+- `49.122` — interface view
+- `49.123` — route view
+- `49.124` — DNS view
+- `49.125` — firewall view
+- `49.126` — connection view
+- `49.127` — endpoint view
+- `49.128` — service overview
+- `49.129` — service detail
+- `49.130` — systemd integration view
+- `49.131` — package overview
+- `49.132` — package detail
+- `49.133` — update view
+- `49.134` — repository trust view
+- `49.135` — configuration overview
+- `49.136` — configuration diff view
+- `49.137` — configuration history view
+- `49.138` — identity overview
+- `49.139` — user detail
+- `49.140` — session detail
+- `49.141` — authorization overview
+- `49.142` — secrets reference view
+- `49.143` — secret-value non-display invariant
+- `49.144` — event timeline
+- `49.145` — timeline filtering
+- `49.146` — timeline correlation view
+- `49.147` — timeline entity drilldown
+- `49.148` — timeline boot boundaries
+- `49.149` — timeline session boundaries
+- `49.150` — timeline uncertainty display
+- `49.151` — unified search UI
+- `49.152` — search query builder
+- `49.153` — search filters
+- `49.154` — search result provenance
+- `49.155` — search result freshness
+- `49.156` — search result entity navigation
+- `49.157` — command registry UI
+- `49.158` — typed command discovery
+- `49.159` — command applicability UI
+- `49.160` — command parameter editor
+- `49.161` — command plan preview
+- `49.162` — command dry-run
+- `49.163` — command execution progress
+- `49.164` — command verification result
+- `49.165` — workflow overview
+- `49.166` — workflow graph view
+- `49.167` — workflow run view
+- `49.168` — workflow trigger view
+- `49.169` — workflow schedule view
+- `49.170` — workflow failure view
+- `49.171` — workflow retry view
+- `49.172` — workflow compensation view
+- `49.173` — automation overview
+- `49.174` — condition-watch view
+- `49.175` — scheduled automation view
+- `49.176` — automation history
+- `49.177` — knowledge graph overview
+- `49.178` — graph explorer
+- `49.179` — graph entity inspector
+- `49.180` — graph relation inspector
+- `49.181` — graph assertion provenance
+- `49.182` — graph contradiction display
+- `49.183` — graph freshness display
+- `49.184` — graph path explanation
+- `49.185` — no graph-path causality implication
+- `49.186` — operator intelligence overview
+- `49.187` — finding view
+- `49.188` — hypothesis view
+- `49.189` — recommendation view
+- `49.190` — evidence bundle view
+- `49.191` — forecast uncertainty view
+- `49.192` — adaptive workstation overview
+- `49.193` — profile view
+- `49.194` — adaptation candidate view
+- `49.195` — experiment view
+- `49.196` — outcome view
+- `49.197` — learned preference view
+- `49.198` — adaptation rollback view
+- `49.199` — unified control plane overview
+- `49.200` — operation inspector
+- `49.201` — plan inspector
+- `49.202` — validation inspector
+- `49.203` — authorization inspector
+- `49.204` — execution inspector
+- `49.205` — verification inspector
+- `49.206` — rollback inspector
+- `49.207` — partial-success inspector
+- `49.208` — ask surface foundation
+- `49.209` — ask input
+- `49.210` — ask one-shot interaction
+- `49.211` — ask history boundary
+- `49.212` — ask context indicator
+- `49.213` — ask resolved intent preview
+- `49.214` — ask clarification UI
+- `49.215` — ask justification UI
+- `49.216` — ask confirmation UI
+- `49.217` — ask denial UI
+- `49.218` — ask answer UI
+- `49.219` — ask plan UI
+- `49.220` — ask execution handoff
+- `49.221` — BitNet status indicator
+- `49.222` — Gordon advisory status
+- `49.223` — Gordon consultation inspector
+- `49.224` — semantic-provider provenance
+- `49.225` — model output not authority UI
+- `49.226` — OS task overview
+- `49.227` — task list
+- `49.228` — task detail
+- `49.229` — task origin view
+- `49.230` — task delegation chain view
+- `49.231` — task scope view
+- `49.232` — task capability view
+- `49.233` — task data-flow view
+- `49.234` — task resource requirements view
+- `49.235` — task lifecycle view
+- `49.236` — task outcome view
+- `49.237` — Taskwarrior provider UI
+- `49.238` — Taskwarrior project view
+- `49.239` — Taskwarrior natural-language task creation
+- `49.240` — Taskwarrior task editing
+- `49.241` — Taskwarrior completion
+- `49.242` — Taskwarrior bulk-action safeguards
+- `49.243` — task versus executable workflow UI
+- `49.244` — OS task policy overview
+- `49.245` — policy list
+- `49.246` — policy detail
+- `49.247` — policy decision inspector
+- `49.248` — policy match trace
+- `49.249` — policy explanation
+- `49.250` — policy conflict view
+- `49.251` — policy simulation
+- `49.252` — policy dry-run
+- `49.253` — policy diff
+- `49.254` — policy editor boundary
+- `49.255` — policy validation UI
+- `49.256` — policy deployment UI
+- `49.257` — policy rollback UI
+- `49.258` — break-glass UI
+- `49.259` — break-glass warnings
+- `49.260` — policy version history
+- `49.261` — context awareness overview
+- `49.262` — context snapshot inspector
+- `49.263` — context source inspector
+- `49.264` — context provenance view
+- `49.265` — context freshness view
+- `49.266` — context gaps view
+- `49.267` — context conflicts view
+- `49.268` — context relevance view
+- `49.269` — context trust taint view
+- `49.270` — context anomaly view
+- `49.271` — context coherence view
+- `49.272` — context projection view
+- `49.273` — show why this context
+- `49.274` — show why not this context
+- `49.275` — operator session context
+- `49.276` — cwd project context
+- `49.277` — active task context
+- `49.278` — active workflow context
+- `49.279` — recent referent context
+- `49.280` — protected resource context
+- `49.281` — data-flow context
+- `49.282` — external destination context
+- `49.283` — maintenance context
+- `49.284` — diagnostics center
+- `49.285` — diagnostic bundle builder
+- `49.286` — secret-safe diagnostic export
+- `49.287` — system report
+- `49.288` — support bundle preview
+- `49.289` — settings foundation
+- `49.290` — GUI preferences
+- `49.291` — appearance preferences
+- `49.292` — density preferences
+- `49.293` — notification preferences
+- `49.294` — semantic-provider preferences
+- `49.295` — safe-mode preferences
+- `49.296` — privacy preferences
+- `49.297` — policy settings boundary
+- `49.298` — provider status page
+- `49.299` — provider capability page
+- `49.300` — provider health page
+- `49.301` — integration status page
+- `49.302` — Rebuntu component status
+- `49.303` — version information
+- `49.304` — build information
+- `49.305` — runtime environment information
+- `49.306` — developer mode
+- `49.307` — developer diagnostics
+- `49.308` — event inspector
+- `49.309` — IPC inspector
+- `49.310` — typed intent inspector
+- `49.311` — schema inspector
+- `49.312` — performance inspector
+- `49.313` — render performance
+- `49.314` — event throughput
+- `49.315` — large-list virtualization
+- `49.316` — timeline virtualization
+- `49.317` — log virtualization
+- `49.318` — graph virtualization
+- `49.319` — process-list virtualization
+- `49.320` — package-list virtualization
+- `49.321` — search-result virtualization
+- `49.322` — incremental model updates
+- `49.323` — async provider queries
+- `49.324` — request cancellation
+- `49.325` — backpressure
+- `49.326` — debounce
+- `49.327` — coalescing
+- `49.328` — rate limiting
+- `49.329` — UI state store
+- `49.330` — authoritative versus presentation state
+- `49.331` — snapshot versioning
+- `49.332` — optimistic UI prohibition for consequential state
+- `49.333` — safe optimistic UI for presentation-only state
+- `49.334` — state invalidation
+- `49.335` — state refresh
+- `49.336` — manual refresh
+- `49.337` — automatic refresh
+- `49.338` — fresh observation before action
+- `49.339` — TOCTOU handling
+- `49.340` — plan invalidation UI
+- `49.341` — confirmation invalidation UI
+- `49.342` — authorization invalidation UI
+- `49.343` — target change detection
+- `49.344` — destination change detection
+- `49.345` — requester change detection
+- `49.346` — cross-window state consistency
+- `49.347` — cross-view state consistency
+- `49.348` — IPC architecture
+- `49.349` — GUI to control-plane IPC
+- `49.350` — GUI to search IPC
+- `49.351` — GUI to timeline IPC
+- `49.352` — GUI to graph IPC
+- `49.353` — GUI to workflow IPC
+- `49.354` — GUI to context IPC
+- `49.355` — GUI to policy IPC
+- `49.356` — GUI to ask IPC
+- `49.357` — typed IPC schemas
+- `49.358` — IPC versioning
+- `49.359` — IPC authentication
+- `49.360` — IPC authorization
+- `49.361` — IPC disconnect handling
+- `49.362` — IPC reconnect
+- `49.363` — IPC timeout
+- `49.364` — IPC cancellation
+- `49.365` — IPC malformed-message handling
+- `49.366` — privilege separation
+- `49.367` — polkit integration boundary
+- `49.368` — narrow privileged helper boundary
+- `49.369` — no GUI root execution
+- `49.370` — no arbitrary shell strings
+- `49.371` — terminal embedding decision
+- `49.372` — terminal launch integration
+- `49.373` — console launch integration
+- `49.374` — shell launch integration
+- `49.375` — external editor integration
+- `49.376` — file manager integration
+- `49.377` — browser integration
+- `49.378` — clipboard integration
+- `49.379` — clipboard secret safeguards
+- `49.380` — drag and drop
+- `49.381` — drag-drop trust boundary
+- `49.382` — file picker
+- `49.383` — file content trust boundary
+- `49.384` — untrusted text rendering
+- `49.385` — terminal escape sanitization
+- `49.386` — ANSI sanitization
+- `49.387` — control character sanitization
+- `49.388` — bidi text safety
+- `49.389` — homoglyph awareness
+- `49.390` — URL display safety
+- `49.391` — external link confirmation policy
+- `49.392` — prompt injection display boundary
+- `49.393` — model text rendering safety
+- `49.394` — Markdown rendering boundary
+- `49.395` — HTML rendering prohibition or sandbox
+- `49.396` — rich text sanitization
+- `49.397` — notification spoofing resistance
+- `49.398` — authorization dialog spoofing resistance
+- `49.399` — clickjacking resistance
+- `49.400` — confused deputy resistance
+- `49.401` — stale confirmation resistance
+- `49.402` — confirmation exact-plan binding
+- `49.403` — destructive-action presentation
+- `49.404` — high-risk action presentation
+- `49.405` — unexpected-context action presentation
+- `49.406` — justification-required presentation
+- `49.407` — policy-denied presentation
+- `49.408` — secret access presentation
+- `49.409` — network egress presentation
+- `49.410` — new listener presentation
+- `49.411` — external data export presentation
+- `49.412` — resource exhaustion presentation
+- `49.413` — fork-bomb-equivalent task presentation
+- `49.414` — boot-critical action presentation
+- `49.415` — storage-destructive action presentation
+- `49.416` — firewall action presentation
+- `49.417` — SSH access action presentation
+- `49.418` — identity destructive action presentation
+- `49.419` — package removal presentation
+- `49.420` — service disable presentation
+- `49.421` — GPU reset presentation
+- `49.422` — reboot presentation
+- `49.423` — shutdown presentation
+- `49.424` — audit trail UI
+- `49.425` — Phase 39 GUI event recording
+- `49.426` — GUI action provenance
+- `49.427` — GUI navigation telemetry boundary
+- `49.428` — privacy-preserving metrics
+- `49.429` — no secret telemetry
+- `49.430` — operator feedback UI
+- `49.431` — false positive policy feedback
+- `49.432` — context anomaly feedback
+- `49.433` — intelligence feedback
+- `49.434` — adaptation feedback
+- `49.435` — help system
+- `49.436` — contextual help
+- `49.437` — keyboard shortcut help
+- `49.438` — operator handbook integration
+- `49.439` — security help
+- `49.440` — policy help
+- `49.441` — ask help
+- `49.442` — task help
+- `49.443` — workflow help
+- `49.444` — diagnostics help
+- `49.445` — first-run experience
+- `49.446` — first-run no destructive setup
+- `49.447` — capability discovery onboarding
+- `49.448` — provider discovery onboarding
+- `49.449` — missing provider guidance
+- `49.450` — permission guidance
+- `49.451` — desktop notification permissions
+- `49.452` — migration from Phase 25 Panel
+- `49.453` — Panel feature parity inventory
+- `49.454` — Panel capability mapping
+- `49.455` — Panel UI state migration
+- `49.456` — Panel retirement after parity
+- `49.457` — legacy UI compatibility
+- `49.458` — legacy CLI interoperability
+- `49.459` — shell panel command integration
+- `49.460` — launch command
+- `49.461` — rebuntu GUI command
+- `49.462` — system tray decision
+- `49.463` — background resident process decision
+- `49.464` — notification daemon boundary
+- `49.465` — startup autostart decision
+- `49.466` — desktop search integration boundary
+- `49.467` — GNOME integration
+- `49.468` — Wayland integration
+- `49.469` — X11 compatibility boundary
+- `49.470` — display server discovery
+- `49.471` — multi-seat boundary
+- `49.472` — remote desktop boundary
+- `49.473` — headless mode boundary
+- `49.474` — GUI unavailable fallback
+- `49.475` — CLI parity
+- `49.476` — ask CLI parity
+- `49.477` — Panel-to-GUI parity
+- `49.478` — workflow UI parity
+- `49.479` — policy UI parity
+- `49.480` — context UI parity
+- `49.481` — search UI parity
+- `49.482` — timeline UI parity
+- `49.483` — graph UI parity
+- `49.484` — resource UI parity
+- `49.485` — service UI parity
+- `49.486` — storage UI parity
+- `49.487` — network UI parity
+- `49.488` — GPU UI parity
+- `49.489` — package UI parity
+- `49.490` — configuration UI parity
+- `49.491` — identity UI parity
+- `49.492` — development UI parity
+- `49.493` — test architecture
+- `49.494` — GUI unit tests
+- `49.495` — UI state tests
+- `49.496` — IPC contract tests
+- `49.497` — snapshot tests boundary
+- `49.498` — accessibility tests
+- `49.499` — keyboard navigation tests
+- `49.500` — HiDPI tests
+- `49.501` — multi-monitor tests
+- `49.502` — theme tests
+- `49.503` — localization tests
+- `49.504` — render sanitization tests
+- `49.505` — authorization UI tests
+- `49.506` — stale-state tests
+- `49.507` — TOCTOU UI tests
+- `49.508` — provider outage tests
+- `49.509` — semantic outage tests
+- `49.510` — Gordon outage tests
+- `49.511` — BitNet outage tests
+- `49.512` — control-plane outage tests
+- `49.513` — timeline outage tests
+- `49.514` — graph outage tests
+- `49.515` — policy outage tests
+- `49.516` — context outage tests
+- `49.517` — large-data performance tests
+- `49.518` — event storm tests
+- `49.519` — log storm tests
+- `49.520` — process churn tests
+- `49.521` — network churn tests
+- `49.522` — GPU telemetry storm tests
+- `49.523` — window resize stress test
+- `49.524` — display hotplug test
+- `49.525` — sleep wake test
+- `49.526` — session restart test
+- `49.527` — GUI crash recovery test
+- `49.528` — control-plane restart test
+- `49.529` — IPC reconnect test
+- `49.530` — read-only end-to-end scenario
+- `49.531` — service restart end-to-end scenario
+- `49.532` — GPU inspection end-to-end scenario
+- `49.533` — storage inspection end-to-end scenario
+- `49.534` — network policy end-to-end scenario
+- `49.535` — package update end-to-end scenario
+- `49.536` — ask query end-to-end scenario
+- `49.537` — ask action end-to-end scenario
+- `49.538` — ask suspicious-action end-to-end scenario
+- `49.539` — task policy end-to-end scenario
+- `49.540` — task context end-to-end scenario
+- `49.541` — workflow end-to-end scenario
+- `49.542` — automation end-to-end scenario
+- `49.543` — rollback end-to-end scenario
+- `49.544` — partial failure end-to-end scenario
+- `49.545` — adversarial stale UI test
+- `49.546` — adversarial fake success state test
+- `49.547` — adversarial prompt injection test
+- `49.548` — adversarial ANSI escape test
+- `49.549` — adversarial bidi text test
+- `49.550` — adversarial malicious filename test
+- `49.551` — adversarial malicious service description test
+- `49.552` — adversarial malicious log text test
+- `49.553` — adversarial malicious model output test
+- `49.554` — adversarial click-through authorization test
+- `49.555` — adversarial confused-deputy test
+- `49.556` — adversarial direct shell bypass test
+- `49.557` — adversarial privileged-helper bypass test
+- `49.558` — adversarial Phase45 bypass test
+- `49.559` — adversarial Phase47 policy bypass test
+- `49.560` — adversarial Phase48 context bypass test
+- `49.561` — adversarial secret leakage test
+- `49.562` — adversarial cross-session leakage test
+- `49.563` — adversarial UI DoS test
+- `49.564` — adversarial event-flood test
+- `49.565` — adversarial malformed IPC test
+- `49.566` — adversarial oversized IPC test
+- `49.567` — adversarial reconnect race test
+- `49.568` — performance budget
+- `49.569` — startup latency budget
+- `49.570` — idle CPU budget
+- `49.571` — idle memory budget
+- `49.572` — render latency budget
+- `49.573` — interaction latency budget
+- `49.574` — telemetry update budget
+- `49.575` — large-view memory budget
+- `49.576` — semantic request UX latency
+- `49.577` — packaging finalization
+- `49.578` — desktop installation
+- `49.579` — uninstallation safety
+- `49.580` — configuration migration
+- `49.581` — GUI data migration
+- `49.582` — cache cleanup policy
+- `49.583` — no destructive cleanup invariant
+- `49.584` — documentation
+- `49.585` — architecture documentation
+- `49.586` — operator documentation
+- `49.587` — developer documentation
+- `49.588` — GUI contribution guide
+- `49.589` — visual language guide
+- `49.590` — accessibility guide
+- `49.591` — security guide
+- `49.592` — IPC guide
+- `49.593` — testing guide
+- `49.594` — repository source-tree normalization
+- `49.595` — existing GUI code migration
+- `49.596` — existing Panel code migration
+- `49.597` — duplicate dashboard audit
+- `49.598` — duplicate UI state audit
+- `49.599` — duplicate action path audit
+- `49.600` — duplicate authorization UI audit
+- `49.601` — duplicate ask UI audit
+- `49.602` — duplicate policy UI audit
+- `49.603` — duplicate context UI audit
+- `49.604` — direct UI-to-shell audit
+- `49.605` — direct UI-to-domain mutation audit
+- `49.606` — direct UI-to-privilege audit
+- `49.607` — stale Python GUI ownership audit
+- `49.608` — remaining Python boundary inventory
+- `49.609` — C++-first GUI contract audit
+- `49.610` — AGENTS GUI architecture contract
+- `49.611` — AGENTS presentation-not-authority contract
+- `49.612` — AGENTS typed-action contract
+- `49.613` — AGENTS accessibility contract
+- `49.614` — AGENTS visual-language contract
+- `49.615` — AGENTS secret-safe-rendering contract
+- `49.616` — recursive rediscovery pass one
+- `49.617` — resolve rediscovery pass one
+- `49.618` — recursive rediscovery pass two
+- `49.619` — resolve rediscovery pass two
+- `49.620` — adversarial UI authority audit
+- `49.621` — adversarial stale-state audit
+- `49.622` — adversarial rendering-security audit
+- `49.623` — adversarial accessibility audit
+- `49.624` — adversarial semantic-output audit
+- `49.625` — adversarial privilege audit
+- `49.626` — final native build
+- `49.627` — final unit tests
+- `49.628` — final integration tests
+- `49.629` — final GUI tests
+- `49.630` — final accessibility tests
+- `49.631` — final keyboard-only test
+- `49.632` — final multi-monitor HiDPI test
+- `49.633` — final end-to-end suite
+- `49.634` — final adversarial suite
+- `49.635` — final performance validation
+- `49.636` — final packaging validation
+- `49.637` — final desktop integration validation
+- `49.638` — final source-tree audit
+- `49.639` — final production call-graph trace
+- `49.640` — final UI action-path trace
+- `49.641` — final authority graph
+- `49.642` — final remaining Python inventory
+- `49.643` — final fixed-point rediscovery
+- `49.644` — Phase 49 closure and future handoff

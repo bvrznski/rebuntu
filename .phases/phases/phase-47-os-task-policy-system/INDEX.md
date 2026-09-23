@@ -1,0 +1,588 @@
+# Phase 47 Index
+
+## Normative architecture
+- `architecture/01-system-boundary.md`
+- `architecture/02-task-model.md`
+- `architecture/03-policy-model.md`
+- `architecture/04-contextual-policy.md`
+- `architecture/05-capability-dataflow.md`
+- `architecture/06-lifecycle.md`
+- `architecture/07-delegation.md`
+- `architecture/08-taskwarrior-boundary.md`
+- `architecture/09-policy-language.md`
+- `architecture/10-safety-recovery.md`
+- `architecture/11-cross-phase-integration.md`
+- `architecture/12-closure.md`
+
+## Full executable prompts
+- `47.0` — Foundation and repository archaeology
+- `47.1` — Existing task-policy inventory
+- `47.2` — Existing authorization-rule inventory
+- `47.3` — Existing safety-gate inventory
+- `47.4` — Existing workflow-policy inventory
+- `47.5` — Existing semantic-execution-policy inventory
+- `47.6` — Canonical OS task policy architecture
+- `47.7` — C++-first deterministic policy runtime
+- `47.8` — Task strong types
+- `47.9` — Task identity
+- `47.10` — Task origin
+- `47.11` — Task requester
+- `47.12` — Task delegation chain
+- `47.13` — Task context
+- `47.14` — Task scope
+- `47.15` — Task target
+- `47.16` — Task capability requirements
+- `47.17` — Task resource requirements
+- `47.18` — Task data-flow effects
+- `47.19` — Task risk metadata
+- `47.20` — Task reversibility metadata
+- `47.21` — Task verification requirements
+- `47.22` — Task provenance
+- `47.23` — Task freshness
+- `47.24` — Task lifecycle
+- `47.25` — Task intent versus task instance
+- `47.26` — Task definition versus execution
+- `47.27` — Task plan linkage
+- `47.28` — Task outcome linkage
+- `47.29` — Read-only task class
+- `47.30` — Mutating task class
+- `47.31` — Interactive task class
+- `47.32` — Scheduled task class
+- `47.33` — Recurring task class
+- `47.34` — Conditional task class
+- `47.35` — Workflow task class
+- `47.36` — Automation task class
+- `47.37` — Semantic-originated task class
+- `47.38` — Agent-originated task class
+- `47.39` — System-originated task class
+- `47.40` — Maintenance task class
+- `47.41` — Emergency task class
+- `47.42` — Policy strong types
+- `47.43` — Policy identity
+- `47.44` — Policy version
+- `47.45` — Policy provenance
+- `47.46` — Policy scope
+- `47.47` — Policy selector
+- `47.48` — Policy condition
+- `47.49` — Policy effect
+- `47.50` — Policy obligation
+- `47.51` — Policy priority
+- `47.52` — Policy precedence
+- `47.53` — Policy activation
+- `47.54` — Policy expiry
+- `47.55` — Policy enable disable
+- `47.56` — Policy inheritance
+- `47.57` — Policy composition
+- `47.58` — Policy conflict detection
+- `47.59` — Policy conflict resolution
+- `47.60` — Explicit deny semantics
+- `47.61` — Explicit allow semantics
+- `47.62` — Default policy semantics
+- `47.63` — UNKNOWN policy semantics
+- `47.64` — Missing-context semantics
+- `47.65` — Require clarification effect
+- `47.66` — Require justification effect
+- `47.67` — Require confirmation effect
+- `47.68` — Require authorization effect
+- `47.69` — Require stronger authorization effect
+- `47.70` — Require advisory review effect
+- `47.71` — Restrict scope effect
+- `47.72` — Require sandbox effect
+- `47.73` — Require resource limit effect
+- `47.74` — Require fresh observation effect
+- `47.75` — Require rollback effect
+- `47.76` — Require verification effect
+- `47.77` — Require operator presence effect
+- `47.78` — Require maintenance window effect
+- `47.79` — Policy decision schema
+- `47.80` — Policy decision provenance
+- `47.81` — Policy decision explanation
+- `47.82` — Policy decision scope binding
+- `47.83` — Policy decision plan binding
+- `47.84` — Policy decision target binding
+- `47.85` — Policy decision requester binding
+- `47.86` — Policy decision destination binding
+- `47.87` — Policy decision freshness
+- `47.88` — Policy decision expiry
+- `47.89` — Policy invalidation
+- `47.90` — Policy re-evaluation
+- `47.91` — Material plan-change invalidation
+- `47.92` — Material context-change invalidation
+- `47.93` — Target-change invalidation
+- `47.94` — Destination-change invalidation
+- `47.95` — Requester-change invalidation
+- `47.96` — State-drift invalidation
+- `47.97` — Contextual policy foundation
+- `47.98` — Phase 46 contextual legitimacy integration
+- `47.99` — Current-state policy
+- `47.100` — System-health policy
+- `47.101` — Active-project policy
+- `47.102` — Active-workflow policy
+- `47.103` — Recent-action policy
+- `47.104` — Known-service policy
+- `47.105` — Known-endpoint policy
+- `47.106` — Known-data-flow policy
+- `47.107` — Maintenance-state policy
+- `47.108` — Time-window policy
+- `47.109` — Location-independent policy boundary
+- `47.110` — Session-context policy
+- `47.111` — Interactive versus unattended policy
+- `47.112` — Human-present policy
+- `47.113` — Background automation policy
+- `47.114` — Capability policy foundation
+- `47.115` — Capability allowlist
+- `47.116` — Capability denylist
+- `47.117` — Capability combination policy
+- `47.118` — Cross-domain capability policy
+- `47.119` — Privilege capability policy
+- `47.120` — Persistence capability policy
+- `47.121` — Network listener capability policy
+- `47.122` — Network egress capability policy
+- `47.123` — Data access capability policy
+- `47.124` — Sensitive data capability policy
+- `47.125` — Credential capability policy
+- `47.126` — Secret capability policy
+- `47.127` — Process creation capability policy
+- `47.128` — Resource amplification capability policy
+- `47.129` — Storage mutation capability policy
+- `47.130` — Boot mutation capability policy
+- `47.131` — Security-control capability policy
+- `47.132` — Identity mutation capability policy
+- `47.133` — Package mutation capability policy
+- `47.134` — Service mutation capability policy
+- `47.135` — GPU mutation capability policy
+- `47.136` — Configuration mutation capability policy
+- `47.137` — Workflow creation capability policy
+- `47.138` — Scheduled persistence capability policy
+- `47.139` — Data-flow policy foundation
+- `47.140` — Data source model
+- `47.141` — Data sink model
+- `47.142` — Data classification model
+- `47.143` — Destination trust model
+- `47.144` — Local destination policy
+- `47.145` — LAN destination policy
+- `47.146` — Known remote destination policy
+- `47.147` — Unknown remote destination policy
+- `47.148` — Sensitive source plus egress policy
+- `47.149` — Secret source plus egress deny
+- `47.150` — Logs plus external destination policy
+- `47.151` — History plus external destination policy
+- `47.152` — Environment plus external destination policy
+- `47.153` — Home-data exposure policy
+- `47.154` — Bulk data export policy
+- `47.155` — Persistence plus egress policy
+- `47.156` — Privilege plus persistence policy
+- `47.157` — Privilege plus egress policy
+- `47.158` — Cross-step data-flow composition
+- `47.159` — Cross-task data-flow composition
+- `47.160` — Task splitting detection
+- `47.161` — Policy evasion by decomposition
+- `47.162` — Resource policy foundation
+- `47.163` — CPU budget policy
+- `47.164` — Memory budget policy
+- `47.165` — GPU budget policy
+- `47.166` — VRAM budget policy
+- `47.167` — Storage I O budget policy
+- `47.168` — Network budget policy
+- `47.169` — Process count budget policy
+- `47.170` — Execution time budget policy
+- `47.171` — Output size budget policy
+- `47.172` — Concurrency budget policy
+- `47.173` — Rate policy
+- `47.174` — Per-user task budget
+- `47.175` — Per-session task budget
+- `47.176` — Per-workflow task budget
+- `47.177` — Per-capability task budget
+- `47.178` — Resource exhaustion prevention
+- `47.179` — Fork-bomb effect policy
+- `47.180` — Unbounded recursion policy
+- `47.181` — Unbounded retry policy
+- `47.182` — Unbounded fan-out policy
+- `47.183` — Phase 29 workload policy integration
+- `47.184` — Phase 30 resource policy integration
+- `47.185` — Protected-resource policy foundation
+- `47.186` — Boot protection policy
+- `47.187` — Root filesystem protection policy
+- `47.188` — Home protection policy
+- `47.189` — Storage integrity policy
+- `47.190` — Network maintenance policy
+- `47.191` — SSH maintenance policy
+- `47.192` — Graphical session policy
+- `47.193` — Security-control protection policy
+- `47.194` — Package trust policy
+- `47.195` — Identity access policy
+- `47.196` — Rebuntu control-plane protection policy
+- `47.197` — Phase 37 secret protection policy
+- `47.198` — Emergency override model
+- `47.199` — Break-glass policy
+- `47.200` — Break-glass authorization
+- `47.201` — Break-glass audit
+- `47.202` — Break-glass expiry
+- `47.203` — Break-glass scope
+- `47.204` — Break-glass recovery
+- `47.205` — No semantic break-glass authority
+- `47.206` — Delegation policy foundation
+- `47.207` — Human delegation
+- `47.208` — ask delegation
+- `47.209` — Phase 41 workflow delegation
+- `47.210` — Automation delegation
+- `47.211` — Service delegation
+- `47.212` — Coding-agent delegation
+- `47.213` — BitNet origin handling
+- `47.214` — Gordon origin handling
+- `47.215` — Semantic provider origin handling
+- `47.216` — Delegated authority narrowing
+- `47.217` — No authority amplification
+- `47.218` — Delegation depth
+- `47.219` — Delegation expiry
+- `47.220` — Delegation revocation
+- `47.221` — Delegation provenance
+- `47.222` — Authority laundering detection
+- `47.223` — Context laundering detection
+- `47.224` — Task laundering detection
+- `47.225` — Phase 45 authorization integration
+- `47.226` — Phase 45 plan policy hook
+- `47.227` — Pre-plan policy evaluation
+- `47.228` — Post-plan policy evaluation
+- `47.229` — Pre-authorization policy evaluation
+- `47.230` — Pre-execution policy recheck
+- `47.231` — Post-execution policy recording
+- `47.232` — Verification policy
+- `47.233` — Rollback policy
+- `47.234` — Compensation policy
+- `47.235` — Phase 39 task event integration
+- `47.236` — Phase 39 policy event integration
+- `47.237` — Phase 42 task graph integration
+- `47.238` — Phase 42 policy relation integration
+- `47.239` — Phase 43 policy explanation integration
+- `47.240` — Phase 43 advisory integration
+- `47.241` — Phase 44 adaptive task policy
+- `47.242` — Phase 46 ask task policy
+- `47.243` — Phase 40 command task mapping
+- `47.244` — Phase 41 workflow task mapping
+- `47.245` — Taskwarrior provider discovery
+- `47.246` — Taskwarrior record model
+- `47.247` — Taskwarrior human-task boundary
+- `47.248` — Taskwarrior OS-task bridge
+- `47.249` — Taskwarrior executable-task opt-in
+- `47.250` — Taskwarrior project policy
+- `47.251` — Taskwarrior tag policy
+- `47.252` — Taskwarrior priority mapping
+- `47.253` — Taskwarrior due-date mapping
+- `47.254` — Taskwarrior recurring-task boundary
+- `47.255` — Taskwarrior natural-language integration
+- `47.256` — Taskwarrior bulk mutation policy
+- `47.257` — Taskwarrior deletion policy
+- `47.258` — Taskwarrior completion policy
+- `47.259` — Task versus workflow distinction
+- `47.260` — Task versus command distinction
+- `47.261` — Task versus automation distinction
+- `47.262` — Task versus recommendation distinction
+- `47.263` — Task versus policy distinction
+- `47.264` — Policy language foundation
+- `47.265` — Typed policy schema
+- `47.266` — Policy parser
+- `47.267` — Policy schema validation
+- `47.268` — Policy static validation
+- `47.269` — Policy semantic validation
+- `47.270` — Policy reference validation
+- `47.271` — Policy capability validation
+- `47.272` — Policy target validation
+- `47.273` — Policy conflict linting
+- `47.274` — Policy unreachable-rule detection
+- `47.275` — Policy shadowing detection
+- `47.276` — Policy redundancy detection
+- `47.277` — Policy unsafe-default detection
+- `47.278` — Policy executable-code prohibition
+- `47.279` — Policy shell-execution prohibition
+- `47.280` — Policy include import boundary
+- `47.281` — Policy variable boundary
+- `47.282` — Policy parameterization
+- `47.283` — Policy templates
+- `47.284` — Policy profiles
+- `47.285` — System policy
+- `47.286` — User policy
+- `47.287` — Session policy
+- `47.288` — Project policy
+- `47.289` — Workflow policy
+- `47.290` — Service policy
+- `47.291` — Capability policy
+- `47.292` — Domain policy
+- `47.293` — Emergency policy
+- `47.294` — Policy merge semantics
+- `47.295` — Policy evaluation engine
+- `47.296` — Deterministic evaluator
+- `47.297` — Policy decision trace
+- `47.298` — Policy explainability
+- `47.299` — Why allowed explanation
+- `47.300` — Why denied explanation
+- `47.301` — Why justification required explanation
+- `47.302` — Why confirmation required explanation
+- `47.303` — Why authorization required explanation
+- `47.304` — Which policy matched query
+- `47.305` — Policy simulation
+- `47.306` — Policy dry-run
+- `47.307` — Policy diff
+- `47.308` — Policy change preview
+- `47.309` — Policy test harness
+- `47.310` — Policy unit-test format
+- `47.311` — Policy deployment
+- `47.312` — Policy atomic reload
+- `47.313` — Policy rollback
+- `47.314` — Policy backup boundary
+- `47.315` — Policy migration
+- `47.316` — Policy version compatibility
+- `47.317` — Policy hot reload
+- `47.318` — Policy reload failure
+- `47.319` — Policy corruption detection
+- `47.320` — Policy corruption recovery
+- `47.321` — Fail-closed versus degraded behavior
+- `47.322` — Read-only degraded mode
+- `47.323` — Safe mode
+- `47.324` — Emergency quiescence
+- `47.325` — Policy service lifecycle
+- `47.326` — Policy daemon boundary
+- `47.327` — Policy IPC
+- `47.328` — Policy IPC schema
+- `47.329` — Policy client API
+- `47.330` — Policy capability discovery
+- `47.331` — Policy cache
+- `47.332` — Policy cache invalidation
+- `47.333` — Policy cache freshness
+- `47.334` — Policy performance
+- `47.335` — Policy latency budget
+- `47.336` — Policy memory bounds
+- `47.337` — Policy concurrency
+- `47.338` — Policy thread safety
+- `47.339` — Policy cancellation
+- `47.340` — Policy timeout
+- `47.341` — Policy backpressure
+- `47.342` — Policy observability
+- `47.343` — Policy metrics
+- `47.344` — Policy tracing
+- `47.345` — Policy audit log
+- `47.346` — Secret-safe policy logs
+- `47.347` — Policy decision history
+- `47.348` — Policy statistics
+- `47.349` — Policy denial statistics
+- `47.350` — Policy clarification statistics
+- `47.351` — Policy false-positive feedback
+- `47.352` — Policy false-negative feedback
+- `47.353` — Feedback does not override policy
+- `47.354` — Policy calibration boundary
+- `47.355` — Semantic policy suggestion boundary
+- `47.356` — BitNet policy explanation boundary
+- `47.357` — Gordon policy consultation boundary
+- `47.358` — Gordon policy recommendation boundary
+- `47.359` — Gordon cannot grant policy exception
+- `47.360` — BitNet cannot grant policy exception
+- `47.361` — Model output cannot alter active policy
+- `47.362` — Natural language policy-edit request
+- `47.363` — Policy-edit authorization
+- `47.364` — Policy-edit contextual legitimacy
+- `47.365` — Policy-edit plan preview
+- `47.366` — Policy-edit confirmation
+- `47.367` — Policy-edit rollback
+- `47.368` — No silent self-modifying policy
+- `47.369` — Coding-agent policy
+- `47.370` — Agent filesystem policy
+- `47.371` — Agent process policy
+- `47.372` — Agent network policy
+- `47.373` — Agent package policy
+- `47.374` — Agent service policy
+- `47.375` — Agent repository policy
+- `47.376` — Agent destructive-operation policy
+- `47.377` — Agent secret-access policy
+- `47.378` — Agent external-upload policy
+- `47.379` — Agent shell boundary
+- `47.380` — Automation policy
+- `47.381` — Scheduled task policy
+- `47.382` — Recurring task policy
+- `47.383` — Condition-watch policy
+- `47.384` — Unattended mutation policy
+- `47.385` — Persistent automation policy
+- `47.386` — Automation external communication policy
+- `47.387` — Automation secret policy
+- `47.388` — Workflow policy
+- `47.389` — Workflow child-task policy
+- `47.390` — Workflow authority inheritance
+- `47.391` — Workflow authority narrowing
+- `47.392` — Workflow fan-out policy
+- `47.393` — Workflow retry policy
+- `47.394` — Workflow compensation policy
+- `47.395` — Workflow dynamic-task policy
+- `47.396` — Cross-workflow policy
+- `47.397` — Cross-session policy
+- `47.398` — Cross-user policy
+- `47.399` — Multi-user isolation
+- `47.400` — Identity transition policy
+- `47.401` — sudo boundary policy
+- `47.402` — polkit boundary policy
+- `47.403` — privileged helper policy
+- `47.404` — D-Bus action policy
+- `47.405` — systemd action policy
+- `47.406` — network action policy
+- `47.407` — firewall action policy
+- `47.408` — storage action policy
+- `47.409` — package action policy
+- `47.410` — configuration action policy
+- `47.411` — GPU action policy
+- `47.412` — process action policy
+- `47.413` — service action policy
+- `47.414` — user identity action policy
+- `47.415` — development environment action policy
+- `47.416` — shell terminal action policy
+- `47.417` — Read-only inspection baseline policy
+- `47.418` — System diagnosis baseline policy
+- `47.419` — System repair policy
+- `47.420` — System optimization policy
+- `47.421` — System adaptation policy
+- `47.422` — System update policy
+- `47.423` — Kernel update policy
+- `47.424` — Driver update policy
+- `47.425` — Reboot policy
+- `47.426` — Shutdown policy
+- `47.427` — Suspend policy
+- `47.428` — Filesystem mount policy
+- `47.429` — Filesystem unmount policy
+- `47.430` — LUKS policy
+- `47.431` — RAID policy
+- `47.432` — Network interface policy
+- `47.433` — Route policy
+- `47.434` — DNS policy
+- `47.435` — Firewall rule policy
+- `47.436` — SSH policy
+- `47.437` — Container policy
+- `47.438` — Docker policy
+- `47.439` — Model server policy
+- `47.440` — AI inference policy
+- `47.441` — GPU power policy
+- `47.442` — GPU reset policy
+- `47.443` — Process termination policy
+- `47.444` — Service restart policy
+- `47.445` — Package install policy
+- `47.446` — Package removal policy
+- `47.447` — Autoremove policy
+- `47.448` — Configuration edit policy
+- `47.449` — User creation policy
+- `47.450` — User deletion policy
+- `47.451` — Credential rotation task policy
+- `47.452` — Secret material boundary tests
+- `47.453` — CLI policy inspect
+- `47.454` — CLI task inspect
+- `47.455` — CLI policy evaluate
+- `47.456` — CLI policy explain
+- `47.457` — CLI policy simulate
+- `47.458` — CLI policy diff
+- `47.459` — CLI policy validate
+- `47.460` — CLI task plan
+- `47.461` — CLI task authorize boundary
+- `47.462` — CLI task execute boundary
+- `47.463` — CLI task history
+- `47.464` — Phase 25 Panel policy overview
+- `47.465` — Panel active task view
+- `47.466` — Panel policy decision view
+- `47.467` — Panel policy explanation view
+- `47.468` — Panel task history view
+- `47.469` — Panel policy editor boundary
+- `47.470` — Panel policy simulation
+- `47.471` — Panel break-glass surface
+- `47.472` — Operator notification policy
+- `47.473` — Policy denial UX
+- `47.474` — Policy clarification UX
+- `47.475` — Policy justification UX
+- `47.476` — Policy confirmation UX
+- `47.477` — Policy conflict UX
+- `47.478` — Policy UNKNOWN UX
+- `47.479` — Policy documentation
+- `47.480` — Task policy documentation
+- `47.481` — Policy authoring guide
+- `47.482` — Policy security guide
+- `47.483` — Policy troubleshooting
+- `47.484` — Taskwarrior policy documentation
+- `47.485` — Agent policy documentation
+- `47.486` — Automation policy documentation
+- `47.487` — End-to-end read-only task
+- `47.488` — End-to-end mutating task
+- `47.489` — End-to-end scheduled task
+- `47.490` — End-to-end workflow task
+- `47.491` — End-to-end ask-originated task
+- `47.492` — End-to-end Taskwarrior task
+- `47.493` — End-to-end agent task
+- `47.494` — End-to-end denied task
+- `47.495` — End-to-end justification task
+- `47.496` — End-to-end break-glass task
+- `47.497` — End-to-end rollback task
+- `47.498` — Fork bomb policy adversarial test
+- `47.499` — Natural-language fork bomb policy test
+- `47.500` — Port plus log export policy test
+- `47.501` — Secret plus network egress test
+- `47.502` — Task splitting exfiltration test
+- `47.503` — Workflow decomposition bypass test
+- `47.504` — Delegation laundering test
+- `47.505` — Context laundering test
+- `47.506` — Authority laundering test
+- `47.507` — Stale policy decision test
+- `47.508` — Changed-plan policy test
+- `47.509` — Changed-destination policy test
+- `47.510` — Changed-requester policy test
+- `47.511` — Policy conflict adversarial test
+- `47.512` — Policy injection test
+- `47.513` — Malformed policy test
+- `47.514` — Policy DoS test
+- `47.515` — Semantic policy manipulation test
+- `47.516` — Gordon exception manipulation test
+- `47.517` — BitNet exception manipulation test
+- `47.518` — Agent bypass test
+- `47.519` — Direct shell bypass test
+- `47.520` — Direct privileged-helper bypass test
+- `47.521` — Phase 45 bypass test
+- `47.522` — Fail-open adversarial test
+- `47.523` — Crash restart policy test
+- `47.524` — Reboot policy continuity test
+- `47.525` — Concurrent policy reload test
+- `47.526` — Concurrent task evaluation test
+- `47.527` — TOCTOU policy test
+- `47.528` — Performance regression test
+- `47.529` — Repository source-tree normalization
+- `47.530` — Existing policy code migration
+- `47.531` — Duplicate policy engine audit
+- `47.532` — Duplicate task gate audit
+- `47.533` — Duplicate authorization heuristic audit
+- `47.534` — Duplicate safety rule audit
+- `47.535` — Direct domain policy bypass audit
+- `47.536` — Direct workflow policy bypass audit
+- `47.537` — Direct ask policy bypass audit
+- `47.538` — Direct automation policy bypass audit
+- `47.539` — Stale Python policy ownership audit
+- `47.540` — Remaining Python boundary inventory
+- `47.541` — C++-first policy contract audit
+- `47.542` — AGENTS.md task-policy contract
+- `47.543` — AGENTS.md no-authority-amplification contract
+- `47.544` — AGENTS.md data-flow policy contract
+- `47.545` — AGENTS.md fail-safe policy contract
+- `47.546` — Recursive rediscovery pass one
+- `47.547` — Resolve rediscovery pass one
+- `47.548` — Recursive rediscovery pass two
+- `47.549` — Resolve rediscovery pass two
+- `47.550` — Adversarial policy-bypass audit
+- `47.551` — Adversarial delegation audit
+- `47.552` — Adversarial task-splitting audit
+- `47.553` — Adversarial data-flow audit
+- `47.554` — Adversarial resource-exhaustion audit
+- `47.555` — Adversarial semantic-influence audit
+- `47.556` — Adversarial fail-open audit
+- `47.557` — Final native build
+- `47.558` — Final unit tests
+- `47.559` — Final integration tests
+- `47.560` — Final end-to-end tests
+- `47.561` — Final adversarial suite
+- `47.562` — Final performance validation
+- `47.563` — Final policy corpus validation
+- `47.564` — Final source-tree audit
+- `47.565` — Final production call-graph trace
+- `47.566` — Final policy decision-path trace
+- `47.567` — Final authority graph
+- `47.568` — Final remaining Python inventory
+- `47.569` — Final fixed-point rediscovery
+- `47.570` — Phase 47 closure and future handoff

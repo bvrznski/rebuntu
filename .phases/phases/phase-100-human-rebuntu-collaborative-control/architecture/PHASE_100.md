@@ -1,0 +1,26 @@
+# Phase 100 — Human–Rebuntu Collaborative Control System
+
+- 100.0: Bootstrap and repository reality audit
+- 100.1: Canonical ontology and identity
+- 100.2: Definitions and lifecycle
+- 100.3: State ownership and persistence
+- 100.4: Observation evidence provenance freshness
+- 100.5: UNKNOWN and conflicting evidence
+- 100.6: Capability and affordance integration
+- 100.7: Goal and desired-state integration
+- 100.8: Planning and operation integration
+- 100.9: Constraints and invariants
+- 100.10: Resources and topology
+- 100.11: Policy authorization
+- 100.12: Mandatory security
+- 100.13: Privilege and native providers
+- 100.14: Failure timeout cancellation partial effects
+- 100.15: Crash restart reconciliation recovery
+- 100.16: Concurrency races replacement TOCTOU
+- 100.17: Boundedness and budgets
+- 100.18: CLI GUI natural-language integration
+- 100.19: Timeline graph context integration
+- 100.20: Distributed and associated systems
+- 100.21: Python model shell authority audit
+- 100.22: Adversarial build runtime migration audit
+- 100.23: Documentation rediscovery and closure

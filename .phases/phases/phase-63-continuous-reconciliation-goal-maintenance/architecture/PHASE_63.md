@@ -1,0 +1,26 @@
+# Phase 63 — Continuous Reconciliation & Goal Maintenance System
+
+- 63.0: Bootstrap and repository reality audit
+- 63.1: Canonical ontology and identity
+- 63.2: Definitions and lifecycle
+- 63.3: State ownership and persistence
+- 63.4: Observation evidence provenance freshness
+- 63.5: UNKNOWN and conflicting evidence
+- 63.6: Capability and affordance integration
+- 63.7: Goal and desired-state integration
+- 63.8: Planning and operation integration
+- 63.9: Constraints and invariants
+- 63.10: Resources and topology
+- 63.11: Policy authorization
+- 63.12: Mandatory security
+- 63.13: Privilege and native providers
+- 63.14: Failure timeout cancellation partial effects
+- 63.15: Crash restart reconciliation recovery
+- 63.16: Concurrency races replacement TOCTOU
+- 63.17: Boundedness and budgets
+- 63.18: CLI GUI natural-language integration
+- 63.19: Timeline graph context integration
+- 63.20: Distributed and associated systems
+- 63.21: Python model shell authority audit
+- 63.22: Adversarial build runtime migration audit
+- 63.23: Documentation rediscovery and closure

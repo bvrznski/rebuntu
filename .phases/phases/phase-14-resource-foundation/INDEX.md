@@ -1,0 +1,21 @@
+# Prompt Index
+
+- `14.0.md` — Rebuntu --- Phase 14.0 --- Resource Architecture
+- `14.1.md` — Rebuntu --- Phase 14.1 --- CPU Discovery & Control
+- `14.2.md` — Rebuntu --- Phase 14.2 --- CPU Scheduling / Affinity
+- `14.3.md` — Rebuntu --- Phase 14.3 --- Memory
+- `14.4.md` — Rebuntu --- Phase 14.4 --- cgroups
+- `14.5.md` — Rebuntu --- Phase 14.5 --- Process Priorities
+- `14.6.md` — Rebuntu --- Phase 14.6 --- I/O Scheduling
+- `14.7.md` — Rebuntu --- Phase 14.7 --- Storage Performance
+- `14.8.md` — Rebuntu --- Phase 14.8 --- GPU Discovery
+- `14.9.md` — Rebuntu --- Phase 14.9 --- GPU Selection / Assignment
+- `14.10.md` — Rebuntu --- Phase 14.10 --- GPU Power / Clock Policy
+- `14.11.md` — Rebuntu --- Phase 14.11 --- Thermal Management
+- `14.12.md` — Rebuntu --- Phase 14.12 --- Power Management
+- `14.13.md` — Rebuntu --- Phase 14.13 --- Workload Detection
+- `14.14.md` — Rebuntu --- Phase 14.14 --- Resource Profiles
+- `14.15.md` — Rebuntu --- Phase 14.15 --- Resource Arbitration
+- `14.16.md` — Rebuntu --- Phase 14.16 --- Performance Observation
+- `14.17.md` — Rebuntu --- Phase 14.17 --- Benchmarking & Verification
+- `14.18.md` — Rebuntu --- Phase 14.18 --- Resource Control Integration Audit

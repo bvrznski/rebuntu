@@ -1,0 +1,26 @@
+# Phase 98 — Bounded Autonomous Operations System
+
+- 98.0: Bootstrap and repository reality audit
+- 98.1: Canonical ontology and identity
+- 98.2: Definitions and lifecycle
+- 98.3: State ownership and persistence
+- 98.4: Observation evidence provenance freshness
+- 98.5: UNKNOWN and conflicting evidence
+- 98.6: Capability and affordance integration
+- 98.7: Goal and desired-state integration
+- 98.8: Planning and operation integration
+- 98.9: Constraints and invariants
+- 98.10: Resources and topology
+- 98.11: Policy authorization
+- 98.12: Mandatory security
+- 98.13: Privilege and native providers
+- 98.14: Failure timeout cancellation partial effects
+- 98.15: Crash restart reconciliation recovery
+- 98.16: Concurrency races replacement TOCTOU
+- 98.17: Boundedness and budgets
+- 98.18: CLI GUI natural-language integration
+- 98.19: Timeline graph context integration
+- 98.20: Distributed and associated systems
+- 98.21: Python model shell authority audit
+- 98.22: Adversarial build runtime migration audit
+- 98.23: Documentation rediscovery and closure

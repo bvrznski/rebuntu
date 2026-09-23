@@ -1,0 +1,26 @@
+# Phase 91 — Uncertainty & Evidence Reasoning System
+
+- 91.0: Bootstrap and repository reality audit
+- 91.1: Canonical ontology and identity
+- 91.2: Definitions and lifecycle
+- 91.3: State ownership and persistence
+- 91.4: Observation evidence provenance freshness
+- 91.5: UNKNOWN and conflicting evidence
+- 91.6: Capability and affordance integration
+- 91.7: Goal and desired-state integration
+- 91.8: Planning and operation integration
+- 91.9: Constraints and invariants
+- 91.10: Resources and topology
+- 91.11: Policy authorization
+- 91.12: Mandatory security
+- 91.13: Privilege and native providers
+- 91.14: Failure timeout cancellation partial effects
+- 91.15: Crash restart reconciliation recovery
+- 91.16: Concurrency races replacement TOCTOU
+- 91.17: Boundedness and budgets
+- 91.18: CLI GUI natural-language integration
+- 91.19: Timeline graph context integration
+- 91.20: Distributed and associated systems
+- 91.21: Python model shell authority audit
+- 91.22: Adversarial build runtime migration audit
+- 91.23: Documentation rediscovery and closure

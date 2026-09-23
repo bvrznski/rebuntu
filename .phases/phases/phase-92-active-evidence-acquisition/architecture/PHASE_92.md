@@ -1,0 +1,26 @@
+# Phase 92 — Active Evidence Acquisition System
+
+- 92.0: Bootstrap and repository reality audit
+- 92.1: Canonical ontology and identity
+- 92.2: Definitions and lifecycle
+- 92.3: State ownership and persistence
+- 92.4: Observation evidence provenance freshness
+- 92.5: UNKNOWN and conflicting evidence
+- 92.6: Capability and affordance integration
+- 92.7: Goal and desired-state integration
+- 92.8: Planning and operation integration
+- 92.9: Constraints and invariants
+- 92.10: Resources and topology
+- 92.11: Policy authorization
+- 92.12: Mandatory security
+- 92.13: Privilege and native providers
+- 92.14: Failure timeout cancellation partial effects
+- 92.15: Crash restart reconciliation recovery
+- 92.16: Concurrency races replacement TOCTOU
+- 92.17: Boundedness and budgets
+- 92.18: CLI GUI natural-language integration
+- 92.19: Timeline graph context integration
+- 92.20: Distributed and associated systems
+- 92.21: Python model shell authority audit
+- 92.22: Adversarial build runtime migration audit
+- 92.23: Documentation rediscovery and closure

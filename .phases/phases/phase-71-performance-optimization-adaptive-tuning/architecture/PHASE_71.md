@@ -1,0 +1,26 @@
+# Phase 71 — Performance Optimization & Adaptive Tuning System
+
+- 71.0: Bootstrap and repository reality audit
+- 71.1: Canonical ontology and identity
+- 71.2: Definitions and lifecycle
+- 71.3: State ownership and persistence
+- 71.4: Observation evidence provenance freshness
+- 71.5: UNKNOWN and conflicting evidence
+- 71.6: Capability and affordance integration
+- 71.7: Goal and desired-state integration
+- 71.8: Planning and operation integration
+- 71.9: Constraints and invariants
+- 71.10: Resources and topology
+- 71.11: Policy authorization
+- 71.12: Mandatory security
+- 71.13: Privilege and native providers
+- 71.14: Failure timeout cancellation partial effects
+- 71.15: Crash restart reconciliation recovery
+- 71.16: Concurrency races replacement TOCTOU
+- 71.17: Boundedness and budgets
+- 71.18: CLI GUI natural-language integration
+- 71.19: Timeline graph context integration
+- 71.20: Distributed and associated systems
+- 71.21: Python model shell authority audit
+- 71.22: Adversarial build runtime migration audit
+- 71.23: Documentation rediscovery and closure

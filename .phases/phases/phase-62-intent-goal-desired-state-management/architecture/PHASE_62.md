@@ -1,0 +1,26 @@
+# Phase 62 — Intent, Goal & Desired-State Management System
+
+- 62.0: Bootstrap and repository reality audit
+- 62.1: Canonical ontology and identity
+- 62.2: Definitions and lifecycle
+- 62.3: State ownership and persistence
+- 62.4: Observation evidence provenance freshness
+- 62.5: UNKNOWN and conflicting evidence
+- 62.6: Capability and affordance integration
+- 62.7: Goal and desired-state integration
+- 62.8: Planning and operation integration
+- 62.9: Constraints and invariants
+- 62.10: Resources and topology
+- 62.11: Policy authorization
+- 62.12: Mandatory security
+- 62.13: Privilege and native providers
+- 62.14: Failure timeout cancellation partial effects
+- 62.15: Crash restart reconciliation recovery
+- 62.16: Concurrency races replacement TOCTOU
+- 62.17: Boundedness and budgets
+- 62.18: CLI GUI natural-language integration
+- 62.19: Timeline graph context integration
+- 62.20: Distributed and associated systems
+- 62.21: Python model shell authority audit
+- 62.22: Adversarial build runtime migration audit
+- 62.23: Documentation rediscovery and closure

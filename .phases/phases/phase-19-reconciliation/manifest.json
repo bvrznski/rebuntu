@@ -1,0 +1,104 @@
+{
+  "phase": 19,
+  "slug": "reconciliation",
+  "directory": "phase-19-reconciliation",
+  "prompt_count": 19,
+  "layout_version": 2,
+  "prompts": [
+    {
+      "file": "19.0.md",
+      "title": "Rebuntu --- Phase 19.0 --- Reconciliation Architecture",
+      "sha256": "152a02c7c603c6d2d52fd3f25fbb573600bb21dc9b3979edbbbf4cc2a5ec3a75"
+    },
+    {
+      "file": "19.1.md",
+      "title": "Rebuntu --- Phase 19.1 --- Desired State",
+      "sha256": "e5ff17275130b6c18e588a6930d7215755a3c65eb7f3d753dd3973c79ade0e43"
+    },
+    {
+      "file": "19.2.md",
+      "title": "Rebuntu --- Phase 19.2 --- Observed State",
+      "sha256": "7da10c8328f7095c6e6f671374ccfaef36d3c039e6fd4027edd8447b9567da94"
+    },
+    {
+      "file": "19.3.md",
+      "title": "Rebuntu --- Phase 19.3 --- State Comparison",
+      "sha256": "3027cf2f1c60d88b23d840ae0ab51bd919a5d3608b980980f3a44638084c9101"
+    },
+    {
+      "file": "19.4.md",
+      "title": "Rebuntu --- Phase 19.4 --- Drift",
+      "sha256": "0b42715b3b31594c80681a263f73ac12df11c72840d80c245f5d699952654e0c"
+    },
+    {
+      "file": "19.5.md",
+      "title": "Rebuntu --- Phase 19.5 --- Delta",
+      "sha256": "df727766e2a8497d1eb7e547f9946e1a750bee83ad928c180d3686fc4510a7e5"
+    },
+    {
+      "file": "19.6.md",
+      "title": "Rebuntu --- Phase 19.6 --- Reconciliation Planning",
+      "sha256": "7ac69ed0b3453dc286cd760994f1e30fb15619cd60b1e8f372363410871ffacd"
+    },
+    {
+      "file": "19.7.md",
+      "title": "Rebuntu --- Phase 19.7 --- Reconciliation Operations",
+      "sha256": "db71080281a1f80ecbd65922dbb61c366ac268f0791727745dd765791592370f"
+    },
+    {
+      "file": "19.8.md",
+      "title": "Rebuntu --- Phase 19.8 --- Idempotent Convergence",
+      "sha256": "c87702d3f402e84fb769f5c4aed6189d9af7d038652dcec25d8359507e4c3d53"
+    },
+    {
+      "file": "19.9.md",
+      "title": "Rebuntu --- Phase 19.9 --- Conflict Detection",
+      "sha256": "b4db31519fb7c108e78f5822accced898f75b74ecf7fc6b924705574c0a53bed"
+    },
+    {
+      "file": "19.10.md",
+      "title": "Rebuntu --- Phase 19.10 --- Policy Constraints",
+      "sha256": "700eec244c747c4dc45b878f0951696267ac03548223206667f2818505057151"
+    },
+    {
+      "file": "19.11.md",
+      "title": "Rebuntu --- Phase 19.11 --- Resource Constraints",
+      "sha256": "59c561d0c5c1bedd41a5c826e52c7826b0e2f5f7c92a921665f1df3c1ec4044d"
+    },
+    {
+      "file": "19.12.md",
+      "title": "Rebuntu --- Phase 19.12 --- Reconciliation Scheduling",
+      "sha256": "4c05b2581163d4ade259fd1a7385e7d81350916c43dd62f50d48cef2a6a8f716"
+    },
+    {
+      "file": "19.13.md",
+      "title": "Rebuntu --- Phase 19.13 --- Event-Driven Reconciliation",
+      "sha256": "37ff5814b2775e8901102b14fff1231328f8fba6fb65b9ac5e492c5832de3385"
+    },
+    {
+      "file": "19.14.md",
+      "title": "Rebuntu --- Phase 19.14 --- Recovery vs Reconciliation",
+      "sha256": "4a7c0aa109d08cebb94e349df7fd1da6c9d1ef2bbef8efe60b0c744117005e98"
+    },
+    {
+      "file": "19.15.md",
+      "title": "Rebuntu --- Phase 19.15 --- Verification",
+      "sha256": "75393fc839dbd20b7a2cae621a2ac2d1ab57612f7929adfccf4d1dbb4c1e5aab"
+    },
+    {
+      "file": "19.16.md",
+      "title": "Rebuntu --- Phase 19.16 --- Evidence",
+      "sha256": "38876ff7c5366d4d528adbe3feeb66c25df094f132c2f8e4e408a60975d1cc60"
+    },
+    {
+      "file": "19.17.md",
+      "title": "Rebuntu --- Phase 19.17 --- Continuous Reconciliation",
+      "sha256": "a48d5a01eb1ea6b0509693728f8504def63512a69a9373d6596dca38f6da5591"
+    },
+    {
+      "file": "19.18.md",
+      "title": "Rebuntu --- Phase 19.18 --- Convergence / Stability Audit",
+      "sha256": "0c3134fff4714b42b7ab1e70ce16e0d8a804e9cb7cf135a44fb4492b693374b1"
+    }
+  ]
+}

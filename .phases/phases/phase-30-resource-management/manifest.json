@@ -1,0 +1,289 @@
+{
+  "phase": 30,
+  "slug": "resource-management",
+  "directory": "phase-30-resource-management",
+  "prompt_count": 56,
+  "layout_version": 2,
+  "prompts": [
+    {
+      "file": "30.0-resource-management-system-foundation.md",
+      "title": "Phase 30.0 — Resource Management System Foundation",
+      "sha256": "27b5a469be68a034a3b3e81eef6f00fb782e687aba214e6e246ff41d84230515"
+    },
+    {
+      "file": "30.1-resource-domain-model.md",
+      "title": "Phase 30.1 — Resource Domain Model",
+      "sha256": "52402042dc5b53618079ce6bfe3cce049abf3a3b34341c527ab8f7dc55ecf427"
+    },
+    {
+      "file": "30.2-resource-provider-discovery.md",
+      "title": "Phase 30.2 — Resource Provider Discovery",
+      "sha256": "68ece12a46b3e4105b4f408aa8e36d227274ddfdf354f7568dc6802f0fdfb2ea"
+    },
+    {
+      "file": "30.3-cpu-topology-capacity.md",
+      "title": "Phase 30.3 — CPU Topology & Capacity",
+      "sha256": "839aa50e45b32310b609672aee846923914dc8666810b0b17f6c8f67327374f6"
+    },
+    {
+      "file": "30.4-cpu-utilization-pressure.md",
+      "title": "Phase 30.4 — CPU Utilization & Pressure",
+      "sha256": "92e4302f09e63cbb25fe7090cb37da6f23fd49b6deea2c1702eb8b5688135a9d"
+    },
+    {
+      "file": "30.5-cpu-allocation-affinity.md",
+      "title": "Phase 30.5 — CPU Allocation & Affinity",
+      "sha256": "5b4b4116000714370392f04a6c93e9278aab33042e295211de092bf5845da28e"
+    },
+    {
+      "file": "30.6-cpu-scheduling-policy-integration.md",
+      "title": "Phase 30.6 — CPU Scheduling Policy Integration",
+      "sha256": "03b3c828ff3eb7096391aa8d0fb387a0c091a0d3be9f7e62b400a954b65492c6"
+    },
+    {
+      "file": "30.7-memory-capacity-availability.md",
+      "title": "Phase 30.7 — Memory Capacity & Availability",
+      "sha256": "9919d04b6791b7a8beb78e029b9eb6d1c6f711a63187892ca912f9324b837d66"
+    },
+    {
+      "file": "30.8-memory-pressure-reclaim-evidence.md",
+      "title": "Phase 30.8 — Memory Pressure & Reclaim Evidence",
+      "sha256": "f124e90e471e584d64bbbed6642793a8e781acb49e0c6a11e116a1e9531b22b8"
+    },
+    {
+      "file": "30.9-swap-virtual-memory-context.md",
+      "title": "Phase 30.9 — Swap & Virtual Memory Context",
+      "sha256": "a74133c1ab0dbd7014de12ad91ec06f051a5b237ce3910db71a0a77315ffaf82"
+    },
+    {
+      "file": "30.10-memory-allocation-limits.md",
+      "title": "Phase 30.10 — Memory Allocation & Limits",
+      "sha256": "089315f52e82d3b8b08214b9d01295cb30d442ee5bf76bca66b3c580220d5c6c"
+    },
+    {
+      "file": "30.11-numa-topology-locality.md",
+      "title": "Phase 30.11 — NUMA Topology & Locality",
+      "sha256": "76d16364bbe91780ecfc8c18706f1e82bbb0a490aab629914577afa699fd00b1"
+    },
+    {
+      "file": "30.12-numa-aware-workload-placement.md",
+      "title": "Phase 30.12 — NUMA-Aware Workload Placement",
+      "sha256": "0eff81af6c2ca6052b965235a1566cacb7b79d30a915eff8d808db29ed29efd6"
+    },
+    {
+      "file": "30.13-gpu-resource-integration.md",
+      "title": "Phase 30.13 — GPU Resource Integration",
+      "sha256": "b298f054f2d05070fb345f4878d11be3bba7bb13e8a6c59d61176c33dc5c8c32"
+    },
+    {
+      "file": "30.14-vram-capacity-pressure.md",
+      "title": "Phase 30.14 — VRAM Capacity & Pressure",
+      "sha256": "18e984013e08093e280bec8d6233ecfcd9d06b0ee3b66318e23f0333b0c234cf"
+    },
+    {
+      "file": "30.15-accelerator-engine-utilization.md",
+      "title": "Phase 30.15 — Accelerator Engine Utilization",
+      "sha256": "c66a19d7aad1050cfbc3d5741736cc13aa19ac8404d3eb172a09e39354c6b343"
+    },
+    {
+      "file": "30.16-storage-i-o-resource-model.md",
+      "title": "Phase 30.16 — Storage I/O Resource Model",
+      "sha256": "1474e0c6fc62e273b2ba01833e78e9c3a797ea41e3e6edf1001ec08da466d6da"
+    },
+    {
+      "file": "30.17-block-i-o-pressure-throughput.md",
+      "title": "Phase 30.17 — Block I/O Pressure & Throughput",
+      "sha256": "8bb74bda244065ae117df0d21e48394c42d4b4559db4c49d55ab7139e470ce79"
+    },
+    {
+      "file": "30.18-network-resource-model.md",
+      "title": "Phase 30.18 — Network Resource Model",
+      "sha256": "7eaf1cef076a4f4cb84fb5557754c96ff7a827b400d1788852e81aecf8b07c70"
+    },
+    {
+      "file": "30.19-network-throughput-pressure.md",
+      "title": "Phase 30.19 — Network Throughput & Pressure",
+      "sha256": "93ee34ef211275d8f88c8d7b6e66124ee75bdc08c58235f495d0385489450e04"
+    },
+    {
+      "file": "30.20-resource-observation-sampling.md",
+      "title": "Phase 30.20 — Resource Observation Sampling",
+      "sha256": "ece609d60955180e7c561da68368de90e4285e6e12124de1c55b2afb83f6e936"
+    },
+    {
+      "file": "30.21-resource-time-series-windows.md",
+      "title": "Phase 30.21 — Resource Time-Series & Windows",
+      "sha256": "f52070422293afa422f91a9b926eeba57d028cf26a738240ddd745322268ee33"
+    },
+    {
+      "file": "30.22-resource-demand-model.md",
+      "title": "Phase 30.22 — Resource Demand Model",
+      "sha256": "70def425e56ab7bb9c4bf7f1b12ac7425f8ffefaa1a9e97c4272f3208c4299ab"
+    },
+    {
+      "file": "30.23-resource-reservation-model.md",
+      "title": "Phase 30.23 — Resource Reservation Model",
+      "sha256": "ee748a26f997ada86825bb72f72d59484a9bf4e0764602f1cef79a86a5d1a143"
+    },
+    {
+      "file": "30.24-resource-allocation-model.md",
+      "title": "Phase 30.24 — Resource Allocation Model",
+      "sha256": "d9c7ea18d31782a8247033091c58cb3bf0062c0c1722a6ecf4dbfd2eeece2eaa"
+    },
+    {
+      "file": "30.25-capacity-demand-reservation-allocation-separation.md",
+      "title": "Phase 30.25 — Capacity / Demand / Reservation / Allocation Separation",
+      "sha256": "f15a6dc0d4c42939b2193631f5cd51045317845a995ed70899778045e33f3bd1"
+    },
+    {
+      "file": "30.26-resource-policy-model.md",
+      "title": "Phase 30.26 — Resource Policy Model",
+      "sha256": "b60f45b5dfdb970e69c8ef1e68f67832339ad607caab80d09f27ac3d2ccf2256"
+    },
+    {
+      "file": "30.27-resource-constraint-model.md",
+      "title": "Phase 30.27 — Resource Constraint Model",
+      "sha256": "78dd4bb00799a2227d8b2fdaaf7e332f04aee4df8105cb376a463ad765dbc614"
+    },
+    {
+      "file": "30.28-resource-priority-fairness.md",
+      "title": "Phase 30.28 — Resource Priority & Fairness",
+      "sha256": "b991c89155b952221509c10b27e351e537c9a515a27ccf7248b258167b65728f"
+    },
+    {
+      "file": "30.29-resource-admission-control.md",
+      "title": "Phase 30.29 — Resource Admission Control",
+      "sha256": "7e778708f6b5ade18e1d92ad3a489f4b55b486a1a9f5b0fa11a0f2707883a4db"
+    },
+    {
+      "file": "30.30-resource-placement-planning.md",
+      "title": "Phase 30.30 — Resource Placement Planning",
+      "sha256": "8ad237dff5f5b2a5231e0e5f7bd9a6dcd1191a4657512aba6ea0c52931dd134b"
+    },
+    {
+      "file": "30.31-resource-rebalancing-planning.md",
+      "title": "Phase 30.31 — Resource Rebalancing Planning",
+      "sha256": "afe8d662c56107fb0722b610487ce5bdcecb17a513fc53ed531ff5fe0183dbd8"
+    },
+    {
+      "file": "30.32-resource-reclamation-boundary.md",
+      "title": "Phase 30.32 — Resource Reclamation Boundary",
+      "sha256": "abffa79eb7cbb66d3b98804d7eb1a3eb167bd41a2b8426ba69518ae88ac07d98"
+    },
+    {
+      "file": "30.33-resource-contention-detection.md",
+      "title": "Phase 30.33 — Resource Contention Detection",
+      "sha256": "50bdc243a2661d5f30dd3e1fee30c1ca2d22e83b59b1cf6d644d7e966ed157ac"
+    },
+    {
+      "file": "30.34-resource-bottleneck-diagnostics.md",
+      "title": "Phase 30.34 — Resource Bottleneck Diagnostics",
+      "sha256": "7a9815d01faf836f283592a5ddc13e9b5b62339194d046f063055e4d51ae2579"
+    },
+    {
+      "file": "30.35-resource-saturation-pressure-semantics.md",
+      "title": "Phase 30.35 — Resource Saturation & Pressure Semantics",
+      "sha256": "8bff12a7f0ad0ec16eac3e984b10f8a778a0521fe523c10fb274b940ee0d6da3"
+    },
+    {
+      "file": "30.36-workload-resource-attribution.md",
+      "title": "Phase 30.36 — Workload Resource Attribution",
+      "sha256": "15f8eb0abd345dfcd8a5d20b36d61d9e7dbfcd24d74cd34a772619eaa5b54427"
+    },
+    {
+      "file": "30.37-system-control-plane-reservations.md",
+      "title": "Phase 30.37 — System & Control-Plane Reservations",
+      "sha256": "d6a71283748d027dca4f48c65bd015019c67c8c150d2b6a2bea942368449a80e"
+    },
+    {
+      "file": "30.38-interactive-workload-protection.md",
+      "title": "Phase 30.38 — Interactive Workload Protection",
+      "sha256": "be62b3a36db41827ff47b122600dd4e3a859c7cd8370083a4619d25c77728a6d"
+    },
+    {
+      "file": "30.39-display-critical-resource-protection.md",
+      "title": "Phase 30.39 — Display-Critical Resource Protection",
+      "sha256": "2bd9c5e4e1b77f64f446b121c900d931b6c5dd8555fc9dd3f50a1460cc2b7f60"
+    },
+    {
+      "file": "30.40-ai-inference-resource-arbitration.md",
+      "title": "Phase 30.40 — AI / Inference Resource Arbitration",
+      "sha256": "f33794c7b177d29ee5b995221b66f1cb57cb71313991ff6c62e21e498ee43ea9"
+    },
+    {
+      "file": "30.41-development-workload-resource-integration.md",
+      "title": "Phase 30.41 — Development Workload Resource Integration",
+      "sha256": "29647dff174c4c60316dedbc0902b1a1aded115bbc9a157f973caaa3a83e816a"
+    },
+    {
+      "file": "30.42-service-resource-integration.md",
+      "title": "Phase 30.42 — Service Resource Integration",
+      "sha256": "243b7a6b1dce3309ffe1a9a7580f25182a2ee9974103115273df52bfd29dc57c"
+    },
+    {
+      "file": "30.43-container-cgroup-integration.md",
+      "title": "Phase 30.43 — Container & Cgroup Integration",
+      "sha256": "7396710eee192e3e858e3a49acb173243c7003647fa48d4e4413f77e43e6d662"
+    },
+    {
+      "file": "30.44-thermal-power-constraint-integration.md",
+      "title": "Phase 30.44 — Thermal & Power Constraint Integration",
+      "sha256": "63142e6a150b6fb071262cb2913ea108c1276e0e9a57faaa12f4fc55f89253b3"
+    },
+    {
+      "file": "30.45-resource-policy-hysteresis-cooldown.md",
+      "title": "Phase 30.45 — Resource Policy Hysteresis & Cooldown",
+      "sha256": "131c57c1de1e5b5f048a1daae6a38e1bec1d2bdfe52eb678dde2862367e83ee3"
+    },
+    {
+      "file": "30.46-stale-evidence-control-loop-safety.md",
+      "title": "Phase 30.46 — Stale Evidence & Control-Loop Safety",
+      "sha256": "300f3a1b8bb734f5d24569a6960636502e7c465dc7f2ee54dcf658951194597a"
+    },
+    {
+      "file": "30.47-resource-action-planning-verification.md",
+      "title": "Phase 30.47 — Resource Action Planning & Verification",
+      "sha256": "8519fd8c916a14982b847d31cac04a9576f4e69e0e250ccec8d25a64a0019e00"
+    },
+    {
+      "file": "30.48-resource-management-cli.md",
+      "title": "Phase 30.48 — Resource Management CLI",
+      "sha256": "4073a66e54f0778a2bf6934280ce738ba7a0b6cba963eb31ce678a1c91ae410d"
+    },
+    {
+      "file": "30.49-phase-25-panel-integration-api.md",
+      "title": "Phase 30.49 — Phase 25 Panel Integration API",
+      "sha256": "92dd6846d1a646b2a23684e032eee15e59ad7426226e47dc7190352206b073d0"
+    },
+    {
+      "file": "30.50-phase-29-process-workload-integration.md",
+      "title": "Phase 30.50 — Phase 29 Process / Workload Integration",
+      "sha256": "bce1008674d0b9179063c17790b5b7bd8a301d540103953d1b7561576e53125f"
+    },
+    {
+      "file": "30.51-phase-34-accelerator-integration.md",
+      "title": "Phase 30.51 — Phase 34 Accelerator Integration",
+      "sha256": "b12a794744b7972a59cf4c6df682ce5936dd6f6675b907d90ea636982ffb3756"
+    },
+    {
+      "file": "30.52-phase-39-timeline-integration.md",
+      "title": "Phase 30.52 — Phase 39 Timeline Integration",
+      "sha256": "908ce62c4ad04b92e198a4bb3bf802fe301b7d69eb202341f7835e5d9d5ad60f"
+    },
+    {
+      "file": "30.53-phase-42-graph-impact-integration.md",
+      "title": "Phase 30.53 — Phase 42 Graph & Impact Integration",
+      "sha256": "e0b9e8c35b14cf6d36b187c9f94273c683b9f2499ddc4dc57631d42a6a9a4521"
+    },
+    {
+      "file": "30.54-failure-injection-contention-testing.md",
+      "title": "Phase 30.54 — Failure Injection & Contention Testing",
+      "sha256": "d42502e4d9d6d415fee6d19256534447512e52fbf56f69e83430d2839df06858"
+    },
+    {
+      "file": "30.55-resource-management-system-closure-readiness-gate.md",
+      "title": "Phase 30.55 — Resource Management System Closure & Readiness Gate",
+      "sha256": "f353145fa3ebfc969b454c7079f16f0ddc6b64a04a586b9aa41aae855e1f00b8"
+    }
+  ]
+}

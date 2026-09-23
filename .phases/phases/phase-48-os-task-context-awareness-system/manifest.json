@@ -1,0 +1,11 @@
+{
+  "phase": "48",
+  "name": "OS Task Context Awareness System",
+  "full_prompt_count": 410,
+  "architecture_document_count": 12,
+  "entrypoint": "README.md",
+  "runtime_policy": "C++-first deterministic context-awareness runtime",
+  "core_rule": "context is evidence, never authority",
+  "integration": "Phase46 interpretation + Phase47 task policy + Phase45 execution",
+  "closure": "two clean rediscovery passes plus adversarial freshness/poisoning/isolation/referent/secret audits"
+}

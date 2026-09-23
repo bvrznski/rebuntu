@@ -1,0 +1,26 @@
+# Phase 104 — Explainable Autonomous Operations System
+
+- 104.0: Bootstrap and repository reality audit
+- 104.1: Canonical ontology and identity
+- 104.2: Definitions and lifecycle
+- 104.3: State ownership and persistence
+- 104.4: Observation evidence provenance freshness
+- 104.5: UNKNOWN and conflicting evidence
+- 104.6: Capability and affordance integration
+- 104.7: Goal and desired-state integration
+- 104.8: Planning and operation integration
+- 104.9: Constraints and invariants
+- 104.10: Resources and topology
+- 104.11: Policy authorization
+- 104.12: Mandatory security
+- 104.13: Privilege and native providers
+- 104.14: Failure timeout cancellation partial effects
+- 104.15: Crash restart reconciliation recovery
+- 104.16: Concurrency races replacement TOCTOU
+- 104.17: Boundedness and budgets
+- 104.18: CLI GUI natural-language integration
+- 104.19: Timeline graph context integration
+- 104.20: Distributed and associated systems
+- 104.21: Python model shell authority audit
+- 104.22: Adversarial build runtime migration audit
+- 104.23: Documentation rediscovery and closure

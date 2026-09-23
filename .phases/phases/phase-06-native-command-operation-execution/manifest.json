@@ -1,0 +1,409 @@
+{
+  "phase": 6,
+  "slug": "native-command-operation-execution",
+  "directory": "phase-06-native-command-operation-execution",
+  "prompt_count": 80,
+  "layout_version": 2,
+  "prompts": [
+    {
+      "file": "6.0.md",
+      "title": "Rebuntu — Phase 6.0 — Rebuntu Shell Language Foundation",
+      "sha256": "0a794a038f4333d9ae94b6e90f1a94fb5f8b704d14b464070f9af16a69353b42"
+    },
+    {
+      "file": "6.1_typed_command_model.md",
+      "title": "Rebuntu — Phase 6",
+      "sha256": "ca22fc0d7181bbd67a926daebe2b44739117531fb9c3c9dc8e677a2b1ff93188"
+    },
+    {
+      "file": "6.2.md",
+      "title": "Rebuntu — Phase 6.2 — Predicate Dictionary",
+      "sha256": "f92b222323cd75b71ec6579c711b4249418cf5b2faac4b3e1a24c823fe0350b6"
+    },
+    {
+      "file": "6.3.md",
+      "title": "Rebuntu — Phase 6.3 — Object / Subject Vocabulary",
+      "sha256": "8a24bcb94914add731c01feae2d0738922713fbe09567f96164ff3883ef9613d"
+    },
+    {
+      "file": "6.4.md",
+      "title": "Rebuntu — Phase 6.4 — Qualifiers & Modifiers",
+      "sha256": "d0b1cf920bc9ca27c132b7cd2adf178a8b4d444d290a368a31e497429108a716"
+    },
+    {
+      "file": "6.5.md",
+      "title": "Rebuntu — Phase 6.5 — Scope Grammar",
+      "sha256": "f9a232668b6d4de92d0b938d99d3b01c6c9537ba34f85b5fea731d08604f88d5"
+    },
+    {
+      "file": "6.6.md",
+      "title": "Rebuntu — Phase 6.6 — Arguments & Options Grammar",
+      "sha256": "0111ce6eea7fa80c2247be477e845fa70e7a89032d1dfc1a78a5b0b9b50e59bd"
+    },
+    {
+      "file": "6.7.md",
+      "title": "Rebuntu — Phase 6.7 — Command Resolution",
+      "sha256": "d8d454ea858e90aa7665394be0aa997b0e9391ad426f12dfee680ab0461c9c4f"
+    },
+    {
+      "file": "6.8.md",
+      "title": "Rebuntu — Phase 6.8 — Verb → Operation Mapping",
+      "sha256": "6647dbf5e978d39a6ce66a4ea5727d9f8f13a0f738c0e208cfaadb31ae30c7db"
+    },
+    {
+      "file": "6.9.md",
+      "title": "Rebuntu — Phase 6.9 — Predicates → Query / State Mapping",
+      "sha256": "e39746cf0fc70b86f212597ed3733a6ea1ae2c83d2419d909e3dc1e9161777aa"
+    },
+    {
+      "file": "6.10.md",
+      "title": "Rebuntu — Phase 6.10 — Pipeline Semantics",
+      "sha256": "1e074a2494913661c98ef48bf52167eec6419b46b11e345b6a7c4af115fddc8c"
+    },
+    {
+      "file": "6.11.md",
+      "title": "Rebuntu — Phase 6.11 — Structured Output",
+      "sha256": "1495f891faa862fa9500cf5b15d08c19f961a0ceba24ebeddd77420e92568ce2"
+    },
+    {
+      "file": "6.12.md",
+      "title": "Rebuntu — Phase 6.12 — Human Output & Rendering",
+      "sha256": "86bd8d5d08656821837dd6e7b0d9bae236a92be5ba51cbe1255d08b1be2a2197"
+    },
+    {
+      "file": "6.13.md",
+      "title": "Rebuntu — Phase 6.13 — Completion & Discovery",
+      "sha256": "a2e6aa24be3bb179da5aa32f752f30ec27e97b20173f30f80a23e1dd5a3bc0a4"
+    },
+    {
+      "file": "6.14.md",
+      "title": "Rebuntu — Phase 6.14 — Command Collision Protection",
+      "sha256": "668e00d0ec85222425ceacef47e59f3753b2beeab59ed8d68aa1e9f61d29e836"
+    },
+    {
+      "file": "6.15.md",
+      "title": "Rebuntu — Phase 6.15 — Contextual Command Resolution",
+      "sha256": "091f747be035b1142d86af5e1d7f3fc49d19a911def2af8e8729626383edef06"
+    },
+    {
+      "file": "6.16.md",
+      "title": "Rebuntu — Phase 6.16 — Semi-Natural Command Grammar",
+      "sha256": "450d1c45c6ea2117cec790a725267b216d611dc6e84c99005c5dc44157764cba"
+    },
+    {
+      "file": "6.17.md",
+      "title": "Rebuntu — Phase 6.17 — Semantic Interpretation Boundary",
+      "sha256": "b912d785fe41fa0346536156b258e47b42cb1c9f627438ef9060b90a60b207ba"
+    },
+    {
+      "file": "6.18.md",
+      "title": "Rebuntu — Phase 6.18 — Shell Language Closure & UX Audit",
+      "sha256": "3f8573acd44997f4dd3ead13df7f7501d5670d546aaed276847dc6e4cd036e43"
+    },
+    {
+      "file": "6.19_output_capture_semantics.md",
+      "title": "Rebuntu — Phase 6",
+      "sha256": "e4519caff0ba56ae8c72f830388017fcf945c6f950e68cb2a0cc448b76b547a3"
+    },
+    {
+      "file": "6.20_exit_and_signal_result_semantics.md",
+      "title": "Rebuntu — Phase 6",
+      "sha256": "d24aca48f33a17743baa35766837fff19d902e2acec8e82fdbed1f6d6026540c"
+    },
+    {
+      "file": "6.21_execution_verification_integration.md",
+      "title": "Rebuntu — Phase 6",
+      "sha256": "654803100fda3e69fd5cfbae45f663e756d197b4422f4b76538657c92b2a5ce4"
+    },
+    {
+      "file": "6.22_verification_freshness.md",
+      "title": "Rebuntu — Phase 6",
+      "sha256": "edf7e8adc761d9b9269ccf59c256cade9e2dc37c68e265000c45888cce826d69"
+    },
+    {
+      "file": "6.23_idempotency_classification.md",
+      "title": "Rebuntu — Phase 6",
+      "sha256": "81b243da1ff53ac021d6beb607f96bb2e3be8cf5df265bfbfc37dbc35401df15"
+    },
+    {
+      "file": "6.24_retry_mechanics_integration.md",
+      "title": "Rebuntu — Phase 6",
+      "sha256": "ba1ad89ae650ee1753cd46e3cd7eab7cbe06adf0a5aa6d5354f9c6f1cad3a160"
+    },
+    {
+      "file": "6.25_partial_execution_semantics.md",
+      "title": "Rebuntu — Phase 6",
+      "sha256": "320c1ae9a278afe8a873f5bcd2f0a926420217db4d654457167b5b62a8434d68"
+    },
+    {
+      "file": "6.26_compensation_semantics.md",
+      "title": "Rebuntu — Phase 6",
+      "sha256": "f21b23a4fc46a9268ec8029993cf5492e7a078ca116fbd76bf22c073bf71380b"
+    },
+    {
+      "file": "6.27_dry-run_semantics.md",
+      "title": "Rebuntu — Phase 6",
+      "sha256": "30ff069b3ceecc671b9c9fbb8f6fa2a3b010965faaa430b66258cbf07f753c1e"
+    },
+    {
+      "file": "6.28_explain-plan_output.md",
+      "title": "Rebuntu — Phase 6",
+      "sha256": "4b87b64ba753bbbe60fb4906357c6072ea7d599a2b007a431981bb1d0a43c9a1"
+    },
+    {
+      "file": "6.29_operation_cancellation.md",
+      "title": "Rebuntu — Phase 6",
+      "sha256": "a70cd2d26a6eaec13996864609ee63de0086cf446b77ee7ef0473439281390f5"
+    },
+    {
+      "file": "6.30_operation_deadlines.md",
+      "title": "Rebuntu — Phase 6",
+      "sha256": "f4ab833d4a13df000b6e093d40999dbe9ed5c5840369bf0e04767f9ce63b4f4a"
+    },
+    {
+      "file": "6.31_execution_concurrency_control.md",
+      "title": "Rebuntu — Phase 6",
+      "sha256": "1ff982dfbac34d4044500b813b781bf4b999467f04aea6b9dc24ac67943643f0"
+    },
+    {
+      "file": "6.32_cross-operation_conflict_detection.md",
+      "title": "Rebuntu — Phase 6",
+      "sha256": "cbc2535d0772d7e3471d0260986ca0f8fcc0ed16b9331ace5d1fd7e511937603"
+    },
+    {
+      "file": "6.33_operation_resource_declarations.md",
+      "title": "Rebuntu — Phase 6",
+      "sha256": "7c30d4f88c6e163cb7e71153d853385cef22a6dd89293604652e018a3b93324a"
+    },
+    {
+      "file": "6.34_privilege_requirement_metadata.md",
+      "title": "Rebuntu — Phase 6",
+      "sha256": "16fdcfa8ff4665b11fbe6cf802aaafbf46977cc222e0dcc8a6718a16092d972f"
+    },
+    {
+      "file": "6.35_privileged_helper_invocation.md",
+      "title": "Rebuntu — Phase 6",
+      "sha256": "a8baab6cd8f622924faadd73791e1e1c839451823313f2e87a4351b9314eb786"
+    },
+    {
+      "file": "6.36_privilege_minimization.md",
+      "title": "Rebuntu — Phase 6",
+      "sha256": "bf6620451a75227e15489feb392b1bf98f5c1f7360388e062039d9f32c3ffaa5"
+    },
+    {
+      "file": "6.37_operation_evidence_bundle.md",
+      "title": "Rebuntu — Phase 6",
+      "sha256": "1f1c96b6190af1212f751c9125a1a9421f985d2148fc620f6d061157def5a39a"
+    },
+    {
+      "file": "6.38_execution_journald_diagnostics.md",
+      "title": "Rebuntu — Phase 6",
+      "sha256": "603d07090fc091dfe73c4875d9006f371512562056e6c1b605987fbab731ff06"
+    },
+    {
+      "file": "6.39_execution_record_persistence.md",
+      "title": "Rebuntu — Phase 6",
+      "sha256": "785889779c6a924493c303abfa1d589825787c618e1a59ddad6c83eac8a638e1"
+    },
+    {
+      "file": "6.40_crash_reconciliation_integration.md",
+      "title": "Rebuntu — Phase 6",
+      "sha256": "c579a0b6fd91d07d5233ba53fd856d9b59c2ba9db0e9ba108118e49e370edce7"
+    },
+    {
+      "file": "6.41_command_replay_semantics.md",
+      "title": "Rebuntu — Phase 6",
+      "sha256": "f69cd631dacb6a88057107957a6966ee189794fc74c6f53d4d3864f1e624b0c1"
+    },
+    {
+      "file": "6.42_batch_command_boundary.md",
+      "title": "Rebuntu — Phase 6",
+      "sha256": "949465b0820c1485a83dabe1bebb2e1ae3d537c3fc1151a727c09ee13f8e483d"
+    },
+    {
+      "file": "6.43_sequential_composition.md",
+      "title": "Rebuntu — Phase 6",
+      "sha256": "3f12b6bf7125bfb9cba3bcebd3dc713d9da1f02694cc3cbf77a08a0b743ed12a"
+    },
+    {
+      "file": "6.44_parallel_composition.md",
+      "title": "Rebuntu — Phase 6",
+      "sha256": "5efb4bb1b444adc1be328c8548658f0017bc2c542830c2741288842c275abad1"
+    },
+    {
+      "file": "6.45_dependency-aware_execution.md",
+      "title": "Rebuntu — Phase 6",
+      "sha256": "fbd3b84e48190039863c6f294e748dbea7116608a463bef8b54a23964bbf70ed"
+    },
+    {
+      "file": "6.46_command_parser_boundary.md",
+      "title": "Rebuntu — Phase 6",
+      "sha256": "bfc6fb3b42dad167fd499a8fcfeb4db03c53663adc17eefca0566ecdd1e5f081"
+    },
+    {
+      "file": "6.47_machine-readable_command_boundary.md",
+      "title": "Rebuntu — Phase 6",
+      "sha256": "0b18260f5f43b08b78e65875e877e7e316a6ead0923be79668669b3ef8e50a60"
+    },
+    {
+      "file": "6.48_ipc_command_boundary.md",
+      "title": "Rebuntu — Phase 6",
+      "sha256": "117ee4e3e50b8bf1746fb201d4375b7ee136fe7e106e1ecfd35356cc914596eb"
+    },
+    {
+      "file": "6.49_data-to-control_gate_enforcement.md",
+      "title": "Rebuntu — Phase 6",
+      "sha256": "b2962e0e65c3ab0a4f6f5c7d876bb7b8ac83ab595a6817d15e57ab294809445e"
+    },
+    {
+      "file": "6.50_semantic_candidate_boundary.md",
+      "title": "Rebuntu — Phase 6",
+      "sha256": "ebc8088fb36c8b23bb08141d32c59e36fcceacea8670338efe70b49f7f750212"
+    },
+    {
+      "file": "6.51_semantic_service_absence_behavior.md",
+      "title": "Rebuntu — Phase 6",
+      "sha256": "54081c6c0ab2d9a880a7cacaa037c1ca0f0322a642e8e7d2f4736c473de0e9bd"
+    },
+    {
+      "file": "6.52_provider_result_distrust.md",
+      "title": "Rebuntu — Phase 6",
+      "sha256": "743bb619ca14c2d9b2bf658a2b78c805d3441e986ff925593d3979d1f0e82236"
+    },
+    {
+      "file": "6.53_context_authority_audit.md",
+      "title": "Rebuntu — Phase 6",
+      "sha256": "1641d2513e94f5e5b168938a438ce74bb0bd360a2b0ecd66bc0e3811bfa17583"
+    },
+    {
+      "file": "6.54_stale-plan_adversarial_tests.md",
+      "title": "Rebuntu — Phase 6",
+      "sha256": "408bb1f65ca5b4ca61f4128d83dc37c6c82726554ca9039f33b655699ee8db58"
+    },
+    {
+      "file": "6.55_ambiguous-target_adversarial_tests.md",
+      "title": "Rebuntu — Phase 6",
+      "sha256": "b15651c8fec1a7fe96af84eda3dd50c2695ec75cea87579f5c075c9e64f09571"
+    },
+    {
+      "file": "6.56_pid_reuse_and_transient_identity_tests.md",
+      "title": "Rebuntu — Phase 6",
+      "sha256": "9e311f4d053b91867e77e970e41906adbf23f644a16c5ca152eeb4cb70fa09e8"
+    },
+    {
+      "file": "6.57_device_reorder_tests.md",
+      "title": "Rebuntu — Phase 6",
+      "sha256": "6d191edc90fe9add76c10fd8417589df466892c997063b8a7858b1a02192af59"
+    },
+    {
+      "file": "6.58_command_injection_adversarial_tests.md",
+      "title": "Rebuntu — Phase 6",
+      "sha256": "44c2e13a2f8e2a7857e57ec38d9c6a9c5473e24dfce902b601b33d67badc7fe7"
+    },
+    {
+      "file": "6.59_path_safety_audit.md",
+      "title": "Rebuntu — Phase 6",
+      "sha256": "fe8de544aa6a3dc942cf97c8c78e18e1a67f5d688c63aa8c392079e07fafc636"
+    },
+    {
+      "file": "6.60_malformed_provider_output_tests.md",
+      "title": "Rebuntu — Phase 6",
+      "sha256": "6ccb3c5eb77322a764cbbce1ea1cbba37eb0c3dd970e21208850fcf798defe24"
+    },
+    {
+      "file": "6.61_execution_storm_and_backpressure_tests.md",
+      "title": "Rebuntu — Phase 6",
+      "sha256": "c5adbe4ecad573db860dc8da438ff22fee63dc956a9ab3c22ef78259c3cf1202"
+    },
+    {
+      "file": "6.62_cancellation_race_tests.md",
+      "title": "Rebuntu — Phase 6",
+      "sha256": "b9f576ab99a408791d804961938aa43026a38e5c12ae6f683f7b9920617626e8"
+    },
+    {
+      "file": "6.63_timeout_ambiguity_tests.md",
+      "title": "Rebuntu — Phase 6",
+      "sha256": "39ee70d58c579f7f24f0854436fc51bcffef1cdc094d816c197e63a39528f814"
+    },
+    {
+      "file": "6.64_privilege_escalation_adversarial_tests.md",
+      "title": "Rebuntu — Phase 6",
+      "sha256": "53ddb955a8e11876427443f31b50e07c59d2d7085d25a93785c0fe47491f709d"
+    },
+    {
+      "file": "6.65_python_execution-path_eradication.md",
+      "title": "Rebuntu — Phase 6",
+      "sha256": "079ec533cbf7855aabccd96f987b6a80b5d9da7b38190434daf3431c1166f992"
+    },
+    {
+      "file": "6.66_historical_action_architecture_archaeology.md",
+      "title": "Rebuntu — Phase 6",
+      "sha256": "7a60f69595b496302350090a2d1b9cafde7551c0adf292518514bc430699e6c8"
+    },
+    {
+      "file": "6.67_duplicate_executor_audit.md",
+      "title": "Rebuntu — Phase 6",
+      "sha256": "cd99d001a9f9444807161ff634098b027348ac49d0479bcad735be857f1b38c0"
+    },
+    {
+      "file": "6.68_native_provider_coverage_audit.md",
+      "title": "Rebuntu — Phase 6",
+      "sha256": "6150863a337031720be78a373f63187b9f02037cd5afbfbe1a1c43984d88cfcd"
+    },
+    {
+      "file": "6.69_cli_execution_vertical_slice.md",
+      "title": "Rebuntu — Phase 6",
+      "sha256": "861eb1d17d308b1db59939d4a5519ccc01e95d0988c19b92a2411bce8f6131c2"
+    },
+    {
+      "file": "6.70_contained_mutation_integration_test.md",
+      "title": "Rebuntu — Phase 6",
+      "sha256": "32e9e061da7358085ad11e005ace66df4e1d60d448e1507f13f710f7663672fa"
+    },
+    {
+      "file": "6.71_read-only_command_integration_test.md",
+      "title": "Rebuntu — Phase 6",
+      "sha256": "736ff203140bdff4ee53ed044010ffd3af93d9653906ea57c3f45414a273c833"
+    },
+    {
+      "file": "6.72_restart_integration_test.md",
+      "title": "Rebuntu — Phase 6",
+      "sha256": "010b4afff76a80e66e8f115c4895e5446baeb2a93f5dbc36597b11ab25915e97"
+    },
+    {
+      "file": "6.73_build_and_runtime_reachability_audit.md",
+      "title": "Rebuntu — Phase 6",
+      "sha256": "1e44c57bbad45d202f23717da38a2d2701b5eca1a181d7f86f8ac08320464c76"
+    },
+    {
+      "file": "6.74_sanitizer_and_static-analysis_pass.md",
+      "title": "Rebuntu — Phase 6",
+      "sha256": "e71761e3b78cf8bf1b115c67798af9147835eb31a6bd63e4dec663c918f44460"
+    },
+    {
+      "file": "6.75_documentation_and_agents_synchronization.md",
+      "title": "Rebuntu — Phase 6",
+      "sha256": "3ebaa1095659f085351ac56c3249a494d9e15898ded09ca3ab0edca10a781884"
+    },
+    {
+      "file": "6.76_first_closure_audit.md",
+      "title": "Rebuntu — Phase 6",
+      "sha256": "9077888e3e51477d80986d4dd2b70f34e6692d409bb495fa8e731de65a6eb155"
+    },
+    {
+      "file": "6.77_adversarial_new-agent_simulation.md",
+      "title": "Rebuntu — Phase 6",
+      "sha256": "abada0851579f167d80ff20ea29534030d7f2f941493e5512448230dfbe38d4d"
+    },
+    {
+      "file": "6.78_independent_second_rediscovery.md",
+      "title": "Rebuntu — Phase 6",
+      "sha256": "3033591730339f87d3674401293a00761ca1448bcde1e654eefd031077befbe2"
+    },
+    {
+      "file": "6.79_phase_6_final_closure.md",
+      "title": "Rebuntu — Phase 6",
+      "sha256": "cad11e74812e64ea2460102947c4662f5750eaa3bc65c3cc51d79dd2110399f2"
+    }
+  ]
+}

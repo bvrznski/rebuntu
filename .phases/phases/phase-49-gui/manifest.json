@@ -1,0 +1,11 @@
+{
+  "phase": "49",
+  "name": "Rebuntu GUI",
+  "full_prompt_count": 645,
+  "architecture_document_count": 12,
+  "entrypoint": "README.md",
+  "runtime_policy": "C++-first native GUI and typed control integration",
+  "core_rule": "GUI is presentation/interaction, never a second control plane",
+  "visual_direction": "operator-grade, dense, keyboard-first, restrained retro-tech",
+  "closure": "two clean rediscovery passes plus adversarial UI/security/accessibility audits"
+}

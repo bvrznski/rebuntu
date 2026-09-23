@@ -1,0 +1,23 @@
+# Prompt Index
+
+- `12.0.md` — Rebuntu --- Phase 12.0 --- Stability Architecture
+- `12.1.md` — Rebuntu --- Phase 12.1 --- Healthy Baseline / Known-Good State
+- `12.2.md` — Rebuntu --- Phase 12.2 --- Deviation Detection
+- `12.3.md` — Rebuntu --- Phase 12.3 --- Degradation Detection
+- `12.4.md` — Rebuntu --- Phase 12.4 --- Stall / Jam Detection
+- `12.5.md` — Rebuntu --- Phase 12.5 --- Failure Classification
+- `12.6.md` — Rebuntu --- Phase 12.6 --- Root-Cause Evidence Correlation
+- `12.7.md` — Rebuntu --- Phase 12.7 --- Recovery Planning
+- `12.8.md` — Rebuntu --- Phase 12.8 --- Retry
+- `12.9.md` — Rebuntu --- Phase 12.9 --- Restart
+- `12.10.md` — Rebuntu --- Phase 12.10 --- Repair
+- `12.11.md` — Rebuntu --- Phase 12.11 --- Restore
+- `12.12.md` — Rebuntu --- Phase 12.12 --- Rollback
+- `12.13.md` — Rebuntu --- Phase 12.13 --- Compensation
+- `12.14.md` — Rebuntu --- Phase 12.14 --- Degraded Mode
+- `12.15.md` — Rebuntu --- Phase 12.15 --- Recovery Verification
+- `12.16.md` — Rebuntu --- Phase 12.16 --- Crash Recovery
+- `12.17.md` — Rebuntu --- Phase 12.17 --- Boot Failure Recovery
+- `12.18.md` — Rebuntu --- Phase 12.18 --- Filesystem / Storage Recovery
+- `12.19.md` — Rebuntu --- Phase 12.19 --- Recovery Policy & Safety
+- `12.20.md` — Rebuntu --- Phase 12.20 --- Resilience / Fault-Injection Audit

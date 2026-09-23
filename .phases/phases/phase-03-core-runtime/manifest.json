@@ -1,0 +1,84 @@
+{
+  "phase": 3,
+  "slug": "core-runtime",
+  "directory": "phase-03-core-runtime",
+  "prompt_count": 15,
+  "layout_version": 2,
+  "prompts": [
+    {
+      "file": "3.0.md",
+      "title": "Rebuntu — Phase 3.0 — Engineering Infrastructure Foundation",
+      "sha256": "458370ba2b309231839f41d96bbdfa4cf7b1a16a32212e3203807426a08908e1"
+    },
+    {
+      "file": "3.1.md",
+      "title": "Rebuntu — Phase 3.1 — BitNet Runtime Bootstrap",
+      "sha256": "fe9605081eb4c5c1e7ae80eac9047935f09531b791f15b5f6171eb5b27476c5e"
+    },
+    {
+      "file": "3.2.md",
+      "title": "Rebuntu — Phase 3.2 — BitNet CPU-Only Provider",
+      "sha256": "e06d2e97c6ad1c3b49d02a3d5a80c04913c3b61e7646b5b7fc70a044112d4d1c"
+    },
+    {
+      "file": "3.3.md",
+      "title": "Rebuntu — Phase 3.3 — Native Semantic Service",
+      "sha256": "3e25855b984dbd7b6aa8c440c60d2e169da6b823aa80c32e3aef58aec692edbb"
+    },
+    {
+      "file": "3.4.md",
+      "title": "Rebuntu — Phase 3.4 — Semantic IPC & Structured Contracts",
+      "sha256": "7be73dddd347f2e9d351b41e8132226423f21bca98dfaceaf25668f615104f81"
+    },
+    {
+      "file": "3.5.md",
+      "title": "Rebuntu — Phase 3.5 — Docker Integration",
+      "sha256": "8936004b9f8bdce2d0652ac8e7029efe7ff83daeef9c893f71475991bc358df3"
+    },
+    {
+      "file": "3.6.md",
+      "title": "Rebuntu — Phase 3.6 — Container Runtime Contracts",
+      "sha256": "23a3062be8933b8f1f00faf3da697037fd4daa06c341627ca6c364a889ff2539"
+    },
+    {
+      "file": "3.7.md",
+      "title": "Rebuntu — Phase 3.7 — Ansible Integration",
+      "sha256": "8fdc0da79151650cf47d6fd82fff552fa860978222b8a06c279dd4ca7dec7d9b"
+    },
+    {
+      "file": "3.8.md",
+      "title": "Rebuntu — Phase 3.8 — Ansible Provider & Execution Boundary",
+      "sha256": "f158268cced93bbc8ffc4fa5766a730e64c63eacda3b7f040fd0b5bf67abcef3"
+    },
+    {
+      "file": "3.9.md",
+      "title": "Rebuntu — Phase 3.9 — Jenkins Integration",
+      "sha256": "874ad5c734ed229625b4cec6d14d5bc669c23363f14be66485d72d095a278913"
+    },
+    {
+      "file": "3.10.md",
+      "title": "Rebuntu — Phase 3.10 — Build / Test / Deployment Pipeline",
+      "sha256": "448f16382c376ece8c3349d795ca02446c4bae4af1cec6948867a7872764e35c"
+    },
+    {
+      "file": "3.11.md",
+      "title": "Rebuntu — Phase 3.11 — Packaging & Environment Reproducibility",
+      "sha256": "dc0756fc953e3e58070789312289a90c0f13e26fd4b1fea7c705b0054f3a5387"
+    },
+    {
+      "file": "3.12.md",
+      "title": "Rebuntu — Phase 3.12 — Development / Testing Environments",
+      "sha256": "4e0565a4f01c9e714cca5c46c6b95916960a6da4473a3ffe6429123864acbb98"
+    },
+    {
+      "file": "3.13.md",
+      "title": "Rebuntu — Phase 3.13 — Provider Selection & Infrastructure Integration",
+      "sha256": "dd9486cf7e2bbda38bad856bcb9cdfea3f8c1ca4a8ab001270d313c3c38e1b9b"
+    },
+    {
+      "file": "3.14.md",
+      "title": "Rebuntu — Phase 3.14 — Infrastructure Readiness Audit",
+      "sha256": "8dc05864ca90096ba9905adf02dcee32a90e9e61d3041713a3d82c450f6880a3"
+    }
+  ]
+}

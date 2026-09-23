@@ -1,0 +1,26 @@
+# Phase 99 — Autonomy Budget & Delegation System
+
+- 99.0: Bootstrap and repository reality audit
+- 99.1: Canonical ontology and identity
+- 99.2: Definitions and lifecycle
+- 99.3: State ownership and persistence
+- 99.4: Observation evidence provenance freshness
+- 99.5: UNKNOWN and conflicting evidence
+- 99.6: Capability and affordance integration
+- 99.7: Goal and desired-state integration
+- 99.8: Planning and operation integration
+- 99.9: Constraints and invariants
+- 99.10: Resources and topology
+- 99.11: Policy authorization
+- 99.12: Mandatory security
+- 99.13: Privilege and native providers
+- 99.14: Failure timeout cancellation partial effects
+- 99.15: Crash restart reconciliation recovery
+- 99.16: Concurrency races replacement TOCTOU
+- 99.17: Boundedness and budgets
+- 99.18: CLI GUI natural-language integration
+- 99.19: Timeline graph context integration
+- 99.20: Distributed and associated systems
+- 99.21: Python model shell authority audit
+- 99.22: Adversarial build runtime migration audit
+- 99.23: Documentation rediscovery and closure

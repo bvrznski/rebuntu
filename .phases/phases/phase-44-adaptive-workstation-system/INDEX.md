@@ -1,0 +1,337 @@
+# Phase 44 Index
+
+## Normative architecture
+- `architecture/01-system-boundary.md`
+- `architecture/02-adaptation-model.md`
+- `architecture/03-policy-authority.md`
+- `architecture/04-context-profiles.md`
+- `architecture/05-learning.md`
+- `architecture/06-experimentation.md`
+- `architecture/07-resource-adaptation.md`
+- `architecture/08-intelligence-integration.md`
+- `architecture/09-native-runtime.md`
+- `architecture/10-safety-recovery.md`
+- `architecture/11-operator-experience.md`
+- `architecture/12-closure.md`
+
+## Full executable prompts
+- `44.0` — Foundation and repository archaeology
+- `44.1` — Existing adaptive capability inventory
+- `44.2` — Adaptation ownership map
+- `44.3` — Canonical C++ adaptive architecture
+- `44.4` — Adaptive artifact strong types
+- `44.5` — Goal model
+- `44.6` — Operator preference model
+- `44.7` — Context model
+- `44.8` — Adaptive policy model
+- `44.9` — Candidate adaptation model
+- `44.10` — Applied adaptation model
+- `44.11` — Outcome model
+- `44.12` — Experiment model
+- `44.13` — Adaptation provenance
+- `44.14` — Adaptation epistemic metadata
+- `44.15` — Adaptation lifecycle state machine
+- `44.16` — Policy scope model
+- `44.17` — Policy authorization levels
+- `44.18` — Policy expiry
+- `44.19` — Policy conflict resolution
+- `44.20` — Policy precedence
+- `44.21` — Policy composition
+- `44.22` — Global adaptation enable disable
+- `44.23` — Adaptive safe mode
+- `44.24` — Emergency adaptation freeze
+- `44.25` — Manual-only mode
+- `44.26` — Recommend-only mode
+- `44.27` — Policy-authorized automatic mode
+- `44.28` — Context detection foundation
+- `44.29` — Context confidence semantics
+- `44.30` — Context transition handling
+- `44.31` — Context hysteresis
+- `44.32` — Context debounce and cooldown
+- `44.33` — Profile model
+- `44.34` — Profile composition
+- `44.35` — Profile inheritance
+- `44.36` — Profile conflict resolution
+- `44.37` — Profile activation
+- `44.38` — Profile deactivation
+- `44.39` — Profile transition safety
+- `44.40` — Development profile
+- `44.41` — AI inference profile
+- `44.42` — Gaming profile
+- `44.43` — Interactive desktop profile
+- `44.44` — Background idle profile
+- `44.45` — Maintenance profile
+- `44.46` — Power-efficiency profile
+- `44.47` — Performance profile
+- `44.48` — Thermal-constrained profile
+- `44.49` — Noise-sensitive profile
+- `44.50` — Custom operator profile
+- `44.51` — Phase 39 adaptation history integration
+- `44.52` — Phase 42 impact-graph integration
+- `44.53` — Phase 43 candidate-adaptation integration
+- `44.54` — Phase 40 typed plan integration
+- `44.55` — Phase 41 adaptive workflow integration
+- `44.56` — Domain-owner re-observation
+- `44.57` — Pre-adaptation snapshot
+- `44.58` — Pre-adaptation validation
+- `44.59` — Adaptation plan construction
+- `44.60` — Adaptation preview
+- `44.61` — Expected-effect representation
+- `44.62` — Risk representation
+- `44.63` — Reversibility classification
+- `44.64` — Rollback-plan construction
+- `44.65` — Rollback validation
+- `44.66` — Authorization handoff
+- `44.67` — Execution coordination
+- `44.68` — Post-change verification
+- `44.69` — Outcome measurement
+- `44.70` — Outcome observation window
+- `44.71` — Outcome attribution restraint
+- `44.72` — Outcome comparison to baseline
+- `44.73` — Success criteria
+- `44.74` — Failure criteria
+- `44.75` — Abort criteria
+- `44.76` — Automatic rollback criteria
+- `44.77` — Manual rollback
+- `44.78` — Rollback verification
+- `44.79` — Partial rollback handling
+- `44.80` — Ambiguous outcome handling
+- `44.81` — UNKNOWN outcome handling
+- `44.82` — Experiment foundation
+- `44.83` — Experiment hypothesis
+- `44.84` — Experiment baseline
+- `44.85` — Experiment control variables
+- `44.86` — Experiment bounded scope
+- `44.87` — Experiment duration
+- `44.88` — Experiment stop conditions
+- `44.89` — Experiment rollback
+- `44.90` — Experiment result recording
+- `44.91` — A B comparison boundary
+- `44.92` — Multi-armed optimization boundary
+- `44.93` — Safe parameter search
+- `44.94` — Parameter bounds
+- `44.95` — Parameter step-size policy
+- `44.96` — Optimization convergence
+- `44.97` — Optimization oscillation detection
+- `44.98` — Optimization cooldown
+- `44.99` — Anti-thrashing controls
+- `44.100` — Preference learning foundation
+- `44.101` — Explicit operator feedback
+- `44.102` — Accepted adaptation feedback
+- `44.103` — Rejected adaptation feedback
+- `44.104` — Manual override learning
+- `44.105` — Preference provenance
+- `44.106` — Preference confidence
+- `44.107` — Preference decay
+- `44.108` — Preference reset
+- `44.109` — Preference export and inspection
+- `44.110` — Factual knowledge versus preference separation
+- `44.111` — Outcome learning foundation
+- `44.112` — Verified outcome dataset
+- `44.113` — Adaptation effectiveness history
+- `44.114` — Context-specific effectiveness
+- `44.115` — Regression detection
+- `44.116` — Adaptation invalidation
+- `44.117` — Stale learned-policy handling
+- `44.118` — Learning rollback
+- `44.119` — Online-learning safety boundary
+- `44.120` — Semantic learning provider boundary
+- `44.121` — CPU topology adaptation
+- `44.122` — CPU affinity adaptation
+- `44.123` — CPU frequency policy boundary
+- `44.124` — SMT policy boundary
+- `44.125` — NUMA placement adaptation
+- `44.126` — Memory pressure adaptation
+- `44.127` — Memory locality adaptation
+- `44.128` — Huge-page policy boundary
+- `44.129` — GPU identity-safe adaptation
+- `44.130` — GPU workload placement
+- `44.131` — GPU VRAM pressure adaptation
+- `44.132` — GPU power-limit adaptation
+- `44.133` — GPU clock-policy boundary
+- `44.134` — GPU display-role protection
+- `44.135` — Multi-GPU workload balancing
+- `44.136` — AI model placement adaptation
+- `44.137` — Inference concurrency adaptation
+- `44.138` — Inference context-resource adaptation
+- `44.139` — Storage I O adaptation
+- `44.140` — Storage workload placement
+- `44.141` — Filesystem cache pressure adaptation
+- `44.142` — Network workload adaptation
+- `44.143` — Network route policy boundary
+- `44.144` — Bandwidth contention adaptation
+- `44.145` — Service workload adaptation
+- `44.146` — Service resource-limit adaptation
+- `44.147` — Process priority adaptation
+- `44.148` — Workload scheduling adaptation
+- `44.149` — Phase 29 workload integration
+- `44.150` — Phase 30 resource integration
+- `44.151` — Phase 31 service integration
+- `44.152` — Phase 32 storage integration
+- `44.153` — Phase 33 network integration
+- `44.154` — Phase 34 accelerator integration
+- `44.155` — Phase 35 software integration
+- `44.156` — Phase 36 configuration integration
+- `44.157` — Phase 37 secrets boundary
+- `44.158` — Phase 38 identity boundary
+- `44.159` — Development-environment adaptation
+- `44.160` — Toolchain profile adaptation
+- `44.161` — Build parallelism adaptation
+- `44.162` — Container resource adaptation
+- `44.163` — Terminal and shell profile adaptation
+- `44.164` — Package update timing recommendation
+- `44.165` — Maintenance-window adaptation
+- `44.166` — Reboot timing recommendation
+- `44.167` — Background-task scheduling
+- `44.168` — Power-state awareness
+- `44.169` — Thermal telemetry integration
+- `44.170` — Thermal adaptation
+- `44.171` — Fan-control authority boundary
+- `44.172` — Power telemetry integration
+- `44.173` — Power-budget adaptation
+- `44.174` — Energy-efficiency measurement
+- `44.175` — Interactive latency measurement
+- `44.176` — Throughput measurement
+- `44.177` — Responsiveness measurement
+- `44.178` — Workload completion measurement
+- `44.179` — User interruption cost model
+- `44.180` — Resource contention measurement
+- `44.181` — Adaptive metric registry
+- `44.182` — Metric normalization
+- `44.183` — Metric provenance
+- `44.184` — Metric freshness
+- `44.185` — Metric uncertainty
+- `44.186` — Composite objective model
+- `44.187` — Multi-objective tradeoff representation
+- `44.188` — Operator objective weighting
+- `44.189` — Objective conflict handling
+- `44.190` — Hard constraints versus soft goals
+- `44.191` — Constraint validation
+- `44.192` — Constraint violation rollback
+- `44.193` — Change budget
+- `44.194` — Resource budget
+- `44.195` — Risk budget
+- `44.196` — Adaptation frequency budget
+- `44.197` — Per-domain mutation budget
+- `44.198` — Automatic-action allowlist
+- `44.199` — Automatic-action denylist
+- `44.200` — Protected resource registry
+- `44.201` — Protected maintenance path
+- `44.202` — Boot-safety protection
+- `44.203` — Storage-integrity protection
+- `44.204` — Network-access protection
+- `44.205` — SSH-access protection
+- `44.206` — Graphical-session protection
+- `44.207` — Security-control protection
+- `44.208` — Package-trust protection
+- `44.209` — Rebuntu control-plane protection
+- `44.210` — Failure-domain isolation
+- `44.211` — Blast-radius estimation
+- `44.212` — Change-impact preflight
+- `44.213` — Concurrent adaptation coordination
+- `44.214` — Adaptation locking
+- `44.215` — Race and TOCTOU protection
+- `44.216` — External-change detection
+- `44.217` — Operator-change detection
+- `44.218` — Drift during adaptation
+- `44.219` — Adaptation reconciliation
+- `44.220` — Crash recovery
+- `44.221` — Daemon restart recovery
+- `44.222` — Reboot continuity
+- `44.223` — Interrupted adaptation recovery
+- `44.224` — Interrupted rollback recovery
+- `44.225` — Durable adaptive state
+- `44.226` — Idempotent recovery operations
+- `44.227` — Adaptive event recording
+- `44.228` — Adaptive audit trail
+- `44.229` — Adaptive observability
+- `44.230` — Adaptive metrics telemetry
+- `44.231` — CLI adaptation inspection
+- `44.232` — CLI recommendation inspection
+- `44.233` — CLI policy inspection
+- `44.234` — CLI freeze and resume
+- `44.235` — CLI rollback control
+- `44.236` — Phase 25 Panel adaptive overview
+- `44.237` — Panel active-goal view
+- `44.238` — Panel recommendation view
+- `44.239` — Panel adaptation-history view
+- `44.240` — Panel outcome view
+- `44.241` — Panel policy view
+- `44.242` — Panel rollback surface
+- `44.243` — Panel safe-mode controls
+- `44.244` — Explain why adapted
+- `44.245` — Explain why not adapted
+- `44.246` — Explain expected effect
+- `44.247` — Explain measured outcome
+- `44.248` — Explain rollback reason
+- `44.249` — Semantic explanation boundary
+- `44.250` — Semantic candidate generation
+- `44.251` — Semantic profile suggestion
+- `44.252` — Semantic objective interpretation
+- `44.253` — Semantic output validation
+- `44.254` — Semantic no-authority enforcement
+- `44.255` — Prompt injection resistance
+- `44.256` — Untrusted telemetry handling
+- `44.257` — Untrusted configuration handling
+- `44.258` — Secret exfiltration resistance
+- `44.259` — Authorization bypass resistance
+- `44.260` — No arbitrary shell authority
+- `44.261` — Deterministic fallback without model
+- `44.262` — Provider outage degradation
+- `44.263` — Resource exhaustion degradation
+- `44.264` — Low-confidence behavior
+- `44.265` — Insufficient-evidence behavior
+- `44.266` — Conflicting-evidence behavior
+- `44.267` — Simulation interface
+- `44.268` — Dry-run adaptation
+- `44.269` — Counterfactual estimation boundary
+- `44.270` — Historical replay evaluation
+- `44.271` — Shadow-mode adaptation
+- `44.272` — Canary adaptation boundary
+- `44.273` — Staged rollout on local resources
+- `44.274` — Adaptation calibration
+- `44.275` — Prediction versus outcome calibration
+- `44.276` — False-positive adaptation analysis
+- `44.277` — False-negative adaptation analysis
+- `44.278` — Over-adaptation detection
+- `44.279` — Under-adaptation detection
+- `44.280` — Oscillation adversarial tests
+- `44.281` — Feedback-loop adversarial tests
+- `44.282` — Rollback adversarial tests
+- `44.283` — Authorization adversarial tests
+- `44.284` — Protected-resource adversarial tests
+- `44.285` — Resource-contention tests
+- `44.286` — Multi-GPU adaptation tests
+- `44.287` — NUMA adaptation tests
+- `44.288` — Network continuity tests
+- `44.289` — Storage safety tests
+- `44.290` — Graphical-session continuity tests
+- `44.291` — Crash restart reboot tests
+- `44.292` — Concurrent mutation tests
+- `44.293` — External drift tests
+- `44.294` — Semantic-provider failure tests
+- `44.295` — End-to-end development scenario
+- `44.296` — End-to-end AI inference scenario
+- `44.297` — End-to-end gaming scenario
+- `44.298` — End-to-end maintenance scenario
+- `44.299` — End-to-end degraded-mode scenario
+- `44.300` — Performance profiling
+- `44.301` — Adaptive runtime overhead
+- `44.302` — Memory and state bounds
+- `44.303` — Scalability validation
+- `44.304` — Configuration model
+- `44.305` — Feature capability discovery
+- `44.306` — Documentation reconciliation
+- `44.307` — Architecture reconciliation
+- `44.308` — AGENTS.md permanent adaptive contract
+- `44.309` — Repository-wide recursive rediscovery
+- `44.310` — Duplicate tuning authority audit
+- `44.311` — Remaining Python-boundary audit
+- `44.312` — Policy-authority audit
+- `44.313` — Outcome-grounding audit
+- `44.314` — Learning-safety audit
+- `44.315` — Protected-resource audit
+- `44.316` — Rollback-completeness audit
+- `44.317` — Adversarial self-modification audit
+- `44.318` — Final fixed-point rediscovery
+- `44.319` — Phase 44 closure and Phase 45 handoff

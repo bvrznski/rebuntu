@@ -1,0 +1,26 @@
+# Phase 97 — Proactive Operations System
+
+- 97.0: Bootstrap and repository reality audit
+- 97.1: Canonical ontology and identity
+- 97.2: Definitions and lifecycle
+- 97.3: State ownership and persistence
+- 97.4: Observation evidence provenance freshness
+- 97.5: UNKNOWN and conflicting evidence
+- 97.6: Capability and affordance integration
+- 97.7: Goal and desired-state integration
+- 97.8: Planning and operation integration
+- 97.9: Constraints and invariants
+- 97.10: Resources and topology
+- 97.11: Policy authorization
+- 97.12: Mandatory security
+- 97.13: Privilege and native providers
+- 97.14: Failure timeout cancellation partial effects
+- 97.15: Crash restart reconciliation recovery
+- 97.16: Concurrency races replacement TOCTOU
+- 97.17: Boundedness and budgets
+- 97.18: CLI GUI natural-language integration
+- 97.19: Timeline graph context integration
+- 97.20: Distributed and associated systems
+- 97.21: Python model shell authority audit
+- 97.22: Adversarial build runtime migration audit
+- 97.23: Documentation rediscovery and closure

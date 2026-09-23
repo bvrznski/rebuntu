@@ -1,0 +1,26 @@
+# Phase 102 — Interrupt, Escalation & Attention Arbitration
+
+- 102.0: Bootstrap and repository reality audit
+- 102.1: Canonical ontology and identity
+- 102.2: Definitions and lifecycle
+- 102.3: State ownership and persistence
+- 102.4: Observation evidence provenance freshness
+- 102.5: UNKNOWN and conflicting evidence
+- 102.6: Capability and affordance integration
+- 102.7: Goal and desired-state integration
+- 102.8: Planning and operation integration
+- 102.9: Constraints and invariants
+- 102.10: Resources and topology
+- 102.11: Policy authorization
+- 102.12: Mandatory security
+- 102.13: Privilege and native providers
+- 102.14: Failure timeout cancellation partial effects
+- 102.15: Crash restart reconciliation recovery
+- 102.16: Concurrency races replacement TOCTOU
+- 102.17: Boundedness and budgets
+- 102.18: CLI GUI natural-language integration
+- 102.19: Timeline graph context integration
+- 102.20: Distributed and associated systems
+- 102.21: Python model shell authority audit
+- 102.22: Adversarial build runtime migration audit
+- 102.23: Documentation rediscovery and closure

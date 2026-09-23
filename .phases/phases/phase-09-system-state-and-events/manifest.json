@@ -1,0 +1,104 @@
+{
+  "phase": 9,
+  "slug": "system-state-and-events",
+  "directory": "phase-09-system-state-and-events",
+  "prompt_count": 19,
+  "layout_version": 2,
+  "prompts": [
+    {
+      "file": "9.0.md",
+      "title": "Rebuntu --- Phase 9.0 --- Automation Runtime",
+      "sha256": "9f1970307a52e76cc85479459e3298b74126896212457726de961163554e0fba"
+    },
+    {
+      "file": "9.1.md",
+      "title": "Rebuntu --- Phase 9.1 --- Automaton Definition",
+      "sha256": "79f726fea53b93396bf969d5c9f8d17eff5eb45a195a1aaf53bf374e6ed4691c"
+    },
+    {
+      "file": "9.2.md",
+      "title": "Rebuntu --- Phase 9.2 --- Trigger Binding",
+      "sha256": "eb0845e42b52d85ca2bece43f53ee75d0d980ac82f8fea28ca0a9267ecc7b788"
+    },
+    {
+      "file": "9.3.md",
+      "title": "Rebuntu --- Phase 9.3 --- Event-Driven Automation",
+      "sha256": "9650310f2f66dd5f85a7e5e1f2c7479fe9ed3f305550a401e3606c264af2af63"
+    },
+    {
+      "file": "9.4.md",
+      "title": "Rebuntu --- Phase 9.4 --- Condition-Driven Automation",
+      "sha256": "3a546fd768a9aa5bf8d14af6db9f7d6279f2aad2f523fed47d2f452778d4eb48"
+    },
+    {
+      "file": "9.5.md",
+      "title": "Rebuntu --- Phase 9.5 --- Scheduled Automation",
+      "sha256": "b61fb53abfdbb461f2e72bf4b78bc852a34275468b67fdcbb251d7b77f937801"
+    },
+    {
+      "file": "9.6.md",
+      "title": "Rebuntu --- Phase 9.6 --- systemd Timer Provider",
+      "sha256": "a2883ffad3ea9592bbbf27946a5babfab829b343045deae9cfcd694f89ca87eb"
+    },
+    {
+      "file": "9.7.md",
+      "title": "Rebuntu --- Phase 9.7 --- Kernel / udev Activation",
+      "sha256": "4b538bc18bcf9fcd088a4dd7a6178643ee48938601c6e75d6a4ce3396aca7567"
+    },
+    {
+      "file": "9.8.md",
+      "title": "Rebuntu --- Phase 9.8 --- Path / Device / Socket Activation",
+      "sha256": "9f5c7246eff8ebadde21685018ab5b5408af9548c1ea21a5355b0e1c17c79be2"
+    },
+    {
+      "file": "9.9.md",
+      "title": "Rebuntu --- Phase 9.9 --- Debounce / Coalescing",
+      "sha256": "bf39f80fe2c1570e849637f490cfb3a281d3b215f9d1571f719fdc3796cf17a8"
+    },
+    {
+      "file": "9.10.md",
+      "title": "Rebuntu --- Phase 9.10 --- Throttling / Cooldown",
+      "sha256": "1470041c6722d0403649c7c7e4ee935c7673be59f7a1c0ed57a73a1724548102"
+    },
+    {
+      "file": "9.11.md",
+      "title": "Rebuntu --- Phase 9.11 --- Automation State",
+      "sha256": "9bd7a10fce01732a247ef1b7d8ae8322fa961246fd18baa5fca4a02c403d97d9"
+    },
+    {
+      "file": "9.12.md",
+      "title": "Rebuntu --- Phase 9.12 --- Automation Policy",
+      "sha256": "ab450dec3f6ac3ba9a0918ee35f1910e0986aeb50c1ffe6abca1b9eb5543e509"
+    },
+    {
+      "file": "9.13.md",
+      "title": "Rebuntu --- Phase 9.13 --- Failure & Retry",
+      "sha256": "5746caeea05e41ece18bb8e6bf403ace6ec3ddda4b0b3de96c2a2a08e080c706"
+    },
+    {
+      "file": "9.14.md",
+      "title": "Rebuntu --- Phase 9.14 --- Automation Verification",
+      "sha256": "d91fbf221bdd4137db17597a5704a9852427c1b7dbd86670996a7adb5bb48480"
+    },
+    {
+      "file": "9.15.md",
+      "title": "Rebuntu --- Phase 9.15 --- Automation Evidence",
+      "sha256": "8fe94601304e97608664affa2e148585da3dca2122d0601b6c50ed4dd460e60b"
+    },
+    {
+      "file": "9.16.md",
+      "title": "Rebuntu --- Phase 9.16 --- Historical Automaton Migration",
+      "sha256": "b84954aa19f29de2addd260d917d2b16bc500361e78016082a06a9c8d9f1ca3a"
+    },
+    {
+      "file": "9.17.md",
+      "title": "Rebuntu --- Phase 9.17 --- Automation Discovery & Management",
+      "sha256": "205241e408f8baa018e2e65fbad5f0ecb325cf015d467ecf00e7478df87df109"
+    },
+    {
+      "file": "9.18.md",
+      "title": "Rebuntu --- Phase 9.18 --- Automation Integration Audit",
+      "sha256": "3eab4d0440cdc907c9bc1ad44cf180198d4aab6468b4db0bc8906a94c0549ca4"
+    }
+  ]
+}

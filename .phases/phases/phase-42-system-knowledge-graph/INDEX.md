@@ -1,0 +1,137 @@
+# Phase 42 Index
+
+## Architecture
+- `architecture/01-boundary.md`
+- `architecture/02-graph-model.md`
+- `architecture/03-identity.md`
+- `architecture/04-relations.md`
+- `architecture/05-epistemics.md`
+- `architecture/06-ingestion.md`
+- `architecture/07-temporal.md`
+- `architecture/08-search-workflow.md`
+- `architecture/09-native.md`
+- `architecture/10-security.md`
+- `architecture/11-views.md`
+- `architecture/12-closure.md`
+
+## Full prompts
+- `42.0` — Foundation and repository archaeology
+- `42.1` — Existing structural knowledge inventory
+- `42.2` — Knowledge ownership map
+- `42.3` — Canonical C++ graph architecture
+- `42.4` — Strong graph identifiers
+- `42.5` — Entity reference model
+- `42.6` — Entity type registry
+- `42.7` — Relation type registry
+- `42.8` — Assertion model
+- `42.9` — Provenance model
+- `42.10` — Epistemic metadata
+- `42.11` — Freshness and staleness
+- `42.12` — Uncertainty representation
+- `42.13` — Contradictory assertion preservation
+- `42.14` — Alias model
+- `42.15` — Canonical identity resolution
+- `42.16` — Identity merge safety
+- `42.17` — Identity split and correction
+- `42.18` — Entity lifecycle
+- `42.19` — Relation lifecycle
+- `42.20` — Assertion lifecycle
+- `42.21` — Graph schema versioning
+- `42.22` — Schema migration
+- `42.23` — Native graph store abstraction
+- `42.24` — Persistent graph storage
+- `42.25` — Transactional graph updates
+- `42.26` — Graph indexing
+- `42.27` — Adjacency indexing
+- `42.28` — Property indexing
+- `42.29` — Provenance indexing
+- `42.30` — Incremental ingestion
+- `42.31` — Idempotent ingestion
+- `42.32` — Replay and duplicate handling
+- `42.33` — Tombstones and disappearance
+- `42.34` — Provider contract
+- `42.35` — Provider discovery and registration
+- `42.36` — Phase 39 event linkage
+- `42.37` — Temporal epoch references
+- `42.38` — Structural change event emission
+- `42.39` — Phase 40 graph search integration
+- `42.40` — Entity search and lookup
+- `42.41` — Relation-filtered search
+- `42.42` — Graph traversal query model
+- `42.43` — Bounded traversal execution
+- `42.44` — Path query semantics
+- `42.45` — Constrained path discovery
+- `42.46` — Traversal authorization
+- `42.47` — Graph query provenance
+- `42.48` — Query incompleteness and UNKNOWN
+- `42.49` — Containment relations
+- `42.50` — Ownership relations
+- `42.51` — Dependency relations
+- `42.52` — Configuration relations
+- `42.53` — Execution relations
+- `42.54` — Communication relations
+- `42.55` — Service relations
+- `42.56` — Process and workload provider
+- `42.57` — CPU NUMA resource provider
+- `42.58` — GPU accelerator provider
+- `42.59` — Storage topology provider
+- `42.60` — Filesystem and mount provider
+- `42.61` — Network topology provider
+- `42.62` — Service and systemd provider
+- `42.63` — Package and software provider
+- `42.64` — Configuration provider
+- `42.65` — Secrets-reference provider
+- `42.66` — User and identity provider
+- `42.67` — Development environment provider
+- `42.68` — Terminal and shell provider
+- `42.69` — Workflow and automation provider
+- `42.70` — Event and timeline context provider
+- `42.71` — Security and authorization relations
+- `42.72` — Privilege and exposure relations
+- `42.73` — IPC and endpoint relations
+- `42.74` — Repository and source relations
+- `42.75` — Build and package relations
+- `42.76` — Container and daemon relations
+- `42.77` — Cross-domain entity linking
+- `42.78` — Cross-domain dependency derivation
+- `42.79` — Deterministic relation derivation
+- `42.80` — Semantic relation candidate boundary
+- `42.81` — Semantic candidate validation
+- `42.82` — Evidence-backed relation promotion
+- `42.83` — System Topology view
+- `42.84` — Software Stack view
+- `42.85` — Security Exposure view
+- `42.86` — Change Impact view
+- `42.87` — Incident Context view
+- `42.88` — Dependency blast-radius analysis
+- `42.89` — Configuration impact analysis
+- `42.90` — Failure-context graph assembly
+- `42.91` — Phase 41 workflow graph consumption
+- `42.92` — Graph-aware workflow conditions
+- `42.93` — Graph observability and diagnostics
+- `42.94` — Graph metrics and telemetry
+- `42.95` — Secret-safe graph storage and logging
+- `42.96` — Authorization and visibility model
+- `42.97` — Race consistency and snapshot semantics
+- `42.98` — Graph cache policy
+- `42.99` — Cache invalidation and freshness
+- `42.100` — Large-graph scalability
+- `42.101` — Traversal resource bounds
+- `42.102` — Failure injection
+- `42.103` — Identity and alias adversarial tests
+- `42.104` — Contradiction preservation tests
+- `42.105` — Provider ingestion tests
+- `42.106` — Traversal and path tests
+- `42.107` — Phase 39 integration tests
+- `42.108` — Phase 40 search integration tests
+- `42.109` — Phase 41 workflow integration tests
+- `42.110` — Security and secret-safety tests
+- `42.111` — Performance and scalability validation
+- `42.112` — Documentation reconciliation
+- `42.113` — AGENTS.md permanent graph contract
+- `42.114` — Repository-wide recursive rediscovery
+- `42.115` — Duplicate structural authority audit
+- `42.116` — Adversarial causality and inference audit
+- `42.117` — Final provider coverage audit
+- `42.118` — Final fixed-point rediscovery
+- `42.119` — Phase 42 closure and Phase 43 handoff

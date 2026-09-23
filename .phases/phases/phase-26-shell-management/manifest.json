@@ -1,0 +1,164 @@
+{
+  "phase": 26,
+  "slug": "shell-management",
+  "directory": "phase-26-shell-management",
+  "prompt_count": 31,
+  "layout_version": 2,
+  "prompts": [
+    {
+      "file": "26.0-shell-management-system-foundation.md",
+      "title": "Phase 26.0 — Shell Management System Foundation",
+      "sha256": "930086a8088e2964ed78bf816c16b2d5fd38cef9580292114acb990dcb7c96c2"
+    },
+    {
+      "file": "26.1-shell-context-session-model.md",
+      "title": "Phase 26.1 — Shell Context & Session Model",
+      "sha256": "90e12a72c0b7071e3f863ed25decbbcc4e02e83f8e442250dcb796d7a64a4376"
+    },
+    {
+      "file": "26.2-command-lifecycle-execution-context-capture.md",
+      "title": "Phase 26.2 — Command Lifecycle & Execution Context Capture",
+      "sha256": "11446bb0082c0275227919cc49a1102fa0ae407848bafd4637c1c89d9c536ce3"
+    },
+    {
+      "file": "26.3-unified-history-backend.md",
+      "title": "Phase 26.3 — Unified History Backend",
+      "sha256": "9ca3f0ef061253b048b1a01108a80c4544b99db683ca2df0d109814586ff769f"
+    },
+    {
+      "file": "26.4-system-vs-virtual-environment-history-separation.md",
+      "title": "Phase 26.4 — System vs Virtual-Environment History Separation",
+      "sha256": "6ac970c306193fd2b15c26e47a23fbee8740fa014f0de0e953c31d4e56d90eff"
+    },
+    {
+      "file": "26.5-virtual-environment-identity-lifecycle-tracking.md",
+      "title": "Phase 26.5 — Virtual Environment Identity & Lifecycle Tracking",
+      "sha256": "2788363f1a9e1d9ff976964e5d179071c5a95a75d69be1774cddfe59ef3332ae"
+    },
+    {
+      "file": "26.6-contextual-history-search-retrieval.md",
+      "title": "Phase 26.6 — Contextual History Search & Retrieval",
+      "sha256": "c53986171300c1c7468be274d6702f4831437d9fc7ff4bd974f1f6c498c8932a"
+    },
+    {
+      "file": "26.7-interactive-history-manager.md",
+      "title": "Phase 26.7 — Interactive History Manager",
+      "sha256": "0f9457aa9930df740cb0b9f20fc5233af82c17295c97fcdb9547f21d0016618f"
+    },
+    {
+      "file": "26.8-fzf-coupled-history-navigation.md",
+      "title": "Phase 26.8 — FZF-Coupled History Navigation",
+      "sha256": "ea762a3fac2ad3728c2f331facb818afdc9fca31f8e26f47c336b1e14471c8c3"
+    },
+    {
+      "file": "26.9-atuin-integration-backend-abstraction.md",
+      "title": "Phase 26.9 — Atuin Integration & Backend Abstraction",
+      "sha256": "811f20ed68bf505b85e9065c7dc9b060aaec9b1d39459f352219adc0d9f273f8"
+    },
+    {
+      "file": "26.10-directory-project-aware-command-memory.md",
+      "title": "Phase 26.10 — Directory / Project-Aware Command Memory",
+      "sha256": "baeb2d9539ef73170c5781b2c4f9b8f849b54cca789e819d4caa50981dbc585a"
+    },
+    {
+      "file": "26.11-command-metadata-exit-state-duration.md",
+      "title": "Phase 26.11 — Command Metadata, Exit State & Duration",
+      "sha256": "133c5503d37f69458060610c61192b6fc82bf22d31e73584a78026b60029ead7"
+    },
+    {
+      "file": "26.12-shell-session-management.md",
+      "title": "Phase 26.12 — Shell Session Management",
+      "sha256": "3964ece3c2227730ea33e097182acabd8fa8e4c8f107ed14c507f907831b1590"
+    },
+    {
+      "file": "26.13-environment-path-state-management.md",
+      "title": "Phase 26.13 — Environment & PATH State Management",
+      "sha256": "8335c79a414c5edb93831e4103181d54e0c13dc6e5522c7e437ba8a6d9da4d27"
+    },
+    {
+      "file": "26.14-alias-abbreviation-function-management.md",
+      "title": "Phase 26.14 — Alias, Abbreviation & Function Management",
+      "sha256": "1f61c6e4621fc537bad8c57713eb49ebba81c41f668ca17282fd36dc50030666"
+    },
+    {
+      "file": "26.15-fish-plugin-oh-my-fish-management.md",
+      "title": "Phase 26.15 — Fish Plugin & Oh My Fish Management",
+      "sha256": "5f3a1ef516aee0c2dbbbd399ebdf9b7ec3b92a871ef24d8d6fb2a69eb63307bd"
+    },
+    {
+      "file": "26.16-cli-tool-integration-registry.md",
+      "title": "Phase 26.16 — CLI Tool Integration Registry",
+      "sha256": "d9c9e8357a1856f44f6e0c61bcc527f3fe9efea9fe06ea0017c8999531e60866"
+    },
+    {
+      "file": "26.17-shell-configuration-registry-ownership.md",
+      "title": "Phase 26.17 — Shell Configuration Registry & Ownership",
+      "sha256": "805fc15d54ce8f7eba7e8165b0b40a4d66ada7c3138812f586bbb5dd2d35eac5"
+    },
+    {
+      "file": "26.18-shell-configuration-drift-detection.md",
+      "title": "Phase 26.18 — Shell Configuration Drift Detection",
+      "sha256": "53d05609cf345b0ef929c2e3f27f20c002c04838f13122eb475e85fe94997a6f"
+    },
+    {
+      "file": "26.19-shell-health-diagnostics.md",
+      "title": "Phase 26.19 — Shell Health Diagnostics",
+      "sha256": "dad149bfcc5dbb2d6849b307b4c517241a693da2cde3f4d57a288581274fd73e"
+    },
+    {
+      "file": "26.20-shell-recovery-safe-mode-console.md",
+      "title": "Phase 26.20 — Shell Recovery & Safe-Mode Console",
+      "sha256": "594a441bf09f27260efb8d95fae1562438e8dce22725a6d1f65fc16e75ebf96d"
+    },
+    {
+      "file": "26.21-backup-snapshot-rollback.md",
+      "title": "Phase 26.21 — Backup, Snapshot & Rollback",
+      "sha256": "74d40bb4db6db736519e689f1c5bfe33bb4cfb025fc2b555c97090e412bc46a6"
+    },
+    {
+      "file": "26.22-search-inspection-explainability.md",
+      "title": "Phase 26.22 — Search, Inspection & Explainability",
+      "sha256": "61cb647e4e8e34fd75338fef57606f28edc52ea36a921b59b798135354de20e1"
+    },
+    {
+      "file": "26.23-shell-management-cli.md",
+      "title": "Phase 26.23 — Shell Management CLI",
+      "sha256": "f528cff6dff6267bc324f4dbcd5043d117b4a01323a2652f6891c21920fd2c07"
+    },
+    {
+      "file": "26.24-panel-integration-api.md",
+      "title": "Phase 26.24 — Panel Integration API",
+      "sha256": "6b71284178673e02d88f1fea33990d80e8b0b50d525cbe76902702676a440d58"
+    },
+    {
+      "file": "26.25-privacy-secrets-sensitive-command-handling.md",
+      "title": "Phase 26.25 — Privacy, Secrets & Sensitive Command Handling",
+      "sha256": "03a109d23156390f62f49be8715b8f58b37aaeb31560cfba2388262a8c32e34e"
+    },
+    {
+      "file": "26.26-performance-retention-database-maintenance.md",
+      "title": "Phase 26.26 — Performance, Retention & Database Maintenance",
+      "sha256": "768d74446c2ead4919f36180a17f0ee88621fa660672234fed936009304c201a"
+    },
+    {
+      "file": "26.27-cross-shell-bash-compatibility-boundary.md",
+      "title": "Phase 26.27 — Cross-Shell / Bash Compatibility Boundary",
+      "sha256": "35979940bc2e97d6bf8859bcce70eff1b1672089b4d7ae7d6018dc211472cdc2"
+    },
+    {
+      "file": "26.28-failure-injection-recovery-testing.md",
+      "title": "Phase 26.28 — Failure Injection & Recovery Testing",
+      "sha256": "dc2eb047c7eaafca15de048e94e01bef84c0f3777bc3758b5c2f6a6648dd6911"
+    },
+    {
+      "file": "26.29-cross-phase-integration-audit.md",
+      "title": "Phase 26.29 — Cross-Phase Integration Audit",
+      "sha256": "25a3968836620eb3bea638c5315bd182434bd105f9ae50c8cfbb2a4cca2ec956"
+    },
+    {
+      "file": "26.30-shell-management-system-closure-readiness-gate.md",
+      "title": "Phase 26.30 — Shell Management System Closure & Readiness Gate",
+      "sha256": "73ea585cda983876c6b64b1c4a454eeafd943b7c250d21c1ccadb6714de97447"
+    }
+  ]
+}

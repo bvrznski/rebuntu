@@ -1,0 +1,369 @@
+{
+  "phase": 5,
+  "slug": "system-observation-inventory-discovery",
+  "directory": "phase-05-system-observation-inventory-discovery",
+  "prompt_count": 72,
+  "layout_version": 2,
+  "prompts": [
+    {
+      "file": "5.0.md",
+      "title": "Rebuntu — Phase 5.0 — Foundational Services Framework",
+      "sha256": "6ffd8b4ecd62f12f24cffddae18f38952dc9d7c85d10ebe1dd8da6931abfeda9"
+    },
+    {
+      "file": "5.1.md",
+      "title": "Rebuntu — Phase 5.1 — System Event Collector",
+      "sha256": "cb892ce423f4229d65f74b9bca08302d0d3a2bbaceaf1a0137bfacbec5d91ae9"
+    },
+    {
+      "file": "5.2.md",
+      "title": "Rebuntu — Phase 5.2 — Journald Acquisition Service",
+      "sha256": "e9af488c7b4198ed45609c0f0e584a5ecc0c967a86d240f0b1ddd50afd8ea8ae"
+    },
+    {
+      "file": "5.3.md",
+      "title": "Rebuntu — Phase 5.3 — Journal Filtering & Normalization",
+      "sha256": "06642127e5c1bb9f86967a94bf26cca61ece1445ba2554e16b20fb3a94ac82d0"
+    },
+    {
+      "file": "5.4.md",
+      "title": "Rebuntu — Phase 5.4 — Journal Analyzer",
+      "sha256": "8934a2dd104e84c981495872cdb6ebfcab2f4fce8d3a993a4c2940d7d256ef18"
+    },
+    {
+      "file": "5.5.md",
+      "title": "Rebuntu — Phase 5.5 — System Stability Monitor",
+      "sha256": "db48bc6e4235c27986cceb92225c8b1697e7a1ff5d905bd2e7e9ce4ca3a4c13b"
+    },
+    {
+      "file": "5.6.md",
+      "title": "Rebuntu — Phase 5.6 — Process & Service Health Monitor",
+      "sha256": "a7991d5ccfd342e500751706dd54eb3ad1b11382484353944d53f9a748009cc0"
+    },
+    {
+      "file": "5.7.md",
+      "title": "Rebuntu — Phase 5.7 — Kernel / Driver Fault Monitor",
+      "sha256": "acc8f9ae3a5e15f3ed959d27b0fdaf1a1ee9d03d2c6f3abb74d06597a9671677"
+    },
+    {
+      "file": "5.8.md",
+      "title": "Rebuntu — Phase 5.8 — Storage & Filesystem Health Monitor",
+      "sha256": "5b6fc9a14a75b4b6439a0385694b15e6051145f88ea4ac9eadc24bb3b0d946d8"
+    },
+    {
+      "file": "5.9.md",
+      "title": "Rebuntu — Phase 5.9 — CPU / Memory / Thermal Monitor",
+      "sha256": "6e9e2b13c3efa60c5b637c0ec73042825968dca70305aa39d4b0890019c09a6c"
+    },
+    {
+      "file": "5.10.md",
+      "title": "Rebuntu — Phase 5.10 — GPU Health Monitor",
+      "sha256": "cf5f4f85d1366f7e61baf7229d61344f2d54088f5406b2177cb67f93adee34a2"
+    },
+    {
+      "file": "5.11.md",
+      "title": "Rebuntu — Phase 5.11 — Hang / Stall / Jam Detection",
+      "sha256": "fe837f090d9bf6798b3a27440046c5d770d2d29747f5699b7b49d467f1e9f05d"
+    },
+    {
+      "file": "5.12.md",
+      "title": "Rebuntu — Phase 5.12 — Evidence Collector",
+      "sha256": "1b1d5ad2ca15363f3c6b3844b27e46b0d17336273d62c7de1f64d823b39c75f3"
+    },
+    {
+      "file": "5.13.md",
+      "title": "Rebuntu — Phase 5.13 — Diagnostic Snapshot Service",
+      "sha256": "56a26308872c67710da9d0e8ec3dbaf8c2a303ae59971b7197145a98c2942e67"
+    },
+    {
+      "file": "5.14.md",
+      "title": "Rebuntu — Phase 5.14 — Internal Alert Service",
+      "sha256": "82e078cebfebae13861ee6bb95647e0f3ff1b5c8a590ce61aada8560f5623a6c"
+    },
+    {
+      "file": "5.15.md",
+      "title": "Rebuntu — Phase 5.15 — Reporting & Notification",
+      "sha256": "fb32fc21fb3e714b739dd39e9aefc3d70f6df12fd52554775106556e201a2511"
+    },
+    {
+      "file": "5.16.md",
+      "title": "Rebuntu — Phase 5.16 — Stability Services Integration & Soak Test",
+      "sha256": "4e0d63e6549a517d1d28342495b70a031250662bf28ee68989b60f0aa9247af0"
+    },
+    {
+      "file": "5.17_filesystem_observation.md",
+      "title": "Rebuntu — Phase 5",
+      "sha256": "0c4158456edd71b254050c4257ce8d1d877434004ee7434fe0b6deba8326ef90"
+    },
+    {
+      "file": "5.18_mount_topology.md",
+      "title": "Rebuntu — Phase 5",
+      "sha256": "8f1fdeb389fdf949ebb401abe361ac13371c3029d8b441e87fc778f579d8a0b9"
+    },
+    {
+      "file": "5.19_encrypted_storage_observation.md",
+      "title": "Rebuntu — Phase 5",
+      "sha256": "c116e95d21a17ab26359c2216e2cb1e8e37b8a449614b0c283849c522b7c0c6a"
+    },
+    {
+      "file": "5.20_software_raid_and_volume_layer_observation.md",
+      "title": "Rebuntu — Phase 5",
+      "sha256": "c4c4aa1641cd30c23ce75d18a1b4c7d915a2759b14601d9308e82e38d3502331"
+    },
+    {
+      "file": "5.21_network_interface_discovery.md",
+      "title": "Rebuntu — Phase 5",
+      "sha256": "8374008fdb51266fdc2ce902b6a216b6377636d0925a9b8dd0d57de98ab33e2b"
+    },
+    {
+      "file": "5.22_route_observation.md",
+      "title": "Rebuntu — Phase 5",
+      "sha256": "9906c270088578dea886468c7a0fe00f43eb3fcfa9904b0b7553795f4c1670e1"
+    },
+    {
+      "file": "5.23_socket_listener_observation.md",
+      "title": "Rebuntu — Phase 5",
+      "sha256": "a096f2c880aabc40160106384df3d3d028f4819c105e2ae00c38b1e8a49c6bc7"
+    },
+    {
+      "file": "5.24_process_discovery_provider.md",
+      "title": "Rebuntu — Phase 5",
+      "sha256": "1ad83ea69e846639bb4e95addc8ed888604f00f9c1f52a199a6c8881ce4c0a3c"
+    },
+    {
+      "file": "5.25_process_identity_race_safety.md",
+      "title": "Rebuntu — Phase 5",
+      "sha256": "ddd8c683a935fc0a7ee17564462c51cb2f3fee4b41ca74b93ffda827f568deda"
+    },
+    {
+      "file": "5.26_service_discovery_provider.md",
+      "title": "Rebuntu — Phase 5",
+      "sha256": "c926185a955d03debbbbf42b27d0c6e3f1b736e69e9a694576bda1474a0b5ff8"
+    },
+    {
+      "file": "5.27_session_and_login_observation.md",
+      "title": "Rebuntu — Phase 5",
+      "sha256": "7849c07aff95f7d5ba1ff8fc5c54912ae8ec9dce59c0909f54421dc1c5706b79"
+    },
+    {
+      "file": "5.28_cgroup_topology_observation.md",
+      "title": "Rebuntu — Phase 5",
+      "sha256": "2b0a178262ee76504358854b5f3557a640e6e9a913454a796250cfbd77be8bde"
+    },
+    {
+      "file": "5.29_namespace_observation_foundation.md",
+      "title": "Rebuntu — Phase 5",
+      "sha256": "bf1a24cd5bc3e0e8156e51fdf52afee6af387cb49a84e3d369fd444c255c611a"
+    },
+    {
+      "file": "5.30_container_runtime_boundary_discovery.md",
+      "title": "Rebuntu — Phase 5",
+      "sha256": "eafaaeff7254e5c7b06e8861773cb7e540917516afc46fd7f70228c9862d1b90"
+    },
+    {
+      "file": "5.31_package_inventory_boundary.md",
+      "title": "Rebuntu — Phase 5",
+      "sha256": "e08eae0c2f22a3e20321b23a22d5fa1defa962acb134d02320230acd5046371d"
+    },
+    {
+      "file": "5.32_driver_and_kernel-module_observation.md",
+      "title": "Rebuntu — Phase 5",
+      "sha256": "ec7aa56536c456f8da3bed8614fcea298ca3deb29d9db6bc31e8bfc411e43eb0"
+    },
+    {
+      "file": "5.33_firmware_observation_boundary.md",
+      "title": "Rebuntu — Phase 5",
+      "sha256": "5634ac88c4f9526099e0ffd95b3246fe59da178b439814ebb5d83411381631ca"
+    },
+    {
+      "file": "5.34_power_and_thermal_observation.md",
+      "title": "Rebuntu — Phase 5",
+      "sha256": "de9f7ec6a5b9e4fe22f2b47c3fe44802355a6a743090e0198f3700d8de15e509"
+    },
+    {
+      "file": "5.35_display_topology_observation.md",
+      "title": "Rebuntu — Phase 5",
+      "sha256": "77df5d0adf784a2a2afed707d3a5ffd783f75155cc05bcba43e8c261223216a4"
+    },
+    {
+      "file": "5.36_input_and_peripheral_discovery_boundary.md",
+      "title": "Rebuntu — Phase 5",
+      "sha256": "8af9d5c07d545b1e8a671d8a198b7eb377bb26e49e9396cabb4f3512c63edc6b"
+    },
+    {
+      "file": "5.37_capability_discovery_integration.md",
+      "title": "Rebuntu — Phase 5",
+      "sha256": "eeb2fa5f23c9aab0a7e8b2d111045d53442020d8343ce05397d5c4cad13c62c4"
+    },
+    {
+      "file": "5.38_inventory_snapshot_semantics.md",
+      "title": "Rebuntu — Phase 5",
+      "sha256": "e03d08878a043a11fcdce41447712ae49977e973dfe83cb2eaa49d1871aadb2f"
+    },
+    {
+      "file": "5.39_incremental_discovery.md",
+      "title": "Rebuntu — Phase 5",
+      "sha256": "4e9ca2e44263f7055d85d74e904cf6233250ad2fdbe80d78f1bc52707adc0661"
+    },
+    {
+      "file": "5.40_discovery_resynchronization.md",
+      "title": "Rebuntu — Phase 5",
+      "sha256": "bf9f6e534d34db5c5ef6a6c541354d8fb71359a251c097e0f60cab339561f470"
+    },
+    {
+      "file": "5.41_observation_deduplication.md",
+      "title": "Rebuntu — Phase 5",
+      "sha256": "42e49856b82296d3e3d1a43a6aadcdee82659c7bb6e51624cdb7b5dc3ca927d9"
+    },
+    {
+      "file": "5.42_derived_fact_boundary.md",
+      "title": "Rebuntu — Phase 5",
+      "sha256": "b934ada19ad01e711aecc8309454fc44261417268234233a88ece26b470394a8"
+    },
+    {
+      "file": "5.43_semantic_annotation_boundary_preparation.md",
+      "title": "Rebuntu — Phase 5",
+      "sha256": "b1c88f455bcb860531806c50c1a2387272240e7445655e76cebae2ba0faedc3a"
+    },
+    {
+      "file": "5.44_observation_query_foundation.md",
+      "title": "Rebuntu — Phase 5",
+      "sha256": "a913ab5e4edc128b205b8a77baf2e4e18e38b35e307fb242d88d5d36dc876b7c"
+    },
+    {
+      "file": "5.45_inventory_indexing.md",
+      "title": "Rebuntu — Phase 5",
+      "sha256": "99d30e614f22b180b17caffe883f5dd5c2c8e896d7cd7b1a140aca4841c8ba6e"
+    },
+    {
+      "file": "5.46_cross-domain_entity_references.md",
+      "title": "Rebuntu — Phase 5",
+      "sha256": "370911f5056aef20b3deeedd1edbaa75cb7072e0c15972f69d6e4dfaaf93355f"
+    },
+    {
+      "file": "5.47_relationship_evidence.md",
+      "title": "Rebuntu — Phase 5",
+      "sha256": "b70977ebb6da1353cb4106ef2f000242655255b435ddaf885e27a059c4c79c46"
+    },
+    {
+      "file": "5.48_hotplug_handling.md",
+      "title": "Rebuntu — Phase 5",
+      "sha256": "e33576095fe17a5193edf065f3fdee3eee003fa9e40d54a9772c909fe9ad23f6"
+    },
+    {
+      "file": "5.49_provider_timeout_and_cancellation.md",
+      "title": "Rebuntu — Phase 5",
+      "sha256": "6ec619b56aa94be5cf248953a8c3d4763564421e163fa43a11a582c76a686140"
+    },
+    {
+      "file": "5.50_provider_isolation_and_degradation.md",
+      "title": "Rebuntu — Phase 5",
+      "sha256": "017c3e410ab3198e7f1673724abdfbe3521449c27cd2612295b92378dcf716c3"
+    },
+    {
+      "file": "5.51_discovery_concurrency.md",
+      "title": "Rebuntu — Phase 5",
+      "sha256": "79fe2bde84aea3a792ae56dd2b9ad47d7734d7ea1d106e7f0921f029b7fecf31"
+    },
+    {
+      "file": "5.52_observation_memory_bounds.md",
+      "title": "Rebuntu — Phase 5",
+      "sha256": "7bb6b1b72fd1e133bba1c495de62115443243c16c9d1791474475c58410858ad"
+    },
+    {
+      "file": "5.53_secret_and_privacy_audit.md",
+      "title": "Rebuntu — Phase 5",
+      "sha256": "ce662c576f9c4446062c5701fa3ed62579f2ab68d9bb26aed8c8970c6d1f96ac"
+    },
+    {
+      "file": "5.54_filesystem_and_procfs_adversarial_audit.md",
+      "title": "Rebuntu — Phase 5",
+      "sha256": "8de09222f238bb97960fc1a245240d782b976186bb6a780e7d8da3fcf9161dca"
+    },
+    {
+      "file": "5.55_netlink_and_udev_adversarial_audit.md",
+      "title": "Rebuntu — Phase 5",
+      "sha256": "a2a5c78b08ba1c5a547fc86b43348b7abb1632f4348a8ed73c7975787bf1031d"
+    },
+    {
+      "file": "5.56_python_scanner_eradication.md",
+      "title": "Rebuntu — Phase 5",
+      "sha256": "444a93c5a4ffe708978d1ad489504ef7566b5decc3484b45d0a712a6b411b698"
+    },
+    {
+      "file": "5.57_shell_scanner_eradication.md",
+      "title": "Rebuntu — Phase 5",
+      "sha256": "191b51a992f46ba89f73ef3a2cc8ac729283757366ebf98dd047153075f7159e"
+    },
+    {
+      "file": "5.58_hard-coded_workstation_assumption_audit.md",
+      "title": "Rebuntu — Phase 5",
+      "sha256": "78d1a570272a4fdab0fee8bb7d85398c097ccdee88af9996c89d3aab5b6eadc5"
+    },
+    {
+      "file": "5.59_observation_journald_integration.md",
+      "title": "Rebuntu — Phase 5",
+      "sha256": "40294f59d60c569eba9448cdf43d1df55a66a299ee605058ded216217ad5694f"
+    },
+    {
+      "file": "5.60_cli_inventory_vertical_slice.md",
+      "title": "Rebuntu — Phase 5",
+      "sha256": "8fa7f1bad4f3de76f3814108e83d6c1962ac22f07b523f8f42bccd493c8333e2"
+    },
+    {
+      "file": "5.61_machine-readable_observation_output.md",
+      "title": "Rebuntu — Phase 5",
+      "sha256": "051e10b09947ee63066f67cf929a163c6138c4d4cfcb93668d2cc9fb619ddc5c"
+    },
+    {
+      "file": "5.62_build_and_runtime_reachability_audit.md",
+      "title": "Rebuntu — Phase 5",
+      "sha256": "eed0e6ff7d70225b4bff4525c6a535133a032ff4b54fb55d4d9c93b1a1ef8a38"
+    },
+    {
+      "file": "5.63_unit_and_provider_test_matrix.md",
+      "title": "Rebuntu — Phase 5",
+      "sha256": "33f003fcdd2002d617a6b5956aea2d1049f21f12df791292769d7bc0fc5f20fd"
+    },
+    {
+      "file": "5.64_integration_test_matrix.md",
+      "title": "Rebuntu — Phase 5",
+      "sha256": "c2c6bc2fed6a52510ef4f17bc36268ce4d2c90ba33492dbc10e8c83c3476797c"
+    },
+    {
+      "file": "5.65_concurrency_and_sanitizer_pass.md",
+      "title": "Rebuntu — Phase 5",
+      "sha256": "62f1e3a9d759e6715ab2c571b54f3990e9cd5b877515fb40a76b4085b369cdc9"
+    },
+    {
+      "file": "5.66_documentation_and_agents_synchronization.md",
+      "title": "Rebuntu — Phase 5",
+      "sha256": "8b92d609f8d60e3d13f3a6caf66fe4625b43f417e7be298582f7339615811bf1"
+    },
+    {
+      "file": "5.67_first_closure_audit.md",
+      "title": "Rebuntu — Phase 5",
+      "sha256": "2dbae649709e462e9214e13bbd87b58d26e5a332aa919f4095d807d829338556"
+    },
+    {
+      "file": "5.68_adversarial_identity_audit.md",
+      "title": "Rebuntu — Phase 5",
+      "sha256": "b8f142538646b9a055f9ec43b32b9a59ca6f92ff3aa9b8d1139ccc29fe7eeb8f"
+    },
+    {
+      "file": "5.69_adversarial_truth_audit.md",
+      "title": "Rebuntu — Phase 5",
+      "sha256": "8153fe5ce36f7d72a1185c9c8fbcf483965fd77f60e8b433263ede4a383b91a0"
+    },
+    {
+      "file": "5.70_independent_second_rediscovery.md",
+      "title": "Rebuntu — Phase 5",
+      "sha256": "f8ede0f9165d07d914bd7b85fbc32c9e5ed3866867969f347bba81f992d46910"
+    },
+    {
+      "file": "5.71_phase_5_final_closure.md",
+      "title": "Rebuntu — Phase 5",
+      "sha256": "c52a925d55e6b36738ba254d4a20edb47a73b7dc3eca2d2b73cebc57daac005c"
+    }
+  ]
+}

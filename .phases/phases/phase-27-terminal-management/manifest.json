@@ -1,0 +1,169 @@
+{
+  "phase": 27,
+  "slug": "terminal-management",
+  "directory": "phase-27-terminal-management",
+  "prompt_count": 32,
+  "layout_version": 2,
+  "prompts": [
+    {
+      "file": "27.0-terminal-management-system-foundation.md",
+      "title": "Phase 27.0 — Terminal Management System Foundation",
+      "sha256": "1305741afd6f65878ee6a35387064e0137b75be4a379771b6655a9f7055b2d74"
+    },
+    {
+      "file": "27.1-terminal-domain-model.md",
+      "title": "Phase 27.1 — Terminal Domain Model",
+      "sha256": "5f0f2e54bbfa3171eb1ae040c5f1d8bbe5bf408265804471f72d4ea9fcf97867"
+    },
+    {
+      "file": "27.2-terminal-provider-discovery.md",
+      "title": "Phase 27.2 — Terminal Provider Discovery",
+      "sha256": "29435fc0f3eb560f0414210b121b3adfbb4b83ae645ad23998c79e7d5d9ed0f2"
+    },
+    {
+      "file": "27.3-gnome-terminal-provider-adapter.md",
+      "title": "Phase 27.3 — GNOME Terminal Provider Adapter",
+      "sha256": "4b94b117375bcb179b541db75d723bb29b011e5ede75bc41d376e26dfe9b1e56"
+    },
+    {
+      "file": "27.4-terminal-profile-registry.md",
+      "title": "Phase 27.4 — Terminal Profile Registry",
+      "sha256": "f923fd2f073452ad34d386502ec64a20441ba02f736b0da3fe53549288046d77"
+    },
+    {
+      "file": "27.5-terminal-profile-lifecycle.md",
+      "title": "Phase 27.5 — Terminal Profile Lifecycle",
+      "sha256": "7fd67490776b305979c6e6ca6779912b76eeb4050e067f387845138c93929a71"
+    },
+    {
+      "file": "27.6-interactive-shell-launch-policy.md",
+      "title": "Phase 27.6 — Interactive Shell Launch Policy",
+      "sha256": "4ac0082c33a33d5a225c2ad50d127fa1e80bc58d60e922232c22c2071bf38b43"
+    },
+    {
+      "file": "27.7-bash-console-launch-boundary.md",
+      "title": "Phase 27.7 — Bash Console Launch Boundary",
+      "sha256": "79e2e69ed46f93ba3d4c88a942fb1b41797bd25bf5fc4040518a57c0ff73736d"
+    },
+    {
+      "file": "27.8-tty-pty-context-model.md",
+      "title": "Phase 27.8 — TTY / PTY Context Model",
+      "sha256": "ed51d9d9c11cee201b2238cd414c64e5dd45105b5ef56576ad6542113512523e"
+    },
+    {
+      "file": "27.9-terminal-session-identity.md",
+      "title": "Phase 27.9 — Terminal Session Identity",
+      "sha256": "5c7ee8b78aa5eec68ff348b6b03ae53b4ced22127355edfba35d37eedf970c31"
+    },
+    {
+      "file": "27.10-terminal-capability-detection.md",
+      "title": "Phase 27.10 — Terminal Capability Detection",
+      "sha256": "e5b1f2b824205860685f38eaf2cbfcb05d3cf261fe0c59108fe8db6b1ddc5db1"
+    },
+    {
+      "file": "27.11-term-environment-semantics.md",
+      "title": "Phase 27.11 — TERM & Environment Semantics",
+      "sha256": "b265459e8749353a2ef2dfef338cbf5935a5b9c8d0079e56b93c21492787fb03"
+    },
+    {
+      "file": "27.12-font-configuration-management.md",
+      "title": "Phase 27.12 — Font Configuration Management",
+      "sha256": "618ea79580e59ea73af39d38ac152029c194dfb6eeadcc84118972ae6e23cee6"
+    },
+    {
+      "file": "27.13-verified-glyph-compatibility-policy.md",
+      "title": "Phase 27.13 — Verified Glyph Compatibility Policy",
+      "sha256": "5d18ab90e59ba9cc3efaa1a74cd73980254c90c18b86344e144f1f8dd5dc03f7"
+    },
+    {
+      "file": "27.14-palette-color-capability-management.md",
+      "title": "Phase 27.14 — Palette & Color Capability Management",
+      "sha256": "7132f6ecb72b699277f875dcac0df237018dd2634ef56c58b2297675a864e575"
+    },
+    {
+      "file": "27.15-terminal-visual-profile.md",
+      "title": "Phase 27.15 — Terminal Visual Profile",
+      "sha256": "8089d2733a076bc78cd6975969a1a174388b5766368034281ec53d90f2e7ec84"
+    },
+    {
+      "file": "27.16-window-tab-behavior.md",
+      "title": "Phase 27.16 — Window & Tab Behavior",
+      "sha256": "ce91337d35e5aa2597f6cba80d45a7815ac3039e6c99a754ca333833f9716e68"
+    },
+    {
+      "file": "27.17-copy-paste-clipboard-boundary.md",
+      "title": "Phase 27.17 — Copy, Paste & Clipboard Boundary",
+      "sha256": "387fce527577024705f8e86df9a2a00920924f6608e31cc6301cffff8a49b1df"
+    },
+    {
+      "file": "27.18-bracketed-paste-safety.md",
+      "title": "Phase 27.18 — Bracketed Paste Safety",
+      "sha256": "98b555202aba2abe415c0d52f427acd249b7e2bff95da75107e76aa093caf19c"
+    },
+    {
+      "file": "27.19-osc-escape-sequence-security.md",
+      "title": "Phase 27.19 — OSC & Escape Sequence Security",
+      "sha256": "37caf5a04d312481abf047cd6fa2f5298edaac105c8052abe5223668b5c4fcae"
+    },
+    {
+      "file": "27.20-remote-terminal-ssh-semantics.md",
+      "title": "Phase 27.20 — Remote Terminal & SSH Semantics",
+      "sha256": "51639d53c0dc9a12ab02e38eb057ef0633e2ade830608fbc017d9b39660fe216"
+    },
+    {
+      "file": "27.21-terminal-configuration-ownership-drift.md",
+      "title": "Phase 27.21 — Terminal Configuration Ownership & Drift",
+      "sha256": "637582332c49c6f3d5c91873a32f116e447a25d819be953b6440209512feebbf"
+    },
+    {
+      "file": "27.22-terminal-health-diagnostics.md",
+      "title": "Phase 27.22 — Terminal Health Diagnostics",
+      "sha256": "b540a9a83cc7ed8cc6f4e49dbf1418957818a39696bfcac7e0142a5fcc4cab04"
+    },
+    {
+      "file": "27.23-terminal-recovery-conservative-fallback.md",
+      "title": "Phase 27.23 — Terminal Recovery & Conservative Fallback",
+      "sha256": "8be79772482b33b21e92d36b49dd9bf5247d4b61879a8abcb0fec2a71fd69f68"
+    },
+    {
+      "file": "27.24-backup-restore-rollback.md",
+      "title": "Phase 27.24 — Backup, Restore & Rollback",
+      "sha256": "106df517e4175cf8370c058b04e365ebeade6c96c087370e66582f95d3a3469e"
+    },
+    {
+      "file": "27.25-terminal-management-cli.md",
+      "title": "Phase 27.25 — Terminal Management CLI",
+      "sha256": "a792da4e372153aaf5b70b0d5ca5bca2dfc88301f0a52346cb8c4213be2506d3"
+    },
+    {
+      "file": "27.26-phase-25-panel-integration-api.md",
+      "title": "Phase 27.26 — Phase 25 Panel Integration API",
+      "sha256": "0ee8a2dbf4e7c647b52de56d416011099307cd65ed350e7f55c6748e34f4c5d4"
+    },
+    {
+      "file": "27.27-phase-26-shell-integration-boundary.md",
+      "title": "Phase 27.27 — Phase 26 Shell Integration Boundary",
+      "sha256": "e1fbab78d30ae345329ac4077d2140842bcbc0b55342b65ef6c573ea5e57dcff"
+    },
+    {
+      "file": "27.28-frontend-independence-future-providers.md",
+      "title": "Phase 27.28 — Frontend Independence & Future Providers",
+      "sha256": "698d44a79009e5b51e456152fe6df860097391728dd7529e089317e5770474e3"
+    },
+    {
+      "file": "27.29-security-privacy-exposure-audit.md",
+      "title": "Phase 27.29 — Security, Privacy & Exposure Audit",
+      "sha256": "c40476a2cd5099b89a2e80aeaac2cd89d3fd4fac60bc0022c732bc15dcd20146"
+    },
+    {
+      "file": "27.30-failure-injection-recovery-testing.md",
+      "title": "Phase 27.30 — Failure Injection & Recovery Testing",
+      "sha256": "0ecce81a91e5d50724e54bb06d8762bba94788aad8b2a155622e0e73d9ac2acc"
+    },
+    {
+      "file": "27.31-terminal-management-system-closure-readiness-gate.md",
+      "title": "Phase 27.31 — Terminal Management System Closure & Readiness Gate",
+      "sha256": "b98121eff67edebb222b73cd27655492a02090af594f42f7f1d970eddcec1fdc"
+    }
+  ]
+}

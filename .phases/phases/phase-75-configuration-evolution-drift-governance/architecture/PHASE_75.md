@@ -1,0 +1,26 @@
+# Phase 75 — Configuration Evolution & Drift Governance System
+
+- 75.0: Bootstrap and repository reality audit
+- 75.1: Canonical ontology and identity
+- 75.2: Definitions and lifecycle
+- 75.3: State ownership and persistence
+- 75.4: Observation evidence provenance freshness
+- 75.5: UNKNOWN and conflicting evidence
+- 75.6: Capability and affordance integration
+- 75.7: Goal and desired-state integration
+- 75.8: Planning and operation integration
+- 75.9: Constraints and invariants
+- 75.10: Resources and topology
+- 75.11: Policy authorization
+- 75.12: Mandatory security
+- 75.13: Privilege and native providers
+- 75.14: Failure timeout cancellation partial effects
+- 75.15: Crash restart reconciliation recovery
+- 75.16: Concurrency races replacement TOCTOU
+- 75.17: Boundedness and budgets
+- 75.18: CLI GUI natural-language integration
+- 75.19: Timeline graph context integration
+- 75.20: Distributed and associated systems
+- 75.21: Python model shell authority audit
+- 75.22: Adversarial build runtime migration audit
+- 75.23: Documentation rediscovery and closure

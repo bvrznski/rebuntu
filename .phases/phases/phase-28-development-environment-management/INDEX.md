@@ -1,0 +1,40 @@
+# Prompt Index
+
+- `28.0-development-environment-management-system-foundation.md` — Phase 28.0 — Development Environment Management System Foundation
+- `28.1-development-domain-model.md` — Phase 28.1 — Development Domain Model
+- `28.2-project-discovery-identity.md` — Phase 28.2 — Project Discovery & Identity
+- `28.3-repository-discovery-vcs-boundary.md` — Phase 28.3 — Repository Discovery & VCS Boundary
+- `28.4-project-repository-relationship-model.md` — Phase 28.4 — Project / Repository Relationship Model
+- `28.5-development-environment-fingerprint.md` — Phase 28.5 — Development Environment Fingerprint
+- `28.6-language-runtime-discovery.md` — Phase 28.6 — Language Runtime Discovery
+- `28.7-python-environment-integration.md` — Phase 28.7 — Python Environment Integration
+- `28.8-c-c-toolchain-integration.md` — Phase 28.8 — C & C++ Toolchain Integration
+- `28.9-node-js-typescript-toolchain-integration.md` — Phase 28.9 — Node.js & TypeScript Toolchain Integration
+- `28.10-toolchain-selection-precedence.md` — Phase 28.10 — Toolchain Selection & Precedence
+- `28.11-build-system-discovery.md` — Phase 28.11 — Build System Discovery
+- `28.12-build-configuration-model.md` — Phase 28.12 — Build Configuration Model
+- `28.13-task-discovery-registry.md` — Phase 28.13 — Task Discovery & Registry
+- `28.14-task-execution-boundary.md` — Phase 28.14 — Task Execution Boundary
+- `28.15-test-framework-discovery.md` — Phase 28.15 — Test Framework Discovery
+- `28.16-linting-formatting-integration.md` — Phase 28.16 — Linting & Formatting Integration
+- `28.17-dependency-lockfile-inventory.md` — Phase 28.17 — Dependency & Lockfile Inventory
+- `28.18-project-environment-direnv-integration.md` — Phase 28.18 — Project Environment & direnv Integration
+- `28.19-ide-editor-integration-model.md` — Phase 28.19 — IDE & Editor Integration Model
+- `28.20-vs-code-integration.md` — Phase 28.20 — VS Code Integration
+- `28.21-coding-agent-runtime-boundary.md` — Phase 28.21 — Coding Agent Runtime Boundary
+- `28.22-cline-integration.md` — Phase 28.22 — Cline Integration
+- `28.23-codex-coding-agent-integration.md` — Phase 28.23 — Codex / Coding Agent Integration
+- `28.24-agent-repository-discovery-guidance.md` — Phase 28.24 — Agent Repository Discovery Guidance
+- `28.25-development-session-model.md` — Phase 28.25 — Development Session Model
+- `28.26-project-context-resolution.md` — Phase 28.26 — Project Context Resolution
+- `28.27-development-context-search-explainability.md` — Phase 28.27 — Development Context Search & Explainability
+- `28.28-development-environment-health.md` — Phase 28.28 — Development Environment Health
+- `28.29-development-configuration-ownership-drift.md` — Phase 28.29 — Development Configuration Ownership & Drift
+- `28.30-development-environment-snapshot-reproduction-metadata.md` — Phase 28.30 — Development Environment Snapshot & Reproduction Metadata
+- `28.31-gpu-cuda-development-context-integration.md` — Phase 28.31 — GPU / CUDA Development Context Integration
+- `28.32-containerized-development-context.md` — Phase 28.32 — Containerized Development Context
+- `28.33-development-management-cli.md` — Phase 28.33 — Development Management CLI
+- `28.34-phase-25-panel-integration-api.md` — Phase 28.34 — Phase 25 Panel Integration API
+- `28.35-cross-phase-integration-ownership-audit.md` — Phase 28.35 — Cross-Phase Integration & Ownership Audit
+- `28.36-failure-injection-compatibility-recovery-testing.md` — Phase 28.36 — Failure Injection, Compatibility & Recovery Testing
+- `28.37-development-environment-management-system-closure-readiness-gate.md` — Phase 28.37 — Development Environment Management System Closure & Readiness Gate

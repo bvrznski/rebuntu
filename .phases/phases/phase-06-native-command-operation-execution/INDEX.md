@@ -1,0 +1,82 @@
+# Prompt Index
+
+- `6.0.md` — Rebuntu — Phase 6.0 — Rebuntu Shell Language Foundation
+- `6.1_typed_command_model.md` — Rebuntu — Phase 6
+- `6.2.md` — Rebuntu — Phase 6.2 — Predicate Dictionary
+- `6.3.md` — Rebuntu — Phase 6.3 — Object / Subject Vocabulary
+- `6.4.md` — Rebuntu — Phase 6.4 — Qualifiers & Modifiers
+- `6.5.md` — Rebuntu — Phase 6.5 — Scope Grammar
+- `6.6.md` — Rebuntu — Phase 6.6 — Arguments & Options Grammar
+- `6.7.md` — Rebuntu — Phase 6.7 — Command Resolution
+- `6.8.md` — Rebuntu — Phase 6.8 — Verb → Operation Mapping
+- `6.9.md` — Rebuntu — Phase 6.9 — Predicates → Query / State Mapping
+- `6.10.md` — Rebuntu — Phase 6.10 — Pipeline Semantics
+- `6.11.md` — Rebuntu — Phase 6.11 — Structured Output
+- `6.12.md` — Rebuntu — Phase 6.12 — Human Output & Rendering
+- `6.13.md` — Rebuntu — Phase 6.13 — Completion & Discovery
+- `6.14.md` — Rebuntu — Phase 6.14 — Command Collision Protection
+- `6.15.md` — Rebuntu — Phase 6.15 — Contextual Command Resolution
+- `6.16.md` — Rebuntu — Phase 6.16 — Semi-Natural Command Grammar
+- `6.17.md` — Rebuntu — Phase 6.17 — Semantic Interpretation Boundary
+- `6.18.md` — Rebuntu — Phase 6.18 — Shell Language Closure & UX Audit
+- `6.19_output_capture_semantics.md` — Rebuntu — Phase 6
+- `6.20_exit_and_signal_result_semantics.md` — Rebuntu — Phase 6
+- `6.21_execution_verification_integration.md` — Rebuntu — Phase 6
+- `6.22_verification_freshness.md` — Rebuntu — Phase 6
+- `6.23_idempotency_classification.md` — Rebuntu — Phase 6
+- `6.24_retry_mechanics_integration.md` — Rebuntu — Phase 6
+- `6.25_partial_execution_semantics.md` — Rebuntu — Phase 6
+- `6.26_compensation_semantics.md` — Rebuntu — Phase 6
+- `6.27_dry-run_semantics.md` — Rebuntu — Phase 6
+- `6.28_explain-plan_output.md` — Rebuntu — Phase 6
+- `6.29_operation_cancellation.md` — Rebuntu — Phase 6
+- `6.30_operation_deadlines.md` — Rebuntu — Phase 6
+- `6.31_execution_concurrency_control.md` — Rebuntu — Phase 6
+- `6.32_cross-operation_conflict_detection.md` — Rebuntu — Phase 6
+- `6.33_operation_resource_declarations.md` — Rebuntu — Phase 6
+- `6.34_privilege_requirement_metadata.md` — Rebuntu — Phase 6
+- `6.35_privileged_helper_invocation.md` — Rebuntu — Phase 6
+- `6.36_privilege_minimization.md` — Rebuntu — Phase 6
+- `6.37_operation_evidence_bundle.md` — Rebuntu — Phase 6
+- `6.38_execution_journald_diagnostics.md` — Rebuntu — Phase 6
+- `6.39_execution_record_persistence.md` — Rebuntu — Phase 6
+- `6.40_crash_reconciliation_integration.md` — Rebuntu — Phase 6
+- `6.41_command_replay_semantics.md` — Rebuntu — Phase 6
+- `6.42_batch_command_boundary.md` — Rebuntu — Phase 6
+- `6.43_sequential_composition.md` — Rebuntu — Phase 6
+- `6.44_parallel_composition.md` — Rebuntu — Phase 6
+- `6.45_dependency-aware_execution.md` — Rebuntu — Phase 6
+- `6.46_command_parser_boundary.md` — Rebuntu — Phase 6
+- `6.47_machine-readable_command_boundary.md` — Rebuntu — Phase 6
+- `6.48_ipc_command_boundary.md` — Rebuntu — Phase 6
+- `6.49_data-to-control_gate_enforcement.md` — Rebuntu — Phase 6
+- `6.50_semantic_candidate_boundary.md` — Rebuntu — Phase 6
+- `6.51_semantic_service_absence_behavior.md` — Rebuntu — Phase 6
+- `6.52_provider_result_distrust.md` — Rebuntu — Phase 6
+- `6.53_context_authority_audit.md` — Rebuntu — Phase 6
+- `6.54_stale-plan_adversarial_tests.md` — Rebuntu — Phase 6
+- `6.55_ambiguous-target_adversarial_tests.md` — Rebuntu — Phase 6
+- `6.56_pid_reuse_and_transient_identity_tests.md` — Rebuntu — Phase 6
+- `6.57_device_reorder_tests.md` — Rebuntu — Phase 6
+- `6.58_command_injection_adversarial_tests.md` — Rebuntu — Phase 6
+- `6.59_path_safety_audit.md` — Rebuntu — Phase 6
+- `6.60_malformed_provider_output_tests.md` — Rebuntu — Phase 6
+- `6.61_execution_storm_and_backpressure_tests.md` — Rebuntu — Phase 6
+- `6.62_cancellation_race_tests.md` — Rebuntu — Phase 6
+- `6.63_timeout_ambiguity_tests.md` — Rebuntu — Phase 6
+- `6.64_privilege_escalation_adversarial_tests.md` — Rebuntu — Phase 6
+- `6.65_python_execution-path_eradication.md` — Rebuntu — Phase 6
+- `6.66_historical_action_architecture_archaeology.md` — Rebuntu — Phase 6
+- `6.67_duplicate_executor_audit.md` — Rebuntu — Phase 6
+- `6.68_native_provider_coverage_audit.md` — Rebuntu — Phase 6
+- `6.69_cli_execution_vertical_slice.md` — Rebuntu — Phase 6
+- `6.70_contained_mutation_integration_test.md` — Rebuntu — Phase 6
+- `6.71_read-only_command_integration_test.md` — Rebuntu — Phase 6
+- `6.72_restart_integration_test.md` — Rebuntu — Phase 6
+- `6.73_build_and_runtime_reachability_audit.md` — Rebuntu — Phase 6
+- `6.74_sanitizer_and_static-analysis_pass.md` — Rebuntu — Phase 6
+- `6.75_documentation_and_agents_synchronization.md` — Rebuntu — Phase 6
+- `6.76_first_closure_audit.md` — Rebuntu — Phase 6
+- `6.77_adversarial_new-agent_simulation.md` — Rebuntu — Phase 6
+- `6.78_independent_second_rediscovery.md` — Rebuntu — Phase 6
+- `6.79_phase_6_final_closure.md` — Rebuntu — Phase 6

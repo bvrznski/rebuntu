@@ -1,0 +1,30 @@
+# Prompt Index
+
+- `25.0-system-control-panel-foundation.md` — Phase 25.0 — System Control Panel Foundation
+- `25.1-panel-domain-model-and-typed-control-api.md` — Phase 25.1 — Panel Domain Model & Typed Control API
+- `25.2-tui-runtime,-navigation-and-layout.md` — Phase 25.2 — TUI Runtime, Navigation & Layout
+- `25.3-system-overview-and-health-dashboard.md` — Phase 25.3 — System Overview & Health Dashboard
+- `25.4-hardware-and-sensor-control-surface.md` — Phase 25.4 — Hardware & Sensor Control Surface
+- `25.5-process-inspection-and-control.md` — Phase 25.5 — Process Inspection & Control
+- `25.6-systemd-services-and-units.md` — Phase 25.6 — systemd Services & Units
+- `25.7-storage,-filesystems-and-mounts.md` — Phase 25.7 — Storage, Filesystems & Mounts
+- `25.8-network-control-surface.md` — Phase 25.8 — Network Control Surface
+- `25.9-package-and-repository-management.md` — Phase 25.9 — Package & Repository Management
+- `25.10-kernel,-driver-and-dkms-management.md` — Phase 25.10 — Kernel, Driver & DKMS Management
+- `25.11-containers-and-docker.md` — Phase 25.11 — Containers & Docker
+- `25.12-logs-and-evidence-explorer.md` — Phase 25.12 — Logs & Evidence Explorer
+- `25.13-semantic-analysis-and-hypothesis-view.md` — Phase 25.13 — Semantic Analysis & Hypothesis View
+- `25.14-security-and-exposure-view.md` — Phase 25.14 — Security & Exposure View
+- `25.15-updates-and-evergreen-evolution-center.md` — Phase 25.15 — Updates & Evergreen Evolution Center
+- `25.16-recovery-and-rollback-center.md` — Phase 25.16 — Recovery & Rollback Center
+- `25.17-unified-action-planning-and-authorization-ux.md` — Phase 25.17 — Unified Action Planning & Authorization UX
+- `25.18-execution-progress,-verification-and-audit-trail.md` — Phase 25.18 — Execution Progress, Verification & Audit Trail
+- `25.19-search,-command-palette-and-cross-system-navigation.md` — Phase 25.19 — Search, Command Palette & Cross-System Navigation
+- `25.20-contextual-help-and-explainability.md` — Phase 25.20 — Contextual Help & Explainability
+- `25.21-performance,-refresh-and-event-architecture.md` — Phase 25.21 — Performance, Refresh & Event Architecture
+- `25.22-privilege-boundary-and-root-helper-architecture.md` — Phase 25.22 — Privilege Boundary & Root Helper Architecture
+- `25.23-panel-configuration-and-personalization.md` — Phase 25.23 — Panel Configuration & Personalization
+- `25.24-frontend-independence-and-future-gui-api-readiness.md` — Phase 25.24 — Frontend Independence & Future GUI/API Readiness
+- `25.25-failure-injection-and-safety-testing.md` — Phase 25.25 — Failure Injection & Safety Testing
+- `25.26-cross-phase-integration-audit.md` — Phase 25.26 — Cross-Phase Integration Audit
+- `25.27-system-control-panel-closure-and-readiness-gate.md` — Phase 25.27 — System Control Panel Closure & Readiness Gate

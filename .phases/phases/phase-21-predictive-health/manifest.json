@@ -1,0 +1,114 @@
+{
+  "phase": 21,
+  "slug": "predictive-health",
+  "directory": "phase-21-predictive-health",
+  "prompt_count": 21,
+  "layout_version": 2,
+  "prompts": [
+    {
+      "file": "21.0.md",
+      "title": "Rebuntu — Phase 21.0 — Predictive System Health Architecture",
+      "sha256": "35544fe10e144fdaeb8415721fc359a954715023a0f344bfec021dae03732b06"
+    },
+    {
+      "file": "21.1.md",
+      "title": "Rebuntu — Phase 21.1 — Health Signal Acquisition",
+      "sha256": "319173a637a2fbf9da1d6058fcb77ed83841d325e3454fc469b672cbf775aed3"
+    },
+    {
+      "file": "21.2.md",
+      "title": "Rebuntu — Phase 21.2 — Kernel Health & Stall Signals",
+      "sha256": "f92120e7d96533dbb9f0f5a7ab6645cbafd63b60a6703b7ac6d94b6a237274b2"
+    },
+    {
+      "file": "21.3.md",
+      "title": "Rebuntu — Phase 21.3 — CPU Load, Scheduler Pressure & Starvation",
+      "sha256": "4b1117cd03d4c1765b7f4e7e6b8ddb2f833f20479995846c646aa099aee95cf3"
+    },
+    {
+      "file": "21.4.md",
+      "title": "Rebuntu — Phase 21.4 — Memory Pressure, Reclaim, Swap & OOM Risk",
+      "sha256": "503ee82bf88480033d64ea43d86f7f811a34a1fb6864f5f8dd6e5aa3232f4ca8"
+    },
+    {
+      "file": "21.5.md",
+      "title": "Rebuntu — Phase 21.5 — Storage / NVMe / Filesystem Failure Precursors",
+      "sha256": "b83b4809903b70b7a6cf1e9c65e248a412880a5da2d75058b1f2a04a69160630"
+    },
+    {
+      "file": "21.6.md",
+      "title": "Rebuntu — Phase 21.6 — GPU / Driver / PCIe Failure Precursors",
+      "sha256": "db62b799685bc2e8180233253ff55c2891d18d5184bfdfb168a40db4f42ba452"
+    },
+    {
+      "file": "21.7.md",
+      "title": "Rebuntu — Phase 21.7 — Thermal & Power Instability",
+      "sha256": "644acd7f4bd4a9ce36b34ac5d3b410dcd6effa79f9c7ec6f98e6ed577c57573e"
+    },
+    {
+      "file": "21.8.md",
+      "title": "Rebuntu — Phase 21.8 — Process / Service Resource Pathology",
+      "sha256": "be8c845247ad13b7b6f36e34a879b68813d0bee58e2b672de53e034610259094"
+    },
+    {
+      "file": "21.9.md",
+      "title": "Rebuntu — Phase 21.9 — PSI Integration",
+      "sha256": "859d7d939965c3118255202a915bce0e5e3f516c29716efacca87e12ade8fccd"
+    },
+    {
+      "file": "21.10.md",
+      "title": "Rebuntu — Phase 21.10 — Health Baseline & Host-Specific Normality",
+      "sha256": "412bf0524332387a41a1de133c47021f0cd4791572c563f55da6631efaf02a3c"
+    },
+    {
+      "file": "21.11.md",
+      "title": "Rebuntu — Phase 21.11 — Trend, Rate-of-Change & Persistence Analysis",
+      "sha256": "11ba823318003c800016300d7788f2434a800c3a28cef09ebf6d6c5237868f4e"
+    },
+    {
+      "file": "21.12.md",
+      "title": "Rebuntu — Phase 21.12 — Cross-Signal Correlation",
+      "sha256": "d55f47803901736bd64a02fd29206c6e7d89b1616794b69fc97aea99e51243e6"
+    },
+    {
+      "file": "21.13.md",
+      "title": "Rebuntu — Phase 21.13 — System Health State Model",
+      "sha256": "9ead1d3ae24360e0255b51a390d1f140e043b5b014d3a5c21c37cb120c415010"
+    },
+    {
+      "file": "21.14.md",
+      "title": "Rebuntu — Phase 21.14 — Failure-Risk Estimation",
+      "sha256": "7e48163accd5063ff82b26477ebe1db9bd33f09c5a5c03dad59b7dbc7ecada89"
+    },
+    {
+      "file": "21.15.md",
+      "title": "Rebuntu — Phase 21.15 — Crash / Hang Prediction",
+      "sha256": "34fb3f312d3e3f0f37bafebb3af4a3d7192286bcd7d6fbbabb7f5b66068073fe"
+    },
+    {
+      "file": "21.16.md",
+      "title": "Rebuntu — Phase 21.16 — Preventive Intervention Planning",
+      "sha256": "0e5d84a8073be8aebeb71bf2555118bea5e4ceaa868e526cd4aa4c44c3dad7db"
+    },
+    {
+      "file": "21.17.md",
+      "title": "Rebuntu — Phase 21.17 — Preventive Operations & Load Shedding",
+      "sha256": "11f144f9db7966df9e3a4dff803969c9f9ecb42484cc9046265c0d5bd0f40d03"
+    },
+    {
+      "file": "21.18.md",
+      "title": "Rebuntu — Phase 21.18 — Emergency Evidence Preservation",
+      "sha256": "fe373b39acb9e5a0b53cb6ad4c6b3c5b24ed1269e1332d07eb2b2f7d5abe3dd2"
+    },
+    {
+      "file": "21.19.md",
+      "title": "Rebuntu — Phase 21.19 — Post-Reboot Prediction Validation & Learning",
+      "sha256": "60389acd1fc02ac9bd9b2818857fce1965e39e1c222cb8e963d43c7efd8a05a0"
+    },
+    {
+      "file": "21.20.md",
+      "title": "Rebuntu — Phase 21.20 — Predictive Health Soak / Fault-Injection Audit",
+      "sha256": "6ec07fc1c918474651666e5650731dd7b1f4407d9eeb820c2d679ffbdfb5dc13"
+    }
+  ]
+}

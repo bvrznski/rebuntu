@@ -1,0 +1,74 @@
+# Prompt Index
+
+- `5.0.md` — Rebuntu — Phase 5.0 — Foundational Services Framework
+- `5.1.md` — Rebuntu — Phase 5.1 — System Event Collector
+- `5.2.md` — Rebuntu — Phase 5.2 — Journald Acquisition Service
+- `5.3.md` — Rebuntu — Phase 5.3 — Journal Filtering & Normalization
+- `5.4.md` — Rebuntu — Phase 5.4 — Journal Analyzer
+- `5.5.md` — Rebuntu — Phase 5.5 — System Stability Monitor
+- `5.6.md` — Rebuntu — Phase 5.6 — Process & Service Health Monitor
+- `5.7.md` — Rebuntu — Phase 5.7 — Kernel / Driver Fault Monitor
+- `5.8.md` — Rebuntu — Phase 5.8 — Storage & Filesystem Health Monitor
+- `5.9.md` — Rebuntu — Phase 5.9 — CPU / Memory / Thermal Monitor
+- `5.10.md` — Rebuntu — Phase 5.10 — GPU Health Monitor
+- `5.11.md` — Rebuntu — Phase 5.11 — Hang / Stall / Jam Detection
+- `5.12.md` — Rebuntu — Phase 5.12 — Evidence Collector
+- `5.13.md` — Rebuntu — Phase 5.13 — Diagnostic Snapshot Service
+- `5.14.md` — Rebuntu — Phase 5.14 — Internal Alert Service
+- `5.15.md` — Rebuntu — Phase 5.15 — Reporting & Notification
+- `5.16.md` — Rebuntu — Phase 5.16 — Stability Services Integration & Soak Test
+- `5.17_filesystem_observation.md` — Rebuntu — Phase 5
+- `5.18_mount_topology.md` — Rebuntu — Phase 5
+- `5.19_encrypted_storage_observation.md` — Rebuntu — Phase 5
+- `5.20_software_raid_and_volume_layer_observation.md` — Rebuntu — Phase 5
+- `5.21_network_interface_discovery.md` — Rebuntu — Phase 5
+- `5.22_route_observation.md` — Rebuntu — Phase 5
+- `5.23_socket_listener_observation.md` — Rebuntu — Phase 5
+- `5.24_process_discovery_provider.md` — Rebuntu — Phase 5
+- `5.25_process_identity_race_safety.md` — Rebuntu — Phase 5
+- `5.26_service_discovery_provider.md` — Rebuntu — Phase 5
+- `5.27_session_and_login_observation.md` — Rebuntu — Phase 5
+- `5.28_cgroup_topology_observation.md` — Rebuntu — Phase 5
+- `5.29_namespace_observation_foundation.md` — Rebuntu — Phase 5
+- `5.30_container_runtime_boundary_discovery.md` — Rebuntu — Phase 5
+- `5.31_package_inventory_boundary.md` — Rebuntu — Phase 5
+- `5.32_driver_and_kernel-module_observation.md` — Rebuntu — Phase 5
+- `5.33_firmware_observation_boundary.md` — Rebuntu — Phase 5
+- `5.34_power_and_thermal_observation.md` — Rebuntu — Phase 5
+- `5.35_display_topology_observation.md` — Rebuntu — Phase 5
+- `5.36_input_and_peripheral_discovery_boundary.md` — Rebuntu — Phase 5
+- `5.37_capability_discovery_integration.md` — Rebuntu — Phase 5
+- `5.38_inventory_snapshot_semantics.md` — Rebuntu — Phase 5
+- `5.39_incremental_discovery.md` — Rebuntu — Phase 5
+- `5.40_discovery_resynchronization.md` — Rebuntu — Phase 5
+- `5.41_observation_deduplication.md` — Rebuntu — Phase 5
+- `5.42_derived_fact_boundary.md` — Rebuntu — Phase 5
+- `5.43_semantic_annotation_boundary_preparation.md` — Rebuntu — Phase 5
+- `5.44_observation_query_foundation.md` — Rebuntu — Phase 5
+- `5.45_inventory_indexing.md` — Rebuntu — Phase 5
+- `5.46_cross-domain_entity_references.md` — Rebuntu — Phase 5
+- `5.47_relationship_evidence.md` — Rebuntu — Phase 5
+- `5.48_hotplug_handling.md` — Rebuntu — Phase 5
+- `5.49_provider_timeout_and_cancellation.md` — Rebuntu — Phase 5
+- `5.50_provider_isolation_and_degradation.md` — Rebuntu — Phase 5
+- `5.51_discovery_concurrency.md` — Rebuntu — Phase 5
+- `5.52_observation_memory_bounds.md` — Rebuntu — Phase 5
+- `5.53_secret_and_privacy_audit.md` — Rebuntu — Phase 5
+- `5.54_filesystem_and_procfs_adversarial_audit.md` — Rebuntu — Phase 5
+- `5.55_netlink_and_udev_adversarial_audit.md` — Rebuntu — Phase 5
+- `5.56_python_scanner_eradication.md` — Rebuntu — Phase 5
+- `5.57_shell_scanner_eradication.md` — Rebuntu — Phase 5
+- `5.58_hard-coded_workstation_assumption_audit.md` — Rebuntu — Phase 5
+- `5.59_observation_journald_integration.md` — Rebuntu — Phase 5
+- `5.60_cli_inventory_vertical_slice.md` — Rebuntu — Phase 5
+- `5.61_machine-readable_observation_output.md` — Rebuntu — Phase 5
+- `5.62_build_and_runtime_reachability_audit.md` — Rebuntu — Phase 5
+- `5.63_unit_and_provider_test_matrix.md` — Rebuntu — Phase 5
+- `5.64_integration_test_matrix.md` — Rebuntu — Phase 5
+- `5.65_concurrency_and_sanitizer_pass.md` — Rebuntu — Phase 5
+- `5.66_documentation_and_agents_synchronization.md` — Rebuntu — Phase 5
+- `5.67_first_closure_audit.md` — Rebuntu — Phase 5
+- `5.68_adversarial_identity_audit.md` — Rebuntu — Phase 5
+- `5.69_adversarial_truth_audit.md` — Rebuntu — Phase 5
+- `5.70_independent_second_rediscovery.md` — Rebuntu — Phase 5
+- `5.71_phase_5_final_closure.md` — Rebuntu — Phase 5

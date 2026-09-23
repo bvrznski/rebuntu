@@ -1,0 +1,104 @@
+{
+  "phase": 15,
+  "slug": "environment-coordination",
+  "directory": "phase-15-environment-coordination",
+  "prompt_count": 19,
+  "layout_version": 2,
+  "prompts": [
+    {
+      "file": "15.0.md",
+      "title": "Rebuntu --- Phase 15.0 --- Environment Coordination",
+      "sha256": "311dd0ad2eda2488c0b90a49604955abd5ccaae3c195a2a90478db3e8d5c91eb"
+    },
+    {
+      "file": "15.1.md",
+      "title": "Rebuntu --- Phase 15.1 --- Device Discovery",
+      "sha256": "efeef01d5221f1ab45ec877dc363472c1973de656df6a7a5afb29685b27cf952"
+    },
+    {
+      "file": "15.2.md",
+      "title": "Rebuntu --- Phase 15.2 --- Device Lifecycle",
+      "sha256": "7077e45ed7192961340fd8169cb9a7fa161f8948d98cb7870564d382e3807d47"
+    },
+    {
+      "file": "15.3.md",
+      "title": "Rebuntu --- Phase 15.3 --- Displays",
+      "sha256": "b2a7fad71c2843df06b36e0e1802ccb6b44f174f5c6e4974d708e74d37cc183a"
+    },
+    {
+      "file": "15.4.md",
+      "title": "Rebuntu --- Phase 15.4 --- Display Layout / Properties",
+      "sha256": "32cee85546a0d6e1a1665331531ace997b4b9e04068c45cbbba1a0a9b7d47d68"
+    },
+    {
+      "file": "15.5.md",
+      "title": "Rebuntu --- Phase 15.5 --- Audio",
+      "sha256": "468dce00703b028ba062dda773cf1957b74c71add11b9e992518a34ee6650f95"
+    },
+    {
+      "file": "15.6.md",
+      "title": "Rebuntu --- Phase 15.6 --- Input Devices",
+      "sha256": "6e263cee95cb3e515dd7471d18bc7bf456d5075c719d346731c97b0862acfcd1"
+    },
+    {
+      "file": "15.7.md",
+      "title": "Rebuntu --- Phase 15.7 --- Storage Devices",
+      "sha256": "49280061e0fa3033d01c9f40d393a70a7811db03a9eceac2a897efc84d4ad305"
+    },
+    {
+      "file": "15.8.md",
+      "title": "Rebuntu --- Phase 15.8 --- Mounts",
+      "sha256": "f8d8e34b6231583b29cfae76cf40efdedf12f31c7a3f52345d93fc076f0c60ab"
+    },
+    {
+      "file": "15.9.md",
+      "title": "Rebuntu --- Phase 15.9 --- Network Interfaces",
+      "sha256": "744d55f3c03c74315e3d054b9f95024ba22a71ac346515d8885553391e818a0f"
+    },
+    {
+      "file": "15.10.md",
+      "title": "Rebuntu --- Phase 15.10 --- Bluetooth / Peripheral Integration",
+      "sha256": "2f3d60725ec91c7a61631707ccdd45b9ecc5f98e1bdbee441210b87ad0185c56"
+    },
+    {
+      "file": "15.11.md",
+      "title": "Rebuntu --- Phase 15.11 --- GPU / Display Coordination",
+      "sha256": "c025a0ce89947bc1382730db864468560af85b455a09d92292135f3b30505177"
+    },
+    {
+      "file": "15.12.md",
+      "title": "Rebuntu --- Phase 15.12 --- Desktop Session",
+      "sha256": "f6b74309748e24687c6f82ed74c72cf5ea77a1aa434b3a947a0885ee9334966e"
+    },
+    {
+      "file": "15.13.md",
+      "title": "Rebuntu --- Phase 15.13 --- Wayland / X11 Integration",
+      "sha256": "312886ef94e69176113dd5752626477de93db14139e7c0c3d60d811ecd54feea"
+    },
+    {
+      "file": "15.14.md",
+      "title": "Rebuntu --- Phase 15.14 --- Clipboard",
+      "sha256": "983d113644f89e0ee4cdcac6f07ce9c3666e4f0a61119cca2d149142b17b04ad"
+    },
+    {
+      "file": "15.15.md",
+      "title": "Rebuntu --- Phase 15.15 --- User Environment",
+      "sha256": "1e5db18a26b96a7f43590e3214dfbeb65ed5b0a675951279d9d095d65be7ff6e"
+    },
+    {
+      "file": "15.16.md",
+      "title": "Rebuntu --- Phase 15.16 --- Hotplug & Dynamic Reconfiguration",
+      "sha256": "c6807a4fa34cdd5fece2dbcc429e1b1f3de3b88a4deaa9c02985aaa4ea8e0956"
+    },
+    {
+      "file": "15.17.md",
+      "title": "Rebuntu --- Phase 15.17 --- Environment Profiles",
+      "sha256": "71e5256d9fff3488a35d7581f396442b95ee3e3de112464ab71881ed659a3b43"
+    },
+    {
+      "file": "15.18.md",
+      "title": "Rebuntu --- Phase 15.18 --- Environment Integration Audit",
+      "sha256": "1cfe452b6191f69ba25cb0b63ff45a3656ebc68718ea7b2c136bcfd5b1288f02"
+    }
+  ]
+}

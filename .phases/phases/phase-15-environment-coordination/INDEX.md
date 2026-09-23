@@ -1,0 +1,21 @@
+# Prompt Index
+
+- `15.0.md` — Rebuntu --- Phase 15.0 --- Environment Coordination
+- `15.1.md` — Rebuntu --- Phase 15.1 --- Device Discovery
+- `15.2.md` — Rebuntu --- Phase 15.2 --- Device Lifecycle
+- `15.3.md` — Rebuntu --- Phase 15.3 --- Displays
+- `15.4.md` — Rebuntu --- Phase 15.4 --- Display Layout / Properties
+- `15.5.md` — Rebuntu --- Phase 15.5 --- Audio
+- `15.6.md` — Rebuntu --- Phase 15.6 --- Input Devices
+- `15.7.md` — Rebuntu --- Phase 15.7 --- Storage Devices
+- `15.8.md` — Rebuntu --- Phase 15.8 --- Mounts
+- `15.9.md` — Rebuntu --- Phase 15.9 --- Network Interfaces
+- `15.10.md` — Rebuntu --- Phase 15.10 --- Bluetooth / Peripheral Integration
+- `15.11.md` — Rebuntu --- Phase 15.11 --- GPU / Display Coordination
+- `15.12.md` — Rebuntu --- Phase 15.12 --- Desktop Session
+- `15.13.md` — Rebuntu --- Phase 15.13 --- Wayland / X11 Integration
+- `15.14.md` — Rebuntu --- Phase 15.14 --- Clipboard
+- `15.15.md` — Rebuntu --- Phase 15.15 --- User Environment
+- `15.16.md` — Rebuntu --- Phase 15.16 --- Hotplug & Dynamic Reconfiguration
+- `15.17.md` — Rebuntu --- Phase 15.17 --- Environment Profiles
+- `15.18.md` — Rebuntu --- Phase 15.18 --- Environment Integration Audit

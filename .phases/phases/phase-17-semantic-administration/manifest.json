@@ -1,0 +1,104 @@
+{
+  "phase": 17,
+  "slug": "semantic-administration",
+  "directory": "phase-17-semantic-administration",
+  "prompt_count": 19,
+  "layout_version": 2,
+  "prompts": [
+    {
+      "file": "17.0.md",
+      "title": "Rebuntu --- Phase 17.0 --- Semantic Administration Architecture",
+      "sha256": "d6a1754b7ef6befeec07687b09c3061f649c6c6fb6be9cc15cd55e1fedd49060"
+    },
+    {
+      "file": "17.1.md",
+      "title": "Rebuntu --- Phase 17.1 --- Semantic Intent Parsing",
+      "sha256": "c4e39e4139dee3df62a52416fa27b9fbabc064e95848e5662c78a01dcc4c7160"
+    },
+    {
+      "file": "17.2.md",
+      "title": "Rebuntu --- Phase 17.2 --- Intent → Typed IR",
+      "sha256": "f13e0787101b9c2b1736c84f6c0ab93c870e7a4c1651d829d4933e81f02dc51d"
+    },
+    {
+      "file": "17.3.md",
+      "title": "Rebuntu --- Phase 17.3 --- Semantic Object Resolution",
+      "sha256": "f614f1d823bc801150f9ca9973256273fb044fe087a02c1969580f3769ffdcd3"
+    },
+    {
+      "file": "17.4.md",
+      "title": "Rebuntu --- Phase 17.4 --- Ambiguity Resolution",
+      "sha256": "8f04e87be1bbc85360e2b71da51c7fa483eb91102ff3060a87307e0230d860a1"
+    },
+    {
+      "file": "17.5.md",
+      "title": "Rebuntu --- Phase 17.5 --- Log Interpretation",
+      "sha256": "95c6d1aed96b069c399455a77c2f9be814fd81b4743b04c5c0ddc9ac93ded596"
+    },
+    {
+      "file": "17.6.md",
+      "title": "Rebuntu --- Phase 17.6 --- Event Interpretation",
+      "sha256": "35cc1a3c75f02fb8fcb836986944fa42d74d542d285b9ace886cf50ddc5547ff"
+    },
+    {
+      "file": "17.7.md",
+      "title": "Rebuntu --- Phase 17.7 --- Alert Interpretation",
+      "sha256": "7dcf3ebf69ba99dad79697691d9975849ac2ff86daf5807add3c1eaf792226e8"
+    },
+    {
+      "file": "17.8.md",
+      "title": "Rebuntu --- Phase 17.8 --- Diagnostic Summarization",
+      "sha256": "1c48a868c222e30fb6361dfc7d20bf8e5248d9e02635e2cdb7a7d4d41c1bd593"
+    },
+    {
+      "file": "17.9.md",
+      "title": "Rebuntu --- Phase 17.9 --- Evidence Selection / Request",
+      "sha256": "eb2320437cc123bbe2fed0c4ab85164c145a435b102d29a1f755025ab00c6c7f"
+    },
+    {
+      "file": "17.10.md",
+      "title": "Rebuntu --- Phase 17.10 --- Semantic Classification",
+      "sha256": "b7c620d8cfb14e83b2964d8f73781902a3cca472d2218d975dac1fcd238187d6"
+    },
+    {
+      "file": "17.11.md",
+      "title": "Rebuntu --- Phase 17.11 --- Semantic Correlation Assistance",
+      "sha256": "c0d2415edaab935ce77437bb95271aab362e2d121aa7bd3cbddbc8a1b215473b"
+    },
+    {
+      "file": "17.12.md",
+      "title": "Rebuntu --- Phase 17.12 --- Suggested Operations",
+      "sha256": "482b8bb50279eedf320f2d36f07ae3cb24c51ca859096c1cc62c28a13adabae2"
+    },
+    {
+      "file": "17.13.md",
+      "title": "Rebuntu --- Phase 17.13 --- Semantic Shell Integration",
+      "sha256": "7d9db1a454ee8d5d72917bde3e1181a030a4c0b9c0c0972a079cdf16d17c2f04"
+    },
+    {
+      "file": "17.14.md",
+      "title": "Rebuntu --- Phase 17.14 --- BitNet Specialization",
+      "sha256": "80f1784b7d04e036194b7b57bb89b7980f4474d43b107e5c1b466bfa1ad22bb5"
+    },
+    {
+      "file": "17.15.md",
+      "title": "Rebuntu --- Phase 17.15 --- Structured Output Reliability",
+      "sha256": "412b9d7db78fc47d6bf626aa0a7258b467a770eeb1a60b7190441e98bd9f65de"
+    },
+    {
+      "file": "17.16.md",
+      "title": "Rebuntu --- Phase 17.16 --- Semantic Safety Boundary",
+      "sha256": "5f0bc55d7fc21de94747927b29e6f9c0597d0483ad4de1b41c7198a402faf527"
+    },
+    {
+      "file": "17.17.md",
+      "title": "Rebuntu --- Phase 17.17 --- Deterministic Fallback",
+      "sha256": "c87f6763c07f6c395e83a73f8ffe05254df932c3fc161b2c40e84f8724511612"
+    },
+    {
+      "file": "17.18.md",
+      "title": "Rebuntu --- Phase 17.18 --- Semantic Administration Evaluation",
+      "sha256": "95b129c27087db50482c3e247f9c87bf24549dd412507357734ff73e2e6730cd"
+    }
+  ]
+}

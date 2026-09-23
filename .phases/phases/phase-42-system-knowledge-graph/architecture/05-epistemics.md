@@ -1,0 +1,2 @@
+# Epistemics
+Preserve OBSERVED_FACT, DETERMINISTIC_DERIVATION, SEMANTIC_ANNOTATION, HYPOTHESIS, RECOMMENDATION and UNKNOWN. UNKNOWN != PASS. Absence of an edge is not proof of no relation.

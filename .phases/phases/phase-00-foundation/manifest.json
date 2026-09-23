@@ -1,0 +1,114 @@
+{
+  "phase": 0,
+  "slug": "foundation",
+  "directory": "phase-00-foundation",
+  "prompt_count": 21,
+  "layout_version": 2,
+  "prompts": [
+    {
+      "file": "0.0.md",
+      "title": "Rebuntu 2 — Phase 0.0",
+      "sha256": "1bc3639953b9e69b6fb47b998e613e5b15a2f81e74b46a177cc4e7e102f6ac8a"
+    },
+    {
+      "file": "0.1.md",
+      "title": "Rebuntu — Phase 0.1",
+      "sha256": "71b6d67866d9a60357202d8c1f5a1c25fe895b79b20b127f98ff54b871acdc69"
+    },
+    {
+      "file": "0.2.md",
+      "title": "Rebuntu — Phase 0.2",
+      "sha256": "75b7b244f6a9968d2c2c8abee42d1dd8f8f5c9605e6cb82ecebfcf22554ddd2f"
+    },
+    {
+      "file": "0.3.md",
+      "title": "Rebuntu — Phase 0.3",
+      "sha256": "cdbe75766efc619850ecae6bd14ead0c33fd38605b37635fff03ec28f7ee5083"
+    },
+    {
+      "file": "0.4.md",
+      "title": "Rebuntu — Phase 0.4",
+      "sha256": "e8d9f2a7ccad6db56e50482104ac323c811dc09c1bea30cde83b977bd10dedbf"
+    },
+    {
+      "file": "0.5.md",
+      "title": "Rebuntu — Phase 0.5",
+      "sha256": "9e607a44e5371ac83d28ddaa962ca75e0c0c0ccdab209f9b006be066dcb5ad93"
+    },
+    {
+      "file": "0.6.md",
+      "title": "Rebuntu — Phase 0.6",
+      "sha256": "104a7454e7d7f3703fe0a07550f626a7499058836b130fd1695fdeba8759f9b8"
+    },
+    {
+      "file": "0.7.md",
+      "title": "Rebuntu — Phase 0.7",
+      "sha256": "4f95e80d3d3040a715caab870c13aefe479db7b3ac89e9afc3af95141361526a"
+    },
+    {
+      "file": "0.8.md",
+      "title": "Rebuntu — Phase 0.8 — Tasks, Jobs, Executions & Attempts",
+      "sha256": "66ef92cef54dba0e486078c558328e2503cb2a37a0380abd83522a18a46053b1"
+    },
+    {
+      "file": "0.9.md",
+      "title": "Rebuntu — Phase 0.9 — Scheduling & Temporal Grammar",
+      "sha256": "c3682f4ad965fe65a8b9784cda5cd73f120ea933c4d0612a8761da0942c253a3"
+    },
+    {
+      "file": "0.10.md",
+      "title": "Rebuntu — Phase 0.10 — Operations",
+      "sha256": "2e643ece9ff84076a344f2c588931786e7ca0220b41859f12cfe196177e03766"
+    },
+    {
+      "file": "0.11.md",
+      "title": "Phase 0.11 — Workflows — Composition, Phases, Stages & Steps",
+      "sha256": "9e083ac80be88f8d59d3d56b5119b066107bcce442fe957feee70687952b4167"
+    },
+    {
+      "file": "0.12.md",
+      "title": "Rebuntu — Phase 0.12 — Automation & Automatons",
+      "sha256": "71358e3c6f60cf017cca5d022ecfdf30b759836855512b7702ccb584cea7a8e6"
+    },
+    {
+      "file": "0.13.md",
+      "title": "Rebuntu — Phase 0.13 — Execution Runtime — Runner, Executor, Dispatcher & Activation",
+      "sha256": "42abeaa65bb794b3db4ce2e2da37f51aa71a9994a824ed6fc6db6640e4b0f869"
+    },
+    {
+      "file": "0.14.md",
+      "title": "Rebuntu — Phase 0.14 — State, Status, Lifecycle, Activity, Health & Readiness",
+      "sha256": "4eac7e7c46d4f17ba2789b61af7e7956f32751ddf822ab602cc7e6399a7b17fb"
+    },
+    {
+      "file": "0.15.md",
+      "title": "Rebuntu — Phase 0.15 — Events, Signals, Requests, Messages & Communication",
+      "sha256": "727d07aff301efae7141d4c6fff1fb938320e0e2ff98fa2f8b7fe921af0909d3"
+    },
+    {
+      "file": "0.16.md",
+      "title": "Rebuntu — Phase 0.16 — Interfaces, Adapters, Providers & System Boundaries",
+      "sha256": "f186a753e9ea8845806a813b0eec2da49a1b02e0b98bb38d55aaa175ab1ae1dd"
+    },
+    {
+      "file": "0.17.md",
+      "title": "Rebuntu — Phase 0.17 — Results, Outcomes, Errors, Verification & Evidence",
+      "sha256": "366621bcb36e91dc729021bd84163e573190962529a02c88379f2b52877b26af"
+    },
+    {
+      "file": "0.18.md",
+      "title": "Rebuntu — Phase 0.18 — Configuration & Specification Grammar",
+      "sha256": "e31bb579806cbb688a4e91a94d5c379e624bceadc1fc55fd9924ef5dbf78d565"
+    },
+    {
+      "file": "0.19.md",
+      "title": "Rebuntu — Phase 0.19 — Naming, Namespaces, Registries, Catalogs & Discovery",
+      "sha256": "a940c4392b8748c9431a0490c232ab704be9e73c6839a70e26fcc988fe8f0a84"
+    },
+    {
+      "file": "0.20.md",
+      "title": "Rebuntu — Phase 0.20 — Architecture Closure, Ontology Compression & Skeleton Audit",
+      "sha256": "158e534ae3aeaef63bbfb9fa0f17b53cf75b7a1749374e972c7498b97a07bc80"
+    }
+  ]
+}

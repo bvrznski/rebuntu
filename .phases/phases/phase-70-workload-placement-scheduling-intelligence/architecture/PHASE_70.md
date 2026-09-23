@@ -1,0 +1,26 @@
+# Phase 70 — Workload Placement & Scheduling Intelligence
+
+- 70.0: Bootstrap and repository reality audit
+- 70.1: Canonical ontology and identity
+- 70.2: Definitions and lifecycle
+- 70.3: State ownership and persistence
+- 70.4: Observation evidence provenance freshness
+- 70.5: UNKNOWN and conflicting evidence
+- 70.6: Capability and affordance integration
+- 70.7: Goal and desired-state integration
+- 70.8: Planning and operation integration
+- 70.9: Constraints and invariants
+- 70.10: Resources and topology
+- 70.11: Policy authorization
+- 70.12: Mandatory security
+- 70.13: Privilege and native providers
+- 70.14: Failure timeout cancellation partial effects
+- 70.15: Crash restart reconciliation recovery
+- 70.16: Concurrency races replacement TOCTOU
+- 70.17: Boundedness and budgets
+- 70.18: CLI GUI natural-language integration
+- 70.19: Timeline graph context integration
+- 70.20: Distributed and associated systems
+- 70.21: Python model shell authority audit
+- 70.22: Adversarial build runtime migration audit
+- 70.23: Documentation rediscovery and closure

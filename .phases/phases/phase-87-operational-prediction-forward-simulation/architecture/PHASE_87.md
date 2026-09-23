@@ -1,0 +1,26 @@
+# Phase 87 — Operational Prediction & Forward Simulation System
+
+- 87.0: Bootstrap and repository reality audit
+- 87.1: Canonical ontology and identity
+- 87.2: Definitions and lifecycle
+- 87.3: State ownership and persistence
+- 87.4: Observation evidence provenance freshness
+- 87.5: UNKNOWN and conflicting evidence
+- 87.6: Capability and affordance integration
+- 87.7: Goal and desired-state integration
+- 87.8: Planning and operation integration
+- 87.9: Constraints and invariants
+- 87.10: Resources and topology
+- 87.11: Policy authorization
+- 87.12: Mandatory security
+- 87.13: Privilege and native providers
+- 87.14: Failure timeout cancellation partial effects
+- 87.15: Crash restart reconciliation recovery
+- 87.16: Concurrency races replacement TOCTOU
+- 87.17: Boundedness and budgets
+- 87.18: CLI GUI natural-language integration
+- 87.19: Timeline graph context integration
+- 87.20: Distributed and associated systems
+- 87.21: Python model shell authority audit
+- 87.22: Adversarial build runtime migration audit
+- 87.23: Documentation rediscovery and closure

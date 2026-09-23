@@ -1,0 +1,627 @@
+# Phase 51 Index
+
+## Normative architecture
+- `architecture/01-mission-and-boundary.md`
+- `architecture/02-node-fabric-identity.md`
+- `architecture/03-distributed-capabilities.md`
+- `architecture/04-membership-and-trust.md`
+- `architecture/05-placement-and-resources.md`
+- `architecture/06-distributed-execution.md`
+- `architecture/07-failure-consistency.md`
+- `architecture/08-security.md`
+- `architecture/09-observability-graph-timeline.md`
+- `architecture/10-workflows-context-intelligence.md`
+- `architecture/11-linux-and-portability.md`
+- `architecture/12-closure.md`
+
+## Full executable prompts
+- `51.0` — foundation and repository archaeology
+- `51.1` — distributed-system ownership boundary
+- `51.2` — Phase 50 portability integration
+- `51.3` — fabric identity
+- `51.4` — node identity
+- `51.5` — node metadata
+- `51.6` — node lifecycle
+- `51.7` — node admission
+- `51.8` — node removal
+- `51.9` — node quarantine
+- `51.10` — node drain
+- `51.11` — node maintenance mode
+- `51.12` — node labels
+- `51.13` — node roles
+- `51.14` — node groups
+- `51.15` — node capability advertisement
+- `51.16` — node capability freshness
+- `51.17` — node capability withdrawal
+- `51.18` — fabric membership model
+- `51.19` — membership state machine
+- `51.20` — membership persistence
+- `51.21` — membership recovery
+- `51.22` — membership reconciliation
+- `51.23` — membership audit trail
+- `51.24` — administrative trust-domain model
+- `51.25` — authentication versus membership
+- `51.26` — membership versus authorization
+- `51.27` — network reachability versus identity
+- `51.28` — hostname independence
+- `51.29` — IP-address independence
+- `51.30` — address-change resilience
+- `51.31` — multi-interface nodes
+- `51.32` — IPv4 and IPv6 neutrality
+- `51.33` — transport abstraction
+- `51.34` — secure channel contract
+- `51.35` — mutual authentication
+- `51.36` — channel key rotation
+- `51.37` — node credential rotation
+- `51.38` — node credential revocation
+- `51.39` — bootstrap trust
+- `51.40` — node enrollment ceremony
+- `51.41` — headless node enrollment
+- `51.42` — re-enrollment
+- `51.43` — lost-node recovery
+- `51.44` — compromised-node quarantine
+- `51.45` — fabric-wide revocation propagation
+- `51.46` — revocation under partition
+- `51.47` — remote capability model
+- `51.48` — local capability projection
+- `51.49` — remote capability provenance
+- `51.50` — remote capability applicability
+- `51.51` — remote capability degradation
+- `51.52` — remote UNKNOWN semantics
+- `51.53` — distributed capability registry
+- `51.54` — capability registry convergence
+- `51.55` — capability registry stale-state handling
+- `51.56` — capability query
+- `51.57` — capability routing
+- `51.58` — capability ownership
+- `51.59` — remote command routing
+- `51.60` — remote typed intent
+- `51.61` — remote plan representation
+- `51.62` — remote validation
+- `51.63` — target-side revalidation
+- `51.64` — remote authorization handoff
+- `51.65` — delegated authority scope
+- `51.66` — delegation chain
+- `51.67` — delegation expiry
+- `51.68` — delegation narrowing
+- `51.69` — delegation revocation
+- `51.70` — delegation laundering defense
+- `51.71` — distributed task identity
+- `51.72` — task origin identity
+- `51.73` — task target identity
+- `51.74` — task placement state
+- `51.75` — task dispatch state machine
+- `51.76` — task acceptance
+- `51.77` — task rejection
+- `51.78` — task cancellation
+- `51.79` — task timeout
+- `51.80` — task retry semantics
+- `51.81` — task idempotency
+- `51.82` — task deduplication
+- `51.83` — task replay defense
+- `51.84` — task result model
+- `51.85` — task outcome reconciliation
+- `51.86` — unknown remote outcome
+- `51.87` — indeterminate execution handling
+- `51.88` — late result handling
+- `51.89` — duplicate message handling
+- `51.90` — out-of-order message handling
+- `51.91` — message identity
+- `51.92` — message schema versioning
+- `51.93` — message provenance
+- `51.94` — message authentication
+- `51.95` — message confidentiality
+- `51.96` — message integrity
+- `51.97` — message replay protection
+- `51.98` — message size limits
+- `51.99` — message backpressure
+- `51.100` — message cancellation
+- `51.101` — message prioritization
+- `51.102` — control-plane traffic separation
+- `51.103` — data-plane boundary
+- `51.104` — bulk data transfer boundary
+- `51.105` — artifact transfer contract
+- `51.106` — file transfer policy
+- `51.107` — remote file identity
+- `51.108` — data locality
+- `51.109` — data movement planning
+- `51.110` — data movement authorization
+- `51.111` — data movement verification
+- `51.112` — sensitive-data movement restrictions
+- `51.113` — secret-material exclusion
+- `51.114` — Phase 29 workload integration
+- `51.115` — distributed workload identity
+- `51.116` — workload placement
+- `51.117` — workload migration semantics
+- `51.118` — workload affinity
+- `51.119` — workload anti-affinity
+- `51.120` — workload pinning
+- `51.121` — workload evacuation
+- `51.122` — workload recovery
+- `51.123` — Phase 30 resource integration
+- `51.124` — distributed CPU inventory
+- `51.125` — distributed RAM inventory
+- `51.126` — distributed NUMA awareness
+- `51.127` — distributed GPU inventory
+- `51.128` — distributed VRAM inventory
+- `51.129` — accelerator persistent identity
+- `51.130` — GPU index independence
+- `51.131` — PCIe topology projection
+- `51.132` — resource reservations
+- `51.133` — distributed reservation identity
+- `51.134` — reservation leases
+- `51.135` — reservation expiry
+- `51.136` — reservation recovery
+- `51.137` — reservation contention
+- `51.138` — resource overcommit policy
+- `51.139` — resource admission control
+- `51.140` — resource quotas
+- `51.141` — resource budgets
+- `51.142` — resource fairness
+- `51.143` — resource priority
+- `51.144` — resource pressure propagation
+- `51.145` — resource telemetry freshness
+- `51.146` — placement requirements
+- `51.147` — placement constraints
+- `51.148` — placement preferences
+- `51.149` — placement scoring contract
+- `51.150` — deterministic placement baseline
+- `51.151` — placement explainability
+- `51.152` — placement candidate set
+- `51.153` — placement stale-data defense
+- `51.154` — placement target revalidation
+- `51.155` — placement failure fallback
+- `51.156` — placement anti-thrashing
+- `51.157` — placement hysteresis
+- `51.158` — placement cooldowns
+- `51.159` — placement manual override
+- `51.160` — operator placement constraints
+- `51.161` — data-locality placement
+- `51.162` — GPU-locality placement
+- `51.163` — service-locality placement
+- `51.164` — network-locality placement
+- `51.165` — health-aware placement
+- `51.166` — maintenance-aware placement
+- `51.167` — energy-aware placement boundary
+- `51.168` — heterogeneous node support
+- `51.169` — mixed architecture support
+- `51.170` — mixed platform support
+- `51.171` — unsupported capability placement
+- `51.172` — degraded capability placement
+- `51.173` — UNKNOWN capability placement
+- `51.174` — Phase 31 service integration
+- `51.175` — distributed service identity
+- `51.176` — service locality
+- `51.177` — service dependency across nodes
+- `51.178` — service discovery semantics
+- `51.179` — service endpoint identity
+- `51.180` — service endpoint freshness
+- `51.181` — service failover boundary
+- `51.182` — service restart locality
+- `51.183` — Phase 32 storage integration
+- `51.184` — storage locality
+- `51.185` — remote storage capability
+- `51.186` — shared storage awareness
+- `51.187` — mount locality
+- `51.188` — volume identity across nodes
+- `51.189` — filesystem identity across nodes
+- `51.190` — storage failure propagation
+- `51.191` — storage mutation locality
+- `51.192` — Phase 33 network integration
+- `51.193` — fabric network observation
+- `51.194` — route locality
+- `51.195` — listener locality
+- `51.196` — connection locality
+- `51.197` — network policy locality
+- `51.198` — network partition detection
+- `51.199` — partial partition handling
+- `51.200` — asymmetric reachability
+- `51.201` — split-brain avoidance
+- `51.202` — network recovery reconciliation
+- `51.203` — Phase 34 accelerator integration
+- `51.204` — distributed accelerator scheduling
+- `51.205` — accelerator reservation
+- `51.206` — accelerator workload placement
+- `51.207` — multi-GPU node placement
+- `51.208` — cross-node GPU boundary
+- `51.209` — RDMA capability model
+- `51.210` — high-speed interconnect capability
+- `51.211` — interconnect topology
+- `51.212` — bandwidth-aware placement
+- `51.213` — latency-aware placement
+- `51.214` — Phase 35 package integration
+- `51.215` — package capability locality
+- `51.216` — software prerequisite placement
+- `51.217` — remote package-state observation
+- `51.218` — package mutation target locality
+- `51.219` — heterogeneous package-provider support
+- `51.220` — Phase 36 configuration integration
+- `51.221` — node-local configuration
+- `51.222` — fabric-scoped configuration boundary
+- `51.223` — configuration rollout planning
+- `51.224` — configuration rollout canary
+- `51.225` — configuration rollout batching
+- `51.226` — configuration rollout verification
+- `51.227` — configuration rollback per node
+- `51.228` — configuration partial-failure handling
+- `51.229` — Phase 37 secrets integration
+- `51.230` — SecretRef across nodes
+- `51.231` — secret resolution locality
+- `51.232` — secret delegation prohibition
+- `51.233` — credential distribution boundary
+- `51.234` — Phase 38 identity integration
+- `51.235` — principal identity across nodes
+- `51.236` — session identity across nodes
+- `51.237` — user context projection
+- `51.238` — remote user action attribution
+- `51.239` — Phase 39 distributed timeline
+- `51.240` — node event identity
+- `51.241` — fabric event identity
+- `51.242` — event ingestion
+- `51.243` — event deduplication
+- `51.244` — event ordering uncertainty
+- `51.245` — clock skew
+- `51.246` — clock jump
+- `51.247` — monotonic ordering
+- `51.248` — boot epoch correlation
+- `51.249` — causal relation representation
+- `51.250` — distributed trace correlation
+- `51.251` — timeline partition recovery
+- `51.252` — Phase 40 distributed search
+- `51.253` — federated search providers
+- `51.254` — remote search result provenance
+- `51.255` — search partial-result semantics
+- `51.256` — search timeout semantics
+- `51.257` — search cancellation
+- `51.258` — search node filters
+- `51.259` — search capability filters
+- `51.260` — distributed command discovery
+- `51.261` — command applicability by node
+- `51.262` — Phase 41 workflow integration
+- `51.263` — distributed workflow steps
+- `51.264` — workflow placement
+- `51.265` — workflow node affinity
+- `51.266` — workflow node failure
+- `51.267` — workflow resume after node recovery
+- `51.268` — workflow compensation across nodes
+- `51.269` — workflow reboot continuity
+- `51.270` — workflow partition handling
+- `51.271` — workflow target revalidation
+- `51.272` — Phase 42 fabric knowledge graph
+- `51.273` — node entities
+- `51.274` — fabric entities
+- `51.275` — remote capability assertions
+- `51.276` — network topology relations
+- `51.277` — resource topology relations
+- `51.278` — membership relations
+- `51.279` — graph freshness
+- `51.280` — graph contradiction handling
+- `51.281` — graph partition views
+- `51.282` — Phase 43 distributed intelligence
+- `51.283` — distributed anomaly detection boundary
+- `51.284` — fabric health explanation
+- `51.285` — placement recommendation boundary
+- `51.286` — failure diagnosis
+- `51.287` — correlation without causation
+- `51.288` — Phase 44 adaptive workstation integration
+- `51.289` — distributed adaptation boundary
+- `51.290` — node-local adaptation
+- `51.291` — fabric-level recommendation
+- `51.292` — adaptation placement policy
+- `51.293` — anti-thrashing across nodes
+- `51.294` — Phase 45 distributed control-plane integration
+- `51.295` — control-plane authority preservation
+- `51.296` — remote execution gateway
+- `51.297` — target domain ownership
+- `51.298` — cross-domain distributed plan
+- `51.299` — partial distributed plan success
+- `51.300` — distributed compensation
+- `51.301` — distributed verification
+- `51.302` — Phase 46 ask distributed intents
+- `51.303` — natural-language node references
+- `51.304` — natural-language fabric references
+- `51.305` — ambiguous node clarification
+- `51.306` — remote consequential intent handling
+- `51.307` — Phase 47 distributed task policy
+- `51.308` — origin policy
+- `51.309` — target policy
+- `51.310` — policy intersection
+- `51.311` — policy conflict handling
+- `51.312` — policy version skew
+- `51.313` — policy freshness
+- `51.314` — remote policy evidence
+- `51.315` — cross-node task-splitting defense
+- `51.316` — distributed resource-amplification defense
+- `51.317` — Phase 48 distributed context
+- `51.318` — remote context projection
+- `51.319` — context locality
+- `51.320` — context freshness
+- `51.321` — context trust domain
+- `51.322` — context poisoning defense
+- `51.323` — cross-node context leakage defense
+- `51.324` — Phase 49 GUI fabric overview
+- `51.325` — GUI node inventory
+- `51.326` — GUI capability matrix
+- `51.327` — GUI resource topology
+- `51.328` — GUI workload placement
+- `51.329` — GUI distributed task state
+- `51.330` — GUI partition state
+- `51.331` — GUI stale remote state
+- `51.332` — GUI policy and authorization
+- `51.333` — GUI node quarantine
+- `51.334` — GUI maintenance operations
+- `51.335` — CLI fabric overview
+- `51.336` — CLI node inspection
+- `51.337` — CLI distributed task inspection
+- `51.338` — CLI placement explanation
+- `51.339` — CLI partial-state rendering
+- `51.340` — ask fabric health
+- `51.341` — ask workload placement
+- `51.342` — ask node maintenance
+- `51.343` — operator confirmation across nodes
+- `51.344` — distributed dry-run
+- `51.345` — distributed explain-plan
+- `51.346` — coordinator architecture
+- `51.347` — coordinator identity
+- `51.348` — coordinator availability
+- `51.349` — coordinator restart
+- `51.350` — coordinator failover boundary
+- `51.351` — leader election necessity audit
+- `51.352` — leaderless operation audit
+- `51.353` — consensus necessity audit
+- `51.354` — avoid unnecessary consensus
+- `51.355` — coordination state ownership
+- `51.356` — distributed lock necessity audit
+- `51.357` — lease semantics
+- `51.358` — lease fencing
+- `51.359` — stale lease defense
+- `51.360` — fencing token model
+- `51.361` — split-brain fencing
+- `51.362` — scheduler state persistence
+- `51.363` — scheduler crash recovery
+- `51.364` — scheduler reboot recovery
+- `51.365` — dispatch journal
+- `51.366` — outbox pattern
+- `51.367` — inbox deduplication
+- `51.368` — durable operation state
+- `51.369` — reconciliation loop
+- `51.370` — reconciliation convergence
+- `51.371` — reconciliation backoff
+- `51.372` — reconciliation storm prevention
+- `51.373` — failure detector semantics
+- `51.374` — heartbeat design
+- `51.375` — heartbeat freshness
+- `51.376` — heartbeat false-positive handling
+- `51.377` — node liveness versus node health
+- `51.378` — health aggregation
+- `51.379` — health degradation propagation
+- `51.380` — partition tolerance
+- `51.381` — CAP tradeoff documentation
+- `51.382` — consistency model documentation
+- `51.383` — strong-consistency boundaries
+- `51.384` — eventual-consistency boundaries
+- `51.385` — read-your-writes requirements
+- `51.386` — monotonic-read requirements
+- `51.387` — stale-read visibility
+- `51.388` — distributed transaction prohibition
+- `51.389` — saga and compensation boundary
+- `51.390` — exactly-once fiction prohibition
+- `51.391` — at-least-once delivery handling
+- `51.392` — at-most-once boundary
+- `51.393` — idempotent operation design
+- `51.394` — distributed reboot continuity
+- `51.395` — rolling reboot
+- `51.396` — rolling maintenance
+- `51.397` — rolling upgrade boundary
+- `51.398` — version compatibility
+- `51.399` — protocol compatibility
+- `51.400` — schema compatibility
+- `51.401` — mixed-version fabric
+- `51.402` — feature negotiation
+- `51.403` — capability negotiation
+- `51.404` — protocol downgrade defense
+- `51.405` — minimum supported version
+- `51.406` — node upgrade sequencing
+- `51.407` — control-plane upgrade sequencing
+- `51.408` — rollback compatibility
+- `51.409` — Linux reference implementation
+- `51.410` — systemd service deployment
+- `51.411` — Linux socket provider
+- `51.412` — Linux networking provider reuse
+- `51.413` — Linux resource provider reuse
+- `51.414` — Linux GPU provider reuse
+- `51.415` — future Windows-node readiness
+- `51.416` — platform-neutral distributed core
+- `51.417` — platform-specific node providers
+- `51.418` — CMake distributed targets
+- `51.419` — C++ concurrency model
+- `51.420` — bounded worker pools
+- `51.421` — async IO boundary
+- `51.422` — cancellation propagation
+- `51.423` — backpressure propagation
+- `51.424` — memory bounds
+- `51.425` — queue bounds
+- `51.426` — thread safety
+- `51.427` — race-condition audit
+- `51.428` — deadlock audit
+- `51.429` — livelock audit
+- `51.430` — priority inversion audit
+- `51.431` — shutdown semantics
+- `51.432` — graceful node shutdown
+- `51.433` — abrupt node loss
+- `51.434` — process crash recovery
+- `51.435` — disk-full handling
+- `51.436` — corrupt-state handling
+- `51.437` — state migration
+- `51.438` — state backup boundary
+- `51.439` — security threat model
+- `51.440` — rogue node threat
+- `51.441` — stolen node credential threat
+- `51.442` — MITM threat
+- `51.443` — replay threat
+- `51.444` — downgrade threat
+- `51.445` — Sybil boundary
+- `51.446` — impersonation threat
+- `51.447` — confused deputy threat
+- `51.448` — authority laundering threat
+- `51.449` — context laundering threat
+- `51.450` — task laundering threat
+- `51.451` — data exfiltration threat
+- `51.452` — resource exhaustion threat
+- `51.453` — message flood threat
+- `51.454` — malformed peer input
+- `51.455` — untrusted remote strings
+- `51.456` — serialization hardening
+- `51.457` — parser fuzzing
+- `51.458` — protocol fuzzing
+- `51.459` — authentication fuzzing
+- `51.460` — authorization adversarial tests
+- `51.461` — membership adversarial tests
+- `51.462` — placement adversarial tests
+- `51.463` — partition adversarial tests
+- `51.464` — reconciliation adversarial tests
+- `51.465` — secret leakage audit
+- `51.466` — log redaction
+- `51.467` — telemetry redaction
+- `51.468` — diagnostics redaction
+- `51.469` — semantic prompt redaction
+- `51.470` — distributed audit records
+- `51.471` — operator-visible provenance
+- `51.472` — remote action attribution
+- `51.473` — who requested what where
+- `51.474` — why placement occurred
+- `51.475` — why task was denied
+- `51.476` — why node was quarantined
+- `51.477` — fabric safe mode
+- `51.478` — node safe mode
+- `51.479` — emergency quiescence
+- `51.480` — emergency workload stop policy
+- `51.481` — preserve maintenance access
+- `51.482` — protect graphical sessions
+- `51.483` — protect storage and boot
+- `51.484` — protect network control plane
+- `51.485` — protect Rebuntu control plane
+- `51.486` — disaster recovery
+- `51.487` — single-node degraded operation
+- `51.488` — fabric unavailable local fallback
+- `51.489` — offline node operation boundary
+- `51.490` — rejoin after offline operation
+- `51.491` — state reconciliation after rejoin
+- `51.492` — duplicate identity detection
+- `51.493` — cloned node detection
+- `51.494` — restored snapshot identity handling
+- `51.495` — hardware replacement identity handling
+- `51.496` — node rename handling
+- `51.497` — network renumbering handling
+- `51.498` — multi-NIC failover
+- `51.499` — DNS failure handling
+- `51.500` — time synchronization independence
+- `51.501` — NTP failure handling
+- `51.502` — clock skew tests
+- `51.503` — partition test harness
+- `51.504` — multi-node integration harness
+- `51.505` — virtual-node test harness
+- `51.506` — physical-node test plan
+- `51.507` — heterogeneous hardware test plan
+- `51.508` — multi-GPU distributed test plan
+- `51.509` — high-speed network test plan
+- `51.510` — failure injection framework
+- `51.511` — packet loss tests
+- `51.512` — latency injection
+- `51.513` — message duplication injection
+- `51.514` — message reordering injection
+- `51.515` — node kill injection
+- `51.516` — coordinator kill injection
+- `51.517` — disk failure injection
+- `51.518` — reboot injection
+- `51.519` — credential expiry injection
+- `51.520` — certificate rotation tests
+- `51.521` — revocation tests
+- `51.522` — rolling maintenance tests
+- `51.523` — mixed-version tests
+- `51.524` — load tests
+- `51.525` — scale tests
+- `51.526` — scheduler stress tests
+- `51.527` — resource contention tests
+- `51.528` — distributed search stress tests
+- `51.529` — workflow stress tests
+- `51.530` — timeline ingestion stress tests
+- `51.531` — graph update stress tests
+- `51.532` — GUI large-fabric tests
+- `51.533` — performance budgets
+- `51.534` — control-plane latency budget
+- `51.535` — telemetry bandwidth budget
+- `51.536` — message-volume budget
+- `51.537` — scheduler decision budget
+- `51.538` — memory budget
+- `51.539` — startup convergence budget
+- `51.540` — recovery convergence budget
+- `51.541` — observability metrics
+- `51.542` — distributed tracing boundary
+- `51.543` — metrics identity
+- `51.544` — metrics freshness
+- `51.545` — metrics aggregation
+- `51.546` — metrics cardinality control
+- `51.547` — health dashboard integration
+- `51.548` — fabric diagnostics bundle
+- `51.549` — support bundle secret safety
+- `51.550` — operator documentation
+- `51.551` — fabric administration guide
+- `51.552` — node enrollment guide
+- `51.553` — node recovery guide
+- `51.554` — quarantine guide
+- `51.555` — maintenance guide
+- `51.556` — distributed task guide
+- `51.557` — placement guide
+- `51.558` — security guide
+- `51.559` — failure semantics guide
+- `51.560` — consistency semantics guide
+- `51.561` — developer provider guide
+- `51.562` — distributed protocol guide
+- `51.563` — AGENTS distributed architecture contract
+- `51.564` — AGENTS no-SSH-orchestration contract
+- `51.565` — AGENTS typed-remote-command contract
+- `51.566` — AGENTS authority contract
+- `51.567` — AGENTS consistency contract
+- `51.568` — AGENTS C++-first contract
+- `51.569` — AGENTS Python boundary contract
+- `51.570` — repository duplicate cluster-manager audit
+- `51.571` — legacy remote-execution audit
+- `51.572` — SSH shell fanout audit
+- `51.573` — hard-coded node inventory audit
+- `51.574` — hard-coded GPU index audit
+- `51.575` — hostname identity audit
+- `51.576` — IP identity audit
+- `51.577` — global mutable state audit
+- `51.578` — unbounded retry audit
+- `51.579` — exactly-once claim audit
+- `51.580` — distributed lock audit
+- `51.581` — stale remote state audit
+- `51.582` — remote authorization bypass audit
+- `51.583` — target revalidation bypass audit
+- `51.584` — semantic remote authority audit
+- `51.585` — first recursive rediscovery
+- `51.586` — resolve first rediscovery
+- `51.587` — second recursive rediscovery
+- `51.588` — resolve second rediscovery
+- `51.589` — adversarial fixed-point audit
+- `51.590` — final native build
+- `51.591` — final unit suite
+- `51.592` — final protocol suite
+- `51.593` — final provider contract suite
+- `51.594` — final multi-node integration suite
+- `51.595` — final partition suite
+- `51.596` — final reboot recovery suite
+- `51.597` — final security suite
+- `51.598` — final fuzz suite
+- `51.599` — final performance suite
+- `51.600` — final Linux parity audit
+- `51.601` — final Phase 50 portability audit
+- `51.602` — final cross-phase authority audit
+- `51.603` — final secret-safety audit
+- `51.604` — final source-tree audit
+- `51.605` — final production call-graph audit
+- `51.606` — final distributed bypass audit
+- `51.607` — final documentation audit
+- `51.608` — final clean rediscovery
+- `51.609` — Phase 51 closure and Phase 52 association handoff

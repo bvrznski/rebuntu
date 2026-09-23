@@ -1,0 +1,26 @@
+# Phase 103 — Operator Preference & Working-Style Model
+
+- 103.0: Bootstrap and repository reality audit
+- 103.1: Canonical ontology and identity
+- 103.2: Definitions and lifecycle
+- 103.3: State ownership and persistence
+- 103.4: Observation evidence provenance freshness
+- 103.5: UNKNOWN and conflicting evidence
+- 103.6: Capability and affordance integration
+- 103.7: Goal and desired-state integration
+- 103.8: Planning and operation integration
+- 103.9: Constraints and invariants
+- 103.10: Resources and topology
+- 103.11: Policy authorization
+- 103.12: Mandatory security
+- 103.13: Privilege and native providers
+- 103.14: Failure timeout cancellation partial effects
+- 103.15: Crash restart reconciliation recovery
+- 103.16: Concurrency races replacement TOCTOU
+- 103.17: Boundedness and budgets
+- 103.18: CLI GUI natural-language integration
+- 103.19: Timeline graph context integration
+- 103.20: Distributed and associated systems
+- 103.21: Python model shell authority audit
+- 103.22: Adversarial build runtime migration audit
+- 103.23: Documentation rediscovery and closure

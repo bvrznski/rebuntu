@@ -1,0 +1,23 @@
+# Prompt Index
+
+- `18.0.md` — Rebuntu --- Phase 18.0 --- Capability Architecture
+- `18.1.md` — Rebuntu --- Phase 18.1 --- Capability Inventory
+- `18.2.md` — Rebuntu --- Phase 18.2 --- Capability Discovery
+- `18.3.md` — Rebuntu --- Phase 18.3 --- Capability Search
+- `18.4.md` — Rebuntu --- Phase 18.4 --- Composition Search
+- `18.5.md` — Rebuntu --- Phase 18.5 --- Native Linux Capability Discovery
+- `18.6.md` — Rebuntu --- Phase 18.6 --- Provider Discovery
+- `18.7.md` — Rebuntu --- Phase 18.7 --- Missing-Capability Detection
+- `18.8.md` — Rebuntu --- Phase 18.8 --- Gap Classification
+- `18.9.md` — Rebuntu --- Phase 18.9 --- Research Pipeline
+- `18.10.md` — Rebuntu --- Phase 18.10 --- Candidate Implementation
+- `18.11.md` — Rebuntu --- Phase 18.11 --- Sandbox
+- `18.12.md` — Rebuntu --- Phase 18.12 --- Test Generation
+- `18.13.md` — Rebuntu --- Phase 18.13 --- Capability Verification
+- `18.14.md` — Rebuntu --- Phase 18.14 --- Safety Evaluation
+- `18.15.md` — Rebuntu --- Phase 18.15 --- Acceptance
+- `18.16.md` — Rebuntu --- Phase 18.16 --- Registration
+- `18.17.md` — Rebuntu --- Phase 18.17 --- Capability Versioning
+- `18.18.md` — Rebuntu --- Phase 18.18 --- Replacement / Supersession
+- `18.19.md` — Rebuntu --- Phase 18.19 --- Capability Learning from Reuse
+- `18.20.md` — Rebuntu --- Phase 18.20 --- Controlled Extension Audit

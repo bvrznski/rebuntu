@@ -1,0 +1,58 @@
+# Prompt Index
+
+- `30.0-resource-management-system-foundation.md` — Phase 30.0 — Resource Management System Foundation
+- `30.1-resource-domain-model.md` — Phase 30.1 — Resource Domain Model
+- `30.2-resource-provider-discovery.md` — Phase 30.2 — Resource Provider Discovery
+- `30.3-cpu-topology-capacity.md` — Phase 30.3 — CPU Topology & Capacity
+- `30.4-cpu-utilization-pressure.md` — Phase 30.4 — CPU Utilization & Pressure
+- `30.5-cpu-allocation-affinity.md` — Phase 30.5 — CPU Allocation & Affinity
+- `30.6-cpu-scheduling-policy-integration.md` — Phase 30.6 — CPU Scheduling Policy Integration
+- `30.7-memory-capacity-availability.md` — Phase 30.7 — Memory Capacity & Availability
+- `30.8-memory-pressure-reclaim-evidence.md` — Phase 30.8 — Memory Pressure & Reclaim Evidence
+- `30.9-swap-virtual-memory-context.md` — Phase 30.9 — Swap & Virtual Memory Context
+- `30.10-memory-allocation-limits.md` — Phase 30.10 — Memory Allocation & Limits
+- `30.11-numa-topology-locality.md` — Phase 30.11 — NUMA Topology & Locality
+- `30.12-numa-aware-workload-placement.md` — Phase 30.12 — NUMA-Aware Workload Placement
+- `30.13-gpu-resource-integration.md` — Phase 30.13 — GPU Resource Integration
+- `30.14-vram-capacity-pressure.md` — Phase 30.14 — VRAM Capacity & Pressure
+- `30.15-accelerator-engine-utilization.md` — Phase 30.15 — Accelerator Engine Utilization
+- `30.16-storage-i-o-resource-model.md` — Phase 30.16 — Storage I/O Resource Model
+- `30.17-block-i-o-pressure-throughput.md` — Phase 30.17 — Block I/O Pressure & Throughput
+- `30.18-network-resource-model.md` — Phase 30.18 — Network Resource Model
+- `30.19-network-throughput-pressure.md` — Phase 30.19 — Network Throughput & Pressure
+- `30.20-resource-observation-sampling.md` — Phase 30.20 — Resource Observation Sampling
+- `30.21-resource-time-series-windows.md` — Phase 30.21 — Resource Time-Series & Windows
+- `30.22-resource-demand-model.md` — Phase 30.22 — Resource Demand Model
+- `30.23-resource-reservation-model.md` — Phase 30.23 — Resource Reservation Model
+- `30.24-resource-allocation-model.md` — Phase 30.24 — Resource Allocation Model
+- `30.25-capacity-demand-reservation-allocation-separation.md` — Phase 30.25 — Capacity / Demand / Reservation / Allocation Separation
+- `30.26-resource-policy-model.md` — Phase 30.26 — Resource Policy Model
+- `30.27-resource-constraint-model.md` — Phase 30.27 — Resource Constraint Model
+- `30.28-resource-priority-fairness.md` — Phase 30.28 — Resource Priority & Fairness
+- `30.29-resource-admission-control.md` — Phase 30.29 — Resource Admission Control
+- `30.30-resource-placement-planning.md` — Phase 30.30 — Resource Placement Planning
+- `30.31-resource-rebalancing-planning.md` — Phase 30.31 — Resource Rebalancing Planning
+- `30.32-resource-reclamation-boundary.md` — Phase 30.32 — Resource Reclamation Boundary
+- `30.33-resource-contention-detection.md` — Phase 30.33 — Resource Contention Detection
+- `30.34-resource-bottleneck-diagnostics.md` — Phase 30.34 — Resource Bottleneck Diagnostics
+- `30.35-resource-saturation-pressure-semantics.md` — Phase 30.35 — Resource Saturation & Pressure Semantics
+- `30.36-workload-resource-attribution.md` — Phase 30.36 — Workload Resource Attribution
+- `30.37-system-control-plane-reservations.md` — Phase 30.37 — System & Control-Plane Reservations
+- `30.38-interactive-workload-protection.md` — Phase 30.38 — Interactive Workload Protection
+- `30.39-display-critical-resource-protection.md` — Phase 30.39 — Display-Critical Resource Protection
+- `30.40-ai-inference-resource-arbitration.md` — Phase 30.40 — AI / Inference Resource Arbitration
+- `30.41-development-workload-resource-integration.md` — Phase 30.41 — Development Workload Resource Integration
+- `30.42-service-resource-integration.md` — Phase 30.42 — Service Resource Integration
+- `30.43-container-cgroup-integration.md` — Phase 30.43 — Container & Cgroup Integration
+- `30.44-thermal-power-constraint-integration.md` — Phase 30.44 — Thermal & Power Constraint Integration
+- `30.45-resource-policy-hysteresis-cooldown.md` — Phase 30.45 — Resource Policy Hysteresis & Cooldown
+- `30.46-stale-evidence-control-loop-safety.md` — Phase 30.46 — Stale Evidence & Control-Loop Safety
+- `30.47-resource-action-planning-verification.md` — Phase 30.47 — Resource Action Planning & Verification
+- `30.48-resource-management-cli.md` — Phase 30.48 — Resource Management CLI
+- `30.49-phase-25-panel-integration-api.md` — Phase 30.49 — Phase 25 Panel Integration API
+- `30.50-phase-29-process-workload-integration.md` — Phase 30.50 — Phase 29 Process / Workload Integration
+- `30.51-phase-34-accelerator-integration.md` — Phase 30.51 — Phase 34 Accelerator Integration
+- `30.52-phase-39-timeline-integration.md` — Phase 30.52 — Phase 39 Timeline Integration
+- `30.53-phase-42-graph-impact-integration.md` — Phase 30.53 — Phase 42 Graph & Impact Integration
+- `30.54-failure-injection-contention-testing.md` — Phase 30.54 — Failure Injection & Contention Testing
+- `30.55-resource-management-system-closure-readiness-gate.md` — Phase 30.55 — Resource Management System Closure & Readiness Gate

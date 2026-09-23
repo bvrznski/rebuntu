@@ -1,0 +1,52 @@
+# Phase 58 — Constraint, Invariant & Operational Contract System
+
+- **58.0** — Constraint ontology
+- **58.1** — Invariant ontology
+- **58.2** — Operational contract model
+- **58.3** — Constraint identity
+- **58.4** — Constraint scope
+- **58.5** — Constraint provenance
+- **58.6** — Hard constraints
+- **58.7** — Soft constraints
+- **58.8** — Safety invariants
+- **58.9** — Availability invariants
+- **58.10** — Security invariants
+- **58.11** — Resource invariants
+- **58.12** — Topology invariants
+- **58.13** — Service invariants
+- **58.14** — Storage invariants
+- **58.15** — Network invariants
+- **58.16** — GPU invariants
+- **58.17** — Session invariants
+- **58.18** — Temporal constraints
+- **58.19** — Maintenance constraints
+- **58.20** — Cross-domain constraints
+- **58.21** — Distributed constraints
+- **58.22** — Constraint composition
+- **58.23** — Constraint conflicts
+- **58.24** — Constraint precedence
+- **58.25** — Constraint satisfiability
+- **58.26** — Invariant evaluation
+- **58.27** — Invariant freshness
+- **58.28** — Invariant UNKNOWN
+- **58.29** — Constraint-to-planner integration
+- **58.30** — Constraint-to-affordance integration
+- **58.31** — Constraint-to-policy boundary
+- **58.32** — Constraint-to-security boundary
+- **58.33** — Pre-execution invariant gate
+- **58.34** — Post-execution invariant verification
+- **58.35** — Continuous invariant monitoring
+- **58.36** — Violation event model
+- **58.37** — Violation escalation
+- **58.38** — Violation recovery handoff
+- **58.39** — Operator override boundary
+- **58.40** — Override expiry
+- **58.41** — Constraint explainability
+- **58.42** — Why-blocked integration
+- **58.43** — CLI
+- **58.44** — GUI
+- **58.45** — Persistence/versioning
+- **58.46** — Adversarial bypass audit
+- **58.47** — Build/runtime audit
+- **58.48** — Independent rediscovery
+- **58.49** — Phase closure

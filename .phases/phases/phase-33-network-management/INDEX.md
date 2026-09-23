@@ -1,0 +1,58 @@
+# Prompt Index
+
+- `33.0-network-management-system-foundation.md` — Phase 33.0 — Network Management System Foundation
+- `33.1-network-domain-model.md` — Phase 33.1 — Network Domain Model
+- `33.2-network-provider-discovery.md` — Phase 33.2 — Network Provider Discovery
+- `33.3-network-interface-identity.md` — Phase 33.3 — Network Interface Identity
+- `33.4-physical-link-state.md` — Phase 33.4 — Physical Link State
+- `33.5-address-configuration-model.md` — Phase 33.5 — Address Configuration Model
+- `33.6-ipv4-ipv6-semantics.md` — Phase 33.6 — IPv4 & IPv6 Semantics
+- `33.7-route-policy-routing-model.md` — Phase 33.7 — Route & Policy Routing Model
+- `33.8-default-route-semantics.md` — Phase 33.8 — Default Route Semantics
+- `33.9-dns-configuration-resolution-model.md` — Phase 33.9 — DNS Configuration & Resolution Model
+- `33.10-connectivity-evidence-model.md` — Phase 33.10 — Connectivity Evidence Model
+- `33.11-reachability-vs-connectivity-separation.md` — Phase 33.11 — Reachability vs Connectivity Separation
+- `33.12-socket-listener-evidence.md` — Phase 33.12 — Socket & Listener Evidence
+- `33.13-listening-vs-exposure-separation.md` — Phase 33.13 — Listening vs Exposure Separation
+- `33.14-network-exposure-model.md` — Phase 33.14 — Network Exposure Model
+- `33.15-firewall-integration-boundary.md` — Phase 33.15 — Firewall Integration Boundary
+- `33.16-ufw-provider-integration.md` — Phase 33.16 — UFW Provider Integration
+- `33.17-nftables-netfilter-evidence.md` — Phase 33.17 — nftables & Netfilter Evidence
+- `33.18-networkmanager-provider-integration.md` — Phase 33.18 — NetworkManager Provider Integration
+- `33.19-network-configuration-provenance.md` — Phase 33.19 — Network Configuration Provenance
+- `33.20-connection-profile-model.md` — Phase 33.20 — Connection Profile Model
+- `33.21-ethernet-link-management.md` — Phase 33.21 — Ethernet Link Management
+- `33.22-wi-fi-integration-boundary.md` — Phase 33.22 — Wi-Fi Integration Boundary
+- `33.23-vlan-integration.md` — Phase 33.23 — VLAN Integration
+- `33.24-bridge-integration.md` — Phase 33.24 — Bridge Integration
+- `33.25-bonding-teaming-integration.md` — Phase 33.25 — Bonding & Teaming Integration
+- `33.26-virtual-ethernet-namespace-integration.md` — Phase 33.26 — Virtual Ethernet & Namespace Integration
+- `33.27-vpn-tunnel-integration-boundary.md` — Phase 33.27 — VPN & Tunnel Integration Boundary
+- `33.28-mtu-link-parameter-management.md` — Phase 33.28 — MTU & Link Parameter Management
+- `33.29-network-performance-evidence.md` — Phase 33.29 — Network Performance Evidence
+- `33.30-network-resource-integration.md` — Phase 33.30 — Network Resource Integration
+- `33.31-interface-dependency-analysis.md` — Phase 33.31 — Interface Dependency Analysis
+- `33.32-current-access-path-protection.md` — Phase 33.32 — Current Access Path Protection
+- `33.33-ssh-remote-maintenance-protection.md` — Phase 33.33 — SSH & Remote Maintenance Protection
+- `33.34-dns-change-planning.md` — Phase 33.34 — DNS Change Planning
+- `33.35-address-change-planning.md` — Phase 33.35 — Address Change Planning
+- `33.36-route-change-planning.md` — Phase 33.36 — Route Change Planning
+- `33.37-firewall-change-planning.md` — Phase 33.37 — Firewall Change Planning
+- `33.38-network-mutation-transaction-model.md` — Phase 33.38 — Network Mutation Transaction Model
+- `33.39-timed-rollback-connectivity-guard.md` — Phase 33.39 — Timed Rollback & Connectivity Guard
+- `33.40-network-recovery-safe-mode.md` — Phase 33.40 — Network Recovery & Safe Mode
+- `33.41-boot-time-network-analysis.md` — Phase 33.41 — Boot-Time Network Analysis
+- `33.42-network-drift-detection.md` — Phase 33.42 — Network Drift Detection
+- `33.43-network-management-cli.md` — Phase 33.43 — Network Management CLI
+- `33.44-phase-25-panel-integration-api.md` — Phase 33.44 — Phase 25 Panel Integration API
+- `33.45-phase-29-workload-integration.md` — Phase 33.45 — Phase 29 Workload Integration
+- `33.46-phase-30-resource-integration.md` — Phase 33.46 — Phase 30 Resource Integration
+- `33.47-phase-31-service-integration.md` — Phase 33.47 — Phase 31 Service Integration
+- `33.48-phase-36-configuration-integration.md` — Phase 33.48 — Phase 36 Configuration Integration
+- `33.49-phase-37-secrets-integration.md` — Phase 33.49 — Phase 37 Secrets Integration
+- `33.50-phase-38-identity-integration.md` — Phase 33.50 — Phase 38 Identity Integration
+- `33.51-phase-39-timeline-integration.md` — Phase 33.51 — Phase 39 Timeline Integration
+- `33.52-phase-42-graph-integration.md` — Phase 33.52 — Phase 42 Graph Integration
+- `33.53-network-security-exposure-audit.md` — Phase 33.53 — Network Security & Exposure Audit
+- `33.54-failure-injection-network-namespace-testing.md` — Phase 33.54 — Failure Injection & Network Namespace Testing
+- `33.55-network-management-system-closure-readiness-gate.md` — Phase 33.55 — Network Management System Closure & Readiness Gate

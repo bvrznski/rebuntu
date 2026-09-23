@@ -1,0 +1,69 @@
+# Prompt Index
+
+- `38.0-user-identity-management-system-foundation.md` — Phase 38.0 — User & Identity Management System Foundation
+- `38.1-identity-domain-model.md` — Phase 38.1 — Identity Domain Model
+- `38.2-identity-provider-discovery.md` — Phase 38.2 — Identity Provider Discovery
+- `38.3-stable-user-identity.md` — Phase 38.3 — Stable User Identity
+- `38.4-username-vs-identity-separation.md` — Phase 38.4 — Username vs Identity Separation
+- `38.5-uid-gid-identity-semantics.md` — Phase 38.5 — UID / GID Identity Semantics
+- `38.6-account-model.md` — Phase 38.6 — Account Model
+- `38.7-human-vs-system-account-classification.md` — Phase 38.7 — Human vs System Account Classification
+- `38.8-group-identity-model.md` — Phase 38.8 — Group Identity Model
+- `38.9-group-membership-semantics.md` — Phase 38.9 — Group Membership Semantics
+- `38.10-primary-vs-supplementary-group-semantics.md` — Phase 38.10 — Primary vs Supplementary Group Semantics
+- `38.11-nss-integration-boundary.md` — Phase 38.11 — NSS Integration Boundary
+- `38.12-local-account-provider-integration.md` — Phase 38.12 — Local Account Provider Integration
+- `38.13-external-identity-provider-boundary.md` — Phase 38.13 — External Identity Provider Boundary
+- `38.14-authentication-vs-authorization-separation.md` — Phase 38.14 — Authentication vs Authorization Separation
+- `38.15-pam-integration-boundary.md` — Phase 38.15 — PAM Integration Boundary
+- `38.16-password-authentication-secret-boundary.md` — Phase 38.16 — Password & Authentication Secret Boundary
+- `38.17-session-identity-model.md` — Phase 38.17 — Session Identity Model
+- `38.18-login-session-discovery.md` — Phase 38.18 — Login Session Discovery
+- `38.19-systemd-logind-integration.md` — Phase 38.19 — systemd-logind Integration
+- `38.20-seat-graphical-session-model.md` — Phase 38.20 — Seat & Graphical Session Model
+- `38.21-tty-pty-terminal-session-model.md` — Phase 38.21 — TTY / PTY / Terminal Session Model
+- `38.22-login-shell-vs-interactive-shell-separation.md` — Phase 38.22 — Login Shell vs Interactive Shell Separation
+- `38.23-fish-bash-compatibility-boundary.md` — Phase 38.23 — Fish / Bash Compatibility Boundary
+- `38.24-account-state-login-eligibility.md` — Phase 38.24 — Account State & Login Eligibility
+- `38.25-account-locking-safety-boundary.md` — Phase 38.25 — Account Locking Safety Boundary
+- `38.26-account-expiration-semantics.md` — Phase 38.26 — Account Expiration Semantics
+- `38.27-privilege-context-model.md` — Phase 38.27 — Privilege Context Model
+- `38.28-sudo-integration-boundary.md` — Phase 38.28 — sudo Integration Boundary
+- `38.29-sudoers-configuration-safety.md` — Phase 38.29 — sudoers Configuration Safety
+- `38.30-polkit-integration-boundary.md` — Phase 38.30 — polkit Integration Boundary
+- `38.31-privilege-escalation-evidence.md` — Phase 38.31 — Privilege Escalation Evidence
+- `38.32-effective-real-saved-identity-context.md` — Phase 38.32 — Effective / Real / Saved Identity Context
+- `38.33-process-identity-integration.md` — Phase 38.33 — Process Identity Integration
+- `38.34-service-identity-integration.md` — Phase 38.34 — Service Identity Integration
+- `38.35-filesystem-ownership-integration.md` — Phase 38.35 — Filesystem Ownership Integration
+- `38.36-uid-gid-collision-detection.md` — Phase 38.36 — UID / GID Collision Detection
+- `38.37-ownership-impact-analysis.md` — Phase 38.37 — Ownership Impact Analysis
+- `38.38-account-creation-planning.md` — Phase 38.38 — Account Creation Planning
+- `38.39-account-modification-planning.md` — Phase 38.39 — Account Modification Planning
+- `38.40-username-change-planning.md` — Phase 38.40 — Username Change Planning
+- `38.41-uid-gid-change-planning.md` — Phase 38.41 — UID / GID Change Planning
+- `38.42-group-membership-change-planning.md` — Phase 38.42 — Group Membership Change Planning
+- `38.43-account-lock-unlock-planning.md` — Phase 38.43 — Account Lock / Unlock Planning
+- `38.44-account-deletion-safety-boundary.md` — Phase 38.44 — Account Deletion Safety Boundary
+- `38.45-home-directory-lifecycle-boundary.md` — Phase 38.45 — Home Directory Lifecycle Boundary
+- `38.46-home-ownership-migration-boundary.md` — Phase 38.46 — Home Ownership Migration Boundary
+- `38.47-login-shell-change-boundary.md` — Phase 38.47 — Login Shell Change Boundary
+- `38.48-user-environment-boundary.md` — Phase 38.48 — User Environment Boundary
+- `38.49-user-scoped-service-integration.md` — Phase 38.49 — User-Scoped Service Integration
+- `38.50-session-lifecycle-boundary.md` — Phase 38.50 — Session Lifecycle Boundary
+- `38.51-current-operator-protection.md` — Phase 38.51 — Current Operator Protection
+- `38.52-administrative-access-protection.md` — Phase 38.52 — Administrative Access Protection
+- `38.53-recovery-account-access-boundary.md` — Phase 38.53 — Recovery Account & Access Boundary
+- `38.54-identity-mutation-authorization.md` — Phase 38.54 — Identity Mutation Authorization
+- `38.55-identity-configuration-provenance.md` — Phase 38.55 — Identity Configuration Provenance
+- `38.56-identity-drift-detection.md` — Phase 38.56 — Identity Drift Detection
+- `38.57-identity-management-cli.md` — Phase 38.57 — Identity Management CLI
+- `38.58-phase-25-panel-integration-api.md` — Phase 38.58 — Phase 25 Panel Integration API
+- `38.59-phase-29-process-workload-integration.md` — Phase 38.59 — Phase 29 Process / Workload Integration
+- `38.60-phase-31-service-integration.md` — Phase 38.60 — Phase 31 Service Integration
+- `38.61-phase-32-storage-integration.md` — Phase 38.61 — Phase 32 Storage Integration
+- `38.62-phase-36-configuration-integration.md` — Phase 38.62 — Phase 36 Configuration Integration
+- `38.63-phase-37-secrets-integration.md` — Phase 38.63 — Phase 37 Secrets Integration
+- `38.64-phase-39-timeline-integration.md` — Phase 38.64 — Phase 39 Timeline Integration
+- `38.65-failure-injection-disposable-identity-testing.md` — Phase 38.65 — Failure Injection & Disposable Identity Testing
+- `38.66-user-identity-management-system-closure-readiness-gate.md` — Phase 38.66 — User & Identity Management System Closure & Readiness Gate

@@ -1,0 +1,339 @@
+{
+  "phase": 36,
+  "slug": "configuration-management",
+  "directory": "phase-36-configuration-management",
+  "prompt_count": 66,
+  "layout_version": 2,
+  "prompts": [
+    {
+      "file": "36.0-configuration-management-system-foundation.md",
+      "title": "Phase 36.0 — Configuration Management System Foundation",
+      "sha256": "268a33407da3b759e2a96bccfa4734e0509c2b778d739209e6f3ed7b1b5f8337"
+    },
+    {
+      "file": "36.1-configuration-domain-model.md",
+      "title": "Phase 36.1 — Configuration Domain Model",
+      "sha256": "9872a57d27a5e22e3b4856affadf03a9fdb3e25612fdb9fabc36b5e2769cc206"
+    },
+    {
+      "file": "36.2-configuration-provider-discovery.md",
+      "title": "Phase 36.2 — Configuration Provider Discovery",
+      "sha256": "96fd94f05b41687f4b1c6b26f62110abf52e7508710a7e797224d0143ab5b616"
+    },
+    {
+      "file": "36.3-configuration-object-identity.md",
+      "title": "Phase 36.3 — Configuration Object Identity",
+      "sha256": "fc1748e2173336b3ff8caf3e6a8b2845c3837844fca2dd91200fdb085216de0c"
+    },
+    {
+      "file": "36.4-configuration-source-vs-effective-state.md",
+      "title": "Phase 36.4 — Configuration Source vs Effective State",
+      "sha256": "cb317074afae1448abbc22542adb304d169bf6f12d24476b4fb82cf8f755f891"
+    },
+    {
+      "file": "36.5-desired-vs-observed-configuration.md",
+      "title": "Phase 36.5 — Desired vs Observed Configuration",
+      "sha256": "4a3353ef5e59d8c00438a09af753b402ab645b227e5129f275a550b1fa67efa7"
+    },
+    {
+      "file": "36.6-configuration-layering-model.md",
+      "title": "Phase 36.6 — Configuration Layering Model",
+      "sha256": "ea8e48e61c03cc7585f3828e696e54ac62fadf110af9368a02164eb17b8b2b74"
+    },
+    {
+      "file": "36.7-precedence-override-semantics.md",
+      "title": "Phase 36.7 — Precedence & Override Semantics",
+      "sha256": "41b0fc46c61fc9b4c4ff66550ac487070815b6dae6a8e2a1d0732dbd9f624d79"
+    },
+    {
+      "file": "36.8-configuration-provenance.md",
+      "title": "Phase 36.8 — Configuration Provenance",
+      "sha256": "48bd41e82799209dd4854698d1be7e7a9459f4682579614c1e0ded3338c0d441"
+    },
+    {
+      "file": "36.9-filesystem-ownership-vs-configuration-ownership.md",
+      "title": "Phase 36.9 — Filesystem Ownership vs Configuration Ownership",
+      "sha256": "b420d8993c45fc80763d7910d2ae363e9de6abfeb9dd8478df49f4410e94f075"
+    },
+    {
+      "file": "36.10-textual-vs-semantic-configuration-model.md",
+      "title": "Phase 36.10 — Textual vs Semantic Configuration Model",
+      "sha256": "f4824136a82b541966af76f1ef7d9d29f762b38b4d28354db06693611f539761"
+    },
+    {
+      "file": "36.11-configuration-parser-adapter-boundary.md",
+      "title": "Phase 36.11 — Configuration Parser & Adapter Boundary",
+      "sha256": "c6600df772c267bad5c6512ce8cf2f8ed76c328431733777fc7a2ed374944ea7"
+    },
+    {
+      "file": "36.12-unknown-key-comment-preservation.md",
+      "title": "Phase 36.12 — Unknown Key & Comment Preservation",
+      "sha256": "f79034572a7e148f7ce2d11950cfebadda48de32a062e0c5ba656fd584754146"
+    },
+    {
+      "file": "36.13-configuration-schema-integration.md",
+      "title": "Phase 36.13 — Configuration Schema Integration",
+      "sha256": "3bb7a92814517b47d687ad5dacd7c09a9c0f9ec9c43edabaa24a0558c4983de8"
+    },
+    {
+      "file": "36.14-configuration-validation-model.md",
+      "title": "Phase 36.14 — Configuration Validation Model",
+      "sha256": "9a980a625864ea6152b6f28b85ea4db01fe95a1b38457eb39d8447e67864b521"
+    },
+    {
+      "file": "36.15-configuration-diff-model.md",
+      "title": "Phase 36.15 — Configuration Diff Model",
+      "sha256": "bd6bcf43da5802d6150e9ed755d760222031140d019b8ec5c1a9d1c899dff84e"
+    },
+    {
+      "file": "36.16-semantic-diff-model.md",
+      "title": "Phase 36.16 — Semantic Diff Model",
+      "sha256": "7d81133b392a3e10b06654fd1f2c0b42553cf555abb4fd11a6388c392b6bda50"
+    },
+    {
+      "file": "36.17-configuration-changeset-model.md",
+      "title": "Phase 36.17 — Configuration ChangeSet Model",
+      "sha256": "6b050ab079d859d4135c2cb2ce329b98a066e051d41759bff2c550545b769b22"
+    },
+    {
+      "file": "36.18-minimal-patch-planning.md",
+      "title": "Phase 36.18 — Minimal Patch Planning",
+      "sha256": "fbb29d4a8437dd0a0aff8a2ed9d19bffdb2d4f44a9e2f7e41f1e3edbd67400ae"
+    },
+    {
+      "file": "36.19-atomic-file-mutation.md",
+      "title": "Phase 36.19 — Atomic File Mutation",
+      "sha256": "a313f4fabae8ef0116b65703732021efe8fc549f219a6847aebb4adf204f530d"
+    },
+    {
+      "file": "36.20-configuration-transaction-model.md",
+      "title": "Phase 36.20 — Configuration Transaction Model",
+      "sha256": "e7cd1b7b3f2dddc646966e2ce4462992d0a7728b692d3f267eff2cafee38f2c7"
+    },
+    {
+      "file": "36.21-configuration-backup-model.md",
+      "title": "Phase 36.21 — Configuration Backup Model",
+      "sha256": "f784097c941a7240f5429f75eec448d896f3a2d5df7f0f95e22a1346730df196"
+    },
+    {
+      "file": "36.22-backup-vs-rollback-separation.md",
+      "title": "Phase 36.22 — Backup vs Rollback Separation",
+      "sha256": "b8b03f07a3b309d22e1a3518de54c6e0f54367e57c468be7ba111038bd046d13"
+    },
+    {
+      "file": "36.23-configuration-rollback-model.md",
+      "title": "Phase 36.23 — Configuration Rollback Model",
+      "sha256": "920af337172420f43d23105e17d20a92ab39b7f104dbca2a9007aaa12ceb1ec2"
+    },
+    {
+      "file": "36.24-concurrent-edit-detection.md",
+      "title": "Phase 36.24 — Concurrent Edit Detection",
+      "sha256": "ac3414e30c7b42752fe1a695bd8ac9528f291c06819acbaa1453a6acd554b3fd"
+    },
+    {
+      "file": "36.25-external-change-reconciliation.md",
+      "title": "Phase 36.25 — External Change Reconciliation",
+      "sha256": "26aa5f3bf76d72ae618b6f4732eb1429026a541f0aee11f23c1d756884d65c5f"
+    },
+    {
+      "file": "36.26-configuration-drift-detection.md",
+      "title": "Phase 36.26 — Configuration Drift Detection",
+      "sha256": "e6fbc65c8d9c49d5481709048bb76444bc13ce5cd832a1f6764e3acf1ca7e3a5"
+    },
+    {
+      "file": "36.27-drift-classification.md",
+      "title": "Phase 36.27 — Drift Classification",
+      "sha256": "926d01ea06269c9fd7e601dee22feffd50ca7f52019ea8875efd66e0cd0752cd"
+    },
+    {
+      "file": "36.28-desired-state-adoption.md",
+      "title": "Phase 36.28 — Desired-State Adoption",
+      "sha256": "7fdc89ce9434f3a04dc8b9aaec5bbc912b8ce8821cec1c2b7e4f0de8030af354"
+    },
+    {
+      "file": "36.29-configuration-reconciliation-planning.md",
+      "title": "Phase 36.29 — Configuration Reconciliation Planning",
+      "sha256": "43b28c5778674fd9bfafe2a44b34fb54b1a4488cb81f4be9624f0fb025449567"
+    },
+    {
+      "file": "36.30-configuration-history-versioning.md",
+      "title": "Phase 36.30 — Configuration History & Versioning",
+      "sha256": "d8d678138ec9dc9e8ef4706fce268919391b4dfdef73f7f301b1d7fca3d5ddfc"
+    },
+    {
+      "file": "36.31-configuration-snapshot-semantics.md",
+      "title": "Phase 36.31 — Configuration Snapshot Semantics",
+      "sha256": "4ab2ea8f777c42105c87b2efbc95168f2b19b868112dfd5958ae3f7ac17e8673"
+    },
+    {
+      "file": "36.32-secret-reference-integration.md",
+      "title": "Phase 36.32 — Secret Reference Integration",
+      "sha256": "6f04e33133bfbda252923da92d2ac0954b2f209889272b4154a0077f91a3022a"
+    },
+    {
+      "file": "36.33-sensitive-configuration-redaction.md",
+      "title": "Phase 36.33 — Sensitive Configuration Redaction",
+      "sha256": "95ecf48f5a8d508459b705aa7a9542fcd2fef56e3308af31c1ecc56786f0185b"
+    },
+    {
+      "file": "36.34-environment-variable-configuration.md",
+      "title": "Phase 36.34 — Environment Variable Configuration",
+      "sha256": "fb003b5757d95226c713b79e3965ae44d0d5673da8348672ebc8503d80b5a453"
+    },
+    {
+      "file": "36.35-user-scoped-configuration.md",
+      "title": "Phase 36.35 — User-Scoped Configuration",
+      "sha256": "84cbe8eaec2d283be3d0b67790b765c86b1153610c807ec43f5404a1d8d1ef83"
+    },
+    {
+      "file": "36.36-system-scoped-configuration.md",
+      "title": "Phase 36.36 — System-Scoped Configuration",
+      "sha256": "d013090e5bcf351bbc54ab06081e8a93069269f15c0dcd0bfe29ff17cf0b59a1"
+    },
+    {
+      "file": "36.37-project-scoped-configuration-boundary.md",
+      "title": "Phase 36.37 — Project-Scoped Configuration Boundary",
+      "sha256": "0a5c17eed10aab9b92c1e722ac6130e365b102f517edd1bfe25ad40fe59026cc"
+    },
+    {
+      "file": "36.38-runtime-configuration-boundary.md",
+      "title": "Phase 36.38 — Runtime Configuration Boundary",
+      "sha256": "0bc491a6950fff09c5b7923e7dac8f9d5d97a478fdbb3d9d0bcf8346a34c152d"
+    },
+    {
+      "file": "36.39-generated-configuration-boundary.md",
+      "title": "Phase 36.39 — Generated Configuration Boundary",
+      "sha256": "b7944bd1b743015077d327c75d50e5a684529947c46e26c58383b93feeff68b5"
+    },
+    {
+      "file": "36.40-symlink-indirection-handling.md",
+      "title": "Phase 36.40 — Symlink & Indirection Handling",
+      "sha256": "6fb1af52acba1ee2a0ea5217c9cb745529a89a4e28c4f2a326cd1e43e916e915"
+    },
+    {
+      "file": "36.41-directory-fragment-configuration.md",
+      "title": "Phase 36.41 — Directory & Fragment Configuration",
+      "sha256": "a5e4598487ea84bd994d292a4faa3f825a9ec5a0277c5201c59fb0746906968f"
+    },
+    {
+      "file": "36.42-drop-in-override-semantics.md",
+      "title": "Phase 36.42 — Drop-In / Override Semantics",
+      "sha256": "60a8d6b89aefe0e7d61e58057fc9abdd418f0628d352740fe11f1ab0de27a435"
+    },
+    {
+      "file": "36.43-configuration-activation-model.md",
+      "title": "Phase 36.43 — Configuration Activation Model",
+      "sha256": "28f94ec072c1198d98f39deb7858631c271a9fb6367eef164bf0cdacb56a0bb6"
+    },
+    {
+      "file": "36.44-reload-restart-impact-boundary.md",
+      "title": "Phase 36.44 — Reload / Restart Impact Boundary",
+      "sha256": "28d401f9123ab4097572e9190d9456cbfc1962b3fbb7bf0c155edd320fe35d17"
+    },
+    {
+      "file": "36.45-configuration-dependency-analysis.md",
+      "title": "Phase 36.45 — Configuration Dependency Analysis",
+      "sha256": "f964922d2a4ff928173c858e12b4b3e09215be054cd4d84e21d02d45804fb95c"
+    },
+    {
+      "file": "36.46-configuration-impact-analysis.md",
+      "title": "Phase 36.46 — Configuration Impact Analysis",
+      "sha256": "1760142b5c0d8cb8d39a7ec23df56f11dc8e199e138be30d33e349d500ff4ff9"
+    },
+    {
+      "file": "36.47-configuration-policy-constraints.md",
+      "title": "Phase 36.47 — Configuration Policy & Constraints",
+      "sha256": "ac73f8a66f75c5e1f7357cc2c2729cc763ee0ab33291c88f31873573da18ee36"
+    },
+    {
+      "file": "36.48-configuration-mutation-authorization.md",
+      "title": "Phase 36.48 — Configuration Mutation Authorization",
+      "sha256": "a123de3f22359c6562d107dbaed1d2e165c263ca28a937a5beafb040b92c02a6"
+    },
+    {
+      "file": "36.49-privilege-boundary.md",
+      "title": "Phase 36.49 — Privilege Boundary",
+      "sha256": "2df501b3036b037222d0b6748eadbec7f1fec441d1add40af87de143ed8afd40"
+    },
+    {
+      "file": "36.50-configuration-search-explainability.md",
+      "title": "Phase 36.50 — Configuration Search & Explainability",
+      "sha256": "5a3517967e3a39f47f2a55bce5a8ac1aa0ff98c088b2d3b07714437edbf72c08"
+    },
+    {
+      "file": "36.51-configuration-management-cli.md",
+      "title": "Phase 36.51 — Configuration Management CLI",
+      "sha256": "fd28af0f5b49f29f500429732c8ff3059a89fb23c1478f76266e01d49fda46a9"
+    },
+    {
+      "file": "36.52-phase-25-panel-integration-api.md",
+      "title": "Phase 36.52 — Phase 25 Panel Integration API",
+      "sha256": "53459bac9594793c7da1af82b12b587d836d8ee2505da7ba6ef531557595d87d"
+    },
+    {
+      "file": "36.53-phase-27-terminal-configuration-integration.md",
+      "title": "Phase 36.53 — Phase 27 Terminal Configuration Integration",
+      "sha256": "d853df5502b9191c264c3ff6836720008fabff80864d2226e2cfd9dd56647232"
+    },
+    {
+      "file": "36.54-phase-28-development-configuration-integration.md",
+      "title": "Phase 36.54 — Phase 28 Development Configuration Integration",
+      "sha256": "f839c20a2418393547c6f98b83adee006468d173ed2f4ed9601cfffff89f5d75"
+    },
+    {
+      "file": "36.55-phase-31-service-configuration-integration.md",
+      "title": "Phase 36.55 — Phase 31 Service Configuration Integration",
+      "sha256": "f46a45e67f31d257e299699ec377251d2491783379720500d00c683514946c97"
+    },
+    {
+      "file": "36.56-phase-32-storage-configuration-integration.md",
+      "title": "Phase 36.56 — Phase 32 Storage Configuration Integration",
+      "sha256": "340ea711651b408c0d73b5b8ccc4cce2129e3e3845e8608fe7fc39824ba54768"
+    },
+    {
+      "file": "36.57-phase-33-network-configuration-integration.md",
+      "title": "Phase 36.57 — Phase 33 Network Configuration Integration",
+      "sha256": "17b98fe186f51dba6389a42cc36db2c27bd5035859a208af4528696f0a3f19a9"
+    },
+    {
+      "file": "36.58-phase-34-accelerator-configuration-integration.md",
+      "title": "Phase 36.58 — Phase 34 Accelerator Configuration Integration",
+      "sha256": "cac47e6a8dbfa6cd29afcf2b031178de8fb7c57050f531d244c915475bcd0419"
+    },
+    {
+      "file": "36.59-phase-35-package-configuration-integration.md",
+      "title": "Phase 36.59 — Phase 35 Package Configuration Integration",
+      "sha256": "b4dfad488e4f56219c3ec7e55d634a6df7e3962d42c5705033c2cd1991e59f37"
+    },
+    {
+      "file": "36.60-phase-37-secrets-integration.md",
+      "title": "Phase 36.60 — Phase 37 Secrets Integration",
+      "sha256": "d3124c1d281306c37a0c44a3dda2248da607f49869fd242e1ded56fc584168cb"
+    },
+    {
+      "file": "36.61-phase-38-identity-integration.md",
+      "title": "Phase 36.61 — Phase 38 Identity Integration",
+      "sha256": "bfc3b33e9ecc25cc4e34b76e4a000c269df54b0fb9b514414e680d09e1478327"
+    },
+    {
+      "file": "36.62-phase-39-timeline-integration.md",
+      "title": "Phase 36.62 — Phase 39 Timeline Integration",
+      "sha256": "9531d43c1a294fbd07f0821d501867fd9fbb4b077bfcafaf1017c9134a96b4c6"
+    },
+    {
+      "file": "36.63-phase-42-knowledge-graph-integration.md",
+      "title": "Phase 36.63 — Phase 42 Knowledge Graph Integration",
+      "sha256": "82a3137ddd04f68ab154a55ac46fc9a1205d47e5d7156b4973023f344a1ead8d"
+    },
+    {
+      "file": "36.64-failure-injection-transaction-testing.md",
+      "title": "Phase 36.64 — Failure Injection & Transaction Testing",
+      "sha256": "65e490cd572e8c77bdbfac1e1e2a33cbabe376ddf82cc8597f1e775ca051297b"
+    },
+    {
+      "file": "36.65-configuration-management-system-closure-readiness-gate.md",
+      "title": "Phase 36.65 — Configuration Management System Closure & Readiness Gate",
+      "sha256": "05f8375c21074e4f6551904749dd47989cad276cab4280f1c64a73aa4ef7b3a9"
+    }
+  ]
+}

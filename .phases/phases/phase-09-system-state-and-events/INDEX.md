@@ -1,0 +1,21 @@
+# Prompt Index
+
+- `9.0.md` — Rebuntu --- Phase 9.0 --- Automation Runtime
+- `9.1.md` — Rebuntu --- Phase 9.1 --- Automaton Definition
+- `9.2.md` — Rebuntu --- Phase 9.2 --- Trigger Binding
+- `9.3.md` — Rebuntu --- Phase 9.3 --- Event-Driven Automation
+- `9.4.md` — Rebuntu --- Phase 9.4 --- Condition-Driven Automation
+- `9.5.md` — Rebuntu --- Phase 9.5 --- Scheduled Automation
+- `9.6.md` — Rebuntu --- Phase 9.6 --- systemd Timer Provider
+- `9.7.md` — Rebuntu --- Phase 9.7 --- Kernel / udev Activation
+- `9.8.md` — Rebuntu --- Phase 9.8 --- Path / Device / Socket Activation
+- `9.9.md` — Rebuntu --- Phase 9.9 --- Debounce / Coalescing
+- `9.10.md` — Rebuntu --- Phase 9.10 --- Throttling / Cooldown
+- `9.11.md` — Rebuntu --- Phase 9.11 --- Automation State
+- `9.12.md` — Rebuntu --- Phase 9.12 --- Automation Policy
+- `9.13.md` — Rebuntu --- Phase 9.13 --- Failure & Retry
+- `9.14.md` — Rebuntu --- Phase 9.14 --- Automation Verification
+- `9.15.md` — Rebuntu --- Phase 9.15 --- Automation Evidence
+- `9.16.md` — Rebuntu --- Phase 9.16 --- Historical Automaton Migration
+- `9.17.md` — Rebuntu --- Phase 9.17 --- Automation Discovery & Management
+- `9.18.md` — Rebuntu --- Phase 9.18 --- Automation Integration Audit

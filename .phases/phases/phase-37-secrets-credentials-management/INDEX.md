@@ -1,0 +1,66 @@
+# Prompt Index
+
+- `37.0-secrets-credentials-management-system-foundation.md` — Phase 37.0 — Secrets & Credentials Management System Foundation
+- `37.1-secret-domain-model.md` — Phase 37.1 — Secret Domain Model
+- `37.2-secret-provider-discovery.md` — Phase 37.2 — Secret Provider Discovery
+- `37.3-secretref-stable-secret-identity.md` — Phase 37.3 — SecretRef & Stable Secret Identity
+- `37.4-secret-material-custody-boundary.md` — Phase 37.4 — Secret Material Custody Boundary
+- `37.5-secret-classification-model.md` — Phase 37.5 — Secret Classification Model
+- `37.6-credential-type-model.md` — Phase 37.6 — Credential Type Model
+- `37.7-secret-scope-ownership.md` — Phase 37.7 — Secret Scope & Ownership
+- `37.8-secret-metadata-model.md` — Phase 37.8 — Secret Metadata Model
+- `37.9-secret-status-lifecycle-state.md` — Phase 37.9 — Secret Status & Lifecycle State
+- `37.10-secret-access-capability-model.md` — Phase 37.10 — Secret Access Capability Model
+- `37.11-secret-access-policy.md` — Phase 37.11 — Secret Access Policy
+- `37.12-secret-resolution-boundary.md` — Phase 37.12 — Secret Resolution Boundary
+- `37.13-secret-injection-boundary.md` — Phase 37.13 — Secret Injection Boundary
+- `37.14-secret-environment-variable-boundary.md` — Phase 37.14 — Secret Environment Variable Boundary
+- `37.15-secret-file-keyfile-boundary.md` — Phase 37.15 — Secret File & Keyfile Boundary
+- `37.16-secret-command-line-argument-boundary.md` — Phase 37.16 — Secret Command-Line Argument Boundary
+- `37.17-secret-standard-input-boundary.md` — Phase 37.17 — Secret Standard Input Boundary
+- `37.18-secret-ipc-temporary-transport-boundary.md` — Phase 37.18 — Secret IPC & Temporary Transport Boundary
+- `37.19-secret-memory-handling-boundary.md` — Phase 37.19 — Secret Memory Handling Boundary
+- `37.20-secret-cache-boundary.md` — Phase 37.20 — Secret Cache Boundary
+- `37.21-secret-persistence-boundary.md` — Phase 37.21 — Secret Persistence Boundary
+- `37.22-structural-redaction-engine.md` — Phase 37.22 — Structural Redaction Engine
+- `37.23-log-redaction-integration.md` — Phase 37.23 — Log Redaction Integration
+- `37.24-audit-redaction-integration.md` — Phase 37.24 — Audit Redaction Integration
+- `37.25-configuration-redaction-integration.md` — Phase 37.25 — Configuration Redaction Integration
+- `37.26-timeline-redaction-integration.md` — Phase 37.26 — Timeline Redaction Integration
+- `37.27-panel-ui-redaction-integration.md` — Phase 37.27 — Panel & UI Redaction Integration
+- `37.28-cli-redaction-integration.md` — Phase 37.28 — CLI Redaction Integration
+- `37.29-semantic-model-context-boundary.md` — Phase 37.29 — Semantic Model Context Boundary
+- `37.30-agent-context-boundary.md` — Phase 37.30 — Agent Context Boundary
+- `37.31-secret-search-indexing-boundary.md` — Phase 37.31 — Secret Search & Indexing Boundary
+- `37.32-secret-export-boundary.md` — Phase 37.32 — Secret Export Boundary
+- `37.33-secret-import-boundary.md` — Phase 37.33 — Secret Import Boundary
+- `37.34-secret-creation-planning.md` — Phase 37.34 — Secret Creation Planning
+- `37.35-secret-update-planning.md` — Phase 37.35 — Secret Update Planning
+- `37.36-secret-rotation-planning.md` — Phase 37.36 — Secret Rotation Planning
+- `37.37-secret-revocation-planning.md` — Phase 37.37 — Secret Revocation Planning
+- `37.38-secret-deletion-safety-boundary.md` — Phase 37.38 — Secret Deletion Safety Boundary
+- `37.39-secret-expiration-validity.md` — Phase 37.39 — Secret Expiration & Validity
+- `37.40-credential-verification-boundary.md` — Phase 37.40 — Credential Verification Boundary
+- `37.41-secret-provider-health.md` — Phase 37.41 — Secret Provider Health
+- `37.42-secret-access-failure-semantics.md` — Phase 37.42 — Secret Access Failure Semantics
+- `37.43-secret-lease-session-semantics.md` — Phase 37.43 — Secret Lease / Session Semantics
+- `37.44-secret-authorization-model.md` — Phase 37.44 — Secret Authorization Model
+- `37.45-privilege-least-authority-boundary.md` — Phase 37.45 — Privilege & Least-Authority Boundary
+- `37.46-user-service-credential-separation.md` — Phase 37.46 — User & Service Credential Separation
+- `37.47-machine-host-credential-boundary.md` — Phase 37.47 — Machine / Host Credential Boundary
+- `37.48-repository-package-credentials-integration.md` — Phase 37.48 — Repository & Package Credentials Integration
+- `37.49-network-wi-fi-vpn-credentials-integration.md` — Phase 37.49 — Network / Wi-Fi / VPN Credentials Integration
+- `37.50-storage-encryption-credentials-integration.md` — Phase 37.50 — Storage Encryption Credentials Integration
+- `37.51-development-credentials-integration.md` — Phase 37.51 — Development Credentials Integration
+- `37.52-service-credentials-integration.md` — Phase 37.52 — Service Credentials Integration
+- `37.53-container-secret-integration.md` — Phase 37.53 — Container Secret Integration
+- `37.54-ssh-credential-integration.md` — Phase 37.54 — SSH Credential Integration
+- `37.55-api-token-application-credential-integration.md` — Phase 37.55 — API Token & Application Credential Integration
+- `37.56-secret-drift-orphan-detection.md` — Phase 37.56 — Secret Drift & Orphan Detection
+- `37.57-secret-management-cli.md` — Phase 37.57 — Secret Management CLI
+- `37.58-phase-25-panel-integration-api.md` — Phase 37.58 — Phase 25 Panel Integration API
+- `37.59-phase-36-configuration-integration.md` — Phase 37.59 — Phase 36 Configuration Integration
+- `37.60-phase-38-identity-integration.md` — Phase 37.60 — Phase 38 Identity Integration
+- `37.61-phase-39-timeline-integration.md` — Phase 37.61 — Phase 39 Timeline Integration
+- `37.62-failure-injection-secret-leak-testing.md` — Phase 37.62 — Failure Injection & Secret-Leak Testing
+- `37.63-secrets-credentials-management-system-closure-readiness-gate.md` — Phase 37.63 — Secrets & Credentials Management System Closure & Readiness Gate

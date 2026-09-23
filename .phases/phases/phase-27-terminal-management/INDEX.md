@@ -1,0 +1,34 @@
+# Prompt Index
+
+- `27.0-terminal-management-system-foundation.md` — Phase 27.0 — Terminal Management System Foundation
+- `27.1-terminal-domain-model.md` — Phase 27.1 — Terminal Domain Model
+- `27.2-terminal-provider-discovery.md` — Phase 27.2 — Terminal Provider Discovery
+- `27.3-gnome-terminal-provider-adapter.md` — Phase 27.3 — GNOME Terminal Provider Adapter
+- `27.4-terminal-profile-registry.md` — Phase 27.4 — Terminal Profile Registry
+- `27.5-terminal-profile-lifecycle.md` — Phase 27.5 — Terminal Profile Lifecycle
+- `27.6-interactive-shell-launch-policy.md` — Phase 27.6 — Interactive Shell Launch Policy
+- `27.7-bash-console-launch-boundary.md` — Phase 27.7 — Bash Console Launch Boundary
+- `27.8-tty-pty-context-model.md` — Phase 27.8 — TTY / PTY Context Model
+- `27.9-terminal-session-identity.md` — Phase 27.9 — Terminal Session Identity
+- `27.10-terminal-capability-detection.md` — Phase 27.10 — Terminal Capability Detection
+- `27.11-term-environment-semantics.md` — Phase 27.11 — TERM & Environment Semantics
+- `27.12-font-configuration-management.md` — Phase 27.12 — Font Configuration Management
+- `27.13-verified-glyph-compatibility-policy.md` — Phase 27.13 — Verified Glyph Compatibility Policy
+- `27.14-palette-color-capability-management.md` — Phase 27.14 — Palette & Color Capability Management
+- `27.15-terminal-visual-profile.md` — Phase 27.15 — Terminal Visual Profile
+- `27.16-window-tab-behavior.md` — Phase 27.16 — Window & Tab Behavior
+- `27.17-copy-paste-clipboard-boundary.md` — Phase 27.17 — Copy, Paste & Clipboard Boundary
+- `27.18-bracketed-paste-safety.md` — Phase 27.18 — Bracketed Paste Safety
+- `27.19-osc-escape-sequence-security.md` — Phase 27.19 — OSC & Escape Sequence Security
+- `27.20-remote-terminal-ssh-semantics.md` — Phase 27.20 — Remote Terminal & SSH Semantics
+- `27.21-terminal-configuration-ownership-drift.md` — Phase 27.21 — Terminal Configuration Ownership & Drift
+- `27.22-terminal-health-diagnostics.md` — Phase 27.22 — Terminal Health Diagnostics
+- `27.23-terminal-recovery-conservative-fallback.md` — Phase 27.23 — Terminal Recovery & Conservative Fallback
+- `27.24-backup-restore-rollback.md` — Phase 27.24 — Backup, Restore & Rollback
+- `27.25-terminal-management-cli.md` — Phase 27.25 — Terminal Management CLI
+- `27.26-phase-25-panel-integration-api.md` — Phase 27.26 — Phase 25 Panel Integration API
+- `27.27-phase-26-shell-integration-boundary.md` — Phase 27.27 — Phase 26 Shell Integration Boundary
+- `27.28-frontend-independence-future-providers.md` — Phase 27.28 — Frontend Independence & Future Providers
+- `27.29-security-privacy-exposure-audit.md` — Phase 27.29 — Security, Privacy & Exposure Audit
+- `27.30-failure-injection-recovery-testing.md` — Phase 27.30 — Failure Injection & Recovery Testing
+- `27.31-terminal-management-system-closure-readiness-gate.md` — Phase 27.31 — Terminal Management System Closure & Readiness Gate

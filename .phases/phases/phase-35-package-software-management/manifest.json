@@ -1,0 +1,329 @@
+{
+  "phase": 35,
+  "slug": "package-software-management",
+  "directory": "phase-35-package-software-management",
+  "prompt_count": 64,
+  "layout_version": 2,
+  "prompts": [
+    {
+      "file": "35.0-package-software-management-system-foundation.md",
+      "title": "Phase 35.0 — Package & Software Management System Foundation",
+      "sha256": "936823b95e3d446bbe18d82e115f1676ce05ed913530fceea070665616489fcf"
+    },
+    {
+      "file": "35.1-software-domain-model.md",
+      "title": "Phase 35.1 — Software Domain Model",
+      "sha256": "47afd7fdea0d666c866532a089f9a509d5702017a9c0ae66ba7d74e53cbba8e0"
+    },
+    {
+      "file": "35.2-package-provider-discovery.md",
+      "title": "Phase 35.2 — Package Provider Discovery",
+      "sha256": "23312e4145e61e4ee37cfb3759f748dd0471ef83d2b2f8d85af170abe1098a3d"
+    },
+    {
+      "file": "35.3-installed-package-identity.md",
+      "title": "Phase 35.3 — Installed Package Identity",
+      "sha256": "85ad7809e2a26ccc4e89c637a4f9fef6ab962cb0d8fc87b3a69d0d6d9eb9ef95"
+    },
+    {
+      "file": "35.4-application-vs-package-vs-executable-model.md",
+      "title": "Phase 35.4 — Application vs Package vs Executable Model",
+      "sha256": "12a072b8793ff5a8ed23c2bb93e7e19f8910ba0d5666bad04d2d4f685130e1eb"
+    },
+    {
+      "file": "35.5-apt-dpkg-provider-integration.md",
+      "title": "Phase 35.5 — APT & dpkg Provider Integration",
+      "sha256": "f32dfba88306182381bee442fce2bb26c863393e5c1e57f938899a66752f7eb2"
+    },
+    {
+      "file": "35.6-apt-repository-discovery.md",
+      "title": "Phase 35.6 — APT Repository Discovery",
+      "sha256": "1e2ccebea2684b0d5d48f449146030b304b6d328ad28400a61df8996fae800b8"
+    },
+    {
+      "file": "35.7-apt-source-configuration-provenance.md",
+      "title": "Phase 35.7 — APT Source Configuration Provenance",
+      "sha256": "c9bd8938f46f974123f3e04a19f96ce646a37b5738cebd32dafe4627e6532931"
+    },
+    {
+      "file": "35.8-repository-trust-signature-boundary.md",
+      "title": "Phase 35.8 — Repository Trust & Signature Boundary",
+      "sha256": "a55fa6a02b0c0246e86f92a243303cc3d4fcef2890990fb815d54ed943e22984"
+    },
+    {
+      "file": "35.9-package-candidate-version-model.md",
+      "title": "Phase 35.9 — Package Candidate & Version Model",
+      "sha256": "0aed240014821952d81194b69d2179dbce38dfa7a0c022a5fa03cc8444285a54"
+    },
+    {
+      "file": "35.10-installed-vs-available-version-semantics.md",
+      "title": "Phase 35.10 — Installed vs Available Version Semantics",
+      "sha256": "e48f42fd07f4eaee17a8b58016c5d65e23238c3149f074ebc3656184cd7bf30c"
+    },
+    {
+      "file": "35.11-package-dependency-evidence.md",
+      "title": "Phase 35.11 — Package Dependency Evidence",
+      "sha256": "86af2eba2d4c01eb0203d60d691cefff46454f9062f57a1bbab16b2eb3db2e85"
+    },
+    {
+      "file": "35.12-native-dependency-resolution-boundary.md",
+      "title": "Phase 35.12 — Native Dependency Resolution Boundary",
+      "sha256": "de9b074de55210f20c65a849c6ecb3dd195b8410e2a424376cdd85ccd244f58f"
+    },
+    {
+      "file": "35.13-package-install-planning.md",
+      "title": "Phase 35.13 — Package Install Planning",
+      "sha256": "3d2bba6f14e9ff3dc795604b2511dfd6028e2e8362bb18d470d22deb0d1d1cba"
+    },
+    {
+      "file": "35.14-package-upgrade-planning.md",
+      "title": "Phase 35.14 — Package Upgrade Planning",
+      "sha256": "0ae345b59748959fc9aa78737e2e8614b7273021b19fd88ce45a821887b2daa4"
+    },
+    {
+      "file": "35.15-package-removal-planning.md",
+      "title": "Phase 35.15 — Package Removal Planning",
+      "sha256": "10c23a57c8d856f70dc5926b93596f43c0bd38e2b85ed941e8d46b66c3895732"
+    },
+    {
+      "file": "35.16-purge-semantics-safety-boundary.md",
+      "title": "Phase 35.16 — Purge Semantics & Safety Boundary",
+      "sha256": "b2c55df8078ab43439e3b6df2ec3cd61b0bc0df860305d37f54b3147ed2d1aaa"
+    },
+    {
+      "file": "35.17-autoremove-safety-boundary.md",
+      "title": "Phase 35.17 — Autoremove Safety Boundary",
+      "sha256": "ec214b8fe61c1df8ce91c78b58afe4f72f26ba03632533b73d8d1ad4d4e25d18"
+    },
+    {
+      "file": "35.18-package-hold-pin-preference-semantics.md",
+      "title": "Phase 35.18 — Package Hold / Pin / Preference Semantics",
+      "sha256": "16a2b0737dc3c7208c229d412351b8002c86ebcae23dc76ca9c501e7db748a0c"
+    },
+    {
+      "file": "35.19-package-configuration-state.md",
+      "title": "Phase 35.19 — Package Configuration State",
+      "sha256": "7486180c66f0e6f5c7c1037086f586514cd008c720c8e35fb5f770ae0d5b3ced"
+    },
+    {
+      "file": "35.20-conffile-conflict-handling.md",
+      "title": "Phase 35.20 — Conffile Conflict Handling",
+      "sha256": "a7f7c34d733a26f360be4130adc7460cd59ada67d169ef8fb58ece01e3609fa8"
+    },
+    {
+      "file": "35.21-package-transaction-model.md",
+      "title": "Phase 35.21 — Package Transaction Model",
+      "sha256": "185fb85710d938ca6cb347ec49d15c1c5add8ad1752ec5e204dad21263e270a4"
+    },
+    {
+      "file": "35.22-package-transaction-verification.md",
+      "title": "Phase 35.22 — Package Transaction Verification",
+      "sha256": "f0e8521ed54478672bb01dac0d23f0f142610d122f960ac1b2f6a0441e282e36"
+    },
+    {
+      "file": "35.23-interrupted-dpkg-apt-recovery.md",
+      "title": "Phase 35.23 — Interrupted dpkg / APT Recovery",
+      "sha256": "83af63937b2b2b41e6b85b8a65c4e4623bd51c40a0e8edf44d75ad6e35bc66c6"
+    },
+    {
+      "file": "35.24-flatpak-provider-integration.md",
+      "title": "Phase 35.24 — Flatpak Provider Integration",
+      "sha256": "2463b2925e9b8db84364126d069e0063f660e296588d2399caff989dd6084c77"
+    },
+    {
+      "file": "35.25-flatpak-remote-ref-model.md",
+      "title": "Phase 35.25 — Flatpak Remote & Ref Model",
+      "sha256": "d8e3a9b798ac1c721dfa3ec7c22e0a13ab6f69cad954048c3aeeef5d97b4fa40"
+    },
+    {
+      "file": "35.26-flatpak-permission-evidence.md",
+      "title": "Phase 35.26 — Flatpak Permission Evidence",
+      "sha256": "ed5c421244df58d1a9b876e9433a5e50abad3acc823d76c8c9121b7320927e91"
+    },
+    {
+      "file": "35.27-snap-provider-integration.md",
+      "title": "Phase 35.27 — Snap Provider Integration",
+      "sha256": "e7469cca3ce982a0810668cec6b1f54ca8a7ef8fc6187b2057487e7be6f0d1f4"
+    },
+    {
+      "file": "35.28-standalone-software-discovery.md",
+      "title": "Phase 35.28 — Standalone Software Discovery",
+      "sha256": "8945e33d2577efe3b30d50a8c6122546710f4ad3c0efb514a9fca00b32bbc472"
+    },
+    {
+      "file": "35.29-local-manual-package-discovery.md",
+      "title": "Phase 35.29 — Local / Manual Package Discovery",
+      "sha256": "7beb7b3f6888ba98bbf1d081d6cda38495720f29c449614c4cb3e3c3176fb6f8"
+    },
+    {
+      "file": "35.30-executable-provenance-resolution.md",
+      "title": "Phase 35.30 — Executable Provenance Resolution",
+      "sha256": "ab2df3a2e46a1d97dce68aa5546b2bfae0bcc841a8ec1fad29b44e72f8d1668f"
+    },
+    {
+      "file": "35.31-desktop-application-discovery.md",
+      "title": "Phase 35.31 — Desktop Application Discovery",
+      "sha256": "c9d4f4c65ceb895a5f874db41e3371255ae837a677222d69d296ce2691fd9b7b"
+    },
+    {
+      "file": "35.32-duplicate-application-detection.md",
+      "title": "Phase 35.32 — Duplicate Application Detection",
+      "sha256": "add2473e8056c21766ca49eb84db3239336bbefcf18ac49c667c7f4dd57abc78"
+    },
+    {
+      "file": "35.33-duplicate-installation-analysis.md",
+      "title": "Phase 35.33 — Duplicate Installation Analysis",
+      "sha256": "b40f5b9f1625e35ddb0c19299aa92f9794b0145a626319cd0990f164fa11200f"
+    },
+    {
+      "file": "35.34-software-ownership-origin.md",
+      "title": "Phase 35.34 — Software Ownership & Origin",
+      "sha256": "679c226074f7d45b8f927101aef7e099f4d07d72364b3e9c859695935291b9b2"
+    },
+    {
+      "file": "35.35-package-file-ownership-evidence.md",
+      "title": "Phase 35.35 — Package File Ownership Evidence",
+      "sha256": "5379cd06cfe5c732405e16d211cf5892245434a5140205757b749e6ddc3d173d"
+    },
+    {
+      "file": "35.36-software-dependency-impact-analysis.md",
+      "title": "Phase 35.36 — Software Dependency Impact Analysis",
+      "sha256": "5520c6f75eb4f893b58c1ddf2ee1d0c8be22d1f42c4d2e84cfd9933c2c3ab18f"
+    },
+    {
+      "file": "35.37-running-workload-impact-analysis.md",
+      "title": "Phase 35.37 — Running Workload Impact Analysis",
+      "sha256": "e038a7937d853c5b40e93d0bef575a44b66b6fa92087839e15d6000e8e584698"
+    },
+    {
+      "file": "35.38-service-impact-integration.md",
+      "title": "Phase 35.38 — Service Impact Integration",
+      "sha256": "3579373d843650e793bd44c084bc3bc2d36fc9d5852e2e50a81c0af6fd409107"
+    },
+    {
+      "file": "35.39-kernel-driver-package-boundary.md",
+      "title": "Phase 35.39 — Kernel / Driver Package Boundary",
+      "sha256": "525e638874d604f6a4a431f24294d022f53c440dbfc2fd6b2f6afe7502a7e2d5"
+    },
+    {
+      "file": "35.40-development-dependency-boundary.md",
+      "title": "Phase 35.40 — Development Dependency Boundary",
+      "sha256": "9677f77e61f834e004452f75e6cd4d76f80ed774988ff35fcdf05f409fe96aca"
+    },
+    {
+      "file": "35.41-container-software-boundary.md",
+      "title": "Phase 35.41 — Container Software Boundary",
+      "sha256": "f4ad6e60a193345ac49492a491c41703ce0f2b4f7389b256ac4a62c4e0934aa6"
+    },
+    {
+      "file": "35.42-software-configuration-boundary.md",
+      "title": "Phase 35.42 — Software Configuration Boundary",
+      "sha256": "4e86216d658afb73adc8528111dd403f8a7a92c1fdc1e68a7728667bf6e365cb"
+    },
+    {
+      "file": "35.43-package-cache-download-semantics.md",
+      "title": "Phase 35.43 — Package Cache & Download Semantics",
+      "sha256": "93fe4727ba46f377eb933c22b2283bd8fddef380771551991f46860fa1c0ded6"
+    },
+    {
+      "file": "35.44-package-cleanup-safety.md",
+      "title": "Phase 35.44 — Package Cleanup Safety",
+      "sha256": "404236fac52539866b41bd3f0b09a5e4d884c8e4cf73a6d7d1ef0d90c902c728"
+    },
+    {
+      "file": "35.45-repository-change-planning.md",
+      "title": "Phase 35.45 — Repository Change Planning",
+      "sha256": "53314c87692560e3e072fea539139c6aaf68afd2585a32e1409363087b7ffd46"
+    },
+    {
+      "file": "35.46-software-change-planning.md",
+      "title": "Phase 35.46 — Software Change Planning",
+      "sha256": "c163d5ca1c8317eefe878efe8e7c5e38e5c192b9f9ca77de72240446fbe7d087"
+    },
+    {
+      "file": "35.47-software-mutation-authorization.md",
+      "title": "Phase 35.47 — Software Mutation Authorization",
+      "sha256": "17d72abb1a0e850279d76213a4c6bf77d29f687f3d150a710a55442d0cc5b822"
+    },
+    {
+      "file": "35.48-package-manager-locking-concurrency.md",
+      "title": "Phase 35.48 — Package Manager Locking & Concurrency",
+      "sha256": "943722e94bdf68d5061a20264978f1e40a69097547459edf53486f0d31b8ccff"
+    },
+    {
+      "file": "35.49-offline-partial-network-behavior.md",
+      "title": "Phase 35.49 — Offline / Partial Network Behavior",
+      "sha256": "8b15c99cd825155efee46e2e9e067cc3e86679337b4834a5c462d66adf863983"
+    },
+    {
+      "file": "35.50-software-drift-detection.md",
+      "title": "Phase 35.50 — Software Drift Detection",
+      "sha256": "1dedb537ac13dab58bf09934aabd3563296ec85fdd20fff3cb496b30e9049a37"
+    },
+    {
+      "file": "35.51-software-health-diagnostics.md",
+      "title": "Phase 35.51 — Software Health Diagnostics",
+      "sha256": "3b813e623adde352f182ef07542068e28f4828240db5d46f5e97841a1e878df9"
+    },
+    {
+      "file": "35.52-software-management-cli.md",
+      "title": "Phase 35.52 — Software Management CLI",
+      "sha256": "2750ddc691a397c5c62b5106c393468f4f759f473dacc0436241faf6470aa72e"
+    },
+    {
+      "file": "35.53-phase-25-panel-integration-api.md",
+      "title": "Phase 35.53 — Phase 25 Panel Integration API",
+      "sha256": "932b0a21bdc9c1f3ac8a193b5fa2f819825e26686d07ecb1973ef03ca3b6d3ef"
+    },
+    {
+      "file": "35.54-phase-24-platform-integration.md",
+      "title": "Phase 35.54 — Phase 24 Platform Integration",
+      "sha256": "372cf0e59d65a7bf33d1f4435a68eadaf048825d62a97ad49911437f52636183"
+    },
+    {
+      "file": "35.55-phase-28-development-integration.md",
+      "title": "Phase 35.55 — Phase 28 Development Integration",
+      "sha256": "a9ccdeb312b58a3ae2ca50fd5a98ddc2eece283a9f5fcdd7157379cfb23c6b71"
+    },
+    {
+      "file": "35.56-phase-29-workload-integration.md",
+      "title": "Phase 35.56 — Phase 29 Workload Integration",
+      "sha256": "95081a3527e8b823fcc1cff7a04e27b92172456cb90f67e6f7197ef9e814b5c6"
+    },
+    {
+      "file": "35.57-phase-31-service-integration.md",
+      "title": "Phase 35.57 — Phase 31 Service Integration",
+      "sha256": "5a1cf1c156fa46da34eaa9920b1e15896a40eb6cbf1268af36ef1e794e598b61"
+    },
+    {
+      "file": "35.58-phase-36-configuration-integration.md",
+      "title": "Phase 35.58 — Phase 36 Configuration Integration",
+      "sha256": "65d8937d2e84bd9fa350eeb9bdb36eb2a7dbba54d70abcd062e7fc467d8a858b"
+    },
+    {
+      "file": "35.59-phase-37-secrets-integration.md",
+      "title": "Phase 35.59 — Phase 37 Secrets Integration",
+      "sha256": "df99081d6b5be1b99a8a102aeb8cbf8189928d8d0b3e6c67f58c0066614545d8"
+    },
+    {
+      "file": "35.60-phase-39-timeline-integration.md",
+      "title": "Phase 35.60 — Phase 39 Timeline Integration",
+      "sha256": "7292402722111ea9ea2cdaf0d3eb31a531c670365ddf5a1fcc1e6a1be3b8f5e2"
+    },
+    {
+      "file": "35.61-cross-provider-software-inventory.md",
+      "title": "Phase 35.61 — Cross-Provider Software Inventory",
+      "sha256": "e7c13d9d288b4d1afd2be3f1c2521e4df77b3f2d45db4d499de8f2831d177f16"
+    },
+    {
+      "file": "35.62-failure-injection-disposable-package-testing.md",
+      "title": "Phase 35.62 — Failure Injection & Disposable Package Testing",
+      "sha256": "9837282c9c4ed33e273f7590fbba5be698bed73d11f917aa5f02da84b9f1d4f3"
+    },
+    {
+      "file": "35.63-package-software-management-system-closure-readiness-gate.md",
+      "title": "Phase 35.63 — Package & Software Management System Closure & Readiness Gate",
+      "sha256": "752b6de957132e6a5bfbdb4e1427d2461fdebdc72c606ebfb8db9b918ad8343a"
+    }
+  ]
+}

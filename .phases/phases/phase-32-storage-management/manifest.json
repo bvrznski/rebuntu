@@ -1,0 +1,294 @@
+{
+  "phase": 32,
+  "slug": "storage-management",
+  "directory": "phase-32-storage-management",
+  "prompt_count": 57,
+  "layout_version": 2,
+  "prompts": [
+    {
+      "file": "32.0-storage-management-system-foundation.md",
+      "title": "Phase 32.0 — Storage Management System Foundation",
+      "sha256": "3a9a0dbffba77079b1659a6f47af420f32088cc55c81cf94a41c48514069c5ac"
+    },
+    {
+      "file": "32.1-storage-domain-model.md",
+      "title": "Phase 32.1 — Storage Domain Model",
+      "sha256": "f4c3bd4bf0b3edcbbed8a2f11280b69c6d2f9b64298f4f9005c0e2d989253d8f"
+    },
+    {
+      "file": "32.2-storage-provider-discovery.md",
+      "title": "Phase 32.2 — Storage Provider Discovery",
+      "sha256": "fe51919e45b181115db389ca6856c8b8056ed9726864be178a2d287db87ff5bd"
+    },
+    {
+      "file": "32.3-physical-device-identity.md",
+      "title": "Phase 32.3 — Physical Device Identity",
+      "sha256": "e0f163bb91431d04eec69b3939139d7578fa0df6bb77e4a094a358ffedb48b61"
+    },
+    {
+      "file": "32.4-partition-table-partition-model.md",
+      "title": "Phase 32.4 — Partition Table & Partition Model",
+      "sha256": "213d24c3a5b3bf545754541d42a4d5ab6a8ede99da21773d119097e8abc58b59"
+    },
+    {
+      "file": "32.5-device-mapper-integration.md",
+      "title": "Phase 32.5 — Device Mapper Integration",
+      "sha256": "436c80c13f09f8277f43ec12d9c74b704ea582fe3e68ac348a802fe2310282ae"
+    },
+    {
+      "file": "32.6-software-raid-integration.md",
+      "title": "Phase 32.6 — Software RAID Integration",
+      "sha256": "3b9f1cbd1265955b4ebbd05a9aa45c1e37b85b4f1e4f46021c35b44a5ef6079f"
+    },
+    {
+      "file": "32.7-luks-encrypted-storage-integration.md",
+      "title": "Phase 32.7 — LUKS & Encrypted Storage Integration",
+      "sha256": "fa199d891f44c957b02b28e0d3d70c434788bed45d6d02805ed31866215be5aa"
+    },
+    {
+      "file": "32.8-filesystem-identity-capabilities.md",
+      "title": "Phase 32.8 — Filesystem Identity & Capabilities",
+      "sha256": "19aec84052618ee1b3261f2b3346f7f98913f71e3cd1f2bc7bcacb2e1d4cdc14"
+    },
+    {
+      "file": "32.9-mount-identity-state.md",
+      "title": "Phase 32.9 — Mount Identity & State",
+      "sha256": "be950c216228d9ba5f3ee8792abbe9e4e870fa51c39d3576426ae3f58b077594"
+    },
+    {
+      "file": "32.10-storage-stack-relationship-model.md",
+      "title": "Phase 32.10 — Storage Stack Relationship Model",
+      "sha256": "1c1f220152249e21e19138081e9b538e2437a20ebb2d306c16e66ce75182e2ff"
+    },
+    {
+      "file": "32.11-stable-storage-references.md",
+      "title": "Phase 32.11 — Stable Storage References",
+      "sha256": "51d751581a6eee954bd5ab4a0d87ccab09704c037918073a46036def0eefa9d8"
+    },
+    {
+      "file": "32.12-block-device-inventory.md",
+      "title": "Phase 32.12 — Block Device Inventory",
+      "sha256": "d3d5e0fc323d89d6ae2e26c44a86cf390312542ed2ef055f0d0aba14d3e2b94c"
+    },
+    {
+      "file": "32.13-filesystem-inventory.md",
+      "title": "Phase 32.13 — Filesystem Inventory",
+      "sha256": "efc43ca727c0b44f6ec071e3a73cb93de3069c2da06ae32562e8790e32a912ed"
+    },
+    {
+      "file": "32.14-mount-inventory.md",
+      "title": "Phase 32.14 — Mount Inventory",
+      "sha256": "90c8119cffd6c2d4752103ff47f4d659adad00fee221b0525d9b50b4a17e970e"
+    },
+    {
+      "file": "32.15-capacity-free-space-allocation-semantics.md",
+      "title": "Phase 32.15 — Capacity / Free Space / Allocation Semantics",
+      "sha256": "1068ac6b852aa38e3125595c2b85857e81d1505fee0a35a384e62dfc4bac0ad2"
+    },
+    {
+      "file": "32.16-storage-health-evidence.md",
+      "title": "Phase 32.16 — Storage Health Evidence",
+      "sha256": "0ebb536b8be881f4a7243f0b81e78c148063ecea85a544cb59b841d26fb6471e"
+    },
+    {
+      "file": "32.17-smart-nvme-health-integration.md",
+      "title": "Phase 32.17 — SMART & NVMe Health Integration",
+      "sha256": "8d31578421e0a8f4148f52e413f6c74a6998e6263384d09239d8c6fd3bceb6fd"
+    },
+    {
+      "file": "32.18-storage-i-o-integration.md",
+      "title": "Phase 32.18 — Storage I/O Integration",
+      "sha256": "028fbb25d925671917beef5f393b33332d60c8dfc536701dae8da420531492d9"
+    },
+    {
+      "file": "32.19-storage-topology-dependency-analysis.md",
+      "title": "Phase 32.19 — Storage Topology & Dependency Analysis",
+      "sha256": "91bb0a02d53ae78cde617d3e4f4803f4835459d87931d9961aa0222d0d6b1a36"
+    },
+    {
+      "file": "32.20-root-boot-efi-protection.md",
+      "title": "Phase 32.20 — Root / Boot / EFI Protection",
+      "sha256": "ec71d66f50c34a8e737235067268844cbb3fce833a807e39c5d20be4a7988980"
+    },
+    {
+      "file": "32.21-home-storage-protection.md",
+      "title": "Phase 32.21 — Home Storage Protection",
+      "sha256": "e362fa4b332c6d001a21eddf524a4ee4838e629a010b653bc957f73db205c8fd"
+    },
+    {
+      "file": "32.22-active-workload-storage-protection.md",
+      "title": "Phase 32.22 — Active Workload Storage Protection",
+      "sha256": "74105d26f3569eab46c962acd9cd92a6091633fa02b0a0ae41013596e598d834"
+    },
+    {
+      "file": "32.23-mount-planning.md",
+      "title": "Phase 32.23 — Mount Planning",
+      "sha256": "7db6832fd4cf0e32f3a0e3eeac280feadc71f213c529ae1f63d2c3378041f6ed"
+    },
+    {
+      "file": "32.24-mount-unmount-lifecycle.md",
+      "title": "Phase 32.24 — Mount / Unmount Lifecycle",
+      "sha256": "77904a1ce425ec4d0bd33188d1b45a5ea232d35284964055567c25f26f389806"
+    },
+    {
+      "file": "32.25-persistent-mount-configuration.md",
+      "title": "Phase 32.25 — Persistent Mount Configuration",
+      "sha256": "c0b16ba52e321d189c84d0e17558a7f77e8ab85f50ac6e88dda60ccb14a29090"
+    },
+    {
+      "file": "32.26-fstab-integration.md",
+      "title": "Phase 32.26 — fstab Integration",
+      "sha256": "d3d84046100575a176e363f074a5a5a6a762621e8b32da6d160e297c6a2c6b28"
+    },
+    {
+      "file": "32.27-automount-systemd-mount-integration.md",
+      "title": "Phase 32.27 — Automount & systemd Mount Integration",
+      "sha256": "8f2322d17b514ee9448254fd6c4f990d87a690c51f1288f8e4f60dc1db81a8ff"
+    },
+    {
+      "file": "32.28-removable-hotplug-storage.md",
+      "title": "Phase 32.28 — Removable & Hotplug Storage",
+      "sha256": "359052b38e52900542d80c165a870beea77b87f94594893cc246e5c2b14ee2c2"
+    },
+    {
+      "file": "32.29-storage-permission-ownership-context.md",
+      "title": "Phase 32.29 — Storage Permission & Ownership Context",
+      "sha256": "1a90d1f9a990870aa1bf7b712e873736419e552e4757fc69125f41ac0250629f"
+    },
+    {
+      "file": "32.30-filesystem-check-boundary.md",
+      "title": "Phase 32.30 — Filesystem Check Boundary",
+      "sha256": "0c4a8f0911674ef4f5074283111c008213f927befea0c632af86fff974ae8fec"
+    },
+    {
+      "file": "32.31-filesystem-resize-boundary.md",
+      "title": "Phase 32.31 — Filesystem Resize Boundary",
+      "sha256": "51a5dd97df6015a00b8cae9c6188eaa7d3de00132c2ddfa5b52754a0995c96e4"
+    },
+    {
+      "file": "32.32-partition-resize-boundary.md",
+      "title": "Phase 32.32 — Partition Resize Boundary",
+      "sha256": "97dcef0237c6b1d0b7a0bf6d16d1801301fa77b2a01d8b386cd00b215c4fb63e"
+    },
+    {
+      "file": "32.33-encrypted-volume-lifecycle.md",
+      "title": "Phase 32.33 — Encrypted Volume Lifecycle",
+      "sha256": "ca2e870ebe724fb2f2839700006c2645ab6bf3a1d49bdd04fa42edd46abf96f3"
+    },
+    {
+      "file": "32.34-raid-lifecycle-boundary.md",
+      "title": "Phase 32.34 — RAID Lifecycle Boundary",
+      "sha256": "6816dbb868505dc8965ff8f34e87b28259ad847759e6e1a8cda846b0f7ffc799"
+    },
+    {
+      "file": "32.35-snapshot-discovery-semantics.md",
+      "title": "Phase 32.35 — Snapshot Discovery & Semantics",
+      "sha256": "470797fda2d091dcda4be7ce3e4412a561476fe0813ce7c6892a1871c1f5aca8"
+    },
+    {
+      "file": "32.36-snapshot-vs-backup-separation.md",
+      "title": "Phase 32.36 — Snapshot vs Backup Separation",
+      "sha256": "73e600900548285c9b505fd0a81422e4a2d6a34800b00f0749b066404353d2be"
+    },
+    {
+      "file": "32.37-backup-integration-boundary.md",
+      "title": "Phase 32.37 — Backup Integration Boundary",
+      "sha256": "ec956ba2188e64353d53497c5c09e75407c4f1618a2e0c82d48e236dbc0baa16"
+    },
+    {
+      "file": "32.38-storage-change-planning.md",
+      "title": "Phase 32.38 — Storage Change Planning",
+      "sha256": "c87143e329743dec7b695476cde8085e654ba6c2829850edf5c2fedb231f497d"
+    },
+    {
+      "file": "32.39-destructive-action-classification.md",
+      "title": "Phase 32.39 — Destructive Action Classification",
+      "sha256": "d2fdd714274e3d0390571e28b1e887eb9ad087f8bf793ae7536b2d90be83f70e"
+    },
+    {
+      "file": "32.40-format-reformat-safety-boundary.md",
+      "title": "Phase 32.40 — Format / Reformat Safety Boundary",
+      "sha256": "d0dd2f0fd796bf5145f88d933fe942f105bac502d5c640517d91b78d26f810b9"
+    },
+    {
+      "file": "32.41-partition-table-mutation-safety.md",
+      "title": "Phase 32.41 — Partition Table Mutation Safety",
+      "sha256": "dc23923ed3baf7e69bc9b54569be9e9a5911e24b59514988fceec1d46aa5a201"
+    },
+    {
+      "file": "32.42-data-migration-planning.md",
+      "title": "Phase 32.42 — Data Migration Planning",
+      "sha256": "9f13650663100b5f6a55ada08eaf6e8971758ba6e6c7ad80c5ea7f8e449c9ea0"
+    },
+    {
+      "file": "32.43-home-migration-support.md",
+      "title": "Phase 32.43 — Home Migration Support",
+      "sha256": "1afa448aa917443d764af06e0b8919c3649634ec43dfab0012a1fa23d12341d7"
+    },
+    {
+      "file": "32.44-storage-recovery-rollback.md",
+      "title": "Phase 32.44 — Storage Recovery & Rollback",
+      "sha256": "2ea25b863fa00f6d3c8c8cd85f6cef6f14b4b0885e5c8e90d1f5ad24f2e98619"
+    },
+    {
+      "file": "32.45-boot-recovery-for-storage-changes.md",
+      "title": "Phase 32.45 — Boot Recovery for Storage Changes",
+      "sha256": "8c74599dabbb8e52c95a4c10e5a919c7c569664c34a59e956c41207bd9add3e1"
+    },
+    {
+      "file": "32.46-storage-drift-detection.md",
+      "title": "Phase 32.46 — Storage Drift Detection",
+      "sha256": "8eeacb458f1786bb77ba42e53fb93b3bbd49543d72d9f52d9b42e77cc0b51db5"
+    },
+    {
+      "file": "32.47-storage-management-cli.md",
+      "title": "Phase 32.47 — Storage Management CLI",
+      "sha256": "13673809f900946bc7687f6d64309c5735f32638a118eba7713c7819a92b7e5b"
+    },
+    {
+      "file": "32.48-phase-25-panel-integration-api.md",
+      "title": "Phase 32.48 — Phase 25 Panel Integration API",
+      "sha256": "2e36377c6ddc40a62e89073a9c6b1f840081222c2b0d8fecdf830c504d6c23ed"
+    },
+    {
+      "file": "32.49-phase-29-workload-integration.md",
+      "title": "Phase 32.49 — Phase 29 Workload Integration",
+      "sha256": "ef59b844f8645aded15caa7595bc40757c267d778a732cd3017271eb28744aec"
+    },
+    {
+      "file": "32.50-phase-30-resource-integration.md",
+      "title": "Phase 32.50 — Phase 30 Resource Integration",
+      "sha256": "dbef0f8dd033d46fcd944d12d676eb61b17cb28ec04e2b822743d797a03bee51"
+    },
+    {
+      "file": "32.51-phase-31-service-integration.md",
+      "title": "Phase 32.51 — Phase 31 Service Integration",
+      "sha256": "446121879588bdebb260c2f9f46e588a04d12aef8f7bc2017db2306f1f86f7dd"
+    },
+    {
+      "file": "32.52-phase-36-configuration-integration.md",
+      "title": "Phase 32.52 — Phase 36 Configuration Integration",
+      "sha256": "406f6352fed1f5f0c22ed387f269ac0e3edbb5bc0671ba8138264c117d376048"
+    },
+    {
+      "file": "32.53-phase-37-secrets-integration.md",
+      "title": "Phase 32.53 — Phase 37 Secrets Integration",
+      "sha256": "cb9d9f3202ad37c5839df963b7cef4ccf63e2a4dc1215e176216034ed9c413e0"
+    },
+    {
+      "file": "32.54-phase-39-timeline-integration.md",
+      "title": "Phase 32.54 — Phase 39 Timeline Integration",
+      "sha256": "7406850e8b5ea608f5f0573a2df08f0db55090d61f32b29e6dd126cad292b0c7"
+    },
+    {
+      "file": "32.55-failure-injection-disposable-storage-testing.md",
+      "title": "Phase 32.55 — Failure Injection & Disposable Storage Testing",
+      "sha256": "ea63bdfdc7d7b546f753865025c504f25320ea12be9bb2e44fdc8212b889d3e5"
+    },
+    {
+      "file": "32.56-storage-management-system-closure-readiness-gate.md",
+      "title": "Phase 32.56 — Storage Management System Closure & Readiness Gate",
+      "sha256": "e0aa1ee437c28e3f51ec30c5eefd96c72a1d0944e72fbe9772bcdb3c19258351"
+    }
+  ]
+}

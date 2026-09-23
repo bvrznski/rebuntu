@@ -1,0 +1,21 @@
+# Prompt Index
+
+- `17.0.md` — Rebuntu --- Phase 17.0 --- Semantic Administration Architecture
+- `17.1.md` — Rebuntu --- Phase 17.1 --- Semantic Intent Parsing
+- `17.2.md` — Rebuntu --- Phase 17.2 --- Intent → Typed IR
+- `17.3.md` — Rebuntu --- Phase 17.3 --- Semantic Object Resolution
+- `17.4.md` — Rebuntu --- Phase 17.4 --- Ambiguity Resolution
+- `17.5.md` — Rebuntu --- Phase 17.5 --- Log Interpretation
+- `17.6.md` — Rebuntu --- Phase 17.6 --- Event Interpretation
+- `17.7.md` — Rebuntu --- Phase 17.7 --- Alert Interpretation
+- `17.8.md` — Rebuntu --- Phase 17.8 --- Diagnostic Summarization
+- `17.9.md` — Rebuntu --- Phase 17.9 --- Evidence Selection / Request
+- `17.10.md` — Rebuntu --- Phase 17.10 --- Semantic Classification
+- `17.11.md` — Rebuntu --- Phase 17.11 --- Semantic Correlation Assistance
+- `17.12.md` — Rebuntu --- Phase 17.12 --- Suggested Operations
+- `17.13.md` — Rebuntu --- Phase 17.13 --- Semantic Shell Integration
+- `17.14.md` — Rebuntu --- Phase 17.14 --- BitNet Specialization
+- `17.15.md` — Rebuntu --- Phase 17.15 --- Structured Output Reliability
+- `17.16.md` — Rebuntu --- Phase 17.16 --- Semantic Safety Boundary
+- `17.17.md` — Rebuntu --- Phase 17.17 --- Deterministic Fallback
+- `17.18.md` — Rebuntu --- Phase 17.18 --- Semantic Administration Evaluation

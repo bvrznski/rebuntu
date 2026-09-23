@@ -1,0 +1,9 @@
+{
+  "phase": "45",
+  "name": "Rebuntu Unified Control Plane",
+  "full_prompt_count": 353,
+  "architecture_document_count": 12,
+  "entrypoint": "README.md",
+  "runtime_policy": "C++-first deterministic unified control plane",
+  "closure_policy": "two clean fixed-point rediscovery passes plus adversarial authority/bypass audits"
+}

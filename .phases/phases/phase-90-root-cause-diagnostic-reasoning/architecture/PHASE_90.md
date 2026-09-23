@@ -1,0 +1,26 @@
+# Phase 90 — Root-Cause Analysis & Diagnostic Reasoning System
+
+- 90.0: Bootstrap and repository reality audit
+- 90.1: Canonical ontology and identity
+- 90.2: Definitions and lifecycle
+- 90.3: State ownership and persistence
+- 90.4: Observation evidence provenance freshness
+- 90.5: UNKNOWN and conflicting evidence
+- 90.6: Capability and affordance integration
+- 90.7: Goal and desired-state integration
+- 90.8: Planning and operation integration
+- 90.9: Constraints and invariants
+- 90.10: Resources and topology
+- 90.11: Policy authorization
+- 90.12: Mandatory security
+- 90.13: Privilege and native providers
+- 90.14: Failure timeout cancellation partial effects
+- 90.15: Crash restart reconciliation recovery
+- 90.16: Concurrency races replacement TOCTOU
+- 90.17: Boundedness and budgets
+- 90.18: CLI GUI natural-language integration
+- 90.19: Timeline graph context integration
+- 90.20: Distributed and associated systems
+- 90.21: Python model shell authority audit
+- 90.22: Adversarial build runtime migration audit
+- 90.23: Documentation rediscovery and closure

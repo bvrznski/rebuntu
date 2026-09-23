@@ -1,0 +1,26 @@
+# Phase 105 — System Self-Inspection & Architecture Introspection
+
+- 105.0: Bootstrap and repository reality audit
+- 105.1: Canonical ontology and identity
+- 105.2: Definitions and lifecycle
+- 105.3: State ownership and persistence
+- 105.4: Observation evidence provenance freshness
+- 105.5: UNKNOWN and conflicting evidence
+- 105.6: Capability and affordance integration
+- 105.7: Goal and desired-state integration
+- 105.8: Planning and operation integration
+- 105.9: Constraints and invariants
+- 105.10: Resources and topology
+- 105.11: Policy authorization
+- 105.12: Mandatory security
+- 105.13: Privilege and native providers
+- 105.14: Failure timeout cancellation partial effects
+- 105.15: Crash restart reconciliation recovery
+- 105.16: Concurrency races replacement TOCTOU
+- 105.17: Boundedness and budgets
+- 105.18: CLI GUI natural-language integration
+- 105.19: Timeline graph context integration
+- 105.20: Distributed and associated systems
+- 105.21: Python model shell authority audit
+- 105.22: Adversarial build runtime migration audit
+- 105.23: Documentation rediscovery and closure

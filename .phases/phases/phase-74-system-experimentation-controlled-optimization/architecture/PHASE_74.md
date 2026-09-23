@@ -1,0 +1,26 @@
+# Phase 74 — System Experimentation & Controlled Optimization System
+
+- 74.0: Bootstrap and repository reality audit
+- 74.1: Canonical ontology and identity
+- 74.2: Definitions and lifecycle
+- 74.3: State ownership and persistence
+- 74.4: Observation evidence provenance freshness
+- 74.5: UNKNOWN and conflicting evidence
+- 74.6: Capability and affordance integration
+- 74.7: Goal and desired-state integration
+- 74.8: Planning and operation integration
+- 74.9: Constraints and invariants
+- 74.10: Resources and topology
+- 74.11: Policy authorization
+- 74.12: Mandatory security
+- 74.13: Privilege and native providers
+- 74.14: Failure timeout cancellation partial effects
+- 74.15: Crash restart reconciliation recovery
+- 74.16: Concurrency races replacement TOCTOU
+- 74.17: Boundedness and budgets
+- 74.18: CLI GUI natural-language integration
+- 74.19: Timeline graph context integration
+- 74.20: Distributed and associated systems
+- 74.21: Python model shell authority audit
+- 74.22: Adversarial build runtime migration audit
+- 74.23: Documentation rediscovery and closure

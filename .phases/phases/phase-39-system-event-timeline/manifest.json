@@ -1,0 +1,454 @@
+{
+  "phase": 39,
+  "slug": "system-event-timeline",
+  "directory": "phase-39-system-event-timeline",
+  "prompt_count": 89,
+  "layout_version": 2,
+  "prompts": [
+    {
+      "file": "39.0-system-event-timeline-system-foundation.md",
+      "title": "Phase 39.0 — System Event & Timeline System Foundation",
+      "sha256": "f5785718b2a469676dfc8b4ebd666de32bc3d5e69a43bb7c9d811df3dd833ae3"
+    },
+    {
+      "file": "39.1-temporal-evidence-domain-model.md",
+      "title": "Phase 39.1 — Temporal Evidence Domain Model",
+      "sha256": "4d43cfb7cda58aa9ebb328605839f4c7c4c3debb5f518c3dfcb9237e9abdf19b"
+    },
+    {
+      "file": "39.2-event-provider-discovery.md",
+      "title": "Phase 39.2 — Event Provider Discovery",
+      "sha256": "6a3bb97274f3a0e290a7aacc8e06b5ae84016db7f2386a06eead478aebcfb2e2"
+    },
+    {
+      "file": "39.3-canonical-event-identity.md",
+      "title": "Phase 39.3 — Canonical Event Identity",
+      "sha256": "43affcf4a181d983700bdb58fcfb2d7d4a664702c4b8a3e468b5546d5565e703"
+    },
+    {
+      "file": "39.4-eventref-evidenceref-model.md",
+      "title": "Phase 39.4 — EventRef & EvidenceRef Model",
+      "sha256": "5a7d53bf4d30df6be5e17e720a82a7708ec398552aefda4f2fea362a0ea73211"
+    },
+    {
+      "file": "39.5-timestamp-semantics.md",
+      "title": "Phase 39.5 — Timestamp Semantics",
+      "sha256": "c7aececc18bd6d27891ba606da92d744f5d668ce59dc63e7694b64cc9205f2cd"
+    },
+    {
+      "file": "39.6-realtime-vs-monotonic-time.md",
+      "title": "Phase 39.6 — Realtime vs Monotonic Time",
+      "sha256": "f1e2cf6281808292e47a97d6972d1dd6999d05f1da8d585bcec14418ffdc52ff"
+    },
+    {
+      "file": "39.7-boot-identity-boot-scoped-time.md",
+      "title": "Phase 39.7 — Boot Identity & Boot-Scoped Time",
+      "sha256": "ac2042bf980c7183893bcc1e8fcea61b4b70ecbb2fdd41d95f83b73ff100e53c"
+    },
+    {
+      "file": "39.8-clock-jump-detection.md",
+      "title": "Phase 39.8 — Clock Jump Detection",
+      "sha256": "52ca3ca6c3031d465056d02e0f0bc6d218ab1f72a147d7e8e0630966a6c91cb7"
+    },
+    {
+      "file": "39.9-time-synchronization-evidence.md",
+      "title": "Phase 39.9 — Time Synchronization Evidence",
+      "sha256": "4417dbb87433b1ba286b94f9515e8db4277509f2afb77f10470be16032add82b"
+    },
+    {
+      "file": "39.10-suspend-resume-temporal-semantics.md",
+      "title": "Phase 39.10 — Suspend / Resume Temporal Semantics",
+      "sha256": "dba30952cc8e14e887f81c43ef8c2630d31be8025d15adc3622849504dbb4ab2"
+    },
+    {
+      "file": "39.11-provider-ordering-semantics.md",
+      "title": "Phase 39.11 — Provider Ordering Semantics",
+      "sha256": "f6e9b71e5d6462509a7f594e29236fe3b44c8092506c74b19e7afd6e89f8485c"
+    },
+    {
+      "file": "39.12-late-out-of-order-event-handling.md",
+      "title": "Phase 39.12 — Late & Out-of-Order Event Handling",
+      "sha256": "b622504d3a2d3fa654c43c1b164729bf8f8b54d4ca130b8940a515b5e3cf6a3f"
+    },
+    {
+      "file": "39.13-event-provenance-model.md",
+      "title": "Phase 39.13 — Event Provenance Model",
+      "sha256": "de77f9161f25058af8e182e66825b9c9605c275a309edfc4c4caacd7db65e48c"
+    },
+    {
+      "file": "39.14-event-confidence-epistemic-classification.md",
+      "title": "Phase 39.14 — Event Confidence & Epistemic Classification",
+      "sha256": "3168c62dcbe487f2cfea29b119363f5590dbc836dc9f86c8e5971b3bbd30828a"
+    },
+    {
+      "file": "39.15-raw-evidence-vs-normalized-event.md",
+      "title": "Phase 39.15 — Raw Evidence vs Normalized Event",
+      "sha256": "27a9b34c153bdbae83f63a07b0a0f2498c9edb91d74f16acbf6a7b14b7b237c1"
+    },
+    {
+      "file": "39.16-event-normalization-pipeline.md",
+      "title": "Phase 39.16 — Event Normalization Pipeline",
+      "sha256": "ae6c12ca039d4bc696f61b3cdde8fc7494db5a65ebffca8a41521aa319d0aff9"
+    },
+    {
+      "file": "39.17-event-deduplication-semantics.md",
+      "title": "Phase 39.17 — Event Deduplication Semantics",
+      "sha256": "149730533ff00999f0e82a580ff2b071caa24de61dc5de8c02089a4eafa29b93"
+    },
+    {
+      "file": "39.18-event-correlation-model.md",
+      "title": "Phase 39.18 — Event Correlation Model",
+      "sha256": "5759911ca24ec7e2f2a5528b741001800611b27a9a98b41d7df6e111ab803a09"
+    },
+    {
+      "file": "39.19-temporal-proximity-boundary.md",
+      "title": "Phase 39.19 — Temporal Proximity Boundary",
+      "sha256": "293e97df74e16837b287ae57c58be81099f1382ed109c95d5e831ac266f22c03"
+    },
+    {
+      "file": "39.20-causality-evidence-boundary.md",
+      "title": "Phase 39.20 — Causality Evidence Boundary",
+      "sha256": "3e5ce751c96f76b815deadca6fc153ad4f370fb1aaf66a93ecc4050cc7527035"
+    },
+    {
+      "file": "39.21-typed-relationship-semantics.md",
+      "title": "Phase 39.21 — Typed Relationship Semantics",
+      "sha256": "65b9e07fa00d07653a317c72ae6ee23aa4b57dcff4c7160a19b32927f9cbc4ec"
+    },
+    {
+      "file": "39.22-event-episode-model.md",
+      "title": "Phase 39.22 — Event Episode Model",
+      "sha256": "39f9e1ea51f38f5db0a7b82861a0653db4269b57293af4f2a51375b98b60536b"
+    },
+    {
+      "file": "39.23-episode-boundary-detection.md",
+      "title": "Phase 39.23 — Episode Boundary Detection",
+      "sha256": "41465eef5306f65b928d0ce78027a9df1905c2ebbbf66ef3e26d8fe7184e3a52"
+    },
+    {
+      "file": "39.24-state-transition-events.md",
+      "title": "Phase 39.24 — State Transition Events",
+      "sha256": "9370f34f571f9f10ded3d7d45ba6ebdb3a5633c4eb4e27bddde4538702f7d4b3"
+    },
+    {
+      "file": "39.25-change-events.md",
+      "title": "Phase 39.25 — Change Events",
+      "sha256": "be12149a50f3f9b9e21fa59316f8aff12952bb2a76dcadaaa7d426e47e59eae4"
+    },
+    {
+      "file": "39.26-failure-recovery-events.md",
+      "title": "Phase 39.26 — Failure & Recovery Events",
+      "sha256": "d243a40384908950f3b7a40e787c95294fcca76b440f9d741fe4e3c83d974e71"
+    },
+    {
+      "file": "39.27-configuration-change-events.md",
+      "title": "Phase 39.27 — Configuration Change Events",
+      "sha256": "bfba4293a6b3b0b1766a6dd7f12b52a9e6cdccc381f3cc5bf8dfc71c9bcbf40d"
+    },
+    {
+      "file": "39.28-package-software-events.md",
+      "title": "Phase 39.28 — Package & Software Events",
+      "sha256": "a21f6e023bb3383aa4cff60c600271fd8e2848c9405f65fcf6ada15aea500231"
+    },
+    {
+      "file": "39.29-service-lifecycle-events.md",
+      "title": "Phase 39.29 — Service Lifecycle Events",
+      "sha256": "ffcabc01eecc0b58d258c1fb3a36de36e8571fc00a85a3cb0d47fea890ac203c"
+    },
+    {
+      "file": "39.30-process-workload-events.md",
+      "title": "Phase 39.30 — Process & Workload Events",
+      "sha256": "1c0e7d8e8b93cd570efbe2bed5fd3df0fe5b5646e41099393f508a922d3af71c"
+    },
+    {
+      "file": "39.31-resource-pressure-events.md",
+      "title": "Phase 39.31 — Resource Pressure Events",
+      "sha256": "22f626b3dac63051d8a03eadca0e6c3e5450c0d0ced0d56389efce9a6ae94761"
+    },
+    {
+      "file": "39.32-storage-events.md",
+      "title": "Phase 39.32 — Storage Events",
+      "sha256": "5eb7ca9028b2de4ce3c3bf49d7fe0814a634f4c0b272c2501d862370c5763c48"
+    },
+    {
+      "file": "39.33-network-events.md",
+      "title": "Phase 39.33 — Network Events",
+      "sha256": "5615562d533c7ddcc1753ad8f146a2edced1f6ab6ebdfb7ba9b3fa304fbbf5c6"
+    },
+    {
+      "file": "39.34-accelerator-events.md",
+      "title": "Phase 39.34 — Accelerator Events",
+      "sha256": "41f6b130d5b40a22f485303cb5801b8518e95f666facf683a7180ff008c37614"
+    },
+    {
+      "file": "39.35-identity-session-events.md",
+      "title": "Phase 39.35 — Identity & Session Events",
+      "sha256": "1b5332b4841c13afb6da411121671e6f067855d1685557df1474709b085b1e62"
+    },
+    {
+      "file": "39.36-secret-safe-lifecycle-events.md",
+      "title": "Phase 39.36 — Secret-Safe Lifecycle Events",
+      "sha256": "8b95e9bb6628806ec936e6804ad3e52ecdb980fc8b26e46b38183d2c9d3483f6"
+    },
+    {
+      "file": "39.37-shell-command-history-integration.md",
+      "title": "Phase 39.37 — Shell Command History Integration",
+      "sha256": "cbf89c80bb6d9f9311af873822443659f93088e6f83d542172d50684cc2655ff"
+    },
+    {
+      "file": "39.38-development-activity-integration.md",
+      "title": "Phase 39.38 — Development Activity Integration",
+      "sha256": "9783bb6a2a1a01bf7ef6d17f8c14b9aecbe3225cfc4d7c03734334e92a5b286a"
+    },
+    {
+      "file": "39.39-boot-timeline-construction.md",
+      "title": "Phase 39.39 — Boot Timeline Construction",
+      "sha256": "9cb7e07f009fc488b8adf928d82a7033d5d9af0d2d2c922b9ac50b22f0f6d6b9"
+    },
+    {
+      "file": "39.40-shutdown-timeline-construction.md",
+      "title": "Phase 39.40 — Shutdown Timeline Construction",
+      "sha256": "fbeefe9bc1b08c3e03efcf93ca5720fc7a88332c93ef13bde73e08c9c0395a5d"
+    },
+    {
+      "file": "39.41-crash-recovery-timeline-construction.md",
+      "title": "Phase 39.41 — Crash / Recovery Timeline Construction",
+      "sha256": "51c55121c2e86a248375dd3dfc5fa7339f5feab719b5d76ce827accb8d4e0dad"
+    },
+    {
+      "file": "39.42-incident-timeline-model.md",
+      "title": "Phase 39.42 — Incident Timeline Model",
+      "sha256": "5f976b51604842e76b5457a758f960f6fcfb00180fe10139c80a02744b0fb690"
+    },
+    {
+      "file": "39.43-diagnostic-timeline-query.md",
+      "title": "Phase 39.43 — Diagnostic Timeline Query",
+      "sha256": "fa60f8360de85f9c5317de4cd0c49d58373792975ce31c9098844e96eaf3698c"
+    },
+    {
+      "file": "39.44-cross-domain-timeline-correlation.md",
+      "title": "Phase 39.44 — Cross-Domain Timeline Correlation",
+      "sha256": "9d03f270de6d4ea689ecf7b8a711b9bb3aa88d855d1a0f0eabef3a43fe89fc9b"
+    },
+    {
+      "file": "39.45-timeline-windowing-pagination.md",
+      "title": "Phase 39.45 — Timeline Windowing & Pagination",
+      "sha256": "a45b967e6a77b85980a76ad5f35ee0f03e79fd2ddf14b6294f271f456372a86a"
+    },
+    {
+      "file": "39.46-timeline-search-filtering.md",
+      "title": "Phase 39.46 — Timeline Search & Filtering",
+      "sha256": "1c651896bab26e11b7afb14ad7bada11ed9f81ff9681df8019628f8229332928"
+    },
+    {
+      "file": "39.47-timeline-summarization-boundary.md",
+      "title": "Phase 39.47 — Timeline Summarization Boundary",
+      "sha256": "697f05bb844a1708b3f1cbd5db9cfe6e78d0866c7a3eb9fe362d28897f3608ae"
+    },
+    {
+      "file": "39.48-timeline-retention-policy.md",
+      "title": "Phase 39.48 — Timeline Retention Policy",
+      "sha256": "d4856ab95e5e50d417ee1af6a6e5715726c15f73f4ccb469d85b8ea8d01f8a93"
+    },
+    {
+      "file": "39.49-timeline-compaction-archival.md",
+      "title": "Phase 39.49 — Timeline Compaction & Archival",
+      "sha256": "ba9f8070b5ec5a4ed1e8e403eeaac63fe144f9bf3c21144fef7d830d7e6f6e0d"
+    },
+    {
+      "file": "39.50-high-cardinality-event-control.md",
+      "title": "Phase 39.50 — High-Cardinality Event Control",
+      "sha256": "365cbce9731ce17ebf58e66e3f21c2edf5e4842554ccb426a658d783b7331bda"
+    },
+    {
+      "file": "39.51-event-storm-handling.md",
+      "title": "Phase 39.51 — Event Storm Handling",
+      "sha256": "d6e2e0db0017380328c6da71e3bc77c1e4ee5d7636f73a32ebdb502c3f806788"
+    },
+    {
+      "file": "39.52-timeline-persistence-model.md",
+      "title": "Phase 39.52 — Timeline Persistence Model",
+      "sha256": "f3e48a6dd327e9d86ca65efb778800854b5d5be6ec26a8a7aaa7d1ce1653cac1"
+    },
+    {
+      "file": "39.53-timeline-indexing-model.md",
+      "title": "Phase 39.53 — Timeline Indexing Model",
+      "sha256": "704988ad1a9e3306675929f2cabe19de2a071a56ca260f28688044f85b9f698c"
+    },
+    {
+      "file": "39.54-timeline-integrity-corruption-handling.md",
+      "title": "Phase 39.54 — Timeline Integrity & Corruption Handling",
+      "sha256": "bdb31280a10f497ae3f626010f7631ec2fed54772d5d5909b76534f82bb486ac"
+    },
+    {
+      "file": "39.55-timeline-import-boundary.md",
+      "title": "Phase 39.55 — Timeline Import Boundary",
+      "sha256": "2bc89aba1e8bb6a3464d151e2f115915a4f8910678e604c511e3f7b531f2c30a"
+    },
+    {
+      "file": "39.56-timeline-export-boundary.md",
+      "title": "Phase 39.56 — Timeline Export Boundary",
+      "sha256": "03fd2dbe509c4f02aeda0aa38567da533a2df353947be5e2038dd6aff62a39ab"
+    },
+    {
+      "file": "39.57-privacy-activity-minimization-boundary.md",
+      "title": "Phase 39.57 — Privacy & Activity-Minimization Boundary",
+      "sha256": "572ea5ce17b31ec982b751af57b7e4789ddb6307096d3a38cc61c91fab33ba2a"
+    },
+    {
+      "file": "39.58-sensitive-command-redaction.md",
+      "title": "Phase 39.58 — Sensitive Command Redaction",
+      "sha256": "0e37e15c3186f5224fad14289e4c0a47bfac5dc4d53e484ead492134bc037ab4"
+    },
+    {
+      "file": "39.59-secret-redaction-integration.md",
+      "title": "Phase 39.59 — Secret Redaction Integration",
+      "sha256": "d4611c18bf4f6835ce7c248a5e83561176f7e2a306493dd1160f023408454107"
+    },
+    {
+      "file": "39.60-semantic-model-timeline-boundary.md",
+      "title": "Phase 39.60 — Semantic Model Timeline Boundary",
+      "sha256": "caf2fa1409d497fe5911ba0fd2b0345b0f1bd442c212011c073e57e33a3d3aa1"
+    },
+    {
+      "file": "39.61-hypothesis-annotation-model.md",
+      "title": "Phase 39.61 — Hypothesis Annotation Model",
+      "sha256": "392bf896519f405e990172bfb340d3b3a1835af16acd29f8742789357fb71a0f"
+    },
+    {
+      "file": "39.62-operator-annotation-model.md",
+      "title": "Phase 39.62 — Operator Annotation Model",
+      "sha256": "f0fbc7aa2df204d0b296e384395c050d6ed0d60fde7716690858a6adde11fb40"
+    },
+    {
+      "file": "39.63-event-bookmark-reference-model.md",
+      "title": "Phase 39.63 — Event Bookmark & Reference Model",
+      "sha256": "aa47aa084ef565054e6823c4bbb9654b7ed101aea44d9f96db308107ecce5f90"
+    },
+    {
+      "file": "39.64-timeline-management-cli.md",
+      "title": "Phase 39.64 — Timeline Management CLI",
+      "sha256": "9afbebcd5f1ec1b48e7706ce1f501568471ee2fbf318cde3e51b1a2fd44f997b"
+    },
+    {
+      "file": "39.65-phase-25-panel-integration-api.md",
+      "title": "Phase 39.65 — Phase 25 Panel Integration API",
+      "sha256": "5b80cd4fed450035fcfc2c6797a5d25590bd1493b73630404e03ee2c6a376bb4"
+    },
+    {
+      "file": "39.66-phase-26-shell-history-integration.md",
+      "title": "Phase 39.66 — Phase 26 Shell History Integration",
+      "sha256": "75c026563daf1fb65eb026e9806bf0be6cd58d80960c5d11aee3f3b3c0aa3905"
+    },
+    {
+      "file": "39.67-phase-29-workload-integration.md",
+      "title": "Phase 39.67 — Phase 29 Workload Integration",
+      "sha256": "920b0ead5883c8b328841879a5d373c0f418dd9709d162949079df41ef740dde"
+    },
+    {
+      "file": "39.68-phase-31-service-integration.md",
+      "title": "Phase 39.68 — Phase 31 Service Integration",
+      "sha256": "0fa662b19c9b5a8f0bab71554a515e5ad9b6179f1c7a6fdcbc7d9351cb79c125"
+    },
+    {
+      "file": "39.69-phase-33-network-integration.md",
+      "title": "Phase 39.69 — Phase 33 Network Integration",
+      "sha256": "92e83081c571dcf4666fc868b2b9c9181c5c1006ada1098283b5884faea2e950"
+    },
+    {
+      "file": "39.70-phase-34-accelerator-integration.md",
+      "title": "Phase 39.70 — Phase 34 Accelerator Integration",
+      "sha256": "aaf5c95bfa05c108e3e81d37df9d014f8cb91e4bbf17d634d50feb48b03ebece"
+    },
+    {
+      "file": "39.71-phase-35-software-integration.md",
+      "title": "Phase 39.71 — Phase 35 Software Integration",
+      "sha256": "28b9bbf1d51f9784fd10e07163e7cc7ea7db80b4251d8e43e932d06d5342a536"
+    },
+    {
+      "file": "39.72-phase-36-configuration-integration.md",
+      "title": "Phase 39.72 — Phase 36 Configuration Integration",
+      "sha256": "71eac5817807f3a92cb9c102040957ec993573c193fec4a6f09cb9f5a86ede44"
+    },
+    {
+      "file": "39.73-phase-37-secrets-integration.md",
+      "title": "Phase 39.73 — Phase 37 Secrets Integration",
+      "sha256": "55f9f23584945043a3e72c7b1d16c7f33aa166dee24ac80d3c3e5eb58d627bc5"
+    },
+    {
+      "file": "39.74-phase-38-identity-integration.md",
+      "title": "Phase 39.74 — Phase 38 Identity Integration",
+      "sha256": "81a1ec8dc1d97b7288f2dbdce5e2660e903b303ae76d9e4e67bf25eff60707a7"
+    },
+    {
+      "file": "39.75-phase-42-knowledge-graph-integration.md",
+      "title": "Phase 39.75 — Phase 42 Knowledge Graph Integration",
+      "sha256": "36a76fe87804f7e60af998c351499fb09689e46331c9b7defc42eac0fa494c26"
+    },
+    {
+      "file": "39.76-phase-43-operator-intelligence-integration.md",
+      "title": "Phase 39.76 — Phase 43 Operator Intelligence Integration",
+      "sha256": "a01a9b1d639f16c9fdf85da86b260ed3e38af409af8cc8f3e6a3809704c0fbc5"
+    },
+    {
+      "file": "39.77-phase-44-adaptive-system-integration.md",
+      "title": "Phase 39.77 — Phase 44 Adaptive System Integration",
+      "sha256": "c9d2ae84b7f2acefce56b732f7226212c6bf25c96a812f1a0e757ad3032e6391"
+    },
+    {
+      "file": "39.78-phase-45-control-plane-integration.md",
+      "title": "Phase 39.78 — Phase 45 Control Plane Integration",
+      "sha256": "2364693b5aeb0f9324aa54dcbee7f7a07baf624b6e4b55dc2272033e906c5bc3"
+    },
+    {
+      "file": "39.79-timeline-replay-boundary.md",
+      "title": "Phase 39.79 — Timeline Replay Boundary",
+      "sha256": "4150078a08e321d140491e76e3ddbb3f7239ae78c8a55ba743859b17706aae78"
+    },
+    {
+      "file": "39.80-historical-state-reconstruction-boundary.md",
+      "title": "Phase 39.80 — Historical State Reconstruction Boundary",
+      "sha256": "888840495ce38375e2e833c7ce2fb715da3064f9d3cb52d306a4aeefeaf10b33"
+    },
+    {
+      "file": "39.81-incident-comparison-boundary.md",
+      "title": "Phase 39.81 — Incident Comparison Boundary",
+      "sha256": "9118ad6ee403f6127af9a94db450f93d833dfc7515ee313e245a22772cc8654d"
+    },
+    {
+      "file": "39.82-evidence-freshness-staleness.md",
+      "title": "Phase 39.82 — Evidence Freshness & Staleness",
+      "sha256": "32db998df88cf3bf03ff7f12f00d3f6c5a4e661249c347314b164204ad777d0b"
+    },
+    {
+      "file": "39.83-cross-boot-correlation.md",
+      "title": "Phase 39.83 — Cross-Boot Correlation",
+      "sha256": "5f5678d247d232397dcfc2294760f37ebaab11096a6e63b0f5bee74ad9986f67"
+    },
+    {
+      "file": "39.84-external-clock-source-correlation.md",
+      "title": "Phase 39.84 — External Clock / Source Correlation",
+      "sha256": "1172f3ca87e31eb8f086da3cfb2e90c3c9f595ee1a2a39aa40b0168a1c18b12c"
+    },
+    {
+      "file": "39.85-timeline-health-diagnostics.md",
+      "title": "Phase 39.85 — Timeline Health Diagnostics",
+      "sha256": "b3e2972e07735d543858ee1402cb6ffa2ec52964b2b6e0b007768fad61353238"
+    },
+    {
+      "file": "39.86-timeline-recovery-reindexing.md",
+      "title": "Phase 39.86 — Timeline Recovery & Reindexing",
+      "sha256": "8f78082a3f58d79322a1073ab15279fec6ac660564a53c53e2a1cc70e1acaa2d"
+    },
+    {
+      "file": "39.87-failure-injection-temporal-disorder-testing.md",
+      "title": "Phase 39.87 — Failure Injection & Temporal Disorder Testing",
+      "sha256": "8dec9f250493a1438f1f6e5da22499a10f08ce4f38bde1253865b017284ed7ec"
+    },
+    {
+      "file": "39.88-system-event-timeline-system-closure-readiness-gate.md",
+      "title": "Phase 39.88 — System Event & Timeline System Closure & Readiness Gate",
+      "sha256": "675bab9f56b442a7edd883b2851ecfef6776c5d1f9311e60c73a54a63888a317"
+    }
+  ]
+}

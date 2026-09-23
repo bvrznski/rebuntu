@@ -1,0 +1,26 @@
+# Phase 106 — Self-Validation & Continuous Architecture Audit
+
+- 106.0: Bootstrap and repository reality audit
+- 106.1: Canonical ontology and identity
+- 106.2: Definitions and lifecycle
+- 106.3: State ownership and persistence
+- 106.4: Observation evidence provenance freshness
+- 106.5: UNKNOWN and conflicting evidence
+- 106.6: Capability and affordance integration
+- 106.7: Goal and desired-state integration
+- 106.8: Planning and operation integration
+- 106.9: Constraints and invariants
+- 106.10: Resources and topology
+- 106.11: Policy authorization
+- 106.12: Mandatory security
+- 106.13: Privilege and native providers
+- 106.14: Failure timeout cancellation partial effects
+- 106.15: Crash restart reconciliation recovery
+- 106.16: Concurrency races replacement TOCTOU
+- 106.17: Boundedness and budgets
+- 106.18: CLI GUI natural-language integration
+- 106.19: Timeline graph context integration
+- 106.20: Distributed and associated systems
+- 106.21: Python model shell authority audit
+- 106.22: Adversarial build runtime migration audit
+- 106.23: Documentation rediscovery and closure

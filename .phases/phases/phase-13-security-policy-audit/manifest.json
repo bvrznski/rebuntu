@@ -1,0 +1,104 @@
+{
+  "phase": 13,
+  "slug": "security-policy-audit",
+  "directory": "phase-13-security-policy-audit",
+  "prompt_count": 19,
+  "layout_version": 2,
+  "prompts": [
+    {
+      "file": "13.0.md",
+      "title": "Rebuntu --- Phase 13.0 --- Security Architecture",
+      "sha256": "6e40281b9527450d148c5a040123d75892b3aafd91209c6eaf90a19e449372f4"
+    },
+    {
+      "file": "13.1.md",
+      "title": "Rebuntu --- Phase 13.1 --- Identity & Authentication Boundaries",
+      "sha256": "3dbe20305a8b207a727d4c9ba489f52e15f37954ad5fec2e76dc97cf017f9926"
+    },
+    {
+      "file": "13.2.md",
+      "title": "Rebuntu --- Phase 13.2 --- Authorization",
+      "sha256": "eb54a52e778cb4a3459e6e1b42da6c2c1c57faa2100d19813db19f6ef296d526"
+    },
+    {
+      "file": "13.3.md",
+      "title": "Rebuntu --- Phase 13.3 --- Privilege",
+      "sha256": "026c851033a708074c98e0b6c73d43e3eb36b6dae30e61d013bd4f00b44456e1"
+    },
+    {
+      "file": "13.4.md",
+      "title": "Rebuntu --- Phase 13.4 --- Capability-Based Access",
+      "sha256": "f2d156868192c74799e32954617d999a403cd931bf9aed132501faa489dcf3d4"
+    },
+    {
+      "file": "13.5.md",
+      "title": "Rebuntu --- Phase 13.5 --- Scope Enforcement",
+      "sha256": "f1d27c14d2a0f033612a483059fc390a8cf70241ddf1b8030947e9bfb5dfa26c"
+    },
+    {
+      "file": "13.6.md",
+      "title": "Rebuntu --- Phase 13.6 --- Policy Enforcement",
+      "sha256": "ee43c3b1c5e60c2b2267fcd8a85221aae81b326a5e5566627d187ad46969209d"
+    },
+    {
+      "file": "13.7.md",
+      "title": "Rebuntu --- Phase 13.7 --- Secrets",
+      "sha256": "c2d572a36fd2782cf80ec6a88c7a4c4c56894617c155692f4d4551637693728f"
+    },
+    {
+      "file": "13.8.md",
+      "title": "Rebuntu --- Phase 13.8 --- Filesystem Protection",
+      "sha256": "bb311a3f73f10193681f46f85741613c936514194d981eb0b1d69eafeaf6b381"
+    },
+    {
+      "file": "13.9.md",
+      "title": "Rebuntu --- Phase 13.9 --- Process / Service Protection",
+      "sha256": "d99a108622939b3aa64bb5e657470feebe279aa66982a830f13bfed7ea3d1c99"
+    },
+    {
+      "file": "13.10.md",
+      "title": "Rebuntu --- Phase 13.10 --- Network Protection",
+      "sha256": "0157b15cfafb8d36b0a24090eeafbafc1e6ec87e4f5eb1ea36ff0b6344feaaa0"
+    },
+    {
+      "file": "13.11.md",
+      "title": "Rebuntu --- Phase 13.11 --- Operation Safety",
+      "sha256": "ff0d87174544c9b53e535a5ace7315f1c0bd9870f4d3081ab7115b9f6d8e222d"
+    },
+    {
+      "file": "13.12.md",
+      "title": "Rebuntu --- Phase 13.12 --- Destructive-Action Controls",
+      "sha256": "78ee8eac3926968b8906c298712a44e71945354bcdc577b5b977086ffed237c5"
+    },
+    {
+      "file": "13.13.md",
+      "title": "Rebuntu --- Phase 13.13 --- Audit Trail",
+      "sha256": "143e1a7a3b268a383d8ac82652b50e57e9478fadc21d901a5c7f92044eaf0390"
+    },
+    {
+      "file": "13.14.md",
+      "title": "Rebuntu --- Phase 13.14 --- Security Assertions",
+      "sha256": "25ddcc77283b3e6e7cb0dbdfa764c1a8075161f8012069143055f3a064ce74e2"
+    },
+    {
+      "file": "13.15.md",
+      "title": "Rebuntu --- Phase 13.15 --- Anomaly Response",
+      "sha256": "328f93fff832d07ba9381d89aa3db74fbd9323b93c12bc3136fc0d6aa046a9d6"
+    },
+    {
+      "file": "13.16.md",
+      "title": "Rebuntu --- Phase 13.16 --- Quarantine",
+      "sha256": "8f25fe1a3f06cb822bfcc44835086e0a757493a3141da94c67689faa4a4eb540"
+    },
+    {
+      "file": "13.17.md",
+      "title": "Rebuntu --- Phase 13.17 --- Security Recovery",
+      "sha256": "781d27e15248883950b96b53fdec2860d5c2d2fef766f1734de9108de491b1b8"
+    },
+    {
+      "file": "13.18.md",
+      "title": "Rebuntu --- Phase 13.18 --- Security Hardening Audit",
+      "sha256": "dc168f95ae2178ac729267d0578806002097e59cd7fecd5bc365d38751e8e457"
+    }
+  ]
+}

@@ -1,0 +1,26 @@
+# Phase 93 — Operational Learning System
+
+- 93.0: Bootstrap and repository reality audit
+- 93.1: Canonical ontology and identity
+- 93.2: Definitions and lifecycle
+- 93.3: State ownership and persistence
+- 93.4: Observation evidence provenance freshness
+- 93.5: UNKNOWN and conflicting evidence
+- 93.6: Capability and affordance integration
+- 93.7: Goal and desired-state integration
+- 93.8: Planning and operation integration
+- 93.9: Constraints and invariants
+- 93.10: Resources and topology
+- 93.11: Policy authorization
+- 93.12: Mandatory security
+- 93.13: Privilege and native providers
+- 93.14: Failure timeout cancellation partial effects
+- 93.15: Crash restart reconciliation recovery
+- 93.16: Concurrency races replacement TOCTOU
+- 93.17: Boundedness and budgets
+- 93.18: CLI GUI natural-language integration
+- 93.19: Timeline graph context integration
+- 93.20: Distributed and associated systems
+- 93.21: Python model shell authority audit
+- 93.22: Adversarial build runtime migration audit
+- 93.23: Documentation rediscovery and closure

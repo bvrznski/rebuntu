@@ -1,0 +1,8 @@
+{
+  "phase": "43",
+  "name": "Operator Intelligence System",
+  "full_prompt_count": 231,
+  "architecture_document_count": 12,
+  "entrypoint": "README.md",
+  "runtime_policy": "C++-first deterministic intelligence; explicit semantic/ML boundaries"
+}

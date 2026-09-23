@@ -1,0 +1,192 @@
+# Phase 55 — Goal-Directed Planning, Plan Synthesis & Replanning System
+
+- **55.0** — Phase bootstrap and planning topology audit
+- **55.1** — Goal representation contract
+- **55.2** — Goal identity and scope
+- **55.3** — Goal predicate model
+- **55.4** — Desired-state representation
+- **55.5** — Current-versus-desired state delta
+- **55.6** — Planning problem contract
+- **55.7** — Planning context contract
+- **55.8** — Candidate plan contract
+- **55.9** — Plan identity and versioning
+- **55.10** — Plan step contract
+- **55.11** — Typed state-transition model
+- **55.12** — Operation effect model
+- **55.13** — Expected-effect epistemic boundary
+- **55.14** — Step precondition model
+- **55.15** — Step postcondition model
+- **55.16** — Step verification specification
+- **55.17** — Step resource requirements
+- **55.18** — Step evidence requirements
+- **55.19** — Step compensation references
+- **55.20** — Phase-54 capability integration
+- **55.21** — Phase-54 affordance integration
+- **55.22** — Prerequisite graph expansion
+- **55.23** — Prerequisite-to-plan boundary
+- **55.24** — Operation catalog integration
+- **55.25** — State-transition catalog integration
+- **55.26** — Plan dependency graph
+- **55.27** — Plan DAG validation
+- **55.28** — Plan cycle detection
+- **55.29** — Plan ordering constraints
+- **55.30** — Partial-order planning
+- **55.31** — Sequential plan synthesis
+- **55.32** — Parallelizable-step detection
+- **55.33** — Concurrency conflict detection
+- **55.34** — Resource-aware planning
+- **55.35** — Resource contention planning
+- **55.36** — Temporal planning foundation
+- **55.37** — Deadline-aware planning
+- **55.38** — Schedule-aware planning
+- **55.39** — Service-state planning
+- **55.40** — Storage-state planning
+- **55.41** — Network-state planning
+- **55.42** — GPU and accelerator planning
+- **55.43** — Process and workload planning
+- **55.44** — User and session planning
+- **55.45** — Configuration-state planning
+- **55.46** — Privilege requirement planning
+- **55.47** — Secret-reference planning
+- **55.48** — Alternative-plan generation
+- **55.49** — Provider-alternative planning
+- **55.50** — Capability-alternative planning
+- **55.51** — Prerequisite-alternative planning
+- **55.52** — Plan branching model
+- **55.53** — Conditional plan steps
+- **55.54** — Bounded loop boundary
+- **55.55** — Subplan composition
+- **55.56** — Plan decomposition
+- **55.57** — Hierarchical planning boundary
+- **55.58** — Planning search-space bounds
+- **55.59** — Planning depth bounds
+- **55.60** — Planning breadth bounds
+- **55.61** — Planning deadline and cancellation
+- **55.62** — Planning resource budget
+- **55.63** — Plan cost-vector model
+- **55.64** — Mutation-count metric
+- **55.65** — Restart and reboot cost metric
+- **55.66** — Resource cost metric
+- **55.67** — Temporal cost metric
+- **55.68** — Uncertainty cost metric
+- **55.69** — Reversibility metric
+- **55.70** — Irreversibility boundary
+- **55.71** — Risk metadata without authorization
+- **55.72** — Plan comparison contract
+- **55.73** — Plan dominance and Pareto frontier
+- **55.74** — Plan ranking boundary
+- **55.75** — Heuristic planning boundary
+- **55.76** — Semantic proposer boundary
+- **55.77** — Model-proposed plan ingestion
+- **55.78** — Deterministic plan validation
+- **55.79** — Plan schema validation
+- **55.80** — Plan target validation
+- **55.81** — Plan identity/freshness validation
+- **55.82** — Plan precondition validation
+- **55.83** — Plan capability validation
+- **55.84** — Plan affordance validation
+- **55.85** — Plan resource validation
+- **55.86** — Plan temporal validation
+- **55.87** — Plan privilege validation
+- **55.88** — Phase-47 task-policy validation seam
+- **55.89** — Phase-53 mandatory-security validation seam
+- **55.90** — Phase-45 control-plane handoff
+- **55.91** — Plan-is-not-authorization enforcement
+- **55.92** — Goal-is-not-command enforcement
+- **55.93** — Prerequisite-graph-is-not-plan enforcement
+- **55.94** — Model-plan-is-not-authority enforcement
+- **55.95** — Dry planning contract
+- **55.96** — Plan simulation model
+- **55.97** — Simulation evidence boundary
+- **55.98** — Simulation uncertainty propagation
+- **55.99** — Predicted-state representation
+- **55.100** — Predicted-versus-observed distinction
+- **55.101** — Plan preview rendering
+- **55.102** — Plan explainability
+- **55.103** — Why-this-plan explanation
+- **55.104** — Why-this-step explanation
+- **55.105** — Why-not-alternative explanation
+- **55.106** — Blocker explanation integration
+- **55.107** — CLI plan command
+- **55.108** — CLI plan inspect
+- **55.109** — CLI plan explain
+- **55.110** — CLI plan alternatives
+- **55.111** — GUI plan explorer
+- **55.112** — GUI dependency visualization
+- **55.113** — GUI plan comparison
+- **55.114** — Phase-46 natural-language goal integration
+- **55.115** — Natural-language plan questions
+- **55.116** — Phase-40 command integration
+- **55.117** — Phase-41 workflow boundary
+- **55.118** — Workflow-from-plan boundary
+- **55.119** — Plan-to-workflow boundary
+- **55.120** — Automation planning boundary
+- **55.121** — Phase-48 context integration
+- **55.122** — Phase-42 knowledge-graph integration
+- **55.123** — Phase-39 timeline integration
+- **55.124** — Phase-50 platform integration
+- **55.125** — Phase-51 distributed planning foundation
+- **55.126** — Phase-52 associated-system planning
+- **55.127** — Remote operation planning boundary
+- **55.128** — Remote capability freshness
+- **55.129** — Cross-node dependency planning
+- **55.130** — Cross-node resource constraints
+- **55.131** — Distributed failure assumptions
+- **55.132** — Distributed plan authority separation
+- **55.133** — Plan persistence boundary
+- **55.134** — Plan cache semantics
+- **55.135** — Plan freshness and expiry
+- **55.136** — Plan invalidation
+- **55.137** — Observation-triggered plan invalidation
+- **55.138** — Policy-triggered plan invalidation
+- **55.139** — Security-triggered plan invalidation
+- **55.140** — Resource-triggered plan invalidation
+- **55.141** — Topology-triggered plan invalidation
+- **55.142** — Provider-triggered plan invalidation
+- **55.143** — Pre-execution plan revalidation
+- **55.144** — Step-by-step revalidation
+- **55.145** — Execution feedback ingestion
+- **55.146** — Expected-versus-observed comparison
+- **55.147** — Plan deviation detection
+- **55.148** — Replanning trigger contract
+- **55.149** — Replanning problem construction
+- **55.150** — Remaining-goal computation
+- **55.151** — Plan repair
+- **55.152** — Partial-plan reuse
+- **55.153** — Safe continuation criteria
+- **55.154** — Stop-and-replan semantics
+- **55.155** — Stop-and-escalate semantics
+- **55.156** — Irreversible-step replanning
+- **55.157** — Compensation-aware replanning
+- **55.158** — Failed-compensation handling
+- **55.159** — Ambiguous-effect replanning
+- **55.160** — Crash/restart plan reconciliation
+- **55.161** — Interrupted-plan semantics
+- **55.162** — Stale-plan restart handling
+- **55.163** — Reboot-spanning plan boundary
+- **55.164** — Idempotency-aware planning
+- **55.165** — Retry-aware planning
+- **55.166** — Exactly-once fiction audit
+- **55.167** — TOCTOU planning audit
+- **55.168** — Target-replacement adversarial audit
+- **55.169** — Stale-affordance adversarial audit
+- **55.170** — Resource-race adversarial audit
+- **55.171** — Policy-change adversarial audit
+- **55.172** — Security-change adversarial audit
+- **55.173** — Provider-failure adversarial audit
+- **55.174** — Graph-explosion adversarial audit
+- **55.175** — Planner nontermination audit
+- **55.176** — Malicious semantic proposal audit
+- **55.177** — Shell-control regression audit
+- **55.178** — Python-authority regression audit
+- **55.179** — Duplicate planner audit
+- **55.180** — Planning memory-growth audit
+- **55.181** — Planning performance audit
+- **55.182** — Concurrency and sanitizer audit
+- **55.183** — Build and runtime reachability audit
+- **55.184** — Integration test matrix
+- **55.185** — Documentation and AGENTS synchronization
+- **55.186** — Independent planning rediscovery
+- **55.187** — Independent authority-boundary rediscovery
+- **55.188** — Fixed-point architecture audit
+- **55.189** — Phase-55 final closure

@@ -1,0 +1,26 @@
+# Phase 84 — Distributed Failure & Partition Management System
+
+- 84.0: Bootstrap and repository reality audit
+- 84.1: Canonical ontology and identity
+- 84.2: Definitions and lifecycle
+- 84.3: State ownership and persistence
+- 84.4: Observation evidence provenance freshness
+- 84.5: UNKNOWN and conflicting evidence
+- 84.6: Capability and affordance integration
+- 84.7: Goal and desired-state integration
+- 84.8: Planning and operation integration
+- 84.9: Constraints and invariants
+- 84.10: Resources and topology
+- 84.11: Policy authorization
+- 84.12: Mandatory security
+- 84.13: Privilege and native providers
+- 84.14: Failure timeout cancellation partial effects
+- 84.15: Crash restart reconciliation recovery
+- 84.16: Concurrency races replacement TOCTOU
+- 84.17: Boundedness and budgets
+- 84.18: CLI GUI natural-language integration
+- 84.19: Timeline graph context integration
+- 84.20: Distributed and associated systems
+- 84.21: Python model shell authority audit
+- 84.22: Adversarial build runtime migration audit
+- 84.23: Documentation rediscovery and closure

@@ -1,0 +1,114 @@
+{
+  "phase": 23,
+  "slug": "semantic-log-understanding",
+  "directory": "phase-23-semantic-log-understanding",
+  "prompt_count": 21,
+  "layout_version": 2,
+  "prompts": [
+    {
+      "file": "23.0.md",
+      "title": "Rebuntu — Phase 23.0 — BitNet-Coupled Log Understanding Architecture",
+      "sha256": "2f16d86dabaeceb76db6ce7ed39ac60e6bfb909479358f6e96225b2fb9a47194"
+    },
+    {
+      "file": "23.1.md",
+      "title": "Rebuntu — Phase 23.1 — BitNet Docker Runtime & Provider Contract",
+      "sha256": "00001e1812e46aabadc430f8086bc5cdcf9d8d5fb0a66cf2971997b35018374f"
+    },
+    {
+      "file": "23.2.md",
+      "title": "Rebuntu — Phase 23.2 — BitNet Service Discovery, Readiness & Health",
+      "sha256": "c434cfe75d43df4e03314b11a723be7d1c275849e067629c6958633471a1854b"
+    },
+    {
+      "file": "23.3.md",
+      "title": "Rebuntu — Phase 23.3 — Log Evidence Packaging & Context Construction",
+      "sha256": "e4b9988d32921884415e00357f479d7f906fd32b3d5e1c52c650d969e184fe55"
+    },
+    {
+      "file": "23.4.md",
+      "title": "Rebuntu — Phase 23.4 — Token / Context Budgeting & Evidence Compression",
+      "sha256": "07b85f3ed43a44b0aff8c07ac0b427f311cfc8cff54213dc38e977aa5bf171c5"
+    },
+    {
+      "file": "23.5.md",
+      "title": "Rebuntu — Phase 23.5 — Typed Semantic Log Interpretation",
+      "sha256": "e575b0b0ef86456a7368d8d02b8c6ecc31290b57eb8321f7f595cf6a5b60ae67"
+    },
+    {
+      "file": "23.6.md",
+      "title": "Rebuntu — Phase 23.6 — Kernel / Driver Semantic Understanding",
+      "sha256": "3478d627395261031eb3bbbbbeb74d9f0dcd8a42b34bb41e9dd31bf43c616cb7"
+    },
+    {
+      "file": "23.7.md",
+      "title": "Rebuntu — Phase 23.7 — systemd / Service Failure Understanding",
+      "sha256": "437fb9d7a4ef8bf1e9dfa8fb0361a04bbadf6253bc4594d1ca7d04d734721af6"
+    },
+    {
+      "file": "23.8.md",
+      "title": "Rebuntu — Phase 23.8 — Storage / NVMe / Filesystem Semantic Understanding",
+      "sha256": "58b18073c9b6b17ab0335e6558f8f2c2cfdb909ccc88977a1ab51419bcab9832"
+    },
+    {
+      "file": "23.9.md",
+      "title": "Rebuntu — Phase 23.9 — GPU / NVIDIA / PCIe Semantic Understanding",
+      "sha256": "c744abaa0b05b2f44cceffea03d7992411ae6dc3f753d773e6290fa306e9865d"
+    },
+    {
+      "file": "23.10.md",
+      "title": "Rebuntu — Phase 23.10 — Cross-Source Semantic Correlation",
+      "sha256": "155f4fdaa3e8496150f3d91d0aaf25327d1d571c67efb965c90c49720e8cc578"
+    },
+    {
+      "file": "23.11.md",
+      "title": "Rebuntu — Phase 23.11 — Incident Narrative Construction",
+      "sha256": "98bc8b1d6e3f40f943846c7c8df284ec6ab2a3b2983ae68a8e17afc5cb7b991f"
+    },
+    {
+      "file": "23.12.md",
+      "title": "Rebuntu — Phase 23.12 — Root-Cause Hypothesis Generation & Ranking",
+      "sha256": "b8443bc3504eaa5a28bdc4fbf84b77921fcbcd5b477daeec4d3ac6a4b0f59fd7"
+    },
+    {
+      "file": "23.13.md",
+      "title": "Rebuntu — Phase 23.13 — Missing-Evidence Reasoning & Evidence Requests",
+      "sha256": "b7475e7c191c864eca18223802267ae5ad4a70dd47fc93e5d5e0a60941f4a4ba"
+    },
+    {
+      "file": "23.14.md",
+      "title": "Rebuntu — Phase 23.14 — Historical Incident Comparison & Recurrence Understanding",
+      "sha256": "0e386d999d5fec5d261acaa9997e5715c0a4c643b0a58f0b14018d227d42f94a"
+    },
+    {
+      "file": "23.15.md",
+      "title": "Rebuntu — Phase 23.15 — Phase 21 Predictive-Health Semantic Assistance",
+      "sha256": "2e349984384ff56a5259d414969bbcb0d17f4b3095e568ea473cff2ac01fd907"
+    },
+    {
+      "file": "23.16.md",
+      "title": "Rebuntu — Phase 23.16 — Semantic Safety, Prompt-Injection & Trust Boundary",
+      "sha256": "f48186f32450d9e0cf88ed36a7707063239b381260f860942a0d42df76a9acc6"
+    },
+    {
+      "file": "23.17.md",
+      "title": "Rebuntu — Phase 23.17 — Deterministic Fallback & BitNet-Unavailable Operation",
+      "sha256": "2da08967ea29a390cd00669ea874da157e221cb35549099e9b09112bc14f8db1"
+    },
+    {
+      "file": "23.18.md",
+      "title": "Rebuntu — Phase 23.18 — Evaluation, Calibration & Hallucination Testing",
+      "sha256": "1193756bfbb61a14c5f3b1a2899533566056022c1ef8981bbd0c4a96987fc174"
+    },
+    {
+      "file": "23.19.md",
+      "title": "Rebuntu — Phase 23.19 — Operator Explain / Ask-Logs Interface",
+      "sha256": "7e8ee6fdb7eb4391056bae45eeb034ef81f750e7b9285dd75d9d1edc30227dfb"
+    },
+    {
+      "file": "23.20.md",
+      "title": "Rebuntu — Phase 23.20 — BitNet Log-Understanding Integration & Soak Audit",
+      "sha256": "d9599c64a4811baa51f028e758f8714af4d045a908308f0d59e0be34f23c966f"
+    }
+  ]
+}

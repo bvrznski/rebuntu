@@ -1,0 +1,20 @@
+{
+  "pass": "TREE DEEPENING III + SATURATION II",
+  "scope": "cross-domain reconciliation execution spine",
+  "implementation": [
+    "src/control/reconciliation/pipeline/pipeline.hpp",
+    "src/control/reconciliation/pipeline/pipeline.cpp"
+  ],
+  "test": "tests/rebuntu/test_reconciliation_pipeline.cpp",
+  "affected_phase_ledgers": [
+    55,
+    56,
+    57,
+    58,
+    59,
+    60,
+    61,
+    62
+  ],
+  "native_authority": "preserved: execution delegated through typed injected executor/provider boundary"
+}

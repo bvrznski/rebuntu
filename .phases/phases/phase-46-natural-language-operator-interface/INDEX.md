@@ -1,0 +1,489 @@
+# Phase 46 Index
+
+## Normative architecture
+- `architecture/01-system-boundary.md`
+- `architecture/02-intent-context-authority.md`
+- `architecture/03-contextual-legitimacy.md`
+- `architecture/04-suspicious-intent.md`
+- `architecture/05-justification.md`
+- `architecture/06-gordon-consultation.md`
+- `architecture/07-bitnet-semantic-provider.md`
+- `architecture/08-trust-dataflow.md`
+- `architecture/09-phase45-integration.md`
+- `architecture/10-session-context.md`
+- `architecture/11-operator-experience.md`
+- `architecture/12-closure.md`
+
+## Full executable prompts
+- `46.0` — Foundation and repository archaeology
+- `46.1` — Existing natural-language interface inventory
+- `46.2` — Existing semantic command path audit
+- `46.3` — Existing shell wrapper audit
+- `46.4` — Canonical ask architecture
+- `46.5` — C++-first ask runtime
+- `46.6` — ask executable entrypoint
+- `46.7` — ask argv mode
+- `46.8` — bare ask one-shot prompt mode
+- `46.9` — ask prompt UX
+- `46.10` — shell return semantics
+- `46.11` — Fish integration
+- `46.12` — Bash compatibility
+- `46.13` — TTY detection
+- `46.14` — noninteractive invocation
+- `46.15` — stdin handling
+- `46.16` — stdout stderr contract
+- `46.17` — exit status contract
+- `46.18` — structured output mode
+- `46.19` — machine-readable mode
+- `46.20` — operator identity context
+- `46.21` — session identity context
+- `46.22` — cwd context
+- `46.23` — project context
+- `46.24` — repository context
+- `46.25` — active workflow context
+- `46.26` — recent operator context
+- `46.27` — explicit referent context
+- `46.28` — temporal context from Phase 39
+- `46.29` — structural context from Phase 42
+- `46.30` — intelligence context from Phase 43
+- `46.31` — adaptive context from Phase 44
+- `46.32` — capability context from Phase 45
+- `46.33` — authoritative state context
+- `46.34` — context schema
+- `46.35` — context provenance
+- `46.36` — context freshness
+- `46.37` — context minimization
+- `46.38` — context redaction
+- `46.39` — context size bounds
+- `46.40` — context priority
+- `46.41` — context conflict handling
+- `46.42` — context invalidation
+- `46.43` — context expiry
+- `46.44` — context cache
+- `46.45` — context isolation between sessions
+- `46.46` — context inheritance boundary
+- `46.47` — context poisoning resistance
+- `46.48` — intent candidate schema
+- `46.49` — intent classes
+- `46.50` — query intent
+- `46.51` — task intent
+- `46.52` — recommendation intent
+- `46.53` — plan request intent
+- `46.54` — action request intent
+- `46.55` — clarification response intent
+- `46.56` — meta intent
+- `46.57` — unsupported intent
+- `46.58` — intent provenance
+- `46.59` — intent confidence semantics
+- `46.60` — intent ambiguity
+- `46.61` — intent alternatives
+- `46.62` — intent decomposition
+- `46.63` — multi-action request handling
+- `46.64` — compound intent handling
+- `46.65` — referent resolution
+- `46.66` — pronoun resolution
+- `46.67` — ellipsis resolution
+- `46.68` — deictic reference resolution
+- `46.69` — ordinal reference resolution
+- `46.70` — recent-object resolution
+- `46.71` — ambiguous referent rejection
+- `46.72` — consequential ambiguity threshold
+- `46.73` — BitNet provider adapter
+- `46.74` — BitNet capability negotiation
+- `46.75` — BitNet prompt construction
+- `46.76` — BitNet context projection
+- `46.77` — BitNet structured output schema
+- `46.78` — BitNet parser
+- `46.79` — BitNet schema validation
+- `46.80` — BitNet malformed-output handling
+- `46.81` — BitNet hallucination containment
+- `46.82` — BitNet unavailable fallback
+- `46.83` — BitNet timeout handling
+- `46.84` — BitNet resource budget
+- `46.85` — BitNet local-only boundary
+- `46.86` — semantic provider abstraction
+- `46.87` — alternate semantic provider boundary
+- `46.88` — semantic provider hot swap
+- `46.89` — semantic provider no-authority invariant
+- `46.90` — natural-language may broaden understanding not authority
+- `46.91` — capability resolver
+- `46.92` — typed capability mapping
+- `46.93` — unknown capability handling
+- `46.94` — capability applicability
+- `46.95` — authority resolver
+- `46.96` — authorization context
+- `46.97` — policy resolver
+- `46.98` — policy precedence
+- `46.99` — policy conflict handling
+- `46.100` — policy deny semantics
+- `46.101` — policy allow semantics
+- `46.102` — policy require-confirmation semantics
+- `46.103` — policy require-justification semantics
+- `46.104` — policy require-advisory-review semantics
+- `46.105` — contextual legitimacy model
+- `46.106` — contextual legitimacy evidence
+- `46.107` — expected-use baseline
+- `46.108` — unexpected-use detector
+- `46.109` — context anomaly scoring boundary
+- `46.110` — context anomaly explanation
+- `46.111` — current-state consistency check
+- `46.112` — active-task consistency check
+- `46.113` — recent-action consistency check
+- `46.114` — known-service consistency check
+- `46.115` — known-data-flow consistency check
+- `46.116` — known-endpoint consistency check
+- `46.117` — new external endpoint detection
+- `46.118` — new listener detection
+- `46.119` — new outbound-flow detection
+- `46.120` — new persistence detection
+- `46.121` — unexpected privilege-use detection
+- `46.122` — unexpected secret-access detection
+- `46.123` — unexpected bulk-data access detection
+- `46.124` — unexpected configuration mutation detection
+- `46.125` — unexpected security-control mutation detection
+- `46.126` — unexpected identity mutation detection
+- `46.127` — unexpected storage mutation detection
+- `46.128` — unexpected network mutation detection
+- `46.129` — unexpected service mutation detection
+- `46.130` — unexpected package mutation detection
+- `46.131` — unexpected GPU resource mutation detection
+- `46.132` — unexpected process mutation detection
+- `46.133` — unexpected workflow creation detection
+- `46.134` — unexpected scheduled persistence detection
+- `46.135` — cross-capability risk detection
+- `46.136` — effect-based suspicious-use analysis
+- `46.137` — suspicious intent taxonomy
+- `46.138` — resource exhaustion intent
+- `46.139` — unbounded process creation detection
+- `46.140` — fork bomb semantic detection
+- `46.141` — obfuscated resource exhaustion detection
+- `46.142` — destructive storage effect detection
+- `46.143` — filesystem destruction effect detection
+- `46.144` — boot impairment effect detection
+- `46.145` — network isolation effect detection
+- `46.146` — security safeguard disablement detection
+- `46.147` — firewall weakening effect detection
+- `46.148` — credential collection effect detection
+- `46.149` — secret movement effect detection
+- `46.150` — sensitive log export effect detection
+- `46.151` — history export effect detection
+- `46.152` — environment variable export effect detection
+- `46.153` — home directory exposure effect detection
+- `46.154` — service exposure effect detection
+- `46.155` — remote listener effect detection
+- `46.156` — reverse connection effect detection
+- `46.157` — external data destination detection
+- `46.158` — unknown destination trust handling
+- `46.159` — data classification
+- `46.160` — destination trust classification
+- `46.161` — data-flow policy engine
+- `46.162` — source destination policy
+- `46.163` — exfiltration-shaped combination detection
+- `46.164` — persistence plus outbound-flow detection
+- `46.165` — privilege plus persistence detection
+- `46.166` — secret access plus network egress detection
+- `46.167` — logs plus unknown destination detection
+- `46.168` — effect graph construction
+- `46.169` — Phase 42 risk-path integration
+- `46.170` — suspicious request decision states
+- `46.171` — ALLOW decision
+- `46.172` — ANSWER_ONLY decision
+- `46.173` — CLARIFY decision
+- `46.174` — REQUIRE_JUSTIFICATION decision
+- `46.175` — REQUIRE_CONFIRMATION decision
+- `46.176` — REQUIRE_GORDON_REVIEW decision
+- `46.177` — DENY decision
+- `46.178` — UNKNOWN decision
+- `46.179` — decision provenance
+- `46.180` — decision explanation
+- `46.181` — justification request UX
+- `46.182` — justification schema
+- `46.183` — justification provenance
+- `46.184` — justification minimization
+- `46.185` — justification validation
+- `46.186` — justification consistency check
+- `46.187` — justification current-state check
+- `46.188` — justification policy collision
+- `46.189` — fake justification resistance
+- `46.190` — vague justification handling
+- `46.191` — contradictory justification handling
+- `46.192` — justification does not grant authority
+- `46.193` — re-evaluation after justification
+- `46.194` — strong confirmation boundary
+- `46.195` — confirmation expiry
+- `46.196` — confirmation scope
+- `46.197` — confirmation binding to exact plan
+- `46.198` — changed-plan invalidates confirmation
+- `46.199` — Gordon integration foundation
+- `46.200` — Gordon availability discovery
+- `46.201` — Gordon advisory request schema
+- `46.202` — Gordon EvidenceBundle
+- `46.203` — Gordon evidence minimization
+- `46.204` — Gordon evidence redaction
+- `46.205` — Gordon policy projection
+- `46.206` — Gordon contextual review
+- `46.207` — Gordon inconsistency analysis
+- `46.208` — Gordon missing-evidence suggestions
+- `46.209` — Gordon clarification suggestions
+- `46.210` — Gordon risk explanation
+- `46.211` — Gordon structured advisory response
+- `46.212` — Gordon response validation
+- `46.213` — Gordon uncertainty handling
+- `46.214` — Gordon disagreement handling
+- `46.215` — Gordon timeout
+- `46.216` — Gordon unavailable fallback
+- `46.217` — Gordon compromised-output containment
+- `46.218` — Gordon prompt-injection resistance
+- `46.219` — Gordon verdict not authorization
+- `46.220` — Gordon cannot weaken policy
+- `46.221` — Gordon cannot manufacture evidence
+- `46.222` — Gordon cannot execute
+- `46.223` — deterministic operation without Gordon
+- `46.224` — operator input provenance
+- `46.225` — untrusted evidence provenance
+- `46.226` — instruction-data separation
+- `46.227` — log instruction injection resistance
+- `46.228` — README instruction injection resistance
+- `46.229` — file content injection resistance
+- `46.230` — web content injection resistance
+- `46.231` — process output injection resistance
+- `46.232` — model output injection resistance
+- `46.233` — nested quoted instruction handling
+- `46.234` — copied command handling
+- `46.235` — code block handling
+- `46.236` — shell syntax input handling
+- `46.237` — arbitrary shell intent handling
+- `46.238` — shell metacharacter handling
+- `46.239` — command substitution handling
+- `46.240` — pipeline syntax handling
+- `46.241` — redirection syntax handling
+- `46.242` — encoded payload handling
+- `46.243` — base64 obfuscation handling
+- `46.244` — unicode obfuscation handling
+- `46.245` — homoglyph handling
+- `46.246` — whitespace obfuscation handling
+- `46.247` — natural-language obfuscation handling
+- `46.248` — indirect harmful-effect request handling
+- `46.249` — multi-turn escalation boundary
+- `46.250` — context laundering resistance
+- `46.251` — authority laundering resistance
+- `46.252` — semantic-to-shell prohibition
+- `46.253` — typed Phase 40 intent conversion
+- `46.254` — typed Phase 45 plan conversion
+- `46.255` — Phase 45 applicability check
+- `46.256` — Phase 45 fresh observation
+- `46.257` — Phase 45 validation
+- `46.258` — Phase 45 authorization
+- `46.259` — Phase 45 execution
+- `46.260` — Phase 45 verification
+- `46.261` — Phase 39 recording
+- `46.262` — Phase 41 workflow handoff
+- `46.263` — Taskwarrior provider discovery
+- `46.264` — Taskwarrior integration boundary
+- `46.265` — Taskwarrior natural-language add
+- `46.266` — Taskwarrior natural-language query
+- `46.267` — Taskwarrior natural-language modify
+- `46.268` — Taskwarrior ambiguous task resolution
+- `46.269` — Taskwarrior destructive bulk-change safeguards
+- `46.270` — Task intent versus executable workflow distinction
+- `46.271` — read-only system question path
+- `46.272` — system explanation path
+- `46.273` — what changed query
+- `46.274` — what depends on this query
+- `46.275` — why is this happening query
+- `46.276` — what can I do query
+- `46.277` — plan preview query
+- `46.278` — safe action request path
+- `46.279` — consequential action request path
+- `46.280` — high-risk action request path
+- `46.281` — protected-resource action path
+- `46.282` — ask dry-run
+- `46.283` — ask explain-plan
+- `46.284` — ask show-context
+- `46.285` — ask show-resolved-intent
+- `46.286` — ask show-policy-decision
+- `46.287` — ask show-evidence
+- `46.288` — ask privacy controls
+- `46.289` — ask history boundary
+- `46.290` — ask audit trail
+- `46.291` — ask telemetry
+- `46.292` — ask performance metrics
+- `46.293` — ask latency budget
+- `46.294` — ask cancellation
+- `46.295` — ask timeout
+- `46.296` — ask SIGINT handling
+- `46.297` — ask terminal resize boundary
+- `46.298` — ask Unicode input
+- `46.299` — ask Polish language input
+- `46.300` — ask English language input
+- `46.301` — multilingual intent boundary
+- `46.302` — locale handling
+- `46.303` — date time parsing
+- `46.304` — relative time parsing
+- `46.305` — timezone handling
+- `46.306` — Phase 41 scheduled-task handoff
+- `46.307` — confirmation for scheduling
+- `46.308` — recurring task intent
+- `46.309` — condition-watch intent
+- `46.310` — context-aware automation request
+- `46.311` — automation authority boundary
+- `46.312` — persistent automation scrutiny
+- `46.313` — unexpected persistence scrutiny
+- `46.314` — operator preference integration
+- `46.315` — learned preference authority boundary
+- `46.316` — Phase 44 contextual profile integration
+- `46.317` — contextual policy adaptation boundary
+- `46.318` — no policy self-modification
+- `46.319` — policy modification request handling
+- `46.320` — ask configuration
+- `46.321` — ask policy configuration
+- `46.322` — per-user ask policy
+- `46.323` — per-session ask policy
+- `46.324` — system-wide ask policy
+- `46.325` — policy reload
+- `46.326` — policy versioning
+- `46.327` — policy audit
+- `46.328` — policy simulation
+- `46.329` — policy test harness
+- `46.330` — safe mode
+- `46.331` — read-only safe mode
+- `46.332` — semantic-provider disabled mode
+- `46.333` — Gordon-disabled mode
+- `46.334` — emergency ask disable
+- `46.335` — rate limiting
+- `46.336` — request size limits
+- `46.337` — context size limits
+- `46.338` — semantic inference limits
+- `46.339` — resource limits
+- `46.340` — Phase 29 process containment
+- `46.341` — Phase 30 resource containment
+- `46.342` — BitNet workload placement
+- `46.343` — Gordon workload placement
+- `46.344` — GPU placement boundary
+- `46.345` — CPU-only fallback
+- `46.346` — concurrent ask requests
+- `46.347` — session isolation
+- `46.348` — race handling
+- `46.349` — TOCTOU handling
+- `46.350` — state drift between interpretation and execution
+- `46.351` — re-authorization after drift
+- `46.352` — re-clarification after semantic change
+- `46.353` — secret-safe logging
+- `46.354` — secret-safe prompts
+- `46.355` — SecretRef handling
+- `46.356` — credential request handling
+- `46.357` — credential disclosure denial
+- `46.358` — sensitive output redaction
+- `46.359` — terminal escape sanitization
+- `46.360` — control character sanitization
+- `46.361` — output injection resistance
+- `46.362` — audit event schema
+- `46.363` — Phase 39 ask events
+- `46.364` — Phase 42 ask graph links
+- `46.365` — Phase 43 ask intelligence links
+- `46.366` — Phase 44 ask adaptation links
+- `46.367` — operator feedback
+- `46.368` — false positive suspicious-use feedback
+- `46.369` — false negative suspicious-use feedback
+- `46.370` — feedback does not override policy
+- `46.371` — context anomaly calibration
+- `46.372` — legitimacy calibration
+- `46.373` — semantic parser calibration
+- `46.374` — holdout intent corpus
+- `46.375` — benign admin corpus
+- `46.376` — suspicious intent corpus
+- `46.377` — ambiguous request corpus
+- `46.378` — prompt injection corpus
+- `46.379` — obfuscation corpus
+- `46.380` — fork bomb adversarial test
+- `46.381` — natural-language fork bomb adversarial test
+- `46.382` — new port plus log export adversarial test
+- `46.383` — unknown endpoint exfiltration adversarial test
+- `46.384` — SSH key export adversarial test
+- `46.385` — environment export adversarial test
+- `46.386` — home HTTP exposure adversarial test
+- `46.387` — persistent outbound service adversarial test
+- `46.388` — security-disable adversarial test
+- `46.389` — authorized-but-unexpected adversarial test
+- `46.390` — plausible-justification adversarial test
+- `46.391` — fake-justification adversarial test
+- `46.392` — policy-denied despite justification test
+- `46.393` — Gordon-approves but policy-denies test
+- `46.394` — BitNet-suggests shell but typed path rejects test
+- `46.395` — prompt injection from log test
+- `46.396` — prompt injection from README test
+- `46.397` — prompt injection from process output test
+- `46.398` — stale context adversarial test
+- `46.399` — ambiguous referent adversarial test
+- `46.400` — changed-state after confirmation test
+- `46.401` — changed-plan after confirmation test
+- `46.402` — semantic provider compromise simulation
+- `46.403` — Gordon compromise simulation
+- `46.404` — provider outage tests
+- `46.405` — resource exhaustion tests
+- `46.406` — concurrency tests
+- `46.407` — crash restart tests
+- `46.408` — end-to-end read-only ask scenario
+- `46.409` — end-to-end task scenario
+- `46.410` — end-to-end safe action scenario
+- `46.411` — end-to-end clarification scenario
+- `46.412` — end-to-end justification scenario
+- `46.413` — end-to-end Gordon consultation scenario
+- `46.414` — end-to-end deny scenario
+- `46.415` — end-to-end Phase 45 execution scenario
+- `46.416` — end-to-end Taskwarrior scenario
+- `46.417` — CLI completion boundary
+- `46.418` — man page
+- `46.419` — help text
+- `46.420` — operator documentation
+- `46.421` — security documentation
+- `46.422` — policy authoring documentation
+- `46.423` — semantic provider documentation
+- `46.424` — Gordon integration documentation
+- `46.425` — Taskwarrior integration documentation
+- `46.426` — developer documentation
+- `46.427` — repository source-tree normalization
+- `46.428` — existing NL code migration
+- `46.429` — existing semantic command code migration
+- `46.430` — duplicate intent parser audit
+- `46.431` — duplicate context store audit
+- `46.432` — duplicate policy path audit
+- `46.433` — direct model-to-shell audit
+- `46.434` — direct model-to-command audit
+- `46.435` — direct ask-to-shell audit
+- `46.436` — direct ask-to-privilege audit
+- `46.437` — direct ask-to-domain bypass audit
+- `46.438` — stale Python control ownership audit
+- `46.439` — remaining Python boundary inventory
+- `46.440` — C++-first contract audit
+- `46.441` — AGENTS.md ask architecture contract
+- `46.442` — AGENTS.md semantic no-authority contract
+- `46.443` — AGENTS.md contextual-legitimacy contract
+- `46.444` — AGENTS.md untrusted-evidence contract
+- `46.445` — recursive rediscovery pass one
+- `46.446` — resolve rediscovery pass one
+- `46.447` — recursive rediscovery pass two
+- `46.448` — resolve rediscovery pass two
+- `46.449` — adversarial bypass audit
+- `46.450` — adversarial authority audit
+- `46.451` — adversarial contextual-legitimacy audit
+- `46.452` — adversarial data-flow audit
+- `46.453` — adversarial prompt-injection audit
+- `46.454` — adversarial semantic-provider audit
+- `46.455` — adversarial Gordon audit
+- `46.456` — adversarial policy audit
+- `46.457` — adversarial shell-authority audit
+- `46.458` — final native build
+- `46.459` — final unit tests
+- `46.460` — final integration tests
+- `46.461` — final adversarial suite
+- `46.462` — final end-to-end suite
+- `46.463` — final performance validation
+- `46.464` — final secret-safety audit
+- `46.465` — final source-tree audit
+- `46.466` — final production call-graph trace
+- `46.467` — final authority graph
+- `46.468` — final data-flow graph
+- `46.469` — final remaining Python inventory
+- `46.470` — final fixed-point rediscovery
+- `46.471` — Phase 46 closure and future handoff

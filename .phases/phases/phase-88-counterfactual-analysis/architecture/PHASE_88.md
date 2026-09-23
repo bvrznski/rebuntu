@@ -1,0 +1,26 @@
+# Phase 88 — Counterfactual Analysis System
+
+- 88.0: Bootstrap and repository reality audit
+- 88.1: Canonical ontology and identity
+- 88.2: Definitions and lifecycle
+- 88.3: State ownership and persistence
+- 88.4: Observation evidence provenance freshness
+- 88.5: UNKNOWN and conflicting evidence
+- 88.6: Capability and affordance integration
+- 88.7: Goal and desired-state integration
+- 88.8: Planning and operation integration
+- 88.9: Constraints and invariants
+- 88.10: Resources and topology
+- 88.11: Policy authorization
+- 88.12: Mandatory security
+- 88.13: Privilege and native providers
+- 88.14: Failure timeout cancellation partial effects
+- 88.15: Crash restart reconciliation recovery
+- 88.16: Concurrency races replacement TOCTOU
+- 88.17: Boundedness and budgets
+- 88.18: CLI GUI natural-language integration
+- 88.19: Timeline graph context integration
+- 88.20: Distributed and associated systems
+- 88.21: Python model shell authority audit
+- 88.22: Adversarial build runtime migration audit
+- 88.23: Documentation rediscovery and closure

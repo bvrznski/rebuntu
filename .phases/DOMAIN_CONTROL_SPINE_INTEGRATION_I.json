@@ -1,0 +1,35 @@
+{
+  "pass": "DOMAIN_CONTROL_SPINE_INTEGRATION_I",
+  "timestamp_utc": "2026-09-23T18:17:05.137728+00:00",
+  "bindings": [
+    "services/systemd",
+    "processes/procfs",
+    "storage/filesystems"
+  ],
+  "files": [
+    "src/control/reconciliation/bindings/domain_bindings.hpp",
+    "src/control/reconciliation/bindings/domain_bindings.cpp",
+    "tests/rebuntu/test_domain_pipeline_bindings.cpp"
+  ],
+  "updated_tasks": [
+    ".phases/phases/phase-19-reconciliation/TASK.md",
+    ".phases/phases/phase-29-process-workload-management/TASK.md",
+    ".phases/phases/phase-31-service-management/TASK.md",
+    ".phases/phases/phase-32-storage-management/TASK.md",
+    ".phases/phases/phase-54-dynamic-system-capability-affordance-model/TASK.md",
+    ".phases/phases/phase-55-goal-directed-planning-plan-synthesis-replanning/TASK.md",
+    ".phases/phases/phase-56-intent-goal-desired-state-management/TASK.md",
+    ".phases/phases/phase-57-continuous-reconciliation-goal-maintenance/TASK.md",
+    ".phases/phases/phase-58-constraint-invariant-operational-contract/TASK.md",
+    ".phases/phases/phase-59-change-impact-consequence-analysis/TASK.md",
+    ".phases/phases/phase-60-transactional-change-safe-transition/TASK.md",
+    ".phases/phases/phase-61-recovery-repair-self-healing/TASK.md",
+    ".phases/phases/phase-62-intent-goal-desired-state-management/TASK.md",
+    ".phases/phases/phase-63-continuous-reconciliation-goal-maintenance/TASK.md"
+  ],
+  "native_authority": "preserved",
+  "verification": [
+    "DOMAIN_PIPELINE_BINDINGS_PASS",
+    "PROCESS_RECONCILIATION_PASS"
+  ]
+}

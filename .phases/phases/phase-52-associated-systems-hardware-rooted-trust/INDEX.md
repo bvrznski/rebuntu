@@ -1,0 +1,698 @@
+# Phase 52 Index
+
+## Normative architecture
+- `architecture/01-mission-and-boundary.md`
+- `architecture/02-system-identity.md`
+- `architecture/03-association-ceremony.md`
+- `architecture/04-cryptographic-protocol.md`
+- `architecture/05-association-grants.md`
+- `architecture/06-hardware-authentication.md`
+- `architecture/07-trust-scope-policy.md`
+- `architecture/08-phase51-integration.md`
+- `architecture/09-revocation-recovery.md`
+- `architecture/10-security-privacy.md`
+- `architecture/11-ux-observability.md`
+- `architecture/12-closure.md`
+
+## Full executable prompts
+- `52.0` — foundation and repository archaeology
+- `52.1` — association system ownership boundary
+- `52.2` — Phase 51 boundary audit
+- `52.3` — autonomous system identity
+- `52.4` — realm identity
+- `52.5` — SystemIdentity schema
+- `52.6` — SystemIdentity persistence
+- `52.7` — SystemIdentity key lifecycle
+- `52.8` — identity creation
+- `52.9` — identity rotation
+- `52.10` — identity compromise
+- `52.11` — identity revocation
+- `52.12` — identity recovery
+- `52.13` — identity replacement
+- `52.14` — identity fingerprint
+- `52.15` — human-readable identity display
+- `52.16` — hostname independence
+- `52.17` — IP independence
+- `52.18` — hardware identity independence
+- `52.19` — boot identity separation
+- `52.20` — user identity separation
+- `52.21` — system versus realm identity
+- `52.22` — association identity namespace
+- `52.23` — peer identity representation
+- `52.24` — peer identity pinning
+- `52.25` — peer identity update
+- `52.26` — identity continuity evidence
+- `52.27` — identity discontinuity handling
+- `52.28` — identity collision handling
+- `52.29` — cloned identity detection
+- `52.30` — restored snapshot identity handling
+- `52.31` — association state model
+- `52.32` — association state machine
+- `52.33` — association pending state
+- `52.34` — association active state
+- `52.35` — association restricted state
+- `52.36` — association suspended state
+- `52.37` — association quarantined state
+- `52.38` — association expired state
+- `52.39` — association revoked state
+- `52.40` — association terminated state
+- `52.41` — association provenance
+- `52.42` — association assurance level
+- `52.43` — association freshness
+- `52.44` — association metadata
+- `52.45` — association lifecycle persistence
+- `52.46` — association lifecycle recovery
+- `52.47` — association audit trail
+- `52.48` — association ceremony framework
+- `52.49` — ceremony provider interface
+- `52.50` — ceremony transcript schema
+- `52.51` — ceremony transcript hashing
+- `52.52` — ceremony transcript binding
+- `52.53` — ceremony nonce
+- `52.54` — ceremony expiry
+- `52.55` — ceremony cancellation
+- `52.56` — ceremony timeout
+- `52.57` — ceremony restart safety
+- `52.58` — ceremony crash recovery
+- `52.59` — ceremony replay defense
+- `52.60` — ceremony concurrency
+- `52.61` — ceremony race handling
+- `52.62` — ceremony operator presence
+- `52.63` — ceremony mutual confirmation
+- `52.64` — ceremony unilateral invitation
+- `52.65` — ceremony bilateral pairing
+- `52.66` — ceremony local-only mode
+- `52.67` — ceremony remote mode
+- `52.68` — ceremony offline transfer mode
+- `52.69` — QR ceremony provider
+- `52.70` — QR payload schema
+- `52.71` — QR size constraints
+- `52.72` — QR expiry
+- `52.73` — QR replay defense
+- `52.74` — short authentication string ceremony
+- `52.75` — SAS generation
+- `52.76` — SAS comparison UX
+- `52.77` — SAS mismatch handling
+- `52.78` — file-based ceremony provider
+- `52.79` — removable-media ceremony provider
+- `52.80` — NFC ceremony boundary
+- `52.81` — local proximity ceremony boundary
+- `52.82` — network ceremony provider
+- `52.83` — existing identity-provider ceremony boundary
+- `52.84` — hardware authenticator ceremony provider
+- `52.85` — ceremony provider capability discovery
+- `52.86` — ceremony provider assurance classification
+- `52.87` — ceremony provider failure semantics
+- `52.88` — transport versus trust separation
+- `52.89` — transport confidentiality independence
+- `52.90` — transport integrity assumptions
+- `52.91` — association grant model
+- `52.92` — AssociationGrant schema
+- `52.93` — grant issuer identity
+- `52.94` — grant intended purpose
+- `52.95` — grant trust-scope proposal
+- `52.96` — grant recipient constraints
+- `52.97` — anonymous recipient grant boundary
+- `52.98` — recipient-bound grant
+- `52.99` — grant nonce
+- `52.100` — grant expiry
+- `52.101` — grant not-before
+- `52.102` — grant maximum uses
+- `52.103` — single-use grant
+- `52.104` — multi-use grant boundary
+- `52.105` — grant revocation
+- `52.106` — grant consumption
+- `52.107` — grant consumption atomicity
+- `52.108` — grant replay defense
+- `52.109` — grant theft threat
+- `52.110` — grant transferability
+- `52.111` — grant delegation prohibition
+- `52.112` — grant attenuation
+- `52.113` — grant provenance
+- `52.114` — grant serialization
+- `52.115` — grant QR transport
+- `52.116` — grant file transport
+- `52.117` — grant removable-media transport
+- `52.118` — grant NFC transport
+- `52.119` — grant network transport
+- `52.120` — grant manual-code boundary
+- `52.121` — grant secret-safety
+- `52.122` — grant lost-media handling
+- `52.123` — grant stale-copy handling
+- `52.124` — grant backup boundary
+- `52.125` — grant operator UX
+- `52.126` — grant issuance policy
+- `52.127` — grant acceptance policy
+- `52.128` — grant issuance authorization
+- `52.129` — grant acceptance authorization
+- `52.130` — hardware-presence-required grant issuance
+- `52.131` — hardware-presence-required grant acceptance
+- `52.132` — cryptographic primitive selection policy
+- `52.133` — reviewed crypto library selection
+- `52.134` — crypto agility
+- `52.135` — algorithm identifiers
+- `52.136` — algorithm negotiation
+- `52.137` — algorithm downgrade defense
+- `52.138` — minimum algorithm policy
+- `52.139` — key agreement contract
+- `52.140` — ephemeral key agreement
+- `52.141` — authenticated key exchange
+- `52.142` — forward secrecy
+- `52.143` — session key derivation
+- `52.144` — key separation
+- `52.145` — transcript-bound key derivation
+- `52.146` — channel binding
+- `52.147` — identity authentication
+- `52.148` — peer authentication
+- `52.149` — mutual authentication
+- `52.150` — one-way authentication boundary
+- `52.151` — MITM resistance
+- `52.152` — unknown-key-share resistance
+- `52.153` — key-compromise impersonation analysis
+- `52.154` — replay resistance
+- `52.155` — reflection attack resistance
+- `52.156` — downgrade resistance
+- `52.157` — cross-protocol attack resistance
+- `52.158` — transcript confusion resistance
+- `52.159` — nonce quality
+- `52.160` — randomness provider
+- `52.161` — CSPRNG failure handling
+- `52.162` — private key storage boundary
+- `52.163` — private key non-exportability where available
+- `52.164` — public key distribution
+- `52.165` — ephemeral key destruction
+- `52.166` — session key destruction
+- `52.167` — session resumption boundary
+- `52.168` — session rekeying
+- `52.169` — long-lived channel rekeying
+- `52.170` — post-compromise recovery boundary
+- `52.171` — crypto error handling
+- `52.172` — constant-time library boundary
+- `52.173` — secret zeroization boundary
+- `52.174` — crypto logging prohibition
+- `52.175` — crypto diagnostics redaction
+- `52.176` — protocol versioning
+- `52.177` — protocol negotiation
+- `52.178` — protocol compatibility
+- `52.179` — mixed-version peers
+- `52.180` — protocol feature negotiation
+- `52.181` — protocol extension points
+- `52.182` — protocol state machine
+- `52.183` — protocol parser
+- `52.184` — protocol message schema
+- `52.185` — protocol message bounds
+- `52.186` — protocol malformed-input handling
+- `52.187` — protocol duplicate handling
+- `52.188` — protocol out-of-order handling
+- `52.189` — protocol timeout handling
+- `52.190` — protocol cancellation
+- `52.191` — protocol backpressure
+- `52.192` — protocol rate limiting
+- `52.193` — protocol fuzzing
+- `52.194` — protocol transcript tests
+- `52.195` — cryptographic test vectors
+- `52.196` — interoperability tests
+- `52.197` — FIDO2 provider boundary
+- `52.198` — WebAuthn provider boundary
+- `52.199` — U2F legacy boundary
+- `52.200` — FIDO capability discovery
+- `52.201` — FIDO user-presence semantics
+- `52.202` — FIDO user-verification semantics
+- `52.203` — FIDO credential binding
+- `52.204` — FIDO non-exportability invariant
+- `52.205` — FIDO no-arbitrary-DH assumption
+- `52.206` — FIDO failure handling
+- `52.207` — smartcard provider boundary
+- `52.208` — PIV provider boundary
+- `52.209` — TPM provider boundary
+- `52.210` — TPM-backed SystemIdentity
+- `52.211` — TPM attestation boundary
+- `52.212` — hardware attestation policy
+- `52.213` — hardware assurance provenance
+- `52.214` — hardware authenticator loss
+- `52.215` — hardware authenticator replacement
+- `52.216` — hardware authenticator revocation
+- `52.217` — hardware authenticator recovery
+- `52.218` — multiple authenticator support
+- `52.219` — authenticator quorum boundary
+- `52.220` — software-only ceremony mode
+- `52.221` — hardware-optional architecture audit
+- `52.222` — trust scope model
+- `52.223` — TrustScope schema
+- `52.224` — trust scope capability selectors
+- `52.225` — trust scope task selectors
+- `52.226` — trust scope resource selectors
+- `52.227` — trust scope data-flow selectors
+- `52.228` — trust scope destination selectors
+- `52.229` — trust scope temporal limits
+- `52.230` — trust scope usage limits
+- `52.231` — trust scope operator-presence requirements
+- `52.232` — trust scope read-only profile
+- `52.233` — trust scope compute-request profile
+- `52.234` — trust scope workflow-request profile
+- `52.235` — trust scope monitoring profile
+- `52.236` — trust scope custom profile
+- `52.237` — trust scope attenuation
+- `52.238` — trust scope expansion
+- `52.239` — trust scope reduction
+- `52.240` — trust scope change ceremony
+- `52.241` — trust scope change authorization
+- `52.242` — trust scope versioning
+- `52.243` — trust scope expiry
+- `52.244` — trust scope revocation
+- `52.245` — trust scope inheritance prohibition
+- `52.246` — trust scope explanation
+- `52.247` — association versus authorization
+- `52.248` — association versus membership
+- `52.249` — association versus federation
+- `52.250` — association versus authentication
+- `52.251` — association versus connectivity
+- `52.252` — association versus capability
+- `52.253` — Phase 47 policy integration
+- `52.254` — local policy evaluation
+- `52.255` — remote policy evidence
+- `52.256` — policy intersection
+- `52.257` — policy conflict
+- `52.258` — deny precedence
+- `52.259` — policy unknown handling
+- `52.260` — policy version skew
+- `52.261` — policy freshness
+- `52.262` — policy scope mismatch
+- `52.263` — policy laundering defense
+- `52.264` — authority laundering defense
+- `52.265` — association laundering defense
+- `52.266` — task laundering defense
+- `52.267` — delegation across association
+- `52.268` — delegation attenuation
+- `52.269` — delegation provenance
+- `52.270` — delegation expiry
+- `52.271` — delegation revocation
+- `52.272` — delegation chain visibility
+- `52.273` — cross-association delegation prohibition by default
+- `52.274` — Phase 45 control-plane integration
+- `52.275` — associated remote intent routing
+- `52.276` — target-side revalidation
+- `52.277` — target-side authorization
+- `52.278` — remote plan binding
+- `52.279` — remote plan freshness
+- `52.280` — remote execution provenance
+- `52.281` — associated request denial
+- `52.282` — associated request clarification
+- `52.283` — associated request justification
+- `52.284` — associated request confirmation
+- `52.285` — associated request stronger authorization
+- `52.286` — Phase 48 context integration
+- `52.287` — peer context trust boundary
+- `52.288` — peer context provenance
+- `52.289` — peer context freshness
+- `52.290` — peer context minimization
+- `52.291` — peer context poisoning defense
+- `52.292` — peer context authority-laundering defense
+- `52.293` — Phase 46 ask integration
+- `52.294` — ask associate command
+- `52.295` — ask association status
+- `52.296` — ask association revoke
+- `52.297` — ask association restrict
+- `52.298` — ask association grant creation
+- `52.299` — natural-language peer references
+- `52.300` — ambiguous peer clarification
+- `52.301` — Phase 49 GUI association center
+- `52.302` — GUI pairing ceremony
+- `52.303` — GUI QR ceremony
+- `52.304` — GUI fingerprint verification
+- `52.305` — GUI trust-scope review
+- `52.306` — GUI grant issuance
+- `52.307` — GUI grant status
+- `52.308` — GUI active associations
+- `52.309` — GUI association history
+- `52.310` — GUI revoke flow
+- `52.311` — GUI restrict flow
+- `52.312` — GUI identity-change warning
+- `52.313` — GUI MITM warning
+- `52.314` — GUI stale-association warning
+- `52.315` — GUI assurance display
+- `52.316` — CLI association create
+- `52.317` — CLI association inspect
+- `52.318` — CLI association list
+- `52.319` — CLI association revoke
+- `52.320` — CLI association restrict
+- `52.321` — CLI grant create
+- `52.322` — CLI grant inspect
+- `52.323` — CLI grant revoke
+- `52.324` — CLI fingerprint display
+- `52.325` — CLI ceremony transcript inspect
+- `52.326` — Phase 39 timeline integration
+- `52.327` — association established event
+- `52.328` — association changed event
+- `52.329` — association suspended event
+- `52.330` — association revoked event
+- `52.331` — grant issued event
+- `52.332` — grant consumed event
+- `52.333` — grant expired event
+- `52.334` — identity rotated event
+- `52.335` — peer identity changed event
+- `52.336` — ceremony failed event
+- `52.337` — security anomaly event
+- `52.338` — distributed clock uncertainty
+- `52.339` — Phase 42 graph integration
+- `52.340` — SystemIdentity graph entity
+- `52.341` — Association graph relation
+- `52.342` — TrustScope graph assertion
+- `52.343` — grant graph representation boundary
+- `52.344` — identity-key graph secrecy boundary
+- `52.345` — association provenance graph
+- `52.346` — association history graph boundary
+- `52.347` — graph edge not authority invariant
+- `52.348` — Phase 40 search integration
+- `52.349` — search associations
+- `52.350` — search peers
+- `52.351` — search grants
+- `52.352` — search association events
+- `52.353` — search trust scopes
+- `52.354` — search identity changes
+- `52.355` — Phase 41 workflow integration
+- `52.356` — association-triggered workflow boundary
+- `52.357` — workflow requests across association
+- `52.358` — workflow trust-scope enforcement
+- `52.359` — workflow target policy
+- `52.360` — workflow delegation provenance
+- `52.361` — workflow cancellation across association
+- `52.362` — workflow failure reconciliation
+- `52.363` — Phase 43 intelligence integration
+- `52.364` — association anomaly analysis
+- `52.365` — peer behavior anomaly boundary
+- `52.366` — trust-scope recommendation boundary
+- `52.367` — association explanation
+- `52.368` — security recommendation
+- `52.369` — semantic provider no-authority invariant
+- `52.370` — Phase 44 adaptation boundary
+- `52.371` — no autonomous trust expansion
+- `52.372` — bounded association adaptation recommendations
+- `52.373` — Phase 50 portability integration
+- `52.374` — platform-neutral association core
+- `52.375` — Linux crypto provider integration
+- `52.376` — future Windows crypto provider readiness
+- `52.377` — platform authenticator providers
+- `52.378` — Phase 51 fabric association
+- `52.379` — associate standalone system to fabric
+- `52.380` — associate fabric to fabric boundary
+- `52.381` — fabric identity projection
+- `52.382` — fabric member privacy
+- `52.383` — fabric internal topology disclosure policy
+- `52.384` — fabric capability projection
+- `52.385` — fabric request ingress
+- `52.386` — fabric policy ingress
+- `52.387` — fabric association revocation
+- `52.388` — fabric identity rotation
+- `52.389` — association gateway boundary
+- `52.390` — no implicit fabric merge
+- `52.391` — no automatic node membership from association
+- `52.392` — Kerberos integration boundary
+- `52.393` — Kerberos realm identity provider
+- `52.394` — Kerberos authentication versus association
+- `52.395` — cross-realm Kerberos boundary
+- `52.396` — KDC trust assumptions
+- `52.397` — KDC outage handling
+- `52.398` — Kerberos ticket not association invariant
+- `52.399` — Kerberos principal mapping
+- `52.400` — Kerberos service identity mapping
+- `52.401` — Kerberos optional provider architecture
+- `52.402` — certificate identity provider boundary
+- `52.403` — mTLS provider boundary
+- `52.404` — PKI provider boundary
+- `52.405` — local CA boundary
+- `52.406` — external CA boundary
+- `52.407` — certificate rotation
+- `52.408` — certificate revocation
+- `52.409` — certificate expiry
+- `52.410` — OCSP CRL boundary
+- `52.411` — TOFU boundary
+- `52.412` — TOFU assurance classification
+- `52.413` — TOFU identity-change handling
+- `52.414` — pre-shared trust boundary
+- `52.415` — manual fingerprint verification
+- `52.416` — out-of-band verification
+- `52.417` — physical ceremony assurance
+- `52.418` — remote ceremony assurance
+- `52.419` — assurance-level policy
+- `52.420` — assurance downgrade prohibition
+- `52.421` — association discovery
+- `52.422` — local network peer discovery
+- `52.423` — discovery privacy
+- `52.424` — discovery authentication
+- `52.425` — discovery spoofing defense
+- `52.426` — discovery rate limiting
+- `52.427` — discovery not trust invariant
+- `52.428` — association endpoint discovery
+- `52.429` — endpoint migration
+- `52.430` — multi-address peer
+- `52.431` — NAT traversal boundary
+- `52.432` — relay boundary
+- `52.433` — proxy boundary
+- `52.434` — VPN boundary
+- `52.435` — Tor anonymity boundary
+- `52.436` — network transport abstraction
+- `52.437` — QUIC boundary
+- `52.438` — TLS boundary
+- `52.439` — Noise-style protocol evaluation boundary
+- `52.440` — Unix/local transport boundary
+- `52.441` — TCP transport boundary
+- `52.442` — transport failover
+- `52.443` — transport migration
+- `52.444` — transport endpoint identity independence
+- `52.445` — session model
+- `52.446` — associated session identity
+- `52.447` — session establishment
+- `52.448` — session resumption
+- `52.449` — session expiry
+- `52.450` — session termination
+- `52.451` — session concurrency
+- `52.452` — session capability binding
+- `52.453` — session trust-scope binding
+- `52.454` — session policy binding
+- `52.455` — session reauthorization
+- `52.456` — session identity rotation handling
+- `52.457` — session revocation propagation
+- `52.458` — session partition handling
+- `52.459` — offline peer behavior
+- `52.460` — reconnect behavior
+- `52.461` — reconnect reauthentication
+- `52.462` — reconnect policy revalidation
+- `52.463` — revocation model
+- `52.464` — unilateral revocation
+- `52.465` — bilateral termination
+- `52.466` — emergency revocation
+- `52.467` — revocation reason
+- `52.468` — revocation provenance
+- `52.469` — revocation timestamp uncertainty
+- `52.470` — revocation propagation
+- `52.471` — revocation under partition
+- `52.472` — revocation on reconnect
+- `52.473` — revocation tombstone
+- `52.474` — revocation retention
+- `52.475` — revocation garbage collection boundary
+- `52.476` — revocation false-positive recovery
+- `52.477` — suspension versus revocation
+- `52.478` — quarantine versus revocation
+- `52.479` — association recovery
+- `52.480` — peer loss recovery
+- `52.481` — local state loss recovery
+- `52.482` — identity key loss recovery
+- `52.483` — identity compromise recovery
+- `52.484` — authenticator loss recovery
+- `52.485` — snapshot rollback recovery
+- `52.486` — backup restore recovery
+- `52.487` — recovery ceremony
+- `52.488` — recovery assurance
+- `52.489` — recovery cannot silently restore trust
+- `52.490` — trust re-establishment
+- `52.491` — new identity migration
+- `52.492` — old identity retirement
+- `52.493` — peer notification of identity migration
+- `52.494` — security threat model
+- `52.495` — malicious peer threat
+- `52.496` — MITM threat
+- `52.497` — stolen grant threat
+- `52.498` — replayed grant threat
+- `52.499` — stolen authenticator threat
+- `52.500` — compromised local system threat
+- `52.501` — compromised peer system threat
+- `52.502` — identity key theft threat
+- `52.503` — downgrade threat
+- `52.504` — protocol confusion threat
+- `52.505` — malicious QR threat
+- `52.506` — malicious removable media threat
+- `52.507` — USB safety boundary
+- `52.508` — malformed grant threat
+- `52.509` — malformed certificate threat
+- `52.510` — malformed authenticator response
+- `52.511` — resource exhaustion threat
+- `52.512` — association spam threat
+- `52.513` — ceremony spam threat
+- `52.514` — discovery spam threat
+- `52.515` — peer message flood threat
+- `52.516` — confused deputy threat
+- `52.517` — cross-peer data leak threat
+- `52.518` — cross-association context leak threat
+- `52.519` — secret exfiltration threat
+- `52.520` — metadata privacy threat
+- `52.521` — peer enumeration threat
+- `52.522` — fingerprint spoofing UX threat
+- `52.523` — Unicode peer-name spoofing
+- `52.524` — bidi peer-name spoofing
+- `52.525` — homoglyph peer-name spoofing
+- `52.526` — control-character sanitization
+- `52.527` — security logging
+- `52.528` — secret-safe audit logging
+- `52.529` — association telemetry
+- `52.530` — privacy-preserving telemetry
+- `52.531` — diagnostics bundle
+- `52.532` — diagnostics secret redaction
+- `52.533` — operator-visible provenance
+- `52.534` — who associated whom
+- `52.535` — who authorized scope
+- `52.536` — why association exists
+- `52.537` — why request was permitted
+- `52.538` — why request was denied
+- `52.539` — why association was revoked
+- `52.540` — association safe mode
+- `52.541` — disable new associations mode
+- `52.542` — emergency association freeze
+- `52.543` — preserve existing safe channels
+- `52.544` — break-glass boundary
+- `52.545` — break-glass cannot create silent trust
+- `52.546` — performance budgets
+- `52.547` — handshake latency budget
+- `52.548` — ceremony latency budget
+- `52.549` — crypto CPU budget
+- `52.550` — association state memory budget
+- `52.551` — peer scaling boundary
+- `52.552` — many-association scaling
+- `52.553` — grant scaling
+- `52.554` — revocation scaling
+- `52.555` — connection pooling boundary
+- `52.556` — session cache bounds
+- `52.557` — rate-limit budgets
+- `52.558` — test harness
+- `52.559` — two-system integration harness
+- `52.560` — two-fabric integration harness
+- `52.561` — offline ceremony tests
+- `52.562` — QR ceremony tests
+- `52.563` — file ceremony tests
+- `52.564` — hardware ceremony tests
+- `52.565` — software-only ceremony tests
+- `52.566` — MITM tests
+- `52.567` — replay tests
+- `52.568` — downgrade tests
+- `52.569` — identity substitution tests
+- `52.570` — unknown-key-share tests
+- `52.571` — grant reuse tests
+- `52.572` — grant theft tests
+- `52.573` — grant expiry tests
+- `52.574` — revocation tests
+- `52.575` — revocation partition tests
+- `52.576` — identity rotation tests
+- `52.577` — identity compromise tests
+- `52.578` — snapshot rollback tests
+- `52.579` — peer disappearance tests
+- `52.580` — reconnect tests
+- `52.581` — mixed-version tests
+- `52.582` — malformed protocol tests
+- `52.583` — fuzz tests
+- `52.584` — crypto test-vector suite
+- `52.585` — property tests
+- `52.586` — state-machine model tests
+- `52.587` — concurrency tests
+- `52.588` — race tests
+- `52.589` — crash injection
+- `52.590` — reboot injection
+- `52.591` — network partition injection
+- `52.592` — clock skew tests
+- `52.593` — load tests
+- `52.594` — privacy tests
+- `52.595` — secret-leak tests
+- `52.596` — Linux reference implementation
+- `52.597` — C++ association runtime
+- `52.598` — C++ crypto abstraction
+- `52.599` — C++ protocol state machine
+- `52.600` — C++ ceremony runtime
+- `52.601` — C++ grant runtime
+- `52.602` — C++ trust-scope runtime
+- `52.603` — Python boundary audit
+- `52.604` — semantic provider isolation
+- `52.605` — CMake targets
+- `52.606` — dependency review
+- `52.607` — crypto library dependency review
+- `52.608` — supply-chain review
+- `52.609` — AGENTS association architecture contract
+- `52.610` — AGENTS cryptography contract
+- `52.611` — AGENTS no-custom-crypto contract
+- `52.612` — AGENTS authority contract
+- `52.613` — AGENTS hardware-optional contract
+- `52.614` — AGENTS no-secret-export contract
+- `52.615` — AGENTS Phase 51 boundary contract
+- `52.616` — AGENTS Phase 53 federation boundary contract
+- `52.617` — operator documentation
+- `52.618` — association guide
+- `52.619` — grant guide
+- `52.620` — hardware authenticator guide
+- `52.621` — software-only pairing guide
+- `52.622` — revocation guide
+- `52.623` — recovery guide
+- `52.624` — security model documentation
+- `52.625` — protocol documentation
+- `52.626` — trust-scope documentation
+- `52.627` — developer ceremony-provider guide
+- `52.628` — developer identity-provider guide
+- `52.629` — developer transport-provider guide
+- `52.630` — repository duplicate trust-system audit
+- `52.631` — legacy peer-trust audit
+- `52.632` — SSH known-hosts misuse audit
+- `52.633` — shared-secret sprawl audit
+- `52.634` — private-key copying audit
+- `52.635` — hard-coded peer identity audit
+- `52.636` — hostname trust audit
+- `52.637` — IP trust audit
+- `52.638` — connectivity-equals-trust audit
+- `52.639` — association-equals-authorization audit
+- `52.640` — FIDO misuse audit
+- `52.641` — U2F export assumption audit
+- `52.642` — custom crypto audit
+- `52.643` — unauthenticated DH audit
+- `52.644` — static session key audit
+- `52.645` — missing forward-secrecy audit
+- `52.646` — weak algorithm audit
+- `52.647` — downgrade path audit
+- `52.648` — grant replay path audit
+- `52.649` — revocation bypass audit
+- `52.650` — policy bypass audit
+- `52.651` — target revalidation bypass audit
+- `52.652` — semantic authority audit
+- `52.653` — first recursive rediscovery
+- `52.654` — resolve first rediscovery
+- `52.655` — second recursive rediscovery
+- `52.656` — resolve second rediscovery
+- `52.657` — adversarial fixed-point audit
+- `52.658` — final native build
+- `52.659` — final unit suite
+- `52.660` — final crypto suite
+- `52.661` — final protocol suite
+- `52.662` — final ceremony suite
+- `52.663` — final grant suite
+- `52.664` — final policy suite
+- `52.665` — final Phase 51 interoperability suite
+- `52.666` — final partition/recovery suite
+- `52.667` — final security suite
+- `52.668` — final fuzz suite
+- `52.669` — final privacy suite
+- `52.670` — final performance suite
+- `52.671` — final Phase 50 portability audit
+- `52.672` — final cross-phase authority audit
+- `52.673` — final secret-safety audit
+- `52.674` — final source-tree audit
+- `52.675` — final production call-graph audit
+- `52.676` — final cryptographic architecture review
+- `52.677` — final no-custom-crypto audit
+- `52.678` — final no-private-key-sharing audit
+- `52.679` — final clean rediscovery
+- `52.680` — Phase 52 closure and Phase 53 federation handoff

@@ -1,0 +1,26 @@
+# Phase 95 — Adaptive Strategy Selection System
+
+- 95.0: Bootstrap and repository reality audit
+- 95.1: Canonical ontology and identity
+- 95.2: Definitions and lifecycle
+- 95.3: State ownership and persistence
+- 95.4: Observation evidence provenance freshness
+- 95.5: UNKNOWN and conflicting evidence
+- 95.6: Capability and affordance integration
+- 95.7: Goal and desired-state integration
+- 95.8: Planning and operation integration
+- 95.9: Constraints and invariants
+- 95.10: Resources and topology
+- 95.11: Policy authorization
+- 95.12: Mandatory security
+- 95.13: Privilege and native providers
+- 95.14: Failure timeout cancellation partial effects
+- 95.15: Crash restart reconciliation recovery
+- 95.16: Concurrency races replacement TOCTOU
+- 95.17: Boundedness and budgets
+- 95.18: CLI GUI natural-language integration
+- 95.19: Timeline graph context integration
+- 95.20: Distributed and associated systems
+- 95.21: Python model shell authority audit
+- 95.22: Adversarial build runtime migration audit
+- 95.23: Documentation rediscovery and closure

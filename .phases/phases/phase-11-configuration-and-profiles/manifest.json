@@ -1,0 +1,94 @@
+{
+  "phase": 11,
+  "slug": "configuration-and-profiles",
+  "directory": "phase-11-configuration-and-profiles",
+  "prompt_count": 17,
+  "layout_version": 2,
+  "prompts": [
+    {
+      "file": "11.0.md",
+      "title": "Rebuntu --- Phase 11.0 --- Configuration System",
+      "sha256": "8735a81e26f77b6d65ef4150d78e491ccdeedffec45bca0c8f16acb49a49c74f"
+    },
+    {
+      "file": "11.1.md",
+      "title": "Rebuntu --- Phase 11.1 --- Configuration Sources",
+      "sha256": "1d0daf3010666fbd209a33f58eeb93721066adf932555c3612d89538cb205140"
+    },
+    {
+      "file": "11.2.md",
+      "title": "Rebuntu --- Phase 11.2 --- Configuration Schema",
+      "sha256": "a8203447444a23b1e1b9982b2e514f6b70fbed0339948e9b06f2a3acf03b91a7"
+    },
+    {
+      "file": "11.3.md",
+      "title": "Rebuntu --- Phase 11.3 --- Layering & Overrides",
+      "sha256": "0e750b7e5854d8a07fee3e2a719cf2c6c864305d9758cab7863cc0deb070873f"
+    },
+    {
+      "file": "11.4.md",
+      "title": "Rebuntu --- Phase 11.4 --- Preferences Integration",
+      "sha256": "8b57f04daea428f35e060cb0c4f98ce61db8a28e273a121c5f880c4b9380b821"
+    },
+    {
+      "file": "11.5.md",
+      "title": "Rebuntu --- Phase 11.5 --- Profiles",
+      "sha256": "a5dd4114d2453fd3fc7265f152df685a7087a9f687cd8d3abbf08e5fee84d0c3"
+    },
+    {
+      "file": "11.6.md",
+      "title": "Rebuntu --- Phase 11.6 --- Host Profiles",
+      "sha256": "16422c0fa67f6036e6cd1d7b15dd86af02fb5fbd7a2885750d2b46add27ad880"
+    },
+    {
+      "file": "11.7.md",
+      "title": "Rebuntu --- Phase 11.7 --- User Profiles",
+      "sha256": "3b2b58cf774dcf6a55aae6543253805888229b8a9f06124b8f986a521f5278b4"
+    },
+    {
+      "file": "11.8.md",
+      "title": "Rebuntu --- Phase 11.8 --- Workload Profiles",
+      "sha256": "86eee1ec0be49af3cd4a15a4a038ce15b7e1382c535c55959dba7eb64075596d"
+    },
+    {
+      "file": "11.9.md",
+      "title": "Rebuntu --- Phase 11.9 --- Environment Profiles",
+      "sha256": "577d5ae728fcbf24f1be06dee4d34ce4163cf0a93ccbd1e8246e849c1eae89dc"
+    },
+    {
+      "file": "11.10.md",
+      "title": "Rebuntu --- Phase 11.10 --- Profile Activation",
+      "sha256": "49c821d5eca4c5d22463c69840d4d26cdcb849f57efb07125a66f467baf14e40"
+    },
+    {
+      "file": "11.11.md",
+      "title": "Rebuntu --- Phase 11.11 --- Profile Composition",
+      "sha256": "3947079e0ec8aa3d643de5b90da28d28480cce39d21aa6087a4786851b1c043e"
+    },
+    {
+      "file": "11.12.md",
+      "title": "Rebuntu --- Phase 11.12 --- Configuration Diff",
+      "sha256": "96799fbbb0ff784ecef1d84cd6902a322cd4ff617d5feace1a75d2a44e2e06a5"
+    },
+    {
+      "file": "11.13.md",
+      "title": "Rebuntu --- Phase 11.13 --- Configuration Validation",
+      "sha256": "4e65283cc20fb48b645cebaf1d15abbfc6b46170190af362add5aef1dfd5d11a"
+    },
+    {
+      "file": "11.14.md",
+      "title": "Rebuntu --- Phase 11.14 --- Configuration Application",
+      "sha256": "05dd51c5e102cc4849079ff4ff3ea99d067d5b27827af37ea2e2151845905e60"
+    },
+    {
+      "file": "11.15.md",
+      "title": "Rebuntu --- Phase 11.15 --- Configuration Verification",
+      "sha256": "a7cc3492c0dda81409fdf54ccce29c78a68dc88c38ec85eae7cbd79d112e75f6"
+    },
+    {
+      "file": "11.16.md",
+      "title": "Rebuntu --- Phase 11.16 --- Configuration / Profile Closure",
+      "sha256": "dfd5b7c421b6017f48a1a6b102cecc6d8001fdc7fa6c86078fcf12e9e42404a5"
+    }
+  ]
+}

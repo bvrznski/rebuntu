@@ -28,6 +28,7 @@
     0022-preferences-model.md
     0023-setup-configuration-model.md
     0024-profile-generation-application.md
+    0025-phase-0.1-premature-implementation-review.md
           a_b_comparison_boundary_a70113fb
           a_b_comparison_boundary_a70113fb.cpp
           a_b_comparison_boundary_a70113fb.hpp
@@ -49287,6 +49288,7 @@ cpp
           daemon_restart_recovery_bc0480a8.cpp
           daemon_restart_recovery_bc0480a8.hpp
           daemon_restart_recovery_bc0480a8.target.json
+    daemons
           dag_execution_engine_846dee8f
           dag_execution_engine_846dee8f.cpp
           dag_execution_engine_846dee8f.hpp
@@ -49728,6 +49730,7 @@ cpp
           default_route_semantics_9e31db44.cpp
           default_route_semantics_9e31db44.hpp
           default_route_semantics_9e31db44.target.json
+    deferred
           definition_migration_a9f50a63
           definition_migration_a9f50a63.cpp
           definition_migration_a9f50a63.hpp
@@ -163308,6 +163311,7 @@ imports
         jobs
       jobs
       jobs
+    jobs
           join_semantics_1778ac12
           join_semantics_1778ac12.cpp
           join_semantics_1778ac12.hpp
@@ -201419,6 +201423,7 @@ imports
           model_unavailability_degradation_fcd936ca.cpp
           model_unavailability_degradation_fcd936ca.hpp
           model_unavailability_degradation_fcd936ca.target.json
+  modules
       monitor
           monospace_usage_050b900b
           monospace_usage_050b900b.cpp
@@ -288350,6 +288355,14 @@ packaging
       README.md
       README.md
       README.md
+      README.md
+      README.md
+      README.md
+      README.md
+      README.md
+      README.md
+    README.md
+    README.md
     README.md
     README.md
     README.md
@@ -344637,6 +344650,7 @@ SAFETY.md
           scheduler_stress_tests_2e63535b.hpp
           scheduler_stress_tests_2e63535b.target.json
     schedules
+    schedules
           schedule_trigger_foundation_78591c48
           schedule_trigger_foundation_78591c48.cpp
           schedule_trigger_foundation_78591c48.hpp
@@ -354824,6 +354838,7 @@ SECURITY.md
           service_restart_policy_7963be78.cpp
           service_restart_policy_7963be78.hpp
           service_restart_policy_7963be78.target.json
+    services
     services
           services_12d229ab
           services_12d229ab.cpp
@@ -372606,6 +372621,7 @@ systemd
           task_risk_metadata_e44fda93.cpp
           task_risk_metadata_e44fda93.hpp
           task_risk_metadata_e44fda93.target.json
+    tasks
           task_scope_76a1cdb9
           task_scope_76a1cdb9.cpp
           task_scope_76a1cdb9.hpp
@@ -411781,6 +411797,7 @@ __tree__.txt
         units
       units
     units
+  units
           unit_type_semantics_8c349403
           unit_type_semantics_8c349403.cpp
           unit_type_semantics_8c349403.hpp

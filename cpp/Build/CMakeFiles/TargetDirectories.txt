@@ -33,7 +33,10 @@
 /home/bvrznski/rebuntu/cpp/Build/CMakeFiles/rebuntu-privilege.dir
 /home/bvrznski/rebuntu/cpp/Build/CMakeFiles/rebuntu-capability-state.dir
 /home/bvrznski/rebuntu/cpp/Build/CMakeFiles/rebuntu-authorization.dir
+/home/bvrznski/rebuntu/cpp/Build/CMakeFiles/rebuntu-scope.dir
 /home/bvrznski/rebuntu/cpp/Build/CMakeFiles/rebuntu-environment-discovery.dir
+/home/bvrznski/rebuntu/cpp/Build/CMakeFiles/rebuntu-sessions.dir
+/home/bvrznski/rebuntu/cpp/Build/CMakeFiles/rebuntu-directories.dir
 /home/bvrznski/rebuntu/cpp/Build/CMakeFiles/rebuntu-setup.dir
 /home/bvrznski/rebuntu/cpp/Build/CMakeFiles/rebuntu-lifecycle.dir
 /home/bvrznski/rebuntu/cpp/Build/CMakeFiles/rebuntu-host-foundation.dir
@@ -63,6 +66,9 @@
 /home/bvrznski/rebuntu/cpp/Build/tests/CMakeFiles/ownership_test.dir
 /home/bvrznski/rebuntu/cpp/Build/tests/CMakeFiles/lifecycle_test.dir
 /home/bvrznski/rebuntu/cpp/Build/tests/CMakeFiles/host_foundation_test.dir
+/home/bvrznski/rebuntu/cpp/Build/tests/CMakeFiles/test_scope.dir
+/home/bvrznski/rebuntu/cpp/Build/tests/CMakeFiles/test_sessions.dir
+/home/bvrznski/rebuntu/cpp/Build/tests/CMakeFiles/test_directories.dir
 /home/bvrznski/rebuntu/cpp/Build/tests/CMakeFiles/test.dir
 /home/bvrznski/rebuntu/cpp/Build/tests/CMakeFiles/edit_cache.dir
 /home/bvrznski/rebuntu/cpp/Build/tests/CMakeFiles/rebuild_cache.dir

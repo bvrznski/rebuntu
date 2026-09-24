@@ -100,7 +100,10 @@ tests/preferences_test: librebuntu-ownership.a
 tests/preferences_test: librebuntu-privilege.a
 tests/preferences_test: librebuntu-capability-state.a
 tests/preferences_test: librebuntu-authorization.a
+tests/preferences_test: librebuntu-scope.a
 tests/preferences_test: librebuntu-environment-discovery.a
+tests/preferences_test: librebuntu-sessions.a
+tests/preferences_test: librebuntu-directories.a
 tests/preferences_test: librebuntu-setup.a
 tests/preferences_test: librebuntu-lifecycle.a
 tests/preferences_test: librebuntu-host-foundation.a

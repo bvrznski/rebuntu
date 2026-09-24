@@ -153,6 +153,18 @@ target_include_directories(rebuntu-authorization PUBLIC
 
 target_link_libraries(rebuntu-core PUBLIC rebuntu-authorization)
 
+# Phase 2.7: System/User/Session Scope module (scope resolution, XDG paths)
+add_library(rebuntu-scope STATIC
+    ${USER_IDENTITY_SRC_ROOT}/scope.hpp
+    ${USER_IDENTITY_SRC_ROOT}/scope.cpp
+)
+
+target_include_directories(rebuntu-scope PUBLIC
+    ${CMAKE_CURRENT_LIST_DIR}/../src
+)
+
+target_link_libraries(rebuntu-core PUBLIC rebuntu-scope)
+
 # Phase 1.9: Environment discovery module (Hardware/Software environment)
 add_library(rebuntu-environment-discovery STATIC
     ${USER_IDENTITY_SRC_ROOT}/environment_discovery.cpp
@@ -163,6 +175,30 @@ target_include_directories(rebuntu-environment-discovery PUBLIC
 )
 
 target_link_libraries(rebuntu-core PUBLIC rebuntu-environment-discovery)
+
+# Phase 2.8: Sessions & Runtime Identity module
+add_library(rebuntu-sessions STATIC
+    ${USER_IDENTITY_SRC_ROOT}/sessions.hpp
+    ${USER_IDENTITY_SRC_ROOT}/sessions.cpp
+)
+
+target_include_directories(rebuntu-sessions PUBLIC
+    ${CMAKE_CURRENT_LIST_DIR}/../src
+)
+
+target_link_libraries(rebuntu-core PUBLIC rebuntu-sessions)
+
+# Phase 2.9: Directories module (Operational Directory Layout)
+add_library(rebuntu-directories STATIC
+    ${USER_IDENTITY_SRC_ROOT}/directories.hpp
+    ${USER_IDENTITY_SRC_ROOT}/directories.cpp
+)
+
+target_include_directories(rebuntu-directories PUBLIC
+    ${CMAKE_CURRENT_LIST_DIR}/../src
+)
+
+target_link_libraries(rebuntu-core PUBLIC rebuntu-directories)
 
 # Phase 1.8: Setup & configuration module (Phase 1.8)
 set(SETUP_SRC_ROOT ${CMAKE_CURRENT_LIST_DIR}/../src/system/setup)

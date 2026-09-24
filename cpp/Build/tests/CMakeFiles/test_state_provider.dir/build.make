@@ -100,7 +100,10 @@ tests/test_state_provider: librebuntu-ownership.a
 tests/test_state_provider: librebuntu-privilege.a
 tests/test_state_provider: librebuntu-capability-state.a
 tests/test_state_provider: librebuntu-authorization.a
+tests/test_state_provider: librebuntu-scope.a
 tests/test_state_provider: librebuntu-environment-discovery.a
+tests/test_state_provider: librebuntu-sessions.a
+tests/test_state_provider: librebuntu-directories.a
 tests/test_state_provider: librebuntu-setup.a
 tests/test_state_provider: librebuntu-lifecycle.a
 tests/test_state_provider: librebuntu-host-foundation.a

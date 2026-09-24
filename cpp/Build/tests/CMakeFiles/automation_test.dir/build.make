@@ -100,7 +100,10 @@ tests/automation_test: librebuntu-ownership.a
 tests/automation_test: librebuntu-privilege.a
 tests/automation_test: librebuntu-capability-state.a
 tests/automation_test: librebuntu-authorization.a
+tests/automation_test: librebuntu-scope.a
 tests/automation_test: librebuntu-environment-discovery.a
+tests/automation_test: librebuntu-sessions.a
+tests/automation_test: librebuntu-directories.a
 tests/automation_test: librebuntu-setup.a
 tests/automation_test: librebuntu-lifecycle.a
 tests/automation_test: librebuntu-host-foundation.a

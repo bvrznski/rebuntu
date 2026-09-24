@@ -100,7 +100,10 @@ tests/events_test: librebuntu-ownership.a
 tests/events_test: librebuntu-privilege.a
 tests/events_test: librebuntu-capability-state.a
 tests/events_test: librebuntu-authorization.a
+tests/events_test: librebuntu-scope.a
 tests/events_test: librebuntu-environment-discovery.a
+tests/events_test: librebuntu-sessions.a
+tests/events_test: librebuntu-directories.a
 tests/events_test: librebuntu-setup.a
 tests/events_test: librebuntu-lifecycle.a
 tests/events_test: librebuntu-host-foundation.a

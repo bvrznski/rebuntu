@@ -101,7 +101,10 @@ tests/lifecycle_test: librebuntu-ownership.a
 tests/lifecycle_test: librebuntu-privilege.a
 tests/lifecycle_test: librebuntu-capability-state.a
 tests/lifecycle_test: librebuntu-authorization.a
+tests/lifecycle_test: librebuntu-scope.a
 tests/lifecycle_test: librebuntu-environment-discovery.a
+tests/lifecycle_test: librebuntu-sessions.a
+tests/lifecycle_test: librebuntu-directories.a
 tests/lifecycle_test: librebuntu-setup.a
 tests/lifecycle_test: librebuntu-host-foundation.a
 tests/lifecycle_test: tests/CMakeFiles/lifecycle_test.dir/link.txt

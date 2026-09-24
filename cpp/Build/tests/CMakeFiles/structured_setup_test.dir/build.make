@@ -100,7 +100,10 @@ tests/structured_setup_test: librebuntu-ownership.a
 tests/structured_setup_test: librebuntu-privilege.a
 tests/structured_setup_test: librebuntu-capability-state.a
 tests/structured_setup_test: librebuntu-authorization.a
+tests/structured_setup_test: librebuntu-scope.a
 tests/structured_setup_test: librebuntu-environment-discovery.a
+tests/structured_setup_test: librebuntu-sessions.a
+tests/structured_setup_test: librebuntu-directories.a
 tests/structured_setup_test: librebuntu-setup.a
 tests/structured_setup_test: librebuntu-lifecycle.a
 tests/structured_setup_test: librebuntu-host-foundation.a

@@ -582,6 +582,19 @@ rebuntu-authorization/fast:
 .PHONY : rebuntu-authorization/fast
 
 #=============================================================================
+# Target rules for targets named rebuntu-scope
+
+# Build rule for target.
+rebuntu-scope: cmake_check_build_system
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 rebuntu-scope
+.PHONY : rebuntu-scope
+
+# fast build rule for target.
+rebuntu-scope/fast:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/rebuntu-scope.dir/build.make CMakeFiles/rebuntu-scope.dir/build
+.PHONY : rebuntu-scope/fast
+
+#=============================================================================
 # Target rules for targets named rebuntu-environment-discovery
 
 # Build rule for target.
@@ -593,6 +606,32 @@ rebuntu-environment-discovery: cmake_check_build_system
 rebuntu-environment-discovery/fast:
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/rebuntu-environment-discovery.dir/build.make CMakeFiles/rebuntu-environment-discovery.dir/build
 .PHONY : rebuntu-environment-discovery/fast
+
+#=============================================================================
+# Target rules for targets named rebuntu-sessions
+
+# Build rule for target.
+rebuntu-sessions: cmake_check_build_system
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 rebuntu-sessions
+.PHONY : rebuntu-sessions
+
+# fast build rule for target.
+rebuntu-sessions/fast:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/rebuntu-sessions.dir/build.make CMakeFiles/rebuntu-sessions.dir/build
+.PHONY : rebuntu-sessions/fast
+
+#=============================================================================
+# Target rules for targets named rebuntu-directories
+
+# Build rule for target.
+rebuntu-directories: cmake_check_build_system
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 rebuntu-directories
+.PHONY : rebuntu-directories
+
+# fast build rule for target.
+rebuntu-directories/fast:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/rebuntu-directories.dir/build.make CMakeFiles/rebuntu-directories.dir/build
+.PHONY : rebuntu-directories/fast
 
 #=============================================================================
 # Target rules for targets named rebuntu-setup
@@ -894,6 +933,45 @@ host_foundation_test/fast:
 .PHONY : host_foundation_test/fast
 
 #=============================================================================
+# Target rules for targets named test_scope
+
+# Build rule for target.
+test_scope: cmake_check_build_system
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 test_scope
+.PHONY : test_scope
+
+# fast build rule for target.
+test_scope/fast:
+	$(MAKE) $(MAKESILENT) -f tests/CMakeFiles/test_scope.dir/build.make tests/CMakeFiles/test_scope.dir/build
+.PHONY : test_scope/fast
+
+#=============================================================================
+# Target rules for targets named test_sessions
+
+# Build rule for target.
+test_sessions: cmake_check_build_system
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 test_sessions
+.PHONY : test_sessions
+
+# fast build rule for target.
+test_sessions/fast:
+	$(MAKE) $(MAKESILENT) -f tests/CMakeFiles/test_sessions.dir/build.make tests/CMakeFiles/test_sessions.dir/build
+.PHONY : test_sessions/fast
+
+#=============================================================================
+# Target rules for targets named test_directories
+
+# Build rule for target.
+test_directories: cmake_check_build_system
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 test_directories
+.PHONY : test_directories
+
+# fast build rule for target.
+test_directories/fast:
+	$(MAKE) $(MAKESILENT) -f tests/CMakeFiles/test_directories.dir/build.make tests/CMakeFiles/test_directories.dir/build
+.PHONY : test_directories/fast
+
+#=============================================================================
 # Target rules for targets named rebuntu
 
 # Build rule for target.
@@ -953,6 +1031,30 @@ home/bvrznski/rebuntu/src/system/environment/capability_state.s: home/bvrznski/r
 home/bvrznski/rebuntu/src/system/environment/capability_state.cpp.s:
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/rebuntu-capability-state.dir/build.make CMakeFiles/rebuntu-capability-state.dir/home/bvrznski/rebuntu/src/system/environment/capability_state.cpp.s
 .PHONY : home/bvrznski/rebuntu/src/system/environment/capability_state.cpp.s
+
+home/bvrznski/rebuntu/src/system/environment/directories.o: home/bvrznski/rebuntu/src/system/environment/directories.cpp.o
+.PHONY : home/bvrznski/rebuntu/src/system/environment/directories.o
+
+# target to build an object file
+home/bvrznski/rebuntu/src/system/environment/directories.cpp.o:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/rebuntu-directories.dir/build.make CMakeFiles/rebuntu-directories.dir/home/bvrznski/rebuntu/src/system/environment/directories.cpp.o
+.PHONY : home/bvrznski/rebuntu/src/system/environment/directories.cpp.o
+
+home/bvrznski/rebuntu/src/system/environment/directories.i: home/bvrznski/rebuntu/src/system/environment/directories.cpp.i
+.PHONY : home/bvrznski/rebuntu/src/system/environment/directories.i
+
+# target to preprocess a source file
+home/bvrznski/rebuntu/src/system/environment/directories.cpp.i:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/rebuntu-directories.dir/build.make CMakeFiles/rebuntu-directories.dir/home/bvrznski/rebuntu/src/system/environment/directories.cpp.i
+.PHONY : home/bvrznski/rebuntu/src/system/environment/directories.cpp.i
+
+home/bvrznski/rebuntu/src/system/environment/directories.s: home/bvrznski/rebuntu/src/system/environment/directories.cpp.s
+.PHONY : home/bvrznski/rebuntu/src/system/environment/directories.s
+
+# target to generate assembly for a file
+home/bvrznski/rebuntu/src/system/environment/directories.cpp.s:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/rebuntu-directories.dir/build.make CMakeFiles/rebuntu-directories.dir/home/bvrznski/rebuntu/src/system/environment/directories.cpp.s
+.PHONY : home/bvrznski/rebuntu/src/system/environment/directories.cpp.s
 
 home/bvrznski/rebuntu/src/system/environment/environment_discovery.o: home/bvrznski/rebuntu/src/system/environment/environment_discovery.cpp.o
 .PHONY : home/bvrznski/rebuntu/src/system/environment/environment_discovery.o
@@ -1049,6 +1151,54 @@ home/bvrznski/rebuntu/src/system/environment/privilege.s: home/bvrznski/rebuntu/
 home/bvrznski/rebuntu/src/system/environment/privilege.cpp.s:
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/rebuntu-privilege.dir/build.make CMakeFiles/rebuntu-privilege.dir/home/bvrznski/rebuntu/src/system/environment/privilege.cpp.s
 .PHONY : home/bvrznski/rebuntu/src/system/environment/privilege.cpp.s
+
+home/bvrznski/rebuntu/src/system/environment/scope.o: home/bvrznski/rebuntu/src/system/environment/scope.cpp.o
+.PHONY : home/bvrznski/rebuntu/src/system/environment/scope.o
+
+# target to build an object file
+home/bvrznski/rebuntu/src/system/environment/scope.cpp.o:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/rebuntu-scope.dir/build.make CMakeFiles/rebuntu-scope.dir/home/bvrznski/rebuntu/src/system/environment/scope.cpp.o
+.PHONY : home/bvrznski/rebuntu/src/system/environment/scope.cpp.o
+
+home/bvrznski/rebuntu/src/system/environment/scope.i: home/bvrznski/rebuntu/src/system/environment/scope.cpp.i
+.PHONY : home/bvrznski/rebuntu/src/system/environment/scope.i
+
+# target to preprocess a source file
+home/bvrznski/rebuntu/src/system/environment/scope.cpp.i:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/rebuntu-scope.dir/build.make CMakeFiles/rebuntu-scope.dir/home/bvrznski/rebuntu/src/system/environment/scope.cpp.i
+.PHONY : home/bvrznski/rebuntu/src/system/environment/scope.cpp.i
+
+home/bvrznski/rebuntu/src/system/environment/scope.s: home/bvrznski/rebuntu/src/system/environment/scope.cpp.s
+.PHONY : home/bvrznski/rebuntu/src/system/environment/scope.s
+
+# target to generate assembly for a file
+home/bvrznski/rebuntu/src/system/environment/scope.cpp.s:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/rebuntu-scope.dir/build.make CMakeFiles/rebuntu-scope.dir/home/bvrznski/rebuntu/src/system/environment/scope.cpp.s
+.PHONY : home/bvrznski/rebuntu/src/system/environment/scope.cpp.s
+
+home/bvrznski/rebuntu/src/system/environment/sessions.o: home/bvrznski/rebuntu/src/system/environment/sessions.cpp.o
+.PHONY : home/bvrznski/rebuntu/src/system/environment/sessions.o
+
+# target to build an object file
+home/bvrznski/rebuntu/src/system/environment/sessions.cpp.o:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/rebuntu-sessions.dir/build.make CMakeFiles/rebuntu-sessions.dir/home/bvrznski/rebuntu/src/system/environment/sessions.cpp.o
+.PHONY : home/bvrznski/rebuntu/src/system/environment/sessions.cpp.o
+
+home/bvrznski/rebuntu/src/system/environment/sessions.i: home/bvrznski/rebuntu/src/system/environment/sessions.cpp.i
+.PHONY : home/bvrznski/rebuntu/src/system/environment/sessions.i
+
+# target to preprocess a source file
+home/bvrznski/rebuntu/src/system/environment/sessions.cpp.i:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/rebuntu-sessions.dir/build.make CMakeFiles/rebuntu-sessions.dir/home/bvrznski/rebuntu/src/system/environment/sessions.cpp.i
+.PHONY : home/bvrznski/rebuntu/src/system/environment/sessions.cpp.i
+
+home/bvrznski/rebuntu/src/system/environment/sessions.s: home/bvrznski/rebuntu/src/system/environment/sessions.cpp.s
+.PHONY : home/bvrznski/rebuntu/src/system/environment/sessions.s
+
+# target to generate assembly for a file
+home/bvrznski/rebuntu/src/system/environment/sessions.cpp.s:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/rebuntu-sessions.dir/build.make CMakeFiles/rebuntu-sessions.dir/home/bvrznski/rebuntu/src/system/environment/sessions.cpp.s
+.PHONY : home/bvrznski/rebuntu/src/system/environment/sessions.cpp.s
 
 home/bvrznski/rebuntu/src/system/environment/user_identity.o: home/bvrznski/rebuntu/src/system/environment/user_identity.cpp.o
 .PHONY : home/bvrznski/rebuntu/src/system/environment/user_identity.o
@@ -1294,6 +1444,7 @@ help:
 	@echo "... rebuntu-authorization"
 	@echo "... rebuntu-capability-state"
 	@echo "... rebuntu-core"
+	@echo "... rebuntu-directories"
 	@echo "... rebuntu-environment-discovery"
 	@echo "... rebuntu-group-membership"
 	@echo "... rebuntu-host-foundation"
@@ -1301,14 +1452,19 @@ help:
 	@echo "... rebuntu-lifecycle"
 	@echo "... rebuntu-ownership"
 	@echo "... rebuntu-privilege"
+	@echo "... rebuntu-scope"
+	@echo "... rebuntu-sessions"
 	@echo "... rebuntu-setup"
 	@echo "... rebuntu-user-identity"
 	@echo "... results_test"
 	@echo "... runtime_runner_test"
 	@echo "... settings_test"
 	@echo "... structured_setup_test"
+	@echo "... test_directories"
 	@echo "... test_discovery"
 	@echo "... test_runtime_contracts"
+	@echo "... test_scope"
+	@echo "... test_sessions"
 	@echo "... test_state_provider"
 	@echo "... user_identity_test"
 	@echo "... home/bvrznski/rebuntu/src/system/environment/authorization.o"
@@ -1317,6 +1473,9 @@ help:
 	@echo "... home/bvrznski/rebuntu/src/system/environment/capability_state.o"
 	@echo "... home/bvrznski/rebuntu/src/system/environment/capability_state.i"
 	@echo "... home/bvrznski/rebuntu/src/system/environment/capability_state.s"
+	@echo "... home/bvrznski/rebuntu/src/system/environment/directories.o"
+	@echo "... home/bvrznski/rebuntu/src/system/environment/directories.i"
+	@echo "... home/bvrznski/rebuntu/src/system/environment/directories.s"
 	@echo "... home/bvrznski/rebuntu/src/system/environment/environment_discovery.o"
 	@echo "... home/bvrznski/rebuntu/src/system/environment/environment_discovery.i"
 	@echo "... home/bvrznski/rebuntu/src/system/environment/environment_discovery.s"
@@ -1329,6 +1488,12 @@ help:
 	@echo "... home/bvrznski/rebuntu/src/system/environment/privilege.o"
 	@echo "... home/bvrznski/rebuntu/src/system/environment/privilege.i"
 	@echo "... home/bvrznski/rebuntu/src/system/environment/privilege.s"
+	@echo "... home/bvrznski/rebuntu/src/system/environment/scope.o"
+	@echo "... home/bvrznski/rebuntu/src/system/environment/scope.i"
+	@echo "... home/bvrznski/rebuntu/src/system/environment/scope.s"
+	@echo "... home/bvrznski/rebuntu/src/system/environment/sessions.o"
+	@echo "... home/bvrznski/rebuntu/src/system/environment/sessions.i"
+	@echo "... home/bvrznski/rebuntu/src/system/environment/sessions.s"
 	@echo "... home/bvrznski/rebuntu/src/system/environment/user_identity.o"
 	@echo "... home/bvrznski/rebuntu/src/system/environment/user_identity.i"
 	@echo "... home/bvrznski/rebuntu/src/system/environment/user_identity.s"

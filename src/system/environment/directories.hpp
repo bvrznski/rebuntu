@@ -189,7 +189,7 @@ std::filesystem::path get_system_data_dir();
 std::filesystem::path get_system_log_dir();
 
 // User runtime directory (XDG_RUNTIME_DIR based)
-std::filesystem::path get_user_runtime_dir(ScopeContext ctx);
+std::filesystem::path get_user_runtime_dir(const ScopeContext& ctx);
 
 // Session-scoped directories
 std::filesystem::path get_session_runtime_dir(const sessions::RuntimeDirectoryInfo& rt_info);

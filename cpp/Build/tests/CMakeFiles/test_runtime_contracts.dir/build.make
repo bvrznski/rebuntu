@@ -100,7 +100,10 @@ tests/test_runtime_contracts: librebuntu-ownership.a
 tests/test_runtime_contracts: librebuntu-privilege.a
 tests/test_runtime_contracts: librebuntu-capability-state.a
 tests/test_runtime_contracts: librebuntu-authorization.a
+tests/test_runtime_contracts: librebuntu-scope.a
 tests/test_runtime_contracts: librebuntu-environment-discovery.a
+tests/test_runtime_contracts: librebuntu-sessions.a
+tests/test_runtime_contracts: librebuntu-directories.a
 tests/test_runtime_contracts: librebuntu-setup.a
 tests/test_runtime_contracts: librebuntu-lifecycle.a
 tests/test_runtime_contracts: librebuntu-host-foundation.a

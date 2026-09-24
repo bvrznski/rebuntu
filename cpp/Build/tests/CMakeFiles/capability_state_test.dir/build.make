@@ -100,7 +100,10 @@ tests/capability_state_test: librebuntu-group-membership.a
 tests/capability_state_test: librebuntu-ownership.a
 tests/capability_state_test: librebuntu-privilege.a
 tests/capability_state_test: librebuntu-authorization.a
+tests/capability_state_test: librebuntu-scope.a
 tests/capability_state_test: librebuntu-environment-discovery.a
+tests/capability_state_test: librebuntu-sessions.a
+tests/capability_state_test: librebuntu-directories.a
 tests/capability_state_test: librebuntu-setup.a
 tests/capability_state_test: librebuntu-lifecycle.a
 tests/capability_state_test: librebuntu-host-foundation.a

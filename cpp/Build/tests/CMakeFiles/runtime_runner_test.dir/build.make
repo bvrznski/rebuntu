@@ -100,7 +100,10 @@ tests/runtime_runner_test: librebuntu-ownership.a
 tests/runtime_runner_test: librebuntu-privilege.a
 tests/runtime_runner_test: librebuntu-capability-state.a
 tests/runtime_runner_test: librebuntu-authorization.a
+tests/runtime_runner_test: librebuntu-scope.a
 tests/runtime_runner_test: librebuntu-environment-discovery.a
+tests/runtime_runner_test: librebuntu-sessions.a
+tests/runtime_runner_test: librebuntu-directories.a
 tests/runtime_runner_test: librebuntu-setup.a
 tests/runtime_runner_test: librebuntu-lifecycle.a
 tests/runtime_runner_test: librebuntu-host-foundation.a

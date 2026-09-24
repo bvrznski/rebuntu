@@ -183,4 +183,31 @@ target_include_directories(host_foundation_test PRIVATE
 )
 add_test(NAME host_foundation_test COMMAND host_foundation_test)
 
+# Phase 2.7: Scope module tests
+add_executable(test_scope test_scope.cpp)
+target_link_libraries(test_scope rebuntu-core rebuntu-scope)
+target_include_directories(test_scope PRIVATE 
+    ${CMAKE_SOURCE_DIR}/src
+    ${CMAKE_SOURCE_DIR}
+)
+add_test(NAME test_scope COMMAND test_scope)
+
+# Phase 2.8: Sessions & Runtime Identity module tests
+add_executable(test_sessions test_sessions.cpp)
+target_link_libraries(test_sessions rebuntu-core rebuntu-sessions)
+target_include_directories(test_sessions PRIVATE 
+    ${CMAKE_SOURCE_DIR}/src
+    ${CMAKE_SOURCE_DIR}
+)
+add_test(NAME test_sessions COMMAND test_sessions)
+
+# Phase 2.9: Directories module tests (Operational Directory Layout)
+add_executable(test_directories test_directories.cpp)
+target_link_libraries(test_directories rebuntu-core rebuntu-directories rebuntu-scope)
+target_include_directories(test_directories PRIVATE 
+    ${CMAKE_SOURCE_DIR}/../src
+    ${CMAKE_SOURCE_DIR}
+)
+add_test(NAME test_directories COMMAND test_directories)
+
 # Phase 1.9: Environment discovery tests (pending integration with testing framework)

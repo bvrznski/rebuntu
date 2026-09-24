@@ -236,6 +236,54 @@ home/bvrznski/rebuntu/src/runtime/timeout_enforcement.cpp.s:
 	cd /home/bvrznski/rebuntu/cpp/Build && $(MAKE) $(MAKESILENT) -f src/rebuntu/CMakeFiles/rebuntu.dir/build.make src/rebuntu/CMakeFiles/rebuntu.dir/home/bvrznski/rebuntu/src/runtime/timeout_enforcement.cpp.s
 .PHONY : home/bvrznski/rebuntu/src/runtime/timeout_enforcement.cpp.s
 
+home/bvrznski/rebuntu/src/system/environment/scope.o: home/bvrznski/rebuntu/src/system/environment/scope.cpp.o
+.PHONY : home/bvrznski/rebuntu/src/system/environment/scope.o
+
+# target to build an object file
+home/bvrznski/rebuntu/src/system/environment/scope.cpp.o:
+	cd /home/bvrznski/rebuntu/cpp/Build && $(MAKE) $(MAKESILENT) -f src/rebuntu/CMakeFiles/rebuntu.dir/build.make src/rebuntu/CMakeFiles/rebuntu.dir/home/bvrznski/rebuntu/src/system/environment/scope.cpp.o
+.PHONY : home/bvrznski/rebuntu/src/system/environment/scope.cpp.o
+
+home/bvrznski/rebuntu/src/system/environment/scope.i: home/bvrznski/rebuntu/src/system/environment/scope.cpp.i
+.PHONY : home/bvrznski/rebuntu/src/system/environment/scope.i
+
+# target to preprocess a source file
+home/bvrznski/rebuntu/src/system/environment/scope.cpp.i:
+	cd /home/bvrznski/rebuntu/cpp/Build && $(MAKE) $(MAKESILENT) -f src/rebuntu/CMakeFiles/rebuntu.dir/build.make src/rebuntu/CMakeFiles/rebuntu.dir/home/bvrznski/rebuntu/src/system/environment/scope.cpp.i
+.PHONY : home/bvrznski/rebuntu/src/system/environment/scope.cpp.i
+
+home/bvrznski/rebuntu/src/system/environment/scope.s: home/bvrznski/rebuntu/src/system/environment/scope.cpp.s
+.PHONY : home/bvrznski/rebuntu/src/system/environment/scope.s
+
+# target to generate assembly for a file
+home/bvrznski/rebuntu/src/system/environment/scope.cpp.s:
+	cd /home/bvrznski/rebuntu/cpp/Build && $(MAKE) $(MAKESILENT) -f src/rebuntu/CMakeFiles/rebuntu.dir/build.make src/rebuntu/CMakeFiles/rebuntu.dir/home/bvrznski/rebuntu/src/system/environment/scope.cpp.s
+.PHONY : home/bvrznski/rebuntu/src/system/environment/scope.cpp.s
+
+home/bvrznski/rebuntu/src/system/environment/sessions.o: home/bvrznski/rebuntu/src/system/environment/sessions.cpp.o
+.PHONY : home/bvrznski/rebuntu/src/system/environment/sessions.o
+
+# target to build an object file
+home/bvrznski/rebuntu/src/system/environment/sessions.cpp.o:
+	cd /home/bvrznski/rebuntu/cpp/Build && $(MAKE) $(MAKESILENT) -f src/rebuntu/CMakeFiles/rebuntu.dir/build.make src/rebuntu/CMakeFiles/rebuntu.dir/home/bvrznski/rebuntu/src/system/environment/sessions.cpp.o
+.PHONY : home/bvrznski/rebuntu/src/system/environment/sessions.cpp.o
+
+home/bvrznski/rebuntu/src/system/environment/sessions.i: home/bvrznski/rebuntu/src/system/environment/sessions.cpp.i
+.PHONY : home/bvrznski/rebuntu/src/system/environment/sessions.i
+
+# target to preprocess a source file
+home/bvrznski/rebuntu/src/system/environment/sessions.cpp.i:
+	cd /home/bvrznski/rebuntu/cpp/Build && $(MAKE) $(MAKESILENT) -f src/rebuntu/CMakeFiles/rebuntu.dir/build.make src/rebuntu/CMakeFiles/rebuntu.dir/home/bvrznski/rebuntu/src/system/environment/sessions.cpp.i
+.PHONY : home/bvrznski/rebuntu/src/system/environment/sessions.cpp.i
+
+home/bvrznski/rebuntu/src/system/environment/sessions.s: home/bvrznski/rebuntu/src/system/environment/sessions.cpp.s
+.PHONY : home/bvrznski/rebuntu/src/system/environment/sessions.s
+
+# target to generate assembly for a file
+home/bvrznski/rebuntu/src/system/environment/sessions.cpp.s:
+	cd /home/bvrznski/rebuntu/cpp/Build && $(MAKE) $(MAKESILENT) -f src/rebuntu/CMakeFiles/rebuntu.dir/build.make src/rebuntu/CMakeFiles/rebuntu.dir/home/bvrznski/rebuntu/src/system/environment/sessions.cpp.s
+.PHONY : home/bvrznski/rebuntu/src/system/environment/sessions.cpp.s
+
 home/bvrznski/rebuntu/src/system/install/install.o: home/bvrznski/rebuntu/src/system/install/install.cpp.o
 .PHONY : home/bvrznski/rebuntu/src/system/install/install.o
 
@@ -378,6 +426,12 @@ help:
 	@echo "... home/bvrznski/rebuntu/src/runtime/timeout_enforcement.o"
 	@echo "... home/bvrznski/rebuntu/src/runtime/timeout_enforcement.i"
 	@echo "... home/bvrznski/rebuntu/src/runtime/timeout_enforcement.s"
+	@echo "... home/bvrznski/rebuntu/src/system/environment/scope.o"
+	@echo "... home/bvrznski/rebuntu/src/system/environment/scope.i"
+	@echo "... home/bvrznski/rebuntu/src/system/environment/scope.s"
+	@echo "... home/bvrznski/rebuntu/src/system/environment/sessions.o"
+	@echo "... home/bvrznski/rebuntu/src/system/environment/sessions.i"
+	@echo "... home/bvrznski/rebuntu/src/system/environment/sessions.s"
 	@echo "... home/bvrznski/rebuntu/src/system/install/install.o"
 	@echo "... home/bvrznski/rebuntu/src/system/install/install.i"
 	@echo "... home/bvrznski/rebuntu/src/system/install/install.s"

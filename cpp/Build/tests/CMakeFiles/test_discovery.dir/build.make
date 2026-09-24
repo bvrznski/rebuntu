@@ -116,7 +116,10 @@ tests/test_discovery: librebuntu-ownership.a
 tests/test_discovery: librebuntu-privilege.a
 tests/test_discovery: librebuntu-capability-state.a
 tests/test_discovery: librebuntu-authorization.a
+tests/test_discovery: librebuntu-scope.a
 tests/test_discovery: librebuntu-environment-discovery.a
+tests/test_discovery: librebuntu-sessions.a
+tests/test_discovery: librebuntu-directories.a
 tests/test_discovery: librebuntu-setup.a
 tests/test_discovery: librebuntu-lifecycle.a
 tests/test_discovery: librebuntu-host-foundation.a

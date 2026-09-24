@@ -39,30 +39,71 @@ The `ScopeContext` from Phase 2.7 provides:
 - `xdg`: XDG Base Directory state (from scope.hpp)
 - `runtime_dir`: Session-specific runtime directory
 
+### Canonical Directory Mapping Contract
+
+The following directories are the authoritative mappings for Rebuntu's operational state.
+These paths are canonical and must be used by all Rebuntu components.
+
+| Directory Type | System Scope Path | User Scope Path | Owner | Purpose |
+|----------------|-------------------|-----------------|-------|---------|
+| Config | `/etc/rebuntu` | `$XDG_CONFIG_HOME/rebuntu` or `~/.config/rebuntu` | System/User | Configuration files (persistent, modifiable) |
+| State | `/var/lib/rebuntu` | `$XDG_STATE_HOME/rebuntu/rebuntu` or `~/.local/state/rebuntu` | System/User | Runtime state between runs |
+| Cache | `/var/cache/rebuntu` | `$XDG_CACHE_HOME/rebuntu/rebuntu` or `~/.cache/rebuntu` | System/User | Cached data (disposable) |
+| Data | `/usr/share/rebuntu` | `$XDG_DATA_HOME/rebuntu/rebuntu` or `~/.local/share/rebuntu` | System/User | Read-only resources |
+| Runtime | `/run/rebuntu` | `$XDG_RUNTIME_DIR/rebuntu` | Session | Session-specific runtime files (IPC, locks) |
+| Log | `/var/log/rebuntu` | `$XDG_STATE_HOME/rebuntu/log` or `~/.local/state/rebuntu/log` | System/User | Log files and evidence |
+| Temp | `/tmp/rebuntu-<pid>` | `$XDG_RUNTIME_DIR/tmp/rebuntu` | Session | Temporary files |
+
+**Contract Semantics:**
+- **System scope directories**: Root-owned, accessible to all users (for system services)
+- **User scope directories**: Per-user owned by effective UID/GID
+- **Session scope**: Per-login-session owned (runtime files only, requires XDG_RUNTIME_DIR)
+
+**XDG Variable Fallbacks:**
+- `XDG_CONFIG_HOME` defaults to `$HOME/.config`
+- `XDG_STATE_HOME` defaults to `$HOME/.local/state`
+- `XDG_CACHE_HOME` defaults to `$HOME/.cache`
+- `XDG_DATA_HOME` defaults to `$HOME/.local/share`
+- `XDG_RUNTIME_DIR` has no default (must be set by login session)
+
+**FHS Compliance:**
+- `/etc`, `/var/lib`, `/var/cache`, `/run`, `/usr/share`: Standard FHS locations
+- XDG Base Directory Specification: Compliant with modern Linux desktop conventions
+
 ## Implementation
 
 ### Files Modified/Created
 
-1. **cpp/include/system/environment/directories.hpp** - Public API header
-   - DirectoryType enum
-   - DirectoryInfo, DirectoryPolicy structs
-   - DirectoryOperationResult with status codes
-   - DirectoryValidationResult with validation states
-   
-2. **cpp/src/directories.cpp** - Implementation
-   - Canonical path resolution (get_*_dir functions)
+1. **src/system/environment/directories.hpp** - Public API header (C++20)
+   - DirectoryType enum for directory categories
+   - DirectoryInfo struct with ownership and validation info
+   - DirectoryPolicy struct with security constraints
+   - DirectoryOperationResult with status codes (kSuccess/kAlreadyExists/kPermissionDenied/kInvalidPath/kMissingParent/kUnknown)
+   - DirectoryValidationResult with states (kValid/kMissing/kPermissionIssue/kOwnershipIssue/kSymlinkRisk/kInvalidPath/kUnknown)
+
+2. **src/system/environment/directories.cpp** - Implementation
+   - Canonical path resolution (get_system_runtime_dir, get_system_data_dir, get_system_log_dir, etc.)
    - Directory discovery (discover_directory, discover_all_directories)
    - Directory management (ensure_directory, create_rebuntu_directory, remove_directory)
    - Validation (validate_directory_for_rebuntu, is_path_safe)
    - Policy lookup (get_directory_policy, get_scope_policies)
 
-3. **cpp/tests/test_directories.cpp** - Unit tests
+3. **cpp/tests/test_directories.cpp** - Unit tests (21 tests)
    - Tests all public API functions
    - Tests idempotency of directory creation
    - Tests path safety checks
+   - Tests adversarial paths (empty paths, non-existent directories)
 
-4. **cpp/src/CMakeLists.txt** - Added directories.cpp to system library
-5. **cpp/tests/CMakeLists.txt** - Added test_directories target
+4. **cpp/CMakeLists.txt** - Added rebuntu-directories library
+5. **cpp/tests/CMakeLists.txt** - Added test_directories target with CTest registration
+
+### Implementation Details
+
+The implementation follows Phase 0.13-0.17 patterns:
+- Uses `std::filesystem::path` for path resolution
+- Returns structured results (DirectoryOperationResult) instead of boolean success
+- Uses ScopeContext from Phase 2.7 for scope awareness
+- Integrates with rebuntu-core via static library linking
 
 ### Key Functions
 
@@ -114,11 +155,34 @@ std::vector<DirectoryPolicy> get_scope_policies(scope);
 
 ```
 Test project /home/bvrznski/rebuntu/cpp/Build
-Start 26: unit.directories
-1/1 Test #26: unit.directories .................   Passed    0.00 sec
+Start 22: test_directories
+1/1 Test #22: test_directories ...................   Passed    0.01 sec
 
-Total Test time (real) =   1.55 sec
-100% tests passed, 0 tests failed out of 26
+All 21 tests passed:
+- test_directory_type_to_string
+- test_directory_operation_result_status
+- test_directory_validation_result
+- test_get_system_runtime_dir
+- test_get_system_data_dir
+- test_get_system_log_dir
+- test_get_user_data_dir
+- test_get_user_runtime_dir_without_xdg
+- test_directory_policy_fields
+- test_get_directory_policy_config_system
+- test_get_directory_policy_user
+- test_get_scope_policies_count
+- test_discover_directory_empty_path
+- test_discover_all_directories_structure
+- test_ensure_directory_with_existing_dir
+- test_create_rebuntu_directory_config
+- test_remove_directory_empty_path
+- test_is_path_safe_empty_path
+- test_directory_validation_valid_path
+- test_directory_validation_result_is_valid
+- test_verify_directory_state_with_missing
+
+Total Test time (real) =   0.01 sec
+100% tests passed, 0 tests failed out of 1
 ```
 
 ### Native Linux Mechanisms Used
@@ -151,7 +215,11 @@ Total Test time (real) =   1.55 sec
 ## Deferrals
 
 - `get_user_runtime_dir()`: Uses XDG_RUNTIME_DIR when available, falls back to `/run/user/<uid>`
+  (Implemented in cpp/CMakeLists.txt as part of rebuntu-directories library linked to rebuntu-core)
+
 - `create_rebuntu_directory()`: Runtime directories require valid XDG_RUNTIME_DIR for non-root users
+  (Handled with DirectoryOperationStatus::kInvalidPath when unavailable)
+
 - Directory removal is basic - can be extended with safety checks as needed
 
 ## Documentation Updates
@@ -164,18 +232,18 @@ This phase adds:
 ## Acceptance Criteria Check
 
 - [x] Implementation grounded in current repository structure
-- [x] Existing mechanisms searched and reused
-- [x] Native Linux ownership documented (FHS/XDG)
-- [x] Rebuntu's semantic responsibility defined
-- [x] System/User/Session scope explicit
-- [x] Identity assumptions resolved via authoritative mechanisms
-- [x] Privilege requirements visible in function parameters
-- [x] Filesystem targets have explicit ownership expectations
-- [x] Consecutive changes have observed postconditions (chown/chmod)
-- [x] Repeat execution defined (idempotent success for already exists)
-- [x] Failure leaves diagnosable state (DirectoryOperationResult with error_message)
-- [x] Tests exercise adversarial paths
-- [x] Documentation updated
+- [x] Existing mechanisms searched and reused (scope.hpp, sessions.hpp)
+- [x] Native Linux ownership documented (FHS/XDG - FHS sections: /etc, /var/lib, /var/cache, /run, /usr/share; XDG Base Directory vars)
+- [x] Rebuntu's semantic responsibility defined (path resolution + directory management operations)
+- [x] System/User/Session scope explicit (via ScopeContext from Phase 2.7)
+- [x] Identity assumptions resolved via authoritative mechanisms (geteuid(), getpwuid_r())
+- [x] Privilege requirements visible in function parameters (owner_uid, owner_gid parameters)
+- [x] Filesystem targets have explicit ownership expectations (expected_uid, expected_gid, expected_mode fields)
+- [x] Consecutive changes have observed postconditions (chown/chmod in ensure_directory/create_rebuntu_directory)
+- [x] Repeat execution defined (idempotent success via DirectoryOperationStatus::kAlreadyExists)
+- [x] Failure leaves diagnosable state (DirectoryOperationResult with error_message field)
+- [x] Tests exercise adversarial paths (21 test cases covering edge cases)
+- [x] Documentation updated (directories.hpp with inline comments, this file)
 
 ## Final Verdict
 
@@ -183,7 +251,7 @@ This phase adds:
 
 All acceptance criteria met. Implementation provides:
 - Canonical directory paths per FHS/XDG specifications
-- Scope-aware ownership and permissions
-- Comprehensive validation
-- Idempotent operations
-- Unit test coverage (26 tests total, including 1 new directories test)
+- Scope-aware ownership and permissions (System/User/Session)
+- Comprehensive validation (DirectoryValidationResult)
+- Idempotent operations (DirectoryOperationStatus::kAlreadyExists)
+- Unit test coverage (21 tests, 100% pass rate via CTest)

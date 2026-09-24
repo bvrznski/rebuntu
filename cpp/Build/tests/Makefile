@@ -392,6 +392,48 @@ host_foundation_test/fast:
 	cd /home/bvrznski/rebuntu/cpp/Build && $(MAKE) $(MAKESILENT) -f tests/CMakeFiles/host_foundation_test.dir/build.make tests/CMakeFiles/host_foundation_test.dir/build
 .PHONY : host_foundation_test/fast
 
+# Convenience name for target.
+tests/CMakeFiles/test_scope.dir/rule:
+	cd /home/bvrznski/rebuntu/cpp/Build && $(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 tests/CMakeFiles/test_scope.dir/rule
+.PHONY : tests/CMakeFiles/test_scope.dir/rule
+
+# Convenience name for target.
+test_scope: tests/CMakeFiles/test_scope.dir/rule
+.PHONY : test_scope
+
+# fast build rule for target.
+test_scope/fast:
+	cd /home/bvrznski/rebuntu/cpp/Build && $(MAKE) $(MAKESILENT) -f tests/CMakeFiles/test_scope.dir/build.make tests/CMakeFiles/test_scope.dir/build
+.PHONY : test_scope/fast
+
+# Convenience name for target.
+tests/CMakeFiles/test_sessions.dir/rule:
+	cd /home/bvrznski/rebuntu/cpp/Build && $(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 tests/CMakeFiles/test_sessions.dir/rule
+.PHONY : tests/CMakeFiles/test_sessions.dir/rule
+
+# Convenience name for target.
+test_sessions: tests/CMakeFiles/test_sessions.dir/rule
+.PHONY : test_sessions
+
+# fast build rule for target.
+test_sessions/fast:
+	cd /home/bvrznski/rebuntu/cpp/Build && $(MAKE) $(MAKESILENT) -f tests/CMakeFiles/test_sessions.dir/build.make tests/CMakeFiles/test_sessions.dir/build
+.PHONY : test_sessions/fast
+
+# Convenience name for target.
+tests/CMakeFiles/test_directories.dir/rule:
+	cd /home/bvrznski/rebuntu/cpp/Build && $(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 tests/CMakeFiles/test_directories.dir/rule
+.PHONY : tests/CMakeFiles/test_directories.dir/rule
+
+# Convenience name for target.
+test_directories: tests/CMakeFiles/test_directories.dir/rule
+.PHONY : test_directories
+
+# fast build rule for target.
+test_directories/fast:
+	cd /home/bvrznski/rebuntu/cpp/Build && $(MAKE) $(MAKESILENT) -f tests/CMakeFiles/test_directories.dir/build.make tests/CMakeFiles/test_directories.dir/build
+.PHONY : test_directories/fast
+
 automation_test.o: automation_test.cpp.o
 .PHONY : automation_test.o
 
@@ -896,6 +938,78 @@ settings_test.cpp.s:
 	cd /home/bvrznski/rebuntu/cpp/Build && $(MAKE) $(MAKESILENT) -f tests/CMakeFiles/settings_test.dir/build.make tests/CMakeFiles/settings_test.dir/settings_test.cpp.s
 .PHONY : settings_test.cpp.s
 
+test_directories.o: test_directories.cpp.o
+.PHONY : test_directories.o
+
+# target to build an object file
+test_directories.cpp.o:
+	cd /home/bvrznski/rebuntu/cpp/Build && $(MAKE) $(MAKESILENT) -f tests/CMakeFiles/test_directories.dir/build.make tests/CMakeFiles/test_directories.dir/test_directories.cpp.o
+.PHONY : test_directories.cpp.o
+
+test_directories.i: test_directories.cpp.i
+.PHONY : test_directories.i
+
+# target to preprocess a source file
+test_directories.cpp.i:
+	cd /home/bvrznski/rebuntu/cpp/Build && $(MAKE) $(MAKESILENT) -f tests/CMakeFiles/test_directories.dir/build.make tests/CMakeFiles/test_directories.dir/test_directories.cpp.i
+.PHONY : test_directories.cpp.i
+
+test_directories.s: test_directories.cpp.s
+.PHONY : test_directories.s
+
+# target to generate assembly for a file
+test_directories.cpp.s:
+	cd /home/bvrznski/rebuntu/cpp/Build && $(MAKE) $(MAKESILENT) -f tests/CMakeFiles/test_directories.dir/build.make tests/CMakeFiles/test_directories.dir/test_directories.cpp.s
+.PHONY : test_directories.cpp.s
+
+test_scope.o: test_scope.cpp.o
+.PHONY : test_scope.o
+
+# target to build an object file
+test_scope.cpp.o:
+	cd /home/bvrznski/rebuntu/cpp/Build && $(MAKE) $(MAKESILENT) -f tests/CMakeFiles/test_scope.dir/build.make tests/CMakeFiles/test_scope.dir/test_scope.cpp.o
+.PHONY : test_scope.cpp.o
+
+test_scope.i: test_scope.cpp.i
+.PHONY : test_scope.i
+
+# target to preprocess a source file
+test_scope.cpp.i:
+	cd /home/bvrznski/rebuntu/cpp/Build && $(MAKE) $(MAKESILENT) -f tests/CMakeFiles/test_scope.dir/build.make tests/CMakeFiles/test_scope.dir/test_scope.cpp.i
+.PHONY : test_scope.cpp.i
+
+test_scope.s: test_scope.cpp.s
+.PHONY : test_scope.s
+
+# target to generate assembly for a file
+test_scope.cpp.s:
+	cd /home/bvrznski/rebuntu/cpp/Build && $(MAKE) $(MAKESILENT) -f tests/CMakeFiles/test_scope.dir/build.make tests/CMakeFiles/test_scope.dir/test_scope.cpp.s
+.PHONY : test_scope.cpp.s
+
+test_sessions.o: test_sessions.cpp.o
+.PHONY : test_sessions.o
+
+# target to build an object file
+test_sessions.cpp.o:
+	cd /home/bvrznski/rebuntu/cpp/Build && $(MAKE) $(MAKESILENT) -f tests/CMakeFiles/test_sessions.dir/build.make tests/CMakeFiles/test_sessions.dir/test_sessions.cpp.o
+.PHONY : test_sessions.cpp.o
+
+test_sessions.i: test_sessions.cpp.i
+.PHONY : test_sessions.i
+
+# target to preprocess a source file
+test_sessions.cpp.i:
+	cd /home/bvrznski/rebuntu/cpp/Build && $(MAKE) $(MAKESILENT) -f tests/CMakeFiles/test_sessions.dir/build.make tests/CMakeFiles/test_sessions.dir/test_sessions.cpp.i
+.PHONY : test_sessions.cpp.i
+
+test_sessions.s: test_sessions.cpp.s
+.PHONY : test_sessions.s
+
+# target to generate assembly for a file
+test_sessions.cpp.s:
+	cd /home/bvrznski/rebuntu/cpp/Build && $(MAKE) $(MAKESILENT) -f tests/CMakeFiles/test_sessions.dir/build.make tests/CMakeFiles/test_sessions.dir/test_sessions.cpp.s
+.PHONY : test_sessions.cpp.s
+
 user_identity_test.o: user_identity_test.cpp.o
 .PHONY : user_identity_test.o
 
@@ -944,8 +1058,11 @@ help:
 	@echo "... runtime_runner_test"
 	@echo "... settings_test"
 	@echo "... structured_setup_test"
+	@echo "... test_directories"
 	@echo "... test_discovery"
 	@echo "... test_runtime_contracts"
+	@echo "... test_scope"
+	@echo "... test_sessions"
 	@echo "... test_state_provider"
 	@echo "... user_identity_test"
 	@echo "... automation_test.o"
@@ -1011,6 +1128,15 @@ help:
 	@echo "... settings_test.o"
 	@echo "... settings_test.i"
 	@echo "... settings_test.s"
+	@echo "... test_directories.o"
+	@echo "... test_directories.i"
+	@echo "... test_directories.s"
+	@echo "... test_scope.o"
+	@echo "... test_scope.i"
+	@echo "... test_scope.s"
+	@echo "... test_sessions.o"
+	@echo "... test_sessions.i"
+	@echo "... test_sessions.s"
 	@echo "... user_identity_test.o"
 	@echo "... user_identity_test.i"
 	@echo "... user_identity_test.s"

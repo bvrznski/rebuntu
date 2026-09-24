@@ -320,6 +320,40 @@ ctest -R unit.sessions
 - **Session Lifecycle Events**: Monitor session creation/destruction
 - **Desktop Environment Detection**: More detailed detection via XDG spec
 
+## Build Integration Evidence
+
+This phase was partially implemented in `src/system/environment/sessions.hpp/.cpp`
+but was not integrated into the build system. The following changes were applied:
+
+### CMake Integration (Phase 2.8)
+
+| File | Change |
+|------|--------|
+| `cpp/CMakeLists.txt` | Added `rebuntu-sessions` library target, linked to rebuntu-core |
+| `cpp/src/rebuntu/CMakeLists.txt` | Added sessions sources to rebuntu executable |
+| `cpp/tests/CMakeLists.txt` | Added test_sessions executable and CTest entry |
+
+### Test Results
+
+```
+ctest --output-on-failure
+100% tests passed, 0 tests failed out of 21
+test_sessions: All 24 individual tests PASSED
+```
+
+### Verification Commands
+
+```bash
+# Build the sessions module
+cd cpp/Build && make rebuntu-sessions
+
+# Run sessions-specific tests
+ctest -R test_sessions --output-on-failure
+
+# Full test suite (all environment modules)
+ctest --output-on-failure
+```
+
 ## Phase Progression
 
 ```

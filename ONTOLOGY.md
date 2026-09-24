@@ -146,9 +146,51 @@ Workflow         ─invokes─▶  Unit(s)
 - A **Unit** is an executable/operational definition that can be invoked,
   activated, composed, scheduled, inspected and verified.
   
-- An **Operation** (Phase 0.10) is a reusable, explicitly contracted system
-  capability that observes, queries, changes, constructs, removes, transforms,
-  or controls system state or resources with full contract semantics.
+  - An **Operation** (Phase 0.10) is a reusable, explicitly contracted system
+    capability that observes, queries, changes, constructs, removes, transforms,
+    or controls system state or resources with full contract semantics.
+
+## Work Ontology Chain (Phase 0.8)
+
+```
+Unit (reusable definition)
+    +
+parameters
+    ↓
+Task (parameterized work specification)
+    ↓ submit
+Job (submitted/scheduled/executing realization)
+    ↓ execute
+Attempt 1 → (may fail, preserves failure evidence)
+Attempt 2 → (may fail, preserves failure evidence)
+Attempt N → (final attempt with outcome)
+    ↓ produces
+Result (outcome with status, evidence, verification)
+```
+
+### Distinctions
+
+| Concept | Definition | Persistent? |
+|---|---|---|
+| **Task** | Bounded specification of work to be performed. Does not imply scheduling or execution instance. Reusable across invocations. | Optional - depends on use case |
+| **Job** | Concrete submitted/scheduled/executing realization of a Task. Has lifecycle state and may have multiple attempts. | Optional - for async/schedulable work |
+| **Execution** | Runtime occurrence of performing work. May be implemented by subprocess, thread, D-Bus call, etc. Unique identity independent from OS process. | NO - runtime transient |
+| **Attempt** | One try to perform a Job. Each has unique ExecutionId. Preserves failure history for retry semantics. | Optional - for recovery evidence |
+
+### Retry Semantics
+
+Each Job can specify:
+- `max_attempts`: Total attempts including initial (default: 1)
+- `retry_policy`: Backoff and retry behavior
+- `timeout_policy`: Operation and verification timeouts
+
+Each Attempt has:
+- Unique ExecutionId
+- Attempt number within Job
+- Start/finish timestamps
+- Outcome with SemanticStatus
+
+Previous failure history is preserved across retries - a later success does not erase earlier failures.
   
   An Operation defines:
     - WHAT it does (semantic purpose)

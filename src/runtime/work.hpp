@@ -1,6 +1,5 @@
 #pragma once
 
-#include <runtime/core/contracts.hpp>
 #include <runtime/contracts.hpp>
 #include <chrono>
 #include <optional>
@@ -124,7 +123,7 @@ struct Attempt {
     AttemptState state = AttemptState::kCreated;
     ExecutionMode mode = ExecutionMode::kInline;
     std::optional<int32_t> pid;
-    std::optional<core::Outcome> outcome;
+    std::optional<rebuntu::core::Outcome> outcome;
 };
 
 struct TaskInstance {
@@ -144,14 +143,14 @@ struct ExecutionRecord {
     ExecutionMode mode = ExecutionMode::kInline;
     std::optional<int32_t> pid;
     std::string executor_id;
-    core::Outcome outcome;
+    rebuntu::core::Outcome outcome;
 };
 
 struct AttemptResult {
     ExecutionId execution_id;
     AttemptNumber number;
     bool is_last_attempt;
-    core::Outcome outcome;
+    rebuntu::core::Outcome outcome;
     std::optional<std::chrono::milliseconds> preparation_duration;
     std::optional<std::chrono::milliseconds> execution_duration;
     std::optional<std::chrono::milliseconds> verification_duration;
@@ -160,8 +159,8 @@ struct AttemptResult {
 struct JobSummary {
     JobId id;
     std::string task_id;
-    runtime::WorkState work_state = runtime::WorkState::kIdle;
-    runtime::HealthState health_state = runtime::HealthState::kUnknown;
+    rebuntu::runtime::WorkState work_state = rebuntu::runtime::WorkState::kIdle;
+    rebuntu::runtime::HealthState health_state = rebuntu::runtime::HealthState::kUnknown;
     JobState state = JobState::kCreated;
     int attempts_total = 0;
     int attempts_completed = 0;
@@ -169,7 +168,7 @@ struct JobSummary {
     std::chrono::system_clock::time_point created_at;
     std::optional<std::chrono::system_clock::time_point> started_at;
     std::optional<std::chrono::system_clock::time_point> completed_at;
-    std::optional<core::Outcome> final_outcome;
+    std::optional<rebuntu::core::Outcome> final_outcome;
 };
 
 }

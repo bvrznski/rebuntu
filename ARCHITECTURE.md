@@ -122,7 +122,7 @@ fundamentally different concepts.
 *Category:* structural family (smallest structural level).
 *Status:* CURRENT (ComponentKind::kUnit exists in cpp/include/system/core/contracts.hpp).
 
-Unit relationships:
+**Unit relationships:**
 - A Module may contain or implement multiple Units.
 - Task refers to a Unit as its implementation.
 - Job is the concrete submitted/executing realization of work using a Unit.
@@ -149,6 +149,49 @@ Unit (reusable definition) + parameters → Task → submit → Job → execute 
 
 The execution mode is orthogonal to Unit identity — Units may be invoked in-process,
 via subprocess, through Service IPC, or via systemd activation.
+
+### Work Ontology Chain (Phase 0.8)
+
+```
+Unit (reusable definition)
+    +
+parameters
+    ↓
+Task (parameterized work specification) — *specification*
+    ↓ submit
+Job (submitted/scheduled/executing realization) — *managed instance*
+    ↓ execute
+Attempt 1 → (may fail, preserves failure evidence)
+Attempt 2 → (may fail, preserves failure evidence)
+Attempt N → (final attempt with outcome)
+    ↓ produces
+Result (outcome with status, evidence, verification)
+```
+
+#### Distinctions
+
+| Concept | Definition | Persistent? |
+|---|---|---|
+| **Task** | Bounded specification of work to be performed. Does not imply scheduling or execution instance. Reusable across invocations. | Optional - depends on use case |
+| **Job** | Concrete submitted/scheduled/executing realization of a Task. Has lifecycle state and may have multiple attempts. | Optional - for async/schedulable work |
+| **Execution** | Runtime occurrence of performing work. May be implemented by subprocess, thread, D-Bus call, etc. Unique identity independent from OS process. | NO - runtime transient |
+| **Attempt** | One try to perform a Job. Each has unique ExecutionId. Preserves failure history for retry semantics. | Optional - for recovery evidence |
+
+#### Key Distinctions
+
+1. **Task != Job**: Task is specification; Job is managed instance
+2. **Job != Execution**: Job may exist before execution; one job can have multiple executions  
+3. **Execution != Process**: Execution is semantic entity, process is OS entity
+
+#### Implementation Status
+
+**Status:** CURRENT (types implemented in `src/runtime/work.hpp`)
+
+- Identifiers: TaskId, JobId, ExecutionId, AttemptNumber
+- State enums: TaskState, JobState, AttemptState, CancellationReason  
+- Data structures: Task, Job, Attempt, TaskInstance, ExecutionRecord, AttemptResult, JobSummary
+
+See also discovery `docs/discoveries/0028-phase-0.8-work-ontology.md`.
 
 ### Interface (NEW in 0.1)
 

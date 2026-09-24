@@ -209,21 +209,75 @@ distinction is deliberately **not** drawn.
   *Status:* RESOLVED-HYPOTHESIS.
 
 - **Job** — the *submitted / scheduled / executing realization* of a Task.
-  
-  **DISTINCTION: UNIT vs JOB**
-    - Unit = reusable definition (filesystem.copy)
-    - Job = concrete submitted/executing realization
-  
-  Potential chain:
-    ```
-    Unit + parameters -> Task -> submit -> Job -> execute -> Result
-    ```
-  
-  *Status:* RESOLVED-HYPOTHESIS.
+   
+   **DISTINCTION: UNIT vs JOB**
+     - Unit = reusable definition (filesystem.copy)
+     - Job = concrete submitted/executing realization
+   
+   Potential chain:
+     ```
+     Unit + parameters -> Task -> submit -> Job -> execute -> Result
+     ```
+   
+   *Status:* CURRENT (types implemented in src/runtime/work.hpp).
+
+- **Attempt** — one try to perform a Job. Relevant for retry semantics.
+   
+   Each Attempt has:
+     - unique ExecutionId for identification
+     - attempt number within the Job
+     - start/finish timestamps
+     - outcome with SemanticStatus
+   
+   Multiple Attempts may exist for a single Job (for retries).
+   Previous failure history is preserved across attempts.
+
+- **Execution** — the runtime occurrence of performing work.
+   
+   An Execution:
+     - represents actual execution activity
+     - may be implemented by subprocess, thread, D-Bus call, etc.
+     - has unique identity independent from OS process
+   
+   Distinction: EXECUTION != PROCESS
+     - Execution = Rebuntu semantic/runtime entity
+     - Process = operating-system runtime entity (PID)
 
 - **Instance** — a concrete runtime occurrence of a defined thing. Distinct from
   its specification (e.g., TaskDefinition vs TaskInstance/Job). *Category:*
   runtime concept, not structural type. *Status:* RESOLVED-HYPOTHESIS.
+
+## Work Ontology State Axes (Phase 0.8)
+
+The work ontology uses orthogonal state dimensions:
+
+### TaskState
+| Value | Description |
+|---|---|
+| kCreated | Defined but not ready for execution |
+| kReady | Ready to be submitted |
+| kCancelled | Cancelled before execution |
+| kDeprecated | Superseded by newer version |
+
+### JobState  
+| Value | Description |
+|---|---|
+| kCreated | Submitted but not yet processed |
+| kQueued | Waiting in queue |
+| kReady | Ready to start |
+| kRunning | Currently executing |
+| kCompleted | Finished successfully |
+| kFailed | Terminated with error |
+| kCancelled | Cancelled during execution |
+
+### AttemptState
+| Value | Description |
+|---|---|
+| kCreated | Attempt created |
+| kStarting | Initialization in progress |
+| kRunning | Main work executing |
+| kFinishing | Cleanup/verification phase |
+| kFinished | Attempt complete |
 
 ## Runtime & Lifecycle Dimensions
 

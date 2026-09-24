@@ -3,6 +3,8 @@
 
 add_library(rebuntu-install STATIC
     contracts.hpp
+    discovery.hpp
+    discovery.cpp
     forms.hpp
     install.cpp
     install_planning.cpp

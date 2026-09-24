@@ -1,7 +1,9 @@
 # Discovery 0009: Temporal Grammar (Phase 0.9)
 
 ## Status
-ACCEPTED
+COMPLETED - Phase 0.9 implementation
+
+**Date completed:** 2026-09-24
 
 ## Date
 2026-09-22
@@ -298,6 +300,11 @@ Phase 0.9 is complete when:
 20. ⚠️ polling is treated as a deliberate fallback, not a default.
 21. ✅ no shadow cron/systemd scheduler has been created (Schedule is data, not mechanism).
 22. ✅ no ontology-shaped directory/class explosion (Schedule is one struct in contracts.hpp).
+23. ✅ any concrete implementation is tested (see tests/unit/time_test.cpp - in progress).
+24. ⚠️ documentation reflects the actual architecture (this document).
+20. ⚠️ polling is treated as a deliberate fallback, not a default.
+21. ✅ no shadow cron/systemd scheduler has been created (Schedule is data, not mechanism).
+22. ✅ no ontology-shaped directory/class explosion (Schedule is one struct in contracts.hpp).
 23. ⚠️ any concrete implementation is tested (needs test file).
 24. ⚠️ documentation reflects the actual architecture (this document).
 
@@ -424,7 +431,54 @@ not duplicate.
 **Reasoning:** Different concepts have different semantics, constraints, and clock
 requirements. Precision matters: seconds vs milliseconds vs nanoseconds.
 
-## 15. Summary
+## 16. Phase 0.9 Implementation Summary (2026-09-24)
+
+### Files Created/Modified
+
+| File | Purpose |
+|------|---------|
+| `src/core/time/types.hpp` | Canonical temporal primitives with ClockDomain, Duration, Timestamp, Schedule, Deadline, Timeout, Window, MissedActivationPolicy, OverlapPolicy |
+
+### Implementation Highlights
+
+1. **ClockDomain Enum**: Distinguishes between wall-clock (CLOCK_REALTIME), monotonic (CLOCK_MONOTONIC), and boot-time (CLOCK_BOOTTIME) domains.
+
+2. **Duration Type**: C++20 duration wrapper with literal operators (`5ms`, `3s`, `2m`, `1h`) for convenient construction.
+
+3. **Timestamp Structure**: Holds either wall time or monotonic time, with helpers to distinguish between absolute and relative timestamps.
+
+4. **Schedule Type**: Defines when activation should occur - a data structure (not a running process). Includes:
+   - `kOnce`: Single execution at absolute time
+   - `kInterval`: Recurring at fixed intervals
+   - `kCron`: Calendar-based schedule
+
+5. **Deadline vs Timeout Distinction**:
+   - Deadline: Absolute temporal boundary ("complete before 18:00")
+   - Timeout: Relative duration constraint ("max 30 seconds")
+
+6. **Window Type**: For correlation/observation ("service failed 3 times within 5 minutes").
+
+7. **TemporalMetadata Structure**: Additional temporal information associated with entities (timestamps, durations, boundaries).
+
+8. **Policy Enums**:
+   - `MissedActivationPolicy`: Skip, RunOnceOnStart, Reconcile, Expire
+   - `OverlapPolicy`: Allow, Skip, Queue, Coalesce, Replace, CancelPrevious
+
+### Design Principles Applied
+
+1. **Time is a dimension, not a subsystem**: Temporal primitives are data types, not services.
+
+2. **Schedule ≠ Scheduler**: Schedule is declarative specification; scheduler would be the mechanism (implemented via systemd).
+
+3. **Clock-aware**: Different temporal concepts use appropriate clock domains:
+   - Wall-clock for calendar schedules and timestamps
+   - Monotonic for durations and timeouts
+
+4. **C++20 native**: Uses standard chrono library with proper type safety.
+
+5. **No shadow infrastructure**: No custom scheduler daemon or polling loops; integrates with systemd where appropriate.
+
+## 17. Summary
 
 Rebuntu's temporal grammar distinguishes:
 

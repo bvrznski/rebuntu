@@ -8,6 +8,9 @@ target_include_directories(rebuntu-core PUBLIC
     ${CMAKE_CURRENT_LIST_DIR}/../../src
 )
 
+# Add system header path explicitly for lifecycle.cpp includes
+target_include_directories(rebuntu-core PRIVATE ${CMAKE_CURRENT_LIST_DIR}/../../include)
+
 # Provider registry implementation (Phase 0.16) - in interfaces directory
 set(PROVIDER_REGISTRY_SRCS
     ${CMAKE_SOURCE_DIR}/../src/interfaces/provider_registry.cpp
@@ -25,3 +28,9 @@ set(CONFIG_GRAMMAR_SRCS
     ${CMAKE_SOURCE_DIR}/../src/runtime/config.hpp
 )
 target_sources(rebuntu-core PRIVATE ${CONFIG_GRAMMAR_SRCS})
+
+# Lifecycle Operations Implementation (Phase 1.11)
+set(LIFECYCLE_SRCS
+    ${CMAKE_CURRENT_LIST_DIR}/lifecycle.cpp
+)
+target_sources(rebuntu-core PRIVATE ${LIFECYCLE_SRCS})

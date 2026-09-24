@@ -1,0 +1,16 @@
+install_planning_test 3 0.00116903
+runtime_runner_test 3 0.00100222
+automation_test 3 0.000969777
+test_runtime_contracts 3 0.000872567
+test_state_provider 3 0.000892093
+events_test 3 0.0175536
+results_test 3 0.00104169
+test_discovery 3 0.00100637
+settings_test 3 0.00105348
+config_test 3 0.00098975
+preferences_test 3 0.000859243
+structured_setup_test 3 0.000775117
+profile_test 3 0.000779233
+user_identity_test 3 0.00173699
+lifecycle_test 3 0.00109935
+---

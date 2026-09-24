@@ -52,6 +52,14 @@ target_include_directories(settings_test PRIVATE
     ${CMAKE_SOURCE_DIR}
 )
 
+# Preferences Model tests (Phase 1.7)
+add_executable(preferences_test ../../tests/native/test_preferences.cpp)
+target_link_libraries(preferences_test rebuntu-core)
+target_include_directories(preferences_test PRIVATE 
+    ${CMAKE_SOURCE_DIR}/src
+    ${CMAKE_SOURCE_DIR}
+)
+
 # Config & Specification Grammar tests (Phase 0.18)
 add_executable(config_test config_test.cpp)
 target_link_libraries(config_test rebuntu-core)
@@ -97,6 +105,7 @@ add_test(NAME results_test COMMAND results_test)
 add_test(NAME test_discovery COMMAND test_discovery)
 add_test(NAME settings_test COMMAND settings_test)
 add_test(NAME config_test COMMAND config_test)
+add_test(NAME preferences_test COMMAND preferences_test)
 
 # Structured setup forms test (Phase 1.3)
 add_executable(structured_setup_test ../../tests/rebuntu/test_structured_setup.cpp)

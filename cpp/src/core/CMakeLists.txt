@@ -29,6 +29,16 @@ set(CONFIG_GRAMMAR_SRCS
 )
 target_sources(rebuntu-core PRIVATE ${CONFIG_GRAMMAR_SRCS})
 
+# Preferences Model (Phase 1.7) - header and implementation
+set(PREFERENCES_MODEL_HDRS
+    ${CMAKE_SOURCE_DIR}/../src/runtime/preferences.hpp
+)
+set(PREFERENCES_IO_IMPL
+    ${CMAKE_SOURCE_DIR}/../src/runtime/preferences/io.hpp
+    ${CMAKE_SOURCE_DIR}/../src/runtime/preferences/io.cpp
+)
+target_sources(rebuntu-core PRIVATE ${PREFERENCES_MODEL_HDRS} ${PREFERENCES_IO_IMPL})
+
 # Lifecycle Operations Implementation (Phase 1.11)
 set(LIFECYCLE_SRCS
     ${CMAKE_CURRENT_LIST_DIR}/lifecycle.cpp

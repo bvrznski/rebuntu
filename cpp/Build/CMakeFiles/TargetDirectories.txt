@@ -42,6 +42,7 @@
 /home/bvrznski/rebuntu/cpp/Build/tests/CMakeFiles/events_test.dir
 /home/bvrznski/rebuntu/cpp/Build/tests/CMakeFiles/results_test.dir
 /home/bvrznski/rebuntu/cpp/Build/tests/CMakeFiles/settings_test.dir
+/home/bvrznski/rebuntu/cpp/Build/tests/CMakeFiles/preferences_test.dir
 /home/bvrznski/rebuntu/cpp/Build/tests/CMakeFiles/config_test.dir
 /home/bvrznski/rebuntu/cpp/Build/tests/CMakeFiles/install_planning_test.dir
 /home/bvrznski/rebuntu/cpp/Build/tests/CMakeFiles/test_discovery.dir

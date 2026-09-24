@@ -88,6 +88,7 @@ set(CMAKE_DEPEND_INFO_FILES
   "tests/CMakeFiles/events_test.dir/DependInfo.cmake"
   "tests/CMakeFiles/results_test.dir/DependInfo.cmake"
   "tests/CMakeFiles/settings_test.dir/DependInfo.cmake"
+  "tests/CMakeFiles/preferences_test.dir/DependInfo.cmake"
   "tests/CMakeFiles/config_test.dir/DependInfo.cmake"
   "tests/CMakeFiles/install_planning_test.dir/DependInfo.cmake"
   "tests/CMakeFiles/test_discovery.dir/DependInfo.cmake"

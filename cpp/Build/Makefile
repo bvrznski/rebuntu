@@ -621,6 +621,19 @@ settings_test/fast:
 .PHONY : settings_test/fast
 
 #=============================================================================
+# Target rules for targets named preferences_test
+
+# Build rule for target.
+preferences_test: cmake_check_build_system
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 preferences_test
+.PHONY : preferences_test
+
+# fast build rule for target.
+preferences_test/fast:
+	$(MAKE) $(MAKESILENT) -f tests/CMakeFiles/preferences_test.dir/build.make tests/CMakeFiles/preferences_test.dir/build
+.PHONY : preferences_test/fast
+
+#=============================================================================
 # Target rules for targets named config_test
 
 # Build rule for target.
@@ -835,6 +848,7 @@ help:
 	@echo "... config_test"
 	@echo "... events_test"
 	@echo "... install_planning_test"
+	@echo "... preferences_test"
 	@echo "... rebuntu"
 	@echo "... rebuntu-core"
 	@echo "... rebuntu-install"

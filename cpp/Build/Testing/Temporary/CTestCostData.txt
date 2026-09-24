@@ -1,13 +1,14 @@
-user_identity_test 5 0.00103207
-install_planning_test 4 0.000831868
-runtime_runner_test 4 0.00105203
-automation_test 4 0.000642645
-test_runtime_contracts 4 0.000613803
-test_state_provider 4 0.000733295
-events_test 4 0.013264
-results_test 4 0.000805323
-test_discovery 4 0.00072655
-config_test 4 0.000798493
-structured_setup_test 4 0.000679937
-settings_test 7 0.000341671
+user_identity_test 6 0.00081474
+install_planning_test 5 0.000705354
+runtime_runner_test 5 0.00061575
+automation_test 5 0.000581462
+test_runtime_contracts 5 0.00086111
+test_state_provider 5 0.000658984
+events_test 5 0.0106352
+results_test 5 0.000558692
+test_discovery 5 0.000634752
+config_test 5 0.000724822
+structured_setup_test 5 0.0006055
+settings_test 8 0.000447528
+preferences_test 5 0.00064473
 ---

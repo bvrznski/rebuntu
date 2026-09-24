@@ -164,6 +164,30 @@ home/bvrznski/rebuntu/src/interfaces/provider_registry.cpp.s:
 	cd /home/bvrznski/rebuntu/cpp/Build && $(MAKE) $(MAKESILENT) -f src/core/CMakeFiles/rebuntu-core.dir/build.make src/core/CMakeFiles/rebuntu-core.dir/home/bvrznski/rebuntu/src/interfaces/provider_registry.cpp.s
 .PHONY : home/bvrznski/rebuntu/src/interfaces/provider_registry.cpp.s
 
+home/bvrznski/rebuntu/src/runtime/preferences/io.o: home/bvrznski/rebuntu/src/runtime/preferences/io.cpp.o
+.PHONY : home/bvrznski/rebuntu/src/runtime/preferences/io.o
+
+# target to build an object file
+home/bvrznski/rebuntu/src/runtime/preferences/io.cpp.o:
+	cd /home/bvrznski/rebuntu/cpp/Build && $(MAKE) $(MAKESILENT) -f src/core/CMakeFiles/rebuntu-core.dir/build.make src/core/CMakeFiles/rebuntu-core.dir/home/bvrznski/rebuntu/src/runtime/preferences/io.cpp.o
+.PHONY : home/bvrznski/rebuntu/src/runtime/preferences/io.cpp.o
+
+home/bvrznski/rebuntu/src/runtime/preferences/io.i: home/bvrznski/rebuntu/src/runtime/preferences/io.cpp.i
+.PHONY : home/bvrznski/rebuntu/src/runtime/preferences/io.i
+
+# target to preprocess a source file
+home/bvrznski/rebuntu/src/runtime/preferences/io.cpp.i:
+	cd /home/bvrznski/rebuntu/cpp/Build && $(MAKE) $(MAKESILENT) -f src/core/CMakeFiles/rebuntu-core.dir/build.make src/core/CMakeFiles/rebuntu-core.dir/home/bvrznski/rebuntu/src/runtime/preferences/io.cpp.i
+.PHONY : home/bvrznski/rebuntu/src/runtime/preferences/io.cpp.i
+
+home/bvrznski/rebuntu/src/runtime/preferences/io.s: home/bvrznski/rebuntu/src/runtime/preferences/io.cpp.s
+.PHONY : home/bvrznski/rebuntu/src/runtime/preferences/io.s
+
+# target to generate assembly for a file
+home/bvrznski/rebuntu/src/runtime/preferences/io.cpp.s:
+	cd /home/bvrznski/rebuntu/cpp/Build && $(MAKE) $(MAKESILENT) -f src/core/CMakeFiles/rebuntu-core.dir/build.make src/core/CMakeFiles/rebuntu-core.dir/home/bvrznski/rebuntu/src/runtime/preferences/io.cpp.s
+.PHONY : home/bvrznski/rebuntu/src/runtime/preferences/io.cpp.s
+
 lifecycle.o: lifecycle.cpp.o
 .PHONY : lifecycle.o
 
@@ -201,6 +225,9 @@ help:
 	@echo "... home/bvrznski/rebuntu/src/interfaces/provider_registry.o"
 	@echo "... home/bvrznski/rebuntu/src/interfaces/provider_registry.i"
 	@echo "... home/bvrznski/rebuntu/src/interfaces/provider_registry.s"
+	@echo "... home/bvrznski/rebuntu/src/runtime/preferences/io.o"
+	@echo "... home/bvrznski/rebuntu/src/runtime/preferences/io.i"
+	@echo "... home/bvrznski/rebuntu/src/runtime/preferences/io.s"
 	@echo "... lifecycle.o"
 	@echo "... lifecycle.i"
 	@echo "... lifecycle.s"

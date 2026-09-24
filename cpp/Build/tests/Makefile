@@ -225,6 +225,20 @@ settings_test/fast:
 .PHONY : settings_test/fast
 
 # Convenience name for target.
+tests/CMakeFiles/preferences_test.dir/rule:
+	cd /home/bvrznski/rebuntu/cpp/Build && $(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 tests/CMakeFiles/preferences_test.dir/rule
+.PHONY : tests/CMakeFiles/preferences_test.dir/rule
+
+# Convenience name for target.
+preferences_test: tests/CMakeFiles/preferences_test.dir/rule
+.PHONY : preferences_test
+
+# fast build rule for target.
+preferences_test/fast:
+	cd /home/bvrznski/rebuntu/cpp/Build && $(MAKE) $(MAKESILENT) -f tests/CMakeFiles/preferences_test.dir/build.make tests/CMakeFiles/preferences_test.dir/build
+.PHONY : preferences_test/fast
+
+# Convenience name for target.
 tests/CMakeFiles/config_test.dir/rule:
 	cd /home/bvrznski/rebuntu/cpp/Build && $(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 tests/CMakeFiles/config_test.dir/rule
 .PHONY : tests/CMakeFiles/config_test.dir/rule
@@ -438,6 +452,30 @@ home/bvrznski/rebuntu/tests/native/test_discovery.cpp.s:
 	cd /home/bvrznski/rebuntu/cpp/Build && $(MAKE) $(MAKESILENT) -f tests/CMakeFiles/test_discovery.dir/build.make tests/CMakeFiles/test_discovery.dir/home/bvrznski/rebuntu/tests/native/test_discovery.cpp.s
 .PHONY : home/bvrznski/rebuntu/tests/native/test_discovery.cpp.s
 
+home/bvrznski/rebuntu/tests/native/test_preferences.o: home/bvrznski/rebuntu/tests/native/test_preferences.cpp.o
+.PHONY : home/bvrznski/rebuntu/tests/native/test_preferences.o
+
+# target to build an object file
+home/bvrznski/rebuntu/tests/native/test_preferences.cpp.o:
+	cd /home/bvrznski/rebuntu/cpp/Build && $(MAKE) $(MAKESILENT) -f tests/CMakeFiles/preferences_test.dir/build.make tests/CMakeFiles/preferences_test.dir/home/bvrznski/rebuntu/tests/native/test_preferences.cpp.o
+.PHONY : home/bvrznski/rebuntu/tests/native/test_preferences.cpp.o
+
+home/bvrznski/rebuntu/tests/native/test_preferences.i: home/bvrznski/rebuntu/tests/native/test_preferences.cpp.i
+.PHONY : home/bvrznski/rebuntu/tests/native/test_preferences.i
+
+# target to preprocess a source file
+home/bvrznski/rebuntu/tests/native/test_preferences.cpp.i:
+	cd /home/bvrznski/rebuntu/cpp/Build && $(MAKE) $(MAKESILENT) -f tests/CMakeFiles/preferences_test.dir/build.make tests/CMakeFiles/preferences_test.dir/home/bvrznski/rebuntu/tests/native/test_preferences.cpp.i
+.PHONY : home/bvrznski/rebuntu/tests/native/test_preferences.cpp.i
+
+home/bvrznski/rebuntu/tests/native/test_preferences.s: home/bvrznski/rebuntu/tests/native/test_preferences.cpp.s
+.PHONY : home/bvrznski/rebuntu/tests/native/test_preferences.s
+
+# target to generate assembly for a file
+home/bvrznski/rebuntu/tests/native/test_preferences.cpp.s:
+	cd /home/bvrznski/rebuntu/cpp/Build && $(MAKE) $(MAKESILENT) -f tests/CMakeFiles/preferences_test.dir/build.make tests/CMakeFiles/preferences_test.dir/home/bvrznski/rebuntu/tests/native/test_preferences.cpp.s
+.PHONY : home/bvrznski/rebuntu/tests/native/test_preferences.cpp.s
+
 home/bvrznski/rebuntu/tests/native/test_runtime_contracts.o: home/bvrznski/rebuntu/tests/native/test_runtime_contracts.cpp.o
 .PHONY : home/bvrznski/rebuntu/tests/native/test_runtime_contracts.o
 
@@ -643,6 +681,7 @@ help:
 	@echo "... config_test"
 	@echo "... events_test"
 	@echo "... install_planning_test"
+	@echo "... preferences_test"
 	@echo "... results_test"
 	@echo "... runtime_runner_test"
 	@echo "... settings_test"
@@ -669,6 +708,9 @@ help:
 	@echo "... home/bvrznski/rebuntu/tests/native/test_discovery.o"
 	@echo "... home/bvrznski/rebuntu/tests/native/test_discovery.i"
 	@echo "... home/bvrznski/rebuntu/tests/native/test_discovery.s"
+	@echo "... home/bvrznski/rebuntu/tests/native/test_preferences.o"
+	@echo "... home/bvrznski/rebuntu/tests/native/test_preferences.i"
+	@echo "... home/bvrznski/rebuntu/tests/native/test_preferences.s"
 	@echo "... home/bvrznski/rebuntu/tests/native/test_runtime_contracts.o"
 	@echo "... home/bvrznski/rebuntu/tests/native/test_runtime_contracts.i"
 	@echo "... home/bvrznski/rebuntu/tests/native/test_runtime_contracts.s"

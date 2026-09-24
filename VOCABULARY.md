@@ -175,19 +175,52 @@ distinction is deliberately **not** drawn.
 
 ## Execution
 
-- **Operation** — a contractual system-level change or query against a target,
-  with inputs, preconditions, result, **verification**, and **evidence**.
-  *Family:* execution. *Principle:* `COMMAND SUCCESS != OPERATION SUCCESS`.
-  
-  **DISTINCTION: UNIT vs OPERATION**
-    - Unit = structural/execution definition (how something is done)
-    - Operation = contract describing a system action/query (what can be done)
-  
-  A likely useful relation:
-    - Unit represents the executable container/definition
-    - Operation describes the semantic action exposed by it
-  
-  *Status:* CURRENT (contracts implemented in cpp/include/system/core/contracts.hpp).
+- **Operation** — a reusable, explicitly contracted system capability that
+   observes, queries, changes, constructs, removes, transforms, or controls
+   system state or resources with full contract semantics.
+   
+   An Operation is NOT:
+     - A shell command or script (that's an *execution* of the operation)
+     - A Unit (Units are structural execution definitions)
+     - A Task (Tasks parameterize Operations for concrete work)
+     - A Job (Jobs are runtime realizations of Tasks)
+     - A Provider (Providers supply implementations)
+   
+   Every Operation exposes:
+     - **Typed inputs** — structured parameters (e.g., FilesystemCopyInputs)
+     - **Preconditions** — what must be true before execution
+     - **Expected effects** — what changes are intended
+     - **Postconditions** — what MUST be true for verified success
+     - **Side Effects** — NONE, OBSERVATION, MUTATING, PRIVILEGED, DESTRUCTIVE
+     - **Idempotency** — IDEMPOTENT vs NON_IDEMPOTENT (determines retry safety)
+     - **Reversibility** — REVERSIBLE, CONDITIONALLY_REVERSIBLE, IRREVERSIBLE
+     - **Verification strategy** — how postconditions are independently confirmed
+     - **Evidence** — provenance-bearing observations supporting the result
+   
+   *Family:* execution. *Principle:* `COMMAND SUCCESS != OPERATION SUCCESS`.
+   
+   **DISTINCTION: UNIT vs OPERATION**
+     - Unit = structural/execution definition (how something is done)
+     - Operation = contract describing a system action/query (what can be done)
+     - A Unit may implement one or more Operations
+     - An Operation may compose Units for complex work
+   
+   **Execution Flow**:
+     ```
+     DISCOVER -> RESOLVE TARGET -> OBSERVE CURRENT STATE ->
+     EVALUATE PRECONDITIONS -> PLAN (if mutating) -> AUTHORIZE ->
+     EXECUTE -> OBSERVE RESULTING STATE -> VERIFY POSTCONDITIONS ->
+     GENERATE EVIDENCE -> RESULT
+     ```
+   
+   **Example Operations**:
+     - `filesystem.copy(source, destination, overwrite=false)` — MUTATING, IDEMPOTENT
+     - `service.start(name)` — MUTATING, PRIVILEGED, REVERSIBLE  
+     - `service.status(name)` — NONE (read-only observation)
+     - `configuration.validate(spec)` — NONE (validation query)
+   
+   *Status:* CURRENT (contracts implemented in cpp/include/system/core/contracts.hpp,
+     implementations in src/operations/*.hpp/*.cpp).
 
 - **Procedure** — a reusable *specification* describing how an objective is
   accomplished. *Relation:* a Procedure may coordinate Routines.

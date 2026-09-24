@@ -1,0 +1,1 @@
+/usr/bin/c++ -O3 -DNDEBUG CMakeFiles/lifecycle_test.dir/lifecycle_test.cpp.o -o lifecycle_test  ../src/core/librebuntu-core.a ../librebuntu-lifecycle.a ../librebuntu-install.a ../librebuntu-user-identity.a ../librebuntu-environment-discovery.a ../librebuntu-setup.a 

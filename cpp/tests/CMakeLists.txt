@@ -135,4 +135,13 @@ target_include_directories(user_identity_test PRIVATE
 )
 add_test(NAME user_identity_test COMMAND user_identity_test)
 
+# Phase 1.11: Lifecycle operations tests (reconfigure, repair, upgrade, uninstall)
+add_executable(lifecycle_test lifecycle_test.cpp)
+target_link_libraries(lifecycle_test rebuntu-core rebuntu-lifecycle)
+target_include_directories(lifecycle_test PRIVATE 
+    ${CMAKE_SOURCE_DIR}/src
+    ${CMAKE_SOURCE_DIR}
+)
+add_test(NAME lifecycle_test COMMAND lifecycle_test)
+
 # Phase 1.9: Environment discovery tests (pending integration with testing framework)

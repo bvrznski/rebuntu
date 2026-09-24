@@ -113,6 +113,7 @@ tests/install_planning_test: librebuntu-install.a
 tests/install_planning_test: librebuntu-user-identity.a
 tests/install_planning_test: librebuntu-environment-discovery.a
 tests/install_planning_test: librebuntu-setup.a
+tests/install_planning_test: librebuntu-lifecycle.a
 tests/install_planning_test: tests/CMakeFiles/install_planning_test.dir/link.txt
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --bold --progress-dir=/home/bvrznski/rebuntu/cpp/Build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_3) "Linking CXX executable install_planning_test"
 	cd /home/bvrznski/rebuntu/cpp/Build/tests && $(CMAKE_COMMAND) -E cmake_link_script CMakeFiles/install_planning_test.dir/link.txt --verbose=$(VERBOSE)

@@ -6,5 +6,5 @@ CXX_DEFINES =
 
 CXX_INCLUDES = -I/home/bvrznski/rebuntu/cpp/src -I/home/bvrznski/rebuntu/cpp -I/home/bvrznski/rebuntu/cpp/src/core/../../../include -I/home/bvrznski/rebuntu/cpp/src/core/../../src -I/home/bvrznski/rebuntu/cpp/../src
 
-CXX_FLAGS = -g -Wall -Wextra -Wpedantic -Wformat=2 -Wnull-dereference -Wshift-overflow -Wduplicated-cond -Wduplicated-branches -Wlogical-op -Wcast-qual -Wcast-align -Wconversion -std=c++20
+CXX_FLAGS = -O3 -DNDEBUG -Wall -Wextra -Wpedantic -Wformat=2 -Wnull-dereference -Wshift-overflow -Wduplicated-cond -Wduplicated-branches -Wlogical-op -Wcast-qual -Wcast-align -Wconversion -std=c++20
 

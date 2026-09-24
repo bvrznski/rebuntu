@@ -97,6 +97,7 @@ tests/events_test: librebuntu-install.a
 tests/events_test: librebuntu-user-identity.a
 tests/events_test: librebuntu-environment-discovery.a
 tests/events_test: librebuntu-setup.a
+tests/events_test: librebuntu-lifecycle.a
 tests/events_test: tests/CMakeFiles/events_test.dir/link.txt
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --bold --progress-dir=/home/bvrznski/rebuntu/cpp/Build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_2) "Linking CXX executable events_test"
 	cd /home/bvrznski/rebuntu/cpp/Build/tests && $(CMAKE_COMMAND) -E cmake_link_script CMakeFiles/events_test.dir/link.txt --verbose=$(VERBOSE)

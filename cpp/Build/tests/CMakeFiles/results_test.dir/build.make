@@ -97,6 +97,7 @@ tests/results_test: librebuntu-install.a
 tests/results_test: librebuntu-user-identity.a
 tests/results_test: librebuntu-environment-discovery.a
 tests/results_test: librebuntu-setup.a
+tests/results_test: librebuntu-lifecycle.a
 tests/results_test: tests/CMakeFiles/results_test.dir/link.txt
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --bold --progress-dir=/home/bvrznski/rebuntu/cpp/Build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_2) "Linking CXX executable results_test"
 	cd /home/bvrznski/rebuntu/cpp/Build/tests && $(CMAKE_COMMAND) -E cmake_link_script CMakeFiles/results_test.dir/link.txt --verbose=$(VERBOSE)

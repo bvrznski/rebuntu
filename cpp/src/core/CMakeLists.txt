@@ -39,8 +39,5 @@ set(PREFERENCES_IO_IMPL
 )
 target_sources(rebuntu-core PRIVATE ${PREFERENCES_MODEL_HDRS} ${PREFERENCES_IO_IMPL})
 
-# Lifecycle Operations Implementation (Phase 1.11)
-set(LIFECYCLE_SRCS
-    ${CMAKE_CURRENT_LIST_DIR}/lifecycle.cpp
-)
-target_sources(rebuntu-core PRIVATE ${LIFECYCLE_SRCS})
+# Phase 1.11: Lifecycle operations are now in a separate library (rebuntu-lifecycle)
+# The implementation is in src/system/lifecycle/

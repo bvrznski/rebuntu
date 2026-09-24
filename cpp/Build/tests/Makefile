@@ -322,6 +322,20 @@ user_identity_test/fast:
 	cd /home/bvrznski/rebuntu/cpp/Build && $(MAKE) $(MAKESILENT) -f tests/CMakeFiles/user_identity_test.dir/build.make tests/CMakeFiles/user_identity_test.dir/build
 .PHONY : user_identity_test/fast
 
+# Convenience name for target.
+tests/CMakeFiles/lifecycle_test.dir/rule:
+	cd /home/bvrznski/rebuntu/cpp/Build && $(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 tests/CMakeFiles/lifecycle_test.dir/rule
+.PHONY : tests/CMakeFiles/lifecycle_test.dir/rule
+
+# Convenience name for target.
+lifecycle_test: tests/CMakeFiles/lifecycle_test.dir/rule
+.PHONY : lifecycle_test
+
+# fast build rule for target.
+lifecycle_test/fast:
+	cd /home/bvrznski/rebuntu/cpp/Build && $(MAKE) $(MAKESILENT) -f tests/CMakeFiles/lifecycle_test.dir/build.make tests/CMakeFiles/lifecycle_test.dir/build
+.PHONY : lifecycle_test/fast
+
 automation_test.o: automation_test.cpp.o
 .PHONY : automation_test.o
 
@@ -610,6 +624,30 @@ install_planning_test.cpp.s:
 	cd /home/bvrznski/rebuntu/cpp/Build && $(MAKE) $(MAKESILENT) -f tests/CMakeFiles/install_planning_test.dir/build.make tests/CMakeFiles/install_planning_test.dir/install_planning_test.cpp.s
 .PHONY : install_planning_test.cpp.s
 
+lifecycle_test.o: lifecycle_test.cpp.o
+.PHONY : lifecycle_test.o
+
+# target to build an object file
+lifecycle_test.cpp.o:
+	cd /home/bvrznski/rebuntu/cpp/Build && $(MAKE) $(MAKESILENT) -f tests/CMakeFiles/lifecycle_test.dir/build.make tests/CMakeFiles/lifecycle_test.dir/lifecycle_test.cpp.o
+.PHONY : lifecycle_test.cpp.o
+
+lifecycle_test.i: lifecycle_test.cpp.i
+.PHONY : lifecycle_test.i
+
+# target to preprocess a source file
+lifecycle_test.cpp.i:
+	cd /home/bvrznski/rebuntu/cpp/Build && $(MAKE) $(MAKESILENT) -f tests/CMakeFiles/lifecycle_test.dir/build.make tests/CMakeFiles/lifecycle_test.dir/lifecycle_test.cpp.i
+.PHONY : lifecycle_test.cpp.i
+
+lifecycle_test.s: lifecycle_test.cpp.s
+.PHONY : lifecycle_test.s
+
+# target to generate assembly for a file
+lifecycle_test.cpp.s:
+	cd /home/bvrznski/rebuntu/cpp/Build && $(MAKE) $(MAKESILENT) -f tests/CMakeFiles/lifecycle_test.dir/build.make tests/CMakeFiles/lifecycle_test.dir/lifecycle_test.cpp.s
+.PHONY : lifecycle_test.cpp.s
+
 results_test.o: results_test.cpp.o
 .PHONY : results_test.o
 
@@ -719,6 +757,7 @@ help:
 	@echo "... config_test"
 	@echo "... events_test"
 	@echo "... install_planning_test"
+	@echo "... lifecycle_test"
 	@echo "... preferences_test"
 	@echo "... profile_test"
 	@echo "... results_test"
@@ -765,6 +804,9 @@ help:
 	@echo "... install_planning_test.o"
 	@echo "... install_planning_test.i"
 	@echo "... install_planning_test.s"
+	@echo "... lifecycle_test.o"
+	@echo "... lifecycle_test.i"
+	@echo "... lifecycle_test.s"
 	@echo "... results_test.o"
 	@echo "... results_test.i"
 	@echo "... results_test.s"

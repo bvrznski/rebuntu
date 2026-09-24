@@ -543,6 +543,19 @@ rebuntu-setup/fast:
 .PHONY : rebuntu-setup/fast
 
 #=============================================================================
+# Target rules for targets named rebuntu-lifecycle
+
+# Build rule for target.
+rebuntu-lifecycle: cmake_check_build_system
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 rebuntu-lifecycle
+.PHONY : rebuntu-lifecycle
+
+# fast build rule for target.
+rebuntu-lifecycle/fast:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/rebuntu-lifecycle.dir/build.make CMakeFiles/rebuntu-lifecycle.dir/build
+.PHONY : rebuntu-lifecycle/fast
+
+#=============================================================================
 # Target rules for targets named rebuntu-core
 
 # Build rule for target.
@@ -738,6 +751,19 @@ user_identity_test/fast:
 .PHONY : user_identity_test/fast
 
 #=============================================================================
+# Target rules for targets named lifecycle_test
+
+# Build rule for target.
+lifecycle_test: cmake_check_build_system
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 lifecycle_test
+.PHONY : lifecycle_test
+
+# fast build rule for target.
+lifecycle_test/fast:
+	$(MAKE) $(MAKESILENT) -f tests/CMakeFiles/lifecycle_test.dir/build.make tests/CMakeFiles/lifecycle_test.dir/build
+.PHONY : lifecycle_test/fast
+
+#=============================================================================
 # Target rules for targets named rebuntu
 
 # Build rule for target.
@@ -870,6 +896,30 @@ home/bvrznski/rebuntu/src/system/install/install_planning.cpp.s:
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/rebuntu-install.dir/build.make CMakeFiles/rebuntu-install.dir/home/bvrznski/rebuntu/src/system/install/install_planning.cpp.s
 .PHONY : home/bvrznski/rebuntu/src/system/install/install_planning.cpp.s
 
+home/bvrznski/rebuntu/src/system/lifecycle/lifecycle.o: home/bvrznski/rebuntu/src/system/lifecycle/lifecycle.cpp.o
+.PHONY : home/bvrznski/rebuntu/src/system/lifecycle/lifecycle.o
+
+# target to build an object file
+home/bvrznski/rebuntu/src/system/lifecycle/lifecycle.cpp.o:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/rebuntu-lifecycle.dir/build.make CMakeFiles/rebuntu-lifecycle.dir/home/bvrznski/rebuntu/src/system/lifecycle/lifecycle.cpp.o
+.PHONY : home/bvrznski/rebuntu/src/system/lifecycle/lifecycle.cpp.o
+
+home/bvrznski/rebuntu/src/system/lifecycle/lifecycle.i: home/bvrznski/rebuntu/src/system/lifecycle/lifecycle.cpp.i
+.PHONY : home/bvrznski/rebuntu/src/system/lifecycle/lifecycle.i
+
+# target to preprocess a source file
+home/bvrznski/rebuntu/src/system/lifecycle/lifecycle.cpp.i:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/rebuntu-lifecycle.dir/build.make CMakeFiles/rebuntu-lifecycle.dir/home/bvrznski/rebuntu/src/system/lifecycle/lifecycle.cpp.i
+.PHONY : home/bvrznski/rebuntu/src/system/lifecycle/lifecycle.cpp.i
+
+home/bvrznski/rebuntu/src/system/lifecycle/lifecycle.s: home/bvrznski/rebuntu/src/system/lifecycle/lifecycle.cpp.s
+.PHONY : home/bvrznski/rebuntu/src/system/lifecycle/lifecycle.s
+
+# target to generate assembly for a file
+home/bvrznski/rebuntu/src/system/lifecycle/lifecycle.cpp.s:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/rebuntu-lifecycle.dir/build.make CMakeFiles/rebuntu-lifecycle.dir/home/bvrznski/rebuntu/src/system/lifecycle/lifecycle.cpp.s
+.PHONY : home/bvrznski/rebuntu/src/system/lifecycle/lifecycle.cpp.s
+
 home/bvrznski/rebuntu/src/system/setup/profile.o: home/bvrznski/rebuntu/src/system/setup/profile.cpp.o
 .PHONY : home/bvrznski/rebuntu/src/system/setup/profile.o
 
@@ -959,12 +1009,14 @@ help:
 	@echo "... config_test"
 	@echo "... events_test"
 	@echo "... install_planning_test"
+	@echo "... lifecycle_test"
 	@echo "... preferences_test"
 	@echo "... profile_test"
 	@echo "... rebuntu"
 	@echo "... rebuntu-core"
 	@echo "... rebuntu-environment-discovery"
 	@echo "... rebuntu-install"
+	@echo "... rebuntu-lifecycle"
 	@echo "... rebuntu-setup"
 	@echo "... rebuntu-user-identity"
 	@echo "... results_test"
@@ -990,6 +1042,9 @@ help:
 	@echo "... home/bvrznski/rebuntu/src/system/install/install_planning.o"
 	@echo "... home/bvrznski/rebuntu/src/system/install/install_planning.i"
 	@echo "... home/bvrznski/rebuntu/src/system/install/install_planning.s"
+	@echo "... home/bvrznski/rebuntu/src/system/lifecycle/lifecycle.o"
+	@echo "... home/bvrznski/rebuntu/src/system/lifecycle/lifecycle.i"
+	@echo "... home/bvrznski/rebuntu/src/system/lifecycle/lifecycle.s"
 	@echo "... home/bvrznski/rebuntu/src/system/setup/profile.o"
 	@echo "... home/bvrznski/rebuntu/src/system/setup/profile.i"
 	@echo "... home/bvrznski/rebuntu/src/system/setup/profile.s"

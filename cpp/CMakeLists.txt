@@ -125,6 +125,20 @@ target_include_directories(rebuntu-setup PUBLIC
 
 target_link_libraries(rebuntu-core PUBLIC rebuntu-setup)
 
+# Phase 1.11: Lifecycle operations module (reconfigure, repair, upgrade, uninstall)
+set(LIFECYCLE_SRC_ROOT ${CMAKE_CURRENT_LIST_DIR}/../src/system/lifecycle)
+
+add_library(rebuntu-lifecycle STATIC
+    ${LIFECYCLE_SRC_ROOT}/contracts.hpp
+    ${LIFECYCLE_SRC_ROOT}/lifecycle.cpp
+)
+
+target_include_directories(rebuntu-lifecycle PUBLIC
+    ${CMAKE_CURRENT_LIST_DIR}/../src
+)
+
+target_link_libraries(rebuntu-core PUBLIC rebuntu-lifecycle)
+
 # Tests subdirectory
 add_subdirectory(tests)
 

@@ -582,6 +582,32 @@ results_test/fast:
 .PHONY : results_test/fast
 
 #=============================================================================
+# Target rules for targets named config_test
+
+# Build rule for target.
+config_test: cmake_check_build_system
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 config_test
+.PHONY : config_test
+
+# fast build rule for target.
+config_test/fast:
+	$(MAKE) $(MAKESILENT) -f tests/CMakeFiles/config_test.dir/build.make tests/CMakeFiles/config_test.dir/build
+.PHONY : config_test/fast
+
+#=============================================================================
+# Target rules for targets named test_discovery
+
+# Build rule for target.
+test_discovery: cmake_check_build_system
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 test_discovery
+.PHONY : test_discovery
+
+# fast build rule for target.
+test_discovery/fast:
+	$(MAKE) $(MAKESILENT) -f tests/CMakeFiles/test_discovery.dir/build.make tests/CMakeFiles/test_discovery.dir/build
+.PHONY : test_discovery/fast
+
+#=============================================================================
 # Target rules for targets named rebuntu
 
 # Build rule for target.
@@ -632,11 +658,13 @@ help:
 	@echo "... NightlyTest"
 	@echo "... NightlyUpdate"
 	@echo "... automation_test"
+	@echo "... config_test"
 	@echo "... events_test"
 	@echo "... rebuntu"
 	@echo "... rebuntu-core"
 	@echo "... results_test"
 	@echo "... runtime_runner_test"
+	@echo "... test_discovery"
 	@echo "... test_runtime_contracts"
 	@echo "... test_state_provider"
 .PHONY : help

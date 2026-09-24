@@ -44,6 +44,30 @@ target_include_directories(results_test PRIVATE
     ${CMAKE_SOURCE_DIR}
 )
 
+# Config & Specification Grammar tests (Phase 0.18)
+add_executable(config_test config_test.cpp)
+target_link_libraries(config_test rebuntu-core)
+target_include_directories(config_test PRIVATE 
+    ${CMAKE_SOURCE_DIR}/src
+    ${CMAKE_SOURCE_DIR}
+)
+
+# Discovery tests (Phase 0.19)
+set(DISCOVERY_SRCS
+    ${CMAKE_SOURCE_DIR}/../src/runtime/discovery.hpp
+    ${CMAKE_SOURCE_DIR}/../src/runtime/discovery.cpp
+)
+
+add_executable(test_discovery
+    ../../tests/native/test_discovery.cpp
+    ${DISCOVERY_SRCS}
+)
+target_link_libraries(test_discovery rebuntu-core)
+target_include_directories(test_discovery PRIVATE 
+    ${CMAKE_SOURCE_DIR}/src
+    ${CMAKE_SOURCE_DIR}
+)
+
 # Add tests to CTest
 add_test(NAME runtime_runner_test COMMAND runtime_runner_test)
 add_test(NAME automation_test COMMAND automation_test)
@@ -51,3 +75,5 @@ add_test(NAME test_runtime_contracts COMMAND test_runtime_contracts)
 add_test(NAME test_state_provider COMMAND test_state_provider)
 add_test(NAME events_test COMMAND events_test)
 add_test(NAME results_test COMMAND results_test)
+add_test(NAME test_discovery COMMAND test_discovery)
+add_test(NAME config_test COMMAND config_test)

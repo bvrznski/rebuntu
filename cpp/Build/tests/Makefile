@@ -210,6 +210,34 @@ results_test/fast:
 	cd /home/bvrznski/rebuntu/cpp/Build && $(MAKE) $(MAKESILENT) -f tests/CMakeFiles/results_test.dir/build.make tests/CMakeFiles/results_test.dir/build
 .PHONY : results_test/fast
 
+# Convenience name for target.
+tests/CMakeFiles/config_test.dir/rule:
+	cd /home/bvrznski/rebuntu/cpp/Build && $(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 tests/CMakeFiles/config_test.dir/rule
+.PHONY : tests/CMakeFiles/config_test.dir/rule
+
+# Convenience name for target.
+config_test: tests/CMakeFiles/config_test.dir/rule
+.PHONY : config_test
+
+# fast build rule for target.
+config_test/fast:
+	cd /home/bvrznski/rebuntu/cpp/Build && $(MAKE) $(MAKESILENT) -f tests/CMakeFiles/config_test.dir/build.make tests/CMakeFiles/config_test.dir/build
+.PHONY : config_test/fast
+
+# Convenience name for target.
+tests/CMakeFiles/test_discovery.dir/rule:
+	cd /home/bvrznski/rebuntu/cpp/Build && $(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 tests/CMakeFiles/test_discovery.dir/rule
+.PHONY : tests/CMakeFiles/test_discovery.dir/rule
+
+# Convenience name for target.
+test_discovery: tests/CMakeFiles/test_discovery.dir/rule
+.PHONY : test_discovery
+
+# fast build rule for target.
+test_discovery/fast:
+	cd /home/bvrznski/rebuntu/cpp/Build && $(MAKE) $(MAKESILENT) -f tests/CMakeFiles/test_discovery.dir/build.make tests/CMakeFiles/test_discovery.dir/build
+.PHONY : test_discovery/fast
+
 automation_test.o: automation_test.cpp.o
 .PHONY : automation_test.o
 
@@ -234,6 +262,30 @@ automation_test.cpp.s:
 	cd /home/bvrznski/rebuntu/cpp/Build && $(MAKE) $(MAKESILENT) -f tests/CMakeFiles/automation_test.dir/build.make tests/CMakeFiles/automation_test.dir/automation_test.cpp.s
 .PHONY : automation_test.cpp.s
 
+config_test.o: config_test.cpp.o
+.PHONY : config_test.o
+
+# target to build an object file
+config_test.cpp.o:
+	cd /home/bvrznski/rebuntu/cpp/Build && $(MAKE) $(MAKESILENT) -f tests/CMakeFiles/config_test.dir/build.make tests/CMakeFiles/config_test.dir/config_test.cpp.o
+.PHONY : config_test.cpp.o
+
+config_test.i: config_test.cpp.i
+.PHONY : config_test.i
+
+# target to preprocess a source file
+config_test.cpp.i:
+	cd /home/bvrznski/rebuntu/cpp/Build && $(MAKE) $(MAKESILENT) -f tests/CMakeFiles/config_test.dir/build.make tests/CMakeFiles/config_test.dir/config_test.cpp.i
+.PHONY : config_test.cpp.i
+
+config_test.s: config_test.cpp.s
+.PHONY : config_test.s
+
+# target to generate assembly for a file
+config_test.cpp.s:
+	cd /home/bvrznski/rebuntu/cpp/Build && $(MAKE) $(MAKESILENT) -f tests/CMakeFiles/config_test.dir/build.make tests/CMakeFiles/config_test.dir/config_test.cpp.s
+.PHONY : config_test.cpp.s
+
 events_test.o: events_test.cpp.o
 .PHONY : events_test.o
 
@@ -257,6 +309,54 @@ events_test.s: events_test.cpp.s
 events_test.cpp.s:
 	cd /home/bvrznski/rebuntu/cpp/Build && $(MAKE) $(MAKESILENT) -f tests/CMakeFiles/events_test.dir/build.make tests/CMakeFiles/events_test.dir/events_test.cpp.s
 .PHONY : events_test.cpp.s
+
+home/bvrznski/rebuntu/src/runtime/discovery.o: home/bvrznski/rebuntu/src/runtime/discovery.cpp.o
+.PHONY : home/bvrznski/rebuntu/src/runtime/discovery.o
+
+# target to build an object file
+home/bvrznski/rebuntu/src/runtime/discovery.cpp.o:
+	cd /home/bvrznski/rebuntu/cpp/Build && $(MAKE) $(MAKESILENT) -f tests/CMakeFiles/test_discovery.dir/build.make tests/CMakeFiles/test_discovery.dir/home/bvrznski/rebuntu/src/runtime/discovery.cpp.o
+.PHONY : home/bvrznski/rebuntu/src/runtime/discovery.cpp.o
+
+home/bvrznski/rebuntu/src/runtime/discovery.i: home/bvrznski/rebuntu/src/runtime/discovery.cpp.i
+.PHONY : home/bvrznski/rebuntu/src/runtime/discovery.i
+
+# target to preprocess a source file
+home/bvrznski/rebuntu/src/runtime/discovery.cpp.i:
+	cd /home/bvrznski/rebuntu/cpp/Build && $(MAKE) $(MAKESILENT) -f tests/CMakeFiles/test_discovery.dir/build.make tests/CMakeFiles/test_discovery.dir/home/bvrznski/rebuntu/src/runtime/discovery.cpp.i
+.PHONY : home/bvrznski/rebuntu/src/runtime/discovery.cpp.i
+
+home/bvrznski/rebuntu/src/runtime/discovery.s: home/bvrznski/rebuntu/src/runtime/discovery.cpp.s
+.PHONY : home/bvrznski/rebuntu/src/runtime/discovery.s
+
+# target to generate assembly for a file
+home/bvrznski/rebuntu/src/runtime/discovery.cpp.s:
+	cd /home/bvrznski/rebuntu/cpp/Build && $(MAKE) $(MAKESILENT) -f tests/CMakeFiles/test_discovery.dir/build.make tests/CMakeFiles/test_discovery.dir/home/bvrznski/rebuntu/src/runtime/discovery.cpp.s
+.PHONY : home/bvrznski/rebuntu/src/runtime/discovery.cpp.s
+
+home/bvrznski/rebuntu/tests/native/test_discovery.o: home/bvrznski/rebuntu/tests/native/test_discovery.cpp.o
+.PHONY : home/bvrznski/rebuntu/tests/native/test_discovery.o
+
+# target to build an object file
+home/bvrznski/rebuntu/tests/native/test_discovery.cpp.o:
+	cd /home/bvrznski/rebuntu/cpp/Build && $(MAKE) $(MAKESILENT) -f tests/CMakeFiles/test_discovery.dir/build.make tests/CMakeFiles/test_discovery.dir/home/bvrznski/rebuntu/tests/native/test_discovery.cpp.o
+.PHONY : home/bvrznski/rebuntu/tests/native/test_discovery.cpp.o
+
+home/bvrznski/rebuntu/tests/native/test_discovery.i: home/bvrznski/rebuntu/tests/native/test_discovery.cpp.i
+.PHONY : home/bvrznski/rebuntu/tests/native/test_discovery.i
+
+# target to preprocess a source file
+home/bvrznski/rebuntu/tests/native/test_discovery.cpp.i:
+	cd /home/bvrznski/rebuntu/cpp/Build && $(MAKE) $(MAKESILENT) -f tests/CMakeFiles/test_discovery.dir/build.make tests/CMakeFiles/test_discovery.dir/home/bvrznski/rebuntu/tests/native/test_discovery.cpp.i
+.PHONY : home/bvrznski/rebuntu/tests/native/test_discovery.cpp.i
+
+home/bvrznski/rebuntu/tests/native/test_discovery.s: home/bvrznski/rebuntu/tests/native/test_discovery.cpp.s
+.PHONY : home/bvrznski/rebuntu/tests/native/test_discovery.s
+
+# target to generate assembly for a file
+home/bvrznski/rebuntu/tests/native/test_discovery.cpp.s:
+	cd /home/bvrznski/rebuntu/cpp/Build && $(MAKE) $(MAKESILENT) -f tests/CMakeFiles/test_discovery.dir/build.make tests/CMakeFiles/test_discovery.dir/home/bvrznski/rebuntu/tests/native/test_discovery.cpp.s
+.PHONY : home/bvrznski/rebuntu/tests/native/test_discovery.cpp.s
 
 home/bvrznski/rebuntu/tests/native/test_runtime_contracts.o: home/bvrznski/rebuntu/tests/native/test_runtime_contracts.cpp.o
 .PHONY : home/bvrznski/rebuntu/tests/native/test_runtime_contracts.o
@@ -364,17 +464,28 @@ help:
 	@echo "... rebuild_cache"
 	@echo "... test"
 	@echo "... automation_test"
+	@echo "... config_test"
 	@echo "... events_test"
 	@echo "... results_test"
 	@echo "... runtime_runner_test"
+	@echo "... test_discovery"
 	@echo "... test_runtime_contracts"
 	@echo "... test_state_provider"
 	@echo "... automation_test.o"
 	@echo "... automation_test.i"
 	@echo "... automation_test.s"
+	@echo "... config_test.o"
+	@echo "... config_test.i"
+	@echo "... config_test.s"
 	@echo "... events_test.o"
 	@echo "... events_test.i"
 	@echo "... events_test.s"
+	@echo "... home/bvrznski/rebuntu/src/runtime/discovery.o"
+	@echo "... home/bvrznski/rebuntu/src/runtime/discovery.i"
+	@echo "... home/bvrznski/rebuntu/src/runtime/discovery.s"
+	@echo "... home/bvrznski/rebuntu/tests/native/test_discovery.o"
+	@echo "... home/bvrznski/rebuntu/tests/native/test_discovery.i"
+	@echo "... home/bvrznski/rebuntu/tests/native/test_discovery.s"
 	@echo "... home/bvrznski/rebuntu/tests/native/test_runtime_contracts.o"
 	@echo "... home/bvrznski/rebuntu/tests/native/test_runtime_contracts.i"
 	@echo "... home/bvrznski/rebuntu/tests/native/test_runtime_contracts.s"

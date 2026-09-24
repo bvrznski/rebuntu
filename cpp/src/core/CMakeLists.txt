@@ -1,5 +1,5 @@
-# Rebuntu core contracts and types (Phase 0.0 + 0.13 runtime + 0.16 provider registry + 0.17 results)
-# ====================================================================================================
+# Rebuntu core contracts and types (Phase 0.0 + 0.13 runtime + 0.16 provider registry + 0.17 results + 0.18 config)
+# ===========================================================================================================
 
 add_library(rebuntu-core STATIC)
 
@@ -19,3 +19,9 @@ set(RESULTS_MODEL_SRCS
     ${CMAKE_SOURCE_DIR}/../src/runtime/core/results.hpp
 )
 target_sources(rebuntu-core PRIVATE ${RESULTS_MODEL_SRCS})
+
+# Configuration & Specification Grammar (Phase 0.18)
+set(CONFIG_GRAMMAR_SRCS
+    ${CMAKE_SOURCE_DIR}/../src/runtime/config.hpp
+)
+target_sources(rebuntu-core PRIVATE ${CONFIG_GRAMMAR_SRCS})

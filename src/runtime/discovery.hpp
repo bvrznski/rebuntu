@@ -5,14 +5,16 @@
 
 #pragma once
 
-#include <runtime/core/contracts.hpp>
 #include <algorithm>
 #include <filesystem>
 #include <map>
+#include <optional>
 #include <set>
 #include <string>
-#include <string_view>
 #include <vector>
+
+// contracts.hpp defines rebuntu::core types including OperationDefinition
+#include <runtime/core/contracts.hpp>
 
 namespace rebuntu::runtime::discovery {
 
@@ -25,7 +27,7 @@ enum class ShellVerbStatus {
     AMBIGUOUS,
 };
 
-inline std::string_view to_string(ShellVerbStatus s) {
+inline std::string to_string(ShellVerbStatus s) {
     switch (s) {
         case ShellVerbStatus::FREE: return "free";
         case ShellVerbStatus::REBUNTU: return "rebuntu";
@@ -44,8 +46,8 @@ struct ShellVerbCollisionInfo {
 
 class ShellVerbDetector {
 public:
-    bool is_verb_free(std::string_view verb) const;
-    ShellVerbCollisionInfo detect(std::string_view verb) const;
+    bool is_verb_free(const std::string& verb) const;
+    ShellVerbCollisionInfo detect(const std::string& verb) const;
     void add_reserved_verb(std::string verb);
 
 private:
@@ -62,8 +64,8 @@ struct Alias {
 class AliasResolver {
 public:
     void add_alias(Alias alias);
-    bool contains(std::string_view alias_id) const;
-    std::optional<std::string> resolve(std::string_view alias_id) const;
+    bool contains(const std::string& alias_id) const;
+    std::optional<std::string> resolve(const std::string& alias_id) const;
 
 private:
     std::map<std::string, Alias> aliases_;
@@ -81,7 +83,7 @@ public:
     std::vector<std::string> scan_all() const;
     std::vector<std::filesystem::path> find_by_pattern(
         const std::filesystem::path& pth,
-        std::string_view pattern) const;
+        const std::string& pattern) const;
 
 private:
     std::vector<DiscoveryPath> paths_;
@@ -93,6 +95,16 @@ enum class ProviderSelectionMode {
     BY_NATIVE_MECHANISM,
     ALL_AVAILABLE,
 };
+
+inline std::string to_string(ProviderSelectionMode mode) {
+    switch (mode) {
+        case ProviderSelectionMode::FIRST: return "first";
+        case ProviderSelectionMode::PREFERRED_FIRST: return "preferred_first";
+        case ProviderSelectionMode::BY_NATIVE_MECHANISM: return "by_native_mechanism";
+        case ProviderSelectionMode::ALL_AVAILABLE: return "all_available";
+    }
+    return "unknown";
+}
 
 struct ProviderSelectionCriteria {
     std::string capability_id;

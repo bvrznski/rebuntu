@@ -337,6 +337,9 @@ public:
     
     size_t schema_count() const { return schemas_.size(); }
     const std::map<std::string, Schema>& get_schemas() const { return schemas_; }
+    
+    // For ConfigLoader validation - expose schemas for iteration
+    const std::map<std::string, Schema>& access_schemas() const { return schemas_; }
 
 private:
     std::map<std::string, Schema> schemas_;
@@ -360,7 +363,7 @@ public:
     core::Result<Configuration> resolve() const {
         std::vector<std::string> errors;
         
-        for (const auto& [name, schema] : registry_.schemas_) {
+        for (const auto& [name, schema] : registry_.access_schemas()) {
             auto validation_errors = schema.validate(config_.get_all_config_values());
             errors.insert(errors.end(), validation_errors.begin(), validation_errors.end());
         }
@@ -590,8 +593,9 @@ public:
                                              std::function<void(const Configuration&)> on_change) {
         (void)path;  // suppress unused parameter warning
         auto handle = std::make_shared<WatchHandle>([this, source, on_change] {
-            if (auto result = load_from_file(source)) {
-                config_ = *result;
+            auto result = load_from_file(source);
+            if (result.status == core::SemanticStatus::kSuccess && result.value.has_value()) {
+                config_ = *result.value;
                 on_change(config_);
             }
         });
@@ -602,8 +606,9 @@ public:
     std::shared_ptr<WatchHandle> watch_env(std::string_view var_name,
                                             std::function<void(const Configuration&)> on_change) {
         auto handle = std::make_shared<WatchHandle>([this, var_name, on_change] {
-            if (auto result = load_from_env(var_name)) {
-                config_ = *result;
+            auto result = load_from_env(var_name);
+            if (result.status == core::SemanticStatus::kSuccess && result.value.has_value()) {
+                config_ = *result.value;
                 on_change(config_);
             }
         });

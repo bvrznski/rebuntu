@@ -1,9 +1,9 @@
-runtime_runner_test 9 0.000474562
-automation_test 9 0.000355002
-test_runtime_contracts 9 0.0003069
-test_state_provider 9 0.000298192
-events_test 9 0.00590898
-results_test 9 0.000416382
-test_discovery 10 0.000315718
-config_test 9 0.000346134
+runtime_runner_test 10 0.000357237
+automation_test 10 0.000292576
+test_runtime_contracts 10 0.000283588
+test_state_provider 10 0.000223498
+events_test 10 0.00524346
+results_test 10 0.000320246
+test_discovery 11 0.000270746
+config_test 10 0.000249275
 ---

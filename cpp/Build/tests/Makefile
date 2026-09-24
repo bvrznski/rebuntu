@@ -323,6 +323,34 @@ user_identity_test/fast:
 .PHONY : user_identity_test/fast
 
 # Convenience name for target.
+tests/CMakeFiles/group_membership_test.dir/rule:
+	cd /home/bvrznski/rebuntu/cpp/Build && $(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 tests/CMakeFiles/group_membership_test.dir/rule
+.PHONY : tests/CMakeFiles/group_membership_test.dir/rule
+
+# Convenience name for target.
+group_membership_test: tests/CMakeFiles/group_membership_test.dir/rule
+.PHONY : group_membership_test
+
+# fast build rule for target.
+group_membership_test/fast:
+	cd /home/bvrznski/rebuntu/cpp/Build && $(MAKE) $(MAKESILENT) -f tests/CMakeFiles/group_membership_test.dir/build.make tests/CMakeFiles/group_membership_test.dir/build
+.PHONY : group_membership_test/fast
+
+# Convenience name for target.
+tests/CMakeFiles/ownership_test.dir/rule:
+	cd /home/bvrznski/rebuntu/cpp/Build && $(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 tests/CMakeFiles/ownership_test.dir/rule
+.PHONY : tests/CMakeFiles/ownership_test.dir/rule
+
+# Convenience name for target.
+ownership_test: tests/CMakeFiles/ownership_test.dir/rule
+.PHONY : ownership_test
+
+# fast build rule for target.
+ownership_test/fast:
+	cd /home/bvrznski/rebuntu/cpp/Build && $(MAKE) $(MAKESILENT) -f tests/CMakeFiles/ownership_test.dir/build.make tests/CMakeFiles/ownership_test.dir/build
+.PHONY : ownership_test/fast
+
+# Convenience name for target.
 tests/CMakeFiles/lifecycle_test.dir/rule:
 	cd /home/bvrznski/rebuntu/cpp/Build && $(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 tests/CMakeFiles/lifecycle_test.dir/rule
 .PHONY : tests/CMakeFiles/lifecycle_test.dir/rule
@@ -421,6 +449,30 @@ events_test.s: events_test.cpp.s
 events_test.cpp.s:
 	cd /home/bvrznski/rebuntu/cpp/Build && $(MAKE) $(MAKESILENT) -f tests/CMakeFiles/events_test.dir/build.make tests/CMakeFiles/events_test.dir/events_test.cpp.s
 .PHONY : events_test.cpp.s
+
+group_membership_test.o: group_membership_test.cpp.o
+.PHONY : group_membership_test.o
+
+# target to build an object file
+group_membership_test.cpp.o:
+	cd /home/bvrznski/rebuntu/cpp/Build && $(MAKE) $(MAKESILENT) -f tests/CMakeFiles/group_membership_test.dir/build.make tests/CMakeFiles/group_membership_test.dir/group_membership_test.cpp.o
+.PHONY : group_membership_test.cpp.o
+
+group_membership_test.i: group_membership_test.cpp.i
+.PHONY : group_membership_test.i
+
+# target to preprocess a source file
+group_membership_test.cpp.i:
+	cd /home/bvrznski/rebuntu/cpp/Build && $(MAKE) $(MAKESILENT) -f tests/CMakeFiles/group_membership_test.dir/build.make tests/CMakeFiles/group_membership_test.dir/group_membership_test.cpp.i
+.PHONY : group_membership_test.cpp.i
+
+group_membership_test.s: group_membership_test.cpp.s
+.PHONY : group_membership_test.s
+
+# target to generate assembly for a file
+group_membership_test.cpp.s:
+	cd /home/bvrznski/rebuntu/cpp/Build && $(MAKE) $(MAKESILENT) -f tests/CMakeFiles/group_membership_test.dir/build.make tests/CMakeFiles/group_membership_test.dir/group_membership_test.cpp.s
+.PHONY : group_membership_test.cpp.s
 
 home/bvrznski/rebuntu/src/runtime/discovery.o: home/bvrznski/rebuntu/src/runtime/discovery.cpp.o
 .PHONY : home/bvrznski/rebuntu/src/runtime/discovery.o
@@ -710,6 +762,30 @@ lifecycle_test.cpp.s:
 	cd /home/bvrznski/rebuntu/cpp/Build && $(MAKE) $(MAKESILENT) -f tests/CMakeFiles/lifecycle_test.dir/build.make tests/CMakeFiles/lifecycle_test.dir/lifecycle_test.cpp.s
 .PHONY : lifecycle_test.cpp.s
 
+ownership_test.o: ownership_test.cpp.o
+.PHONY : ownership_test.o
+
+# target to build an object file
+ownership_test.cpp.o:
+	cd /home/bvrznski/rebuntu/cpp/Build && $(MAKE) $(MAKESILENT) -f tests/CMakeFiles/ownership_test.dir/build.make tests/CMakeFiles/ownership_test.dir/ownership_test.cpp.o
+.PHONY : ownership_test.cpp.o
+
+ownership_test.i: ownership_test.cpp.i
+.PHONY : ownership_test.i
+
+# target to preprocess a source file
+ownership_test.cpp.i:
+	cd /home/bvrznski/rebuntu/cpp/Build && $(MAKE) $(MAKESILENT) -f tests/CMakeFiles/ownership_test.dir/build.make tests/CMakeFiles/ownership_test.dir/ownership_test.cpp.i
+.PHONY : ownership_test.cpp.i
+
+ownership_test.s: ownership_test.cpp.s
+.PHONY : ownership_test.s
+
+# target to generate assembly for a file
+ownership_test.cpp.s:
+	cd /home/bvrznski/rebuntu/cpp/Build && $(MAKE) $(MAKESILENT) -f tests/CMakeFiles/ownership_test.dir/build.make tests/CMakeFiles/ownership_test.dir/ownership_test.cpp.s
+.PHONY : ownership_test.cpp.s
+
 results_test.o: results_test.cpp.o
 .PHONY : results_test.o
 
@@ -818,9 +894,11 @@ help:
 	@echo "... automation_test"
 	@echo "... config_test"
 	@echo "... events_test"
+	@echo "... group_membership_test"
 	@echo "... host_foundation_test"
 	@echo "... install_planning_test"
 	@echo "... lifecycle_test"
+	@echo "... ownership_test"
 	@echo "... preferences_test"
 	@echo "... profile_test"
 	@echo "... results_test"
@@ -840,6 +918,9 @@ help:
 	@echo "... events_test.o"
 	@echo "... events_test.i"
 	@echo "... events_test.s"
+	@echo "... group_membership_test.o"
+	@echo "... group_membership_test.i"
+	@echo "... group_membership_test.s"
 	@echo "... home/bvrznski/rebuntu/src/runtime/discovery.o"
 	@echo "... home/bvrznski/rebuntu/src/runtime/discovery.i"
 	@echo "... home/bvrznski/rebuntu/src/runtime/discovery.s"
@@ -876,6 +957,9 @@ help:
 	@echo "... lifecycle_test.o"
 	@echo "... lifecycle_test.i"
 	@echo "... lifecycle_test.s"
+	@echo "... ownership_test.o"
+	@echo "... ownership_test.i"
+	@echo "... ownership_test.s"
 	@echo "... results_test.o"
 	@echo "... results_test.i"
 	@echo "... results_test.s"

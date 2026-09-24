@@ -223,6 +223,10 @@ src/rebuntu/rebuntu: src/rebuntu/CMakeFiles/rebuntu.dir/build.make
 src/rebuntu/rebuntu: src/core/librebuntu-core.a
 src/rebuntu/rebuntu: librebuntu-install.a
 src/rebuntu/rebuntu: librebuntu-user-identity.a
+src/rebuntu/rebuntu: librebuntu-group-membership.a
+src/rebuntu/rebuntu: librebuntu-ownership.a
+src/rebuntu/rebuntu: librebuntu-privilege.a
+src/rebuntu/rebuntu: librebuntu-authorization.a
 src/rebuntu/rebuntu: librebuntu-environment-discovery.a
 src/rebuntu/rebuntu: librebuntu-setup.a
 src/rebuntu/rebuntu: librebuntu-lifecycle.a

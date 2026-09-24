@@ -517,6 +517,58 @@ rebuntu-user-identity/fast:
 .PHONY : rebuntu-user-identity/fast
 
 #=============================================================================
+# Target rules for targets named rebuntu-group-membership
+
+# Build rule for target.
+rebuntu-group-membership: cmake_check_build_system
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 rebuntu-group-membership
+.PHONY : rebuntu-group-membership
+
+# fast build rule for target.
+rebuntu-group-membership/fast:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/rebuntu-group-membership.dir/build.make CMakeFiles/rebuntu-group-membership.dir/build
+.PHONY : rebuntu-group-membership/fast
+
+#=============================================================================
+# Target rules for targets named rebuntu-ownership
+
+# Build rule for target.
+rebuntu-ownership: cmake_check_build_system
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 rebuntu-ownership
+.PHONY : rebuntu-ownership
+
+# fast build rule for target.
+rebuntu-ownership/fast:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/rebuntu-ownership.dir/build.make CMakeFiles/rebuntu-ownership.dir/build
+.PHONY : rebuntu-ownership/fast
+
+#=============================================================================
+# Target rules for targets named rebuntu-privilege
+
+# Build rule for target.
+rebuntu-privilege: cmake_check_build_system
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 rebuntu-privilege
+.PHONY : rebuntu-privilege
+
+# fast build rule for target.
+rebuntu-privilege/fast:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/rebuntu-privilege.dir/build.make CMakeFiles/rebuntu-privilege.dir/build
+.PHONY : rebuntu-privilege/fast
+
+#=============================================================================
+# Target rules for targets named rebuntu-authorization
+
+# Build rule for target.
+rebuntu-authorization: cmake_check_build_system
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 rebuntu-authorization
+.PHONY : rebuntu-authorization
+
+# fast build rule for target.
+rebuntu-authorization/fast:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/rebuntu-authorization.dir/build.make CMakeFiles/rebuntu-authorization.dir/build
+.PHONY : rebuntu-authorization/fast
+
+#=============================================================================
 # Target rules for targets named rebuntu-environment-discovery
 
 # Build rule for target.
@@ -764,6 +816,32 @@ user_identity_test/fast:
 .PHONY : user_identity_test/fast
 
 #=============================================================================
+# Target rules for targets named group_membership_test
+
+# Build rule for target.
+group_membership_test: cmake_check_build_system
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 group_membership_test
+.PHONY : group_membership_test
+
+# fast build rule for target.
+group_membership_test/fast:
+	$(MAKE) $(MAKESILENT) -f tests/CMakeFiles/group_membership_test.dir/build.make tests/CMakeFiles/group_membership_test.dir/build
+.PHONY : group_membership_test/fast
+
+#=============================================================================
+# Target rules for targets named ownership_test
+
+# Build rule for target.
+ownership_test: cmake_check_build_system
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 ownership_test
+.PHONY : ownership_test
+
+# fast build rule for target.
+ownership_test/fast:
+	$(MAKE) $(MAKESILENT) -f tests/CMakeFiles/ownership_test.dir/build.make tests/CMakeFiles/ownership_test.dir/build
+.PHONY : ownership_test/fast
+
+#=============================================================================
 # Target rules for targets named lifecycle_test
 
 # Build rule for target.
@@ -802,6 +880,30 @@ rebuntu/fast:
 	$(MAKE) $(MAKESILENT) -f src/rebuntu/CMakeFiles/rebuntu.dir/build.make src/rebuntu/CMakeFiles/rebuntu.dir/build
 .PHONY : rebuntu/fast
 
+home/bvrznski/rebuntu/src/system/environment/authorization.o: home/bvrznski/rebuntu/src/system/environment/authorization.cpp.o
+.PHONY : home/bvrznski/rebuntu/src/system/environment/authorization.o
+
+# target to build an object file
+home/bvrznski/rebuntu/src/system/environment/authorization.cpp.o:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/rebuntu-authorization.dir/build.make CMakeFiles/rebuntu-authorization.dir/home/bvrznski/rebuntu/src/system/environment/authorization.cpp.o
+.PHONY : home/bvrznski/rebuntu/src/system/environment/authorization.cpp.o
+
+home/bvrznski/rebuntu/src/system/environment/authorization.i: home/bvrznski/rebuntu/src/system/environment/authorization.cpp.i
+.PHONY : home/bvrznski/rebuntu/src/system/environment/authorization.i
+
+# target to preprocess a source file
+home/bvrznski/rebuntu/src/system/environment/authorization.cpp.i:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/rebuntu-authorization.dir/build.make CMakeFiles/rebuntu-authorization.dir/home/bvrznski/rebuntu/src/system/environment/authorization.cpp.i
+.PHONY : home/bvrznski/rebuntu/src/system/environment/authorization.cpp.i
+
+home/bvrznski/rebuntu/src/system/environment/authorization.s: home/bvrznski/rebuntu/src/system/environment/authorization.cpp.s
+.PHONY : home/bvrznski/rebuntu/src/system/environment/authorization.s
+
+# target to generate assembly for a file
+home/bvrznski/rebuntu/src/system/environment/authorization.cpp.s:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/rebuntu-authorization.dir/build.make CMakeFiles/rebuntu-authorization.dir/home/bvrznski/rebuntu/src/system/environment/authorization.cpp.s
+.PHONY : home/bvrznski/rebuntu/src/system/environment/authorization.cpp.s
+
 home/bvrznski/rebuntu/src/system/environment/environment_discovery.o: home/bvrznski/rebuntu/src/system/environment/environment_discovery.cpp.o
 .PHONY : home/bvrznski/rebuntu/src/system/environment/environment_discovery.o
 
@@ -825,6 +927,78 @@ home/bvrznski/rebuntu/src/system/environment/environment_discovery.s: home/bvrzn
 home/bvrznski/rebuntu/src/system/environment/environment_discovery.cpp.s:
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/rebuntu-environment-discovery.dir/build.make CMakeFiles/rebuntu-environment-discovery.dir/home/bvrznski/rebuntu/src/system/environment/environment_discovery.cpp.s
 .PHONY : home/bvrznski/rebuntu/src/system/environment/environment_discovery.cpp.s
+
+home/bvrznski/rebuntu/src/system/environment/group_membership.o: home/bvrznski/rebuntu/src/system/environment/group_membership.cpp.o
+.PHONY : home/bvrznski/rebuntu/src/system/environment/group_membership.o
+
+# target to build an object file
+home/bvrznski/rebuntu/src/system/environment/group_membership.cpp.o:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/rebuntu-group-membership.dir/build.make CMakeFiles/rebuntu-group-membership.dir/home/bvrznski/rebuntu/src/system/environment/group_membership.cpp.o
+.PHONY : home/bvrznski/rebuntu/src/system/environment/group_membership.cpp.o
+
+home/bvrznski/rebuntu/src/system/environment/group_membership.i: home/bvrznski/rebuntu/src/system/environment/group_membership.cpp.i
+.PHONY : home/bvrznski/rebuntu/src/system/environment/group_membership.i
+
+# target to preprocess a source file
+home/bvrznski/rebuntu/src/system/environment/group_membership.cpp.i:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/rebuntu-group-membership.dir/build.make CMakeFiles/rebuntu-group-membership.dir/home/bvrznski/rebuntu/src/system/environment/group_membership.cpp.i
+.PHONY : home/bvrznski/rebuntu/src/system/environment/group_membership.cpp.i
+
+home/bvrznski/rebuntu/src/system/environment/group_membership.s: home/bvrznski/rebuntu/src/system/environment/group_membership.cpp.s
+.PHONY : home/bvrznski/rebuntu/src/system/environment/group_membership.s
+
+# target to generate assembly for a file
+home/bvrznski/rebuntu/src/system/environment/group_membership.cpp.s:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/rebuntu-group-membership.dir/build.make CMakeFiles/rebuntu-group-membership.dir/home/bvrznski/rebuntu/src/system/environment/group_membership.cpp.s
+.PHONY : home/bvrznski/rebuntu/src/system/environment/group_membership.cpp.s
+
+home/bvrznski/rebuntu/src/system/environment/ownership.o: home/bvrznski/rebuntu/src/system/environment/ownership.cpp.o
+.PHONY : home/bvrznski/rebuntu/src/system/environment/ownership.o
+
+# target to build an object file
+home/bvrznski/rebuntu/src/system/environment/ownership.cpp.o:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/rebuntu-ownership.dir/build.make CMakeFiles/rebuntu-ownership.dir/home/bvrznski/rebuntu/src/system/environment/ownership.cpp.o
+.PHONY : home/bvrznski/rebuntu/src/system/environment/ownership.cpp.o
+
+home/bvrznski/rebuntu/src/system/environment/ownership.i: home/bvrznski/rebuntu/src/system/environment/ownership.cpp.i
+.PHONY : home/bvrznski/rebuntu/src/system/environment/ownership.i
+
+# target to preprocess a source file
+home/bvrznski/rebuntu/src/system/environment/ownership.cpp.i:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/rebuntu-ownership.dir/build.make CMakeFiles/rebuntu-ownership.dir/home/bvrznski/rebuntu/src/system/environment/ownership.cpp.i
+.PHONY : home/bvrznski/rebuntu/src/system/environment/ownership.cpp.i
+
+home/bvrznski/rebuntu/src/system/environment/ownership.s: home/bvrznski/rebuntu/src/system/environment/ownership.cpp.s
+.PHONY : home/bvrznski/rebuntu/src/system/environment/ownership.s
+
+# target to generate assembly for a file
+home/bvrznski/rebuntu/src/system/environment/ownership.cpp.s:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/rebuntu-ownership.dir/build.make CMakeFiles/rebuntu-ownership.dir/home/bvrznski/rebuntu/src/system/environment/ownership.cpp.s
+.PHONY : home/bvrznski/rebuntu/src/system/environment/ownership.cpp.s
+
+home/bvrznski/rebuntu/src/system/environment/privilege.o: home/bvrznski/rebuntu/src/system/environment/privilege.cpp.o
+.PHONY : home/bvrznski/rebuntu/src/system/environment/privilege.o
+
+# target to build an object file
+home/bvrznski/rebuntu/src/system/environment/privilege.cpp.o:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/rebuntu-privilege.dir/build.make CMakeFiles/rebuntu-privilege.dir/home/bvrznski/rebuntu/src/system/environment/privilege.cpp.o
+.PHONY : home/bvrznski/rebuntu/src/system/environment/privilege.cpp.o
+
+home/bvrznski/rebuntu/src/system/environment/privilege.i: home/bvrznski/rebuntu/src/system/environment/privilege.cpp.i
+.PHONY : home/bvrznski/rebuntu/src/system/environment/privilege.i
+
+# target to preprocess a source file
+home/bvrznski/rebuntu/src/system/environment/privilege.cpp.i:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/rebuntu-privilege.dir/build.make CMakeFiles/rebuntu-privilege.dir/home/bvrznski/rebuntu/src/system/environment/privilege.cpp.i
+.PHONY : home/bvrznski/rebuntu/src/system/environment/privilege.cpp.i
+
+home/bvrznski/rebuntu/src/system/environment/privilege.s: home/bvrznski/rebuntu/src/system/environment/privilege.cpp.s
+.PHONY : home/bvrznski/rebuntu/src/system/environment/privilege.s
+
+# target to generate assembly for a file
+home/bvrznski/rebuntu/src/system/environment/privilege.cpp.s:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/rebuntu-privilege.dir/build.make CMakeFiles/rebuntu-privilege.dir/home/bvrznski/rebuntu/src/system/environment/privilege.cpp.s
+.PHONY : home/bvrznski/rebuntu/src/system/environment/privilege.cpp.s
 
 home/bvrznski/rebuntu/src/system/environment/user_identity.o: home/bvrznski/rebuntu/src/system/environment/user_identity.cpp.o
 .PHONY : home/bvrznski/rebuntu/src/system/environment/user_identity.o
@@ -1058,17 +1232,23 @@ help:
 	@echo "... automation_test"
 	@echo "... config_test"
 	@echo "... events_test"
+	@echo "... group_membership_test"
 	@echo "... host_foundation_test"
 	@echo "... install_planning_test"
 	@echo "... lifecycle_test"
+	@echo "... ownership_test"
 	@echo "... preferences_test"
 	@echo "... profile_test"
 	@echo "... rebuntu"
+	@echo "... rebuntu-authorization"
 	@echo "... rebuntu-core"
 	@echo "... rebuntu-environment-discovery"
+	@echo "... rebuntu-group-membership"
 	@echo "... rebuntu-host-foundation"
 	@echo "... rebuntu-install"
 	@echo "... rebuntu-lifecycle"
+	@echo "... rebuntu-ownership"
+	@echo "... rebuntu-privilege"
 	@echo "... rebuntu-setup"
 	@echo "... rebuntu-user-identity"
 	@echo "... results_test"
@@ -1079,9 +1259,21 @@ help:
 	@echo "... test_runtime_contracts"
 	@echo "... test_state_provider"
 	@echo "... user_identity_test"
+	@echo "... home/bvrznski/rebuntu/src/system/environment/authorization.o"
+	@echo "... home/bvrznski/rebuntu/src/system/environment/authorization.i"
+	@echo "... home/bvrznski/rebuntu/src/system/environment/authorization.s"
 	@echo "... home/bvrznski/rebuntu/src/system/environment/environment_discovery.o"
 	@echo "... home/bvrznski/rebuntu/src/system/environment/environment_discovery.i"
 	@echo "... home/bvrznski/rebuntu/src/system/environment/environment_discovery.s"
+	@echo "... home/bvrznski/rebuntu/src/system/environment/group_membership.o"
+	@echo "... home/bvrznski/rebuntu/src/system/environment/group_membership.i"
+	@echo "... home/bvrznski/rebuntu/src/system/environment/group_membership.s"
+	@echo "... home/bvrznski/rebuntu/src/system/environment/ownership.o"
+	@echo "... home/bvrznski/rebuntu/src/system/environment/ownership.i"
+	@echo "... home/bvrznski/rebuntu/src/system/environment/ownership.s"
+	@echo "... home/bvrznski/rebuntu/src/system/environment/privilege.o"
+	@echo "... home/bvrznski/rebuntu/src/system/environment/privilege.i"
+	@echo "... home/bvrznski/rebuntu/src/system/environment/privilege.s"
 	@echo "... home/bvrznski/rebuntu/src/system/environment/user_identity.o"
 	@echo "... home/bvrznski/rebuntu/src/system/environment/user_identity.i"
 	@echo "... home/bvrznski/rebuntu/src/system/environment/user_identity.s"

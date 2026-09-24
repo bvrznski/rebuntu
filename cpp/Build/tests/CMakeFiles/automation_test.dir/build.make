@@ -95,6 +95,10 @@ tests/automation_test: tests/CMakeFiles/automation_test.dir/build.make
 tests/automation_test: src/core/librebuntu-core.a
 tests/automation_test: librebuntu-install.a
 tests/automation_test: librebuntu-user-identity.a
+tests/automation_test: librebuntu-group-membership.a
+tests/automation_test: librebuntu-ownership.a
+tests/automation_test: librebuntu-privilege.a
+tests/automation_test: librebuntu-authorization.a
 tests/automation_test: librebuntu-environment-discovery.a
 tests/automation_test: librebuntu-setup.a
 tests/automation_test: librebuntu-lifecycle.a

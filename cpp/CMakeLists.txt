@@ -98,6 +98,50 @@ target_include_directories(rebuntu-user-identity PUBLIC
 
 target_link_libraries(rebuntu-core PUBLIC rebuntu-user-identity)
 
+# Phase 2.2: Group membership module (groups, membership & roles)
+add_library(rebuntu-group-membership STATIC
+    ${USER_IDENTITY_SRC_ROOT}/group_membership.cpp
+)
+
+target_include_directories(rebuntu-group-membership PUBLIC
+    ${CMAKE_CURRENT_LIST_DIR}/../src
+)
+
+target_link_libraries(rebuntu-core PUBLIC rebuntu-group-membership)
+
+# Phase 2.3: Ownership & permissions module (uid/gid/mode bits/umask)
+add_library(rebuntu-ownership STATIC
+    ${USER_IDENTITY_SRC_ROOT}/ownership.cpp
+)
+
+target_include_directories(rebuntu-ownership PUBLIC
+    ${CMAKE_CURRENT_LIST_DIR}/../src
+)
+
+target_link_libraries(rebuntu-core PUBLIC rebuntu-ownership)
+
+# Phase 2.4: Privilege & elevation module (uid/elevation/scope context)
+add_library(rebuntu-privilege STATIC
+    ${USER_IDENTITY_SRC_ROOT}/privilege.cpp
+)
+
+target_include_directories(rebuntu-privilege PUBLIC
+    ${CMAKE_CURRENT_LIST_DIR}/../src
+)
+
+target_link_libraries(rebuntu-core PUBLIC rebuntu-privilege)
+
+# Phase 2.6: Authorization & scope module (policy decisions)
+add_library(rebuntu-authorization STATIC
+    ${USER_IDENTITY_SRC_ROOT}/authorization.cpp
+)
+
+target_include_directories(rebuntu-authorization PUBLIC
+    ${CMAKE_CURRENT_LIST_DIR}/../src
+)
+
+target_link_libraries(rebuntu-core PUBLIC rebuntu-authorization)
+
 # Phase 1.9: Environment discovery module (Hardware/Software environment)
 add_library(rebuntu-environment-discovery STATIC
     ${USER_IDENTITY_SRC_ROOT}/environment_discovery.cpp

@@ -95,6 +95,10 @@ tests/structured_setup_test: tests/CMakeFiles/structured_setup_test.dir/build.ma
 tests/structured_setup_test: src/core/librebuntu-core.a
 tests/structured_setup_test: librebuntu-install.a
 tests/structured_setup_test: librebuntu-user-identity.a
+tests/structured_setup_test: librebuntu-group-membership.a
+tests/structured_setup_test: librebuntu-ownership.a
+tests/structured_setup_test: librebuntu-privilege.a
+tests/structured_setup_test: librebuntu-authorization.a
 tests/structured_setup_test: librebuntu-environment-discovery.a
 tests/structured_setup_test: librebuntu-setup.a
 tests/structured_setup_test: librebuntu-lifecycle.a

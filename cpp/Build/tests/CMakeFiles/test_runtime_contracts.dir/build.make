@@ -95,6 +95,10 @@ tests/test_runtime_contracts: tests/CMakeFiles/test_runtime_contracts.dir/build.
 tests/test_runtime_contracts: src/core/librebuntu-core.a
 tests/test_runtime_contracts: librebuntu-install.a
 tests/test_runtime_contracts: librebuntu-user-identity.a
+tests/test_runtime_contracts: librebuntu-group-membership.a
+tests/test_runtime_contracts: librebuntu-ownership.a
+tests/test_runtime_contracts: librebuntu-privilege.a
+tests/test_runtime_contracts: librebuntu-authorization.a
 tests/test_runtime_contracts: librebuntu-environment-discovery.a
 tests/test_runtime_contracts: librebuntu-setup.a
 tests/test_runtime_contracts: librebuntu-lifecycle.a

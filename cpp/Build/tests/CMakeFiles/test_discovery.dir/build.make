@@ -111,6 +111,10 @@ tests/test_discovery: tests/CMakeFiles/test_discovery.dir/build.make
 tests/test_discovery: src/core/librebuntu-core.a
 tests/test_discovery: librebuntu-install.a
 tests/test_discovery: librebuntu-user-identity.a
+tests/test_discovery: librebuntu-group-membership.a
+tests/test_discovery: librebuntu-ownership.a
+tests/test_discovery: librebuntu-privilege.a
+tests/test_discovery: librebuntu-authorization.a
 tests/test_discovery: librebuntu-environment-discovery.a
 tests/test_discovery: librebuntu-setup.a
 tests/test_discovery: librebuntu-lifecycle.a

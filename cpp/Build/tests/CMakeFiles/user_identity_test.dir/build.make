@@ -95,6 +95,10 @@ tests/user_identity_test: tests/CMakeFiles/user_identity_test.dir/build.make
 tests/user_identity_test: src/core/librebuntu-core.a
 tests/user_identity_test: librebuntu-install.a
 tests/user_identity_test: librebuntu-user-identity.a
+tests/user_identity_test: librebuntu-group-membership.a
+tests/user_identity_test: librebuntu-ownership.a
+tests/user_identity_test: librebuntu-privilege.a
+tests/user_identity_test: librebuntu-authorization.a
 tests/user_identity_test: librebuntu-environment-discovery.a
 tests/user_identity_test: librebuntu-setup.a
 tests/user_identity_test: librebuntu-lifecycle.a

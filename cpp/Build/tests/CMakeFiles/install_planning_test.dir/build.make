@@ -111,6 +111,10 @@ tests/install_planning_test: tests/CMakeFiles/install_planning_test.dir/build.ma
 tests/install_planning_test: src/core/librebuntu-core.a
 tests/install_planning_test: librebuntu-install.a
 tests/install_planning_test: librebuntu-user-identity.a
+tests/install_planning_test: librebuntu-group-membership.a
+tests/install_planning_test: librebuntu-ownership.a
+tests/install_planning_test: librebuntu-privilege.a
+tests/install_planning_test: librebuntu-authorization.a
 tests/install_planning_test: librebuntu-environment-discovery.a
 tests/install_planning_test: librebuntu-setup.a
 tests/install_planning_test: librebuntu-lifecycle.a

@@ -135,6 +135,24 @@ target_include_directories(user_identity_test PRIVATE
 )
 add_test(NAME user_identity_test COMMAND user_identity_test)
 
+# Group membership tests (Phase 2.2)
+add_executable(group_membership_test group_membership_test.cpp)
+target_link_libraries(group_membership_test rebuntu-core rebuntu-group-membership)
+target_include_directories(group_membership_test PRIVATE 
+    ${CMAKE_SOURCE_DIR}/src
+    ${CMAKE_SOURCE_DIR}
+)
+add_test(NAME group_membership_test COMMAND group_membership_test)
+
+# Ownership & permissions tests (Phase 2.3)
+add_executable(ownership_test ownership_test.cpp)
+target_link_libraries(ownership_test rebuntu-core rebuntu-ownership)
+target_include_directories(ownership_test PRIVATE 
+    ${CMAKE_SOURCE_DIR}/src
+    ${CMAKE_SOURCE_DIR}
+)
+add_test(NAME ownership_test COMMAND ownership_test)
+
 # Phase 1.11: Lifecycle operations tests (reconfigure, repair, upgrade, uninstall)
 add_executable(lifecycle_test lifecycle_test.cpp)
 target_link_libraries(lifecycle_test rebuntu-core rebuntu-lifecycle)

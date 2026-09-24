@@ -95,6 +95,10 @@ tests/profile_test: tests/CMakeFiles/profile_test.dir/build.make
 tests/profile_test: src/core/librebuntu-core.a
 tests/profile_test: librebuntu-install.a
 tests/profile_test: librebuntu-user-identity.a
+tests/profile_test: librebuntu-group-membership.a
+tests/profile_test: librebuntu-ownership.a
+tests/profile_test: librebuntu-privilege.a
+tests/profile_test: librebuntu-authorization.a
 tests/profile_test: librebuntu-environment-discovery.a
 tests/profile_test: librebuntu-setup.a
 tests/profile_test: librebuntu-lifecycle.a

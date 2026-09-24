@@ -95,6 +95,10 @@ tests/test_state_provider: tests/CMakeFiles/test_state_provider.dir/build.make
 tests/test_state_provider: src/core/librebuntu-core.a
 tests/test_state_provider: librebuntu-install.a
 tests/test_state_provider: librebuntu-user-identity.a
+tests/test_state_provider: librebuntu-group-membership.a
+tests/test_state_provider: librebuntu-ownership.a
+tests/test_state_provider: librebuntu-privilege.a
+tests/test_state_provider: librebuntu-authorization.a
 tests/test_state_provider: librebuntu-environment-discovery.a
 tests/test_state_provider: librebuntu-setup.a
 tests/test_state_provider: librebuntu-lifecycle.a

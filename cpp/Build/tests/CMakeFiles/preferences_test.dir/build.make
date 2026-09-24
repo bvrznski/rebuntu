@@ -95,6 +95,10 @@ tests/preferences_test: tests/CMakeFiles/preferences_test.dir/build.make
 tests/preferences_test: src/core/librebuntu-core.a
 tests/preferences_test: librebuntu-install.a
 tests/preferences_test: librebuntu-user-identity.a
+tests/preferences_test: librebuntu-group-membership.a
+tests/preferences_test: librebuntu-ownership.a
+tests/preferences_test: librebuntu-privilege.a
+tests/preferences_test: librebuntu-authorization.a
 tests/preferences_test: librebuntu-environment-discovery.a
 tests/preferences_test: librebuntu-setup.a
 tests/preferences_test: librebuntu-lifecycle.a

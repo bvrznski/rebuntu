@@ -95,6 +95,10 @@ tests/results_test: tests/CMakeFiles/results_test.dir/build.make
 tests/results_test: src/core/librebuntu-core.a
 tests/results_test: librebuntu-install.a
 tests/results_test: librebuntu-user-identity.a
+tests/results_test: librebuntu-group-membership.a
+tests/results_test: librebuntu-ownership.a
+tests/results_test: librebuntu-privilege.a
+tests/results_test: librebuntu-authorization.a
 tests/results_test: librebuntu-environment-discovery.a
 tests/results_test: librebuntu-setup.a
 tests/results_test: librebuntu-lifecycle.a

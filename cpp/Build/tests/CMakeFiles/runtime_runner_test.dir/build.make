@@ -95,6 +95,10 @@ tests/runtime_runner_test: tests/CMakeFiles/runtime_runner_test.dir/build.make
 tests/runtime_runner_test: src/core/librebuntu-core.a
 tests/runtime_runner_test: librebuntu-install.a
 tests/runtime_runner_test: librebuntu-user-identity.a
+tests/runtime_runner_test: librebuntu-group-membership.a
+tests/runtime_runner_test: librebuntu-ownership.a
+tests/runtime_runner_test: librebuntu-privilege.a
+tests/runtime_runner_test: librebuntu-authorization.a
 tests/runtime_runner_test: librebuntu-environment-discovery.a
 tests/runtime_runner_test: librebuntu-setup.a
 tests/runtime_runner_test: librebuntu-lifecycle.a

@@ -95,6 +95,10 @@ tests/settings_test: tests/CMakeFiles/settings_test.dir/build.make
 tests/settings_test: src/core/librebuntu-core.a
 tests/settings_test: librebuntu-install.a
 tests/settings_test: librebuntu-user-identity.a
+tests/settings_test: librebuntu-group-membership.a
+tests/settings_test: librebuntu-ownership.a
+tests/settings_test: librebuntu-privilege.a
+tests/settings_test: librebuntu-authorization.a
 tests/settings_test: librebuntu-environment-discovery.a
 tests/settings_test: librebuntu-setup.a
 tests/settings_test: librebuntu-lifecycle.a

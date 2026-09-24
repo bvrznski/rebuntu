@@ -96,6 +96,10 @@ tests/lifecycle_test: src/core/librebuntu-core.a
 tests/lifecycle_test: librebuntu-lifecycle.a
 tests/lifecycle_test: librebuntu-install.a
 tests/lifecycle_test: librebuntu-user-identity.a
+tests/lifecycle_test: librebuntu-group-membership.a
+tests/lifecycle_test: librebuntu-ownership.a
+tests/lifecycle_test: librebuntu-privilege.a
+tests/lifecycle_test: librebuntu-authorization.a
 tests/lifecycle_test: librebuntu-environment-discovery.a
 tests/lifecycle_test: librebuntu-setup.a
 tests/lifecycle_test: librebuntu-host-foundation.a

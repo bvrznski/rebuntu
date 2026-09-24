@@ -1776,6 +1776,119 @@ Prefer:
 
 ---
 
+# 52. Operational Reasoning Rules (Phase 0.2)
+
+Before implementing runtime functionality, ask these questions:
+
+## 1. Specification vs Instance
+
+1. Is this a static specification or runtime instance?
+   - If specification: is it reusable, immutable, and stable?
+   - If instance: does it have identity, lifecycle state, and temporal existence?
+
+2. What is the distinction between:
+   - TaskDefinition (specification) → Job (instance)?
+   - ServiceConfig (specification) → ServiceInstance (instance)?
+
+## 2. State Dimensions
+
+3. Which orthogonal state dimension applies?
+   - LifecycleState: stage of existence?
+   - WorkState: current activity type?
+   - ControlState: administrative control?
+   - ReadinessState: can accept work now?
+   - HealthState: sustained quality?
+   - RecoveryState: corrective action in progress?
+
+4. Does ready() = (readiness == kReady) AND (health == kHealthy)?
+
+## 3. Execution Model
+
+5. What is the execution chain for this entity?
+   - Unit + parameters → Task → submit → Job → execute → Result
+   - Does it have a Runner? Executor? Dispatcher?
+
+6. How do we distinguish:
+   - Execution success (exit code, no crash) vs Verification success (postconditions met)?
+
+## 4. Request/Event/Signal/Trigger
+
+7. What communication pattern applies?
+   - Request: semantic ask for action (operation + target + parameters)?
+   - Event: immutable statement that something occurred (evidence-backed)?
+   - Signal: lightweight control indication (pause/resume/cancel/reconfigure)?
+   - Trigger: Event + Condition → activation decision?
+
+8. Is this a control instruction or an observation? Don't confuse:
+   - Signal (control) vs Event (observation)
+   - Request (ask) vs Event (report)
+
+## 5. Retry & Timeout
+
+9. What retry policy applies?
+   - max_attempts, exponential_backoff, retryable_error_codes?
+
+10. What timeout policy applies?
+    - operation_timeout, verification_timeout?
+    - cancel_on_timeout? retry_on_timeout?
+
+## 6. Coordination & Dependencies
+
+11. Does this have dependencies on other entities?
+    - Structural (code-level)
+    - Implementation (runtime needs)
+    - Runtime (lifecycle ordering)
+    - Ordering (A before B)
+    - Readiness (B can start when A ready)
+    - Resource (shared lock/queue/buffer)?
+
+## 7. Recovery Patterns
+
+12. Which recovery pattern applies if this fails?
+    - Retry: same operation again
+    - Rollback: return to prior state
+    - Restore: recreate from preserved source
+    - Repair: modify to valid state
+    - Failover: switch to alternate
+    - Degrade: continue with reduced functionality?
+
+## 8. Evidence & Verification
+
+13. What evidence will verify success?
+    - Observation (what was observed)
+    - Fact (observed statement with provenance)
+    - Assertion/Condition (evaluated proposition)
+    - Evidence (provenance-bearing observation supporting claims)
+
+14. Is verification separate from execution?
+    - Operation may complete but verification may fail
+    - Exit code 0 proves only exit code, not desired state achieved
+
+## 9. Native Linux Integration
+
+15. What native mechanism does this use?
+    - systemd for lifecycle/timers/scheduling?
+    - inotify/fanotify for filesystem events?
+    - udev/netlink for device events?
+    - D-Bus for IPC/controls?
+    - signalfd/pidfd for cancellation?
+
+## 10. Automation vs Workflow
+
+16. Is this automation or workflow?
+    - Automation: when/why activation happens (triggers on conditions)
+    - Workflow: how execution progresses after activation (phases/steps)
+
+## 11. Runtime Ownership
+
+17. What does runtime own vs what belongs elsewhere?
+    - Lifecycle management → runtime
+    - State persistence → state management
+    - Policy enforcement → policy engine
+    - Security authorization → security subsystem
+
+---
+
 **REMEMBER:**
 
 **THIS PROJECT IS REBUNTU.**
@@ -1886,6 +1999,110 @@ No useful implementation may be lost merely to restore the directory structure.
 ## Phase 0.1 addendum (Structural Taxonomy Expansion)
 
 ### Structural families (directories)
+
+---
+
+## 52. Operational Reasoning Rules
+
+Before implementing runtime functionality, ask these questions:
+
+1. **Is this specification or runtime state?**
+   - Specification: static declaration of what something is (immutable, reusable)
+   - Runtime instance: concrete occurrence with identity, lifecycle, temporal existence
+   - Examples: TaskDefinition vs Job, ServiceConfig vs ServiceInstance
+
+2. **What activates it?**
+   - Request (semantic ask for action)
+   - Event (immutable statement that something occurred)
+   - Schedule (temporal activation)
+   - Trigger (activation decision when criteria satisfied)
+
+3. **Who owns its lifecycle?**
+   - Runtime manages instantiation, initialization, activation, termination
+   - Native Linux mechanisms own their native lifecycles (systemd for services, etc.)
+
+4. **Does Linux/systemd already own that lifecycle?**
+   - If yes: query/observe rather than control
+   - If no: Rebuntu runtime may manage it
+
+5. **Is it synchronous or asynchronous?**
+   - Synchronous: caller waits for completion
+   - Asynchronous: execution continues independently, result observed later
+
+6. **What is the Result?**
+   - Structured outcome with:
+     * Outcome (SUCCESS/FAILURE/CANCELLED/TIMED_OUT)
+     * Evidence (provenance-bearing observations)
+     * Timing information
+     * Verification status
+
+7. **How is success verified?**
+   - Execution success ≠ Verification success
+   - Exit code 0 proves only exit code, not desired state achieved
+   - Postcondition verification required for consequential operations
+
+8. **What Evidence supports the result?**
+   - Observed values with source provenance
+   - Command/API results
+   - Before/after snapshots
+   - Timestamps and measurements
+
+9. **What happens on timeout?**
+   - Timeout ≠ failure (could be retryable)
+   - Cancel? Retry? Continue in degraded mode?
+   - Separate operation_timeout and verification_timeout policies
+
+10. **What happens on cancellation?**
+    - Cooperative cancellation preferred
+    - Native: signalfd/pidfd for signals
+    - Bounded operations that can clean up
+
+11. **Is retry safe?**
+    - Idempotent operations are retry-safe
+    - Non-idempotent may need compensation/rollback
+    - RetryPolicy with exponential backoff
+
+12. **Is the operation idempotent?**
+    - Repeating is safe and produces same result
+    - Critical for recovery and automation reliability
+
+13. **Is it reversible?**
+    - Naturally reversible: yes
+    - Rollback-supported: requires undo mechanism
+    - Compensatable: can counteract effect with another action
+    - Irreversible: must avoid or use with extreme caution
+
+14. **What resources does it require?**
+    - CPU, memory, disk I/O, network bandwidth
+    - Device access (GPU, storage path)
+    - Resource constraints must be declared upfront
+
+15. **What is the authoritative source of state?**
+    - Linux kernel: process/device state
+    - systemd: service lifecycle state
+    - filesystem: file/directory state
+    - Rebuntu: Rebuntu-specific durable state
+    - No shadow state - query authoritative sources directly
+
+16. **Does this require IPC?**
+    - Local in-process calls preferred when possible
+    - Unix sockets, D-Bus for cross-process
+    - Native Linux mechanisms where appropriate
+
+17. **Does a native Linux primitive already provide the mechanism?**
+    - Use systemd timers instead of custom scheduler
+    - Use inotify/fanotify instead of polling filesystems
+    - Use udev/netlink for device events
+    - Use signalfd/pidfd for cancellation
+    - Use cgroups for resource limits
+
+18. **Is a new abstraction actually necessary?**
+    - Extend existing abstractions first
+    - Avoid creating duplicate mechanisms
+
+---
+
+## Phase 0.2 addendum (Operational Grammar)
 
 Before adding any new source component, identify which structural family it
 belongs to:

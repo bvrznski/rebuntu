@@ -113,3 +113,70 @@ Historical Rebuntu experimented with:
 
 The modern Phase 0.7 architecture preserves the useful principle that **Unit semantics should not depend on implementation language**, while standardizing on C++20 for authoritative runtime.
 
+## Phase 0.2 Runtime Architecture Archaeology
+
+### Historical Concepts
+
+Phase 4.x historical Rebuntu had early runtime/execution concepts:
+- `runtime/controller.cpp` — Runtime controller subsystem
+- `runtime/engine.cpp` — Runtime engine
+- `runtime/dispatcher.cpp` — Command dispatcher
+- `runtime/executor.cpp` — Execution subsystem
+- `runtime/runner.cpp` — Execution runner
+
+### Archaeology of Deferred Implementations
+
+These Phase 4.x files were found in `src/system/` but are:
+1. Not referenced in cpp/CMakeLists.txt (not built)
+2. In directories marked as "RESERVED" per ARCHITECTURE.md
+3. Claiming Phase 4.x implementations in their headers
+
+**Decision:** Deferred until operational architecture phase (Phase 0.2+).
+
+| Historical File | Modern Equivalent | Status |
+|-----------------|-------------------|--------|
+| runtime/controller.cpp | Controller coordination logic | Deferred to Phase 4.6 |
+| runtime/engine.cpp | Runtime engine (execution coordinator) | Deferred to Phase 4.2 |
+| runtime/dispatcher.cpp | Work dispatcher (route to mechanisms) | Deferred to operational architecture |
+| runtime/executor.cpp | Execution invocation mechanism | Deferred to operational architecture |
+| runtime/runner.cpp | Execution runner (state machine) | Deferred to operational architecture |
+| state/provider_*.cpp | Native state providers | Deferred to state management phase |
+
+### Translation to Phase 0.2
+
+The operational grammar established in Phase 0.2 reinterprets these concepts:
+
+| Historical Concept | Modern Operational Grammar Equivalent |
+|-------------------|---------------------------------------|
+| Runtime controller | Coordination decisions across components |
+| Runtime engine | Infrastructure for instantiation/execution |
+| Work dispatcher | Dispatcher: routes work to execution mechanisms |
+| Executor | Invokes concrete implementation/providers |
+| Runner | Progresses execution according to plan |
+
+### Native Linux Mechanisms Mapping
+
+The modern Phase 0.2 operational grammar maps historical concepts to native mechanisms:
+
+| Rebuntu Concept | Primary Native Mechanism |
+|-----------------|------------------------|
+| Lifecycle transitions | systemd unit lifecycle, kernel process/signals |
+| Timers/scheduling | systemd timers, timerfd |
+| Events (files) | inotify/fanotify |
+| Events (devices) | udev/netlink |
+| Service state | systemd D-Bus API |
+| Locks | flock/fcntl/pthread synchronization |
+| IPC | Unix sockets, D-Bus |
+| Resource limits | cgroups v2 / rlimits / systemd |
+| Process cancellation | signalfd/pidfd |
+
+### Phase 0.2 Acceptance Criteria
+
+The operational grammar is **CURRENT** and established via:
+- `src/runtime/contracts.hpp` — State dimensions, Request/Event/Signal/Trigger
+- `src/runtime/runner.hpp` — Runner state machine and progress tracking
+- `src/runtime/executor.hpp` — Executor base class with InlineExecutor implementation
+- `src/runtime/dispatcher.hpp` — Dispatcher and execution mode selection
+
+**Phase 0.2 Status:** COMPLETE — Operational grammar defined and implemented.
+

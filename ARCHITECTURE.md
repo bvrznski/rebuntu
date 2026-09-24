@@ -475,3 +475,225 @@ Request ─submit─▶ Job/Execution ─execute─▶ Result
 - **CANDIDATE:** assertion/condition engine, desired-state reconciliation,
   InternalAlert pipeline, workflow/operation runtime.
 - **HISTORICAL:** the prior Rebuntu corpus under `.phases/`.
+
+## 17. Phase 0.2 Runtime Architecture (Expanded)
+
+This section provides comprehensive runtime architecture for Phase 0.2.
+
+### 17.1 Runtime Infrastructure
+
+**Runtime** is the infrastructure required to instantiate and execute Rebuntu entities.
+
+What Runtime Owns:
+- **Lifecycle management**: creation, initialization, activation, termination
+- **Execution context**: timeouts, cancellation, environment variables
+- **Dispatch**: routing requests to appropriate execution mechanisms
+- **Active instances**: tracking runtime occurrences of specifications
+- **Coordination**: making multiple components act consistently
+- **Shutdown**: graceful and forced termination
+
+What Runtime Does NOT Own:
+- Domain-specific logic (belongs in Units/Modules)
+- State persistence (belongs in state management)
+- Policy enforcement (belongs in policy engine)
+- Security authorization (belongs in security subsystem)
+
+### 17.2 Execution Model
+
+```
+DISCOVER
+    ↓
+RESOLVE TARGET
+    ↓
+OBSERVE CURRENT STATE
+    ↓
+EVALUATE PRECONDITIONS
+    ↓
+PLAN (if mutating) → AUTHORIZE
+    ↓
+EXECUTE → OBSERVE RESULTING STATE
+    ↓
+VERIFY POSTCONDITIONS
+    ↓
+GENERATE EVIDENCE
+    ↓
+RESULT
+```
+
+### 17.3 Six Orthogonal State Dimensions
+
+| Dimension | Values | Meaning |
+|-----------|--------|---------|
+| LifecycleState | created, initializing, ready, active, stopping, stopped, failed | Stage of existence/execution |
+| WorkState | idle, processing, waiting, paused, jammed | Current activity type |
+| ControlState | enabled, disabled, paused, frozen, locked | Administrative control state |
+| ReadinessState | ready, not_ready | Can accept/perform work now? |
+| HealthState | unknown, healthy, degraded, unhealthy | Sustained qualitative state |
+| RecoveryState | none, retrying, rolling_back, restoring, repairing, failing_over | Corrective action in progress |
+
+**Readiness predicate:**
+```
+ready() = (readiness == kReady) AND (health == kHealthy)
+```
+
+### 17.4 Result & Verification Model
+
+**Result<T>:**
+- `outcome`: semantic conclusion (SUCCESS/FAILURE/PARTIAL/UNKNOWN/CANCELLED)
+- `verification_status`: verified/unverified/not_applicable
+- `evidence`: vector of provenance-bearing observations
+- `timing`: execution_duration, verification_duration
+
+**Execution success ≠ Verification success:**
+- Operation may complete but postconditions may fail verification
+- Exit code 0 proves only what exit code 0 actually proves
+
+### 17.5 Runner/Executor/Dispatcher Roles
+
+| Component | Responsibility |
+|-----------|----------------|
+| **Runner** | Progresses one bounded execution according to plan; maintains state machine (pending→running→finished) and tracks progress stages |
+| **Executor** | Invokes concrete implementation/providers and returns structured observations/results |
+| **Dispatcher** | Routes eligible work to appropriate execution mechanisms; implements backpressure |
+
+### 17.6 Request/Event/Signal/Trigger Distinctions
+
+| Pattern | Purpose | Key Properties |
+|---------|---------|----------------|
+| Request | Semantic request for action | Contains operation, target, parameters, timeout, priority, origin |
+| Event | Immutable statement something occurred | Evidence-backed, has provenance, may trigger automation |
+| Signal | Lightweight control indication | pause/resume/cancel/reconfigure (not POSIX signals) |
+| Trigger | Activation decision when criteria satisfied | Event + Condition → activation |
+
+### 17.7 Retry & Timeout Policy
+
+**RetryPolicy:**
+- `max_attempts`: total attempts including initial
+- `exponential_backoff`: delay increases between attempts
+- `retryable_error_codes`: filter which errors trigger retry
+- `compute_delay(attempt)`: calculate delay with backoff and maximum cap
+
+**TimeoutPolicy:**
+- `default_timeout`: fallback timeout for operations
+- `operation_timeout`: specific timeout for main execution
+- `verification_timeout`: specific timeout for postcondition verification
+- `cancel_on_timeout`: whether to cancel or continue on timeout
+- `retry_on_timeout`: whether to attempt retry on timeout
+
+### 17.8 Coordination & Dependencies
+
+**Coordination Types:**
+- Start B after A is ready (readiness dependency)
+- Prevent C while D is active (mutual exclusion)
+- Synchronize workflow threads
+- Arbitrate competing resource requests
+
+**Dependency Kinds:**
+- Structural (code-level dependencies)
+- Implementation (runtime needs)
+- Runtime (lifecycle ordering)
+- Ordering (A must complete before B starts)
+- Readiness (B can start when A becomes ready)
+- Resource (shared lock/queue/buffer)
+
+### 17.9 Recovery Patterns
+
+| Pattern | Description |
+|---------|-------------|
+| Retry | Attempt same operation again |
+| Rollback | Return to prior known state |
+| Restore | Recreate desired state from preserved source |
+| Repair | Modify damaged/inconsistent state to become valid |
+| Failover | Switch to alternate implementation/resource |
+| Degrade | Continue with reduced functionality |
+
+### 17.10 Native Linux Mechanism Mappings
+
+| Rebuntu Concept | Primary Native Mechanism |
+|-----------------|------------------------|
+| Lifecycle transitions | systemd unit lifecycle, kernel process/signals |
+| Timers/scheduling | systemd timers, timerfd |
+| Events (files) | inotify/fanotify |
+| Events (devices) | udev/netlink |
+| Service state | systemd D-Bus API |
+| Locks | flock/fcntl/pthread synchronization |
+| IPC | Unix sockets, D-Bus |
+| Resource limits | cgroups v2 / rlimits / systemd |
+| Process cancellation | signalfd/pidfd |
+
+### 17.11 Evidence Chain
+
+```
+Observation ─produces─▶ Fact
+Facts ─combine─▶ Assertion/Condition
+Assertion ─evaluated false─▶ Violation
+Operation ─executes─▶ Outcome
+    ↓
+Verification (postcondition evaluation)
+    ↓
+Evidence generated (provenance-bearing observations)
+    ↓
+Result with verification_status
+```
+
+### 17.12 Automation vs Workflow
+
+| Concept | Purpose |
+|---------|---------|
+| **Automation** | Describes *when/why* activation happens; observes events/state/time, evaluates conditions |
+| **Workflow** | Describes *how* execution progresses after activation; phases/steps invoking Units |
+
+### 17.13 Reconciliation vs Recovery
+
+| Concept | Purpose |
+|---------|---------|
+| **Reconciliation** | Moves observed state toward desired state (drift correction) |
+| **Recovery** | Responds to failure/degradation and attempts restoration |
+
+---
+
+## 18. Phase 0.2 Completion Checklist
+
+### Acceptance Criteria
+- [x] Runtime defined (infrastructure for instantiation/execution)
+- [x] Specification vs Instance distinction established
+- [x] Execution model defined (Runner/Executor/Dispatcher roles)
+- [x] State orthogonal dimensions identified and documented (6 dimensions)
+- [x] Result/Outcome/Evidence chain established
+- [x] Request/Event/Signal/Trigger distinctions clear
+- [x] Lifecycle transitions documented
+- [x] Readiness predicate defined
+- [x] RetryPolicy with exponential backoff specified
+- [x] TimeoutPolicy for operation vs verification timeouts specified
+- [x] Execution chain: Unit → Task → Job → Execution → Result
+- [x] Verification model with evidence chain established
+- [x] Recovery patterns documented (retry, rollback, restore, repair, failover, degrade)
+- [x] Native Linux mechanism mappings documented
+
+### Files Reference
+| File | Purpose |
+|------|---------|
+| `src/runtime/contracts.hpp` | State dimensions, Request/Event/Signal/Trigger, Result types |
+| `src/runtime/runner.hpp` | Runner state machine and progress tracking |
+| `src/runtime/executor.hpp` | Executor base class with InlineExecutor implementation |
+| `src/runtime/dispatcher.hpp` | Dispatcher and execution mode selection |
+| `docs/discoveries/0026-phase-0.2-operational-grammar.md` | This discovery document |
+
+---
+
+## 19. Phase 0.2 Status
+
+**Status: COMPLETE**
+
+The operational grammar has been established with:
+- ✅ Six orthogonal state dimensions (lifecycle, work, control, readiness, health, recovery)
+- ✅ Clear semantic distinctions between all key concepts
+- ✅ Lifecycle transitions documented
+- ✅ Verification model with evidence chain
+- ✅ RetryPolicy and TimeoutPolicy specified
+- ✅ Execution chain: Unit → Task → Job → Execution → Result
+- ✅ Request/Event/Signal/Trigger distinctions clear
+- ✅ Automation vs Workflow distinction established
+- ✅ Reconciliation vs Recovery distinction established
+
+**Ready for:** Phase 0.3+ implementation of native semantic model service and domain-specific units.

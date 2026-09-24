@@ -420,3 +420,208 @@ A Unit may execute through:
 - systemd activation
 
 The execution mode is orthogonal to Unit identity.
+
+## Phase 0.2 Execution & Runtime Relations
+
+### Specification vs Instance
+```
+Specification ─instantiates─▶ Instance
+    ↓                       ↓
+Definition                RuntimeInstance
+    │                        │
+    └───────describes───────┘
+```
+
+**Examples:**
+- `TaskDefinition` → `Job` (runtime instance)
+- `ServiceConfig` → `ServiceInstance`
+- `WorkflowDefinition` → `WorkflowRun`
+
+### Execution Chain
+```
+Unit (reusable definition) + parameters
+    ↓
+Task (parameterized work specification)
+    ↓ submit
+Job (submitted/scheduled/executing realization)
+    ↓ execute
+Execution (actual attempt to execute)
+    ↓ produces
+Result (outcome with status, evidence, verification)
+
+Execution ─may have─▶ MultipleAttempts
+Attempt ─produces─▶ Outcome ─with─▶ Evidence
+
+RetryPolicy:
+  max_attempts, exponential_backoff, retryable_error_codes
+
+TimeoutPolicy:
+  operation_timeout, verification_timeout, cancel_on_timeout
+```
+
+### State Dimensions (Orthogonal)
+```
+Entity ─has─▶ {LifecycleState, WorkState, ControlState, ReadinessState,
+               HealthState, RecoveryState} [orthogonal dimensions]
+
+Ready() = (lifecycle == ready) AND (health == healthy)
+
+State ─observed by─▶ Status [summary for monitoring]
+```
+
+### Lifecycle Transitions
+```
+CREATED → INITIALIZING → READY → ACTIVE
+    │              │          │        │
+    └─failed───────┘          └─stop───→ STOPPED
+                               failed ↓
+                                    FAILED
+
+READY ─readiness_check?──yes──▶ can accept work
+ACTIVE ─health_check?──no──▶ may become DEGRADED/UNHEALTHY
+```
+
+### Activation & Triggering
+```
+Event ─originates from─▶ {systemd, procfs, udev, kernel, filesystem, network}
+    │
+    └─evaluates_condition?──yes──▶ Trigger ─activates─▶ Job/Workflow
+
+Trigger = Event + Condition + activation decision
+
+Schedule ─produces─▶ Activation ─at─▶ Time
+```
+
+### Control & Coordination
+```
+Controller ─makes─▶ CoordinationDecision
+    ↓
+   协调多个实体: start B after A is ready,
+                prevent C while D is active,
+                synchronize workflow threads,
+                arbitrate competing resource requests
+
+Coordinator ─evaluates─▶ Dependencies ─determines─▶ ExecutionOrder
+```
+
+### Verification & Evidence Chain
+```
+Operation ─executes─▶ Outcome
+    ↓
+Verification (postcondition evaluation)
+    ↓
+Evidence generated (provenance-bearing observations)
+    ↓
+Result with verification_status
+
+Execution success ≠ Verification success:
+  Operation may complete but postconditions may fail verification.
+```
+
+### Request/Event/Signal/Trigger Distinctions
+```
+Request ─submit─▶ Job ─execute─▶ Execution ─produces─▶ Result
+                    │                                    │
+               timeout?                            verification?
+                    │                                    │
+                 retry?                          verified? ─yes──▶ Evidence
+                                                    no ──▶ Outcome (not verified)
+
+Event ─may trigger─▶ Trigger
+Signal ─controls─▶ Execution (pause/resume/cancel/reconfigure)
+Trigger ─produces─▶ Activation of Workflow/Operation
+
+Request ≠ Event: Request asks for action; Event reports occurrence.
+Signal ≠ Event: Signal is control; Event is observation.
+```
+
+### Retry & Recovery Patterns
+```
+RetryPolicy ─controls─▶ RetryBehavior
+  max_attempts, exponential_backoff, retryable_error_codes
+
+RecoveryPattern:
+  - Retry: attempt same operation again
+  - Rollback: return to prior known state
+  - Restore: recreate desired/known-good state from preserved source
+  - Repair: modify damaged/inconsistent state to become valid
+  - Failover: switch to alternate implementation/resource
+  - Degrade: continue with reduced functionality
+
+Reconciliation ─moves─▶ observed state toward desired state
+Recovery ─responds─▶ to failure/degradation and attempts restoration
+```
+
+### Coordination & Dependencies
+```
+DependencyType:
+  - Structural (code-level)
+  - Implementation (runtime needs)
+  - Runtime (lifecycle ordering)
+  - Ordering (A must complete before B starts)
+  - Readiness (B can start when A becomes ready)
+  - Resource (shared lock/queue/buffer)
+
+Chain ─connects─▶ Units in ordered/conditional relationship
+Pipeline ─flows─▶ data/output from one stage into another
+
+Workflow ─invokes─▶ Unit(s) as steps
+```
+
+### Automation vs Workflow
+```
+Automation: observes events/state/time, evaluates conditions,
+            triggers operations/workflows when criteria satisfied
+    ↓
+Trigger ─activates─▶ Workflow/Operation
+
+Workflow: describes how work progresses after activation
+          (phases/steps that invoke Units)
+
+Distinction:
+  - Automation = "when/why" activation happens
+  - Workflow = "how" execution progresses after activation
+```
+
+### Native Linux Mechanism Mappings
+```
+Rebuntu Runtime ─maps to─▶ Native Linux Mechanism
+
+LifecycleState transitions ─systemd unit lifecycle, process lifecycle
+Schedule (kOnce/kInterval/kCron) ─systemd timers, cron
+Event ─inotify/fanotify (filesystem), udev/netlink (devices)
+Signal ─D-Bus signals, Linux signals (for termination only)
+Evidence ─procfs/sysfs observations, systemd state queries
+Condition evaluation ─custom logic over observed state
+Cancellation ─signalfd, pidfd, SIGTERM/SIGINT
+Dispatch ─epoll, eventfd, timerfd
+Shutdown coordination ─systemd shutdown ordering
+```
+
+### Result Types
+```
+Result<T>:
+  - outcome: semantic conclusion (SUCCESS/FAILURE/PARTIAL/UNKNOWN/CANCELLED)
+  - verification_status: verified/unverified/not_applicable
+  - evidence: vector of provenance-bearing observations
+  - timing: execution_duration, verification_duration
+
+Outcome:
+  - SemanticStatus::kSuccess: completed AND verified
+  - SemanticStatus::kCompleted: completed but verification not applicable
+  - SemanticStatus::kFailure: attempt ran but objective not met
+  - SemanticStatus::kUnknown: outcome could not be determined
+  - SemanticStatus::kCancelled: explicitly cancelled before completion
+```
+
+## Phase 0.2 Implementation Status
+
+**Status:** CURRENT (contracts implemented)
+
+All Phase 0.2 operational concepts are defined in:
+- Header: `src/runtime/contracts.hpp`
+- Runner: `src/runtime/runner.hpp`
+- Executor: `src/runtime/executor.hpp`
+- Dispatcher: `src/runtime/dispatcher.hpp`
+
+Tests verify contracts work correctly.

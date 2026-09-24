@@ -421,6 +421,20 @@ test_sessions/fast:
 .PHONY : test_sessions/fast
 
 # Convenience name for target.
+tests/CMakeFiles/test_secrets.dir/rule:
+	cd /home/bvrznski/rebuntu/cpp/Build && $(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 tests/CMakeFiles/test_secrets.dir/rule
+.PHONY : tests/CMakeFiles/test_secrets.dir/rule
+
+# Convenience name for target.
+test_secrets: tests/CMakeFiles/test_secrets.dir/rule
+.PHONY : test_secrets
+
+# fast build rule for target.
+test_secrets/fast:
+	cd /home/bvrznski/rebuntu/cpp/Build && $(MAKE) $(MAKESILENT) -f tests/CMakeFiles/test_secrets.dir/build.make tests/CMakeFiles/test_secrets.dir/build
+.PHONY : test_secrets/fast
+
+# Convenience name for target.
 tests/CMakeFiles/test_directories.dir/rule:
 	cd /home/bvrznski/rebuntu/cpp/Build && $(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 tests/CMakeFiles/test_directories.dir/rule
 .PHONY : tests/CMakeFiles/test_directories.dir/rule
@@ -986,6 +1000,30 @@ test_scope.cpp.s:
 	cd /home/bvrznski/rebuntu/cpp/Build && $(MAKE) $(MAKESILENT) -f tests/CMakeFiles/test_scope.dir/build.make tests/CMakeFiles/test_scope.dir/test_scope.cpp.s
 .PHONY : test_scope.cpp.s
 
+test_secrets.o: test_secrets.cpp.o
+.PHONY : test_secrets.o
+
+# target to build an object file
+test_secrets.cpp.o:
+	cd /home/bvrznski/rebuntu/cpp/Build && $(MAKE) $(MAKESILENT) -f tests/CMakeFiles/test_secrets.dir/build.make tests/CMakeFiles/test_secrets.dir/test_secrets.cpp.o
+.PHONY : test_secrets.cpp.o
+
+test_secrets.i: test_secrets.cpp.i
+.PHONY : test_secrets.i
+
+# target to preprocess a source file
+test_secrets.cpp.i:
+	cd /home/bvrznski/rebuntu/cpp/Build && $(MAKE) $(MAKESILENT) -f tests/CMakeFiles/test_secrets.dir/build.make tests/CMakeFiles/test_secrets.dir/test_secrets.cpp.i
+.PHONY : test_secrets.cpp.i
+
+test_secrets.s: test_secrets.cpp.s
+.PHONY : test_secrets.s
+
+# target to generate assembly for a file
+test_secrets.cpp.s:
+	cd /home/bvrznski/rebuntu/cpp/Build && $(MAKE) $(MAKESILENT) -f tests/CMakeFiles/test_secrets.dir/build.make tests/CMakeFiles/test_secrets.dir/test_secrets.cpp.s
+.PHONY : test_secrets.cpp.s
+
 test_sessions.o: test_sessions.cpp.o
 .PHONY : test_sessions.o
 
@@ -1062,6 +1100,7 @@ help:
 	@echo "... test_discovery"
 	@echo "... test_runtime_contracts"
 	@echo "... test_scope"
+	@echo "... test_secrets"
 	@echo "... test_sessions"
 	@echo "... test_state_provider"
 	@echo "... user_identity_test"
@@ -1134,6 +1173,9 @@ help:
 	@echo "... test_scope.o"
 	@echo "... test_scope.i"
 	@echo "... test_scope.s"
+	@echo "... test_secrets.o"
+	@echo "... test_secrets.i"
+	@echo "... test_secrets.s"
 	@echo "... test_sessions.o"
 	@echo "... test_sessions.i"
 	@echo "... test_sessions.s"

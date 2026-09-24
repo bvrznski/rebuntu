@@ -104,6 +104,7 @@ tests/test_sessions: librebuntu-authorization.a
 tests/test_sessions: librebuntu-scope.a
 tests/test_sessions: librebuntu-environment-discovery.a
 tests/test_sessions: librebuntu-directories.a
+tests/test_sessions: librebuntu-secrets.a
 tests/test_sessions: librebuntu-setup.a
 tests/test_sessions: librebuntu-lifecycle.a
 tests/test_sessions: librebuntu-host-foundation.a

@@ -104,6 +104,7 @@ tests/test_runtime_contracts: librebuntu-scope.a
 tests/test_runtime_contracts: librebuntu-environment-discovery.a
 tests/test_runtime_contracts: librebuntu-sessions.a
 tests/test_runtime_contracts: librebuntu-directories.a
+tests/test_runtime_contracts: librebuntu-secrets.a
 tests/test_runtime_contracts: librebuntu-setup.a
 tests/test_runtime_contracts: librebuntu-lifecycle.a
 tests/test_runtime_contracts: librebuntu-host-foundation.a

@@ -120,6 +120,7 @@ tests/install_planning_test: librebuntu-scope.a
 tests/install_planning_test: librebuntu-environment-discovery.a
 tests/install_planning_test: librebuntu-sessions.a
 tests/install_planning_test: librebuntu-directories.a
+tests/install_planning_test: librebuntu-secrets.a
 tests/install_planning_test: librebuntu-setup.a
 tests/install_planning_test: librebuntu-lifecycle.a
 tests/install_planning_test: librebuntu-host-foundation.a

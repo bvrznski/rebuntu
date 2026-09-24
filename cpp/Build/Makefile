@@ -634,6 +634,19 @@ rebuntu-directories/fast:
 .PHONY : rebuntu-directories/fast
 
 #=============================================================================
+# Target rules for targets named rebuntu-secrets
+
+# Build rule for target.
+rebuntu-secrets: cmake_check_build_system
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 rebuntu-secrets
+.PHONY : rebuntu-secrets
+
+# fast build rule for target.
+rebuntu-secrets/fast:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/rebuntu-secrets.dir/build.make CMakeFiles/rebuntu-secrets.dir/build
+.PHONY : rebuntu-secrets/fast
+
+#=============================================================================
 # Target rules for targets named rebuntu-setup
 
 # Build rule for target.
@@ -959,6 +972,19 @@ test_sessions/fast:
 .PHONY : test_sessions/fast
 
 #=============================================================================
+# Target rules for targets named test_secrets
+
+# Build rule for target.
+test_secrets: cmake_check_build_system
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 test_secrets
+.PHONY : test_secrets
+
+# fast build rule for target.
+test_secrets/fast:
+	$(MAKE) $(MAKESILENT) -f tests/CMakeFiles/test_secrets.dir/build.make tests/CMakeFiles/test_secrets.dir/build
+.PHONY : test_secrets/fast
+
+#=============================================================================
 # Target rules for targets named test_directories
 
 # Build rule for target.
@@ -1175,6 +1201,30 @@ home/bvrznski/rebuntu/src/system/environment/scope.s: home/bvrznski/rebuntu/src/
 home/bvrznski/rebuntu/src/system/environment/scope.cpp.s:
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/rebuntu-scope.dir/build.make CMakeFiles/rebuntu-scope.dir/home/bvrznski/rebuntu/src/system/environment/scope.cpp.s
 .PHONY : home/bvrznski/rebuntu/src/system/environment/scope.cpp.s
+
+home/bvrznski/rebuntu/src/system/environment/secrets.o: home/bvrznski/rebuntu/src/system/environment/secrets.cpp.o
+.PHONY : home/bvrznski/rebuntu/src/system/environment/secrets.o
+
+# target to build an object file
+home/bvrznski/rebuntu/src/system/environment/secrets.cpp.o:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/rebuntu-secrets.dir/build.make CMakeFiles/rebuntu-secrets.dir/home/bvrznski/rebuntu/src/system/environment/secrets.cpp.o
+.PHONY : home/bvrznski/rebuntu/src/system/environment/secrets.cpp.o
+
+home/bvrznski/rebuntu/src/system/environment/secrets.i: home/bvrznski/rebuntu/src/system/environment/secrets.cpp.i
+.PHONY : home/bvrznski/rebuntu/src/system/environment/secrets.i
+
+# target to preprocess a source file
+home/bvrznski/rebuntu/src/system/environment/secrets.cpp.i:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/rebuntu-secrets.dir/build.make CMakeFiles/rebuntu-secrets.dir/home/bvrznski/rebuntu/src/system/environment/secrets.cpp.i
+.PHONY : home/bvrznski/rebuntu/src/system/environment/secrets.cpp.i
+
+home/bvrznski/rebuntu/src/system/environment/secrets.s: home/bvrznski/rebuntu/src/system/environment/secrets.cpp.s
+.PHONY : home/bvrznski/rebuntu/src/system/environment/secrets.s
+
+# target to generate assembly for a file
+home/bvrznski/rebuntu/src/system/environment/secrets.cpp.s:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/rebuntu-secrets.dir/build.make CMakeFiles/rebuntu-secrets.dir/home/bvrznski/rebuntu/src/system/environment/secrets.cpp.s
+.PHONY : home/bvrznski/rebuntu/src/system/environment/secrets.cpp.s
 
 home/bvrznski/rebuntu/src/system/environment/sessions.o: home/bvrznski/rebuntu/src/system/environment/sessions.cpp.o
 .PHONY : home/bvrznski/rebuntu/src/system/environment/sessions.o
@@ -1453,6 +1503,7 @@ help:
 	@echo "... rebuntu-ownership"
 	@echo "... rebuntu-privilege"
 	@echo "... rebuntu-scope"
+	@echo "... rebuntu-secrets"
 	@echo "... rebuntu-sessions"
 	@echo "... rebuntu-setup"
 	@echo "... rebuntu-user-identity"
@@ -1464,6 +1515,7 @@ help:
 	@echo "... test_discovery"
 	@echo "... test_runtime_contracts"
 	@echo "... test_scope"
+	@echo "... test_secrets"
 	@echo "... test_sessions"
 	@echo "... test_state_provider"
 	@echo "... user_identity_test"
@@ -1491,6 +1543,9 @@ help:
 	@echo "... home/bvrznski/rebuntu/src/system/environment/scope.o"
 	@echo "... home/bvrznski/rebuntu/src/system/environment/scope.i"
 	@echo "... home/bvrznski/rebuntu/src/system/environment/scope.s"
+	@echo "... home/bvrznski/rebuntu/src/system/environment/secrets.o"
+	@echo "... home/bvrznski/rebuntu/src/system/environment/secrets.i"
+	@echo "... home/bvrznski/rebuntu/src/system/environment/secrets.s"
 	@echo "... home/bvrznski/rebuntu/src/system/environment/sessions.o"
 	@echo "... home/bvrznski/rebuntu/src/system/environment/sessions.i"
 	@echo "... home/bvrznski/rebuntu/src/system/environment/sessions.s"

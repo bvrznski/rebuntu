@@ -131,6 +131,34 @@ struct Result {
     bool is_verified() const { return verification_status == VerificationStatus::kVerified; }
 };
 
+// -----------------------------------------------------------------------------
+// SemanticStatus - Outcome of semantic operations (distinct from system errors)
+// -----------------------------------------------------------------------------
+//
+// This represents the "truth value" of an operation:
+//   SUCCESS  = Operation completed and postconditions verified
+//   FAILURE  = Operation failed or postconditions not met
+//   UNKNOWN  = Cannot determine status (e.g., acquisition failure, incomplete search)
+//
+// Unlike exit codes (0/non-zero), SemanticStatus captures semantic success/failure
+// independent of whether the underlying system call succeeded.
+// -----------------------------------------------------------------------------
+
+enum class SemanticStatus {
+    kUnknown,     // Status unknown (acquisition failed, incomplete search)
+    kSuccess,     // Desired state achieved and verified
+    kFailure,     // Operation failed or desired state not achieved
+};
+
+inline std::string to_string(SemanticStatus s) {
+    switch (s) {
+        case SemanticStatus::kUnknown:  return "unknown";
+        case SemanticStatus::kSuccess:  return "success";
+        case SemanticStatus::kFailure:  return "failure";
+    }
+    return "unknown";
+}
+
 } // namespace rebuntu::core
 
 namespace rebuntu::work {

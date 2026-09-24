@@ -104,6 +104,7 @@ tests/group_membership_test: librebuntu-scope.a
 tests/group_membership_test: librebuntu-environment-discovery.a
 tests/group_membership_test: librebuntu-sessions.a
 tests/group_membership_test: librebuntu-directories.a
+tests/group_membership_test: librebuntu-secrets.a
 tests/group_membership_test: librebuntu-setup.a
 tests/group_membership_test: librebuntu-lifecycle.a
 tests/group_membership_test: librebuntu-host-foundation.a

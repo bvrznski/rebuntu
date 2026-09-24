@@ -104,6 +104,7 @@ tests/ownership_test: librebuntu-scope.a
 tests/ownership_test: librebuntu-environment-discovery.a
 tests/ownership_test: librebuntu-sessions.a
 tests/ownership_test: librebuntu-directories.a
+tests/ownership_test: librebuntu-secrets.a
 tests/ownership_test: librebuntu-setup.a
 tests/ownership_test: librebuntu-lifecycle.a
 tests/ownership_test: librebuntu-host-foundation.a

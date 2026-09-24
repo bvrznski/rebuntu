@@ -1,4 +1,3 @@
-test_directories 6 0.000614762
 install_planning_test 0 0
 runtime_runner_test 0 0
 automation_test 0 0
@@ -20,4 +19,28 @@ lifecycle_test 0 0
 host_foundation_test 0 0
 test_scope 0 0
 test_sessions 0 0
+test_secrets 1 0.00314886
+test_directories 0 0
 ---
+install_planning_test
+runtime_runner_test
+automation_test
+test_runtime_contracts
+test_state_provider
+events_test
+results_test
+test_discovery
+settings_test
+config_test
+preferences_test
+structured_setup_test
+profile_test
+user_identity_test
+capability_state_test
+group_membership_test
+ownership_test
+lifecycle_test
+host_foundation_test
+test_scope
+test_sessions
+test_directories

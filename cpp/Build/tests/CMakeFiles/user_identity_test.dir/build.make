@@ -104,6 +104,7 @@ tests/user_identity_test: librebuntu-scope.a
 tests/user_identity_test: librebuntu-environment-discovery.a
 tests/user_identity_test: librebuntu-sessions.a
 tests/user_identity_test: librebuntu-directories.a
+tests/user_identity_test: librebuntu-secrets.a
 tests/user_identity_test: librebuntu-setup.a
 tests/user_identity_test: librebuntu-lifecycle.a
 tests/user_identity_test: librebuntu-host-foundation.a

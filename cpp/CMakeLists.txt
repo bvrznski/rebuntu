@@ -200,6 +200,18 @@ target_include_directories(rebuntu-directories PUBLIC
 
 target_link_libraries(rebuntu-core PUBLIC rebuntu-directories)
 
+# Phase 2.11: Secrets module (Secret Reference Model)
+add_library(rebuntu-secrets STATIC
+    ${USER_IDENTITY_SRC_ROOT}/secrets.hpp
+    ${USER_IDENTITY_SRC_ROOT}/secrets.cpp
+)
+
+target_include_directories(rebuntu-secrets PUBLIC
+    ${CMAKE_CURRENT_LIST_DIR}/../src
+)
+
+target_link_libraries(rebuntu-core PUBLIC rebuntu-secrets)
+
 # Phase 1.8: Setup & configuration module (Phase 1.8)
 set(SETUP_SRC_ROOT ${CMAKE_CURRENT_LIST_DIR}/../src/system/setup)
 

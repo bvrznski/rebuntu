@@ -201,6 +201,11 @@ target_include_directories(test_sessions PRIVATE
 )
 add_test(NAME test_sessions COMMAND test_sessions)
 
+# Phase 2.11: Secrets module tests (Secret Reference Model)
+add_executable(test_secrets test_secrets.cpp)
+target_link_libraries(test_secrets rebuntu-core rebuntu-secrets rebuntu-scope)
+add_test(NAME test_secrets COMMAND test_secrets)
+
 # Phase 2.9: Directories module tests (Operational Directory Layout)
 add_executable(test_directories test_directories.cpp)
 target_link_libraries(test_directories rebuntu-core rebuntu-directories rebuntu-scope)

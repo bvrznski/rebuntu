@@ -44,6 +44,14 @@ target_include_directories(results_test PRIVATE
     ${CMAKE_SOURCE_DIR}
 )
 
+# Settings Model tests (Phase 1.5)
+add_executable(settings_test settings_test.cpp)
+target_link_libraries(settings_test rebuntu-core)
+target_include_directories(settings_test PRIVATE 
+    ${CMAKE_SOURCE_DIR}/src
+    ${CMAKE_SOURCE_DIR}
+)
+
 # Config & Specification Grammar tests (Phase 0.18)
 add_executable(config_test config_test.cpp)
 target_link_libraries(config_test rebuntu-core)
@@ -87,6 +95,7 @@ add_test(NAME test_state_provider COMMAND test_state_provider)
 add_test(NAME events_test COMMAND events_test)
 add_test(NAME results_test COMMAND results_test)
 add_test(NAME test_discovery COMMAND test_discovery)
+add_test(NAME settings_test COMMAND settings_test)
 add_test(NAME config_test COMMAND config_test)
 
 # Structured setup forms test (Phase 1.3)
@@ -97,3 +106,12 @@ target_include_directories(structured_setup_test PRIVATE
     ${CMAKE_SOURCE_DIR}
 )
 add_test(NAME structured_setup_test COMMAND structured_setup_test)
+
+# User identity tests (Phase 1.4 / 2.1)
+add_executable(user_identity_test user_identity_test.cpp)
+target_link_libraries(user_identity_test rebuntu-core)
+target_include_directories(user_identity_test PRIVATE 
+    ${CMAKE_SOURCE_DIR}/src
+    ${CMAKE_SOURCE_DIR}
+)
+add_test(NAME user_identity_test COMMAND user_identity_test)

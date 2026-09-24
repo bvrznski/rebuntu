@@ -504,6 +504,19 @@ rebuntu-install/fast:
 .PHONY : rebuntu-install/fast
 
 #=============================================================================
+# Target rules for targets named rebuntu-user-identity
+
+# Build rule for target.
+rebuntu-user-identity: cmake_check_build_system
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 rebuntu-user-identity
+.PHONY : rebuntu-user-identity
+
+# fast build rule for target.
+rebuntu-user-identity/fast:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/rebuntu-user-identity.dir/build.make CMakeFiles/rebuntu-user-identity.dir/build
+.PHONY : rebuntu-user-identity/fast
+
+#=============================================================================
 # Target rules for targets named rebuntu-core
 
 # Build rule for target.
@@ -595,6 +608,19 @@ results_test/fast:
 .PHONY : results_test/fast
 
 #=============================================================================
+# Target rules for targets named settings_test
+
+# Build rule for target.
+settings_test: cmake_check_build_system
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 settings_test
+.PHONY : settings_test
+
+# fast build rule for target.
+settings_test/fast:
+	$(MAKE) $(MAKESILENT) -f tests/CMakeFiles/settings_test.dir/build.make tests/CMakeFiles/settings_test.dir/build
+.PHONY : settings_test/fast
+
+#=============================================================================
 # Target rules for targets named config_test
 
 # Build rule for target.
@@ -647,6 +673,19 @@ structured_setup_test/fast:
 .PHONY : structured_setup_test/fast
 
 #=============================================================================
+# Target rules for targets named user_identity_test
+
+# Build rule for target.
+user_identity_test: cmake_check_build_system
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 user_identity_test
+.PHONY : user_identity_test
+
+# fast build rule for target.
+user_identity_test/fast:
+	$(MAKE) $(MAKESILENT) -f tests/CMakeFiles/user_identity_test.dir/build.make tests/CMakeFiles/user_identity_test.dir/build
+.PHONY : user_identity_test/fast
+
+#=============================================================================
 # Target rules for targets named rebuntu
 
 # Build rule for target.
@@ -658,6 +697,30 @@ rebuntu: cmake_check_build_system
 rebuntu/fast:
 	$(MAKE) $(MAKESILENT) -f src/rebuntu/CMakeFiles/rebuntu.dir/build.make src/rebuntu/CMakeFiles/rebuntu.dir/build
 .PHONY : rebuntu/fast
+
+home/bvrznski/rebuntu/src/system/environment/user_identity.o: home/bvrznski/rebuntu/src/system/environment/user_identity.cpp.o
+.PHONY : home/bvrznski/rebuntu/src/system/environment/user_identity.o
+
+# target to build an object file
+home/bvrznski/rebuntu/src/system/environment/user_identity.cpp.o:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/rebuntu-user-identity.dir/build.make CMakeFiles/rebuntu-user-identity.dir/home/bvrznski/rebuntu/src/system/environment/user_identity.cpp.o
+.PHONY : home/bvrznski/rebuntu/src/system/environment/user_identity.cpp.o
+
+home/bvrznski/rebuntu/src/system/environment/user_identity.i: home/bvrznski/rebuntu/src/system/environment/user_identity.cpp.i
+.PHONY : home/bvrznski/rebuntu/src/system/environment/user_identity.i
+
+# target to preprocess a source file
+home/bvrznski/rebuntu/src/system/environment/user_identity.cpp.i:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/rebuntu-user-identity.dir/build.make CMakeFiles/rebuntu-user-identity.dir/home/bvrznski/rebuntu/src/system/environment/user_identity.cpp.i
+.PHONY : home/bvrznski/rebuntu/src/system/environment/user_identity.cpp.i
+
+home/bvrznski/rebuntu/src/system/environment/user_identity.s: home/bvrznski/rebuntu/src/system/environment/user_identity.cpp.s
+.PHONY : home/bvrznski/rebuntu/src/system/environment/user_identity.s
+
+# target to generate assembly for a file
+home/bvrznski/rebuntu/src/system/environment/user_identity.cpp.s:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/rebuntu-user-identity.dir/build.make CMakeFiles/rebuntu-user-identity.dir/home/bvrznski/rebuntu/src/system/environment/user_identity.cpp.s
+.PHONY : home/bvrznski/rebuntu/src/system/environment/user_identity.cpp.s
 
 home/bvrznski/rebuntu/src/system/install/bootstrap.o: home/bvrznski/rebuntu/src/system/install/bootstrap.cpp.o
 .PHONY : home/bvrznski/rebuntu/src/system/install/bootstrap.o
@@ -775,12 +838,18 @@ help:
 	@echo "... rebuntu"
 	@echo "... rebuntu-core"
 	@echo "... rebuntu-install"
+	@echo "... rebuntu-user-identity"
 	@echo "... results_test"
 	@echo "... runtime_runner_test"
+	@echo "... settings_test"
 	@echo "... structured_setup_test"
 	@echo "... test_discovery"
 	@echo "... test_runtime_contracts"
 	@echo "... test_state_provider"
+	@echo "... user_identity_test"
+	@echo "... home/bvrznski/rebuntu/src/system/environment/user_identity.o"
+	@echo "... home/bvrznski/rebuntu/src/system/environment/user_identity.i"
+	@echo "... home/bvrznski/rebuntu/src/system/environment/user_identity.s"
 	@echo "... home/bvrznski/rebuntu/src/system/install/bootstrap.o"
 	@echo "... home/bvrznski/rebuntu/src/system/install/bootstrap.i"
 	@echo "... home/bvrznski/rebuntu/src/system/install/bootstrap.s"

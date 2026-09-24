@@ -85,6 +85,19 @@ target_include_directories(rebuntu-install PUBLIC
 
 target_link_libraries(rebuntu-core PUBLIC rebuntu-install)
 
+# Phase 1.4 / 2.1: User identity module (Native Linux/NSS lookup)
+set(USER_IDENTITY_SRC_ROOT ${CMAKE_CURRENT_LIST_DIR}/../src/system/environment)
+
+add_library(rebuntu-user-identity STATIC
+    ${USER_IDENTITY_SRC_ROOT}/user_identity.cpp
+)
+
+target_include_directories(rebuntu-user-identity PUBLIC
+    ${CMAKE_CURRENT_LIST_DIR}/../src
+)
+
+target_link_libraries(rebuntu-core PUBLIC rebuntu-user-identity)
+
 # Phase 1.8: Setup & configuration sources are added to rebuntu target directly
 
 # Tests subdirectory

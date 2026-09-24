@@ -211,6 +211,20 @@ results_test/fast:
 .PHONY : results_test/fast
 
 # Convenience name for target.
+tests/CMakeFiles/settings_test.dir/rule:
+	cd /home/bvrznski/rebuntu/cpp/Build && $(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 tests/CMakeFiles/settings_test.dir/rule
+.PHONY : tests/CMakeFiles/settings_test.dir/rule
+
+# Convenience name for target.
+settings_test: tests/CMakeFiles/settings_test.dir/rule
+.PHONY : settings_test
+
+# fast build rule for target.
+settings_test/fast:
+	cd /home/bvrznski/rebuntu/cpp/Build && $(MAKE) $(MAKESILENT) -f tests/CMakeFiles/settings_test.dir/build.make tests/CMakeFiles/settings_test.dir/build
+.PHONY : settings_test/fast
+
+# Convenience name for target.
 tests/CMakeFiles/config_test.dir/rule:
 	cd /home/bvrznski/rebuntu/cpp/Build && $(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 tests/CMakeFiles/config_test.dir/rule
 .PHONY : tests/CMakeFiles/config_test.dir/rule
@@ -265,6 +279,20 @@ structured_setup_test: tests/CMakeFiles/structured_setup_test.dir/rule
 structured_setup_test/fast:
 	cd /home/bvrznski/rebuntu/cpp/Build && $(MAKE) $(MAKESILENT) -f tests/CMakeFiles/structured_setup_test.dir/build.make tests/CMakeFiles/structured_setup_test.dir/build
 .PHONY : structured_setup_test/fast
+
+# Convenience name for target.
+tests/CMakeFiles/user_identity_test.dir/rule:
+	cd /home/bvrznski/rebuntu/cpp/Build && $(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 tests/CMakeFiles/user_identity_test.dir/rule
+.PHONY : tests/CMakeFiles/user_identity_test.dir/rule
+
+# Convenience name for target.
+user_identity_test: tests/CMakeFiles/user_identity_test.dir/rule
+.PHONY : user_identity_test
+
+# fast build rule for target.
+user_identity_test/fast:
+	cd /home/bvrznski/rebuntu/cpp/Build && $(MAKE) $(MAKESILENT) -f tests/CMakeFiles/user_identity_test.dir/build.make tests/CMakeFiles/user_identity_test.dir/build
+.PHONY : user_identity_test/fast
 
 automation_test.o: automation_test.cpp.o
 .PHONY : automation_test.o
@@ -554,6 +582,54 @@ runtime_runner_test.cpp.s:
 	cd /home/bvrznski/rebuntu/cpp/Build && $(MAKE) $(MAKESILENT) -f tests/CMakeFiles/runtime_runner_test.dir/build.make tests/CMakeFiles/runtime_runner_test.dir/runtime_runner_test.cpp.s
 .PHONY : runtime_runner_test.cpp.s
 
+settings_test.o: settings_test.cpp.o
+.PHONY : settings_test.o
+
+# target to build an object file
+settings_test.cpp.o:
+	cd /home/bvrznski/rebuntu/cpp/Build && $(MAKE) $(MAKESILENT) -f tests/CMakeFiles/settings_test.dir/build.make tests/CMakeFiles/settings_test.dir/settings_test.cpp.o
+.PHONY : settings_test.cpp.o
+
+settings_test.i: settings_test.cpp.i
+.PHONY : settings_test.i
+
+# target to preprocess a source file
+settings_test.cpp.i:
+	cd /home/bvrznski/rebuntu/cpp/Build && $(MAKE) $(MAKESILENT) -f tests/CMakeFiles/settings_test.dir/build.make tests/CMakeFiles/settings_test.dir/settings_test.cpp.i
+.PHONY : settings_test.cpp.i
+
+settings_test.s: settings_test.cpp.s
+.PHONY : settings_test.s
+
+# target to generate assembly for a file
+settings_test.cpp.s:
+	cd /home/bvrznski/rebuntu/cpp/Build && $(MAKE) $(MAKESILENT) -f tests/CMakeFiles/settings_test.dir/build.make tests/CMakeFiles/settings_test.dir/settings_test.cpp.s
+.PHONY : settings_test.cpp.s
+
+user_identity_test.o: user_identity_test.cpp.o
+.PHONY : user_identity_test.o
+
+# target to build an object file
+user_identity_test.cpp.o:
+	cd /home/bvrznski/rebuntu/cpp/Build && $(MAKE) $(MAKESILENT) -f tests/CMakeFiles/user_identity_test.dir/build.make tests/CMakeFiles/user_identity_test.dir/user_identity_test.cpp.o
+.PHONY : user_identity_test.cpp.o
+
+user_identity_test.i: user_identity_test.cpp.i
+.PHONY : user_identity_test.i
+
+# target to preprocess a source file
+user_identity_test.cpp.i:
+	cd /home/bvrznski/rebuntu/cpp/Build && $(MAKE) $(MAKESILENT) -f tests/CMakeFiles/user_identity_test.dir/build.make tests/CMakeFiles/user_identity_test.dir/user_identity_test.cpp.i
+.PHONY : user_identity_test.cpp.i
+
+user_identity_test.s: user_identity_test.cpp.s
+.PHONY : user_identity_test.s
+
+# target to generate assembly for a file
+user_identity_test.cpp.s:
+	cd /home/bvrznski/rebuntu/cpp/Build && $(MAKE) $(MAKESILENT) -f tests/CMakeFiles/user_identity_test.dir/build.make tests/CMakeFiles/user_identity_test.dir/user_identity_test.cpp.s
+.PHONY : user_identity_test.cpp.s
+
 # Help Target
 help:
 	@echo "The following are some of the valid targets for this Makefile:"
@@ -569,10 +645,12 @@ help:
 	@echo "... install_planning_test"
 	@echo "... results_test"
 	@echo "... runtime_runner_test"
+	@echo "... settings_test"
 	@echo "... structured_setup_test"
 	@echo "... test_discovery"
 	@echo "... test_runtime_contracts"
 	@echo "... test_state_provider"
+	@echo "... user_identity_test"
 	@echo "... automation_test.o"
 	@echo "... automation_test.i"
 	@echo "... automation_test.s"
@@ -609,6 +687,12 @@ help:
 	@echo "... runtime_runner_test.o"
 	@echo "... runtime_runner_test.i"
 	@echo "... runtime_runner_test.s"
+	@echo "... settings_test.o"
+	@echo "... settings_test.i"
+	@echo "... settings_test.s"
+	@echo "... user_identity_test.o"
+	@echo "... user_identity_test.i"
+	@echo "... user_identity_test.s"
 .PHONY : help
 
 

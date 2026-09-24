@@ -1,1 +1,1 @@
-/usr/bin/c++ -O3 -DNDEBUG CMakeFiles/runtime_runner_test.dir/runtime_runner_test.cpp.o -o runtime_runner_test  ../src/core/librebuntu-core.a ../librebuntu-install.a 
+/usr/bin/c++ -g CMakeFiles/runtime_runner_test.dir/runtime_runner_test.cpp.o -o runtime_runner_test  ../src/core/librebuntu-core.a ../librebuntu-install.a ../librebuntu-user-identity.a 

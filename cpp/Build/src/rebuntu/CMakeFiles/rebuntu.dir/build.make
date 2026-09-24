@@ -222,6 +222,7 @@ src/rebuntu/rebuntu: src/rebuntu/CMakeFiles/rebuntu.dir/home/bvrznski/rebuntu/sr
 src/rebuntu/rebuntu: src/rebuntu/CMakeFiles/rebuntu.dir/build.make
 src/rebuntu/rebuntu: src/core/librebuntu-core.a
 src/rebuntu/rebuntu: librebuntu-install.a
+src/rebuntu/rebuntu: librebuntu-user-identity.a
 src/rebuntu/rebuntu: src/rebuntu/CMakeFiles/rebuntu.dir/link.txt
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --bold --progress-dir=/home/bvrznski/rebuntu/cpp/Build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_10) "Linking CXX executable rebuntu"
 	cd /home/bvrznski/rebuntu/cpp/Build/src/rebuntu && $(CMAKE_COMMAND) -E cmake_link_script CMakeFiles/rebuntu.dir/link.txt --verbose=$(VERBOSE)

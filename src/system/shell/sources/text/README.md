@@ -2,38 +2,51 @@
 
 ## Purpose
 
-Shell-native text transformations that work line-by-line or character-by-character,
+Shell-native text transformation utilities that work line-by-line or character-by-character,
 respecting Unix composition and pipeline semantics.
 
 ## What Belongs Here
 
 | Category | Description |
 |----------|-------------|
-| Whitespace trimming | Remove leading/trailing whitespace |
-| Case transformations | Upper/lower/case conversion |
-| Line-based transforms | Filter, reformat lines |
-| Simple string operations | Concatenation, substring, length |
-| Field extraction | Cut by delimiter |
+| Whitespace trimming | Removing leading/trailing spaces/tabs/newlines |
+| Case transformations | Uppercase, lowercase conversion |
+| String joining | Combining elements with delimiter |
+| String splitting | Breaking string by delimiter |
+| Length calculation | Character count |
+| Prefix/suffix checks | Start/ends-with verification |
 
 ## What Does NOT Belong Here
 
 | Category | Where to Go |
 |----------|-------------|
-| Complex parsing grammars | Use Python |
-| Structured data parsing (JSON/YAML/XML) | Use Python |
-| AST manipulation | Use Python |
-| Pattern-based substitution (complex regex) | Consider sed/awk directly |
+| Complex parsing grammars | Python for structured data |
+| Structured data parsing (JSON/YAML) | Python module |
+| AST manipulation | Not shell-native |
+| File content processing | Filesystem category |
 
 ## Examples
 
 * `rebuntu_text_trim()` — remove leading/trailing whitespace
-* `rebuntu_text_uppercase()` / `lowercase()` — case conversion
-* `rebuntu_text_join()` — join array with delimiter
-* `rebuntu_text_split()` — split string by delimiter
+* `rebuntu_text_uppercase()` / `rebuntu_text_lowercase()` — case conversion
+* `rebuntu_text_join()` / `rebuntu_text_split()` — delimiter operations
+* `rebuntu_text_length()` — character count
+* `rebuntu_text_starts_with()` / `rebuntu_text_ends_with()` — prefix/suffix checks
 
 ## Dependencies
 
-Uses native utilities:
-* Bash parameter expansion (`${var#prefix}`, `${var%suffix}`)
+Uses native Linux utilities:
 * `tr` for character translation
-* `awk`/`sed` for complex transformations (only where Bash insufficient)
+* Bash parameter expansion for string manipulation
+
+## Safety Classification
+
+| Class | Description |
+|-------|-------------|
+| PURE | String transformation without system mutation |
+
+## Pipeline Semantics
+
+* stdout: Primary transformed text output
+* stderr: Error messages on failure
+* Exit status: 0 for success, non-zero for errors

@@ -32,10 +32,17 @@ relative/absolute conversion, canonicalization.
 * `rebuntu_path_canonicalize()` — get true path
 * `rebuntu_path_join()` — safe concatenation
 * `rebuntu_path_is_absolute()` — check form
-* `rebuntu_path_exists()` — existence + type verification
+* `rebuntu_path_exists_type()` — existence + type verification
 
 ## Dependencies
 
 Uses native Linux utilities:
 * `readlink -f` or `realpath`
 * Bash parameter expansion for manipulation
+
+## Safety Classification
+
+| Class | Description |
+|-------|-------------|
+| PURE | Path transformation without mutation |
+| READ_ONLY | Path observation (existence, type) |

@@ -1,6 +1,8 @@
 file(REMOVE_RECURSE
   "CMakeFiles/rebuntu-core.dir/home/bvrznski/rebuntu/src/interfaces/provider_registry.cpp.o"
   "CMakeFiles/rebuntu-core.dir/home/bvrznski/rebuntu/src/interfaces/provider_registry.cpp.o.d"
+  "CMakeFiles/rebuntu-core.dir/lifecycle.cpp.o"
+  "CMakeFiles/rebuntu-core.dir/lifecycle.cpp.o.d"
   "librebuntu-core.a"
   "librebuntu-core.pdb"
 )

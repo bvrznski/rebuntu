@@ -164,6 +164,30 @@ home/bvrznski/rebuntu/src/interfaces/provider_registry.cpp.s:
 	cd /home/bvrznski/rebuntu/cpp/Build && $(MAKE) $(MAKESILENT) -f src/core/CMakeFiles/rebuntu-core.dir/build.make src/core/CMakeFiles/rebuntu-core.dir/home/bvrznski/rebuntu/src/interfaces/provider_registry.cpp.s
 .PHONY : home/bvrznski/rebuntu/src/interfaces/provider_registry.cpp.s
 
+lifecycle.o: lifecycle.cpp.o
+.PHONY : lifecycle.o
+
+# target to build an object file
+lifecycle.cpp.o:
+	cd /home/bvrznski/rebuntu/cpp/Build && $(MAKE) $(MAKESILENT) -f src/core/CMakeFiles/rebuntu-core.dir/build.make src/core/CMakeFiles/rebuntu-core.dir/lifecycle.cpp.o
+.PHONY : lifecycle.cpp.o
+
+lifecycle.i: lifecycle.cpp.i
+.PHONY : lifecycle.i
+
+# target to preprocess a source file
+lifecycle.cpp.i:
+	cd /home/bvrznski/rebuntu/cpp/Build && $(MAKE) $(MAKESILENT) -f src/core/CMakeFiles/rebuntu-core.dir/build.make src/core/CMakeFiles/rebuntu-core.dir/lifecycle.cpp.i
+.PHONY : lifecycle.cpp.i
+
+lifecycle.s: lifecycle.cpp.s
+.PHONY : lifecycle.s
+
+# target to generate assembly for a file
+lifecycle.cpp.s:
+	cd /home/bvrznski/rebuntu/cpp/Build && $(MAKE) $(MAKESILENT) -f src/core/CMakeFiles/rebuntu-core.dir/build.make src/core/CMakeFiles/rebuntu-core.dir/lifecycle.cpp.s
+.PHONY : lifecycle.cpp.s
+
 # Help Target
 help:
 	@echo "The following are some of the valid targets for this Makefile:"
@@ -177,6 +201,9 @@ help:
 	@echo "... home/bvrznski/rebuntu/src/interfaces/provider_registry.o"
 	@echo "... home/bvrznski/rebuntu/src/interfaces/provider_registry.i"
 	@echo "... home/bvrznski/rebuntu/src/interfaces/provider_registry.s"
+	@echo "... lifecycle.o"
+	@echo "... lifecycle.i"
+	@echo "... lifecycle.s"
 .PHONY : help
 
 

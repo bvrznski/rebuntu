@@ -729,6 +729,99 @@ Result with verification_status
 **Status: COMPLETE**
 
 The operational grammar has been established with:
+
+---
+
+## 20. Phase 0.11 Workflow Architecture
+
+**Status: COMPLETE (contracts and core types implemented)**
+
+Phase 0.11 establishes Rebuntu's canonical model for **Workflow** as a formal
+abstraction for composing multiple bounded operations into structured, inspectable,
+controllable, resumable, and verifiable multi-step processes.
+
+### Core Definition
+
+> **WORKFLOW** = A STRUCTURED COMPOSITION OF MULTIPLE BOUNDED ACTIONS OR OPERATIONS
+> WITH EXPLICIT CONTROL FLOW AND AN OVERALL PURPOSE.
+
+### Key Distinctions
+
+| Concept | Purpose |
+|---------|---------|
+| **Automation** | *WHEN/WHY* to execute work (trigger + policy) |
+| **Workflow** | *HOW* coordinated work proceeds (steps, dependencies, control flow) |
+| **Operation** | *WHAT* bounded system action is performed |
+| **Unit** | Atomic/reusable executable definition that Steps invoke |
+
+### Workflow vs Related Concepts
+
+| Concept | Relationship |
+|---------|--------------|
+| **Operation** | Single semantic action; Workflow orchestrates multiple Operations |
+| **Unit** | Step may reference a Unit; Workflow is not itself a Unit |
+| **Task/Job/Execution** | WorkflowDefinition (static) ↔ WorkflowExecution (runtime instance) |
+| **Automation** | Triggers Workflows but doesn't define them |
+| **Schedule** | Temporal specification; Schedule != Workflow |
+
+### Core Types
+
+**cpp/include/system/runtime/workflow.hpp:**
+
+- `WorkflowTargetKind` — What kind of capability a Step references (Unit, Operation, Workflow)
+- `StepFailurePolicy` — How to handle failures (kFailFast, kContinue, kSkipDependents, kCompensate)
+- `StepControlFlow` — Execution mode (sequential, conditional, parallel)
+- `StepBranchPolicy` — Parallel branch convergence (all, any, first_success, etc.)
+- `Step` — Smallest orchestration node referencing external capabilities
+- `WorkflowDefinition` — Static specification with Steps, preconditions, postconditions
+- `StepState` — Runtime state of a Step (pending, ready, running, completed, failed, skipped)
+- `StepExecution` — Runtime tracking for one Step
+- `WorkflowExecutionState` — Overall Workflow state (created, pending, running, succeeded, failed, cancelled)
+- `WorkflowExecution` — Runtime instance with step_executions and evidence
+- `WorkflowRegistry` — Data structure for managing WorkflowDefinitions
+
+### Architecture
+
+```
+Intent / Request
+       |
+       v
+   WorkflowDefinition (static, immutable)
+       |
+       v
+  submit / activate
+       |
+       v
+  WorkflowExecution (runtime instance)
+       |
+       +-- StepExecution (for each Step)
+       |      |
+       |      +-- invokes Unit/Operation → Result with Evidence
+       |
+       +-- Outcome aggregation
+           |
+           v
+        WorkflowResult
+```
+
+### Implementation Status
+
+**CURRENT:**
+
+- `cpp/include/system/core/contracts.hpp` — Core types (Outcome, VerificationStatus, Evidence, Result)
+- `cpp/include/system/runtime/workflow.hpp` — Workflow contracts and runtime state types
+- `src/automation/contracts.hpp` — Automation triggers and policies
+
+**RESERVED:**
+
+- `src/automation/workflows/` — Implementation layer for execution engine
+- `src/automation/workflow-foundation/` — Supporting infrastructure
+
+---
+
+## 21. Phase 0.2 Status
+
+**Status: COMPLETE**
 - ✅ Six orthogonal state dimensions (lifecycle, work, control, readiness, health, recovery)
 - ✅ Clear semantic distinctions between all key concepts
 - ✅ Lifecycle transitions documented

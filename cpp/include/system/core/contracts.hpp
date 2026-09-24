@@ -24,12 +24,18 @@ namespace rebuntu::core {
 // -----------------------------------------------------------------------------
 
 enum class ComponentKind {
-    kSystem,   // a major coherent part of Rebuntu with broad responsibility
-    kModule,   // a substantial reusable functional component
-    kUnit,     // a bounded independently identifiable unit of executable work
+    kSystem,       // a major coherent part of Rebuntu with broad responsibility
+    kModule,       // a substantial reusable functional component
+    kUnit,         // a bounded independently identifiable unit of executable work
+
+    // Side effect classification for Operations and Workflows
+    kReadOnly,     // no state changes
+    kMutating,     // may change state
+    kPrivileged,   // requires elevated privilege
+    kDestructive,  // destructive or irreversible operations
 };
 
-inline std::string_view to_string(ComponentKind k) {
+inline std::string to_string(ComponentKind k) {
     switch (k) {
         case ComponentKind::kSystem: return "system";
         case ComponentKind::kModule: return "module";
@@ -37,6 +43,93 @@ inline std::string_view to_string(ComponentKind k) {
     }
     return "unknown";
 }
+
+// -----------------------------------------------------------------------------
+// Outcome
+// -----------------------------------------------------------------------------
+// The semantic result of an execution attempt.
+// Distinct from success/failure status (exit code), outcome is about
+// whether the desired state was achieved.
+// -----------------------------------------------------------------------------
+
+enum class Outcome {
+    kSuccess,          // Desired state achieved
+    kFailure,          // Execution failed or desired state not achieved
+    kCancelled,        // Execution was cancelled
+    kTimedOut,         // Execution exceeded timeout
+};
+
+inline std::string to_string(Outcome o) {
+    switch (o) {
+        case Outcome::kSuccess:   return "success";
+        case Outcome::kFailure:   return "failure";
+        case Outcome::kCancelled: return "cancelled";
+        case Outcome::kTimedOut:  return "timed_out";
+    }
+    return "unknown";
+}
+
+// -----------------------------------------------------------------------------
+// VerificationStatus
+// -----------------------------------------------------------------------------
+// Whether post-execution verification was performed and passed.
+// -----------------------------------------------------------------------------
+
+enum class VerificationStatus {
+    kUnknown,     // Verification not yet attempted
+    kNotRequired, // This operation does not require verification
+    kVerifying,   // Verification is in progress
+    kVerified,    // Verification completed successfully
+    kUnverified,  // Verification failed or could not be performed
+};
+
+inline std::string to_string(VerificationStatus v) {
+    switch (v) {
+        case VerificationStatus::kUnknown:     return "unknown";
+        case VerificationStatus::kNotRequired: return "not_required";
+        case VerificationStatus::kVerifying:   return "verifying";
+        case VerificationStatus::kVerified:    return "verified";
+        case VerificationStatus::kUnverified:  return "unverified";
+    }
+    return "unknown";
+}
+
+// -----------------------------------------------------------------------------
+// Evidence
+// -----------------------------------------------------------------------------
+// A provenance-bearing observation supporting an assertion.
+// Evidence includes:
+// - What was observed
+// - Where it came from (source)
+// - When it was observed
+// - Who/what asserted its truth (authority)
+// -----------------------------------------------------------------------------
+
+struct Evidence {
+    std::string subject;       // What the evidence is about (e.g., "service.active")
+    std::string source;        // Where it came from (e.g., "systemd", "/proc/meminfo")
+    std::optional<std::string> authority;  // Assertion of truth (optional)
+    std::string value;         // The observed value
+    std::chrono::system_clock::time_point observed_at;
+};
+
+// -----------------------------------------------------------------------------
+// Result
+// -----------------------------------------------------------------------------
+// The complete result of an execution including semantic outcome and verification.
+// -----------------------------------------------------------------------------
+
+struct Result {
+    Outcome outcome;
+    VerificationStatus verification_status = VerificationStatus::kUnknown;
+    std::vector<Evidence> evidence;
+    
+    // Timing information
+    std::chrono::system_clock::time_point completed_at;
+    
+    bool is_success() const { return outcome == Outcome::kSuccess; }
+    bool is_verified() const { return verification_status == VerificationStatus::kVerified; }
+};
 
 } // namespace rebuntu::core
 
@@ -118,7 +211,7 @@ enum class ServiceState {
     kFailed         // activation failed or service became unavailable due to error
 };
 
-inline std::string_view to_string(ServiceState s) {
+inline std::string to_string(ServiceState s) {
     switch (s) {
         case ServiceState::kUnavailable:   return "unavailable";
         case ServiceState::kActivating:    return "activating";
@@ -158,7 +251,7 @@ enum class ServiceActivation {
     kEvent           // event-triggered (kernel/eventfd)
 };
 
-inline std::string_view to_string(ServiceActivation a) {
+inline std::string to_string(ServiceActivation a) {
     switch (a) {
         case ServiceActivation::kNone:       return "none";
         case ServiceActivation::kPersistent: return "persistent";
@@ -188,7 +281,7 @@ enum class DependencyKind {
     kSoft        // best-effort relationship, failure doesn't cause failure
 };
 
-inline std::string_view to_string(DependencyKind k) {
+inline std::string to_string(DependencyKind k) {
     switch (k) {
         case DependencyKind::kRequired:  return "required";
         case DependencyKind::kOptional:  return "optional";

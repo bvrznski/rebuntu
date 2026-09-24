@@ -28,5 +28,7 @@ add_test([=[preferences_test]=] "/home/bvrznski/rebuntu/cpp/Build/tests/preferen
 set_tests_properties([=[preferences_test]=] PROPERTIES  _BACKTRACE_TRIPLES "/home/bvrznski/rebuntu/cpp/tests/CMakeLists.txt;108;add_test;/home/bvrznski/rebuntu/cpp/tests/CMakeLists.txt;0;")
 add_test([=[structured_setup_test]=] "/home/bvrznski/rebuntu/cpp/Build/tests/structured_setup_test")
 set_tests_properties([=[structured_setup_test]=] PROPERTIES  _BACKTRACE_TRIPLES "/home/bvrznski/rebuntu/cpp/tests/CMakeLists.txt;117;add_test;/home/bvrznski/rebuntu/cpp/tests/CMakeLists.txt;0;")
+add_test([=[profile_test]=] "/home/bvrznski/rebuntu/cpp/Build/tests/profile_test")
+set_tests_properties([=[profile_test]=] PROPERTIES  _BACKTRACE_TRIPLES "/home/bvrznski/rebuntu/cpp/tests/CMakeLists.txt;127;add_test;/home/bvrznski/rebuntu/cpp/tests/CMakeLists.txt;0;")
 add_test([=[user_identity_test]=] "/home/bvrznski/rebuntu/cpp/Build/tests/user_identity_test")
-set_tests_properties([=[user_identity_test]=] PROPERTIES  _BACKTRACE_TRIPLES "/home/bvrznski/rebuntu/cpp/tests/CMakeLists.txt;126;add_test;/home/bvrznski/rebuntu/cpp/tests/CMakeLists.txt;0;")
+set_tests_properties([=[user_identity_test]=] PROPERTIES  _BACKTRACE_TRIPLES "/home/bvrznski/rebuntu/cpp/tests/CMakeLists.txt;136;add_test;/home/bvrznski/rebuntu/cpp/tests/CMakeLists.txt;0;")

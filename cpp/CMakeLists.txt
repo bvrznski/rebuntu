@@ -109,7 +109,21 @@ target_include_directories(rebuntu-environment-discovery PUBLIC
 
 target_link_libraries(rebuntu-core PUBLIC rebuntu-environment-discovery)
 
-# Phase 1.8: Setup & configuration sources are added to rebuntu target directly
+# Phase 1.8: Setup & configuration module (Phase 1.8)
+set(SETUP_SRC_ROOT ${CMAKE_CURRENT_LIST_DIR}/../src/system/setup)
+
+add_library(rebuntu-setup STATIC
+    ${SETUP_SRC_ROOT}/contracts.hpp
+    ${SETUP_SRC_ROOT}/profile.cpp
+    ${SETUP_SRC_ROOT}/profile.hpp
+    ${SETUP_SRC_ROOT}/setup.cpp
+)
+
+target_include_directories(rebuntu-setup PUBLIC
+    ${CMAKE_CURRENT_LIST_DIR}/../src
+)
+
+target_link_libraries(rebuntu-core PUBLIC rebuntu-setup)
 
 # Tests subdirectory
 add_subdirectory(tests)

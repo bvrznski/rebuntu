@@ -530,6 +530,19 @@ rebuntu-environment-discovery/fast:
 .PHONY : rebuntu-environment-discovery/fast
 
 #=============================================================================
+# Target rules for targets named rebuntu-setup
+
+# Build rule for target.
+rebuntu-setup: cmake_check_build_system
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 rebuntu-setup
+.PHONY : rebuntu-setup
+
+# fast build rule for target.
+rebuntu-setup/fast:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/rebuntu-setup.dir/build.make CMakeFiles/rebuntu-setup.dir/build
+.PHONY : rebuntu-setup/fast
+
+#=============================================================================
 # Target rules for targets named rebuntu-core
 
 # Build rule for target.
@@ -699,6 +712,19 @@ structured_setup_test/fast:
 .PHONY : structured_setup_test/fast
 
 #=============================================================================
+# Target rules for targets named profile_test
+
+# Build rule for target.
+profile_test: cmake_check_build_system
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 profile_test
+.PHONY : profile_test
+
+# fast build rule for target.
+profile_test/fast:
+	$(MAKE) $(MAKESILENT) -f tests/CMakeFiles/profile_test.dir/build.make tests/CMakeFiles/profile_test.dir/build
+.PHONY : profile_test/fast
+
+#=============================================================================
 # Target rules for targets named user_identity_test
 
 # Build rule for target.
@@ -844,6 +870,54 @@ home/bvrznski/rebuntu/src/system/install/install_planning.cpp.s:
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/rebuntu-install.dir/build.make CMakeFiles/rebuntu-install.dir/home/bvrznski/rebuntu/src/system/install/install_planning.cpp.s
 .PHONY : home/bvrznski/rebuntu/src/system/install/install_planning.cpp.s
 
+home/bvrznski/rebuntu/src/system/setup/profile.o: home/bvrznski/rebuntu/src/system/setup/profile.cpp.o
+.PHONY : home/bvrznski/rebuntu/src/system/setup/profile.o
+
+# target to build an object file
+home/bvrznski/rebuntu/src/system/setup/profile.cpp.o:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/rebuntu-setup.dir/build.make CMakeFiles/rebuntu-setup.dir/home/bvrznski/rebuntu/src/system/setup/profile.cpp.o
+.PHONY : home/bvrznski/rebuntu/src/system/setup/profile.cpp.o
+
+home/bvrznski/rebuntu/src/system/setup/profile.i: home/bvrznski/rebuntu/src/system/setup/profile.cpp.i
+.PHONY : home/bvrznski/rebuntu/src/system/setup/profile.i
+
+# target to preprocess a source file
+home/bvrznski/rebuntu/src/system/setup/profile.cpp.i:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/rebuntu-setup.dir/build.make CMakeFiles/rebuntu-setup.dir/home/bvrznski/rebuntu/src/system/setup/profile.cpp.i
+.PHONY : home/bvrznski/rebuntu/src/system/setup/profile.cpp.i
+
+home/bvrznski/rebuntu/src/system/setup/profile.s: home/bvrznski/rebuntu/src/system/setup/profile.cpp.s
+.PHONY : home/bvrznski/rebuntu/src/system/setup/profile.s
+
+# target to generate assembly for a file
+home/bvrznski/rebuntu/src/system/setup/profile.cpp.s:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/rebuntu-setup.dir/build.make CMakeFiles/rebuntu-setup.dir/home/bvrznski/rebuntu/src/system/setup/profile.cpp.s
+.PHONY : home/bvrznski/rebuntu/src/system/setup/profile.cpp.s
+
+home/bvrznski/rebuntu/src/system/setup/setup.o: home/bvrznski/rebuntu/src/system/setup/setup.cpp.o
+.PHONY : home/bvrznski/rebuntu/src/system/setup/setup.o
+
+# target to build an object file
+home/bvrznski/rebuntu/src/system/setup/setup.cpp.o:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/rebuntu-setup.dir/build.make CMakeFiles/rebuntu-setup.dir/home/bvrznski/rebuntu/src/system/setup/setup.cpp.o
+.PHONY : home/bvrznski/rebuntu/src/system/setup/setup.cpp.o
+
+home/bvrznski/rebuntu/src/system/setup/setup.i: home/bvrznski/rebuntu/src/system/setup/setup.cpp.i
+.PHONY : home/bvrznski/rebuntu/src/system/setup/setup.i
+
+# target to preprocess a source file
+home/bvrznski/rebuntu/src/system/setup/setup.cpp.i:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/rebuntu-setup.dir/build.make CMakeFiles/rebuntu-setup.dir/home/bvrznski/rebuntu/src/system/setup/setup.cpp.i
+.PHONY : home/bvrznski/rebuntu/src/system/setup/setup.cpp.i
+
+home/bvrznski/rebuntu/src/system/setup/setup.s: home/bvrznski/rebuntu/src/system/setup/setup.cpp.s
+.PHONY : home/bvrznski/rebuntu/src/system/setup/setup.s
+
+# target to generate assembly for a file
+home/bvrznski/rebuntu/src/system/setup/setup.cpp.s:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/rebuntu-setup.dir/build.make CMakeFiles/rebuntu-setup.dir/home/bvrznski/rebuntu/src/system/setup/setup.cpp.s
+.PHONY : home/bvrznski/rebuntu/src/system/setup/setup.cpp.s
+
 # Help Target
 help:
 	@echo "The following are some of the valid targets for this Makefile:"
@@ -886,10 +960,12 @@ help:
 	@echo "... events_test"
 	@echo "... install_planning_test"
 	@echo "... preferences_test"
+	@echo "... profile_test"
 	@echo "... rebuntu"
 	@echo "... rebuntu-core"
 	@echo "... rebuntu-environment-discovery"
 	@echo "... rebuntu-install"
+	@echo "... rebuntu-setup"
 	@echo "... rebuntu-user-identity"
 	@echo "... results_test"
 	@echo "... runtime_runner_test"
@@ -914,6 +990,12 @@ help:
 	@echo "... home/bvrznski/rebuntu/src/system/install/install_planning.o"
 	@echo "... home/bvrznski/rebuntu/src/system/install/install_planning.i"
 	@echo "... home/bvrznski/rebuntu/src/system/install/install_planning.s"
+	@echo "... home/bvrznski/rebuntu/src/system/setup/profile.o"
+	@echo "... home/bvrznski/rebuntu/src/system/setup/profile.i"
+	@echo "... home/bvrznski/rebuntu/src/system/setup/profile.s"
+	@echo "... home/bvrznski/rebuntu/src/system/setup/setup.o"
+	@echo "... home/bvrznski/rebuntu/src/system/setup/setup.i"
+	@echo "... home/bvrznski/rebuntu/src/system/setup/setup.s"
 .PHONY : help
 
 

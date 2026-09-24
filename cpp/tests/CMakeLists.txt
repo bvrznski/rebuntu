@@ -116,6 +116,16 @@ target_include_directories(structured_setup_test PRIVATE
 )
 add_test(NAME structured_setup_test COMMAND structured_setup_test)
 
+# Profile Generation & Application tests (Phase 1.10)
+# Setup sources are added directly to rebuntu target in cpp/src/rebuntu/CMakeLists.txt
+add_executable(profile_test ../../tests/native/test_profile.cpp)
+target_link_libraries(profile_test rebuntu-core)
+target_include_directories(profile_test PRIVATE 
+    ${CMAKE_SOURCE_DIR}/src
+    ${CMAKE_SOURCE_DIR}
+)
+add_test(NAME profile_test COMMAND profile_test)
+
 # User identity tests (Phase 1.4 / 2.1)
 add_executable(user_identity_test user_identity_test.cpp)
 target_link_libraries(user_identity_test rebuntu-core)

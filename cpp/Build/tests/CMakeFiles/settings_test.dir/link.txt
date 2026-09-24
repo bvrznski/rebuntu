@@ -1,1 +1,1 @@
-/usr/bin/c++ -g CMakeFiles/settings_test.dir/settings_test.cpp.o -o settings_test  ../src/core/librebuntu-core.a ../librebuntu-install.a ../librebuntu-user-identity.a ../librebuntu-environment-discovery.a 
+/usr/bin/c++ -g CMakeFiles/settings_test.dir/settings_test.cpp.o -o settings_test  ../src/core/librebuntu-core.a ../librebuntu-install.a ../librebuntu-user-identity.a ../librebuntu-environment-discovery.a ../librebuntu-setup.a 

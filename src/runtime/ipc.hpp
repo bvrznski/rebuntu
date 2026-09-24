@@ -64,6 +64,15 @@ enum class BackpressurePolicy {
     kDropOldest,
 };
 
+inline std::string_view to_string(BackpressurePolicy policy) {
+    switch (policy) {
+        case BackpressurePolicy::kBlock: return "block";
+        case BackpressurePolicy::kDropNewest: return "drop_newest";
+        case BackpressurePolicy::kDropOldest: return "drop_oldest";
+    }
+    return "unknown";
+}
+
 struct ChannelOptions {
     size_t max_buffer_size = 1024;
     BackpressurePolicy backpressure = BackpressurePolicy::kBlock;

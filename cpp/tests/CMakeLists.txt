@@ -28,8 +28,17 @@ target_include_directories(test_state_provider PRIVATE
     ${CMAKE_SOURCE_DIR}
 )
 
+# Event communication tests (Phase 0.15)
+add_executable(events_test events_test.cpp)
+target_link_libraries(events_test rebuntu-core)
+target_include_directories(events_test PRIVATE 
+    ${CMAKE_SOURCE_DIR}/src
+    ${CMAKE_SOURCE_DIR}
+)
+
 # Add tests to CTest
 add_test(NAME runtime_runner_test COMMAND runtime_runner_test)
 add_test(NAME automation_test COMMAND automation_test)
 add_test(NAME test_runtime_contracts COMMAND test_runtime_contracts)
 add_test(NAME test_state_provider COMMAND test_state_provider)
+add_test(NAME events_test COMMAND events_test)

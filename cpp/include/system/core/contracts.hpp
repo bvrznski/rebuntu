@@ -4,9 +4,11 @@
 #pragma once
 
 #include <string>
+#include <string_view>
 #include <chrono>
 #include <memory>
 #include <map>
+#include <set>
 #include <optional>
 
 namespace rebuntu::work {
@@ -69,3 +71,214 @@ struct RuntimeContext {
 };
 
 } // namespace rebuntu::runtime
+
+namespace rebuntu::services {
+
+// -----------------------------------------------------------------------------
+// ServiceState (Phase 0.6)
+// -----------------------------------------------------------------------------
+// The availability and lifecycle state of a Service.
+// -----------------------------------------------------------------------------
+
+enum class ServiceState {
+    kUnavailable,   // not available
+    kActivating,    // in the process of becoming available
+    kAvailable,     // available for use
+    kDegraded,      // available but with reduced capability/quality
+    kDeactivating,  // in the process of becoming unavailable
+    kFailed         // activation failed or service became unavailable due to error
+};
+
+inline std::string_view to_string(ServiceState s) {
+    switch (s) {
+        case ServiceState::kUnavailable:   return "unavailable";
+        case ServiceState::kActivating:    return "activating";
+        case ServiceState::kAvailable:     return "available";
+        case ServiceState::kDegraded:      return "degraded";
+        case ServiceState::kDeactivating:  return "deactivating";
+        case ServiceState::kFailed:        return "failed";
+    }
+    return "unknown";
+}
+
+inline bool is_available(ServiceState s) {
+    return s == ServiceState::kAvailable || s == ServiceState::kDegraded;
+}
+
+inline bool is_unavailable(ServiceState s) {
+    return s == ServiceState::kUnavailable || s == ServiceState::kFailed;
+}
+
+// -----------------------------------------------------------------------------
+// ServiceActivation (Phase 0.6)
+// -----------------------------------------------------------------------------
+// How a Service is activated.
+// -----------------------------------------------------------------------------
+
+enum class ServiceActivation {
+    kNone,           // no activation mechanism
+    kPersistent,     // persistent process (systemd service with Type=simple)
+    kManual,         // manual activation only
+    kBoot,           // activated at boot time
+    kOnDemand,       // on-demand activation when first needed
+    kSocket,         // socket-activated by systemd
+    kDBus,           // D-Bus-activated
+    kPath,           // path-activated (file system event)
+    kDevice,         // device-activated (udev event)
+    kTimer,          // timer-triggered (systemd timer)
+    kEvent           // event-triggered (kernel/eventfd)
+};
+
+inline std::string_view to_string(ServiceActivation a) {
+    switch (a) {
+        case ServiceActivation::kNone:       return "none";
+        case ServiceActivation::kPersistent: return "persistent";
+        case ServiceActivation::kManual:     return "manual";
+        case ServiceActivation::kBoot:       return "boot";
+        case ServiceActivation::kOnDemand:   return "on-demand";
+        case ServiceActivation::kSocket:     return "socket-activated";
+        case ServiceActivation::kDBus:       return "dbus-activated";
+        case ServiceActivation::kPath:       return "path-activated";
+        case ServiceActivation::kDevice:     return "device-activated";
+        case ServiceActivation::kTimer:      return "timer-triggered";
+        case ServiceActivation::kEvent:      return "event-triggered";
+    }
+    return "unknown";
+}
+
+// -----------------------------------------------------------------------------
+// DependencyKind (Phase 0.6)
+// -----------------------------------------------------------------------------
+// A dependency of one Service on another.
+// -----------------------------------------------------------------------------
+
+enum class DependencyKind {
+    kRequired,   // service cannot function without dependency
+    kOptional,   // service functions but with reduced capability without dependency
+    kOrdering,   // service should start after dependency (not required for functionality)
+    kSoft        // best-effort relationship, failure doesn't cause failure
+};
+
+inline std::string_view to_string(DependencyKind k) {
+    switch (k) {
+        case DependencyKind::kRequired:  return "required";
+        case DependencyKind::kOptional:  return "optional";
+        case DependencyKind::kOrdering:  return "ordering";
+        case DependencyKind::kSoft:      return "soft";
+    }
+    return "unknown";
+}
+
+// -----------------------------------------------------------------------------
+// ServiceDependency (Phase 0.6)
+// -----------------------------------------------------------------------------
+
+struct ServiceDependency {
+    std::string service_id;
+    DependencyKind kind = DependencyKind::kRequired;
+};
+
+// -----------------------------------------------------------------------------
+// ServiceInfo (Phase 0.6)
+// -----------------------------------------------------------------------------
+// A machine-readable description of a Service.
+// -----------------------------------------------------------------------------
+
+struct ServiceInfo {
+    std::string id;
+    std::string title;                    // human-readable name
+    std::string description;              // human-readable description
+    std::set<std::string> categories;     // category tags for grouping/discovery
+    ServiceActivation activation;         // how this service is activated
+    bool enabled = true;                  // desired state: should be available?
+    std::optional<std::string> default_interface;  // default IPC/interface endpoint
+    std::vector<ServiceDependency> dependencies;
+    bool requires_root = false;           // whether root privilege is required
+};
+
+// -----------------------------------------------------------------------------
+// ServiceRegistry (Phase 0.6)
+// -----------------------------------------------------------------------------
+// A data structure for managing known Services.
+//
+// This is a DATA structure and a structural-integrity checker — NOT a runtime
+// bus, event system, or service locator.
+// -----------------------------------------------------------------------------
+
+class ServiceRegistry {
+public:
+    void register_service(ServiceInfo info) { services_[info.id] = std::move(info); }
+
+    bool contains(std::string_view id) const {
+        return services_.find(std::string{id}) != services_.end();
+    }
+
+    std::optional<ServiceInfo> find(std::string_view id) const {
+        auto it = services_.find(std::string{id});
+        if (it == services_.end()) return std::nullopt;
+        return it->second;
+    }
+
+    std::size_t size() const { return services_.size(); }
+    bool empty() const { return services_.empty(); }
+
+    std::vector<ServiceInfo> all() const {
+        std::vector<ServiceInfo> result;
+        result.reserve(services_.size());
+        for (const auto& [id, info] : services_) {
+            result.push_back(info);
+        }
+        std::sort(result.begin(), result.end(),
+                  [](const ServiceInfo& a, const ServiceInfo& b) { return a.id < b.id; });
+        return result;
+    }
+
+    std::vector<ServiceInfo> enabled() const {
+        std::vector<ServiceInfo> result;
+        for (const auto& [id, info] : services_) {
+            if (info.enabled) {
+                result.push_back(info);
+            }
+        }
+        std::sort(result.begin(), result.end(),
+                  [](const ServiceInfo& a, const ServiceInfo& b) { return a.id < b.id; });
+        return result;
+    }
+
+    std::vector<ServiceInfo> by_category(std::string_view category) const {
+        std::vector<ServiceInfo> result;
+        for (const auto& [id, info] : services_) {
+            if (info.categories.contains(std::string{category})) {
+                result.push_back(info);
+            }
+        }
+        std::sort(result.begin(), result.end(),
+                  [](const ServiceInfo& a, const ServiceInfo& b) { return a.id < b.id; });
+        return result;
+    }
+
+    // Validate structural integrity
+    std::pair<bool, std::vector<std::string>> validate() const {
+        std::vector<std::string> issues;
+        std::set<std::string> seen;
+
+        for (const auto& [id, info] : services_) {
+            if (!seen.insert(id).second) {
+                issues.push_back("duplicate service id: " + id);
+                continue;
+            }
+            for (const auto& dep : info.dependencies) {
+                if (!contains(dep.service_id)) {
+                    issues.push_back("service " + id + " depends on unknown service: " + dep.service_id);
+                }
+            }
+        }
+
+        return {issues.empty(), issues};
+    }
+
+private:
+    std::map<std::string, ServiceInfo> services_;
+};
+
+} // namespace rebuntu::services

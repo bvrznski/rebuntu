@@ -22,3 +22,5 @@ add_test([=[test_discovery]=] "/home/bvrznski/rebuntu/cpp/Build/tests/test_disco
 set_tests_properties([=[test_discovery]=] PROPERTIES  _BACKTRACE_TRIPLES "/home/bvrznski/rebuntu/cpp/tests/CMakeLists.txt;89;add_test;/home/bvrznski/rebuntu/cpp/tests/CMakeLists.txt;0;")
 add_test([=[config_test]=] "/home/bvrznski/rebuntu/cpp/Build/tests/config_test")
 set_tests_properties([=[config_test]=] PROPERTIES  _BACKTRACE_TRIPLES "/home/bvrznski/rebuntu/cpp/tests/CMakeLists.txt;90;add_test;/home/bvrznski/rebuntu/cpp/tests/CMakeLists.txt;0;")
+add_test([=[structured_setup_test]=] "/home/bvrznski/rebuntu/cpp/Build/tests/structured_setup_test")
+set_tests_properties([=[structured_setup_test]=] PROPERTIES  _BACKTRACE_TRIPLES "/home/bvrznski/rebuntu/cpp/tests/CMakeLists.txt;99;add_test;/home/bvrznski/rebuntu/cpp/tests/CMakeLists.txt;0;")

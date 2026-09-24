@@ -1,8 +1,17 @@
 // rebuntu::install::forms - Installation forms and structured setup input (Phase 1.3)
+// 
+// This is Phase 1.3: Enhanced forms with:
+// - Unknown field detection
+// - Comprehensive path validation (kPathExists, kPathIsDirectory, kPathIsFile)
+// - Better error handling and validation messages
 #pragma once
-#include <system/core/contracts.hpp>
-#include <system/install/contracts.hpp>
+#include <runtime/core/contracts.hpp>
+#include <portability/install/contracts.hpp>
 #include <any>
+#include <algorithm>
+#include <cctype>
+#include <filesystem>
+#include <set>
 #include <functional>
 #include <map>
 #include <optional>
@@ -121,7 +130,7 @@ public:
     }
     
     bool has_field(std::string_view name) const override {
-        return values_.contains(std::string{name});
+        return values_.find(std::string{name}) != values_.end();
     }
     
     std::optional<std::string> try_get_string(std::string_view name) const override {
@@ -147,7 +156,7 @@ public:
     }
     
     bool has_field(std::string_view name) const override {
-        return values_.contains(std::string{name});
+        return values_.find(std::string{name}) != values_.end();
     }
     
     std::optional<std::string> try_get_string(std::string_view name) const override {
@@ -164,72 +173,129 @@ private:
 class FormParser {
 public:
     explicit FormParser(const FormDefinition& def) : definition_(def) {}
-    
+
     FormResult parse(const InputChannel& channel) const {
         FormResult result;
         result.form_name = definition_.name;
-        
+        std::set<std::string> known;
+        for (const auto& field_def : definition_.fields) known.insert(field_def.metadata.name);
+
+        // Detect and report unknown fields
+        for (const auto& name : channel.available_fields()) {
+            if (known.find(name) == known.end()) {
+                FieldResult unknown;
+                unknown.name = name;
+                unknown.is_present = true;
+                unknown.status = FieldResult::Status::kInvalid;
+                unknown.issues.push_back({ValidationLevel::kError, "E_UNKNOWN_FIELD",
+                    "Unknown field '" + name + "'"});
+                result.fields.push_back(std::move(unknown));
+            }
+        }
+
         for (const auto& field_def : definition_.fields) {
             FieldResult fr;
             fr.name = field_def.metadata.name;
+            const bool required = has_constraint(field_def, FieldConstraint::Kind::kRequired);
             
             if (!channel.has_field(field_def.metadata.name)) {
-                bool is_required = false;
-                for (const auto& c : field_def.constraints)
-                    if (c.kind == FieldConstraint::Kind::kRequired) { is_required = true; break; }
-                
-                if (is_required) {
-                    fr.status = FieldResult::Status::kMissing;
-                    fr.issues.push_back({ValidationLevel::kError, "E_FIELD_REQUIRED",
-                        "Field '" + field_def.metadata.name + "' is required"});
-                } else if (field_def.default_value.has_value()) {
+                // Field not provided - check for default or mark as missing
+                if (field_def.default_value.has_value()) {
                     fr.value = field_def.default_value;
                     fr.status = FieldResult::Status::kValid;
+                } else if (required) {
+                    fr.status = FieldResult::Status::kMissing;
+                    fr.issues.push_back({ValidationLevel::kError, "E_FIELD_REQUIRED",
+                        "Required field is missing"});
                 }
-            } else {
-                auto raw_val = channel.try_get_string(field_def.metadata.name);
-                std::any parsed;
-                bool ok = true;
-                
-                switch (field_def.type) {
-                    case FieldType::kString: parsed = raw_val.value_or(""); break;
-                    case FieldType::kInteger:
-                        try { parsed = int64_t(std::stoll(raw_val.value_or("0"))); }
-                        catch (...) {
-                            fr.issues.push_back({ValidationLevel::kError, "E_INVALID_INTEGER",
-                                "Field '" + field_def.metadata.name + "' must be valid integer"});
-                            ok = false;
-                        }
-                        break;
-                    case FieldType::kBoolean: {
-                        std::string s = raw_val.value_or("false");
-                        for (auto& c : s) c = std::tolower(c);
-                        if (s == "true" || s == "yes" || s == "1") parsed = true;
-                        else if (s == "false" || s == "no" || s == "0") parsed = false;
-                        else {
-                            fr.issues.push_back({ValidationLevel::kError, "E_INVALID_BOOLEAN",
-                                "Field '" + field_def.metadata.name + "' must be true/false/yes/no/1/0"});
-                            ok = false;
-                        }
-                        break;
-                    }
-                    default: parsed = raw_val.value_or(""); break;
-                }
-                
-                if (ok) {
-                    fr.is_present = true;
-                    fr.value = parsed;
-                    fr.status = FieldResult::Status::kValid;
-                } else {
-                    fr.status = FieldResult::Status::kInvalid;
-                }
+                result.fields.push_back(std::move(fr));
+                continue;
             }
+
+            fr.is_present = true;
+            const std::string raw = channel.try_get_string(field_def.metadata.name).value_or("");
+            parse_value(field_def, raw, fr);
+            if (!fr.is_error()) validate(field_def, raw, fr);
             result.fields.push_back(std::move(fr));
         }
         return result;
     }
 
 private:
+    static bool has_constraint(const FieldDefinition& f, FieldConstraint::Kind k) {
+        return std::any_of(f.constraints.begin(), f.constraints.end(),
+            [k](const FieldConstraint& c) { return c.kind == k; });
+    }
+
+    static void error(FieldResult& fr, std::string code, std::string message) {
+        fr.status = FieldResult::Status::kInvalid;
+        fr.issues.push_back({ValidationLevel::kError, std::move(code), std::move(message)});
+    }
+
+    static void parse_value(const FieldDefinition& f, const std::string& raw, FieldResult& fr) {
+        try {
+            switch (f.type) {
+                case FieldType::kInteger: {
+                    std::size_t used = 0;
+                    auto value = std::stoll(raw, &used);
+                    if (used != raw.size()) throw std::invalid_argument("trailing");
+                    fr.value = static_cast<int64_t>(value);
+                    break;
+                }
+                case FieldType::kBoolean: {
+                    std::string v = raw;
+                    std::transform(v.begin(), v.end(), v.begin(),
+                        [](unsigned char c) { return static_cast<char>(std::tolower(c)); });
+                    if (v == "true" || v == "yes" || v == "1") fr.value = true;
+                    else if (v == "false" || v == "no" || v == "0") fr.value = false;
+                    else { error(fr, "E_INVALID_BOOLEAN", "Expected boolean value"); return; }
+                    break;
+                }
+                default: fr.value = raw; break;
+            }
+            fr.status = FieldResult::Status::kValid;
+        } catch (...) {
+            error(fr, "E_INVALID_INTEGER", "Expected integer value");
+        }
+    }
+
+    static void validate(const FieldDefinition& f, const std::string& raw, FieldResult& fr) {
+        // Check against allowed values
+        if (f.allowed_values.has_value() &&
+            std::find(f.allowed_values->begin(), f.allowed_values->end(), raw) == f.allowed_values->end()) {
+            error(fr, "E_VALUE_NOT_ALLOWED", "Value is not an admissible option");
+            return;
+        }
+        
+        // Apply additional constraints
+        for (const auto& c : f.constraints) {
+            switch (c.kind) {
+                case FieldConstraint::Kind::kNotEmpty:
+                    if (raw.empty()) error(fr, "E_EMPTY", "Value must not be empty");
+                    break;
+                case FieldConstraint::Kind::kMinLength:
+                    if (c.int_value && raw.size() < static_cast<std::size_t>(*c.int_value))
+                        error(fr, "E_MIN_LENGTH", "Value is shorter than allowed");
+                    break;
+                case FieldConstraint::Kind::kMaxLength:
+                    if (c.int_value && raw.size() > static_cast<std::size_t>(*c.int_value))
+                        error(fr, "E_MAX_LENGTH", "Value is longer than allowed");
+                    break;
+                case FieldConstraint::Kind::kPathExists:
+                    if (!std::filesystem::exists(raw)) error(fr, "E_PATH_MISSING", "Path does not exist");
+                    break;
+                case FieldConstraint::Kind::kPathIsDirectory:
+                    if (!std::filesystem::is_directory(raw)) error(fr, "E_PATH_NOT_DIRECTORY", "Path is not a directory");
+                    break;
+                case FieldConstraint::Kind::kPathIsFile:
+                    if (!std::filesystem::is_regular_file(raw)) error(fr, "E_PATH_NOT_FILE", "Path is not a regular file");
+                    break;
+                default: break;
+            }
+            if (fr.is_error()) return;
+        }
+    }
+
     const FormDefinition& definition_;
 };
 

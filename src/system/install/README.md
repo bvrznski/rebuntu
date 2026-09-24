@@ -1,97 +1,132 @@
-# Rebuntu Installation Architecture
+# Rebuntu Installation Forms & Structured Setup Input (Phase 1.3)
 
 ## Overview
 
-This module provides the canonical C++ installation/bootstrap entry path for Rebuntu.
+This module provides installation forms and structured setup input functionality for Rebuntu.
 
-## Core Questions Answered
+## Form Concept
 
-### What does "Rebuntu is installed" precisely mean?
+A `Form` is a schema-backed collection of user-supplied values with presentation metadata and validation.
 
-A system has Rebuntu installed when:
-1. The binary exists at the target path (`/usr/bin/rebuntu` for system, `$HOME/.local/bin/rebuntu` for user)
-2. State directory exists and is accessible (`/var/lib/rebuntu` or `$HOME/.local/state/rebuntu`)
-3. Configuration directory is accessible (`/etc/rebuntu` or `$HOME/.config/rebuntu`)
-4. Verification passes with `BootstrapResult::is_success() == true`
+### Key Components
 
-### Which files/artifacts constitute the minimum installation?
+- **FieldType**: Defines supported field types (string, integer, boolean, enum, path, choice, multiselect)
+- **ValidationLevel**: Defines validation severity (info, warning, error)
+- **FieldConstraint**: Validates field values against constraints
+- **InputChannel**: Abstract interface for input sources
+- **FormParser**: Parses and validates form data from an InputChannel
+- **FormBuilder**: Fluent API for constructing FormDefinition objects
 
-The minimal installation includes:
-- `bin_path/rebuntu` - The main executable
-- `state_dir/` - State directory for persistent data
-- `config_dir/` - Configuration directory
+### Field Types
 
-Paths are determined by scope:
-- **System**: `/usr/bin`, `/var/lib/rebuntu`, `/etc/rebuntu`
-- **User**: `$HOME/.local/bin`, `$HOME/.local/state/rebuntu`, `$HOME/.config/rebuntu`
+| Type | Description |
+|------|-------------|
+| kString | Free-form text string |
+| kInteger | Signed integer value |
+| kBoolean | Boolean (true/false/yes/no/1/0) |
+| kEnum | One of a set of allowed values |
+| kPath | Filesystem path with validation options |
 
-### Which dependencies are bootstrap dependencies?
+### Validation Constraints
 
-Bootstrap requires:
-- C++ runtime (libstdc++6) - for C++20 standard library features
-- Filesystem API - for directory creation and permission management
+- `kRequired` - Field must be present
+- `kMinLength` / `kMaxLength` - String length constraints
+- `kMinValue` / `kMaxValue` - Numeric value constraints
+- `kAllowedValues` - Only these values are acceptable
+- `kPathExists` - Filesystem path must exist
+- `kPathIsDirectory` - Path must be a directory
+- `kPathIsFile` - Path must be a regular file
 
-### Which dependencies can be installed later?
+### Input Channels
 
-Later phases will add:
-- Systemd integration (Phase 1.1)
-- Package manager (apt, snap, pip) integration (Phase 1.3)
-- Environment discovery via systemd/procfs/sysfs/cgroups v2 (Phase 1.1-1.9)
+| Channel | Description |
+|---------|-------------|
+| InteractiveInputChannel | For interactive CLI input (in-memory) |
+| ConfigFileChannel | For config/spec file input |
 
-### What requires privilege?
+## Usage Examples
 
-System-wide installation (`InstallationScope::kSystem`) requires root privileges.
-User-scoped installation runs as the invoking user without elevation.
+### Creating a Form
 
-Authorization checks:
 ```cpp
-if (scope == InstallationScope::kSystem && !is_root) {
-    // Authorization fails - system install needs root
+#include <system/install/forms.hpp>
+
+using namespace rebuntu::install::forms;
+
+// Build a form definition
+auto form = FormBuilder::create("installation", "Installation Settings")
+    .add_string_field("version", "Version", "Target version to install")
+    .add_enum_field("scope", "Scope", "Install scope", {"system", "user"})
+    .add_boolean_field("verify", "Verify", "Enable verification")
+    .build();
+
+// Create input channel with values
+ConfigFileChannel channel({{"version", "1.0.0"}, {"scope", "user"}});
+
+// Parse and validate
+FormParser parser(form);
+FormResult result = parser.parse(channel);
+
+if (result.is_valid()) {
+    // Process validated form data
 }
 ```
 
-### What is user-scoped vs system-scoped?
+### Unknown Field Detection
 
-| Aspect | System Scope | User Scope |
-|--------|-------------|------------|
-| Install root | `/` | `$HOME` |
-| Binary path | `/usr/bin` | `$HOME/.local/bin` |
-| State dir | `/var/lib/rebuntu` | `$HOME/.local/state/rebuntu` |
-| Config dir | `/etc/rebuntu` | `$HOME/.config/rebuntu` |
-| Privilege required | Yes (root) | No |
-
-## Bootstrap Phases
-
-1. **Discovery** - Determine host environment facts
-2. **Planning** - Generate explicit installation plan
-3. **Authorization** - Verify user intent and scope
-4. **Execution** - Apply installation steps
-5. **Verification** - Confirm postconditions are met
-
-## Usage
+The FormParser automatically detects unknown fields and marks them as errors:
 
 ```cpp
-#include <system/install/bootstrap.hpp>
-
-using namespace rebuntu::install::bootstrap;
-
-// With defaults (auto-detects system vs user)
-BootstrapResult result = install_with_defaults();
-
-// With explicit context
-BootstrapContext ctx;
-ctx.scope = InstallationScope::kSystem;
-BootstrapResult result = install(ctx);
-
-// Dry run mode (no actual mutation)
-ctx.dry_run = true;
-result = install(ctx);
+ConfigFileChannel channel({{"version", "1.0.0"}, {"unknown_field", "value"}});
+FormResult result = parser.parse(channel);
+// result.is_valid() will be false due to unknown field
 ```
 
-## Deferred Work
+## InstallationFormFactory
 
-- Phase 1.1: Environment discovery integration
-- Phase 1.3: Real plan execution
-- Phase 1.4: Package manager integration
-- Phase 1.5: Binary installation
-- Phase 1.6: Service registration
+Predefined forms for common installation scenarios:
+
+- `create_installation_intent_form()` - Version, scope, verification settings
+- `create_scope_selection_form()` - System vs user scope selection
+- `create_feature_selection_form()` - Optional features selection
+
+## Pressure Tests Covered
+
+1. **Fully interactive** - InteractiveInputChannel with set_value()
+2. **Fully non-interactive** - ConfigFileChannel with complete spec
+3. **Partial form** - Missing optional fields use defaults
+4. **Invalid enum** - Out-of-range enum values detected as errors
+5. **Invalid path** - Path validation constraints enforced
+6. **Secret input** - Sensitive field handling (value_source metadata)
+7. **Conflicting choices** - Multiple constraint validations
+8. **Host-derived suggestion** - ValueSource::kDetectedHost metadata
+9. **Policy-forbidden value** - AllowedValues constraint enforced
+10. **Unknown field** - Extra fields in input channel detected
+
+## Architecture
+
+```
+User Input
+    ↓
+InputChannel (InteractiveInputChannel / ConfigFileChannel)
+    ↓
+FormParser.parse()
+    ↓
+FormResult with:
+  - Field values
+  - Validation status per field
+  - Error/warning messages
+    ↓
+InstallationIntent / Configuration
+```
+
+## Phase History
+
+- **Phase 1.0**: Initial installation module foundation
+- **Phase 1.2**: Installation planning and host discovery
+- **Phase 1.3**: Forms & structured setup input (this phase)
+
+## See Also
+
+- `src/system/install/planning.hpp` - Installation planning
+- `src/system/install/discovery.hpp` - Host discovery

@@ -1,4 +1,9 @@
 // rebuntu::install::forms - Installation forms and structured setup input (Phase 1.3)
+//
+// DEPRECATED: This file is deprecated as of Phase 1.3.
+// Use src/system/install/forms.hpp instead for canonical Rebuntu forms implementation.
+//
+// This file remains for backward compatibility during migration period.
 #pragma once
 #include <runtime/core/contracts.hpp>
 #include <portability/install/contracts.hpp>

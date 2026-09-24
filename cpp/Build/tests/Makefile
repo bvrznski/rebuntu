@@ -252,6 +252,20 @@ test_discovery/fast:
 	cd /home/bvrznski/rebuntu/cpp/Build && $(MAKE) $(MAKESILENT) -f tests/CMakeFiles/test_discovery.dir/build.make tests/CMakeFiles/test_discovery.dir/build
 .PHONY : test_discovery/fast
 
+# Convenience name for target.
+tests/CMakeFiles/structured_setup_test.dir/rule:
+	cd /home/bvrznski/rebuntu/cpp/Build && $(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 tests/CMakeFiles/structured_setup_test.dir/rule
+.PHONY : tests/CMakeFiles/structured_setup_test.dir/rule
+
+# Convenience name for target.
+structured_setup_test: tests/CMakeFiles/structured_setup_test.dir/rule
+.PHONY : structured_setup_test
+
+# fast build rule for target.
+structured_setup_test/fast:
+	cd /home/bvrznski/rebuntu/cpp/Build && $(MAKE) $(MAKESILENT) -f tests/CMakeFiles/structured_setup_test.dir/build.make tests/CMakeFiles/structured_setup_test.dir/build
+.PHONY : structured_setup_test/fast
+
 automation_test.o: automation_test.cpp.o
 .PHONY : automation_test.o
 
@@ -444,6 +458,30 @@ home/bvrznski/rebuntu/tests/native/test_state_provider.cpp.s:
 	cd /home/bvrznski/rebuntu/cpp/Build && $(MAKE) $(MAKESILENT) -f tests/CMakeFiles/test_state_provider.dir/build.make tests/CMakeFiles/test_state_provider.dir/home/bvrznski/rebuntu/tests/native/test_state_provider.cpp.s
 .PHONY : home/bvrznski/rebuntu/tests/native/test_state_provider.cpp.s
 
+home/bvrznski/rebuntu/tests/rebuntu/test_structured_setup.o: home/bvrznski/rebuntu/tests/rebuntu/test_structured_setup.cpp.o
+.PHONY : home/bvrznski/rebuntu/tests/rebuntu/test_structured_setup.o
+
+# target to build an object file
+home/bvrznski/rebuntu/tests/rebuntu/test_structured_setup.cpp.o:
+	cd /home/bvrznski/rebuntu/cpp/Build && $(MAKE) $(MAKESILENT) -f tests/CMakeFiles/structured_setup_test.dir/build.make tests/CMakeFiles/structured_setup_test.dir/home/bvrznski/rebuntu/tests/rebuntu/test_structured_setup.cpp.o
+.PHONY : home/bvrznski/rebuntu/tests/rebuntu/test_structured_setup.cpp.o
+
+home/bvrznski/rebuntu/tests/rebuntu/test_structured_setup.i: home/bvrznski/rebuntu/tests/rebuntu/test_structured_setup.cpp.i
+.PHONY : home/bvrznski/rebuntu/tests/rebuntu/test_structured_setup.i
+
+# target to preprocess a source file
+home/bvrznski/rebuntu/tests/rebuntu/test_structured_setup.cpp.i:
+	cd /home/bvrznski/rebuntu/cpp/Build && $(MAKE) $(MAKESILENT) -f tests/CMakeFiles/structured_setup_test.dir/build.make tests/CMakeFiles/structured_setup_test.dir/home/bvrznski/rebuntu/tests/rebuntu/test_structured_setup.cpp.i
+.PHONY : home/bvrznski/rebuntu/tests/rebuntu/test_structured_setup.cpp.i
+
+home/bvrznski/rebuntu/tests/rebuntu/test_structured_setup.s: home/bvrznski/rebuntu/tests/rebuntu/test_structured_setup.cpp.s
+.PHONY : home/bvrznski/rebuntu/tests/rebuntu/test_structured_setup.s
+
+# target to generate assembly for a file
+home/bvrznski/rebuntu/tests/rebuntu/test_structured_setup.cpp.s:
+	cd /home/bvrznski/rebuntu/cpp/Build && $(MAKE) $(MAKESILENT) -f tests/CMakeFiles/structured_setup_test.dir/build.make tests/CMakeFiles/structured_setup_test.dir/home/bvrznski/rebuntu/tests/rebuntu/test_structured_setup.cpp.s
+.PHONY : home/bvrznski/rebuntu/tests/rebuntu/test_structured_setup.cpp.s
+
 install_planning_test.o: install_planning_test.cpp.o
 .PHONY : install_planning_test.o
 
@@ -531,6 +569,7 @@ help:
 	@echo "... install_planning_test"
 	@echo "... results_test"
 	@echo "... runtime_runner_test"
+	@echo "... structured_setup_test"
 	@echo "... test_discovery"
 	@echo "... test_runtime_contracts"
 	@echo "... test_state_provider"
@@ -558,6 +597,9 @@ help:
 	@echo "... home/bvrznski/rebuntu/tests/native/test_state_provider.o"
 	@echo "... home/bvrznski/rebuntu/tests/native/test_state_provider.i"
 	@echo "... home/bvrznski/rebuntu/tests/native/test_state_provider.s"
+	@echo "... home/bvrznski/rebuntu/tests/rebuntu/test_structured_setup.o"
+	@echo "... home/bvrznski/rebuntu/tests/rebuntu/test_structured_setup.i"
+	@echo "... home/bvrznski/rebuntu/tests/rebuntu/test_structured_setup.s"
 	@echo "... install_planning_test.o"
 	@echo "... install_planning_test.i"
 	@echo "... install_planning_test.s"

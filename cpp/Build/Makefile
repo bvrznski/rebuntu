@@ -634,6 +634,19 @@ test_discovery/fast:
 .PHONY : test_discovery/fast
 
 #=============================================================================
+# Target rules for targets named structured_setup_test
+
+# Build rule for target.
+structured_setup_test: cmake_check_build_system
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 structured_setup_test
+.PHONY : structured_setup_test
+
+# fast build rule for target.
+structured_setup_test/fast:
+	$(MAKE) $(MAKESILENT) -f tests/CMakeFiles/structured_setup_test.dir/build.make tests/CMakeFiles/structured_setup_test.dir/build
+.PHONY : structured_setup_test/fast
+
+#=============================================================================
 # Target rules for targets named rebuntu
 
 # Build rule for target.
@@ -764,6 +777,7 @@ help:
 	@echo "... rebuntu-install"
 	@echo "... results_test"
 	@echo "... runtime_runner_test"
+	@echo "... structured_setup_test"
 	@echo "... test_discovery"
 	@echo "... test_runtime_contracts"
 	@echo "... test_state_provider"

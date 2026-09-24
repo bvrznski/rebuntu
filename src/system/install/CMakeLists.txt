@@ -1,5 +1,7 @@
-# rebuntu::install - Installation architecture (Phase 1.0-1.2)
+# rebuntu::install - Installation architecture (Phase 1.0-1.3)
 # =============================================================
+#
+# Phase 1.3: Forms module consolidated from src/portability/install/forms.hpp
 
 add_library(rebuntu-install STATIC
     contracts.hpp

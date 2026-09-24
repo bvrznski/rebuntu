@@ -88,3 +88,12 @@ add_test(NAME events_test COMMAND events_test)
 add_test(NAME results_test COMMAND results_test)
 add_test(NAME test_discovery COMMAND test_discovery)
 add_test(NAME config_test COMMAND config_test)
+
+# Structured setup forms test (Phase 1.3)
+add_executable(structured_setup_test ../../tests/rebuntu/test_structured_setup.cpp)
+target_link_libraries(structured_setup_test rebuntu-core)
+target_include_directories(structured_setup_test PRIVATE 
+    ${CMAKE_SOURCE_DIR}/src
+    ${CMAKE_SOURCE_DIR}
+)
+add_test(NAME structured_setup_test COMMAND structured_setup_test)

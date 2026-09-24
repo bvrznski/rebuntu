@@ -43,6 +43,7 @@
 /home/bvrznski/rebuntu/cpp/Build/tests/CMakeFiles/config_test.dir
 /home/bvrznski/rebuntu/cpp/Build/tests/CMakeFiles/install_planning_test.dir
 /home/bvrznski/rebuntu/cpp/Build/tests/CMakeFiles/test_discovery.dir
+/home/bvrznski/rebuntu/cpp/Build/tests/CMakeFiles/structured_setup_test.dir
 /home/bvrznski/rebuntu/cpp/Build/tests/CMakeFiles/test.dir
 /home/bvrznski/rebuntu/cpp/Build/tests/CMakeFiles/edit_cache.dir
 /home/bvrznski/rebuntu/cpp/Build/tests/CMakeFiles/rebuild_cache.dir

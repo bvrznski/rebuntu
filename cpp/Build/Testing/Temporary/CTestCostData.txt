@@ -1,46 +1,24 @@
-install_planning_test 0 0
-runtime_runner_test 0 0
-automation_test 0 0
-test_runtime_contracts 0 0
-test_state_provider 0 0
-events_test 0 0
-results_test 0 0
-test_discovery 0 0
-settings_test 0 0
-config_test 0 0
-preferences_test 0 0
-structured_setup_test 0 0
-profile_test 0 0
-user_identity_test 0 0
-capability_state_test 0 0
-group_membership_test 0 0
-ownership_test 0 0
-lifecycle_test 0 0
-host_foundation_test 0 0
-test_scope 0 0
-test_sessions 0 0
-test_secrets 1 0.00314886
-test_directories 0 0
+install_planning_test 3 0.00085308
+runtime_runner_test 3 0.000912067
+automation_test 3 0.00113149
+test_runtime_contracts 3 0.0008846
+test_state_provider 3 0.00082593
+events_test 3 0.0178289
+results_test 3 0.00121046
+test_discovery 3 0.000919577
+settings_test 3 0.000802457
+config_test 3 0.00091882
+preferences_test 3 0.00101081
+structured_setup_test 3 0.000909887
+profile_test 3 0.000853917
+user_identity_test 3 0.0017486
+capability_state_test 3 0.00104686
+group_membership_test 3 0.00135288
+ownership_test 3 0.00146537
+lifecycle_test 3 0.00123296
+host_foundation_test 3 0.00126734
+test_scope 3 0.00111642
+test_sessions 3 0.00105749
+test_secrets 4 0.000730817
+test_directories 3 0.00103938
 ---
-install_planning_test
-runtime_runner_test
-automation_test
-test_runtime_contracts
-test_state_provider
-events_test
-results_test
-test_discovery
-settings_test
-config_test
-preferences_test
-structured_setup_test
-profile_test
-user_identity_test
-capability_state_test
-group_membership_test
-ownership_test
-lifecycle_test
-host_foundation_test
-test_scope
-test_sessions
-test_directories

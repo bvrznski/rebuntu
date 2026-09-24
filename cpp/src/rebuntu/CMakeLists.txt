@@ -49,6 +49,27 @@ set(SESSIONS_SRCS
 )
 target_sources(rebuntu PRIVATE ${SESSIONS_SRCS})
 
+# Add Phase 2.12 temporary files module (Secure Temp Files)
+set(TEMP_FILES_SRCS
+    ${CMAKE_SOURCE_DIR}/../src/system/environment/temp_files.hpp
+    ${CMAKE_SOURCE_DIR}/../src/system/environment/temp_files.cpp
+)
+target_sources(rebuntu PRIVATE ${TEMP_FILES_SRCS})
+
+# Add Phase 2.12 locks module (Locking Primitives)
+set(LOCKS_SRCS
+    ${CMAKE_SOURCE_DIR}/../src/system/environment/locks.hpp
+    ${CMAKE_SOURCE_DIR}/../src/system/environment/locks.cpp
+)
+target_sources(rebuntu PRIVATE ${LOCKS_SRCS})
+
+# Add Phase 2.12 IPC module (Inter-Process Communication)
+set(IPC_SRCS
+    ${CMAKE_SOURCE_DIR}/../src/system/environment/ipc.hpp
+    ${CMAKE_SOURCE_DIR}/../src/system/environment/ipc.cpp
+)
+target_sources(rebuntu PRIVATE ${IPC_SRCS})
+
 # Add Phase 1 installation architecture (Phase 1.0-1.2)
 set(INSTALL_SRCS
     ${CMAKE_SOURCE_DIR}/../src/system/install/contracts.hpp

@@ -236,6 +236,54 @@ home/bvrznski/rebuntu/src/runtime/timeout_enforcement.cpp.s:
 	cd /home/bvrznski/rebuntu/cpp/Build && $(MAKE) $(MAKESILENT) -f src/rebuntu/CMakeFiles/rebuntu.dir/build.make src/rebuntu/CMakeFiles/rebuntu.dir/home/bvrznski/rebuntu/src/runtime/timeout_enforcement.cpp.s
 .PHONY : home/bvrznski/rebuntu/src/runtime/timeout_enforcement.cpp.s
 
+home/bvrznski/rebuntu/src/system/environment/ipc.o: home/bvrznski/rebuntu/src/system/environment/ipc.cpp.o
+.PHONY : home/bvrznski/rebuntu/src/system/environment/ipc.o
+
+# target to build an object file
+home/bvrznski/rebuntu/src/system/environment/ipc.cpp.o:
+	cd /home/bvrznski/rebuntu/cpp/Build && $(MAKE) $(MAKESILENT) -f src/rebuntu/CMakeFiles/rebuntu.dir/build.make src/rebuntu/CMakeFiles/rebuntu.dir/home/bvrznski/rebuntu/src/system/environment/ipc.cpp.o
+.PHONY : home/bvrznski/rebuntu/src/system/environment/ipc.cpp.o
+
+home/bvrznski/rebuntu/src/system/environment/ipc.i: home/bvrznski/rebuntu/src/system/environment/ipc.cpp.i
+.PHONY : home/bvrznski/rebuntu/src/system/environment/ipc.i
+
+# target to preprocess a source file
+home/bvrznski/rebuntu/src/system/environment/ipc.cpp.i:
+	cd /home/bvrznski/rebuntu/cpp/Build && $(MAKE) $(MAKESILENT) -f src/rebuntu/CMakeFiles/rebuntu.dir/build.make src/rebuntu/CMakeFiles/rebuntu.dir/home/bvrznski/rebuntu/src/system/environment/ipc.cpp.i
+.PHONY : home/bvrznski/rebuntu/src/system/environment/ipc.cpp.i
+
+home/bvrznski/rebuntu/src/system/environment/ipc.s: home/bvrznski/rebuntu/src/system/environment/ipc.cpp.s
+.PHONY : home/bvrznski/rebuntu/src/system/environment/ipc.s
+
+# target to generate assembly for a file
+home/bvrznski/rebuntu/src/system/environment/ipc.cpp.s:
+	cd /home/bvrznski/rebuntu/cpp/Build && $(MAKE) $(MAKESILENT) -f src/rebuntu/CMakeFiles/rebuntu.dir/build.make src/rebuntu/CMakeFiles/rebuntu.dir/home/bvrznski/rebuntu/src/system/environment/ipc.cpp.s
+.PHONY : home/bvrznski/rebuntu/src/system/environment/ipc.cpp.s
+
+home/bvrznski/rebuntu/src/system/environment/locks.o: home/bvrznski/rebuntu/src/system/environment/locks.cpp.o
+.PHONY : home/bvrznski/rebuntu/src/system/environment/locks.o
+
+# target to build an object file
+home/bvrznski/rebuntu/src/system/environment/locks.cpp.o:
+	cd /home/bvrznski/rebuntu/cpp/Build && $(MAKE) $(MAKESILENT) -f src/rebuntu/CMakeFiles/rebuntu.dir/build.make src/rebuntu/CMakeFiles/rebuntu.dir/home/bvrznski/rebuntu/src/system/environment/locks.cpp.o
+.PHONY : home/bvrznski/rebuntu/src/system/environment/locks.cpp.o
+
+home/bvrznski/rebuntu/src/system/environment/locks.i: home/bvrznski/rebuntu/src/system/environment/locks.cpp.i
+.PHONY : home/bvrznski/rebuntu/src/system/environment/locks.i
+
+# target to preprocess a source file
+home/bvrznski/rebuntu/src/system/environment/locks.cpp.i:
+	cd /home/bvrznski/rebuntu/cpp/Build && $(MAKE) $(MAKESILENT) -f src/rebuntu/CMakeFiles/rebuntu.dir/build.make src/rebuntu/CMakeFiles/rebuntu.dir/home/bvrznski/rebuntu/src/system/environment/locks.cpp.i
+.PHONY : home/bvrznski/rebuntu/src/system/environment/locks.cpp.i
+
+home/bvrznski/rebuntu/src/system/environment/locks.s: home/bvrznski/rebuntu/src/system/environment/locks.cpp.s
+.PHONY : home/bvrznski/rebuntu/src/system/environment/locks.s
+
+# target to generate assembly for a file
+home/bvrznski/rebuntu/src/system/environment/locks.cpp.s:
+	cd /home/bvrznski/rebuntu/cpp/Build && $(MAKE) $(MAKESILENT) -f src/rebuntu/CMakeFiles/rebuntu.dir/build.make src/rebuntu/CMakeFiles/rebuntu.dir/home/bvrznski/rebuntu/src/system/environment/locks.cpp.s
+.PHONY : home/bvrznski/rebuntu/src/system/environment/locks.cpp.s
+
 home/bvrznski/rebuntu/src/system/environment/scope.o: home/bvrznski/rebuntu/src/system/environment/scope.cpp.o
 .PHONY : home/bvrznski/rebuntu/src/system/environment/scope.o
 
@@ -283,6 +331,30 @@ home/bvrznski/rebuntu/src/system/environment/sessions.s: home/bvrznski/rebuntu/s
 home/bvrznski/rebuntu/src/system/environment/sessions.cpp.s:
 	cd /home/bvrznski/rebuntu/cpp/Build && $(MAKE) $(MAKESILENT) -f src/rebuntu/CMakeFiles/rebuntu.dir/build.make src/rebuntu/CMakeFiles/rebuntu.dir/home/bvrznski/rebuntu/src/system/environment/sessions.cpp.s
 .PHONY : home/bvrznski/rebuntu/src/system/environment/sessions.cpp.s
+
+home/bvrznski/rebuntu/src/system/environment/temp_files.o: home/bvrznski/rebuntu/src/system/environment/temp_files.cpp.o
+.PHONY : home/bvrznski/rebuntu/src/system/environment/temp_files.o
+
+# target to build an object file
+home/bvrznski/rebuntu/src/system/environment/temp_files.cpp.o:
+	cd /home/bvrznski/rebuntu/cpp/Build && $(MAKE) $(MAKESILENT) -f src/rebuntu/CMakeFiles/rebuntu.dir/build.make src/rebuntu/CMakeFiles/rebuntu.dir/home/bvrznski/rebuntu/src/system/environment/temp_files.cpp.o
+.PHONY : home/bvrznski/rebuntu/src/system/environment/temp_files.cpp.o
+
+home/bvrznski/rebuntu/src/system/environment/temp_files.i: home/bvrznski/rebuntu/src/system/environment/temp_files.cpp.i
+.PHONY : home/bvrznski/rebuntu/src/system/environment/temp_files.i
+
+# target to preprocess a source file
+home/bvrznski/rebuntu/src/system/environment/temp_files.cpp.i:
+	cd /home/bvrznski/rebuntu/cpp/Build && $(MAKE) $(MAKESILENT) -f src/rebuntu/CMakeFiles/rebuntu.dir/build.make src/rebuntu/CMakeFiles/rebuntu.dir/home/bvrznski/rebuntu/src/system/environment/temp_files.cpp.i
+.PHONY : home/bvrznski/rebuntu/src/system/environment/temp_files.cpp.i
+
+home/bvrznski/rebuntu/src/system/environment/temp_files.s: home/bvrznski/rebuntu/src/system/environment/temp_files.cpp.s
+.PHONY : home/bvrznski/rebuntu/src/system/environment/temp_files.s
+
+# target to generate assembly for a file
+home/bvrznski/rebuntu/src/system/environment/temp_files.cpp.s:
+	cd /home/bvrznski/rebuntu/cpp/Build && $(MAKE) $(MAKESILENT) -f src/rebuntu/CMakeFiles/rebuntu.dir/build.make src/rebuntu/CMakeFiles/rebuntu.dir/home/bvrznski/rebuntu/src/system/environment/temp_files.cpp.s
+.PHONY : home/bvrznski/rebuntu/src/system/environment/temp_files.cpp.s
 
 home/bvrznski/rebuntu/src/system/install/install.o: home/bvrznski/rebuntu/src/system/install/install.cpp.o
 .PHONY : home/bvrznski/rebuntu/src/system/install/install.o
@@ -426,12 +498,21 @@ help:
 	@echo "... home/bvrznski/rebuntu/src/runtime/timeout_enforcement.o"
 	@echo "... home/bvrznski/rebuntu/src/runtime/timeout_enforcement.i"
 	@echo "... home/bvrznski/rebuntu/src/runtime/timeout_enforcement.s"
+	@echo "... home/bvrznski/rebuntu/src/system/environment/ipc.o"
+	@echo "... home/bvrznski/rebuntu/src/system/environment/ipc.i"
+	@echo "... home/bvrznski/rebuntu/src/system/environment/ipc.s"
+	@echo "... home/bvrznski/rebuntu/src/system/environment/locks.o"
+	@echo "... home/bvrznski/rebuntu/src/system/environment/locks.i"
+	@echo "... home/bvrznski/rebuntu/src/system/environment/locks.s"
 	@echo "... home/bvrznski/rebuntu/src/system/environment/scope.o"
 	@echo "... home/bvrznski/rebuntu/src/system/environment/scope.i"
 	@echo "... home/bvrznski/rebuntu/src/system/environment/scope.s"
 	@echo "... home/bvrznski/rebuntu/src/system/environment/sessions.o"
 	@echo "... home/bvrznski/rebuntu/src/system/environment/sessions.i"
 	@echo "... home/bvrznski/rebuntu/src/system/environment/sessions.s"
+	@echo "... home/bvrznski/rebuntu/src/system/environment/temp_files.o"
+	@echo "... home/bvrznski/rebuntu/src/system/environment/temp_files.i"
+	@echo "... home/bvrznski/rebuntu/src/system/environment/temp_files.s"
 	@echo "... home/bvrznski/rebuntu/src/system/install/install.o"
 	@echo "... home/bvrznski/rebuntu/src/system/install/install.i"
 	@echo "... home/bvrznski/rebuntu/src/system/install/install.s"

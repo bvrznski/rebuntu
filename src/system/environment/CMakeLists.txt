@@ -4,6 +4,9 @@
 set(ENVIRONMENT_SOURCES
     user_identity.cpp
     environment_discovery.cpp
+    temp_files.cpp
+    locks.cpp
+    ipc.cpp
 )
 
 add_library(rebuntu_environment STATIC ${ENVIRONMENT_SOURCES})

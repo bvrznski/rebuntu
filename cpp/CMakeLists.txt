@@ -139,6 +139,17 @@ target_include_directories(rebuntu-lifecycle PUBLIC
 
 target_link_libraries(rebuntu-core PUBLIC rebuntu-lifecycle)
 
+# Phase 2.0: Linux Host Foundation module
+set(HOST_FOUNDATION_SRC_ROOT ${CMAKE_CURRENT_LIST_DIR}/../src/system/host_foundation)
+add_library(rebuntu-host-foundation STATIC
+    ${HOST_FOUNDATION_SRC_ROOT}/contracts.hpp
+    ${HOST_FOUNDATION_SRC_ROOT}/host_foundation.cpp
+)
+target_include_directories(rebuntu-host-foundation PUBLIC
+    ${CMAKE_CURRENT_LIST_DIR}/../src
+)
+target_link_libraries(rebuntu-core PUBLIC rebuntu-host-foundation)
+
 # Tests subdirectory
 add_subdirectory(tests)
 

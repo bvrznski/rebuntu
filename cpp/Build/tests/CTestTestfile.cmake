@@ -34,3 +34,5 @@ add_test([=[user_identity_test]=] "/home/bvrznski/rebuntu/cpp/Build/tests/user_i
 set_tests_properties([=[user_identity_test]=] PROPERTIES  _BACKTRACE_TRIPLES "/home/bvrznski/rebuntu/cpp/tests/CMakeLists.txt;136;add_test;/home/bvrznski/rebuntu/cpp/tests/CMakeLists.txt;0;")
 add_test([=[lifecycle_test]=] "/home/bvrznski/rebuntu/cpp/Build/tests/lifecycle_test")
 set_tests_properties([=[lifecycle_test]=] PROPERTIES  _BACKTRACE_TRIPLES "/home/bvrznski/rebuntu/cpp/tests/CMakeLists.txt;145;add_test;/home/bvrznski/rebuntu/cpp/tests/CMakeLists.txt;0;")
+add_test([=[host_foundation_test]=] "/home/bvrznski/rebuntu/cpp/Build/tests/host_foundation_test")
+set_tests_properties([=[host_foundation_test]=] PROPERTIES  _BACKTRACE_TRIPLES "/home/bvrznski/rebuntu/cpp/tests/CMakeLists.txt;157;add_test;/home/bvrznski/rebuntu/cpp/tests/CMakeLists.txt;0;")

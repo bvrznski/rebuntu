@@ -144,4 +144,16 @@ target_include_directories(lifecycle_test PRIVATE
 )
 add_test(NAME lifecycle_test COMMAND lifecycle_test)
 
+# Phase 2.0: Host foundation tests
+add_executable(host_foundation_test ../../tests/native/test_host_foundation.cpp
+    ${CMAKE_SOURCE_DIR}/../src/system/host_foundation/contracts.hpp
+    ${CMAKE_SOURCE_DIR}/../src/system/host_foundation/host_foundation.cpp
+)
+target_link_libraries(host_foundation_test rebuntu-core rebuntu-host-foundation)
+target_include_directories(host_foundation_test PRIVATE 
+    ${CMAKE_SOURCE_DIR}/src
+    ${CMAKE_SOURCE_DIR}
+)
+add_test(NAME host_foundation_test COMMAND host_foundation_test)
+
 # Phase 1.9: Environment discovery tests (pending integration with testing framework)

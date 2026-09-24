@@ -336,6 +336,20 @@ lifecycle_test/fast:
 	cd /home/bvrznski/rebuntu/cpp/Build && $(MAKE) $(MAKESILENT) -f tests/CMakeFiles/lifecycle_test.dir/build.make tests/CMakeFiles/lifecycle_test.dir/build
 .PHONY : lifecycle_test/fast
 
+# Convenience name for target.
+tests/CMakeFiles/host_foundation_test.dir/rule:
+	cd /home/bvrznski/rebuntu/cpp/Build && $(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 tests/CMakeFiles/host_foundation_test.dir/rule
+.PHONY : tests/CMakeFiles/host_foundation_test.dir/rule
+
+# Convenience name for target.
+host_foundation_test: tests/CMakeFiles/host_foundation_test.dir/rule
+.PHONY : host_foundation_test
+
+# fast build rule for target.
+host_foundation_test/fast:
+	cd /home/bvrznski/rebuntu/cpp/Build && $(MAKE) $(MAKESILENT) -f tests/CMakeFiles/host_foundation_test.dir/build.make tests/CMakeFiles/host_foundation_test.dir/build
+.PHONY : host_foundation_test/fast
+
 automation_test.o: automation_test.cpp.o
 .PHONY : automation_test.o
 
@@ -432,6 +446,30 @@ home/bvrznski/rebuntu/src/runtime/discovery.cpp.s:
 	cd /home/bvrznski/rebuntu/cpp/Build && $(MAKE) $(MAKESILENT) -f tests/CMakeFiles/test_discovery.dir/build.make tests/CMakeFiles/test_discovery.dir/home/bvrznski/rebuntu/src/runtime/discovery.cpp.s
 .PHONY : home/bvrznski/rebuntu/src/runtime/discovery.cpp.s
 
+home/bvrznski/rebuntu/src/system/host_foundation/host_foundation.o: home/bvrznski/rebuntu/src/system/host_foundation/host_foundation.cpp.o
+.PHONY : home/bvrznski/rebuntu/src/system/host_foundation/host_foundation.o
+
+# target to build an object file
+home/bvrznski/rebuntu/src/system/host_foundation/host_foundation.cpp.o:
+	cd /home/bvrznski/rebuntu/cpp/Build && $(MAKE) $(MAKESILENT) -f tests/CMakeFiles/host_foundation_test.dir/build.make tests/CMakeFiles/host_foundation_test.dir/home/bvrznski/rebuntu/src/system/host_foundation/host_foundation.cpp.o
+.PHONY : home/bvrznski/rebuntu/src/system/host_foundation/host_foundation.cpp.o
+
+home/bvrznski/rebuntu/src/system/host_foundation/host_foundation.i: home/bvrznski/rebuntu/src/system/host_foundation/host_foundation.cpp.i
+.PHONY : home/bvrznski/rebuntu/src/system/host_foundation/host_foundation.i
+
+# target to preprocess a source file
+home/bvrznski/rebuntu/src/system/host_foundation/host_foundation.cpp.i:
+	cd /home/bvrznski/rebuntu/cpp/Build && $(MAKE) $(MAKESILENT) -f tests/CMakeFiles/host_foundation_test.dir/build.make tests/CMakeFiles/host_foundation_test.dir/home/bvrznski/rebuntu/src/system/host_foundation/host_foundation.cpp.i
+.PHONY : home/bvrznski/rebuntu/src/system/host_foundation/host_foundation.cpp.i
+
+home/bvrznski/rebuntu/src/system/host_foundation/host_foundation.s: home/bvrznski/rebuntu/src/system/host_foundation/host_foundation.cpp.s
+.PHONY : home/bvrznski/rebuntu/src/system/host_foundation/host_foundation.s
+
+# target to generate assembly for a file
+home/bvrznski/rebuntu/src/system/host_foundation/host_foundation.cpp.s:
+	cd /home/bvrznski/rebuntu/cpp/Build && $(MAKE) $(MAKESILENT) -f tests/CMakeFiles/host_foundation_test.dir/build.make tests/CMakeFiles/host_foundation_test.dir/home/bvrznski/rebuntu/src/system/host_foundation/host_foundation.cpp.s
+.PHONY : home/bvrznski/rebuntu/src/system/host_foundation/host_foundation.cpp.s
+
 home/bvrznski/rebuntu/src/system/install/install_planning.o: home/bvrznski/rebuntu/src/system/install/install_planning.cpp.o
 .PHONY : home/bvrznski/rebuntu/src/system/install/install_planning.o
 
@@ -479,6 +517,30 @@ home/bvrznski/rebuntu/tests/native/test_discovery.s: home/bvrznski/rebuntu/tests
 home/bvrznski/rebuntu/tests/native/test_discovery.cpp.s:
 	cd /home/bvrznski/rebuntu/cpp/Build && $(MAKE) $(MAKESILENT) -f tests/CMakeFiles/test_discovery.dir/build.make tests/CMakeFiles/test_discovery.dir/home/bvrznski/rebuntu/tests/native/test_discovery.cpp.s
 .PHONY : home/bvrznski/rebuntu/tests/native/test_discovery.cpp.s
+
+home/bvrznski/rebuntu/tests/native/test_host_foundation.o: home/bvrznski/rebuntu/tests/native/test_host_foundation.cpp.o
+.PHONY : home/bvrznski/rebuntu/tests/native/test_host_foundation.o
+
+# target to build an object file
+home/bvrznski/rebuntu/tests/native/test_host_foundation.cpp.o:
+	cd /home/bvrznski/rebuntu/cpp/Build && $(MAKE) $(MAKESILENT) -f tests/CMakeFiles/host_foundation_test.dir/build.make tests/CMakeFiles/host_foundation_test.dir/home/bvrznski/rebuntu/tests/native/test_host_foundation.cpp.o
+.PHONY : home/bvrznski/rebuntu/tests/native/test_host_foundation.cpp.o
+
+home/bvrznski/rebuntu/tests/native/test_host_foundation.i: home/bvrznski/rebuntu/tests/native/test_host_foundation.cpp.i
+.PHONY : home/bvrznski/rebuntu/tests/native/test_host_foundation.i
+
+# target to preprocess a source file
+home/bvrznski/rebuntu/tests/native/test_host_foundation.cpp.i:
+	cd /home/bvrznski/rebuntu/cpp/Build && $(MAKE) $(MAKESILENT) -f tests/CMakeFiles/host_foundation_test.dir/build.make tests/CMakeFiles/host_foundation_test.dir/home/bvrznski/rebuntu/tests/native/test_host_foundation.cpp.i
+.PHONY : home/bvrznski/rebuntu/tests/native/test_host_foundation.cpp.i
+
+home/bvrznski/rebuntu/tests/native/test_host_foundation.s: home/bvrznski/rebuntu/tests/native/test_host_foundation.cpp.s
+.PHONY : home/bvrznski/rebuntu/tests/native/test_host_foundation.s
+
+# target to generate assembly for a file
+home/bvrznski/rebuntu/tests/native/test_host_foundation.cpp.s:
+	cd /home/bvrznski/rebuntu/cpp/Build && $(MAKE) $(MAKESILENT) -f tests/CMakeFiles/host_foundation_test.dir/build.make tests/CMakeFiles/host_foundation_test.dir/home/bvrznski/rebuntu/tests/native/test_host_foundation.cpp.s
+.PHONY : home/bvrznski/rebuntu/tests/native/test_host_foundation.cpp.s
 
 home/bvrznski/rebuntu/tests/native/test_preferences.o: home/bvrznski/rebuntu/tests/native/test_preferences.cpp.o
 .PHONY : home/bvrznski/rebuntu/tests/native/test_preferences.o
@@ -756,6 +818,7 @@ help:
 	@echo "... automation_test"
 	@echo "... config_test"
 	@echo "... events_test"
+	@echo "... host_foundation_test"
 	@echo "... install_planning_test"
 	@echo "... lifecycle_test"
 	@echo "... preferences_test"
@@ -780,12 +843,18 @@ help:
 	@echo "... home/bvrznski/rebuntu/src/runtime/discovery.o"
 	@echo "... home/bvrznski/rebuntu/src/runtime/discovery.i"
 	@echo "... home/bvrznski/rebuntu/src/runtime/discovery.s"
+	@echo "... home/bvrznski/rebuntu/src/system/host_foundation/host_foundation.o"
+	@echo "... home/bvrznski/rebuntu/src/system/host_foundation/host_foundation.i"
+	@echo "... home/bvrznski/rebuntu/src/system/host_foundation/host_foundation.s"
 	@echo "... home/bvrznski/rebuntu/src/system/install/install_planning.o"
 	@echo "... home/bvrznski/rebuntu/src/system/install/install_planning.i"
 	@echo "... home/bvrznski/rebuntu/src/system/install/install_planning.s"
 	@echo "... home/bvrznski/rebuntu/tests/native/test_discovery.o"
 	@echo "... home/bvrznski/rebuntu/tests/native/test_discovery.i"
 	@echo "... home/bvrznski/rebuntu/tests/native/test_discovery.s"
+	@echo "... home/bvrznski/rebuntu/tests/native/test_host_foundation.o"
+	@echo "... home/bvrznski/rebuntu/tests/native/test_host_foundation.i"
+	@echo "... home/bvrznski/rebuntu/tests/native/test_host_foundation.s"
 	@echo "... home/bvrznski/rebuntu/tests/native/test_preferences.o"
 	@echo "... home/bvrznski/rebuntu/tests/native/test_preferences.i"
 	@echo "... home/bvrznski/rebuntu/tests/native/test_preferences.s"

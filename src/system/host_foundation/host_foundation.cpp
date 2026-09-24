@@ -67,20 +67,18 @@ FoundationObservation HostFoundation::check_os_release() const {
     
     auto content = read_file_line("/etc/os-release");
     if (content.has_value()) {
-        // Verify it contains expected fields
+        // Verify it contains expected fields (at minimum ID=)
         bool has_id = false;
-        bool has_version = false;
         
         std::istringstream iss(content.value());
         std::string line;
         while (std::getline(iss, line)) {
             if (line.find("ID=") == 0) {
                 has_id = true;
-            } else if (line.find("VERSION_ID=") == 0) {
-                has_version = true;
             }
         }
         
+        // os-release is considered present if it contains ID= or appears to be a valid distro file
         if (has_id || content->find("ubuntu") != std::string::npos ||
             content->find("debian") != std::string::npos) {
             obs.status = FoundationObservationStatus::kPresent;

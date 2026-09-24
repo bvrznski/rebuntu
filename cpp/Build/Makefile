@@ -556,6 +556,19 @@ rebuntu-lifecycle/fast:
 .PHONY : rebuntu-lifecycle/fast
 
 #=============================================================================
+# Target rules for targets named rebuntu-host-foundation
+
+# Build rule for target.
+rebuntu-host-foundation: cmake_check_build_system
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 rebuntu-host-foundation
+.PHONY : rebuntu-host-foundation
+
+# fast build rule for target.
+rebuntu-host-foundation/fast:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/rebuntu-host-foundation.dir/build.make CMakeFiles/rebuntu-host-foundation.dir/build
+.PHONY : rebuntu-host-foundation/fast
+
+#=============================================================================
 # Target rules for targets named rebuntu-core
 
 # Build rule for target.
@@ -764,6 +777,19 @@ lifecycle_test/fast:
 .PHONY : lifecycle_test/fast
 
 #=============================================================================
+# Target rules for targets named host_foundation_test
+
+# Build rule for target.
+host_foundation_test: cmake_check_build_system
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 host_foundation_test
+.PHONY : host_foundation_test
+
+# fast build rule for target.
+host_foundation_test/fast:
+	$(MAKE) $(MAKESILENT) -f tests/CMakeFiles/host_foundation_test.dir/build.make tests/CMakeFiles/host_foundation_test.dir/build
+.PHONY : host_foundation_test/fast
+
+#=============================================================================
 # Target rules for targets named rebuntu
 
 # Build rule for target.
@@ -823,6 +849,30 @@ home/bvrznski/rebuntu/src/system/environment/user_identity.s: home/bvrznski/rebu
 home/bvrznski/rebuntu/src/system/environment/user_identity.cpp.s:
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/rebuntu-user-identity.dir/build.make CMakeFiles/rebuntu-user-identity.dir/home/bvrznski/rebuntu/src/system/environment/user_identity.cpp.s
 .PHONY : home/bvrznski/rebuntu/src/system/environment/user_identity.cpp.s
+
+home/bvrznski/rebuntu/src/system/host_foundation/host_foundation.o: home/bvrznski/rebuntu/src/system/host_foundation/host_foundation.cpp.o
+.PHONY : home/bvrznski/rebuntu/src/system/host_foundation/host_foundation.o
+
+# target to build an object file
+home/bvrznski/rebuntu/src/system/host_foundation/host_foundation.cpp.o:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/rebuntu-host-foundation.dir/build.make CMakeFiles/rebuntu-host-foundation.dir/home/bvrznski/rebuntu/src/system/host_foundation/host_foundation.cpp.o
+.PHONY : home/bvrznski/rebuntu/src/system/host_foundation/host_foundation.cpp.o
+
+home/bvrznski/rebuntu/src/system/host_foundation/host_foundation.i: home/bvrznski/rebuntu/src/system/host_foundation/host_foundation.cpp.i
+.PHONY : home/bvrznski/rebuntu/src/system/host_foundation/host_foundation.i
+
+# target to preprocess a source file
+home/bvrznski/rebuntu/src/system/host_foundation/host_foundation.cpp.i:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/rebuntu-host-foundation.dir/build.make CMakeFiles/rebuntu-host-foundation.dir/home/bvrznski/rebuntu/src/system/host_foundation/host_foundation.cpp.i
+.PHONY : home/bvrznski/rebuntu/src/system/host_foundation/host_foundation.cpp.i
+
+home/bvrznski/rebuntu/src/system/host_foundation/host_foundation.s: home/bvrznski/rebuntu/src/system/host_foundation/host_foundation.cpp.s
+.PHONY : home/bvrznski/rebuntu/src/system/host_foundation/host_foundation.s
+
+# target to generate assembly for a file
+home/bvrznski/rebuntu/src/system/host_foundation/host_foundation.cpp.s:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/rebuntu-host-foundation.dir/build.make CMakeFiles/rebuntu-host-foundation.dir/home/bvrznski/rebuntu/src/system/host_foundation/host_foundation.cpp.s
+.PHONY : home/bvrznski/rebuntu/src/system/host_foundation/host_foundation.cpp.s
 
 home/bvrznski/rebuntu/src/system/install/bootstrap.o: home/bvrznski/rebuntu/src/system/install/bootstrap.cpp.o
 .PHONY : home/bvrznski/rebuntu/src/system/install/bootstrap.o
@@ -1008,6 +1058,7 @@ help:
 	@echo "... automation_test"
 	@echo "... config_test"
 	@echo "... events_test"
+	@echo "... host_foundation_test"
 	@echo "... install_planning_test"
 	@echo "... lifecycle_test"
 	@echo "... preferences_test"
@@ -1015,6 +1066,7 @@ help:
 	@echo "... rebuntu"
 	@echo "... rebuntu-core"
 	@echo "... rebuntu-environment-discovery"
+	@echo "... rebuntu-host-foundation"
 	@echo "... rebuntu-install"
 	@echo "... rebuntu-lifecycle"
 	@echo "... rebuntu-setup"
@@ -1033,6 +1085,9 @@ help:
 	@echo "... home/bvrznski/rebuntu/src/system/environment/user_identity.o"
 	@echo "... home/bvrznski/rebuntu/src/system/environment/user_identity.i"
 	@echo "... home/bvrznski/rebuntu/src/system/environment/user_identity.s"
+	@echo "... home/bvrznski/rebuntu/src/system/host_foundation/host_foundation.o"
+	@echo "... home/bvrznski/rebuntu/src/system/host_foundation/host_foundation.i"
+	@echo "... home/bvrznski/rebuntu/src/system/host_foundation/host_foundation.s"
 	@echo "... home/bvrznski/rebuntu/src/system/install/bootstrap.o"
 	@echo "... home/bvrznski/rebuntu/src/system/install/bootstrap.i"
 	@echo "... home/bvrznski/rebuntu/src/system/install/bootstrap.s"

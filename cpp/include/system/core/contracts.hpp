@@ -9,7 +9,36 @@
 #include <memory>
 #include <map>
 #include <set>
+#include <vector>
 #include <optional>
+
+namespace rebuntu::core {
+
+// -----------------------------------------------------------------------------
+// ComponentKind (Phase 0.7)
+// -----------------------------------------------------------------------------
+// The kind of structural component in the Rebuntu registry.
+//
+// Phase 0.7 establishes Units as first-class structural types alongside
+// Systems and Modules for executable operational definitions.
+// -----------------------------------------------------------------------------
+
+enum class ComponentKind {
+    kSystem,   // a major coherent part of Rebuntu with broad responsibility
+    kModule,   // a substantial reusable functional component
+    kUnit,     // a bounded independently identifiable unit of executable work
+};
+
+inline std::string_view to_string(ComponentKind k) {
+    switch (k) {
+        case ComponentKind::kSystem: return "system";
+        case ComponentKind::kModule: return "module";
+        case ComponentKind::kUnit:   return "unit";
+    }
+    return "unknown";
+}
+
+} // namespace rebuntu::core
 
 namespace rebuntu::work {
 

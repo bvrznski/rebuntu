@@ -98,6 +98,7 @@ tests/ownership_test: librebuntu-install.a
 tests/ownership_test: librebuntu-user-identity.a
 tests/ownership_test: librebuntu-group-membership.a
 tests/ownership_test: librebuntu-privilege.a
+tests/ownership_test: librebuntu-capability-state.a
 tests/ownership_test: librebuntu-authorization.a
 tests/ownership_test: librebuntu-environment-discovery.a
 tests/ownership_test: librebuntu-setup.a

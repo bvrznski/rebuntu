@@ -114,6 +114,7 @@ tests/test_discovery: librebuntu-user-identity.a
 tests/test_discovery: librebuntu-group-membership.a
 tests/test_discovery: librebuntu-ownership.a
 tests/test_discovery: librebuntu-privilege.a
+tests/test_discovery: librebuntu-capability-state.a
 tests/test_discovery: librebuntu-authorization.a
 tests/test_discovery: librebuntu-environment-discovery.a
 tests/test_discovery: librebuntu-setup.a

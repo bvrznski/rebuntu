@@ -226,6 +226,7 @@ src/rebuntu/rebuntu: librebuntu-user-identity.a
 src/rebuntu/rebuntu: librebuntu-group-membership.a
 src/rebuntu/rebuntu: librebuntu-ownership.a
 src/rebuntu/rebuntu: librebuntu-privilege.a
+src/rebuntu/rebuntu: librebuntu-capability-state.a
 src/rebuntu/rebuntu: librebuntu-authorization.a
 src/rebuntu/rebuntu: librebuntu-environment-discovery.a
 src/rebuntu/rebuntu: librebuntu-setup.a

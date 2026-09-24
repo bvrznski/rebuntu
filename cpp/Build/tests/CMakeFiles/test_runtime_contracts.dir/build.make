@@ -98,6 +98,7 @@ tests/test_runtime_contracts: librebuntu-user-identity.a
 tests/test_runtime_contracts: librebuntu-group-membership.a
 tests/test_runtime_contracts: librebuntu-ownership.a
 tests/test_runtime_contracts: librebuntu-privilege.a
+tests/test_runtime_contracts: librebuntu-capability-state.a
 tests/test_runtime_contracts: librebuntu-authorization.a
 tests/test_runtime_contracts: librebuntu-environment-discovery.a
 tests/test_runtime_contracts: librebuntu-setup.a

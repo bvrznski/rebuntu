@@ -98,6 +98,7 @@ tests/automation_test: librebuntu-user-identity.a
 tests/automation_test: librebuntu-group-membership.a
 tests/automation_test: librebuntu-ownership.a
 tests/automation_test: librebuntu-privilege.a
+tests/automation_test: librebuntu-capability-state.a
 tests/automation_test: librebuntu-authorization.a
 tests/automation_test: librebuntu-environment-discovery.a
 tests/automation_test: librebuntu-setup.a

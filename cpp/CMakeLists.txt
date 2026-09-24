@@ -131,6 +131,17 @@ target_include_directories(rebuntu-privilege PUBLIC
 
 target_link_libraries(rebuntu-core PUBLIC rebuntu-privilege)
 
+# Phase 2.5: Linux Capabilities module (CapPrm/CapEff/CapInh/CapBnd/CapAmb)
+add_library(rebuntu-capability-state STATIC
+    ${USER_IDENTITY_SRC_ROOT}/capability_state.cpp
+)
+
+target_include_directories(rebuntu-capability-state PUBLIC
+    ${CMAKE_CURRENT_LIST_DIR}/../src
+)
+
+target_link_libraries(rebuntu-core PUBLIC rebuntu-capability-state)
+
 # Phase 2.6: Authorization & scope module (policy decisions)
 add_library(rebuntu-authorization STATIC
     ${USER_IDENTITY_SRC_ROOT}/authorization.cpp

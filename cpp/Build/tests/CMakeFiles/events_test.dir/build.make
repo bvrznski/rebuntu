@@ -98,6 +98,7 @@ tests/events_test: librebuntu-user-identity.a
 tests/events_test: librebuntu-group-membership.a
 tests/events_test: librebuntu-ownership.a
 tests/events_test: librebuntu-privilege.a
+tests/events_test: librebuntu-capability-state.a
 tests/events_test: librebuntu-authorization.a
 tests/events_test: librebuntu-environment-discovery.a
 tests/events_test: librebuntu-setup.a

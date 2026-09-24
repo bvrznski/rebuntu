@@ -323,6 +323,20 @@ user_identity_test/fast:
 .PHONY : user_identity_test/fast
 
 # Convenience name for target.
+tests/CMakeFiles/capability_state_test.dir/rule:
+	cd /home/bvrznski/rebuntu/cpp/Build && $(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 tests/CMakeFiles/capability_state_test.dir/rule
+.PHONY : tests/CMakeFiles/capability_state_test.dir/rule
+
+# Convenience name for target.
+capability_state_test: tests/CMakeFiles/capability_state_test.dir/rule
+.PHONY : capability_state_test
+
+# fast build rule for target.
+capability_state_test/fast:
+	cd /home/bvrznski/rebuntu/cpp/Build && $(MAKE) $(MAKESILENT) -f tests/CMakeFiles/capability_state_test.dir/build.make tests/CMakeFiles/capability_state_test.dir/build
+.PHONY : capability_state_test/fast
+
+# Convenience name for target.
 tests/CMakeFiles/group_membership_test.dir/rule:
 	cd /home/bvrznski/rebuntu/cpp/Build && $(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 tests/CMakeFiles/group_membership_test.dir/rule
 .PHONY : tests/CMakeFiles/group_membership_test.dir/rule
@@ -401,6 +415,30 @@ automation_test.s: automation_test.cpp.s
 automation_test.cpp.s:
 	cd /home/bvrznski/rebuntu/cpp/Build && $(MAKE) $(MAKESILENT) -f tests/CMakeFiles/automation_test.dir/build.make tests/CMakeFiles/automation_test.dir/automation_test.cpp.s
 .PHONY : automation_test.cpp.s
+
+capability_state_test.o: capability_state_test.cpp.o
+.PHONY : capability_state_test.o
+
+# target to build an object file
+capability_state_test.cpp.o:
+	cd /home/bvrznski/rebuntu/cpp/Build && $(MAKE) $(MAKESILENT) -f tests/CMakeFiles/capability_state_test.dir/build.make tests/CMakeFiles/capability_state_test.dir/capability_state_test.cpp.o
+.PHONY : capability_state_test.cpp.o
+
+capability_state_test.i: capability_state_test.cpp.i
+.PHONY : capability_state_test.i
+
+# target to preprocess a source file
+capability_state_test.cpp.i:
+	cd /home/bvrznski/rebuntu/cpp/Build && $(MAKE) $(MAKESILENT) -f tests/CMakeFiles/capability_state_test.dir/build.make tests/CMakeFiles/capability_state_test.dir/capability_state_test.cpp.i
+.PHONY : capability_state_test.cpp.i
+
+capability_state_test.s: capability_state_test.cpp.s
+.PHONY : capability_state_test.s
+
+# target to generate assembly for a file
+capability_state_test.cpp.s:
+	cd /home/bvrznski/rebuntu/cpp/Build && $(MAKE) $(MAKESILENT) -f tests/CMakeFiles/capability_state_test.dir/build.make tests/CMakeFiles/capability_state_test.dir/capability_state_test.cpp.s
+.PHONY : capability_state_test.cpp.s
 
 config_test.o: config_test.cpp.o
 .PHONY : config_test.o
@@ -892,6 +930,7 @@ help:
 	@echo "... rebuild_cache"
 	@echo "... test"
 	@echo "... automation_test"
+	@echo "... capability_state_test"
 	@echo "... config_test"
 	@echo "... events_test"
 	@echo "... group_membership_test"
@@ -912,6 +951,9 @@ help:
 	@echo "... automation_test.o"
 	@echo "... automation_test.i"
 	@echo "... automation_test.s"
+	@echo "... capability_state_test.o"
+	@echo "... capability_state_test.i"
+	@echo "... capability_state_test.s"
 	@echo "... config_test.o"
 	@echo "... config_test.i"
 	@echo "... config_test.s"

@@ -114,6 +114,7 @@ tests/install_planning_test: librebuntu-user-identity.a
 tests/install_planning_test: librebuntu-group-membership.a
 tests/install_planning_test: librebuntu-ownership.a
 tests/install_planning_test: librebuntu-privilege.a
+tests/install_planning_test: librebuntu-capability-state.a
 tests/install_planning_test: librebuntu-authorization.a
 tests/install_planning_test: librebuntu-environment-discovery.a
 tests/install_planning_test: librebuntu-setup.a

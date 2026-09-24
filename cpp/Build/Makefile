@@ -556,6 +556,19 @@ rebuntu-privilege/fast:
 .PHONY : rebuntu-privilege/fast
 
 #=============================================================================
+# Target rules for targets named rebuntu-capability-state
+
+# Build rule for target.
+rebuntu-capability-state: cmake_check_build_system
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 rebuntu-capability-state
+.PHONY : rebuntu-capability-state
+
+# fast build rule for target.
+rebuntu-capability-state/fast:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/rebuntu-capability-state.dir/build.make CMakeFiles/rebuntu-capability-state.dir/build
+.PHONY : rebuntu-capability-state/fast
+
+#=============================================================================
 # Target rules for targets named rebuntu-authorization
 
 # Build rule for target.
@@ -816,6 +829,19 @@ user_identity_test/fast:
 .PHONY : user_identity_test/fast
 
 #=============================================================================
+# Target rules for targets named capability_state_test
+
+# Build rule for target.
+capability_state_test: cmake_check_build_system
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 capability_state_test
+.PHONY : capability_state_test
+
+# fast build rule for target.
+capability_state_test/fast:
+	$(MAKE) $(MAKESILENT) -f tests/CMakeFiles/capability_state_test.dir/build.make tests/CMakeFiles/capability_state_test.dir/build
+.PHONY : capability_state_test/fast
+
+#=============================================================================
 # Target rules for targets named group_membership_test
 
 # Build rule for target.
@@ -903,6 +929,30 @@ home/bvrznski/rebuntu/src/system/environment/authorization.s: home/bvrznski/rebu
 home/bvrznski/rebuntu/src/system/environment/authorization.cpp.s:
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/rebuntu-authorization.dir/build.make CMakeFiles/rebuntu-authorization.dir/home/bvrznski/rebuntu/src/system/environment/authorization.cpp.s
 .PHONY : home/bvrznski/rebuntu/src/system/environment/authorization.cpp.s
+
+home/bvrznski/rebuntu/src/system/environment/capability_state.o: home/bvrznski/rebuntu/src/system/environment/capability_state.cpp.o
+.PHONY : home/bvrznski/rebuntu/src/system/environment/capability_state.o
+
+# target to build an object file
+home/bvrznski/rebuntu/src/system/environment/capability_state.cpp.o:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/rebuntu-capability-state.dir/build.make CMakeFiles/rebuntu-capability-state.dir/home/bvrznski/rebuntu/src/system/environment/capability_state.cpp.o
+.PHONY : home/bvrznski/rebuntu/src/system/environment/capability_state.cpp.o
+
+home/bvrznski/rebuntu/src/system/environment/capability_state.i: home/bvrznski/rebuntu/src/system/environment/capability_state.cpp.i
+.PHONY : home/bvrznski/rebuntu/src/system/environment/capability_state.i
+
+# target to preprocess a source file
+home/bvrznski/rebuntu/src/system/environment/capability_state.cpp.i:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/rebuntu-capability-state.dir/build.make CMakeFiles/rebuntu-capability-state.dir/home/bvrznski/rebuntu/src/system/environment/capability_state.cpp.i
+.PHONY : home/bvrznski/rebuntu/src/system/environment/capability_state.cpp.i
+
+home/bvrznski/rebuntu/src/system/environment/capability_state.s: home/bvrznski/rebuntu/src/system/environment/capability_state.cpp.s
+.PHONY : home/bvrznski/rebuntu/src/system/environment/capability_state.s
+
+# target to generate assembly for a file
+home/bvrznski/rebuntu/src/system/environment/capability_state.cpp.s:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/rebuntu-capability-state.dir/build.make CMakeFiles/rebuntu-capability-state.dir/home/bvrznski/rebuntu/src/system/environment/capability_state.cpp.s
+.PHONY : home/bvrznski/rebuntu/src/system/environment/capability_state.cpp.s
 
 home/bvrznski/rebuntu/src/system/environment/environment_discovery.o: home/bvrznski/rebuntu/src/system/environment/environment_discovery.cpp.o
 .PHONY : home/bvrznski/rebuntu/src/system/environment/environment_discovery.o
@@ -1230,6 +1280,7 @@ help:
 	@echo "... NightlyTest"
 	@echo "... NightlyUpdate"
 	@echo "... automation_test"
+	@echo "... capability_state_test"
 	@echo "... config_test"
 	@echo "... events_test"
 	@echo "... group_membership_test"
@@ -1241,6 +1292,7 @@ help:
 	@echo "... profile_test"
 	@echo "... rebuntu"
 	@echo "... rebuntu-authorization"
+	@echo "... rebuntu-capability-state"
 	@echo "... rebuntu-core"
 	@echo "... rebuntu-environment-discovery"
 	@echo "... rebuntu-group-membership"
@@ -1262,6 +1314,9 @@ help:
 	@echo "... home/bvrznski/rebuntu/src/system/environment/authorization.o"
 	@echo "... home/bvrznski/rebuntu/src/system/environment/authorization.i"
 	@echo "... home/bvrznski/rebuntu/src/system/environment/authorization.s"
+	@echo "... home/bvrznski/rebuntu/src/system/environment/capability_state.o"
+	@echo "... home/bvrznski/rebuntu/src/system/environment/capability_state.i"
+	@echo "... home/bvrznski/rebuntu/src/system/environment/capability_state.s"
 	@echo "... home/bvrznski/rebuntu/src/system/environment/environment_discovery.o"
 	@echo "... home/bvrznski/rebuntu/src/system/environment/environment_discovery.i"
 	@echo "... home/bvrznski/rebuntu/src/system/environment/environment_discovery.s"

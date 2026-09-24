@@ -135,6 +135,15 @@ target_include_directories(user_identity_test PRIVATE
 )
 add_test(NAME user_identity_test COMMAND user_identity_test)
 
+# Capability state tests (Phase 2.5)
+add_executable(capability_state_test capability_state_test.cpp)
+target_link_libraries(capability_state_test rebuntu-core rebuntu-capability-state)
+target_include_directories(capability_state_test PRIVATE 
+    ${CMAKE_SOURCE_DIR}/src
+    ${CMAKE_SOURCE_DIR}
+)
+add_test(NAME capability_state_test COMMAND capability_state_test)
+
 # Group membership tests (Phase 2.2)
 add_executable(group_membership_test group_membership_test.cpp)
 target_link_libraries(group_membership_test rebuntu-core rebuntu-group-membership)

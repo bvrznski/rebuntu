@@ -115,6 +115,7 @@ tests/host_foundation_test: librebuntu-user-identity.a
 tests/host_foundation_test: librebuntu-group-membership.a
 tests/host_foundation_test: librebuntu-ownership.a
 tests/host_foundation_test: librebuntu-privilege.a
+tests/host_foundation_test: librebuntu-capability-state.a
 tests/host_foundation_test: librebuntu-authorization.a
 tests/host_foundation_test: librebuntu-environment-discovery.a
 tests/host_foundation_test: librebuntu-setup.a

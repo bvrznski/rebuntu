@@ -99,6 +99,7 @@ tests/lifecycle_test: librebuntu-user-identity.a
 tests/lifecycle_test: librebuntu-group-membership.a
 tests/lifecycle_test: librebuntu-ownership.a
 tests/lifecycle_test: librebuntu-privilege.a
+tests/lifecycle_test: librebuntu-capability-state.a
 tests/lifecycle_test: librebuntu-authorization.a
 tests/lifecycle_test: librebuntu-environment-discovery.a
 tests/lifecycle_test: librebuntu-setup.a

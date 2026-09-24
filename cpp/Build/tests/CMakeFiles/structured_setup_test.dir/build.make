@@ -98,6 +98,7 @@ tests/structured_setup_test: librebuntu-user-identity.a
 tests/structured_setup_test: librebuntu-group-membership.a
 tests/structured_setup_test: librebuntu-ownership.a
 tests/structured_setup_test: librebuntu-privilege.a
+tests/structured_setup_test: librebuntu-capability-state.a
 tests/structured_setup_test: librebuntu-authorization.a
 tests/structured_setup_test: librebuntu-environment-discovery.a
 tests/structured_setup_test: librebuntu-setup.a

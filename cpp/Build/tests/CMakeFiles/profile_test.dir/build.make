@@ -98,6 +98,7 @@ tests/profile_test: librebuntu-user-identity.a
 tests/profile_test: librebuntu-group-membership.a
 tests/profile_test: librebuntu-ownership.a
 tests/profile_test: librebuntu-privilege.a
+tests/profile_test: librebuntu-capability-state.a
 tests/profile_test: librebuntu-authorization.a
 tests/profile_test: librebuntu-environment-discovery.a
 tests/profile_test: librebuntu-setup.a

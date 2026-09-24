@@ -98,6 +98,7 @@ tests/runtime_runner_test: librebuntu-user-identity.a
 tests/runtime_runner_test: librebuntu-group-membership.a
 tests/runtime_runner_test: librebuntu-ownership.a
 tests/runtime_runner_test: librebuntu-privilege.a
+tests/runtime_runner_test: librebuntu-capability-state.a
 tests/runtime_runner_test: librebuntu-authorization.a
 tests/runtime_runner_test: librebuntu-environment-discovery.a
 tests/runtime_runner_test: librebuntu-setup.a

@@ -1,10 +1,12 @@
-// rebuntu::state::provider — Native state mapping providers
+// rebuntu::state::provider — Native state mapping providers (Phase 0.14)
 //
 // This header establishes Rebuntu's interface for mapping native Linux state
 // sources (systemd, procfs, sysfs) to Rebuntu's orthogonal state vocabulary:
 //
 //   LifecycleState: created, initializing, ready, active, stopping, stopped, failed
-//   WorkState: idle, processing, waiting, paused
+//   WorkState: idle, processing, waiting, paused, jammed
+//   ControlState: enabled, disabled, paused_admin, frozen, locked
+//   ReadinessState: ready, not_ready
 //   HealthState: unknown, healthy, degraded, unhealthy
 //   RecoveryState: none, retrying, rolling_back, restoring, repairing, failing_over
 //
@@ -24,6 +26,7 @@
 #include <string_view>
 #include <optional>
 #include <chrono>
+#include <functional>
 
 namespace rebuntu::state {
 
@@ -52,20 +55,22 @@ inline bool operator!=(const ProviderId& a, const ProviderId& b) {
 // StateObservation
 // A single observation of an entity's state at a point in time.
 //
-// Combines all orthogonal dimensions: lifecycle + work + health + recovery.
+// Combines all orthogonal dimensions: lifecycle + work + control + readiness + health + recovery.
 // ---------------------------------------------------------------------------
 
 struct StateObservation {
     StateObservation() = default;
     
-    std::string entity_id;       // e.g., "org.freedesktop.systemd1", "/proc/1234"
+    std::string entity_id;         // e.g., "org.freedesktop.systemd1", "/proc/1234"
     
-    ProviderId provider;         // source of this observation
+    ProviderId provider;           // source of this observation
     
     std::chrono::system_clock::time_point observed_at;
     
     rebuntu::runtime::LifecycleState lifecycle;
     rebuntu::runtime::WorkState work;
+    rebuntu::runtime::ControlState control;
+    rebuntu::runtime::ReadinessState readiness;
     rebuntu::runtime::HealthState health;
     rebuntu::runtime::RecoveryState recovery;
     
@@ -96,8 +101,8 @@ struct ProviderResult {
 //
 // Implementations:
 //   - SystemdProvider: observes systemd unit states via D-Bus
-//   - ProcfsProvider: observes process states from /proc
-//   - SysfsProvider: observes device/hardware states from sysfs
+//   - ProcfsStateProvider: observes process states from /proc
+//   - SysfsStateProvider: observes device/hardware states from sysfs
 // ---------------------------------------------------------------------------
 
 class EntityStateObserver {
@@ -134,6 +139,7 @@ private:
     std::unique_ptr<Impl> impl_;
     
     rebuntu::runtime::LifecycleState map_active_state(std::string_view active, std::string_view sub);
+    rebuntu::runtime::WorkState map_substate_to_work(std::string_view sub);
     rebuntu::runtime::HealthState determine_health_from_systemd(std::string_view unit_file_state);
 };
 
@@ -141,14 +147,14 @@ private:
 // ProcfsStateProvider — Linux process state mapping from /proc
 //
 // Maps /proc/[pid]/stat states:
-//   R = running
-//   S = sleeping (waiting for event)
-//   D = disk sleep (uninterruptible)
-//   T = stopped
-//   Z = zombie
-//   X = dead
-//   t = tracing stop
-//   W = paging
+//   R = running (processing)
+//   S = sleeping (waiting)
+//   D = disk sleep (uninterruptible waiting)
+//   T = stopped (paused)
+//   Z = zombie (idle - completed)
+//   X = dead (idle - failed)
+//   t = tracing stop (paused)
+//   W = paging (waiting)
 // ---------------------------------------------------------------------------
 
 class ProcfsStateProvider : public EntityStateObserver {
@@ -230,4 +236,4 @@ template <> struct hash<rebuntu::state::ProviderId> {
         return std::hash<std::string>{}(id.value);
     }
 };
-}
+}  // namespace std

@@ -29,6 +29,13 @@ StateObservation SysfsStateProvider::observe(const std::string& entity_id) {
     obs.provider = ProviderId{"sysfs"};
     obs.observed_at = std::chrono::system_clock::now();
     
+    // Initialize all dimensions with defaults
+    obs.lifecycle = rebuntu::runtime::LifecycleState::kReady;
+    obs.control = rebuntu::runtime::ControlState::kEnabled;
+    obs.readiness = rebuntu::runtime::ReadinessState::kNotReady;  // Not ready until device is active
+    obs.health = rebuntu::runtime::HealthState::kHealthy;
+    obs.recovery = rebuntu::runtime::RecoveryState::kNone;
+    
     if (impl_->sysfs_path) {
         std::ostringstream path;
         path << impl_->sysfs_path.value() << "/" << entity_id << "/uevent";
@@ -36,6 +43,7 @@ StateObservation SysfsStateProvider::observe(const std::string& entity_id) {
         std::ifstream file(path.str());
         if (!file.is_open()) {
             obs.lifecycle = rebuntu::runtime::LifecycleState::kStopped;
+            obs.readiness = rebuntu::runtime::ReadinessState::kNotReady;
             return obs;
         }
         
@@ -43,9 +51,11 @@ StateObservation SysfsStateProvider::observe(const std::string& entity_id) {
         while (std::getline(file, line)) {
             if (line.find("ADD") != std::string::npos) {
                 obs.lifecycle = rebuntu::runtime::LifecycleState::kActive;
+                obs.readiness = rebuntu::runtime::ReadinessState::kReady;
                 break;
             } else if (line.find("REMOVE") != std::string::npos) {
                 obs.lifecycle = rebuntu::runtime::LifecycleState::kStopped;
+                obs.readiness = rebuntu::runtime::ReadinessState::kNotReady;
                 break;
             }
         }
@@ -60,15 +70,19 @@ StateObservation SysfsStateProvider::observe(const std::string& entity_id) {
                 power_file >> state;
                 if (state == "on") {
                     obs.lifecycle = rebuntu::runtime::LifecycleState::kActive;
+                    obs.readiness = rebuntu::runtime::ReadinessState::kReady;
                 } else if (state == "suspend" || state == "off") {
                     obs.lifecycle = rebuntu::runtime::LifecycleState::kReady;
+                    obs.readiness = rebuntu::runtime::ReadinessState::kNotReady;
                 }
             } else {
                 obs.lifecycle = rebuntu::runtime::LifecycleState::kReady;
+                obs.readiness = rebuntu::runtime::ReadinessState::kNotReady;
             }
         }
     } else {
         obs.lifecycle = rebuntu::runtime::LifecycleState::kStopped;
+        obs.readiness = rebuntu::runtime::ReadinessState::kNotReady;
     }
     
     return obs;

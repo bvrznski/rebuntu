@@ -71,6 +71,23 @@ StateObservation ProcfsStateProvider::observe(const std::string& entity_id) {
     char state_char = state_str[0];
     obs.lifecycle = map_proc_state(state_char);
     obs.work = determine_work_from_proc(state_char, pid);
+    
+    // Control state: processes are typically enabled (can be controlled)
+    obs.control = rebuntu::runtime::ControlState::kEnabled;
+    
+    // Readiness state: processes that can run are ready
+    obs.readiness = rebuntu::runtime::ReadinessState::kReady;
+    
+    // Health state: healthy unless in zombie/dead state
+    if (state_char == 'Z' || state_char == 'X') {
+        obs.health = rebuntu::runtime::HealthState::kUnhealthy;
+    } else {
+        obs.health = rebuntu::runtime::HealthState::kHealthy;
+    }
+    
+    // Recovery state: no recovery in progress for normal processes
+    obs.recovery = rebuntu::runtime::RecoveryState::kNone;
+    
     obs.native_state_name = std::string(1, state_char);
     obs.pid = pid;
     

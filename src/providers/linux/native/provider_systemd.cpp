@@ -18,7 +18,12 @@ StateObservation SystemdStateProvider::observe(const std::string& entity_id) {
     obs.provider = ProviderId{"systemd"};
     obs.observed_at = std::chrono::system_clock::now();
     
+    // Default: systemd unit is enabled and ready for activation
     obs.lifecycle = rebuntu::runtime::LifecycleState::kReady;
+    obs.control = rebuntu::runtime::ControlState::kEnabled;
+    obs.readiness = rebuntu::runtime::ReadinessState::kNotReady;  // Not yet ready until activated
+    obs.health = rebuntu::runtime::HealthState::kHealthy;
+    obs.recovery = rebuntu::runtime::RecoveryState::kNone;
     
     return obs;
 }

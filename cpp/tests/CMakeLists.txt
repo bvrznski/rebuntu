@@ -1,4 +1,4 @@
-# Test configuration for Rebuntu runtime module (Phase 0.13)
+# Test configuration for Rebuntu runtime module (Phase 0.13-0.14)
 add_executable(runtime_runner_test runtime_runner_test.cpp)
 target_link_libraries(runtime_runner_test rebuntu-core)
 target_include_directories(runtime_runner_test PRIVATE 
@@ -13,6 +13,23 @@ target_include_directories(automation_test PRIVATE
     ${CMAKE_SOURCE_DIR}
 )
 
+# State provider tests (Phase 0.14)
+add_executable(test_runtime_contracts ../../tests/native/test_runtime_contracts.cpp)
+target_link_libraries(test_runtime_contracts rebuntu-core)
+target_include_directories(test_runtime_contracts PRIVATE 
+    ${CMAKE_SOURCE_DIR}/src
+    ${CMAKE_SOURCE_DIR}
+)
+
+add_executable(test_state_provider ../../tests/native/test_state_provider.cpp)
+target_link_libraries(test_state_provider rebuntu-core)
+target_include_directories(test_state_provider PRIVATE 
+    ${CMAKE_SOURCE_DIR}/src
+    ${CMAKE_SOURCE_DIR}
+)
+
 # Add tests to CTest
 add_test(NAME runtime_runner_test COMMAND runtime_runner_test)
 add_test(NAME automation_test COMMAND automation_test)
+add_test(NAME test_runtime_contracts COMMAND test_runtime_contracts)
+add_test(NAME test_state_provider COMMAND test_state_provider)

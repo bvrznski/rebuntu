@@ -1,0 +1,1 @@
+/usr/bin/c++ -O3 -DNDEBUG CMakeFiles/test_runtime_contracts.dir/home/bvrznski/rebuntu/tests/native/test_runtime_contracts.cpp.o -o test_runtime_contracts  ../src/core/librebuntu-core.a 

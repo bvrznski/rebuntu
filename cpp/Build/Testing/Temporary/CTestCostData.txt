@@ -1,0 +1,7 @@
+runtime_runner_test 11 0.000261608
+automation_test 11 0.000349456
+test_runtime_contracts 11 0.000285112
+test_state_provider 11 0.000234273
+events_test 11 0.00478239
+results_test 2 0.00146252
+---

@@ -1,4 +1,4 @@
-# Test configuration for Rebuntu runtime module (Phase 0.13-0.14)
+# Test configuration for Rebuntu runtime module (Phase 0.13-0.17)
 add_executable(runtime_runner_test runtime_runner_test.cpp)
 target_link_libraries(runtime_runner_test rebuntu-core)
 target_include_directories(runtime_runner_test PRIVATE 
@@ -36,9 +36,18 @@ target_include_directories(events_test PRIVATE
     ${CMAKE_SOURCE_DIR}
 )
 
+# Results model tests (Phase 0.17)
+add_executable(results_test results_test.cpp)
+target_link_libraries(results_test rebuntu-core)
+target_include_directories(results_test PRIVATE 
+    ${CMAKE_SOURCE_DIR}/src
+    ${CMAKE_SOURCE_DIR}
+)
+
 # Add tests to CTest
 add_test(NAME runtime_runner_test COMMAND runtime_runner_test)
 add_test(NAME automation_test COMMAND automation_test)
 add_test(NAME test_runtime_contracts COMMAND test_runtime_contracts)
 add_test(NAME test_state_provider COMMAND test_state_provider)
 add_test(NAME events_test COMMAND events_test)
+add_test(NAME results_test COMMAND results_test)

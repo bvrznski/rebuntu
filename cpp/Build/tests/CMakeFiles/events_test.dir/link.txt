@@ -1,0 +1,1 @@
+/usr/bin/c++ -O3 -DNDEBUG CMakeFiles/events_test.dir/events_test.cpp.o -o events_test  ../src/core/librebuntu-core.a 

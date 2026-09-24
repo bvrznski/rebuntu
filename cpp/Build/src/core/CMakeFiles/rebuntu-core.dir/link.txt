@@ -1,0 +1,2 @@
+/usr/bin/ar qc librebuntu-core.a CMakeFiles/rebuntu-core.dir/home/bvrznski/rebuntu/src/interfaces/provider_registry.cpp.o
+/usr/bin/ranlib librebuntu-core.a

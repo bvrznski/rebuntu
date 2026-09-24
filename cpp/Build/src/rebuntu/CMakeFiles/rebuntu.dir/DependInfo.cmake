@@ -12,6 +12,10 @@ set(CMAKE_DEPENDS_DEPENDENCY_FILES
   "/home/bvrznski/rebuntu/src/runtime/subprocess_executor.cpp" "src/rebuntu/CMakeFiles/rebuntu.dir/home/bvrznski/rebuntu/src/runtime/subprocess_executor.cpp.o" "gcc" "src/rebuntu/CMakeFiles/rebuntu.dir/home/bvrznski/rebuntu/src/runtime/subprocess_executor.cpp.o.d"
   "/home/bvrznski/rebuntu/src/runtime/systemd_executor.cpp" "src/rebuntu/CMakeFiles/rebuntu.dir/home/bvrznski/rebuntu/src/runtime/systemd_executor.cpp.o" "gcc" "src/rebuntu/CMakeFiles/rebuntu.dir/home/bvrznski/rebuntu/src/runtime/systemd_executor.cpp.o.d"
   "/home/bvrznski/rebuntu/src/runtime/timeout_enforcement.cpp" "src/rebuntu/CMakeFiles/rebuntu.dir/home/bvrznski/rebuntu/src/runtime/timeout_enforcement.cpp.o" "gcc" "src/rebuntu/CMakeFiles/rebuntu.dir/home/bvrznski/rebuntu/src/runtime/timeout_enforcement.cpp.o.d"
+  "/home/bvrznski/rebuntu/src/system/install/install.cpp" "src/rebuntu/CMakeFiles/rebuntu.dir/home/bvrznski/rebuntu/src/system/install/install.cpp.o" "gcc" "src/rebuntu/CMakeFiles/rebuntu.dir/home/bvrznski/rebuntu/src/system/install/install.cpp.o.d"
+  "/home/bvrznski/rebuntu/src/system/install/install_planning.cpp" "src/rebuntu/CMakeFiles/rebuntu.dir/home/bvrznski/rebuntu/src/system/install/install_planning.cpp.o" "gcc" "src/rebuntu/CMakeFiles/rebuntu.dir/home/bvrznski/rebuntu/src/system/install/install_planning.cpp.o.d"
+  "/home/bvrznski/rebuntu/src/system/setup/profile.cpp" "src/rebuntu/CMakeFiles/rebuntu.dir/home/bvrznski/rebuntu/src/system/setup/profile.cpp.o" "gcc" "src/rebuntu/CMakeFiles/rebuntu.dir/home/bvrznski/rebuntu/src/system/setup/profile.cpp.o.d"
+  "/home/bvrznski/rebuntu/src/system/setup/setup.cpp" "src/rebuntu/CMakeFiles/rebuntu.dir/home/bvrznski/rebuntu/src/system/setup/setup.cpp.o" "gcc" "src/rebuntu/CMakeFiles/rebuntu.dir/home/bvrznski/rebuntu/src/system/setup/setup.cpp.o.d"
   "/home/bvrznski/rebuntu/cpp/src/rebuntu/main.cpp" "src/rebuntu/CMakeFiles/rebuntu.dir/main.cpp.o" "gcc" "src/rebuntu/CMakeFiles/rebuntu.dir/main.cpp.o.d"
   )
 

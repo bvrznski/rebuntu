@@ -1,0 +1,1 @@
+/usr/bin/c++ -O3 -DNDEBUG CMakeFiles/install_planning_test.dir/install_planning_test.cpp.o CMakeFiles/install_planning_test.dir/home/bvrznski/rebuntu/src/system/install/install_planning.cpp.o -o install_planning_test  ../src/core/librebuntu-core.a 

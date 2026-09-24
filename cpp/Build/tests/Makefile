@@ -225,6 +225,20 @@ config_test/fast:
 .PHONY : config_test/fast
 
 # Convenience name for target.
+tests/CMakeFiles/install_planning_test.dir/rule:
+	cd /home/bvrznski/rebuntu/cpp/Build && $(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 tests/CMakeFiles/install_planning_test.dir/rule
+.PHONY : tests/CMakeFiles/install_planning_test.dir/rule
+
+# Convenience name for target.
+install_planning_test: tests/CMakeFiles/install_planning_test.dir/rule
+.PHONY : install_planning_test
+
+# fast build rule for target.
+install_planning_test/fast:
+	cd /home/bvrznski/rebuntu/cpp/Build && $(MAKE) $(MAKESILENT) -f tests/CMakeFiles/install_planning_test.dir/build.make tests/CMakeFiles/install_planning_test.dir/build
+.PHONY : install_planning_test/fast
+
+# Convenience name for target.
 tests/CMakeFiles/test_discovery.dir/rule:
 	cd /home/bvrznski/rebuntu/cpp/Build && $(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 tests/CMakeFiles/test_discovery.dir/rule
 .PHONY : tests/CMakeFiles/test_discovery.dir/rule
@@ -334,6 +348,30 @@ home/bvrznski/rebuntu/src/runtime/discovery.cpp.s:
 	cd /home/bvrznski/rebuntu/cpp/Build && $(MAKE) $(MAKESILENT) -f tests/CMakeFiles/test_discovery.dir/build.make tests/CMakeFiles/test_discovery.dir/home/bvrznski/rebuntu/src/runtime/discovery.cpp.s
 .PHONY : home/bvrznski/rebuntu/src/runtime/discovery.cpp.s
 
+home/bvrznski/rebuntu/src/system/install/install_planning.o: home/bvrznski/rebuntu/src/system/install/install_planning.cpp.o
+.PHONY : home/bvrznski/rebuntu/src/system/install/install_planning.o
+
+# target to build an object file
+home/bvrznski/rebuntu/src/system/install/install_planning.cpp.o:
+	cd /home/bvrznski/rebuntu/cpp/Build && $(MAKE) $(MAKESILENT) -f tests/CMakeFiles/install_planning_test.dir/build.make tests/CMakeFiles/install_planning_test.dir/home/bvrznski/rebuntu/src/system/install/install_planning.cpp.o
+.PHONY : home/bvrznski/rebuntu/src/system/install/install_planning.cpp.o
+
+home/bvrznski/rebuntu/src/system/install/install_planning.i: home/bvrznski/rebuntu/src/system/install/install_planning.cpp.i
+.PHONY : home/bvrznski/rebuntu/src/system/install/install_planning.i
+
+# target to preprocess a source file
+home/bvrznski/rebuntu/src/system/install/install_planning.cpp.i:
+	cd /home/bvrznski/rebuntu/cpp/Build && $(MAKE) $(MAKESILENT) -f tests/CMakeFiles/install_planning_test.dir/build.make tests/CMakeFiles/install_planning_test.dir/home/bvrznski/rebuntu/src/system/install/install_planning.cpp.i
+.PHONY : home/bvrznski/rebuntu/src/system/install/install_planning.cpp.i
+
+home/bvrznski/rebuntu/src/system/install/install_planning.s: home/bvrznski/rebuntu/src/system/install/install_planning.cpp.s
+.PHONY : home/bvrznski/rebuntu/src/system/install/install_planning.s
+
+# target to generate assembly for a file
+home/bvrznski/rebuntu/src/system/install/install_planning.cpp.s:
+	cd /home/bvrznski/rebuntu/cpp/Build && $(MAKE) $(MAKESILENT) -f tests/CMakeFiles/install_planning_test.dir/build.make tests/CMakeFiles/install_planning_test.dir/home/bvrznski/rebuntu/src/system/install/install_planning.cpp.s
+.PHONY : home/bvrznski/rebuntu/src/system/install/install_planning.cpp.s
+
 home/bvrznski/rebuntu/tests/native/test_discovery.o: home/bvrznski/rebuntu/tests/native/test_discovery.cpp.o
 .PHONY : home/bvrznski/rebuntu/tests/native/test_discovery.o
 
@@ -406,6 +444,30 @@ home/bvrznski/rebuntu/tests/native/test_state_provider.cpp.s:
 	cd /home/bvrznski/rebuntu/cpp/Build && $(MAKE) $(MAKESILENT) -f tests/CMakeFiles/test_state_provider.dir/build.make tests/CMakeFiles/test_state_provider.dir/home/bvrznski/rebuntu/tests/native/test_state_provider.cpp.s
 .PHONY : home/bvrznski/rebuntu/tests/native/test_state_provider.cpp.s
 
+install_planning_test.o: install_planning_test.cpp.o
+.PHONY : install_planning_test.o
+
+# target to build an object file
+install_planning_test.cpp.o:
+	cd /home/bvrznski/rebuntu/cpp/Build && $(MAKE) $(MAKESILENT) -f tests/CMakeFiles/install_planning_test.dir/build.make tests/CMakeFiles/install_planning_test.dir/install_planning_test.cpp.o
+.PHONY : install_planning_test.cpp.o
+
+install_planning_test.i: install_planning_test.cpp.i
+.PHONY : install_planning_test.i
+
+# target to preprocess a source file
+install_planning_test.cpp.i:
+	cd /home/bvrznski/rebuntu/cpp/Build && $(MAKE) $(MAKESILENT) -f tests/CMakeFiles/install_planning_test.dir/build.make tests/CMakeFiles/install_planning_test.dir/install_planning_test.cpp.i
+.PHONY : install_planning_test.cpp.i
+
+install_planning_test.s: install_planning_test.cpp.s
+.PHONY : install_planning_test.s
+
+# target to generate assembly for a file
+install_planning_test.cpp.s:
+	cd /home/bvrznski/rebuntu/cpp/Build && $(MAKE) $(MAKESILENT) -f tests/CMakeFiles/install_planning_test.dir/build.make tests/CMakeFiles/install_planning_test.dir/install_planning_test.cpp.s
+.PHONY : install_planning_test.cpp.s
+
 results_test.o: results_test.cpp.o
 .PHONY : results_test.o
 
@@ -466,6 +528,7 @@ help:
 	@echo "... automation_test"
 	@echo "... config_test"
 	@echo "... events_test"
+	@echo "... install_planning_test"
 	@echo "... results_test"
 	@echo "... runtime_runner_test"
 	@echo "... test_discovery"
@@ -483,6 +546,9 @@ help:
 	@echo "... home/bvrznski/rebuntu/src/runtime/discovery.o"
 	@echo "... home/bvrznski/rebuntu/src/runtime/discovery.i"
 	@echo "... home/bvrznski/rebuntu/src/runtime/discovery.s"
+	@echo "... home/bvrznski/rebuntu/src/system/install/install_planning.o"
+	@echo "... home/bvrznski/rebuntu/src/system/install/install_planning.i"
+	@echo "... home/bvrznski/rebuntu/src/system/install/install_planning.s"
 	@echo "... home/bvrznski/rebuntu/tests/native/test_discovery.o"
 	@echo "... home/bvrznski/rebuntu/tests/native/test_discovery.i"
 	@echo "... home/bvrznski/rebuntu/tests/native/test_discovery.s"
@@ -492,6 +558,9 @@ help:
 	@echo "... home/bvrznski/rebuntu/tests/native/test_state_provider.o"
 	@echo "... home/bvrznski/rebuntu/tests/native/test_state_provider.i"
 	@echo "... home/bvrznski/rebuntu/tests/native/test_state_provider.s"
+	@echo "... install_planning_test.o"
+	@echo "... install_planning_test.i"
+	@echo "... install_planning_test.s"
 	@echo "... results_test.o"
 	@echo "... results_test.i"
 	@echo "... results_test.s"

@@ -34,3 +34,22 @@ set(TIMEOUT_ENFORCEMENT_SRCS
     ${CMAKE_SOURCE_DIR}/../src/runtime/timeout_enforcement.cpp
 )
 target_sources(rebuntu PRIVATE ${TIMEOUT_ENFORCEMENT_SRCS})
+
+# Add Phase 1 installation architecture (Phase 1.0-1.2)
+set(INSTALL_SRCS
+    ${CMAKE_SOURCE_DIR}/../src/system/install/contracts.hpp
+    ${CMAKE_SOURCE_DIR}/../src/system/install/forms.hpp
+    ${CMAKE_SOURCE_DIR}/../src/system/install/install.cpp
+    ${CMAKE_SOURCE_DIR}/../src/system/install/install_planning.cpp
+    ${CMAKE_SOURCE_DIR}/../src/system/install/planning.hpp
+)
+target_sources(rebuntu PRIVATE ${INSTALL_SRCS})
+
+# Add Phase 1 setup & configuration machinery (Phase 1.8)
+set(SETUP_SRCS
+    ${CMAKE_SOURCE_DIR}/../src/system/setup/contracts.hpp
+    ${CMAKE_SOURCE_DIR}/../src/system/setup/profile.cpp
+    ${CMAKE_SOURCE_DIR}/../src/system/setup/profile.hpp
+    ${CMAKE_SOURCE_DIR}/../src/system/setup/setup.cpp
+)
+target_sources(rebuntu PRIVATE ${SETUP_SRCS})

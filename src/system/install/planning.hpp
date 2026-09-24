@@ -6,7 +6,6 @@
 
 #include <system/core/contracts.hpp>
 #include <system/install/contracts.hpp>
-#include <system/environment/discovery.hpp>
 
 #include <string>
 #include <vector>
@@ -114,8 +113,8 @@ struct InstallationPlan {
     InstallationScope scope;              // System vs user installation
     bool is_dry_run = false;               // True if this is just a plan (no actual mutation)
     
-    // Host facts that informed the plan
-    environment::discovery::HostDiscoveryResult host_facts;
+    // Host facts pointer (optional - can be set after construction)
+    void* host_facts_ptr = nullptr;  // Host discovery facts (optional, full type in src/system/environment/discovery.hpp)
     
     // Dependencies with their status
     std::vector<DependencyInfo> dependencies;
@@ -135,18 +134,16 @@ struct InstallationPlan {
 
 // ---------------------------------------------------------------------------
 // Planner
-// Produces installation plans from intent and discovered host facts.
+// Produces installation plans from intent.
 // ---------------------------------------------------------------------------
 class Planner {
 public:
-    explicit Planner(const environment::discovery::HostDiscoveryResult& facts);
+    explicit Planner();
     
     // Produce an installation plan for the given intent.
     InstallationPlan produce_plan(const InstallationIntent& intent) const;
     
 private:
-    const environment::discovery::HostDiscoveryResult& facts_;
-    
     std::vector<PreInstallationCheckResult> evaluate_preflight_checks(
         const InstallationIntent& intent) const;
     
@@ -157,7 +154,8 @@ private:
         const InstallationIntent& intent,
         const std::vector<PreInstallationCheckResult>& preflight,
         const std::vector<DependencyInfo>& deps) const;
-    
+
+public:
     bool has_blockers(const std::vector<PreInstallationCheckResult>& checks) const;
 };
 
@@ -167,14 +165,12 @@ private:
 // ---------------------------------------------------------------------------
 class PreflightEvaluator {
 public:
-    explicit PreflightEvaluator(const environment::discovery::HostDiscoveryResult& facts);
+    explicit PreflightEvaluator();
     
     // Run all preflight evaluations and return results.
     std::vector<PreInstallationCheckResult> evaluate() const;
 
 private:
-    const environment::discovery::HostDiscoveryResult& facts_;
-    
     PreInstallationCheckResult check_distribution() const;
     PreInstallationCheckResult check_root_privileges() const;
     PreInstallationCheckResult check_bin_directory_writable() const;

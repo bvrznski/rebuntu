@@ -52,6 +52,17 @@ target_include_directories(config_test PRIVATE
     ${CMAKE_SOURCE_DIR}
 )
 
+# Installation planning tests (Phase 1.2)
+add_executable(install_planning_test install_planning_test.cpp
+    ${CMAKE_SOURCE_DIR}/../src/system/install/planning.hpp
+    ${CMAKE_SOURCE_DIR}/../src/system/install/install_planning.cpp
+)
+target_link_libraries(install_planning_test rebuntu-core)
+target_include_directories(install_planning_test PRIVATE 
+    ${CMAKE_SOURCE_DIR}/src
+    ${CMAKE_SOURCE_DIR}
+)
+add_test(NAME install_planning_test COMMAND install_planning_test)
 # Discovery tests (Phase 0.19)
 set(DISCOVERY_SRCS
     ${CMAKE_SOURCE_DIR}/../src/runtime/discovery.hpp

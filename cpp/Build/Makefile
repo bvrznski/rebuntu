@@ -595,6 +595,19 @@ config_test/fast:
 .PHONY : config_test/fast
 
 #=============================================================================
+# Target rules for targets named install_planning_test
+
+# Build rule for target.
+install_planning_test: cmake_check_build_system
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 install_planning_test
+.PHONY : install_planning_test
+
+# fast build rule for target.
+install_planning_test/fast:
+	$(MAKE) $(MAKESILENT) -f tests/CMakeFiles/install_planning_test.dir/build.make tests/CMakeFiles/install_planning_test.dir/build
+.PHONY : install_planning_test/fast
+
+#=============================================================================
 # Target rules for targets named test_discovery
 
 # Build rule for target.
@@ -660,6 +673,7 @@ help:
 	@echo "... automation_test"
 	@echo "... config_test"
 	@echo "... events_test"
+	@echo "... install_planning_test"
 	@echo "... rebuntu"
 	@echo "... rebuntu-core"
 	@echo "... results_test"

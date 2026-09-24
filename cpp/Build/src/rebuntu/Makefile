@@ -236,6 +236,102 @@ home/bvrznski/rebuntu/src/runtime/timeout_enforcement.cpp.s:
 	cd /home/bvrznski/rebuntu/cpp/Build && $(MAKE) $(MAKESILENT) -f src/rebuntu/CMakeFiles/rebuntu.dir/build.make src/rebuntu/CMakeFiles/rebuntu.dir/home/bvrznski/rebuntu/src/runtime/timeout_enforcement.cpp.s
 .PHONY : home/bvrznski/rebuntu/src/runtime/timeout_enforcement.cpp.s
 
+home/bvrznski/rebuntu/src/system/install/install.o: home/bvrznski/rebuntu/src/system/install/install.cpp.o
+.PHONY : home/bvrznski/rebuntu/src/system/install/install.o
+
+# target to build an object file
+home/bvrznski/rebuntu/src/system/install/install.cpp.o:
+	cd /home/bvrznski/rebuntu/cpp/Build && $(MAKE) $(MAKESILENT) -f src/rebuntu/CMakeFiles/rebuntu.dir/build.make src/rebuntu/CMakeFiles/rebuntu.dir/home/bvrznski/rebuntu/src/system/install/install.cpp.o
+.PHONY : home/bvrznski/rebuntu/src/system/install/install.cpp.o
+
+home/bvrznski/rebuntu/src/system/install/install.i: home/bvrznski/rebuntu/src/system/install/install.cpp.i
+.PHONY : home/bvrznski/rebuntu/src/system/install/install.i
+
+# target to preprocess a source file
+home/bvrznski/rebuntu/src/system/install/install.cpp.i:
+	cd /home/bvrznski/rebuntu/cpp/Build && $(MAKE) $(MAKESILENT) -f src/rebuntu/CMakeFiles/rebuntu.dir/build.make src/rebuntu/CMakeFiles/rebuntu.dir/home/bvrznski/rebuntu/src/system/install/install.cpp.i
+.PHONY : home/bvrznski/rebuntu/src/system/install/install.cpp.i
+
+home/bvrznski/rebuntu/src/system/install/install.s: home/bvrznski/rebuntu/src/system/install/install.cpp.s
+.PHONY : home/bvrznski/rebuntu/src/system/install/install.s
+
+# target to generate assembly for a file
+home/bvrznski/rebuntu/src/system/install/install.cpp.s:
+	cd /home/bvrznski/rebuntu/cpp/Build && $(MAKE) $(MAKESILENT) -f src/rebuntu/CMakeFiles/rebuntu.dir/build.make src/rebuntu/CMakeFiles/rebuntu.dir/home/bvrznski/rebuntu/src/system/install/install.cpp.s
+.PHONY : home/bvrznski/rebuntu/src/system/install/install.cpp.s
+
+home/bvrznski/rebuntu/src/system/install/install_planning.o: home/bvrznski/rebuntu/src/system/install/install_planning.cpp.o
+.PHONY : home/bvrznski/rebuntu/src/system/install/install_planning.o
+
+# target to build an object file
+home/bvrznski/rebuntu/src/system/install/install_planning.cpp.o:
+	cd /home/bvrznski/rebuntu/cpp/Build && $(MAKE) $(MAKESILENT) -f src/rebuntu/CMakeFiles/rebuntu.dir/build.make src/rebuntu/CMakeFiles/rebuntu.dir/home/bvrznski/rebuntu/src/system/install/install_planning.cpp.o
+.PHONY : home/bvrznski/rebuntu/src/system/install/install_planning.cpp.o
+
+home/bvrznski/rebuntu/src/system/install/install_planning.i: home/bvrznski/rebuntu/src/system/install/install_planning.cpp.i
+.PHONY : home/bvrznski/rebuntu/src/system/install/install_planning.i
+
+# target to preprocess a source file
+home/bvrznski/rebuntu/src/system/install/install_planning.cpp.i:
+	cd /home/bvrznski/rebuntu/cpp/Build && $(MAKE) $(MAKESILENT) -f src/rebuntu/CMakeFiles/rebuntu.dir/build.make src/rebuntu/CMakeFiles/rebuntu.dir/home/bvrznski/rebuntu/src/system/install/install_planning.cpp.i
+.PHONY : home/bvrznski/rebuntu/src/system/install/install_planning.cpp.i
+
+home/bvrznski/rebuntu/src/system/install/install_planning.s: home/bvrznski/rebuntu/src/system/install/install_planning.cpp.s
+.PHONY : home/bvrznski/rebuntu/src/system/install/install_planning.s
+
+# target to generate assembly for a file
+home/bvrznski/rebuntu/src/system/install/install_planning.cpp.s:
+	cd /home/bvrznski/rebuntu/cpp/Build && $(MAKE) $(MAKESILENT) -f src/rebuntu/CMakeFiles/rebuntu.dir/build.make src/rebuntu/CMakeFiles/rebuntu.dir/home/bvrznski/rebuntu/src/system/install/install_planning.cpp.s
+.PHONY : home/bvrznski/rebuntu/src/system/install/install_planning.cpp.s
+
+home/bvrznski/rebuntu/src/system/setup/profile.o: home/bvrznski/rebuntu/src/system/setup/profile.cpp.o
+.PHONY : home/bvrznski/rebuntu/src/system/setup/profile.o
+
+# target to build an object file
+home/bvrznski/rebuntu/src/system/setup/profile.cpp.o:
+	cd /home/bvrznski/rebuntu/cpp/Build && $(MAKE) $(MAKESILENT) -f src/rebuntu/CMakeFiles/rebuntu.dir/build.make src/rebuntu/CMakeFiles/rebuntu.dir/home/bvrznski/rebuntu/src/system/setup/profile.cpp.o
+.PHONY : home/bvrznski/rebuntu/src/system/setup/profile.cpp.o
+
+home/bvrznski/rebuntu/src/system/setup/profile.i: home/bvrznski/rebuntu/src/system/setup/profile.cpp.i
+.PHONY : home/bvrznski/rebuntu/src/system/setup/profile.i
+
+# target to preprocess a source file
+home/bvrznski/rebuntu/src/system/setup/profile.cpp.i:
+	cd /home/bvrznski/rebuntu/cpp/Build && $(MAKE) $(MAKESILENT) -f src/rebuntu/CMakeFiles/rebuntu.dir/build.make src/rebuntu/CMakeFiles/rebuntu.dir/home/bvrznski/rebuntu/src/system/setup/profile.cpp.i
+.PHONY : home/bvrznski/rebuntu/src/system/setup/profile.cpp.i
+
+home/bvrznski/rebuntu/src/system/setup/profile.s: home/bvrznski/rebuntu/src/system/setup/profile.cpp.s
+.PHONY : home/bvrznski/rebuntu/src/system/setup/profile.s
+
+# target to generate assembly for a file
+home/bvrznski/rebuntu/src/system/setup/profile.cpp.s:
+	cd /home/bvrznski/rebuntu/cpp/Build && $(MAKE) $(MAKESILENT) -f src/rebuntu/CMakeFiles/rebuntu.dir/build.make src/rebuntu/CMakeFiles/rebuntu.dir/home/bvrznski/rebuntu/src/system/setup/profile.cpp.s
+.PHONY : home/bvrznski/rebuntu/src/system/setup/profile.cpp.s
+
+home/bvrznski/rebuntu/src/system/setup/setup.o: home/bvrznski/rebuntu/src/system/setup/setup.cpp.o
+.PHONY : home/bvrznski/rebuntu/src/system/setup/setup.o
+
+# target to build an object file
+home/bvrznski/rebuntu/src/system/setup/setup.cpp.o:
+	cd /home/bvrznski/rebuntu/cpp/Build && $(MAKE) $(MAKESILENT) -f src/rebuntu/CMakeFiles/rebuntu.dir/build.make src/rebuntu/CMakeFiles/rebuntu.dir/home/bvrznski/rebuntu/src/system/setup/setup.cpp.o
+.PHONY : home/bvrznski/rebuntu/src/system/setup/setup.cpp.o
+
+home/bvrznski/rebuntu/src/system/setup/setup.i: home/bvrznski/rebuntu/src/system/setup/setup.cpp.i
+.PHONY : home/bvrznski/rebuntu/src/system/setup/setup.i
+
+# target to preprocess a source file
+home/bvrznski/rebuntu/src/system/setup/setup.cpp.i:
+	cd /home/bvrznski/rebuntu/cpp/Build && $(MAKE) $(MAKESILENT) -f src/rebuntu/CMakeFiles/rebuntu.dir/build.make src/rebuntu/CMakeFiles/rebuntu.dir/home/bvrznski/rebuntu/src/system/setup/setup.cpp.i
+.PHONY : home/bvrznski/rebuntu/src/system/setup/setup.cpp.i
+
+home/bvrznski/rebuntu/src/system/setup/setup.s: home/bvrznski/rebuntu/src/system/setup/setup.cpp.s
+.PHONY : home/bvrznski/rebuntu/src/system/setup/setup.s
+
+# target to generate assembly for a file
+home/bvrznski/rebuntu/src/system/setup/setup.cpp.s:
+	cd /home/bvrznski/rebuntu/cpp/Build && $(MAKE) $(MAKESILENT) -f src/rebuntu/CMakeFiles/rebuntu.dir/build.make src/rebuntu/CMakeFiles/rebuntu.dir/home/bvrznski/rebuntu/src/system/setup/setup.cpp.s
+.PHONY : home/bvrznski/rebuntu/src/system/setup/setup.cpp.s
+
 main.o: main.cpp.o
 .PHONY : main.o
 
@@ -282,6 +378,18 @@ help:
 	@echo "... home/bvrznski/rebuntu/src/runtime/timeout_enforcement.o"
 	@echo "... home/bvrznski/rebuntu/src/runtime/timeout_enforcement.i"
 	@echo "... home/bvrznski/rebuntu/src/runtime/timeout_enforcement.s"
+	@echo "... home/bvrznski/rebuntu/src/system/install/install.o"
+	@echo "... home/bvrznski/rebuntu/src/system/install/install.i"
+	@echo "... home/bvrznski/rebuntu/src/system/install/install.s"
+	@echo "... home/bvrznski/rebuntu/src/system/install/install_planning.o"
+	@echo "... home/bvrznski/rebuntu/src/system/install/install_planning.i"
+	@echo "... home/bvrznski/rebuntu/src/system/install/install_planning.s"
+	@echo "... home/bvrznski/rebuntu/src/system/setup/profile.o"
+	@echo "... home/bvrznski/rebuntu/src/system/setup/profile.i"
+	@echo "... home/bvrznski/rebuntu/src/system/setup/profile.s"
+	@echo "... home/bvrznski/rebuntu/src/system/setup/setup.o"
+	@echo "... home/bvrznski/rebuntu/src/system/setup/setup.i"
+	@echo "... home/bvrznski/rebuntu/src/system/setup/setup.s"
 	@echo "... main.o"
 	@echo "... main.i"
 	@echo "... main.s"

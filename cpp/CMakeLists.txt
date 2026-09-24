@@ -61,8 +61,8 @@ include(CTest)
 # Core contracts and types (required by all other components)
 add_subdirectory(src/core)
 
-# Add src as an include directory for headers in src/
-target_include_directories(rebuntu-core INTERFACE ${CMAKE_SOURCE_DIR}/src)
+# Add src as an include directory for headers in src/ (repo root level)
+target_include_directories(rebuntu-core INTERFACE ${CMAKE_CURRENT_LIST_DIR}/../src)
 
 # Tests subdirectory
 add_subdirectory(tests)

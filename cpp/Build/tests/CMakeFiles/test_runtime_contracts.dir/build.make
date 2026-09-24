@@ -93,6 +93,7 @@ test_runtime_contracts_EXTERNAL_OBJECTS =
 tests/test_runtime_contracts: tests/CMakeFiles/test_runtime_contracts.dir/home/bvrznski/rebuntu/tests/native/test_runtime_contracts.cpp.o
 tests/test_runtime_contracts: tests/CMakeFiles/test_runtime_contracts.dir/build.make
 tests/test_runtime_contracts: src/core/librebuntu-core.a
+tests/test_runtime_contracts: librebuntu-install.a
 tests/test_runtime_contracts: tests/CMakeFiles/test_runtime_contracts.dir/link.txt
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --bold --progress-dir=/home/bvrznski/rebuntu/cpp/Build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_2) "Linking CXX executable test_runtime_contracts"
 	cd /home/bvrznski/rebuntu/cpp/Build/tests && $(CMAKE_COMMAND) -E cmake_link_script CMakeFiles/test_runtime_contracts.dir/link.txt --verbose=$(VERBOSE)

@@ -491,6 +491,19 @@ ContinuousSubmit/fast:
 .PHONY : ContinuousSubmit/fast
 
 #=============================================================================
+# Target rules for targets named rebuntu-install
+
+# Build rule for target.
+rebuntu-install: cmake_check_build_system
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 rebuntu-install
+.PHONY : rebuntu-install
+
+# fast build rule for target.
+rebuntu-install/fast:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/rebuntu-install.dir/build.make CMakeFiles/rebuntu-install.dir/build
+.PHONY : rebuntu-install/fast
+
+#=============================================================================
 # Target rules for targets named rebuntu-core
 
 # Build rule for target.
@@ -633,6 +646,78 @@ rebuntu/fast:
 	$(MAKE) $(MAKESILENT) -f src/rebuntu/CMakeFiles/rebuntu.dir/build.make src/rebuntu/CMakeFiles/rebuntu.dir/build
 .PHONY : rebuntu/fast
 
+home/bvrznski/rebuntu/src/system/install/bootstrap.o: home/bvrznski/rebuntu/src/system/install/bootstrap.cpp.o
+.PHONY : home/bvrznski/rebuntu/src/system/install/bootstrap.o
+
+# target to build an object file
+home/bvrznski/rebuntu/src/system/install/bootstrap.cpp.o:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/rebuntu-install.dir/build.make CMakeFiles/rebuntu-install.dir/home/bvrznski/rebuntu/src/system/install/bootstrap.cpp.o
+.PHONY : home/bvrznski/rebuntu/src/system/install/bootstrap.cpp.o
+
+home/bvrznski/rebuntu/src/system/install/bootstrap.i: home/bvrznski/rebuntu/src/system/install/bootstrap.cpp.i
+.PHONY : home/bvrznski/rebuntu/src/system/install/bootstrap.i
+
+# target to preprocess a source file
+home/bvrznski/rebuntu/src/system/install/bootstrap.cpp.i:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/rebuntu-install.dir/build.make CMakeFiles/rebuntu-install.dir/home/bvrznski/rebuntu/src/system/install/bootstrap.cpp.i
+.PHONY : home/bvrznski/rebuntu/src/system/install/bootstrap.cpp.i
+
+home/bvrznski/rebuntu/src/system/install/bootstrap.s: home/bvrznski/rebuntu/src/system/install/bootstrap.cpp.s
+.PHONY : home/bvrznski/rebuntu/src/system/install/bootstrap.s
+
+# target to generate assembly for a file
+home/bvrznski/rebuntu/src/system/install/bootstrap.cpp.s:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/rebuntu-install.dir/build.make CMakeFiles/rebuntu-install.dir/home/bvrznski/rebuntu/src/system/install/bootstrap.cpp.s
+.PHONY : home/bvrznski/rebuntu/src/system/install/bootstrap.cpp.s
+
+home/bvrznski/rebuntu/src/system/install/discovery.o: home/bvrznski/rebuntu/src/system/install/discovery.cpp.o
+.PHONY : home/bvrznski/rebuntu/src/system/install/discovery.o
+
+# target to build an object file
+home/bvrznski/rebuntu/src/system/install/discovery.cpp.o:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/rebuntu-install.dir/build.make CMakeFiles/rebuntu-install.dir/home/bvrznski/rebuntu/src/system/install/discovery.cpp.o
+.PHONY : home/bvrznski/rebuntu/src/system/install/discovery.cpp.o
+
+home/bvrznski/rebuntu/src/system/install/discovery.i: home/bvrznski/rebuntu/src/system/install/discovery.cpp.i
+.PHONY : home/bvrznski/rebuntu/src/system/install/discovery.i
+
+# target to preprocess a source file
+home/bvrznski/rebuntu/src/system/install/discovery.cpp.i:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/rebuntu-install.dir/build.make CMakeFiles/rebuntu-install.dir/home/bvrznski/rebuntu/src/system/install/discovery.cpp.i
+.PHONY : home/bvrznski/rebuntu/src/system/install/discovery.cpp.i
+
+home/bvrznski/rebuntu/src/system/install/discovery.s: home/bvrznski/rebuntu/src/system/install/discovery.cpp.s
+.PHONY : home/bvrznski/rebuntu/src/system/install/discovery.s
+
+# target to generate assembly for a file
+home/bvrznski/rebuntu/src/system/install/discovery.cpp.s:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/rebuntu-install.dir/build.make CMakeFiles/rebuntu-install.dir/home/bvrznski/rebuntu/src/system/install/discovery.cpp.s
+.PHONY : home/bvrznski/rebuntu/src/system/install/discovery.cpp.s
+
+home/bvrznski/rebuntu/src/system/install/install_planning.o: home/bvrznski/rebuntu/src/system/install/install_planning.cpp.o
+.PHONY : home/bvrznski/rebuntu/src/system/install/install_planning.o
+
+# target to build an object file
+home/bvrznski/rebuntu/src/system/install/install_planning.cpp.o:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/rebuntu-install.dir/build.make CMakeFiles/rebuntu-install.dir/home/bvrznski/rebuntu/src/system/install/install_planning.cpp.o
+.PHONY : home/bvrznski/rebuntu/src/system/install/install_planning.cpp.o
+
+home/bvrznski/rebuntu/src/system/install/install_planning.i: home/bvrznski/rebuntu/src/system/install/install_planning.cpp.i
+.PHONY : home/bvrznski/rebuntu/src/system/install/install_planning.i
+
+# target to preprocess a source file
+home/bvrznski/rebuntu/src/system/install/install_planning.cpp.i:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/rebuntu-install.dir/build.make CMakeFiles/rebuntu-install.dir/home/bvrznski/rebuntu/src/system/install/install_planning.cpp.i
+.PHONY : home/bvrznski/rebuntu/src/system/install/install_planning.cpp.i
+
+home/bvrznski/rebuntu/src/system/install/install_planning.s: home/bvrznski/rebuntu/src/system/install/install_planning.cpp.s
+.PHONY : home/bvrznski/rebuntu/src/system/install/install_planning.s
+
+# target to generate assembly for a file
+home/bvrznski/rebuntu/src/system/install/install_planning.cpp.s:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/rebuntu-install.dir/build.make CMakeFiles/rebuntu-install.dir/home/bvrznski/rebuntu/src/system/install/install_planning.cpp.s
+.PHONY : home/bvrznski/rebuntu/src/system/install/install_planning.cpp.s
+
 # Help Target
 help:
 	@echo "The following are some of the valid targets for this Makefile:"
@@ -676,11 +761,21 @@ help:
 	@echo "... install_planning_test"
 	@echo "... rebuntu"
 	@echo "... rebuntu-core"
+	@echo "... rebuntu-install"
 	@echo "... results_test"
 	@echo "... runtime_runner_test"
 	@echo "... test_discovery"
 	@echo "... test_runtime_contracts"
 	@echo "... test_state_provider"
+	@echo "... home/bvrznski/rebuntu/src/system/install/bootstrap.o"
+	@echo "... home/bvrznski/rebuntu/src/system/install/bootstrap.i"
+	@echo "... home/bvrznski/rebuntu/src/system/install/bootstrap.s"
+	@echo "... home/bvrznski/rebuntu/src/system/install/discovery.o"
+	@echo "... home/bvrznski/rebuntu/src/system/install/discovery.i"
+	@echo "... home/bvrznski/rebuntu/src/system/install/discovery.s"
+	@echo "... home/bvrznski/rebuntu/src/system/install/install_planning.o"
+	@echo "... home/bvrznski/rebuntu/src/system/install/install_planning.i"
+	@echo "... home/bvrznski/rebuntu/src/system/install/install_planning.s"
 .PHONY : help
 
 

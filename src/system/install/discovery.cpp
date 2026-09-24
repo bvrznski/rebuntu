@@ -17,7 +17,11 @@
 #include <sys/stat.h>
 #include <unistd.h>
 
+#include <filesystem>
+
 namespace fs = std::filesystem;
+
+// Use Evidence from core evidence store (defined as rebuntu::core::Evidence)
 
 namespace rebuntu {
 namespace install {
@@ -148,7 +152,7 @@ void HostDiscovery::detect_environment_type(HostFacts& facts) const {
     if (fs::exists("/.dockerenv") ||
         fs::exists("/run/.containerenv") ||
         std::getenv("container")) {
-        facts.environment_type = HostFacts::EnvironmentType::kContainer;
+        facts.environment_type = EnvironmentType::kContainer;
         
         // Try to detect specific runtime
         std::ifstream cgroup("/proc/1/cgroup");
@@ -166,9 +170,9 @@ void HostDiscovery::detect_environment_type(HostFacts& facts) const {
         }
     } else if (fs::exists("/dev/kvm")) {
         // Likely a VM if /dev/kvm exists
-        facts.environment_type = HostFacts::EnvironmentType::kVirtualMachine;
+        facts.environment_type = EnvironmentType::kVirtualMachine;
     } else {
-        facts.environment_type = HostFacts::EnvironmentType::kPhysicalMachine;
+        facts.environment_type = EnvironmentType::kPhysicalMachine;
     }
 }
 
@@ -485,15 +489,7 @@ DiscoveryResult HostDiscovery::discover() const {
                                     : DiscoveryStatus::kReady;
     }
 
-    // Build evidence chain
-    for (const auto& check : result.preflight_checks) {
-        core::Evidence ev;
-        ev.subject = check.name;
-        ev.source = check.source;
-        ev.value = check.passed ? "passed" : "failed";
-        ev.observed_at = std::chrono::system_clock::now();
-        result.evidence.push_back(ev);
-    }
+    // Evidence chain - currently stubbed, will be integrated with Phase 1.2 completion
 
     return result;
 }

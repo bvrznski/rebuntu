@@ -26,6 +26,7 @@
 /home/bvrznski/rebuntu/cpp/Build/CMakeFiles/ContinuousCoverage.dir
 /home/bvrznski/rebuntu/cpp/Build/CMakeFiles/ContinuousMemCheck.dir
 /home/bvrznski/rebuntu/cpp/Build/CMakeFiles/ContinuousSubmit.dir
+/home/bvrznski/rebuntu/cpp/Build/CMakeFiles/rebuntu-install.dir
 /home/bvrznski/rebuntu/cpp/Build/CMakeFiles/test.dir
 /home/bvrznski/rebuntu/cpp/Build/CMakeFiles/edit_cache.dir
 /home/bvrznski/rebuntu/cpp/Build/CMakeFiles/rebuild_cache.dir

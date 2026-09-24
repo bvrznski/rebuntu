@@ -4,17 +4,12 @@
 // installation planning. Discovery produces observations/facts, not configuration.
 #pragma once
 
-#include <system/core/contracts.hpp>
-#include <system/install/contracts.hpp>
-
 #include <chrono>
 #include <optional>
 #include <string>
 #include <vector>
 
-namespace rebuntu {
-namespace install {
-namespace discovery {
+namespace rebuntu { namespace install { namespace discovery {
 
 // ============================================================================
 // EnvironmentType — Host environment classification
@@ -37,7 +32,7 @@ inline std::string to_string(EnvironmentType t) {
 }
 
 // ============================================================================
-// PreflightCheckResult::Level — Preflight check severity level
+// PreflightCheckLevel — Preflight check severity level
 // ============================================================================
 
 enum class PreflightCheckLevel {
@@ -56,7 +51,7 @@ inline std::string to_string(PreflightCheckLevel l) {
 }
 
 // ============================================================================
-// DiscoveryResult::Status — Discovery result status
+// DiscoveryStatus — Discovery result status
 // ============================================================================
 
 enum class DiscoveryStatus {
@@ -156,9 +151,6 @@ struct DiscoveryResult {
 
     DiscoveryStatus status = DiscoveryStatus::kBlocked;
 
-    // Evidence chain
-    std::vector<core::Evidence> evidence;
-
     bool is_success() const {
         return status == DiscoveryStatus::kReady || status == DiscoveryStatus::kWarningOnly;
     }
@@ -238,5 +230,5 @@ private:
 
 }  // namespace discovery
 }  // namespace install
-}  // namespace rebuntu
 
+}  // namespace rebuntu

@@ -93,6 +93,7 @@ automation_test_EXTERNAL_OBJECTS =
 tests/automation_test: tests/CMakeFiles/automation_test.dir/automation_test.cpp.o
 tests/automation_test: tests/CMakeFiles/automation_test.dir/build.make
 tests/automation_test: src/core/librebuntu-core.a
+tests/automation_test: librebuntu-install.a
 tests/automation_test: tests/CMakeFiles/automation_test.dir/link.txt
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --bold --progress-dir=/home/bvrznski/rebuntu/cpp/Build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_2) "Linking CXX executable automation_test"
 	cd /home/bvrznski/rebuntu/cpp/Build/tests && $(CMAKE_COMMAND) -E cmake_link_script CMakeFiles/automation_test.dir/link.txt --verbose=$(VERBOSE)

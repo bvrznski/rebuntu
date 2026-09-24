@@ -1,1 +1,1 @@
-/usr/bin/c++ -O3 -DNDEBUG CMakeFiles/test_state_provider.dir/home/bvrznski/rebuntu/tests/native/test_state_provider.cpp.o -o test_state_provider  ../src/core/librebuntu-core.a 
+/usr/bin/c++ -O3 -DNDEBUG CMakeFiles/test_state_provider.dir/home/bvrznski/rebuntu/tests/native/test_state_provider.cpp.o -o test_state_provider  ../src/core/librebuntu-core.a ../librebuntu-install.a 

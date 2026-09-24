@@ -67,7 +67,24 @@ target_include_directories(rebuntu-core INTERFACE ${CMAKE_CURRENT_LIST_DIR}/../s
 # Add src/system as include directory for headers in src/system/ (Phase 1 modules)
 target_include_directories(rebuntu-core INTERFACE ${CMAKE_CURRENT_LIST_DIR}/../src)
 
-# Phase 1.0-1.2: Installation sources are added to rebuntu target directly
+# Phase 1.0-1.2: Installation module - add sources directly to rebuntu-core
+set(INSTALL_SRC_ROOT ${CMAKE_CURRENT_LIST_DIR}/../src/system/install)
+
+add_library(rebuntu-install STATIC
+    ${INSTALL_SRC_ROOT}/contracts.hpp
+    ${INSTALL_SRC_ROOT}/planning.hpp
+    ${INSTALL_SRC_ROOT}/install_planning.cpp
+    ${INSTALL_SRC_ROOT}/discovery.hpp
+    ${INSTALL_SRC_ROOT}/discovery.cpp
+    ${INSTALL_SRC_ROOT}/bootstrap.cpp
+)
+
+target_include_directories(rebuntu-install PUBLIC
+    ${CMAKE_CURRENT_LIST_DIR}/../src
+)
+
+target_link_libraries(rebuntu-core PUBLIC rebuntu-install)
+
 # Phase 1.8: Setup & configuration sources are added to rebuntu target directly
 
 # Tests subdirectory

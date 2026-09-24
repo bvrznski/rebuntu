@@ -93,6 +93,7 @@ events_test_EXTERNAL_OBJECTS =
 tests/events_test: tests/CMakeFiles/events_test.dir/events_test.cpp.o
 tests/events_test: tests/CMakeFiles/events_test.dir/build.make
 tests/events_test: src/core/librebuntu-core.a
+tests/events_test: librebuntu-install.a
 tests/events_test: tests/CMakeFiles/events_test.dir/link.txt
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --bold --progress-dir=/home/bvrznski/rebuntu/cpp/Build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_2) "Linking CXX executable events_test"
 	cd /home/bvrznski/rebuntu/cpp/Build/tests && $(CMAKE_COMMAND) -E cmake_link_script CMakeFiles/events_test.dir/link.txt --verbose=$(VERBOSE)

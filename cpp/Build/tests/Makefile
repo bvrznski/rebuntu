@@ -490,6 +490,20 @@ test_temp_files/fast:
 	cd /home/bvrznski/rebuntu/cpp/Build && $(MAKE) $(MAKESILENT) -f tests/CMakeFiles/test_temp_files.dir/build.make tests/CMakeFiles/test_temp_files.dir/build
 .PHONY : test_temp_files/fast
 
+# Convenience name for target.
+tests/CMakeFiles/infrastructure_test.dir/rule:
+	cd /home/bvrznski/rebuntu/cpp/Build && $(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 tests/CMakeFiles/infrastructure_test.dir/rule
+.PHONY : tests/CMakeFiles/infrastructure_test.dir/rule
+
+# Convenience name for target.
+infrastructure_test: tests/CMakeFiles/infrastructure_test.dir/rule
+.PHONY : infrastructure_test
+
+# fast build rule for target.
+infrastructure_test/fast:
+	cd /home/bvrznski/rebuntu/cpp/Build && $(MAKE) $(MAKESILENT) -f tests/CMakeFiles/infrastructure_test.dir/build.make tests/CMakeFiles/infrastructure_test.dir/build
+.PHONY : infrastructure_test/fast
+
 automation_test.o: automation_test.cpp.o
 .PHONY : automation_test.o
 
@@ -850,6 +864,30 @@ home/bvrznski/rebuntu/tests/rebuntu/test_structured_setup.cpp.s:
 	cd /home/bvrznski/rebuntu/cpp/Build && $(MAKE) $(MAKESILENT) -f tests/CMakeFiles/structured_setup_test.dir/build.make tests/CMakeFiles/structured_setup_test.dir/home/bvrznski/rebuntu/tests/rebuntu/test_structured_setup.cpp.s
 .PHONY : home/bvrznski/rebuntu/tests/rebuntu/test_structured_setup.cpp.s
 
+infrastructure_test.o: infrastructure_test.cpp.o
+.PHONY : infrastructure_test.o
+
+# target to build an object file
+infrastructure_test.cpp.o:
+	cd /home/bvrznski/rebuntu/cpp/Build && $(MAKE) $(MAKESILENT) -f tests/CMakeFiles/infrastructure_test.dir/build.make tests/CMakeFiles/infrastructure_test.dir/infrastructure_test.cpp.o
+.PHONY : infrastructure_test.cpp.o
+
+infrastructure_test.i: infrastructure_test.cpp.i
+.PHONY : infrastructure_test.i
+
+# target to preprocess a source file
+infrastructure_test.cpp.i:
+	cd /home/bvrznski/rebuntu/cpp/Build && $(MAKE) $(MAKESILENT) -f tests/CMakeFiles/infrastructure_test.dir/build.make tests/CMakeFiles/infrastructure_test.dir/infrastructure_test.cpp.i
+.PHONY : infrastructure_test.cpp.i
+
+infrastructure_test.s: infrastructure_test.cpp.s
+.PHONY : infrastructure_test.s
+
+# target to generate assembly for a file
+infrastructure_test.cpp.s:
+	cd /home/bvrznski/rebuntu/cpp/Build && $(MAKE) $(MAKESILENT) -f tests/CMakeFiles/infrastructure_test.dir/build.make tests/CMakeFiles/infrastructure_test.dir/infrastructure_test.cpp.s
+.PHONY : infrastructure_test.cpp.s
+
 install_planning_test.o: install_planning_test.cpp.o
 .PHONY : install_planning_test.o
 
@@ -1201,6 +1239,7 @@ help:
 	@echo "... events_test"
 	@echo "... group_membership_test"
 	@echo "... host_foundation_test"
+	@echo "... infrastructure_test"
 	@echo "... install_planning_test"
 	@echo "... lifecycle_test"
 	@echo "... ownership_test"
@@ -1266,6 +1305,9 @@ help:
 	@echo "... home/bvrznski/rebuntu/tests/rebuntu/test_structured_setup.o"
 	@echo "... home/bvrznski/rebuntu/tests/rebuntu/test_structured_setup.i"
 	@echo "... home/bvrznski/rebuntu/tests/rebuntu/test_structured_setup.s"
+	@echo "... infrastructure_test.o"
+	@echo "... infrastructure_test.i"
+	@echo "... infrastructure_test.s"
 	@echo "... install_planning_test.o"
 	@echo "... install_planning_test.i"
 	@echo "... install_planning_test.s"

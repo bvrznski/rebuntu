@@ -365,6 +365,16 @@ private:
 };
 
 // ============================================================================
+// Error
+// A simple error type for infrastructure results
+// ============================================================================
+
+struct Error {
+    std::string code;      // Error code (e.g., "E_INFRA_UNAVAILABLE")
+    std::string message;   // Human-readable error message
+};
+
+// ============================================================================
 // InfrastructureResult
 // Result of an infrastructure operation (e.g., capability readiness check)
 // ============================================================================
@@ -379,7 +389,7 @@ struct InfrastructureResult {
     std::vector<ToolAssessment> tool_assessments;
     
     // Error information (if not success)
-    std::optional<core::Error> error;
+    std::optional<Error> error;
     
     // Verification evidence
     std::vector<core::Evidence> evidence;
@@ -393,7 +403,7 @@ struct InfrastructureResult {
     static InfrastructureResult unavailable(std::string tool_name, std::string reason) {
         InfrastructureResult r;
         r.status = core::SemanticStatus::kUnknown;
-        r.error = core::Error{
+        r.error = Error{
             "E_INFRA_UNAVAILABLE",
             tool_name + ": " + reason
         };

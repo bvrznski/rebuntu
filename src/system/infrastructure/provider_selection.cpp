@@ -260,11 +260,12 @@ core::Evidence ProviderSelector::make_evidence(
     auto time_str = std::to_string(std::chrono::duration_cast<std::chrono::milliseconds>(
         now.time_since_epoch()).count());
     
-    // Build evidence with captured_at as a timestamp string
+    // Build evidence with observed_at as a timestamp string
     return core::Evidence{
+        .subject = "provider_selection",
         .source = source,
-        .value = value,
-        .captured_at = time_str + "Z"
+        .observed_at = now,
+        .value = value
     };
 }
 

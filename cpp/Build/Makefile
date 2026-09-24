@@ -1076,6 +1076,19 @@ test_temp_files/fast:
 .PHONY : test_temp_files/fast
 
 #=============================================================================
+# Target rules for targets named infrastructure_test
+
+# Build rule for target.
+infrastructure_test: cmake_check_build_system
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 infrastructure_test
+.PHONY : infrastructure_test
+
+# fast build rule for target.
+infrastructure_test/fast:
+	$(MAKE) $(MAKESILENT) -f tests/CMakeFiles/infrastructure_test.dir/build.make tests/CMakeFiles/infrastructure_test.dir/build
+.PHONY : infrastructure_test/fast
+
+#=============================================================================
 # Target rules for targets named rebuntu
 
 # Build rule for target.
@@ -1635,6 +1648,7 @@ help:
 	@echo "... events_test"
 	@echo "... group_membership_test"
 	@echo "... host_foundation_test"
+	@echo "... infrastructure_test"
 	@echo "... install_planning_test"
 	@echo "... lifecycle_test"
 	@echo "... ownership_test"

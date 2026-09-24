@@ -242,4 +242,13 @@ target_include_directories(test_temp_files PRIVATE
 )
 add_test(NAME test_temp_files COMMAND test_temp_files)
 
+# Phase 3.0: Infrastructure foundation tests
+add_executable(infrastructure_test infrastructure_test.cpp)
+target_link_libraries(infrastructure_test rebuntu-core)
+target_include_directories(infrastructure_test PRIVATE 
+    ${CMAKE_SOURCE_DIR}/src
+    ${CMAKE_SOURCE_DIR}
+)
+add_test(NAME infrastructure_test COMMAND infrastructure_test)
+
 # Phase 1.9: Environment discovery tests (pending integration with testing framework)

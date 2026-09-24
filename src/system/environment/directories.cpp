@@ -312,20 +312,25 @@ DirectoryOperationResult ensure_directory(
             return result;
         }
         
-        // Directory already exists - idempotent success
-        result.status = DirectoryOperationStatus::kAlreadyExists;
-        
-        // Try to set ownership/permissions if we're root
+        // Directory already exists - idempotent success with postcondition verification
+        bool perm_success = true;
+        struct stat st_post;
         if (owner_uid == 0 || geteuid() == 0) {
-            if (chown(path.string().c_str(), owner_uid, owner_gid) != 0) {
-                std::cerr << "warning: failed to chown " << path << ": " 
-                          << strerror(errno) << "\n";
+            if (chown(path.string().c_str(), owner_uid, owner_gid) != 0 ||
+                chmod(path.string().c_str(), permissions) != 0 ||
+                stat(path.c_str(), &st_post) != 0 ||
+                (uid_t)st_post.st_uid != owner_uid ||
+                (gid_t)st_post.st_gid != owner_gid ||
+                (st_post.st_mode & 07777) != permissions) {
+                perm_success = false;
             }
-            
-            if (chmod(path.string().c_str(), permissions) != 0) {
-                std::cerr << "warning: failed to chmod " << path << ": " 
-                          << strerror(errno) << "\n";
-            }
+        }
+        
+        if (!perm_success) {
+            result.status = DirectoryOperationStatus::kPermissionDenied;
+            result.error_message = "failed to set ownership or verify permissions";
+        } else {
+            result.status = DirectoryOperationStatus::kAlreadyExists;
         }
         
         return result;
@@ -353,19 +358,24 @@ DirectoryOperationResult ensure_directory(
         // Directory was just created by another process - idempotent success
         result.status = DirectoryOperationStatus::kAlreadyExists;
     } else if (created) {
-        result.status = DirectoryOperationStatus::kSuccess;
-        
-        // Set ownership if we're root
+        bool perm_success = true;
+        struct stat st_post;
         if (owner_uid == 0 || geteuid() == 0) {
-            if (chown(path.string().c_str(), owner_uid, owner_gid) != 0) {
-                std::cerr << "warning: failed to chown " << path << ": " 
-                          << strerror(errno) << "\n";
+            if (chown(path.string().c_str(), owner_uid, owner_gid) != 0 ||
+                chmod(path.string().c_str(), permissions) != 0 ||
+                stat(path.c_str(), &st_post) != 0 ||
+                (uid_t)st_post.st_uid != owner_uid ||
+                (gid_t)st_post.st_gid != owner_gid ||
+                (st_post.st_mode & 07777) != permissions) {
+                perm_success = false;
             }
-            
-            if (chmod(path.string().c_str(), permissions) != 0) {
-                std::cerr << "warning: failed to chmod " << path << ": " 
-                          << strerror(errno) << "\n";
-            }
+        }
+        
+        if (!perm_success) {
+            result.status = DirectoryOperationStatus::kPermissionDenied;
+            result.error_message = "failed to set ownership or verify permissions";
+        } else {
+            result.status = DirectoryOperationStatus::kSuccess;
         }
     } else {
         // Error creating directory

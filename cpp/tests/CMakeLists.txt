@@ -215,4 +215,31 @@ target_include_directories(test_directories PRIVATE
 )
 add_test(NAME test_directories COMMAND test_directories)
 
+# Phase 2.12: Locks module tests (Locking Primitives)
+add_executable(test_locks test_locks.cpp)
+target_link_libraries(test_locks rebuntu-core rebuntu-locks)
+target_include_directories(test_locks PRIVATE 
+    ${CMAKE_SOURCE_DIR}/../src
+    ${CMAKE_SOURCE_DIR}
+)
+add_test(NAME test_locks COMMAND test_locks)
+
+# Phase 2.12: IPC module tests (Inter-Process Communication)
+add_executable(test_ipc test_ipc.cpp)
+target_link_libraries(test_ipc rebuntu-core rebuntu-ipc)
+target_include_directories(test_ipc PRIVATE 
+    ${CMAKE_SOURCE_DIR}/../src
+    ${CMAKE_SOURCE_DIR}
+)
+add_test(NAME test_ipc COMMAND test_ipc)
+
+# Phase 2.12: Temp files module tests (Secure Temporary Files)
+add_executable(test_temp_files test_temp_files.cpp)
+target_link_libraries(test_temp_files rebuntu-core rebuntu-temp-files)
+target_include_directories(test_temp_files PRIVATE 
+    ${CMAKE_SOURCE_DIR}/../src
+    ${CMAKE_SOURCE_DIR}
+)
+add_test(NAME test_temp_files COMMAND test_temp_files)
+
 # Phase 1.9: Environment discovery tests (pending integration with testing framework)

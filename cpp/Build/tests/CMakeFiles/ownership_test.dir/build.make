@@ -105,6 +105,9 @@ tests/ownership_test: librebuntu-environment-discovery.a
 tests/ownership_test: librebuntu-sessions.a
 tests/ownership_test: librebuntu-directories.a
 tests/ownership_test: librebuntu-secrets.a
+tests/ownership_test: librebuntu-temp-files.a
+tests/ownership_test: librebuntu-locks.a
+tests/ownership_test: librebuntu-ipc.a
 tests/ownership_test: librebuntu-setup.a
 tests/ownership_test: librebuntu-lifecycle.a
 tests/ownership_test: librebuntu-host-foundation.a

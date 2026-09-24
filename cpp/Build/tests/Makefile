@@ -448,6 +448,48 @@ test_directories/fast:
 	cd /home/bvrznski/rebuntu/cpp/Build && $(MAKE) $(MAKESILENT) -f tests/CMakeFiles/test_directories.dir/build.make tests/CMakeFiles/test_directories.dir/build
 .PHONY : test_directories/fast
 
+# Convenience name for target.
+tests/CMakeFiles/test_locks.dir/rule:
+	cd /home/bvrznski/rebuntu/cpp/Build && $(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 tests/CMakeFiles/test_locks.dir/rule
+.PHONY : tests/CMakeFiles/test_locks.dir/rule
+
+# Convenience name for target.
+test_locks: tests/CMakeFiles/test_locks.dir/rule
+.PHONY : test_locks
+
+# fast build rule for target.
+test_locks/fast:
+	cd /home/bvrznski/rebuntu/cpp/Build && $(MAKE) $(MAKESILENT) -f tests/CMakeFiles/test_locks.dir/build.make tests/CMakeFiles/test_locks.dir/build
+.PHONY : test_locks/fast
+
+# Convenience name for target.
+tests/CMakeFiles/test_ipc.dir/rule:
+	cd /home/bvrznski/rebuntu/cpp/Build && $(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 tests/CMakeFiles/test_ipc.dir/rule
+.PHONY : tests/CMakeFiles/test_ipc.dir/rule
+
+# Convenience name for target.
+test_ipc: tests/CMakeFiles/test_ipc.dir/rule
+.PHONY : test_ipc
+
+# fast build rule for target.
+test_ipc/fast:
+	cd /home/bvrznski/rebuntu/cpp/Build && $(MAKE) $(MAKESILENT) -f tests/CMakeFiles/test_ipc.dir/build.make tests/CMakeFiles/test_ipc.dir/build
+.PHONY : test_ipc/fast
+
+# Convenience name for target.
+tests/CMakeFiles/test_temp_files.dir/rule:
+	cd /home/bvrznski/rebuntu/cpp/Build && $(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 tests/CMakeFiles/test_temp_files.dir/rule
+.PHONY : tests/CMakeFiles/test_temp_files.dir/rule
+
+# Convenience name for target.
+test_temp_files: tests/CMakeFiles/test_temp_files.dir/rule
+.PHONY : test_temp_files
+
+# fast build rule for target.
+test_temp_files/fast:
+	cd /home/bvrznski/rebuntu/cpp/Build && $(MAKE) $(MAKESILENT) -f tests/CMakeFiles/test_temp_files.dir/build.make tests/CMakeFiles/test_temp_files.dir/build
+.PHONY : test_temp_files/fast
+
 automation_test.o: automation_test.cpp.o
 .PHONY : automation_test.o
 
@@ -976,6 +1018,54 @@ test_directories.cpp.s:
 	cd /home/bvrznski/rebuntu/cpp/Build && $(MAKE) $(MAKESILENT) -f tests/CMakeFiles/test_directories.dir/build.make tests/CMakeFiles/test_directories.dir/test_directories.cpp.s
 .PHONY : test_directories.cpp.s
 
+test_ipc.o: test_ipc.cpp.o
+.PHONY : test_ipc.o
+
+# target to build an object file
+test_ipc.cpp.o:
+	cd /home/bvrznski/rebuntu/cpp/Build && $(MAKE) $(MAKESILENT) -f tests/CMakeFiles/test_ipc.dir/build.make tests/CMakeFiles/test_ipc.dir/test_ipc.cpp.o
+.PHONY : test_ipc.cpp.o
+
+test_ipc.i: test_ipc.cpp.i
+.PHONY : test_ipc.i
+
+# target to preprocess a source file
+test_ipc.cpp.i:
+	cd /home/bvrznski/rebuntu/cpp/Build && $(MAKE) $(MAKESILENT) -f tests/CMakeFiles/test_ipc.dir/build.make tests/CMakeFiles/test_ipc.dir/test_ipc.cpp.i
+.PHONY : test_ipc.cpp.i
+
+test_ipc.s: test_ipc.cpp.s
+.PHONY : test_ipc.s
+
+# target to generate assembly for a file
+test_ipc.cpp.s:
+	cd /home/bvrznski/rebuntu/cpp/Build && $(MAKE) $(MAKESILENT) -f tests/CMakeFiles/test_ipc.dir/build.make tests/CMakeFiles/test_ipc.dir/test_ipc.cpp.s
+.PHONY : test_ipc.cpp.s
+
+test_locks.o: test_locks.cpp.o
+.PHONY : test_locks.o
+
+# target to build an object file
+test_locks.cpp.o:
+	cd /home/bvrznski/rebuntu/cpp/Build && $(MAKE) $(MAKESILENT) -f tests/CMakeFiles/test_locks.dir/build.make tests/CMakeFiles/test_locks.dir/test_locks.cpp.o
+.PHONY : test_locks.cpp.o
+
+test_locks.i: test_locks.cpp.i
+.PHONY : test_locks.i
+
+# target to preprocess a source file
+test_locks.cpp.i:
+	cd /home/bvrznski/rebuntu/cpp/Build && $(MAKE) $(MAKESILENT) -f tests/CMakeFiles/test_locks.dir/build.make tests/CMakeFiles/test_locks.dir/test_locks.cpp.i
+.PHONY : test_locks.cpp.i
+
+test_locks.s: test_locks.cpp.s
+.PHONY : test_locks.s
+
+# target to generate assembly for a file
+test_locks.cpp.s:
+	cd /home/bvrznski/rebuntu/cpp/Build && $(MAKE) $(MAKESILENT) -f tests/CMakeFiles/test_locks.dir/build.make tests/CMakeFiles/test_locks.dir/test_locks.cpp.s
+.PHONY : test_locks.cpp.s
+
 test_scope.o: test_scope.cpp.o
 .PHONY : test_scope.o
 
@@ -1048,6 +1138,30 @@ test_sessions.cpp.s:
 	cd /home/bvrznski/rebuntu/cpp/Build && $(MAKE) $(MAKESILENT) -f tests/CMakeFiles/test_sessions.dir/build.make tests/CMakeFiles/test_sessions.dir/test_sessions.cpp.s
 .PHONY : test_sessions.cpp.s
 
+test_temp_files.o: test_temp_files.cpp.o
+.PHONY : test_temp_files.o
+
+# target to build an object file
+test_temp_files.cpp.o:
+	cd /home/bvrznski/rebuntu/cpp/Build && $(MAKE) $(MAKESILENT) -f tests/CMakeFiles/test_temp_files.dir/build.make tests/CMakeFiles/test_temp_files.dir/test_temp_files.cpp.o
+.PHONY : test_temp_files.cpp.o
+
+test_temp_files.i: test_temp_files.cpp.i
+.PHONY : test_temp_files.i
+
+# target to preprocess a source file
+test_temp_files.cpp.i:
+	cd /home/bvrznski/rebuntu/cpp/Build && $(MAKE) $(MAKESILENT) -f tests/CMakeFiles/test_temp_files.dir/build.make tests/CMakeFiles/test_temp_files.dir/test_temp_files.cpp.i
+.PHONY : test_temp_files.cpp.i
+
+test_temp_files.s: test_temp_files.cpp.s
+.PHONY : test_temp_files.s
+
+# target to generate assembly for a file
+test_temp_files.cpp.s:
+	cd /home/bvrznski/rebuntu/cpp/Build && $(MAKE) $(MAKESILENT) -f tests/CMakeFiles/test_temp_files.dir/build.make tests/CMakeFiles/test_temp_files.dir/test_temp_files.cpp.s
+.PHONY : test_temp_files.cpp.s
+
 user_identity_test.o: user_identity_test.cpp.o
 .PHONY : user_identity_test.o
 
@@ -1098,11 +1212,14 @@ help:
 	@echo "... structured_setup_test"
 	@echo "... test_directories"
 	@echo "... test_discovery"
+	@echo "... test_ipc"
+	@echo "... test_locks"
 	@echo "... test_runtime_contracts"
 	@echo "... test_scope"
 	@echo "... test_secrets"
 	@echo "... test_sessions"
 	@echo "... test_state_provider"
+	@echo "... test_temp_files"
 	@echo "... user_identity_test"
 	@echo "... automation_test.o"
 	@echo "... automation_test.i"
@@ -1170,6 +1287,12 @@ help:
 	@echo "... test_directories.o"
 	@echo "... test_directories.i"
 	@echo "... test_directories.s"
+	@echo "... test_ipc.o"
+	@echo "... test_ipc.i"
+	@echo "... test_ipc.s"
+	@echo "... test_locks.o"
+	@echo "... test_locks.i"
+	@echo "... test_locks.s"
 	@echo "... test_scope.o"
 	@echo "... test_scope.i"
 	@echo "... test_scope.s"
@@ -1179,6 +1302,9 @@ help:
 	@echo "... test_sessions.o"
 	@echo "... test_sessions.i"
 	@echo "... test_sessions.s"
+	@echo "... test_temp_files.o"
+	@echo "... test_temp_files.i"
+	@echo "... test_temp_files.s"
 	@echo "... user_identity_test.o"
 	@echo "... user_identity_test.i"
 	@echo "... user_identity_test.s"

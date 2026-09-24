@@ -105,6 +105,9 @@ tests/test_runtime_contracts: librebuntu-environment-discovery.a
 tests/test_runtime_contracts: librebuntu-sessions.a
 tests/test_runtime_contracts: librebuntu-directories.a
 tests/test_runtime_contracts: librebuntu-secrets.a
+tests/test_runtime_contracts: librebuntu-temp-files.a
+tests/test_runtime_contracts: librebuntu-locks.a
+tests/test_runtime_contracts: librebuntu-ipc.a
 tests/test_runtime_contracts: librebuntu-setup.a
 tests/test_runtime_contracts: librebuntu-lifecycle.a
 tests/test_runtime_contracts: librebuntu-host-foundation.a

@@ -122,6 +122,9 @@ tests/host_foundation_test: librebuntu-environment-discovery.a
 tests/host_foundation_test: librebuntu-sessions.a
 tests/host_foundation_test: librebuntu-directories.a
 tests/host_foundation_test: librebuntu-secrets.a
+tests/host_foundation_test: librebuntu-temp-files.a
+tests/host_foundation_test: librebuntu-locks.a
+tests/host_foundation_test: librebuntu-ipc.a
 tests/host_foundation_test: librebuntu-setup.a
 tests/host_foundation_test: librebuntu-lifecycle.a
 tests/host_foundation_test: tests/CMakeFiles/host_foundation_test.dir/link.txt

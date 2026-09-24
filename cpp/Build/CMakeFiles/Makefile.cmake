@@ -90,6 +90,9 @@ set(CMAKE_DEPEND_INFO_FILES
   "CMakeFiles/rebuntu-sessions.dir/DependInfo.cmake"
   "CMakeFiles/rebuntu-directories.dir/DependInfo.cmake"
   "CMakeFiles/rebuntu-secrets.dir/DependInfo.cmake"
+  "CMakeFiles/rebuntu-temp-files.dir/DependInfo.cmake"
+  "CMakeFiles/rebuntu-locks.dir/DependInfo.cmake"
+  "CMakeFiles/rebuntu-ipc.dir/DependInfo.cmake"
   "CMakeFiles/rebuntu-setup.dir/DependInfo.cmake"
   "CMakeFiles/rebuntu-lifecycle.dir/DependInfo.cmake"
   "CMakeFiles/rebuntu-host-foundation.dir/DependInfo.cmake"
@@ -117,5 +120,8 @@ set(CMAKE_DEPEND_INFO_FILES
   "tests/CMakeFiles/test_sessions.dir/DependInfo.cmake"
   "tests/CMakeFiles/test_secrets.dir/DependInfo.cmake"
   "tests/CMakeFiles/test_directories.dir/DependInfo.cmake"
+  "tests/CMakeFiles/test_locks.dir/DependInfo.cmake"
+  "tests/CMakeFiles/test_ipc.dir/DependInfo.cmake"
+  "tests/CMakeFiles/test_temp_files.dir/DependInfo.cmake"
   "src/rebuntu/CMakeFiles/rebuntu.dir/DependInfo.cmake"
   )

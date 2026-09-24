@@ -313,6 +313,9 @@ src/rebuntu/rebuntu: librebuntu-environment-discovery.a
 src/rebuntu/rebuntu: librebuntu-sessions.a
 src/rebuntu/rebuntu: librebuntu-directories.a
 src/rebuntu/rebuntu: librebuntu-secrets.a
+src/rebuntu/rebuntu: librebuntu-temp-files.a
+src/rebuntu/rebuntu: librebuntu-locks.a
+src/rebuntu/rebuntu: librebuntu-ipc.a
 src/rebuntu/rebuntu: librebuntu-setup.a
 src/rebuntu/rebuntu: librebuntu-lifecycle.a
 src/rebuntu/rebuntu: librebuntu-host-foundation.a

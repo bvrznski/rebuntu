@@ -105,6 +105,9 @@ tests/test_state_provider: librebuntu-environment-discovery.a
 tests/test_state_provider: librebuntu-sessions.a
 tests/test_state_provider: librebuntu-directories.a
 tests/test_state_provider: librebuntu-secrets.a
+tests/test_state_provider: librebuntu-temp-files.a
+tests/test_state_provider: librebuntu-locks.a
+tests/test_state_provider: librebuntu-ipc.a
 tests/test_state_provider: librebuntu-setup.a
 tests/test_state_provider: librebuntu-lifecycle.a
 tests/test_state_provider: librebuntu-host-foundation.a

@@ -105,6 +105,9 @@ tests/capability_state_test: librebuntu-environment-discovery.a
 tests/capability_state_test: librebuntu-sessions.a
 tests/capability_state_test: librebuntu-directories.a
 tests/capability_state_test: librebuntu-secrets.a
+tests/capability_state_test: librebuntu-temp-files.a
+tests/capability_state_test: librebuntu-locks.a
+tests/capability_state_test: librebuntu-ipc.a
 tests/capability_state_test: librebuntu-setup.a
 tests/capability_state_test: librebuntu-lifecycle.a
 tests/capability_state_test: librebuntu-host-foundation.a

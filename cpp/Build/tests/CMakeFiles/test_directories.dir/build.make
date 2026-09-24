@@ -105,6 +105,9 @@ tests/test_directories: librebuntu-authorization.a
 tests/test_directories: librebuntu-environment-discovery.a
 tests/test_directories: librebuntu-sessions.a
 tests/test_directories: librebuntu-secrets.a
+tests/test_directories: librebuntu-temp-files.a
+tests/test_directories: librebuntu-locks.a
+tests/test_directories: librebuntu-ipc.a
 tests/test_directories: librebuntu-setup.a
 tests/test_directories: librebuntu-lifecycle.a
 tests/test_directories: librebuntu-host-foundation.a

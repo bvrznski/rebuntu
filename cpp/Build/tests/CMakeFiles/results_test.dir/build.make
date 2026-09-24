@@ -105,6 +105,9 @@ tests/results_test: librebuntu-environment-discovery.a
 tests/results_test: librebuntu-sessions.a
 tests/results_test: librebuntu-directories.a
 tests/results_test: librebuntu-secrets.a
+tests/results_test: librebuntu-temp-files.a
+tests/results_test: librebuntu-locks.a
+tests/results_test: librebuntu-ipc.a
 tests/results_test: librebuntu-setup.a
 tests/results_test: librebuntu-lifecycle.a
 tests/results_test: librebuntu-host-foundation.a

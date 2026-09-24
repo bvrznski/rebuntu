@@ -647,6 +647,45 @@ rebuntu-secrets/fast:
 .PHONY : rebuntu-secrets/fast
 
 #=============================================================================
+# Target rules for targets named rebuntu-temp-files
+
+# Build rule for target.
+rebuntu-temp-files: cmake_check_build_system
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 rebuntu-temp-files
+.PHONY : rebuntu-temp-files
+
+# fast build rule for target.
+rebuntu-temp-files/fast:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/rebuntu-temp-files.dir/build.make CMakeFiles/rebuntu-temp-files.dir/build
+.PHONY : rebuntu-temp-files/fast
+
+#=============================================================================
+# Target rules for targets named rebuntu-locks
+
+# Build rule for target.
+rebuntu-locks: cmake_check_build_system
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 rebuntu-locks
+.PHONY : rebuntu-locks
+
+# fast build rule for target.
+rebuntu-locks/fast:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/rebuntu-locks.dir/build.make CMakeFiles/rebuntu-locks.dir/build
+.PHONY : rebuntu-locks/fast
+
+#=============================================================================
+# Target rules for targets named rebuntu-ipc
+
+# Build rule for target.
+rebuntu-ipc: cmake_check_build_system
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 rebuntu-ipc
+.PHONY : rebuntu-ipc
+
+# fast build rule for target.
+rebuntu-ipc/fast:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/rebuntu-ipc.dir/build.make CMakeFiles/rebuntu-ipc.dir/build
+.PHONY : rebuntu-ipc/fast
+
+#=============================================================================
 # Target rules for targets named rebuntu-setup
 
 # Build rule for target.
@@ -998,6 +1037,45 @@ test_directories/fast:
 .PHONY : test_directories/fast
 
 #=============================================================================
+# Target rules for targets named test_locks
+
+# Build rule for target.
+test_locks: cmake_check_build_system
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 test_locks
+.PHONY : test_locks
+
+# fast build rule for target.
+test_locks/fast:
+	$(MAKE) $(MAKESILENT) -f tests/CMakeFiles/test_locks.dir/build.make tests/CMakeFiles/test_locks.dir/build
+.PHONY : test_locks/fast
+
+#=============================================================================
+# Target rules for targets named test_ipc
+
+# Build rule for target.
+test_ipc: cmake_check_build_system
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 test_ipc
+.PHONY : test_ipc
+
+# fast build rule for target.
+test_ipc/fast:
+	$(MAKE) $(MAKESILENT) -f tests/CMakeFiles/test_ipc.dir/build.make tests/CMakeFiles/test_ipc.dir/build
+.PHONY : test_ipc/fast
+
+#=============================================================================
+# Target rules for targets named test_temp_files
+
+# Build rule for target.
+test_temp_files: cmake_check_build_system
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 test_temp_files
+.PHONY : test_temp_files
+
+# fast build rule for target.
+test_temp_files/fast:
+	$(MAKE) $(MAKESILENT) -f tests/CMakeFiles/test_temp_files.dir/build.make tests/CMakeFiles/test_temp_files.dir/build
+.PHONY : test_temp_files/fast
+
+#=============================================================================
 # Target rules for targets named rebuntu
 
 # Build rule for target.
@@ -1130,6 +1208,54 @@ home/bvrznski/rebuntu/src/system/environment/group_membership.cpp.s:
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/rebuntu-group-membership.dir/build.make CMakeFiles/rebuntu-group-membership.dir/home/bvrznski/rebuntu/src/system/environment/group_membership.cpp.s
 .PHONY : home/bvrznski/rebuntu/src/system/environment/group_membership.cpp.s
 
+home/bvrznski/rebuntu/src/system/environment/ipc.o: home/bvrznski/rebuntu/src/system/environment/ipc.cpp.o
+.PHONY : home/bvrznski/rebuntu/src/system/environment/ipc.o
+
+# target to build an object file
+home/bvrznski/rebuntu/src/system/environment/ipc.cpp.o:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/rebuntu-ipc.dir/build.make CMakeFiles/rebuntu-ipc.dir/home/bvrznski/rebuntu/src/system/environment/ipc.cpp.o
+.PHONY : home/bvrznski/rebuntu/src/system/environment/ipc.cpp.o
+
+home/bvrznski/rebuntu/src/system/environment/ipc.i: home/bvrznski/rebuntu/src/system/environment/ipc.cpp.i
+.PHONY : home/bvrznski/rebuntu/src/system/environment/ipc.i
+
+# target to preprocess a source file
+home/bvrznski/rebuntu/src/system/environment/ipc.cpp.i:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/rebuntu-ipc.dir/build.make CMakeFiles/rebuntu-ipc.dir/home/bvrznski/rebuntu/src/system/environment/ipc.cpp.i
+.PHONY : home/bvrznski/rebuntu/src/system/environment/ipc.cpp.i
+
+home/bvrznski/rebuntu/src/system/environment/ipc.s: home/bvrznski/rebuntu/src/system/environment/ipc.cpp.s
+.PHONY : home/bvrznski/rebuntu/src/system/environment/ipc.s
+
+# target to generate assembly for a file
+home/bvrznski/rebuntu/src/system/environment/ipc.cpp.s:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/rebuntu-ipc.dir/build.make CMakeFiles/rebuntu-ipc.dir/home/bvrznski/rebuntu/src/system/environment/ipc.cpp.s
+.PHONY : home/bvrznski/rebuntu/src/system/environment/ipc.cpp.s
+
+home/bvrznski/rebuntu/src/system/environment/locks.o: home/bvrznski/rebuntu/src/system/environment/locks.cpp.o
+.PHONY : home/bvrznski/rebuntu/src/system/environment/locks.o
+
+# target to build an object file
+home/bvrznski/rebuntu/src/system/environment/locks.cpp.o:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/rebuntu-locks.dir/build.make CMakeFiles/rebuntu-locks.dir/home/bvrznski/rebuntu/src/system/environment/locks.cpp.o
+.PHONY : home/bvrznski/rebuntu/src/system/environment/locks.cpp.o
+
+home/bvrznski/rebuntu/src/system/environment/locks.i: home/bvrznski/rebuntu/src/system/environment/locks.cpp.i
+.PHONY : home/bvrznski/rebuntu/src/system/environment/locks.i
+
+# target to preprocess a source file
+home/bvrznski/rebuntu/src/system/environment/locks.cpp.i:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/rebuntu-locks.dir/build.make CMakeFiles/rebuntu-locks.dir/home/bvrznski/rebuntu/src/system/environment/locks.cpp.i
+.PHONY : home/bvrznski/rebuntu/src/system/environment/locks.cpp.i
+
+home/bvrznski/rebuntu/src/system/environment/locks.s: home/bvrznski/rebuntu/src/system/environment/locks.cpp.s
+.PHONY : home/bvrznski/rebuntu/src/system/environment/locks.s
+
+# target to generate assembly for a file
+home/bvrznski/rebuntu/src/system/environment/locks.cpp.s:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/rebuntu-locks.dir/build.make CMakeFiles/rebuntu-locks.dir/home/bvrznski/rebuntu/src/system/environment/locks.cpp.s
+.PHONY : home/bvrznski/rebuntu/src/system/environment/locks.cpp.s
+
 home/bvrznski/rebuntu/src/system/environment/ownership.o: home/bvrznski/rebuntu/src/system/environment/ownership.cpp.o
 .PHONY : home/bvrznski/rebuntu/src/system/environment/ownership.o
 
@@ -1249,6 +1375,30 @@ home/bvrznski/rebuntu/src/system/environment/sessions.s: home/bvrznski/rebuntu/s
 home/bvrznski/rebuntu/src/system/environment/sessions.cpp.s:
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/rebuntu-sessions.dir/build.make CMakeFiles/rebuntu-sessions.dir/home/bvrznski/rebuntu/src/system/environment/sessions.cpp.s
 .PHONY : home/bvrznski/rebuntu/src/system/environment/sessions.cpp.s
+
+home/bvrznski/rebuntu/src/system/environment/temp_files.o: home/bvrznski/rebuntu/src/system/environment/temp_files.cpp.o
+.PHONY : home/bvrznski/rebuntu/src/system/environment/temp_files.o
+
+# target to build an object file
+home/bvrznski/rebuntu/src/system/environment/temp_files.cpp.o:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/rebuntu-temp-files.dir/build.make CMakeFiles/rebuntu-temp-files.dir/home/bvrznski/rebuntu/src/system/environment/temp_files.cpp.o
+.PHONY : home/bvrznski/rebuntu/src/system/environment/temp_files.cpp.o
+
+home/bvrznski/rebuntu/src/system/environment/temp_files.i: home/bvrznski/rebuntu/src/system/environment/temp_files.cpp.i
+.PHONY : home/bvrznski/rebuntu/src/system/environment/temp_files.i
+
+# target to preprocess a source file
+home/bvrznski/rebuntu/src/system/environment/temp_files.cpp.i:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/rebuntu-temp-files.dir/build.make CMakeFiles/rebuntu-temp-files.dir/home/bvrznski/rebuntu/src/system/environment/temp_files.cpp.i
+.PHONY : home/bvrznski/rebuntu/src/system/environment/temp_files.cpp.i
+
+home/bvrznski/rebuntu/src/system/environment/temp_files.s: home/bvrznski/rebuntu/src/system/environment/temp_files.cpp.s
+.PHONY : home/bvrznski/rebuntu/src/system/environment/temp_files.s
+
+# target to generate assembly for a file
+home/bvrznski/rebuntu/src/system/environment/temp_files.cpp.s:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/rebuntu-temp-files.dir/build.make CMakeFiles/rebuntu-temp-files.dir/home/bvrznski/rebuntu/src/system/environment/temp_files.cpp.s
+.PHONY : home/bvrznski/rebuntu/src/system/environment/temp_files.cpp.s
 
 home/bvrznski/rebuntu/src/system/environment/user_identity.o: home/bvrznski/rebuntu/src/system/environment/user_identity.cpp.o
 .PHONY : home/bvrznski/rebuntu/src/system/environment/user_identity.o
@@ -1499,13 +1649,16 @@ help:
 	@echo "... rebuntu-group-membership"
 	@echo "... rebuntu-host-foundation"
 	@echo "... rebuntu-install"
+	@echo "... rebuntu-ipc"
 	@echo "... rebuntu-lifecycle"
+	@echo "... rebuntu-locks"
 	@echo "... rebuntu-ownership"
 	@echo "... rebuntu-privilege"
 	@echo "... rebuntu-scope"
 	@echo "... rebuntu-secrets"
 	@echo "... rebuntu-sessions"
 	@echo "... rebuntu-setup"
+	@echo "... rebuntu-temp-files"
 	@echo "... rebuntu-user-identity"
 	@echo "... results_test"
 	@echo "... runtime_runner_test"
@@ -1513,11 +1666,14 @@ help:
 	@echo "... structured_setup_test"
 	@echo "... test_directories"
 	@echo "... test_discovery"
+	@echo "... test_ipc"
+	@echo "... test_locks"
 	@echo "... test_runtime_contracts"
 	@echo "... test_scope"
 	@echo "... test_secrets"
 	@echo "... test_sessions"
 	@echo "... test_state_provider"
+	@echo "... test_temp_files"
 	@echo "... user_identity_test"
 	@echo "... home/bvrznski/rebuntu/src/system/environment/authorization.o"
 	@echo "... home/bvrznski/rebuntu/src/system/environment/authorization.i"
@@ -1534,6 +1690,12 @@ help:
 	@echo "... home/bvrznski/rebuntu/src/system/environment/group_membership.o"
 	@echo "... home/bvrznski/rebuntu/src/system/environment/group_membership.i"
 	@echo "... home/bvrznski/rebuntu/src/system/environment/group_membership.s"
+	@echo "... home/bvrznski/rebuntu/src/system/environment/ipc.o"
+	@echo "... home/bvrznski/rebuntu/src/system/environment/ipc.i"
+	@echo "... home/bvrznski/rebuntu/src/system/environment/ipc.s"
+	@echo "... home/bvrznski/rebuntu/src/system/environment/locks.o"
+	@echo "... home/bvrznski/rebuntu/src/system/environment/locks.i"
+	@echo "... home/bvrznski/rebuntu/src/system/environment/locks.s"
 	@echo "... home/bvrznski/rebuntu/src/system/environment/ownership.o"
 	@echo "... home/bvrznski/rebuntu/src/system/environment/ownership.i"
 	@echo "... home/bvrznski/rebuntu/src/system/environment/ownership.s"
@@ -1549,6 +1711,9 @@ help:
 	@echo "... home/bvrznski/rebuntu/src/system/environment/sessions.o"
 	@echo "... home/bvrznski/rebuntu/src/system/environment/sessions.i"
 	@echo "... home/bvrznski/rebuntu/src/system/environment/sessions.s"
+	@echo "... home/bvrznski/rebuntu/src/system/environment/temp_files.o"
+	@echo "... home/bvrznski/rebuntu/src/system/environment/temp_files.i"
+	@echo "... home/bvrznski/rebuntu/src/system/environment/temp_files.s"
 	@echo "... home/bvrznski/rebuntu/src/system/environment/user_identity.o"
 	@echo "... home/bvrznski/rebuntu/src/system/environment/user_identity.i"
 	@echo "... home/bvrznski/rebuntu/src/system/environment/user_identity.s"

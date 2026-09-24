@@ -212,6 +212,42 @@ target_include_directories(rebuntu-secrets PUBLIC
 
 target_link_libraries(rebuntu-core PUBLIC rebuntu-secrets)
 
+# Phase 2.12: Temporary files module (Secure Temp Files)
+add_library(rebuntu-temp-files STATIC
+    ${USER_IDENTITY_SRC_ROOT}/temp_files.hpp
+    ${USER_IDENTITY_SRC_ROOT}/temp_files.cpp
+)
+
+target_include_directories(rebuntu-temp-files PUBLIC
+    ${CMAKE_CURRENT_LIST_DIR}/../src
+)
+
+target_link_libraries(rebuntu-core PUBLIC rebuntu-temp-files)
+
+# Phase 2.12: Locks module (Locking Primitives)
+add_library(rebuntu-locks STATIC
+    ${USER_IDENTITY_SRC_ROOT}/locks.hpp
+    ${USER_IDENTITY_SRC_ROOT}/locks.cpp
+)
+
+target_include_directories(rebuntu-locks PUBLIC
+    ${CMAKE_CURRENT_LIST_DIR}/../src
+)
+
+target_link_libraries(rebuntu-core PUBLIC rebuntu-locks)
+
+# Phase 2.12: IPC module (Inter-Process Communication)
+add_library(rebuntu-ipc STATIC
+    ${USER_IDENTITY_SRC_ROOT}/ipc.hpp
+    ${USER_IDENTITY_SRC_ROOT}/ipc.cpp
+)
+
+target_include_directories(rebuntu-ipc PUBLIC
+    ${CMAKE_CURRENT_LIST_DIR}/../src
+)
+
+target_link_libraries(rebuntu-core PUBLIC rebuntu-ipc)
+
 # Phase 1.8: Setup & configuration module (Phase 1.8)
 set(SETUP_SRC_ROOT ${CMAKE_CURRENT_LIST_DIR}/../src/system/setup)
 

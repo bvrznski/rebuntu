@@ -105,6 +105,9 @@ tests/preferences_test: librebuntu-environment-discovery.a
 tests/preferences_test: librebuntu-sessions.a
 tests/preferences_test: librebuntu-directories.a
 tests/preferences_test: librebuntu-secrets.a
+tests/preferences_test: librebuntu-temp-files.a
+tests/preferences_test: librebuntu-locks.a
+tests/preferences_test: librebuntu-ipc.a
 tests/preferences_test: librebuntu-setup.a
 tests/preferences_test: librebuntu-lifecycle.a
 tests/preferences_test: librebuntu-host-foundation.a

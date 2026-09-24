@@ -106,6 +106,9 @@ tests/lifecycle_test: librebuntu-environment-discovery.a
 tests/lifecycle_test: librebuntu-sessions.a
 tests/lifecycle_test: librebuntu-directories.a
 tests/lifecycle_test: librebuntu-secrets.a
+tests/lifecycle_test: librebuntu-temp-files.a
+tests/lifecycle_test: librebuntu-locks.a
+tests/lifecycle_test: librebuntu-ipc.a
 tests/lifecycle_test: librebuntu-setup.a
 tests/lifecycle_test: librebuntu-host-foundation.a
 tests/lifecycle_test: tests/CMakeFiles/lifecycle_test.dir/link.txt

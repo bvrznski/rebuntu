@@ -80,6 +80,7 @@ set(CMAKE_DEPEND_INFO_FILES
   "CMakeFiles/ContinuousSubmit.dir/DependInfo.cmake"
   "CMakeFiles/rebuntu-install.dir/DependInfo.cmake"
   "CMakeFiles/rebuntu-user-identity.dir/DependInfo.cmake"
+  "CMakeFiles/rebuntu-environment-discovery.dir/DependInfo.cmake"
   "src/core/CMakeFiles/rebuntu-core.dir/DependInfo.cmake"
   "tests/CMakeFiles/runtime_runner_test.dir/DependInfo.cmake"
   "tests/CMakeFiles/automation_test.dir/DependInfo.cmake"

@@ -95,6 +95,7 @@ tests/test_state_provider: tests/CMakeFiles/test_state_provider.dir/build.make
 tests/test_state_provider: src/core/librebuntu-core.a
 tests/test_state_provider: librebuntu-install.a
 tests/test_state_provider: librebuntu-user-identity.a
+tests/test_state_provider: librebuntu-environment-discovery.a
 tests/test_state_provider: tests/CMakeFiles/test_state_provider.dir/link.txt
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --bold --progress-dir=/home/bvrznski/rebuntu/cpp/Build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_2) "Linking CXX executable test_state_provider"
 	cd /home/bvrznski/rebuntu/cpp/Build/tests && $(CMAKE_COMMAND) -E cmake_link_script CMakeFiles/test_state_provider.dir/link.txt --verbose=$(VERBOSE)

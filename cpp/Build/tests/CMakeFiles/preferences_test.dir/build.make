@@ -95,6 +95,7 @@ tests/preferences_test: tests/CMakeFiles/preferences_test.dir/build.make
 tests/preferences_test: src/core/librebuntu-core.a
 tests/preferences_test: librebuntu-install.a
 tests/preferences_test: librebuntu-user-identity.a
+tests/preferences_test: librebuntu-environment-discovery.a
 tests/preferences_test: tests/CMakeFiles/preferences_test.dir/link.txt
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --bold --progress-dir=/home/bvrznski/rebuntu/cpp/Build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_2) "Linking CXX executable preferences_test"
 	cd /home/bvrznski/rebuntu/cpp/Build/tests && $(CMAKE_COMMAND) -E cmake_link_script CMakeFiles/preferences_test.dir/link.txt --verbose=$(VERBOSE)

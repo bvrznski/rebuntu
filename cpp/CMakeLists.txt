@@ -98,6 +98,17 @@ target_include_directories(rebuntu-user-identity PUBLIC
 
 target_link_libraries(rebuntu-core PUBLIC rebuntu-user-identity)
 
+# Phase 1.9: Environment discovery module (Hardware/Software environment)
+add_library(rebuntu-environment-discovery STATIC
+    ${USER_IDENTITY_SRC_ROOT}/environment_discovery.cpp
+)
+
+target_include_directories(rebuntu-environment-discovery PUBLIC
+    ${CMAKE_CURRENT_LIST_DIR}/../src
+)
+
+target_link_libraries(rebuntu-core PUBLIC rebuntu-environment-discovery)
+
 # Phase 1.8: Setup & configuration sources are added to rebuntu target directly
 
 # Tests subdirectory

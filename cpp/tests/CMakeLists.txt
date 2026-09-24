@@ -124,3 +124,5 @@ target_include_directories(user_identity_test PRIVATE
     ${CMAKE_SOURCE_DIR}
 )
 add_test(NAME user_identity_test COMMAND user_identity_test)
+
+# Phase 1.9: Environment discovery tests (pending integration with testing framework)

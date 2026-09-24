@@ -517,6 +517,19 @@ rebuntu-user-identity/fast:
 .PHONY : rebuntu-user-identity/fast
 
 #=============================================================================
+# Target rules for targets named rebuntu-environment-discovery
+
+# Build rule for target.
+rebuntu-environment-discovery: cmake_check_build_system
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 rebuntu-environment-discovery
+.PHONY : rebuntu-environment-discovery
+
+# fast build rule for target.
+rebuntu-environment-discovery/fast:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/rebuntu-environment-discovery.dir/build.make CMakeFiles/rebuntu-environment-discovery.dir/build
+.PHONY : rebuntu-environment-discovery/fast
+
+#=============================================================================
 # Target rules for targets named rebuntu-core
 
 # Build rule for target.
@@ -711,6 +724,30 @@ rebuntu/fast:
 	$(MAKE) $(MAKESILENT) -f src/rebuntu/CMakeFiles/rebuntu.dir/build.make src/rebuntu/CMakeFiles/rebuntu.dir/build
 .PHONY : rebuntu/fast
 
+home/bvrznski/rebuntu/src/system/environment/environment_discovery.o: home/bvrznski/rebuntu/src/system/environment/environment_discovery.cpp.o
+.PHONY : home/bvrznski/rebuntu/src/system/environment/environment_discovery.o
+
+# target to build an object file
+home/bvrznski/rebuntu/src/system/environment/environment_discovery.cpp.o:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/rebuntu-environment-discovery.dir/build.make CMakeFiles/rebuntu-environment-discovery.dir/home/bvrznski/rebuntu/src/system/environment/environment_discovery.cpp.o
+.PHONY : home/bvrznski/rebuntu/src/system/environment/environment_discovery.cpp.o
+
+home/bvrznski/rebuntu/src/system/environment/environment_discovery.i: home/bvrznski/rebuntu/src/system/environment/environment_discovery.cpp.i
+.PHONY : home/bvrznski/rebuntu/src/system/environment/environment_discovery.i
+
+# target to preprocess a source file
+home/bvrznski/rebuntu/src/system/environment/environment_discovery.cpp.i:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/rebuntu-environment-discovery.dir/build.make CMakeFiles/rebuntu-environment-discovery.dir/home/bvrznski/rebuntu/src/system/environment/environment_discovery.cpp.i
+.PHONY : home/bvrznski/rebuntu/src/system/environment/environment_discovery.cpp.i
+
+home/bvrznski/rebuntu/src/system/environment/environment_discovery.s: home/bvrznski/rebuntu/src/system/environment/environment_discovery.cpp.s
+.PHONY : home/bvrznski/rebuntu/src/system/environment/environment_discovery.s
+
+# target to generate assembly for a file
+home/bvrznski/rebuntu/src/system/environment/environment_discovery.cpp.s:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/rebuntu-environment-discovery.dir/build.make CMakeFiles/rebuntu-environment-discovery.dir/home/bvrznski/rebuntu/src/system/environment/environment_discovery.cpp.s
+.PHONY : home/bvrznski/rebuntu/src/system/environment/environment_discovery.cpp.s
+
 home/bvrznski/rebuntu/src/system/environment/user_identity.o: home/bvrznski/rebuntu/src/system/environment/user_identity.cpp.o
 .PHONY : home/bvrznski/rebuntu/src/system/environment/user_identity.o
 
@@ -851,6 +888,7 @@ help:
 	@echo "... preferences_test"
 	@echo "... rebuntu"
 	@echo "... rebuntu-core"
+	@echo "... rebuntu-environment-discovery"
 	@echo "... rebuntu-install"
 	@echo "... rebuntu-user-identity"
 	@echo "... results_test"
@@ -861,6 +899,9 @@ help:
 	@echo "... test_runtime_contracts"
 	@echo "... test_state_provider"
 	@echo "... user_identity_test"
+	@echo "... home/bvrznski/rebuntu/src/system/environment/environment_discovery.o"
+	@echo "... home/bvrznski/rebuntu/src/system/environment/environment_discovery.i"
+	@echo "... home/bvrznski/rebuntu/src/system/environment/environment_discovery.s"
 	@echo "... home/bvrznski/rebuntu/src/system/environment/user_identity.o"
 	@echo "... home/bvrznski/rebuntu/src/system/environment/user_identity.i"
 	@echo "... home/bvrznski/rebuntu/src/system/environment/user_identity.s"

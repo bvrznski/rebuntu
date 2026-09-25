@@ -68,18 +68,3 @@ sudo rm -f "$TARGET/tmp/"rebuntu-*.deb
 echo "Built Rebuntu rootfs: $TARGET"
 
 
-# REBUNTU_PLYMOUTH_BEGIN
-PLYMOUTH_DEB="$ROOT/build/artifacts/deb/rebuntu-plymouth-theme_0.1.0_all.deb"
-if [[ -f "$PLYMOUTH_DEB" ]]; then
-    sudo cp "$PLYMOUTH_DEB" "$TARGET/tmp/rebuntu-plymouth-theme.deb"
-    sudo chroot "$TARGET" dpkg -i /tmp/rebuntu-plymouth-theme.deb || \
-        sudo chroot "$TARGET" apt-get -f install -y
-    sudo rm -f "$TARGET/tmp/rebuntu-plymouth-theme.deb"
-
-    # Rebuild after selecting Rebuntu as default so the theme enters initramfs.
-    sudo chroot "$TARGET" update-initramfs -u
-else
-    echo "Missing Rebuntu Plymouth package: $PLYMOUTH_DEB" >&2
-    exit 1
-fi
-# REBUNTU_PLYMOUTH_END

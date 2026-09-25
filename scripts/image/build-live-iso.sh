@@ -18,7 +18,11 @@ done
 sudo cp -L /etc/resolv.conf "$ROOTFS/etc/resolv.conf"
 sudo chroot "$ROOTFS" apt-get update
 sudo chroot "$ROOTFS" env DEBIAN_FRONTEND=noninteractive apt-get install -y --no-install-recommends \
-  linux-image-generic initramfs-tools casper systemd-sysv dbus network-manager plymouth
+  linux-image-generic initramfs-tools casper systemd-sysv dbus network-manager plymouth plymouth-themes plymouth-label
+# Plymouth requires the framebuffer initramfs hook.
+sudo mkdir -p "$ROOTFS/etc/initramfs-tools/conf.d"
+echo 'FRAMEBUFFER=y' | \
+    sudo tee "$ROOTFS/etc/initramfs-tools/conf.d/rebuntu-plymouth" >/dev/null
 sudo chroot "$ROOTFS" update-initramfs -u -k all
 
 KERNEL="$(find "$ROOTFS/boot" -maxdepth 1 -type f -name 'vmlinuz-*' | sort -V | tail -n1)"
@@ -26,6 +30,14 @@ KERNEL="$(find "$ROOTFS/boot" -maxdepth 1 -type f -name 'vmlinuz-*' | sort -V | 
 KVER="${KERNEL##*/vmlinuz-}"
 INITRD="$ROOTFS/boot/initrd.img-$KVER"
 [[ -f "$INITRD" ]] || { echo "Missing $INITRD" >&2; exit 1; }
+
+# Rebuntu Plymouth must be embedded in the final initramfs.
+sudo lsinitramfs "$INITRD" \
+  | grep -q "usr/share/plymouth/themes/rebuntu/rebuntu.script" \
+  || {
+    echo "ERROR: Rebuntu Plymouth theme missing from initramfs." >&2
+    exit 1
+  }
 
 sudo rm -rf "$WORK"
 mkdir -p "$ISO/casper" "$ISO/boot/grub" "$ISO/EFI/BOOT" "$OUT"

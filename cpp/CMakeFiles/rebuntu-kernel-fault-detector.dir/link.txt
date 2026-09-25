@@ -1,0 +1,2 @@
+/usr/bin/ar qc librebuntu-kernel-fault-detector.a CMakeFiles/rebuntu-kernel-fault-detector.dir/home/bvrznski/rebuntu/src/adapters/kernel_fault_detector.cpp.o
+/usr/bin/ranlib librebuntu-kernel-fault-detector.a

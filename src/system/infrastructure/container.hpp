@@ -77,7 +77,7 @@ struct ContainerInfo {
     std::string id;              // Container ID (full or truncated)
     std::string name;            // Container name
     std::string image;           // Image name with tag
-    ContainerState state;        // Current state
+    ContainerState state = ContainerState::kUnknown;  // Current state
     bool is_running = false;
     
     // Resource usage (if available)

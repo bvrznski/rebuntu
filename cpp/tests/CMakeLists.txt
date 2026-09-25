@@ -299,4 +299,32 @@ target_include_directories(infrastructure_test PRIVATE
 )
 add_test(NAME infrastructure_test COMMAND infrastructure_test)
 
+# Phase 3.6: Container runtime contracts tests
+add_executable(test_container_runtime test_container_runtime.cpp)
+target_link_libraries(test_container_runtime rebuntu-core)
+target_include_directories(test_container_runtime PRIVATE 
+    ${CMAKE_SOURCE_DIR}/src
+    ${CMAKE_SOURCE_DIR}
+)
+# Include container provider sources directly in the test target
+target_sources(test_container_runtime PRIVATE
+    ${CMAKE_SOURCE_DIR}/../src/system/infrastructure/container.hpp
+    ${CMAKE_SOURCE_DIR}/../src/system/infrastructure/container_runtime.cpp
+)
+add_test(NAME test_container_runtime COMMAND test_container_runtime)
+
+# Phase 3.5: Docker provider tests (Docker container runtime integration)
+add_executable(test_docker_provider test_docker_provider.cpp)
+target_link_libraries(test_docker_provider rebuntu-core)
+target_include_directories(test_docker_provider PRIVATE 
+    ${CMAKE_SOURCE_DIR}/src
+    ${CMAKE_SOURCE_DIR}
+)
+# Include docker provider sources directly in the test target
+target_sources(test_docker_provider PRIVATE
+    ${CMAKE_SOURCE_DIR}/../src/system/infrastructure/docker.hpp
+    ${CMAKE_SOURCE_DIR}/../src/system/infrastructure/docker_provider.cpp
+)
+add_test(NAME test_docker_provider COMMAND test_docker_provider)
+
 # Phase 1.9: Environment discovery tests (pending integration with testing framework)

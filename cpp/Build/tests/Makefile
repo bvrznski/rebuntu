@@ -560,6 +560,34 @@ infrastructure_test/fast:
 	cd /home/bvrznski/rebuntu/cpp/Build && $(MAKE) $(MAKESILENT) -f tests/CMakeFiles/infrastructure_test.dir/build.make tests/CMakeFiles/infrastructure_test.dir/build
 .PHONY : infrastructure_test/fast
 
+# Convenience name for target.
+tests/CMakeFiles/test_container_runtime.dir/rule:
+	cd /home/bvrznski/rebuntu/cpp/Build && $(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 tests/CMakeFiles/test_container_runtime.dir/rule
+.PHONY : tests/CMakeFiles/test_container_runtime.dir/rule
+
+# Convenience name for target.
+test_container_runtime: tests/CMakeFiles/test_container_runtime.dir/rule
+.PHONY : test_container_runtime
+
+# fast build rule for target.
+test_container_runtime/fast:
+	cd /home/bvrznski/rebuntu/cpp/Build && $(MAKE) $(MAKESILENT) -f tests/CMakeFiles/test_container_runtime.dir/build.make tests/CMakeFiles/test_container_runtime.dir/build
+.PHONY : test_container_runtime/fast
+
+# Convenience name for target.
+tests/CMakeFiles/test_docker_provider.dir/rule:
+	cd /home/bvrznski/rebuntu/cpp/Build && $(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 tests/CMakeFiles/test_docker_provider.dir/rule
+.PHONY : tests/CMakeFiles/test_docker_provider.dir/rule
+
+# Convenience name for target.
+test_docker_provider: tests/CMakeFiles/test_docker_provider.dir/rule
+.PHONY : test_docker_provider
+
+# fast build rule for target.
+test_docker_provider/fast:
+	cd /home/bvrznski/rebuntu/cpp/Build && $(MAKE) $(MAKESILENT) -f tests/CMakeFiles/test_docker_provider.dir/build.make tests/CMakeFiles/test_docker_provider.dir/build
+.PHONY : test_docker_provider/fast
+
 __/src/semantic/ipc_transport.o: __/src/semantic/ipc_transport.cpp.o
 .PHONY : __/src/semantic/ipc_transport.o
 
@@ -775,6 +803,54 @@ home/bvrznski/rebuntu/src/system/host_foundation/host_foundation.s: home/bvrznsk
 home/bvrznski/rebuntu/src/system/host_foundation/host_foundation.cpp.s:
 	cd /home/bvrznski/rebuntu/cpp/Build && $(MAKE) $(MAKESILENT) -f tests/CMakeFiles/host_foundation_test.dir/build.make tests/CMakeFiles/host_foundation_test.dir/home/bvrznski/rebuntu/src/system/host_foundation/host_foundation.cpp.s
 .PHONY : home/bvrznski/rebuntu/src/system/host_foundation/host_foundation.cpp.s
+
+home/bvrznski/rebuntu/src/system/infrastructure/container_runtime.o: home/bvrznski/rebuntu/src/system/infrastructure/container_runtime.cpp.o
+.PHONY : home/bvrznski/rebuntu/src/system/infrastructure/container_runtime.o
+
+# target to build an object file
+home/bvrznski/rebuntu/src/system/infrastructure/container_runtime.cpp.o:
+	cd /home/bvrznski/rebuntu/cpp/Build && $(MAKE) $(MAKESILENT) -f tests/CMakeFiles/test_container_runtime.dir/build.make tests/CMakeFiles/test_container_runtime.dir/home/bvrznski/rebuntu/src/system/infrastructure/container_runtime.cpp.o
+.PHONY : home/bvrznski/rebuntu/src/system/infrastructure/container_runtime.cpp.o
+
+home/bvrznski/rebuntu/src/system/infrastructure/container_runtime.i: home/bvrznski/rebuntu/src/system/infrastructure/container_runtime.cpp.i
+.PHONY : home/bvrznski/rebuntu/src/system/infrastructure/container_runtime.i
+
+# target to preprocess a source file
+home/bvrznski/rebuntu/src/system/infrastructure/container_runtime.cpp.i:
+	cd /home/bvrznski/rebuntu/cpp/Build && $(MAKE) $(MAKESILENT) -f tests/CMakeFiles/test_container_runtime.dir/build.make tests/CMakeFiles/test_container_runtime.dir/home/bvrznski/rebuntu/src/system/infrastructure/container_runtime.cpp.i
+.PHONY : home/bvrznski/rebuntu/src/system/infrastructure/container_runtime.cpp.i
+
+home/bvrznski/rebuntu/src/system/infrastructure/container_runtime.s: home/bvrznski/rebuntu/src/system/infrastructure/container_runtime.cpp.s
+.PHONY : home/bvrznski/rebuntu/src/system/infrastructure/container_runtime.s
+
+# target to generate assembly for a file
+home/bvrznski/rebuntu/src/system/infrastructure/container_runtime.cpp.s:
+	cd /home/bvrznski/rebuntu/cpp/Build && $(MAKE) $(MAKESILENT) -f tests/CMakeFiles/test_container_runtime.dir/build.make tests/CMakeFiles/test_container_runtime.dir/home/bvrznski/rebuntu/src/system/infrastructure/container_runtime.cpp.s
+.PHONY : home/bvrznski/rebuntu/src/system/infrastructure/container_runtime.cpp.s
+
+home/bvrznski/rebuntu/src/system/infrastructure/docker_provider.o: home/bvrznski/rebuntu/src/system/infrastructure/docker_provider.cpp.o
+.PHONY : home/bvrznski/rebuntu/src/system/infrastructure/docker_provider.o
+
+# target to build an object file
+home/bvrznski/rebuntu/src/system/infrastructure/docker_provider.cpp.o:
+	cd /home/bvrznski/rebuntu/cpp/Build && $(MAKE) $(MAKESILENT) -f tests/CMakeFiles/test_docker_provider.dir/build.make tests/CMakeFiles/test_docker_provider.dir/home/bvrznski/rebuntu/src/system/infrastructure/docker_provider.cpp.o
+.PHONY : home/bvrznski/rebuntu/src/system/infrastructure/docker_provider.cpp.o
+
+home/bvrznski/rebuntu/src/system/infrastructure/docker_provider.i: home/bvrznski/rebuntu/src/system/infrastructure/docker_provider.cpp.i
+.PHONY : home/bvrznski/rebuntu/src/system/infrastructure/docker_provider.i
+
+# target to preprocess a source file
+home/bvrznski/rebuntu/src/system/infrastructure/docker_provider.cpp.i:
+	cd /home/bvrznski/rebuntu/cpp/Build && $(MAKE) $(MAKESILENT) -f tests/CMakeFiles/test_docker_provider.dir/build.make tests/CMakeFiles/test_docker_provider.dir/home/bvrznski/rebuntu/src/system/infrastructure/docker_provider.cpp.i
+.PHONY : home/bvrznski/rebuntu/src/system/infrastructure/docker_provider.cpp.i
+
+home/bvrznski/rebuntu/src/system/infrastructure/docker_provider.s: home/bvrznski/rebuntu/src/system/infrastructure/docker_provider.cpp.s
+.PHONY : home/bvrznski/rebuntu/src/system/infrastructure/docker_provider.s
+
+# target to generate assembly for a file
+home/bvrznski/rebuntu/src/system/infrastructure/docker_provider.cpp.s:
+	cd /home/bvrznski/rebuntu/cpp/Build && $(MAKE) $(MAKESILENT) -f tests/CMakeFiles/test_docker_provider.dir/build.make tests/CMakeFiles/test_docker_provider.dir/home/bvrznski/rebuntu/src/system/infrastructure/docker_provider.cpp.s
+.PHONY : home/bvrznski/rebuntu/src/system/infrastructure/docker_provider.cpp.s
 
 home/bvrznski/rebuntu/src/system/install/install_planning.o: home/bvrznski/rebuntu/src/system/install/install_planning.cpp.o
 .PHONY : home/bvrznski/rebuntu/src/system/install/install_planning.o
@@ -1208,6 +1284,30 @@ subprocess_executor_test.cpp.s:
 	cd /home/bvrznski/rebuntu/cpp/Build && $(MAKE) $(MAKESILENT) -f tests/CMakeFiles/subprocess_executor_test.dir/build.make tests/CMakeFiles/subprocess_executor_test.dir/subprocess_executor_test.cpp.s
 .PHONY : subprocess_executor_test.cpp.s
 
+test_container_runtime.o: test_container_runtime.cpp.o
+.PHONY : test_container_runtime.o
+
+# target to build an object file
+test_container_runtime.cpp.o:
+	cd /home/bvrznski/rebuntu/cpp/Build && $(MAKE) $(MAKESILENT) -f tests/CMakeFiles/test_container_runtime.dir/build.make tests/CMakeFiles/test_container_runtime.dir/test_container_runtime.cpp.o
+.PHONY : test_container_runtime.cpp.o
+
+test_container_runtime.i: test_container_runtime.cpp.i
+.PHONY : test_container_runtime.i
+
+# target to preprocess a source file
+test_container_runtime.cpp.i:
+	cd /home/bvrznski/rebuntu/cpp/Build && $(MAKE) $(MAKESILENT) -f tests/CMakeFiles/test_container_runtime.dir/build.make tests/CMakeFiles/test_container_runtime.dir/test_container_runtime.cpp.i
+.PHONY : test_container_runtime.cpp.i
+
+test_container_runtime.s: test_container_runtime.cpp.s
+.PHONY : test_container_runtime.s
+
+# target to generate assembly for a file
+test_container_runtime.cpp.s:
+	cd /home/bvrznski/rebuntu/cpp/Build && $(MAKE) $(MAKESILENT) -f tests/CMakeFiles/test_container_runtime.dir/build.make tests/CMakeFiles/test_container_runtime.dir/test_container_runtime.cpp.s
+.PHONY : test_container_runtime.cpp.s
+
 test_directories.o: test_directories.cpp.o
 .PHONY : test_directories.o
 
@@ -1231,6 +1331,30 @@ test_directories.s: test_directories.cpp.s
 test_directories.cpp.s:
 	cd /home/bvrznski/rebuntu/cpp/Build && $(MAKE) $(MAKESILENT) -f tests/CMakeFiles/test_directories.dir/build.make tests/CMakeFiles/test_directories.dir/test_directories.cpp.s
 .PHONY : test_directories.cpp.s
+
+test_docker_provider.o: test_docker_provider.cpp.o
+.PHONY : test_docker_provider.o
+
+# target to build an object file
+test_docker_provider.cpp.o:
+	cd /home/bvrznski/rebuntu/cpp/Build && $(MAKE) $(MAKESILENT) -f tests/CMakeFiles/test_docker_provider.dir/build.make tests/CMakeFiles/test_docker_provider.dir/test_docker_provider.cpp.o
+.PHONY : test_docker_provider.cpp.o
+
+test_docker_provider.i: test_docker_provider.cpp.i
+.PHONY : test_docker_provider.i
+
+# target to preprocess a source file
+test_docker_provider.cpp.i:
+	cd /home/bvrznski/rebuntu/cpp/Build && $(MAKE) $(MAKESILENT) -f tests/CMakeFiles/test_docker_provider.dir/build.make tests/CMakeFiles/test_docker_provider.dir/test_docker_provider.cpp.i
+.PHONY : test_docker_provider.cpp.i
+
+test_docker_provider.s: test_docker_provider.cpp.s
+.PHONY : test_docker_provider.s
+
+# target to generate assembly for a file
+test_docker_provider.cpp.s:
+	cd /home/bvrznski/rebuntu/cpp/Build && $(MAKE) $(MAKESILENT) -f tests/CMakeFiles/test_docker_provider.dir/build.make tests/CMakeFiles/test_docker_provider.dir/test_docker_provider.cpp.s
+.PHONY : test_docker_provider.cpp.s
 
 test_ipc.o: test_ipc.cpp.o
 .PHONY : test_ipc.o
@@ -1452,8 +1576,10 @@ help:
 	@echo "... settings_test"
 	@echo "... structured_setup_test"
 	@echo "... subprocess_executor_test"
+	@echo "... test_container_runtime"
 	@echo "... test_directories"
 	@echo "... test_discovery"
+	@echo "... test_docker_provider"
 	@echo "... test_ipc"
 	@echo "... test_ipc_protocol"
 	@echo "... test_locks"
@@ -1491,6 +1617,12 @@ help:
 	@echo "... home/bvrznski/rebuntu/src/system/host_foundation/host_foundation.o"
 	@echo "... home/bvrznski/rebuntu/src/system/host_foundation/host_foundation.i"
 	@echo "... home/bvrznski/rebuntu/src/system/host_foundation/host_foundation.s"
+	@echo "... home/bvrznski/rebuntu/src/system/infrastructure/container_runtime.o"
+	@echo "... home/bvrznski/rebuntu/src/system/infrastructure/container_runtime.i"
+	@echo "... home/bvrznski/rebuntu/src/system/infrastructure/container_runtime.s"
+	@echo "... home/bvrznski/rebuntu/src/system/infrastructure/docker_provider.o"
+	@echo "... home/bvrznski/rebuntu/src/system/infrastructure/docker_provider.i"
+	@echo "... home/bvrznski/rebuntu/src/system/infrastructure/docker_provider.s"
 	@echo "... home/bvrznski/rebuntu/src/system/install/install_planning.o"
 	@echo "... home/bvrznski/rebuntu/src/system/install/install_planning.i"
 	@echo "... home/bvrznski/rebuntu/src/system/install/install_planning.s"
@@ -1545,9 +1677,15 @@ help:
 	@echo "... subprocess_executor_test.o"
 	@echo "... subprocess_executor_test.i"
 	@echo "... subprocess_executor_test.s"
+	@echo "... test_container_runtime.o"
+	@echo "... test_container_runtime.i"
+	@echo "... test_container_runtime.s"
 	@echo "... test_directories.o"
 	@echo "... test_directories.i"
 	@echo "... test_directories.s"
+	@echo "... test_docker_provider.o"
+	@echo "... test_docker_provider.i"
+	@echo "... test_docker_provider.s"
 	@echo "... test_ipc.o"
 	@echo "... test_ipc.i"
 	@echo "... test_ipc.s"

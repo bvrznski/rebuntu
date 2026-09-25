@@ -82,6 +82,8 @@
 /home/bvrznski/rebuntu/cpp/Build/tests/CMakeFiles/semantic_service_test.dir
 /home/bvrznski/rebuntu/cpp/Build/tests/CMakeFiles/test_ipc_protocol.dir
 /home/bvrznski/rebuntu/cpp/Build/tests/CMakeFiles/infrastructure_test.dir
+/home/bvrznski/rebuntu/cpp/Build/tests/CMakeFiles/test_container_runtime.dir
+/home/bvrznski/rebuntu/cpp/Build/tests/CMakeFiles/test_docker_provider.dir
 /home/bvrznski/rebuntu/cpp/Build/tests/CMakeFiles/test.dir
 /home/bvrznski/rebuntu/cpp/Build/tests/CMakeFiles/edit_cache.dir
 /home/bvrznski/rebuntu/cpp/Build/tests/CMakeFiles/rebuild_cache.dir

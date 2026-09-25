@@ -66,3 +66,7 @@ add_test([=[test_ipc_protocol]=] "/home/bvrznski/rebuntu/cpp/Build/tests/test_ip
 set_tests_properties([=[test_ipc_protocol]=] PROPERTIES  _BACKTRACE_TRIPLES "/home/bvrznski/rebuntu/cpp/tests/CMakeLists.txt;291;add_test;/home/bvrznski/rebuntu/cpp/tests/CMakeLists.txt;0;")
 add_test([=[infrastructure_test]=] "/home/bvrznski/rebuntu/cpp/Build/tests/infrastructure_test")
 set_tests_properties([=[infrastructure_test]=] PROPERTIES  _BACKTRACE_TRIPLES "/home/bvrznski/rebuntu/cpp/tests/CMakeLists.txt;300;add_test;/home/bvrznski/rebuntu/cpp/tests/CMakeLists.txt;0;")
+add_test([=[test_container_runtime]=] "/home/bvrznski/rebuntu/cpp/Build/tests/test_container_runtime")
+set_tests_properties([=[test_container_runtime]=] PROPERTIES  _BACKTRACE_TRIPLES "/home/bvrznski/rebuntu/cpp/tests/CMakeLists.txt;314;add_test;/home/bvrznski/rebuntu/cpp/tests/CMakeLists.txt;0;")
+add_test([=[test_docker_provider]=] "/home/bvrznski/rebuntu/cpp/Build/tests/test_docker_provider")
+set_tests_properties([=[test_docker_provider]=] PROPERTIES  _BACKTRACE_TRIPLES "/home/bvrznski/rebuntu/cpp/tests/CMakeLists.txt;328;add_test;/home/bvrznski/rebuntu/cpp/tests/CMakeLists.txt;0;")

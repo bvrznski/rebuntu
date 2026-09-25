@@ -476,6 +476,30 @@ home/bvrznski/rebuntu/src/system/environment/temp_files.cpp.s:
 	cd /home/bvrznski/rebuntu/cpp/Build && $(MAKE) $(MAKESILENT) -f src/rebuntu/CMakeFiles/rebuntu.dir/build.make src/rebuntu/CMakeFiles/rebuntu.dir/home/bvrznski/rebuntu/src/system/environment/temp_files.cpp.s
 .PHONY : home/bvrznski/rebuntu/src/system/environment/temp_files.cpp.s
 
+home/bvrznski/rebuntu/src/system/infrastructure/docker_provider.o: home/bvrznski/rebuntu/src/system/infrastructure/docker_provider.cpp.o
+.PHONY : home/bvrznski/rebuntu/src/system/infrastructure/docker_provider.o
+
+# target to build an object file
+home/bvrznski/rebuntu/src/system/infrastructure/docker_provider.cpp.o:
+	cd /home/bvrznski/rebuntu/cpp/Build && $(MAKE) $(MAKESILENT) -f src/rebuntu/CMakeFiles/rebuntu.dir/build.make src/rebuntu/CMakeFiles/rebuntu.dir/home/bvrznski/rebuntu/src/system/infrastructure/docker_provider.cpp.o
+.PHONY : home/bvrznski/rebuntu/src/system/infrastructure/docker_provider.cpp.o
+
+home/bvrznski/rebuntu/src/system/infrastructure/docker_provider.i: home/bvrznski/rebuntu/src/system/infrastructure/docker_provider.cpp.i
+.PHONY : home/bvrznski/rebuntu/src/system/infrastructure/docker_provider.i
+
+# target to preprocess a source file
+home/bvrznski/rebuntu/src/system/infrastructure/docker_provider.cpp.i:
+	cd /home/bvrznski/rebuntu/cpp/Build && $(MAKE) $(MAKESILENT) -f src/rebuntu/CMakeFiles/rebuntu.dir/build.make src/rebuntu/CMakeFiles/rebuntu.dir/home/bvrznski/rebuntu/src/system/infrastructure/docker_provider.cpp.i
+.PHONY : home/bvrznski/rebuntu/src/system/infrastructure/docker_provider.cpp.i
+
+home/bvrznski/rebuntu/src/system/infrastructure/docker_provider.s: home/bvrznski/rebuntu/src/system/infrastructure/docker_provider.cpp.s
+.PHONY : home/bvrznski/rebuntu/src/system/infrastructure/docker_provider.s
+
+# target to generate assembly for a file
+home/bvrznski/rebuntu/src/system/infrastructure/docker_provider.cpp.s:
+	cd /home/bvrznski/rebuntu/cpp/Build && $(MAKE) $(MAKESILENT) -f src/rebuntu/CMakeFiles/rebuntu.dir/build.make src/rebuntu/CMakeFiles/rebuntu.dir/home/bvrznski/rebuntu/src/system/infrastructure/docker_provider.cpp.s
+.PHONY : home/bvrznski/rebuntu/src/system/infrastructure/docker_provider.cpp.s
+
 home/bvrznski/rebuntu/src/system/install/install.o: home/bvrznski/rebuntu/src/system/install/install.cpp.o
 .PHONY : home/bvrznski/rebuntu/src/system/install/install.o
 
@@ -648,6 +672,9 @@ help:
 	@echo "... home/bvrznski/rebuntu/src/system/environment/temp_files.o"
 	@echo "... home/bvrznski/rebuntu/src/system/environment/temp_files.i"
 	@echo "... home/bvrznski/rebuntu/src/system/environment/temp_files.s"
+	@echo "... home/bvrznski/rebuntu/src/system/infrastructure/docker_provider.o"
+	@echo "... home/bvrznski/rebuntu/src/system/infrastructure/docker_provider.i"
+	@echo "... home/bvrznski/rebuntu/src/system/infrastructure/docker_provider.s"
 	@echo "... home/bvrznski/rebuntu/src/system/install/install.o"
 	@echo "... home/bvrznski/rebuntu/src/system/install/install.i"
 	@echo "... home/bvrznski/rebuntu/src/system/install/install.s"

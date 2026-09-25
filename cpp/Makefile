@@ -1141,6 +1141,19 @@ infrastructure_test/fast:
 .PHONY : infrastructure_test/fast
 
 #=============================================================================
+# Target rules for targets named test_docker_provider
+
+# Build rule for target.
+test_docker_provider: cmake_check_build_system
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 test_docker_provider
+.PHONY : test_docker_provider
+
+# fast build rule for target.
+test_docker_provider/fast:
+	$(MAKE) $(MAKESILENT) -f tests/CMakeFiles/test_docker_provider.dir/build.make tests/CMakeFiles/test_docker_provider.dir/build
+.PHONY : test_docker_provider/fast
+
+#=============================================================================
 # Target rules for targets named rebuntu
 
 # Build rule for target.
@@ -1735,6 +1748,7 @@ help:
 	@echo "... subprocess_executor_test"
 	@echo "... test_directories"
 	@echo "... test_discovery"
+	@echo "... test_docker_provider"
 	@echo "... test_ipc"
 	@echo "... test_ipc_protocol"
 	@echo "... test_locks"

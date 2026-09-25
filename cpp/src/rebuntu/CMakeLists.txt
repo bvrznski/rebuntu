@@ -55,6 +55,24 @@ set(SEMANTIC_IPC_SRCS
 )
 target_sources(rebuntu PRIVATE ${SEMANTIC_IPC_HDRS} ${SEMANTIC_IPC_SRCS})
 
+# Add Docker provider implementation (Phase 3.5)
+set(DOCKER_PROVIDER_HDRS
+    ${CMAKE_SOURCE_DIR}/../src/system/infrastructure/docker.hpp
+)
+set(DOCKER_PROVIDER_SRCS
+    ${CMAKE_SOURCE_DIR}/../src/system/infrastructure/docker_provider.cpp
+)
+target_sources(rebuntu PRIVATE ${DOCKER_PROVIDER_HDRS} ${DOCKER_PROVIDER_SRCS})
+
+# Add Container runtime contracts implementation (Phase 3.6)
+set(CONTAINER_RUNTIME_HDRS
+    ${CMAKE_SOURCE_DIR}/../src/system/infrastructure/container.hpp
+)
+set(CONTAINER_RUNTIME_SRCS
+    ${CMAKE_SOURCE_DIR}/../src/system/infrastructure/container_runtime.cpp
+)
+target_sources(rebuntu PRIVATE ${CONTAINER_RUNTIME_HDRS} ${CONTAINER_RUNTIME_SRCS})
+
 # Add systemd_executor implementation (minimal proof for Phase 0.13)
 set(SYSTEMD_EXECUTOR_SRCS
     ${CMAKE_SOURCE_DIR}/../src/runtime/systemd_executor.hpp

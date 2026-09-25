@@ -140,6 +140,126 @@ rebuntu/fast:
 	cd /home/bvrznski/rebuntu/cpp/Build && $(MAKE) $(MAKESILENT) -f src/rebuntu/CMakeFiles/rebuntu.dir/build.make src/rebuntu/CMakeFiles/rebuntu.dir/build
 .PHONY : rebuntu/fast
 
+__/semantic/bitnet_provider.o: __/semantic/bitnet_provider.cpp.o
+.PHONY : __/semantic/bitnet_provider.o
+
+# target to build an object file
+__/semantic/bitnet_provider.cpp.o:
+	cd /home/bvrznski/rebuntu/cpp/Build && $(MAKE) $(MAKESILENT) -f src/rebuntu/CMakeFiles/rebuntu.dir/build.make src/rebuntu/CMakeFiles/rebuntu.dir/__/semantic/bitnet_provider.cpp.o
+.PHONY : __/semantic/bitnet_provider.cpp.o
+
+__/semantic/bitnet_provider.i: __/semantic/bitnet_provider.cpp.i
+.PHONY : __/semantic/bitnet_provider.i
+
+# target to preprocess a source file
+__/semantic/bitnet_provider.cpp.i:
+	cd /home/bvrznski/rebuntu/cpp/Build && $(MAKE) $(MAKESILENT) -f src/rebuntu/CMakeFiles/rebuntu.dir/build.make src/rebuntu/CMakeFiles/rebuntu.dir/__/semantic/bitnet_provider.cpp.i
+.PHONY : __/semantic/bitnet_provider.cpp.i
+
+__/semantic/bitnet_provider.s: __/semantic/bitnet_provider.cpp.s
+.PHONY : __/semantic/bitnet_provider.s
+
+# target to generate assembly for a file
+__/semantic/bitnet_provider.cpp.s:
+	cd /home/bvrznski/rebuntu/cpp/Build && $(MAKE) $(MAKESILENT) -f src/rebuntu/CMakeFiles/rebuntu.dir/build.make src/rebuntu/CMakeFiles/rebuntu.dir/__/semantic/bitnet_provider.cpp.s
+.PHONY : __/semantic/bitnet_provider.cpp.s
+
+__/semantic/ipc_client.o: __/semantic/ipc_client.cpp.o
+.PHONY : __/semantic/ipc_client.o
+
+# target to build an object file
+__/semantic/ipc_client.cpp.o:
+	cd /home/bvrznski/rebuntu/cpp/Build && $(MAKE) $(MAKESILENT) -f src/rebuntu/CMakeFiles/rebuntu.dir/build.make src/rebuntu/CMakeFiles/rebuntu.dir/__/semantic/ipc_client.cpp.o
+.PHONY : __/semantic/ipc_client.cpp.o
+
+__/semantic/ipc_client.i: __/semantic/ipc_client.cpp.i
+.PHONY : __/semantic/ipc_client.i
+
+# target to preprocess a source file
+__/semantic/ipc_client.cpp.i:
+	cd /home/bvrznski/rebuntu/cpp/Build && $(MAKE) $(MAKESILENT) -f src/rebuntu/CMakeFiles/rebuntu.dir/build.make src/rebuntu/CMakeFiles/rebuntu.dir/__/semantic/ipc_client.cpp.i
+.PHONY : __/semantic/ipc_client.cpp.i
+
+__/semantic/ipc_client.s: __/semantic/ipc_client.cpp.s
+.PHONY : __/semantic/ipc_client.s
+
+# target to generate assembly for a file
+__/semantic/ipc_client.cpp.s:
+	cd /home/bvrznski/rebuntu/cpp/Build && $(MAKE) $(MAKESILENT) -f src/rebuntu/CMakeFiles/rebuntu.dir/build.make src/rebuntu/CMakeFiles/rebuntu.dir/__/semantic/ipc_client.cpp.s
+.PHONY : __/semantic/ipc_client.cpp.s
+
+__/semantic/ipc_transport.o: __/semantic/ipc_transport.cpp.o
+.PHONY : __/semantic/ipc_transport.o
+
+# target to build an object file
+__/semantic/ipc_transport.cpp.o:
+	cd /home/bvrznski/rebuntu/cpp/Build && $(MAKE) $(MAKESILENT) -f src/rebuntu/CMakeFiles/rebuntu.dir/build.make src/rebuntu/CMakeFiles/rebuntu.dir/__/semantic/ipc_transport.cpp.o
+.PHONY : __/semantic/ipc_transport.cpp.o
+
+__/semantic/ipc_transport.i: __/semantic/ipc_transport.cpp.i
+.PHONY : __/semantic/ipc_transport.i
+
+# target to preprocess a source file
+__/semantic/ipc_transport.cpp.i:
+	cd /home/bvrznski/rebuntu/cpp/Build && $(MAKE) $(MAKESILENT) -f src/rebuntu/CMakeFiles/rebuntu.dir/build.make src/rebuntu/CMakeFiles/rebuntu.dir/__/semantic/ipc_transport.cpp.i
+.PHONY : __/semantic/ipc_transport.cpp.i
+
+__/semantic/ipc_transport.s: __/semantic/ipc_transport.cpp.s
+.PHONY : __/semantic/ipc_transport.s
+
+# target to generate assembly for a file
+__/semantic/ipc_transport.cpp.s:
+	cd /home/bvrznski/rebuntu/cpp/Build && $(MAKE) $(MAKESILENT) -f src/rebuntu/CMakeFiles/rebuntu.dir/build.make src/rebuntu/CMakeFiles/rebuntu.dir/__/semantic/ipc_transport.cpp.s
+.PHONY : __/semantic/ipc_transport.cpp.s
+
+__/semantic/service.o: __/semantic/service.cpp.o
+.PHONY : __/semantic/service.o
+
+# target to build an object file
+__/semantic/service.cpp.o:
+	cd /home/bvrznski/rebuntu/cpp/Build && $(MAKE) $(MAKESILENT) -f src/rebuntu/CMakeFiles/rebuntu.dir/build.make src/rebuntu/CMakeFiles/rebuntu.dir/__/semantic/service.cpp.o
+.PHONY : __/semantic/service.cpp.o
+
+__/semantic/service.i: __/semantic/service.cpp.i
+.PHONY : __/semantic/service.i
+
+# target to preprocess a source file
+__/semantic/service.cpp.i:
+	cd /home/bvrznski/rebuntu/cpp/Build && $(MAKE) $(MAKESILENT) -f src/rebuntu/CMakeFiles/rebuntu.dir/build.make src/rebuntu/CMakeFiles/rebuntu.dir/__/semantic/service.cpp.i
+.PHONY : __/semantic/service.cpp.i
+
+__/semantic/service.s: __/semantic/service.cpp.s
+.PHONY : __/semantic/service.s
+
+# target to generate assembly for a file
+__/semantic/service.cpp.s:
+	cd /home/bvrznski/rebuntu/cpp/Build && $(MAKE) $(MAKESILENT) -f src/rebuntu/CMakeFiles/rebuntu.dir/build.make src/rebuntu/CMakeFiles/rebuntu.dir/__/semantic/service.cpp.s
+.PHONY : __/semantic/service.cpp.s
+
+__/semantic/subprocess.o: __/semantic/subprocess.cpp.o
+.PHONY : __/semantic/subprocess.o
+
+# target to build an object file
+__/semantic/subprocess.cpp.o:
+	cd /home/bvrznski/rebuntu/cpp/Build && $(MAKE) $(MAKESILENT) -f src/rebuntu/CMakeFiles/rebuntu.dir/build.make src/rebuntu/CMakeFiles/rebuntu.dir/__/semantic/subprocess.cpp.o
+.PHONY : __/semantic/subprocess.cpp.o
+
+__/semantic/subprocess.i: __/semantic/subprocess.cpp.i
+.PHONY : __/semantic/subprocess.i
+
+# target to preprocess a source file
+__/semantic/subprocess.cpp.i:
+	cd /home/bvrznski/rebuntu/cpp/Build && $(MAKE) $(MAKESILENT) -f src/rebuntu/CMakeFiles/rebuntu.dir/build.make src/rebuntu/CMakeFiles/rebuntu.dir/__/semantic/subprocess.cpp.i
+.PHONY : __/semantic/subprocess.cpp.i
+
+__/semantic/subprocess.s: __/semantic/subprocess.cpp.s
+.PHONY : __/semantic/subprocess.s
+
+# target to generate assembly for a file
+__/semantic/subprocess.cpp.s:
+	cd /home/bvrznski/rebuntu/cpp/Build && $(MAKE) $(MAKESILENT) -f src/rebuntu/CMakeFiles/rebuntu.dir/build.make src/rebuntu/CMakeFiles/rebuntu.dir/__/semantic/subprocess.cpp.s
+.PHONY : __/semantic/subprocess.cpp.s
+
 home/bvrznski/rebuntu/src/runtime/dbus_executor.o: home/bvrznski/rebuntu/src/runtime/dbus_executor.cpp.o
 .PHONY : home/bvrznski/rebuntu/src/runtime/dbus_executor.o
 
@@ -486,6 +606,21 @@ help:
 	@echo "... rebuild_cache"
 	@echo "... test"
 	@echo "... rebuntu"
+	@echo "... __/semantic/bitnet_provider.o"
+	@echo "... __/semantic/bitnet_provider.i"
+	@echo "... __/semantic/bitnet_provider.s"
+	@echo "... __/semantic/ipc_client.o"
+	@echo "... __/semantic/ipc_client.i"
+	@echo "... __/semantic/ipc_client.s"
+	@echo "... __/semantic/ipc_transport.o"
+	@echo "... __/semantic/ipc_transport.i"
+	@echo "... __/semantic/ipc_transport.s"
+	@echo "... __/semantic/service.o"
+	@echo "... __/semantic/service.i"
+	@echo "... __/semantic/service.s"
+	@echo "... __/semantic/subprocess.o"
+	@echo "... __/semantic/subprocess.i"
+	@echo "... __/semantic/subprocess.s"
 	@echo "... home/bvrznski/rebuntu/src/runtime/dbus_executor.o"
 	@echo "... home/bvrznski/rebuntu/src/runtime/dbus_executor.i"
 	@echo "... home/bvrznski/rebuntu/src/runtime/dbus_executor.s"

@@ -77,6 +77,10 @@
 /home/bvrznski/rebuntu/cpp/Build/tests/CMakeFiles/test_locks.dir
 /home/bvrznski/rebuntu/cpp/Build/tests/CMakeFiles/test_ipc.dir
 /home/bvrznski/rebuntu/cpp/Build/tests/CMakeFiles/test_temp_files.dir
+/home/bvrznski/rebuntu/cpp/Build/tests/CMakeFiles/semantic_provider_test.dir
+/home/bvrznski/rebuntu/cpp/Build/tests/CMakeFiles/subprocess_executor_test.dir
+/home/bvrznski/rebuntu/cpp/Build/tests/CMakeFiles/semantic_service_test.dir
+/home/bvrznski/rebuntu/cpp/Build/tests/CMakeFiles/test_ipc_protocol.dir
 /home/bvrznski/rebuntu/cpp/Build/tests/CMakeFiles/infrastructure_test.dir
 /home/bvrznski/rebuntu/cpp/Build/tests/CMakeFiles/test.dir
 /home/bvrznski/rebuntu/cpp/Build/tests/CMakeFiles/edit_cache.dir

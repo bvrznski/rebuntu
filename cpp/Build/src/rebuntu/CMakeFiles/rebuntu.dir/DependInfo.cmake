@@ -8,6 +8,11 @@ set(CMAKE_DEPENDS_LANGUAGES
 
 # The set of dependency files which are needed:
 set(CMAKE_DEPENDS_DEPENDENCY_FILES
+  "/home/bvrznski/rebuntu/cpp/src/semantic/bitnet_provider.cpp" "src/rebuntu/CMakeFiles/rebuntu.dir/__/semantic/bitnet_provider.cpp.o" "gcc" "src/rebuntu/CMakeFiles/rebuntu.dir/__/semantic/bitnet_provider.cpp.o.d"
+  "/home/bvrznski/rebuntu/cpp/src/semantic/ipc_client.cpp" "src/rebuntu/CMakeFiles/rebuntu.dir/__/semantic/ipc_client.cpp.o" "gcc" "src/rebuntu/CMakeFiles/rebuntu.dir/__/semantic/ipc_client.cpp.o.d"
+  "/home/bvrznski/rebuntu/cpp/src/semantic/ipc_transport.cpp" "src/rebuntu/CMakeFiles/rebuntu.dir/__/semantic/ipc_transport.cpp.o" "gcc" "src/rebuntu/CMakeFiles/rebuntu.dir/__/semantic/ipc_transport.cpp.o.d"
+  "/home/bvrznski/rebuntu/cpp/src/semantic/service.cpp" "src/rebuntu/CMakeFiles/rebuntu.dir/__/semantic/service.cpp.o" "gcc" "src/rebuntu/CMakeFiles/rebuntu.dir/__/semantic/service.cpp.o.d"
+  "/home/bvrznski/rebuntu/cpp/src/semantic/subprocess.cpp" "src/rebuntu/CMakeFiles/rebuntu.dir/__/semantic/subprocess.cpp.o" "gcc" "src/rebuntu/CMakeFiles/rebuntu.dir/__/semantic/subprocess.cpp.o.d"
   "/home/bvrznski/rebuntu/src/runtime/dbus_executor.cpp" "src/rebuntu/CMakeFiles/rebuntu.dir/home/bvrznski/rebuntu/src/runtime/dbus_executor.cpp.o" "gcc" "src/rebuntu/CMakeFiles/rebuntu.dir/home/bvrznski/rebuntu/src/runtime/dbus_executor.cpp.o.d"
   "/home/bvrznski/rebuntu/src/runtime/subprocess_executor.cpp" "src/rebuntu/CMakeFiles/rebuntu.dir/home/bvrznski/rebuntu/src/runtime/subprocess_executor.cpp.o" "gcc" "src/rebuntu/CMakeFiles/rebuntu.dir/home/bvrznski/rebuntu/src/runtime/subprocess_executor.cpp.o.d"
   "/home/bvrznski/rebuntu/src/runtime/systemd_executor.cpp" "src/rebuntu/CMakeFiles/rebuntu.dir/home/bvrznski/rebuntu/src/runtime/systemd_executor.cpp.o" "gcc" "src/rebuntu/CMakeFiles/rebuntu.dir/home/bvrznski/rebuntu/src/runtime/systemd_executor.cpp.o.d"

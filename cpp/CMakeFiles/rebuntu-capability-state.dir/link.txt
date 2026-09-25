@@ -1,0 +1,2 @@
+/usr/bin/ar qc librebuntu-capability-state.a CMakeFiles/rebuntu-capability-state.dir/home/bvrznski/rebuntu/src/system/environment/capability_state.cpp.o
+/usr/bin/ranlib librebuntu-capability-state.a

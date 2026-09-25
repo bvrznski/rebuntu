@@ -8,6 +8,8 @@ set(CMAKE_DEPENDS_LANGUAGES
 
 # The set of dependency files which are needed:
 set(CMAKE_DEPENDS_DEPENDENCY_FILES
+  "/home/bvrznski/rebuntu/cpp/src/semantic/bitnet_provider.cpp" "src/core/CMakeFiles/rebuntu-core.dir/__/semantic/bitnet_provider.cpp.o" "gcc" "src/core/CMakeFiles/rebuntu-core.dir/__/semantic/bitnet_provider.cpp.o.d"
+  "/home/bvrznski/rebuntu/cpp/src/semantic/subprocess.cpp" "src/core/CMakeFiles/rebuntu-core.dir/__/semantic/subprocess.cpp.o" "gcc" "src/core/CMakeFiles/rebuntu-core.dir/__/semantic/subprocess.cpp.o.d"
   "/home/bvrznski/rebuntu/src/interfaces/provider_registry.cpp" "src/core/CMakeFiles/rebuntu-core.dir/home/bvrznski/rebuntu/src/interfaces/provider_registry.cpp.o" "gcc" "src/core/CMakeFiles/rebuntu-core.dir/home/bvrznski/rebuntu/src/interfaces/provider_registry.cpp.o.d"
   "/home/bvrznski/rebuntu/src/runtime/preferences/io.cpp" "src/core/CMakeFiles/rebuntu-core.dir/home/bvrznski/rebuntu/src/runtime/preferences/io.cpp.o" "gcc" "src/core/CMakeFiles/rebuntu-core.dir/home/bvrznski/rebuntu/src/runtime/preferences/io.cpp.o.d"
   )

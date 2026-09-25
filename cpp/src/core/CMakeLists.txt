@@ -4,7 +4,7 @@
 add_library(rebuntu-core STATIC)
 
 target_include_directories(rebuntu-core PUBLIC 
-    ${CMAKE_CURRENT_LIST_DIR}/../../../include
+    ${CMAKE_CURRENT_LIST_DIR}/../..
     ${CMAKE_CURRENT_LIST_DIR}/../../src
 )
 
@@ -41,3 +41,19 @@ target_sources(rebuntu-core PRIVATE ${PREFERENCES_MODEL_HDRS} ${PREFERENCES_IO_I
 
 # Phase 1.11: Lifecycle operations are now in a separate library (rebuntu-lifecycle)
 # The implementation is in src/system/lifecycle/
+
+# Phase 3.1-3.2: Semantic provider and subprocess for BitNet CPU-only inference
+# Paths relative to cpp/src/core:
+# - cpp/include/system/semantic/provider.hpp (two dirs up, then include)
+# - cpp/include/system/semantic/subprocess.hpp
+# - cpp/src/semantic/subprocess.cpp
+# - cpp/src/semantic/bitnet_provider.cpp
+set(SEMANTIC_PROVIDER_HDRS
+    ${CMAKE_CURRENT_LIST_DIR}/../../include/system/semantic/provider.hpp
+    ${CMAKE_CURRENT_LIST_DIR}/../../include/system/semantic/subprocess.hpp
+)
+set(SEMANTIC_PROVIDER_SRCS
+    ${CMAKE_CURRENT_LIST_DIR}/../semantic/subprocess.cpp
+    ${CMAKE_CURRENT_LIST_DIR}/../semantic/bitnet_provider.cpp
+)
+target_sources(rebuntu-core PRIVATE ${SEMANTIC_PROVIDER_HDRS} ${SEMANTIC_PROVIDER_SRCS})

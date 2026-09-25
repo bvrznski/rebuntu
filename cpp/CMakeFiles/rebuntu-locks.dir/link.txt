@@ -1,0 +1,2 @@
+/usr/bin/ar qc librebuntu-locks.a CMakeFiles/rebuntu-locks.dir/home/bvrznski/rebuntu/src/system/environment/locks.cpp.o
+/usr/bin/ranlib librebuntu-locks.a

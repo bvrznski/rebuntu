@@ -1,0 +1,2 @@
+/usr/bin/ar qc librebuntu-authorization.a CMakeFiles/rebuntu-authorization.dir/home/bvrznski/rebuntu/src/system/environment/authorization.cpp.o
+/usr/bin/ranlib librebuntu-authorization.a

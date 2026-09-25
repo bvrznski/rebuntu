@@ -2,6 +2,7 @@
 add_executable(runtime_runner_test runtime_runner_test.cpp)
 target_link_libraries(runtime_runner_test rebuntu-core)
 target_include_directories(runtime_runner_test PRIVATE 
+    ${CMAKE_CURRENT_LIST_DIR}/../include
     ${CMAKE_SOURCE_DIR}/src
     ${CMAKE_SOURCE_DIR}
 )
@@ -241,6 +242,53 @@ target_include_directories(test_temp_files PRIVATE
     ${CMAKE_SOURCE_DIR}
 )
 add_test(NAME test_temp_files COMMAND test_temp_files)
+
+# Phase 3.1: BitNet semantic provider tests (CPU-only)
+add_executable(semantic_provider_test semantic_provider_test.cpp)
+target_link_libraries(semantic_provider_test rebuntu-core)
+target_include_directories(semantic_provider_test PRIVATE 
+    ${CMAKE_CURRENT_LIST_DIR}/../include
+    ${CMAKE_SOURCE_DIR}/src
+    ${CMAKE_SOURCE_DIR}
+)
+add_test(NAME semantic_provider_test COMMAND semantic_provider_test)
+
+# Phase 3.2: Subprocess executor tests (timeout, I/O capture, CPU-only policy)
+add_executable(subprocess_executor_test subprocess_executor_test.cpp)
+target_link_libraries(subprocess_executor_test rebuntu-core)
+target_include_directories(subprocess_executor_test PRIVATE 
+    ${CMAKE_CURRENT_LIST_DIR}/../include
+    ${CMAKE_SOURCE_DIR}/src
+    ${CMAKE_SOURCE_DIR}
+)
+add_test(NAME subprocess_executor_test COMMAND subprocess_executor_test)
+
+# Phase 3.3: Native semantic service tests (lifecycle, readiness, health management)
+add_executable(semantic_service_test semantic_service_test.cpp)
+target_link_libraries(semantic_service_test rebuntu-core)
+target_include_directories(semantic_service_test PRIVATE 
+    ${CMAKE_CURRENT_LIST_DIR}/../include
+    ${CMAKE_SOURCE_DIR}/src
+    ${CMAKE_SOURCE_DIR}
+)
+# Add service implementation source directly to test target
+target_sources(semantic_service_test PRIVATE
+    ${CMAKE_SOURCE_DIR}/src/semantic/service.cpp
+)
+add_test(NAME semantic_service_test COMMAND semantic_service_test)
+
+# Phase 3.4: IPC Protocol tests (frame serialization, validation, adversarial cases)
+add_executable(test_ipc_protocol test_ipc_protocol.cpp)
+target_link_libraries(test_ipc_protocol rebuntu-core)
+target_include_directories(test_ipc_protocol PRIVATE 
+    ${CMAKE_SOURCE_DIR}/src
+    ${CMAKE_CURRENT_LIST_DIR}/../include
+)
+# Add IPC transport sources for serialization/deserialization functions
+target_sources(test_ipc_protocol PRIVATE
+    ${CMAKE_SOURCE_DIR}/src/semantic/ipc_transport.cpp
+)
+add_test(NAME test_ipc_protocol COMMAND test_ipc_protocol)
 
 # Phase 3.0: Infrastructure foundation tests
 add_executable(infrastructure_test infrastructure_test.cpp)

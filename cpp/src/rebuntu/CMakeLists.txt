@@ -5,14 +5,55 @@ add_executable(rebuntu main.cpp)
 
 target_link_libraries(rebuntu rebuntu-core)
 
-target_include_directories(rebuntu PRIVATE ${CMAKE_SOURCE_DIR}/../src)
+# Add include directories for semantic subprocess headers (src before include to resolve Outcome correctly)
+target_include_directories(rebuntu PRIVATE 
+    ${CMAKE_SOURCE_DIR}/../src
+    ${CMAKE_CURRENT_LIST_DIR}/../../include
+)
 
-# Add subprocess_executor implementation
-set(SUBPROCESS_EXECUTOR_SRCS
+# Add subprocess_executor implementation (original minimal proof for Phase 0.13)
+set(SUBPROCESS_EXECUTOR_MINIMAL_SRCS
     ${CMAKE_SOURCE_DIR}/../src/runtime/subprocess_executor.hpp
     ${CMAKE_SOURCE_DIR}/../src/runtime/subprocess_executor.cpp
 )
-target_sources(rebuntu PRIVATE ${SUBPROCESS_EXECUTOR_SRCS})
+target_sources(rebuntu PRIVATE ${SUBPROCESS_EXECUTOR_MINIMAL_SRCS})
+
+# Add semantic subprocess executor for bitnet.cpp (timeout, I/O capture, CPU-only policy)
+set(SEMANTIC_SUBPROCESS_HDRS
+    ${CMAKE_CURRENT_LIST_DIR}/../../include/system/semantic/subprocess.hpp
+)
+set(SEMANTIC_SUBPROCESS_SRCS
+    ${CMAKE_CURRENT_LIST_DIR}/../../src/semantic/subprocess.cpp
+)
+target_sources(rebuntu PRIVATE ${SEMANTIC_SUBPROCESS_HDRS} ${SEMANTIC_SUBPROCESS_SRCS})
+
+# Add bitnet provider implementation (Phase 3.1-3.2)
+set(BITNET_PROVIDER_HDRS
+    ${CMAKE_CURRENT_LIST_DIR}/../../include/system/semantic/provider.hpp
+)
+set(BITNET_PROVIDER_SRCS
+    ${CMAKE_CURRENT_LIST_DIR}/../../src/semantic/bitnet_provider.cpp
+)
+target_sources(rebuntu PRIVATE ${BITNET_PROVIDER_HDRS} ${BITNET_PROVIDER_SRCS})
+
+# Add semantic service implementation (Phase 3.3)
+set(SEMANTIC_SERVICE_HDRS
+    ${CMAKE_CURRENT_LIST_DIR}/../../include/system/semantic/service.hpp
+)
+set(SEMANTIC_SERVICE_SRCS
+    ${CMAKE_CURRENT_LIST_DIR}/../../src/semantic/service.cpp
+)
+target_sources(rebuntu PRIVATE ${SEMANTIC_SERVICE_HDRS} ${SEMANTIC_SERVICE_SRCS})
+
+# Add semantic IPC implementation (Phase 3.4)
+set(SEMANTIC_IPC_HDRS
+    ${CMAKE_CURRENT_LIST_DIR}/../../include/system/semantic/ipc.hpp
+)
+set(SEMANTIC_IPC_SRCS
+    ${CMAKE_CURRENT_LIST_DIR}/../../src/semantic/ipc_transport.cpp
+    ${CMAKE_CURRENT_LIST_DIR}/../../src/semantic/ipc_client.cpp
+)
+target_sources(rebuntu PRIVATE ${SEMANTIC_IPC_HDRS} ${SEMANTIC_IPC_SRCS})
 
 # Add systemd_executor implementation (minimal proof for Phase 0.13)
 set(SYSTEMD_EXECUTOR_SRCS

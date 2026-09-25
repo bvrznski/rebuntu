@@ -6,8 +6,10 @@ Phase 3.1 established Rebuntu's native CPU-only semantic provider interface usin
 
 - **Semantic Provider Contract**: Header-only typed interfaces for semantic/model providers
 - **BitNet Provider Adapter**: Implementation using PIMPL pattern for bitnet.cpp integration
-- **Registry Pattern**: Central provider management with ownership transfer semantics
+- **Registry Pattern**: Central provider management with ownership transfer semantics  
 - **CPU-Only Enforcement**: Verified that GPU use is blocked by default
+- **GPU Policy System**: Explicit GPU control (kCPUOnly/kAllowGPU/kRequireGPU)
+- **Model Artifact Management**: Download, verification, and cache infrastructure
 
 **Status**: COMPLETE — All tests passing, build verified.
 
@@ -169,18 +171,20 @@ cd /home/bvrznski/rebuntu/cpp/build && ./tests/test_semantic_provider
 | Task | Reason | Target Phase |
 |------|--------|--------------|
 | Actual bitnet.cpp integration | Model files not yet downloaded | Phase 3.2+ |
-| GPU support option | Requires explicit policy decision | Phase 3.x |
 | Async provider execution | Not required for initial bootstrap | Phase 3.x |
+
+Note: GPU support policy system (kCPUOnly/kAllowGPU/kRequireGPU) is fully implemented in this phase.
 
 ---
 
 ## Remaining Risks
 
 1. **Model availability**: BitNet b1.58 model must be downloaded separately
-2. **bitnet.cpp compatibility**: Future versions may have API changes
+2. **bitnet.cpp compatibility**: Future versions may have API changes  
 3. **Memory limits**: No hard memory limit enforcement yet
+4. **Async support**: Provider interface does not yet expose async operations
 
-Mitigation: Implementation is structured so these are configuration issues, not code changes.
+Mitigation: Implementation is structured so these are configuration/interface extension issues, not code changes.
 
 ---
 

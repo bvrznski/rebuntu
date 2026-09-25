@@ -491,6 +491,62 @@ test_temp_files/fast:
 .PHONY : test_temp_files/fast
 
 # Convenience name for target.
+tests/CMakeFiles/semantic_provider_test.dir/rule:
+	cd /home/bvrznski/rebuntu/cpp/Build && $(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 tests/CMakeFiles/semantic_provider_test.dir/rule
+.PHONY : tests/CMakeFiles/semantic_provider_test.dir/rule
+
+# Convenience name for target.
+semantic_provider_test: tests/CMakeFiles/semantic_provider_test.dir/rule
+.PHONY : semantic_provider_test
+
+# fast build rule for target.
+semantic_provider_test/fast:
+	cd /home/bvrznski/rebuntu/cpp/Build && $(MAKE) $(MAKESILENT) -f tests/CMakeFiles/semantic_provider_test.dir/build.make tests/CMakeFiles/semantic_provider_test.dir/build
+.PHONY : semantic_provider_test/fast
+
+# Convenience name for target.
+tests/CMakeFiles/subprocess_executor_test.dir/rule:
+	cd /home/bvrznski/rebuntu/cpp/Build && $(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 tests/CMakeFiles/subprocess_executor_test.dir/rule
+.PHONY : tests/CMakeFiles/subprocess_executor_test.dir/rule
+
+# Convenience name for target.
+subprocess_executor_test: tests/CMakeFiles/subprocess_executor_test.dir/rule
+.PHONY : subprocess_executor_test
+
+# fast build rule for target.
+subprocess_executor_test/fast:
+	cd /home/bvrznski/rebuntu/cpp/Build && $(MAKE) $(MAKESILENT) -f tests/CMakeFiles/subprocess_executor_test.dir/build.make tests/CMakeFiles/subprocess_executor_test.dir/build
+.PHONY : subprocess_executor_test/fast
+
+# Convenience name for target.
+tests/CMakeFiles/semantic_service_test.dir/rule:
+	cd /home/bvrznski/rebuntu/cpp/Build && $(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 tests/CMakeFiles/semantic_service_test.dir/rule
+.PHONY : tests/CMakeFiles/semantic_service_test.dir/rule
+
+# Convenience name for target.
+semantic_service_test: tests/CMakeFiles/semantic_service_test.dir/rule
+.PHONY : semantic_service_test
+
+# fast build rule for target.
+semantic_service_test/fast:
+	cd /home/bvrznski/rebuntu/cpp/Build && $(MAKE) $(MAKESILENT) -f tests/CMakeFiles/semantic_service_test.dir/build.make tests/CMakeFiles/semantic_service_test.dir/build
+.PHONY : semantic_service_test/fast
+
+# Convenience name for target.
+tests/CMakeFiles/test_ipc_protocol.dir/rule:
+	cd /home/bvrznski/rebuntu/cpp/Build && $(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 tests/CMakeFiles/test_ipc_protocol.dir/rule
+.PHONY : tests/CMakeFiles/test_ipc_protocol.dir/rule
+
+# Convenience name for target.
+test_ipc_protocol: tests/CMakeFiles/test_ipc_protocol.dir/rule
+.PHONY : test_ipc_protocol
+
+# fast build rule for target.
+test_ipc_protocol/fast:
+	cd /home/bvrznski/rebuntu/cpp/Build && $(MAKE) $(MAKESILENT) -f tests/CMakeFiles/test_ipc_protocol.dir/build.make tests/CMakeFiles/test_ipc_protocol.dir/build
+.PHONY : test_ipc_protocol/fast
+
+# Convenience name for target.
 tests/CMakeFiles/infrastructure_test.dir/rule:
 	cd /home/bvrznski/rebuntu/cpp/Build && $(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 tests/CMakeFiles/infrastructure_test.dir/rule
 .PHONY : tests/CMakeFiles/infrastructure_test.dir/rule
@@ -503,6 +559,54 @@ infrastructure_test: tests/CMakeFiles/infrastructure_test.dir/rule
 infrastructure_test/fast:
 	cd /home/bvrznski/rebuntu/cpp/Build && $(MAKE) $(MAKESILENT) -f tests/CMakeFiles/infrastructure_test.dir/build.make tests/CMakeFiles/infrastructure_test.dir/build
 .PHONY : infrastructure_test/fast
+
+__/src/semantic/ipc_transport.o: __/src/semantic/ipc_transport.cpp.o
+.PHONY : __/src/semantic/ipc_transport.o
+
+# target to build an object file
+__/src/semantic/ipc_transport.cpp.o:
+	cd /home/bvrznski/rebuntu/cpp/Build && $(MAKE) $(MAKESILENT) -f tests/CMakeFiles/test_ipc_protocol.dir/build.make tests/CMakeFiles/test_ipc_protocol.dir/__/src/semantic/ipc_transport.cpp.o
+.PHONY : __/src/semantic/ipc_transport.cpp.o
+
+__/src/semantic/ipc_transport.i: __/src/semantic/ipc_transport.cpp.i
+.PHONY : __/src/semantic/ipc_transport.i
+
+# target to preprocess a source file
+__/src/semantic/ipc_transport.cpp.i:
+	cd /home/bvrznski/rebuntu/cpp/Build && $(MAKE) $(MAKESILENT) -f tests/CMakeFiles/test_ipc_protocol.dir/build.make tests/CMakeFiles/test_ipc_protocol.dir/__/src/semantic/ipc_transport.cpp.i
+.PHONY : __/src/semantic/ipc_transport.cpp.i
+
+__/src/semantic/ipc_transport.s: __/src/semantic/ipc_transport.cpp.s
+.PHONY : __/src/semantic/ipc_transport.s
+
+# target to generate assembly for a file
+__/src/semantic/ipc_transport.cpp.s:
+	cd /home/bvrznski/rebuntu/cpp/Build && $(MAKE) $(MAKESILENT) -f tests/CMakeFiles/test_ipc_protocol.dir/build.make tests/CMakeFiles/test_ipc_protocol.dir/__/src/semantic/ipc_transport.cpp.s
+.PHONY : __/src/semantic/ipc_transport.cpp.s
+
+__/src/semantic/service.o: __/src/semantic/service.cpp.o
+.PHONY : __/src/semantic/service.o
+
+# target to build an object file
+__/src/semantic/service.cpp.o:
+	cd /home/bvrznski/rebuntu/cpp/Build && $(MAKE) $(MAKESILENT) -f tests/CMakeFiles/semantic_service_test.dir/build.make tests/CMakeFiles/semantic_service_test.dir/__/src/semantic/service.cpp.o
+.PHONY : __/src/semantic/service.cpp.o
+
+__/src/semantic/service.i: __/src/semantic/service.cpp.i
+.PHONY : __/src/semantic/service.i
+
+# target to preprocess a source file
+__/src/semantic/service.cpp.i:
+	cd /home/bvrznski/rebuntu/cpp/Build && $(MAKE) $(MAKESILENT) -f tests/CMakeFiles/semantic_service_test.dir/build.make tests/CMakeFiles/semantic_service_test.dir/__/src/semantic/service.cpp.i
+.PHONY : __/src/semantic/service.cpp.i
+
+__/src/semantic/service.s: __/src/semantic/service.cpp.s
+.PHONY : __/src/semantic/service.s
+
+# target to generate assembly for a file
+__/src/semantic/service.cpp.s:
+	cd /home/bvrznski/rebuntu/cpp/Build && $(MAKE) $(MAKESILENT) -f tests/CMakeFiles/semantic_service_test.dir/build.make tests/CMakeFiles/semantic_service_test.dir/__/src/semantic/service.cpp.s
+.PHONY : __/src/semantic/service.cpp.s
 
 automation_test.o: automation_test.cpp.o
 .PHONY : automation_test.o
@@ -1008,6 +1112,54 @@ runtime_runner_test.cpp.s:
 	cd /home/bvrznski/rebuntu/cpp/Build && $(MAKE) $(MAKESILENT) -f tests/CMakeFiles/runtime_runner_test.dir/build.make tests/CMakeFiles/runtime_runner_test.dir/runtime_runner_test.cpp.s
 .PHONY : runtime_runner_test.cpp.s
 
+semantic_provider_test.o: semantic_provider_test.cpp.o
+.PHONY : semantic_provider_test.o
+
+# target to build an object file
+semantic_provider_test.cpp.o:
+	cd /home/bvrznski/rebuntu/cpp/Build && $(MAKE) $(MAKESILENT) -f tests/CMakeFiles/semantic_provider_test.dir/build.make tests/CMakeFiles/semantic_provider_test.dir/semantic_provider_test.cpp.o
+.PHONY : semantic_provider_test.cpp.o
+
+semantic_provider_test.i: semantic_provider_test.cpp.i
+.PHONY : semantic_provider_test.i
+
+# target to preprocess a source file
+semantic_provider_test.cpp.i:
+	cd /home/bvrznski/rebuntu/cpp/Build && $(MAKE) $(MAKESILENT) -f tests/CMakeFiles/semantic_provider_test.dir/build.make tests/CMakeFiles/semantic_provider_test.dir/semantic_provider_test.cpp.i
+.PHONY : semantic_provider_test.cpp.i
+
+semantic_provider_test.s: semantic_provider_test.cpp.s
+.PHONY : semantic_provider_test.s
+
+# target to generate assembly for a file
+semantic_provider_test.cpp.s:
+	cd /home/bvrznski/rebuntu/cpp/Build && $(MAKE) $(MAKESILENT) -f tests/CMakeFiles/semantic_provider_test.dir/build.make tests/CMakeFiles/semantic_provider_test.dir/semantic_provider_test.cpp.s
+.PHONY : semantic_provider_test.cpp.s
+
+semantic_service_test.o: semantic_service_test.cpp.o
+.PHONY : semantic_service_test.o
+
+# target to build an object file
+semantic_service_test.cpp.o:
+	cd /home/bvrznski/rebuntu/cpp/Build && $(MAKE) $(MAKESILENT) -f tests/CMakeFiles/semantic_service_test.dir/build.make tests/CMakeFiles/semantic_service_test.dir/semantic_service_test.cpp.o
+.PHONY : semantic_service_test.cpp.o
+
+semantic_service_test.i: semantic_service_test.cpp.i
+.PHONY : semantic_service_test.i
+
+# target to preprocess a source file
+semantic_service_test.cpp.i:
+	cd /home/bvrznski/rebuntu/cpp/Build && $(MAKE) $(MAKESILENT) -f tests/CMakeFiles/semantic_service_test.dir/build.make tests/CMakeFiles/semantic_service_test.dir/semantic_service_test.cpp.i
+.PHONY : semantic_service_test.cpp.i
+
+semantic_service_test.s: semantic_service_test.cpp.s
+.PHONY : semantic_service_test.s
+
+# target to generate assembly for a file
+semantic_service_test.cpp.s:
+	cd /home/bvrznski/rebuntu/cpp/Build && $(MAKE) $(MAKESILENT) -f tests/CMakeFiles/semantic_service_test.dir/build.make tests/CMakeFiles/semantic_service_test.dir/semantic_service_test.cpp.s
+.PHONY : semantic_service_test.cpp.s
+
 settings_test.o: settings_test.cpp.o
 .PHONY : settings_test.o
 
@@ -1031,6 +1183,30 @@ settings_test.s: settings_test.cpp.s
 settings_test.cpp.s:
 	cd /home/bvrznski/rebuntu/cpp/Build && $(MAKE) $(MAKESILENT) -f tests/CMakeFiles/settings_test.dir/build.make tests/CMakeFiles/settings_test.dir/settings_test.cpp.s
 .PHONY : settings_test.cpp.s
+
+subprocess_executor_test.o: subprocess_executor_test.cpp.o
+.PHONY : subprocess_executor_test.o
+
+# target to build an object file
+subprocess_executor_test.cpp.o:
+	cd /home/bvrznski/rebuntu/cpp/Build && $(MAKE) $(MAKESILENT) -f tests/CMakeFiles/subprocess_executor_test.dir/build.make tests/CMakeFiles/subprocess_executor_test.dir/subprocess_executor_test.cpp.o
+.PHONY : subprocess_executor_test.cpp.o
+
+subprocess_executor_test.i: subprocess_executor_test.cpp.i
+.PHONY : subprocess_executor_test.i
+
+# target to preprocess a source file
+subprocess_executor_test.cpp.i:
+	cd /home/bvrznski/rebuntu/cpp/Build && $(MAKE) $(MAKESILENT) -f tests/CMakeFiles/subprocess_executor_test.dir/build.make tests/CMakeFiles/subprocess_executor_test.dir/subprocess_executor_test.cpp.i
+.PHONY : subprocess_executor_test.cpp.i
+
+subprocess_executor_test.s: subprocess_executor_test.cpp.s
+.PHONY : subprocess_executor_test.s
+
+# target to generate assembly for a file
+subprocess_executor_test.cpp.s:
+	cd /home/bvrznski/rebuntu/cpp/Build && $(MAKE) $(MAKESILENT) -f tests/CMakeFiles/subprocess_executor_test.dir/build.make tests/CMakeFiles/subprocess_executor_test.dir/subprocess_executor_test.cpp.s
+.PHONY : subprocess_executor_test.cpp.s
 
 test_directories.o: test_directories.cpp.o
 .PHONY : test_directories.o
@@ -1079,6 +1255,30 @@ test_ipc.s: test_ipc.cpp.s
 test_ipc.cpp.s:
 	cd /home/bvrznski/rebuntu/cpp/Build && $(MAKE) $(MAKESILENT) -f tests/CMakeFiles/test_ipc.dir/build.make tests/CMakeFiles/test_ipc.dir/test_ipc.cpp.s
 .PHONY : test_ipc.cpp.s
+
+test_ipc_protocol.o: test_ipc_protocol.cpp.o
+.PHONY : test_ipc_protocol.o
+
+# target to build an object file
+test_ipc_protocol.cpp.o:
+	cd /home/bvrznski/rebuntu/cpp/Build && $(MAKE) $(MAKESILENT) -f tests/CMakeFiles/test_ipc_protocol.dir/build.make tests/CMakeFiles/test_ipc_protocol.dir/test_ipc_protocol.cpp.o
+.PHONY : test_ipc_protocol.cpp.o
+
+test_ipc_protocol.i: test_ipc_protocol.cpp.i
+.PHONY : test_ipc_protocol.i
+
+# target to preprocess a source file
+test_ipc_protocol.cpp.i:
+	cd /home/bvrznski/rebuntu/cpp/Build && $(MAKE) $(MAKESILENT) -f tests/CMakeFiles/test_ipc_protocol.dir/build.make tests/CMakeFiles/test_ipc_protocol.dir/test_ipc_protocol.cpp.i
+.PHONY : test_ipc_protocol.cpp.i
+
+test_ipc_protocol.s: test_ipc_protocol.cpp.s
+.PHONY : test_ipc_protocol.s
+
+# target to generate assembly for a file
+test_ipc_protocol.cpp.s:
+	cd /home/bvrznski/rebuntu/cpp/Build && $(MAKE) $(MAKESILENT) -f tests/CMakeFiles/test_ipc_protocol.dir/build.make tests/CMakeFiles/test_ipc_protocol.dir/test_ipc_protocol.cpp.s
+.PHONY : test_ipc_protocol.cpp.s
 
 test_locks.o: test_locks.cpp.o
 .PHONY : test_locks.o
@@ -1247,11 +1447,15 @@ help:
 	@echo "... profile_test"
 	@echo "... results_test"
 	@echo "... runtime_runner_test"
+	@echo "... semantic_provider_test"
+	@echo "... semantic_service_test"
 	@echo "... settings_test"
 	@echo "... structured_setup_test"
+	@echo "... subprocess_executor_test"
 	@echo "... test_directories"
 	@echo "... test_discovery"
 	@echo "... test_ipc"
+	@echo "... test_ipc_protocol"
 	@echo "... test_locks"
 	@echo "... test_runtime_contracts"
 	@echo "... test_scope"
@@ -1260,6 +1464,12 @@ help:
 	@echo "... test_state_provider"
 	@echo "... test_temp_files"
 	@echo "... user_identity_test"
+	@echo "... __/src/semantic/ipc_transport.o"
+	@echo "... __/src/semantic/ipc_transport.i"
+	@echo "... __/src/semantic/ipc_transport.s"
+	@echo "... __/src/semantic/service.o"
+	@echo "... __/src/semantic/service.i"
+	@echo "... __/src/semantic/service.s"
 	@echo "... automation_test.o"
 	@echo "... automation_test.i"
 	@echo "... automation_test.s"
@@ -1323,15 +1533,27 @@ help:
 	@echo "... runtime_runner_test.o"
 	@echo "... runtime_runner_test.i"
 	@echo "... runtime_runner_test.s"
+	@echo "... semantic_provider_test.o"
+	@echo "... semantic_provider_test.i"
+	@echo "... semantic_provider_test.s"
+	@echo "... semantic_service_test.o"
+	@echo "... semantic_service_test.i"
+	@echo "... semantic_service_test.s"
 	@echo "... settings_test.o"
 	@echo "... settings_test.i"
 	@echo "... settings_test.s"
+	@echo "... subprocess_executor_test.o"
+	@echo "... subprocess_executor_test.i"
+	@echo "... subprocess_executor_test.s"
 	@echo "... test_directories.o"
 	@echo "... test_directories.i"
 	@echo "... test_directories.s"
 	@echo "... test_ipc.o"
 	@echo "... test_ipc.i"
 	@echo "... test_ipc.s"
+	@echo "... test_ipc_protocol.o"
+	@echo "... test_ipc_protocol.i"
+	@echo "... test_ipc_protocol.s"
 	@echo "... test_locks.o"
 	@echo "... test_locks.i"
 	@echo "... test_locks.s"

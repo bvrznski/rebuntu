@@ -1076,6 +1076,58 @@ test_temp_files/fast:
 .PHONY : test_temp_files/fast
 
 #=============================================================================
+# Target rules for targets named semantic_provider_test
+
+# Build rule for target.
+semantic_provider_test: cmake_check_build_system
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 semantic_provider_test
+.PHONY : semantic_provider_test
+
+# fast build rule for target.
+semantic_provider_test/fast:
+	$(MAKE) $(MAKESILENT) -f tests/CMakeFiles/semantic_provider_test.dir/build.make tests/CMakeFiles/semantic_provider_test.dir/build
+.PHONY : semantic_provider_test/fast
+
+#=============================================================================
+# Target rules for targets named subprocess_executor_test
+
+# Build rule for target.
+subprocess_executor_test: cmake_check_build_system
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 subprocess_executor_test
+.PHONY : subprocess_executor_test
+
+# fast build rule for target.
+subprocess_executor_test/fast:
+	$(MAKE) $(MAKESILENT) -f tests/CMakeFiles/subprocess_executor_test.dir/build.make tests/CMakeFiles/subprocess_executor_test.dir/build
+.PHONY : subprocess_executor_test/fast
+
+#=============================================================================
+# Target rules for targets named semantic_service_test
+
+# Build rule for target.
+semantic_service_test: cmake_check_build_system
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 semantic_service_test
+.PHONY : semantic_service_test
+
+# fast build rule for target.
+semantic_service_test/fast:
+	$(MAKE) $(MAKESILENT) -f tests/CMakeFiles/semantic_service_test.dir/build.make tests/CMakeFiles/semantic_service_test.dir/build
+.PHONY : semantic_service_test/fast
+
+#=============================================================================
+# Target rules for targets named test_ipc_protocol
+
+# Build rule for target.
+test_ipc_protocol: cmake_check_build_system
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 test_ipc_protocol
+.PHONY : test_ipc_protocol
+
+# fast build rule for target.
+test_ipc_protocol/fast:
+	$(MAKE) $(MAKESILENT) -f tests/CMakeFiles/test_ipc_protocol.dir/build.make tests/CMakeFiles/test_ipc_protocol.dir/build
+.PHONY : test_ipc_protocol/fast
+
+#=============================================================================
 # Target rules for targets named infrastructure_test
 
 # Build rule for target.
@@ -1676,11 +1728,15 @@ help:
 	@echo "... rebuntu-user-identity"
 	@echo "... results_test"
 	@echo "... runtime_runner_test"
+	@echo "... semantic_provider_test"
+	@echo "... semantic_service_test"
 	@echo "... settings_test"
 	@echo "... structured_setup_test"
+	@echo "... subprocess_executor_test"
 	@echo "... test_directories"
 	@echo "... test_discovery"
 	@echo "... test_ipc"
+	@echo "... test_ipc_protocol"
 	@echo "... test_locks"
 	@echo "... test_runtime_contracts"
 	@echo "... test_scope"

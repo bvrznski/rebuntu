@@ -10,7 +10,7 @@ add_library(rebuntu-setup STATIC
 
 target_include_directories(rebuntu-setup PUBLIC
     ${CMAKE_CURRENT_LIST_DIR}
-    ${CMAKE_SOURCE_DIR}/../src
+    ${CMAKE_SOURCE_DIR}/src
 )
 
 target_link_libraries(rebuntu-setup PUBLIC rebuntu-core)

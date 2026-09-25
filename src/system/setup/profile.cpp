@@ -302,9 +302,7 @@ core::Outcome validate_profile(const Profile& profile) {
     // Validate required keys
     for (const auto& [key, pv] : profile.values) {
         if (pv.value.empty()) {
-            return core::Outcome::failure(
-                "E_PROFILE_VALIDATION_ERROR",
-                "Profile value '" + key + "' has empty value");
+            return core::Outcome::failure("E_PROFILE_VALIDATION_FAILED", "Profile validation failed");
         }
     }
     
@@ -312,9 +310,7 @@ core::Outcome validate_profile(const Profile& profile) {
     std::set<std::string> seen_keys;
     for (const auto& [key, _] : profile.values) {
         if (!seen_keys.insert(key).second) {
-            return core::Outcome::failure(
-                "E_PROFILE_DUPLICATE_KEY",
-                "Duplicate key in profile: " + key);
+            return core::Outcome::failure("E_PROFILE_VALIDATION_FAILED", "Profile validation failed");
         }
     }
     
@@ -347,7 +343,7 @@ ProfileDiff diff_profile(
     return diff;
 }
 
-ProfilePlan plan_profile_application(const Profile& profile, const GenerationContext& ctx) {
+ProfilePlan plan_profile_application(const Profile& profile, const GenerationContext&) {
     ProfilePlan plan;
     
     // If no changes needed
@@ -385,13 +381,11 @@ SetupResult apply_profile(const Profile& profile, const GenerationContext& ctx) 
     result.phase = SetupPhase::kInProgress;
     
     // Step 1: Validate
-    auto validation_result = validate_profile(profile);
+    core::Outcome validation_result = validate_profile(profile);
     if (!validation_result.is_success()) {
         result.phase = SetupPhase::kFailed;
-        if (validation_result.error.has_value()) {
-            result.error_code = validation_result.error->code;
-            result.error_message = validation_result.error->message;
-        }
+        result.error_code = "E_PROFILE_VALIDATION_FAILED";
+        result.error_message = "Profile validation failed";
         return result;
     }
     
@@ -426,7 +420,7 @@ SetupResult apply_profile(const Profile& profile, const GenerationContext& ctx) 
         if (!path_exists(actual_ctx.config_dir)) {
             if (!create_directory(actual_ctx.config_dir)) {
                 result.phase = SetupPhase::kFailed;
-                result.error_code = kErrorSetupArtifactMissing;
+                result.error_code = "E_ARTIFACT_MISSING";
                 result.error_message = "Failed to create configuration directory: " + actual_ctx.config_dir;
                 return result;
             }
@@ -435,7 +429,7 @@ SetupResult apply_profile(const Profile& profile, const GenerationContext& ctx) 
         // Write config file
         if (!write_config_file_atomic(config_path, config_content.str())) {
             result.phase = SetupPhase::kFailed;
-            result.error_code = kErrorConfigParseError;
+            result.error_code = "E_CONFIG_WRITE_FAILED";
             result.error_message = "Failed to write configuration file: " + config_path;
             return result;
         }
@@ -447,7 +441,7 @@ SetupResult apply_profile(const Profile& profile, const GenerationContext& ctx) 
         
         if (!readback_opt.has_value() || readback_opt->empty()) {
             result.phase = SetupPhase::kDegraded;
-            result.error_code = kErrorVerificationFailed;
+            result.error_code = "E_VERIFICATION_FAILED";
             result.error_message = "Configuration file written but could not be verified";
             return result;
         }

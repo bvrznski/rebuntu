@@ -140,6 +140,54 @@ rebuntu-core/fast:
 	cd /home/bvrznski/rebuntu/cpp/Build && $(MAKE) $(MAKESILENT) -f src/core/CMakeFiles/rebuntu-core.dir/build.make src/core/CMakeFiles/rebuntu-core.dir/build
 .PHONY : rebuntu-core/fast
 
+__/semantic/bitnet_provider.o: __/semantic/bitnet_provider.cpp.o
+.PHONY : __/semantic/bitnet_provider.o
+
+# target to build an object file
+__/semantic/bitnet_provider.cpp.o:
+	cd /home/bvrznski/rebuntu/cpp/Build && $(MAKE) $(MAKESILENT) -f src/core/CMakeFiles/rebuntu-core.dir/build.make src/core/CMakeFiles/rebuntu-core.dir/__/semantic/bitnet_provider.cpp.o
+.PHONY : __/semantic/bitnet_provider.cpp.o
+
+__/semantic/bitnet_provider.i: __/semantic/bitnet_provider.cpp.i
+.PHONY : __/semantic/bitnet_provider.i
+
+# target to preprocess a source file
+__/semantic/bitnet_provider.cpp.i:
+	cd /home/bvrznski/rebuntu/cpp/Build && $(MAKE) $(MAKESILENT) -f src/core/CMakeFiles/rebuntu-core.dir/build.make src/core/CMakeFiles/rebuntu-core.dir/__/semantic/bitnet_provider.cpp.i
+.PHONY : __/semantic/bitnet_provider.cpp.i
+
+__/semantic/bitnet_provider.s: __/semantic/bitnet_provider.cpp.s
+.PHONY : __/semantic/bitnet_provider.s
+
+# target to generate assembly for a file
+__/semantic/bitnet_provider.cpp.s:
+	cd /home/bvrznski/rebuntu/cpp/Build && $(MAKE) $(MAKESILENT) -f src/core/CMakeFiles/rebuntu-core.dir/build.make src/core/CMakeFiles/rebuntu-core.dir/__/semantic/bitnet_provider.cpp.s
+.PHONY : __/semantic/bitnet_provider.cpp.s
+
+__/semantic/subprocess.o: __/semantic/subprocess.cpp.o
+.PHONY : __/semantic/subprocess.o
+
+# target to build an object file
+__/semantic/subprocess.cpp.o:
+	cd /home/bvrznski/rebuntu/cpp/Build && $(MAKE) $(MAKESILENT) -f src/core/CMakeFiles/rebuntu-core.dir/build.make src/core/CMakeFiles/rebuntu-core.dir/__/semantic/subprocess.cpp.o
+.PHONY : __/semantic/subprocess.cpp.o
+
+__/semantic/subprocess.i: __/semantic/subprocess.cpp.i
+.PHONY : __/semantic/subprocess.i
+
+# target to preprocess a source file
+__/semantic/subprocess.cpp.i:
+	cd /home/bvrznski/rebuntu/cpp/Build && $(MAKE) $(MAKESILENT) -f src/core/CMakeFiles/rebuntu-core.dir/build.make src/core/CMakeFiles/rebuntu-core.dir/__/semantic/subprocess.cpp.i
+.PHONY : __/semantic/subprocess.cpp.i
+
+__/semantic/subprocess.s: __/semantic/subprocess.cpp.s
+.PHONY : __/semantic/subprocess.s
+
+# target to generate assembly for a file
+__/semantic/subprocess.cpp.s:
+	cd /home/bvrznski/rebuntu/cpp/Build && $(MAKE) $(MAKESILENT) -f src/core/CMakeFiles/rebuntu-core.dir/build.make src/core/CMakeFiles/rebuntu-core.dir/__/semantic/subprocess.cpp.s
+.PHONY : __/semantic/subprocess.cpp.s
+
 home/bvrznski/rebuntu/src/interfaces/provider_registry.o: home/bvrznski/rebuntu/src/interfaces/provider_registry.cpp.o
 .PHONY : home/bvrznski/rebuntu/src/interfaces/provider_registry.o
 
@@ -198,6 +246,12 @@ help:
 	@echo "... rebuild_cache"
 	@echo "... test"
 	@echo "... rebuntu-core"
+	@echo "... __/semantic/bitnet_provider.o"
+	@echo "... __/semantic/bitnet_provider.i"
+	@echo "... __/semantic/bitnet_provider.s"
+	@echo "... __/semantic/subprocess.o"
+	@echo "... __/semantic/subprocess.i"
+	@echo "... __/semantic/subprocess.s"
 	@echo "... home/bvrznski/rebuntu/src/interfaces/provider_registry.o"
 	@echo "... home/bvrznski/rebuntu/src/interfaces/provider_registry.i"
 	@echo "... home/bvrznski/rebuntu/src/interfaces/provider_registry.s"

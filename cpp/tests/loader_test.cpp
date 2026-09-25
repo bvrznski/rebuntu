@@ -105,8 +105,7 @@ void test_load_result_failure() {
 }
 
 void test_load_result_skipped() {
-    DefinitionId id{"skipped"};
-    auto result = LoadResult::skipped(id, "untrusted source");
+    auto result = LoadResult::skipped("untrusted source");
     
     if (result.status != LoadResultStatus::kSkipped) {
         throw std::runtime_error("Skipped result has wrong status");

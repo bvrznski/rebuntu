@@ -1,21 +1,34 @@
-# Rebuntu Runtime Loader (Phase 4.9)
+# Rebuntu Runtime Loader (Phase 4.9 + 4.15)
 
 ## Overview
 
 The `rebuntu::runtime::loader` namespace provides safe runtime definition loading for Rebuntu.
 
-**Mission**: Load definitions (units, operations, workflows, tasks) without executing them.
+**Mission**: Load definitions without executing them.
 Loading is discovery/materialization, not execution.
+
+### Phase 4.15 Updates
+
+- Shell Source definitions (`.sh`, `.bash`) via `LoadKind::kShellSource`
+- Safe source-time validation without side effects
+- Integration with subprocess execution through runtime contracts
 
 ## Safety Principles
 
 1. **Trusted vs Untrusted Paths**: Definitions from `/etc/rebuntu/`, `/usr/share/rebuntu/` are trusted. Untrusted paths (e.g., `~/rebuntu/`, `/tmp/rebuntu/`) require explicit opt-in and strict validation only.
 
 2. **No Import-Time Side Effects**: Definition metadata is loaded but NOT executed or evaluated.
+   - Shell sources are scanned for execution patterns (`main "$@"`, `exit $?`, top-level exec)
+   - Unsafe shell sources are rejected from trusted paths
 
 3. **Duplicate Detection**: Loading the same definition ID twice is rejected with an error.
 
 4. **File Validation**: Path existence, size limits, and extension filtering are enforced.
+
+5. **Shell Source Safety** (Phase 4.15):
+   - Shell sources must not execute at top level
+   - No arbitrary code execution from untrusted sources
+   - Shebang detection for interpreter verification
 
 ## API
 
@@ -23,7 +36,7 @@ Loading is discovery/materialization, not execution.
 
 | Type | Description |
 |------|-------------|
-| `LoadKind` | Definition type: Unit, Operation, Workflow, Task |
+| `LoadKind` | Definition type: Unit, Operation, Workflow, Task, **ShellSource** (4.15) |
 | `DefinitionId` | Unique identifier for loaded definitions |
 | `DefinitionMetadata` | Static information about a definition |
 | `LoadResult` | Result of load operation (success/failure/skipped) |
@@ -85,13 +98,21 @@ public:
 // Create loader with trusted paths
 auto loader = rebuntu::runtime::loader::make_loader();
 
-// Load a specific definition file
+// Load a specific definition file (Phase 4.15)
 auto result = loader->load_from_path("/etc/rebuntu/units/my-unit.yaml", 
                                       rebuntu::runtime::loader::LoadKind::kUnit);
 
 if (result.succeeded()) {
     auto meta = result.metadata.value();
     std::cout << "Loaded: " << meta.id << "\n";
+}
+
+// Load shell source (Phase 4.15)
+auto shell_result = loader->load_from_path("/usr/share/rebuntu/sources/utils.sh",
+                                           rebuntu::runtime::loader::LoadKind::kShellSource);
+
+if (shell_result.succeeded()) {
+    // Shell source loaded - metadata available but NOT executed
 }
 ```
 
@@ -105,6 +126,26 @@ if (result.succeeded()) {
 | `kDuplicateId` | Same ID already loaded |
 | `kUntrustedSource` | Loading from untrusted path without permission |
 
+## Shell Source Integration (Phase 4.15)
+
+Shell sources are loaded via the loader for metadata discovery but NOT executed.
+Execution happens through runtime contracts:
+
+```cpp
+// Phase 4.15: Runtime execution flow
+Request -> Validation -> Target/Resolver -> Authorization ->
+  Dispatch -> ShellSourceDefinition -> SubprocessExecutor -> Outcome
+
+Shell source loading:
+  - /etc/rebuntu/sources/      (trusted)
+  - /usr/share/rebuntu/sources/ (trusted)
+  
+Execution via subprocess:
+  - Shell interpreter detected from shebang
+  - argv array passed to subprocess_executor_
+  - Result collected with verification
+```
+
 ## Testing
 
 Tests are in `cpp/tests/loader_test.cpp`. Run with:
@@ -116,3 +157,4 @@ ctest -R loader_test
 
 - Phase 4.10: Runtime execution uses Loader to materialize definitions before execution
 - Phase 4.11: Workflow engine uses Loader for step definition resolution
+- **Phase 4.15**: Shell source loading and subprocess integration

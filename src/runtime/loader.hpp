@@ -1,4 +1,4 @@
-// rebuntu::runtime::loader — Safe Runtime Definition Loader (Phase 4.9)
+// rebuntu::runtime::loader — Safe Runtime Definition Loader (Phase 4.9 + 4.15)
 //
 // The Loader is responsible for:
 //   - Discovering and materializing runtime definitions
@@ -12,6 +12,10 @@
 //   - Untrusted paths: ~/rebuntu/, /tmp/rebuntu/ (read-only validation only)
 //   - No arbitrary code execution from untrusted sources
 //   - Definitions are materialized but NOT executed
+//
+// Phase 4.15 Update:
+//   - Shell Source definitions for .sh/.bash files
+//   - Execution mode for shell subprocess invocation
 
 #pragma once
 
@@ -34,6 +38,7 @@ enum class LoadKind {
     kOperation,
     kWorkflow,
     kTask,
+    kShellSource,  // Phase 4.15: Shell source files (.sh, .bash)
 };
 
 inline std::string to_string(LoadKind k) {
@@ -42,6 +47,7 @@ inline std::string to_string(LoadKind k) {
         case LoadKind::kOperation: return "operation";
         case LoadKind::kWorkflow: return "workflow";
         case LoadKind::kTask: return "task";
+        case LoadKind::kShellSource: return "shell_source";
     }
     return "unknown";
 }
@@ -165,7 +171,7 @@ struct LoadResult {
         return r;
     }
     
-    static LoadResult skipped(const DefinitionId& id, const std::string& reason) {
+    static LoadResult skipped(const std::string& reason) {
         LoadResult r;
         r.status = LoadResultStatus::kSkipped;
         r.error = LoadError{LoadErrorCode::kUntrustedSource, reason, std::filesystem::path{}, 0};
@@ -193,6 +199,10 @@ struct LoaderConfig {
     TrustedPaths trusted_paths;
     bool allow_untrusted = false;
     std::vector<std::string> definition_extensions = {".yaml", ".json", ".conf"};
+    
+    // Phase 4.15: Shell source extensions
+    std::vector<std::string> shell_source_extensions = {".sh", ".bash"};
+    
     size_t max_file_size_bytes = 1024 * 1024;
     bool strict_validation_only = true;
 };

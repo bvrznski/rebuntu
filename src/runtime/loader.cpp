@@ -1,6 +1,7 @@
-// rebuntu::runtime::loader — Safe Runtime Definition Loader Implementation (Phase 4.9)
+// rebuntu::runtime::loader — Safe Runtime Definition Loader Implementation (Phase 4.9 + 4.15)
 //
 // Implementation of safe runtime definition loading for Rebuntu.
+// Phase 4.15: Shell Source Loading support
 // See loader.hpp for documentation on the Loader API and responsibilities.
 
 #include "runtime/loader.hpp"
@@ -30,6 +31,67 @@ static bool is_subpath(const std::filesystem::path& base, const std::filesystem:
     }
     
     return it1 == canonical_base.end();  // Base must be fully consumed
+}
+
+// ============================================================================
+// Shell source helper functions (Phase 4.15)
+// ============================================================================
+
+static std::vector<std::string> split_lines(const std::string& content) {
+    std::vector<std::string> lines;
+    std::istringstream stream(content);
+    std::string line;
+    
+    while (std::getline(stream, line)) {
+        // Trim trailing whitespace
+        size_t end = line.find_last_not_of(" \t\r\n");
+        if (end != std::string::npos) {
+            line = line.substr(0, end + 1);
+        }
+        lines.push_back(line);
+    }
+    
+    return lines;
+}
+
+static std::string extract_shebang(const std::filesystem::path& pth) {
+    // Check the file's first line for shebang
+    std::ifstream file(pth);
+    if (!file) return "";
+    
+    std::string first_line;
+    std::getline(file, first_line);
+    
+    if (first_line.starts_with("#!")) {
+        return first_line;
+    }
+    
+    return "";
+}
+
+static bool is_shell_source_safe_for_loading(const std::filesystem::path& pth) {
+    // Shell sources are safe for loading if they don't execute at top level
+    // We check for common "execute on source" patterns:
+    // - main "$@" pattern (usually in scripts, not pure sources)
+    
+    std::ifstream file(pth);
+    if (!file) return true;
+    
+    std::string content;
+    std::string line;
+    int line_count = 0;
+    
+    while (std::getline(file, line) && line_count < 50) {
+        // Check for execution patterns
+        if (line.find("main \"$@\"") != std::string::npos ||
+            line.find("exit $?") != std::string::npos ||
+            line.find("exec ") != std::string::npos) {
+            return false;
+        }
+        ++line_count;
+    }
+    
+    return true;
 }
 
 static std::vector<LoadResult> load_directory(const std::filesystem::path& pth, LoadKind kind, const LoaderConfig& config) {

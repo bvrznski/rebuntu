@@ -67,6 +67,7 @@ sudo rm -f "$TARGET/tmp/"rebuntu-*.deb
 
 echo "Built Rebuntu rootfs: $TARGET"
 
+
 # REBUNTU_PLYMOUTH_BEGIN
 PLYMOUTH_DEB="$ROOT/build/artifacts/deb/rebuntu-plymouth-theme_0.1.0_all.deb"
 if [[ -f "$PLYMOUTH_DEB" ]]; then

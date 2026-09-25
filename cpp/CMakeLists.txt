@@ -234,6 +234,14 @@ add_library(rebuntu-journal-normalizer STATIC
 target_include_directories(rebuntu-journal-normalizer PUBLIC ${CMAKE_CURRENT_LIST_DIR}/../src)
 target_link_libraries(rebuntu-core PUBLIC rebuntu-journal-normalizer)
 
+# Phase 5.4: Journal analyzer module
+add_library(rebuntu-journal-analyzer STATIC
+    ${CMAKE_CURRENT_LIST_DIR}/../src/adapters/journal_analyzer.hpp
+    ${CMAKE_CURRENT_LIST_DIR}/../src/adapters/journal_analyzer.cpp
+)
+target_include_directories(rebuntu-journal-analyzer PUBLIC ${CMAKE_CURRENT_LIST_DIR}/../src)
+target_link_libraries(rebuntu-core PUBLIC rebuntu-journal-analyzer)
+
 # Phase 2.0: Linux Host Foundation module
 add_library(rebuntu-host-foundation STATIC
     ${CMAKE_CURRENT_LIST_DIR}/../src/system/host_foundation/contracts.hpp

@@ -261,6 +261,16 @@ add_library(rebuntu-kernel-fault-detector STATIC
 target_include_directories(rebuntu-kernel-fault-detector PUBLIC ${CMAKE_CURRENT_LIST_DIR}/../src)
 target_link_libraries(rebuntu-core PUBLIC rebuntu-kernel-fault-detector)
 
+# Phase 5.8: Storage & Filesystem Health Monitor module
+add_library(rebuntu-storage-health-monitor STATIC
+    ${CMAKE_CURRENT_LIST_DIR}/../src/modules/storage_health_monitor/types.hpp
+    ${CMAKE_CURRENT_LIST_DIR}/../src/modules/storage_health_monitor/storage_health_monitor.hpp
+    ${CMAKE_CURRENT_LIST_DIR}/../src/modules/storage_health_monitor/storage_health_monitor.cpp
+)
+target_include_directories(rebuntu-storage-health-monitor PUBLIC ${CMAKE_CURRENT_LIST_DIR}/../src/modules/storage_health_monitor)
+target_include_directories(rebuntu-storage-health-monitor PUBLIC ${CMAKE_CURRENT_LIST_DIR}/../src)
+target_link_libraries(rebuntu-core PUBLIC rebuntu-storage-health-monitor)
+
 # Phase 2.0: Linux Host Foundation module
 add_library(rebuntu-host-foundation STATIC
     ${CMAKE_CURRENT_LIST_DIR}/../src/system/host_foundation/contracts.hpp

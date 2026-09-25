@@ -803,6 +803,19 @@ rebuntu-kernel-fault-detector/fast:
 .PHONY : rebuntu-kernel-fault-detector/fast
 
 #=============================================================================
+# Target rules for targets named rebuntu-storage-health-monitor
+
+# Build rule for target.
+rebuntu-storage-health-monitor: cmake_check_build_system
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 rebuntu-storage-health-monitor
+.PHONY : rebuntu-storage-health-monitor
+
+# fast build rule for target.
+rebuntu-storage-health-monitor/fast:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/rebuntu-storage-health-monitor.dir/build.make CMakeFiles/rebuntu-storage-health-monitor.dir/build
+.PHONY : rebuntu-storage-health-monitor/fast
+
+#=============================================================================
 # Target rules for targets named rebuntu-host-foundation
 
 # Build rule for target.
@@ -1006,6 +1019,30 @@ home/bvrznski/rebuntu/src/modules/health_monitor/health_monitor.s: home/bvrznski
 home/bvrznski/rebuntu/src/modules/health_monitor/health_monitor.cpp.s:
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/rebuntu-health-monitor.dir/build.make CMakeFiles/rebuntu-health-monitor.dir/home/bvrznski/rebuntu/src/modules/health_monitor/health_monitor.cpp.s
 .PHONY : home/bvrznski/rebuntu/src/modules/health_monitor/health_monitor.cpp.s
+
+home/bvrznski/rebuntu/src/modules/storage_health_monitor/storage_health_monitor.o: home/bvrznski/rebuntu/src/modules/storage_health_monitor/storage_health_monitor.cpp.o
+.PHONY : home/bvrznski/rebuntu/src/modules/storage_health_monitor/storage_health_monitor.o
+
+# target to build an object file
+home/bvrznski/rebuntu/src/modules/storage_health_monitor/storage_health_monitor.cpp.o:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/rebuntu-storage-health-monitor.dir/build.make CMakeFiles/rebuntu-storage-health-monitor.dir/home/bvrznski/rebuntu/src/modules/storage_health_monitor/storage_health_monitor.cpp.o
+.PHONY : home/bvrznski/rebuntu/src/modules/storage_health_monitor/storage_health_monitor.cpp.o
+
+home/bvrznski/rebuntu/src/modules/storage_health_monitor/storage_health_monitor.i: home/bvrznski/rebuntu/src/modules/storage_health_monitor/storage_health_monitor.cpp.i
+.PHONY : home/bvrznski/rebuntu/src/modules/storage_health_monitor/storage_health_monitor.i
+
+# target to preprocess a source file
+home/bvrznski/rebuntu/src/modules/storage_health_monitor/storage_health_monitor.cpp.i:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/rebuntu-storage-health-monitor.dir/build.make CMakeFiles/rebuntu-storage-health-monitor.dir/home/bvrznski/rebuntu/src/modules/storage_health_monitor/storage_health_monitor.cpp.i
+.PHONY : home/bvrznski/rebuntu/src/modules/storage_health_monitor/storage_health_monitor.cpp.i
+
+home/bvrznski/rebuntu/src/modules/storage_health_monitor/storage_health_monitor.s: home/bvrznski/rebuntu/src/modules/storage_health_monitor/storage_health_monitor.cpp.s
+.PHONY : home/bvrznski/rebuntu/src/modules/storage_health_monitor/storage_health_monitor.s
+
+# target to generate assembly for a file
+home/bvrznski/rebuntu/src/modules/storage_health_monitor/storage_health_monitor.cpp.s:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/rebuntu-storage-health-monitor.dir/build.make CMakeFiles/rebuntu-storage-health-monitor.dir/home/bvrznski/rebuntu/src/modules/storage_health_monitor/storage_health_monitor.cpp.s
+.PHONY : home/bvrznski/rebuntu/src/modules/storage_health_monitor/storage_health_monitor.cpp.s
 
 home/bvrznski/rebuntu/src/runtime/engine.o: home/bvrznski/rebuntu/src/runtime/engine.cpp.o
 .PHONY : home/bvrznski/rebuntu/src/runtime/engine.o
@@ -1643,6 +1680,7 @@ help:
 	@echo "... rebuntu-secrets"
 	@echo "... rebuntu-sessions"
 	@echo "... rebuntu-setup"
+	@echo "... rebuntu-storage-health-monitor"
 	@echo "... rebuntu-temp-files"
 	@echo "... rebuntu-user-identity"
 	@echo "... home/bvrznski/rebuntu/src/adapters/journal_analyzer.o"
@@ -1669,6 +1707,9 @@ help:
 	@echo "... home/bvrznski/rebuntu/src/modules/health_monitor/health_monitor.o"
 	@echo "... home/bvrznski/rebuntu/src/modules/health_monitor/health_monitor.i"
 	@echo "... home/bvrznski/rebuntu/src/modules/health_monitor/health_monitor.s"
+	@echo "... home/bvrznski/rebuntu/src/modules/storage_health_monitor/storage_health_monitor.o"
+	@echo "... home/bvrznski/rebuntu/src/modules/storage_health_monitor/storage_health_monitor.i"
+	@echo "... home/bvrznski/rebuntu/src/modules/storage_health_monitor/storage_health_monitor.s"
 	@echo "... home/bvrznski/rebuntu/src/runtime/engine.o"
 	@echo "... home/bvrznski/rebuntu/src/runtime/engine.i"
 	@echo "... home/bvrznski/rebuntu/src/runtime/engine.s"

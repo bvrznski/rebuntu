@@ -58,8 +58,8 @@ sudo mksquashfs "$ROOTFS" "$ISO/casper/filesystem.squashfs" \
 grub-mkstandalone \
   --format=i386-pc \
   --output="$WORK/core.img" \
-  --install-modules="linux normal iso9660 biosdisk search search_fs_file" \
-  --modules="linux normal iso9660 biosdisk search" \
+  --install-modules="linux normal iso9660 biosdisk search search_fs_file search_label search_fs_uuid configfile echo ls cat test regexp gfxterm all_video video video_bochs video_cirrus font terminal part_msdos part_gpt" \
+  --modules="linux normal iso9660 biosdisk search search_fs_file echo ls gfxterm all_video" \
   --locales="" --fonts="" \
   "boot/grub/grub.cfg=$ROOT/images/iso/config/grub.cfg"
 

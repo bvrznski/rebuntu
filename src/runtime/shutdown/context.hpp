@@ -79,8 +79,8 @@ struct ShutdownContext {
     std::chrono::system_clock::time_point start_time{};
     std::chrono::system_clock::time_point deadline{};
     
-    // Cancellation token used to signal all work
-    std::shared_ptr<runtime::CancellationToken> cancellation_token;
+    // Cancellation token used to signal all work (default-constructed)
+    std::shared_ptr<runtime::CancellationToken> cancellation_token = std::make_shared<runtime::CancellationToken>();
     
     // Active executions at shutdown start (snapshot)
     std::vector<ActiveExecution> active_executions;

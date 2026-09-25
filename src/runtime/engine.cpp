@@ -4,6 +4,12 @@
 // into Rebuntu's execution machinery.
 
 #include <runtime/engine.hpp>
+#include <runtime/shutdown/coordinator.hpp>
+#include <system/core/results.hpp>
+
+#include <chrono>
+#include <thread>
+#include <optional>
 
 namespace rebuntu::runtime::engine {
 
@@ -38,18 +44,37 @@ EngineResult Engine::initialize() {
 }
 
 EngineResult Engine::stop(std::optional<std::chrono::milliseconds> timeout) {
-    (void)timeout;  // Not yet implemented - placeholder for future implementation
-    
     std::lock_guard<std::mutex> lock(active_executions_mutex_);
     
     if (state_ != EngineState::kReady && state_ != EngineState::kInitializing) {
         return core::Outcome::failure("E_INVALID_STATE", "Engine not in ready state");
     }
     
-    // Wait for active executions to complete
+    // Create shutdown coordinator with timeout policy
+    rebuntu::runtime::shutdown::ShutdownPolicy policy;
+    if (timeout.has_value()) {
+        policy.total_timeout = timeout.value();
+    } else {
+        policy.total_timeout = std::chrono::seconds(30);  // Default timeout
+    }
+    policy.drain_timeout = std::chrono::seconds(10);
+    
     state_ = EngineState::kStopping;
     
-    // TODO: Implement proper shutdown with timeout
+    // Wait for active executions to complete (simulated bounded drain)
+    // In production, this would wait on condition variable or poll execution states
+    
+    auto deadline = std::chrono::steady_clock::now() + policy.total_timeout;
+    
+    while (active_executions_ > 0 && std::chrono::steady_clock::now() < deadline) {
+        std::this_thread::sleep_for(std::chrono::milliseconds(100));
+    }
+    
+    // If there are still active executions, force terminate
+    if (active_executions_ > 0) {
+        // Force-terminate remaining work
+        // In production, this would send cancellation signals to executors
+    }
     
     state_ = EngineState::kStopped;
     

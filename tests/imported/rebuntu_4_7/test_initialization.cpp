@@ -1,6 +1,6 @@
 // Unit tests for rebuntu::runtime::initialization (Phase 4.1)
 // Minimal, dependency-free assertion harness.
-#include <system/runtime/initialization.hpp>
+#include <runtime/initialization.hpp>
 
 #include <iostream>
 #include <chrono>

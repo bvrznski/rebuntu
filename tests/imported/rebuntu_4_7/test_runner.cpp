@@ -1,12 +1,12 @@
 // Unit tests for rebuntu::runtime::runner (Phase 4.4)
-#include <system/runtime/runner.hpp>
+#include <runtime/runner.hpp>
 
 #include <chrono>
 #include <iostream>
 #include <string>
 
 #include <system/core/contracts.hpp>
-#include <system/runtime/work.hpp>
+#include <runtime/work.hpp>
 
 namespace {
 

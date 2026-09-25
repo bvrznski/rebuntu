@@ -1,2 +1,0 @@
-/usr/bin/ar qc librebuntu-setup.a CMakeFiles/rebuntu-setup.dir/home/bvrznski/rebuntu/src/system/setup/profile.cpp.o CMakeFiles/rebuntu-setup.dir/home/bvrznski/rebuntu/src/system/setup/setup.cpp.o
-/usr/bin/ranlib librebuntu-setup.a

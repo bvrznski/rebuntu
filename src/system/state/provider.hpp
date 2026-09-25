@@ -18,7 +18,7 @@
 
 #pragma once
 
-#include <system/runtime/contracts.hpp>
+#include <runtime/contracts.hpp>
 #include <memory>
 #include <string>
 #include <string_view>

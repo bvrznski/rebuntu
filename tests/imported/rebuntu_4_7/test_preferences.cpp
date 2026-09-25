@@ -3,7 +3,7 @@
 // Tests Preferences model: soft choices that guide Rebuntu behavior without
 // pretending they are guaranteed system state.
 
-#include <system/runtime/preferences.hpp>
+#include <runtime/preferences.hpp>
 
 #include <iostream>
 #include <string>

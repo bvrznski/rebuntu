@@ -1,6 +1,6 @@
 // rebuntu::state::ProcfsStateProvider implementation
 #include <system/state/provider.hpp>
-#include <system/runtime/contracts.hpp>
+#include <runtime/contracts.hpp>
 
 #include <string>
 #include <fstream>

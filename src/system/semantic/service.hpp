@@ -16,7 +16,7 @@
 #pragma once
 
 #include <system/core/contracts.hpp>
-#include <system/runtime/contracts.hpp>
+#include <runtime/contracts.hpp>
 #include <system/semantic/provider.hpp>
 #include <string>
 #include <memory>

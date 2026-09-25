@@ -10,7 +10,7 @@
 
 #pragma once
 
-#include <system/runtime/contracts.hpp>
+#include <runtime/contracts.hpp>
 #include <string>
 #include <vector>
 #include <optional>

@@ -3,7 +3,7 @@
 // Tests Settings model: relatively stable explicit behavioral
 // selections/toggles whose value is part of effective Rebuntu configuration.
 
-#include <system/runtime/settings.hpp>
+#include <runtime/settings.hpp>
 
 #include <iostream>
 #include <string>

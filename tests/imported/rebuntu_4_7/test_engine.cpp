@@ -1,6 +1,6 @@
 // Unit tests for rebuntu::runtime::engine (Phase 4.2)
 // Minimal, dependency-free assertion harness.
-#include <system/runtime/engine.hpp>
+#include <runtime/engine.hpp>
 
 #include <iostream>
 #include <chrono>

@@ -11,7 +11,7 @@
 #pragma once
 
 #include <system/core/contracts.hpp>
-#include <system/runtime/contracts.hpp>
+#include <runtime/contracts.hpp>
 #include <chrono>
 #include <optional>
 #include <string>

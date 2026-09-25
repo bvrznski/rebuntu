@@ -1,5 +1,5 @@
 // Unit tests for rebuntu::runtime::work (Phase 0.8).
-#include <system/runtime/work.hpp>
+#include <runtime/work.hpp>
 
 #include <cstddef>
 #include <iostream>

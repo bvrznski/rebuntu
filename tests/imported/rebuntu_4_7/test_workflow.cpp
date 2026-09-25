@@ -2,7 +2,7 @@
 // Minimal, dependency-free assertion harness.
 
 #include <system/core/contracts.hpp>
-#include <system/runtime/workflow.hpp>
+#include <runtime/workflow.hpp>
 
 #include <cstddef>
 #include <iostream>

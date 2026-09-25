@@ -1,7 +1,7 @@
 // Unit tests for rebuntu::runtime::controller (Phase 4.6)
 // Minimal, dependency-free assertion harness.
 
-#include <system/runtime/controller.hpp>
+#include <runtime/controller.hpp>
 
 #include <iostream>
 #include <memory>

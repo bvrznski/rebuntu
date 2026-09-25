@@ -1,2 +1,0 @@
-/usr/bin/ar qc librebuntu-packages.a CMakeFiles/rebuntu-packages.dir/home/bvrznski/rebuntu/src/domains/development/infrastructure/native/packages.cpp.o
-/usr/bin/ranlib librebuntu-packages.a

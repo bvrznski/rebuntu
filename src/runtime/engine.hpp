@@ -19,7 +19,7 @@
 #pragma once
 
 #include <runtime/contracts.hpp>
-#include <system/runtime/work.hpp>
+#include <runtime/work.hpp>
 #include <runtime/cancellation/token.hpp>
 #include <memory>
 #include <optional>

@@ -18,7 +18,11 @@ struct CancellationToken { std::atomic_bool cancelled{false}; void cancel(){canc
 struct RuntimeContext { std::string runtime_id; std::string scope="user"; std::string state_root; std::string evidence_root; LifecycleState lifecycle=LifecycleState::kCreated; ReadinessState readiness=ReadinessState::kNotReady; std::shared_ptr<CancellationToken> cancellation=std::make_shared<CancellationToken>(); std::vector<core::Evidence> evidence; };
 struct Dependency { std::string id; std::vector<std::string> dependencies; bool required=true; bool ready=true; };
 struct InitResult { core::Outcome outcome; RuntimeContext context; std::optional<std::string> failed_stage; };
-class Initializer { public: InitResult initialize(RuntimeContext c, const std::vector<Dependency>& deps) const; static std::optional<std::vector<std::string>> startup_order(const std::vector<Dependency>& deps); };
+class Initializer { 
+public: 
+    InitResult initialize(RuntimeContext c, const std::vector<Dependency>& deps) const; 
+    static std::optional<std::vector<std::string>> startup_order(const std::vector<Dependency>& deps);
+};
 struct ResolvedWork { core::OperationDefinition operation; std::string provider_id; work::ExecutionMode mode=work::ExecutionMode::kInline; };
 enum class ResolutionStatus { kResolved,kNotFound,kAmbiguous,kUnavailable,kForbidden,kUnknown };
 struct ResolutionResult { ResolutionStatus status=ResolutionStatus::kUnknown; std::optional<ResolvedWork> work; std::vector<std::string> reasons; };

@@ -1,5 +1,5 @@
 // Unit tests for rebuntu::runtime::executor (Phase 4.3)
-#include <system/runtime/executor.hpp>
+#include <runtime/executor.hpp>
 
 #include <cstddef>
 #include <iostream>
@@ -7,7 +7,7 @@
 #include <chrono>
 
 #include <system/core/contracts.hpp>
-#include <system/runtime/work.hpp>
+#include <runtime/work.hpp>
 
 namespace rebuntu::runtime::executor {
 

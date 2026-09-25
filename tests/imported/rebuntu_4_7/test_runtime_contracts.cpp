@@ -1,6 +1,6 @@
 // Unit tests for rebuntu::runtime contracts (Phase 0.2).
 // Minimal, dependency-free assertion harness.
-#include <system/runtime/contracts.hpp>
+#include <runtime/contracts.hpp>
 
 #include <cstddef>
 #include <iostream>

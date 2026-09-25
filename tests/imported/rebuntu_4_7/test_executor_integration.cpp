@@ -1,7 +1,7 @@
 // Integration tests for rebuntu::runtime execution runtime (Phase 0.13)
 // Verifies DispatcherContext and basic integration
 
-#include <system/runtime/dispatcher.hpp>
+#include <runtime/dispatcher.hpp>
 
 #include <cstddef>
 #include <iostream>

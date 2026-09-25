@@ -1,5 +1,5 @@
 // Unit tests for rebuntu::runtime::discovery (Phase 0.19)
-#include <system/runtime/discovery.hpp>
+#include <runtime/discovery.hpp>
 
 #include <cstddef>
 #include <iostream>

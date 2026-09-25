@@ -1,6 +1,6 @@
 // rebuntu::state::SystemdStateProvider implementation
 #include <system/state/provider.hpp>
-#include <system/runtime/contracts.hpp>
+#include <runtime/contracts.hpp>
 
 namespace rebuntu::state {
 

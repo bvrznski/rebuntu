@@ -2,7 +2,7 @@
 //
 // Test the Docker provider contracts and implementation.
 
-#include <runtime/core/contracts.hpp>
+#include <system/core/contracts.hpp>
 #include <domains/development/infrastructure/docker.hpp>
 
 #include <cstddef>

@@ -2,7 +2,7 @@
 
 #include <runtime/ipc.hpp>
 #include <events/in_memory_channel.hpp>
-#include <runtime/core/contracts.hpp>
+#include <system/core/contracts.hpp>
 #include <cassert>
 #include <chrono>
 #include <thread>

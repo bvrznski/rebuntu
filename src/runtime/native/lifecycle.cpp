@@ -7,7 +7,7 @@
 //   * UNINSTALL/PURGE: Remove Rebuntu-owned artifacts
 
 #include <runtime/lifecycle/contracts.hpp>
-#include <runtime/core/contracts.hpp>
+#include <system/core/contracts.hpp>
 
 #include <unistd.h>
 #include <sys/stat.h>

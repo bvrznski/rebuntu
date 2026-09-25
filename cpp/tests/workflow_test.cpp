@@ -10,7 +10,7 @@
 #include <runtime/workflow.hpp>
 #include <runtime/contracts.hpp>
 #include <runtime/cancellation/token.hpp>
-#include <runtime/core/contracts.hpp>
+#include <system/core/contracts.hpp>
 #include <cassert>
 #include <iostream>
 #include <chrono>

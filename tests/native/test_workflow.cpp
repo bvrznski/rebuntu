@@ -1,7 +1,7 @@
 // Unit tests for Rebuntu Workflow contracts (Phase 0.11).
 // Minimal, dependency-free assertion harness.
 
-#include <runtime/core/contracts.hpp>
+#include <system/core/contracts.hpp>
 #include <runtime/workflow.hpp>
 
 #include <cstddef>

@@ -37,7 +37,7 @@
 #include <filesystem>
 
 #include <observation/environment/scope.hpp>
-#include <runtime/core/contracts.hpp>
+#include <system/core/contracts.hpp>
 
 // Using declarations from scope namespace (must come before any usage)
 using rebuntu::environment::scope::ScopeContext;

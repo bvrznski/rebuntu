@@ -41,7 +41,7 @@
 #include <filesystem>
 
 #include <observation/environment/scope.hpp>
-#include <runtime/core/contracts.hpp>
+#include <system/core/contracts.hpp>
 
 namespace rebuntu::environment::locks {
 

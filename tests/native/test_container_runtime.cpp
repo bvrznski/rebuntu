@@ -2,7 +2,7 @@
 //
 // Test the generalized container runtime contracts and provider registry.
 
-#include <runtime/core/contracts.hpp>
+#include <system/core/contracts.hpp>
 #include <domains/development/infrastructure/container.hpp>
 
 #include <cstddef>

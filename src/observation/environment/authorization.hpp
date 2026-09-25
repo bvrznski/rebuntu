@@ -24,7 +24,7 @@
 #include <unistd.h>
 #include <sys/types.h>
 
-#include <runtime/core/contracts.hpp>
+#include <system/core/contracts.hpp>
 #include <string>
 #include <vector>
 #include <set>

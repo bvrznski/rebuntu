@@ -2,7 +2,7 @@
 
 #pragma once
 
-#include <runtime/core/contracts.hpp>
+#include <system/core/contracts.hpp>
 #include <array>
 #include <cstdio>
 #include <filesystem>

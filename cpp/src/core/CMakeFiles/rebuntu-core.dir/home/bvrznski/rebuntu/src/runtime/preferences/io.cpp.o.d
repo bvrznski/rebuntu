@@ -3,7 +3,7 @@ src/core/CMakeFiles/rebuntu-core.dir/home/bvrznski/rebuntu/src/runtime/preferenc
  /usr/include/stdc-predef.h \
  /home/bvrznski/rebuntu/cpp/../src/runtime/preferences/io.hpp \
  /home/bvrznski/rebuntu/cpp/../src/runtime/preferences.hpp \
- /home/bvrznski/rebuntu/cpp/../src/runtime/core/contracts.hpp \
+ /home/bvrznski/rebuntu/cpp/../src/system/core/contracts.hpp \
  /usr/include/c++/11/algorithm /usr/include/c++/11/utility \
  /usr/include/x86_64-linux-gnu/c++/11/bits/c++config.h \
  /usr/include/x86_64-linux-gnu/c++/11/bits/os_defines.h \

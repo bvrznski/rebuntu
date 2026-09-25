@@ -14,7 +14,7 @@
 
 #pragma once
 
-#include <runtime/core/contracts.hpp>
+#include <system/core/contracts.hpp>
 #include <observation/environment/temp_files.hpp>
 #include <chrono>
 #include <filesystem>

@@ -17,7 +17,7 @@
 
 #pragma once
 
-#include <runtime/core/contracts.hpp>
+#include <system/core/contracts.hpp>
 #include <domains/development/infrastructure/contracts.hpp>
 #include <chrono>
 #include <memory>

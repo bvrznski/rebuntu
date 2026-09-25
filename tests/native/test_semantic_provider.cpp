@@ -2,7 +2,7 @@
 //
 // Test the BitNet semantic provider contracts and interface.
 
-#include <runtime/core/contracts.hpp>
+#include <system/core/contracts.hpp>
 #include <semantics/provider.hpp>
 
 #include <iostream>

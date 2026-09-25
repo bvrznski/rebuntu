@@ -4,7 +4,7 @@
 
 #include "cli.hpp"
 
-#include <runtime/core/contracts.hpp>
+#include <system/core/contracts.hpp>
 #include <domains/development/infrastructure/contracts.hpp>
 #include <domains/development/infrastructure/jenkins.hpp>
 

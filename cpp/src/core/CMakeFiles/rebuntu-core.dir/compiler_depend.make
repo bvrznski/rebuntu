@@ -1412,6 +1412,7 @@ src/core/CMakeFiles/rebuntu-core.dir/home/bvrznski/rebuntu/src/runtime/engine.cp
   /usr/include/c++/11/bits/stl_multiset.h \
   /home/bvrznski/rebuntu/src/runtime/work.hpp \
   /home/bvrznski/rebuntu/src/runtime/contracts.hpp \
+  /home/bvrznski/rebuntu/src/system/core/contracts.hpp \
   /usr/include/c++/11/cmath \
   /usr/include/math.h \
   /usr/include/x86_64-linux-gnu/bits/math-vector.h \
@@ -3009,8 +3010,6 @@ src/core/CMakeFiles/rebuntu-core.dir/home/bvrznski/rebuntu/src/system/runtime/ex
 
 /home/bvrznski/rebuntu/src/system/runtime/contracts.hpp:
 
-/home/bvrznski/rebuntu/src/system/core/contracts.hpp:
-
 /home/bvrznski/rebuntu/src/system/runtime/work.hpp:
 
 /home/bvrznski/rebuntu/src/system/runtime/dispatcher.hpp:
@@ -3022,6 +3021,8 @@ src/core/CMakeFiles/rebuntu-core.dir/home/bvrznski/rebuntu/src/system/runtime/ex
 /home/bvrznski/rebuntu/src/runtime/loader.hpp:
 
 /home/bvrznski/rebuntu/src/runtime/loader.cpp:
+
+/home/bvrznski/rebuntu/src/system/core/contracts.hpp:
 
 /home/bvrznski/rebuntu/src/runtime/engine.cpp:
 

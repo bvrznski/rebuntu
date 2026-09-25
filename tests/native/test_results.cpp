@@ -1,6 +1,6 @@
 // Unit tests for rebuntu::core::results (Phase 0.17)
 
-#include <runtime/core/contracts.hpp>
+#include <system/core/contracts.hpp>
 #include <runtime/core/results.hpp>
 
 #include <iostream>

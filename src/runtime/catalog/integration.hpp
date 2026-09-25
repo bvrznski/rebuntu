@@ -10,7 +10,7 @@
 
 #pragma once
 
-#include <runtime/core/contracts.hpp>
+#include <system/core/contracts.hpp>
 #include <runtime/loader.hpp>
 #include <runtime/resolver.hpp>
 #include <interfaces/provider_registry.hpp>

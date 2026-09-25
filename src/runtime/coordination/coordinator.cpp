@@ -7,7 +7,7 @@
 //   - Ordered handoff between executions
 
 #include <runtime/coordination/context.hpp>
-#include <runtime/core/contracts.hpp>
+#include <system/core/contracts.hpp>
 #include <runtime/cancellation/error.hpp>
 #include <runtime/work.hpp>
 #include <algorithm>

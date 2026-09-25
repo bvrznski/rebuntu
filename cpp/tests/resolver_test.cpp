@@ -6,7 +6,7 @@
 #include <runtime/work.hpp>
 
 using namespace rebuntu::runtime::work;
-#include <runtime/core/contracts.hpp>
+#include <system/core/contracts.hpp>
 
 #include <cassert>
 #include <iostream>

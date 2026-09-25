@@ -1,6 +1,6 @@
 #include "cli.hpp"
 
-#include <runtime/core/contracts.hpp>
+#include <system/core/contracts.hpp>
 #include <runtime/core/version.hpp>
 #include <runtime/lifecycle/contracts.hpp>
 #include <semantics/service.hpp>

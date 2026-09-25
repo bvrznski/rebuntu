@@ -5,7 +5,7 @@
 //
 // This file remains for backward compatibility during migration period.
 #pragma once
-#include <runtime/core/contracts.hpp>
+#include <system/core/contracts.hpp>
 #include <portability/install/contracts.hpp>
 #include <any>
 #include <algorithm>

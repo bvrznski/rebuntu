@@ -17,7 +17,7 @@
 
 #pragma once
 
-#include <runtime/core/contracts.hpp>
+#include <system/core/contracts.hpp>
 #include <portability/setup/contracts.hpp>
 #include <algorithm>
 #include <string>

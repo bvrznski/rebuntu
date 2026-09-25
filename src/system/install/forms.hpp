@@ -5,7 +5,7 @@
 // - Comprehensive path validation (kPathExists, kPathIsDirectory, kPathIsFile)
 // - Better error handling and validation messages
 #pragma once
-#include <runtime/core/contracts.hpp>
+#include <system/core/contracts.hpp>
 #include <portability/install/contracts.hpp>
 #include <any>
 #include <algorithm>

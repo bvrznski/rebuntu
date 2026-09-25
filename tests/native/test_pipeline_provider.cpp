@@ -2,7 +2,7 @@
 //
 // Test the engineering pipeline contracts and providers.
 
-#include <runtime/core/contracts.hpp>
+#include <system/core/contracts.hpp>
 #include <domains/development/infrastructure/pipeline.hpp>
 
 #include <cstddef>

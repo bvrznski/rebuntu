@@ -14,7 +14,7 @@
 #include <vector>
 
 // contracts.hpp defines rebuntu::core types including OperationDefinition
-#include <runtime/core/contracts.hpp>
+#include <system/core/contracts.hpp>
 
 namespace rebuntu::runtime::discovery {
 

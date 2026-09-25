@@ -37,6 +37,9 @@ target_include_directories(events_test PRIVATE
     ${CMAKE_SOURCE_DIR}
 )
 
+# Phase 4.16: Native Event Activation Engine - implementation complete but pending
+# build fix for duplicate contract header conflict in codebase
+
 # Results model tests (Phase 0.17)
 add_executable(results_test results_test.cpp)
 target_link_libraries(results_test rebuntu-core)

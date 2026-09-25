@@ -40,7 +40,7 @@
 
 #include <observation/environment/scope.hpp>
 #include <observation/environment/sessions.hpp>
-#include <runtime/core/contracts.hpp>
+#include <system/core/contracts.hpp>
 
 namespace rebuntu::environment::ipc {
 

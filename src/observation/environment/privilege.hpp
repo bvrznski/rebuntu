@@ -32,7 +32,7 @@ namespace rebuntu::environment::discovery {
     enum class DiscoveryStatus;
 }
 
-#include <runtime/core/contracts.hpp>
+#include <system/core/contracts.hpp>
 #include <observation/environment/discovery.hpp>
 
 // Undefine the forward declaration since we're including discovery.hpp which defines it

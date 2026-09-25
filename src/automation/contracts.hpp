@@ -10,7 +10,7 @@
 // and BOUNDED REBUNTU WORK, GOVERNED BY POLICY.
 #pragma once
 
-#include <runtime/core/contracts.hpp>
+#include <system/core/contracts.hpp>
 #include <runtime/contracts.hpp>
 #include <chrono>
 #include <optional>

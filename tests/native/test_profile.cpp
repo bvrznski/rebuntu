@@ -6,7 +6,7 @@
 //   * Application = write profile to configuration storage
 
 #include <portability/setup/profile.hpp>
-#include <runtime/core/contracts.hpp>
+#include <system/core/contracts.hpp>
 
 #include <iostream>
 #include <string>

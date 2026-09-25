@@ -2,7 +2,7 @@
 //
 // Test the Ansible provider contracts and implementation.
 
-#include <runtime/core/contracts.hpp>
+#include <system/core/contracts.hpp>
 #include <domains/development/infrastructure/ansible.hpp>
 
 #include <cstddef>

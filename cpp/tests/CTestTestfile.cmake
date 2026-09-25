@@ -82,3 +82,5 @@ add_test([=[dispatcher_test]=] "/home/bvrznski/rebuntu/cpp/tests/dispatcher_test
 set_tests_properties([=[dispatcher_test]=] PROPERTIES  _BACKTRACE_TRIPLES "/home/bvrznski/rebuntu/cpp/tests/CMakeLists.txt;391;add_test;/home/bvrznski/rebuntu/cpp/tests/CMakeLists.txt;0;")
 add_test([=[controller_test]=] "/home/bvrznski/rebuntu/cpp/tests/controller_test")
 set_tests_properties([=[controller_test]=] PROPERTIES  _BACKTRACE_TRIPLES "/home/bvrznski/rebuntu/cpp/tests/CMakeLists.txt;405;add_test;/home/bvrznski/rebuntu/cpp/tests/CMakeLists.txt;0;")
+add_test([=[coordination_test]=] "/home/bvrznski/rebuntu/cpp/tests/coordination_test")
+set_tests_properties([=[coordination_test]=] PROPERTIES  _BACKTRACE_TRIPLES "/home/bvrznski/rebuntu/cpp/tests/CMakeLists.txt;419;add_test;/home/bvrznski/rebuntu/cpp/tests/CMakeLists.txt;0;")

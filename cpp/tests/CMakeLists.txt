@@ -404,4 +404,18 @@ target_include_directories(controller_test PRIVATE
 )
 add_test(NAME controller_test COMMAND controller_test)
 
+# Phase 4.7: Coordination tests (runtime coordination primitives - dependency tracking, resource locks)
+set(COORDINATION_SRCS
+    ${CMAKE_SOURCE_DIR}/../src/runtime/coordination/context.hpp
+    ${CMAKE_SOURCE_DIR}/../src/runtime/coordination/coordinator.cpp
+)
+add_executable(coordination_test coordination_test.cpp ${COORDINATION_SRCS})
+target_link_libraries(coordination_test rebuntu-core)
+target_include_directories(coordination_test PRIVATE 
+    ${CMAKE_CURRENT_LIST_DIR}/../include
+    ${CMAKE_SOURCE_DIR}/src
+    ${CMAKE_SOURCE_DIR}
+)
+add_test(NAME coordination_test COMMAND coordination_test)
+
 # Phase 1.9: Environment discovery tests (pending integration with testing framework)

@@ -672,6 +672,20 @@ controller_test/fast:
 	cd /home/bvrznski/rebuntu/cpp && $(MAKE) $(MAKESILENT) -f tests/CMakeFiles/controller_test.dir/build.make tests/CMakeFiles/controller_test.dir/build
 .PHONY : controller_test/fast
 
+# Convenience name for target.
+tests/CMakeFiles/coordination_test.dir/rule:
+	cd /home/bvrznski/rebuntu/cpp && $(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 tests/CMakeFiles/coordination_test.dir/rule
+.PHONY : tests/CMakeFiles/coordination_test.dir/rule
+
+# Convenience name for target.
+coordination_test: tests/CMakeFiles/coordination_test.dir/rule
+.PHONY : coordination_test
+
+# fast build rule for target.
+coordination_test/fast:
+	cd /home/bvrznski/rebuntu/cpp && $(MAKE) $(MAKESILENT) -f tests/CMakeFiles/coordination_test.dir/build.make tests/CMakeFiles/coordination_test.dir/build
+.PHONY : coordination_test/fast
+
 __/src/semantic/ipc_transport.o: __/src/semantic/ipc_transport.cpp.o
 .PHONY : __/src/semantic/ipc_transport.o
 
@@ -816,6 +830,30 @@ controller_test.cpp.s:
 	cd /home/bvrznski/rebuntu/cpp && $(MAKE) $(MAKESILENT) -f tests/CMakeFiles/controller_test.dir/build.make tests/CMakeFiles/controller_test.dir/controller_test.cpp.s
 .PHONY : controller_test.cpp.s
 
+coordination_test.o: coordination_test.cpp.o
+.PHONY : coordination_test.o
+
+# target to build an object file
+coordination_test.cpp.o:
+	cd /home/bvrznski/rebuntu/cpp && $(MAKE) $(MAKESILENT) -f tests/CMakeFiles/coordination_test.dir/build.make tests/CMakeFiles/coordination_test.dir/coordination_test.cpp.o
+.PHONY : coordination_test.cpp.o
+
+coordination_test.i: coordination_test.cpp.i
+.PHONY : coordination_test.i
+
+# target to preprocess a source file
+coordination_test.cpp.i:
+	cd /home/bvrznski/rebuntu/cpp && $(MAKE) $(MAKESILENT) -f tests/CMakeFiles/coordination_test.dir/build.make tests/CMakeFiles/coordination_test.dir/coordination_test.cpp.i
+.PHONY : coordination_test.cpp.i
+
+coordination_test.s: coordination_test.cpp.s
+.PHONY : coordination_test.s
+
+# target to generate assembly for a file
+coordination_test.cpp.s:
+	cd /home/bvrznski/rebuntu/cpp && $(MAKE) $(MAKESILENT) -f tests/CMakeFiles/coordination_test.dir/build.make tests/CMakeFiles/coordination_test.dir/coordination_test.cpp.s
+.PHONY : coordination_test.cpp.s
+
 dispatcher_test.o: dispatcher_test.cpp.o
 .PHONY : dispatcher_test.o
 
@@ -911,6 +949,30 @@ home/bvrznski/rebuntu/src/runtime/controller.s: home/bvrznski/rebuntu/src/runtim
 home/bvrznski/rebuntu/src/runtime/controller.cpp.s:
 	cd /home/bvrznski/rebuntu/cpp && $(MAKE) $(MAKESILENT) -f tests/CMakeFiles/controller_test.dir/build.make tests/CMakeFiles/controller_test.dir/home/bvrznski/rebuntu/src/runtime/controller.cpp.s
 .PHONY : home/bvrznski/rebuntu/src/runtime/controller.cpp.s
+
+home/bvrznski/rebuntu/src/runtime/coordination/coordinator.o: home/bvrznski/rebuntu/src/runtime/coordination/coordinator.cpp.o
+.PHONY : home/bvrznski/rebuntu/src/runtime/coordination/coordinator.o
+
+# target to build an object file
+home/bvrznski/rebuntu/src/runtime/coordination/coordinator.cpp.o:
+	cd /home/bvrznski/rebuntu/cpp && $(MAKE) $(MAKESILENT) -f tests/CMakeFiles/coordination_test.dir/build.make tests/CMakeFiles/coordination_test.dir/home/bvrznski/rebuntu/src/runtime/coordination/coordinator.cpp.o
+.PHONY : home/bvrznski/rebuntu/src/runtime/coordination/coordinator.cpp.o
+
+home/bvrznski/rebuntu/src/runtime/coordination/coordinator.i: home/bvrznski/rebuntu/src/runtime/coordination/coordinator.cpp.i
+.PHONY : home/bvrznski/rebuntu/src/runtime/coordination/coordinator.i
+
+# target to preprocess a source file
+home/bvrznski/rebuntu/src/runtime/coordination/coordinator.cpp.i:
+	cd /home/bvrznski/rebuntu/cpp && $(MAKE) $(MAKESILENT) -f tests/CMakeFiles/coordination_test.dir/build.make tests/CMakeFiles/coordination_test.dir/home/bvrznski/rebuntu/src/runtime/coordination/coordinator.cpp.i
+.PHONY : home/bvrznski/rebuntu/src/runtime/coordination/coordinator.cpp.i
+
+home/bvrznski/rebuntu/src/runtime/coordination/coordinator.s: home/bvrznski/rebuntu/src/runtime/coordination/coordinator.cpp.s
+.PHONY : home/bvrznski/rebuntu/src/runtime/coordination/coordinator.s
+
+# target to generate assembly for a file
+home/bvrznski/rebuntu/src/runtime/coordination/coordinator.cpp.s:
+	cd /home/bvrznski/rebuntu/cpp && $(MAKE) $(MAKESILENT) -f tests/CMakeFiles/coordination_test.dir/build.make tests/CMakeFiles/coordination_test.dir/home/bvrznski/rebuntu/src/runtime/coordination/coordinator.cpp.s
+.PHONY : home/bvrznski/rebuntu/src/runtime/coordination/coordinator.cpp.s
 
 home/bvrznski/rebuntu/src/runtime/discovery.o: home/bvrznski/rebuntu/src/runtime/discovery.cpp.o
 .PHONY : home/bvrznski/rebuntu/src/runtime/discovery.o
@@ -1885,6 +1947,7 @@ help:
 	@echo "... capability_state_test"
 	@echo "... config_test"
 	@echo "... controller_test"
+	@echo "... coordination_test"
 	@echo "... dispatcher_test"
 	@echo "... events_test"
 	@echo "... group_membership_test"
@@ -1938,6 +2001,9 @@ help:
 	@echo "... controller_test.o"
 	@echo "... controller_test.i"
 	@echo "... controller_test.s"
+	@echo "... coordination_test.o"
+	@echo "... coordination_test.i"
+	@echo "... coordination_test.s"
 	@echo "... dispatcher_test.o"
 	@echo "... dispatcher_test.i"
 	@echo "... dispatcher_test.s"
@@ -1950,6 +2016,9 @@ help:
 	@echo "... home/bvrznski/rebuntu/src/runtime/controller.o"
 	@echo "... home/bvrznski/rebuntu/src/runtime/controller.i"
 	@echo "... home/bvrznski/rebuntu/src/runtime/controller.s"
+	@echo "... home/bvrznski/rebuntu/src/runtime/coordination/coordinator.o"
+	@echo "... home/bvrznski/rebuntu/src/runtime/coordination/coordinator.i"
+	@echo "... home/bvrznski/rebuntu/src/runtime/coordination/coordinator.s"
 	@echo "... home/bvrznski/rebuntu/src/runtime/discovery.o"
 	@echo "... home/bvrznski/rebuntu/src/runtime/discovery.i"
 	@echo "... home/bvrznski/rebuntu/src/runtime/discovery.s"

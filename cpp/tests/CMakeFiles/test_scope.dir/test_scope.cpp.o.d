@@ -1,7 +1,7 @@
 tests/CMakeFiles/test_scope.dir/test_scope.cpp.o: \
  /home/bvrznski/rebuntu/cpp/tests/test_scope.cpp \
  /usr/include/stdc-predef.h \
- /home/bvrznski/rebuntu/cpp/../src/system/environment/scope.hpp \
+ /home/bvrznski/rebuntu/cpp/src/core/../../../cpp/include/system/environment/scope.hpp \
  /usr/include/pwd.h /usr/include/features.h \
  /usr/include/features-time64.h \
  /usr/include/x86_64-linux-gnu/bits/wordsize.h \

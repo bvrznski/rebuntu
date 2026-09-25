@@ -1284,6 +1284,19 @@ controller_test/fast:
 .PHONY : controller_test/fast
 
 #=============================================================================
+# Target rules for targets named coordination_test
+
+# Build rule for target.
+coordination_test: cmake_check_build_system
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 coordination_test
+.PHONY : coordination_test
+
+# fast build rule for target.
+coordination_test/fast:
+	$(MAKE) $(MAKESILENT) -f tests/CMakeFiles/coordination_test.dir/build.make tests/CMakeFiles/coordination_test.dir/build
+.PHONY : coordination_test/fast
+
+#=============================================================================
 # Target rules for targets named rebuntu
 
 # Build rule for target.
@@ -1913,6 +1926,7 @@ help:
 	@echo "... capability_state_test"
 	@echo "... config_test"
 	@echo "... controller_test"
+	@echo "... coordination_test"
 	@echo "... dispatcher_test"
 	@echo "... events_test"
 	@echo "... group_membership_test"

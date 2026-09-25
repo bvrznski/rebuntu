@@ -31,6 +31,7 @@ inline bool operator!=(const TaskId& a, const TaskId& b) { return !(a == b); }
 struct JobId { std::string value; explicit operator std::string() const { return value; } };
 inline bool operator==(const JobId& a, const JobId& b) { return a.value == b.value; }
 inline bool operator!=(const JobId& a, const JobId& b) { return !(a == b); }
+inline bool operator<(const JobId& a, const JobId& b) { return a.value < b.value; }
 
 struct ExecutionId { std::string value; explicit operator std::string() const { return value; } };
 inline bool operator==(const ExecutionId& a, const ExecutionId& b) { return a.value == b.value; }

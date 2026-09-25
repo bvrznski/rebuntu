@@ -91,6 +91,7 @@
 /home/bvrznski/rebuntu/cpp/Build/tests/CMakeFiles/test_ansible_provider.dir
 /home/bvrznski/rebuntu/cpp/Build/tests/CMakeFiles/test_jenkins_provider.dir
 /home/bvrznski/rebuntu/cpp/Build/tests/CMakeFiles/test_pipeline_provider.dir
+/home/bvrznski/rebuntu/cpp/Build/tests/CMakeFiles/dispatcher_test.dir
 /home/bvrznski/rebuntu/cpp/Build/tests/CMakeFiles/test.dir
 /home/bvrznski/rebuntu/cpp/Build/tests/CMakeFiles/edit_cache.dir
 /home/bvrznski/rebuntu/cpp/Build/tests/CMakeFiles/rebuild_cache.dir

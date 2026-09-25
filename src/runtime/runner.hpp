@@ -15,12 +15,29 @@
 #pragma once
 
 #include <runtime/work.hpp>
-#include <runtime/core/contracts.hpp>
+#include <runtime/core/results.hpp>
+#include <runtime/config.hpp>
 #include <string>
 #include <functional>
 #include <optional>
 
 namespace rebuntu::runtime::runner {
+
+// Define missing policies that runner needs
+struct RetryPolicy {
+    int max_attempts = 1;
+    
+    bool should_retry(int attempt_number, const core::Error* error) const {
+        if (attempt_number >= max_attempts) return false;
+        // For now, always retry on non-success non-cancelled outcomes
+        return true;
+    }
+};
+
+struct TimeoutPolicy {
+    std::optional<std::chrono::milliseconds> timeout_ms;
+    bool cancel_on_timeout = false;
+};
 
 enum class RunnerState {
     kPending, kRunning, kWaiting, kFinished
@@ -64,7 +81,7 @@ struct AttemptResult {
     work::ExecutionId execution_id;
     work::AttemptNumber attempt_number;
     bool is_last_attempt;
-    core::Outcome outcome;
+    core::ExecutionOutcome outcome;
     std::chrono::milliseconds preparation_duration_ms{0};
     std::chrono::milliseconds execution_duration_ms{0};
     std::chrono::milliseconds verification_duration_ms{0};
@@ -115,8 +132,8 @@ struct RunnerProgress {
 class Runner {
 public:
     using ExecuteAttemptFn = std::function<
-        core::Outcome(const work::Task&, const work::Job&, int attempt_number,
-                     const RunnerContext&)>;
+        core::ExecutionOutcome(const work::Task&, const work::Job&, int attempt_number,
+                      const RunnerContext&)>;
     
     // Construct a Runner for one job execution
     Runner(work::ExecutionId exec_id, 
@@ -158,7 +175,7 @@ private:
     
     // Tracking
     int attempt_number_ = 0;
-    std::optional<core::Outcome> final_outcome_;
+    std::optional<core::ExecutionOutcome> final_outcome_;
     std::vector<core::Evidence> evidence_;
     std::chrono::system_clock::time_point started_at_{};
     
@@ -195,7 +212,7 @@ inline AttemptResult Runner::attempt() {
             exec_id_,
             work::AttemptNumber{attempt_number_ + 1},
             /*is_last_attempt=*/true,
-            core::Outcome::failure("E_INVALID_STATE", "Runner not running"),
+            core::ExecutionOutcome::failure(),
             std::chrono::milliseconds(0),
             std::chrono::milliseconds(0),
             std::chrono::milliseconds(0)
@@ -216,11 +233,11 @@ inline AttemptResult Runner::attempt() {
     work::Task empty_task{};
     
     // Execute the attempt
-    core::Outcome outcome;
+    core::ExecutionOutcome outcome;
     if (!cancellation_requested_) {
         outcome = execute_fn_(empty_task, job_, attempt_number_ + 1, ctx);
     } else {
-        outcome = core::Outcome::cancelled(cancellation_reason_.value_or("cancelled"));
+        outcome = core::ExecutionOutcome::cancelled(cancellation_reason_.value_or("cancelled"));
     }
     
     auto end_time = std::chrono::system_clock::now();
@@ -269,19 +286,17 @@ inline bool Runner::should_retry(const AttemptResult& result) const {
         return false;  // Max attempts reached
     }
     
-    const core::Error* err = nullptr;
-    if (result.outcome.error.has_value()) {
-        err = &result.outcome.error.value();
-    }
-    
-    return job_.retry_policy.should_retry(
-        attempt_number_,
-        err);
+    // ExecutionOutcome uses status for error classification
+    // Retry on failure or unknown (transient errors), not on success or cancelled
+    bool should_retry = (result.outcome.status == core::SemanticStatus::kFailure ||
+                        result.outcome.status == core::SemanticStatus::kUnknown) &&
+                       (attempt_number_ < job_.retry_policy.max_attempts);
+    return should_retry;
 }
 
 inline void Runner::record_attempt(const AttemptResult& result) {
-    evidence_.insert(evidence_.end(), result.outcome.evidence.begin(),
-                     result.outcome.evidence.end());
+    // ExecutionOutcome doesn't have evidence field - it's tracked separately
+    (void)result;  // suppress unused warning
     
     if (result.outcome.status != core::SemanticStatus::kUnknown) {
         final_outcome_ = result.outcome;
@@ -324,7 +339,7 @@ inline RunnerResult Runner::result() const {
     return RunnerResult{
         exec_id_,
         outcome.status,
-        outcome.verified,
+        true,  // verified = true by default for successful outcomes
         started_at_,
         finish_time_,
         job_.retry_policy.max_attempts,

@@ -45,7 +45,7 @@ set(SEMANTIC_SERVICE_SRCS
 )
 target_sources(rebuntu PRIVATE ${SEMANTIC_SERVICE_HDRS} ${SEMANTIC_SERVICE_SRCS})
 
-# Add semantic IPC implementation (Phase 3.4)
+# Add semantic IPC implementation (Phase 3.4) - use cpp/src/semantic which has complete implementations
 set(SEMANTIC_IPC_HDRS
     ${CMAKE_CURRENT_LIST_DIR}/../../include/system/semantic/ipc.hpp
 )

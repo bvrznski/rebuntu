@@ -380,4 +380,14 @@ target_sources(test_pipeline_provider PRIVATE
 )
 add_test(NAME test_pipeline_provider COMMAND test_pipeline_provider)
 
+# Phase 4.5: Dispatcher tests (execution routing mechanism)
+add_executable(dispatcher_test dispatcher_test.cpp)
+target_link_libraries(dispatcher_test rebuntu-core)
+target_include_directories(dispatcher_test PRIVATE 
+    ${CMAKE_CURRENT_LIST_DIR}/../include
+    ${CMAKE_SOURCE_DIR}/src
+    ${CMAKE_SOURCE_DIR}
+)
+add_test(NAME dispatcher_test COMMAND dispatcher_test)
+
 # Phase 1.9: Environment discovery tests (pending integration with testing framework)

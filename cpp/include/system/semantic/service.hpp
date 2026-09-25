@@ -1,71 +1,98 @@
-// rebuntu::semantic::service — Native Semantic Service Architecture (Phase 3.3)
+// rebuntu::semantic::service — Native Semantic Service contracts (Phase 3.3)
 //
-// This establishes the canonical architecture for Rebuntu's native semantic
-// service that hosts the BitNet b1.58 2B4T model as a persistent, systemd-supervised
-// process.
+// This header establishes Rebuntu's native local semantic service:
 //
-// ARCHITECTURE
-//   - Service: Persistent daemon with lifecycle management (systemd supervised)
-//   - Provider: CPU-only inference engine (Phase 3.1-3.2)
-//   - IPC: Unix domain socket for bounded requests (Phase 3.4+)
+//   * Lifecycle: systemd-supervised persistent process
+//   * IPC: Unix domain socket for bounded requests
+//   * Readiness: separate from running state
+//   * Resources: CPU-only, bounded memory, timeouts enforced
 //
-// CRITICAL INVARIENTS
-//   - SERVICE != DAEMON (service is systemd unit, daemon is process implementation)
-//   - READINESS != RUNNING (ready means ready to accept work)
-//   - EXECUTION_SUCCESS != VERIFIED_SUCCESS (postcondition verification required)
-//   - DATA != CONTROL (model output is UNTRUSTED until validated)
+// Architecture:
+//   Service contracts -> this header (cpp/include/system/semantic/service.hpp)
+//   Service runtime   -> cpp/src/semantic/service.cpp
+//   IPC transport     -> cpp/include/system/environment/ipc.hpp
+//   Model provider    -> cpp/include/system/semantic/provider.hpp
 
 #pragma once
 
-#include <system/semantic/provider.hpp>
 #include <system/core/contracts.hpp>
-#include <filesystem>
-#include <chrono>
-#include <optional>
+#include <system/runtime/contracts.hpp>
+#include <system/semantic/provider.hpp>
 #include <string>
-#include <vector>
 #include <memory>
+#include <optional>
+#include <chrono>
+#include <vector>
+#include <mutex>
 
 namespace rebuntu::semantic {
 
-// Forward declaration
-class SemanticServiceController;
+namespace service {
 
 // ============================================================================
-// LifecycleState — Service lifecycle stage
+// Service Identity
 // ============================================================================
 
-enum class LifecycleState {
-    kUnavailable,     // Not running at all
-    kActivating,      // Starting up (loading model)
-    kReady,           // Running and accepting requests
-    kDraining,        // Stopping, finishing in-flight requests
-    kTerminating,     // Force stopping
+inline constexpr char const* kServiceId = "rebuntu-semantic";
+inline constexpr char const* kServiceTitle = "Rebuntu Native Semantic Service";
+
+// ============================================================================
+// Service Activation (for systemd integration)
+// ============================================================================
+
+enum class ServiceActivation {
+    kPersistent,     // always running (systemd Type=simple)
+    kOnDemand,       // started when first accessed
 };
 
-inline std::string to_string(LifecycleState s) {
-    switch (s) {
-        case LifecycleState::kUnavailable: return "unavailable";
-        case LifecycleState::kActivating:  return "activating";
-        case LifecycleState::kReady:       return "ready";
-        case LifecycleState::kDraining:    return "draining";
-        case LifecycleState::kTerminating: return "terminating";
+inline std::string to_string(ServiceActivation a) {
+    switch (a) {
+        case ServiceActivation::kPersistent: return "persistent";
+        case ServiceActivation::kOnDemand:   return "on-demand";
     }
     return "unknown";
 }
 
 // ============================================================================
-// ReadinessState — Can accept new work right now?
+// Service State
+// ============================================================================
+
+enum class ServiceState {
+    kUnavailable,   // not available
+    kActivating,    // in the process of becoming available (model loading)
+    kReady,         // service running AND model loaded and ready
+    kActive,        // accepting requests but model may be reloading
+    kDegraded,      // partially available with reduced capability
+    kDeactivating,  // in the process of stopping
+    kFailed,        // activation failed or service became unavailable due to error
+};
+
+inline std::string to_string(ServiceState s) {
+    switch (s) {
+        case ServiceState::kUnavailable:  return "unavailable";
+        case ServiceState::kActivating:   return "activating";
+        case ServiceState::kReady:        return "ready";
+        case ServiceState::kActive:       return "active";
+        case ServiceState::kDegraded:     return "degraded";
+        case ServiceState::kDeactivating: return "deactivating";
+        case ServiceState::kFailed:       return "failed";
+    }
+    return "unknown";
+}
+
+// ============================================================================
+// Readiness State
+// Can the service correctly process requests now?
 // ============================================================================
 
 enum class ReadinessState {
-    kNotReady,        // Cannot accept requests (loading, degraded)
-    kReady,           // Can accept and process requests
-    kDraining,        // Accepting only for graceful shutdown
+    kNotReady,      // not yet ready (model loading, initial startup)
+    kReady,         // model loaded and ready for requests
+    kDraining,      // shutting down, not accepting new work
 };
 
-inline std::string to_string(ReadinessState r) {
-    switch (r) {
+inline std::string to_string(ReadinessState s) {
+    switch (s) {
         case ReadinessState::kNotReady: return "not_ready";
         case ReadinessState::kReady:    return "ready";
         case ReadinessState::kDraining: return "draining";
@@ -74,213 +101,270 @@ inline std::string to_string(ReadinessState r) {
 }
 
 // ============================================================================
-// HealthState — Is the service healthy?
+// Service Configuration
 // ============================================================================
 
-enum class HealthState {
-    kUnknown,         // No health data yet
-    kHealthy,         // Operating normally
-    kDegraded,        // Functioning but with reduced capacity
-    kUnhealthy,       // Not functioning correctly
+struct Config {
+    // Path to the bitnet.cpp executable (discovered at runtime)
+    std::optional<std::string> bitnet_executable;
+    
+    // Path to model artifacts directory
+    std::optional<std::string> model_path;
+    
+    // CPU-only execution (required per policy)
+    bool cpu_only = true;
+    
+    // Memory limit in bytes (0 = unlimited, but provider may still enforce limits)
+    std::optional<int64_t> memory_limit_bytes;
+    
+    // Default timeout for inference requests
+    std::chrono::milliseconds default_timeout{30000};  // 30 seconds
+    
+    // IPC socket path
+    std::string ipc_socket_path;
 };
 
-inline std::string to_string(HealthState h) {
-    switch (h) {
-        case HealthState::kUnknown:   return "unknown";
-        case HealthState::kHealthy:   return "healthy";
-        case HealthState::kDegraded:  return "degraded";
-        case HealthState::kUnhealthy: return "unhealthy";
+// ============================================================================
+// Service Info (Phase 0.6 ServiceInfo extension)
+// ============================================================================
+
+struct ServiceInfo {
+    std::string id;
+    std::string title;
+    std::string description;
+    
+    // Activation method (systemd-managed service = persistent)
+    ServiceActivation activation;
+    
+    // Resource constraints
+    bool cpu_only = true;
+    std::optional<int64_t> memory_limit_bytes;
+    
+    // Readiness check configuration
+    bool has_readiness_check = true;
+    
+    // Health check endpoint (for external monitoring)
+    bool has_health_check_endpoint = false;
+    
+    // IPC interface
+    std::vector<std::string> interfaces;  // e.g., "unix-socket"
+};
+
+// ============================================================================
+// Service Control Operations
+// ============================================================================
+
+enum class ServiceControl {
+    kStart,         // Start the service (if not running)
+    kStop,          // Stop the service gracefully
+    kRestart,       // Restart the service
+    kReload,        // Reload configuration without full restart
+};
+
+inline std::string to_string(ServiceControl c) {
+    switch (c) {
+        case ServiceControl::kStart:   return "start";
+        case ServiceControl::kStop:    return "stop";
+        case ServiceControl::kRestart: return "restart";
+        case ServiceControl::kReload:  return "reload";
     }
     return "unknown";
 }
 
 // ============================================================================
-// ServiceMetrics — Runtime metrics for monitoring
+// IPC Request Types
 // ============================================================================
 
-struct ServiceMetrics {
-    std::chrono::system_clock::time_point started_at;
-    std::optional<std::chrono::system_clock::time_point> ready_at;
-    
-    size_t total_requests = 0;
-    size_t successful_requests = 0;
-    size_t failed_requests = 0;
-    size_t timed_out_requests = 0;
-    
-    std::chrono::milliseconds average_response_time_ms{0};
-    std::optional<std::chrono::milliseconds> last_response_time_ms;
-};
-
-// ============================================================================
-// ServiceState — Complete service status summary
-// ============================================================================
-
-struct ServiceState {
-    LifecycleState lifecycle = LifecycleState::kUnavailable;
-    ReadinessState readiness = ReadinessState::kNotReady;
-    HealthState health = HealthState::kUnknown;
-    
-    std::optional<std::string> state_detail;  // Human-readable detail
-    
-    ServiceMetrics metrics;
-};
-
-// ============================================================================
-// SemanticRequest — Canonical request type for semantic service
-// ============================================================================
-
-enum class SemanticRequestType {
-    kClassify,
-    kGenerateIntentCandidate,
-    kAssessEvidenceRelevance,
-    kSummarizeDiagnostics,
+enum class SemanticRequestType : int {
+    kClassification,
+    kIntentCandidate,
+    kEvidenceRelevance,
+    kDiagnosticSummary,
 };
 
 struct SemanticRequest {
     SemanticRequestType type;
+    std::chrono::system_clock::time_point timestamp;
     
-    // Request-specific data
-    std::string input_text;                    // For classify, generate_intent
-    std::vector<std::string> evidence_lines;   // For summarize
-    std::optional<std::string> query_context;  // For assess_relevance
+    // Typed request data (one of these will be populated)
+    struct ClassificationData {
+        std::string input;
+        std::vector<std::string> categories;
+    } classification;
     
-    std::chrono::milliseconds timeout = std::chrono::seconds(30);
+    struct IntentCandidateData {
+        std::string input;
+        std::vector<std::string> allowed_operations;
+    } intent_candidate;
     
-    // Request metadata for tracing
-    std::optional<std::string> request_id;
-    std::optional<std::string> client_info;
+    struct EvidenceRelevanceData {
+        std::string evidence;
+        std::string context;
+    } evidence_relevance;
+    
+    struct DiagnosticSummaryData {
+        std::vector<std::string> diagnostic_items;
+    } diagnostic_summary;
+    
+    // Request metadata
+    std::optional<std::chrono::milliseconds> timeout_ms;
+};
+
+struct SemanticResponseData {
+    std::optional<semantic::ClassificationResult> classification;
+    std::optional<semantic::IntentCandidate> intent_candidate;
+    std::optional<semantic::EvidenceRelevance> relevance;
+    std::optional<semantic::DiagnosticSummary> summary;
 };
 
 // ============================================================================
-// ServiceResult — Result of a service operation
+// IPC Response Types
 // ============================================================================
+
+struct SemanticServiceResponse {
+    std::chrono::system_clock::time_point responded_at;
+    
+    // Timing information
+    std::optional<std::chrono::milliseconds> inference_time_ms;
+    
+    // Response data (where applicable)
+    SemanticResponseData data;
+    
+    // Provider metadata
+    std::string provider_id;
+};
 
 struct ServiceResult {
-    bool succeeded = false;
-    std::optional<std::string> output;        // Model response if successful
-    std::optional<std::string> error_message;
+    core::SemanticStatus status = core::SemanticStatus::kUnknown;
     
-    // Timing
-    std::chrono::milliseconds request_duration_ms{0};
+    // Response data (where applicable)
+    std::optional<SemanticServiceResponse> response;
+    
+    // Error information (if not success)
+    std::optional<core::Error> error;
     
     // Evidence for verification
-    std::vector<Evidence> evidence;
+    std::vector<core::Evidence> evidence;
     
-    static ServiceResult success(std::string output, const Evidence& ev = {}) {
+    static ServiceResult success(SemanticServiceResponse resp) {
         ServiceResult r;
-        r.succeeded = true;
-        r.output = std::move(output);
-        if (!ev.source.empty()) r.evidence.push_back(ev);
+        r.status = core::SemanticStatus::kSuccess;
+        r.response = std::move(resp);
         return r;
     }
     
-    static ServiceResult failure(std::string error, const Evidence& ev = {}) {
+    static ServiceResult failure(std::string code, std::string message) {
         ServiceResult r;
-        r.error_message = std::move(error);
-        if (!ev.source.empty()) r.evidence.push_back(ev);
+        r.status = core::SemanticStatus::kFailure;
+        r.error = core::Error{std::move(code), std::move(message)};
         return r;
     }
     
-    static ServiceResult timeout() {
+    static ServiceResult unavailable(std::string message) {
         ServiceResult r;
-        r.error_message = "semantic request timed out";
+        r.status = core::SemanticStatus::kUnknown;
+        r.error = core::Error{"E_SEMANTIC_UNAVAILABLE", std::move(message)};
         return r;
     }
 };
 
 // ============================================================================
-// SemanticServiceController — Interface for service lifecycle management
+// Service Control Interface
 // ============================================================================
 
 class SemanticServiceController {
 public:
     virtual ~SemanticServiceController() = default;
     
-    // Lifecycle control (may require privilege elevation)
-    virtual bool start() = 0;           // Start the service (if not running)
-    virtual bool stop() = 0;            // Stop the service gracefully
-    virtual bool restart() = 0;         // Restart the service
+    // Get current service state
+    virtual ServiceState get_state() const = 0;
     
-    // State queries (always available)
-    virtual LifecycleState lifecycle_state() const = 0;
-    virtual ReadinessState readiness_state() const = 0;
-    virtual HealthState health_state() const = 0;
+    // Check if service is ready to accept requests (model loaded)
+    virtual ReadinessState get_readiness() const = 0;
     
-    virtual ServiceState get_state() const = 0;  // Complete status
-    virtual std::optional<std::string> state_detail() const = 0;
+    // Control operations
+    virtual bool start() = 0;        // Start service
+    virtual bool stop() = 0;         // Stop service gracefully
+    virtual bool restart() = 0;      // Restart service
     
-    // Service metrics
-    virtual ServiceMetrics metrics() const = 0;
+    // Send a semantic request (blocking, with timeout)
+    virtual ServiceResult send_request(const SemanticRequest& request) = 0;
     
-    // Cancel all pending operations (graceful shutdown)
-    virtual void cancel_all_operations() = 0;
-    
-    // Semantic operations (delegate to provider)
-    virtual ServiceResult classify(
-        const std::string& text,
-        std::chrono::milliseconds timeout = std::chrono::seconds(30),
-        rebuntu::runtime::CancellationToken* cancellation_token = nullptr
-    ) = 0;
-    
-    virtual ServiceResult generate_intent_candidate(
-        const std::string& text,
-        std::chrono::milliseconds timeout = std::chrono::seconds(30),
-        rebuntu::runtime::CancellationToken* cancellation_token = nullptr
-    ) = 0;
-    
-    virtual ServiceResult assess_evidence_relevance(
-        const std::string& query,
-        const std::string& evidence_text,
-        std::chrono::milliseconds timeout = std::chrono::seconds(30),
-        rebuntu::runtime::CancellationToken* cancellation_token = nullptr
-    ) = 0;
-    
-    virtual ServiceResult summarize_diagnostics(
-        const std::vector<std::string>& input_lines,
-        size_t max_output_tokens = 512,
-        std::chrono::milliseconds timeout = std::chrono::seconds(30),
-        rebuntu::runtime::CancellationToken* cancellation_token = nullptr
-    ) = 0;
+    // Health check (can we connect?)
+    virtual bool is_healthy() const = 0;
 };
 
 // ============================================================================
-// IPC endpoint configuration
+// Native systemd-based service controller
 // ============================================================================
 
-struct ServiceIPCConfig {
-    std::filesystem::path socket_path;     // Unix domain socket path
-    mode_t permissions = 0660;             // Socket file permissions
-    int max_connections = 10;              // Max pending connections
+class SystemdServiceController : public SemanticServiceController {
+public:
+    explicit SystemdServiceController(Config config);
+    ~SystemdServiceController() override;
+    
+    // Disable copy/move
+    SystemdServiceController(const SystemdServiceController&) = delete;
+    SystemdServiceController& operator=(const SystemdServiceController&) = delete;
+    
+    ServiceState get_state() const override;
+    ReadinessState get_readiness() const override;
+    bool start() override;
+    bool stop() override;
+    bool restart() override;
+    
+    ServiceResult send_request(const SemanticRequest& request) override;
+    bool is_healthy() const override;
+
+private:
+    class Impl;
+    std::unique_ptr<Impl> pimpl_;
 };
 
 // ============================================================================
-// Factory functions for service creation
+// In-memory service state (for testing without systemd)
 // ============================================================================
 
-// Create a controller that uses the system's native systemd supervisor
-std::unique_ptr<SemanticServiceController> make_systemd_controller();
+class MockServiceController : public SemanticServiceController {
+public:
+    explicit MockServiceController(Config config);
+    
+    ServiceState get_state() const override;
+    ReadinessState get_readiness() const override;
+    bool start() override;
+    bool stop() override;
+    bool restart() override;
+    
+    ServiceResult send_request(const SemanticRequest& request) override;
+    bool is_healthy() const override;
+    
+    // Mock control methods
+    void set_state(ServiceState state);
+    void set_readiness(ReadinessState readiness);
 
-// Create a mock controller for testing (no systemd required)
-std::unique_ptr<SemanticServiceController> make_mock_controller(
-    std::unique_ptr<SemanticProvider> provider = nullptr);
+private:
+    Config config_;
+    mutable std::mutex mutex_;
+    ServiceState state_ = ServiceState::kUnavailable;
+    ReadinessState readiness_ = ReadinessState::kNotReady;
+};
+
+}  // namespace service
+
+// ============================================================================
+// Semantic Service Registry (combines provider + service)
+// ============================================================================
+
+class SemanticServiceRegistry {
+public:
+    void add_provider(std::unique_ptr<semantic::SemanticProvider> provider);
+    std::vector<std::unique_ptr<semantic::SemanticProvider>> all_providers() const;
+    std::optional<semantic::SemanticProvider*> find_provider(const semantic::ProviderId& id) const;
+    
+    bool is_semantic_available() const;
+
+private:
+    std::vector<semantic::SemanticProvider*> providers_;
+};
 
 }  // namespace rebuntu::semantic
-
-namespace std {
-
-// Hash support for enum class in unordered_map
-template <>
-struct hash<rebuntu::semantic::LifecycleState> {
-    size_t operator()(rebuntu::semantic::LifecycleState s) const noexcept {
-        return static_cast<size_t>(s);
-    }
-};
-
-template <>
-struct hash<rebuntu::semantic::ReadinessState> {
-    size_t operator()(rebuntu::semantic::ReadinessState r) const noexcept {
-        return static_cast<size_t>(r);
-    }
-};
-
-}  // namespace std

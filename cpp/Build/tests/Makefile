@@ -644,6 +644,20 @@ test_pipeline_provider/fast:
 	cd /home/bvrznski/rebuntu/cpp/Build && $(MAKE) $(MAKESILENT) -f tests/CMakeFiles/test_pipeline_provider.dir/build.make tests/CMakeFiles/test_pipeline_provider.dir/build
 .PHONY : test_pipeline_provider/fast
 
+# Convenience name for target.
+tests/CMakeFiles/dispatcher_test.dir/rule:
+	cd /home/bvrznski/rebuntu/cpp/Build && $(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 tests/CMakeFiles/dispatcher_test.dir/rule
+.PHONY : tests/CMakeFiles/dispatcher_test.dir/rule
+
+# Convenience name for target.
+dispatcher_test: tests/CMakeFiles/dispatcher_test.dir/rule
+.PHONY : dispatcher_test
+
+# fast build rule for target.
+dispatcher_test/fast:
+	cd /home/bvrznski/rebuntu/cpp/Build && $(MAKE) $(MAKESILENT) -f tests/CMakeFiles/dispatcher_test.dir/build.make tests/CMakeFiles/dispatcher_test.dir/build
+.PHONY : dispatcher_test/fast
+
 __/src/semantic/ipc_transport.o: __/src/semantic/ipc_transport.cpp.o
 .PHONY : __/src/semantic/ipc_transport.o
 
@@ -763,6 +777,30 @@ config_test.s: config_test.cpp.s
 config_test.cpp.s:
 	cd /home/bvrznski/rebuntu/cpp/Build && $(MAKE) $(MAKESILENT) -f tests/CMakeFiles/config_test.dir/build.make tests/CMakeFiles/config_test.dir/config_test.cpp.s
 .PHONY : config_test.cpp.s
+
+dispatcher_test.o: dispatcher_test.cpp.o
+.PHONY : dispatcher_test.o
+
+# target to build an object file
+dispatcher_test.cpp.o:
+	cd /home/bvrznski/rebuntu/cpp/Build && $(MAKE) $(MAKESILENT) -f tests/CMakeFiles/dispatcher_test.dir/build.make tests/CMakeFiles/dispatcher_test.dir/dispatcher_test.cpp.o
+.PHONY : dispatcher_test.cpp.o
+
+dispatcher_test.i: dispatcher_test.cpp.i
+.PHONY : dispatcher_test.i
+
+# target to preprocess a source file
+dispatcher_test.cpp.i:
+	cd /home/bvrznski/rebuntu/cpp/Build && $(MAKE) $(MAKESILENT) -f tests/CMakeFiles/dispatcher_test.dir/build.make tests/CMakeFiles/dispatcher_test.dir/dispatcher_test.cpp.i
+.PHONY : dispatcher_test.cpp.i
+
+dispatcher_test.s: dispatcher_test.cpp.s
+.PHONY : dispatcher_test.s
+
+# target to generate assembly for a file
+dispatcher_test.cpp.s:
+	cd /home/bvrznski/rebuntu/cpp/Build && $(MAKE) $(MAKESILENT) -f tests/CMakeFiles/dispatcher_test.dir/build.make tests/CMakeFiles/dispatcher_test.dir/dispatcher_test.cpp.s
+.PHONY : dispatcher_test.cpp.s
 
 events_test.o: events_test.cpp.o
 .PHONY : events_test.o
@@ -1784,6 +1822,7 @@ help:
 	@echo "... automation_test"
 	@echo "... capability_state_test"
 	@echo "... config_test"
+	@echo "... dispatcher_test"
 	@echo "... events_test"
 	@echo "... group_membership_test"
 	@echo "... host_foundation_test"
@@ -1833,6 +1872,9 @@ help:
 	@echo "... config_test.o"
 	@echo "... config_test.i"
 	@echo "... config_test.s"
+	@echo "... dispatcher_test.o"
+	@echo "... dispatcher_test.i"
+	@echo "... dispatcher_test.s"
 	@echo "... events_test.o"
 	@echo "... events_test.i"
 	@echo "... events_test.s"

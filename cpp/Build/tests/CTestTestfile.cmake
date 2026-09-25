@@ -78,3 +78,5 @@ add_test([=[test_jenkins_provider]=] "/home/bvrznski/rebuntu/cpp/Build/tests/tes
 set_tests_properties([=[test_jenkins_provider]=] PROPERTIES  _BACKTRACE_TRIPLES "/home/bvrznski/rebuntu/cpp/tests/CMakeLists.txt;367;add_test;/home/bvrznski/rebuntu/cpp/tests/CMakeLists.txt;0;")
 add_test([=[test_pipeline_provider]=] "/home/bvrznski/rebuntu/cpp/Build/tests/test_pipeline_provider")
 set_tests_properties([=[test_pipeline_provider]=] PROPERTIES  _BACKTRACE_TRIPLES "/home/bvrznski/rebuntu/cpp/tests/CMakeLists.txt;381;add_test;/home/bvrznski/rebuntu/cpp/tests/CMakeLists.txt;0;")
+add_test([=[dispatcher_test]=] "/home/bvrznski/rebuntu/cpp/Build/tests/dispatcher_test")
+set_tests_properties([=[dispatcher_test]=] PROPERTIES  _BACKTRACE_TRIPLES "/home/bvrznski/rebuntu/cpp/tests/CMakeLists.txt;391;add_test;/home/bvrznski/rebuntu/cpp/tests/CMakeLists.txt;0;")

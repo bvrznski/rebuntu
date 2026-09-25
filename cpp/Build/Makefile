@@ -1258,6 +1258,19 @@ test_pipeline_provider/fast:
 .PHONY : test_pipeline_provider/fast
 
 #=============================================================================
+# Target rules for targets named dispatcher_test
+
+# Build rule for target.
+dispatcher_test: cmake_check_build_system
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 dispatcher_test
+.PHONY : dispatcher_test
+
+# fast build rule for target.
+dispatcher_test/fast:
+	$(MAKE) $(MAKESILENT) -f tests/CMakeFiles/dispatcher_test.dir/build.make tests/CMakeFiles/dispatcher_test.dir/build
+.PHONY : dispatcher_test/fast
+
+#=============================================================================
 # Target rules for targets named rebuntu
 
 # Build rule for target.
@@ -1886,6 +1899,7 @@ help:
 	@echo "... automation_test"
 	@echo "... capability_state_test"
 	@echo "... config_test"
+	@echo "... dispatcher_test"
 	@echo "... events_test"
 	@echo "... group_membership_test"
 	@echo "... host_foundation_test"

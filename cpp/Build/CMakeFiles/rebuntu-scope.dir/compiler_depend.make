@@ -25,6 +25,7 @@ CMakeFiles/rebuntu-scope.dir/home/bvrznski/rebuntu/src/system/environment/scope.
   /usr/include/x86_64-linux-gnu/bits/confname.h \
   /usr/include/x86_64-linux-gnu/bits/getopt_posix.h \
   /usr/include/x86_64-linux-gnu/bits/getopt_core.h \
+  /usr/include/x86_64-linux-gnu/bits/unistd.h \
   /usr/include/x86_64-linux-gnu/bits/unistd_ext.h \
   /usr/include/linux/close_range.h \
   /usr/include/c++/11/cstdint \
@@ -89,6 +90,7 @@ CMakeFiles/rebuntu-scope.dir/home/bvrznski/rebuntu/src/system/environment/scope.
   /usr/include/x86_64-linux-gnu/bits/types/__sigset_t.h \
   /usr/include/x86_64-linux-gnu/bits/types/struct_timeval.h \
   /usr/include/x86_64-linux-gnu/bits/types/struct_timespec.h \
+  /usr/include/x86_64-linux-gnu/bits/select2.h \
   /usr/include/x86_64-linux-gnu/bits/pthreadtypes.h \
   /usr/include/x86_64-linux-gnu/bits/thread-shared-types.h \
   /usr/include/x86_64-linux-gnu/bits/pthreadtypes-arch.h \
@@ -96,7 +98,9 @@ CMakeFiles/rebuntu-scope.dir/home/bvrznski/rebuntu/src/system/environment/scope.
   /usr/include/x86_64-linux-gnu/bits/struct_mutex.h \
   /usr/include/x86_64-linux-gnu/bits/struct_rwlock.h \
   /usr/include/alloca.h \
+  /usr/include/x86_64-linux-gnu/bits/stdlib-bsearch.h \
   /usr/include/x86_64-linux-gnu/bits/stdlib-float.h \
+  /usr/include/x86_64-linux-gnu/bits/stdlib.h \
   /usr/include/c++/11/bits/std_abs.h \
   /usr/include/c++/11/bits/algorithmfwd.h \
   /usr/include/c++/11/initializer_list \
@@ -127,6 +131,7 @@ CMakeFiles/rebuntu-scope.dir/home/bvrznski/rebuntu/src/system/environment/scope.
   /usr/include/x86_64-linux-gnu/bits/types/mbstate_t.h \
   /usr/include/x86_64-linux-gnu/bits/types/__mbstate_t.h \
   /usr/include/x86_64-linux-gnu/bits/types/__FILE.h \
+  /usr/include/x86_64-linux-gnu/bits/wchar2.h \
   /usr/include/c++/11/bits/char_traits.h \
   /usr/include/c++/11/bits/ostream_insert.h \
   /usr/include/c++/11/bits/cxxabi_forced.h \
@@ -180,6 +185,8 @@ CMakeFiles/rebuntu-scope.dir/home/bvrznski/rebuntu/src/system/environment/scope.
   /usr/include/x86_64-linux-gnu/bits/types/struct_FILE.h \
   /usr/include/x86_64-linux-gnu/bits/types/cookie_io_functions_t.h \
   /usr/include/x86_64-linux-gnu/bits/stdio_lim.h \
+  /usr/include/x86_64-linux-gnu/bits/stdio.h \
+  /usr/include/x86_64-linux-gnu/bits/stdio2.h \
   /usr/include/c++/11/cerrno \
   /usr/include/errno.h \
   /usr/include/x86_64-linux-gnu/bits/errno.h \
@@ -250,6 +257,8 @@ CMakeFiles/rebuntu-scope.dir/home/bvrznski/rebuntu/src/system/environment/scope.
   /usr/include/c++/11/cstring \
   /usr/include/string.h \
   /usr/include/strings.h \
+  /usr/include/x86_64-linux-gnu/bits/strings_fortified.h \
+  /usr/include/x86_64-linux-gnu/bits/string_fortified.h \
   /usr/include/c++/11/fstream \
   /usr/include/x86_64-linux-gnu/c++/11/bits/basic_file.h \
   /usr/include/x86_64-linux-gnu/c++/11/bits/c++io.h \
@@ -323,11 +332,19 @@ CMakeFiles/rebuntu-scope.dir/home/bvrznski/rebuntu/src/system/environment/scope.
 
 /usr/include/c++/11/bits/stream_iterator.h:
 
-/usr/include/x86_64-linux-gnu/bits/types/mbstate_t.h:
+/usr/include/c++/11/algorithm:
 
-/usr/include/x86_64-linux-gnu/bits/types/wint_t.h:
+/usr/include/asm-generic/posix_types.h:
 
-/usr/include/x86_64-linux-gnu/bits/floatn-common.h:
+/usr/include/c++/11/bits/fstream.tcc:
+
+/usr/include/x86_64-linux-gnu/c++/11/bits/c++io.h:
+
+/usr/include/x86_64-linux-gnu/c++/11/bits/basic_file.h:
+
+/usr/include/c++/11/fstream:
+
+/usr/include/x86_64-linux-gnu/bits/string_fortified.h:
 
 /usr/include/wchar.h:
 
@@ -365,11 +382,13 @@ CMakeFiles/rebuntu-scope.dir/home/bvrznski/rebuntu/src/system/environment/scope.
 
 /usr/include/c++/11/bits/allocated_ptr.h:
 
+/usr/include/x86_64-linux-gnu/bits/types/wint_t.h:
+
+/usr/include/x86_64-linux-gnu/bits/floatn-common.h:
+
 /usr/include/x86_64-linux-gnu/asm/bitsperlong.h:
 
 /usr/include/c++/11/backward/binders.h:
-
-/usr/include/c++/11/algorithm:
 
 /usr/include/c++/11/system_error:
 
@@ -403,25 +422,45 @@ CMakeFiles/rebuntu-scope.dir/home/bvrznski/rebuntu/src/system/environment/scope.
 
 /usr/include/c++/11/bits/stl_iterator_base_types.h:
 
-/usr/include/x86_64-linux-gnu/bits/unistd_ext.h:
+/usr/include/x86_64-linux-gnu/bits/types/struct_itimerspec.h:
 
-/usr/include/c++/11/bits/locale_facets_nonio.h:
+/usr/include/c++/11/bits/sstream.tcc:
 
-/usr/include/c++/11/ext/type_traits.h:
+/usr/include/c++/11/new:
+
+/usr/include/c++/11/bits/ranges_algo.h:
+
+/usr/include/x86_64-linux-gnu/bits/struct_mutex.h:
+
+/usr/include/c++/11/bits/stl_iterator.h:
+
+/usr/include/x86_64-linux-gnu/bits/unistd.h:
 
 /usr/include/x86_64-linux-gnu/sys/select.h:
 
-/usr/include/x86_64-linux-gnu/c++/11/bits/os_defines.h:
+/usr/lib/gcc/x86_64-linux-gnu/11/include/stddef.h:
 
-/usr/include/x86_64-linux-gnu/bits/environments.h:
+/usr/include/x86_64-linux-gnu/bits/types/struct_FILE.h:
 
-/usr/include/c++/11/bits/exception_defines.h:
+/usr/include/c++/11/string_view:
 
 /usr/include/x86_64-linux-gnu/bits/types/__locale_t.h:
 
 /usr/include/x86_64-linux-gnu/bits/confname.h:
 
+/usr/include/x86_64-linux-gnu/bits/stdlib.h:
+
+/usr/include/x86_64-linux-gnu/bits/types/struct_timeval.h:
+
+/usr/include/x86_64-linux-gnu/asm/errno.h:
+
 /usr/include/x86_64-linux-gnu/gnu/stubs-64.h:
+
+/usr/include/c++/11/iterator:
+
+/usr/include/x86_64-linux-gnu/bits/floatn.h:
+
+/usr/include/c++/11/bits/range_access.h:
 
 /usr/include/c++/11/bits/stl_vector.h:
 
@@ -473,9 +512,15 @@ CMakeFiles/rebuntu-scope.dir/home/bvrznski/rebuntu/src/system/environment/scope.
 
 /usr/lib/gcc/x86_64-linux-gnu/11/include/stdint.h:
 
+/usr/include/x86_64-linux-gnu/bits/select2.h:
+
 /usr/include/c++/11/cwchar:
 
 /usr/include/x86_64-linux-gnu/bits/uintn-identity.h:
+
+/usr/include/x86_64-linux-gnu/bits/types/struct_statx_timestamp.h:
+
+/usr/include/c++/11/cwctype:
 
 /usr/include/c++/11/ext/atomicity.h:
 
@@ -485,15 +530,9 @@ CMakeFiles/rebuntu-scope.dir/home/bvrznski/rebuntu/src/system/environment/scope.
 
 /usr/include/c++/11/bits/locale_facets_nonio.tcc:
 
-/usr/include/x86_64-linux-gnu/bits/types/struct_timeval.h:
-
-/usr/include/x86_64-linux-gnu/asm/errno.h:
-
 /usr/include/x86_64-linux-gnu/sys/cdefs.h:
 
 /usr/include/c++/11/bits/cxxabi_forced.h:
-
-/usr/include/c++/11/fstream:
 
 /usr/include/c++/11/bits/stl_pair.h:
 
@@ -525,6 +564,18 @@ CMakeFiles/rebuntu-scope.dir/home/bvrznski/rebuntu/src/system/environment/scope.
 
 /usr/include/c++/11/optional:
 
+/usr/include/x86_64-linux-gnu/bits/unistd_ext.h:
+
+/usr/include/c++/11/bits/locale_facets_nonio.h:
+
+/usr/include/x86_64-linux-gnu/bits/environments.h:
+
+/usr/include/c++/11/bits/exception_defines.h:
+
+/usr/include/x86_64-linux-gnu/c++/11/bits/os_defines.h:
+
+/usr/include/c++/11/ext/type_traits.h:
+
 /usr/include/x86_64-linux-gnu/bits/getopt_core.h:
 
 /usr/include/c++/11/vector:
@@ -539,9 +590,9 @@ CMakeFiles/rebuntu-scope.dir/home/bvrznski/rebuntu/src/system/environment/scope.
 
 /usr/include/c++/11/bits/ranges_cmp.h:
 
-/usr/include/c++/11/bits/char_traits.h:
+/usr/include/c++/11/bits/ranges_algobase.h:
 
-/usr/include/asm-generic/errno-base.h:
+/usr/include/x86_64-linux-gnu/bits/posix_opt.h:
 
 /usr/include/c++/11/bits/allocator.h:
 
@@ -571,24 +622,6 @@ CMakeFiles/rebuntu-scope.dir/home/bvrznski/rebuntu/src/system/environment/scope.
 
 /home/bvrznski/rebuntu/src/system/environment/scope.hpp:
 
-/usr/include/c++/11/bits/sstream.tcc:
-
-/usr/include/c++/11/new:
-
-/usr/include/x86_64-linux-gnu/bits/struct_mutex.h:
-
-/usr/include/c++/11/bits/ranges_algo.h:
-
-/usr/include/c++/11/bits/stl_iterator.h:
-
-/usr/lib/gcc/x86_64-linux-gnu/11/include/stddef.h:
-
-/usr/include/c++/11/string_view:
-
-/usr/include/x86_64-linux-gnu/bits/types/struct_FILE.h:
-
-/usr/include/x86_64-linux-gnu/bits/types/struct_itimerspec.h:
-
 /usr/include/x86_64-linux-gnu/bits/libc-header-start.h:
 
 /usr/include/c++/11/bits/stl_iterator_base_funcs.h:
@@ -612,10 +645,6 @@ CMakeFiles/rebuntu-scope.dir/home/bvrznski/rebuntu/src/system/environment/scope.
 /usr/include/c++/11/ext/numeric_traits.h:
 
 /usr/include/c++/11/bits/iterator_concepts.h:
-
-/usr/include/x86_64-linux-gnu/bits/posix_opt.h:
-
-/usr/include/c++/11/bits/ranges_algobase.h:
 
 /usr/include/linux/close_range.h:
 
@@ -642,6 +671,18 @@ CMakeFiles/rebuntu-scope.dir/home/bvrznski/rebuntu/src/system/environment/scope.
 /usr/include/x86_64-linux-gnu/bits/byteswap.h:
 
 /home/bvrznski/rebuntu/src/system/environment/scope.cpp:
+
+/usr/include/x86_64-linux-gnu/bits/types/mbstate_t.h:
+
+/usr/include/x86_64-linux-gnu/bits/strings_fortified.h:
+
+/usr/include/x86_64-linux-gnu/bits/wchar2.h:
+
+/usr/include/c++/11/filesystem:
+
+/usr/include/c++/11/bits/char_traits.h:
+
+/usr/include/asm-generic/errno-base.h:
 
 /usr/include/c++/11/bits/max_size_type.h:
 
@@ -733,6 +774,14 @@ CMakeFiles/rebuntu-scope.dir/home/bvrznski/rebuntu/src/system/environment/scope.
 
 /usr/include/stdio.h:
 
+/usr/include/x86_64-linux-gnu/bits/stdio.h:
+
+/usr/include/x86_64-linux-gnu/bits/stdio2.h:
+
+/usr/include/x86_64-linux-gnu/bits/types/struct_tm.h:
+
+/usr/include/c++/11/bits/locale_facets.tcc:
+
 /usr/include/x86_64-linux-gnu/bits/types/cookie_io_functions_t.h:
 
 /usr/include/c++/11/cerrno:
@@ -757,11 +806,11 @@ CMakeFiles/rebuntu-scope.dir/home/bvrznski/rebuntu/src/system/environment/scope.
 
 /usr/include/c++/11/bits/basic_string.tcc:
 
-/usr/include/c++/11/filesystem:
-
 /usr/include/x86_64-linux-gnu/bits/types/clockid_t.h:
 
 /usr/include/c++/11/bits/stl_bvector.h:
+
+/usr/include/x86_64-linux-gnu/bits/stdlib-bsearch.h:
 
 /usr/include/x86_64-linux-gnu/bits/types/struct___jmp_buf_tag.h:
 
@@ -795,21 +844,19 @@ CMakeFiles/rebuntu-scope.dir/home/bvrznski/rebuntu/src/system/environment/scope.
 
 /usr/include/c++/11/bits/locale_facets.h:
 
-/usr/include/x86_64-linux-gnu/bits/types/struct_statx_timestamp.h:
-
-/usr/include/c++/11/cwctype:
-
 /usr/include/c++/11/bits/ios_base.h:
+
+/usr/include/c++/11/codecvt:
+
+/usr/include/string.h:
+
+/usr/include/c++/11/bits/streambuf.tcc:
 
 /usr/include/c++/11/bits/streambuf_iterator.h:
 
 /usr/include/linux/types.h:
 
 /usr/include/x86_64-linux-gnu/c++/11/bits/ctype_inline.h:
-
-/usr/include/x86_64-linux-gnu/bits/types/struct_tm.h:
-
-/usr/include/c++/11/bits/locale_facets.tcc:
 
 /usr/include/x86_64-linux-gnu/c++/11/bits/time_members.h:
 
@@ -818,12 +865,6 @@ CMakeFiles/rebuntu-scope.dir/home/bvrznski/rebuntu/src/system/environment/scope.
 /usr/include/c++/11/bits/unique_ptr.h:
 
 /usr/include/c++/11/ostream:
-
-/usr/include/c++/11/bits/range_access.h:
-
-/usr/include/x86_64-linux-gnu/bits/floatn.h:
-
-/usr/include/c++/11/iterator:
 
 /usr/include/c++/11/array:
 
@@ -852,17 +893,3 @@ CMakeFiles/rebuntu-scope.dir/home/bvrznski/rebuntu/src/system/environment/scope.
 /usr/include/c++/11/bits/refwrap.h:
 
 /usr/include/c++/11/bits/fs_ops.h:
-
-/usr/include/c++/11/codecvt:
-
-/usr/include/c++/11/bits/streambuf.tcc:
-
-/usr/include/string.h:
-
-/usr/include/x86_64-linux-gnu/c++/11/bits/basic_file.h:
-
-/usr/include/x86_64-linux-gnu/c++/11/bits/c++io.h:
-
-/usr/include/asm-generic/posix_types.h:
-
-/usr/include/c++/11/bits/fstream.tcc:

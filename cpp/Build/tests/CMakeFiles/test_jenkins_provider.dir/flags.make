@@ -4,7 +4,7 @@
 # compile CXX with /usr/bin/c++
 CXX_DEFINES = 
 
-CXX_INCLUDES = -I/home/bvrznski/rebuntu/cpp/tests/../../src -I/home/bvrznski/rebuntu/cpp/tests/../include -I/home/bvrznski/rebuntu/cpp/src -I/home/bvrznski/rebuntu/cpp/../src -I/home/bvrznski/rebuntu/src
+CXX_INCLUDES = -I/home/bvrznski/rebuntu/cpp/tests/../../src -I/home/bvrznski/rebuntu/cpp/tests/../include -I/home/bvrznski/rebuntu/cpp/src/core/../../.. -I/home/bvrznski/rebuntu/cpp/src/core/../../../cpp/include -I/home/bvrznski/rebuntu/cpp/../src -I/home/bvrznski/rebuntu/src
 
-CXX_FLAGS = -g -Wall -Wextra -Wpedantic -Wformat=2 -Wnull-dereference -Wshift-overflow -Wduplicated-cond -Wduplicated-branches -Wlogical-op -Wcast-qual -Wcast-align -Wconversion -std=c++20
+CXX_FLAGS = -O3 -DNDEBUG -Wall -Wextra -Wpedantic -Wformat=2 -Wnull-dereference -Wshift-overflow -Wduplicated-cond -Wduplicated-branches -Wlogical-op -Wcast-qual -Wcast-align -Wconversion -std=c++20
 

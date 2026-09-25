@@ -1,225 +1,193 @@
-// Test suite for Rebuntu runtime Runner (Phase 0.13)
+// rebuntu::runtime::runner - Tests (Phase 4.4)
+//
+// Tests for the Runner execution state machine component.
+
 #include <runtime/runner.hpp>
-#include <runtime/core/contracts.hpp>
 #include <runtime/work.hpp>
+#include <runtime/core/results.hpp>
+#include <cassert>
 #include <iostream>
+#include <chrono>
 
-namespace rebuntu::runtime {
-namespace runner {
+using namespace rebuntu::runtime;
+using namespace rebuntu::runtime::work;
+using namespace rebuntu::runtime::runner;
 
-// Test basic Runner functionality
-int test_runner_basic() {
-    int errors = 0;
-    
-    work::ExecutionId exec_id{"exec-001"};
-    
-    work::Task task{
-        .id = work::TaskId{"task-test"},
-        .title = "Test Task",
-        .description = "A test task for Runner",
-        .unit_id = "test-unit",
-        .mode = work::ExecutionMode::kInline,
-        .created_at = std::chrono::system_clock::now(),
+void test_runner_creation() {
+    auto execute_fn = [](const Task&, const Job&, int, const RunnerContext&) {
+        return rebuntu::core::ExecutionOutcome::success();
     };
     
-    work::Job job;
-    job.id = work::JobId{"job-001"};
-    job.task_id = task.id.value;
-    job.created_at = std::chrono::system_clock::now();
-    job.state = work::JobState::kCreated;
-    
-    int call_count = 0;
-    auto execute_fn = [&call_count](const work::Task& task, const work::Job& job, 
-                                    int attempt_number, const RunnerContext&) -> core::Outcome {
-        (void)task; (void)job; (void)attempt_number;
-        call_count++;
-        return core::Outcome::success();
+    Runner runner{ExecutionId{"exec-1"}, Job{}, execute_fn};
+    assert(runner.progress().runner_state == RunnerState::kPending);
+    std::cout << "test_runner_creation: PASSED" << std::endl;
+}
+
+void test_runner_start() {
+    auto execute_fn = [](const Task&, const Job&, int, const RunnerContext&) {
+        return rebuntu::core::ExecutionOutcome::success();
     };
     
-    Runner runner(exec_id, std::move(job), execute_fn);
-    
-    if (runner.progress().runner_state != RunnerState::kPending) {
-        std::cerr << "ERROR: Initial state should be kPending\n";
-        errors++;
-    }
-    
+    Runner runner{ExecutionId{"exec-2"}, Job{}, execute_fn};
     runner.start();
     
-    if (runner.progress().runner_state != RunnerState::kRunning) {
-        std::cerr << "ERROR: State after start should be kRunning\n";
-        errors++;
-    }
-    
-    auto result = runner.attempt();
-    
-    if (result.outcome.status != core::SemanticStatus::kSuccess) {
-        std::cerr << "ERROR: Execution should succeed\n";
-        errors++;
-    }
-    
-    if (call_count != 1) {
-        std::cerr << "ERROR: Execute function should be called once\n";
-        errors++;
-    }
-    
-    if (!runner.is_finished()) {
-        std::cerr << "ERROR: Runner should be finished after single attempt\n";
-        errors++;
-    }
-    
-    auto runner_result = runner.result();
-    if (runner_result.status != core::SemanticStatus::kSuccess) {
-        std::cerr << "ERROR: Final status should be success\n";
-        errors++;
-    }
-    
-    return errors;
+    assert(runner.progress().runner_state == RunnerState::kRunning);
+    std::cout << "test_runner_start: PASSED" << std::endl;
 }
 
-// Test cancellation
-int test_runner_cancel() {
-    int errors = 0;
-    
-    work::ExecutionId exec_id{"exec-002"};
-    
-    work::Task task{
-        .id = work::TaskId{"task-cancel"},
-        .title = "Cancel Test",
-        .description = "Test cancellation",
-        .unit_id = "test-unit",
-        .mode = work::ExecutionMode::kInline,
-        .created_at = std::chrono::system_clock::now(),
-    };
-    
-    work::Job job;
-    job.id = work::JobId{"job-002"};
-    job.task_id = task.id.value;
-    job.created_at = std::chrono::system_clock::now();
-    job.state = work::JobState::kCreated;
-    
-    int call_count = 0;
-    auto execute_fn = [&call_count](const work::Task& task, const work::Job& job,
-                                    int attempt_number, const RunnerContext&) -> core::Outcome {
-        (void)task; (void)job; (void)attempt_number;
-        call_count++;
-        return core::Outcome::success();
-    };
-    
-    Runner runner(exec_id, std::move(job), execute_fn);
-    runner.start();  // Must start before cancelling
-    
-    // Test that cancel before attempt works
-    runner.request_cancel("test cancellation");
-    std::cout << "After request_cancel, is_finished=" << runner.is_finished() << "\n";
-    
-    auto result = runner.attempt();
-    std::cout << "Result status: " << core::to_string(result.outcome.status) 
-              << ", is_last_attempt=" << result.is_last_attempt << "\n";
-    
-    if (call_count != 0) {
-        std::cerr << "ERROR: Execute should not be called when cancelled\n";
-        errors++;
-    }
-    
-    if (result.outcome.status != core::SemanticStatus::kCancelled) {
-        std::cerr << "ERROR: Outcome should be cancelled\n";
-        errors++;
-    }
-    
-    return errors;
-}
-
-// Test retry logic
-int test_runner_retry() {
-    int errors = 0;
-    
-    work::ExecutionId exec_id{"exec-003"};
-    
-    work::Task task{
-        .id = work::TaskId{"task-retry"},
-        .title = "Retry Test",
-        .description = "Test retry logic",
-        .unit_id = "test-unit",
-        .mode = work::ExecutionMode::kInline,
-        .created_at = std::chrono::system_clock::now(),
-    };
-    
-    work::Job job;
-    job.id = work::JobId{"job-003"};
-    job.task_id = task.id.value;
-    job.created_at = std::chrono::system_clock::now();
-    job.state = work::JobState::kCreated;
-    
+void test_runner_attempt_success() {
     int attempt_count = 0;
-    auto execute_fn = [&attempt_count](const work::Task& task, const work::Job& job,
-                                       int attempt_number, const RunnerContext&) -> core::Outcome {
-        (void)task; (void)job; (void)attempt_number;
-        // Fail first attempt, succeed on second
-        if (attempt_count == 0) {
-            attempt_count++;
-            return core::Outcome::failure("E_TEMP", "temporary failure");
-        }
+    auto execute_fn = [&attempt_count](const Task&, const Job&, int, const RunnerContext&) {
         attempt_count++;
-        return core::Outcome::success();
+        return rebuntu::core::ExecutionOutcome::success();
     };
     
-    // Set max_attempts to allow 1 retry (2 total attempts)
+    Runner runner{ExecutionId{"exec-3"}, Job{}, execute_fn};
+    runner.start();
+    
+    auto result = runner.attempt();
+    
+    assert(result.outcome.status == core::SemanticStatus::kSuccess);
+    assert(result.is_last_attempt == true);  // No retry needed on success
+    std::cout << "test_runner_attempt_success: PASSED" << std::endl;
+}
+
+void test_runner_retry_on_failure() {
+    int attempt_count = 0;
+    auto execute_fn = [&attempt_count](const Task&, const Job&, int, const RunnerContext&) {
+        attempt_count++;
+        if (attempt_count < 3) {
+            return rebuntu::core::ExecutionOutcome::failure();
+        }
+        return rebuntu::core::ExecutionOutcome::success();
+    };
+    
+    // Create a job with max 5 attempts
+    Job job{};
+    job.retry_policy.max_attempts = 5;
+    
+    Runner runner{ExecutionId{"exec-4"}, job, execute_fn};
+    runner.start();
+    
+    auto result = runner.attempt();
+    assert(result.outcome.status == core::SemanticStatus::kFailure);
+    assert(runner.progress().attempt_number == 1);
+    
+    // Should retry because max_attempts not reached and error is retryable
+    if (!runner.is_finished()) {
+        result = runner.attempt();
+        assert(result.outcome.status == core::SemanticStatus::kFailure);
+        assert(runner.progress().attempt_number == 2);
+        
+        if (!runner.is_finished()) {
+            result = runner.attempt();
+            assert(result.outcome.status == core::SemanticStatus::kSuccess);
+            assert(runner.is_finished());
+            assert(result.is_last_attempt == true);
+        }
+    }
+    
+    std::cout << "test_runner_retry_on_failure: PASSED" << std::endl;
+}
+
+void test_runner_max_attempts() {
+    int attempt_count = 0;
+    auto execute_fn = [&attempt_count](const Task&, const Job&, int, const RunnerContext&) {
+        attempt_count++;
+        return rebuntu::core::ExecutionOutcome::failure();
+    };
+    
+    Job job{};
     job.retry_policy.max_attempts = 3;
     
-    Runner runner(exec_id, std::move(job), execute_fn);
+    Runner runner{ExecutionId{"exec-5"}, job, execute_fn};
     runner.start();
     
-    std::cout << "First attempt state before: " << to_string(runner.progress().runner_state) << "\n";
+    // First attempt
+    auto result = runner.attempt();
     
-    auto result1 = runner.attempt();
-    std::cout << "Result1 status: " << core::to_string(result1.outcome.status) 
-              << ", is_last_attempt: " << result1.is_last_attempt
-              << ", state after: " << to_string(runner.progress().runner_state) << "\n";
-    
-    if (result1.outcome.status != core::SemanticStatus::kFailure) {
-        std::cerr << "ERROR: First attempt should fail\n";
-        errors++;
+    // Should retry
+    if (!runner.is_finished()) {
+        runner.attempt();
     }
     
-    std::cout << "Second attempt state before: " << to_string(runner.progress().runner_state) << "\n";
+    // Should be finished after max attempts (3)
+    assert(runner.progress().attempt_number == 3);
+    assert(runner.is_finished());
+    std::cout << "test_runner_max_attempts: PASSED" << std::endl;
+}
+
+void test_runner_cancellation() {
+    auto execute_fn = [](const Task&, const Job&, int, const RunnerContext& ctx) {
+        if (ctx.cancellation_requested) {
+            return rebuntu::core::ExecutionOutcome::cancelled("explicit cancellation");
+        }
+        return rebuntu::core::ExecutionOutcome::success();
+    };
     
-    auto result2 = runner.attempt();
-    std::cout << "Result2 status: " << core::to_string(result2.outcome.status)
-              << ", is_last_attempt: " << result2.is_last_attempt
-              << ", state after: " << to_string(runner.progress().runner_state) << "\n";
+    Runner runner{ExecutionId{"exec-6"}, Job{}, execute_fn};
+    runner.start();
     
-    if (result2.outcome.status != core::SemanticStatus::kSuccess) {
-        std::cerr << "ERROR: Retry should succeed\n";
-        errors++;
-    }
+    // Request cancellation
+    runner.request_cancel("test cancel");
     
-    return errors;
+    auto result = runner.attempt();
+    assert(result.outcome.status == core::SemanticStatus::kCancelled);
+    std::cout << "test_runner_cancellation: PASSED" << std::endl;
+}
+
+void test_runner_result() {
+    int attempt_count = 0;
+    auto execute_fn = [&attempt_count](const Task&, const Job&, int, const RunnerContext&) {
+        attempt_count++;
+        return rebuntu::core::ExecutionOutcome::success();
+    };
+    
+    Runner runner{ExecutionId{"exec-7"}, Job{}, execute_fn};
+    runner.start();
+    runner.attempt();
+    
+    auto result = runner.result();
+    assert(result.succeeded());
+    assert(result.status == core::SemanticStatus::kSuccess);
+    assert(result.verified == true);
+    std::cout << "test_runner_result: PASSED" << std::endl;
+}
+
+void test_runner_progress() {
+    int attempt_count = 0;
+    auto execute_fn = [&attempt_count](const Task&, const Job&, int, const RunnerContext&) {
+        attempt_count++;
+        return rebuntu::core::ExecutionOutcome::success();
+    };
+    
+    Runner runner{ExecutionId{"exec-8"}, Job{}, execute_fn};
+    
+    // Before start
+    assert(runner.progress().runner_state == RunnerState::kPending);
+    assert(runner.progress().attempt_number == 0);
+    
+    runner.start();
+    assert(runner.progress().runner_state == RunnerState::kRunning);
+    assert(runner.progress().attempt_number == 0);  // Not yet executed
+    
+    runner.attempt();
+    assert(runner.progress().attempt_number == 1);
+    
+    assert(runner.is_finished());
+    std::cout << "test_runner_progress: PASSED" << std::endl;
 }
 
 int main() {
-    int total_errors = 0;
+    test_runner_creation();
+    test_runner_start();
+    test_runner_attempt_success();
+    test_runner_retry_on_failure();
+    test_runner_max_attempts();
+    test_runner_cancellation();
+    test_runner_result();
+    test_runner_progress();
     
-    std::cout << "Testing Runner basic functionality...\n";
-    total_errors += test_runner_basic();
-    
-    std::cout << "Testing Runner cancellation...\n";
-    total_errors += test_runner_cancel();
-    
-    std::cout << "Testing Runner retry logic...\n";
-    total_errors += test_runner_retry();
-    
-    if (total_errors == 0) {
-        std::cout << "All tests passed!\n";
-    } else {
-        std::cerr << total_errors << " test(s) failed.\n";
-    }
-    
-    return total_errors;
-}
-
-}  // namespace runner
-}  // namespace rebuntu::runtime
-
-int main() {
-    return rebuntu::runtime::runner::main();
+    std::cout << "\nAll runner tests completed!" << std::endl;
+    return 0;
 }

@@ -139,6 +139,8 @@ set(CMAKE_DEPEND_INFO_FILES
   "tests/CMakeFiles/test_pipeline_provider.dir/DependInfo.cmake"
   "tests/CMakeFiles/dispatcher_test.dir/DependInfo.cmake"
   "tests/CMakeFiles/controller_test.dir/DependInfo.cmake"
+  "tests/CMakeFiles/resolver_test.dir/DependInfo.cmake"
   "tests/CMakeFiles/coordination_test.dir/DependInfo.cmake"
+  "tests/CMakeFiles/loader_test.dir/DependInfo.cmake"
   "src/rebuntu/CMakeFiles/rebuntu.dir/DependInfo.cmake"
   )

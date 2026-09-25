@@ -108,3 +108,21 @@ set(CONTROLLER_IMPL
     ${REBUNTU_ROOT}/src/runtime/controller.cpp
 )
 target_sources(rebuntu-core PRIVATE ${CONTROLLER_HDRS} ${CONTROLLER_IMPL})
+
+# Phase 4.8: Resolver - runtime resolution of semantic identifiers to executable targets
+set(RESOLVER_HDRS
+    ${REBUNTU_ROOT}/src/runtime/resolver.hpp
+)
+set(RESOLVER_IMPL
+    ${REBUNTU_ROOT}/src/runtime/resolver.cpp
+)
+target_sources(rebuntu-core PRIVATE ${RESOLVER_HDRS} ${RESOLVER_IMPL})
+
+# Phase 4.9: Loader - safe runtime definition loading (Phase 4.9)
+set(LOADER_HDRS
+    ${REBUNTU_ROOT}/src/runtime/loader.hpp
+)
+set(LOADER_IMPL
+    ${REBUNTU_ROOT}/src/runtime/loader.cpp
+)
+target_sources(rebuntu-core PRIVATE ${LOADER_HDRS} ${LOADER_IMPL})

@@ -404,6 +404,19 @@ target_include_directories(controller_test PRIVATE
 )
 add_test(NAME controller_test COMMAND controller_test)
 
+# Phase 4.8: Resolver tests (runtime resolution of semantic identifiers to executable targets)
+set(RESOLVER_HDRS
+    ${CMAKE_SOURCE_DIR}/../src/runtime/resolver.hpp
+)
+add_executable(resolver_test resolver_test.cpp ${RESOLVER_HDRS})
+target_link_libraries(resolver_test rebuntu-core)
+target_include_directories(resolver_test PRIVATE 
+    ${CMAKE_CURRENT_LIST_DIR}/../include
+    ${CMAKE_SOURCE_DIR}/src
+    ${CMAKE_SOURCE_DIR}
+)
+add_test(NAME resolver_test COMMAND resolver_test)
+
 # Phase 4.7: Coordination tests (runtime coordination primitives - dependency tracking, resource locks)
 set(COORDINATION_SRCS
     ${CMAKE_SOURCE_DIR}/../src/runtime/coordination/context.hpp
@@ -417,5 +430,15 @@ target_include_directories(coordination_test PRIVATE
     ${CMAKE_SOURCE_DIR}
 )
 add_test(NAME coordination_test COMMAND coordination_test)
+
+# Phase 4.9: Loader tests (safe runtime definition loading)
+add_executable(loader_test loader_test.cpp)
+target_link_libraries(loader_test rebuntu-core)
+target_include_directories(loader_test PRIVATE 
+    ${CMAKE_CURRENT_LIST_DIR}/../include
+    ${CMAKE_SOURCE_DIR}/src
+    ${CMAKE_SOURCE_DIR}
+)
+add_test(NAME loader_test COMMAND loader_test)
 
 # Phase 1.9: Environment discovery tests (pending integration with testing framework)

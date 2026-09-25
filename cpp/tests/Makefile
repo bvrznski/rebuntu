@@ -673,6 +673,20 @@ controller_test/fast:
 .PHONY : controller_test/fast
 
 # Convenience name for target.
+tests/CMakeFiles/resolver_test.dir/rule:
+	cd /home/bvrznski/rebuntu/cpp && $(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 tests/CMakeFiles/resolver_test.dir/rule
+.PHONY : tests/CMakeFiles/resolver_test.dir/rule
+
+# Convenience name for target.
+resolver_test: tests/CMakeFiles/resolver_test.dir/rule
+.PHONY : resolver_test
+
+# fast build rule for target.
+resolver_test/fast:
+	cd /home/bvrznski/rebuntu/cpp && $(MAKE) $(MAKESILENT) -f tests/CMakeFiles/resolver_test.dir/build.make tests/CMakeFiles/resolver_test.dir/build
+.PHONY : resolver_test/fast
+
+# Convenience name for target.
 tests/CMakeFiles/coordination_test.dir/rule:
 	cd /home/bvrznski/rebuntu/cpp && $(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 tests/CMakeFiles/coordination_test.dir/rule
 .PHONY : tests/CMakeFiles/coordination_test.dir/rule
@@ -685,6 +699,20 @@ coordination_test: tests/CMakeFiles/coordination_test.dir/rule
 coordination_test/fast:
 	cd /home/bvrznski/rebuntu/cpp && $(MAKE) $(MAKESILENT) -f tests/CMakeFiles/coordination_test.dir/build.make tests/CMakeFiles/coordination_test.dir/build
 .PHONY : coordination_test/fast
+
+# Convenience name for target.
+tests/CMakeFiles/loader_test.dir/rule:
+	cd /home/bvrznski/rebuntu/cpp && $(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 tests/CMakeFiles/loader_test.dir/rule
+.PHONY : tests/CMakeFiles/loader_test.dir/rule
+
+# Convenience name for target.
+loader_test: tests/CMakeFiles/loader_test.dir/rule
+.PHONY : loader_test
+
+# fast build rule for target.
+loader_test/fast:
+	cd /home/bvrznski/rebuntu/cpp && $(MAKE) $(MAKESILENT) -f tests/CMakeFiles/loader_test.dir/build.make tests/CMakeFiles/loader_test.dir/build
+.PHONY : loader_test/fast
 
 __/src/semantic/ipc_transport.o: __/src/semantic/ipc_transport.cpp.o
 .PHONY : __/src/semantic/ipc_transport.o
@@ -1430,6 +1458,30 @@ lifecycle_test.cpp.s:
 	cd /home/bvrznski/rebuntu/cpp && $(MAKE) $(MAKESILENT) -f tests/CMakeFiles/lifecycle_test.dir/build.make tests/CMakeFiles/lifecycle_test.dir/lifecycle_test.cpp.s
 .PHONY : lifecycle_test.cpp.s
 
+loader_test.o: loader_test.cpp.o
+.PHONY : loader_test.o
+
+# target to build an object file
+loader_test.cpp.o:
+	cd /home/bvrznski/rebuntu/cpp && $(MAKE) $(MAKESILENT) -f tests/CMakeFiles/loader_test.dir/build.make tests/CMakeFiles/loader_test.dir/loader_test.cpp.o
+.PHONY : loader_test.cpp.o
+
+loader_test.i: loader_test.cpp.i
+.PHONY : loader_test.i
+
+# target to preprocess a source file
+loader_test.cpp.i:
+	cd /home/bvrznski/rebuntu/cpp && $(MAKE) $(MAKESILENT) -f tests/CMakeFiles/loader_test.dir/build.make tests/CMakeFiles/loader_test.dir/loader_test.cpp.i
+.PHONY : loader_test.cpp.i
+
+loader_test.s: loader_test.cpp.s
+.PHONY : loader_test.s
+
+# target to generate assembly for a file
+loader_test.cpp.s:
+	cd /home/bvrznski/rebuntu/cpp && $(MAKE) $(MAKESILENT) -f tests/CMakeFiles/loader_test.dir/build.make tests/CMakeFiles/loader_test.dir/loader_test.cpp.s
+.PHONY : loader_test.cpp.s
+
 ownership_test.o: ownership_test.cpp.o
 .PHONY : ownership_test.o
 
@@ -1453,6 +1505,30 @@ ownership_test.s: ownership_test.cpp.s
 ownership_test.cpp.s:
 	cd /home/bvrznski/rebuntu/cpp && $(MAKE) $(MAKESILENT) -f tests/CMakeFiles/ownership_test.dir/build.make tests/CMakeFiles/ownership_test.dir/ownership_test.cpp.s
 .PHONY : ownership_test.cpp.s
+
+resolver_test.o: resolver_test.cpp.o
+.PHONY : resolver_test.o
+
+# target to build an object file
+resolver_test.cpp.o:
+	cd /home/bvrznski/rebuntu/cpp && $(MAKE) $(MAKESILENT) -f tests/CMakeFiles/resolver_test.dir/build.make tests/CMakeFiles/resolver_test.dir/resolver_test.cpp.o
+.PHONY : resolver_test.cpp.o
+
+resolver_test.i: resolver_test.cpp.i
+.PHONY : resolver_test.i
+
+# target to preprocess a source file
+resolver_test.cpp.i:
+	cd /home/bvrznski/rebuntu/cpp && $(MAKE) $(MAKESILENT) -f tests/CMakeFiles/resolver_test.dir/build.make tests/CMakeFiles/resolver_test.dir/resolver_test.cpp.i
+.PHONY : resolver_test.cpp.i
+
+resolver_test.s: resolver_test.cpp.s
+.PHONY : resolver_test.s
+
+# target to generate assembly for a file
+resolver_test.cpp.s:
+	cd /home/bvrznski/rebuntu/cpp && $(MAKE) $(MAKESILENT) -f tests/CMakeFiles/resolver_test.dir/build.make tests/CMakeFiles/resolver_test.dir/resolver_test.cpp.s
+.PHONY : resolver_test.cpp.s
 
 results_test.o: results_test.cpp.o
 .PHONY : results_test.o
@@ -1955,9 +2031,11 @@ help:
 	@echo "... infrastructure_test"
 	@echo "... install_planning_test"
 	@echo "... lifecycle_test"
+	@echo "... loader_test"
 	@echo "... ownership_test"
 	@echo "... preferences_test"
 	@echo "... profile_test"
+	@echo "... resolver_test"
 	@echo "... results_test"
 	@echo "... runtime_runner_test"
 	@echo "... semantic_provider_test"
@@ -2076,9 +2154,15 @@ help:
 	@echo "... lifecycle_test.o"
 	@echo "... lifecycle_test.i"
 	@echo "... lifecycle_test.s"
+	@echo "... loader_test.o"
+	@echo "... loader_test.i"
+	@echo "... loader_test.s"
 	@echo "... ownership_test.o"
 	@echo "... ownership_test.i"
 	@echo "... ownership_test.s"
+	@echo "... resolver_test.o"
+	@echo "... resolver_test.i"
+	@echo "... resolver_test.s"
 	@echo "... results_test.o"
 	@echo "... results_test.i"
 	@echo "... results_test.s"

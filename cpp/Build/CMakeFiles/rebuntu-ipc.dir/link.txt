@@ -1,2 +1,0 @@
-/usr/bin/ar qc librebuntu-ipc.a CMakeFiles/rebuntu-ipc.dir/home/bvrznski/rebuntu/src/system/environment/ipc.cpp.o
-/usr/bin/ranlib librebuntu-ipc.a

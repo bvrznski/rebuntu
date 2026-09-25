@@ -1284,6 +1284,19 @@ controller_test/fast:
 .PHONY : controller_test/fast
 
 #=============================================================================
+# Target rules for targets named resolver_test
+
+# Build rule for target.
+resolver_test: cmake_check_build_system
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 resolver_test
+.PHONY : resolver_test
+
+# fast build rule for target.
+resolver_test/fast:
+	$(MAKE) $(MAKESILENT) -f tests/CMakeFiles/resolver_test.dir/build.make tests/CMakeFiles/resolver_test.dir/build
+.PHONY : resolver_test/fast
+
+#=============================================================================
 # Target rules for targets named coordination_test
 
 # Build rule for target.
@@ -1295,6 +1308,19 @@ coordination_test: cmake_check_build_system
 coordination_test/fast:
 	$(MAKE) $(MAKESILENT) -f tests/CMakeFiles/coordination_test.dir/build.make tests/CMakeFiles/coordination_test.dir/build
 .PHONY : coordination_test/fast
+
+#=============================================================================
+# Target rules for targets named loader_test
+
+# Build rule for target.
+loader_test: cmake_check_build_system
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 loader_test
+.PHONY : loader_test
+
+# fast build rule for target.
+loader_test/fast:
+	$(MAKE) $(MAKESILENT) -f tests/CMakeFiles/loader_test.dir/build.make tests/CMakeFiles/loader_test.dir/build
+.PHONY : loader_test/fast
 
 #=============================================================================
 # Target rules for targets named rebuntu
@@ -1934,6 +1960,7 @@ help:
 	@echo "... infrastructure_test"
 	@echo "... install_planning_test"
 	@echo "... lifecycle_test"
+	@echo "... loader_test"
 	@echo "... ownership_test"
 	@echo "... preferences_test"
 	@echo "... profile_test"
@@ -1960,6 +1987,7 @@ help:
 	@echo "... rebuntu-setup"
 	@echo "... rebuntu-temp-files"
 	@echo "... rebuntu-user-identity"
+	@echo "... resolver_test"
 	@echo "... results_test"
 	@echo "... runtime_runner_test"
 	@echo "... semantic_provider_test"

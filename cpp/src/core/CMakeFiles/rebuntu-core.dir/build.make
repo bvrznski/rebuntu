@@ -181,6 +181,34 @@ src/core/CMakeFiles/rebuntu-core.dir/home/bvrznski/rebuntu/src/runtime/controlle
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/rebuntu-core.dir/home/bvrznski/rebuntu/src/runtime/controller.cpp.s"
 	cd /home/bvrznski/rebuntu/cpp/src/core && /usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /home/bvrznski/rebuntu/src/runtime/controller.cpp -o CMakeFiles/rebuntu-core.dir/home/bvrznski/rebuntu/src/runtime/controller.cpp.s
 
+src/core/CMakeFiles/rebuntu-core.dir/home/bvrznski/rebuntu/src/runtime/resolver.cpp.o: src/core/CMakeFiles/rebuntu-core.dir/flags.make
+src/core/CMakeFiles/rebuntu-core.dir/home/bvrznski/rebuntu/src/runtime/resolver.cpp.o: /home/bvrznski/rebuntu/src/runtime/resolver.cpp
+src/core/CMakeFiles/rebuntu-core.dir/home/bvrznski/rebuntu/src/runtime/resolver.cpp.o: src/core/CMakeFiles/rebuntu-core.dir/compiler_depend.ts
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/bvrznski/rebuntu/cpp/CMakeFiles --progress-num=$(CMAKE_PROGRESS_9) "Building CXX object src/core/CMakeFiles/rebuntu-core.dir/home/bvrznski/rebuntu/src/runtime/resolver.cpp.o"
+	cd /home/bvrznski/rebuntu/cpp/src/core && /usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT src/core/CMakeFiles/rebuntu-core.dir/home/bvrznski/rebuntu/src/runtime/resolver.cpp.o -MF CMakeFiles/rebuntu-core.dir/home/bvrznski/rebuntu/src/runtime/resolver.cpp.o.d -o CMakeFiles/rebuntu-core.dir/home/bvrznski/rebuntu/src/runtime/resolver.cpp.o -c /home/bvrznski/rebuntu/src/runtime/resolver.cpp
+
+src/core/CMakeFiles/rebuntu-core.dir/home/bvrznski/rebuntu/src/runtime/resolver.cpp.i: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/rebuntu-core.dir/home/bvrznski/rebuntu/src/runtime/resolver.cpp.i"
+	cd /home/bvrznski/rebuntu/cpp/src/core && /usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /home/bvrznski/rebuntu/src/runtime/resolver.cpp > CMakeFiles/rebuntu-core.dir/home/bvrznski/rebuntu/src/runtime/resolver.cpp.i
+
+src/core/CMakeFiles/rebuntu-core.dir/home/bvrznski/rebuntu/src/runtime/resolver.cpp.s: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/rebuntu-core.dir/home/bvrznski/rebuntu/src/runtime/resolver.cpp.s"
+	cd /home/bvrznski/rebuntu/cpp/src/core && /usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /home/bvrznski/rebuntu/src/runtime/resolver.cpp -o CMakeFiles/rebuntu-core.dir/home/bvrznski/rebuntu/src/runtime/resolver.cpp.s
+
+src/core/CMakeFiles/rebuntu-core.dir/home/bvrznski/rebuntu/src/runtime/loader.cpp.o: src/core/CMakeFiles/rebuntu-core.dir/flags.make
+src/core/CMakeFiles/rebuntu-core.dir/home/bvrznski/rebuntu/src/runtime/loader.cpp.o: /home/bvrznski/rebuntu/src/runtime/loader.cpp
+src/core/CMakeFiles/rebuntu-core.dir/home/bvrznski/rebuntu/src/runtime/loader.cpp.o: src/core/CMakeFiles/rebuntu-core.dir/compiler_depend.ts
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/bvrznski/rebuntu/cpp/CMakeFiles --progress-num=$(CMAKE_PROGRESS_10) "Building CXX object src/core/CMakeFiles/rebuntu-core.dir/home/bvrznski/rebuntu/src/runtime/loader.cpp.o"
+	cd /home/bvrznski/rebuntu/cpp/src/core && /usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT src/core/CMakeFiles/rebuntu-core.dir/home/bvrznski/rebuntu/src/runtime/loader.cpp.o -MF CMakeFiles/rebuntu-core.dir/home/bvrznski/rebuntu/src/runtime/loader.cpp.o.d -o CMakeFiles/rebuntu-core.dir/home/bvrznski/rebuntu/src/runtime/loader.cpp.o -c /home/bvrznski/rebuntu/src/runtime/loader.cpp
+
+src/core/CMakeFiles/rebuntu-core.dir/home/bvrznski/rebuntu/src/runtime/loader.cpp.i: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/rebuntu-core.dir/home/bvrznski/rebuntu/src/runtime/loader.cpp.i"
+	cd /home/bvrznski/rebuntu/cpp/src/core && /usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /home/bvrznski/rebuntu/src/runtime/loader.cpp > CMakeFiles/rebuntu-core.dir/home/bvrznski/rebuntu/src/runtime/loader.cpp.i
+
+src/core/CMakeFiles/rebuntu-core.dir/home/bvrznski/rebuntu/src/runtime/loader.cpp.s: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/rebuntu-core.dir/home/bvrznski/rebuntu/src/runtime/loader.cpp.s"
+	cd /home/bvrznski/rebuntu/cpp/src/core && /usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /home/bvrznski/rebuntu/src/runtime/loader.cpp -o CMakeFiles/rebuntu-core.dir/home/bvrznski/rebuntu/src/runtime/loader.cpp.s
+
 # Object files for target rebuntu-core
 rebuntu__core_OBJECTS = \
 "CMakeFiles/rebuntu-core.dir/home/bvrznski/rebuntu/src/interfaces/provider_registry.cpp.o" \
@@ -190,7 +218,9 @@ rebuntu__core_OBJECTS = \
 "CMakeFiles/rebuntu-core.dir/home/bvrznski/rebuntu/src/runtime/engine.cpp.o" \
 "CMakeFiles/rebuntu-core.dir/home/bvrznski/rebuntu/src/system/runtime/executor.cpp.o" \
 "CMakeFiles/rebuntu-core.dir/home/bvrznski/rebuntu/src/system/runtime/dispatcher.cpp.o" \
-"CMakeFiles/rebuntu-core.dir/home/bvrznski/rebuntu/src/runtime/controller.cpp.o"
+"CMakeFiles/rebuntu-core.dir/home/bvrznski/rebuntu/src/runtime/controller.cpp.o" \
+"CMakeFiles/rebuntu-core.dir/home/bvrznski/rebuntu/src/runtime/resolver.cpp.o" \
+"CMakeFiles/rebuntu-core.dir/home/bvrznski/rebuntu/src/runtime/loader.cpp.o"
 
 # External object files for target rebuntu-core
 rebuntu__core_EXTERNAL_OBJECTS =
@@ -203,9 +233,11 @@ src/core/librebuntu-core.a: src/core/CMakeFiles/rebuntu-core.dir/home/bvrznski/r
 src/core/librebuntu-core.a: src/core/CMakeFiles/rebuntu-core.dir/home/bvrznski/rebuntu/src/system/runtime/executor.cpp.o
 src/core/librebuntu-core.a: src/core/CMakeFiles/rebuntu-core.dir/home/bvrznski/rebuntu/src/system/runtime/dispatcher.cpp.o
 src/core/librebuntu-core.a: src/core/CMakeFiles/rebuntu-core.dir/home/bvrznski/rebuntu/src/runtime/controller.cpp.o
+src/core/librebuntu-core.a: src/core/CMakeFiles/rebuntu-core.dir/home/bvrznski/rebuntu/src/runtime/resolver.cpp.o
+src/core/librebuntu-core.a: src/core/CMakeFiles/rebuntu-core.dir/home/bvrznski/rebuntu/src/runtime/loader.cpp.o
 src/core/librebuntu-core.a: src/core/CMakeFiles/rebuntu-core.dir/build.make
 src/core/librebuntu-core.a: src/core/CMakeFiles/rebuntu-core.dir/link.txt
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --bold --progress-dir=/home/bvrznski/rebuntu/cpp/CMakeFiles --progress-num=$(CMAKE_PROGRESS_9) "Linking CXX static library librebuntu-core.a"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --bold --progress-dir=/home/bvrznski/rebuntu/cpp/CMakeFiles --progress-num=$(CMAKE_PROGRESS_11) "Linking CXX static library librebuntu-core.a"
 	cd /home/bvrznski/rebuntu/cpp/src/core && $(CMAKE_COMMAND) -P CMakeFiles/rebuntu-core.dir/cmake_clean_target.cmake
 	cd /home/bvrznski/rebuntu/cpp/src/core && $(CMAKE_COMMAND) -E cmake_link_script CMakeFiles/rebuntu-core.dir/link.txt --verbose=$(VERBOSE)
 

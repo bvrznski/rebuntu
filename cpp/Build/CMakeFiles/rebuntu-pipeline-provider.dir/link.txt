@@ -1,2 +1,0 @@
-/usr/bin/ar qc librebuntu-pipeline-provider.a CMakeFiles/rebuntu-pipeline-provider.dir/home/bvrznski/rebuntu/src/system/infrastructure/pipeline_provider.cpp.o
-/usr/bin/ranlib librebuntu-pipeline-provider.a

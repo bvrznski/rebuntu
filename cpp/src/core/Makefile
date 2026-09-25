@@ -260,6 +260,30 @@ home/bvrznski/rebuntu/src/runtime/engine.cpp.s:
 	cd /home/bvrznski/rebuntu/cpp && $(MAKE) $(MAKESILENT) -f src/core/CMakeFiles/rebuntu-core.dir/build.make src/core/CMakeFiles/rebuntu-core.dir/home/bvrznski/rebuntu/src/runtime/engine.cpp.s
 .PHONY : home/bvrznski/rebuntu/src/runtime/engine.cpp.s
 
+home/bvrznski/rebuntu/src/runtime/loader.o: home/bvrznski/rebuntu/src/runtime/loader.cpp.o
+.PHONY : home/bvrznski/rebuntu/src/runtime/loader.o
+
+# target to build an object file
+home/bvrznski/rebuntu/src/runtime/loader.cpp.o:
+	cd /home/bvrznski/rebuntu/cpp && $(MAKE) $(MAKESILENT) -f src/core/CMakeFiles/rebuntu-core.dir/build.make src/core/CMakeFiles/rebuntu-core.dir/home/bvrznski/rebuntu/src/runtime/loader.cpp.o
+.PHONY : home/bvrznski/rebuntu/src/runtime/loader.cpp.o
+
+home/bvrznski/rebuntu/src/runtime/loader.i: home/bvrznski/rebuntu/src/runtime/loader.cpp.i
+.PHONY : home/bvrznski/rebuntu/src/runtime/loader.i
+
+# target to preprocess a source file
+home/bvrznski/rebuntu/src/runtime/loader.cpp.i:
+	cd /home/bvrznski/rebuntu/cpp && $(MAKE) $(MAKESILENT) -f src/core/CMakeFiles/rebuntu-core.dir/build.make src/core/CMakeFiles/rebuntu-core.dir/home/bvrznski/rebuntu/src/runtime/loader.cpp.i
+.PHONY : home/bvrznski/rebuntu/src/runtime/loader.cpp.i
+
+home/bvrznski/rebuntu/src/runtime/loader.s: home/bvrznski/rebuntu/src/runtime/loader.cpp.s
+.PHONY : home/bvrznski/rebuntu/src/runtime/loader.s
+
+# target to generate assembly for a file
+home/bvrznski/rebuntu/src/runtime/loader.cpp.s:
+	cd /home/bvrznski/rebuntu/cpp && $(MAKE) $(MAKESILENT) -f src/core/CMakeFiles/rebuntu-core.dir/build.make src/core/CMakeFiles/rebuntu-core.dir/home/bvrznski/rebuntu/src/runtime/loader.cpp.s
+.PHONY : home/bvrznski/rebuntu/src/runtime/loader.cpp.s
+
 home/bvrznski/rebuntu/src/runtime/preferences/io.o: home/bvrznski/rebuntu/src/runtime/preferences/io.cpp.o
 .PHONY : home/bvrznski/rebuntu/src/runtime/preferences/io.o
 
@@ -283,6 +307,30 @@ home/bvrznski/rebuntu/src/runtime/preferences/io.s: home/bvrznski/rebuntu/src/ru
 home/bvrznski/rebuntu/src/runtime/preferences/io.cpp.s:
 	cd /home/bvrznski/rebuntu/cpp && $(MAKE) $(MAKESILENT) -f src/core/CMakeFiles/rebuntu-core.dir/build.make src/core/CMakeFiles/rebuntu-core.dir/home/bvrznski/rebuntu/src/runtime/preferences/io.cpp.s
 .PHONY : home/bvrznski/rebuntu/src/runtime/preferences/io.cpp.s
+
+home/bvrznski/rebuntu/src/runtime/resolver.o: home/bvrznski/rebuntu/src/runtime/resolver.cpp.o
+.PHONY : home/bvrznski/rebuntu/src/runtime/resolver.o
+
+# target to build an object file
+home/bvrznski/rebuntu/src/runtime/resolver.cpp.o:
+	cd /home/bvrznski/rebuntu/cpp && $(MAKE) $(MAKESILENT) -f src/core/CMakeFiles/rebuntu-core.dir/build.make src/core/CMakeFiles/rebuntu-core.dir/home/bvrznski/rebuntu/src/runtime/resolver.cpp.o
+.PHONY : home/bvrznski/rebuntu/src/runtime/resolver.cpp.o
+
+home/bvrznski/rebuntu/src/runtime/resolver.i: home/bvrznski/rebuntu/src/runtime/resolver.cpp.i
+.PHONY : home/bvrznski/rebuntu/src/runtime/resolver.i
+
+# target to preprocess a source file
+home/bvrznski/rebuntu/src/runtime/resolver.cpp.i:
+	cd /home/bvrznski/rebuntu/cpp && $(MAKE) $(MAKESILENT) -f src/core/CMakeFiles/rebuntu-core.dir/build.make src/core/CMakeFiles/rebuntu-core.dir/home/bvrznski/rebuntu/src/runtime/resolver.cpp.i
+.PHONY : home/bvrznski/rebuntu/src/runtime/resolver.cpp.i
+
+home/bvrznski/rebuntu/src/runtime/resolver.s: home/bvrznski/rebuntu/src/runtime/resolver.cpp.s
+.PHONY : home/bvrznski/rebuntu/src/runtime/resolver.s
+
+# target to generate assembly for a file
+home/bvrznski/rebuntu/src/runtime/resolver.cpp.s:
+	cd /home/bvrznski/rebuntu/cpp && $(MAKE) $(MAKESILENT) -f src/core/CMakeFiles/rebuntu-core.dir/build.make src/core/CMakeFiles/rebuntu-core.dir/home/bvrznski/rebuntu/src/runtime/resolver.cpp.s
+.PHONY : home/bvrznski/rebuntu/src/runtime/resolver.cpp.s
 
 home/bvrznski/rebuntu/src/system/runtime/dispatcher.o: home/bvrznski/rebuntu/src/system/runtime/dispatcher.cpp.o
 .PHONY : home/bvrznski/rebuntu/src/system/runtime/dispatcher.o
@@ -357,9 +405,15 @@ help:
 	@echo "... home/bvrznski/rebuntu/src/runtime/engine.o"
 	@echo "... home/bvrznski/rebuntu/src/runtime/engine.i"
 	@echo "... home/bvrznski/rebuntu/src/runtime/engine.s"
+	@echo "... home/bvrznski/rebuntu/src/runtime/loader.o"
+	@echo "... home/bvrznski/rebuntu/src/runtime/loader.i"
+	@echo "... home/bvrznski/rebuntu/src/runtime/loader.s"
 	@echo "... home/bvrznski/rebuntu/src/runtime/preferences/io.o"
 	@echo "... home/bvrznski/rebuntu/src/runtime/preferences/io.i"
 	@echo "... home/bvrznski/rebuntu/src/runtime/preferences/io.s"
+	@echo "... home/bvrznski/rebuntu/src/runtime/resolver.o"
+	@echo "... home/bvrznski/rebuntu/src/runtime/resolver.i"
+	@echo "... home/bvrznski/rebuntu/src/runtime/resolver.s"
 	@echo "... home/bvrznski/rebuntu/src/system/runtime/dispatcher.o"
 	@echo "... home/bvrznski/rebuntu/src/system/runtime/dispatcher.i"
 	@echo "... home/bvrznski/rebuntu/src/system/runtime/dispatcher.s"

@@ -15,6 +15,8 @@ file(REMOVE_RECURSE
   "CMakeFiles/rebuntu.dir/home/bvrznski/rebuntu/src/runtime/subprocess_executor.cpp.o.d"
   "CMakeFiles/rebuntu.dir/home/bvrznski/rebuntu/src/runtime/systemd_executor.cpp.o"
   "CMakeFiles/rebuntu.dir/home/bvrznski/rebuntu/src/runtime/systemd_executor.cpp.o.d"
+  "CMakeFiles/rebuntu.dir/home/bvrznski/rebuntu/src/runtime/task_job_runtime.cpp.o"
+  "CMakeFiles/rebuntu.dir/home/bvrznski/rebuntu/src/runtime/task_job_runtime.cpp.o.d"
   "CMakeFiles/rebuntu.dir/home/bvrznski/rebuntu/src/runtime/timeout_enforcement.cpp.o"
   "CMakeFiles/rebuntu.dir/home/bvrznski/rebuntu/src/runtime/timeout_enforcement.cpp.o.d"
   "CMakeFiles/rebuntu.dir/home/bvrznski/rebuntu/src/runtime/unit_executor.cpp.o"

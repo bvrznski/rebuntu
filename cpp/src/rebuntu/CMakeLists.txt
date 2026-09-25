@@ -157,6 +157,15 @@ set(UNIT_EXECUTOR_SRCS
 )
 target_sources(rebuntu PRIVATE ${UNIT_EXECUTOR_HDRS} ${UNIT_EXECUTOR_SRCS})
 
+# Add Phase 4.13 task_job_runtime implementation
+set(TASK_JOB_RUNTIME_HDRS
+    ${CMAKE_SOURCE_DIR}/../src/runtime/task_job_runtime.hpp
+)
+set(TASK_JOB_RUNTIME_SRCS
+    ${CMAKE_SOURCE_DIR}/../src/runtime/task_job_runtime.cpp
+)
+target_sources(rebuntu PRIVATE ${TASK_JOB_RUNTIME_HDRS} ${TASK_JOB_RUNTIME_SRCS})
+
 # Add Phase 1 setup & configuration machinery (Phase 1.8)
 set(SETUP_SRCS
     ${CMAKE_SOURCE_DIR}/../src/system/setup/contracts.hpp

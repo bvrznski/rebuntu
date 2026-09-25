@@ -332,6 +332,30 @@ home/bvrznski/rebuntu/src/runtime/systemd_executor.cpp.s:
 	cd /home/bvrznski/rebuntu/cpp && $(MAKE) $(MAKESILENT) -f src/rebuntu/CMakeFiles/rebuntu.dir/build.make src/rebuntu/CMakeFiles/rebuntu.dir/home/bvrznski/rebuntu/src/runtime/systemd_executor.cpp.s
 .PHONY : home/bvrznski/rebuntu/src/runtime/systemd_executor.cpp.s
 
+home/bvrznski/rebuntu/src/runtime/task_job_runtime.o: home/bvrznski/rebuntu/src/runtime/task_job_runtime.cpp.o
+.PHONY : home/bvrznski/rebuntu/src/runtime/task_job_runtime.o
+
+# target to build an object file
+home/bvrznski/rebuntu/src/runtime/task_job_runtime.cpp.o:
+	cd /home/bvrznski/rebuntu/cpp && $(MAKE) $(MAKESILENT) -f src/rebuntu/CMakeFiles/rebuntu.dir/build.make src/rebuntu/CMakeFiles/rebuntu.dir/home/bvrznski/rebuntu/src/runtime/task_job_runtime.cpp.o
+.PHONY : home/bvrznski/rebuntu/src/runtime/task_job_runtime.cpp.o
+
+home/bvrznski/rebuntu/src/runtime/task_job_runtime.i: home/bvrznski/rebuntu/src/runtime/task_job_runtime.cpp.i
+.PHONY : home/bvrznski/rebuntu/src/runtime/task_job_runtime.i
+
+# target to preprocess a source file
+home/bvrznski/rebuntu/src/runtime/task_job_runtime.cpp.i:
+	cd /home/bvrznski/rebuntu/cpp && $(MAKE) $(MAKESILENT) -f src/rebuntu/CMakeFiles/rebuntu.dir/build.make src/rebuntu/CMakeFiles/rebuntu.dir/home/bvrznski/rebuntu/src/runtime/task_job_runtime.cpp.i
+.PHONY : home/bvrznski/rebuntu/src/runtime/task_job_runtime.cpp.i
+
+home/bvrznski/rebuntu/src/runtime/task_job_runtime.s: home/bvrznski/rebuntu/src/runtime/task_job_runtime.cpp.s
+.PHONY : home/bvrznski/rebuntu/src/runtime/task_job_runtime.s
+
+# target to generate assembly for a file
+home/bvrznski/rebuntu/src/runtime/task_job_runtime.cpp.s:
+	cd /home/bvrznski/rebuntu/cpp && $(MAKE) $(MAKESILENT) -f src/rebuntu/CMakeFiles/rebuntu.dir/build.make src/rebuntu/CMakeFiles/rebuntu.dir/home/bvrznski/rebuntu/src/runtime/task_job_runtime.cpp.s
+.PHONY : home/bvrznski/rebuntu/src/runtime/task_job_runtime.cpp.s
+
 home/bvrznski/rebuntu/src/runtime/timeout_enforcement.o: home/bvrznski/rebuntu/src/runtime/timeout_enforcement.cpp.o
 .PHONY : home/bvrznski/rebuntu/src/runtime/timeout_enforcement.o
 
@@ -726,6 +750,9 @@ help:
 	@echo "... home/bvrznski/rebuntu/src/runtime/systemd_executor.o"
 	@echo "... home/bvrznski/rebuntu/src/runtime/systemd_executor.i"
 	@echo "... home/bvrznski/rebuntu/src/runtime/systemd_executor.s"
+	@echo "... home/bvrznski/rebuntu/src/runtime/task_job_runtime.o"
+	@echo "... home/bvrznski/rebuntu/src/runtime/task_job_runtime.i"
+	@echo "... home/bvrznski/rebuntu/src/runtime/task_job_runtime.s"
 	@echo "... home/bvrznski/rebuntu/src/runtime/timeout_enforcement.o"
 	@echo "... home/bvrznski/rebuntu/src/runtime/timeout_enforcement.i"
 	@echo "... home/bvrznski/rebuntu/src/runtime/timeout_enforcement.s"

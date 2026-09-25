@@ -1,40 +1,86 @@
-test_ansible_provider 3 0.000999817
-controller_test 2 0.00141818
+test_ansible_provider 3 0
+controller_test 2 0
 test_packages 0 0
-install_planning_test 1 0.00319436
-runtime_runner_test 2 0.00184
-automation_test 1 0.00255191
-test_runtime_contracts 1 0.00253393
-test_state_provider 1 0.00291261
-events_test 2 0.0274258
-results_test 2 0.0017379
-test_discovery 1 0.00298258
-settings_test 1 0.00351888
-config_test 1 0.00276057
-preferences_test 1 0.00298092
-structured_setup_test 1 0.0028854
-profile_test 1 0.00245234
-user_identity_test 1 0.00479303
-capability_state_test 1 0.00398907
-group_membership_test 1 0.00552749
-ownership_test 1 0.00372585
-lifecycle_test 1 0.00405837
-host_foundation_test 1 0.00310311
-test_scope 1 0.00259155
-test_sessions 1 0.00251027
-test_secrets 1 0.00339872
-test_directories 1 0.00344069
-test_locks 1 0.00265716
-test_ipc 1 0.00266906
-test_temp_files 1 0.00235702
-semantic_provider_test 1 0.00286428
-subprocess_executor_test 1 0.00251797
-semantic_service_test 1 0.783564
-test_ipc_protocol 1 0.00311007
-infrastructure_test 1 0.00244447
-test_container_runtime 1 0.00282878
-test_docker_provider 1 0.0029757
+install_planning_test 1 0
+runtime_runner_test 3 0.00251486
+automation_test 1 0
+test_runtime_contracts 1 0
+test_state_provider 1 0
+events_test 2 0
+results_test 2 0
+test_discovery 1 0
+settings_test 1 0
+config_test 1 0
+preferences_test 1 0
+structured_setup_test 1 0
+profile_test 1 0
+user_identity_test 1 0
+capability_state_test 1 0
+group_membership_test 1 0
+ownership_test 1 0
+lifecycle_test 1 0
+host_foundation_test 1 0
+test_scope 1 0
+test_sessions 1 0
+test_secrets 1 0
+test_directories 1 0
+test_locks 1 0
+test_ipc 1 0
+test_temp_files 1 0
+semantic_provider_test 1 0
+subprocess_executor_test 1 0
+semantic_service_test 1 0
+test_ipc_protocol 1 0
+infrastructure_test 1 0
+test_container_runtime 1 0
+test_docker_provider 1 0
 test_jenkins_provider 0 0
 test_pipeline_provider 0 0
 dispatcher_test 0 0
+resolver_test 0 0
+coordination_test 0 0
+loader_test 0 0
+unit_executor_test 0 0
 ---
+test_packages
+install_planning_test
+automation_test
+test_runtime_contracts
+test_state_provider
+events_test
+results_test
+test_discovery
+settings_test
+config_test
+preferences_test
+structured_setup_test
+profile_test
+user_identity_test
+capability_state_test
+group_membership_test
+ownership_test
+lifecycle_test
+host_foundation_test
+test_scope
+test_sessions
+test_secrets
+test_directories
+test_locks
+test_ipc
+test_temp_files
+semantic_provider_test
+subprocess_executor_test
+semantic_service_test
+test_ipc_protocol
+infrastructure_test
+test_container_runtime
+test_docker_provider
+test_ansible_provider
+test_jenkins_provider
+test_pipeline_provider
+dispatcher_test
+controller_test
+resolver_test
+coordination_test
+loader_test
+unit_executor_test

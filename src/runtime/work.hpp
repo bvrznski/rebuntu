@@ -102,6 +102,14 @@ struct Task {
     TaskState state = TaskState::kCreated;
 };
 
+struct RetryPolicy {
+    int max_attempts = 1;
+};
+
+struct TimeoutPolicy {
+    std::optional<std::chrono::milliseconds> timeout_ms;
+};
+
 struct Job {
     JobId id;
     std::string task_id;
@@ -109,9 +117,9 @@ struct Job {
     std::vector<std::pair<std::string, std::string>> parameters;
     JobState state = JobState::kCreated;
     std::optional<AttemptNumber> max_attempts{1};
-    runtime::RetryPolicy retry_policy;
-    runtime::TimeoutPolicy timeout_policy;
-    runtime::WorkPriority priority = runtime::WorkPriority::kNormal;
+    RetryPolicy retry_policy{};
+    TimeoutPolicy timeout_policy{};
+    WorkPriority priority = WorkPriority::kNormal;
     std::optional<CancellationReason> cancellation_reason;
     std::vector<ExecutionId> attempt_ids;
 };

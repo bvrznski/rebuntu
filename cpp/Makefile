@@ -816,6 +816,19 @@ rebuntu-storage-health-monitor/fast:
 .PHONY : rebuntu-storage-health-monitor/fast
 
 #=============================================================================
+# Target rules for targets named rebuntu-cpu-memory-thermal-monitor
+
+# Build rule for target.
+rebuntu-cpu-memory-thermal-monitor: cmake_check_build_system
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 rebuntu-cpu-memory-thermal-monitor
+.PHONY : rebuntu-cpu-memory-thermal-monitor
+
+# fast build rule for target.
+rebuntu-cpu-memory-thermal-monitor/fast:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/rebuntu-cpu-memory-thermal-monitor.dir/build.make CMakeFiles/rebuntu-cpu-memory-thermal-monitor.dir/build
+.PHONY : rebuntu-cpu-memory-thermal-monitor/fast
+
+#=============================================================================
 # Target rules for targets named rebuntu-host-foundation
 
 # Build rule for target.
@@ -971,6 +984,30 @@ home/bvrznski/rebuntu/src/interfaces/provider_registry.s: home/bvrznski/rebuntu/
 home/bvrznski/rebuntu/src/interfaces/provider_registry.cpp.s:
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/rebuntu-core.dir/build.make CMakeFiles/rebuntu-core.dir/home/bvrznski/rebuntu/src/interfaces/provider_registry.cpp.s
 .PHONY : home/bvrznski/rebuntu/src/interfaces/provider_registry.cpp.s
+
+home/bvrznski/rebuntu/src/modules/cpu_memory_thermal_monitor/monitor.o: home/bvrznski/rebuntu/src/modules/cpu_memory_thermal_monitor/monitor.cpp.o
+.PHONY : home/bvrznski/rebuntu/src/modules/cpu_memory_thermal_monitor/monitor.o
+
+# target to build an object file
+home/bvrznski/rebuntu/src/modules/cpu_memory_thermal_monitor/monitor.cpp.o:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/rebuntu-cpu-memory-thermal-monitor.dir/build.make CMakeFiles/rebuntu-cpu-memory-thermal-monitor.dir/home/bvrznski/rebuntu/src/modules/cpu_memory_thermal_monitor/monitor.cpp.o
+.PHONY : home/bvrznski/rebuntu/src/modules/cpu_memory_thermal_monitor/monitor.cpp.o
+
+home/bvrznski/rebuntu/src/modules/cpu_memory_thermal_monitor/monitor.i: home/bvrznski/rebuntu/src/modules/cpu_memory_thermal_monitor/monitor.cpp.i
+.PHONY : home/bvrznski/rebuntu/src/modules/cpu_memory_thermal_monitor/monitor.i
+
+# target to preprocess a source file
+home/bvrznski/rebuntu/src/modules/cpu_memory_thermal_monitor/monitor.cpp.i:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/rebuntu-cpu-memory-thermal-monitor.dir/build.make CMakeFiles/rebuntu-cpu-memory-thermal-monitor.dir/home/bvrznski/rebuntu/src/modules/cpu_memory_thermal_monitor/monitor.cpp.i
+.PHONY : home/bvrznski/rebuntu/src/modules/cpu_memory_thermal_monitor/monitor.cpp.i
+
+home/bvrznski/rebuntu/src/modules/cpu_memory_thermal_monitor/monitor.s: home/bvrznski/rebuntu/src/modules/cpu_memory_thermal_monitor/monitor.cpp.s
+.PHONY : home/bvrznski/rebuntu/src/modules/cpu_memory_thermal_monitor/monitor.s
+
+# target to generate assembly for a file
+home/bvrznski/rebuntu/src/modules/cpu_memory_thermal_monitor/monitor.cpp.s:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/rebuntu-cpu-memory-thermal-monitor.dir/build.make CMakeFiles/rebuntu-cpu-memory-thermal-monitor.dir/home/bvrznski/rebuntu/src/modules/cpu_memory_thermal_monitor/monitor.cpp.s
+.PHONY : home/bvrznski/rebuntu/src/modules/cpu_memory_thermal_monitor/monitor.cpp.s
 
 home/bvrznski/rebuntu/src/modules/health_monitor/adapters/journald_observer.o: home/bvrznski/rebuntu/src/modules/health_monitor/adapters/journald_observer.cpp.o
 .PHONY : home/bvrznski/rebuntu/src/modules/health_monitor/adapters/journald_observer.o
@@ -1660,6 +1697,7 @@ help:
 	@echo "... rebuntu-authorization"
 	@echo "... rebuntu-capability-state"
 	@echo "... rebuntu-core"
+	@echo "... rebuntu-cpu-memory-thermal-monitor"
 	@echo "... rebuntu-directories"
 	@echo "... rebuntu-environment-discovery"
 	@echo "... rebuntu-events-collector"
@@ -1701,6 +1739,9 @@ help:
 	@echo "... home/bvrznski/rebuntu/src/interfaces/provider_registry.o"
 	@echo "... home/bvrznski/rebuntu/src/interfaces/provider_registry.i"
 	@echo "... home/bvrznski/rebuntu/src/interfaces/provider_registry.s"
+	@echo "... home/bvrznski/rebuntu/src/modules/cpu_memory_thermal_monitor/monitor.o"
+	@echo "... home/bvrznski/rebuntu/src/modules/cpu_memory_thermal_monitor/monitor.i"
+	@echo "... home/bvrznski/rebuntu/src/modules/cpu_memory_thermal_monitor/monitor.s"
 	@echo "... home/bvrznski/rebuntu/src/modules/health_monitor/adapters/journald_observer.o"
 	@echo "... home/bvrznski/rebuntu/src/modules/health_monitor/adapters/journald_observer.i"
 	@echo "... home/bvrznski/rebuntu/src/modules/health_monitor/adapters/journald_observer.s"

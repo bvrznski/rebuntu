@@ -271,6 +271,16 @@ target_include_directories(rebuntu-storage-health-monitor PUBLIC ${CMAKE_CURRENT
 target_include_directories(rebuntu-storage-health-monitor PUBLIC ${CMAKE_CURRENT_LIST_DIR}/../src)
 target_link_libraries(rebuntu-core PUBLIC rebuntu-storage-health-monitor)
 
+# Phase 5.9: CPU / Memory / Thermal Monitor module
+add_library(rebuntu-cpu-memory-thermal-monitor STATIC
+    ${CMAKE_CURRENT_LIST_DIR}/../src/modules/cpu_memory_thermal_monitor/types.hpp
+    ${CMAKE_CURRENT_LIST_DIR}/../src/modules/cpu_memory_thermal_monitor/monitor.hpp
+    ${CMAKE_CURRENT_LIST_DIR}/../src/modules/cpu_memory_thermal_monitor/monitor.cpp
+)
+target_include_directories(rebuntu-cpu-memory-thermal-monitor PUBLIC ${CMAKE_CURRENT_LIST_DIR}/../src/modules/cpu_memory_thermal_monitor)
+target_include_directories(rebuntu-cpu-memory-thermal-monitor PUBLIC ${CMAKE_CURRENT_LIST_DIR}/../src)
+target_link_libraries(rebuntu-core PUBLIC rebuntu-cpu-memory-thermal-monitor)
+
 # Phase 2.0: Linux Host Foundation module
 add_library(rebuntu-host-foundation STATIC
     ${CMAKE_CURRENT_LIST_DIR}/../src/system/host_foundation/contracts.hpp

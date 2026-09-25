@@ -148,6 +148,15 @@ set(INSTALL_SRCS
 )
 target_sources(rebuntu PRIVATE ${INSTALL_SRCS})
 
+# Add Phase 4.11 unit_executor implementation
+set(UNIT_EXECUTOR_HDRS
+    ${CMAKE_SOURCE_DIR}/../src/runtime/unit_executor.hpp
+)
+set(UNIT_EXECUTOR_SRCS
+    ${CMAKE_SOURCE_DIR}/../src/runtime/unit_executor.cpp
+)
+target_sources(rebuntu PRIVATE ${UNIT_EXECUTOR_HDRS} ${UNIT_EXECUTOR_SRCS})
+
 # Add Phase 1 setup & configuration machinery (Phase 1.8)
 set(SETUP_SRCS
     ${CMAKE_SOURCE_DIR}/../src/system/setup/contracts.hpp

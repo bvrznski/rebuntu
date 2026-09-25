@@ -1323,6 +1323,19 @@ loader_test/fast:
 .PHONY : loader_test/fast
 
 #=============================================================================
+# Target rules for targets named unit_executor_test
+
+# Build rule for target.
+unit_executor_test: cmake_check_build_system
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 unit_executor_test
+.PHONY : unit_executor_test
+
+# fast build rule for target.
+unit_executor_test/fast:
+	$(MAKE) $(MAKESILENT) -f tests/CMakeFiles/unit_executor_test.dir/build.make tests/CMakeFiles/unit_executor_test.dir/build
+.PHONY : unit_executor_test/fast
+
+#=============================================================================
 # Target rules for targets named rebuntu
 
 # Build rule for target.
@@ -2012,6 +2025,7 @@ help:
 	@echo "... test_sessions"
 	@echo "... test_state_provider"
 	@echo "... test_temp_files"
+	@echo "... unit_executor_test"
 	@echo "... user_identity_test"
 	@echo "... home/bvrznski/rebuntu/src/domains/development/infrastructure/native/packages.o"
 	@echo "... home/bvrznski/rebuntu/src/domains/development/infrastructure/native/packages.i"

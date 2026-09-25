@@ -714,6 +714,20 @@ loader_test/fast:
 	cd /home/bvrznski/rebuntu/cpp && $(MAKE) $(MAKESILENT) -f tests/CMakeFiles/loader_test.dir/build.make tests/CMakeFiles/loader_test.dir/build
 .PHONY : loader_test/fast
 
+# Convenience name for target.
+tests/CMakeFiles/unit_executor_test.dir/rule:
+	cd /home/bvrznski/rebuntu/cpp && $(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 tests/CMakeFiles/unit_executor_test.dir/rule
+.PHONY : tests/CMakeFiles/unit_executor_test.dir/rule
+
+# Convenience name for target.
+unit_executor_test: tests/CMakeFiles/unit_executor_test.dir/rule
+.PHONY : unit_executor_test
+
+# fast build rule for target.
+unit_executor_test/fast:
+	cd /home/bvrznski/rebuntu/cpp && $(MAKE) $(MAKESILENT) -f tests/CMakeFiles/unit_executor_test.dir/build.make tests/CMakeFiles/unit_executor_test.dir/build
+.PHONY : unit_executor_test/fast
+
 __/src/semantic/ipc_transport.o: __/src/semantic/ipc_transport.cpp.o
 .PHONY : __/src/semantic/ipc_transport.o
 
@@ -1025,6 +1039,54 @@ home/bvrznski/rebuntu/src/runtime/discovery.s: home/bvrznski/rebuntu/src/runtime
 home/bvrznski/rebuntu/src/runtime/discovery.cpp.s:
 	cd /home/bvrznski/rebuntu/cpp && $(MAKE) $(MAKESILENT) -f tests/CMakeFiles/test_discovery.dir/build.make tests/CMakeFiles/test_discovery.dir/home/bvrznski/rebuntu/src/runtime/discovery.cpp.s
 .PHONY : home/bvrznski/rebuntu/src/runtime/discovery.cpp.s
+
+home/bvrznski/rebuntu/src/runtime/subprocess_executor.o: home/bvrznski/rebuntu/src/runtime/subprocess_executor.cpp.o
+.PHONY : home/bvrznski/rebuntu/src/runtime/subprocess_executor.o
+
+# target to build an object file
+home/bvrznski/rebuntu/src/runtime/subprocess_executor.cpp.o:
+	cd /home/bvrznski/rebuntu/cpp && $(MAKE) $(MAKESILENT) -f tests/CMakeFiles/unit_executor_test.dir/build.make tests/CMakeFiles/unit_executor_test.dir/home/bvrznski/rebuntu/src/runtime/subprocess_executor.cpp.o
+.PHONY : home/bvrznski/rebuntu/src/runtime/subprocess_executor.cpp.o
+
+home/bvrznski/rebuntu/src/runtime/subprocess_executor.i: home/bvrznski/rebuntu/src/runtime/subprocess_executor.cpp.i
+.PHONY : home/bvrznski/rebuntu/src/runtime/subprocess_executor.i
+
+# target to preprocess a source file
+home/bvrznski/rebuntu/src/runtime/subprocess_executor.cpp.i:
+	cd /home/bvrznski/rebuntu/cpp && $(MAKE) $(MAKESILENT) -f tests/CMakeFiles/unit_executor_test.dir/build.make tests/CMakeFiles/unit_executor_test.dir/home/bvrznski/rebuntu/src/runtime/subprocess_executor.cpp.i
+.PHONY : home/bvrznski/rebuntu/src/runtime/subprocess_executor.cpp.i
+
+home/bvrznski/rebuntu/src/runtime/subprocess_executor.s: home/bvrznski/rebuntu/src/runtime/subprocess_executor.cpp.s
+.PHONY : home/bvrznski/rebuntu/src/runtime/subprocess_executor.s
+
+# target to generate assembly for a file
+home/bvrznski/rebuntu/src/runtime/subprocess_executor.cpp.s:
+	cd /home/bvrznski/rebuntu/cpp && $(MAKE) $(MAKESILENT) -f tests/CMakeFiles/unit_executor_test.dir/build.make tests/CMakeFiles/unit_executor_test.dir/home/bvrznski/rebuntu/src/runtime/subprocess_executor.cpp.s
+.PHONY : home/bvrznski/rebuntu/src/runtime/subprocess_executor.cpp.s
+
+home/bvrznski/rebuntu/src/runtime/unit_executor.o: home/bvrznski/rebuntu/src/runtime/unit_executor.cpp.o
+.PHONY : home/bvrznski/rebuntu/src/runtime/unit_executor.o
+
+# target to build an object file
+home/bvrznski/rebuntu/src/runtime/unit_executor.cpp.o:
+	cd /home/bvrznski/rebuntu/cpp && $(MAKE) $(MAKESILENT) -f tests/CMakeFiles/unit_executor_test.dir/build.make tests/CMakeFiles/unit_executor_test.dir/home/bvrznski/rebuntu/src/runtime/unit_executor.cpp.o
+.PHONY : home/bvrznski/rebuntu/src/runtime/unit_executor.cpp.o
+
+home/bvrznski/rebuntu/src/runtime/unit_executor.i: home/bvrznski/rebuntu/src/runtime/unit_executor.cpp.i
+.PHONY : home/bvrznski/rebuntu/src/runtime/unit_executor.i
+
+# target to preprocess a source file
+home/bvrznski/rebuntu/src/runtime/unit_executor.cpp.i:
+	cd /home/bvrznski/rebuntu/cpp && $(MAKE) $(MAKESILENT) -f tests/CMakeFiles/unit_executor_test.dir/build.make tests/CMakeFiles/unit_executor_test.dir/home/bvrznski/rebuntu/src/runtime/unit_executor.cpp.i
+.PHONY : home/bvrznski/rebuntu/src/runtime/unit_executor.cpp.i
+
+home/bvrznski/rebuntu/src/runtime/unit_executor.s: home/bvrznski/rebuntu/src/runtime/unit_executor.cpp.s
+.PHONY : home/bvrznski/rebuntu/src/runtime/unit_executor.s
+
+# target to generate assembly for a file
+home/bvrznski/rebuntu/src/runtime/unit_executor.cpp.s:
+	cd /home/bvrznski/rebuntu/cpp && $(MAKE) $(MAKESILENT) -f tests/CMakeFiles/unit_executor_test.dir/build.make tests/CMakeFiles/unit_executor_test.dir/home/bvrznski/rebuntu/src/runtime/unit_executor.cpp.s
+.PHONY : home/bvrznski/rebuntu/src/runtime/unit_executor.cpp.s
 
 home/bvrznski/rebuntu/src/system/host_foundation/host_foundation.o: home/bvrznski/rebuntu/src/system/host_foundation/host_foundation.cpp.o
 .PHONY : home/bvrznski/rebuntu/src/system/host_foundation/host_foundation.o
@@ -1986,6 +2048,30 @@ test_temp_files.cpp.s:
 	cd /home/bvrznski/rebuntu/cpp && $(MAKE) $(MAKESILENT) -f tests/CMakeFiles/test_temp_files.dir/build.make tests/CMakeFiles/test_temp_files.dir/test_temp_files.cpp.s
 .PHONY : test_temp_files.cpp.s
 
+unit_executor_test.o: unit_executor_test.cpp.o
+.PHONY : unit_executor_test.o
+
+# target to build an object file
+unit_executor_test.cpp.o:
+	cd /home/bvrznski/rebuntu/cpp && $(MAKE) $(MAKESILENT) -f tests/CMakeFiles/unit_executor_test.dir/build.make tests/CMakeFiles/unit_executor_test.dir/unit_executor_test.cpp.o
+.PHONY : unit_executor_test.cpp.o
+
+unit_executor_test.i: unit_executor_test.cpp.i
+.PHONY : unit_executor_test.i
+
+# target to preprocess a source file
+unit_executor_test.cpp.i:
+	cd /home/bvrznski/rebuntu/cpp && $(MAKE) $(MAKESILENT) -f tests/CMakeFiles/unit_executor_test.dir/build.make tests/CMakeFiles/unit_executor_test.dir/unit_executor_test.cpp.i
+.PHONY : unit_executor_test.cpp.i
+
+unit_executor_test.s: unit_executor_test.cpp.s
+.PHONY : unit_executor_test.s
+
+# target to generate assembly for a file
+unit_executor_test.cpp.s:
+	cd /home/bvrznski/rebuntu/cpp && $(MAKE) $(MAKESILENT) -f tests/CMakeFiles/unit_executor_test.dir/build.make tests/CMakeFiles/unit_executor_test.dir/unit_executor_test.cpp.s
+.PHONY : unit_executor_test.cpp.s
+
 user_identity_test.o: user_identity_test.cpp.o
 .PHONY : user_identity_test.o
 
@@ -2060,6 +2146,7 @@ help:
 	@echo "... test_sessions"
 	@echo "... test_state_provider"
 	@echo "... test_temp_files"
+	@echo "... unit_executor_test"
 	@echo "... user_identity_test"
 	@echo "... __/src/semantic/ipc_transport.o"
 	@echo "... __/src/semantic/ipc_transport.i"
@@ -2100,6 +2187,12 @@ help:
 	@echo "... home/bvrznski/rebuntu/src/runtime/discovery.o"
 	@echo "... home/bvrznski/rebuntu/src/runtime/discovery.i"
 	@echo "... home/bvrznski/rebuntu/src/runtime/discovery.s"
+	@echo "... home/bvrznski/rebuntu/src/runtime/subprocess_executor.o"
+	@echo "... home/bvrznski/rebuntu/src/runtime/subprocess_executor.i"
+	@echo "... home/bvrznski/rebuntu/src/runtime/subprocess_executor.s"
+	@echo "... home/bvrznski/rebuntu/src/runtime/unit_executor.o"
+	@echo "... home/bvrznski/rebuntu/src/runtime/unit_executor.i"
+	@echo "... home/bvrznski/rebuntu/src/runtime/unit_executor.s"
 	@echo "... home/bvrznski/rebuntu/src/system/host_foundation/host_foundation.o"
 	@echo "... home/bvrznski/rebuntu/src/system/host_foundation/host_foundation.i"
 	@echo "... home/bvrznski/rebuntu/src/system/host_foundation/host_foundation.s"
@@ -2220,6 +2313,9 @@ help:
 	@echo "... test_temp_files.o"
 	@echo "... test_temp_files.i"
 	@echo "... test_temp_files.s"
+	@echo "... unit_executor_test.o"
+	@echo "... unit_executor_test.i"
+	@echo "... unit_executor_test.s"
 	@echo "... user_identity_test.o"
 	@echo "... user_identity_test.i"
 	@echo "... user_identity_test.s"

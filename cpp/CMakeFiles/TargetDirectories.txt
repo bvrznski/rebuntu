@@ -96,6 +96,7 @@
 /home/bvrznski/rebuntu/cpp/tests/CMakeFiles/resolver_test.dir
 /home/bvrznski/rebuntu/cpp/tests/CMakeFiles/coordination_test.dir
 /home/bvrznski/rebuntu/cpp/tests/CMakeFiles/loader_test.dir
+/home/bvrznski/rebuntu/cpp/tests/CMakeFiles/unit_executor_test.dir
 /home/bvrznski/rebuntu/cpp/tests/CMakeFiles/test.dir
 /home/bvrznski/rebuntu/cpp/tests/CMakeFiles/edit_cache.dir
 /home/bvrznski/rebuntu/cpp/tests/CMakeFiles/rebuild_cache.dir

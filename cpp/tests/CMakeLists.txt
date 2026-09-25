@@ -441,4 +441,23 @@ target_include_directories(loader_test PRIVATE
 )
 add_test(NAME loader_test COMMAND loader_test)
 
+# Phase 4.11: Unit Executor tests
+set(UNIT_EXECUTOR_SRCS
+    ${CMAKE_SOURCE_DIR}/../src/runtime/unit_executor.hpp
+    ${CMAKE_SOURCE_DIR}/../src/runtime/unit_executor.cpp
+)
+add_executable(unit_executor_test unit_executor_test.cpp ${UNIT_EXECUTOR_SRCS})
+# Link subprocess executor sources directly since rebuntu target has compilation errors
+target_link_libraries(unit_executor_test rebuntu-core)
+target_sources(unit_executor_test PRIVATE
+    ${CMAKE_SOURCE_DIR}/../src/runtime/subprocess_executor.hpp
+    ${CMAKE_SOURCE_DIR}/../src/runtime/subprocess_executor.cpp
+)
+target_include_directories(unit_executor_test PRIVATE 
+    ${CMAKE_CURRENT_LIST_DIR}/../include
+    ${CMAKE_SOURCE_DIR}/src
+    ${CMAKE_SOURCE_DIR}
+)
+add_test(NAME unit_executor_test COMMAND unit_executor_test)
+
 # Phase 1.9: Environment discovery tests (pending integration with testing framework)

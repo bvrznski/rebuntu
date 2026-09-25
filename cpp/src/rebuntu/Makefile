@@ -356,6 +356,30 @@ home/bvrznski/rebuntu/src/runtime/timeout_enforcement.cpp.s:
 	cd /home/bvrznski/rebuntu/cpp && $(MAKE) $(MAKESILENT) -f src/rebuntu/CMakeFiles/rebuntu.dir/build.make src/rebuntu/CMakeFiles/rebuntu.dir/home/bvrznski/rebuntu/src/runtime/timeout_enforcement.cpp.s
 .PHONY : home/bvrznski/rebuntu/src/runtime/timeout_enforcement.cpp.s
 
+home/bvrznski/rebuntu/src/runtime/unit_executor.o: home/bvrznski/rebuntu/src/runtime/unit_executor.cpp.o
+.PHONY : home/bvrznski/rebuntu/src/runtime/unit_executor.o
+
+# target to build an object file
+home/bvrznski/rebuntu/src/runtime/unit_executor.cpp.o:
+	cd /home/bvrznski/rebuntu/cpp && $(MAKE) $(MAKESILENT) -f src/rebuntu/CMakeFiles/rebuntu.dir/build.make src/rebuntu/CMakeFiles/rebuntu.dir/home/bvrznski/rebuntu/src/runtime/unit_executor.cpp.o
+.PHONY : home/bvrznski/rebuntu/src/runtime/unit_executor.cpp.o
+
+home/bvrznski/rebuntu/src/runtime/unit_executor.i: home/bvrznski/rebuntu/src/runtime/unit_executor.cpp.i
+.PHONY : home/bvrznski/rebuntu/src/runtime/unit_executor.i
+
+# target to preprocess a source file
+home/bvrznski/rebuntu/src/runtime/unit_executor.cpp.i:
+	cd /home/bvrznski/rebuntu/cpp && $(MAKE) $(MAKESILENT) -f src/rebuntu/CMakeFiles/rebuntu.dir/build.make src/rebuntu/CMakeFiles/rebuntu.dir/home/bvrznski/rebuntu/src/runtime/unit_executor.cpp.i
+.PHONY : home/bvrznski/rebuntu/src/runtime/unit_executor.cpp.i
+
+home/bvrznski/rebuntu/src/runtime/unit_executor.s: home/bvrznski/rebuntu/src/runtime/unit_executor.cpp.s
+.PHONY : home/bvrznski/rebuntu/src/runtime/unit_executor.s
+
+# target to generate assembly for a file
+home/bvrznski/rebuntu/src/runtime/unit_executor.cpp.s:
+	cd /home/bvrznski/rebuntu/cpp && $(MAKE) $(MAKESILENT) -f src/rebuntu/CMakeFiles/rebuntu.dir/build.make src/rebuntu/CMakeFiles/rebuntu.dir/home/bvrznski/rebuntu/src/runtime/unit_executor.cpp.s
+.PHONY : home/bvrznski/rebuntu/src/runtime/unit_executor.cpp.s
+
 home/bvrznski/rebuntu/src/system/environment/ipc.o: home/bvrznski/rebuntu/src/system/environment/ipc.cpp.o
 .PHONY : home/bvrznski/rebuntu/src/system/environment/ipc.o
 
@@ -705,6 +729,9 @@ help:
 	@echo "... home/bvrznski/rebuntu/src/runtime/timeout_enforcement.o"
 	@echo "... home/bvrznski/rebuntu/src/runtime/timeout_enforcement.i"
 	@echo "... home/bvrznski/rebuntu/src/runtime/timeout_enforcement.s"
+	@echo "... home/bvrznski/rebuntu/src/runtime/unit_executor.o"
+	@echo "... home/bvrznski/rebuntu/src/runtime/unit_executor.i"
+	@echo "... home/bvrznski/rebuntu/src/runtime/unit_executor.s"
 	@echo "... home/bvrznski/rebuntu/src/system/environment/ipc.o"
 	@echo "... home/bvrznski/rebuntu/src/system/environment/ipc.i"
 	@echo "... home/bvrznski/rebuntu/src/system/environment/ipc.s"

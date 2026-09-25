@@ -218,6 +218,14 @@ add_library(rebuntu-events-collector STATIC
 target_include_directories(rebuntu-events-collector PUBLIC ${CMAKE_CURRENT_LIST_DIR}/../src)
 target_link_libraries(rebuntu-core PUBLIC rebuntu-events-collector)
 
+# Phase 5.2: Journald acquisition adapter module
+add_library(rebuntu-journald-adapter STATIC
+    ${CMAKE_CURRENT_LIST_DIR}/../src/adapters/journald.hpp
+    ${CMAKE_CURRENT_LIST_DIR}/../src/adapters/journald.cpp
+)
+target_include_directories(rebuntu-journald-adapter PUBLIC ${CMAKE_CURRENT_LIST_DIR}/../src)
+target_link_libraries(rebuntu-core PUBLIC rebuntu-journald-adapter)
+
 # Phase 2.0: Linux Host Foundation module
 add_library(rebuntu-host-foundation STATIC
     ${CMAKE_CURRENT_LIST_DIR}/../src/system/host_foundation/contracts.hpp

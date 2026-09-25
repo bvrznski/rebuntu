@@ -30,8 +30,8 @@ INITRD="$ROOTFS/boot/initrd.img-$KVER"
 sudo rm -rf "$WORK"
 mkdir -p "$ISO/casper" "$ISO/boot/grub" "$ISO/EFI/BOOT" "$OUT"
 
-sudo cp "$KERNEL" "$ISO/casper/vmlinuz"
-sudo cp "$INITRD" "$ISO/casper/initrd"
+sudo install -m 0644 "$KERNEL" "$ISO/casper/vmlinuz"
+sudo install -m 0644 "$INITRD" "$ISO/casper/initrd"
 cp "$ROOT/images/iso/config/grub.cfg" "$ISO/boot/grub/grub.cfg"
 
 sudo chroot "$ROOTFS" dpkg-query -W --showformat='${Package} ${Version}\n' \

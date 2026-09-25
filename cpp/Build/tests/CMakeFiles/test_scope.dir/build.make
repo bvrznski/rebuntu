@@ -113,6 +113,7 @@ tests/test_scope: librebuntu-lifecycle.a
 tests/test_scope: librebuntu-host-foundation.a
 tests/test_scope: librebuntu-jenkins-provider.a
 tests/test_scope: librebuntu-pipeline-provider.a
+tests/test_scope: librebuntu-packages.a
 tests/test_scope: tests/CMakeFiles/test_scope.dir/link.txt
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --bold --progress-dir=/home/bvrznski/rebuntu/cpp/Build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_2) "Linking CXX executable test_scope"
 	cd /home/bvrznski/rebuntu/cpp/Build/tests && $(CMAKE_COMMAND) -E cmake_link_script CMakeFiles/test_scope.dir/link.txt --verbose=$(VERBOSE)

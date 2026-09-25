@@ -129,6 +129,7 @@ tests/test_ipc_protocol: librebuntu-lifecycle.a
 tests/test_ipc_protocol: librebuntu-host-foundation.a
 tests/test_ipc_protocol: librebuntu-jenkins-provider.a
 tests/test_ipc_protocol: librebuntu-pipeline-provider.a
+tests/test_ipc_protocol: librebuntu-packages.a
 tests/test_ipc_protocol: tests/CMakeFiles/test_ipc_protocol.dir/link.txt
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --bold --progress-dir=/home/bvrznski/rebuntu/cpp/Build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_3) "Linking CXX executable test_ipc_protocol"
 	cd /home/bvrznski/rebuntu/cpp/Build/tests && $(CMAKE_COMMAND) -E cmake_link_script CMakeFiles/test_ipc_protocol.dir/link.txt --verbose=$(VERBOSE)

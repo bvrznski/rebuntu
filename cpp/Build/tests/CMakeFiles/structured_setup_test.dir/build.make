@@ -113,6 +113,7 @@ tests/structured_setup_test: librebuntu-lifecycle.a
 tests/structured_setup_test: librebuntu-host-foundation.a
 tests/structured_setup_test: librebuntu-jenkins-provider.a
 tests/structured_setup_test: librebuntu-pipeline-provider.a
+tests/structured_setup_test: librebuntu-packages.a
 tests/structured_setup_test: tests/CMakeFiles/structured_setup_test.dir/link.txt
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --bold --progress-dir=/home/bvrznski/rebuntu/cpp/Build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_2) "Linking CXX executable structured_setup_test"
 	cd /home/bvrznski/rebuntu/cpp/Build/tests && $(CMAKE_COMMAND) -E cmake_link_script CMakeFiles/structured_setup_test.dir/link.txt --verbose=$(VERBOSE)

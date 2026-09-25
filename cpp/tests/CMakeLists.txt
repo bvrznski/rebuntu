@@ -53,6 +53,15 @@ target_include_directories(settings_test PRIVATE
     ${CMAKE_SOURCE_DIR}
 )
 
+# Phase 3.11: Package Metadata & Environment Reproducibility tests
+add_executable(test_packages ../../tests/native/test_packages.cpp)
+target_link_libraries(test_packages rebuntu-core rebuntu-packages)
+target_include_directories(test_packages PRIVATE 
+    ${CMAKE_SOURCE_DIR}/src
+    ${CMAKE_SOURCE_DIR}
+)
+add_test(NAME test_packages COMMAND test_packages)
+
 # Preferences Model tests (Phase 1.7)
 add_executable(preferences_test ../../tests/native/test_preferences.cpp)
 target_link_libraries(preferences_test rebuntu-core)

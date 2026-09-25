@@ -751,6 +751,19 @@ rebuntu-pipeline-provider/fast:
 .PHONY : rebuntu-pipeline-provider/fast
 
 #=============================================================================
+# Target rules for targets named rebuntu-packages
+
+# Build rule for target.
+rebuntu-packages: cmake_check_build_system
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 rebuntu-packages
+.PHONY : rebuntu-packages
+
+# fast build rule for target.
+rebuntu-packages/fast:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/rebuntu-packages.dir/build.make CMakeFiles/rebuntu-packages.dir/build
+.PHONY : rebuntu-packages/fast
+
+#=============================================================================
 # Target rules for targets named rebuntu-core
 
 # Build rule for target.
@@ -853,6 +866,19 @@ settings_test: cmake_check_build_system
 settings_test/fast:
 	$(MAKE) $(MAKESILENT) -f tests/CMakeFiles/settings_test.dir/build.make tests/CMakeFiles/settings_test.dir/build
 .PHONY : settings_test/fast
+
+#=============================================================================
+# Target rules for targets named test_packages
+
+# Build rule for target.
+test_packages: cmake_check_build_system
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 test_packages
+.PHONY : test_packages
+
+# fast build rule for target.
+test_packages/fast:
+	$(MAKE) $(MAKESILENT) -f tests/CMakeFiles/test_packages.dir/build.make tests/CMakeFiles/test_packages.dir/build
+.PHONY : test_packages/fast
 
 #=============================================================================
 # Target rules for targets named preferences_test
@@ -1243,6 +1269,30 @@ rebuntu: cmake_check_build_system
 rebuntu/fast:
 	$(MAKE) $(MAKESILENT) -f src/rebuntu/CMakeFiles/rebuntu.dir/build.make src/rebuntu/CMakeFiles/rebuntu.dir/build
 .PHONY : rebuntu/fast
+
+home/bvrznski/rebuntu/src/domains/development/infrastructure/native/packages.o: home/bvrznski/rebuntu/src/domains/development/infrastructure/native/packages.cpp.o
+.PHONY : home/bvrznski/rebuntu/src/domains/development/infrastructure/native/packages.o
+
+# target to build an object file
+home/bvrznski/rebuntu/src/domains/development/infrastructure/native/packages.cpp.o:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/rebuntu-packages.dir/build.make CMakeFiles/rebuntu-packages.dir/home/bvrznski/rebuntu/src/domains/development/infrastructure/native/packages.cpp.o
+.PHONY : home/bvrznski/rebuntu/src/domains/development/infrastructure/native/packages.cpp.o
+
+home/bvrznski/rebuntu/src/domains/development/infrastructure/native/packages.i: home/bvrznski/rebuntu/src/domains/development/infrastructure/native/packages.cpp.i
+.PHONY : home/bvrznski/rebuntu/src/domains/development/infrastructure/native/packages.i
+
+# target to preprocess a source file
+home/bvrznski/rebuntu/src/domains/development/infrastructure/native/packages.cpp.i:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/rebuntu-packages.dir/build.make CMakeFiles/rebuntu-packages.dir/home/bvrznski/rebuntu/src/domains/development/infrastructure/native/packages.cpp.i
+.PHONY : home/bvrznski/rebuntu/src/domains/development/infrastructure/native/packages.cpp.i
+
+home/bvrznski/rebuntu/src/domains/development/infrastructure/native/packages.s: home/bvrznski/rebuntu/src/domains/development/infrastructure/native/packages.cpp.s
+.PHONY : home/bvrznski/rebuntu/src/domains/development/infrastructure/native/packages.s
+
+# target to generate assembly for a file
+home/bvrznski/rebuntu/src/domains/development/infrastructure/native/packages.cpp.s:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/rebuntu-packages.dir/build.make CMakeFiles/rebuntu-packages.dir/home/bvrznski/rebuntu/src/domains/development/infrastructure/native/packages.cpp.s
+.PHONY : home/bvrznski/rebuntu/src/domains/development/infrastructure/native/packages.cpp.s
 
 home/bvrznski/rebuntu/src/system/environment/authorization.o: home/bvrznski/rebuntu/src/system/environment/authorization.cpp.o
 .PHONY : home/bvrznski/rebuntu/src/system/environment/authorization.o
@@ -1859,6 +1909,7 @@ help:
 	@echo "... rebuntu-lifecycle"
 	@echo "... rebuntu-locks"
 	@echo "... rebuntu-ownership"
+	@echo "... rebuntu-packages"
 	@echo "... rebuntu-pipeline-provider"
 	@echo "... rebuntu-privilege"
 	@echo "... rebuntu-scope"
@@ -1883,6 +1934,7 @@ help:
 	@echo "... test_ipc_protocol"
 	@echo "... test_jenkins_provider"
 	@echo "... test_locks"
+	@echo "... test_packages"
 	@echo "... test_pipeline_provider"
 	@echo "... test_runtime_contracts"
 	@echo "... test_scope"
@@ -1891,6 +1943,9 @@ help:
 	@echo "... test_state_provider"
 	@echo "... test_temp_files"
 	@echo "... user_identity_test"
+	@echo "... home/bvrznski/rebuntu/src/domains/development/infrastructure/native/packages.o"
+	@echo "... home/bvrznski/rebuntu/src/domains/development/infrastructure/native/packages.i"
+	@echo "... home/bvrznski/rebuntu/src/domains/development/infrastructure/native/packages.s"
 	@echo "... home/bvrznski/rebuntu/src/system/environment/authorization.o"
 	@echo "... home/bvrznski/rebuntu/src/system/environment/authorization.i"
 	@echo "... home/bvrznski/rebuntu/src/system/environment/authorization.s"

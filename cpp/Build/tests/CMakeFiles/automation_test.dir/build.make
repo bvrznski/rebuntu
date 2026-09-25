@@ -113,6 +113,7 @@ tests/automation_test: librebuntu-lifecycle.a
 tests/automation_test: librebuntu-host-foundation.a
 tests/automation_test: librebuntu-jenkins-provider.a
 tests/automation_test: librebuntu-pipeline-provider.a
+tests/automation_test: librebuntu-packages.a
 tests/automation_test: tests/CMakeFiles/automation_test.dir/link.txt
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --bold --progress-dir=/home/bvrznski/rebuntu/cpp/Build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_2) "Linking CXX executable automation_test"
 	cd /home/bvrznski/rebuntu/cpp/Build/tests && $(CMAKE_COMMAND) -E cmake_link_script CMakeFiles/automation_test.dir/link.txt --verbose=$(VERBOSE)

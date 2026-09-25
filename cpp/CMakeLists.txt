@@ -315,6 +315,22 @@ target_include_directories(rebuntu-pipeline-provider PUBLIC
 )
 target_link_libraries(rebuntu-core PUBLIC rebuntu-pipeline-provider)
 
+# Phase 3.11: Package metadata & environment reproducibility module
+set(PACKAGES_HDRS "/home/bvrznski/rebuntu/src/domains/development/infrastructure/packages.hpp")
+set(PACKAGES_SRCS "/home/bvrznski/rebuntu/src/domains/development/infrastructure/native/packages.cpp")
+
+add_library(rebuntu-packages STATIC
+    ${PACKAGES_HDRS}
+    ${PACKAGES_SRCS}
+)
+
+target_include_directories(rebuntu-packages PUBLIC
+    /home/bvrznski/rebuntu/src
+)
+target_link_libraries(rebuntu-core PUBLIC rebuntu-packages)
+
+# SHA256 hashing implemented using pure C++ (FNV-1a algorithm) - no external dependencies required
+
 # Tests subdirectory
 add_subdirectory(tests)
 

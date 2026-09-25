@@ -113,6 +113,7 @@ tests/test_directories: librebuntu-lifecycle.a
 tests/test_directories: librebuntu-host-foundation.a
 tests/test_directories: librebuntu-jenkins-provider.a
 tests/test_directories: librebuntu-pipeline-provider.a
+tests/test_directories: librebuntu-packages.a
 tests/test_directories: tests/CMakeFiles/test_directories.dir/link.txt
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --bold --progress-dir=/home/bvrznski/rebuntu/cpp/Build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_2) "Linking CXX executable test_directories"
 	cd /home/bvrznski/rebuntu/cpp/Build/tests && $(CMAKE_COMMAND) -E cmake_link_script CMakeFiles/test_directories.dir/link.txt --verbose=$(VERBOSE)

@@ -225,6 +225,20 @@ settings_test/fast:
 .PHONY : settings_test/fast
 
 # Convenience name for target.
+tests/CMakeFiles/test_packages.dir/rule:
+	cd /home/bvrznski/rebuntu/cpp/Build && $(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 tests/CMakeFiles/test_packages.dir/rule
+.PHONY : tests/CMakeFiles/test_packages.dir/rule
+
+# Convenience name for target.
+test_packages: tests/CMakeFiles/test_packages.dir/rule
+.PHONY : test_packages
+
+# fast build rule for target.
+test_packages/fast:
+	cd /home/bvrznski/rebuntu/cpp/Build && $(MAKE) $(MAKESILENT) -f tests/CMakeFiles/test_packages.dir/build.make tests/CMakeFiles/test_packages.dir/build
+.PHONY : test_packages/fast
+
+# Convenience name for target.
 tests/CMakeFiles/preferences_test.dir/rule:
 	cd /home/bvrznski/rebuntu/cpp/Build && $(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 tests/CMakeFiles/preferences_test.dir/rule
 .PHONY : tests/CMakeFiles/preferences_test.dir/rule
@@ -1038,6 +1052,30 @@ home/bvrznski/rebuntu/tests/native/test_host_foundation.cpp.s:
 	cd /home/bvrznski/rebuntu/cpp/Build && $(MAKE) $(MAKESILENT) -f tests/CMakeFiles/host_foundation_test.dir/build.make tests/CMakeFiles/host_foundation_test.dir/home/bvrznski/rebuntu/tests/native/test_host_foundation.cpp.s
 .PHONY : home/bvrznski/rebuntu/tests/native/test_host_foundation.cpp.s
 
+home/bvrznski/rebuntu/tests/native/test_packages.o: home/bvrznski/rebuntu/tests/native/test_packages.cpp.o
+.PHONY : home/bvrznski/rebuntu/tests/native/test_packages.o
+
+# target to build an object file
+home/bvrznski/rebuntu/tests/native/test_packages.cpp.o:
+	cd /home/bvrznski/rebuntu/cpp/Build && $(MAKE) $(MAKESILENT) -f tests/CMakeFiles/test_packages.dir/build.make tests/CMakeFiles/test_packages.dir/home/bvrznski/rebuntu/tests/native/test_packages.cpp.o
+.PHONY : home/bvrznski/rebuntu/tests/native/test_packages.cpp.o
+
+home/bvrznski/rebuntu/tests/native/test_packages.i: home/bvrznski/rebuntu/tests/native/test_packages.cpp.i
+.PHONY : home/bvrznski/rebuntu/tests/native/test_packages.i
+
+# target to preprocess a source file
+home/bvrznski/rebuntu/tests/native/test_packages.cpp.i:
+	cd /home/bvrznski/rebuntu/cpp/Build && $(MAKE) $(MAKESILENT) -f tests/CMakeFiles/test_packages.dir/build.make tests/CMakeFiles/test_packages.dir/home/bvrznski/rebuntu/tests/native/test_packages.cpp.i
+.PHONY : home/bvrznski/rebuntu/tests/native/test_packages.cpp.i
+
+home/bvrznski/rebuntu/tests/native/test_packages.s: home/bvrznski/rebuntu/tests/native/test_packages.cpp.s
+.PHONY : home/bvrznski/rebuntu/tests/native/test_packages.s
+
+# target to generate assembly for a file
+home/bvrznski/rebuntu/tests/native/test_packages.cpp.s:
+	cd /home/bvrznski/rebuntu/cpp/Build && $(MAKE) $(MAKESILENT) -f tests/CMakeFiles/test_packages.dir/build.make tests/CMakeFiles/test_packages.dir/home/bvrznski/rebuntu/tests/native/test_packages.cpp.s
+.PHONY : home/bvrznski/rebuntu/tests/native/test_packages.cpp.s
+
 home/bvrznski/rebuntu/tests/native/test_preferences.o: home/bvrznski/rebuntu/tests/native/test_preferences.cpp.o
 .PHONY : home/bvrznski/rebuntu/tests/native/test_preferences.o
 
@@ -1771,6 +1809,7 @@ help:
 	@echo "... test_ipc_protocol"
 	@echo "... test_jenkins_provider"
 	@echo "... test_locks"
+	@echo "... test_packages"
 	@echo "... test_pipeline_provider"
 	@echo "... test_runtime_contracts"
 	@echo "... test_scope"
@@ -1830,6 +1869,9 @@ help:
 	@echo "... home/bvrznski/rebuntu/tests/native/test_host_foundation.o"
 	@echo "... home/bvrznski/rebuntu/tests/native/test_host_foundation.i"
 	@echo "... home/bvrznski/rebuntu/tests/native/test_host_foundation.s"
+	@echo "... home/bvrznski/rebuntu/tests/native/test_packages.o"
+	@echo "... home/bvrznski/rebuntu/tests/native/test_packages.i"
+	@echo "... home/bvrznski/rebuntu/tests/native/test_packages.s"
 	@echo "... home/bvrznski/rebuntu/tests/native/test_preferences.o"
 	@echo "... home/bvrznski/rebuntu/tests/native/test_preferences.i"
 	@echo "... home/bvrznski/rebuntu/tests/native/test_preferences.s"

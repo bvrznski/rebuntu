@@ -46,6 +46,7 @@
 /home/bvrznski/rebuntu/cpp/Build/CMakeFiles/rebuntu-host-foundation.dir
 /home/bvrznski/rebuntu/cpp/Build/CMakeFiles/rebuntu-jenkins-provider.dir
 /home/bvrznski/rebuntu/cpp/Build/CMakeFiles/rebuntu-pipeline-provider.dir
+/home/bvrznski/rebuntu/cpp/Build/CMakeFiles/rebuntu-packages.dir
 /home/bvrznski/rebuntu/cpp/Build/CMakeFiles/test.dir
 /home/bvrznski/rebuntu/cpp/Build/CMakeFiles/edit_cache.dir
 /home/bvrznski/rebuntu/cpp/Build/CMakeFiles/rebuild_cache.dir
@@ -60,6 +61,7 @@
 /home/bvrznski/rebuntu/cpp/Build/tests/CMakeFiles/events_test.dir
 /home/bvrznski/rebuntu/cpp/Build/tests/CMakeFiles/results_test.dir
 /home/bvrznski/rebuntu/cpp/Build/tests/CMakeFiles/settings_test.dir
+/home/bvrznski/rebuntu/cpp/Build/tests/CMakeFiles/test_packages.dir
 /home/bvrznski/rebuntu/cpp/Build/tests/CMakeFiles/preferences_test.dir
 /home/bvrznski/rebuntu/cpp/Build/tests/CMakeFiles/config_test.dir
 /home/bvrznski/rebuntu/cpp/Build/tests/CMakeFiles/install_planning_test.dir

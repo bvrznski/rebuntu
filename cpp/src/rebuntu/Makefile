@@ -404,6 +404,30 @@ home/bvrznski/rebuntu/src/runtime/unit_executor.cpp.s:
 	cd /home/bvrznski/rebuntu/cpp && $(MAKE) $(MAKESILENT) -f src/rebuntu/CMakeFiles/rebuntu.dir/build.make src/rebuntu/CMakeFiles/rebuntu.dir/home/bvrznski/rebuntu/src/runtime/unit_executor.cpp.s
 .PHONY : home/bvrznski/rebuntu/src/runtime/unit_executor.cpp.s
 
+home/bvrznski/rebuntu/src/runtime/workflow.o: home/bvrznski/rebuntu/src/runtime/workflow.cpp.o
+.PHONY : home/bvrznski/rebuntu/src/runtime/workflow.o
+
+# target to build an object file
+home/bvrznski/rebuntu/src/runtime/workflow.cpp.o:
+	cd /home/bvrznski/rebuntu/cpp && $(MAKE) $(MAKESILENT) -f src/rebuntu/CMakeFiles/rebuntu.dir/build.make src/rebuntu/CMakeFiles/rebuntu.dir/home/bvrznski/rebuntu/src/runtime/workflow.cpp.o
+.PHONY : home/bvrznski/rebuntu/src/runtime/workflow.cpp.o
+
+home/bvrznski/rebuntu/src/runtime/workflow.i: home/bvrznski/rebuntu/src/runtime/workflow.cpp.i
+.PHONY : home/bvrznski/rebuntu/src/runtime/workflow.i
+
+# target to preprocess a source file
+home/bvrznski/rebuntu/src/runtime/workflow.cpp.i:
+	cd /home/bvrznski/rebuntu/cpp && $(MAKE) $(MAKESILENT) -f src/rebuntu/CMakeFiles/rebuntu.dir/build.make src/rebuntu/CMakeFiles/rebuntu.dir/home/bvrznski/rebuntu/src/runtime/workflow.cpp.i
+.PHONY : home/bvrznski/rebuntu/src/runtime/workflow.cpp.i
+
+home/bvrznski/rebuntu/src/runtime/workflow.s: home/bvrznski/rebuntu/src/runtime/workflow.cpp.s
+.PHONY : home/bvrznski/rebuntu/src/runtime/workflow.s
+
+# target to generate assembly for a file
+home/bvrznski/rebuntu/src/runtime/workflow.cpp.s:
+	cd /home/bvrznski/rebuntu/cpp && $(MAKE) $(MAKESILENT) -f src/rebuntu/CMakeFiles/rebuntu.dir/build.make src/rebuntu/CMakeFiles/rebuntu.dir/home/bvrznski/rebuntu/src/runtime/workflow.cpp.s
+.PHONY : home/bvrznski/rebuntu/src/runtime/workflow.cpp.s
+
 home/bvrznski/rebuntu/src/system/environment/ipc.o: home/bvrznski/rebuntu/src/system/environment/ipc.cpp.o
 .PHONY : home/bvrznski/rebuntu/src/system/environment/ipc.o
 
@@ -759,6 +783,9 @@ help:
 	@echo "... home/bvrznski/rebuntu/src/runtime/unit_executor.o"
 	@echo "... home/bvrznski/rebuntu/src/runtime/unit_executor.i"
 	@echo "... home/bvrznski/rebuntu/src/runtime/unit_executor.s"
+	@echo "... home/bvrznski/rebuntu/src/runtime/workflow.o"
+	@echo "... home/bvrznski/rebuntu/src/runtime/workflow.i"
+	@echo "... home/bvrznski/rebuntu/src/runtime/workflow.s"
 	@echo "... home/bvrznski/rebuntu/src/system/environment/ipc.o"
 	@echo "... home/bvrznski/rebuntu/src/system/environment/ipc.i"
 	@echo "... home/bvrznski/rebuntu/src/system/environment/ipc.s"

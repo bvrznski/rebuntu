@@ -460,4 +460,20 @@ target_include_directories(unit_executor_test PRIVATE
 )
 add_test(NAME unit_executor_test COMMAND unit_executor_test)
 
+# Phase 4.14: Workflow Runtime tests
+set(WORKFLOW_HDRS
+    ${CMAKE_SOURCE_DIR}/../src/runtime/workflow.hpp
+)
+set(WORKFLOW_SRCS
+    ${CMAKE_SOURCE_DIR}/../src/runtime/workflow.cpp
+)
+add_executable(workflow_test workflow_test.cpp ${WORKFLOW_HDRS} ${WORKFLOW_SRCS})
+target_link_libraries(workflow_test rebuntu-core)
+target_include_directories(workflow_test PRIVATE 
+    ${CMAKE_CURRENT_LIST_DIR}/../include
+    ${CMAKE_SOURCE_DIR}/src
+    ${CMAKE_SOURCE_DIR}
+)
+add_test(NAME workflow_test COMMAND workflow_test)
+
 # Phase 1.9: Environment discovery tests (pending integration with testing framework)

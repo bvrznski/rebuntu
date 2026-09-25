@@ -60,6 +60,7 @@ src/core/CMakeFiles/rebuntu-core.dir/__/semantic/bitnet_provider.cpp.o: src/sema
   /usr/include/x86_64-linux-gnu/bits/types/FILE.h \
   /usr/include/x86_64-linux-gnu/bits/types/locale_t.h \
   /usr/include/x86_64-linux-gnu/bits/types/__locale_t.h \
+  /usr/include/x86_64-linux-gnu/bits/wchar2.h \
   /usr/include/c++/11/cstdint \
   /usr/lib/gcc/x86_64-linux-gnu/11/include/stdint.h \
   /usr/include/stdint.h \
@@ -104,6 +105,7 @@ src/core/CMakeFiles/rebuntu-core.dir/__/semantic/bitnet_provider.cpp.o: src/sema
   /usr/include/x86_64-linux-gnu/bits/types/__sigset_t.h \
   /usr/include/x86_64-linux-gnu/bits/types/struct_timeval.h \
   /usr/include/x86_64-linux-gnu/bits/types/struct_timespec.h \
+  /usr/include/x86_64-linux-gnu/bits/select2.h \
   /usr/include/x86_64-linux-gnu/bits/pthreadtypes.h \
   /usr/include/x86_64-linux-gnu/bits/thread-shared-types.h \
   /usr/include/x86_64-linux-gnu/bits/pthreadtypes-arch.h \
@@ -111,7 +113,9 @@ src/core/CMakeFiles/rebuntu-core.dir/__/semantic/bitnet_provider.cpp.o: src/sema
   /usr/include/x86_64-linux-gnu/bits/struct_mutex.h \
   /usr/include/x86_64-linux-gnu/bits/struct_rwlock.h \
   /usr/include/alloca.h \
+  /usr/include/x86_64-linux-gnu/bits/stdlib-bsearch.h \
   /usr/include/x86_64-linux-gnu/bits/stdlib-float.h \
+  /usr/include/x86_64-linux-gnu/bits/stdlib.h \
   /usr/include/c++/11/bits/std_abs.h \
   /usr/include/c++/11/bits/algorithmfwd.h \
   /usr/include/c++/11/initializer_list \
@@ -155,6 +159,8 @@ src/core/CMakeFiles/rebuntu-core.dir/__/semantic/bitnet_provider.cpp.o: src/sema
   /usr/include/x86_64-linux-gnu/bits/types/struct_FILE.h \
   /usr/include/x86_64-linux-gnu/bits/types/cookie_io_functions_t.h \
   /usr/include/x86_64-linux-gnu/bits/stdio_lim.h \
+  /usr/include/x86_64-linux-gnu/bits/stdio.h \
+  /usr/include/x86_64-linux-gnu/bits/stdio2.h \
   /usr/include/c++/11/cerrno \
   /usr/include/errno.h \
   /usr/include/x86_64-linux-gnu/bits/errno.h \
@@ -240,6 +246,7 @@ src/core/CMakeFiles/rebuntu-core.dir/__/semantic/bitnet_provider.cpp.o: src/sema
   /usr/include/x86_64-linux-gnu/bits/confname.h \
   /usr/include/x86_64-linux-gnu/bits/getopt_posix.h \
   /usr/include/x86_64-linux-gnu/bits/getopt_core.h \
+  /usr/include/x86_64-linux-gnu/bits/unistd.h \
   /usr/include/x86_64-linux-gnu/bits/unistd_ext.h \
   /usr/include/linux/close_range.h \
   /usr/include/syscall.h \
@@ -357,6 +364,7 @@ src/core/CMakeFiles/rebuntu-core.dir/__/semantic/subprocess.cpp.o: src/semantic/
   /usr/include/x86_64-linux-gnu/bits/types/FILE.h \
   /usr/include/x86_64-linux-gnu/bits/types/locale_t.h \
   /usr/include/x86_64-linux-gnu/bits/types/__locale_t.h \
+  /usr/include/x86_64-linux-gnu/bits/wchar2.h \
   /usr/include/c++/11/cstdint \
   /usr/lib/gcc/x86_64-linux-gnu/11/include/stdint.h \
   /usr/include/stdint.h \
@@ -401,6 +409,7 @@ src/core/CMakeFiles/rebuntu-core.dir/__/semantic/subprocess.cpp.o: src/semantic/
   /usr/include/x86_64-linux-gnu/bits/types/__sigset_t.h \
   /usr/include/x86_64-linux-gnu/bits/types/struct_timeval.h \
   /usr/include/x86_64-linux-gnu/bits/types/struct_timespec.h \
+  /usr/include/x86_64-linux-gnu/bits/select2.h \
   /usr/include/x86_64-linux-gnu/bits/pthreadtypes.h \
   /usr/include/x86_64-linux-gnu/bits/thread-shared-types.h \
   /usr/include/x86_64-linux-gnu/bits/pthreadtypes-arch.h \
@@ -408,7 +417,9 @@ src/core/CMakeFiles/rebuntu-core.dir/__/semantic/subprocess.cpp.o: src/semantic/
   /usr/include/x86_64-linux-gnu/bits/struct_mutex.h \
   /usr/include/x86_64-linux-gnu/bits/struct_rwlock.h \
   /usr/include/alloca.h \
+  /usr/include/x86_64-linux-gnu/bits/stdlib-bsearch.h \
   /usr/include/x86_64-linux-gnu/bits/stdlib-float.h \
+  /usr/include/x86_64-linux-gnu/bits/stdlib.h \
   /usr/include/c++/11/bits/std_abs.h \
   /usr/include/c++/11/bits/algorithmfwd.h \
   /usr/include/c++/11/initializer_list \
@@ -452,6 +463,8 @@ src/core/CMakeFiles/rebuntu-core.dir/__/semantic/subprocess.cpp.o: src/semantic/
   /usr/include/x86_64-linux-gnu/bits/types/struct_FILE.h \
   /usr/include/x86_64-linux-gnu/bits/types/cookie_io_functions_t.h \
   /usr/include/x86_64-linux-gnu/bits/stdio_lim.h \
+  /usr/include/x86_64-linux-gnu/bits/stdio.h \
+  /usr/include/x86_64-linux-gnu/bits/stdio2.h \
   /usr/include/c++/11/cerrno \
   /usr/include/errno.h \
   /usr/include/x86_64-linux-gnu/bits/errno.h \
@@ -498,6 +511,7 @@ src/core/CMakeFiles/rebuntu-core.dir/__/semantic/subprocess.cpp.o: src/semantic/
   /usr/include/x86_64-linux-gnu/bits/confname.h \
   /usr/include/x86_64-linux-gnu/bits/getopt_posix.h \
   /usr/include/x86_64-linux-gnu/bits/getopt_core.h \
+  /usr/include/x86_64-linux-gnu/bits/unistd.h \
   /usr/include/x86_64-linux-gnu/bits/unistd_ext.h \
   /usr/include/linux/close_range.h \
   /usr/include/x86_64-linux-gnu/sys/wait.h \
@@ -530,9 +544,12 @@ src/core/CMakeFiles/rebuntu-core.dir/__/semantic/subprocess.cpp.o: src/semantic/
   /usr/include/linux/falloc.h \
   /usr/include/x86_64-linux-gnu/bits/stat.h \
   /usr/include/x86_64-linux-gnu/bits/struct_stat.h \
+  /usr/include/x86_64-linux-gnu/bits/fcntl2.h \
   /usr/include/c++/11/cstring \
   /usr/include/string.h \
   /usr/include/strings.h \
+  /usr/include/x86_64-linux-gnu/bits/strings_fortified.h \
+  /usr/include/x86_64-linux-gnu/bits/string_fortified.h \
   /usr/include/c++/11/iostream \
   /usr/include/c++/11/ostream \
   /usr/include/c++/11/ios \
@@ -591,7 +608,8 @@ src/core/CMakeFiles/rebuntu-core.dir/__/semantic/subprocess.cpp.o: src/semantic/
   /usr/include/x86_64-linux-gnu/bits/semaphore.h \
   /usr/include/poll.h \
   /usr/include/x86_64-linux-gnu/sys/poll.h \
-  /usr/include/x86_64-linux-gnu/bits/poll.h
+  /usr/include/x86_64-linux-gnu/bits/poll.h \
+  /usr/include/x86_64-linux-gnu/bits/poll2.h
 
 src/core/CMakeFiles/rebuntu-core.dir/home/bvrznski/rebuntu/src/interfaces/provider_registry.cpp.o: /home/bvrznski/rebuntu/src/interfaces/provider_registry.cpp \
   /usr/include/stdc-predef.h \
@@ -652,6 +670,7 @@ src/core/CMakeFiles/rebuntu-core.dir/home/bvrznski/rebuntu/src/interfaces/provid
   /usr/include/x86_64-linux-gnu/bits/types/FILE.h \
   /usr/include/x86_64-linux-gnu/bits/types/locale_t.h \
   /usr/include/x86_64-linux-gnu/bits/types/__locale_t.h \
+  /usr/include/x86_64-linux-gnu/bits/wchar2.h \
   /usr/include/c++/11/cstdint \
   /usr/lib/gcc/x86_64-linux-gnu/11/include/stdint.h \
   /usr/include/stdint.h \
@@ -696,6 +715,7 @@ src/core/CMakeFiles/rebuntu-core.dir/home/bvrznski/rebuntu/src/interfaces/provid
   /usr/include/x86_64-linux-gnu/bits/types/__sigset_t.h \
   /usr/include/x86_64-linux-gnu/bits/types/struct_timeval.h \
   /usr/include/x86_64-linux-gnu/bits/types/struct_timespec.h \
+  /usr/include/x86_64-linux-gnu/bits/select2.h \
   /usr/include/x86_64-linux-gnu/bits/pthreadtypes.h \
   /usr/include/x86_64-linux-gnu/bits/thread-shared-types.h \
   /usr/include/x86_64-linux-gnu/bits/pthreadtypes-arch.h \
@@ -703,7 +723,9 @@ src/core/CMakeFiles/rebuntu-core.dir/home/bvrznski/rebuntu/src/interfaces/provid
   /usr/include/x86_64-linux-gnu/bits/struct_mutex.h \
   /usr/include/x86_64-linux-gnu/bits/struct_rwlock.h \
   /usr/include/alloca.h \
+  /usr/include/x86_64-linux-gnu/bits/stdlib-bsearch.h \
   /usr/include/x86_64-linux-gnu/bits/stdlib-float.h \
+  /usr/include/x86_64-linux-gnu/bits/stdlib.h \
   /usr/include/c++/11/bits/std_abs.h \
   /usr/include/c++/11/bits/algorithmfwd.h \
   /usr/include/c++/11/initializer_list \
@@ -747,6 +769,8 @@ src/core/CMakeFiles/rebuntu-core.dir/home/bvrznski/rebuntu/src/interfaces/provid
   /usr/include/x86_64-linux-gnu/bits/types/struct_FILE.h \
   /usr/include/x86_64-linux-gnu/bits/types/cookie_io_functions_t.h \
   /usr/include/x86_64-linux-gnu/bits/stdio_lim.h \
+  /usr/include/x86_64-linux-gnu/bits/stdio.h \
+  /usr/include/x86_64-linux-gnu/bits/stdio2.h \
   /usr/include/c++/11/cerrno \
   /usr/include/errno.h \
   /usr/include/x86_64-linux-gnu/bits/errno.h \
@@ -923,6 +947,7 @@ src/core/CMakeFiles/rebuntu-core.dir/home/bvrznski/rebuntu/src/runtime/controlle
   /usr/include/x86_64-linux-gnu/bits/types/__sigset_t.h \
   /usr/include/x86_64-linux-gnu/bits/types/struct_timeval.h \
   /usr/include/x86_64-linux-gnu/bits/types/struct_timespec.h \
+  /usr/include/x86_64-linux-gnu/bits/select2.h \
   /usr/include/x86_64-linux-gnu/bits/pthreadtypes.h \
   /usr/include/x86_64-linux-gnu/bits/thread-shared-types.h \
   /usr/include/x86_64-linux-gnu/bits/pthreadtypes-arch.h \
@@ -930,7 +955,9 @@ src/core/CMakeFiles/rebuntu-core.dir/home/bvrznski/rebuntu/src/runtime/controlle
   /usr/include/x86_64-linux-gnu/bits/struct_mutex.h \
   /usr/include/x86_64-linux-gnu/bits/struct_rwlock.h \
   /usr/include/alloca.h \
+  /usr/include/x86_64-linux-gnu/bits/stdlib-bsearch.h \
   /usr/include/x86_64-linux-gnu/bits/stdlib-float.h \
+  /usr/include/x86_64-linux-gnu/bits/stdlib.h \
   /usr/include/c++/11/bits/std_abs.h \
   /usr/include/c++/11/bits/algorithmfwd.h \
   /usr/include/c++/11/bits/stl_heap.h \
@@ -952,6 +979,7 @@ src/core/CMakeFiles/rebuntu-core.dir/home/bvrznski/rebuntu/src/runtime/controlle
   /usr/include/x86_64-linux-gnu/bits/types/__mbstate_t.h \
   /usr/include/x86_64-linux-gnu/bits/types/__FILE.h \
   /usr/include/x86_64-linux-gnu/bits/types/FILE.h \
+  /usr/include/x86_64-linux-gnu/bits/wchar2.h \
   /usr/include/c++/11/bits/stream_iterator.h \
   /usr/include/c++/11/bits/streambuf_iterator.h \
   /usr/include/c++/11/streambuf \
@@ -1014,6 +1042,8 @@ src/core/CMakeFiles/rebuntu-core.dir/home/bvrznski/rebuntu/src/runtime/controlle
   /usr/include/x86_64-linux-gnu/bits/types/struct_FILE.h \
   /usr/include/x86_64-linux-gnu/bits/types/cookie_io_functions_t.h \
   /usr/include/x86_64-linux-gnu/bits/stdio_lim.h \
+  /usr/include/x86_64-linux-gnu/bits/stdio.h \
+  /usr/include/x86_64-linux-gnu/bits/stdio2.h \
   /usr/include/c++/11/cerrno \
   /usr/include/errno.h \
   /usr/include/x86_64-linux-gnu/bits/errno.h \
@@ -1109,6 +1139,7 @@ src/core/CMakeFiles/rebuntu-core.dir/home/bvrznski/rebuntu/src/runtime/controlle
   /usr/include/x86_64-linux-gnu/bits/confname.h \
   /usr/include/x86_64-linux-gnu/bits/getopt_posix.h \
   /usr/include/x86_64-linux-gnu/bits/getopt_core.h \
+  /usr/include/x86_64-linux-gnu/bits/unistd.h \
   /usr/include/x86_64-linux-gnu/bits/unistd_ext.h \
   /usr/include/linux/close_range.h \
   /usr/include/syscall.h \
@@ -1230,6 +1261,7 @@ src/core/CMakeFiles/rebuntu-core.dir/home/bvrznski/rebuntu/src/runtime/engine.cp
   /usr/include/x86_64-linux-gnu/bits/types/__sigset_t.h \
   /usr/include/x86_64-linux-gnu/bits/types/struct_timeval.h \
   /usr/include/x86_64-linux-gnu/bits/types/struct_timespec.h \
+  /usr/include/x86_64-linux-gnu/bits/select2.h \
   /usr/include/x86_64-linux-gnu/bits/pthreadtypes.h \
   /usr/include/x86_64-linux-gnu/bits/thread-shared-types.h \
   /usr/include/x86_64-linux-gnu/bits/pthreadtypes-arch.h \
@@ -1237,7 +1269,9 @@ src/core/CMakeFiles/rebuntu-core.dir/home/bvrznski/rebuntu/src/runtime/engine.cp
   /usr/include/x86_64-linux-gnu/bits/struct_mutex.h \
   /usr/include/x86_64-linux-gnu/bits/struct_rwlock.h \
   /usr/include/alloca.h \
+  /usr/include/x86_64-linux-gnu/bits/stdlib-bsearch.h \
   /usr/include/x86_64-linux-gnu/bits/stdlib-float.h \
+  /usr/include/x86_64-linux-gnu/bits/stdlib.h \
   /usr/include/c++/11/bits/std_abs.h \
   /usr/include/c++/11/bits/algorithmfwd.h \
   /usr/include/c++/11/bits/stl_heap.h \
@@ -1259,6 +1293,7 @@ src/core/CMakeFiles/rebuntu-core.dir/home/bvrznski/rebuntu/src/runtime/engine.cp
   /usr/include/x86_64-linux-gnu/bits/types/__mbstate_t.h \
   /usr/include/x86_64-linux-gnu/bits/types/__FILE.h \
   /usr/include/x86_64-linux-gnu/bits/types/FILE.h \
+  /usr/include/x86_64-linux-gnu/bits/wchar2.h \
   /usr/include/c++/11/bits/stream_iterator.h \
   /usr/include/c++/11/bits/streambuf_iterator.h \
   /usr/include/c++/11/streambuf \
@@ -1321,6 +1356,8 @@ src/core/CMakeFiles/rebuntu-core.dir/home/bvrznski/rebuntu/src/runtime/engine.cp
   /usr/include/x86_64-linux-gnu/bits/types/struct_FILE.h \
   /usr/include/x86_64-linux-gnu/bits/types/cookie_io_functions_t.h \
   /usr/include/x86_64-linux-gnu/bits/stdio_lim.h \
+  /usr/include/x86_64-linux-gnu/bits/stdio.h \
+  /usr/include/x86_64-linux-gnu/bits/stdio2.h \
   /usr/include/c++/11/cerrno \
   /usr/include/errno.h \
   /usr/include/x86_64-linux-gnu/bits/errno.h \
@@ -1447,6 +1484,7 @@ src/core/CMakeFiles/rebuntu-core.dir/home/bvrznski/rebuntu/src/runtime/engine.cp
   /usr/include/x86_64-linux-gnu/bits/confname.h \
   /usr/include/x86_64-linux-gnu/bits/getopt_posix.h \
   /usr/include/x86_64-linux-gnu/bits/getopt_core.h \
+  /usr/include/x86_64-linux-gnu/bits/unistd.h \
   /usr/include/x86_64-linux-gnu/bits/unistd_ext.h \
   /usr/include/linux/close_range.h \
   /usr/include/syscall.h \
@@ -1509,6 +1547,7 @@ src/core/CMakeFiles/rebuntu-core.dir/home/bvrznski/rebuntu/src/runtime/loader.cp
   /usr/include/x86_64-linux-gnu/bits/types/FILE.h \
   /usr/include/x86_64-linux-gnu/bits/types/locale_t.h \
   /usr/include/x86_64-linux-gnu/bits/types/__locale_t.h \
+  /usr/include/x86_64-linux-gnu/bits/wchar2.h \
   /usr/include/c++/11/stdexcept \
   /usr/include/c++/11/exception \
   /usr/include/c++/11/bits/exception.h \
@@ -1585,6 +1624,7 @@ src/core/CMakeFiles/rebuntu-core.dir/home/bvrznski/rebuntu/src/runtime/loader.cp
   /usr/include/x86_64-linux-gnu/bits/types/__sigset_t.h \
   /usr/include/x86_64-linux-gnu/bits/types/struct_timeval.h \
   /usr/include/x86_64-linux-gnu/bits/types/struct_timespec.h \
+  /usr/include/x86_64-linux-gnu/bits/select2.h \
   /usr/include/x86_64-linux-gnu/bits/pthreadtypes.h \
   /usr/include/x86_64-linux-gnu/bits/thread-shared-types.h \
   /usr/include/x86_64-linux-gnu/bits/pthreadtypes-arch.h \
@@ -1592,7 +1632,9 @@ src/core/CMakeFiles/rebuntu-core.dir/home/bvrznski/rebuntu/src/runtime/loader.cp
   /usr/include/x86_64-linux-gnu/bits/struct_mutex.h \
   /usr/include/x86_64-linux-gnu/bits/struct_rwlock.h \
   /usr/include/alloca.h \
+  /usr/include/x86_64-linux-gnu/bits/stdlib-bsearch.h \
   /usr/include/x86_64-linux-gnu/bits/stdlib-float.h \
+  /usr/include/x86_64-linux-gnu/bits/stdlib.h \
   /usr/include/c++/11/bits/std_abs.h \
   /usr/include/c++/11/bits/algorithmfwd.h \
   /usr/include/c++/11/initializer_list \
@@ -1635,6 +1677,8 @@ src/core/CMakeFiles/rebuntu-core.dir/home/bvrznski/rebuntu/src/runtime/loader.cp
   /usr/include/x86_64-linux-gnu/bits/types/struct_FILE.h \
   /usr/include/x86_64-linux-gnu/bits/types/cookie_io_functions_t.h \
   /usr/include/x86_64-linux-gnu/bits/stdio_lim.h \
+  /usr/include/x86_64-linux-gnu/bits/stdio.h \
+  /usr/include/x86_64-linux-gnu/bits/stdio2.h \
   /usr/include/c++/11/bits/charconv.h \
   /usr/include/c++/11/bits/basic_string.tcc \
   /usr/include/c++/11/chrono \
@@ -1722,6 +1766,7 @@ src/core/CMakeFiles/rebuntu-core.dir/home/bvrznski/rebuntu/src/runtime/loader.cp
   /usr/include/x86_64-linux-gnu/bits/confname.h \
   /usr/include/x86_64-linux-gnu/bits/getopt_posix.h \
   /usr/include/x86_64-linux-gnu/bits/getopt_core.h \
+  /usr/include/x86_64-linux-gnu/bits/unistd.h \
   /usr/include/x86_64-linux-gnu/bits/unistd_ext.h \
   /usr/include/linux/close_range.h \
   /usr/include/syscall.h \
@@ -1828,6 +1873,7 @@ src/core/CMakeFiles/rebuntu-core.dir/home/bvrznski/rebuntu/src/runtime/preferenc
   /usr/include/x86_64-linux-gnu/bits/types/__sigset_t.h \
   /usr/include/x86_64-linux-gnu/bits/types/struct_timeval.h \
   /usr/include/x86_64-linux-gnu/bits/types/struct_timespec.h \
+  /usr/include/x86_64-linux-gnu/bits/select2.h \
   /usr/include/x86_64-linux-gnu/bits/pthreadtypes.h \
   /usr/include/x86_64-linux-gnu/bits/thread-shared-types.h \
   /usr/include/x86_64-linux-gnu/bits/pthreadtypes-arch.h \
@@ -1835,7 +1881,9 @@ src/core/CMakeFiles/rebuntu-core.dir/home/bvrznski/rebuntu/src/runtime/preferenc
   /usr/include/x86_64-linux-gnu/bits/struct_mutex.h \
   /usr/include/x86_64-linux-gnu/bits/struct_rwlock.h \
   /usr/include/alloca.h \
+  /usr/include/x86_64-linux-gnu/bits/stdlib-bsearch.h \
   /usr/include/x86_64-linux-gnu/bits/stdlib-float.h \
+  /usr/include/x86_64-linux-gnu/bits/stdlib.h \
   /usr/include/c++/11/bits/std_abs.h \
   /usr/include/c++/11/bits/algorithmfwd.h \
   /usr/include/c++/11/bits/stl_heap.h \
@@ -1857,6 +1905,7 @@ src/core/CMakeFiles/rebuntu-core.dir/home/bvrznski/rebuntu/src/runtime/preferenc
   /usr/include/x86_64-linux-gnu/bits/types/__mbstate_t.h \
   /usr/include/x86_64-linux-gnu/bits/types/__FILE.h \
   /usr/include/x86_64-linux-gnu/bits/types/FILE.h \
+  /usr/include/x86_64-linux-gnu/bits/wchar2.h \
   /usr/include/c++/11/bits/stream_iterator.h \
   /usr/include/c++/11/bits/streambuf_iterator.h \
   /usr/include/c++/11/streambuf \
@@ -1919,6 +1968,8 @@ src/core/CMakeFiles/rebuntu-core.dir/home/bvrznski/rebuntu/src/runtime/preferenc
   /usr/include/x86_64-linux-gnu/bits/types/struct_FILE.h \
   /usr/include/x86_64-linux-gnu/bits/types/cookie_io_functions_t.h \
   /usr/include/x86_64-linux-gnu/bits/stdio_lim.h \
+  /usr/include/x86_64-linux-gnu/bits/stdio.h \
+  /usr/include/x86_64-linux-gnu/bits/stdio2.h \
   /usr/include/c++/11/cerrno \
   /usr/include/errno.h \
   /usr/include/x86_64-linux-gnu/bits/errno.h \
@@ -2095,6 +2146,7 @@ src/core/CMakeFiles/rebuntu-core.dir/home/bvrznski/rebuntu/src/runtime/resolver.
   /usr/include/x86_64-linux-gnu/bits/types/__sigset_t.h \
   /usr/include/x86_64-linux-gnu/bits/types/struct_timeval.h \
   /usr/include/x86_64-linux-gnu/bits/types/struct_timespec.h \
+  /usr/include/x86_64-linux-gnu/bits/select2.h \
   /usr/include/x86_64-linux-gnu/bits/pthreadtypes.h \
   /usr/include/x86_64-linux-gnu/bits/thread-shared-types.h \
   /usr/include/x86_64-linux-gnu/bits/pthreadtypes-arch.h \
@@ -2102,7 +2154,9 @@ src/core/CMakeFiles/rebuntu-core.dir/home/bvrznski/rebuntu/src/runtime/resolver.
   /usr/include/x86_64-linux-gnu/bits/struct_mutex.h \
   /usr/include/x86_64-linux-gnu/bits/struct_rwlock.h \
   /usr/include/alloca.h \
+  /usr/include/x86_64-linux-gnu/bits/stdlib-bsearch.h \
   /usr/include/x86_64-linux-gnu/bits/stdlib-float.h \
+  /usr/include/x86_64-linux-gnu/bits/stdlib.h \
   /usr/include/c++/11/bits/std_abs.h \
   /usr/include/c++/11/bits/algorithmfwd.h \
   /usr/include/c++/11/bits/stl_heap.h \
@@ -2124,6 +2178,7 @@ src/core/CMakeFiles/rebuntu-core.dir/home/bvrznski/rebuntu/src/runtime/resolver.
   /usr/include/x86_64-linux-gnu/bits/types/__mbstate_t.h \
   /usr/include/x86_64-linux-gnu/bits/types/__FILE.h \
   /usr/include/x86_64-linux-gnu/bits/types/FILE.h \
+  /usr/include/x86_64-linux-gnu/bits/wchar2.h \
   /usr/include/c++/11/bits/stream_iterator.h \
   /usr/include/c++/11/bits/streambuf_iterator.h \
   /usr/include/c++/11/streambuf \
@@ -2186,6 +2241,8 @@ src/core/CMakeFiles/rebuntu-core.dir/home/bvrznski/rebuntu/src/runtime/resolver.
   /usr/include/x86_64-linux-gnu/bits/types/struct_FILE.h \
   /usr/include/x86_64-linux-gnu/bits/types/cookie_io_functions_t.h \
   /usr/include/x86_64-linux-gnu/bits/stdio_lim.h \
+  /usr/include/x86_64-linux-gnu/bits/stdio.h \
+  /usr/include/x86_64-linux-gnu/bits/stdio2.h \
   /usr/include/c++/11/cerrno \
   /usr/include/errno.h \
   /usr/include/x86_64-linux-gnu/bits/errno.h \
@@ -2308,6 +2365,7 @@ src/core/CMakeFiles/rebuntu-core.dir/home/bvrznski/rebuntu/src/runtime/resolver.
   /usr/include/x86_64-linux-gnu/bits/confname.h \
   /usr/include/x86_64-linux-gnu/bits/getopt_posix.h \
   /usr/include/x86_64-linux-gnu/bits/getopt_core.h \
+  /usr/include/x86_64-linux-gnu/bits/unistd.h \
   /usr/include/x86_64-linux-gnu/bits/unistd_ext.h \
   /usr/include/linux/close_range.h \
   /usr/include/syscall.h \
@@ -2397,6 +2455,7 @@ src/core/CMakeFiles/rebuntu-core.dir/home/bvrznski/rebuntu/src/system/runtime/di
   /usr/include/x86_64-linux-gnu/bits/types/__sigset_t.h \
   /usr/include/x86_64-linux-gnu/bits/types/struct_timeval.h \
   /usr/include/x86_64-linux-gnu/bits/types/struct_timespec.h \
+  /usr/include/x86_64-linux-gnu/bits/select2.h \
   /usr/include/x86_64-linux-gnu/bits/pthreadtypes.h \
   /usr/include/x86_64-linux-gnu/bits/thread-shared-types.h \
   /usr/include/x86_64-linux-gnu/bits/pthreadtypes-arch.h \
@@ -2404,7 +2463,9 @@ src/core/CMakeFiles/rebuntu-core.dir/home/bvrznski/rebuntu/src/system/runtime/di
   /usr/include/x86_64-linux-gnu/bits/struct_mutex.h \
   /usr/include/x86_64-linux-gnu/bits/struct_rwlock.h \
   /usr/include/alloca.h \
+  /usr/include/x86_64-linux-gnu/bits/stdlib-bsearch.h \
   /usr/include/x86_64-linux-gnu/bits/stdlib-float.h \
+  /usr/include/x86_64-linux-gnu/bits/stdlib.h \
   /usr/include/c++/11/bits/std_abs.h \
   /usr/include/c++/11/bits/algorithmfwd.h \
   /usr/include/c++/11/bits/stl_heap.h \
@@ -2426,6 +2487,7 @@ src/core/CMakeFiles/rebuntu-core.dir/home/bvrznski/rebuntu/src/system/runtime/di
   /usr/include/x86_64-linux-gnu/bits/types/__mbstate_t.h \
   /usr/include/x86_64-linux-gnu/bits/types/__FILE.h \
   /usr/include/x86_64-linux-gnu/bits/types/FILE.h \
+  /usr/include/x86_64-linux-gnu/bits/wchar2.h \
   /usr/include/c++/11/bits/stream_iterator.h \
   /usr/include/c++/11/bits/streambuf_iterator.h \
   /usr/include/c++/11/streambuf \
@@ -2488,6 +2550,8 @@ src/core/CMakeFiles/rebuntu-core.dir/home/bvrznski/rebuntu/src/system/runtime/di
   /usr/include/x86_64-linux-gnu/bits/types/struct_FILE.h \
   /usr/include/x86_64-linux-gnu/bits/types/cookie_io_functions_t.h \
   /usr/include/x86_64-linux-gnu/bits/stdio_lim.h \
+  /usr/include/x86_64-linux-gnu/bits/stdio.h \
+  /usr/include/x86_64-linux-gnu/bits/stdio2.h \
   /usr/include/c++/11/cerrno \
   /usr/include/errno.h \
   /usr/include/x86_64-linux-gnu/bits/errno.h \
@@ -2647,6 +2711,7 @@ src/core/CMakeFiles/rebuntu-core.dir/home/bvrznski/rebuntu/src/system/runtime/ex
   /usr/include/x86_64-linux-gnu/bits/types/__sigset_t.h \
   /usr/include/x86_64-linux-gnu/bits/types/struct_timeval.h \
   /usr/include/x86_64-linux-gnu/bits/types/struct_timespec.h \
+  /usr/include/x86_64-linux-gnu/bits/select2.h \
   /usr/include/x86_64-linux-gnu/bits/pthreadtypes.h \
   /usr/include/x86_64-linux-gnu/bits/thread-shared-types.h \
   /usr/include/x86_64-linux-gnu/bits/pthreadtypes-arch.h \
@@ -2654,7 +2719,9 @@ src/core/CMakeFiles/rebuntu-core.dir/home/bvrznski/rebuntu/src/system/runtime/ex
   /usr/include/x86_64-linux-gnu/bits/struct_mutex.h \
   /usr/include/x86_64-linux-gnu/bits/struct_rwlock.h \
   /usr/include/alloca.h \
+  /usr/include/x86_64-linux-gnu/bits/stdlib-bsearch.h \
   /usr/include/x86_64-linux-gnu/bits/stdlib-float.h \
+  /usr/include/x86_64-linux-gnu/bits/stdlib.h \
   /usr/include/c++/11/bits/std_abs.h \
   /usr/include/c++/11/bits/algorithmfwd.h \
   /usr/include/c++/11/bits/stl_heap.h \
@@ -2676,6 +2743,7 @@ src/core/CMakeFiles/rebuntu-core.dir/home/bvrznski/rebuntu/src/system/runtime/ex
   /usr/include/x86_64-linux-gnu/bits/types/__mbstate_t.h \
   /usr/include/x86_64-linux-gnu/bits/types/__FILE.h \
   /usr/include/x86_64-linux-gnu/bits/types/FILE.h \
+  /usr/include/x86_64-linux-gnu/bits/wchar2.h \
   /usr/include/c++/11/bits/stream_iterator.h \
   /usr/include/c++/11/bits/streambuf_iterator.h \
   /usr/include/c++/11/streambuf \
@@ -2738,6 +2806,8 @@ src/core/CMakeFiles/rebuntu-core.dir/home/bvrznski/rebuntu/src/system/runtime/ex
   /usr/include/x86_64-linux-gnu/bits/types/struct_FILE.h \
   /usr/include/x86_64-linux-gnu/bits/types/cookie_io_functions_t.h \
   /usr/include/x86_64-linux-gnu/bits/stdio_lim.h \
+  /usr/include/x86_64-linux-gnu/bits/stdio.h \
+  /usr/include/x86_64-linux-gnu/bits/stdio2.h \
   /usr/include/c++/11/cerrno \
   /usr/include/errno.h \
   /usr/include/x86_64-linux-gnu/bits/errno.h \
@@ -2881,6 +2951,7 @@ src/core/CMakeFiles/rebuntu-core.dir/home/bvrznski/rebuntu/src/system/runtime/ex
   /usr/include/x86_64-linux-gnu/bits/confname.h \
   /usr/include/x86_64-linux-gnu/bits/getopt_posix.h \
   /usr/include/x86_64-linux-gnu/bits/getopt_core.h \
+  /usr/include/x86_64-linux-gnu/bits/unistd.h \
   /usr/include/x86_64-linux-gnu/bits/unistd_ext.h \
   /usr/include/linux/close_range.h \
   /usr/include/syscall.h \
@@ -2896,6 +2967,8 @@ src/core/CMakeFiles/rebuntu-core.dir/home/bvrznski/rebuntu/src/system/runtime/ex
   /usr/include/c++/11/cstring \
   /usr/include/string.h \
   /usr/include/strings.h \
+  /usr/include/x86_64-linux-gnu/bits/strings_fortified.h \
+  /usr/include/x86_64-linux-gnu/bits/string_fortified.h \
   /usr/include/fcntl.h \
   /usr/include/x86_64-linux-gnu/bits/fcntl.h \
   /usr/include/x86_64-linux-gnu/bits/fcntl-linux.h \
@@ -2903,6 +2976,7 @@ src/core/CMakeFiles/rebuntu-core.dir/home/bvrznski/rebuntu/src/system/runtime/ex
   /usr/include/linux/falloc.h \
   /usr/include/x86_64-linux-gnu/bits/stat.h \
   /usr/include/x86_64-linux-gnu/bits/struct_stat.h \
+  /usr/include/x86_64-linux-gnu/bits/fcntl2.h \
   /usr/include/x86_64-linux-gnu/sys/wait.h \
   /usr/include/signal.h \
   /usr/include/x86_64-linux-gnu/bits/signum-generic.h \
@@ -2969,8 +3043,6 @@ src/core/CMakeFiles/rebuntu-core.dir/home/bvrznski/rebuntu/src/system/runtime/ex
 
 /usr/include/x86_64-linux-gnu/bits/mathcalls.h:
 
-/usr/include/x86_64-linux-gnu/bits/fp-logb.h:
-
 /usr/include/x86_64-linux-gnu/bits/flt-eval-method.h:
 
 /usr/include/x86_64-linux-gnu/bits/math-vector.h:
@@ -3008,6 +3080,8 @@ src/core/CMakeFiles/rebuntu-core.dir/home/bvrznski/rebuntu/src/system/runtime/ex
 /usr/include/c++/11/semaphore:
 
 /usr/include/c++/11/atomic:
+
+/usr/include/x86_64-linux-gnu/bits/strings_fortified.h:
 
 /usr/include/c++/11/bits/stl_set.h:
 
@@ -3119,7 +3193,13 @@ src/semantic/subprocess.cpp:
 
 /usr/include/c++/11/bits/locale_facets_nonio.h:
 
-/usr/include/x86_64-linux-gnu/bits/cpu-set.h:
+/usr/include/c++/11/filesystem:
+
+/usr/include/c++/11/pstl/glue_memory_defs.h:
+
+/usr/include/c++/11/bits/uses_allocator_args.h:
+
+/usr/include/c++/11/bits/stream_iterator.h:
 
 /usr/include/pthread.h:
 
@@ -3147,6 +3227,10 @@ src/semantic/subprocess.cpp:
 
 /usr/include/c++/11/ext/new_allocator.h:
 
+/usr/include/c++/11/pstl/execution_defs.h:
+
+/usr/include/c++/11/bits/algorithmfwd.h:
+
 /usr/include/x86_64-linux-gnu/bits/pthreadtypes.h:
 
 /usr/include/c++/11/bits/allocated_ptr.h:
@@ -3171,15 +3255,15 @@ src/semantic/subprocess.cpp:
 
 /usr/include/c++/11/bit:
 
+/usr/include/c++/11/bits/cxxabi_forced.h:
+
+/usr/include/x86_64-linux-gnu/bits/endianness.h:
+
 /usr/include/c++/11/backward/binders.h:
 
 /home/bvrznski/rebuntu/src/system/runtime/dispatcher.cpp:
 
 /usr/include/x86_64-linux-gnu/sys/syscall.h:
-
-/usr/include/c++/11/bits/cxxabi_forced.h:
-
-/usr/include/x86_64-linux-gnu/bits/endianness.h:
 
 /usr/include/x86_64-linux-gnu/bits/locale.h:
 
@@ -3217,9 +3301,9 @@ src/semantic/subprocess.cpp:
 
 /usr/include/x86_64-linux-gnu/asm/unistd_64.h:
 
-/usr/include/c++/11/ext/alloc_traits.h:
+/usr/include/x86_64-linux-gnu/bits/fp-logb.h:
 
-/usr/include/x86_64-linux-gnu/bits/sched.h:
+/usr/include/x86_64-linux-gnu/bits/wchar2.h:
 
 /usr/include/c++/11/compare:
 
@@ -3234,6 +3318,10 @@ src/semantic/subprocess.cpp:
 /usr/include/x86_64-linux-gnu/bits/stdlib-float.h:
 
 /usr/include/x86_64-linux-gnu/bits/uintn-identity.h:
+
+/usr/include/semaphore.h:
+
+/usr/include/c++/11/cwctype:
 
 /usr/include/c++/11/tuple:
 
@@ -3267,11 +3355,7 @@ src/semantic/subprocess.cpp:
 
 /usr/lib/gcc/x86_64-linux-gnu/11/include/stdint.h:
 
-/usr/include/c++/11/cwchar:
-
 /usr/include/c++/11/ext/type_traits.h:
-
-/usr/include/c++/11/pstl/glue_memory_defs.h:
 
 /usr/include/c++/11/bits/char_traits.h:
 
@@ -3294,6 +3378,8 @@ src/semantic/subprocess.cpp:
 /usr/include/poll.h:
 
 /usr/include/x86_64-linux-gnu/bits/types/struct_timeval.h:
+
+/usr/include/x86_64-linux-gnu/bits/stdlib.h:
 
 /usr/include/x86_64-linux-gnu/asm/errno.h:
 
@@ -3327,10 +3413,6 @@ include/system/semantic/provider.hpp:
 
 /usr/include/x86_64-linux-gnu/sys/single_threaded.h:
 
-/usr/include/c++/11/bits/algorithmfwd.h:
-
-/usr/include/c++/11/pstl/execution_defs.h:
-
 /usr/include/c++/11/bits/ranges_cmp.h:
 
 /usr/include/linux/close_range.h:
@@ -3338,6 +3420,8 @@ include/system/semantic/provider.hpp:
 /usr/include/x86_64-linux-gnu/bits/types/locale_t.h:
 
 /usr/include/x86_64-linux-gnu/bits/wctype-wchar.h:
+
+/usr/include/x86_64-linux-gnu/bits/fcntl2.h:
 
 /usr/include/x86_64-linux-gnu/bits/timesize.h:
 
@@ -3397,8 +3481,6 @@ src/semantic/bitnet_provider.cpp:
 
 /usr/include/ctype.h:
 
-/usr/include/c++/11/bits/stream_iterator.h:
-
 /usr/include/c++/11/bits/std_thread.h:
 
 /usr/include/c++/11/bits/cpp_type_traits.h:
@@ -3418,6 +3500,8 @@ src/semantic/bitnet_provider.cpp:
 /usr/include/c++/11/bits/shared_ptr_base.h:
 
 /usr/include/linux/limits.h:
+
+/usr/include/x86_64-linux-gnu/bits/poll2.h:
 
 /usr/include/x86_64-linux-gnu/bits/posix2_lim.h:
 
@@ -3443,6 +3527,12 @@ src/semantic/bitnet_provider.cpp:
 
 /usr/include/c++/11/bits/atomic_wait.h:
 
+/usr/include/c++/11/iterator:
+
+/usr/include/c++/11/bits/range_access.h:
+
+/usr/include/x86_64-linux-gnu/bits/floatn.h:
+
 /usr/include/x86_64-linux-gnu/bits/types/struct_itimerspec.h:
 
 /usr/include/x86_64-linux-gnu/bits/libc-header-start.h:
@@ -3451,7 +3541,17 @@ src/semantic/bitnet_provider.cpp:
 
 /usr/include/x86_64-linux-gnu/bits/types/wint_t.h:
 
+/usr/include/c++/11/cwchar:
+
+/usr/include/x86_64-linux-gnu/bits/select2.h:
+
 /usr/include/x86_64-linux-gnu/bits/types/mbstate_t.h:
+
+/usr/include/c++/11/ext/alloc_traits.h:
+
+/usr/include/x86_64-linux-gnu/bits/sched.h:
+
+/usr/include/x86_64-linux-gnu/bits/cpu-set.h:
 
 /usr/include/x86_64-linux-gnu/bits/stdio_lim.h:
 
@@ -3515,6 +3615,16 @@ src/semantic/bitnet_provider.cpp:
 
 /usr/include/stdio.h:
 
+/usr/include/x86_64-linux-gnu/bits/stdio.h:
+
+/usr/include/x86_64-linux-gnu/bits/stdio2.h:
+
+/usr/include/c++/11/bits/this_thread_sleep.h:
+
+/usr/include/x86_64-linux-gnu/bits/types/struct_tm.h:
+
+/usr/include/c++/11/bits/locale_facets.tcc:
+
 /usr/include/x86_64-linux-gnu/bits/types/cookie_io_functions_t.h:
 
 /usr/include/c++/11/cerrno:
@@ -3563,6 +3673,18 @@ src/semantic/bitnet_provider.cpp:
 
 /usr/include/c++/11/system_error:
 
+/home/bvrznski/rebuntu/src/interfaces/provider_registry.cpp:
+
+/usr/include/c++/11/bits/fs_fwd.h:
+
+/usr/include/x86_64-linux-gnu/bits/types/clockid_t.h:
+
+/usr/include/x86_64-linux-gnu/bits/stdlib-bsearch.h:
+
+/usr/include/x86_64-linux-gnu/bits/types/struct___jmp_buf_tag.h:
+
+/usr/include/c++/11/bits/stl_bvector.h:
+
 /usr/include/c++/11/bits/vector.tcc:
 
 /home/bvrznski/rebuntu/src/runtime/preferences/io.hpp:
@@ -3599,6 +3721,8 @@ src/semantic/bitnet_provider.cpp:
 
 /usr/include/c++/11/bits/nested_exception.h:
 
+/usr/include/x86_64-linux-gnu/bits/string_fortified.h:
+
 /usr/include/c++/11/memory:
 
 /usr/include/x86_64-linux-gnu/bits/syscall.h:
@@ -3612,12 +3736,6 @@ src/semantic/bitnet_provider.cpp:
 /usr/include/c++/11/bits/unique_ptr.h:
 
 /usr/include/c++/11/ostream:
-
-/usr/include/c++/11/bits/range_access.h:
-
-/usr/include/x86_64-linux-gnu/bits/floatn.h:
-
-/usr/include/c++/11/iterator:
 
 /usr/include/c++/11/tr1/beta_function.tcc:
 
@@ -3663,19 +3781,9 @@ src/semantic/bitnet_provider.cpp:
 
 /usr/include/c++/11/bits/locale_facets.h:
 
-/usr/include/semaphore.h:
-
-/usr/include/c++/11/cwctype:
-
 /usr/include/c++/11/bits/streambuf_iterator.h:
 
 /usr/include/x86_64-linux-gnu/c++/11/bits/ctype_inline.h:
-
-/usr/include/c++/11/bits/this_thread_sleep.h:
-
-/usr/include/x86_64-linux-gnu/bits/types/struct_tm.h:
-
-/usr/include/c++/11/bits/locale_facets.tcc:
 
 /usr/include/c++/11/bits/codecvt.h:
 
@@ -3713,18 +3821,6 @@ src/semantic/bitnet_provider.cpp:
 
 /usr/include/x86_64-linux-gnu/bits/getopt_posix.h:
 
+/usr/include/x86_64-linux-gnu/bits/unistd.h:
+
 /usr/include/x86_64-linux-gnu/bits/unistd_ext.h:
-
-/usr/include/c++/11/bits/uses_allocator_args.h:
-
-/usr/include/c++/11/filesystem:
-
-/home/bvrznski/rebuntu/src/interfaces/provider_registry.cpp:
-
-/usr/include/x86_64-linux-gnu/bits/types/clockid_t.h:
-
-/usr/include/x86_64-linux-gnu/bits/types/struct___jmp_buf_tag.h:
-
-/usr/include/c++/11/bits/stl_bvector.h:
-
-/usr/include/c++/11/bits/fs_fwd.h:

@@ -14,10 +14,12 @@
 
 #include <runtime/core/contracts.hpp>
 #include <runtime/contracts.hpp>
+#include <runtime/cancellation/token.hpp>
 #include <runtime/work.hpp>
 #include <chrono>
 #include <optional>
 #include <string>
+#include <string_view>
 #include <vector>
 
 namespace rebuntu::runtime {
@@ -45,7 +47,18 @@ inline std::string_view to_string(WorkflowStepStatus s) {
 }
 
 // ---------------------------------------------------------------------------
-// StepResult — Result of executing one workflow step
+// StepAttempt — One attempt of a workflow step (retained for retry history)
+// ---------------------------------------------------------------------------
+struct StepAttempt {
+    int attempt_number = 0;
+    core::Outcome outcome;
+    std::chrono::system_clock::time_point started_at{};
+    std::optional<std::chrono::system_clock::time_point> completed_at;
+    std::vector<core::Evidence> evidence;
+};
+
+// ---------------------------------------------------------------------------
+// StepResult — Result of executing one workflow step (all attempts tracked)
 // ---------------------------------------------------------------------------
 struct StepResult {
     std::string step_id;
@@ -54,16 +67,19 @@ struct StepResult {
     
     // Execution details
     work::ExecutionId execution_id;
-    int attempt_number = 0;
     
-    // Timing
-    std::chrono::system_clock::time_point started_at{};
-    std::optional<std::chrono::system_clock::time_point> completed_at;
+    // All attempts for this step (retained for retry history)
+    std::vector<StepAttempt> attempts;
     
-    // Outcome
-    core::Outcome outcome;
+    // Timing of first attempt
+    std::optional<std::chrono::system_clock::time_point> started_at_first;
+    // Timing of last attempt
+    std::optional<std::chrono::system_clock::time_point> completed_at_last;
     
-    // Evidence collected during step execution
+    // Overall outcome (from most recent or successful attempt)
+    core::Outcome final_outcome;
+    
+    // Evidence collected across all attempts
     std::vector<core::Evidence> evidence;
 };
 
@@ -120,13 +136,32 @@ struct WorkflowNode {
     // Step description
     work::ExecutionMode mode = work::ExecutionMode::kInline;
     std::optional<work::TaskId> task_id;  // optional task reference
-    std::vector<std::pair<std::string, std::string>> parameters;
-    
-    // Dependencies: this node runs after all these nodes complete successfully
-    std::vector<std::string> depends_on;
+    std::vector<std::string> depends_on = {};
+    std::vector<std::pair<std::string, std::string>> parameters = {};
     
     // Retry configuration for this step
     int max_attempts = 1;
+    
+    // Default constructor (required for aggregate initialization)
+    WorkflowNode() = default;
+    
+    // Constructor for simple node creation (id only, rest defaults)
+    WorkflowNode(std::string id_) : id(std::move(id_)) {}
+    
+    // Full constructor for aggregate initialization
+    WorkflowNode(
+        std::string id_,
+        work::ExecutionMode mode_,
+        std::optional<work::TaskId> task_id_,
+        std::vector<std::string> depends_on_,
+        std::vector<std::pair<std::string, std::string>> parameters_ = {},
+        int max_attempts_ = 1
+    ) : id(std::move(id_)),
+        mode(mode_),
+        task_id(task_id_),
+        depends_on(std::move(depends_on_)),
+        parameters(std::move(parameters_)),
+        max_attempts(max_attempts_) {}
 };
 
 // ---------------------------------------------------------------------------
@@ -177,6 +212,9 @@ public:
     WorkflowRun execute(
         const WorkflowDefinition& definition,
         CancellationToken& cancel_token);
+
+private:
+    StepHandler step_handler_;
 };
 
 // ---------------------------------------------------------------------------
@@ -184,9 +222,10 @@ public:
 // ---------------------------------------------------------------------------
 
 inline std::string to_string(const StepResult& r) {
+    int max_attempts = !r.attempts.empty() ? static_cast<int>(r.attempts.size()) : 0;
     return "StepResult{" + r.step_id +
            ", status=" + std::string(to_string(r.status)) +
-           ", attempt=" + std::to_string(r.attempt_number) + "}";
+           ", attempts=" + std::to_string(max_attempts) + "}";
 }
 
 }  // namespace rebuntu::runtime

@@ -1336,6 +1336,19 @@ unit_executor_test/fast:
 .PHONY : unit_executor_test/fast
 
 #=============================================================================
+# Target rules for targets named workflow_test
+
+# Build rule for target.
+workflow_test: cmake_check_build_system
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 workflow_test
+.PHONY : workflow_test
+
+# fast build rule for target.
+workflow_test/fast:
+	$(MAKE) $(MAKESILENT) -f tests/CMakeFiles/workflow_test.dir/build.make tests/CMakeFiles/workflow_test.dir/build
+.PHONY : workflow_test/fast
+
+#=============================================================================
 # Target rules for targets named rebuntu
 
 # Build rule for target.
@@ -2027,6 +2040,7 @@ help:
 	@echo "... test_temp_files"
 	@echo "... unit_executor_test"
 	@echo "... user_identity_test"
+	@echo "... workflow_test"
 	@echo "... home/bvrznski/rebuntu/src/domains/development/infrastructure/native/packages.o"
 	@echo "... home/bvrznski/rebuntu/src/domains/development/infrastructure/native/packages.i"
 	@echo "... home/bvrznski/rebuntu/src/domains/development/infrastructure/native/packages.s"

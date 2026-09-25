@@ -143,5 +143,6 @@ set(CMAKE_DEPEND_INFO_FILES
   "tests/CMakeFiles/coordination_test.dir/DependInfo.cmake"
   "tests/CMakeFiles/loader_test.dir/DependInfo.cmake"
   "tests/CMakeFiles/unit_executor_test.dir/DependInfo.cmake"
+  "tests/CMakeFiles/workflow_test.dir/DependInfo.cmake"
   "src/rebuntu/CMakeFiles/rebuntu.dir/DependInfo.cmake"
   )

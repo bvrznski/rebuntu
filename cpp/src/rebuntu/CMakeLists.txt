@@ -166,6 +166,15 @@ set(TASK_JOB_RUNTIME_SRCS
 )
 target_sources(rebuntu PRIVATE ${TASK_JOB_RUNTIME_HDRS} ${TASK_JOB_RUNTIME_SRCS})
 
+# Add Phase 4.14 workflow runtime implementation
+set(WORKFLOW_HDRS
+    ${CMAKE_SOURCE_DIR}/../src/runtime/workflow.hpp
+)
+set(WORKFLOW_SRCS
+    ${CMAKE_SOURCE_DIR}/../src/runtime/workflow.cpp
+)
+target_sources(rebuntu PRIVATE ${WORKFLOW_HDRS} ${WORKFLOW_SRCS})
+
 # Add Phase 1 setup & configuration machinery (Phase 1.8)
 set(SETUP_SRCS
     ${CMAKE_SOURCE_DIR}/../src/system/setup/contracts.hpp

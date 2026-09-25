@@ -41,46 +41,6 @@ resolver_test 0 0
 coordination_test 0 0
 loader_test 0 0
 unit_executor_test 0 0
+workflow_test 0 0
 ---
-test_packages
-install_planning_test
-automation_test
-test_runtime_contracts
-test_state_provider
-events_test
-results_test
-test_discovery
-settings_test
-config_test
-preferences_test
-structured_setup_test
-profile_test
-user_identity_test
-capability_state_test
-group_membership_test
-ownership_test
-lifecycle_test
-host_foundation_test
-test_scope
-test_sessions
-test_secrets
-test_directories
-test_locks
-test_ipc
-test_temp_files
-semantic_provider_test
-subprocess_executor_test
-semantic_service_test
-test_ipc_protocol
-infrastructure_test
-test_container_runtime
-test_docker_provider
-test_ansible_provider
-test_jenkins_provider
-test_pipeline_provider
-dispatcher_test
-controller_test
-resolver_test
-coordination_test
-loader_test
-unit_executor_test
+workflow_test

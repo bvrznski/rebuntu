@@ -728,6 +728,20 @@ unit_executor_test/fast:
 	cd /home/bvrznski/rebuntu/cpp && $(MAKE) $(MAKESILENT) -f tests/CMakeFiles/unit_executor_test.dir/build.make tests/CMakeFiles/unit_executor_test.dir/build
 .PHONY : unit_executor_test/fast
 
+# Convenience name for target.
+tests/CMakeFiles/workflow_test.dir/rule:
+	cd /home/bvrznski/rebuntu/cpp && $(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 tests/CMakeFiles/workflow_test.dir/rule
+.PHONY : tests/CMakeFiles/workflow_test.dir/rule
+
+# Convenience name for target.
+workflow_test: tests/CMakeFiles/workflow_test.dir/rule
+.PHONY : workflow_test
+
+# fast build rule for target.
+workflow_test/fast:
+	cd /home/bvrznski/rebuntu/cpp && $(MAKE) $(MAKESILENT) -f tests/CMakeFiles/workflow_test.dir/build.make tests/CMakeFiles/workflow_test.dir/build
+.PHONY : workflow_test/fast
+
 __/src/semantic/ipc_transport.o: __/src/semantic/ipc_transport.cpp.o
 .PHONY : __/src/semantic/ipc_transport.o
 
@@ -1087,6 +1101,30 @@ home/bvrznski/rebuntu/src/runtime/unit_executor.s: home/bvrznski/rebuntu/src/run
 home/bvrznski/rebuntu/src/runtime/unit_executor.cpp.s:
 	cd /home/bvrznski/rebuntu/cpp && $(MAKE) $(MAKESILENT) -f tests/CMakeFiles/unit_executor_test.dir/build.make tests/CMakeFiles/unit_executor_test.dir/home/bvrznski/rebuntu/src/runtime/unit_executor.cpp.s
 .PHONY : home/bvrznski/rebuntu/src/runtime/unit_executor.cpp.s
+
+home/bvrznski/rebuntu/src/runtime/workflow.o: home/bvrznski/rebuntu/src/runtime/workflow.cpp.o
+.PHONY : home/bvrznski/rebuntu/src/runtime/workflow.o
+
+# target to build an object file
+home/bvrznski/rebuntu/src/runtime/workflow.cpp.o:
+	cd /home/bvrznski/rebuntu/cpp && $(MAKE) $(MAKESILENT) -f tests/CMakeFiles/workflow_test.dir/build.make tests/CMakeFiles/workflow_test.dir/home/bvrznski/rebuntu/src/runtime/workflow.cpp.o
+.PHONY : home/bvrznski/rebuntu/src/runtime/workflow.cpp.o
+
+home/bvrznski/rebuntu/src/runtime/workflow.i: home/bvrznski/rebuntu/src/runtime/workflow.cpp.i
+.PHONY : home/bvrznski/rebuntu/src/runtime/workflow.i
+
+# target to preprocess a source file
+home/bvrznski/rebuntu/src/runtime/workflow.cpp.i:
+	cd /home/bvrznski/rebuntu/cpp && $(MAKE) $(MAKESILENT) -f tests/CMakeFiles/workflow_test.dir/build.make tests/CMakeFiles/workflow_test.dir/home/bvrznski/rebuntu/src/runtime/workflow.cpp.i
+.PHONY : home/bvrznski/rebuntu/src/runtime/workflow.cpp.i
+
+home/bvrznski/rebuntu/src/runtime/workflow.s: home/bvrznski/rebuntu/src/runtime/workflow.cpp.s
+.PHONY : home/bvrznski/rebuntu/src/runtime/workflow.s
+
+# target to generate assembly for a file
+home/bvrznski/rebuntu/src/runtime/workflow.cpp.s:
+	cd /home/bvrznski/rebuntu/cpp && $(MAKE) $(MAKESILENT) -f tests/CMakeFiles/workflow_test.dir/build.make tests/CMakeFiles/workflow_test.dir/home/bvrznski/rebuntu/src/runtime/workflow.cpp.s
+.PHONY : home/bvrznski/rebuntu/src/runtime/workflow.cpp.s
 
 home/bvrznski/rebuntu/src/system/host_foundation/host_foundation.o: home/bvrznski/rebuntu/src/system/host_foundation/host_foundation.cpp.o
 .PHONY : home/bvrznski/rebuntu/src/system/host_foundation/host_foundation.o
@@ -2096,6 +2134,30 @@ user_identity_test.cpp.s:
 	cd /home/bvrznski/rebuntu/cpp && $(MAKE) $(MAKESILENT) -f tests/CMakeFiles/user_identity_test.dir/build.make tests/CMakeFiles/user_identity_test.dir/user_identity_test.cpp.s
 .PHONY : user_identity_test.cpp.s
 
+workflow_test.o: workflow_test.cpp.o
+.PHONY : workflow_test.o
+
+# target to build an object file
+workflow_test.cpp.o:
+	cd /home/bvrznski/rebuntu/cpp && $(MAKE) $(MAKESILENT) -f tests/CMakeFiles/workflow_test.dir/build.make tests/CMakeFiles/workflow_test.dir/workflow_test.cpp.o
+.PHONY : workflow_test.cpp.o
+
+workflow_test.i: workflow_test.cpp.i
+.PHONY : workflow_test.i
+
+# target to preprocess a source file
+workflow_test.cpp.i:
+	cd /home/bvrznski/rebuntu/cpp && $(MAKE) $(MAKESILENT) -f tests/CMakeFiles/workflow_test.dir/build.make tests/CMakeFiles/workflow_test.dir/workflow_test.cpp.i
+.PHONY : workflow_test.cpp.i
+
+workflow_test.s: workflow_test.cpp.s
+.PHONY : workflow_test.s
+
+# target to generate assembly for a file
+workflow_test.cpp.s:
+	cd /home/bvrznski/rebuntu/cpp && $(MAKE) $(MAKESILENT) -f tests/CMakeFiles/workflow_test.dir/build.make tests/CMakeFiles/workflow_test.dir/workflow_test.cpp.s
+.PHONY : workflow_test.cpp.s
+
 # Help Target
 help:
 	@echo "The following are some of the valid targets for this Makefile:"
@@ -2148,6 +2210,7 @@ help:
 	@echo "... test_temp_files"
 	@echo "... unit_executor_test"
 	@echo "... user_identity_test"
+	@echo "... workflow_test"
 	@echo "... __/src/semantic/ipc_transport.o"
 	@echo "... __/src/semantic/ipc_transport.i"
 	@echo "... __/src/semantic/ipc_transport.s"
@@ -2193,6 +2256,9 @@ help:
 	@echo "... home/bvrznski/rebuntu/src/runtime/unit_executor.o"
 	@echo "... home/bvrznski/rebuntu/src/runtime/unit_executor.i"
 	@echo "... home/bvrznski/rebuntu/src/runtime/unit_executor.s"
+	@echo "... home/bvrznski/rebuntu/src/runtime/workflow.o"
+	@echo "... home/bvrznski/rebuntu/src/runtime/workflow.i"
+	@echo "... home/bvrznski/rebuntu/src/runtime/workflow.s"
 	@echo "... home/bvrznski/rebuntu/src/system/host_foundation/host_foundation.o"
 	@echo "... home/bvrznski/rebuntu/src/system/host_foundation/host_foundation.i"
 	@echo "... home/bvrznski/rebuntu/src/system/host_foundation/host_foundation.s"
@@ -2319,6 +2385,9 @@ help:
 	@echo "... user_identity_test.o"
 	@echo "... user_identity_test.i"
 	@echo "... user_identity_test.s"
+	@echo "... workflow_test.o"
+	@echo "... workflow_test.i"
+	@echo "... workflow_test.s"
 .PHONY : help
 
 

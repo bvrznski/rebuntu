@@ -261,7 +261,7 @@ PipelineStageInfo execute_formatting_stage(
     
     if (!tool_is_available(format_path)) {
         info.result = PipelineStageResult::kError;
-        info.error = core::Error{
+        info.error = infrastructure::Error{
             "E_PIPELINE_FORMATTING_UNAVAILABLE",
             "clang-format not found in PATH and no path specified"
         };
@@ -308,7 +308,7 @@ PipelineStageInfo execute_formatting_stage(
     
     if (!formatting_successful) {
         info.result = PipelineStageResult::kFailed;
-        info.error = core::Error{
+        info.error = infrastructure::Error{
             "E_PIPELINE_FORMATTING_FAILED",
             "clang-format detected issues"
         };
@@ -360,7 +360,7 @@ PipelineStageInfo execute_lint_stage(
     bool tool_found = tool_is_available(tidy_path) || python_cpplint_path.has_value();
     if (!tool_found) {
         info.result = PipelineStageResult::kError;
-        info.error = core::Error{
+        info.error = infrastructure::Error{
             "E_PIPELINE_LINT_UNAVAILABLE",
             "clang-tidy not found, and cpplint (Python) not available"
         };
@@ -430,7 +430,7 @@ PipelineStageInfo execute_lint_stage(
     
     if (!linting_successful) {
         info.result = PipelineStageResult::kFailed;
-        info.error = core::Error{
+        info.error = infrastructure::Error{
             "E_PIPELINE_LINT_FAILED",
             "clang-tidy detected issues"
         };
@@ -514,7 +514,7 @@ PipelineStageInfo execute_package_stage(
     // Package stage requires at least one build system
     if (!cmake_found && !make_found) {
         info.result = PipelineStageResult::kError;
-        info.error = core::Error{
+        info.error = infrastructure::Error{
             "E_PIPELINE_PACKAGE_UNAVAILABLE",
             "Neither cmake nor make found"
         };
@@ -554,7 +554,7 @@ PipelineStageInfo execute_environment_stage(
     
     if (!cmake_available) {
         info.result = PipelineStageResult::kError;
-        info.error = core::Error{
+        info.error = infrastructure::Error{
             "E_PIPELINE_ENV_CMAKE_MISSING",
             "cmake is required for build process"
         };
@@ -563,7 +563,7 @@ PipelineStageInfo execute_environment_stage(
     
     if (!gcc_available) {
         info.result = PipelineStageResult::kError;
-        info.error = core::Error{
+        info.error = infrastructure::Error{
             "E_PIPELINE_ENV_GCC_MISSING",
             "gcc/g++ compiler is required for C++ compilation"
         };
@@ -626,7 +626,7 @@ public:
                 PipelineStageInfo info;
                 info.stage = stage;
                 info.result = PipelineStageResult::kSkipped;
-                info.error = core::Error{
+                info.error = infrastructure::Error{
                     "E_PIPELINE_STAGE_NOT_IMPLEMENTED",
                     "Pipeline stage not yet implemented"
                 };

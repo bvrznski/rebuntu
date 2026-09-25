@@ -111,6 +111,7 @@ tests/config_test: librebuntu-ipc.a
 tests/config_test: librebuntu-setup.a
 tests/config_test: librebuntu-lifecycle.a
 tests/config_test: librebuntu-host-foundation.a
+tests/config_test: librebuntu-jenkins-provider.a
 tests/config_test: tests/CMakeFiles/config_test.dir/link.txt
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --bold --progress-dir=/home/bvrznski/rebuntu/cpp/CMakeFiles --progress-num=$(CMAKE_PROGRESS_2) "Linking CXX executable config_test"
 	cd /home/bvrznski/rebuntu/cpp/tests && $(CMAKE_COMMAND) -E cmake_link_script CMakeFiles/config_test.dir/link.txt --verbose=$(VERBOSE)

@@ -111,6 +111,7 @@ tests/group_membership_test: librebuntu-ipc.a
 tests/group_membership_test: librebuntu-setup.a
 tests/group_membership_test: librebuntu-lifecycle.a
 tests/group_membership_test: librebuntu-host-foundation.a
+tests/group_membership_test: librebuntu-jenkins-provider.a
 tests/group_membership_test: tests/CMakeFiles/group_membership_test.dir/link.txt
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --bold --progress-dir=/home/bvrznski/rebuntu/cpp/CMakeFiles --progress-num=$(CMAKE_PROGRESS_2) "Linking CXX executable group_membership_test"
 	cd /home/bvrznski/rebuntu/cpp/tests && $(CMAKE_COMMAND) -E cmake_link_script CMakeFiles/group_membership_test.dir/link.txt --verbose=$(VERBOSE)

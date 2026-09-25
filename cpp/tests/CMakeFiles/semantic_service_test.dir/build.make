@@ -127,6 +127,7 @@ tests/semantic_service_test: librebuntu-ipc.a
 tests/semantic_service_test: librebuntu-setup.a
 tests/semantic_service_test: librebuntu-lifecycle.a
 tests/semantic_service_test: librebuntu-host-foundation.a
+tests/semantic_service_test: librebuntu-jenkins-provider.a
 tests/semantic_service_test: tests/CMakeFiles/semantic_service_test.dir/link.txt
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --bold --progress-dir=/home/bvrznski/rebuntu/cpp/CMakeFiles --progress-num=$(CMAKE_PROGRESS_3) "Linking CXX executable semantic_service_test"
 	cd /home/bvrznski/rebuntu/cpp/tests && $(CMAKE_COMMAND) -E cmake_link_script CMakeFiles/semantic_service_test.dir/link.txt --verbose=$(VERBOSE)

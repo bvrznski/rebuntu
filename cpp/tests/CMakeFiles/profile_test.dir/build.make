@@ -111,6 +111,7 @@ tests/profile_test: librebuntu-ipc.a
 tests/profile_test: librebuntu-setup.a
 tests/profile_test: librebuntu-lifecycle.a
 tests/profile_test: librebuntu-host-foundation.a
+tests/profile_test: librebuntu-jenkins-provider.a
 tests/profile_test: tests/CMakeFiles/profile_test.dir/link.txt
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --bold --progress-dir=/home/bvrznski/rebuntu/cpp/CMakeFiles --progress-num=$(CMAKE_PROGRESS_2) "Linking CXX executable profile_test"
 	cd /home/bvrznski/rebuntu/cpp/tests && $(CMAKE_COMMAND) -E cmake_link_script CMakeFiles/profile_test.dir/link.txt --verbose=$(VERBOSE)

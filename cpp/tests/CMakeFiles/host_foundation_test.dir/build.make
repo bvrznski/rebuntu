@@ -127,6 +127,7 @@ tests/host_foundation_test: librebuntu-locks.a
 tests/host_foundation_test: librebuntu-ipc.a
 tests/host_foundation_test: librebuntu-setup.a
 tests/host_foundation_test: librebuntu-lifecycle.a
+tests/host_foundation_test: librebuntu-jenkins-provider.a
 tests/host_foundation_test: tests/CMakeFiles/host_foundation_test.dir/link.txt
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --bold --progress-dir=/home/bvrznski/rebuntu/cpp/CMakeFiles --progress-num=$(CMAKE_PROGRESS_3) "Linking CXX executable host_foundation_test"
 	cd /home/bvrznski/rebuntu/cpp/tests && $(CMAKE_COMMAND) -E cmake_link_script CMakeFiles/host_foundation_test.dir/link.txt --verbose=$(VERBOSE)

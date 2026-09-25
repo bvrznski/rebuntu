@@ -289,6 +289,32 @@ target_include_directories(rebuntu-host-foundation PUBLIC
 )
 target_link_libraries(rebuntu-core PUBLIC rebuntu-host-foundation)
 
+# Phase 3.9: Jenkins infrastructure provider (CI/CD integration)
+set(JENKINS_SRC_ROOT "/home/bvrznski/rebuntu/src/system/infrastructure")
+
+add_library(rebuntu-jenkins-provider STATIC
+    ${JENKINS_SRC_ROOT}/jenkins.hpp
+    ${JENKINS_SRC_ROOT}/jenkins_provider.cpp
+)
+
+target_include_directories(rebuntu-jenkins-provider PUBLIC
+    /home/bvrznski/rebuntu/src
+)
+target_link_libraries(rebuntu-core PUBLIC rebuntu-jenkins-provider)
+
+# Phase 3.10: Pipeline infrastructure provider (Build/Test/Deployment)
+set(PIPELINE_SRC_ROOT "/home/bvrznski/rebuntu/src/system/infrastructure")
+
+add_library(rebuntu-pipeline-provider STATIC
+    ${PIPELINE_SRC_ROOT}/pipeline.hpp
+    ${PIPELINE_SRC_ROOT}/pipeline_provider.cpp
+)
+
+target_include_directories(rebuntu-pipeline-provider PUBLIC
+    /home/bvrznski/rebuntu/src
+)
+target_link_libraries(rebuntu-core PUBLIC rebuntu-pipeline-provider)
+
 # Tests subdirectory
 add_subdirectory(tests)
 

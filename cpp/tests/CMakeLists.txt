@@ -341,4 +341,34 @@ target_sources(test_ansible_provider PRIVATE
 )
 add_test(NAME test_ansible_provider COMMAND test_ansible_provider)
 
+# Phase 3.9: Jenkins provider tests (Jenkins CI integration)
+add_executable(test_jenkins_provider test_jenkins_provider.cpp)
+target_link_libraries(test_jenkins_provider rebuntu-core)
+# Include src first so <system/core/contracts.hpp> finds the correct header
+target_include_directories(test_jenkins_provider PRIVATE 
+    ${CMAKE_CURRENT_LIST_DIR}/../../src
+    ${CMAKE_CURRENT_LIST_DIR}/../include
+)
+# Include jenkins provider sources directly in the test target (from src/system/infrastructure)
+# CMAKE_SOURCE_DIR is /home/bvrznski/rebuntu/cpp, so ../src = /home/bvrznski/rebuntu/src
+target_sources(test_jenkins_provider PRIVATE
+    ${CMAKE_CURRENT_LIST_DIR}/../../src/system/infrastructure/jenkins.hpp
+    ${CMAKE_CURRENT_LIST_DIR}/../../src/system/infrastructure/jenkins_provider.cpp
+)
+add_test(NAME test_jenkins_provider COMMAND test_jenkins_provider)
+
+# Phase 3.10: Pipeline provider tests (Build/Test/Deployment pipeline)
+add_executable(test_pipeline_provider test_pipeline_provider.cpp)
+target_link_libraries(test_pipeline_provider rebuntu-core)
+target_include_directories(test_pipeline_provider PRIVATE 
+    ${CMAKE_SOURCE_DIR}/src
+    ${CMAKE_SOURCE_DIR}
+)
+# Include pipeline provider sources directly in the test target (from src/system/infrastructure)
+target_sources(test_pipeline_provider PRIVATE
+    ${CMAKE_CURRENT_LIST_DIR}/../../src/system/infrastructure/pipeline.hpp
+    ${CMAKE_CURRENT_LIST_DIR}/../../src/system/infrastructure/pipeline_provider.cpp
+)
+add_test(NAME test_pipeline_provider COMMAND test_pipeline_provider)
+
 # Phase 1.9: Environment discovery tests (pending integration with testing framework)

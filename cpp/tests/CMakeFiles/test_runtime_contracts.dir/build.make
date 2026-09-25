@@ -111,6 +111,7 @@ tests/test_runtime_contracts: librebuntu-ipc.a
 tests/test_runtime_contracts: librebuntu-setup.a
 tests/test_runtime_contracts: librebuntu-lifecycle.a
 tests/test_runtime_contracts: librebuntu-host-foundation.a
+tests/test_runtime_contracts: librebuntu-jenkins-provider.a
 tests/test_runtime_contracts: tests/CMakeFiles/test_runtime_contracts.dir/link.txt
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --bold --progress-dir=/home/bvrznski/rebuntu/cpp/CMakeFiles --progress-num=$(CMAKE_PROGRESS_2) "Linking CXX executable test_runtime_contracts"
 	cd /home/bvrznski/rebuntu/cpp/tests && $(CMAKE_COMMAND) -E cmake_link_script CMakeFiles/test_runtime_contracts.dir/link.txt --verbose=$(VERBOSE)

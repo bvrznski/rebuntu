@@ -111,6 +111,7 @@ tests/lifecycle_test: librebuntu-locks.a
 tests/lifecycle_test: librebuntu-ipc.a
 tests/lifecycle_test: librebuntu-setup.a
 tests/lifecycle_test: librebuntu-host-foundation.a
+tests/lifecycle_test: librebuntu-jenkins-provider.a
 tests/lifecycle_test: tests/CMakeFiles/lifecycle_test.dir/link.txt
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --bold --progress-dir=/home/bvrznski/rebuntu/cpp/CMakeFiles --progress-num=$(CMAKE_PROGRESS_2) "Linking CXX executable lifecycle_test"
 	cd /home/bvrznski/rebuntu/cpp/tests && $(CMAKE_COMMAND) -E cmake_link_script CMakeFiles/lifecycle_test.dir/link.txt --verbose=$(VERBOSE)

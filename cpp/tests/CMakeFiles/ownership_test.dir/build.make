@@ -111,6 +111,7 @@ tests/ownership_test: librebuntu-ipc.a
 tests/ownership_test: librebuntu-setup.a
 tests/ownership_test: librebuntu-lifecycle.a
 tests/ownership_test: librebuntu-host-foundation.a
+tests/ownership_test: librebuntu-jenkins-provider.a
 tests/ownership_test: tests/CMakeFiles/ownership_test.dir/link.txt
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --bold --progress-dir=/home/bvrznski/rebuntu/cpp/CMakeFiles --progress-num=$(CMAKE_PROGRESS_2) "Linking CXX executable ownership_test"
 	cd /home/bvrznski/rebuntu/cpp/tests && $(CMAKE_COMMAND) -E cmake_link_script CMakeFiles/ownership_test.dir/link.txt --verbose=$(VERBOSE)

@@ -127,6 +127,7 @@ tests/test_ansible_provider: librebuntu-ipc.a
 tests/test_ansible_provider: librebuntu-setup.a
 tests/test_ansible_provider: librebuntu-lifecycle.a
 tests/test_ansible_provider: librebuntu-host-foundation.a
+tests/test_ansible_provider: librebuntu-jenkins-provider.a
 tests/test_ansible_provider: tests/CMakeFiles/test_ansible_provider.dir/link.txt
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --bold --progress-dir=/home/bvrznski/rebuntu/cpp/CMakeFiles --progress-num=$(CMAKE_PROGRESS_3) "Linking CXX executable test_ansible_provider"
 	cd /home/bvrznski/rebuntu/cpp/tests && $(CMAKE_COMMAND) -E cmake_link_script CMakeFiles/test_ansible_provider.dir/link.txt --verbose=$(VERBOSE)

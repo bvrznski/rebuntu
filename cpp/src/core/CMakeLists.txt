@@ -3,12 +3,12 @@
 
 add_library(rebuntu-core STATIC)
 
+# Interface includes point to src where core contracts (SemanticStatus) are defined
 target_include_directories(rebuntu-core PUBLIC 
-    ${CMAKE_CURRENT_LIST_DIR}/../..
-    ${CMAKE_CURRENT_LIST_DIR}/../../src
+    ${CMAKE_SOURCE_DIR}/src
 )
 
-# Add system header path explicitly for lifecycle.cpp includes
+# Add include path for cpp headers that need special handling
 target_include_directories(rebuntu-core PRIVATE ${CMAKE_CURRENT_LIST_DIR}/../../include)
 
 # Provider registry implementation (Phase 0.16) - in interfaces directory

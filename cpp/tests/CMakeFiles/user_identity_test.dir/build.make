@@ -111,6 +111,7 @@ tests/user_identity_test: librebuntu-ipc.a
 tests/user_identity_test: librebuntu-setup.a
 tests/user_identity_test: librebuntu-lifecycle.a
 tests/user_identity_test: librebuntu-host-foundation.a
+tests/user_identity_test: librebuntu-jenkins-provider.a
 tests/user_identity_test: tests/CMakeFiles/user_identity_test.dir/link.txt
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --bold --progress-dir=/home/bvrznski/rebuntu/cpp/CMakeFiles --progress-num=$(CMAKE_PROGRESS_2) "Linking CXX executable user_identity_test"
 	cd /home/bvrznski/rebuntu/cpp/tests && $(CMAKE_COMMAND) -E cmake_link_script CMakeFiles/user_identity_test.dir/link.txt --verbose=$(VERBOSE)

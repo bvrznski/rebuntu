@@ -137,7 +137,7 @@ struct PipelineStageInfo {
     std::optional<std::string> stderr_preview;  // First N chars of stderr
     
     // Error information (if not success)
-    std::optional<rebuntu::core::Error> error;
+    std::optional<rebuntu::infrastructure::Error> error;
     
     // Verification status
     bool verified = false;
@@ -164,7 +164,7 @@ struct PipelineResult {
     size_t total_stages = 0;
     
     // Error information (if not success)
-    std::optional<rebuntu::core::Error> error;
+    std::optional<rebuntu::infrastructure::Error> error;
     
     static PipelineResult success(std::vector<PipelineStageInfo> stages) {
         PipelineResult r;
@@ -191,14 +191,14 @@ struct PipelineResult {
             else r.failed_stages++;
         }
         r.total_stages = r.stages.size();
-        r.error = rebuntu::core::Error{std::move(code), std::move(message)};
+        r.error = rebuntu::infrastructure::Error{std::move(code), std::move(message)};
         return r;
     }
     
     static PipelineResult cancelled(std::string message) {
         PipelineResult r;
-        r.overall_status = rebuntu::core::SemanticStatus::kCancelled;
-        r.error = rebuntu::core::Error{"E_PIPELINE_CANCELLED", std::move(message)};
+        r.overall_status = rebuntu::core::SemanticStatus::kFailure;
+        r.error = rebuntu::infrastructure::Error{"E_PIPELINE_CANCELLED", std::move(message)};
         return r;
     }
 };

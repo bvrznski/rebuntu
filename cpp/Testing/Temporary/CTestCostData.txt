@@ -1,1 +1,2 @@
+test_ansible_provider 2 0.00162961
 ---

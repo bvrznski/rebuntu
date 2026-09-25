@@ -476,6 +476,54 @@ home/bvrznski/rebuntu/src/system/environment/temp_files.cpp.s:
 	cd /home/bvrznski/rebuntu/cpp && $(MAKE) $(MAKESILENT) -f src/rebuntu/CMakeFiles/rebuntu.dir/build.make src/rebuntu/CMakeFiles/rebuntu.dir/home/bvrznski/rebuntu/src/system/environment/temp_files.cpp.s
 .PHONY : home/bvrznski/rebuntu/src/system/environment/temp_files.cpp.s
 
+home/bvrznski/rebuntu/src/system/infrastructure/ansible_provider.o: home/bvrznski/rebuntu/src/system/infrastructure/ansible_provider.cpp.o
+.PHONY : home/bvrznski/rebuntu/src/system/infrastructure/ansible_provider.o
+
+# target to build an object file
+home/bvrznski/rebuntu/src/system/infrastructure/ansible_provider.cpp.o:
+	cd /home/bvrznski/rebuntu/cpp && $(MAKE) $(MAKESILENT) -f src/rebuntu/CMakeFiles/rebuntu.dir/build.make src/rebuntu/CMakeFiles/rebuntu.dir/home/bvrznski/rebuntu/src/system/infrastructure/ansible_provider.cpp.o
+.PHONY : home/bvrznski/rebuntu/src/system/infrastructure/ansible_provider.cpp.o
+
+home/bvrznski/rebuntu/src/system/infrastructure/ansible_provider.i: home/bvrznski/rebuntu/src/system/infrastructure/ansible_provider.cpp.i
+.PHONY : home/bvrznski/rebuntu/src/system/infrastructure/ansible_provider.i
+
+# target to preprocess a source file
+home/bvrznski/rebuntu/src/system/infrastructure/ansible_provider.cpp.i:
+	cd /home/bvrznski/rebuntu/cpp && $(MAKE) $(MAKESILENT) -f src/rebuntu/CMakeFiles/rebuntu.dir/build.make src/rebuntu/CMakeFiles/rebuntu.dir/home/bvrznski/rebuntu/src/system/infrastructure/ansible_provider.cpp.i
+.PHONY : home/bvrznski/rebuntu/src/system/infrastructure/ansible_provider.cpp.i
+
+home/bvrznski/rebuntu/src/system/infrastructure/ansible_provider.s: home/bvrznski/rebuntu/src/system/infrastructure/ansible_provider.cpp.s
+.PHONY : home/bvrznski/rebuntu/src/system/infrastructure/ansible_provider.s
+
+# target to generate assembly for a file
+home/bvrznski/rebuntu/src/system/infrastructure/ansible_provider.cpp.s:
+	cd /home/bvrznski/rebuntu/cpp && $(MAKE) $(MAKESILENT) -f src/rebuntu/CMakeFiles/rebuntu.dir/build.make src/rebuntu/CMakeFiles/rebuntu.dir/home/bvrznski/rebuntu/src/system/infrastructure/ansible_provider.cpp.s
+.PHONY : home/bvrznski/rebuntu/src/system/infrastructure/ansible_provider.cpp.s
+
+home/bvrznski/rebuntu/src/system/infrastructure/container_runtime.o: home/bvrznski/rebuntu/src/system/infrastructure/container_runtime.cpp.o
+.PHONY : home/bvrznski/rebuntu/src/system/infrastructure/container_runtime.o
+
+# target to build an object file
+home/bvrznski/rebuntu/src/system/infrastructure/container_runtime.cpp.o:
+	cd /home/bvrznski/rebuntu/cpp && $(MAKE) $(MAKESILENT) -f src/rebuntu/CMakeFiles/rebuntu.dir/build.make src/rebuntu/CMakeFiles/rebuntu.dir/home/bvrznski/rebuntu/src/system/infrastructure/container_runtime.cpp.o
+.PHONY : home/bvrznski/rebuntu/src/system/infrastructure/container_runtime.cpp.o
+
+home/bvrznski/rebuntu/src/system/infrastructure/container_runtime.i: home/bvrznski/rebuntu/src/system/infrastructure/container_runtime.cpp.i
+.PHONY : home/bvrznski/rebuntu/src/system/infrastructure/container_runtime.i
+
+# target to preprocess a source file
+home/bvrznski/rebuntu/src/system/infrastructure/container_runtime.cpp.i:
+	cd /home/bvrznski/rebuntu/cpp && $(MAKE) $(MAKESILENT) -f src/rebuntu/CMakeFiles/rebuntu.dir/build.make src/rebuntu/CMakeFiles/rebuntu.dir/home/bvrznski/rebuntu/src/system/infrastructure/container_runtime.cpp.i
+.PHONY : home/bvrznski/rebuntu/src/system/infrastructure/container_runtime.cpp.i
+
+home/bvrznski/rebuntu/src/system/infrastructure/container_runtime.s: home/bvrznski/rebuntu/src/system/infrastructure/container_runtime.cpp.s
+.PHONY : home/bvrznski/rebuntu/src/system/infrastructure/container_runtime.s
+
+# target to generate assembly for a file
+home/bvrznski/rebuntu/src/system/infrastructure/container_runtime.cpp.s:
+	cd /home/bvrznski/rebuntu/cpp && $(MAKE) $(MAKESILENT) -f src/rebuntu/CMakeFiles/rebuntu.dir/build.make src/rebuntu/CMakeFiles/rebuntu.dir/home/bvrznski/rebuntu/src/system/infrastructure/container_runtime.cpp.s
+.PHONY : home/bvrznski/rebuntu/src/system/infrastructure/container_runtime.cpp.s
+
 home/bvrznski/rebuntu/src/system/infrastructure/docker_provider.o: home/bvrznski/rebuntu/src/system/infrastructure/docker_provider.cpp.o
 .PHONY : home/bvrznski/rebuntu/src/system/infrastructure/docker_provider.o
 
@@ -672,6 +720,12 @@ help:
 	@echo "... home/bvrznski/rebuntu/src/system/environment/temp_files.o"
 	@echo "... home/bvrznski/rebuntu/src/system/environment/temp_files.i"
 	@echo "... home/bvrznski/rebuntu/src/system/environment/temp_files.s"
+	@echo "... home/bvrznski/rebuntu/src/system/infrastructure/ansible_provider.o"
+	@echo "... home/bvrznski/rebuntu/src/system/infrastructure/ansible_provider.i"
+	@echo "... home/bvrznski/rebuntu/src/system/infrastructure/ansible_provider.s"
+	@echo "... home/bvrznski/rebuntu/src/system/infrastructure/container_runtime.o"
+	@echo "... home/bvrznski/rebuntu/src/system/infrastructure/container_runtime.i"
+	@echo "... home/bvrznski/rebuntu/src/system/infrastructure/container_runtime.s"
 	@echo "... home/bvrznski/rebuntu/src/system/infrastructure/docker_provider.o"
 	@echo "... home/bvrznski/rebuntu/src/system/infrastructure/docker_provider.i"
 	@echo "... home/bvrznski/rebuntu/src/system/infrastructure/docker_provider.s"

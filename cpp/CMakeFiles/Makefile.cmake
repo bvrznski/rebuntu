@@ -128,6 +128,8 @@ set(CMAKE_DEPEND_INFO_FILES
   "tests/CMakeFiles/semantic_service_test.dir/DependInfo.cmake"
   "tests/CMakeFiles/test_ipc_protocol.dir/DependInfo.cmake"
   "tests/CMakeFiles/infrastructure_test.dir/DependInfo.cmake"
+  "tests/CMakeFiles/test_container_runtime.dir/DependInfo.cmake"
   "tests/CMakeFiles/test_docker_provider.dir/DependInfo.cmake"
+  "tests/CMakeFiles/test_ansible_provider.dir/DependInfo.cmake"
   "src/rebuntu/CMakeFiles/rebuntu.dir/DependInfo.cmake"
   )

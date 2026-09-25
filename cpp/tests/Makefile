@@ -561,6 +561,20 @@ infrastructure_test/fast:
 .PHONY : infrastructure_test/fast
 
 # Convenience name for target.
+tests/CMakeFiles/test_container_runtime.dir/rule:
+	cd /home/bvrznski/rebuntu/cpp && $(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 tests/CMakeFiles/test_container_runtime.dir/rule
+.PHONY : tests/CMakeFiles/test_container_runtime.dir/rule
+
+# Convenience name for target.
+test_container_runtime: tests/CMakeFiles/test_container_runtime.dir/rule
+.PHONY : test_container_runtime
+
+# fast build rule for target.
+test_container_runtime/fast:
+	cd /home/bvrznski/rebuntu/cpp && $(MAKE) $(MAKESILENT) -f tests/CMakeFiles/test_container_runtime.dir/build.make tests/CMakeFiles/test_container_runtime.dir/build
+.PHONY : test_container_runtime/fast
+
+# Convenience name for target.
 tests/CMakeFiles/test_docker_provider.dir/rule:
 	cd /home/bvrznski/rebuntu/cpp && $(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 tests/CMakeFiles/test_docker_provider.dir/rule
 .PHONY : tests/CMakeFiles/test_docker_provider.dir/rule
@@ -573,6 +587,20 @@ test_docker_provider: tests/CMakeFiles/test_docker_provider.dir/rule
 test_docker_provider/fast:
 	cd /home/bvrznski/rebuntu/cpp && $(MAKE) $(MAKESILENT) -f tests/CMakeFiles/test_docker_provider.dir/build.make tests/CMakeFiles/test_docker_provider.dir/build
 .PHONY : test_docker_provider/fast
+
+# Convenience name for target.
+tests/CMakeFiles/test_ansible_provider.dir/rule:
+	cd /home/bvrznski/rebuntu/cpp && $(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 tests/CMakeFiles/test_ansible_provider.dir/rule
+.PHONY : tests/CMakeFiles/test_ansible_provider.dir/rule
+
+# Convenience name for target.
+test_ansible_provider: tests/CMakeFiles/test_ansible_provider.dir/rule
+.PHONY : test_ansible_provider
+
+# fast build rule for target.
+test_ansible_provider/fast:
+	cd /home/bvrznski/rebuntu/cpp && $(MAKE) $(MAKESILENT) -f tests/CMakeFiles/test_ansible_provider.dir/build.make tests/CMakeFiles/test_ansible_provider.dir/build
+.PHONY : test_ansible_provider/fast
 
 __/src/semantic/ipc_transport.o: __/src/semantic/ipc_transport.cpp.o
 .PHONY : __/src/semantic/ipc_transport.o
@@ -789,6 +817,54 @@ home/bvrznski/rebuntu/src/system/host_foundation/host_foundation.s: home/bvrznsk
 home/bvrznski/rebuntu/src/system/host_foundation/host_foundation.cpp.s:
 	cd /home/bvrznski/rebuntu/cpp && $(MAKE) $(MAKESILENT) -f tests/CMakeFiles/host_foundation_test.dir/build.make tests/CMakeFiles/host_foundation_test.dir/home/bvrznski/rebuntu/src/system/host_foundation/host_foundation.cpp.s
 .PHONY : home/bvrznski/rebuntu/src/system/host_foundation/host_foundation.cpp.s
+
+home/bvrznski/rebuntu/src/system/infrastructure/ansible_provider.o: home/bvrznski/rebuntu/src/system/infrastructure/ansible_provider.cpp.o
+.PHONY : home/bvrznski/rebuntu/src/system/infrastructure/ansible_provider.o
+
+# target to build an object file
+home/bvrznski/rebuntu/src/system/infrastructure/ansible_provider.cpp.o:
+	cd /home/bvrznski/rebuntu/cpp && $(MAKE) $(MAKESILENT) -f tests/CMakeFiles/test_ansible_provider.dir/build.make tests/CMakeFiles/test_ansible_provider.dir/home/bvrznski/rebuntu/src/system/infrastructure/ansible_provider.cpp.o
+.PHONY : home/bvrznski/rebuntu/src/system/infrastructure/ansible_provider.cpp.o
+
+home/bvrznski/rebuntu/src/system/infrastructure/ansible_provider.i: home/bvrznski/rebuntu/src/system/infrastructure/ansible_provider.cpp.i
+.PHONY : home/bvrznski/rebuntu/src/system/infrastructure/ansible_provider.i
+
+# target to preprocess a source file
+home/bvrznski/rebuntu/src/system/infrastructure/ansible_provider.cpp.i:
+	cd /home/bvrznski/rebuntu/cpp && $(MAKE) $(MAKESILENT) -f tests/CMakeFiles/test_ansible_provider.dir/build.make tests/CMakeFiles/test_ansible_provider.dir/home/bvrznski/rebuntu/src/system/infrastructure/ansible_provider.cpp.i
+.PHONY : home/bvrznski/rebuntu/src/system/infrastructure/ansible_provider.cpp.i
+
+home/bvrznski/rebuntu/src/system/infrastructure/ansible_provider.s: home/bvrznski/rebuntu/src/system/infrastructure/ansible_provider.cpp.s
+.PHONY : home/bvrznski/rebuntu/src/system/infrastructure/ansible_provider.s
+
+# target to generate assembly for a file
+home/bvrznski/rebuntu/src/system/infrastructure/ansible_provider.cpp.s:
+	cd /home/bvrznski/rebuntu/cpp && $(MAKE) $(MAKESILENT) -f tests/CMakeFiles/test_ansible_provider.dir/build.make tests/CMakeFiles/test_ansible_provider.dir/home/bvrznski/rebuntu/src/system/infrastructure/ansible_provider.cpp.s
+.PHONY : home/bvrznski/rebuntu/src/system/infrastructure/ansible_provider.cpp.s
+
+home/bvrznski/rebuntu/src/system/infrastructure/container_runtime.o: home/bvrznski/rebuntu/src/system/infrastructure/container_runtime.cpp.o
+.PHONY : home/bvrznski/rebuntu/src/system/infrastructure/container_runtime.o
+
+# target to build an object file
+home/bvrznski/rebuntu/src/system/infrastructure/container_runtime.cpp.o:
+	cd /home/bvrznski/rebuntu/cpp && $(MAKE) $(MAKESILENT) -f tests/CMakeFiles/test_container_runtime.dir/build.make tests/CMakeFiles/test_container_runtime.dir/home/bvrznski/rebuntu/src/system/infrastructure/container_runtime.cpp.o
+.PHONY : home/bvrznski/rebuntu/src/system/infrastructure/container_runtime.cpp.o
+
+home/bvrznski/rebuntu/src/system/infrastructure/container_runtime.i: home/bvrznski/rebuntu/src/system/infrastructure/container_runtime.cpp.i
+.PHONY : home/bvrznski/rebuntu/src/system/infrastructure/container_runtime.i
+
+# target to preprocess a source file
+home/bvrznski/rebuntu/src/system/infrastructure/container_runtime.cpp.i:
+	cd /home/bvrznski/rebuntu/cpp && $(MAKE) $(MAKESILENT) -f tests/CMakeFiles/test_container_runtime.dir/build.make tests/CMakeFiles/test_container_runtime.dir/home/bvrznski/rebuntu/src/system/infrastructure/container_runtime.cpp.i
+.PHONY : home/bvrznski/rebuntu/src/system/infrastructure/container_runtime.cpp.i
+
+home/bvrznski/rebuntu/src/system/infrastructure/container_runtime.s: home/bvrznski/rebuntu/src/system/infrastructure/container_runtime.cpp.s
+.PHONY : home/bvrznski/rebuntu/src/system/infrastructure/container_runtime.s
+
+# target to generate assembly for a file
+home/bvrznski/rebuntu/src/system/infrastructure/container_runtime.cpp.s:
+	cd /home/bvrznski/rebuntu/cpp && $(MAKE) $(MAKESILENT) -f tests/CMakeFiles/test_container_runtime.dir/build.make tests/CMakeFiles/test_container_runtime.dir/home/bvrznski/rebuntu/src/system/infrastructure/container_runtime.cpp.s
+.PHONY : home/bvrznski/rebuntu/src/system/infrastructure/container_runtime.cpp.s
 
 home/bvrznski/rebuntu/src/system/infrastructure/docker_provider.o: home/bvrznski/rebuntu/src/system/infrastructure/docker_provider.cpp.o
 .PHONY : home/bvrznski/rebuntu/src/system/infrastructure/docker_provider.o
@@ -1246,6 +1322,54 @@ subprocess_executor_test.cpp.s:
 	cd /home/bvrznski/rebuntu/cpp && $(MAKE) $(MAKESILENT) -f tests/CMakeFiles/subprocess_executor_test.dir/build.make tests/CMakeFiles/subprocess_executor_test.dir/subprocess_executor_test.cpp.s
 .PHONY : subprocess_executor_test.cpp.s
 
+test_ansible_provider.o: test_ansible_provider.cpp.o
+.PHONY : test_ansible_provider.o
+
+# target to build an object file
+test_ansible_provider.cpp.o:
+	cd /home/bvrznski/rebuntu/cpp && $(MAKE) $(MAKESILENT) -f tests/CMakeFiles/test_ansible_provider.dir/build.make tests/CMakeFiles/test_ansible_provider.dir/test_ansible_provider.cpp.o
+.PHONY : test_ansible_provider.cpp.o
+
+test_ansible_provider.i: test_ansible_provider.cpp.i
+.PHONY : test_ansible_provider.i
+
+# target to preprocess a source file
+test_ansible_provider.cpp.i:
+	cd /home/bvrznski/rebuntu/cpp && $(MAKE) $(MAKESILENT) -f tests/CMakeFiles/test_ansible_provider.dir/build.make tests/CMakeFiles/test_ansible_provider.dir/test_ansible_provider.cpp.i
+.PHONY : test_ansible_provider.cpp.i
+
+test_ansible_provider.s: test_ansible_provider.cpp.s
+.PHONY : test_ansible_provider.s
+
+# target to generate assembly for a file
+test_ansible_provider.cpp.s:
+	cd /home/bvrznski/rebuntu/cpp && $(MAKE) $(MAKESILENT) -f tests/CMakeFiles/test_ansible_provider.dir/build.make tests/CMakeFiles/test_ansible_provider.dir/test_ansible_provider.cpp.s
+.PHONY : test_ansible_provider.cpp.s
+
+test_container_runtime.o: test_container_runtime.cpp.o
+.PHONY : test_container_runtime.o
+
+# target to build an object file
+test_container_runtime.cpp.o:
+	cd /home/bvrznski/rebuntu/cpp && $(MAKE) $(MAKESILENT) -f tests/CMakeFiles/test_container_runtime.dir/build.make tests/CMakeFiles/test_container_runtime.dir/test_container_runtime.cpp.o
+.PHONY : test_container_runtime.cpp.o
+
+test_container_runtime.i: test_container_runtime.cpp.i
+.PHONY : test_container_runtime.i
+
+# target to preprocess a source file
+test_container_runtime.cpp.i:
+	cd /home/bvrznski/rebuntu/cpp && $(MAKE) $(MAKESILENT) -f tests/CMakeFiles/test_container_runtime.dir/build.make tests/CMakeFiles/test_container_runtime.dir/test_container_runtime.cpp.i
+.PHONY : test_container_runtime.cpp.i
+
+test_container_runtime.s: test_container_runtime.cpp.s
+.PHONY : test_container_runtime.s
+
+# target to generate assembly for a file
+test_container_runtime.cpp.s:
+	cd /home/bvrznski/rebuntu/cpp && $(MAKE) $(MAKESILENT) -f tests/CMakeFiles/test_container_runtime.dir/build.make tests/CMakeFiles/test_container_runtime.dir/test_container_runtime.cpp.s
+.PHONY : test_container_runtime.cpp.s
+
 test_directories.o: test_directories.cpp.o
 .PHONY : test_directories.o
 
@@ -1514,6 +1638,8 @@ help:
 	@echo "... settings_test"
 	@echo "... structured_setup_test"
 	@echo "... subprocess_executor_test"
+	@echo "... test_ansible_provider"
+	@echo "... test_container_runtime"
 	@echo "... test_directories"
 	@echo "... test_discovery"
 	@echo "... test_docker_provider"
@@ -1554,6 +1680,12 @@ help:
 	@echo "... home/bvrznski/rebuntu/src/system/host_foundation/host_foundation.o"
 	@echo "... home/bvrznski/rebuntu/src/system/host_foundation/host_foundation.i"
 	@echo "... home/bvrznski/rebuntu/src/system/host_foundation/host_foundation.s"
+	@echo "... home/bvrznski/rebuntu/src/system/infrastructure/ansible_provider.o"
+	@echo "... home/bvrznski/rebuntu/src/system/infrastructure/ansible_provider.i"
+	@echo "... home/bvrznski/rebuntu/src/system/infrastructure/ansible_provider.s"
+	@echo "... home/bvrznski/rebuntu/src/system/infrastructure/container_runtime.o"
+	@echo "... home/bvrznski/rebuntu/src/system/infrastructure/container_runtime.i"
+	@echo "... home/bvrznski/rebuntu/src/system/infrastructure/container_runtime.s"
 	@echo "... home/bvrznski/rebuntu/src/system/infrastructure/docker_provider.o"
 	@echo "... home/bvrznski/rebuntu/src/system/infrastructure/docker_provider.i"
 	@echo "... home/bvrznski/rebuntu/src/system/infrastructure/docker_provider.s"
@@ -1611,6 +1743,12 @@ help:
 	@echo "... subprocess_executor_test.o"
 	@echo "... subprocess_executor_test.i"
 	@echo "... subprocess_executor_test.s"
+	@echo "... test_ansible_provider.o"
+	@echo "... test_ansible_provider.i"
+	@echo "... test_ansible_provider.s"
+	@echo "... test_container_runtime.o"
+	@echo "... test_container_runtime.i"
+	@echo "... test_container_runtime.s"
 	@echo "... test_directories.o"
 	@echo "... test_directories.i"
 	@echo "... test_directories.s"

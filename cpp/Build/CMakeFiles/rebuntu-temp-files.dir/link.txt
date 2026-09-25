@@ -1,2 +1,0 @@
-/usr/bin/ar qc librebuntu-temp-files.a CMakeFiles/rebuntu-temp-files.dir/home/bvrznski/rebuntu/src/system/environment/temp_files.cpp.o
-/usr/bin/ranlib librebuntu-temp-files.a

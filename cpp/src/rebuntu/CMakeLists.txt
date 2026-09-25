@@ -73,6 +73,15 @@ set(CONTAINER_RUNTIME_SRCS
 )
 target_sources(rebuntu PRIVATE ${CONTAINER_RUNTIME_HDRS} ${CONTAINER_RUNTIME_SRCS})
 
+# Add Ansible provider implementation (Phase 3.7)
+set(ANSIBLE_PROVIDER_HDRS
+    ${CMAKE_SOURCE_DIR}/../src/system/infrastructure/ansible.hpp
+)
+set(ANSIBLE_PROVIDER_SRCS
+    ${CMAKE_SOURCE_DIR}/../src/system/infrastructure/ansible_provider.cpp
+)
+target_sources(rebuntu PRIVATE ${ANSIBLE_PROVIDER_HDRS} ${ANSIBLE_PROVIDER_SRCS})
+
 # Add systemd_executor implementation (minimal proof for Phase 0.13)
 set(SYSTEMD_EXECUTOR_SRCS
     ${CMAKE_SOURCE_DIR}/../src/runtime/systemd_executor.hpp

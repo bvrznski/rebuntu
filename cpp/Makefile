@@ -1141,6 +1141,19 @@ infrastructure_test/fast:
 .PHONY : infrastructure_test/fast
 
 #=============================================================================
+# Target rules for targets named test_container_runtime
+
+# Build rule for target.
+test_container_runtime: cmake_check_build_system
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 test_container_runtime
+.PHONY : test_container_runtime
+
+# fast build rule for target.
+test_container_runtime/fast:
+	$(MAKE) $(MAKESILENT) -f tests/CMakeFiles/test_container_runtime.dir/build.make tests/CMakeFiles/test_container_runtime.dir/build
+.PHONY : test_container_runtime/fast
+
+#=============================================================================
 # Target rules for targets named test_docker_provider
 
 # Build rule for target.
@@ -1152,6 +1165,19 @@ test_docker_provider: cmake_check_build_system
 test_docker_provider/fast:
 	$(MAKE) $(MAKESILENT) -f tests/CMakeFiles/test_docker_provider.dir/build.make tests/CMakeFiles/test_docker_provider.dir/build
 .PHONY : test_docker_provider/fast
+
+#=============================================================================
+# Target rules for targets named test_ansible_provider
+
+# Build rule for target.
+test_ansible_provider: cmake_check_build_system
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 test_ansible_provider
+.PHONY : test_ansible_provider
+
+# fast build rule for target.
+test_ansible_provider/fast:
+	$(MAKE) $(MAKESILENT) -f tests/CMakeFiles/test_ansible_provider.dir/build.make tests/CMakeFiles/test_ansible_provider.dir/build
+.PHONY : test_ansible_provider/fast
 
 #=============================================================================
 # Target rules for targets named rebuntu
@@ -1746,6 +1772,8 @@ help:
 	@echo "... settings_test"
 	@echo "... structured_setup_test"
 	@echo "... subprocess_executor_test"
+	@echo "... test_ansible_provider"
+	@echo "... test_container_runtime"
 	@echo "... test_directories"
 	@echo "... test_discovery"
 	@echo "... test_docker_provider"

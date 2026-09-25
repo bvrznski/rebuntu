@@ -327,4 +327,18 @@ target_sources(test_docker_provider PRIVATE
 )
 add_test(NAME test_docker_provider COMMAND test_docker_provider)
 
+# Phase 3.7: Ansible provider tests (Ansible configuration management integration)
+add_executable(test_ansible_provider test_ansible_provider.cpp)
+target_link_libraries(test_ansible_provider rebuntu-core)
+target_include_directories(test_ansible_provider PRIVATE 
+    ${CMAKE_SOURCE_DIR}/src
+    ${CMAKE_SOURCE_DIR}
+)
+# Include ansible provider sources directly in the test target
+target_sources(test_ansible_provider PRIVATE
+    ${CMAKE_SOURCE_DIR}/../src/system/infrastructure/ansible.hpp
+    ${CMAKE_SOURCE_DIR}/../src/system/infrastructure/ansible_provider.cpp
+)
+add_test(NAME test_ansible_provider COMMAND test_ansible_provider)
+
 # Phase 1.9: Environment discovery tests (pending integration with testing framework)

@@ -1,0 +1,20 @@
+#!/bin/sh
+set -e
+
+THEME=/usr/share/plymouth/themes/rebuntu/rebuntu.plymouth
+
+if command -v update-alternatives >/dev/null 2>&1 && [ -e "$THEME" ]; then
+    update-alternatives --install \
+        /usr/share/plymouth/themes/default.plymouth \
+        default.plymouth "$THEME" 220
+
+    update-alternatives --set default.plymouth "$THEME" || true
+fi
+
+# Only run inside the target system/package environment.
+# This script is never executed by the host bootstrap itself.
+if command -v update-initramfs >/dev/null 2>&1 && [ -d /boot ]; then
+    update-initramfs -u || true
+fi
+
+exit 0

@@ -1,0 +1,10 @@
+Package: rebuntu-plymouth-theme
+Version: 0.1.0
+Section: misc
+Priority: optional
+Architecture: all
+Depends: plymouth, plymouth-themes
+Maintainer: Rebuntu Project
+Description: Rebuntu minimal Plymouth boot splash
+ Minimal near-black Rebuntu boot splash with a white central mark,
+ Rebuntu wordmark and thin real boot-progress indicator.

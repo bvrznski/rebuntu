@@ -1,0 +1,8 @@
+[Plymouth Theme]
+Name=Rebuntu
+Description=Minimal Rebuntu boot splash
+ModuleName=script
+
+[script]
+ImageDir=/usr/share/plymouth/themes/rebuntu
+ScriptFile=/usr/share/plymouth/themes/rebuntu/rebuntu.script

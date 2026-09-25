@@ -1,7 +1,7 @@
 Source: rebuntu-release
 Section: admin
 Priority: optional
-Maintainer: Rebuntu Project
+Maintainer: Rebuntu Project <rebuntu@localhost>
 Build-Depends: debhelper-compat (= 13)
 Standards-Version: 4.6.2
 Rules-Requires-Root: no
@@ -10,4 +10,4 @@ Package: rebuntu-release
 Architecture: all
 Depends: ${misc:Depends}
 Description: Rebuntu distribution identity
- Distribution identity and release metadata for Rebuntu Linux.
+ Rebuntu distribution component.

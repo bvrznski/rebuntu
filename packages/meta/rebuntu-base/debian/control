@@ -1,0 +1,13 @@
+Source: rebuntu-base
+Section: admin
+Priority: optional
+Maintainer: Rebuntu Project <rebuntu@localhost>
+Build-Depends: debhelper-compat (= 13)
+Standards-Version: 4.6.2
+Rules-Requires-Root: no
+
+Package: rebuntu-base
+Architecture: all
+Depends: ${misc:Depends}, rebuntu-release (= ${binary:Version}), rebuntu-branding (= ${binary:Version})
+Description: Base Rebuntu distribution metapackage
+ Rebuntu distribution component.

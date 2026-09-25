@@ -1,0 +1,9 @@
+Package: rebuntu-branding
+Version: 0.1.0-1
+Architecture: all
+Maintainer: Rebuntu Project <rebuntu@localhost>
+Installed-Size: 25
+Section: admin
+Priority: optional
+Description: Canonical Rebuntu branding assets
+ Rebuntu distribution component.

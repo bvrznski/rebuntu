@@ -1,0 +1,13 @@
+Source: rebuntu-branding
+Section: admin
+Priority: optional
+Maintainer: Rebuntu Project <rebuntu@localhost>
+Build-Depends: debhelper-compat (= 13)
+Standards-Version: 4.6.2
+Rules-Requires-Root: no
+
+Package: rebuntu-branding
+Architecture: all
+Depends: ${misc:Depends}
+Description: Canonical Rebuntu branding assets
+ Rebuntu distribution component.

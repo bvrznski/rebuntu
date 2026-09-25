@@ -1,21 +1,9 @@
 # rebuntu-release
 
-Canonical distribution identity package for Rebuntu.
+Development-safe Rebuntu identity package.
 
-Ancestry:
+It installs `/etc/rebuntu-release` and `/etc/rebuntu-lsb-release`.
+It deliberately does NOT overwrite the development host's `/etc/os-release`.
 
-    Debian -> Ubuntu -> Rebuntu
-
-Principle:
-
-    Rebuntu inherits aggressively and diverges deliberately.
-
-This package deliberately does not overwrite the host's /etc/os-release
-during early development.
-
-The development identity is exposed as:
-
-    /etc/rebuntu-release
-
-Replacement/integration with os-release belongs to the image-building
-stage, where Rebuntu owns the complete root filesystem.
+The image/rootfs builder will install the canonical Rebuntu `os-release`
+when Rebuntu owns the target filesystem.

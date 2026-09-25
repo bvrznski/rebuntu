@@ -210,6 +210,14 @@ add_library(rebuntu-lifecycle STATIC
 target_include_directories(rebuntu-lifecycle PUBLIC ${CMAKE_CURRENT_LIST_DIR}/../src)
 target_link_libraries(rebuntu-core PUBLIC rebuntu-lifecycle)
 
+# Phase 5.1: System Event Collector module
+add_library(rebuntu-events-collector STATIC
+    ${CMAKE_CURRENT_LIST_DIR}/../src/events/collector.hpp
+    ${CMAKE_CURRENT_LIST_DIR}/../src/events/collector.cpp
+)
+target_include_directories(rebuntu-events-collector PUBLIC ${CMAKE_CURRENT_LIST_DIR}/../src)
+target_link_libraries(rebuntu-core PUBLIC rebuntu-events-collector)
+
 # Phase 2.0: Linux Host Foundation module
 add_library(rebuntu-host-foundation STATIC
     ${CMAKE_CURRENT_LIST_DIR}/../src/system/host_foundation/contracts.hpp

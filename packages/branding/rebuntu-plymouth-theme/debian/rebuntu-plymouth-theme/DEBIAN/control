@@ -1,0 +1,10 @@
+Package: rebuntu-plymouth-theme
+Version: 0.1.0-1
+Architecture: all
+Maintainer: Rebuntu Project <rebuntu@localhost>
+Installed-Size: 271
+Depends: plymouth
+Section: admin
+Priority: optional
+Description: Rebuntu Plymouth boot splash theme
+ Rebuntu distribution component.

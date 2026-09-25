@@ -2,6 +2,8 @@
 
 Events subsystem — Event, Signal, Request, Response types and Channel implementations.
 
+## Overview
+
 This subsystem implements Rebuntu's communication grammar independently of transport
 mechanism. Types are transport-agnostic; implementations may use in-process calls,
 file descriptors, Unix sockets, or D-Bus as appropriate.
@@ -160,3 +162,105 @@ This phase is designed to integrate with existing native event sources:
 
 Phase 4.16 establishes the foundation for event-driven activation.
 Full integration with native Linux event sources is completed.
+
+## Phase 5.1 — System Event Collector
+
+The System Event Collector acquires events from native Linux sources and converts
+them into bounded, attributable Rebuntu event observations. It supports later
+diagnostics without pretending that every event is an incident.
+
+### Components
+
+#### EventSource
+Native Linux event source identifiers:
+- kSystemd: systemd D-Bus signals (service state changes)
+- kUdev: udev/netlink device events  
+- kInotify: filesystem change notifications
+- kFanotify: filesystem event monitoring
+- kProcfs: process lifecycle from procfs
+- kCgroup: cgroups v2 resource events
+
+#### SourceConfig
+Per-source configuration with:
+- Rate limiting (events per second)
+- Burst handling (max burst size + window)
+- Evidence retention policy
+
+#### EventCollectorState
+Collector operational state machine:
+- kInitializing → kReady → kRunning → kStopping → kStopped/Failed
+- kPaused: temporary backpressure pause
+
+#### InMemoryEventChannel
+Bounded in-memory channel with:
+- Configurable queue depth
+- DropNewest backpressure policy
+- Blocking receive with timeout
+- Close for graceful shutdown
+
+#### EventNormalizer
+Normalization utilities for raw observations:
+- systemd unit state changes
+- udev events from netlink
+- inotify/fanotify filesystem events
+- Generic event normalization interface
+
+### Architecture
+
+```
+Native Linux Sources
+     ↓
+[systemd D-Bus, udev netlink, inotify/fanotify]
+     ↓
+NativeSourceAdapter (connects to native source)
+     ↓
+EventCollector acquires and normalizes
+     ↓
+InMemoryEventChannel (bounded queue with backpressure)
+     ↓
+EventPublisher (publishes normalized events)
+     ↓
+Consumer receives runtime::Event with evidence
+```
+
+### Event Collection Pipeline
+
+1. **Acquisition**: Native adapter connects to source (systemd D-Bus, udev, etc.)
+2. **Normalization**: Raw observation → normalized Event/Fact
+3. **Publishing**: Event placed in bounded channel queue
+4. **Consumption**: Consumer receives event with evidence chain
+
+### Backpressure Policy
+
+When queue reaches capacity:
+- kDropNewest: Drop newest events (default)
+- kDropOldest: Replace oldest events
+- kBlock: Block producer until space available
+
+### Evidence Preservation
+
+Each normalized event carries:
+- Source identifier and type
+- Acquisition timestamp
+- Raw evidence references
+- Provenance metadata
+
+### Metrics
+
+The collector tracks:
+- Events collected, normalized, published
+- Events dropped, coalesced, throttled
+- Per-source counts
+- Error counts by type
+
+### Status: IMPLEMENTING
+
+Phase 5.1 establishes the System Event Collector foundation:
+- ✅ EventSource enum and to_string
+- ✅ SourceConfig structure
+- ✅ EventCollectorState state machine  
+- ✅ InMemoryEventChannel implementation
+- ✅ EventNormalizer for key sources
+- ⏳ Native source adapter implementations (udev, systemd, inotify)
+- ⏳ EventCollector concrete implementation
+

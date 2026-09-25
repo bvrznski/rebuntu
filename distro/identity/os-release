@@ -1,0 +1,9 @@
+NAME="Rebuntu"
+PRETTY_NAME="Rebuntu Linux"
+ID=rebuntu
+ID_LIKE="ubuntu debian"
+VERSION="0.1.0"
+VERSION_ID="0.1.0"
+HOME_URL="https://rebuntu.local/"
+SUPPORT_URL="https://rebuntu.local/"
+BUG_REPORT_URL="https://rebuntu.local/"

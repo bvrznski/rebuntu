@@ -1,0 +1,10 @@
+Package: rebuntu-base
+Version: 0.1.0-1
+Architecture: all
+Maintainer: Rebuntu Project <rebuntu@localhost>
+Installed-Size: 7
+Depends: rebuntu-release (= 0.1.0-1), rebuntu-branding (= 0.1.0-1)
+Section: admin
+Priority: optional
+Description: Base Rebuntu distribution metapackage
+ Rebuntu distribution component.

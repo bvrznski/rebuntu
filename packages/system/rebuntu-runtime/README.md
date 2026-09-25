@@ -1,8 +1,9 @@
 # rebuntu-runtime
 
-Packaging boundary for the Rebuntu runtime implemented in ../../../src.
+Packaging boundary for the existing `../../../src` implementation.
 
-This package must consume the existing source tree through its supported
-build system.
+RULE: do not copy or reorganize `src/` here.
 
-Do not copy, mirror, reorganize or independently reimplement src here.
+This package will invoke the runtime's supported build/install interface once
+that interface is inspected and stabilized. Until then this directory is a
+packaging boundary, not a second runtime implementation.

@@ -34,3 +34,8 @@ models/
 *.safetensors
 *.onnx
 # NOTE: .phases/ is the HISTORICAL corpus (primary source) — NOT ignored.
+/build/artifacts/
+/repository/local/
+packages/**/*.deb
+packages/**/*.changes
+packages/**/*.buildinfo

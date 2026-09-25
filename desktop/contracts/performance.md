@@ -1,18 +1,9 @@
 # Rebuntu Desktop Performance Contract
 
-Core principle:
+> Don't render, transform, copy or composite a pixel unless necessary.
 
-    Don't render, transform, copy or composite a pixel unless necessary.
+> A static desktop should be computationally boring.
 
-Corollary:
-
-    A static desktop should be computationally boring.
-
-The graphics architecture should prefer:
-
-- damage-limited rendering
-- direct scanout when possible
-- zero-copy / dma-buf paths
-- output-local rendering
-- avoidance of unnecessary cross-GPU transfers
-- explicit frame latency and presentation telemetry
+Prefer damage-limited rendering, direct scanout, dma-buf/zero-copy,
+output-local rendering, minimal cross-GPU transfer, and explicit presentation
+telemetry.

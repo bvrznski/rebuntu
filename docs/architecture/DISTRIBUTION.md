@@ -1,33 +1,23 @@
 # Rebuntu Distribution Architecture
 
-High-level ownership:
-
     Debian
       |
     Ubuntu
       |
-    Rebuntu distribution layer
-      |
-      +-- distro/
-      +-- packages/
-      +-- repository/
-      +-- images/
-      +-- installer/
-      +-- branding/
-      +-- desktop/
-      +-- kernel/
-      +-- hardware/
-      +-- system/
-      +-- release/
-      |
-      +-- src/        Rebuntu runtime/platform
-      |
-      +-- tests/
-      +-- tools/
-      +-- docs/
+    Rebuntu
+      +-- distro/       distribution identity/defaults/policy
+      +-- packages/     Debian packages and metapackages
+      +-- repository/   APT archive
+      +-- images/       ISO/live/VM/recovery images
+      +-- installer/    installation layer
+      +-- branding/     canonical visual/terminal assets
+      +-- desktop/      Rebuntu desktop/graphics track
+      +-- kernel/       Linux configuration/flavour/limited patches
+      +-- hardware/     hardware enablement
+      +-- system/       native system integration
+      +-- src/          existing Rebuntu runtime/platform
 
-The distribution layer surrounds and packages the runtime.
+`src/` remains independently owned by the active implementation track.
 
-It must not duplicate Linux mechanisms already provided by the kernel,
-systemd, udev, package management, graphics stack or other authoritative
-upstream components.
+Rebuntu inherits upstream mechanisms by default. Linux, systemd, udev,
+APT/dpkg, Wayland, Mesa/NVIDIA and other native mechanisms remain authoritative.

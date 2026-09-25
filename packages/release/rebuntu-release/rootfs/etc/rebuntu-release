@@ -1,0 +1,7 @@
+NAME="Rebuntu"
+ID=rebuntu
+ID_LIKE="ubuntu debian"
+PRETTY_NAME="Rebuntu Linux"
+HOME_URL="https://rebuntu.local/"
+SUPPORT_URL="https://rebuntu.local/"
+BUG_REPORT_URL="https://rebuntu.local/"

@@ -1,0 +1,8 @@
+[Plymouth Theme]
+Name=Rebuntu Basic
+Description=Minimal Rebuntu boot splash with canonical logo, wordmark and progress bar
+ModuleName=script
+
+[script]
+ImageDir=/usr/share/plymouth/themes/rebuntu-basic
+ScriptFile=/usr/share/plymouth/themes/rebuntu-basic/rebuntu-basic.script

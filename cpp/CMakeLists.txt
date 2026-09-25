@@ -59,6 +59,7 @@ include(CTest)
 
 add_library(rebuntu-core STATIC
     ${CMAKE_CURRENT_LIST_DIR}/../src/interfaces/provider_registry.cpp
+    ${CMAKE_CURRENT_LIST_DIR}/../src/system/services/contracts.cpp
 )
 
 target_include_directories(rebuntu-core PUBLIC ${CMAKE_CURRENT_LIST_DIR}/../src)

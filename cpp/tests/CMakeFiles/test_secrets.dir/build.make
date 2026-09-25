@@ -112,6 +112,8 @@ tests/test_secrets: librebuntu-setup.a
 tests/test_secrets: librebuntu-lifecycle.a
 tests/test_secrets: librebuntu-host-foundation.a
 tests/test_secrets: librebuntu-jenkins-provider.a
+tests/test_secrets: librebuntu-pipeline-provider.a
+tests/test_secrets: librebuntu-packages.a
 tests/test_secrets: tests/CMakeFiles/test_secrets.dir/link.txt
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --bold --progress-dir=/home/bvrznski/rebuntu/cpp/CMakeFiles --progress-num=$(CMAKE_PROGRESS_2) "Linking CXX executable test_secrets"
 	cd /home/bvrznski/rebuntu/cpp/tests && $(CMAKE_COMMAND) -E cmake_link_script CMakeFiles/test_secrets.dir/link.txt --verbose=$(VERBOSE)

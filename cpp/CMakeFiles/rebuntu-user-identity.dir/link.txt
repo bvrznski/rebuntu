@@ -1,0 +1,2 @@
+/usr/bin/ar qc librebuntu-user-identity.a CMakeFiles/rebuntu-user-identity.dir/home/bvrznski/rebuntu/src/system/environment/user_identity.cpp.o
+/usr/bin/ranlib librebuntu-user-identity.a

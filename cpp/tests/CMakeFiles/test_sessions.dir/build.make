@@ -112,6 +112,8 @@ tests/test_sessions: librebuntu-setup.a
 tests/test_sessions: librebuntu-lifecycle.a
 tests/test_sessions: librebuntu-host-foundation.a
 tests/test_sessions: librebuntu-jenkins-provider.a
+tests/test_sessions: librebuntu-pipeline-provider.a
+tests/test_sessions: librebuntu-packages.a
 tests/test_sessions: tests/CMakeFiles/test_sessions.dir/link.txt
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --bold --progress-dir=/home/bvrznski/rebuntu/cpp/CMakeFiles --progress-num=$(CMAKE_PROGRESS_2) "Linking CXX executable test_sessions"
 	cd /home/bvrznski/rebuntu/cpp/tests && $(CMAKE_COMMAND) -E cmake_link_script CMakeFiles/test_sessions.dir/link.txt --verbose=$(VERBOSE)

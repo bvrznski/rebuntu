@@ -99,3 +99,12 @@ target_sources(rebuntu-core PRIVATE
     ${EXECUTOR_HDRS} ${EXECUTOR_IMPL}
     ${DISPATCHER_HDRS} ${DISPATCHER_IMPL}
 )
+
+# Phase 4.6: Controller - runtime control operations (cancel, pause, resume, freeze)
+set(CONTROLLER_HDRS
+    ${REBUNTU_ROOT}/src/runtime/controller.hpp
+)
+set(CONTROLLER_IMPL
+    ${REBUNTU_ROOT}/src/runtime/controller.cpp
+)
+target_sources(rebuntu-core PRIVATE ${CONTROLLER_HDRS} ${CONTROLLER_IMPL})

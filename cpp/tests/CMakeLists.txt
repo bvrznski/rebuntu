@@ -390,4 +390,18 @@ target_include_directories(dispatcher_test PRIVATE
 )
 add_test(NAME dispatcher_test COMMAND dispatcher_test)
 
+# Phase 4.6: Controller tests (runtime control operations - cancel, pause, resume, freeze)
+set(CONTROLLER_SRCS
+    ${CMAKE_SOURCE_DIR}/../src/runtime/controller.hpp
+    ${CMAKE_SOURCE_DIR}/../src/runtime/controller.cpp
+)
+add_executable(controller_test controller_test.cpp ${CONTROLLER_SRCS})
+target_link_libraries(controller_test rebuntu-core)
+target_include_directories(controller_test PRIVATE 
+    ${CMAKE_CURRENT_LIST_DIR}/../include
+    ${CMAKE_SOURCE_DIR}/src
+    ${CMAKE_SOURCE_DIR}
+)
+add_test(NAME controller_test COMMAND controller_test)
+
 # Phase 1.9: Environment discovery tests (pending integration with testing framework)

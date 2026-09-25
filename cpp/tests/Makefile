@@ -225,6 +225,20 @@ settings_test/fast:
 .PHONY : settings_test/fast
 
 # Convenience name for target.
+tests/CMakeFiles/test_packages.dir/rule:
+	cd /home/bvrznski/rebuntu/cpp && $(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 tests/CMakeFiles/test_packages.dir/rule
+.PHONY : tests/CMakeFiles/test_packages.dir/rule
+
+# Convenience name for target.
+test_packages: tests/CMakeFiles/test_packages.dir/rule
+.PHONY : test_packages
+
+# fast build rule for target.
+test_packages/fast:
+	cd /home/bvrznski/rebuntu/cpp && $(MAKE) $(MAKESILENT) -f tests/CMakeFiles/test_packages.dir/build.make tests/CMakeFiles/test_packages.dir/build
+.PHONY : test_packages/fast
+
+# Convenience name for target.
 tests/CMakeFiles/preferences_test.dir/rule:
 	cd /home/bvrznski/rebuntu/cpp && $(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 tests/CMakeFiles/preferences_test.dir/rule
 .PHONY : tests/CMakeFiles/preferences_test.dir/rule
@@ -602,6 +616,62 @@ test_ansible_provider/fast:
 	cd /home/bvrznski/rebuntu/cpp && $(MAKE) $(MAKESILENT) -f tests/CMakeFiles/test_ansible_provider.dir/build.make tests/CMakeFiles/test_ansible_provider.dir/build
 .PHONY : test_ansible_provider/fast
 
+# Convenience name for target.
+tests/CMakeFiles/test_jenkins_provider.dir/rule:
+	cd /home/bvrznski/rebuntu/cpp && $(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 tests/CMakeFiles/test_jenkins_provider.dir/rule
+.PHONY : tests/CMakeFiles/test_jenkins_provider.dir/rule
+
+# Convenience name for target.
+test_jenkins_provider: tests/CMakeFiles/test_jenkins_provider.dir/rule
+.PHONY : test_jenkins_provider
+
+# fast build rule for target.
+test_jenkins_provider/fast:
+	cd /home/bvrznski/rebuntu/cpp && $(MAKE) $(MAKESILENT) -f tests/CMakeFiles/test_jenkins_provider.dir/build.make tests/CMakeFiles/test_jenkins_provider.dir/build
+.PHONY : test_jenkins_provider/fast
+
+# Convenience name for target.
+tests/CMakeFiles/test_pipeline_provider.dir/rule:
+	cd /home/bvrznski/rebuntu/cpp && $(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 tests/CMakeFiles/test_pipeline_provider.dir/rule
+.PHONY : tests/CMakeFiles/test_pipeline_provider.dir/rule
+
+# Convenience name for target.
+test_pipeline_provider: tests/CMakeFiles/test_pipeline_provider.dir/rule
+.PHONY : test_pipeline_provider
+
+# fast build rule for target.
+test_pipeline_provider/fast:
+	cd /home/bvrznski/rebuntu/cpp && $(MAKE) $(MAKESILENT) -f tests/CMakeFiles/test_pipeline_provider.dir/build.make tests/CMakeFiles/test_pipeline_provider.dir/build
+.PHONY : test_pipeline_provider/fast
+
+# Convenience name for target.
+tests/CMakeFiles/dispatcher_test.dir/rule:
+	cd /home/bvrznski/rebuntu/cpp && $(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 tests/CMakeFiles/dispatcher_test.dir/rule
+.PHONY : tests/CMakeFiles/dispatcher_test.dir/rule
+
+# Convenience name for target.
+dispatcher_test: tests/CMakeFiles/dispatcher_test.dir/rule
+.PHONY : dispatcher_test
+
+# fast build rule for target.
+dispatcher_test/fast:
+	cd /home/bvrznski/rebuntu/cpp && $(MAKE) $(MAKESILENT) -f tests/CMakeFiles/dispatcher_test.dir/build.make tests/CMakeFiles/dispatcher_test.dir/build
+.PHONY : dispatcher_test/fast
+
+# Convenience name for target.
+tests/CMakeFiles/controller_test.dir/rule:
+	cd /home/bvrznski/rebuntu/cpp && $(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 tests/CMakeFiles/controller_test.dir/rule
+.PHONY : tests/CMakeFiles/controller_test.dir/rule
+
+# Convenience name for target.
+controller_test: tests/CMakeFiles/controller_test.dir/rule
+.PHONY : controller_test
+
+# fast build rule for target.
+controller_test/fast:
+	cd /home/bvrznski/rebuntu/cpp && $(MAKE) $(MAKESILENT) -f tests/CMakeFiles/controller_test.dir/build.make tests/CMakeFiles/controller_test.dir/build
+.PHONY : controller_test/fast
+
 __/src/semantic/ipc_transport.o: __/src/semantic/ipc_transport.cpp.o
 .PHONY : __/src/semantic/ipc_transport.o
 
@@ -722,6 +792,54 @@ config_test.cpp.s:
 	cd /home/bvrznski/rebuntu/cpp && $(MAKE) $(MAKESILENT) -f tests/CMakeFiles/config_test.dir/build.make tests/CMakeFiles/config_test.dir/config_test.cpp.s
 .PHONY : config_test.cpp.s
 
+controller_test.o: controller_test.cpp.o
+.PHONY : controller_test.o
+
+# target to build an object file
+controller_test.cpp.o:
+	cd /home/bvrznski/rebuntu/cpp && $(MAKE) $(MAKESILENT) -f tests/CMakeFiles/controller_test.dir/build.make tests/CMakeFiles/controller_test.dir/controller_test.cpp.o
+.PHONY : controller_test.cpp.o
+
+controller_test.i: controller_test.cpp.i
+.PHONY : controller_test.i
+
+# target to preprocess a source file
+controller_test.cpp.i:
+	cd /home/bvrznski/rebuntu/cpp && $(MAKE) $(MAKESILENT) -f tests/CMakeFiles/controller_test.dir/build.make tests/CMakeFiles/controller_test.dir/controller_test.cpp.i
+.PHONY : controller_test.cpp.i
+
+controller_test.s: controller_test.cpp.s
+.PHONY : controller_test.s
+
+# target to generate assembly for a file
+controller_test.cpp.s:
+	cd /home/bvrznski/rebuntu/cpp && $(MAKE) $(MAKESILENT) -f tests/CMakeFiles/controller_test.dir/build.make tests/CMakeFiles/controller_test.dir/controller_test.cpp.s
+.PHONY : controller_test.cpp.s
+
+dispatcher_test.o: dispatcher_test.cpp.o
+.PHONY : dispatcher_test.o
+
+# target to build an object file
+dispatcher_test.cpp.o:
+	cd /home/bvrznski/rebuntu/cpp && $(MAKE) $(MAKESILENT) -f tests/CMakeFiles/dispatcher_test.dir/build.make tests/CMakeFiles/dispatcher_test.dir/dispatcher_test.cpp.o
+.PHONY : dispatcher_test.cpp.o
+
+dispatcher_test.i: dispatcher_test.cpp.i
+.PHONY : dispatcher_test.i
+
+# target to preprocess a source file
+dispatcher_test.cpp.i:
+	cd /home/bvrznski/rebuntu/cpp && $(MAKE) $(MAKESILENT) -f tests/CMakeFiles/dispatcher_test.dir/build.make tests/CMakeFiles/dispatcher_test.dir/dispatcher_test.cpp.i
+.PHONY : dispatcher_test.cpp.i
+
+dispatcher_test.s: dispatcher_test.cpp.s
+.PHONY : dispatcher_test.s
+
+# target to generate assembly for a file
+dispatcher_test.cpp.s:
+	cd /home/bvrznski/rebuntu/cpp && $(MAKE) $(MAKESILENT) -f tests/CMakeFiles/dispatcher_test.dir/build.make tests/CMakeFiles/dispatcher_test.dir/dispatcher_test.cpp.s
+.PHONY : dispatcher_test.cpp.s
+
 events_test.o: events_test.cpp.o
 .PHONY : events_test.o
 
@@ -769,6 +887,30 @@ group_membership_test.s: group_membership_test.cpp.s
 group_membership_test.cpp.s:
 	cd /home/bvrznski/rebuntu/cpp && $(MAKE) $(MAKESILENT) -f tests/CMakeFiles/group_membership_test.dir/build.make tests/CMakeFiles/group_membership_test.dir/group_membership_test.cpp.s
 .PHONY : group_membership_test.cpp.s
+
+home/bvrznski/rebuntu/src/runtime/controller.o: home/bvrznski/rebuntu/src/runtime/controller.cpp.o
+.PHONY : home/bvrznski/rebuntu/src/runtime/controller.o
+
+# target to build an object file
+home/bvrznski/rebuntu/src/runtime/controller.cpp.o:
+	cd /home/bvrznski/rebuntu/cpp && $(MAKE) $(MAKESILENT) -f tests/CMakeFiles/controller_test.dir/build.make tests/CMakeFiles/controller_test.dir/home/bvrznski/rebuntu/src/runtime/controller.cpp.o
+.PHONY : home/bvrznski/rebuntu/src/runtime/controller.cpp.o
+
+home/bvrznski/rebuntu/src/runtime/controller.i: home/bvrznski/rebuntu/src/runtime/controller.cpp.i
+.PHONY : home/bvrznski/rebuntu/src/runtime/controller.i
+
+# target to preprocess a source file
+home/bvrznski/rebuntu/src/runtime/controller.cpp.i:
+	cd /home/bvrznski/rebuntu/cpp && $(MAKE) $(MAKESILENT) -f tests/CMakeFiles/controller_test.dir/build.make tests/CMakeFiles/controller_test.dir/home/bvrznski/rebuntu/src/runtime/controller.cpp.i
+.PHONY : home/bvrznski/rebuntu/src/runtime/controller.cpp.i
+
+home/bvrznski/rebuntu/src/runtime/controller.s: home/bvrznski/rebuntu/src/runtime/controller.cpp.s
+.PHONY : home/bvrznski/rebuntu/src/runtime/controller.s
+
+# target to generate assembly for a file
+home/bvrznski/rebuntu/src/runtime/controller.cpp.s:
+	cd /home/bvrznski/rebuntu/cpp && $(MAKE) $(MAKESILENT) -f tests/CMakeFiles/controller_test.dir/build.make tests/CMakeFiles/controller_test.dir/home/bvrznski/rebuntu/src/runtime/controller.cpp.s
+.PHONY : home/bvrznski/rebuntu/src/runtime/controller.cpp.s
 
 home/bvrznski/rebuntu/src/runtime/discovery.o: home/bvrznski/rebuntu/src/runtime/discovery.cpp.o
 .PHONY : home/bvrznski/rebuntu/src/runtime/discovery.o
@@ -890,6 +1032,54 @@ home/bvrznski/rebuntu/src/system/infrastructure/docker_provider.cpp.s:
 	cd /home/bvrznski/rebuntu/cpp && $(MAKE) $(MAKESILENT) -f tests/CMakeFiles/test_docker_provider.dir/build.make tests/CMakeFiles/test_docker_provider.dir/home/bvrznski/rebuntu/src/system/infrastructure/docker_provider.cpp.s
 .PHONY : home/bvrznski/rebuntu/src/system/infrastructure/docker_provider.cpp.s
 
+home/bvrznski/rebuntu/src/system/infrastructure/jenkins_provider.o: home/bvrznski/rebuntu/src/system/infrastructure/jenkins_provider.cpp.o
+.PHONY : home/bvrznski/rebuntu/src/system/infrastructure/jenkins_provider.o
+
+# target to build an object file
+home/bvrznski/rebuntu/src/system/infrastructure/jenkins_provider.cpp.o:
+	cd /home/bvrznski/rebuntu/cpp && $(MAKE) $(MAKESILENT) -f tests/CMakeFiles/test_jenkins_provider.dir/build.make tests/CMakeFiles/test_jenkins_provider.dir/home/bvrznski/rebuntu/src/system/infrastructure/jenkins_provider.cpp.o
+.PHONY : home/bvrznski/rebuntu/src/system/infrastructure/jenkins_provider.cpp.o
+
+home/bvrznski/rebuntu/src/system/infrastructure/jenkins_provider.i: home/bvrznski/rebuntu/src/system/infrastructure/jenkins_provider.cpp.i
+.PHONY : home/bvrznski/rebuntu/src/system/infrastructure/jenkins_provider.i
+
+# target to preprocess a source file
+home/bvrznski/rebuntu/src/system/infrastructure/jenkins_provider.cpp.i:
+	cd /home/bvrznski/rebuntu/cpp && $(MAKE) $(MAKESILENT) -f tests/CMakeFiles/test_jenkins_provider.dir/build.make tests/CMakeFiles/test_jenkins_provider.dir/home/bvrznski/rebuntu/src/system/infrastructure/jenkins_provider.cpp.i
+.PHONY : home/bvrznski/rebuntu/src/system/infrastructure/jenkins_provider.cpp.i
+
+home/bvrznski/rebuntu/src/system/infrastructure/jenkins_provider.s: home/bvrznski/rebuntu/src/system/infrastructure/jenkins_provider.cpp.s
+.PHONY : home/bvrznski/rebuntu/src/system/infrastructure/jenkins_provider.s
+
+# target to generate assembly for a file
+home/bvrznski/rebuntu/src/system/infrastructure/jenkins_provider.cpp.s:
+	cd /home/bvrznski/rebuntu/cpp && $(MAKE) $(MAKESILENT) -f tests/CMakeFiles/test_jenkins_provider.dir/build.make tests/CMakeFiles/test_jenkins_provider.dir/home/bvrznski/rebuntu/src/system/infrastructure/jenkins_provider.cpp.s
+.PHONY : home/bvrznski/rebuntu/src/system/infrastructure/jenkins_provider.cpp.s
+
+home/bvrznski/rebuntu/src/system/infrastructure/pipeline_provider.o: home/bvrznski/rebuntu/src/system/infrastructure/pipeline_provider.cpp.o
+.PHONY : home/bvrznski/rebuntu/src/system/infrastructure/pipeline_provider.o
+
+# target to build an object file
+home/bvrznski/rebuntu/src/system/infrastructure/pipeline_provider.cpp.o:
+	cd /home/bvrznski/rebuntu/cpp && $(MAKE) $(MAKESILENT) -f tests/CMakeFiles/test_pipeline_provider.dir/build.make tests/CMakeFiles/test_pipeline_provider.dir/home/bvrznski/rebuntu/src/system/infrastructure/pipeline_provider.cpp.o
+.PHONY : home/bvrznski/rebuntu/src/system/infrastructure/pipeline_provider.cpp.o
+
+home/bvrznski/rebuntu/src/system/infrastructure/pipeline_provider.i: home/bvrznski/rebuntu/src/system/infrastructure/pipeline_provider.cpp.i
+.PHONY : home/bvrznski/rebuntu/src/system/infrastructure/pipeline_provider.i
+
+# target to preprocess a source file
+home/bvrznski/rebuntu/src/system/infrastructure/pipeline_provider.cpp.i:
+	cd /home/bvrznski/rebuntu/cpp && $(MAKE) $(MAKESILENT) -f tests/CMakeFiles/test_pipeline_provider.dir/build.make tests/CMakeFiles/test_pipeline_provider.dir/home/bvrznski/rebuntu/src/system/infrastructure/pipeline_provider.cpp.i
+.PHONY : home/bvrznski/rebuntu/src/system/infrastructure/pipeline_provider.cpp.i
+
+home/bvrznski/rebuntu/src/system/infrastructure/pipeline_provider.s: home/bvrznski/rebuntu/src/system/infrastructure/pipeline_provider.cpp.s
+.PHONY : home/bvrznski/rebuntu/src/system/infrastructure/pipeline_provider.s
+
+# target to generate assembly for a file
+home/bvrznski/rebuntu/src/system/infrastructure/pipeline_provider.cpp.s:
+	cd /home/bvrznski/rebuntu/cpp && $(MAKE) $(MAKESILENT) -f tests/CMakeFiles/test_pipeline_provider.dir/build.make tests/CMakeFiles/test_pipeline_provider.dir/home/bvrznski/rebuntu/src/system/infrastructure/pipeline_provider.cpp.s
+.PHONY : home/bvrznski/rebuntu/src/system/infrastructure/pipeline_provider.cpp.s
+
 home/bvrznski/rebuntu/src/system/install/install_planning.o: home/bvrznski/rebuntu/src/system/install/install_planning.cpp.o
 .PHONY : home/bvrznski/rebuntu/src/system/install/install_planning.o
 
@@ -961,6 +1151,30 @@ home/bvrznski/rebuntu/tests/native/test_host_foundation.s: home/bvrznski/rebuntu
 home/bvrznski/rebuntu/tests/native/test_host_foundation.cpp.s:
 	cd /home/bvrznski/rebuntu/cpp && $(MAKE) $(MAKESILENT) -f tests/CMakeFiles/host_foundation_test.dir/build.make tests/CMakeFiles/host_foundation_test.dir/home/bvrznski/rebuntu/tests/native/test_host_foundation.cpp.s
 .PHONY : home/bvrznski/rebuntu/tests/native/test_host_foundation.cpp.s
+
+home/bvrznski/rebuntu/tests/native/test_packages.o: home/bvrznski/rebuntu/tests/native/test_packages.cpp.o
+.PHONY : home/bvrznski/rebuntu/tests/native/test_packages.o
+
+# target to build an object file
+home/bvrznski/rebuntu/tests/native/test_packages.cpp.o:
+	cd /home/bvrznski/rebuntu/cpp && $(MAKE) $(MAKESILENT) -f tests/CMakeFiles/test_packages.dir/build.make tests/CMakeFiles/test_packages.dir/home/bvrznski/rebuntu/tests/native/test_packages.cpp.o
+.PHONY : home/bvrznski/rebuntu/tests/native/test_packages.cpp.o
+
+home/bvrznski/rebuntu/tests/native/test_packages.i: home/bvrznski/rebuntu/tests/native/test_packages.cpp.i
+.PHONY : home/bvrznski/rebuntu/tests/native/test_packages.i
+
+# target to preprocess a source file
+home/bvrznski/rebuntu/tests/native/test_packages.cpp.i:
+	cd /home/bvrznski/rebuntu/cpp && $(MAKE) $(MAKESILENT) -f tests/CMakeFiles/test_packages.dir/build.make tests/CMakeFiles/test_packages.dir/home/bvrznski/rebuntu/tests/native/test_packages.cpp.i
+.PHONY : home/bvrznski/rebuntu/tests/native/test_packages.cpp.i
+
+home/bvrznski/rebuntu/tests/native/test_packages.s: home/bvrznski/rebuntu/tests/native/test_packages.cpp.s
+.PHONY : home/bvrznski/rebuntu/tests/native/test_packages.s
+
+# target to generate assembly for a file
+home/bvrznski/rebuntu/tests/native/test_packages.cpp.s:
+	cd /home/bvrznski/rebuntu/cpp && $(MAKE) $(MAKESILENT) -f tests/CMakeFiles/test_packages.dir/build.make tests/CMakeFiles/test_packages.dir/home/bvrznski/rebuntu/tests/native/test_packages.cpp.s
+.PHONY : home/bvrznski/rebuntu/tests/native/test_packages.cpp.s
 
 home/bvrznski/rebuntu/tests/native/test_preferences.o: home/bvrznski/rebuntu/tests/native/test_preferences.cpp.o
 .PHONY : home/bvrznski/rebuntu/tests/native/test_preferences.o
@@ -1466,6 +1680,30 @@ test_ipc_protocol.cpp.s:
 	cd /home/bvrznski/rebuntu/cpp && $(MAKE) $(MAKESILENT) -f tests/CMakeFiles/test_ipc_protocol.dir/build.make tests/CMakeFiles/test_ipc_protocol.dir/test_ipc_protocol.cpp.s
 .PHONY : test_ipc_protocol.cpp.s
 
+test_jenkins_provider.o: test_jenkins_provider.cpp.o
+.PHONY : test_jenkins_provider.o
+
+# target to build an object file
+test_jenkins_provider.cpp.o:
+	cd /home/bvrznski/rebuntu/cpp && $(MAKE) $(MAKESILENT) -f tests/CMakeFiles/test_jenkins_provider.dir/build.make tests/CMakeFiles/test_jenkins_provider.dir/test_jenkins_provider.cpp.o
+.PHONY : test_jenkins_provider.cpp.o
+
+test_jenkins_provider.i: test_jenkins_provider.cpp.i
+.PHONY : test_jenkins_provider.i
+
+# target to preprocess a source file
+test_jenkins_provider.cpp.i:
+	cd /home/bvrznski/rebuntu/cpp && $(MAKE) $(MAKESILENT) -f tests/CMakeFiles/test_jenkins_provider.dir/build.make tests/CMakeFiles/test_jenkins_provider.dir/test_jenkins_provider.cpp.i
+.PHONY : test_jenkins_provider.cpp.i
+
+test_jenkins_provider.s: test_jenkins_provider.cpp.s
+.PHONY : test_jenkins_provider.s
+
+# target to generate assembly for a file
+test_jenkins_provider.cpp.s:
+	cd /home/bvrznski/rebuntu/cpp && $(MAKE) $(MAKESILENT) -f tests/CMakeFiles/test_jenkins_provider.dir/build.make tests/CMakeFiles/test_jenkins_provider.dir/test_jenkins_provider.cpp.s
+.PHONY : test_jenkins_provider.cpp.s
+
 test_locks.o: test_locks.cpp.o
 .PHONY : test_locks.o
 
@@ -1489,6 +1727,30 @@ test_locks.s: test_locks.cpp.s
 test_locks.cpp.s:
 	cd /home/bvrznski/rebuntu/cpp && $(MAKE) $(MAKESILENT) -f tests/CMakeFiles/test_locks.dir/build.make tests/CMakeFiles/test_locks.dir/test_locks.cpp.s
 .PHONY : test_locks.cpp.s
+
+test_pipeline_provider.o: test_pipeline_provider.cpp.o
+.PHONY : test_pipeline_provider.o
+
+# target to build an object file
+test_pipeline_provider.cpp.o:
+	cd /home/bvrznski/rebuntu/cpp && $(MAKE) $(MAKESILENT) -f tests/CMakeFiles/test_pipeline_provider.dir/build.make tests/CMakeFiles/test_pipeline_provider.dir/test_pipeline_provider.cpp.o
+.PHONY : test_pipeline_provider.cpp.o
+
+test_pipeline_provider.i: test_pipeline_provider.cpp.i
+.PHONY : test_pipeline_provider.i
+
+# target to preprocess a source file
+test_pipeline_provider.cpp.i:
+	cd /home/bvrznski/rebuntu/cpp && $(MAKE) $(MAKESILENT) -f tests/CMakeFiles/test_pipeline_provider.dir/build.make tests/CMakeFiles/test_pipeline_provider.dir/test_pipeline_provider.cpp.i
+.PHONY : test_pipeline_provider.cpp.i
+
+test_pipeline_provider.s: test_pipeline_provider.cpp.s
+.PHONY : test_pipeline_provider.s
+
+# target to generate assembly for a file
+test_pipeline_provider.cpp.s:
+	cd /home/bvrznski/rebuntu/cpp && $(MAKE) $(MAKESILENT) -f tests/CMakeFiles/test_pipeline_provider.dir/build.make tests/CMakeFiles/test_pipeline_provider.dir/test_pipeline_provider.cpp.s
+.PHONY : test_pipeline_provider.cpp.s
 
 test_scope.o: test_scope.cpp.o
 .PHONY : test_scope.o
@@ -1622,6 +1884,8 @@ help:
 	@echo "... automation_test"
 	@echo "... capability_state_test"
 	@echo "... config_test"
+	@echo "... controller_test"
+	@echo "... dispatcher_test"
 	@echo "... events_test"
 	@echo "... group_membership_test"
 	@echo "... host_foundation_test"
@@ -1645,7 +1909,10 @@ help:
 	@echo "... test_docker_provider"
 	@echo "... test_ipc"
 	@echo "... test_ipc_protocol"
+	@echo "... test_jenkins_provider"
 	@echo "... test_locks"
+	@echo "... test_packages"
+	@echo "... test_pipeline_provider"
 	@echo "... test_runtime_contracts"
 	@echo "... test_scope"
 	@echo "... test_secrets"
@@ -1668,12 +1935,21 @@ help:
 	@echo "... config_test.o"
 	@echo "... config_test.i"
 	@echo "... config_test.s"
+	@echo "... controller_test.o"
+	@echo "... controller_test.i"
+	@echo "... controller_test.s"
+	@echo "... dispatcher_test.o"
+	@echo "... dispatcher_test.i"
+	@echo "... dispatcher_test.s"
 	@echo "... events_test.o"
 	@echo "... events_test.i"
 	@echo "... events_test.s"
 	@echo "... group_membership_test.o"
 	@echo "... group_membership_test.i"
 	@echo "... group_membership_test.s"
+	@echo "... home/bvrznski/rebuntu/src/runtime/controller.o"
+	@echo "... home/bvrznski/rebuntu/src/runtime/controller.i"
+	@echo "... home/bvrznski/rebuntu/src/runtime/controller.s"
 	@echo "... home/bvrznski/rebuntu/src/runtime/discovery.o"
 	@echo "... home/bvrznski/rebuntu/src/runtime/discovery.i"
 	@echo "... home/bvrznski/rebuntu/src/runtime/discovery.s"
@@ -1689,6 +1965,12 @@ help:
 	@echo "... home/bvrznski/rebuntu/src/system/infrastructure/docker_provider.o"
 	@echo "... home/bvrznski/rebuntu/src/system/infrastructure/docker_provider.i"
 	@echo "... home/bvrznski/rebuntu/src/system/infrastructure/docker_provider.s"
+	@echo "... home/bvrznski/rebuntu/src/system/infrastructure/jenkins_provider.o"
+	@echo "... home/bvrznski/rebuntu/src/system/infrastructure/jenkins_provider.i"
+	@echo "... home/bvrznski/rebuntu/src/system/infrastructure/jenkins_provider.s"
+	@echo "... home/bvrznski/rebuntu/src/system/infrastructure/pipeline_provider.o"
+	@echo "... home/bvrznski/rebuntu/src/system/infrastructure/pipeline_provider.i"
+	@echo "... home/bvrznski/rebuntu/src/system/infrastructure/pipeline_provider.s"
 	@echo "... home/bvrznski/rebuntu/src/system/install/install_planning.o"
 	@echo "... home/bvrznski/rebuntu/src/system/install/install_planning.i"
 	@echo "... home/bvrznski/rebuntu/src/system/install/install_planning.s"
@@ -1698,6 +1980,9 @@ help:
 	@echo "... home/bvrznski/rebuntu/tests/native/test_host_foundation.o"
 	@echo "... home/bvrznski/rebuntu/tests/native/test_host_foundation.i"
 	@echo "... home/bvrznski/rebuntu/tests/native/test_host_foundation.s"
+	@echo "... home/bvrznski/rebuntu/tests/native/test_packages.o"
+	@echo "... home/bvrznski/rebuntu/tests/native/test_packages.i"
+	@echo "... home/bvrznski/rebuntu/tests/native/test_packages.s"
 	@echo "... home/bvrznski/rebuntu/tests/native/test_preferences.o"
 	@echo "... home/bvrznski/rebuntu/tests/native/test_preferences.i"
 	@echo "... home/bvrznski/rebuntu/tests/native/test_preferences.s"
@@ -1761,9 +2046,15 @@ help:
 	@echo "... test_ipc_protocol.o"
 	@echo "... test_ipc_protocol.i"
 	@echo "... test_ipc_protocol.s"
+	@echo "... test_jenkins_provider.o"
+	@echo "... test_jenkins_provider.i"
+	@echo "... test_jenkins_provider.s"
 	@echo "... test_locks.o"
 	@echo "... test_locks.i"
 	@echo "... test_locks.s"
+	@echo "... test_pipeline_provider.o"
+	@echo "... test_pipeline_provider.i"
+	@echo "... test_pipeline_provider.s"
 	@echo "... test_scope.o"
 	@echo "... test_scope.i"
 	@echo "... test_scope.s"

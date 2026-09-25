@@ -242,14 +242,16 @@ add_library(rebuntu-journal-analyzer STATIC
 target_include_directories(rebuntu-journal-analyzer PUBLIC ${CMAKE_CURRENT_LIST_DIR}/../src)
 target_link_libraries(rebuntu-core PUBLIC rebuntu-journal-analyzer)
 
-# Phase 5.5: System Stability Monitor module
-add_library(rebuntu-stability-monitor STATIC
-    ${CMAKE_CURRENT_LIST_DIR}/../src/modules/stability_monitor/types.hpp
-    ${CMAKE_CURRENT_LIST_DIR}/../src/modules/stability_monitor/stability_monitor.hpp
-    ${CMAKE_CURRENT_LIST_DIR}/../src/modules/stability_monitor/stability_monitor.cpp
+# Phase 5.6: Process & Service Health Monitor module
+add_library(rebuntu-health-monitor STATIC
+    ${CMAKE_CURRENT_LIST_DIR}/../src/modules/health_monitor/types.hpp
+    ${CMAKE_CURRENT_LIST_DIR}/../src/modules/health_monitor/health_monitor.hpp
+    ${CMAKE_CURRENT_LIST_DIR}/../src/modules/health_monitor/health_monitor.cpp
+    ${CMAKE_CURRENT_LIST_DIR}/../src/modules/health_monitor/adapters/journald_observer.hpp
+    ${CMAKE_CURRENT_LIST_DIR}/../src/modules/health_monitor/adapters/journald_observer.cpp
 )
-target_include_directories(rebuntu-stability-monitor PUBLIC ${CMAKE_CURRENT_LIST_DIR}/../src)
-target_link_libraries(rebuntu-core PUBLIC rebuntu-stability-monitor)
+target_include_directories(rebuntu-health-monitor PUBLIC ${CMAKE_CURRENT_LIST_DIR}/../src)
+target_link_libraries(rebuntu-core PUBLIC rebuntu-health-monitor)
 
 # Phase 2.0: Linux Host Foundation module
 add_library(rebuntu-host-foundation STATIC

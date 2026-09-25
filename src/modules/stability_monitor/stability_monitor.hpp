@@ -34,7 +34,7 @@ namespace rebuntu::modules::stability_monitor {
 }
 
 // Include our module header to get full type definitions
-#include "src/modules/stability_monitor/types.hpp"
+#include "types.hpp"
 
 namespace rebuntu::modules::stability_monitor {
 

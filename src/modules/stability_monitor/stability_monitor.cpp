@@ -4,10 +4,7 @@
 // process/kernel/storage/resource observations into a conservative view of
 // host stability.
 
-#include "src/modules/stability_monitor/stability_monitor.hpp"
-
-#include <systemd/systemd_adapter.hpp>  // For systemd D-Bus integration
-#include <procfs/procfs_reader.hpp>     // For procfs observation providers
+#include "stability_monitor.hpp"
 
 #include <algorithm>
 #include <sstream>

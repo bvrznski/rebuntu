@@ -6,13 +6,15 @@
 //   - Correlates related alerts without merging unrelated subjects
 //   - Tracks alert lifecycle state (open, updated, acknowledged, cleared, closed)
 
-#include "src/modules/internal_alerts/processor.hpp"
+#include "processor.hpp"
 
 #include <algorithm>
 #include <memory>
 #include <random>
 #include <sstream>
 #include <thread>
+#include <optional>
+#include <atomic>
 
 namespace rebuntu::modules::internal_alerts {
 

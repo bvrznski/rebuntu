@@ -162,6 +162,9 @@ private:
     
     std::string generate_event_id();
     std::string generate_alert_id();
+    
+    // Get subject ID from SubjectState (helper for event generation)
+    std::string get_subject_id_from_state(const SubjectState& state) const;
 };
 
 // ============================================================================

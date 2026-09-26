@@ -1,2 +1,0 @@
-/usr/bin/ar qc librebuntu-environment-discovery.a CMakeFiles/rebuntu-environment-discovery.dir/home/bvrznski/rebuntu/src/system/environment/environment_discovery.cpp.o
-/usr/bin/ranlib librebuntu-environment-discovery.a

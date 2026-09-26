@@ -1,2 +1,0 @@
-/usr/bin/ar qc librebuntu-internal-alerts.a CMakeFiles/rebuntu-internal-alerts.dir/home/bvrznski/rebuntu/src/modules/internal_alerts/processor.cpp.o
-/usr/bin/ranlib librebuntu-internal-alerts.a

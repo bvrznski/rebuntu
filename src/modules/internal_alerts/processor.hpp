@@ -14,7 +14,7 @@
 
 #pragma once
 
-#include "src/modules/internal_alerts/types.hpp"
+#include "types.hpp"
 
 #include <runtime/contracts.hpp>
 #include <system/core/contracts.hpp>
@@ -83,11 +83,11 @@ public:
     // Get metrics
     AlertMetrics metrics() const override;
 
-private:
+public:
     InternalAlertProcessor(
         const AlertDeduplicationConfig& dedup_config,
         const AlertCorrelationConfig& corr_config);
-    
+private:
     // Generate a unique ID for an alert
     static std::string generate_alert_id();
     

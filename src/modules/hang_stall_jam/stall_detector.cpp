@@ -222,10 +222,13 @@ StallAssessment StallDetector::assess_stall_state(
         result.active_window->window_start = state.current_window->window_start;
         
         for (const auto& [type, count] : state.current_window->evidence_counts) {
+            // Use find instead of operator[] to avoid const-correctness issues
+            auto obs_it = state.current_window->last_observation.find(type);
             result.active_window->observed_progress.push_back({
                 type,
                 count,
-                state.current_window->last_observation[type]
+                obs_it != state.current_window->last_observation.end() ? 
+                    obs_it->second : std::chrono::steady_clock::time_point{}
             });
         }
     }

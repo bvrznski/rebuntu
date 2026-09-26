@@ -27,10 +27,11 @@
 #include <chrono>
 #include <cstdint>
 #include <iostream>
+#include <memory>
+#include <optional>
 #include <string>
 #include <vector>
 #include <unordered_map>
-#include <optional>
 
 namespace rebuntu::modules::internal_alerts {
 

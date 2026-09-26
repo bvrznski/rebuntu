@@ -1,2 +1,0 @@
-/usr/bin/ar qc librebuntu-hang-stall-jam-detector.a CMakeFiles/rebuntu-hang-stall-jam-detector.dir/home/bvrznski/rebuntu/src/modules/hang_stall_jam/stall_detector.cpp.o
-/usr/bin/ranlib librebuntu-hang-stall-jam-detector.a

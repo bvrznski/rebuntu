@@ -1,0 +1,2 @@
+/usr/bin/ar qc librebuntu-storage-health-monitor.a CMakeFiles/rebuntu-storage-health-monitor.dir/home/bvrznski/rebuntu/src/modules/storage_health_monitor/storage_health_monitor.cpp.o
+/usr/bin/ranlib librebuntu-storage-health-monitor.a

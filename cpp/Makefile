@@ -816,6 +816,19 @@ rebuntu-encrypted-storage-adapter/fast:
 .PHONY : rebuntu-encrypted-storage-adapter/fast
 
 #=============================================================================
+# Target rules for targets named rebuntu-md-raid-adapter
+
+# Build rule for target.
+rebuntu-md-raid-adapter: cmake_check_build_system
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 rebuntu-md-raid-adapter
+.PHONY : rebuntu-md-raid-adapter
+
+# fast build rule for target.
+rebuntu-md-raid-adapter/fast:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/rebuntu-md-raid-adapter.dir/build.make CMakeFiles/rebuntu-md-raid-adapter.dir/build
+.PHONY : rebuntu-md-raid-adapter/fast
+
+#=============================================================================
 # Target rules for targets named rebuntu-journal-normalizer
 
 # Build rule for target.
@@ -1114,6 +1127,30 @@ home/bvrznski/rebuntu/src/adapters/sysfs/encrypted_storage/implementation.s: hom
 home/bvrznski/rebuntu/src/adapters/sysfs/encrypted_storage/implementation.cpp.s:
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/rebuntu-encrypted-storage-adapter.dir/build.make CMakeFiles/rebuntu-encrypted-storage-adapter.dir/home/bvrznski/rebuntu/src/adapters/sysfs/encrypted_storage/implementation.cpp.s
 .PHONY : home/bvrznski/rebuntu/src/adapters/sysfs/encrypted_storage/implementation.cpp.s
+
+home/bvrznski/rebuntu/src/adapters/sysfs/md_raid/implementation.o: home/bvrznski/rebuntu/src/adapters/sysfs/md_raid/implementation.cpp.o
+.PHONY : home/bvrznski/rebuntu/src/adapters/sysfs/md_raid/implementation.o
+
+# target to build an object file
+home/bvrznski/rebuntu/src/adapters/sysfs/md_raid/implementation.cpp.o:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/rebuntu-md-raid-adapter.dir/build.make CMakeFiles/rebuntu-md-raid-adapter.dir/home/bvrznski/rebuntu/src/adapters/sysfs/md_raid/implementation.cpp.o
+.PHONY : home/bvrznski/rebuntu/src/adapters/sysfs/md_raid/implementation.cpp.o
+
+home/bvrznski/rebuntu/src/adapters/sysfs/md_raid/implementation.i: home/bvrznski/rebuntu/src/adapters/sysfs/md_raid/implementation.cpp.i
+.PHONY : home/bvrznski/rebuntu/src/adapters/sysfs/md_raid/implementation.i
+
+# target to preprocess a source file
+home/bvrznski/rebuntu/src/adapters/sysfs/md_raid/implementation.cpp.i:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/rebuntu-md-raid-adapter.dir/build.make CMakeFiles/rebuntu-md-raid-adapter.dir/home/bvrznski/rebuntu/src/adapters/sysfs/md_raid/implementation.cpp.i
+.PHONY : home/bvrznski/rebuntu/src/adapters/sysfs/md_raid/implementation.cpp.i
+
+home/bvrznski/rebuntu/src/adapters/sysfs/md_raid/implementation.s: home/bvrznski/rebuntu/src/adapters/sysfs/md_raid/implementation.cpp.s
+.PHONY : home/bvrznski/rebuntu/src/adapters/sysfs/md_raid/implementation.s
+
+# target to generate assembly for a file
+home/bvrznski/rebuntu/src/adapters/sysfs/md_raid/implementation.cpp.s:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/rebuntu-md-raid-adapter.dir/build.make CMakeFiles/rebuntu-md-raid-adapter.dir/home/bvrznski/rebuntu/src/adapters/sysfs/md_raid/implementation.cpp.s
+.PHONY : home/bvrznski/rebuntu/src/adapters/sysfs/md_raid/implementation.cpp.s
 
 home/bvrznski/rebuntu/src/events/collector.o: home/bvrznski/rebuntu/src/events/collector.cpp.o
 .PHONY : home/bvrznski/rebuntu/src/events/collector.o
@@ -2088,6 +2125,7 @@ help:
 	@echo "... rebuntu-kernel-fault-detector"
 	@echo "... rebuntu-lifecycle"
 	@echo "... rebuntu-locks"
+	@echo "... rebuntu-md-raid-adapter"
 	@echo "... rebuntu-ownership"
 	@echo "... rebuntu-privilege"
 	@echo "... rebuntu-procfs-mounts"
@@ -2119,6 +2157,9 @@ help:
 	@echo "... home/bvrznski/rebuntu/src/adapters/sysfs/encrypted_storage/implementation.o"
 	@echo "... home/bvrznski/rebuntu/src/adapters/sysfs/encrypted_storage/implementation.i"
 	@echo "... home/bvrznski/rebuntu/src/adapters/sysfs/encrypted_storage/implementation.s"
+	@echo "... home/bvrznski/rebuntu/src/adapters/sysfs/md_raid/implementation.o"
+	@echo "... home/bvrznski/rebuntu/src/adapters/sysfs/md_raid/implementation.i"
+	@echo "... home/bvrznski/rebuntu/src/adapters/sysfs/md_raid/implementation.s"
 	@echo "... home/bvrznski/rebuntu/src/events/collector.o"
 	@echo "... home/bvrznski/rebuntu/src/events/collector.i"
 	@echo "... home/bvrznski/rebuntu/src/events/collector.s"

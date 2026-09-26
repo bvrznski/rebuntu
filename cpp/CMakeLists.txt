@@ -272,6 +272,14 @@ add_library(rebuntu-encrypted-storage-adapter STATIC
 target_include_directories(rebuntu-encrypted-storage-adapter PUBLIC ${CMAKE_CURRENT_LIST_DIR}/../src)
 target_link_libraries(rebuntu-core PUBLIC rebuntu-encrypted-storage-adapter)
 
+# Phase 5.20: md RAID Observation Adapter module (Software RAID)
+add_library(rebuntu-md-raid-adapter STATIC
+    ${CMAKE_CURRENT_LIST_DIR}/../src/adapters/sysfs/md_raid/types.hpp
+    ${CMAKE_CURRENT_LIST_DIR}/../src/adapters/sysfs/md_raid/implementation.cpp
+)
+target_include_directories(rebuntu-md-raid-adapter PUBLIC ${CMAKE_CURRENT_LIST_DIR}/../src)
+target_link_libraries(rebuntu-core PUBLIC rebuntu-md-raid-adapter)
+
 # Phase 5.3: Journal filtering and normalization module
 add_library(rebuntu-journal-normalizer STATIC
     ${CMAKE_CURRENT_LIST_DIR}/../src/adapters/journal_normalizer.hpp

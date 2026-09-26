@@ -154,6 +154,7 @@ set(CMAKE_DEPEND_INFO_FILES
   "CMakeFiles/rebuntu-journald-adapter.dir/DependInfo.cmake"
   "CMakeFiles/rebuntu-procfs-mounts.dir/DependInfo.cmake"
   "CMakeFiles/rebuntu-encrypted-storage-adapter.dir/DependInfo.cmake"
+  "CMakeFiles/rebuntu-md-raid-adapter.dir/DependInfo.cmake"
   "CMakeFiles/rebuntu-journal-normalizer.dir/DependInfo.cmake"
   "CMakeFiles/rebuntu-journal-analyzer.dir/DependInfo.cmake"
   "CMakeFiles/rebuntu-health-monitor.dir/DependInfo.cmake"

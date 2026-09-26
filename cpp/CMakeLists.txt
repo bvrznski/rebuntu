@@ -264,6 +264,14 @@ add_library(rebuntu-procfs-mounts STATIC
 target_include_directories(rebuntu-procfs-mounts PUBLIC ${CMAKE_CURRENT_LIST_DIR}/../src)
 target_link_libraries(rebuntu-core PUBLIC rebuntu-procfs-mounts)
 
+# Phase 5.19: Encrypted Storage Observation Adapter module (LUKS/device-mapper)
+add_library(rebuntu-encrypted-storage-adapter STATIC
+    ${CMAKE_CURRENT_LIST_DIR}/../src/adapters/sysfs/encrypted_storage/types.hpp
+    ${CMAKE_CURRENT_LIST_DIR}/../src/adapters/sysfs/encrypted_storage/implementation.cpp
+)
+target_include_directories(rebuntu-encrypted-storage-adapter PUBLIC ${CMAKE_CURRENT_LIST_DIR}/../src)
+target_link_libraries(rebuntu-core PUBLIC rebuntu-encrypted-storage-adapter)
+
 # Phase 5.3: Journal filtering and normalization module
 add_library(rebuntu-journal-normalizer STATIC
     ${CMAKE_CURRENT_LIST_DIR}/../src/adapters/journal_normalizer.hpp

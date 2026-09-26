@@ -50,6 +50,7 @@
 /home/bvrznski/rebuntu/cpp/CMakeFiles/rebuntu-snapshot-storage.dir
 /home/bvrznski/rebuntu/cpp/CMakeFiles/rebuntu-journald-adapter.dir
 /home/bvrznski/rebuntu/cpp/CMakeFiles/rebuntu-procfs-mounts.dir
+/home/bvrznski/rebuntu/cpp/CMakeFiles/rebuntu-encrypted-storage-adapter.dir
 /home/bvrznski/rebuntu/cpp/CMakeFiles/rebuntu-journal-normalizer.dir
 /home/bvrznski/rebuntu/cpp/CMakeFiles/rebuntu-journal-analyzer.dir
 /home/bvrznski/rebuntu/cpp/CMakeFiles/rebuntu-health-monitor.dir

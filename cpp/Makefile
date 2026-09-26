@@ -803,6 +803,19 @@ rebuntu-procfs-mounts/fast:
 .PHONY : rebuntu-procfs-mounts/fast
 
 #=============================================================================
+# Target rules for targets named rebuntu-encrypted-storage-adapter
+
+# Build rule for target.
+rebuntu-encrypted-storage-adapter: cmake_check_build_system
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 rebuntu-encrypted-storage-adapter
+.PHONY : rebuntu-encrypted-storage-adapter
+
+# fast build rule for target.
+rebuntu-encrypted-storage-adapter/fast:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/rebuntu-encrypted-storage-adapter.dir/build.make CMakeFiles/rebuntu-encrypted-storage-adapter.dir/build
+.PHONY : rebuntu-encrypted-storage-adapter/fast
+
+#=============================================================================
 # Target rules for targets named rebuntu-journal-normalizer
 
 # Build rule for target.
@@ -1077,6 +1090,30 @@ home/bvrznski/rebuntu/src/adapters/procfs/mounts/implementation.s: home/bvrznski
 home/bvrznski/rebuntu/src/adapters/procfs/mounts/implementation.cpp.s:
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/rebuntu-procfs-mounts.dir/build.make CMakeFiles/rebuntu-procfs-mounts.dir/home/bvrznski/rebuntu/src/adapters/procfs/mounts/implementation.cpp.s
 .PHONY : home/bvrznski/rebuntu/src/adapters/procfs/mounts/implementation.cpp.s
+
+home/bvrznski/rebuntu/src/adapters/sysfs/encrypted_storage/implementation.o: home/bvrznski/rebuntu/src/adapters/sysfs/encrypted_storage/implementation.cpp.o
+.PHONY : home/bvrznski/rebuntu/src/adapters/sysfs/encrypted_storage/implementation.o
+
+# target to build an object file
+home/bvrznski/rebuntu/src/adapters/sysfs/encrypted_storage/implementation.cpp.o:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/rebuntu-encrypted-storage-adapter.dir/build.make CMakeFiles/rebuntu-encrypted-storage-adapter.dir/home/bvrznski/rebuntu/src/adapters/sysfs/encrypted_storage/implementation.cpp.o
+.PHONY : home/bvrznski/rebuntu/src/adapters/sysfs/encrypted_storage/implementation.cpp.o
+
+home/bvrznski/rebuntu/src/adapters/sysfs/encrypted_storage/implementation.i: home/bvrznski/rebuntu/src/adapters/sysfs/encrypted_storage/implementation.cpp.i
+.PHONY : home/bvrznski/rebuntu/src/adapters/sysfs/encrypted_storage/implementation.i
+
+# target to preprocess a source file
+home/bvrznski/rebuntu/src/adapters/sysfs/encrypted_storage/implementation.cpp.i:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/rebuntu-encrypted-storage-adapter.dir/build.make CMakeFiles/rebuntu-encrypted-storage-adapter.dir/home/bvrznski/rebuntu/src/adapters/sysfs/encrypted_storage/implementation.cpp.i
+.PHONY : home/bvrznski/rebuntu/src/adapters/sysfs/encrypted_storage/implementation.cpp.i
+
+home/bvrznski/rebuntu/src/adapters/sysfs/encrypted_storage/implementation.s: home/bvrznski/rebuntu/src/adapters/sysfs/encrypted_storage/implementation.cpp.s
+.PHONY : home/bvrznski/rebuntu/src/adapters/sysfs/encrypted_storage/implementation.s
+
+# target to generate assembly for a file
+home/bvrznski/rebuntu/src/adapters/sysfs/encrypted_storage/implementation.cpp.s:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/rebuntu-encrypted-storage-adapter.dir/build.make CMakeFiles/rebuntu-encrypted-storage-adapter.dir/home/bvrznski/rebuntu/src/adapters/sysfs/encrypted_storage/implementation.cpp.s
+.PHONY : home/bvrznski/rebuntu/src/adapters/sysfs/encrypted_storage/implementation.cpp.s
 
 home/bvrznski/rebuntu/src/events/collector.o: home/bvrznski/rebuntu/src/events/collector.cpp.o
 .PHONY : home/bvrznski/rebuntu/src/events/collector.o
@@ -2032,6 +2069,7 @@ help:
 	@echo "... rebuntu-core"
 	@echo "... rebuntu-cpu-memory-thermal-monitor"
 	@echo "... rebuntu-directories"
+	@echo "... rebuntu-encrypted-storage-adapter"
 	@echo "... rebuntu-environment-discovery"
 	@echo "... rebuntu-events-collector"
 	@echo "... rebuntu-evidence-collector"
@@ -2078,6 +2116,9 @@ help:
 	@echo "... home/bvrznski/rebuntu/src/adapters/procfs/mounts/implementation.o"
 	@echo "... home/bvrznski/rebuntu/src/adapters/procfs/mounts/implementation.i"
 	@echo "... home/bvrznski/rebuntu/src/adapters/procfs/mounts/implementation.s"
+	@echo "... home/bvrznski/rebuntu/src/adapters/sysfs/encrypted_storage/implementation.o"
+	@echo "... home/bvrznski/rebuntu/src/adapters/sysfs/encrypted_storage/implementation.i"
+	@echo "... home/bvrznski/rebuntu/src/adapters/sysfs/encrypted_storage/implementation.s"
 	@echo "... home/bvrznski/rebuntu/src/events/collector.o"
 	@echo "... home/bvrznski/rebuntu/src/events/collector.i"
 	@echo "... home/bvrznski/rebuntu/src/events/collector.s"

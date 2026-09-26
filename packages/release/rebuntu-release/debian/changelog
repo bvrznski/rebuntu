@@ -1,5 +1,6 @@
-rebuntu-release (0.1.0-1) unstable; urgency=medium
+rebuntu-release (0.1.0-1) jammy; urgency=medium
 
-  * Initial Rebuntu package.
+  * Initial release: ship /etc/rebuntu-release and /etc/rebuntu-lsb-release
+    as Rebuntu-owned identity files.
 
- -- Rebuntu Project <rebuntu@localhost>  Fri, 25 Sep 2026 22:00:18 +0200
+ -- Rebuntu Project <rebuntu@localhost>  Fri, 26 Sep 2026 00:00:00 +0200

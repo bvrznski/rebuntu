@@ -91,6 +91,7 @@ set(CMAKE_DEPEND_INFO_FILES
   "CMakeFiles/rebuntu-setup.dir/DependInfo.cmake"
   "CMakeFiles/rebuntu-lifecycle.dir/DependInfo.cmake"
   "CMakeFiles/rebuntu-events-collector.dir/DependInfo.cmake"
+  "CMakeFiles/rebuntu-evidence-collector.dir/DependInfo.cmake"
   "CMakeFiles/rebuntu-journald-adapter.dir/DependInfo.cmake"
   "CMakeFiles/rebuntu-journal-normalizer.dir/DependInfo.cmake"
   "CMakeFiles/rebuntu-journal-analyzer.dir/DependInfo.cmake"
@@ -99,6 +100,6 @@ set(CMAKE_DEPEND_INFO_FILES
   "CMakeFiles/rebuntu-storage-health-monitor.dir/DependInfo.cmake"
   "CMakeFiles/rebuntu-cpu-memory-thermal-monitor.dir/DependInfo.cmake"
   "CMakeFiles/rebuntu-gpu-health-monitor.dir/DependInfo.cmake"
-  "CMakeFiles/rebuntu-gpu-health-monitor-test.dir/DependInfo.cmake"
+  "CMakeFiles/rebuntu-hang-stall-jam-detector.dir/DependInfo.cmake"
   "CMakeFiles/rebuntu-host-foundation.dir/DependInfo.cmake"
   )

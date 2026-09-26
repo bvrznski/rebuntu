@@ -738,6 +738,19 @@ rebuntu-events-collector/fast:
 .PHONY : rebuntu-events-collector/fast
 
 #=============================================================================
+# Target rules for targets named rebuntu-evidence-collector
+
+# Build rule for target.
+rebuntu-evidence-collector: cmake_check_build_system
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 rebuntu-evidence-collector
+.PHONY : rebuntu-evidence-collector
+
+# fast build rule for target.
+rebuntu-evidence-collector/fast:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/rebuntu-evidence-collector.dir/build.make CMakeFiles/rebuntu-evidence-collector.dir/build
+.PHONY : rebuntu-evidence-collector/fast
+
+#=============================================================================
 # Target rules for targets named rebuntu-journald-adapter
 
 # Build rule for target.
@@ -842,17 +855,17 @@ rebuntu-gpu-health-monitor/fast:
 .PHONY : rebuntu-gpu-health-monitor/fast
 
 #=============================================================================
-# Target rules for targets named rebuntu-gpu-health-monitor-test
+# Target rules for targets named rebuntu-hang-stall-jam-detector
 
 # Build rule for target.
-rebuntu-gpu-health-monitor-test: cmake_check_build_system
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 rebuntu-gpu-health-monitor-test
-.PHONY : rebuntu-gpu-health-monitor-test
+rebuntu-hang-stall-jam-detector: cmake_check_build_system
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 rebuntu-hang-stall-jam-detector
+.PHONY : rebuntu-hang-stall-jam-detector
 
 # fast build rule for target.
-rebuntu-gpu-health-monitor-test/fast:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/rebuntu-gpu-health-monitor-test.dir/build.make CMakeFiles/rebuntu-gpu-health-monitor-test.dir/build
-.PHONY : rebuntu-gpu-health-monitor-test/fast
+rebuntu-hang-stall-jam-detector/fast:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/rebuntu-hang-stall-jam-detector.dir/build.make CMakeFiles/rebuntu-hang-stall-jam-detector.dir/build
+.PHONY : rebuntu-hang-stall-jam-detector/fast
 
 #=============================================================================
 # Target rules for targets named rebuntu-host-foundation
@@ -1058,6 +1071,30 @@ home/bvrznski/rebuntu/src/modules/gpu_health_monitor/monitor.s: home/bvrznski/re
 home/bvrznski/rebuntu/src/modules/gpu_health_monitor/monitor.cpp.s:
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/rebuntu-gpu-health-monitor.dir/build.make CMakeFiles/rebuntu-gpu-health-monitor.dir/home/bvrznski/rebuntu/src/modules/gpu_health_monitor/monitor.cpp.s
 .PHONY : home/bvrznski/rebuntu/src/modules/gpu_health_monitor/monitor.cpp.s
+
+home/bvrznski/rebuntu/src/modules/hang_stall_jam/stall_detector.o: home/bvrznski/rebuntu/src/modules/hang_stall_jam/stall_detector.cpp.o
+.PHONY : home/bvrznski/rebuntu/src/modules/hang_stall_jam/stall_detector.o
+
+# target to build an object file
+home/bvrznski/rebuntu/src/modules/hang_stall_jam/stall_detector.cpp.o:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/rebuntu-hang-stall-jam-detector.dir/build.make CMakeFiles/rebuntu-hang-stall-jam-detector.dir/home/bvrznski/rebuntu/src/modules/hang_stall_jam/stall_detector.cpp.o
+.PHONY : home/bvrznski/rebuntu/src/modules/hang_stall_jam/stall_detector.cpp.o
+
+home/bvrznski/rebuntu/src/modules/hang_stall_jam/stall_detector.i: home/bvrznski/rebuntu/src/modules/hang_stall_jam/stall_detector.cpp.i
+.PHONY : home/bvrznski/rebuntu/src/modules/hang_stall_jam/stall_detector.i
+
+# target to preprocess a source file
+home/bvrznski/rebuntu/src/modules/hang_stall_jam/stall_detector.cpp.i:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/rebuntu-hang-stall-jam-detector.dir/build.make CMakeFiles/rebuntu-hang-stall-jam-detector.dir/home/bvrznski/rebuntu/src/modules/hang_stall_jam/stall_detector.cpp.i
+.PHONY : home/bvrznski/rebuntu/src/modules/hang_stall_jam/stall_detector.cpp.i
+
+home/bvrznski/rebuntu/src/modules/hang_stall_jam/stall_detector.s: home/bvrznski/rebuntu/src/modules/hang_stall_jam/stall_detector.cpp.s
+.PHONY : home/bvrznski/rebuntu/src/modules/hang_stall_jam/stall_detector.s
+
+# target to generate assembly for a file
+home/bvrznski/rebuntu/src/modules/hang_stall_jam/stall_detector.cpp.s:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/rebuntu-hang-stall-jam-detector.dir/build.make CMakeFiles/rebuntu-hang-stall-jam-detector.dir/home/bvrznski/rebuntu/src/modules/hang_stall_jam/stall_detector.cpp.s
+.PHONY : home/bvrznski/rebuntu/src/modules/hang_stall_jam/stall_detector.cpp.s
 
 home/bvrznski/rebuntu/src/modules/health_monitor/adapters/journald_observer.o: home/bvrznski/rebuntu/src/modules/health_monitor/adapters/journald_observer.cpp.o
 .PHONY : home/bvrznski/rebuntu/src/modules/health_monitor/adapters/journald_observer.o
@@ -1515,6 +1552,30 @@ home/bvrznski/rebuntu/src/system/environment/user_identity.cpp.s:
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/rebuntu-user-identity.dir/build.make CMakeFiles/rebuntu-user-identity.dir/home/bvrznski/rebuntu/src/system/environment/user_identity.cpp.s
 .PHONY : home/bvrznski/rebuntu/src/system/environment/user_identity.cpp.s
 
+home/bvrznski/rebuntu/src/system/evidence/collector.o: home/bvrznski/rebuntu/src/system/evidence/collector.cpp.o
+.PHONY : home/bvrznski/rebuntu/src/system/evidence/collector.o
+
+# target to build an object file
+home/bvrznski/rebuntu/src/system/evidence/collector.cpp.o:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/rebuntu-evidence-collector.dir/build.make CMakeFiles/rebuntu-evidence-collector.dir/home/bvrznski/rebuntu/src/system/evidence/collector.cpp.o
+.PHONY : home/bvrznski/rebuntu/src/system/evidence/collector.cpp.o
+
+home/bvrznski/rebuntu/src/system/evidence/collector.i: home/bvrznski/rebuntu/src/system/evidence/collector.cpp.i
+.PHONY : home/bvrznski/rebuntu/src/system/evidence/collector.i
+
+# target to preprocess a source file
+home/bvrznski/rebuntu/src/system/evidence/collector.cpp.i:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/rebuntu-evidence-collector.dir/build.make CMakeFiles/rebuntu-evidence-collector.dir/home/bvrznski/rebuntu/src/system/evidence/collector.cpp.i
+.PHONY : home/bvrznski/rebuntu/src/system/evidence/collector.cpp.i
+
+home/bvrznski/rebuntu/src/system/evidence/collector.s: home/bvrznski/rebuntu/src/system/evidence/collector.cpp.s
+.PHONY : home/bvrznski/rebuntu/src/system/evidence/collector.s
+
+# target to generate assembly for a file
+home/bvrznski/rebuntu/src/system/evidence/collector.cpp.s:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/rebuntu-evidence-collector.dir/build.make CMakeFiles/rebuntu-evidence-collector.dir/home/bvrznski/rebuntu/src/system/evidence/collector.cpp.s
+.PHONY : home/bvrznski/rebuntu/src/system/evidence/collector.cpp.s
+
 home/bvrznski/rebuntu/src/system/host_foundation/host_foundation.o: home/bvrznski/rebuntu/src/system/host_foundation/host_foundation.cpp.o
 .PHONY : home/bvrznski/rebuntu/src/system/host_foundation/host_foundation.o
 
@@ -1707,30 +1768,6 @@ home/bvrznski/rebuntu/src/system/setup/setup.cpp.s:
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/rebuntu-setup.dir/build.make CMakeFiles/rebuntu-setup.dir/home/bvrznski/rebuntu/src/system/setup/setup.cpp.s
 .PHONY : home/bvrznski/rebuntu/src/system/setup/setup.cpp.s
 
-tests/unit/gpu_health_monitor_test.o: tests/unit/gpu_health_monitor_test.cpp.o
-.PHONY : tests/unit/gpu_health_monitor_test.o
-
-# target to build an object file
-tests/unit/gpu_health_monitor_test.cpp.o:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/rebuntu-gpu-health-monitor-test.dir/build.make CMakeFiles/rebuntu-gpu-health-monitor-test.dir/tests/unit/gpu_health_monitor_test.cpp.o
-.PHONY : tests/unit/gpu_health_monitor_test.cpp.o
-
-tests/unit/gpu_health_monitor_test.i: tests/unit/gpu_health_monitor_test.cpp.i
-.PHONY : tests/unit/gpu_health_monitor_test.i
-
-# target to preprocess a source file
-tests/unit/gpu_health_monitor_test.cpp.i:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/rebuntu-gpu-health-monitor-test.dir/build.make CMakeFiles/rebuntu-gpu-health-monitor-test.dir/tests/unit/gpu_health_monitor_test.cpp.i
-.PHONY : tests/unit/gpu_health_monitor_test.cpp.i
-
-tests/unit/gpu_health_monitor_test.s: tests/unit/gpu_health_monitor_test.cpp.s
-.PHONY : tests/unit/gpu_health_monitor_test.s
-
-# target to generate assembly for a file
-tests/unit/gpu_health_monitor_test.cpp.s:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/rebuntu-gpu-health-monitor-test.dir/build.make CMakeFiles/rebuntu-gpu-health-monitor-test.dir/tests/unit/gpu_health_monitor_test.cpp.s
-.PHONY : tests/unit/gpu_health_monitor_test.cpp.s
-
 # Help Target
 help:
 	@echo "The following are some of the valid targets for this Makefile:"
@@ -1775,9 +1812,10 @@ help:
 	@echo "... rebuntu-directories"
 	@echo "... rebuntu-environment-discovery"
 	@echo "... rebuntu-events-collector"
+	@echo "... rebuntu-evidence-collector"
 	@echo "... rebuntu-gpu-health-monitor"
-	@echo "... rebuntu-gpu-health-monitor-test"
 	@echo "... rebuntu-group-membership"
+	@echo "... rebuntu-hang-stall-jam-detector"
 	@echo "... rebuntu-health-monitor"
 	@echo "... rebuntu-host-foundation"
 	@echo "... rebuntu-install"
@@ -1821,6 +1859,9 @@ help:
 	@echo "... home/bvrznski/rebuntu/src/modules/gpu_health_monitor/monitor.o"
 	@echo "... home/bvrznski/rebuntu/src/modules/gpu_health_monitor/monitor.i"
 	@echo "... home/bvrznski/rebuntu/src/modules/gpu_health_monitor/monitor.s"
+	@echo "... home/bvrznski/rebuntu/src/modules/hang_stall_jam/stall_detector.o"
+	@echo "... home/bvrznski/rebuntu/src/modules/hang_stall_jam/stall_detector.i"
+	@echo "... home/bvrznski/rebuntu/src/modules/hang_stall_jam/stall_detector.s"
 	@echo "... home/bvrznski/rebuntu/src/modules/health_monitor/adapters/journald_observer.o"
 	@echo "... home/bvrznski/rebuntu/src/modules/health_monitor/adapters/journald_observer.i"
 	@echo "... home/bvrznski/rebuntu/src/modules/health_monitor/adapters/journald_observer.s"
@@ -1878,6 +1919,9 @@ help:
 	@echo "... home/bvrznski/rebuntu/src/system/environment/user_identity.o"
 	@echo "... home/bvrznski/rebuntu/src/system/environment/user_identity.i"
 	@echo "... home/bvrznski/rebuntu/src/system/environment/user_identity.s"
+	@echo "... home/bvrznski/rebuntu/src/system/evidence/collector.o"
+	@echo "... home/bvrznski/rebuntu/src/system/evidence/collector.i"
+	@echo "... home/bvrznski/rebuntu/src/system/evidence/collector.s"
 	@echo "... home/bvrznski/rebuntu/src/system/host_foundation/host_foundation.o"
 	@echo "... home/bvrznski/rebuntu/src/system/host_foundation/host_foundation.i"
 	@echo "... home/bvrznski/rebuntu/src/system/host_foundation/host_foundation.s"
@@ -1902,9 +1946,6 @@ help:
 	@echo "... home/bvrznski/rebuntu/src/system/setup/setup.o"
 	@echo "... home/bvrznski/rebuntu/src/system/setup/setup.i"
 	@echo "... home/bvrznski/rebuntu/src/system/setup/setup.s"
-	@echo "... tests/unit/gpu_health_monitor_test.o"
-	@echo "... tests/unit/gpu_health_monitor_test.i"
-	@echo "... tests/unit/gpu_health_monitor_test.s"
 .PHONY : help
 
 

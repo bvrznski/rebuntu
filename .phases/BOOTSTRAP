@@ -1,0 +1,433 @@
+Continue from the completed GRUB/ISO boot-chain repair.
+
+TASK: Complete Rebuntu Milestone M1 — Bootable Live System.
+
+Repository:
+  /home/bvrznski/rebuntu
+
+Builder:
+  rebuntu-builder
+  /work/rebuntu
+  rootfs: /work/rootfs
+
+Do not touch unrelated active src/ implementation.
+
+GOAL
+
+Make the complete boot path work reliably:
+
+  firmware
+    -> GRUB
+    -> Linux kernel
+    -> initramfs
+    -> Plymouth
+    -> casper
+    -> systemd
+    -> Rebuntu live userspace
+
+This task is not complete merely because GRUB loads the kernel.
+
+REQUIREMENTS
+
+1. Boot the generated ISO under QEMU and follow the boot until live userspace is reached.
+
+2. Diagnose and repair every failure encountered after GRUB:
+   - kernel command line
+   - initramfs
+   - casper
+   - squashfs discovery/mount
+   - overlay filesystem
+   - systemd
+   - device management
+   - networking prerequisites
+   - live-user creation/login
+   - TTY availability
+
+3. Preserve:
+   boot=casper quiet splash ---
+
+4. Preserve working BIOS and UEFI boot behavior.
+
+5. Preserve the Rebuntu Plymouth initramfs integration:
+   FRAMEBUFFER=y
+   rebuntu.plymouth
+   rebuntu.script
+   script.so
+
+6. Do not hide boot failures with quiet/splash.
+   For diagnostics, temporarily use verbose/debug kernel parameters where useful,
+   but restore production parameters afterward.
+
+7. Add a deterministic boot smoke test.
+
+The automated test should prove that the machine progresses beyond GRUB and reaches
+a recognizable live-userspace milestone.
+
+Prefer a serial-console marker or systemd target over screenshot-based detection.
+
+8. Add bounded timeouts and useful diagnostics.
+
+9. Ensure the generated live system identifies itself as Rebuntu where appropriate.
+
+10. Do not modify the host bootloader/initramfs/Plymouth.
+
+ACCEPTANCE CRITERIA
+
+- BIOS ISO boot reaches live userspace.
+- UEFI ISO boot reaches live userspace where the environment supports OVMF.
+- /casper filesystem is successfully mounted.
+- systemd starts.
+- a usable TTY/live session is reachable.
+- boot does not drop to initramfs emergency shell.
+- automated smoke test detects failure before userspace.
+- existing ISO structural tests continue to pass.
+- Plymouth remains integrated.
+- all changes are committed as reproducible source/build logic.
+
+Report:
+- failures discovered
+- root causes
+- files changed
+- tests added
+- BIOS result
+- UEFI result
+- final boot timeline
+- remaining limitations
+
+Continue from the working Rebuntu M1 live boot.
+
+TASK: Turn the Rebuntu Plymouth implementation into a production-quality boot experience.
+
+Do not redesign the boot pipeline unless required to fix a demonstrated problem.
+
+VISUAL TARGET
+
+Near-black background.
+
+Centered canonical Rebuntu logo:
+- monochrome white
+- three curved/tapered blade or petal forms
+- 120-degree rotational composition
+- negative-space channels between forms
+- central aperture MUST remain visible
+- compact triangular/triskelion silhouette
+- sharp outward tips
+
+Below it:
+
+  R E B U N T U
+
+Minimal typography.
+
+Below the wordmark:
+- very thin progress bar
+- approximately 2–3 physical pixels at 4K
+- approximately 35–45% of wordmark width
+- cyan -> blue -> violet progression
+- no percentage
+- no "Loading"
+- no spinner
+- no status text
+
+BEHAVIOR
+
+Progress must reflect Plymouth/system boot progress rather than an independent fake timer where the Plymouth API permits it.
+
+At completion:
+- briefly reach 100%
+- clean transition/fade into live userspace
+- avoid console flashes where reasonably possible
+
+IMPLEMENTATION REQUIREMENTS
+
+1. Audit the current rebuntu.script rather than assuming it is valid.
+2. Validate it against the Plymouth script plugin available on Ubuntu Jammy.
+3. Replace the procedural placeholder logo with the canonical Rebuntu asset if the repository contains one.
+4. If no canonical asset exists, DO NOT invent a new final logo. Preserve a clearly identified temporary placeholder and report the missing asset.
+5. Make layout resolution-independent.
+6. Correctly handle common aspect ratios and HiDPI/4K.
+7. Keep the theme packaged by rebuntu-plymouth-theme.
+8. Ensure the final theme is embedded in initramfs.
+9. Add static validation/tests where possible.
+10. Boot-test it in QEMU.
+
+Do not modify host Plymouth.
+
+ACCEPTANCE CRITERIA
+
+- theme loads without Plymouth script/parser errors
+- logo/wordmark/progress layout is centered and scalable
+- progress reacts to actual Plymouth progress callbacks
+- no Ubuntu branding appears
+- no spinner/status/percentage appears
+- transition to userspace is clean
+- initramfs contains the production theme
+- boot still passes M1 smoke tests
+
+Report implementation and any remaining visual limitations.
+
+Continue from the completed M1 bootable Rebuntu live system.
+
+TASK: Complete Rebuntu Milestone M2 — Usable Live Environment.
+
+GOAL
+
+After selecting "Try Rebuntu", provide a coherent usable live operating system,
+not merely a booted kernel/root filesystem.
+
+Implement and integrate:
+
+1. Live user lifecycle
+   - deterministic live user
+   - sane groups
+   - sudo policy appropriate for live media
+   - correct home directory
+   - runtime directories
+   - shell environment
+
+2. System identity
+   - Rebuntu hostname
+   - /etc/os-release
+   - machine-readable distro identity
+   - issue/motd where appropriate
+   - remove inappropriate visible Ubuntu branding while preserving truthful technical ancestry where required
+
+3. Networking
+   - NetworkManager
+   - DHCP
+   - DNS
+   - loopback
+   - predictable live networking behavior
+
+4. Console usability
+   - functional TTY
+   - login/session
+   - terminal basics
+   - correct locale fallback
+   - UTF-8
+   - eliminate current avoidable locale warnings
+
+5. Essential tools
+   Provide a deliberately selected minimal troubleshooting/admin toolset.
+   Do not turn the live image into an uncontrolled package dump.
+
+6. systemd
+   - sane default target
+   - no avoidable failed units
+   - clean shutdown/reboot
+   - appropriate live-media services
+
+7. Persistence boundaries
+   Clearly separate immutable SquashFS content from writable live overlay state.
+
+8. Tests
+   Extend automated QEMU smoke tests to verify:
+   - userspace reached
+   - live user exists
+   - system identifies as Rebuntu
+   - networking stack starts
+   - writable overlay works
+   - systemd is operational
+   - shutdown/reboot works
+
+9. Reproducibility
+   Everything must originate from repository-controlled packages/configuration/scripts.
+
+Do not manually patch generated rootfs state as the final solution.
+
+ACCEPTANCE CRITERIA
+
+A user can boot "Try Rebuntu", reach a usable live environment, use a shell,
+inspect the system, use networking, create files in the writable live layer,
+and cleanly reboot/shutdown.
+
+All M1 tests must remain green.
+
+Continue from the working M2 Rebuntu live environment.
+
+TASK: Implement the first graphical Rebuntu live session.
+
+GOAL
+
+Boot:
+
+  GRUB
+   -> Plymouth
+   -> systemd
+   -> graphical target
+   -> Rebuntu graphical live session
+
+Do not blindly install ubuntu-desktop.
+
+First audit the repository for existing Rebuntu GUI/session/window-manager/
+compositor/display-manager decisions and reuse them where appropriate.
+
+REQUIREMENTS
+
+- minimal deliberate graphical stack
+- display manager or direct session startup, whichever matches Rebuntu architecture
+- X11/Wayland choice must be explicit and justified
+- keyboard/mouse
+- correct resolution
+- virtio/QEMU graphics
+- terminal
+- basic file access
+- NetworkManager integration
+- session logout
+- shutdown/reboot
+- live user integration
+
+VISUAL BASELINE
+
+Establish the initial Rebuntu visual system:
+- graphite / near-black
+- restrained retro-tech influence
+- clean rather than novelty-retro
+- consistent monospace use where appropriate
+- Rebuntu identity
+- no accidental Ubuntu wallpaper/branding
+
+Do not spend this pass building the final visual theme.
+Build the architecture and baseline first.
+
+Add automated tests proving that graphical.target/session startup succeeds.
+
+Preserve headless/TTY recovery if the graphical stack fails.
+
+ACCEPTANCE CRITERIA
+
+"Try Rebuntu" reaches a usable graphical live session while retaining working
+TTY and recovery paths.
+
+Continue from the working graphical/live Rebuntu environment.
+
+TASK: Complete Rebuntu Milestone M3 — Installable Rebuntu.
+
+GOAL
+
+Support the complete lifecycle:
+
+  boot ISO
+    -> Try/Install Rebuntu
+    -> installer
+    -> target disk
+    -> bootloader installation
+    -> reboot
+    -> remove ISO
+    -> installed Rebuntu boots independently
+
+REQUIREMENTS
+
+1. Audit available installer approaches before choosing one.
+2. Integrate the chosen installer into Rebuntu packaging/build architecture.
+3. Do not create a fragile one-off disk-copy script and call it an installer.
+
+Support at minimum:
+- GPT
+- UEFI installation
+- BIOS installation where practical
+- EFI System Partition
+- root filesystem
+- swap strategy
+- hostname
+- user creation
+- timezone
+- locale
+- keyboard layout
+- bootloader
+- installed Rebuntu package set
+
+Installer must distinguish live-only configuration from installed-system configuration.
+
+The installed system must:
+- identify as Rebuntu
+- boot without ISO
+- have working networking
+- have working user login
+- have working graphical session if M2 graphical environment is present
+- have correct GRUB configuration
+- have correct initramfs/Plymouth configuration
+
+SAFETY
+
+Automated installer tests MUST operate only on explicitly created disposable virtual disks.
+
+Never select or modify arbitrary host block devices.
+
+TESTING
+
+Create an automated VM lifecycle test:
+
+  create disposable virtual disk
+       ↓
+  boot Rebuntu ISO
+       ↓
+  install
+       ↓
+  shutdown
+       ↓
+  detach ISO
+       ↓
+  boot virtual disk
+       ↓
+  verify installed Rebuntu userspace
+
+Where possible test UEFI and BIOS independently.
+
+ACCEPTANCE CRITERIA
+
+A fresh VM can be installed from the Rebuntu ISO and subsequently boot Rebuntu
+from its virtual disk with the ISO removed.
+
+M1/M2 tests must remain green.
+
+TASK: Harden Rebuntu from a working Ubuntu-derived custom ISO into a maintainable derivative distribution.
+
+Do not redesign unrelated src/.
+
+Audit and normalize:
+
+- package ownership of Rebuntu files
+- rebuntu-base and other metapackages
+- Debian package metadata
+- dependencies
+- conffiles
+- maintainer scripts
+- alternatives
+- triggers
+- repository/local
+- APT source configuration
+- package versioning
+- release/version identity
+- upgrade paths
+- image manifests
+- build reproducibility
+- generated-vs-source boundaries
+
+Remove cases where build scripts directly mutate rootfs files that should instead
+be owned by a Rebuntu package.
+
+Prefer:
+
+  source
+    -> Debian package
+    -> repository
+    -> apt/dpkg
+    -> rootfs
+
+over:
+
+  build script
+    -> arbitrary cp/sed into rootfs
+
+Audit rebuntu-plymouth-theme specifically and convert it into a clean,
+maintainable Debian package if it is still using ad-hoc package assembly.
+
+Add package ownership and upgrade tests.
+
+GOAL
+
+After this pass, Rebuntu should have a clean distribution-engineering foundation
+for continued development rather than accumulating image-builder hacks.
+
+DON'T MANUALLY EDIT PNG'S

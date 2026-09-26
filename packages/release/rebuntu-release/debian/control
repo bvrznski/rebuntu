@@ -10,4 +10,7 @@ Package: rebuntu-release
 Architecture: all
 Depends: ${misc:Depends}
 Description: Rebuntu distribution identity
- Rebuntu distribution component.
+ Machine-readable and human-facing distribution identity files for
+ Rebuntu: /etc/rebuntu-release and /etc/rebuntu-lsb-release. These are
+ Rebuntu-specific identity files that do not conflict with the Ubuntu
+ base-files package.

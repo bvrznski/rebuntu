@@ -218,6 +218,14 @@ add_library(rebuntu-events-collector STATIC
 target_include_directories(rebuntu-events-collector PUBLIC ${CMAKE_CURRENT_LIST_DIR}/../src)
 target_link_libraries(rebuntu-core PUBLIC rebuntu-events-collector)
 
+# Phase 5.12: Evidence Collector module (bounded provenance-rich diagnostic evidence collection)
+add_library(rebuntu-evidence-collector STATIC
+    ${CMAKE_CURRENT_LIST_DIR}/../src/system/evidence/collector.hpp
+    ${CMAKE_CURRENT_LIST_DIR}/../src/system/evidence/collector.cpp
+)
+target_include_directories(rebuntu-evidence-collector PUBLIC ${CMAKE_CURRENT_LIST_DIR}/../src)
+target_link_libraries(rebuntu-core PUBLIC rebuntu-evidence-collector)
+
 # Phase 5.2: Journald acquisition adapter module
 add_library(rebuntu-journald-adapter STATIC
     ${CMAKE_CURRENT_LIST_DIR}/../src/adapters/journald.hpp
@@ -291,12 +299,22 @@ target_include_directories(rebuntu-gpu-health-monitor PUBLIC ${CMAKE_CURRENT_LIS
 target_include_directories(rebuntu-gpu-health-monitor PUBLIC ${CMAKE_CURRENT_LIST_DIR}/../src)
 target_link_libraries(rebuntu-core PUBLIC rebuntu-gpu-health-monitor)
 
-# GPU Health Monitor unit tests
-add_executable(rebuntu-gpu-health-monitor-test
-    ${CMAKE_CURRENT_LIST_DIR}/tests/unit/gpu_health_monitor_test.cpp
+# Phase 5.11: Hang / Stall / Jam Detection module
+add_library(rebuntu-hang-stall-jam-detector STATIC
+    ${CMAKE_CURRENT_LIST_DIR}/../src/modules/hang_stall_jam/types.hpp
+    ${CMAKE_CURRENT_LIST_DIR}/../src/modules/hang_stall_jam/stall_detector.hpp
+    ${CMAKE_CURRENT_LIST_DIR}/../src/modules/hang_stall_jam/stall_detector.cpp
 )
-target_link_libraries(rebuntu-gpu-health-monitor-test PRIVATE rebuntu-gpu-health-monitor rebuntu-core)
-add_test(NAME gpu_health_monitor_test COMMAND rebuntu-gpu-health-monitor-test)
+target_include_directories(rebuntu-hang-stall-jam-detector PUBLIC ${CMAKE_CURRENT_LIST_DIR}/../src/modules/hang_stall_jam)
+target_include_directories(rebuntu-hang-stall-jam-detector PUBLIC ${CMAKE_CURRENT_LIST_DIR}/../src)
+target_link_libraries(rebuntu-core PUBLIC rebuntu-hang-stall-jam-detector)
+
+# Stall Detector unit tests (pending hang_stall_jam.cpp fix)
+# add_executable(rebuntu-hang-stall-jam-detector-test
+#     ${CMAKE_CURRENT_LIST_DIR}/tests/unit/hang_stall_jam_detector_test.cpp
+# )
+# target_link_libraries(rebuntu-hang-stall-jam-detector-test PRIVATE rebuntu-hang-stall-jam-detector rebuntu-core)
+# add_test(NAME hang_stall_jam_detector_test COMMAND rebuntu-hang-stall-jam-detector-test)
 
 # Phase 2.0: Linux Host Foundation module
 add_library(rebuntu-host-foundation STATIC

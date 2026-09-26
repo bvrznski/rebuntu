@@ -325,6 +325,21 @@ add_executable(rebuntu-netlink-socket-test
 target_link_libraries(rebuntu-netlink-socket-test PRIVATE rebuntu-netlink-socket rebuntu-core)
 add_test(NAME netlink_socket_test COMMAND rebuntu-netlink-socket-test)
 
+# Phase 5.24: Procfs Process Discovery Adapter module
+add_library(rebuntu-procfs-process STATIC
+    ${CMAKE_CURRENT_LIST_DIR}/../src/adapters/procfs/process/types.hpp
+    ${CMAKE_CURRENT_LIST_DIR}/../src/adapters/procfs/process/implementation.cpp
+)
+target_include_directories(rebuntu-procfs-process PUBLIC ${CMAKE_CURRENT_LIST_DIR}/../src)
+target_link_libraries(rebuntu-core PUBLIC rebuntu-procfs-process)
+
+# Procfs Process Discovery unit tests
+add_executable(rebuntu-procfs-process-test
+    ${CMAKE_CURRENT_LIST_DIR}/tests/unit/procfs_process_test.cpp
+)
+target_link_libraries(rebuntu-procfs-process-test PRIVATE rebuntu-procfs-process rebuntu-core)
+add_test(NAME procfs_process_test COMMAND rebuntu-procfs-process-test)
+
 # Phase 5.3: Journal filtering and normalization module
 add_library(rebuntu-journal-normalizer STATIC
     ${CMAKE_CURRENT_LIST_DIR}/../src/adapters/journal_normalizer.hpp

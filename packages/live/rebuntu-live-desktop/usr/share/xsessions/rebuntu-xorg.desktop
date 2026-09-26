@@ -1,0 +1,8 @@
+[Desktop Entry]
+Name=Rebuntu on Xorg
+Comment=Rebuntu GNOME session using Xorg
+Exec=env XDG_SESSION_TYPE=x11 gnome-session --session=rebuntu
+TryExec=gnome-session
+Type=Application
+DesktopNames=Rebuntu;GNOME;
+X-GDM-SessionRegisters=true

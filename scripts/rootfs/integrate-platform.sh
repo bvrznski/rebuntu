@@ -1,0 +1,199 @@
+#!/usr/bin/env bash
+set -Eeuo pipefail
+
+ROOT="$(cd "$(dirname "${BASH_SOURCE[0]}")/../.." && pwd)"
+TARGET="${1:?usage: integrate-platform.sh ROOTFS [profile]}"
+PROFILE="${2:-${REBUNTU_PROFILE:-desktop}}"
+REPO="$ROOT/repository"
+
+[[ -f "$TARGET/.rebuntu-rootfs" ]] || {
+    echo "ERROR: refusing unmarked rootfs: $TARGET" >&2
+    exit 1
+}
+
+case "$PROFILE" in
+    base)
+        PROFILE_PACKAGE="rebuntu-base"
+        ;;
+    desktop)
+        PROFILE_PACKAGE="rebuntu-live-desktop"
+        ;;
+    ai)
+        PROFILE_PACKAGE="rebuntu-ai"
+        ;;
+    ai-dev)
+        PROFILE_PACKAGE="rebuntu-ai-dev"
+        ;;
+    *)
+        echo "ERROR: unknown profile: $PROFILE" >&2
+        exit 2
+        ;;
+esac
+
+echo "== Rebuntu platform integration =="
+echo "rootfs:  $TARGET"
+echo "profile: $PROFILE"
+echo "package: $PROFILE_PACKAGE"
+
+# Embedded APT repository.
+# trusted=yes applies ONLY to the image-local file:// repository.
+sudo rm -rf "$TARGET/opt/rebuntu/repository"
+sudo mkdir -p "$TARGET/opt/rebuntu"
+
+sudo cp -a \
+    "$REPO" \
+    "$TARGET/opt/rebuntu/repository"
+
+sudo mkdir -p "$TARGET/etc/apt/sources.list.d"
+
+cat <<APT | sudo tee \
+    "$TARGET/etc/apt/sources.list.d/rebuntu-local.list" >/dev/null
+deb [trusted=yes] file:/opt/rebuntu/repository jammy main
+APT
+
+# ------------------------------------------------------------
+# Chroot mounts
+# ------------------------------------------------------------
+
+MOUNTS=()
+
+cleanup() {
+    local i
+
+    for ((i=${#MOUNTS[@]}-1; i>=0; i--)); do
+        sudo umount -lf "${MOUNTS[$i]}" 2>/dev/null || true
+    done
+}
+
+trap cleanup EXIT
+
+bind_mount() {
+    local src="$1"
+    local dst="$2"
+
+    sudo mkdir -p "$dst"
+
+    if ! mountpoint -q "$dst"; then
+        sudo mount --bind "$src" "$dst"
+        MOUNTS+=("$dst")
+    fi
+}
+
+virtual_mount() {
+    local type="$1"
+    local source="$2"
+    local dst="$3"
+
+    sudo mkdir -p "$dst"
+
+    if ! mountpoint -q "$dst"; then
+        sudo mount -t "$type" "$source" "$dst"
+        MOUNTS+=("$dst")
+    fi
+}
+
+bind_mount /dev "$TARGET/dev"
+bind_mount /dev/pts "$TARGET/dev/pts"
+
+virtual_mount proc proc "$TARGET/proc"
+virtual_mount sysfs sysfs "$TARGET/sys"
+
+bind_mount /run "$TARGET/run"
+
+
+# ------------------------------------------------------------
+# Install selected Rebuntu profile
+# ------------------------------------------------------------
+
+sudo chroot "$TARGET" apt-get update
+
+sudo chroot "$TARGET" \
+    env DEBIAN_FRONTEND=noninteractive \
+    apt-get install -y "$PROFILE_PACKAGE"
+
+# ------------------------------------------------------------
+# Live desktop
+# ------------------------------------------------------------
+
+if [[ "$PROFILE" != "base" ]]; then
+
+    if ! sudo chroot "$TARGET" id rebuntu >/dev/null 2>&1; then
+        sudo chroot "$TARGET" useradd \
+            --create-home \
+            --shell /bin/bash \
+            --comment "Rebuntu Live User" \
+            rebuntu
+    fi
+
+    # Add only groups actually existing in the target.
+    GROUPS=()
+
+    for group in \
+        sudo \
+        audio \
+        video \
+        plugdev \
+        netdev \
+        render
+    do
+        if sudo chroot "$TARGET" \
+            getent group "$group" >/dev/null 2>&1
+        then
+            GROUPS+=("$group")
+        fi
+    done
+
+    if ((${#GROUPS[@]})); then
+        GROUP_CSV="$(IFS=,; echo "${GROUPS[*]}")"
+
+        sudo chroot "$TARGET" \
+            usermod -aG "$GROUP_CSV" rebuntu
+    fi
+
+    # Empty password for live autologin.
+    sudo passwd -R "$TARGET" -d rebuntu >/dev/null
+
+    # LIVE IMAGE ONLY.
+    # Installer must remove this from an installed system.
+    sudo mkdir -p "$TARGET/etc/sudoers.d"
+
+    echo 'rebuntu ALL=(ALL) NOPASSWD:ALL' |
+        sudo tee \
+            "$TARGET/etc/sudoers.d/90-rebuntu-live" \
+            >/dev/null
+
+    sudo chmod 0440 \
+        "$TARGET/etc/sudoers.d/90-rebuntu-live"
+
+    # AccountsService session selection.
+    sudo mkdir -p \
+        "$TARGET/var/lib/AccountsService/users"
+
+    cat <<ACCOUNT |
+        sudo tee \
+            "$TARGET/var/lib/AccountsService/users/rebuntu" \
+            >/dev/null
+[User]
+Session=rebuntu
+XSession=rebuntu
+SystemAccount=false
+ACCOUNT
+
+    sudo chroot "$TARGET" \
+        systemctl set-default graphical.target
+
+    sudo chroot "$TARGET" \
+        systemctl enable gdm3.service
+
+    sudo chroot "$TARGET" \
+        systemctl enable NetworkManager.service
+fi
+
+# Let booted system generate its own machine-id.
+sudo truncate -s 0 "$TARGET/etc/machine-id"
+sudo rm -f "$TARGET/var/lib/dbus/machine-id"
+
+sudo chroot "$TARGET" apt-get clean
+
+echo
+echo "Rebuntu platform integration complete."

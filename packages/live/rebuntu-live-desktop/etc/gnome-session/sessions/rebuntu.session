@@ -1,0 +1,3 @@
+[GNOME Session]
+Name=Rebuntu
+RequiredComponents=org.gnome.Shell;

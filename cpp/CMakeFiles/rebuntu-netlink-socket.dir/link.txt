@@ -1,0 +1,2 @@
+/usr/bin/ar qc librebuntu-netlink-socket.a CMakeFiles/rebuntu-netlink-socket.dir/home/bvrznski/rebuntu/src/adapters/netlink/socket/implementation.cpp.o
+/usr/bin/ranlib librebuntu-netlink-socket.a

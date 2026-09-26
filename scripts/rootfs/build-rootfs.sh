@@ -62,6 +62,14 @@ cat <<HOSTS | sudo tee "$TARGET/etc/hosts" >/dev/null
 ::1 localhost ip6-localhost ip6-loopback
 HOSTS
 
+# REBUNTU_PLATFORM_INTEGRATION_BEGIN
+if [[ "${REBUNTU_INTEGRATE_PLATFORM:-0}" == "1" ]]; then
+  sudo "$ROOT/scripts/rootfs/integrate-platform.sh" \
+    "$TARGET" \
+    "${REBUNTU_PROFILE:-desktop}"
+fi
+# REBUNTU_PLATFORM_INTEGRATION_END
+
 sudo chroot "$TARGET" apt-get clean
 sudo rm -f "$TARGET/tmp/"rebuntu-*.deb
 

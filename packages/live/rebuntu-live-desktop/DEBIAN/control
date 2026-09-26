@@ -1,0 +1,8 @@
+Package: rebuntu-live-desktop
+Version: 0.1.0-1
+Section: metapackages
+Priority: optional
+Architecture: all
+Depends: rebuntu-desktop, casper, network-manager, gdm3, gnome-shell, gnome-session, mutter, xwayland, xserver-xorg, sudo, dbus-x11
+Description: Rebuntu live GNOME desktop integration
+ Rebuntu GNOME live session with GDM, Wayland and Xorg fallback.

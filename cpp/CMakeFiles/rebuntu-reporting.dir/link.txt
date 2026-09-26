@@ -1,0 +1,2 @@
+/usr/bin/ar qc librebuntu-reporting.a CMakeFiles/rebuntu-reporting.dir/home/bvrznski/rebuntu/src/modules/reporting/generator.cpp.o
+/usr/bin/ranlib librebuntu-reporting.a

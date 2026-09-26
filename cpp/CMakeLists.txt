@@ -331,6 +331,23 @@ target_include_directories(rebuntu-internal-alerts PUBLIC ${CMAKE_CURRENT_LIST_D
 target_include_directories(rebuntu-internal-alerts PUBLIC ${CMAKE_CURRENT_LIST_DIR}/../src)
 target_link_libraries(rebuntu-core PUBLIC rebuntu-internal-alerts)
 
+# Phase 5.15: Reporting & Notification module
+add_library(rebuntu-reporting STATIC
+    ${CMAKE_CURRENT_LIST_DIR}/../src/modules/reporting/types.hpp
+    ${CMAKE_CURRENT_LIST_DIR}/../src/modules/reporting/generator.hpp
+    ${CMAKE_CURRENT_LIST_DIR}/../src/modules/reporting/generator.cpp
+)
+target_include_directories(rebuntu-reporting PUBLIC ${CMAKE_CURRENT_LIST_DIR}/../src/modules/reporting)
+target_include_directories(rebuntu-reporting PUBLIC ${CMAKE_CURRENT_LIST_DIR}/../src)
+target_link_libraries(rebuntu-core PUBLIC rebuntu-reporting)
+
+# Phase 5.15: Reporting & Notification unit tests
+add_executable(rebuntu-reporting-test
+    ${CMAKE_CURRENT_LIST_DIR}/tests/unit/reporting_test.cpp
+)
+target_link_libraries(rebuntu-reporting-test PRIVATE rebuntu-reporting rebuntu-core gtest_main)
+add_test(NAME reporting_test COMMAND rebuntu-reporting-test)
+
 # Phase 5.11: Hang / Stall / Jam Detection module
 add_library(rebuntu-hang-stall-jam-detector STATIC
     ${CMAKE_CURRENT_LIST_DIR}/../src/modules/hang_stall_jam/types.hpp

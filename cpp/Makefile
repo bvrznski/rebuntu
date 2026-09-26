@@ -881,6 +881,45 @@ rebuntu-gpu-health-monitor/fast:
 .PHONY : rebuntu-gpu-health-monitor/fast
 
 #=============================================================================
+# Target rules for targets named rebuntu-internal-alerts
+
+# Build rule for target.
+rebuntu-internal-alerts: cmake_check_build_system
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 rebuntu-internal-alerts
+.PHONY : rebuntu-internal-alerts
+
+# fast build rule for target.
+rebuntu-internal-alerts/fast:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/rebuntu-internal-alerts.dir/build.make CMakeFiles/rebuntu-internal-alerts.dir/build
+.PHONY : rebuntu-internal-alerts/fast
+
+#=============================================================================
+# Target rules for targets named rebuntu-reporting
+
+# Build rule for target.
+rebuntu-reporting: cmake_check_build_system
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 rebuntu-reporting
+.PHONY : rebuntu-reporting
+
+# fast build rule for target.
+rebuntu-reporting/fast:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/rebuntu-reporting.dir/build.make CMakeFiles/rebuntu-reporting.dir/build
+.PHONY : rebuntu-reporting/fast
+
+#=============================================================================
+# Target rules for targets named rebuntu-reporting-test
+
+# Build rule for target.
+rebuntu-reporting-test: cmake_check_build_system
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 rebuntu-reporting-test
+.PHONY : rebuntu-reporting-test
+
+# fast build rule for target.
+rebuntu-reporting-test/fast:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/rebuntu-reporting-test.dir/build.make CMakeFiles/rebuntu-reporting-test.dir/build
+.PHONY : rebuntu-reporting-test/fast
+
+#=============================================================================
 # Target rules for targets named rebuntu-hang-stall-jam-detector
 
 # Build rule for target.
@@ -1169,6 +1208,54 @@ home/bvrznski/rebuntu/src/modules/health_monitor/health_monitor.s: home/bvrznski
 home/bvrznski/rebuntu/src/modules/health_monitor/health_monitor.cpp.s:
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/rebuntu-health-monitor.dir/build.make CMakeFiles/rebuntu-health-monitor.dir/home/bvrznski/rebuntu/src/modules/health_monitor/health_monitor.cpp.s
 .PHONY : home/bvrznski/rebuntu/src/modules/health_monitor/health_monitor.cpp.s
+
+home/bvrznski/rebuntu/src/modules/internal_alerts/processor.o: home/bvrznski/rebuntu/src/modules/internal_alerts/processor.cpp.o
+.PHONY : home/bvrznski/rebuntu/src/modules/internal_alerts/processor.o
+
+# target to build an object file
+home/bvrznski/rebuntu/src/modules/internal_alerts/processor.cpp.o:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/rebuntu-internal-alerts.dir/build.make CMakeFiles/rebuntu-internal-alerts.dir/home/bvrznski/rebuntu/src/modules/internal_alerts/processor.cpp.o
+.PHONY : home/bvrznski/rebuntu/src/modules/internal_alerts/processor.cpp.o
+
+home/bvrznski/rebuntu/src/modules/internal_alerts/processor.i: home/bvrznski/rebuntu/src/modules/internal_alerts/processor.cpp.i
+.PHONY : home/bvrznski/rebuntu/src/modules/internal_alerts/processor.i
+
+# target to preprocess a source file
+home/bvrznski/rebuntu/src/modules/internal_alerts/processor.cpp.i:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/rebuntu-internal-alerts.dir/build.make CMakeFiles/rebuntu-internal-alerts.dir/home/bvrznski/rebuntu/src/modules/internal_alerts/processor.cpp.i
+.PHONY : home/bvrznski/rebuntu/src/modules/internal_alerts/processor.cpp.i
+
+home/bvrznski/rebuntu/src/modules/internal_alerts/processor.s: home/bvrznski/rebuntu/src/modules/internal_alerts/processor.cpp.s
+.PHONY : home/bvrznski/rebuntu/src/modules/internal_alerts/processor.s
+
+# target to generate assembly for a file
+home/bvrznski/rebuntu/src/modules/internal_alerts/processor.cpp.s:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/rebuntu-internal-alerts.dir/build.make CMakeFiles/rebuntu-internal-alerts.dir/home/bvrznski/rebuntu/src/modules/internal_alerts/processor.cpp.s
+.PHONY : home/bvrznski/rebuntu/src/modules/internal_alerts/processor.cpp.s
+
+home/bvrznski/rebuntu/src/modules/reporting/generator.o: home/bvrznski/rebuntu/src/modules/reporting/generator.cpp.o
+.PHONY : home/bvrznski/rebuntu/src/modules/reporting/generator.o
+
+# target to build an object file
+home/bvrznski/rebuntu/src/modules/reporting/generator.cpp.o:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/rebuntu-reporting.dir/build.make CMakeFiles/rebuntu-reporting.dir/home/bvrznski/rebuntu/src/modules/reporting/generator.cpp.o
+.PHONY : home/bvrznski/rebuntu/src/modules/reporting/generator.cpp.o
+
+home/bvrznski/rebuntu/src/modules/reporting/generator.i: home/bvrznski/rebuntu/src/modules/reporting/generator.cpp.i
+.PHONY : home/bvrznski/rebuntu/src/modules/reporting/generator.i
+
+# target to preprocess a source file
+home/bvrznski/rebuntu/src/modules/reporting/generator.cpp.i:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/rebuntu-reporting.dir/build.make CMakeFiles/rebuntu-reporting.dir/home/bvrznski/rebuntu/src/modules/reporting/generator.cpp.i
+.PHONY : home/bvrznski/rebuntu/src/modules/reporting/generator.cpp.i
+
+home/bvrznski/rebuntu/src/modules/reporting/generator.s: home/bvrznski/rebuntu/src/modules/reporting/generator.cpp.s
+.PHONY : home/bvrznski/rebuntu/src/modules/reporting/generator.s
+
+# target to generate assembly for a file
+home/bvrznski/rebuntu/src/modules/reporting/generator.cpp.s:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/rebuntu-reporting.dir/build.make CMakeFiles/rebuntu-reporting.dir/home/bvrznski/rebuntu/src/modules/reporting/generator.cpp.s
+.PHONY : home/bvrznski/rebuntu/src/modules/reporting/generator.cpp.s
 
 home/bvrznski/rebuntu/src/modules/storage_health_monitor/storage_health_monitor.o: home/bvrznski/rebuntu/src/modules/storage_health_monitor/storage_health_monitor.cpp.o
 .PHONY : home/bvrznski/rebuntu/src/modules/storage_health_monitor/storage_health_monitor.o
@@ -1842,6 +1929,30 @@ home/bvrznski/rebuntu/src/system/setup/setup.cpp.s:
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/rebuntu-setup.dir/build.make CMakeFiles/rebuntu-setup.dir/home/bvrznski/rebuntu/src/system/setup/setup.cpp.s
 .PHONY : home/bvrznski/rebuntu/src/system/setup/setup.cpp.s
 
+tests/unit/reporting_test.o: tests/unit/reporting_test.cpp.o
+.PHONY : tests/unit/reporting_test.o
+
+# target to build an object file
+tests/unit/reporting_test.cpp.o:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/rebuntu-reporting-test.dir/build.make CMakeFiles/rebuntu-reporting-test.dir/tests/unit/reporting_test.cpp.o
+.PHONY : tests/unit/reporting_test.cpp.o
+
+tests/unit/reporting_test.i: tests/unit/reporting_test.cpp.i
+.PHONY : tests/unit/reporting_test.i
+
+# target to preprocess a source file
+tests/unit/reporting_test.cpp.i:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/rebuntu-reporting-test.dir/build.make CMakeFiles/rebuntu-reporting-test.dir/tests/unit/reporting_test.cpp.i
+.PHONY : tests/unit/reporting_test.cpp.i
+
+tests/unit/reporting_test.s: tests/unit/reporting_test.cpp.s
+.PHONY : tests/unit/reporting_test.s
+
+# target to generate assembly for a file
+tests/unit/reporting_test.cpp.s:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/rebuntu-reporting-test.dir/build.make CMakeFiles/rebuntu-reporting-test.dir/tests/unit/reporting_test.cpp.s
+.PHONY : tests/unit/reporting_test.cpp.s
+
 # Help Target
 help:
 	@echo "The following are some of the valid targets for this Makefile:"
@@ -1893,6 +2004,7 @@ help:
 	@echo "... rebuntu-health-monitor"
 	@echo "... rebuntu-host-foundation"
 	@echo "... rebuntu-install"
+	@echo "... rebuntu-internal-alerts"
 	@echo "... rebuntu-ipc"
 	@echo "... rebuntu-journal-analyzer"
 	@echo "... rebuntu-journal-normalizer"
@@ -1902,6 +2014,8 @@ help:
 	@echo "... rebuntu-locks"
 	@echo "... rebuntu-ownership"
 	@echo "... rebuntu-privilege"
+	@echo "... rebuntu-reporting"
+	@echo "... rebuntu-reporting-test"
 	@echo "... rebuntu-scope"
 	@echo "... rebuntu-secrets"
 	@echo "... rebuntu-sessions"
@@ -1944,6 +2058,12 @@ help:
 	@echo "... home/bvrznski/rebuntu/src/modules/health_monitor/health_monitor.o"
 	@echo "... home/bvrznski/rebuntu/src/modules/health_monitor/health_monitor.i"
 	@echo "... home/bvrznski/rebuntu/src/modules/health_monitor/health_monitor.s"
+	@echo "... home/bvrznski/rebuntu/src/modules/internal_alerts/processor.o"
+	@echo "... home/bvrznski/rebuntu/src/modules/internal_alerts/processor.i"
+	@echo "... home/bvrznski/rebuntu/src/modules/internal_alerts/processor.s"
+	@echo "... home/bvrznski/rebuntu/src/modules/reporting/generator.o"
+	@echo "... home/bvrznski/rebuntu/src/modules/reporting/generator.i"
+	@echo "... home/bvrznski/rebuntu/src/modules/reporting/generator.s"
 	@echo "... home/bvrznski/rebuntu/src/modules/storage_health_monitor/storage_health_monitor.o"
 	@echo "... home/bvrznski/rebuntu/src/modules/storage_health_monitor/storage_health_monitor.i"
 	@echo "... home/bvrznski/rebuntu/src/modules/storage_health_monitor/storage_health_monitor.s"
@@ -2028,6 +2148,9 @@ help:
 	@echo "... home/bvrznski/rebuntu/src/system/setup/setup.o"
 	@echo "... home/bvrznski/rebuntu/src/system/setup/setup.i"
 	@echo "... home/bvrznski/rebuntu/src/system/setup/setup.s"
+	@echo "... tests/unit/reporting_test.o"
+	@echo "... tests/unit/reporting_test.i"
+	@echo "... tests/unit/reporting_test.s"
 .PHONY : help
 
 

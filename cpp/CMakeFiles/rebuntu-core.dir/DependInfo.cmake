@@ -45,6 +45,8 @@ set(CMAKE_TARGET_LINKED_INFO_FILES
   "/home/bvrznski/rebuntu/cpp/CMakeFiles/rebuntu-storage-health-monitor.dir/DependInfo.cmake"
   "/home/bvrznski/rebuntu/cpp/CMakeFiles/rebuntu-cpu-memory-thermal-monitor.dir/DependInfo.cmake"
   "/home/bvrznski/rebuntu/cpp/CMakeFiles/rebuntu-gpu-health-monitor.dir/DependInfo.cmake"
+  "/home/bvrznski/rebuntu/cpp/CMakeFiles/rebuntu-internal-alerts.dir/DependInfo.cmake"
+  "/home/bvrznski/rebuntu/cpp/CMakeFiles/rebuntu-reporting.dir/DependInfo.cmake"
   "/home/bvrznski/rebuntu/cpp/CMakeFiles/rebuntu-hang-stall-jam-detector.dir/DependInfo.cmake"
   "/home/bvrznski/rebuntu/cpp/CMakeFiles/rebuntu-host-foundation.dir/DependInfo.cmake"
   )

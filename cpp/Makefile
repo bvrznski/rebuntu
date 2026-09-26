@@ -829,6 +829,32 @@ rebuntu-cpu-memory-thermal-monitor/fast:
 .PHONY : rebuntu-cpu-memory-thermal-monitor/fast
 
 #=============================================================================
+# Target rules for targets named rebuntu-gpu-health-monitor
+
+# Build rule for target.
+rebuntu-gpu-health-monitor: cmake_check_build_system
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 rebuntu-gpu-health-monitor
+.PHONY : rebuntu-gpu-health-monitor
+
+# fast build rule for target.
+rebuntu-gpu-health-monitor/fast:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/rebuntu-gpu-health-monitor.dir/build.make CMakeFiles/rebuntu-gpu-health-monitor.dir/build
+.PHONY : rebuntu-gpu-health-monitor/fast
+
+#=============================================================================
+# Target rules for targets named rebuntu-gpu-health-monitor-test
+
+# Build rule for target.
+rebuntu-gpu-health-monitor-test: cmake_check_build_system
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 rebuntu-gpu-health-monitor-test
+.PHONY : rebuntu-gpu-health-monitor-test
+
+# fast build rule for target.
+rebuntu-gpu-health-monitor-test/fast:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/rebuntu-gpu-health-monitor-test.dir/build.make CMakeFiles/rebuntu-gpu-health-monitor-test.dir/build
+.PHONY : rebuntu-gpu-health-monitor-test/fast
+
+#=============================================================================
 # Target rules for targets named rebuntu-host-foundation
 
 # Build rule for target.
@@ -1008,6 +1034,30 @@ home/bvrznski/rebuntu/src/modules/cpu_memory_thermal_monitor/monitor.s: home/bvr
 home/bvrznski/rebuntu/src/modules/cpu_memory_thermal_monitor/monitor.cpp.s:
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/rebuntu-cpu-memory-thermal-monitor.dir/build.make CMakeFiles/rebuntu-cpu-memory-thermal-monitor.dir/home/bvrznski/rebuntu/src/modules/cpu_memory_thermal_monitor/monitor.cpp.s
 .PHONY : home/bvrznski/rebuntu/src/modules/cpu_memory_thermal_monitor/monitor.cpp.s
+
+home/bvrznski/rebuntu/src/modules/gpu_health_monitor/monitor.o: home/bvrznski/rebuntu/src/modules/gpu_health_monitor/monitor.cpp.o
+.PHONY : home/bvrznski/rebuntu/src/modules/gpu_health_monitor/monitor.o
+
+# target to build an object file
+home/bvrznski/rebuntu/src/modules/gpu_health_monitor/monitor.cpp.o:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/rebuntu-gpu-health-monitor.dir/build.make CMakeFiles/rebuntu-gpu-health-monitor.dir/home/bvrznski/rebuntu/src/modules/gpu_health_monitor/monitor.cpp.o
+.PHONY : home/bvrznski/rebuntu/src/modules/gpu_health_monitor/monitor.cpp.o
+
+home/bvrznski/rebuntu/src/modules/gpu_health_monitor/monitor.i: home/bvrznski/rebuntu/src/modules/gpu_health_monitor/monitor.cpp.i
+.PHONY : home/bvrznski/rebuntu/src/modules/gpu_health_monitor/monitor.i
+
+# target to preprocess a source file
+home/bvrznski/rebuntu/src/modules/gpu_health_monitor/monitor.cpp.i:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/rebuntu-gpu-health-monitor.dir/build.make CMakeFiles/rebuntu-gpu-health-monitor.dir/home/bvrznski/rebuntu/src/modules/gpu_health_monitor/monitor.cpp.i
+.PHONY : home/bvrznski/rebuntu/src/modules/gpu_health_monitor/monitor.cpp.i
+
+home/bvrznski/rebuntu/src/modules/gpu_health_monitor/monitor.s: home/bvrznski/rebuntu/src/modules/gpu_health_monitor/monitor.cpp.s
+.PHONY : home/bvrznski/rebuntu/src/modules/gpu_health_monitor/monitor.s
+
+# target to generate assembly for a file
+home/bvrznski/rebuntu/src/modules/gpu_health_monitor/monitor.cpp.s:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/rebuntu-gpu-health-monitor.dir/build.make CMakeFiles/rebuntu-gpu-health-monitor.dir/home/bvrznski/rebuntu/src/modules/gpu_health_monitor/monitor.cpp.s
+.PHONY : home/bvrznski/rebuntu/src/modules/gpu_health_monitor/monitor.cpp.s
 
 home/bvrznski/rebuntu/src/modules/health_monitor/adapters/journald_observer.o: home/bvrznski/rebuntu/src/modules/health_monitor/adapters/journald_observer.cpp.o
 .PHONY : home/bvrznski/rebuntu/src/modules/health_monitor/adapters/journald_observer.o
@@ -1657,6 +1707,30 @@ home/bvrznski/rebuntu/src/system/setup/setup.cpp.s:
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/rebuntu-setup.dir/build.make CMakeFiles/rebuntu-setup.dir/home/bvrznski/rebuntu/src/system/setup/setup.cpp.s
 .PHONY : home/bvrznski/rebuntu/src/system/setup/setup.cpp.s
 
+tests/unit/gpu_health_monitor_test.o: tests/unit/gpu_health_monitor_test.cpp.o
+.PHONY : tests/unit/gpu_health_monitor_test.o
+
+# target to build an object file
+tests/unit/gpu_health_monitor_test.cpp.o:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/rebuntu-gpu-health-monitor-test.dir/build.make CMakeFiles/rebuntu-gpu-health-monitor-test.dir/tests/unit/gpu_health_monitor_test.cpp.o
+.PHONY : tests/unit/gpu_health_monitor_test.cpp.o
+
+tests/unit/gpu_health_monitor_test.i: tests/unit/gpu_health_monitor_test.cpp.i
+.PHONY : tests/unit/gpu_health_monitor_test.i
+
+# target to preprocess a source file
+tests/unit/gpu_health_monitor_test.cpp.i:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/rebuntu-gpu-health-monitor-test.dir/build.make CMakeFiles/rebuntu-gpu-health-monitor-test.dir/tests/unit/gpu_health_monitor_test.cpp.i
+.PHONY : tests/unit/gpu_health_monitor_test.cpp.i
+
+tests/unit/gpu_health_monitor_test.s: tests/unit/gpu_health_monitor_test.cpp.s
+.PHONY : tests/unit/gpu_health_monitor_test.s
+
+# target to generate assembly for a file
+tests/unit/gpu_health_monitor_test.cpp.s:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/rebuntu-gpu-health-monitor-test.dir/build.make CMakeFiles/rebuntu-gpu-health-monitor-test.dir/tests/unit/gpu_health_monitor_test.cpp.s
+.PHONY : tests/unit/gpu_health_monitor_test.cpp.s
+
 # Help Target
 help:
 	@echo "The following are some of the valid targets for this Makefile:"
@@ -1701,6 +1775,8 @@ help:
 	@echo "... rebuntu-directories"
 	@echo "... rebuntu-environment-discovery"
 	@echo "... rebuntu-events-collector"
+	@echo "... rebuntu-gpu-health-monitor"
+	@echo "... rebuntu-gpu-health-monitor-test"
 	@echo "... rebuntu-group-membership"
 	@echo "... rebuntu-health-monitor"
 	@echo "... rebuntu-host-foundation"
@@ -1742,6 +1818,9 @@ help:
 	@echo "... home/bvrznski/rebuntu/src/modules/cpu_memory_thermal_monitor/monitor.o"
 	@echo "... home/bvrznski/rebuntu/src/modules/cpu_memory_thermal_monitor/monitor.i"
 	@echo "... home/bvrznski/rebuntu/src/modules/cpu_memory_thermal_monitor/monitor.s"
+	@echo "... home/bvrznski/rebuntu/src/modules/gpu_health_monitor/monitor.o"
+	@echo "... home/bvrznski/rebuntu/src/modules/gpu_health_monitor/monitor.i"
+	@echo "... home/bvrznski/rebuntu/src/modules/gpu_health_monitor/monitor.s"
 	@echo "... home/bvrznski/rebuntu/src/modules/health_monitor/adapters/journald_observer.o"
 	@echo "... home/bvrznski/rebuntu/src/modules/health_monitor/adapters/journald_observer.i"
 	@echo "... home/bvrznski/rebuntu/src/modules/health_monitor/adapters/journald_observer.s"
@@ -1823,6 +1902,9 @@ help:
 	@echo "... home/bvrznski/rebuntu/src/system/setup/setup.o"
 	@echo "... home/bvrznski/rebuntu/src/system/setup/setup.i"
 	@echo "... home/bvrznski/rebuntu/src/system/setup/setup.s"
+	@echo "... tests/unit/gpu_health_monitor_test.o"
+	@echo "... tests/unit/gpu_health_monitor_test.i"
+	@echo "... tests/unit/gpu_health_monitor_test.s"
 .PHONY : help
 
 

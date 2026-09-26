@@ -1,0 +1,2 @@
+/usr/bin/ar qc librebuntu-gpu-health-monitor.a CMakeFiles/rebuntu-gpu-health-monitor.dir/home/bvrznski/rebuntu/src/modules/gpu_health_monitor/monitor.cpp.o
+/usr/bin/ranlib librebuntu-gpu-health-monitor.a

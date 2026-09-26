@@ -281,6 +281,23 @@ target_include_directories(rebuntu-cpu-memory-thermal-monitor PUBLIC ${CMAKE_CUR
 target_include_directories(rebuntu-cpu-memory-thermal-monitor PUBLIC ${CMAKE_CURRENT_LIST_DIR}/../src)
 target_link_libraries(rebuntu-core PUBLIC rebuntu-cpu-memory-thermal-monitor)
 
+# Phase 5.10: GPU Health Monitor module
+add_library(rebuntu-gpu-health-monitor STATIC
+    ${CMAKE_CURRENT_LIST_DIR}/../src/modules/gpu_health_monitor/types.hpp
+    ${CMAKE_CURRENT_LIST_DIR}/../src/modules/gpu_health_monitor/monitor.hpp
+    ${CMAKE_CURRENT_LIST_DIR}/../src/modules/gpu_health_monitor/monitor.cpp
+)
+target_include_directories(rebuntu-gpu-health-monitor PUBLIC ${CMAKE_CURRENT_LIST_DIR}/../src/modules/gpu_health_monitor)
+target_include_directories(rebuntu-gpu-health-monitor PUBLIC ${CMAKE_CURRENT_LIST_DIR}/../src)
+target_link_libraries(rebuntu-core PUBLIC rebuntu-gpu-health-monitor)
+
+# GPU Health Monitor unit tests
+add_executable(rebuntu-gpu-health-monitor-test
+    ${CMAKE_CURRENT_LIST_DIR}/tests/unit/gpu_health_monitor_test.cpp
+)
+target_link_libraries(rebuntu-gpu-health-monitor-test PRIVATE rebuntu-gpu-health-monitor rebuntu-core)
+add_test(NAME gpu_health_monitor_test COMMAND rebuntu-gpu-health-monitor-test)
+
 # Phase 2.0: Linux Host Foundation module
 add_library(rebuntu-host-foundation STATIC
     ${CMAKE_CURRENT_LIST_DIR}/../src/system/host_foundation/contracts.hpp

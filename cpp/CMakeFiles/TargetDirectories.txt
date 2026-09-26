@@ -52,6 +52,8 @@
 /home/bvrznski/rebuntu/cpp/CMakeFiles/rebuntu-kernel-fault-detector.dir
 /home/bvrznski/rebuntu/cpp/CMakeFiles/rebuntu-storage-health-monitor.dir
 /home/bvrznski/rebuntu/cpp/CMakeFiles/rebuntu-cpu-memory-thermal-monitor.dir
+/home/bvrznski/rebuntu/cpp/CMakeFiles/rebuntu-gpu-health-monitor.dir
+/home/bvrznski/rebuntu/cpp/CMakeFiles/rebuntu-gpu-health-monitor-test.dir
 /home/bvrznski/rebuntu/cpp/CMakeFiles/rebuntu-host-foundation.dir
 /home/bvrznski/rebuntu/cpp/CMakeFiles/test.dir
 /home/bvrznski/rebuntu/cpp/CMakeFiles/edit_cache.dir

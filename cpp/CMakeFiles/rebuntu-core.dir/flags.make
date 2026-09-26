@@ -4,7 +4,7 @@
 # compile CXX with /usr/bin/c++
 CXX_DEFINES = 
 
-CXX_INCLUDES = -I/home/bvrznski/rebuntu/cpp/../src -I/home/bvrznski/rebuntu/cpp/../cpp/include -I/home/bvrznski/rebuntu/cpp/../src/modules/storage_health_monitor -I/home/bvrznski/rebuntu/cpp/../src/modules/cpu_memory_thermal_monitor
+CXX_INCLUDES = -I/home/bvrznski/rebuntu/cpp/../src -I/home/bvrznski/rebuntu/cpp/../cpp/include -I/home/bvrznski/rebuntu/cpp/../src/modules/storage_health_monitor -I/home/bvrznski/rebuntu/cpp/../src/modules/cpu_memory_thermal_monitor -I/home/bvrznski/rebuntu/cpp/../src/modules/gpu_health_monitor
 
 CXX_FLAGS = -O3 -DNDEBUG -Wall -Wextra -Wpedantic -Wformat=2 -Wnull-dereference -Wshift-overflow -Wduplicated-cond -Wduplicated-branches -Wlogical-op -Wcast-qual -Wcast-align -Wconversion -std=c++20
 

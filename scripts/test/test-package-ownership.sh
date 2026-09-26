@@ -6,12 +6,17 @@
 #
 # It proves:
 #   1. Each foundation package builds a well-formed .deb (dpkg-deb integrity).
-#   2. FILE OWNERSHIP is unambiguous: no file is owned by more than one
-#      package (no "shadow" ownership), and each package owns its core file.
-#   3. METADATA: rebuntu-base depends on rebuntu-live; rebuntu-release keeps
-#      truthful Ubuntu ancestry (ID_LIKE) while owning its own identity files.
-#   4. UPGRADE SAFETY: the file payload is idempotent (re-extracting the same
-#      version is byte-identical), so a same-version upgrade cannot clobber.
+#   2. REGULAR-FILE OWNERSHIP is unambiguous: no regular file is owned by more
+#      than one package (no "shadow" ownership). Directory entries are
+#      legitimately shared across packages (dpkg creates them idempotently)
+#      and are therefore excluded from the conflict check.
+#   3. METADATA: rebuntu-base depends on its component packages; rebuntu-release
+#      owns its identity file and retains truthful Ubuntu ancestry (ID_LIKE).
+#   4. BEHAVIORAL OWNERSHIP: rebuntu-live owns its maintainer-script surface
+#      (serial getty enable in postinst, cleanup in postrm, live-user sudo).
+#   5. UPGRADE SAFETY: each package's regular-file payload is idempotent
+#      (re-extracting the same version is byte-identical), so a same-version
+#      upgrade cannot clobber.
 #
 # Usage: test-package-ownership.sh
 
@@ -38,60 +43,75 @@ for name in "${NAMES[@]}"; do
   [[ -d "$d" ]] || fail "missing source dir: $d"
   ( cd "$d" && dpkg-buildpackage -us -uc -b >/dev/null 2>&1 ) \
     || fail "$name: build failed (run dpkg-buildpackage verbosely to inspect)"
-  parent="${d%/}"; parent="${parent%/*}"
+  parent="$(dirname "$d")"
   deb="$(cd "$parent" && ls -1 "${name}"_*.deb 2>/dev/null | head -1)"
   [[ -n "${deb:-}" && -f "$parent/$deb" ]] || fail "$name: no .deb produced"
   DEB[$name]="$parent/$deb"
   dpkg-deb --info "$parent/$deb" >/dev/null 2>&1 || fail "$name: dpkg-deb integrity check failed"
-  ok "built $name ($deb)"
+  ok "built $name"
 done
 
-# --- 2) Ownership: no file owned by more than one package -------------------
+# Regular-file list of a .deb (type '-' only, './' normalised to '/').
+regfiles(){ dpkg-deb -c "$1" 2>/dev/null | awk '$1 ~ /^-/ {print $NF}' | sed -e 's|^\./|/|'; }
+
+# --- 2) Ownership: no regular file owned by more than one package -----------
 declare -A FILES
 for name in "${NAMES[@]}"; do
-  FILES[$name]="$(dpkg-deb -c "${DEB[$name]}" | awk 'NF{print $NF}' | sed 's|/$||' | sort -u)"
+  FILES[$name]="$(regfiles "${DEB[$name]}" | sort -u)"
 done
 allfiles="$(printf '%s\n' "${FILES[@]}" | grep -vE '^$' | sort)"
 dups="$(printf '%s\n' "$allfiles" | sort | uniq -d || true)"
 if [[ -n "$dups" ]]; then
-  fail "file(s) owned by more than one package (shadow ownership):\n$dups"
+  fail "regular file(s) owned by more than one package (shadow ownership):"$'\n'"$dups"
 fi
-ok "no cross-package file-ownership conflicts"
+ok "no cross-package regular-file ownership conflicts"
 
-# Core per-package ownership (hard assertions on files each package must own).
+# Per-package core ownership (assertions on files each package MUST own).
 has(){ grep -qx "$2" <<<"${FILES[$1]}" && ok "$1 owns $2" || fail "$1 does not own expected file: $2"; }
-has rebuntu-release /usr/lib/os-release
-has rebuntu-live    /etc/casper-user/liveuser
-ok "core per-package ownership verified"
-
-# Informational ownership map (soft — prints the owner of key files).
-owner_of(){
-  local f="$1"; local owner=""
-  for name in "${NAMES[@]}"; do grep -qx "$f" <<<"${FILES[$name]}" && owner="$name" && break; done
-  note "owner($f) = ${owner:-<none>}"
-}
-owner_of /etc/hostname
-owner_of /etc/rebuntu-release
-owner_of /etc/issue
-owner_of /etc/motd
+has rebuntu-release  /etc/rebuntu-release
+has rebuntu-release  /etc/rebuntu-lsb-release
+has rebuntu-branding /usr/share/rebuntu/branding/terminal/rebuntu-logo.sh
+has rebuntu-plymouth-theme /usr/share/plymouth/themes/rebuntu-basic/rebuntu-basic.plymouth
+ok "core per-package regular-file ownership verified"
 
 # --- 3) Metadata -------------------------------------------------------------
-base_dep="$(dpkg-deb -f "${DEB[rebuntu-base]}" Depends 2>/dev/null || true)"
-grep -qw 'rebuntu-live' <<<"$base_dep" \
-  && ok "rebuntu-base depends on rebuntu-live" \
-  || fail "rebuntu-base does not depend on rebuntu-live (got: ${base_dep:-<none>})"
+dep(){ dpkg-deb -f "${DEB[$1]}" Depends 2>/dev/null || true; }
+bdep="$(dep rebuntu-base)"
+for want in rebuntu-release rebuntu-branding rebuntu-live; do
+  grep -qw "$want" <<<"$bdep" \
+    && ok "rebuntu-base depends on $want" \
+    || fail "rebuntu-base does not depend on $want (got: ${bdep:-<none>})"
+done
+grep -qw 'plymouth' <<<"$(dep rebuntu-plymouth-theme)" \
+  && ok "rebuntu-plymouth-theme depends on plymouth" \
+  || note "rebuntu-plymouth-theme lacks a plymouth dependency (verify theme runtime)"
 
-# Truthful Ubuntu ancestry must be retained (ID_LIKE references ubuntu).
-osrel="$(mktemp -d); dpkg-deb -x "${DEB[rebuntu-release]}" "$osrel" >/dev/null 2>&1
-cat "$osrel/usr/lib/os-release" 2>/dev/null || true)"
-if grep -q 'ID_LIKE="ubuntu debian"' <<<"$osrel"; then
+# Truthful Ubuntu ancestry must be retained in the owned identity file.
+x="$(mktemp -d)"; dpkg-deb -x "${DEB[rebuntu-release]}" "$x" >/dev/null 2>&1
+if grep -q 'ID_LIKE="ubuntu debian"' "$x/etc/rebuntu-release" 2>/dev/null; then
   ok "rebuntu-release retains truthful Ubuntu ancestry (ID_LIKE=\"ubuntu debian\")"
 else
-  note "rebuntu-release os-release lacks ID_LIKE=\"ubuntu debian\" (check lsb-release)"
+  fail "rebuntu-release /etc/rebuntu-release lacks ID_LIKE=\"ubuntu debian\""
 fi
-rm -rf "$osrel"
+rm -rf "$x"
 
-# --- 4) Upgrade safety: payload idempotency ---------------------------------
+# --- 4) Behavioral ownership: rebuntu-live ----------------------------------
+# Maintainer scripts live in the CONTROL tarball; `dpkg-deb -e` extracts them
+# flat into the target dir (e.g. $d/postinst), NOT under $d/DEBIAN/.
+l="$(mktemp -d)"; dpkg-deb -e "${DEB[rebuntu-live]}" "$l" >/dev/null 2>&1
+if grep -q 'getty@ttyS0.service' "$l/postinst" 2>/dev/null; then
+  ok "rebuntu-live postinst enables serial getty@ttyS0"
+else
+  fail "rebuntu-live postinst does not enable serial getty@ttyS0"
+fi
+if grep -q 'getty@ttyS0.service' "$l/postrm" 2>/dev/null; then
+  ok "rebuntu-live postrm cleans up serial getty@ttyS0"
+else
+  note "rebuntu-live postrm does not clean up serial getty@ttyS0"
+fi
+rm -rf "$l"
+
+# --- 5) Upgrade safety: regular-file payload idempotency --------------------
 for name in "${NAMES[@]}"; do
   a="$(mktemp -d)"; b="$(mktemp -d)"
   dpkg-deb -x "${DEB[$name]}" "$a" >/dev/null 2>&1

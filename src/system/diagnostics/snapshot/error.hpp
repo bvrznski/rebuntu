@@ -1,13 +1,31 @@
+// rebuntu::system::diagnostics::snapshot — Error types for snapshot service (Phase 5.13)
+
 #pragma once
 
-// Structural saturation XXV.
-// Architectural slot only: this file is NOT behavioral implementation evidence.
-// Preserve and implement in place according to the owning phase/subtask ledger.
+#include <string>
 
-#include <cstdint>
+namespace rebuntu::system::diagnostics::snapshot {
 
-namespace rebuntu::structural_slots {
-struct Skeleton_3feb2423cd_Error final {
-    static constexpr std::uint32_t structural_revision = 25;
+// Snapshot error codes
+enum class ErrorCode {
+    kUnknown,
+    kStorageUnavailable,
+    kInvalidRequest,
+    kTimeout,
+    kPartialEvidence,
+    kBootIdMismatch,
 };
-} // namespace rebuntu::structural_slots
+
+inline std::string to_string(ErrorCode code) {
+    switch (code) {
+        case ErrorCode::kUnknown:           return "unknown";
+        case ErrorCode::kStorageUnavailable:return "storage_unavailable";
+        case ErrorCode::kInvalidRequest:    return "invalid_request";
+        case ErrorCode::kTimeout:           return "timeout";
+        case ErrorCode::kPartialEvidence:   return "partial_evidence";
+        case ErrorCode::kBootIdMismatch:    return "boot_id_mismatch";
+    }
+    return "unknown";
+}
+
+}  // namespace rebuntu::system::diagnostics::snapshot

@@ -139,6 +139,8 @@ struct EvidenceBudget {
     };
     
     std::vector<CollectorBudget> collector_budgets;
+    
+    static EvidenceBudget make_default();
 };
 
 // ============================================================================
@@ -223,10 +225,7 @@ private:
     std::unordered_map<EvidenceKind, CollectorInfo> collectors_;
 };
 
-// ============================================================================
-// Factory functions
-// ============================================================================
-
+EvidenceBudget make_default_evidence_budget();
 std::unique_ptr<EvidenceCollector> make_evidence_collector();
 
 }  // namespace rebuntu::evidence

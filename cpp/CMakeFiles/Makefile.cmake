@@ -92,6 +92,8 @@ set(CMAKE_DEPEND_INFO_FILES
   "CMakeFiles/rebuntu-lifecycle.dir/DependInfo.cmake"
   "CMakeFiles/rebuntu-events-collector.dir/DependInfo.cmake"
   "CMakeFiles/rebuntu-evidence-collector.dir/DependInfo.cmake"
+  "CMakeFiles/rebuntu-snapshot-service.dir/DependInfo.cmake"
+  "CMakeFiles/rebuntu-snapshot-storage.dir/DependInfo.cmake"
   "CMakeFiles/rebuntu-journald-adapter.dir/DependInfo.cmake"
   "CMakeFiles/rebuntu-journal-normalizer.dir/DependInfo.cmake"
   "CMakeFiles/rebuntu-journal-analyzer.dir/DependInfo.cmake"

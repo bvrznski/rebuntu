@@ -44,6 +44,30 @@ std::vector<CollectorInfo> CollectorRegistry::enabled() const {
 }
 
 // ============================================================================
+// EvidenceBudget static member implementation
+// ============================================================================
+
+EvidenceBudget EvidenceBudget::make_default() {
+    EvidenceBudget budget;
+    budget.max_total_records = 10000;
+    budget.max_duration_ms = std::chrono::minutes(60);
+    
+    // Default budgets for each collector kind
+    budget.collector_budgets = {
+        {EvidenceKind::kJournalSlice, 500, std::chrono::seconds(30)},
+        {EvidenceKind::kSystemdState, 100, std::chrono::seconds(15)},
+        {EvidenceKind::kProcessMetadata, 200, std::chrono::seconds(15)},
+        {EvidenceKind::kKernelEvidence, 200, std::chrono::seconds(30)},
+        {EvidenceKind::kStorageState, 50, std::chrono::seconds(15)},
+        {EvidenceKind::kResourceSnapshot, 100, std::chrono::seconds(10)},
+        {EvidenceKind::kGpuProviderState, 50, std::chrono::seconds(20)},
+        {EvidenceKind::kRuntimeState, 100, std::chrono::seconds(10)},
+    };
+    
+    return budget;
+}
+
+// ============================================================================
 // EvidenceCollectorImpl implementation
 // ============================================================================
 

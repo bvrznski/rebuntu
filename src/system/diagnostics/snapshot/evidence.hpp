@@ -1,13 +1,25 @@
+// rebuntu::system::diagnostics::snapshot — Evidence utilities for snapshot service (Phase 5.13)
+
 #pragma once
 
-// Structural saturation XXV.
-// Architectural slot only: this file is NOT behavioral implementation evidence.
-// Preserve and implement in place according to the owning phase/subtask ledger.
+#include "types.hpp"
 
-#include <cstdint>
+namespace rebuntu::system::diagnostics::snapshot {
 
-namespace rebuntu::structural_slots {
-struct Skeleton_3feb2423cd_Evidence final {
-    static constexpr std::uint32_t structural_revision = 25;
+// Evidence quality indicators
+enum class EvidenceQuality {
+    kDirect,        // Direct observation from native source
+    kDeduced,       // Deterministic deduction from observations
+    kCorrelated,    // Correlation with other events (caution: not causation)
 };
-} // namespace rebuntu::structural_slots
+
+inline std::string to_string(EvidenceQuality q) {
+    switch (q) {
+        case EvidenceQuality::kDirect:     return "direct";
+        case EvidenceQuality::kDeduced:    return "deduced";
+        case EvidenceQuality::kCorrelated: return "correlated";
+    }
+    return "unknown";
+}
+
+}  // namespace rebuntu::system::diagnostics::snapshot

@@ -751,6 +751,32 @@ rebuntu-evidence-collector/fast:
 .PHONY : rebuntu-evidence-collector/fast
 
 #=============================================================================
+# Target rules for targets named rebuntu-snapshot-service
+
+# Build rule for target.
+rebuntu-snapshot-service: cmake_check_build_system
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 rebuntu-snapshot-service
+.PHONY : rebuntu-snapshot-service
+
+# fast build rule for target.
+rebuntu-snapshot-service/fast:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/rebuntu-snapshot-service.dir/build.make CMakeFiles/rebuntu-snapshot-service.dir/build
+.PHONY : rebuntu-snapshot-service/fast
+
+#=============================================================================
+# Target rules for targets named rebuntu-snapshot-storage
+
+# Build rule for target.
+rebuntu-snapshot-storage: cmake_check_build_system
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 rebuntu-snapshot-storage
+.PHONY : rebuntu-snapshot-storage
+
+# fast build rule for target.
+rebuntu-snapshot-storage/fast:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/rebuntu-snapshot-storage.dir/build.make CMakeFiles/rebuntu-snapshot-storage.dir/build
+.PHONY : rebuntu-snapshot-storage/fast
+
+#=============================================================================
 # Target rules for targets named rebuntu-journald-adapter
 
 # Build rule for target.
@@ -1215,6 +1241,54 @@ home/bvrznski/rebuntu/src/runtime/native/production_runtime.s: home/bvrznski/reb
 home/bvrznski/rebuntu/src/runtime/native/production_runtime.cpp.s:
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/rebuntu-core.dir/build.make CMakeFiles/rebuntu-core.dir/home/bvrznski/rebuntu/src/runtime/native/production_runtime.cpp.s
 .PHONY : home/bvrznski/rebuntu/src/runtime/native/production_runtime.cpp.s
+
+home/bvrznski/rebuntu/src/system/diagnostics/snapshot/file_storage.o: home/bvrznski/rebuntu/src/system/diagnostics/snapshot/file_storage.cpp.o
+.PHONY : home/bvrznski/rebuntu/src/system/diagnostics/snapshot/file_storage.o
+
+# target to build an object file
+home/bvrznski/rebuntu/src/system/diagnostics/snapshot/file_storage.cpp.o:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/rebuntu-snapshot-storage.dir/build.make CMakeFiles/rebuntu-snapshot-storage.dir/home/bvrznski/rebuntu/src/system/diagnostics/snapshot/file_storage.cpp.o
+.PHONY : home/bvrznski/rebuntu/src/system/diagnostics/snapshot/file_storage.cpp.o
+
+home/bvrznski/rebuntu/src/system/diagnostics/snapshot/file_storage.i: home/bvrznski/rebuntu/src/system/diagnostics/snapshot/file_storage.cpp.i
+.PHONY : home/bvrznski/rebuntu/src/system/diagnostics/snapshot/file_storage.i
+
+# target to preprocess a source file
+home/bvrznski/rebuntu/src/system/diagnostics/snapshot/file_storage.cpp.i:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/rebuntu-snapshot-storage.dir/build.make CMakeFiles/rebuntu-snapshot-storage.dir/home/bvrznski/rebuntu/src/system/diagnostics/snapshot/file_storage.cpp.i
+.PHONY : home/bvrznski/rebuntu/src/system/diagnostics/snapshot/file_storage.cpp.i
+
+home/bvrznski/rebuntu/src/system/diagnostics/snapshot/file_storage.s: home/bvrznski/rebuntu/src/system/diagnostics/snapshot/file_storage.cpp.s
+.PHONY : home/bvrznski/rebuntu/src/system/diagnostics/snapshot/file_storage.s
+
+# target to generate assembly for a file
+home/bvrznski/rebuntu/src/system/diagnostics/snapshot/file_storage.cpp.s:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/rebuntu-snapshot-storage.dir/build.make CMakeFiles/rebuntu-snapshot-storage.dir/home/bvrznski/rebuntu/src/system/diagnostics/snapshot/file_storage.cpp.s
+.PHONY : home/bvrznski/rebuntu/src/system/diagnostics/snapshot/file_storage.cpp.s
+
+home/bvrznski/rebuntu/src/system/diagnostics/snapshot/service.o: home/bvrznski/rebuntu/src/system/diagnostics/snapshot/service.cpp.o
+.PHONY : home/bvrznski/rebuntu/src/system/diagnostics/snapshot/service.o
+
+# target to build an object file
+home/bvrznski/rebuntu/src/system/diagnostics/snapshot/service.cpp.o:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/rebuntu-snapshot-service.dir/build.make CMakeFiles/rebuntu-snapshot-service.dir/home/bvrznski/rebuntu/src/system/diagnostics/snapshot/service.cpp.o
+.PHONY : home/bvrznski/rebuntu/src/system/diagnostics/snapshot/service.cpp.o
+
+home/bvrznski/rebuntu/src/system/diagnostics/snapshot/service.i: home/bvrznski/rebuntu/src/system/diagnostics/snapshot/service.cpp.i
+.PHONY : home/bvrznski/rebuntu/src/system/diagnostics/snapshot/service.i
+
+# target to preprocess a source file
+home/bvrznski/rebuntu/src/system/diagnostics/snapshot/service.cpp.i:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/rebuntu-snapshot-service.dir/build.make CMakeFiles/rebuntu-snapshot-service.dir/home/bvrznski/rebuntu/src/system/diagnostics/snapshot/service.cpp.i
+.PHONY : home/bvrznski/rebuntu/src/system/diagnostics/snapshot/service.cpp.i
+
+home/bvrznski/rebuntu/src/system/diagnostics/snapshot/service.s: home/bvrznski/rebuntu/src/system/diagnostics/snapshot/service.cpp.s
+.PHONY : home/bvrznski/rebuntu/src/system/diagnostics/snapshot/service.s
+
+# target to generate assembly for a file
+home/bvrznski/rebuntu/src/system/diagnostics/snapshot/service.cpp.s:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/rebuntu-snapshot-service.dir/build.make CMakeFiles/rebuntu-snapshot-service.dir/home/bvrznski/rebuntu/src/system/diagnostics/snapshot/service.cpp.s
+.PHONY : home/bvrznski/rebuntu/src/system/diagnostics/snapshot/service.cpp.s
 
 home/bvrznski/rebuntu/src/system/environment/authorization.o: home/bvrznski/rebuntu/src/system/environment/authorization.cpp.o
 .PHONY : home/bvrznski/rebuntu/src/system/environment/authorization.o
@@ -1832,6 +1906,8 @@ help:
 	@echo "... rebuntu-secrets"
 	@echo "... rebuntu-sessions"
 	@echo "... rebuntu-setup"
+	@echo "... rebuntu-snapshot-service"
+	@echo "... rebuntu-snapshot-storage"
 	@echo "... rebuntu-storage-health-monitor"
 	@echo "... rebuntu-temp-files"
 	@echo "... rebuntu-user-identity"
@@ -1877,6 +1953,12 @@ help:
 	@echo "... home/bvrznski/rebuntu/src/runtime/native/production_runtime.o"
 	@echo "... home/bvrznski/rebuntu/src/runtime/native/production_runtime.i"
 	@echo "... home/bvrznski/rebuntu/src/runtime/native/production_runtime.s"
+	@echo "... home/bvrznski/rebuntu/src/system/diagnostics/snapshot/file_storage.o"
+	@echo "... home/bvrznski/rebuntu/src/system/diagnostics/snapshot/file_storage.i"
+	@echo "... home/bvrznski/rebuntu/src/system/diagnostics/snapshot/file_storage.s"
+	@echo "... home/bvrznski/rebuntu/src/system/diagnostics/snapshot/service.o"
+	@echo "... home/bvrznski/rebuntu/src/system/diagnostics/snapshot/service.i"
+	@echo "... home/bvrznski/rebuntu/src/system/diagnostics/snapshot/service.s"
 	@echo "... home/bvrznski/rebuntu/src/system/environment/authorization.o"
 	@echo "... home/bvrznski/rebuntu/src/system/environment/authorization.i"
 	@echo "... home/bvrznski/rebuntu/src/system/environment/authorization.s"

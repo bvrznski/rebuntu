@@ -226,6 +226,28 @@ add_library(rebuntu-evidence-collector STATIC
 target_include_directories(rebuntu-evidence-collector PUBLIC ${CMAKE_CURRENT_LIST_DIR}/../src)
 target_link_libraries(rebuntu-core PUBLIC rebuntu-evidence-collector)
 
+# Snapshot Service (types only - no implementation yet, interface is in types.hpp)
+# Phase 5.13: Snapshot Service module (diagnostic snapshot creation and storage)
+add_library(rebuntu-snapshot-service STATIC
+    ${CMAKE_CURRENT_LIST_DIR}/../src/system/diagnostics/snapshot/types.hpp
+    ${CMAKE_CURRENT_LIST_DIR}/../src/system/diagnostics/snapshot/error.hpp
+    ${CMAKE_CURRENT_LIST_DIR}/../src/system/diagnostics/snapshot/evidence.hpp
+    ${CMAKE_CURRENT_LIST_DIR}/../src/system/diagnostics/snapshot/service.hpp
+    ${CMAKE_CURRENT_LIST_DIR}/../src/system/diagnostics/snapshot/service.cpp
+)
+target_include_directories(rebuntu-snapshot-service PUBLIC ${CMAKE_CURRENT_LIST_DIR}/../src/system/diagnostics/snapshot)
+target_include_directories(rebuntu-snapshot-service PUBLIC ${CMAKE_CURRENT_LIST_DIR}/../src)
+target_link_libraries(rebuntu-core PUBLIC rebuntu-snapshot-service)
+
+# Phase 5.13: FileStorage for snapshot persistence
+add_library(rebuntu-snapshot-storage STATIC
+    ${CMAKE_CURRENT_LIST_DIR}/../src/system/diagnostics/snapshot/file_storage.hpp
+    ${CMAKE_CURRENT_LIST_DIR}/../src/system/diagnostics/snapshot/file_storage.cpp
+)
+target_include_directories(rebuntu-snapshot-storage PUBLIC ${CMAKE_CURRENT_LIST_DIR}/../src/system/diagnostics/snapshot)
+target_include_directories(rebuntu-snapshot-storage PUBLIC ${CMAKE_CURRENT_LIST_DIR}/../src)
+target_link_libraries(rebuntu-core PUBLIC rebuntu-snapshot-storage)
+
 # Phase 5.2: Journald acquisition adapter module
 add_library(rebuntu-journald-adapter STATIC
     ${CMAKE_CURRENT_LIST_DIR}/../src/adapters/journald.hpp

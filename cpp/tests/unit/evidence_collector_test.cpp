@@ -2,10 +2,13 @@
 //
 // Unit tests for the evidence collector module.
 
+#include <runtime/contracts.hpp>
 #include <system/evidence/collector.hpp>
 #include <iostream>
 
 using namespace rebuntu::evidence;
+
+using core::SemanticStatus;
 
 void test_factory_creates_instance() {
     std::cout << "[TEST] Factory creates instance...";
@@ -80,7 +83,7 @@ void test_evidence_request_make() {
 void test_evidence_budget_make_default() {
     std::cout << "[TEST] EvidenceBudget::make_default sets values...";
     
-    auto budget = EvidenceBudget::make_default();
+    auto budget = rebuntu::evidence::EvidenceBudget::make_default();
     
     if (budget.max_total_records == 0) {
         std::cerr << " [FAIL - max_total_records is 0]\n";

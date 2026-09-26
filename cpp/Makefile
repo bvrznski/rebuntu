@@ -855,6 +855,32 @@ rebuntu-netlink-link-test/fast:
 .PHONY : rebuntu-netlink-link-test/fast
 
 #=============================================================================
+# Target rules for targets named rebuntu-netlink-route
+
+# Build rule for target.
+rebuntu-netlink-route: cmake_check_build_system
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 rebuntu-netlink-route
+.PHONY : rebuntu-netlink-route
+
+# fast build rule for target.
+rebuntu-netlink-route/fast:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/rebuntu-netlink-route.dir/build.make CMakeFiles/rebuntu-netlink-route.dir/build
+.PHONY : rebuntu-netlink-route/fast
+
+#=============================================================================
+# Target rules for targets named rebuntu-netlink-route-test
+
+# Build rule for target.
+rebuntu-netlink-route-test: cmake_check_build_system
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 rebuntu-netlink-route-test
+.PHONY : rebuntu-netlink-route-test
+
+# fast build rule for target.
+rebuntu-netlink-route-test/fast:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/rebuntu-netlink-route-test.dir/build.make CMakeFiles/rebuntu-netlink-route-test.dir/build
+.PHONY : rebuntu-netlink-route-test/fast
+
+#=============================================================================
 # Target rules for targets named rebuntu-journal-normalizer
 
 # Build rule for target.
@@ -1129,6 +1155,30 @@ home/bvrznski/rebuntu/src/adapters/netlink/link/implementation.s: home/bvrznski/
 home/bvrznski/rebuntu/src/adapters/netlink/link/implementation.cpp.s:
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/rebuntu-netlink-link.dir/build.make CMakeFiles/rebuntu-netlink-link.dir/home/bvrznski/rebuntu/src/adapters/netlink/link/implementation.cpp.s
 .PHONY : home/bvrznski/rebuntu/src/adapters/netlink/link/implementation.cpp.s
+
+home/bvrznski/rebuntu/src/adapters/netlink/route/implementation.o: home/bvrznski/rebuntu/src/adapters/netlink/route/implementation.cpp.o
+.PHONY : home/bvrznski/rebuntu/src/adapters/netlink/route/implementation.o
+
+# target to build an object file
+home/bvrznski/rebuntu/src/adapters/netlink/route/implementation.cpp.o:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/rebuntu-netlink-route.dir/build.make CMakeFiles/rebuntu-netlink-route.dir/home/bvrznski/rebuntu/src/adapters/netlink/route/implementation.cpp.o
+.PHONY : home/bvrznski/rebuntu/src/adapters/netlink/route/implementation.cpp.o
+
+home/bvrznski/rebuntu/src/adapters/netlink/route/implementation.i: home/bvrznski/rebuntu/src/adapters/netlink/route/implementation.cpp.i
+.PHONY : home/bvrznski/rebuntu/src/adapters/netlink/route/implementation.i
+
+# target to preprocess a source file
+home/bvrznski/rebuntu/src/adapters/netlink/route/implementation.cpp.i:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/rebuntu-netlink-route.dir/build.make CMakeFiles/rebuntu-netlink-route.dir/home/bvrznski/rebuntu/src/adapters/netlink/route/implementation.cpp.i
+.PHONY : home/bvrznski/rebuntu/src/adapters/netlink/route/implementation.cpp.i
+
+home/bvrznski/rebuntu/src/adapters/netlink/route/implementation.s: home/bvrznski/rebuntu/src/adapters/netlink/route/implementation.cpp.s
+.PHONY : home/bvrznski/rebuntu/src/adapters/netlink/route/implementation.s
+
+# target to generate assembly for a file
+home/bvrznski/rebuntu/src/adapters/netlink/route/implementation.cpp.s:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/rebuntu-netlink-route.dir/build.make CMakeFiles/rebuntu-netlink-route.dir/home/bvrznski/rebuntu/src/adapters/netlink/route/implementation.cpp.s
+.PHONY : home/bvrznski/rebuntu/src/adapters/netlink/route/implementation.cpp.s
 
 home/bvrznski/rebuntu/src/adapters/procfs/mounts/implementation.o: home/bvrznski/rebuntu/src/adapters/procfs/mounts/implementation.cpp.o
 .PHONY : home/bvrznski/rebuntu/src/adapters/procfs/mounts/implementation.o
@@ -2138,6 +2188,30 @@ tests/unit/netlink_link_test.cpp.s:
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/rebuntu-netlink-link-test.dir/build.make CMakeFiles/rebuntu-netlink-link-test.dir/tests/unit/netlink_link_test.cpp.s
 .PHONY : tests/unit/netlink_link_test.cpp.s
 
+tests/unit/netlink_route_test.o: tests/unit/netlink_route_test.cpp.o
+.PHONY : tests/unit/netlink_route_test.o
+
+# target to build an object file
+tests/unit/netlink_route_test.cpp.o:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/rebuntu-netlink-route-test.dir/build.make CMakeFiles/rebuntu-netlink-route-test.dir/tests/unit/netlink_route_test.cpp.o
+.PHONY : tests/unit/netlink_route_test.cpp.o
+
+tests/unit/netlink_route_test.i: tests/unit/netlink_route_test.cpp.i
+.PHONY : tests/unit/netlink_route_test.i
+
+# target to preprocess a source file
+tests/unit/netlink_route_test.cpp.i:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/rebuntu-netlink-route-test.dir/build.make CMakeFiles/rebuntu-netlink-route-test.dir/tests/unit/netlink_route_test.cpp.i
+.PHONY : tests/unit/netlink_route_test.cpp.i
+
+tests/unit/netlink_route_test.s: tests/unit/netlink_route_test.cpp.s
+.PHONY : tests/unit/netlink_route_test.s
+
+# target to generate assembly for a file
+tests/unit/netlink_route_test.cpp.s:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/rebuntu-netlink-route-test.dir/build.make CMakeFiles/rebuntu-netlink-route-test.dir/tests/unit/netlink_route_test.cpp.s
+.PHONY : tests/unit/netlink_route_test.cpp.s
+
 # Help Target
 help:
 	@echo "The following are some of the valid targets for this Makefile:"
@@ -2202,6 +2276,8 @@ help:
 	@echo "... rebuntu-md-raid-adapter"
 	@echo "... rebuntu-netlink-link"
 	@echo "... rebuntu-netlink-link-test"
+	@echo "... rebuntu-netlink-route"
+	@echo "... rebuntu-netlink-route-test"
 	@echo "... rebuntu-ownership"
 	@echo "... rebuntu-privilege"
 	@echo "... rebuntu-procfs-mounts"
@@ -2230,6 +2306,9 @@ help:
 	@echo "... home/bvrznski/rebuntu/src/adapters/netlink/link/implementation.o"
 	@echo "... home/bvrznski/rebuntu/src/adapters/netlink/link/implementation.i"
 	@echo "... home/bvrznski/rebuntu/src/adapters/netlink/link/implementation.s"
+	@echo "... home/bvrznski/rebuntu/src/adapters/netlink/route/implementation.o"
+	@echo "... home/bvrznski/rebuntu/src/adapters/netlink/route/implementation.i"
+	@echo "... home/bvrznski/rebuntu/src/adapters/netlink/route/implementation.s"
 	@echo "... home/bvrznski/rebuntu/src/adapters/procfs/mounts/implementation.o"
 	@echo "... home/bvrznski/rebuntu/src/adapters/procfs/mounts/implementation.i"
 	@echo "... home/bvrznski/rebuntu/src/adapters/procfs/mounts/implementation.s"
@@ -2356,6 +2435,9 @@ help:
 	@echo "... tests/unit/netlink_link_test.o"
 	@echo "... tests/unit/netlink_link_test.i"
 	@echo "... tests/unit/netlink_link_test.s"
+	@echo "... tests/unit/netlink_route_test.o"
+	@echo "... tests/unit/netlink_route_test.i"
+	@echo "... tests/unit/netlink_route_test.s"
 .PHONY : help
 
 

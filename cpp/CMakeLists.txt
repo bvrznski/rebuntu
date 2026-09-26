@@ -295,6 +295,21 @@ add_executable(rebuntu-netlink-link-test
 target_link_libraries(rebuntu-netlink-link-test PRIVATE rebuntu-netlink-link rebuntu-core)
 add_test(NAME netlink_link_test COMMAND rebuntu-netlink-link-test)
 
+# Phase 5.22: Netlink Route Observation Adapter module
+add_library(rebuntu-netlink-route STATIC
+    ${CMAKE_CURRENT_LIST_DIR}/../src/adapters/netlink/route/types.hpp
+    ${CMAKE_CURRENT_LIST_DIR}/../src/adapters/netlink/route/implementation.cpp
+)
+target_include_directories(rebuntu-netlink-route PUBLIC ${CMAKE_CURRENT_LIST_DIR}/../src)
+target_link_libraries(rebuntu-core PUBLIC rebuntu-netlink-route)
+
+# Netlink Route Discovery unit tests
+add_executable(rebuntu-netlink-route-test
+    ${CMAKE_CURRENT_LIST_DIR}/tests/unit/netlink_route_test.cpp
+)
+target_link_libraries(rebuntu-netlink-route-test PRIVATE rebuntu-netlink-route rebuntu-core)
+add_test(NAME netlink_route_test COMMAND rebuntu-netlink-route-test)
+
 # Phase 5.3: Journal filtering and normalization module
 add_library(rebuntu-journal-normalizer STATIC
     ${CMAKE_CURRENT_LIST_DIR}/../src/adapters/journal_normalizer.hpp

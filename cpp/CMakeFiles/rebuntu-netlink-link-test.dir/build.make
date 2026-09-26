@@ -120,6 +120,7 @@ rebuntu-netlink-link-test: librebuntu-journald-adapter.a
 rebuntu-netlink-link-test: librebuntu-procfs-mounts.a
 rebuntu-netlink-link-test: librebuntu-encrypted-storage-adapter.a
 rebuntu-netlink-link-test: librebuntu-md-raid-adapter.a
+rebuntu-netlink-link-test: librebuntu-netlink-route.a
 rebuntu-netlink-link-test: librebuntu-journal-normalizer.a
 rebuntu-netlink-link-test: librebuntu-journal-analyzer.a
 rebuntu-netlink-link-test: librebuntu-health-monitor.a

@@ -1,4 +1,0 @@
-hang_stall_jam_detector_test 1 0.254592
-netlink_link_test 2 0.0121405
-netlink_route_test 2 0.00775865
----

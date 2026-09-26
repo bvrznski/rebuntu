@@ -310,6 +310,21 @@ add_executable(rebuntu-netlink-route-test
 target_link_libraries(rebuntu-netlink-route-test PRIVATE rebuntu-netlink-route rebuntu-core)
 add_test(NAME netlink_route_test COMMAND rebuntu-netlink-route-test)
 
+# Phase 5.23: Netlink Socket/Listener Observation Adapter module
+add_library(rebuntu-netlink-socket STATIC
+    ${CMAKE_CURRENT_LIST_DIR}/../src/adapters/netlink/socket/types.hpp
+    ${CMAKE_CURRENT_LIST_DIR}/../src/adapters/netlink/socket/implementation.cpp
+)
+target_include_directories(rebuntu-netlink-socket PUBLIC ${CMAKE_CURRENT_LIST_DIR}/../src)
+target_link_libraries(rebuntu-core PUBLIC rebuntu-netlink-socket)
+
+# Netlink Socket Discovery unit tests
+add_executable(rebuntu-netlink-socket-test
+    ${CMAKE_CURRENT_LIST_DIR}/tests/unit/netlink_socket_test.cpp
+)
+target_link_libraries(rebuntu-netlink-socket-test PRIVATE rebuntu-netlink-socket rebuntu-core)
+add_test(NAME netlink_socket_test COMMAND rebuntu-netlink-socket-test)
+
 # Phase 5.3: Journal filtering and normalization module
 add_library(rebuntu-journal-normalizer STATIC
     ${CMAKE_CURRENT_LIST_DIR}/../src/adapters/journal_normalizer.hpp

@@ -1,0 +1,13 @@
+#!/bin/sh
+set -e
+
+# Enable a serial-console TTY (ttyS0) so headless/serial access works out of the
+# box on the live medium. A plain wants-symlink (no systemctl/dbus required)
+# also works when the package is installed into a chroot rootfs.
+if [ -d /lib/systemd/system ]; then
+    WANTS=/etc/systemd/system/getty.target.wants
+    mkdir -p "$WANTS"
+    ln -sfn /lib/systemd/system/getty@.service "$WANTS/getty@ttyS0.service"
+fi
+
+exit 0

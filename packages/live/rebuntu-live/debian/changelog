@@ -1,0 +1,6 @@
+rebuntu-live (0.1.0-1) jammy; urgency=medium
+
+  * New package: deterministic live user, live-media sudo policy and a
+    serial-console TTY for the Rebuntu live (casper) medium.
+
+ -- Rebuntu Project <rebuntu@localhost>  Fri, 26 Sep 2026 00:00:00 +0200

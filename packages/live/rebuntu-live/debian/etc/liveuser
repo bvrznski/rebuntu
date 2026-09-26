@@ -1,0 +1,11 @@
+# Deterministic live-session user for the Rebuntu live medium.
+#
+# This is a throwaway user created on the live overlay at boot (casper). It
+# does not exist on an installed system; it is the single, predictable account
+# a user gets when they "Try Rebuntu".
+username=live
+full_name=Live User
+home=/home/live
+shell=/bin/bash
+groups=sudo
+passwordless_sudo=true

@@ -1,0 +1,4 @@
+# Rebuntu live-session user: passwordless sudo on the live medium.
+# The "live" user is a throwaway account created on the live overlay at boot;
+# it does not exist on an installed system.
+live ALL=(ALL) NOPASSWD: ALL

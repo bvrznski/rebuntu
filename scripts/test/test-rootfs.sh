@@ -13,7 +13,7 @@ grep -q '^ID_LIKE="ubuntu debian"$' "$TARGET/usr/lib/os-release" || fail "ancest
 [[ "$(cat "$TARGET/etc/hostname")" == "rebuntu" ]] || fail "hostname"
 [[ -f "$TARGET/etc/rebuntu-release" ]] || fail "/etc/rebuntu-release missing"
 
-for pkg in rebuntu-release rebuntu-branding rebuntu-plymouth-theme rebuntu-base; do
+for pkg in rebuntu-release rebuntu-branding rebuntu-plymouth-theme rebuntu-live rebuntu-base; do
   sudo chroot "$TARGET" dpkg-query -W -f='${Status}\n' "$pkg" 2>/dev/null |
     grep -q 'install ok installed' || fail "$pkg not installed"
 done

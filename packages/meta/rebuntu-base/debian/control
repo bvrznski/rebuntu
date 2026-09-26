@@ -8,6 +8,6 @@ Rules-Requires-Root: no
 
 Package: rebuntu-base
 Architecture: all
-Depends: ${misc:Depends}, rebuntu-release (= ${binary:Version}), rebuntu-branding (= ${binary:Version})
+Depends: ${misc:Depends}, rebuntu-release (= ${binary:Version}), rebuntu-branding (= ${binary:Version}), rebuntu-live (= ${binary:Version})
 Description: Base Rebuntu distribution metapackage
  Rebuntu distribution component.

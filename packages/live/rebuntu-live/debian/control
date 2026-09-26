@@ -1,0 +1,16 @@
+Source: rebuntu-live
+Section: admin
+Priority: optional
+Maintainer: Rebuntu Project <rebuntu@localhost>
+Build-Depends: debhelper-compat (= 13)
+Standards-Version: 4.6.2
+Rules-Requires-Root: no
+
+Package: rebuntu-live
+Architecture: all
+Depends: ${misc:Depends}, sudo
+Description: Rebuntu live session support
+ Provides the deterministic live user, a sane live-media sudo policy and a
+ serial-console TTY for the Rebuntu live (casper) environment. This is a
+ live-image component: it creates the throwaway "live" user used on the
+ medium and is not part of the installed-system package set.

@@ -39,3 +39,12 @@ models/
 packages/**/*.deb
 packages/**/*.changes
 packages/**/*.buildinfo
+
+# --- Rebuntu distribution packaging: allow committed build scripts, exclude dh artifacts ---
+!scripts/build/
+!scripts/build/*
+packages/**/debian/generated/
+packages/**/debian/debhelper-build-stamp
+packages/**/debian/files
+packages/**/debian/*.substvars
+packages/live/rebuntu-live/debian/rebuntu-live/

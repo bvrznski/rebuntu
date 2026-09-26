@@ -38,7 +38,7 @@ sudo chroot "$TARGET" env DEBIAN_FRONTEND=noninteractive \
   apt-get install -y --no-install-recommends "${pkgs[@]}"
 
 # Install our locally built .debs. Install leaf packages first, metapackage last.
-for name in rebuntu-release rebuntu-branding rebuntu-plymouth-theme; do
+for name in rebuntu-release rebuntu-branding rebuntu-plymouth-theme rebuntu-live; do
   deb="$(find "$ART" -maxdepth 1 -type f -name "${name}_*.deb" | sort | tail -n1)"
   [[ -n "$deb" ]] || { echo "Missing $name .deb in $ART" >&2; exit 1; }
   sudo cp "$deb" "$TARGET/tmp/"

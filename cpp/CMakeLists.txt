@@ -321,6 +321,16 @@ target_include_directories(rebuntu-gpu-health-monitor PUBLIC ${CMAKE_CURRENT_LIS
 target_include_directories(rebuntu-gpu-health-monitor PUBLIC ${CMAKE_CURRENT_LIST_DIR}/../src)
 target_link_libraries(rebuntu-core PUBLIC rebuntu-gpu-health-monitor)
 
+# Phase 5.14: Internal Alert Service module
+add_library(rebuntu-internal-alerts STATIC
+    ${CMAKE_CURRENT_LIST_DIR}/../src/modules/internal_alerts/types.hpp
+    ${CMAKE_CURRENT_LIST_DIR}/../src/modules/internal_alerts/processor.hpp
+    ${CMAKE_CURRENT_LIST_DIR}/../src/modules/internal_alerts/processor.cpp
+)
+target_include_directories(rebuntu-internal-alerts PUBLIC ${CMAKE_CURRENT_LIST_DIR}/../src/modules/internal_alerts)
+target_include_directories(rebuntu-internal-alerts PUBLIC ${CMAKE_CURRENT_LIST_DIR}/../src)
+target_link_libraries(rebuntu-core PUBLIC rebuntu-internal-alerts)
+
 # Phase 5.11: Hang / Stall / Jam Detection module
 add_library(rebuntu-hang-stall-jam-detector STATIC
     ${CMAKE_CURRENT_LIST_DIR}/../src/modules/hang_stall_jam/types.hpp

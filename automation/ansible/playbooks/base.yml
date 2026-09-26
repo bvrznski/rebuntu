@@ -1,0 +1,5 @@
+---
+- name: Rebuntu base convergence
+  hosts: rebuntu_local
+  become: true
+  roles: [base]

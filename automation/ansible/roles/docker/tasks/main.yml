@@ -1,0 +1,6 @@
+---
+- ansible.builtin.apt:
+    name: [docker.io, docker-compose-v2]
+    state: present
+    update_cache: true
+- ansible.builtin.systemd: {name: docker, enabled: true, state: started}

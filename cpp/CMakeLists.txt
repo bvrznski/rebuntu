@@ -280,6 +280,21 @@ add_library(rebuntu-md-raid-adapter STATIC
 target_include_directories(rebuntu-md-raid-adapter PUBLIC ${CMAKE_CURRENT_LIST_DIR}/../src)
 target_link_libraries(rebuntu-core PUBLIC rebuntu-md-raid-adapter)
 
+# Phase 5.21: Netlink Link/Interface Discovery Adapter module
+add_library(rebuntu-netlink-link STATIC
+    ${CMAKE_CURRENT_LIST_DIR}/../src/adapters/netlink/link/types.hpp
+    ${CMAKE_CURRENT_LIST_DIR}/../src/adapters/netlink/link/implementation.cpp
+)
+target_include_directories(rebuntu-netlink-link PUBLIC ${CMAKE_CURRENT_LIST_DIR}/../src)
+target_link_libraries(rebuntu-core PUBLIC rebuntu-netlink-link)
+
+# Netlink Link Discovery unit tests
+add_executable(rebuntu-netlink-link-test
+    ${CMAKE_CURRENT_LIST_DIR}/tests/unit/netlink_link_test.cpp
+)
+target_link_libraries(rebuntu-netlink-link-test PRIVATE rebuntu-netlink-link rebuntu-core)
+add_test(NAME netlink_link_test COMMAND rebuntu-netlink-link-test)
+
 # Phase 5.3: Journal filtering and normalization module
 add_library(rebuntu-journal-normalizer STATIC
     ${CMAKE_CURRENT_LIST_DIR}/../src/adapters/journal_normalizer.hpp

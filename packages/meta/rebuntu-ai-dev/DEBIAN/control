@@ -1,0 +1,8 @@
+Package: rebuntu-ai-dev
+Version: 0.1.0-1
+Section: metapackages
+Priority: optional
+Architecture: all
+Depends: rebuntu-ai, build-essential, cmake, ninja-build, pkg-config, python3-dev
+Maintainer: Rebuntu Project
+Description: Rebuntu AI developer foundation

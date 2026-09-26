@@ -1,0 +1,8 @@
+[Desktop Entry]
+Name=Rebuntu
+Comment=Rebuntu GNOME Session
+Exec=gnome-session --session=rebuntu
+TryExec=gnome-session
+Type=Application
+DesktopNames=Rebuntu;GNOME;
+X-GDM-SessionRegisters=true

@@ -1,0 +1,13 @@
+#cloud-config
+autoinstall:
+  version: 1
+  identity:
+    hostname: rebuntu
+    username: rebuntu
+    password: "$6$REPLACE_ME"
+  locale: en_US.UTF-8
+  keyboard: {layout: us}
+  storage: {layout: {name: direct}}
+  packages: [rebuntu-desktop]
+  late-commands:
+    - curtin in-target --target=/target -- systemctl set-default graphical.target

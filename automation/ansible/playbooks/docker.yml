@@ -1,0 +1,5 @@
+---
+- name: Rebuntu docker convergence
+  hosts: rebuntu_local
+  become: true
+  roles: [docker]

@@ -1,0 +1,5 @@
+---
+- ansible.builtin.apt:
+    name: [rebuntu-base, rebuntu-release, rebuntu-branding]
+    state: present
+    update_cache: true

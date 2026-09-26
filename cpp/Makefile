@@ -829,6 +829,32 @@ rebuntu-md-raid-adapter/fast:
 .PHONY : rebuntu-md-raid-adapter/fast
 
 #=============================================================================
+# Target rules for targets named rebuntu-netlink-link
+
+# Build rule for target.
+rebuntu-netlink-link: cmake_check_build_system
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 rebuntu-netlink-link
+.PHONY : rebuntu-netlink-link
+
+# fast build rule for target.
+rebuntu-netlink-link/fast:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/rebuntu-netlink-link.dir/build.make CMakeFiles/rebuntu-netlink-link.dir/build
+.PHONY : rebuntu-netlink-link/fast
+
+#=============================================================================
+# Target rules for targets named rebuntu-netlink-link-test
+
+# Build rule for target.
+rebuntu-netlink-link-test: cmake_check_build_system
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 rebuntu-netlink-link-test
+.PHONY : rebuntu-netlink-link-test
+
+# fast build rule for target.
+rebuntu-netlink-link-test/fast:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/rebuntu-netlink-link-test.dir/build.make CMakeFiles/rebuntu-netlink-link-test.dir/build
+.PHONY : rebuntu-netlink-link-test/fast
+
+#=============================================================================
 # Target rules for targets named rebuntu-journal-normalizer
 
 # Build rule for target.
@@ -1079,6 +1105,30 @@ home/bvrznski/rebuntu/src/adapters/kernel_fault_detector.s: home/bvrznski/rebunt
 home/bvrznski/rebuntu/src/adapters/kernel_fault_detector.cpp.s:
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/rebuntu-kernel-fault-detector.dir/build.make CMakeFiles/rebuntu-kernel-fault-detector.dir/home/bvrznski/rebuntu/src/adapters/kernel_fault_detector.cpp.s
 .PHONY : home/bvrznski/rebuntu/src/adapters/kernel_fault_detector.cpp.s
+
+home/bvrznski/rebuntu/src/adapters/netlink/link/implementation.o: home/bvrznski/rebuntu/src/adapters/netlink/link/implementation.cpp.o
+.PHONY : home/bvrznski/rebuntu/src/adapters/netlink/link/implementation.o
+
+# target to build an object file
+home/bvrznski/rebuntu/src/adapters/netlink/link/implementation.cpp.o:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/rebuntu-netlink-link.dir/build.make CMakeFiles/rebuntu-netlink-link.dir/home/bvrznski/rebuntu/src/adapters/netlink/link/implementation.cpp.o
+.PHONY : home/bvrznski/rebuntu/src/adapters/netlink/link/implementation.cpp.o
+
+home/bvrznski/rebuntu/src/adapters/netlink/link/implementation.i: home/bvrznski/rebuntu/src/adapters/netlink/link/implementation.cpp.i
+.PHONY : home/bvrznski/rebuntu/src/adapters/netlink/link/implementation.i
+
+# target to preprocess a source file
+home/bvrznski/rebuntu/src/adapters/netlink/link/implementation.cpp.i:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/rebuntu-netlink-link.dir/build.make CMakeFiles/rebuntu-netlink-link.dir/home/bvrznski/rebuntu/src/adapters/netlink/link/implementation.cpp.i
+.PHONY : home/bvrznski/rebuntu/src/adapters/netlink/link/implementation.cpp.i
+
+home/bvrznski/rebuntu/src/adapters/netlink/link/implementation.s: home/bvrznski/rebuntu/src/adapters/netlink/link/implementation.cpp.s
+.PHONY : home/bvrznski/rebuntu/src/adapters/netlink/link/implementation.s
+
+# target to generate assembly for a file
+home/bvrznski/rebuntu/src/adapters/netlink/link/implementation.cpp.s:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/rebuntu-netlink-link.dir/build.make CMakeFiles/rebuntu-netlink-link.dir/home/bvrznski/rebuntu/src/adapters/netlink/link/implementation.cpp.s
+.PHONY : home/bvrznski/rebuntu/src/adapters/netlink/link/implementation.cpp.s
 
 home/bvrznski/rebuntu/src/adapters/procfs/mounts/implementation.o: home/bvrznski/rebuntu/src/adapters/procfs/mounts/implementation.cpp.o
 .PHONY : home/bvrznski/rebuntu/src/adapters/procfs/mounts/implementation.o
@@ -2064,6 +2114,30 @@ tests/unit/hang_stall_jam_detector_test.cpp.s:
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/rebuntu-hang-stall-jam-detector-test.dir/build.make CMakeFiles/rebuntu-hang-stall-jam-detector-test.dir/tests/unit/hang_stall_jam_detector_test.cpp.s
 .PHONY : tests/unit/hang_stall_jam_detector_test.cpp.s
 
+tests/unit/netlink_link_test.o: tests/unit/netlink_link_test.cpp.o
+.PHONY : tests/unit/netlink_link_test.o
+
+# target to build an object file
+tests/unit/netlink_link_test.cpp.o:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/rebuntu-netlink-link-test.dir/build.make CMakeFiles/rebuntu-netlink-link-test.dir/tests/unit/netlink_link_test.cpp.o
+.PHONY : tests/unit/netlink_link_test.cpp.o
+
+tests/unit/netlink_link_test.i: tests/unit/netlink_link_test.cpp.i
+.PHONY : tests/unit/netlink_link_test.i
+
+# target to preprocess a source file
+tests/unit/netlink_link_test.cpp.i:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/rebuntu-netlink-link-test.dir/build.make CMakeFiles/rebuntu-netlink-link-test.dir/tests/unit/netlink_link_test.cpp.i
+.PHONY : tests/unit/netlink_link_test.cpp.i
+
+tests/unit/netlink_link_test.s: tests/unit/netlink_link_test.cpp.s
+.PHONY : tests/unit/netlink_link_test.s
+
+# target to generate assembly for a file
+tests/unit/netlink_link_test.cpp.s:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/rebuntu-netlink-link-test.dir/build.make CMakeFiles/rebuntu-netlink-link-test.dir/tests/unit/netlink_link_test.cpp.s
+.PHONY : tests/unit/netlink_link_test.cpp.s
+
 # Help Target
 help:
 	@echo "The following are some of the valid targets for this Makefile:"
@@ -2126,6 +2200,8 @@ help:
 	@echo "... rebuntu-lifecycle"
 	@echo "... rebuntu-locks"
 	@echo "... rebuntu-md-raid-adapter"
+	@echo "... rebuntu-netlink-link"
+	@echo "... rebuntu-netlink-link-test"
 	@echo "... rebuntu-ownership"
 	@echo "... rebuntu-privilege"
 	@echo "... rebuntu-procfs-mounts"
@@ -2151,6 +2227,9 @@ help:
 	@echo "... home/bvrznski/rebuntu/src/adapters/kernel_fault_detector.o"
 	@echo "... home/bvrznski/rebuntu/src/adapters/kernel_fault_detector.i"
 	@echo "... home/bvrznski/rebuntu/src/adapters/kernel_fault_detector.s"
+	@echo "... home/bvrznski/rebuntu/src/adapters/netlink/link/implementation.o"
+	@echo "... home/bvrznski/rebuntu/src/adapters/netlink/link/implementation.i"
+	@echo "... home/bvrznski/rebuntu/src/adapters/netlink/link/implementation.s"
 	@echo "... home/bvrznski/rebuntu/src/adapters/procfs/mounts/implementation.o"
 	@echo "... home/bvrznski/rebuntu/src/adapters/procfs/mounts/implementation.i"
 	@echo "... home/bvrznski/rebuntu/src/adapters/procfs/mounts/implementation.s"
@@ -2274,6 +2353,9 @@ help:
 	@echo "... tests/unit/hang_stall_jam_detector_test.o"
 	@echo "... tests/unit/hang_stall_jam_detector_test.i"
 	@echo "... tests/unit/hang_stall_jam_detector_test.s"
+	@echo "... tests/unit/netlink_link_test.o"
+	@echo "... tests/unit/netlink_link_test.i"
+	@echo "... tests/unit/netlink_link_test.s"
 .PHONY : help
 
 

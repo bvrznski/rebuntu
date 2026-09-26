@@ -1,0 +1,5 @@
+---
+- name: Rebuntu desktop convergence
+  hosts: rebuntu_local
+  become: true
+  roles: [desktop]

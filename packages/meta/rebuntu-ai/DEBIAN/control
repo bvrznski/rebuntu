@@ -1,0 +1,8 @@
+Package: rebuntu-ai
+Version: 0.1.0-1
+Section: metapackages
+Priority: optional
+Architecture: all
+Depends: python3, python3-venv, python3-pip, pipx, pciutils, lshw, rebuntu-desktop
+Maintainer: Rebuntu Project
+Description: Rebuntu hardware-neutral AI runtime foundation

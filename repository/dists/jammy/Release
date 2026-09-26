@@ -1,0 +1,16 @@
+Origin: Rebuntu
+Label: Rebuntu
+Suite: jammy
+Codename: jammy
+Architectures: amd64 all
+Components: main
+Description: Rebuntu package repository
+Date: Sat, 26 Sep 2026 19:03:07 +0000
+MD5Sum:
+ 3e27628b9f98efdc5b4f221044531e0a             4849 main/binary-amd64/Packages
+ d97b98a3f769607c30a95e19ff3b470e             1815 main/binary-amd64/Packages.gz
+ 6816065dd549ec37137e617e20fce58f             1840 main/binary-amd64/Packages.xz
+SHA256:
+ 50c2072c934090c63db7115d11e671ae96ae23bb7bc7486eb239f39d7e664121             4849 main/binary-amd64/Packages
+ 2a10b21c24444317add8656fa6b9ca2cbd0fb66008f80325ed9de5d67b34b5b4             1815 main/binary-amd64/Packages.gz
+ ab26f2a254b36358f2bf617ce3db01108e33154cd2a30c49d88b1eba54ebe918             1840 main/binary-amd64/Packages.xz

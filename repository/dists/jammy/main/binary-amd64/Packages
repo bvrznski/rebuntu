@@ -1,0 +1,139 @@
+Package: rebuntu-ai
+Version: 0.1.0-1
+Architecture: all
+Maintainer: Rebuntu Project
+Depends: python3, python3-venv, python3-pip, pipx, pciutils, lshw, rebuntu-desktop
+Filename: pool/main/r/rebuntu/rebuntu-ai_0.1.0-1_all.deb
+Size: 750
+MD5sum: c9d42d30fd0aa32cc5fab0a399be74da
+SHA1: fa41286ccc9544568ed15e410de23089f49dd6b1
+SHA256: 405c58c309cf976fa42488d558dea1218c274a8123d7cf99dccfd36c98a03df1
+Section: metapackages
+Priority: optional
+Description: Rebuntu hardware-neutral AI runtime foundation
+
+Package: rebuntu-ai-dev
+Version: 0.1.0-1
+Architecture: all
+Maintainer: Rebuntu Project
+Depends: rebuntu-ai, build-essential, cmake, ninja-build, pkg-config, python3-dev
+Filename: pool/main/r/rebuntu/rebuntu-ai-dev_0.1.0-1_all.deb
+Size: 750
+MD5sum: d11caa0fcdfb89c3fabbdbdaf5ead416
+SHA1: 384e85fd5224d74b0e978726c2109251e40aa2d2
+SHA256: e2f372c1183e409d0ffd2424bd62ba7615e68082d858e1b20d4d70dcebbd23bb
+Section: metapackages
+Priority: optional
+Description: Rebuntu AI developer foundation
+
+Package: rebuntu-base
+Version: 0.1.0-1
+Architecture: all
+Maintainer: Rebuntu Project <rebuntu@localhost>
+Installed-Size: 7
+Depends: rebuntu-release (= 0.1.0-1), rebuntu-branding (= 0.1.0-1)
+Filename: pool/main/r/rebuntu/rebuntu-base_0.1.0-1_all.deb
+Size: 900
+MD5sum: 5530abb7d78b695fea010fa3175a064e
+SHA1: 021d21af0c3a7db67a5d802551120c2a65b0b519
+SHA256: 3e0db7e2764415969891cb50e6ee20b43d6ea67a1a8e74571294cd2f03f6abde
+Section: admin
+Priority: optional
+Description: Base Rebuntu distribution metapackage
+ Rebuntu distribution component.
+
+Package: rebuntu-branding
+Version: 0.1.0-1
+Architecture: all
+Maintainer: Rebuntu Project <rebuntu@localhost>
+Installed-Size: 25
+Filename: pool/main/r/rebuntu/rebuntu-branding_0.1.0-1_all.deb
+Size: 1926
+MD5sum: 02addf79887a8499485833e8f10d4fe3
+SHA1: 60762591f59e6f34c5cd2258f8c9a872d63d696a
+SHA256: 38082fe0768426026dfcda4b197c622a74a3d964ce3a606a4be839fbdc6013c8
+Section: admin
+Priority: optional
+Description: Canonical Rebuntu branding assets
+ Rebuntu distribution component.
+
+Package: rebuntu-desktop
+Version: 0.1.0-1
+Architecture: all
+Maintainer: Rebuntu Project
+Depends: gdm3, gnome-shell, gnome-session, mutter, network-manager, xserver-xorg, xwayland, dbus-user-session, policykit-1, rebuntu-base, rebuntu-branding
+Filename: pool/main/r/rebuntu/rebuntu-desktop_0.1.0-1_all.deb
+Size: 794
+MD5sum: 21dbe0bb32973cc36d99e0f93e24d11b
+SHA1: c12cd28f7caa3f171d0149e163717575dac119d9
+SHA256: 115ee47ac3a95a8b5cbebd27aa966a65cfab71d68f518199fa20e8f05243a8b8
+Section: metapackages
+Priority: optional
+Description: Rebuntu GNOME desktop profile
+
+Package: rebuntu-live
+Version: 0.1.0-1
+Architecture: all
+Maintainer: Rebuntu Project <rebuntu@localhost>
+Installed-Size: 9
+Depends: sudo
+Filename: pool/main/r/rebuntu/rebuntu-live_0.1.0-1_all.deb
+Size: 1408
+MD5sum: f2649cef1f8052dabb23b206d274f094
+SHA1: c3c4383ef68779b1f81d44438817de99cce8bafe
+SHA256: 50d7207fd5b62b8e61051f8d94de520dec0882218cb2bd021ebd1c26e3955dad
+Section: admin
+Priority: optional
+Description: Rebuntu live session support
+ Provides the deterministic live user, a sane live-media sudo policy and a
+ serial-console TTY for the Rebuntu live (casper) environment. This is a
+ live-image component: it creates the throwaway "live" user used on the
+ medium and is not part of the installed-system package set.
+
+Package: rebuntu-plymouth-theme
+Version: 0.1.0
+Architecture: all
+Maintainer: Rebuntu Project
+Depends: plymouth, plymouth-themes
+Filename: pool/main/r/rebuntu/rebuntu-plymouth-theme_0.1.0_all.deb
+Size: 266842
+MD5sum: bbec390e2aa009a88ab00785eb91efbf
+SHA1: fb6621c0575d5717942826952c4c6be87254b3c9
+SHA256: 69e7cde8a640a2673b6c3d6cce327dabce80ff3e9e25ca9dc2753dbe2b5d0ae6
+Section: misc
+Priority: optional
+Description: Rebuntu minimal Plymouth boot splash
+ Minimal near-black Rebuntu boot splash with a white central mark,
+ Rebuntu wordmark and thin real boot-progress indicator.
+
+Package: rebuntu-plymouth-theme
+Version: 0.1.0-1
+Architecture: all
+Maintainer: Rebuntu Project <rebuntu@localhost>
+Installed-Size: 271
+Depends: plymouth
+Filename: pool/main/r/rebuntu/rebuntu-plymouth-theme_0.1.0-1_all.deb
+Size: 263498
+MD5sum: bdcfad93dc4fae51c3ee7fa2f6f01458
+SHA1: deee33bd0bc16356ce7ee4323f2b1df64c9132ec
+SHA256: 58a55930f64b97f7b81e19a83487f888da5f04302217977d8f2845de485872fb
+Section: admin
+Priority: optional
+Description: Rebuntu Plymouth boot splash theme
+ Rebuntu distribution component.
+
+Package: rebuntu-release
+Version: 0.1.0-1
+Architecture: all
+Maintainer: Rebuntu Project <rebuntu@localhost>
+Installed-Size: 11
+Filename: pool/main/r/rebuntu/rebuntu-release_0.1.0-1_all.deb
+Size: 1150
+MD5sum: d218e5827137e750fef5da00bc85e2cc
+SHA1: ed5a65a964847aa53302a2a908ddc40d6265f3b7
+SHA256: 648d6223ab2821a1b6b3743bf6fbb9ac2c2a87926a92368b9786638cc1479014
+Section: admin
+Priority: optional
+Description: Rebuntu distribution identity
+ Rebuntu distribution component.
+

@@ -1,0 +1,6 @@
+#!/usr/bin/env bash
+set -Eeuo pipefail
+R="${REBUNTU_ROOT:-$(cd "$(dirname "${BASH_SOURCE[0]}")/../.."&&pwd)}"; p="${1:-}"
+case "$p" in base|desktop|docker|ai);;*) echo "usage: $0 {base|desktop|docker|ai}";exit 2;;esac
+command -v ansible-playbook >/dev/null||{ echo "ansible-playbook missing";exit 3; }
+cd "$R/automation/ansible"; exec ansible-playbook "playbooks/$p.yml"

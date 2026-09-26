@@ -1,0 +1,2 @@
+---
+- ansible.builtin.apt: {name: rebuntu-desktop, state: present}

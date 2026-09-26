@@ -1,0 +1,5 @@
+---
+- ansible.builtin.apt:
+    name: [rebuntu-ai, pciutils, lshw, python3, python3-venv, pipx]
+    state: present
+# Accelerator selection intentionally belongs to a future compatibility resolver.

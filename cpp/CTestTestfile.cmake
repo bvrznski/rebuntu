@@ -12,5 +12,7 @@ add_test([=[netlink_socket_test]=] "/home/bvrznski/rebuntu/cpp/rebuntu-netlink-s
 set_tests_properties([=[netlink_socket_test]=] PROPERTIES  _BACKTRACE_TRIPLES "/home/bvrznski/rebuntu/cpp/CMakeLists.txt;326;add_test;/home/bvrznski/rebuntu/cpp/CMakeLists.txt;0;")
 add_test([=[procfs_process_test]=] "/home/bvrznski/rebuntu/cpp/rebuntu-procfs-process-test")
 set_tests_properties([=[procfs_process_test]=] PROPERTIES  _BACKTRACE_TRIPLES "/home/bvrznski/rebuntu/cpp/CMakeLists.txt;341;add_test;/home/bvrznski/rebuntu/cpp/CMakeLists.txt;0;")
+add_test([=[systemd_service_test]=] "/home/bvrznski/rebuntu/cpp/rebuntu-systemd-service-test")
+set_tests_properties([=[systemd_service_test]=] PROPERTIES  _BACKTRACE_TRIPLES "/home/bvrznski/rebuntu/cpp/CMakeLists.txt;356;add_test;/home/bvrznski/rebuntu/cpp/CMakeLists.txt;0;")
 add_test([=[hang_stall_jam_detector_test]=] "/home/bvrznski/rebuntu/cpp/rebuntu-hang-stall-jam-detector-test")
-set_tests_properties([=[hang_stall_jam_detector_test]=] PROPERTIES  _BACKTRACE_TRIPLES "/home/bvrznski/rebuntu/cpp/CMakeLists.txt;450;add_test;/home/bvrznski/rebuntu/cpp/CMakeLists.txt;0;")
+set_tests_properties([=[hang_stall_jam_detector_test]=] PROPERTIES  _BACKTRACE_TRIPLES "/home/bvrznski/rebuntu/cpp/CMakeLists.txt;465;add_test;/home/bvrznski/rebuntu/cpp/CMakeLists.txt;0;")

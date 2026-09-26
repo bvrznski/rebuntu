@@ -340,6 +340,21 @@ add_executable(rebuntu-procfs-process-test
 target_link_libraries(rebuntu-procfs-process-test PRIVATE rebuntu-procfs-process rebuntu-core)
 add_test(NAME procfs_process_test COMMAND rebuntu-procfs-process-test)
 
+# Phase 5.26: Systemd Service Discovery Adapter module
+add_library(rebuntu-systemd-service-adapter STATIC
+    ${CMAKE_CURRENT_LIST_DIR}/../src/adapters/systemd/service/types.hpp
+    ${CMAKE_CURRENT_LIST_DIR}/../src/adapters/systemd/service/implementation.cpp
+)
+target_include_directories(rebuntu-systemd-service-adapter PUBLIC ${CMAKE_CURRENT_LIST_DIR}/../src)
+target_link_libraries(rebuntu-core PUBLIC rebuntu-systemd-service-adapter)
+
+# Systemd Service Discovery unit tests
+add_executable(rebuntu-systemd-service-test
+    ${CMAKE_CURRENT_LIST_DIR}/tests/unit/systemd_service_test.cpp
+)
+target_link_libraries(rebuntu-systemd-service-test PRIVATE rebuntu-systemd-service-adapter rebuntu-core)
+add_test(NAME systemd_service_test COMMAND rebuntu-systemd-service-test)
+
 # Phase 5.3: Journal filtering and normalization module
 add_library(rebuntu-journal-normalizer STATIC
     ${CMAKE_CURRENT_LIST_DIR}/../src/adapters/journal_normalizer.hpp

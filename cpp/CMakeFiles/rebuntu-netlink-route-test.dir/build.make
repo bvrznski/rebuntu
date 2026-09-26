@@ -123,6 +123,7 @@ rebuntu-netlink-route-test: librebuntu-md-raid-adapter.a
 rebuntu-netlink-route-test: librebuntu-netlink-link.a
 rebuntu-netlink-route-test: librebuntu-netlink-socket.a
 rebuntu-netlink-route-test: librebuntu-procfs-process.a
+rebuntu-netlink-route-test: librebuntu-systemd-service-adapter.a
 rebuntu-netlink-route-test: librebuntu-journal-normalizer.a
 rebuntu-netlink-route-test: librebuntu-journal-analyzer.a
 rebuntu-netlink-route-test: librebuntu-health-monitor.a

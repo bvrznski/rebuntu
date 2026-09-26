@@ -43,6 +43,7 @@ set(CMAKE_TARGET_LINKED_INFO_FILES
   "/home/bvrznski/rebuntu/cpp/CMakeFiles/rebuntu-netlink-route.dir/DependInfo.cmake"
   "/home/bvrznski/rebuntu/cpp/CMakeFiles/rebuntu-netlink-socket.dir/DependInfo.cmake"
   "/home/bvrznski/rebuntu/cpp/CMakeFiles/rebuntu-procfs-process.dir/DependInfo.cmake"
+  "/home/bvrznski/rebuntu/cpp/CMakeFiles/rebuntu-systemd-service-adapter.dir/DependInfo.cmake"
   "/home/bvrznski/rebuntu/cpp/CMakeFiles/rebuntu-journal-normalizer.dir/DependInfo.cmake"
   "/home/bvrznski/rebuntu/cpp/CMakeFiles/rebuntu-journal-analyzer.dir/DependInfo.cmake"
   "/home/bvrznski/rebuntu/cpp/CMakeFiles/rebuntu-health-monitor.dir/DependInfo.cmake"

@@ -933,6 +933,32 @@ rebuntu-procfs-process-test/fast:
 .PHONY : rebuntu-procfs-process-test/fast
 
 #=============================================================================
+# Target rules for targets named rebuntu-systemd-service-adapter
+
+# Build rule for target.
+rebuntu-systemd-service-adapter: cmake_check_build_system
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 rebuntu-systemd-service-adapter
+.PHONY : rebuntu-systemd-service-adapter
+
+# fast build rule for target.
+rebuntu-systemd-service-adapter/fast:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/rebuntu-systemd-service-adapter.dir/build.make CMakeFiles/rebuntu-systemd-service-adapter.dir/build
+.PHONY : rebuntu-systemd-service-adapter/fast
+
+#=============================================================================
+# Target rules for targets named rebuntu-systemd-service-test
+
+# Build rule for target.
+rebuntu-systemd-service-test: cmake_check_build_system
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 rebuntu-systemd-service-test
+.PHONY : rebuntu-systemd-service-test
+
+# fast build rule for target.
+rebuntu-systemd-service-test/fast:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/rebuntu-systemd-service-test.dir/build.make CMakeFiles/rebuntu-systemd-service-test.dir/build
+.PHONY : rebuntu-systemd-service-test/fast
+
+#=============================================================================
 # Target rules for targets named rebuntu-journal-normalizer
 
 # Build rule for target.
@@ -1351,6 +1377,30 @@ home/bvrznski/rebuntu/src/adapters/sysfs/md_raid/implementation.s: home/bvrznski
 home/bvrznski/rebuntu/src/adapters/sysfs/md_raid/implementation.cpp.s:
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/rebuntu-md-raid-adapter.dir/build.make CMakeFiles/rebuntu-md-raid-adapter.dir/home/bvrznski/rebuntu/src/adapters/sysfs/md_raid/implementation.cpp.s
 .PHONY : home/bvrznski/rebuntu/src/adapters/sysfs/md_raid/implementation.cpp.s
+
+home/bvrznski/rebuntu/src/adapters/systemd/service/implementation.o: home/bvrznski/rebuntu/src/adapters/systemd/service/implementation.cpp.o
+.PHONY : home/bvrznski/rebuntu/src/adapters/systemd/service/implementation.o
+
+# target to build an object file
+home/bvrznski/rebuntu/src/adapters/systemd/service/implementation.cpp.o:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/rebuntu-systemd-service-adapter.dir/build.make CMakeFiles/rebuntu-systemd-service-adapter.dir/home/bvrznski/rebuntu/src/adapters/systemd/service/implementation.cpp.o
+.PHONY : home/bvrznski/rebuntu/src/adapters/systemd/service/implementation.cpp.o
+
+home/bvrznski/rebuntu/src/adapters/systemd/service/implementation.i: home/bvrznski/rebuntu/src/adapters/systemd/service/implementation.cpp.i
+.PHONY : home/bvrznski/rebuntu/src/adapters/systemd/service/implementation.i
+
+# target to preprocess a source file
+home/bvrznski/rebuntu/src/adapters/systemd/service/implementation.cpp.i:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/rebuntu-systemd-service-adapter.dir/build.make CMakeFiles/rebuntu-systemd-service-adapter.dir/home/bvrznski/rebuntu/src/adapters/systemd/service/implementation.cpp.i
+.PHONY : home/bvrznski/rebuntu/src/adapters/systemd/service/implementation.cpp.i
+
+home/bvrznski/rebuntu/src/adapters/systemd/service/implementation.s: home/bvrznski/rebuntu/src/adapters/systemd/service/implementation.cpp.s
+.PHONY : home/bvrznski/rebuntu/src/adapters/systemd/service/implementation.s
+
+# target to generate assembly for a file
+home/bvrznski/rebuntu/src/adapters/systemd/service/implementation.cpp.s:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/rebuntu-systemd-service-adapter.dir/build.make CMakeFiles/rebuntu-systemd-service-adapter.dir/home/bvrznski/rebuntu/src/adapters/systemd/service/implementation.cpp.s
+.PHONY : home/bvrznski/rebuntu/src/adapters/systemd/service/implementation.cpp.s
 
 home/bvrznski/rebuntu/src/events/collector.o: home/bvrznski/rebuntu/src/events/collector.cpp.o
 .PHONY : home/bvrznski/rebuntu/src/events/collector.o
@@ -2360,6 +2410,30 @@ tests/unit/procfs_process_test.cpp.s:
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/rebuntu-procfs-process-test.dir/build.make CMakeFiles/rebuntu-procfs-process-test.dir/tests/unit/procfs_process_test.cpp.s
 .PHONY : tests/unit/procfs_process_test.cpp.s
 
+tests/unit/systemd_service_test.o: tests/unit/systemd_service_test.cpp.o
+.PHONY : tests/unit/systemd_service_test.o
+
+# target to build an object file
+tests/unit/systemd_service_test.cpp.o:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/rebuntu-systemd-service-test.dir/build.make CMakeFiles/rebuntu-systemd-service-test.dir/tests/unit/systemd_service_test.cpp.o
+.PHONY : tests/unit/systemd_service_test.cpp.o
+
+tests/unit/systemd_service_test.i: tests/unit/systemd_service_test.cpp.i
+.PHONY : tests/unit/systemd_service_test.i
+
+# target to preprocess a source file
+tests/unit/systemd_service_test.cpp.i:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/rebuntu-systemd-service-test.dir/build.make CMakeFiles/rebuntu-systemd-service-test.dir/tests/unit/systemd_service_test.cpp.i
+.PHONY : tests/unit/systemd_service_test.cpp.i
+
+tests/unit/systemd_service_test.s: tests/unit/systemd_service_test.cpp.s
+.PHONY : tests/unit/systemd_service_test.s
+
+# target to generate assembly for a file
+tests/unit/systemd_service_test.cpp.s:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/rebuntu-systemd-service-test.dir/build.make CMakeFiles/rebuntu-systemd-service-test.dir/tests/unit/systemd_service_test.cpp.s
+.PHONY : tests/unit/systemd_service_test.cpp.s
+
 # Help Target
 help:
 	@echo "The following are some of the valid targets for this Makefile:"
@@ -2441,6 +2515,8 @@ help:
 	@echo "... rebuntu-snapshot-service"
 	@echo "... rebuntu-snapshot-storage"
 	@echo "... rebuntu-storage-health-monitor"
+	@echo "... rebuntu-systemd-service-adapter"
+	@echo "... rebuntu-systemd-service-test"
 	@echo "... rebuntu-temp-files"
 	@echo "... rebuntu-user-identity"
 	@echo "... home/bvrznski/rebuntu/src/adapters/journal_analyzer.o"
@@ -2476,6 +2552,9 @@ help:
 	@echo "... home/bvrznski/rebuntu/src/adapters/sysfs/md_raid/implementation.o"
 	@echo "... home/bvrznski/rebuntu/src/adapters/sysfs/md_raid/implementation.i"
 	@echo "... home/bvrznski/rebuntu/src/adapters/sysfs/md_raid/implementation.s"
+	@echo "... home/bvrznski/rebuntu/src/adapters/systemd/service/implementation.o"
+	@echo "... home/bvrznski/rebuntu/src/adapters/systemd/service/implementation.i"
+	@echo "... home/bvrznski/rebuntu/src/adapters/systemd/service/implementation.s"
 	@echo "... home/bvrznski/rebuntu/src/events/collector.o"
 	@echo "... home/bvrznski/rebuntu/src/events/collector.i"
 	@echo "... home/bvrznski/rebuntu/src/events/collector.s"
@@ -2602,6 +2681,9 @@ help:
 	@echo "... tests/unit/procfs_process_test.o"
 	@echo "... tests/unit/procfs_process_test.i"
 	@echo "... tests/unit/procfs_process_test.s"
+	@echo "... tests/unit/systemd_service_test.o"
+	@echo "... tests/unit/systemd_service_test.i"
+	@echo "... tests/unit/systemd_service_test.s"
 .PHONY : help
 
 

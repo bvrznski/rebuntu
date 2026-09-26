@@ -256,6 +256,14 @@ add_library(rebuntu-journald-adapter STATIC
 target_include_directories(rebuntu-journald-adapter PUBLIC ${CMAKE_CURRENT_LIST_DIR}/../src)
 target_link_libraries(rebuntu-core PUBLIC rebuntu-journald-adapter)
 
+# Phase 5.17: Procfs Mounts Observation Adapter module
+add_library(rebuntu-procfs-mounts STATIC
+    ${CMAKE_CURRENT_LIST_DIR}/../src/adapters/procfs/mounts/types.hpp
+    ${CMAKE_CURRENT_LIST_DIR}/../src/adapters/procfs/mounts/implementation.cpp
+)
+target_include_directories(rebuntu-procfs-mounts PUBLIC ${CMAKE_CURRENT_LIST_DIR}/../src)
+target_link_libraries(rebuntu-core PUBLIC rebuntu-procfs-mounts)
+
 # Phase 5.3: Journal filtering and normalization module
 add_library(rebuntu-journal-normalizer STATIC
     ${CMAKE_CURRENT_LIST_DIR}/../src/adapters/journal_normalizer.hpp

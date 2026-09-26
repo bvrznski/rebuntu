@@ -300,14 +300,47 @@ CMakeFiles/rebuntu-procfs-process.dir/home/bvrznski/rebuntu/src/adapters/procfs/
   /usr/include/x86_64-linux-gnu/bits/string_fortified.h \
   /usr/include/dirent.h \
   /usr/include/x86_64-linux-gnu/bits/dirent.h \
-  /usr/include/x86_64-linux-gnu/bits/dirent_ext.h
+  /usr/include/x86_64-linux-gnu/bits/dirent_ext.h \
+  /usr/include/x86_64-linux-gnu/sys/stat.h \
+  /usr/include/x86_64-linux-gnu/bits/stat.h \
+  /usr/include/x86_64-linux-gnu/bits/struct_stat.h \
+  /usr/include/x86_64-linux-gnu/bits/statx.h \
+  /usr/include/linux/stat.h \
+  /usr/include/linux/types.h \
+  /usr/include/x86_64-linux-gnu/asm/types.h \
+  /usr/include/asm-generic/types.h \
+  /usr/include/asm-generic/int-ll64.h \
+  /usr/include/x86_64-linux-gnu/asm/bitsperlong.h \
+  /usr/include/asm-generic/bitsperlong.h \
+  /usr/include/linux/posix_types.h \
+  /usr/include/linux/stddef.h \
+  /usr/include/x86_64-linux-gnu/asm/posix_types.h \
+  /usr/include/x86_64-linux-gnu/asm/posix_types_64.h \
+  /usr/include/asm-generic/posix_types.h \
+  /usr/include/x86_64-linux-gnu/bits/statx-generic.h \
+  /usr/include/x86_64-linux-gnu/bits/types/struct_statx_timestamp.h \
+  /usr/include/x86_64-linux-gnu/bits/types/struct_statx.h
 
+
+/usr/include/x86_64-linux-gnu/bits/types/struct_statx.h:
+
+/usr/include/linux/posix_types.h:
+
+/usr/include/x86_64-linux-gnu/asm/types.h:
+
+/usr/include/linux/stat.h:
+
+/usr/include/x86_64-linux-gnu/bits/stat.h:
+
+/usr/include/x86_64-linux-gnu/sys/stat.h:
 
 /usr/include/x86_64-linux-gnu/bits/dirent.h:
 
 /usr/include/x86_64-linux-gnu/bits/strings_fortified.h:
 
 /usr/include/strings.h:
+
+/usr/include/asm-generic/posix_types.h:
 
 /usr/include/c++/11/bits/fstream.tcc:
 
@@ -357,6 +390,8 @@ CMakeFiles/rebuntu-procfs-process.dir/home/bvrznski/rebuntu/src/adapters/procfs/
 
 /usr/include/x86_64-linux-gnu/bits/xopen_lim.h:
 
+/usr/include/x86_64-linux-gnu/asm/posix_types_64.h:
+
 /usr/include/x86_64-linux-gnu/bits/cpu-set.h:
 
 /usr/include/c++/11/bits/unordered_map.h:
@@ -392,6 +427,8 @@ CMakeFiles/rebuntu-procfs-process.dir/home/bvrznski/rebuntu/src/adapters/procfs/
 /usr/include/c++/11/bits/stream_iterator.h:
 
 /usr/include/ctype.h:
+
+/usr/include/x86_64-linux-gnu/bits/statx.h:
 
 /usr/include/unistd.h:
 
@@ -445,6 +482,8 @@ CMakeFiles/rebuntu-procfs-process.dir/home/bvrznski/rebuntu/src/adapters/procfs/
 
 /home/bvrznski/rebuntu/src/adapters/procfs/process/implementation.cpp:
 
+/usr/include/x86_64-linux-gnu/asm/bitsperlong.h:
+
 /usr/include/c++/11/backward/binders.h:
 
 /usr/include/x86_64-linux-gnu/sys/select.h:
@@ -474,6 +513,8 @@ CMakeFiles/rebuntu-procfs-process.dir/home/bvrznski/rebuntu/src/adapters/procfs/
 /usr/include/x86_64-linux-gnu/bits/stdlib-float.h:
 
 /usr/include/x86_64-linux-gnu/bits/uintn-identity.h:
+
+/usr/include/x86_64-linux-gnu/bits/types/struct_statx_timestamp.h:
 
 /usr/include/c++/11/cwctype:
 
@@ -623,6 +664,10 @@ CMakeFiles/rebuntu-procfs-process.dir/home/bvrznski/rebuntu/src/adapters/procfs/
 
 /usr/include/c++/11/bits/stl_iterator_base_funcs.h:
 
+/usr/include/asm-generic/bitsperlong.h:
+
+/usr/include/asm-generic/types.h:
+
 /usr/include/x86_64-linux-gnu/bits/types/sigset_t.h:
 
 /usr/include/c++/11/bits/concept_check.h:
@@ -652,6 +697,8 @@ CMakeFiles/rebuntu-procfs-process.dir/home/bvrznski/rebuntu/src/adapters/procfs/
 /usr/include/c++/11/ext/aligned_buffer.h:
 
 /usr/include/x86_64-linux-gnu/sys/types.h:
+
+/usr/include/asm-generic/int-ll64.h:
 
 /usr/include/c++/11/bits/stl_algo.h:
 
@@ -737,6 +784,8 @@ CMakeFiles/rebuntu-procfs-process.dir/home/bvrznski/rebuntu/src/adapters/procfs/
 
 /usr/include/c++/11/string_view:
 
+/usr/include/x86_64-linux-gnu/bits/struct_stat.h:
+
 /usr/include/c++/11/bits/stl_set.h:
 
 /usr/include/c++/11/bits/functional_hash.h:
@@ -821,6 +870,8 @@ CMakeFiles/rebuntu-procfs-process.dir/home/bvrznski/rebuntu/src/adapters/procfs/
 
 /usr/include/c++/11/bits/atomic_lockfree_defines.h:
 
+/usr/include/x86_64-linux-gnu/asm/posix_types.h:
+
 /usr/include/c++/11/bits/ranges_util.h:
 
 /usr/include/c++/11/array:
@@ -833,9 +884,13 @@ CMakeFiles/rebuntu-procfs-process.dir/home/bvrznski/rebuntu/src/adapters/procfs/
 
 /usr/include/c++/11/bits/uses_allocator.h:
 
+/usr/include/linux/stddef.h:
+
 /usr/include/c++/11/bits/refwrap.h:
 
 /usr/include/c++/11/bits/hashtable.h:
+
+/usr/include/x86_64-linux-gnu/bits/statx-generic.h:
 
 /usr/include/c++/11/bits/hashtable_policy.h:
 
@@ -884,6 +939,8 @@ CMakeFiles/rebuntu-procfs-process.dir/home/bvrznski/rebuntu/src/adapters/procfs/
 /usr/include/c++/11/bits/exception.h:
 
 /usr/include/c++/11/bits/locale_facets.h:
+
+/usr/include/linux/types.h:
 
 /usr/include/x86_64-linux-gnu/c++/11/bits/ctype_inline.h:
 

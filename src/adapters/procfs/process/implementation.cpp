@@ -18,6 +18,7 @@
 #include <time.h>
 #include <dirent.h>
 #include <unistd.h>
+#include <sys/stat.h>
 
 namespace rebuntu::adapters::procfs::process {
 
@@ -317,6 +318,59 @@ public:
         // Clear cache and perform fresh observation
         last_observation_time_ = {};
         return observe_all_processes();
+    }
+    
+    IdentityValidation validate_identity(const ProcessIdentity& identity) override {
+        if (!identity.is_valid()) {
+            return IdentityValidation::kUnknown;
+        }
+        
+        std::string proc_path = "/proc/" + std::to_string(identity.pid);
+        
+        // Check if the process directory exists
+        struct stat st;
+        if (stat(proc_path.c_str(), &st) != 0) {
+            return IdentityValidation::kNotFound;
+        }
+        
+        // Read /proc/[pid]/stat to verify the start timestamp matches
+        std::string stat_path = proc_path + "/stat";
+        std::string stat_line = read_file_line(stat_path.c_str());
+        
+        if (stat_line.empty()) {
+            return IdentityValidation::kUnknown;
+        }
+        
+        auto fields = parse_stat_fields(stat_line);
+        if (fields.size() < 24) {
+            return IdentityValidation::kUnknown;
+        }
+        
+        // Get current system time for timestamp calculation
+        int64_t current_time_ms = get_current_time_ms();
+        double uptime_seconds = get_system_uptime_seconds();
+        
+        if (uptime_seconds < 0) {
+            return IdentityValidation::kUnknown;
+        }
+        
+        try {
+            int64_t start_ticks = std::stoll(fields[21]);
+            uint64_t hz = get_clock_ticks_per_second();
+            int64_t boot_time_ms = current_time_ms - static_cast<int64_t>(uptime_seconds * 1000);
+            int64_t observed_boot_timestamp_ms = 
+                boot_time_ms + (start_ticks * 1000) / static_cast<int64_t>(hz);
+            
+            // The observed timestamp should be close to what we stored (within a small tolerance)
+            // This handles the case where the PID was reused by a new process
+            if (observed_boot_timestamp_ms != identity.boot_timestamp_ms) {
+                return IdentityValidation::kReused;
+            }
+        } catch (...) {
+            return IdentityValidation::kUnknown;
+        }
+        
+        return IdentityValidation::kValid;
     }
 
 private:

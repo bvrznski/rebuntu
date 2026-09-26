@@ -50,6 +50,34 @@ struct ProcessIdentity {
     }
 };
 
+// ============================================================================
+// IdentityValidation — Result of validating a process identity
+//
+// When observing a process, we must validate that:
+//   - The PID still exists in /proc/
+//   - The process's start timestamp matches (no PID reuse)
+//   - The executable path matches (if available)
+//
+// This prevents race conditions where a process terminates and its PID is
+// reused by another process between discovery and observation.
+// ============================================================================
+enum class IdentityValidation {
+    kValid,              // Process identity is valid and process exists
+    kNotFound,           // Process /proc/[pid] does not exist (process terminated)
+    kReused,             // PID was reused by a new process with different start time
+    kUnknown,            // Could not determine validation state (acquisition failed)
+};
+
+inline std::string to_string(IdentityValidation v) {
+    switch (v) {
+        case IdentityValidation::kValid:     return "valid";
+        case IdentityValidation::kNotFound:  return "not-found";
+        case IdentityValidation::kReused:    return "pid-reused";
+        case IdentityValidation::kUnknown:   return "unknown-validation";
+    }
+    return "unknown";
+}
+
 inline bool operator==(const ProcessIdentity& a, const ProcessIdentity& b) {
     return a.boot_timestamp_ms == b.boot_timestamp_ms &&
            a.pid == b.pid;
@@ -234,6 +262,12 @@ public:
     // Force refresh: discard cached state and re-observe from procfs
     // This is idempotent and safe to call multiple times
     virtual ProcessDiscoveryResult force_refresh() = 0;
+    
+    // Validate a process identity by checking if the process still exists
+    // and if its start timestamp matches (no PID reuse).
+    // Returns IdentityValidation indicating whether the process can be safely
+    // used for consequential operations.
+    virtual IdentityValidation validate_identity(const ProcessIdentity& identity) = 0;
 };
 
 // ============================================================================

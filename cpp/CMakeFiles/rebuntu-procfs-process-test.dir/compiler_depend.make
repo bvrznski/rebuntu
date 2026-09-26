@@ -286,8 +286,29 @@ CMakeFiles/rebuntu-procfs-process-test.dir/tests/unit/procfs_process_test.cpp.o:
   /usr/include/c++/11/bits/parse_numbers.h \
   /usr/include/c++/11/iostream \
   /usr/include/c++/11/istream \
-  /usr/include/c++/11/bits/istream.tcc
+  /usr/include/c++/11/bits/istream.tcc \
+  /usr/include/c++/11/thread \
+  /usr/include/c++/11/stop_token \
+  /usr/include/c++/11/atomic \
+  /usr/include/c++/11/bits/std_thread.h \
+  /usr/include/c++/11/semaphore \
+  /usr/include/c++/11/bits/semaphore_base.h \
+  /usr/include/c++/11/bits/atomic_timed_wait.h \
+  /usr/include/c++/11/bits/this_thread_sleep.h \
+  /usr/include/x86_64-linux-gnu/sys/time.h \
+  /usr/include/semaphore.h \
+  /usr/include/x86_64-linux-gnu/bits/semaphore.h
 
+
+/usr/include/x86_64-linux-gnu/sys/time.h:
+
+/usr/include/c++/11/bits/atomic_timed_wait.h:
+
+/usr/include/c++/11/bits/semaphore_base.h:
+
+/usr/include/c++/11/semaphore:
+
+/usr/include/c++/11/atomic:
 
 /usr/include/c++/11/bits/istream.tcc:
 
@@ -298,6 +319,8 @@ CMakeFiles/rebuntu-procfs-process-test.dir/tests/unit/procfs_process_test.cpp.o:
 /usr/include/c++/11/ctime:
 
 /usr/include/c++/11/limits:
+
+/usr/include/c++/11/thread:
 
 /usr/include/c++/11/ratio:
 
@@ -371,6 +394,8 @@ CMakeFiles/rebuntu-procfs-process-test.dir/tests/unit/procfs_process_test.cpp.o:
 
 /usr/lib/gcc/x86_64-linux-gnu/11/include/stdint.h:
 
+/usr/include/c++/11/stop_token:
+
 /usr/include/c++/11/bits/postypes.h:
 
 /usr/include/c++/11/bits/stringfwd.h:
@@ -443,6 +468,8 @@ CMakeFiles/rebuntu-procfs-process-test.dir/tests/unit/procfs_process_test.cpp.o:
 
 /usr/include/x86_64-linux-gnu/bits/uintn-identity.h:
 
+/usr/include/semaphore.h:
+
 /usr/include/c++/11/cwctype:
 
 /usr/include/c++/11/ext/atomicity.h:
@@ -510,6 +537,8 @@ CMakeFiles/rebuntu-procfs-process-test.dir/tests/unit/procfs_process_test.cpp.o:
 /usr/include/x86_64-linux-gnu/bits/types/__sigset_t.h:
 
 /usr/include/x86_64-linux-gnu/bits/byteswap.h:
+
+/usr/include/x86_64-linux-gnu/bits/semaphore.h:
 
 /usr/include/c++/11/bits/stl_construct.h:
 
@@ -592,6 +621,8 @@ tests/unit/procfs_process_test.cpp:
 /usr/include/features.h:
 
 /usr/include/c++/11/bits/stl_multimap.h:
+
+/usr/include/c++/11/bits/std_thread.h:
 
 /usr/include/c++/11/bits/cpp_type_traits.h:
 
@@ -728,6 +759,8 @@ tests/unit/procfs_process_test.cpp:
 /usr/include/x86_64-linux-gnu/bits/stdio.h:
 
 /usr/include/x86_64-linux-gnu/bits/stdio2.h:
+
+/usr/include/c++/11/bits/this_thread_sleep.h:
 
 /usr/include/x86_64-linux-gnu/bits/types/struct_tm.h:
 

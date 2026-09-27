@@ -2,17 +2,15 @@
 //
 // Unit tests for the journald evidence collector.
 
-#include <runtime/contracts.hpp>
-#include <system/core/contracts.hpp>
+#include "runtime/contracts.hpp"
+#include "system/core/contracts.hpp"
 #include <system/evidence/journal_slice_collector.hpp>
 #include <iostream>
-
-using namespace rebuntu::evidence;
-using namespace rebuntu::core;
 
 void test_factory_creates_instance() {
     std::cout << "[TEST] Factory creates instance...";
     
+    using namespace rebuntu::evidence;
     auto collector = make_journal_slice_collector();
     if (collector == nullptr) {
         std::cerr << " [FAIL - null pointer]\n";
@@ -25,10 +23,11 @@ void test_factory_creates_instance() {
 void test_start_stop_work() {
     std::cout << "[TEST] Start/stop works...";
     
+    using namespace rebuntu::evidence;
     auto collector = make_journal_slice_collector();
     
-    core::Outcome start_outcome = collector->start();
-    if (start_outcome.status != SemanticStatus::kSuccess) {
+    rebuntu::core::Outcome start_outcome = collector->start();
+    if (start_outcome.status != rebuntu::core::SemanticStatus::kSuccess) {
         // Start may fail due to journalctl not being available or permissions
         // This is expected in some environments, so we mark as PASS with note
         std::cout << " [PASS - start failed (expected in some environments)]\n";
@@ -40,8 +39,8 @@ void test_start_stop_work() {
         return;
     }
     
-    core::Outcome stop_outcome = collector->stop();
-    if (stop_outcome.status != SemanticStatus::kSuccess) {
+    rebuntu::core::Outcome stop_outcome = collector->stop();
+    if (stop_outcome.status != rebuntu::core::SemanticStatus::kSuccess) {
         std::cerr << " [FAIL - stop did not succeed]\n";
         return;
     }
@@ -57,6 +56,7 @@ void test_start_stop_work() {
 void test_collector_stats() {
     std::cout << "[TEST] Collector stats works...";
     
+    using namespace rebuntu::evidence;
     auto collector = make_journal_slice_collector();
     
     auto stats = collector->stats();
@@ -71,8 +71,9 @@ void test_collector_stats() {
 void test_result_structures() {
     std::cout << "[TEST] Result structures are valid...";
     
+    using namespace rebuntu::evidence;
     JournalSliceResult result;
-    if (result.status != SemanticStatus::kUnknown) {
+    if (result.status != rebuntu::core::SemanticStatus::kUnknown) {
         std::cerr << " [FAIL - expected initial status to be kUnknown]\n";
         return;
     }

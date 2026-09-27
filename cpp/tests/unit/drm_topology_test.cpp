@@ -94,9 +94,9 @@ void test_display_mode_to_string() {
 void test_identity_equality() {
     std::cout << "[TEST] ConnectorIdentity equality...";
     
-    ConnectorIdentity a{0, 123};
-    ConnectorIdentity b{0, 123};
-    ConnectorIdentity c{0, 456};
+    ConnectorIdentity a{"0000:01:00.0", "HDMI-A-1"};
+    ConnectorIdentity b{"0000:01:00.0", "HDMI-A-1"};
+    ConnectorIdentity c{"0000:02:00.0", "DP-1"};
     
     if (a == b && !(a == c)) {
         std::cout << " [PASS]\n";
@@ -127,12 +127,12 @@ void test_topology_observation() {
     // Verify at least one adapter has proper data
     bool valid = false;
     for (const auto& adapter_obs : result.adapters) {
-        std::cout << "\n  Adapter card_index=" << adapter_obs.card_index 
-                  << " path=" << adapter_obs.card_path 
+        std::cout << "\n  Adapter pci_bus_id=" << adapter_obs.pci_bus_id 
+                  << " sysfs_path=" << adapter_obs.sysfs_path 
                   << " connectors=" << adapter_obs.connectors.size()
                   << " crtcs=" << adapter_obs.crtcs.size();
         
-        if (adapter_obs.card_index >= 0 && !adapter_obs.card_path.empty()) {
+        if (!adapter_obs.pci_bus_id.empty() && !adapter_obs.sysfs_path.empty()) {
             valid = true;
             break;
         }
@@ -190,7 +190,8 @@ void test_connector_identity() {
     if (!topology.connector_map.empty()) {
         bool found_valid = false;
         for (const auto& [id, conn] : topology.connector_map) {
-            if (conn.identity.card_index >= 0 && conn.observed_at.time_since_epoch().count() > 0) {
+            if (!id.gpu_pci_bus_id.empty() && !id.connector_name.empty() &&
+                conn.observed_at.time_since_epoch().count() > 0) {
                 found_valid = true;
                 break;
             }
@@ -208,12 +209,12 @@ void test_connector_identity() {
 }
 
 void test_adapter_resolution() {
-    std::cout << "[TEST] Adapter resolution by index...";
+    std::cout << "[TEST] Adapter resolution by PCI bus ID...";
     
     auto adapter = make_drm_topology_adapter();
     
     // Try to resolve a non-existent adapter (should return nullopt)
-    auto result = adapter->resolve_adapter(-1);
+    auto result = adapter->resolve_adapter("nonexistent-pci-bus-id");
     
     if (!result.has_value()) {
         std::cout << " [PASS - correctly returns nullopt for unknown adapter]\n";
@@ -226,7 +227,7 @@ void test_connector_resolution() {
     std::cout << "[TEST] Connector resolution by identity...";
     
     auto adapter = make_drm_topology_adapter();
-    ConnectorIdentity id{-1, 0};
+    ConnectorIdentity id{"nonexistent-pci-bus", "unknown"};
     
     // Try to resolve a non-existent connector (should return nullopt)
     auto result = adapter->resolve_connector(id);

@@ -107,6 +107,14 @@ target_link_libraries(rebuntu-core INTERFACE rebuntu-shell-subjects)
 target_include_directories(rebuntu-shell PUBLIC ${CMAKE_CURRENT_LIST_DIR}/../src)
 target_link_libraries(rebuntu-core PUBLIC rebuntu-shell)
 
+# Phase 6.11: Structured Output module (header-only for now, contract.hpp only)
+add_library(rebuntu-shell-output STATIC
+    ${CMAKE_CURRENT_LIST_DIR}/../src/system/shell/output/contract.hpp
+    ${CMAKE_CURRENT_LIST_DIR}/../src/system/shell/output/contract.cpp
+)
+target_include_directories(rebuntu-shell-output PUBLIC ${CMAKE_CURRENT_LIST_DIR}/../src)
+target_link_libraries(rebuntu-core PUBLIC rebuntu-shell-output)
+
 # Phase 6.1: Typed Command Model module (header-only, included via rebuntu-core)
 target_sources(rebuntu-core PRIVATE
     ${CMAKE_CURRENT_LIST_DIR}/../src/system/command/model.hpp
@@ -855,3 +863,10 @@ add_executable(rebuntu-provider-test-matrix
 )
 target_link_libraries(rebuntu-provider-test-matrix PRIVATE rebuntu-core)
 add_test(NAME provider_test_matrix COMMAND rebuntu-provider-test-matrix)
+
+# Phase 6.11: Shell output contract unit tests (disabled - gtest not available in CTest)
+# add_executable(rebuntu-shell-output-test
+#     ${CMAKE_CURRENT_LIST_DIR}/tests/unit/shell_output_contract_test.cpp
+# )
+# target_link_libraries(rebuntu-shell-output-test PRIVATE rebuntu-core rebuntu-shell-output)
+# add_test(NAME shell_output_test COMMAND rebuntu-shell-output-test)

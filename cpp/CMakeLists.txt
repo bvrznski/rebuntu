@@ -711,3 +711,10 @@ add_executable(rebuntu-hotplug-test
 )
 target_link_libraries(rebuntu-hotplug-test PRIVATE rebuntu-hotplug rebuntu-core)
 add_test(NAME hotplug_test COMMAND rebuntu-hotplug-test)
+
+# Phase 5.55: Netlink/Udev Adversarial Audit unit tests
+add_executable(rebuntu-netlink-adversarial-audit-test
+    ${CMAKE_CURRENT_LIST_DIR}/tests/unit/netlink_adversarial_audit_test.cpp
+)
+target_link_libraries(rebuntu-netlink-adversarial-audit-test PRIVATE rebuntu-core)
+add_test(NAME netlink_adversarial_audit_test COMMAND rebuntu-netlink-adversarial-audit-test)

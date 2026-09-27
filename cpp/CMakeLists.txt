@@ -88,6 +88,15 @@ add_library(rebuntu-shell STATIC
     ${CMAKE_CURRENT_LIST_DIR}/../src/system/shell/verbs/mapping.cpp
 )
 
+# Phase 6.10: Pipeline Semantics module (shell stream processing)
+add_library(rebuntu-shell-pipeline STATIC
+    ${CMAKE_CURRENT_LIST_DIR}/../src/system/shell/pipeline.hpp
+    ${CMAKE_CURRENT_LIST_DIR}/../src/system/shell/pipeline.cpp
+)
+
+target_include_directories(rebuntu-shell-pipeline PUBLIC ${CMAKE_CURRENT_LIST_DIR}/../src)
+target_link_libraries(rebuntu-core PUBLIC rebuntu-shell-pipeline)
+
 # Phase 6.4: Qualifiers & Modifiers module (header-only, included via rebuntu-shell)
 # The qualifiers are header-only and used directly by parser.hpp
 
@@ -487,6 +496,14 @@ add_executable(rebuntu-scope-grammar-test
 target_link_libraries(rebuntu-scope-grammar-test PRIVATE rebuntu-core rebuntu-shell)
 target_include_directories(rebuntu-scope-grammar-test PRIVATE ${CMAKE_SOURCE_DIR})
 add_test(NAME scope_grammar_test COMMAND rebuntu-scope-grammar-test)
+
+# Phase 6.10: Pipeline Semantics unit tests
+add_executable(rebuntu-pipeline-test
+    ${CMAKE_CURRENT_LIST_DIR}/tests/unit/pipeline_test.cpp
+)
+target_link_libraries(rebuntu-pipeline-test PRIVATE rebuntu-core rebuntu-shell rebuntu-shell-pipeline)
+target_include_directories(rebuntu-pipeline-test PRIVATE ${CMAKE_SOURCE_DIR})
+add_test(NAME pipeline_test COMMAND rebuntu-pipeline-test)
 
 # Phase 6.6: Value Parsers unit tests
 add_executable(rebuntu-value-parsers-test

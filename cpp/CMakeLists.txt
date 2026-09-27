@@ -718,3 +718,18 @@ add_executable(rebuntu-netlink-adversarial-audit-test
 )
 target_link_libraries(rebuntu-netlink-adversarial-audit-test PRIVATE rebuntu-core)
 add_test(NAME netlink_adversarial_audit_test COMMAND rebuntu-netlink-adversarial-audit-test)
+
+# Phase 5.59: Journald evidence integration - journal slice collector
+add_library(rebuntu-evidence-journal-slice STATIC
+    ${CMAKE_CURRENT_LIST_DIR}/../src/system/evidence/journal_slice_collector.hpp
+    ${CMAKE_CURRENT_LIST_DIR}/../src/system/evidence/journal_slice_collector.cpp
+)
+target_include_directories(rebuntu-evidence-journal-slice PUBLIC ${CMAKE_CURRENT_LIST_DIR}/../src)
+target_link_libraries(rebuntu-core PUBLIC rebuntu-evidence-journal-slice)
+
+# Journald evidence integration unit tests
+add_executable(rebuntu-evidence-journal-test
+    ${CMAKE_CURRENT_LIST_DIR}/tests/unit/evidence_journal_test.cpp
+)
+target_link_libraries(rebuntu-evidence-journal-test PRIVATE rebuntu-evidence-journal-slice rebuntu-core)
+add_test(NAME evidence_journal_test COMMAND rebuntu-evidence-journal-test)

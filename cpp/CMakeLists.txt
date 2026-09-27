@@ -420,6 +420,14 @@ target_link_libraries(rebuntu-core PUBLIC rebuntu-dpkg-package-inventory)
 # add_test(NAME dpkg_package_inventory_test COMMAND rebuntu-dpkg-package-inventory-test)
 
 
+# Phase 5.43: Semantic Annotation Boundary module
+add_library(rebuntu-semantic-annotation STATIC
+    ${CMAKE_CURRENT_LIST_DIR}/../src/system/semantic/annotation.hpp
+    ${CMAKE_CURRENT_LIST_DIR}/../src/system/semantic/annotation.cpp
+)
+target_include_directories(rebuntu-semantic-annotation PUBLIC ${CMAKE_CURRENT_LIST_DIR}/../src)
+target_link_libraries(rebuntu-core PUBLIC rebuntu-semantic-annotation)
+
 # Phase 5.26: Systemd Service Discovery Adapter module
 add_library(rebuntu-systemd-service-adapter STATIC
     ${CMAKE_CURRENT_LIST_DIR}/../src/adapters/systemd/service/types.hpp

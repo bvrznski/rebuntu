@@ -60,6 +60,7 @@ include(CTest)
 add_library(rebuntu-core STATIC
     ${CMAKE_CURRENT_LIST_DIR}/../src/interfaces/provider_registry.cpp
     ${CMAKE_CURRENT_LIST_DIR}/../src/interfaces/discovery_resync.cpp
+    ${CMAKE_CURRENT_LIST_DIR}/../src/interfaces/inventory_index.cpp
     ${CMAKE_CURRENT_LIST_DIR}/../src/system/services/contracts.cpp
 )
 

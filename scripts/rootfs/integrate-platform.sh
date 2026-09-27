@@ -150,8 +150,13 @@ if [[ "$PROFILE" != "base" ]]; then
             usermod -aG "$GROUP_CSV" rebuntu
     fi
 
-    # Empty password for live autologin.
+    # Live user password; GDM autologin remains enabled separately.
     echo "rebuntu:rebuntu" | sudo chroot "$TARGET" chpasswd
+
+    # Keep Casper live identity consistent with Rebuntu.
+    if [[ -f "$TARGET/etc/casper.conf" ]]; then
+        sudo sed -i 's/^export USERNAME=.*/export USERNAME="rebuntu"/; s/^export HOST=.*/export HOST="rebuntu"/' "$TARGET/etc/casper.conf"
+    fi
 
     # LIVE IMAGE ONLY.
     # Installer must remove this from an installed system.

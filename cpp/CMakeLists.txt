@@ -75,6 +75,19 @@ add_library(rebuntu-observation-bounds STATIC
 target_include_directories(rebuntu-observation-bounds PUBLIC ${CMAKE_CURRENT_LIST_DIR}/../src)
 target_link_libraries(rebuntu-core PUBLIC rebuntu-observation-bounds)
 
+# Phase 6.0: Shell Language Foundation module
+add_library(rebuntu-shell STATIC
+    ${CMAKE_CURRENT_LIST_DIR}/../src/system/shell/types.hpp
+    ${CMAKE_CURRENT_LIST_DIR}/../src/system/shell/parser.hpp
+    ${CMAKE_CURRENT_LIST_DIR}/../src/system/shell/parser.cpp
+    ${CMAKE_CURRENT_LIST_DIR}/../src/system/shell/predicates/installed.hpp
+    ${CMAKE_CURRENT_LIST_DIR}/../src/system/shell/predicates/installed.cpp
+    ${CMAKE_CURRENT_LIST_DIR}/../src/system/shell/verbs/list.hpp
+    ${CMAKE_CURRENT_LIST_DIR}/../src/system/shell/verbs/list.cpp
+)
+target_include_directories(rebuntu-shell PUBLIC ${CMAKE_CURRENT_LIST_DIR}/../src)
+target_link_libraries(rebuntu-core PUBLIC rebuntu-shell)
+
 # Add common runtime source files for Phase 4.18
 target_sources(rebuntu-core PRIVATE
     ${CMAKE_CURRENT_LIST_DIR}/../src/runtime/production.hpp

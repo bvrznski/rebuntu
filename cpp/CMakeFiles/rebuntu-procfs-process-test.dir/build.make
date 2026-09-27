@@ -136,6 +136,7 @@ rebuntu-procfs-process-test: librebuntu-session-utmp.a
 rebuntu-procfs-process-test: librebuntu-cgroup-hierarchy-adapter.a
 rebuntu-procfs-process-test: librebuntu-reporting.a
 rebuntu-procfs-process-test: librebuntu-hang-stall-jam-detector.a
+rebuntu-procfs-process-test: librebuntu-namespaces-adapter.a
 rebuntu-procfs-process-test: librebuntu-host-foundation.a
 rebuntu-procfs-process-test: CMakeFiles/rebuntu-procfs-process-test.dir/link.txt
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --bold --progress-dir=/home/bvrznski/rebuntu/cpp/CMakeFiles --progress-num=$(CMAKE_PROGRESS_2) "Linking CXX executable rebuntu-procfs-process-test"

@@ -1141,6 +1141,19 @@ rebuntu-hang-stall-jam-detector-test/fast:
 .PHONY : rebuntu-hang-stall-jam-detector-test/fast
 
 #=============================================================================
+# Target rules for targets named rebuntu-namespaces-adapter
+
+# Build rule for target.
+rebuntu-namespaces-adapter: cmake_check_build_system
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 rebuntu-namespaces-adapter
+.PHONY : rebuntu-namespaces-adapter
+
+# fast build rule for target.
+rebuntu-namespaces-adapter/fast:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/rebuntu-namespaces-adapter.dir/build.make CMakeFiles/rebuntu-namespaces-adapter.dir/build
+.PHONY : rebuntu-namespaces-adapter/fast
+
+#=============================================================================
 # Target rules for targets named rebuntu-host-foundation
 
 # Build rule for target.
@@ -1272,6 +1285,30 @@ home/bvrznski/rebuntu/src/adapters/kernel_fault_detector.s: home/bvrznski/rebunt
 home/bvrznski/rebuntu/src/adapters/kernel_fault_detector.cpp.s:
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/rebuntu-kernel-fault-detector.dir/build.make CMakeFiles/rebuntu-kernel-fault-detector.dir/home/bvrznski/rebuntu/src/adapters/kernel_fault_detector.cpp.s
 .PHONY : home/bvrznski/rebuntu/src/adapters/kernel_fault_detector.cpp.s
+
+home/bvrznski/rebuntu/src/adapters/namespaces/implementation.o: home/bvrznski/rebuntu/src/adapters/namespaces/implementation.cpp.o
+.PHONY : home/bvrznski/rebuntu/src/adapters/namespaces/implementation.o
+
+# target to build an object file
+home/bvrznski/rebuntu/src/adapters/namespaces/implementation.cpp.o:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/rebuntu-namespaces-adapter.dir/build.make CMakeFiles/rebuntu-namespaces-adapter.dir/home/bvrznski/rebuntu/src/adapters/namespaces/implementation.cpp.o
+.PHONY : home/bvrznski/rebuntu/src/adapters/namespaces/implementation.cpp.o
+
+home/bvrznski/rebuntu/src/adapters/namespaces/implementation.i: home/bvrznski/rebuntu/src/adapters/namespaces/implementation.cpp.i
+.PHONY : home/bvrznski/rebuntu/src/adapters/namespaces/implementation.i
+
+# target to preprocess a source file
+home/bvrznski/rebuntu/src/adapters/namespaces/implementation.cpp.i:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/rebuntu-namespaces-adapter.dir/build.make CMakeFiles/rebuntu-namespaces-adapter.dir/home/bvrznski/rebuntu/src/adapters/namespaces/implementation.cpp.i
+.PHONY : home/bvrznski/rebuntu/src/adapters/namespaces/implementation.cpp.i
+
+home/bvrznski/rebuntu/src/adapters/namespaces/implementation.s: home/bvrznski/rebuntu/src/adapters/namespaces/implementation.cpp.s
+.PHONY : home/bvrznski/rebuntu/src/adapters/namespaces/implementation.s
+
+# target to generate assembly for a file
+home/bvrznski/rebuntu/src/adapters/namespaces/implementation.cpp.s:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/rebuntu-namespaces-adapter.dir/build.make CMakeFiles/rebuntu-namespaces-adapter.dir/home/bvrznski/rebuntu/src/adapters/namespaces/implementation.cpp.s
+.PHONY : home/bvrznski/rebuntu/src/adapters/namespaces/implementation.cpp.s
 
 home/bvrznski/rebuntu/src/adapters/netlink/link/implementation.o: home/bvrznski/rebuntu/src/adapters/netlink/link/implementation.cpp.o
 .PHONY : home/bvrznski/rebuntu/src/adapters/netlink/link/implementation.o
@@ -2609,6 +2646,7 @@ help:
 	@echo "... rebuntu-lifecycle"
 	@echo "... rebuntu-locks"
 	@echo "... rebuntu-md-raid-adapter"
+	@echo "... rebuntu-namespaces-adapter"
 	@echo "... rebuntu-netlink-link"
 	@echo "... rebuntu-netlink-link-test"
 	@echo "... rebuntu-netlink-route"
@@ -2648,6 +2686,9 @@ help:
 	@echo "... home/bvrznski/rebuntu/src/adapters/kernel_fault_detector.o"
 	@echo "... home/bvrznski/rebuntu/src/adapters/kernel_fault_detector.i"
 	@echo "... home/bvrznski/rebuntu/src/adapters/kernel_fault_detector.s"
+	@echo "... home/bvrznski/rebuntu/src/adapters/namespaces/implementation.o"
+	@echo "... home/bvrznski/rebuntu/src/adapters/namespaces/implementation.i"
+	@echo "... home/bvrznski/rebuntu/src/adapters/namespaces/implementation.s"
 	@echo "... home/bvrznski/rebuntu/src/adapters/netlink/link/implementation.o"
 	@echo "... home/bvrznski/rebuntu/src/adapters/netlink/link/implementation.i"
 	@echo "... home/bvrznski/rebuntu/src/adapters/netlink/link/implementation.s"

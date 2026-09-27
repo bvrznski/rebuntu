@@ -122,5 +122,6 @@ set(CMAKE_DEPEND_INFO_FILES
   "CMakeFiles/rebuntu-reporting.dir/DependInfo.cmake"
   "CMakeFiles/rebuntu-hang-stall-jam-detector.dir/DependInfo.cmake"
   "CMakeFiles/rebuntu-hang-stall-jam-detector-test.dir/DependInfo.cmake"
+  "CMakeFiles/rebuntu-namespaces-adapter.dir/DependInfo.cmake"
   "CMakeFiles/rebuntu-host-foundation.dir/DependInfo.cmake"
   )

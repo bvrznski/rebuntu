@@ -3,6 +3,6 @@ Version: 0.1.0-1
 Section: metapackages
 Priority: optional
 Architecture: all
-Depends: gdm3, gnome-shell, gnome-session, mutter, network-manager, xserver-xorg, xwayland, dbus-user-session, policykit-1, rebuntu-base, rebuntu-branding
+Depends: gdm3, gnome-shell, gnome-session, mutter, network-manager, network-manager-gnome, xserver-xorg, xwayland, dbus-user-session, policykit-1, gnome-terminal, nautilus, gnome-control-center, rebuntu-base, rebuntu-branding
 Maintainer: Rebuntu Project
 Description: Rebuntu GNOME desktop profile

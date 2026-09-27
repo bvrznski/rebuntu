@@ -1,14 +1,8 @@
-netlink_link_test 1 0
-netlink_route_test 1 0
-netlink_socket_test 1 0
-procfs_process_test 1 0
-systemd_service_test 1 0
-hang_stall_jam_detector_test 1 0
-cgroup_hierarchy_test 1 0.218266
+netlink_link_test 4 0.00605948
+netlink_route_test 4 0.00385897
+netlink_socket_test 4 0.0244609
+procfs_process_test 4 0.143066
+systemd_service_test 4 0.873534
+hang_stall_jam_detector_test 4 0.0632964
+cgroup_hierarchy_test 4 0.0538345
 ---
-netlink_link_test
-netlink_route_test
-netlink_socket_test
-procfs_process_test
-systemd_service_test
-hang_stall_jam_detector_test

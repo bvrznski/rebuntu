@@ -136,6 +136,7 @@ rebuntu-systemd-service-test: librebuntu-session-utmp.a
 rebuntu-systemd-service-test: librebuntu-cgroup-hierarchy-adapter.a
 rebuntu-systemd-service-test: librebuntu-reporting.a
 rebuntu-systemd-service-test: librebuntu-hang-stall-jam-detector.a
+rebuntu-systemd-service-test: librebuntu-namespaces-adapter.a
 rebuntu-systemd-service-test: librebuntu-host-foundation.a
 rebuntu-systemd-service-test: CMakeFiles/rebuntu-systemd-service-test.dir/link.txt
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --bold --progress-dir=/home/bvrznski/rebuntu/cpp/CMakeFiles --progress-num=$(CMAKE_PROGRESS_2) "Linking CXX executable rebuntu-systemd-service-test"

@@ -494,6 +494,14 @@ add_test(NAME hang_stall_jam_detector_test COMMAND rebuntu-hang-stall-jam-detect
 # target_link_libraries(rebuntu-session-utmp-test PRIVATE rebuntu-session-utmp rebuntu-core gtest_main)
 # add_test(NAME session_utmp_test COMMAND rebuntu-session-utmp-test)
 
+# Phase 5.29: Namespace Observation Adapter module
+add_library(rebuntu-namespaces-adapter STATIC
+    ${CMAKE_CURRENT_LIST_DIR}/../src/adapters/namespaces/types.hpp
+    ${CMAKE_CURRENT_LIST_DIR}/../src/adapters/namespaces/implementation.cpp
+)
+target_include_directories(rebuntu-namespaces-adapter PUBLIC ${CMAKE_CURRENT_LIST_DIR}/../src)
+target_link_libraries(rebuntu-core PUBLIC rebuntu-namespaces-adapter)
+
 # Phase 2.0: Linux Host Foundation module
 add_library(rebuntu-host-foundation STATIC
     ${CMAKE_CURRENT_LIST_DIR}/../src/system/host_foundation/contracts.hpp

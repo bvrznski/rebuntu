@@ -136,6 +136,7 @@ rebuntu-hang-stall-jam-detector-test: librebuntu-internal-alerts.a
 rebuntu-hang-stall-jam-detector-test: librebuntu-session-utmp.a
 rebuntu-hang-stall-jam-detector-test: librebuntu-cgroup-hierarchy-adapter.a
 rebuntu-hang-stall-jam-detector-test: librebuntu-reporting.a
+rebuntu-hang-stall-jam-detector-test: librebuntu-namespaces-adapter.a
 rebuntu-hang-stall-jam-detector-test: librebuntu-host-foundation.a
 rebuntu-hang-stall-jam-detector-test: CMakeFiles/rebuntu-hang-stall-jam-detector-test.dir/link.txt
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --bold --progress-dir=/home/bvrznski/rebuntu/cpp/CMakeFiles --progress-num=$(CMAKE_PROGRESS_2) "Linking CXX executable rebuntu-hang-stall-jam-detector-test"

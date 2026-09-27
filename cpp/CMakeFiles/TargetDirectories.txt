@@ -76,6 +76,7 @@
 /home/bvrznski/rebuntu/cpp/CMakeFiles/rebuntu-reporting.dir
 /home/bvrznski/rebuntu/cpp/CMakeFiles/rebuntu-hang-stall-jam-detector.dir
 /home/bvrznski/rebuntu/cpp/CMakeFiles/rebuntu-hang-stall-jam-detector-test.dir
+/home/bvrznski/rebuntu/cpp/CMakeFiles/rebuntu-namespaces-adapter.dir
 /home/bvrznski/rebuntu/cpp/CMakeFiles/rebuntu-host-foundation.dir
 /home/bvrznski/rebuntu/cpp/CMakeFiles/test.dir
 /home/bvrznski/rebuntu/cpp/CMakeFiles/edit_cache.dir

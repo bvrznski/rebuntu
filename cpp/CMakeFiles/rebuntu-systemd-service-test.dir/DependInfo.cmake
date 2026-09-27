@@ -56,6 +56,7 @@ set(CMAKE_TARGET_LINKED_INFO_FILES
   "/home/bvrznski/rebuntu/cpp/CMakeFiles/rebuntu-cgroup-hierarchy-adapter.dir/DependInfo.cmake"
   "/home/bvrznski/rebuntu/cpp/CMakeFiles/rebuntu-reporting.dir/DependInfo.cmake"
   "/home/bvrznski/rebuntu/cpp/CMakeFiles/rebuntu-hang-stall-jam-detector.dir/DependInfo.cmake"
+  "/home/bvrznski/rebuntu/cpp/CMakeFiles/rebuntu-namespaces-adapter.dir/DependInfo.cmake"
   "/home/bvrznski/rebuntu/cpp/CMakeFiles/rebuntu-host-foundation.dir/DependInfo.cmake"
   )
 

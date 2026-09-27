@@ -59,6 +59,7 @@ include(CTest)
 
 add_library(rebuntu-core STATIC
     ${CMAKE_CURRENT_LIST_DIR}/../src/interfaces/provider_registry.cpp
+    ${CMAKE_CURRENT_LIST_DIR}/../src/interfaces/discovery_resync.cpp
     ${CMAKE_CURRENT_LIST_DIR}/../src/system/services/contracts.cpp
 )
 
@@ -565,6 +566,14 @@ add_executable(rebuntu-hang-stall-jam-detector-test
 )
 target_link_libraries(rebuntu-hang-stall-jam-detector-test PRIVATE rebuntu-hang-stall-jam-detector rebuntu-core)
 add_test(NAME hang_stall_jam_detector_test COMMAND rebuntu-hang-stall-jam-detector-test)
+
+# Phase 5.40: Discovery Resynchronization Interface unit tests
+add_executable(rebuntu-discovery-resync-test
+    ${CMAKE_CURRENT_LIST_DIR}/tests/unit/discovery_resync_test.cpp
+)
+target_include_directories(rebuntu-discovery-resync-test PRIVATE ${CMAKE_CURRENT_LIST_DIR}/../src)
+target_link_libraries(rebuntu-discovery-resync-test PRIVATE rebuntu-core)
+add_test(NAME discovery_resync_test COMMAND rebuntu-discovery-resync-test)
 
 # Phase 5.27: Session Observation Adapter unit tests
 # add_executable(rebuntu-session-utmp-test

@@ -28,6 +28,8 @@
 #include <chrono>
 #include <vector>
 
+#include "system/observation/bounds.hpp"
+
 namespace rebuntu::adapters::procfs::process {
 
 // ============================================================================
@@ -201,13 +203,13 @@ struct ProcessObservation {
 // ============================================================================
 // ProcessDiscoveryResult — Result of process discovery operation
 //
-// Contains all observations, statistics, and timing information.
+// Contains all observations, statistics, timing information, and bounds status.
 // ============================================================================
 struct ProcessDiscoveryResult {
     core::SemanticStatus status;
     std::string description;
     
-    // All observed processes
+    // All observed processes (may be truncated if limits hit)
     std::vector<ProcessObservation> processes;
     
     // Statistics
@@ -227,6 +229,9 @@ struct ProcessDiscoveryResult {
     
     // Provider provenance
     std::string provider_source{"procfs"};
+    
+    // Bounds enforcement status
+    observation::Truncation truncation;
     
     // Errors encountered during discovery (non-fatal)
     std::vector<std::pair<int, core::Error>> errors;  // pid -> error mapping

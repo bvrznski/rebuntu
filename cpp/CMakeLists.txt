@@ -67,6 +67,14 @@ add_library(rebuntu-core STATIC
 target_include_directories(rebuntu-core PUBLIC ${CMAKE_CURRENT_LIST_DIR}/../src)
 target_include_directories(rebuntu-core PUBLIC ${CMAKE_CURRENT_LIST_DIR}/../cpp/include)
 
+# Phase 5.52: Observation Memory Bounds module
+add_library(rebuntu-observation-bounds STATIC
+    ${CMAKE_CURRENT_LIST_DIR}/../src/system/observation/bounds.hpp
+    ${CMAKE_CURRENT_LIST_DIR}/../src/system/observation/bounds.cpp
+)
+target_include_directories(rebuntu-observation-bounds PUBLIC ${CMAKE_CURRENT_LIST_DIR}/../src)
+target_link_libraries(rebuntu-core PUBLIC rebuntu-observation-bounds)
+
 # Add common runtime source files for Phase 4.18
 target_sources(rebuntu-core PRIVATE
     ${CMAKE_CURRENT_LIST_DIR}/../src/runtime/production.hpp

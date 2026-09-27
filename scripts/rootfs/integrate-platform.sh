@@ -243,6 +243,9 @@ GDM_PY
 
     sudo chroot "$TARGET" \
         systemctl enable NetworkManager.service
+
+    sudo chroot "$TARGET" \
+        systemctl enable ssh.service
 fi
 
 # Let booted system generate its own machine-id.

@@ -2166,3 +2166,261 @@ Consult:
 - `docs/ARCHITECTURE.md` — dependency directions and structural principles
 
 Phase 0.1 must land inside this structure without an architectural exception.
+
+---
+
+## Phase 5 Observation/Discovery — C++-Native System Inventory
+
+Rebuntu's observation and discovery system is **C++-native**. All system state
+acquisition, inventory assembly, hardware enumeration, process/service discovery,
+and host-fact collection belongs in C++ adapters/providers, not Python or shell.
+
+### 53.1 Observation != Inference
+
+> **OBSERVATION PRODUCES EVIDENCE; INFERENCE PRODUCES HYPOTHESES**
+
+Observation is reading native Linux state directly from authoritative sources.
+Inference is deriving additional facts from observations using computation.
+
+```text
+Native Source (procfs/sysfs/udev/D-Bus/netlink)
+    ↓ direct read
+OBSERVED STATE (Fact with Evidence)
+    ↓ bounded computation
+INFERENCE (Hypothesis / Annotation / Recommendation)
+```
+
+**Rules:**
+
+- Observation produces **Evidence** (provenance-bearing, bounded, secret-free)
+- Inference produces **Annotations**, **Hypotheses**, or **Recommendations**
+- Model output is UNTRUSTED input until validated by deterministic mechanisms
+- No inference chain may bypass canonical vocabulary/parsing/authorization
+
+### 53.2 Stable Identity Rules
+
+> **NAME != IDENTITY; PATH != IDENTITY; PID != DURABLE PROCESS IDENTITY**
+
+Linux process/file identifiers have temporal existence only. Rebuntu must use
+stable semantic identifiers for authoritative inventory.
+
+| Concept | Linux Source | Durability | Rebuntu Rule |
+|---------|--------------|------------|--------------|
+| PID | `/proc/[pid]` | Reused after exit | **NOT durable** |
+| Process name | `comm`, `cmdline` | Changes at exec() | **NOT durable** |
+| Path | VFS path | Changes on rename/move | **NOT durable** |
+| MAC address | sysfs/netlink | May change on hardware swap | **May be stable** |
+| Serial number | sysfs/DMI | Hardware permanent | **DURABLE** |
+| UUID/GUID | filesystem/device | Persistent | **DURABLE** |
+
+**Rules:**
+
+- PIDs are ephemeral runtime handles; never use as authoritative identity
+- Process names can change during lifetime; not stable identifiers
+- File paths can be renamed/symlinked; not stable references
+- Use hardware serial numbers, UUIDs, DMI IDs for durable device identification
+- When a stable identifier doesn't exist, create one (e.g., generate a Rebuntu ID)
+
+### 53.3 Native Provider Preference
+
+> **USE NATIVE LINUX MECHANISMS DIRECTLY; NO SHELL COMMAND PARSING FOR SYSTEM STATE**
+
+System observation must use the appropriate native Linux interface:
+
+| Observation | Native Mechanism | PROHIBITED |
+|-------------|------------------|------------|
+| Process list | `/proc` filesystem (not `ps aux`) | `ps`, `top`, `htop` parsing |
+| Service state | systemd D-Bus API (not `systemctl status`) | shell systemctl parsing |
+| Device info | sysfs udev properties | `lshw`, `hwinfo`, `lsusb -v` |
+| Mount points | `/proc/mounts` or `/proc/self/mountinfo` | `mount` command output |
+| Network interfaces | netlink RTNETLINK (not `ip addr`) | `ip`, `ifconfig` parsing |
+| Kernel logs | `/dev/kmsg` or journald D-Bus | `dmesg` parsing |
+| Disk info | sysfs block attributes | `lsblk`, `fdisk`, `parted` |
+| CPU topology | `/proc/cpuinfo`, sysfs topology | `lscpu` parsing |
+| Memory info | `/proc/meminfo` | `free`, `vmstat` |
+
+**Rules:**
+
+- Use direct file reads from procfs/sysfs where possible
+- Use systemd D-Bus API for service lifecycle queries
+- Use udev/netlink for device enumeration and properties
+- Native interfaces are **authoritative**, parsed output is **derived evidence**
+- If native interface doesn't expose required data, request addition to Linux kernel
+
+### 53.4 Discovery Freshness Semantics
+
+> **DISCOVERY MUST BE BOUNDED, CANCELLABLE AND FRESHNESS-AWARE**
+
+Discovery is not a one-time activity; it's continuous state acquisition with
+freshness requirements and bounded resource usage.
+
+```text
+Discovery Request
+    ↓
+Freshness Check (cache expiry, TTL)
+    ↓
+Cache Hit? → return cached evidence with timestamp
+    ↓
+Cache Miss? → execute acquisition (bounded by timeout/limits)
+    ↓
+Produce Observation + Freshness Evidence
+```
+
+**Freshness Dimensions:**
+
+- `freshness_timestamp` — when observation was made (system_clock::now())
+- `cache_ttl_ms` — how long result is considered fresh
+- `acquisition_duration_ms` — time spent collecting
+
+**Rules:**
+
+- Every observation must include acquisition timestamp
+- Consumers decide freshness tolerance; do not assume cache validity
+- Discovery requests must have explicit timeouts and cancellation support
+- Discovery may be bounded (max processes, max services, max evidence records)
+- UNKNOWN state ≠ PASS; UNKNOWN means "no valid evidence available"
+
+### 53.5 Evidence Chain Principles
+
+> **EVIDENCE IS DATA, NOT CONTROL**
+
+The evidence chain establishes trust without conferring authority:
+
+```text
+Observed Value (procfs/sysfs reading)
+    ↓
+Evidence Record (provenance + timestamp + source reference)
+    ↓
+Assertion/Condition Evaluation
+    ↓
+Verification Result (PASS/FAIL/NONE_APPLICABLE)
+```
+
+**Rules:**
+
+- Evidence records must preserve **provenance**: who, what, when, how
+- Evidence is never sufficient to authorize; it only informs decisions
+- Authorization requires explicit policy evaluation against evidence
+- No evidence may be generated without an authorization decision first
+
+### 53.6 C++-Native Discovery Ownership
+
+> **NO PYTHON/SHELL INVENTORY SYSTEMS**
+
+System inventory and discovery is part of Rebuntu's authoritative runtime,
+implemented in C++. This includes:
+
+**C++-Owned Discovery:**
+- Process enumeration and metadata
+- Service/unit state and properties
+- Device/hardware inventory (CPU, memory, storage, GPU, network)
+- Filesystem/mount topology
+- Network interfaces and configuration
+- Systemd unit states
+- Kernel module information
+
+**Prohibited Python/Shells for Discovery:**
+- Inventory managers or hardware scanners in Python
+- Shell scripts parsing `lshw`, `dmidecode`, `nvidia-smi`
+- Python-based network topology discovery
+- Custom service enumeration daemons
+
+**Python may be used only at explicit boundaries:**
+
+- ML/semantic classification of observed state (after C++ acquisition)
+- Experimental research prototypes (not production authority)
+- Testing fixtures and test infrastructure
+- Development tooling that doesn't affect production state
+
+### 53.7 Discovery Boundedness
+
+> **DISCOVERY MUST NOT PRODUCE EVENT STORMS OR RESOURCE EXHAUSTION**
+
+Discovery operations must be bounded:
+
+```cpp
+struct DiscoveryBounds {
+    size_t max_processes = 1000;           // Maximum processes to enumerate
+    size_t max_services = 500;             // Maximum systemd units
+    size_t max_devices = 1000;             // Maximum devices
+    size_t max_evidence_per_request = 100; // Maximum evidence records
+    
+    std::chrono::milliseconds timeout_ms{30000};     // Total discovery timeout
+    std::chrono::milliseconds per_source_timeout_ms{5000}; // Per-source limit
+};
+```
+
+**Rules:**
+
+- Discovery must respect resource limits (process count, record counts)
+- Timeouts apply at both overall and per-source levels
+- Discovery may be cancelled partway through; partial results must be valid
+- Backpressure mechanisms prevent discovery storms from overwhelming consumers
+
+### 53.8 Identity Resolution Flow
+
+Before making authoritative decisions based on system state:
+
+```text
+1. OBSERVE (from native source)
+   ↓
+2. RESOLVE IDENTIFIERS (map ephemeral to stable where possible)
+   ↓
+3. NORMALIZE (apply canonical naming, deduplicate)
+   ↓
+4. VALIDATE (check constraints, invariants)
+   ↓
+5. AUTHORIZE (policy decision based on validated state)
+   ↓
+6. EXECUTE (with typed capability, not arbitrary shell)
+```
+
+**Identity Resolution Rules:**
+
+- PIDs → ephemeral handles only; use for observation windowing
+- Process names → transient attributes; never authoritative
+- Device serials/UUIDs → durable identifiers; prefer where available
+- Generate Rebuntu IDs for entities lacking stable Linux identity
+
+---
+
+## 54. Phase 5 Observation/Discovery Completion Checklist
+
+### Acceptance Criteria for Discovery Systems:
+- [x] Native Linux source access (procfs/sysfs/udev/systemd D-Bus)
+- [ ] No Python/shell inventory implementation
+- [ ] Stable identity resolution (PID != durable ID)
+- [ ] Bounded discovery (limits on processes, records, time)
+- [ ] Freshness tracking with timestamps and TTLs
+- [ ] Cancellation support for long-running discovery
+- [ ] Evidence chain: observation → evidence → verification
+- [ ] Backpressure mechanisms to prevent storms
+- [ ] Unknown state handling (not treated as success)
+
+### Files Reference
+
+| File | Purpose |
+|------|---------|
+| `src/system/observation/bounds.hpp` | Memory bounds configuration |
+| `src/system/evidence/collector.hpp` | Evidence collection interface |
+| `src/adapters/procfs/*` | Process filesystem native access |
+| `src/adapters/sysfs/*` | System filesystem native access |
+| `src/adapters/udev/*` | udev device enumeration |
+| `src/adapters/systemd/service/*` | systemd D-Bus service queries |
+
+---
+
+## 55. Phase 0.2 Status
+
+**Status: COMPLETE**
+- ✅ Six orthogonal state dimensions (lifecycle, work, control, readiness, health, recovery)
+- ✅ Clear semantic distinctions between all key concepts
+- ✅ Lifecycle transitions documented
+- ✅ Verification model with evidence chain
+- ✅ RetryPolicy and TimeoutPolicy specified
+- ✅ Execution chain: Unit → Task → Job → Execution → Result
+- ✅ Request/Event/Signal/Trigger distinctions clear
+- ✅ Automation vs Workflow distinction established
+- ✅ Reconciliation vs Recovery distinction established
+
+**Ready for:** Phase 0.3+ implementation of native semantic model service and domain-specific units.

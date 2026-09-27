@@ -414,6 +414,29 @@ struct ShellContext {
 };
 
 // ============================================================================
+// CollisionStatus — Native command collision classification (forward declared)
+// ============================================================================
+
+enum class CollisionStatus {
+    kNone,          // No collision detected
+    kShellBuiltin,  // Collides with shell builtin (e.g., 'cd', 'export')
+    kSystemCommand, // Collides with installed system command (e.g., 'find')
+    kUserAlias,     // Collides with user-defined alias/function
+    kAmbiguous,     // Multiple matches for abbreviation
+};
+
+inline std::string to_string(CollisionStatus s) {
+    switch (s) {
+        case CollisionStatus::kNone:       return "none";
+        case CollisionStatus::kShellBuiltin:return "shell_builtin";
+        case CollisionStatus::kSystemCommand:return "system_command";
+        case CollisionStatus::kUserAlias:  return "user_alias";
+        case CollisionStatus::kAmbiguous:  return "ambiguous";
+    }
+    return "unknown";
+}
+
+// ============================================================================
 // Error codes for shell language
 // ============================================================================
 
@@ -428,6 +451,21 @@ namespace error {
     constexpr const char* kVerificationFailed = "E_VERIFICATION_FAILED";
 }
 
+// ============================================================================
+// ResolutionCandidate — A potential resolution path
+// ============================================================================
+
+struct ResolutionCandidate {
+    std::string verb_or_predicate;     // The matched command name
+    IntentKind kind{IntentKind::kUnknown};
+    
+    std::optional<std::string> subject_type;  // If applicable
+    std::vector<std::string> targets;         // Resolved target candidates
+    
+    CollisionStatus collision_status{CollisionStatus::kNone};
+    std::optional<std::string> collision_with;  // Name of colliding command
+};
+
 }  // namespace rebuntu::shell
 
 namespace std {
@@ -436,6 +474,14 @@ template <> struct hash<rebuntu::shell::CommandIntent> {
     size_t operator()(const rebuntu::shell::CommandIntent& intent) const noexcept {
         size_t h = std::hash<std::string>{}(intent.id);
         h ^= std::hash<int>{}(static_cast<int>(intent.kind));
+        return h;
+    }
+};
+
+template <> struct hash<rebuntu::shell::ResolutionCandidate> {
+    size_t operator()(const rebuntu::shell::ResolutionCandidate& c) const noexcept {
+        size_t h = std::hash<std::string>{}(c.verb_or_predicate);
+        h ^= std::hash<int>{}(static_cast<int>(c.kind));
         return h;
     }
 };

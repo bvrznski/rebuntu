@@ -253,6 +253,14 @@ target_link_libraries(rebuntu-core PUBLIC rebuntu-evidence-deduplication)
 # target_include_directories(rebuntu-observation-query PUBLIC ${CMAKE_CURRENT_LIST_DIR}/../src)
 # target_link_libraries(rebuntu-core PUBLIC rebuntu-observation-query)
 
+# Phase 5.61: Observation Output Schema (machine-readable output with versioning)
+add_library(rebuntu-observation-output STATIC
+    ${CMAKE_CURRENT_LIST_DIR}/../src/system/observation/output/types.hpp
+    ${CMAKE_CURRENT_LIST_DIR}/../src/system/observation/output/json_serializer.cpp
+)
+target_include_directories(rebuntu-observation-output PUBLIC ${CMAKE_CURRENT_LIST_DIR}/../src)
+target_link_libraries(rebuntu-core PUBLIC rebuntu-observation-output)
+
 # Snapshot Service (types only - no implementation yet, interface is in types.hpp)
 # Phase 5.13: Snapshot Service module (diagnostic snapshot creation and storage)
 add_library(rebuntu-snapshot-service STATIC
@@ -681,6 +689,13 @@ add_executable(rebuntu-bin
 )
 target_include_directories(rebuntu-bin PRIVATE ${CMAKE_CURRENT_LIST_DIR}/../src)
 target_link_libraries(rebuntu-bin PRIVATE rebuntu-core rebuntu-cli-inventory)
+
+# Phase 5.61: Observation Output unit tests (disabled - gtest not available in CTest)
+# add_executable(rebuntu-observation-output-test
+#     ${CMAKE_CURRENT_LIST_DIR}/tests/unit/observation_output_test.cpp
+# )
+# target_link_libraries(rebuntu-observation-output-test PRIVATE rebuntu-core rebuntu-observation-output)
+# add_test(NAME observation_output_test COMMAND rebuntu-observation-output-test)
 
 # Phase 5.29: Namespace Observation Adapter module
 add_library(rebuntu-namespaces-adapter STATIC

@@ -15,6 +15,8 @@
 #include "inventory/types.hpp"
 #include "inventory/query.hpp"
 
+#include <system/observation/output/types.hpp>
+
 namespace rebuntu::cli {
 
 void print_usage(const std::string& program) {
@@ -126,6 +128,59 @@ void print_package(const inventory::EntityInfo& pkg, bool verbose = false) {
     std::cout << "\n";
 }
 
+int cmd_inventory_packages_json(const inventory::QueryOptions& options, const rebuntu::cli::inventory::QueryResult& result) {
+    auto generator = rebuntu::system::observation::output::make_output_generator();
+    
+    rebuntu::system::observation::output::OutputOptions output_options;
+    output_options.max_records = options.max_results > 0 ? options.max_results : 1000;
+    output_options.include_statistics = true;
+    
+    if (!generator->configure(output_options).is_success()) {
+        std::cerr << "error: failed to configure output generator\n";
+        return 1;
+    }
+    
+    for (const auto& pkg : result.entities) {
+        rebuntu::system::observation::output::ObservationRecord record;
+        
+        // Build observation record from EntityInfo
+        record.id = pkg.id;
+        if (pkg.name.has_value()) {
+            record.name = pkg.name.value();
+        }
+        record.category = "package";
+        record.state = rebuntu::system::observation::output::ObservationRecord::State::kActive;  // Default active state
+        
+        // Add package attributes
+        for (const auto& [key, value] : pkg.attributes) {
+            record.attributes[key] = value;
+        }
+        
+        // Build observation values from freshness report
+        if (pkg.freshness.source_kind != rebuntu::cli::inventory::FreshnessReport::Source::kUnknown) {
+            rebuntu::system::observation::output::ObservationValue obs;
+            obs.source = pkg.freshness.source;
+            
+            // Format observed_at as ISO-8601
+            auto tt = std::chrono::system_clock::to_time_t(pkg.freshness.observed_at);
+            char buf[32];
+            strftime(buf, sizeof(buf), "%Y-%m-%dT%H:%M:%SZ", gmtime(&tt));
+            obs.value = pkg.freshness.source + ":" + std::string(buf) + 
+                       (pkg.freshness.is_stale ? ":stale" : ":fresh");
+            
+            record.observations.push_back(std::move(obs));
+        }
+        
+        if (!generator->add_record(std::move(record)).is_success()) {
+            // Output was truncated due to bounds
+            break;
+        }
+    }
+    
+    std::cout << generator->generate();
+    return 0;
+}
+
 int cmd_inventory_packages(const inventory::QueryOptions& options) {
     auto query = rebuntu::cli::inventory::make_inventory_query();
     if (!query) {
@@ -149,6 +204,13 @@ int cmd_inventory_packages(const inventory::QueryOptions& options) {
     if (result.entities.empty()) {
         std::cout << "No packages found.\n";
         return 0;
+    }
+    
+    // Check if JSON output is requested via command line option parsing
+    bool json_output = false;  // For now, always use table format (CLI --format not fully implemented yet)
+    
+    if (json_output) {
+        return cmd_inventory_packages_json(options, result);
     }
     
     print_package_header();

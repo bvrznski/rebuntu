@@ -52,7 +52,15 @@ namespace rebuntu::interfaces {
 //   - filesystem: mount point or fs UUID/label
 //   - block_device: sysfs path or /dev node
 //   - service: systemd unit name + type
-//   - interface: network interface name (e.g., "eth0")
+//   - interface: WARNING: Interface names like "eth0" are NOT durable identities!
+//
+//     Interface names can change due to:
+//       - Reboot (kernel re-enumeration order changes)
+//       - Hotplug events (USB NICs, PCI devices)  
+//       - udev rules changes
+//       - Interface rename operations
+//
+//     For stable identity across reboots/hotplug, use ifindex@mac_address format.
 //   - address: IP address with family qualifier
 // ============================================================================
 struct CrossDomainEntityId {
@@ -74,7 +82,10 @@ struct CrossDomainEntityId {
     static CrossDomainEntityId filesystem(std::string mount_point_or_uuid);
     static CrossDomainEntityId block_device(std::string dev_node_or_sysfs);
     static CrossDomainEntityId service(std::string unit_name, std::string type = "service");
+    // network_interface: uses interface name (e.g., "eth0") - NOT durable across reboots/hotplug
     static CrossDomainEntityId network_interface(std::string name);
+    // network_interface_stable: uses ifindex@mac_address format for stable identity
+    static CrossDomainEntityId network_interface_stable(int32_t ifindex, std::string mac_address);
     static CrossDomainEntityId ip_address(std::string addr, std::string family = "ipv4");
     
     bool is_valid() const {

@@ -6,6 +6,28 @@
 //   - REFERENCES ARE TYPED: Each reference carries explicit domain information
 //   - REFERENCE VALIDITY IS BOUNDED: References may become invalid between use
 //   - ABSENCE IS UNKNOWN: Missing reference data is not proof of absence
+//
+// ============================================================================
+// NETWORK INTERFACE IDENTITY WARNING
+// ============================================================================
+//
+// The network_interface() method accepts interface names (e.g., "eth0", "wlan0").
+// These names are NOT durable identities and can change due to:
+//
+//   • Reboot - kernel re-enumeration order changes
+//   • Hotplug events - USB NICs, PCI devices added/removed
+//   • udev rules changes - different naming policies
+//   • Interface rename operations - manual or automated
+//
+// For stable identity across system changes, use the ifindex@mac_address format:
+//
+//   CrossDomainEntityId network_interface_stable(int32_t ifindex, std::string mac) {
+//       return CrossDomainEntityId{"interface", std::to_string(ifindex) + "@" + mac};
+//   }
+//
+// The netlink adapter provides NetworkInterfaceIdentity with stable fields:
+//   - ifindex: kernel's runtime identifier (unique during runtime)
+//   - mac_address: hardware-based identifier (persistent across reboots)
 
 #include <system/core/contracts.hpp>
 #include <interfaces/cross_domain_references.hpp>
@@ -45,7 +67,16 @@ CrossDomainEntityId CrossDomainEntityId::service(std::string unit_name, std::str
 }
 
 CrossDomainEntityId CrossDomainEntityId::network_interface(std::string name) {
+    // WARNING: Interface names are NOT durable identities.
+    // See file header for details on identity stability issues.
     return CrossDomainEntityId{"interface", std::move(name)};
+}
+
+CrossDomainEntityId CrossDomainEntityId::network_interface_stable(int32_t ifindex, std::string mac_address) {
+    // Stable network interface identity using ifindex@mac_address format.
+    // This provides durability across reboots and hotplug events where
+    // kernel re-enumeration may change interface names like "eth0" -> "eth1".
+    return CrossDomainEntityId{"interface", std::to_string(ifindex) + "@" + std::move(mac_address)};
 }
 
 CrossDomainEntityId CrossDomainEntityId::ip_address(std::string addr, std::string family) {

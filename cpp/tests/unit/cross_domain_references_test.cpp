@@ -49,6 +49,38 @@ TEST(CrossDomainReferences, CrossDomainEntityId_NetworkInterface) {
     EXPECT_EQ(id.identifier, "eth0");
 }
 
+// ============================================================================
+// Stable Identity Test
+// ============================================================================
+
+TEST(CrossDomainReferences, CrossDomainEntityId_NetworkInterfaceStable) {
+    auto id = CrossDomainEntityId::network_interface_stable(1234, "00:11:22:33:44:55");
+    
+    EXPECT_EQ(id.domain, "interface");
+    EXPECT_EQ(id.identifier, "1234@00:11:22:33:44:55");
+}
+
+TEST(CrossDomainReferences, CrossDomainEntityId_NetworkInterfaceStable_Equality) {
+    auto id1 = CrossDomainEntityId::network_interface_stable(1234, "aa:bb:cc:dd:ee:ff");
+    auto id2 = CrossDomainEntityId::network_interface_stable(1234, "aa:bb:cc:dd:ee:ff");
+    
+    EXPECT_EQ(id1, id2);
+}
+
+TEST(CrossDomainReferences, CrossDomainEntityId_NetworkInterfaceStable_DifferentIfindex) {
+    auto id1 = CrossDomainEntityId::network_interface_stable(1234, "aa:bb:cc:dd:ee:ff");
+    auto id2 = CrossDomainEntityId::network_interface_stable(5678, "aa:bb:cc:dd:ee:ff");
+    
+    EXPECT_NE(id1, id2);
+}
+
+TEST(CrossDomainReferences, CrossDomainEntityId_NetworkInterfaceStable_DifferentMac) {
+    auto id1 = CrossDomainEntityId::network_interface_stable(1234, "aa:bb:cc:dd:ee:ff");
+    auto id2 = CrossDomainEntityId::network_interface_stable(1234, "00:11:22:33:44:55");
+    
+    EXPECT_NE(id1, id2);
+}
+
 TEST(CrossDomainReferences, CrossDomainEntityId_IpAddress) {
     auto id = CrossDomainEntityId::ip_address("192.168.1.1", "ipv4");
     

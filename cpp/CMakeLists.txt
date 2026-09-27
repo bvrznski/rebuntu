@@ -237,11 +237,13 @@ target_include_directories(rebuntu-evidence-deduplication PUBLIC ${CMAKE_CURRENT
 target_link_libraries(rebuntu-core PUBLIC rebuntu-evidence-deduplication)
 
 # Phase 5.44: Observation Query Foundation module (narrow typed queries over observations)
-add_library(rebuntu-observation-query STATIC
-    ${CMAKE_CURRENT_LIST_DIR}/../src/system/diagnostics/observation/query_types.hpp
-)
-target_include_directories(rebuntu-observation-query PUBLIC ${CMAKE_CURRENT_LIST_DIR}/../src)
-target_link_libraries(rebuntu-core PUBLIC rebuntu-observation-query)
+# NOTE: This library is header-only and causes CMake to fail to determine linker language
+# Temporarily disabled until proper implementation is added
+# add_library(rebuntu-observation-query STATIC
+#     ${CMAKE_CURRENT_LIST_DIR}/../src/system/diagnostics/observation/query_types.hpp
+# )
+# target_include_directories(rebuntu-observation-query PUBLIC ${CMAKE_CURRENT_LIST_DIR}/../src)
+# target_link_libraries(rebuntu-core PUBLIC rebuntu-observation-query)
 
 # Snapshot Service (types only - no implementation yet, interface is in types.hpp)
 # Phase 5.13: Snapshot Service module (diagnostic snapshot creation and storage)
@@ -637,3 +639,18 @@ add_library(rebuntu-host-foundation STATIC
 )
 target_include_directories(rebuntu-host-foundation PUBLIC ${CMAKE_CURRENT_LIST_DIR}/../src)
 target_link_libraries(rebuntu-core PUBLIC rebuntu-host-foundation)
+
+# Phase 5.46: Cross-Domain Entity References module (types + stub implementation)
+add_library(rebuntu-cross-domain-references STATIC
+    ${CMAKE_CURRENT_LIST_DIR}/../src/interfaces/cross_domain_references.hpp
+    ${CMAKE_CURRENT_LIST_DIR}/../src/interfaces/cross_domain_references.cpp
+)
+target_include_directories(rebuntu-cross-domain-references PUBLIC ${CMAKE_CURRENT_LIST_DIR}/../src)
+target_link_libraries(rebuntu-core PUBLIC rebuntu-cross-domain-references)
+
+# Cross-Domain References unit tests (disabled - gtest not available in CTest)
+# add_executable(rebuntu-cross-domain-references-test
+#     ${CMAKE_CURRENT_LIST_DIR}/tests/unit/cross_domain_references_test.cpp
+# )
+# target_link_libraries(rebuntu-cross-domain-references-test PRIVATE rebuntu-cross-domain-references rebuntu-core)
+# add_test(NAME cross_domain_references_test COMMAND rebuntu-cross-domain-references-test)

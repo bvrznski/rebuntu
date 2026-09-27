@@ -178,13 +178,41 @@ static std::vector<uint8_t> read_edid_from_sysfs(const std::filesystem::path& co
 }
 
 // ============================================================================
-// Helper: Query CRTCs from sysfs
+// Helper: Read PCI bus ID from sysfs for a DRM card
+// A card's PCI bus location (e.g., "0000:01:00.0") is its durable identity.
 // ============================================================================
-static std::vector<CrtcObservation> query_crtcs_from_sysfs(int card_index) {
+static std::optional<std::string> read_pci_bus_id_from_card(const std::filesystem::path& card_path) {
+    // Try to get PCI bus ID from the device's uevent file
+    std::filesystem::path uevent_path = card_path / "device" / "uevent";
+    
+    if (!std::filesystem::exists(uevent_path)) {
+        return std::nullopt;
+    }
+    
+    std::ifstream file(uevent_path);
+    if (!file.is_open()) {
+        return std::nullopt;
+    }
+    
+    std::string line;
+    while (std::getline(file, line)) {
+        if (line.starts_with("PCI_SLOT_NAME=")) {
+            return line.substr(strlen("PCI_SLOT_NAME="));
+        }
+    }
+    
+    return std::nullopt;
+}
+
+// ============================================================================
+// Helper: Query CRTCs from sysfs
+// CRTCs are identified by their parent GPU's PCI bus ID + CRTC ID.
+// ============================================================================
+static std::vector<CrtcObservation> query_crtcs_from_sysfs(const std::string& pci_bus_id, const std::filesystem::path& card_path) {
     std::vector<CrtcObservation> crtcs;
     
     // CRTC info is available via /sys/class/drm/card*/crtc-*
-    std::filesystem::path crtc_path = "/sys/class/drm/card" + std::to_string(card_index);
+    std::filesystem::path crtc_path = card_path;
     
     if (!std::filesystem::exists(crtc_path)) {
         return crtcs;
@@ -201,7 +229,7 @@ static std::vector<CrtcObservation> query_crtcs_from_sysfs(int card_index) {
         uint32_t crtc_id = static_cast<uint32_t>(std::hash<std::string>{}(name) % 1000);
         
         CrtcObservation obs;
-        obs.card_index = card_index;
+        obs.gpu_pci_bus_id = pci_bus_id;  // Use stable PCI bus ID
         obs.crtc_id = crtc_id;
         
         // Check if this CRTC has a mode (is active)
@@ -240,18 +268,16 @@ static std::vector<CrtcObservation> query_crtcs_from_sysfs(int card_index) {
 
 // ============================================================================
 // Helper: Query connectors from sysfs (fallback when libdrm not available)
+// Connectors are identified by GPU's PCI bus ID + connector name.
 // ============================================================================
-static std::vector<ConnectorObservation> query_connectors_from_sysfs(int card_index) {
+static std::vector<ConnectorObservation> query_connectors_from_sysfs(const std::string& pci_bus_id, const std::filesystem::path& card_path) {
     std::vector<ConnectorObservation> connectors;
     
-    // Connector info is in /sys/class/drm/card*/
-    std::filesystem::path connector_base = "/sys/class/drm/card" + std::to_string(card_index);
-    
-    if (!std::filesystem::exists(connector_base)) {
+    if (!std::filesystem::exists(card_path)) {
         return connectors;
     }
     
-    for (const auto& entry : std::filesystem::directory_iterator(connector_base)) {
+    for (const auto& entry : std::filesystem::directory_iterator(card_path)) {
         const auto& path = entry.path();
         std::string name = path.filename().string();
         
@@ -260,8 +286,8 @@ static std::vector<ConnectorObservation> query_connectors_from_sysfs(int card_in
         if (name.find("card") != 0) continue;
         
         ConnectorObservation conn;
-        conn.identity.card_index = card_index;
-        conn.identity.connector_id = static_cast<uint32_t>(std::hash<std::string>{}(name) % 10000);
+        conn.identity.gpu_pci_bus_id = pci_bus_id;  // Use stable PCI bus ID
+        conn.identity.connector_name = name;        // Connector name from sysfs
         conn.observed_at = std::chrono::system_clock::now();
         conn.source = "sysfs";
         
@@ -289,7 +315,7 @@ static std::vector<ConnectorObservation> query_connectors_from_sysfs(int card_in
 }
 
 // ============================================================================
-// DRMTopologyAdapter Implementation (using sysfs discovery)
+// DRMTopologyAdapter Implementation (using sysfs discovery with PCI bus IDs)
 // ============================================================================
 
 class DRMTopologyAdapter : public DisplayTopologyAdapter {
@@ -305,7 +331,6 @@ public:
         
         // Find available DRM cards from sysfs
         std::filesystem::path drm_base = "/sys/class/drm";
-        std::vector<int> card_indices;
         
         if (!std::filesystem::exists(drm_base)) {
             result.status = core::SemanticStatus::kUnknown;
@@ -313,38 +338,37 @@ public:
             return result;
         }
         
-        // Scan for card directories in sysfs
+        // Collect all card paths with their PCI bus IDs
+        std::vector<std::pair<std::filesystem::path, std::string>> cards;
+        
         for (const auto& entry : std::filesystem::directory_iterator(drm_base)) {
             const auto& path = entry.path();
             std::string name = path.filename().string();
             
             if (name.find("card") == 0) {
-                try {
-                    int card_idx = std::stoi(name.substr(4));
-                    if (card_idx >= 0 && card_idx < 16) {
-                        card_indices.push_back(card_idx);
-                    }
-                } catch (...) {
-                    // Ignore non-numeric card names
+                // Get PCI bus ID from the card's device/uevent file
+                auto pci_id = read_pci_bus_id_from_card(path);
+                if (pci_id.has_value()) {
+                    cards.emplace_back(path, *pci_id);
                 }
             }
         }
         
-        if (card_indices.empty()) {
+        if (cards.empty()) {
             result.status = core::SemanticStatus::kUnknown;
             result.description = "No DRM card directories found in sysfs";
             return result;
         }
         
-        // Observe each adapter
-        for (int card_index : card_indices) {
+        // Observe each adapter using PCI bus ID as stable identity
+        for (const auto& [card_path, pci_bus_id] : cards) {
             GpuAdapterObservation adapter;
-            adapter.card_index = card_index;
-            adapter.card_path = "/sys/class/drm/card" + std::to_string(card_index);
+            adapter.pci_bus_id = pci_bus_id;  // Use stable PCI bus ID as identifier
+            adapter.sysfs_path = card_path.string();
             adapter.observed_at = std::chrono::system_clock::now();
             adapter.source = "sysfs";
             
-            auto crtcs = query_crtcs_from_sysfs(card_index);
+            auto crtcs = query_crtcs_from_sysfs(pci_bus_id, card_path);
             for (const auto& crtc : crtcs) {
                 if (crtc.is_active) {
                     adapter.active_crtcs++;
@@ -352,7 +376,7 @@ public:
             }
             adapter.crtcs = std::move(crtcs);
             
-            auto connectors = query_connectors_from_sysfs(card_index);
+            auto connectors = query_connectors_from_sysfs(pci_bus_id, card_path);
             for (const auto& conn : connectors) {
                 if (conn.connection == ConnectionStatus::kConnected) {
                     adapter.connected_displays++;
@@ -367,7 +391,7 @@ public:
         result.elapsed_ms = std::chrono::duration_cast<std::chrono::milliseconds>(
             end_time - start_time);
         
-        // Build final topology - compute counts first before moving
+        // Build final topology using PCI bus ID as key
         DisplayTopology topology;
         topology.captured_at = result.observed_at;
         
@@ -376,23 +400,16 @@ public:
             topology.total_connectors += adapter.connectors.size();
             topology.connected_displays += adapter.connected_displays;
             topology.active_crtcs += adapter.active_crtcs;
+            
+            // Move adapter to topology using PCI bus ID as key
+            topology.adapters[adapter.pci_bus_id] = std::move(adapter);
         }
         
-        // Now move adapters to topology
-        for (auto& adapter : result.adapters) {
-            auto card_idx = adapter.card_index;
-            
-            // Create connector map entries before moving
+        // Build connector map with stable identifiers (PCI bus ID + connector name)
+        for (const auto& adapter : result.adapters) {
             for (const auto& conn : adapter.connectors) {
-                ConnectorIdentity id{conn.identity.card_index, conn.identity.connector_id};
-                topology.connector_map[id] = conn;  // Copy, not move - we still need adapter.connectors later
+                topology.connector_map[conn.identity] = conn;
             }
-            
-            // Move adapter to topology, but make a copy for result.adapters first
-            GpuAdapterObservation adapter_copy = adapter;
-            topology.adapters[card_idx] = std::move(adapter);
-            // Restore the original in result.adapters for subsequent access
-            adapter = std::move(adapter_copy);
         }
         
         topology.capture_duration_ms = result.elapsed_ms;
@@ -418,9 +435,9 @@ public:
         return DisplayTopology{};
     }
     
-    std::optional<GpuAdapterObservation> resolve_adapter(int32_t card_index) override {
+    std::optional<GpuAdapterObservation> resolve_adapter(const std::string& pci_bus_id) override {
         auto topology = get_topology();
-        auto it = topology.adapters.find(card_index);
+        auto it = topology.adapters.find(pci_bus_id);
         if (it != topology.adapters.end()) {
             return it->second;
         }

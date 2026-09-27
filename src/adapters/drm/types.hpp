@@ -153,17 +153,28 @@ struct DisplayProperties {
 // ConnectorIdentity — Stable identity for a display connector
 //
 // A connector is uniquely identified by:
-//   - card_index = GPU adapter index (card0=0, card1=1, etc.)
-//   - connector_id = DRM's internal connector ID (unique per card)
+//   - gpu_pci_bus_id = GPU's PCI bus location (e.g., "0000:01:00.0") - durable across reboots
+//   - connector_name = Connector name from sysfs (e.g., "HDMI-A-1", "DP-2")
+//
+// Note: Numeric indices like card_index are NOT stable - they can change between
+// reboots when GPU hardware is added/removed. Use PCI bus IDs for durable identity.
 // ============================================================================
 struct ConnectorIdentity {
-    int32_t card_index{-1};       // GPU adapter index
-    uint32_t connector_id{0};     // DRM connector ID
+    std::string gpu_pci_bus_id;   // GPU's PCI bus location (stable identifier)
+    std::string connector_name;   // Connector name from sysfs
 };
 
 inline bool operator==(const ConnectorIdentity& a, const ConnectorIdentity& b) {
-    return a.card_index == b.card_index && a.connector_id == b.connector_id;
+    return a.gpu_pci_bus_id == b.gpu_pci_bus_id && a.connector_name == b.connector_name;
 }
+
+struct ConnectorIdentityHash {
+    size_t operator()(const ConnectorIdentity& id) const {
+        size_t h1 = std::hash<std::string>{}(id.gpu_pci_bus_id);
+        size_t h2 = std::hash<std::string>{}(id.connector_name);
+        return h1 ^ (h2 << 1);
+    }
+};
 
 // ============================================================================
 // ConnectorObservation — Complete observation of a display connector
@@ -199,8 +210,8 @@ struct ConnectorObservation {
 // CRTCs represent display pipes that scan out content to connectors.
 // ============================================================================
 struct CrtcObservation {
-    int32_t card_index{-1};
-    uint32_t crtc_id{0};  // DRM CRTC ID
+    std::string gpu_pci_bus_id;   // GPU's PCI bus location (stable identifier)
+    uint32_t crtc_id{0};          // DRM CRTC ID
     
     std::optional<DisplayMode> mode;        // Current mode if active
     std::vector<uint32_t> connected_connectors;  // Connector IDs driven by this CRTC
@@ -214,8 +225,8 @@ struct CrtcObservation {
 // Represents a single DRM card device with its CRTCs and connectors.
 // ============================================================================
 struct GpuAdapterObservation {
-    int32_t card_index{-1};      // Card index (0, 1, etc.)
-    std::string card_path;       // Device path (e.g., "/dev/dri/card0")
+    std::string pci_bus_id;      // PCI bus location (e.g., "0000:01:00.0") - durable identity
+    std::string sysfs_path;      // Sysfs path (e.g., "/sys/class/drm/cardN")
     
     // CRTC information
     std::vector<CrtcObservation> crtcs;
@@ -237,17 +248,11 @@ struct GpuAdapterObservation {
 // Represents the full GPU->CRTC->Connector->Monitor hierarchy.
 // ============================================================================
 struct DisplayTopology {
-    // All observed GPU adapters
-    std::unordered_map<int32_t, GpuAdapterObservation> adapters;
+    // All observed GPU adapters by stable PCI bus ID (not numeric indices)
+    std::unordered_map<std::string, GpuAdapterObservation> adapters;
     
     // Connector identity -> observation mapping for quick lookup
-    struct IdentityHash {
-        size_t operator()(const ConnectorIdentity& id) const {
-            return std::hash<int32_t>{}(id.card_index) ^ 
-                   (std::hash<uint32_t>{}(id.connector_id) << 1);
-        }
-    };
-    std::unordered_map<ConnectorIdentity, ConnectorObservation, IdentityHash> connector_map;
+    std::unordered_map<ConnectorIdentity, ConnectorObservation, ConnectorIdentityHash> connector_map;
     
     // Statistics
     size_t total_adapters{0};
@@ -304,8 +309,8 @@ public:
     // Get the full topology graph
     virtual DisplayTopology get_topology() = 0;
     
-    // Resolve a specific GPU adapter by index
-    virtual std::optional<GpuAdapterObservation> resolve_adapter(int32_t card_index) = 0;
+    // Resolve a specific GPU adapter by PCI bus ID (stable identity)
+    virtual std::optional<GpuAdapterObservation> resolve_adapter(const std::string& pci_bus_id) = 0;
     
     // Resolve a specific connector by identity
     virtual std::optional<ConnectorObservation> resolve_connector(const ConnectorIdentity& id) = 0;

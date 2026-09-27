@@ -166,8 +166,9 @@ GPUAssessment GPUMonitor::assess_gpu_health_internal(std::chrono::system_clock::
                             
                             // Set default brand for NVIDIA
                             device.brand = "NVIDIA";
-                            device.device_index = detected_devices.size();
-                            device.uuid = device.pci_bus_id;  // PCI bus ID as UUID fallback
+                            // Use stable PCI bus ID as the primary identifier
+                            // GPU indices derived from detection order are NOT stable across reboots
+                            device.uuid = device.pci_bus_id;
                             
                             detected_devices.push_back(std::move(device));
                         }

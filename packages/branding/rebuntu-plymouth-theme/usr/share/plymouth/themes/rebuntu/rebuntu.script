@@ -4,109 +4,182 @@ Window.SetBackgroundBottomColor(0.006, 0.008, 0.012);
 screen_w = Window.GetWidth();
 screen_h = Window.GetHeight();
 
+# -------------------------------------------------------------------------
+# Rebuntu bootstrap Plymouth theme
+#
+# Firmware/framebuffer independent sizing:
+# derive typography from a clamped logical height rather than trusting an
+# arbitrary EFI/BIOS framebuffer geometry directly.
+# -------------------------------------------------------------------------
+
+logical_h = screen_h;
+
+if (logical_h < 600)
+    logical_h = 600;
+
+if (logical_h > 1440)
+    logical_h = 1440;
+
+logo_cx = Math.Int(screen_w / 2);
+logo_cy = Math.Int(screen_h * 0.355);
+
 # ---- Logo ---------------------------------------------------------------
-# Plymouth script has no general vector path API.  We therefore render a
-# compact procedural mark using rotated tapered white sprites.  This keeps the
-# theme resolution-independent enough for the bootstrap stage and, crucially,
-# preserves the central aperture instead of filling it.
 
-blade_w = Math.Int(screen_h * 0.020);
-blade_h = Math.Int(screen_h * 0.105);
-if (blade_w < 18) blade_w = 18;
-if (blade_h < 96) blade_h = 96;
+blade_font = Math.Int(logical_h * 0.105);
 
-blade_img = Image.Text("◆", 1.0, 1.0, 1.0, 1.0,
-                       "Sans Bold " + Math.Int(screen_h * 0.105));
-blade = Sprite(blade_img);
+if (blade_font < 72)
+    blade_font = 72;
 
-# A text glyph is only used as a neutral white primitive.  Three independently
-# rotated sprites create the triskelion silhouette; their radial offset leaves
-# the aperture open.
-logo_cx = screen_w / 2;
-logo_cy = screen_h * 0.355;
-radius = screen_h * 0.030;
+if (blade_font > 150)
+    blade_font = 150;
 
-blade.SetX(logo_cx - blade_img.GetWidth()/2);
-blade.SetY(logo_cy - radius - blade_img.GetHeight()/2);
-blade.SetZ(10);
+radius = Math.Int(logical_h * 0.030);
+
+if (radius < 18)
+    radius = 18;
+
+if (radius > 44)
+    radius = 44;
+
+blade_img = Image.Text("◆",
+                       1.0, 1.0, 1.0, 1.0,
+                       "Sans Bold " + blade_font);
+
+blade1 = Sprite(blade_img);
+blade1.SetX(Math.Int(logo_cx - blade_img.GetWidth() / 2));
+blade1.SetY(Math.Int(logo_cy - radius - blade_img.GetHeight() / 2));
+blade1.SetZ(10);
 
 blade2 = Sprite(blade_img);
-blade2.SetX(logo_cx + radius * 0.866 - blade_img.GetWidth()/2);
-blade2.SetY(logo_cy + radius * 0.5 - blade_img.GetHeight()/2);
+blade2.SetX(Math.Int(logo_cx + radius * 0.866 - blade_img.GetWidth() / 2));
+blade2.SetY(Math.Int(logo_cy + radius * 0.5 - blade_img.GetHeight() / 2));
 blade2.SetZ(10);
 
 blade3 = Sprite(blade_img);
-blade3.SetX(logo_cx - radius * 0.866 - blade_img.GetWidth()/2);
-blade3.SetY(logo_cy + radius * 0.5 - blade_img.GetHeight()/2);
+blade3.SetX(Math.Int(logo_cx - radius * 0.866 - blade_img.GetWidth() / 2));
+blade3.SetY(Math.Int(logo_cy + radius * 0.5 - blade_img.GetHeight() / 2));
 blade3.SetZ(10);
 
-# Dark aperture above the white primitives.
-aperture_img = Image.Text("●", 0.006, 0.008, 0.012, 1.0,
-                          "Sans Bold " + Math.Int(screen_h * 0.038));
+# Central negative-space aperture.
+
+aperture_font = Math.Int(logical_h * 0.038);
+
+if (aperture_font < 24)
+    aperture_font = 24;
+
+if (aperture_font > 54)
+    aperture_font = 54;
+
+aperture_img = Image.Text("●",
+                          0.006, 0.008, 0.012, 1.0,
+                          "Sans Bold " + aperture_font);
+
 aperture = Sprite(aperture_img);
-aperture.SetX(logo_cx - aperture_img.GetWidth()/2);
-aperture.SetY(logo_cy - aperture_img.GetHeight()/2);
+aperture.SetX(Math.Int(logo_cx - aperture_img.GetWidth() / 2));
+aperture.SetY(Math.Int(logo_cy - aperture_img.GetHeight() / 2));
 aperture.SetZ(20);
 
 # ---- Wordmark -----------------------------------------------------------
-word_img = Image.Text("R E B U N T U", 0.94, 0.95, 0.97, 1.0,
-                      "Sans " + Math.Int(screen_h * 0.027));
+
+word_font = Math.Int(logical_h * 0.027);
+
+if (word_font < 18)
+    word_font = 18;
+
+if (word_font > 38)
+    word_font = 38;
+
+word_img = Image.Text("R E B U N T U",
+                      0.94, 0.95, 0.97, 1.0,
+                      "Sans " + word_font);
+
 word = Sprite(word_img);
-word.SetX((screen_w - word_img.GetWidth()) / 2);
-word.SetY(screen_h * 0.505);
+word.SetX(Math.Int((screen_w - word_img.GetWidth()) / 2));
+word.SetY(Math.Int(screen_h * 0.505));
 word.SetZ(10);
 
-# ---- Progress bar -------------------------------------------------------
+# ---- Progress -----------------------------------------------------------
+
 bar_w = Math.Int(word_img.GetWidth() * 0.72);
-if (bar_w < 240) bar_w = 240;
-bar_h = Math.Int(screen_h * 0.0022);
-if (bar_h < 2) bar_h = 2;
+
+if (bar_w < 180)
+    bar_w = 180;
+
+if (bar_w > 520)
+    bar_w = 520;
 
 bar_x = Math.Int((screen_w - bar_w) / 2);
 bar_y = Math.Int(screen_h * 0.565);
 
-rail_img = Image.Text("━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━",
-                      0.10, 0.11, 0.14, 1.0,
-                      "Sans " + Math.Int(screen_h * 0.010));
+line_font = Math.Int(logical_h * 0.010);
+
+if (line_font < 8)
+    line_font = 8;
+
+if (line_font > 14)
+    line_font = 14;
+
+rail_img = Image.Text(
+    "━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━",
+    0.10, 0.11, 0.14, 1.0,
+    "Sans " + line_font
+);
+
 rail = Sprite(rail_img);
-rail.SetX((screen_w - rail_img.GetWidth()) / 2);
+rail.SetX(Math.Int((screen_w - rail_img.GetWidth()) / 2));
 rail.SetY(bar_y);
 rail.SetZ(5);
 
-# 48 tiny segments allow an approximate cyan -> blue -> violet gradient.
 segments = 48;
-seg_gap = 1;
-seg_w = Math.Int(bar_w / segments);
+seg_w = bar_w / segments;
 progress = 0.0;
 
 fun color_r(t) {
-    if (t < 0.5) return 0.10 + t * 0.18;
+    if (t < 0.5)
+        return 0.10 + t * 0.18;
+
     return 0.19 + (t - 0.5) * 1.10;
 }
+
 fun color_g(t) {
-    if (t < 0.5) return 0.88 - t * 0.72;
+    if (t < 0.5)
+        return 0.88 - t * 0.72;
+
     return 0.52 - (t - 0.5) * 0.62;
 }
+
 fun color_b(t) {
-    if (t < 0.5) return 0.96;
+    if (t < 0.5)
+        return 0.96;
+
     return 0.98 - (t - 0.5) * 0.10;
 }
 
 for (i = 0; i < segments; i++) {
     t = i / (segments - 1.0);
-    # Unicode heavy line gives a thin rectangular-ish segment in Plymouth.
-    img = Image.Text("━", color_r(t), color_g(t), color_b(t), 1.0,
-                     "Sans Bold " + Math.Int(screen_h * 0.010));
+
+    img = Image.Text(
+        "━",
+        color_r(t),
+        color_g(t),
+        color_b(t),
+        1.0,
+        "Sans Bold " + line_font
+    );
+
     s = Sprite(img);
-    s.SetX(bar_x + i * seg_w);
+
+    s.SetX(Math.Int(bar_x + i * seg_w));
     s.SetY(bar_y);
     s.SetZ(6);
     s.SetOpacity(0);
+
     segment[i] = s;
 }
 
 fun refresh_progress() {
     visible = Math.Int(progress * segments);
+
     for (i = 0; i < segments; i++) {
         if (i < visible)
             segment[i].SetOpacity(1);
@@ -117,15 +190,27 @@ fun refresh_progress() {
 
 fun on_boot_progress(duration, fraction) {
     progress = fraction;
-    if (progress < 0) progress = 0;
-    if (progress > 1) progress = 1;
+
+    if (progress < 0)
+        progress = 0;
+
+    if (progress > 1)
+        progress = 1;
+
     refresh_progress();
 }
 
 Plymouth.SetBootProgressFunction(on_boot_progress);
 
-# Password/question prompts remain usable if boot requires interaction.
 fun display_normal() {
+    blade1.SetOpacity(1);
+    blade2.SetOpacity(1);
+    blade3.SetOpacity(1);
+    aperture.SetOpacity(1);
     word.SetOpacity(1);
+    rail.SetOpacity(1);
+
+    refresh_progress();
 }
+
 Plymouth.SetDisplayNormalFunction(display_normal);

@@ -406,6 +406,13 @@ add_executable(rebuntu-procfs-process-test
 target_link_libraries(rebuntu-procfs-process-test PRIVATE rebuntu-procfs-process rebuntu-core)
 add_test(NAME procfs_process_test COMMAND rebuntu-procfs-process-test)
 
+# Phase 5.50: Provider Isolation and Degradation unit tests (Task 5.50)
+add_executable(rebuntu-isolated-provider-test
+    ${CMAKE_CURRENT_LIST_DIR}/tests/unit/isolated_provider_test.cpp
+)
+target_link_libraries(rebuntu-isolated-provider-test PRIVATE rebuntu-core)
+add_test(NAME isolated_provider_test COMMAND rebuntu-isolated-provider-test)
+
 # Phase 5.32: Kernel Module Observation Adapter module (procfs modules)
 add_library(rebuntu-procfs-modules STATIC
     ${CMAKE_CURRENT_LIST_DIR}/../src/adapters/procfs/modules/types.hpp

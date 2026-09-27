@@ -179,6 +179,62 @@ XSession=rebuntu
 SystemAccount=false
 ACCOUNT
 
+    # Configure GDM for the Rebuntu live session without replacing the
+    # distribution-owned /etc/gdm3/custom.conf.
+    sudo mkdir -p "$TARGET/etc/gdm3"
+
+    sudo python3 - "$TARGET/etc/gdm3/custom.conf" <<'GDM_PY'
+import sys
+from pathlib import Path
+
+path = Path(sys.argv[1])
+text = path.read_text() if path.exists() else ""
+
+if "[daemon]" not in text:
+    text += "\n[daemon]\n"
+
+lines = text.splitlines()
+out = []
+in_daemon = False
+seen = set()
+
+settings = {
+    "AutomaticLoginEnable": "true",
+    "AutomaticLogin": "rebuntu",
+    "WaylandEnable": "true",
+}
+
+for line in lines:
+    stripped = line.strip()
+
+    if stripped.startswith("[") and stripped.endswith("]"):
+        if in_daemon:
+            for key, value in settings.items():
+                if key not in seen:
+                    out.append(f"{key}={value}")
+        in_daemon = stripped == "[daemon]"
+        seen = set()
+        out.append(line)
+        continue
+
+    if in_daemon and "=" in stripped and not stripped.startswith("#"):
+        key = stripped.split("=", 1)[0].strip()
+        if key in settings:
+            if key not in seen:
+                out.append(f"{key}={settings[key]}")
+                seen.add(key)
+            continue
+
+    out.append(line)
+
+if in_daemon:
+    for key, value in settings.items():
+        if key not in seen:
+            out.append(f"{key}={value}")
+
+path.write_text("\n".join(out).rstrip() + "\n")
+GDM_PY
+
     sudo chroot "$TARGET" \
         systemctl set-default graphical.target
 

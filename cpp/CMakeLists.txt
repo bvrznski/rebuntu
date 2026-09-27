@@ -340,6 +340,14 @@ add_executable(rebuntu-procfs-process-test
 target_link_libraries(rebuntu-procfs-process-test PRIVATE rebuntu-procfs-process rebuntu-core)
 add_test(NAME procfs_process_test COMMAND rebuntu-procfs-process-test)
 
+# Phase 5.32: Kernel Module Observation Adapter module (procfs modules)
+add_library(rebuntu-procfs-modules STATIC
+    ${CMAKE_CURRENT_LIST_DIR}/../src/adapters/procfs/modules/types.hpp
+    ${CMAKE_CURRENT_LIST_DIR}/../src/adapters/procfs/modules/implementation.cpp
+)
+target_include_directories(rebuntu-procfs-modules PUBLIC ${CMAKE_CURRENT_LIST_DIR}/../src)
+target_link_libraries(rebuntu-core PUBLIC rebuntu-procfs-modules)
+
 # Phase 5.31: DPKG Package Inventory Adapter module
 add_library(rebuntu-dpkg-package-inventory STATIC
     ${CMAKE_CURRENT_LIST_DIR}/../src/adapters/package_managers/dpkg/types.hpp
@@ -354,6 +362,7 @@ target_link_libraries(rebuntu-core PUBLIC rebuntu-dpkg-package-inventory)
 # )
 # target_link_libraries(rebuntu-dpkg-package-inventory-test PRIVATE rebuntu-dpkg-package-inventory rebuntu-core)
 # add_test(NAME dpkg_package_inventory_test COMMAND rebuntu-dpkg-package-inventory-test)
+
 
 # Phase 5.26: Systemd Service Discovery Adapter module
 add_library(rebuntu-systemd-service-adapter STATIC
@@ -370,7 +379,15 @@ add_executable(rebuntu-systemd-service-test
 target_link_libraries(rebuntu-systemd-service-test PRIVATE rebuntu-systemd-service-adapter rebuntu-core)
 add_test(NAME systemd_service_test COMMAND rebuntu-systemd-service-test)
 
+# Phase 5.32: Kernel Module Discovery unit tests
+add_executable(rebuntu-procfs-modules-test
+    ${CMAKE_CURRENT_LIST_DIR}/tests/unit/procfs_modules_test.cpp
+)
+target_link_libraries(rebuntu-procfs-modules-test PRIVATE rebuntu-procfs-modules rebuntu-core)
+add_test(NAME procfs_modules_test COMMAND rebuntu-procfs-modules-test)
+
 # Phase 5.28: Cgroup v2 Hierarchy Discovery unit tests
+
 add_executable(rebuntu-cgroup-hierarchy-test
     ${CMAKE_CURRENT_LIST_DIR}/tests/unit/cgroup_hierarchy_test.cpp
 )

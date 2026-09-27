@@ -291,6 +291,14 @@ add_library(rebuntu-procfs-mounts STATIC
 target_include_directories(rebuntu-procfs-mounts PUBLIC ${CMAKE_CURRENT_LIST_DIR}/../src)
 target_link_libraries(rebuntu-core PUBLIC rebuntu-procfs-mounts)
 
+# Phase 5.54: Procfs Error Types and Adversarial Audit module
+add_library(rebuntu-procfs-errors STATIC
+    ${CMAKE_CURRENT_LIST_DIR}/../src/adapters/procfs/error.hpp
+    ${CMAKE_CURRENT_LIST_DIR}/../src/adapters/procfs/error.cpp
+)
+target_include_directories(rebuntu-procfs-errors PUBLIC ${CMAKE_CURRENT_LIST_DIR}/../src)
+target_link_libraries(rebuntu-core PUBLIC rebuntu-procfs-errors)
+
 # Phase 5.19: Encrypted Storage Observation Adapter module (LUKS/device-mapper)
 add_library(rebuntu-encrypted-storage-adapter STATIC
     ${CMAKE_CURRENT_LIST_DIR}/../src/adapters/sysfs/encrypted_storage/types.hpp

@@ -235,6 +235,13 @@ add_library(rebuntu-evidence-deduplication STATIC
 target_include_directories(rebuntu-evidence-deduplication PUBLIC ${CMAKE_CURRENT_LIST_DIR}/../src)
 target_link_libraries(rebuntu-core PUBLIC rebuntu-evidence-deduplication)
 
+# Phase 5.44: Observation Query Foundation module (narrow typed queries over observations)
+add_library(rebuntu-observation-query STATIC
+    ${CMAKE_CURRENT_LIST_DIR}/../src/system/diagnostics/observation/query_types.hpp
+)
+target_include_directories(rebuntu-observation-query PUBLIC ${CMAKE_CURRENT_LIST_DIR}/../src)
+target_link_libraries(rebuntu-core PUBLIC rebuntu-observation-query)
+
 # Snapshot Service (types only - no implementation yet, interface is in types.hpp)
 # Phase 5.13: Snapshot Service module (diagnostic snapshot creation and storage)
 add_library(rebuntu-snapshot-service STATIC

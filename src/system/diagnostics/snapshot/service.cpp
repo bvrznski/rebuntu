@@ -285,27 +285,32 @@ private:
         return result;
     }
     
+    // NOTE: boot_id is read fresh each time to ensure we detect reboots.
+    // A static cache would incorrectly return the same ID across reboots.
     std::optional<std::string> get_current_boot_id() const {
-        static std::string cached_boot_id;
-        static bool cache_valid = false;
+        auto boot_id_file = "/proc/sys/kernel/random/boot_id";
+        std::ifstream ifs(boot_id_file);
         
-        if (!cache_valid) {
-            auto boot_id_file = "/proc/sys/kernel/random/boot_id";
-            std::ifstream ifs(boot_id_file);
-            
-            if (ifs.is_open()) {
-                std::getline(ifs, cached_boot_id);
-                if (!cached_boot_id.empty() && cached_boot_id.back() == '\n') {
-                    cached_boot_id.pop_back();
-                }
-                
-                if (!cached_boot_id.empty()) {
-                    cache_valid = true;
-                }
-            }
+        if (!ifs.is_open()) {
+            return std::nullopt;
         }
         
-        return cache_valid ? std::optional<std::string>(cached_boot_id) : std::nullopt;
+        std::string boot_id;
+        std::getline(ifs, boot_id);
+        if (boot_id.empty()) {
+            return std::nullopt;
+        }
+        
+        // Remove trailing newline if present
+        if (boot_id.back() == '\n') {
+            boot_id.pop_back();
+        }
+        
+        if (boot_id.empty()) {
+            return std::nullopt;
+        }
+        
+        return boot_id;
     }
     
     std::string combine_subjects(const std::vector<std::string>& subjects) const {

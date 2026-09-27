@@ -264,6 +264,10 @@ public:
     // Returns the timestamp of the last complete observation, if any
     virtual std::chrono::system_clock::time_point get_last_observation_time() const = 0;
     
+    // Get freshness TTL - how long observations are considered valid
+    // Returns nullopt if no TTL is set (observations should be re-fetched each time)
+    virtual std::optional<std::chrono::milliseconds> get_freshness_ttl() const = 0;
+    
     // Force refresh: discard cached state and re-observe from procfs
     // This is idempotent and safe to call multiple times
     virtual ProcessDiscoveryResult force_refresh() = 0;
@@ -277,6 +281,10 @@ public:
     // Convenience method for generic provider interfaces (e.g., IsolatedProvider)
     // Returns same result as observe_all_processes()
     virtual ProcessDiscoveryResult observe_all() = 0;
+    
+    // Set TTL for observations
+    // After this period, observations should be considered stale and re-fetched
+    virtual void set_freshness_ttl(std::chrono::milliseconds ttl) = 0;
 };
 
 // ============================================================================

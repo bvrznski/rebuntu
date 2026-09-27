@@ -376,9 +376,18 @@ public:
     ProcessDiscoveryResult observe_all() override {
         return observe_all_processes();
     }
+    
+    std::optional<std::chrono::milliseconds> get_freshness_ttl() const override {
+        return freshness_ttl_;
+    }
+    
+    void set_freshness_ttl(std::chrono::milliseconds ttl) override {
+        freshness_ttl_ = ttl;
+    }
 
 private:
     std::chrono::system_clock::time_point last_observation_time_{};
+    std::optional<std::chrono::milliseconds> freshness_ttl_{std::chrono::seconds(30)};  // Default 30 second TTL
     
     static std::optional<ProcessObservation> parse_process(
         int pid,

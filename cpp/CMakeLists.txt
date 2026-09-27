@@ -658,6 +658,30 @@ add_test(NAME discovery_resync_test COMMAND rebuntu-discovery-resync-test)
 # target_link_libraries(rebuntu-session-utmp-test PRIVATE rebuntu-session-utmp rebuntu-core gtest_main)
 # add_test(NAME session_utmp_test COMMAND rebuntu-session-utmp-test)
 
+# Phase 5.60: CLI inventory inspection module
+add_library(rebuntu-cli-inventory STATIC
+    ${CMAKE_CURRENT_LIST_DIR}/../src/cli/inventory/types.hpp
+    ${CMAKE_CURRENT_LIST_DIR}/../src/cli/inventory/query.hpp
+    ${CMAKE_CURRENT_LIST_DIR}/../src/cli/inventory/query.cpp
+)
+target_include_directories(rebuntu-cli-inventory PUBLIC ${CMAKE_CURRENT_LIST_DIR}/../src)
+target_link_libraries(rebuntu-cli-inventory PUBLIC rebuntu-core rebuntu-dpkg-package-inventory)
+
+# Rebuntu CLI inventory tests
+add_executable(rebuntu-cli-inventory-test
+    ${CMAKE_CURRENT_LIST_DIR}/tests/unit/cli_inventory_test.cpp
+)
+target_link_libraries(rebuntu-cli-inventory-test PRIVATE rebuntu-core rebuntu-dpkg-package-inventory rebuntu-cli-inventory)
+target_include_directories(rebuntu-cli-inventory-test PRIVATE ${CMAKE_CURRENT_LIST_DIR}/../src)
+add_test(NAME cli_inventory_test COMMAND rebuntu-cli-inventory-test)
+
+# Rebuntu CLI binary
+add_executable(rebuntu-bin
+    ${CMAKE_CURRENT_LIST_DIR}/../src/cli/main.cpp
+)
+target_include_directories(rebuntu-bin PRIVATE ${CMAKE_CURRENT_LIST_DIR}/../src)
+target_link_libraries(rebuntu-bin PRIVATE rebuntu-core rebuntu-cli-inventory)
+
 # Phase 5.29: Namespace Observation Adapter module
 add_library(rebuntu-namespaces-adapter STATIC
     ${CMAKE_CURRENT_LIST_DIR}/../src/adapters/namespaces/types.hpp

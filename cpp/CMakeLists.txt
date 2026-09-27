@@ -80,8 +80,7 @@ add_library(rebuntu-shell STATIC
     ${CMAKE_CURRENT_LIST_DIR}/../src/system/shell/types.hpp
     ${CMAKE_CURRENT_LIST_DIR}/../src/system/shell/parser.hpp
     ${CMAKE_CURRENT_LIST_DIR}/../src/system/shell/parser.cpp
-    ${CMAKE_CURRENT_LIST_DIR}/../src/system/shell/predicates/installed.hpp
-    ${CMAKE_CURRENT_LIST_DIR}/../src/system/shell/predicates/installed.cpp
+    ${CMAKE_CURRENT_LIST_DIR}/../src/system/shell/predicates.hpp
     ${CMAKE_CURRENT_LIST_DIR}/../src/system/shell/verbs/list.hpp
     ${CMAKE_CURRENT_LIST_DIR}/../src/system/shell/verbs/list.cpp
 )
@@ -461,6 +460,14 @@ add_executable(rebuntu-command-model-test
 )
 target_link_libraries(rebuntu-command-model-test PRIVATE rebuntu-core)
 add_test(NAME command_model_test COMMAND rebuntu-command-model-test)
+
+# Phase 6.2: Predicate Dictionary unit tests
+add_executable(rebuntu-predicates-test
+    ${CMAKE_CURRENT_LIST_DIR}/tests/unit/predicates_test.cpp
+)
+target_link_libraries(rebuntu-predicates-test PRIVATE rebuntu-core rebuntu-shell)
+target_include_directories(rebuntu-predicates-test PRIVATE ${CMAKE_CURRENT_LIST_DIR}/../src)
+add_test(NAME predicates_test COMMAND rebuntu-predicates-test)
 
 # Phase 5.32: Kernel Module Observation Adapter module (procfs modules)
 add_library(rebuntu-procfs-modules STATIC

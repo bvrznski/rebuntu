@@ -5,6 +5,8 @@
 #include "parser.hpp"
 #include <algorithm>
 #include <cctype>
+#include <optional>
+#include "qualifiers.hpp"
 
 namespace rebuntu::shell::parser {
 
@@ -190,6 +192,21 @@ size_t parse_qualifiers(
                 out_bundle.output.quiet = true;
             } else if (qualifier_name == "verbose") {
                 out_bundle.output.verbose = true;
+            } else if (qualifier_name == "scope") {
+                // Parse scope qualifier
+                if (!value.has_value()) {
+                    out_error.message = "scope requires a value (user|system|session|runtime)";
+                    return idx;
+                }
+                auto scope_opt = ScopeQualifierRegistry::parse_scope(value.value());
+                if (!scope_opt) {
+                    out_error.message = "invalid scope: " + value.value() + 
+                        " (expected user|system|session|runtime)";
+                    return idx;
+                }
+                out_bundle.scope.explicit_scope = *scope_opt;
+            } else {
+                // Unknown qualifier - error already set above
             }
             
             idx++;
@@ -233,6 +250,11 @@ void apply_qualifiers_to_intent(
     }
     if (bundle.output.verbose) {
         intent.qualifiers["verbose"] = "true";
+    }
+    
+    // Apply explicit scope selection
+    if (bundle.scope.explicit_scope.has_value()) {
+        intent.scope = bundle.scope.explicit_scope.value();
     }
 }
 
@@ -325,12 +347,21 @@ CommandResult parse_argv(
         .summary = "Suppress output (for scripting)"
     });
     
-    qual_registry.register_qualifier({
-        .name = "verbose",
-        .aliases = {"-v"},
-        .kind = QualifierKind::kOutput,
-        .summary = "Enable detailed diagnostics"
-    });
+qual_registry.register_qualifier({
+    .name = "verbose",
+    .aliases = {"-v"},
+    .kind = QualifierKind::kOutput,
+    .summary = "Enable detailed diagnostics"
+});
+
+// Register scope qualifier for explicit scope selection
+qual_registry.register_qualifier({
+    .name = "scope",
+    .aliases = {},
+    .kind = QualifierKind::kDomainSpecific,
+    .accepts_value = true,
+    .summary = "Explicitly select scope: user, system, session, or runtime"
+});
     
     // First, parse qualifiers to extract them from the argument list
     QualifierBundle qualifier_bundle;
@@ -342,6 +373,14 @@ CommandResult parse_argv(
         if (!args[i].empty() && args[i][0] == '-' && args[i].size() > 1) {
             qual_end_idx = parse_qualifiers(args, i, qual_registry, qualifier_bundle, qual_error);
             has_qualifiers = true;
+            
+            // Check for parsing errors during qualifier processing
+            if (!qual_error.message.empty()) {
+                out_error = qual_error;
+                return CommandResult::failure(error::kUnknownQualifier, 
+                    "qualifier parse error: " + qual_error.message);
+            }
+            
             break;  // Qualifiers typically appear before verb/target
         }
     }
@@ -419,10 +458,12 @@ CommandResolution resolve(
     
     const auto& meta = *cmd_meta_opt;
     
+    // Set resolved scope from intent (may be explicit or defaulted)
+    resolution.resolved_scope = intent.scope;
+    
     // Check subject
     if (meta.subject_type.has_value() && !intent.subject.has_value()) {
-        // Try to infer from command metadata
-        resolution.resolved_scope = ScopeContext::SYSTEM;  // Default for most commands
+        // Try to infer from command metadata - use default based on command requirements
         return resolution;
     }
     

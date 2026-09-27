@@ -4,7 +4,7 @@
 // in Rebuntu's shell language:
 //
 //   Execution qualifiers:     force, dry-run, verify, timeout, max-attempts
-//   Selection qualifiers:     all, current, recursive, user, system
+//   Selection qualifiers:     all, current, recursive
 //   Output qualifiers:        quiet, verbose, output-mode, format
 //   Domain-specific modifiers: scope, context, policy-hint
 //
@@ -101,9 +101,6 @@ struct SelectionQualifier {
     // Apply recursively to sub-entities
     bool recursive = false;
     
-    // User-scoped selection
-    bool user_scope = true;  // default to user scope for selections
-    
     static SelectionQualifier default_() {
         return SelectionQualifier{};
     }
@@ -120,11 +117,27 @@ struct OutputQualifier {
     // Verbose mode: detailed diagnostics
     bool verbose = false;
     
-    // Explicit output mode override
-    std::optional<OutputMode> explicit_mode;
-    
     static OutputQualifier default_() {
         return OutputQualifier{};
+    }
+};
+
+// ============================================================================
+// ScopeQualifier — Explicit scope selection (user/system/session/runtime)
+//
+// These qualifiers allow users to explicitly select which scope a command
+// operates in, overriding contextual defaults.
+// ============================================================================
+
+struct ScopeQualifier {
+    // Explicit scope selection
+    std::optional<ScopeContext> explicit_scope;
+    
+    // When ambiguous targets exist, require disambiguation
+    bool require_explicit_scope = false;
+    
+    static ScopeQualifier default_() {
+        return ScopeQualifier{};
     }
 };
 
@@ -133,9 +146,6 @@ struct OutputQualifier {
 // ============================================================================
 
 struct DomainSpecificModifier {
-    // Scope hint for ambiguous commands
-    std::optional<ScopeContext> scope_hint;
-    
     // Policy hint to influence resolution strategy
     std::optional<std::string> policy_hint;
     
@@ -155,6 +165,7 @@ struct QualifierBundle {
     ExecutionQualifier execution;
     SelectionQualifier selection;
     OutputQualifier output;
+    ScopeQualifier scope;           // Explicit scope selection
     DomainSpecificModifier domain_specific;
     
     static QualifierBundle default_() {
@@ -185,6 +196,64 @@ struct QualifierDefinition {
     // Description for help text
     std::string summary;
     std::string long_description;
+};
+
+// ============================================================================
+// ScopeQualifierRegistry — Registry of scope-related qualifier definitions
+// ============================================================================
+
+class ScopeQualifierRegistry {
+public:
+    // Get all scope-related qualifier definitions
+    static std::vector<QualifierDefinition> get_scope_qualifiers() {
+        return {
+            {
+                .name = "scope",
+                .aliases = {},
+                .kind = QualifierKind::kDomainSpecific,
+                .accepts_value = true,
+                .expected_format = "user|system|session|runtime",
+                .summary = "Explicitly select scope: user, system, session, or runtime"
+            },
+        };
+    }
+    
+    // Find scope-related qualifier by name
+    static std::optional<QualifierDefinition> find_scope_qualifier(std::string_view name) {
+        for (const auto& def : get_scope_qualifiers()) {
+            if (def.name == name || 
+                std::find(def.aliases.begin(), def.aliases.end(), name) != def.aliases.end()) {
+                return def;
+            }
+        }
+        return std::nullopt;
+    }
+    
+    // Validate scope value
+    static bool is_valid_scope_value(std::string_view value) {
+        return value == "user" || value == "system" || 
+               value == "session" || value == "runtime";
+    }
+    
+    // Parse scope string to ScopeContext enum
+    static std::optional<ScopeContext> parse_scope(std::string_view value) {
+        if (value == "user") return ScopeContext::USER;
+        if (value == "system") return ScopeContext::SYSTEM;
+        if (value == "session") return ScopeContext::SESSION;
+        if (value == "runtime") return ScopeContext::RUNTIME;
+        return std::nullopt;
+    }
+    
+    // Format scope context as string
+    static std::string to_scope_string(ScopeContext ctx) {
+        switch (ctx) {
+            case ScopeContext::USER: return "user";
+            case ScopeContext::SYSTEM: return "system";
+            case ScopeContext::SESSION: return "session";
+            case ScopeContext::RUNTIME: return "runtime";
+        }
+        return "unknown";
+    }
 };
 
 // ============================================================================
@@ -233,13 +302,6 @@ public:
 
 private:
     std::map<std::string, QualifierDefinition> qualifiers_;
-    
-public:
-    // Get the registry instance (singleton pattern)
-    static QualifierRegistry& instance() {
-        static QualifierRegistry inst;
-        return inst;
-    }
 };
 
 // ============================================================================

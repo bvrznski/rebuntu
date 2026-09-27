@@ -115,6 +115,18 @@ mmd -i "$WORK/efiboot.img" ::EFI ::EFI/BOOT
 mcopy -i "$WORK/efiboot.img" "$ISO/EFI/BOOT/BOOTX64.EFI" ::EFI/BOOT/
 cp "$WORK/efiboot.img" "$ISO/EFI/efiboot.img"
 
+# Generate integrity manifest for casper-md5check.
+# md5sum.txt itself and the xorriso-generated boot catalog are excluded.
+(
+  cd "$ISO"
+  find . -type f \
+    ! -name "md5sum.txt" \
+    ! -name "boot.catalog" \
+    -print0 \
+    | sort -z \
+    | xargs -0 md5sum > md5sum.txt
+)
+
 # The i386-pc-eltorito format creates a standalone image that includes the
 # El Torito boot sector and all necessary modules, so we reference it directly.
 xorriso -as mkisofs \
@@ -152,6 +164,9 @@ xorriso -indev "$OUT/$NAME" -find /casper/initrd 2>/dev/null | grep -q initrd &&
 
 xorriso -indev "$OUT/$NAME" -find /casper/filesystem.squashfs 2>/dev/null | grep -q squashfs && \
   echo "PASS: /casper/filesystem.squashfs present" || { echo "FAIL: /casper/filesystem.squashfs missing"; VERIFIED=false; }
+xorriso -indev "$OUT/$NAME" -find /md5sum.txt 2>/dev/null | grep -q md5sum.txt && \
+  echo "PASS: /md5sum.txt present" || { echo "FAIL: /md5sum.txt missing"; VERIFIED=false; }
+
 
 xorriso -indev "$OUT/$NAME" -find /boot/grub/grub.cfg 2>/dev/null | grep -q grub.cfg && \
   echo "PASS: /boot/grub/grub.cfg present" || { echo "FAIL: /boot/grub/grub.cfg missing"; VERIFIED=false; }

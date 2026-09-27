@@ -476,6 +476,14 @@ target_link_libraries(rebuntu-predicates-test PRIVATE rebuntu-core rebuntu-shell
 target_include_directories(rebuntu-predicates-test PRIVATE ${CMAKE_SOURCE_DIR})
 add_test(NAME predicates_test COMMAND rebuntu-predicates-test)
 
+# Phase 6.5: Scope Grammar unit tests
+add_executable(rebuntu-scope-grammar-test
+    ${CMAKE_CURRENT_LIST_DIR}/tests/unit/shell_scope_grammar_test.cpp
+)
+target_link_libraries(rebuntu-scope-grammar-test PRIVATE rebuntu-core rebuntu-shell)
+target_include_directories(rebuntu-scope-grammar-test PRIVATE ${CMAKE_SOURCE_DIR})
+add_test(NAME scope_grammar_test COMMAND rebuntu-scope-grammar-test)
+
 # Phase 5.32: Kernel Module Observation Adapter module (procfs modules)
 add_library(rebuntu-procfs-modules STATIC
     ${CMAKE_CURRENT_LIST_DIR}/../src/adapters/procfs/modules/types.hpp

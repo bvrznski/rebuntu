@@ -280,6 +280,22 @@ add_library(rebuntu-md-raid-adapter STATIC
 target_include_directories(rebuntu-md-raid-adapter PUBLIC ${CMAKE_CURRENT_LIST_DIR}/../src)
 target_link_libraries(rebuntu-core PUBLIC rebuntu-md-raid-adapter)
 
+# Phase 5.34: Power Supply Observation Adapter module
+add_library(rebuntu-power-supply-adapter STATIC
+    ${CMAKE_CURRENT_LIST_DIR}/../src/adapters/sysfs/power/types.hpp
+    ${CMAKE_CURRENT_LIST_DIR}/../src/adapters/sysfs/power/implementation.cpp
+)
+target_include_directories(rebuntu-power-supply-adapter PUBLIC ${CMAKE_CURRENT_LIST_DIR}/../src)
+target_link_libraries(rebuntu-core PUBLIC rebuntu-power-supply-adapter)
+
+# Phase 5.34: Thermal Zone Observation Adapter module
+add_library(rebuntu-thermal-adapter STATIC
+    ${CMAKE_CURRENT_LIST_DIR}/../src/adapters/sysfs/thermal/types.hpp
+    ${CMAKE_CURRENT_LIST_DIR}/../src/adapters/sysfs/thermal/implementation.cpp
+)
+target_include_directories(rebuntu-thermal-adapter PUBLIC ${CMAKE_CURRENT_LIST_DIR}/../src)
+target_link_libraries(rebuntu-core PUBLIC rebuntu-thermal-adapter)
+
 # Phase 5.21: Netlink Link/Interface Discovery Adapter module
 add_library(rebuntu-netlink-link STATIC
     ${CMAKE_CURRENT_LIST_DIR}/../src/adapters/netlink/link/types.hpp

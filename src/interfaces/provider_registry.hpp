@@ -4,11 +4,16 @@
 // This header establishes Rebuntu's provider registry pattern:
 // how external tools/providers can be discovered, registered, selected,
 // and invoked for infrastructure capabilities.
+//
 
 #pragma once
 
 #include <string>
 #include <vector>
+#include <map>
+#include <chrono>
+#include <optional>
+#include <memory>
 
 namespace rebuntu::interfaces {
 
@@ -31,23 +36,49 @@ inline bool operator!=(const ProviderId& a, const ProviderId& b) {
     return !(a == b);
 }
 
-// ProviderAvailability - Provider availability state
-enum class ProviderAvailability {
+// CapabilityAvailabilityState - Phase-1 capability availability states
+//
+// This enum defines the available states for capabilities and providers:
+//   AVAILABLE      - Fully operational, ready to use
+//   DEGRADED       - Operational but with reduced capability or performance
+//   UNAVAILABLE    - Present but not currently available (e.g., in use by another process)
+//   UNSUPPORTED    - Not supported by the current system/configuration
+//   NOT_APPLICABLE - Not applicable in the current context
+//   UNKNOWN        - Availability has not been determined
+//
+enum class CapabilityAvailabilityState {
     kUnknown,
     kAvailable,
+    kDegraded,
     kUnavailable,
-    kNotInstalled,
+    kUnsupported,
+    kNotApplicable,
 };
 
-inline std::string to_string(ProviderAvailability a) {
+inline std::string to_string(CapabilityAvailabilityState a) {
     switch (a) {
-        case ProviderAvailability::kUnknown:      return "unknown";
-        case ProviderAvailability::kAvailable:    return "available";
-        case ProviderAvailability::kUnavailable:  return "unavailable";
-        case ProviderAvailability::kNotInstalled: return "not_installed";
+        case CapabilityAvailabilityState::kUnknown:       return "unknown";
+        case CapabilityAvailabilityState::kAvailable:     return "available";
+        case CapabilityAvailabilityState::kDegraded:      return "degraded";
+        case CapabilityAvailabilityState::kUnavailable:   return "unavailable";
+        case CapabilityAvailabilityState::kUnsupported:   return "unsupported";
+        case CapabilityAvailabilityState::kNotApplicable: return "not_applicable";
     }
     return "unknown";
 }
+
+// Alias for backward compatibility
+using ProviderAvailability = CapabilityAvailabilityState;
+
+// CapabilityAvailability - Detailed availability state with metadata
+struct CapabilityAvailability {
+    CapabilityAvailabilityState state = CapabilityAvailabilityState::kUnknown;
+    
+    // Optional metadata explaining why the capability is in this state
+    std::optional<std::string> reason;
+    std::optional<std::chrono::system_clock::time_point> last_assessed_at;
+    std::optional<uint64_t> observed_evidence_count;  // Evidence items that informed this assessment
+};
 
 // ProviderInfo - Static information about a provider
 struct ProviderInfo {
@@ -57,7 +88,10 @@ struct ProviderInfo {
     std::string version;
     std::string executable_path;
     
-    ProviderAvailability availability = ProviderAvailability::kUnknown;
+    CapabilityAvailabilityState availability = CapabilityAvailabilityState::kUnknown;
+    
+    // Capability-specific availability states for fine-grained discovery
+    std::map<std::string, CapabilityAvailability> capability_availability;
     
     std::vector<std::string> supported_capabilities;
 };
@@ -116,9 +150,42 @@ public:
     
     virtual std::vector<ProviderInfo> list_providers() const = 0;
     
-    virtual void assess_availability(const std::string& provider_id) = 0;
+    // Assess availability for a specific provider
+    virtual void assess_provider_availability(const std::string& provider_id) = 0;
+    
+    // Assess availability for a specific capability on a provider
+    virtual void assess_capability_availability(
+        const std::string& provider_id,
+        const std::string& capability
+    ) = 0;
+    
+    // Get availability state for a specific capability on a provider
+    virtual CapabilityAvailability get_capability_availability(
+        const std::string& provider_id,
+        const std::string& capability
+    ) const = 0;
     
     virtual ProviderSelector* get_selector() = 0;
 };
 
+// Factory function to create a new registry
+std::unique_ptr<ProviderRegistry> create_provider_registry();
+
 }  // namespace rebuntu::interfaces
+
+namespace std {
+
+template <> struct hash<rebuntu::interfaces::ProviderId> {
+    size_t operator()(const rebuntu::interfaces::ProviderId& id) const noexcept {
+        return std::hash<std::string>{}(id.value);
+    }
+};
+
+// Hash for CapabilityAvailabilityState
+template <> struct hash<rebuntu::interfaces::CapabilityAvailabilityState> {
+    size_t operator()(rebuntu::interfaces::CapabilityAvailabilityState state) const noexcept {
+        return std::hash<int>{}(static_cast<int>(state));
+    }
+};
+
+}  // namespace std

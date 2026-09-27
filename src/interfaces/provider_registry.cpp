@@ -5,6 +5,7 @@
 #include <algorithm>
 #include <filesystem>
 #include <map>
+#include <system_error>
 
 namespace rebuntu::interfaces {
 
@@ -20,7 +21,7 @@ public:
         const std::string& capability,
         ProviderSelectionPolicy policy
     ) const override {
-        // Find all providers that support this capability
+        // Find all providers that support this capability and have available state
         std::vector<std::string> available_providers;
         
         for (const auto& info : providers_) {
@@ -30,7 +31,18 @@ public:
                 capability
             ) != info.supported_capabilities.end();
             
-            if (supports_capability && is_available(info.availability)) {
+            // Check provider's own availability and capability-specific availability
+            if (!supports_capability) continue;
+            
+            bool is_available = is_provider_available(info.availability);
+            
+            // Also check capability-specific availability if available
+            auto cap_it = info.capability_availability.find(capability);
+            if (cap_it != info.capability_availability.end()) {
+                is_available = is_provider_available(cap_it->second.state);
+            }
+            
+            if (is_available) {
                 available_providers.push_back(info.id.value);
             }
         }
@@ -70,7 +82,17 @@ public:
                     capability
                 ) != info.supported_capabilities.end();
                 
-                return supports_capability && is_available(info.availability);
+                if (!supports_capability) return false;
+                
+                // Check provider's availability and capability-specific availability
+                bool is_available = is_provider_available(info.availability);
+                
+                auto cap_it = info.capability_availability.find(capability);
+                if (cap_it != info.capability_availability.end()) {
+                    is_available = is_provider_available(cap_it->second.state);
+                }
+                
+                return is_available;
             }
         }
         
@@ -78,9 +100,10 @@ public:
     }
 
 private:
-    static bool is_available(ProviderAvailability availability) {
-        return availability == ProviderAvailability::kAvailable ||
-               availability == ProviderAvailability::kUnknown;
+    static bool is_provider_available(CapabilityAvailabilityState availability) {
+        // Available states that mean the provider/capability can be used
+        return availability == CapabilityAvailabilityState::kAvailable ||
+               availability == CapabilityAvailabilityState::kDegraded;
     }
     
     std::vector<ProviderInfo> providers_;
@@ -103,7 +126,13 @@ public:
         info.name = std::move(name);
         info.description = std::move(description);
         info.supported_capabilities = std::move(capabilities);
-        info.availability = ProviderAvailability::kUnknown;
+        info.availability = CapabilityAvailabilityState::kUnknown;
+        
+        // Initialize capability availability states to unknown
+        for (const auto& cap : info.supported_capabilities) {
+            info.capability_availability[cap] = {};
+            info.capability_availability[cap].state = CapabilityAvailabilityState::kUnknown;
+        }
         
         providers_[info.id.value] = std::move(info);
         
@@ -137,24 +166,88 @@ public:
         return result;
     }
     
-    void assess_availability(const std::string& provider_id) override {
+    void assess_provider_availability(const std::string& provider_id) override {
         auto it = providers_.find(provider_id);
         if (it == providers_.end()) {
             return;
         }
         
+        // Check executable path if available
         if (!it->second.executable_path.empty()) {
             std::error_code ec;
             if (std::filesystem::exists(it->second.executable_path, ec)) {
-                it->second.availability = ProviderAvailability::kAvailable;
+                it->second.availability = CapabilityAvailabilityState::kAvailable;
             } else {
-                it->second.availability = ProviderAvailability::kNotInstalled;
+                it->second.availability = CapabilityAvailabilityState::kUnsupported;
             }
         } else {
-            if (it->second.availability == ProviderAvailability::kUnknown) {
-                it->second.availability = ProviderAvailability::kAvailable;
+            // If no executable path, mark as available if not explicitly unknown
+            if (it->second.availability == CapabilityAvailabilityState::kUnknown) {
+                it->second.availability = CapabilityAvailabilityState::kAvailable;
             }
         }
+    }
+    
+    void assess_capability_availability(
+        const std::string& provider_id,
+        const std::string& capability
+    ) override {
+        auto it = providers_.find(provider_id);
+        if (it == providers_.end()) {
+            return;
+        }
+        
+        // Check if this provider supports the capability
+        bool supports_cap = std::find(
+            it->second.supported_capabilities.begin(),
+            it->second.supported_capabilities.end(),
+            capability
+        ) != it->second.supported_capabilities.end();
+        
+        if (!supports_cap) {
+            it->second.capability_availability[capability].state =
+                CapabilityAvailabilityState::kNotApplicable;
+            return;
+        }
+        
+        // Check executable path if available
+        if (!it->second.executable_path.empty()) {
+            std::error_code ec;
+            if (std::filesystem::exists(it->second.executable_path, ec)) {
+                it->second.capability_availability[capability].state =
+                    CapabilityAvailabilityState::kAvailable;
+            } else {
+                it->second.capability_availability[capability].state =
+                    CapabilityAvailabilityState::kUnsupported;
+            }
+        } else {
+            if (it->second.capability_availability[capability].state ==
+                CapabilityAvailabilityState::kUnknown) {
+                it->second.capability_availability[capability].state =
+                    CapabilityAvailabilityState::kAvailable;
+            }
+        }
+    }
+    
+    CapabilityAvailability get_capability_availability(
+        const std::string& provider_id,
+        const std::string& capability
+    ) const override {
+        auto it = providers_.find(provider_id);
+        if (it == providers_.end()) {
+            return {};
+        }
+        
+        // Check capability-specific availability first
+        auto cap_it = it->second.capability_availability.find(capability);
+        if (cap_it != it->second.capability_availability.end()) {
+            return cap_it->second;
+        }
+        
+        // Fall back to provider-level availability
+        CapabilityAvailability result;
+        result.state = it->second.availability;
+        return result;
     }
     
     ProviderSelector* get_selector() override {

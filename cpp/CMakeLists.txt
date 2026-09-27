@@ -88,6 +88,11 @@ add_library(rebuntu-shell STATIC
 target_include_directories(rebuntu-shell PUBLIC ${CMAKE_CURRENT_LIST_DIR}/../src)
 target_link_libraries(rebuntu-core PUBLIC rebuntu-shell)
 
+# Phase 6.1: Typed Command Model module (header-only, included via rebuntu-core)
+target_sources(rebuntu-core PRIVATE
+    ${CMAKE_CURRENT_LIST_DIR}/../src/system/command/model.hpp
+)
+
 # Add common runtime source files for Phase 4.18
 target_sources(rebuntu-core PRIVATE
     ${CMAKE_CURRENT_LIST_DIR}/../src/runtime/production.hpp
@@ -449,6 +454,13 @@ add_executable(rebuntu-isolated-provider-test
 )
 target_link_libraries(rebuntu-isolated-provider-test PRIVATE rebuntu-core)
 add_test(NAME isolated_provider_test COMMAND rebuntu-isolated-provider-test)
+
+# Phase 6.1: Typed Command Model unit tests
+add_executable(rebuntu-command-model-test
+    ${CMAKE_CURRENT_LIST_DIR}/tests/unit/command_model_test.cpp
+)
+target_link_libraries(rebuntu-command-model-test PRIVATE rebuntu-core)
+add_test(NAME command_model_test COMMAND rebuntu-command-model-test)
 
 # Phase 5.32: Kernel Module Observation Adapter module (procfs modules)
 add_library(rebuntu-procfs-modules STATIC

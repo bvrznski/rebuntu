@@ -341,6 +341,21 @@ add_executable(rebuntu-netlink-socket-test
 target_link_libraries(rebuntu-netlink-socket-test PRIVATE rebuntu-netlink-socket rebuntu-core)
 add_test(NAME netlink_socket_test COMMAND rebuntu-netlink-socket-test)
 
+# Phase 5.35: DRM/KMS Display Topology Observation Adapter module
+add_library(rebuntu-drm-topology STATIC
+    ${CMAKE_CURRENT_LIST_DIR}/../src/adapters/drm/types.hpp
+    ${CMAKE_CURRENT_LIST_DIR}/../src/adapters/drm/implementation.cpp
+)
+target_include_directories(rebuntu-drm-topology PUBLIC ${CMAKE_CURRENT_LIST_DIR}/../src)
+target_link_libraries(rebuntu-core PUBLIC rebuntu-drm-topology)
+
+# DRM Display Topology Discovery unit tests
+add_executable(rebuntu-drm-topology-test
+    ${CMAKE_CURRENT_LIST_DIR}/tests/unit/drm_topology_test.cpp
+)
+target_link_libraries(rebuntu-drm-topology-test PRIVATE rebuntu-drm-topology rebuntu-core)
+add_test(NAME drm_topology_test COMMAND rebuntu-drm-topology-test)
+
 # Phase 5.24: Procfs Process Discovery Adapter module
 add_library(rebuntu-procfs-process STATIC
     ${CMAKE_CURRENT_LIST_DIR}/../src/adapters/procfs/process/types.hpp

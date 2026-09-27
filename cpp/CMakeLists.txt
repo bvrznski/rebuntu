@@ -227,6 +227,14 @@ add_library(rebuntu-evidence-collector STATIC
 target_include_directories(rebuntu-evidence-collector PUBLIC ${CMAKE_CURRENT_LIST_DIR}/../src)
 target_link_libraries(rebuntu-core PUBLIC rebuntu-evidence-collector)
 
+# Phase 5.41: Evidence Deduplication module (typed observation deduplication with provenance preservation)
+add_library(rebuntu-evidence-deduplication STATIC
+    ${CMAKE_CURRENT_LIST_DIR}/../src/system/evidence/deduplication.hpp
+    ${CMAKE_CURRENT_LIST_DIR}/../src/system/evidence/deduplication.cpp
+)
+target_include_directories(rebuntu-evidence-deduplication PUBLIC ${CMAKE_CURRENT_LIST_DIR}/../src)
+target_link_libraries(rebuntu-core PUBLIC rebuntu-evidence-deduplication)
+
 # Snapshot Service (types only - no implementation yet, interface is in types.hpp)
 # Phase 5.13: Snapshot Service module (diagnostic snapshot creation and storage)
 add_library(rebuntu-snapshot-service STATIC
@@ -542,6 +550,14 @@ add_library(rebuntu-reporting STATIC
 target_include_directories(rebuntu-reporting PUBLIC ${CMAKE_CURRENT_LIST_DIR}/../src/modules/reporting)
 target_include_directories(rebuntu-reporting PUBLIC ${CMAKE_CURRENT_LIST_DIR}/../src)
 target_link_libraries(rebuntu-core PUBLIC rebuntu-reporting)
+
+# Phase 5.41: Evidence Deduplication unit tests
+add_executable(rebuntu-evidence-deduplication-test
+    ${CMAKE_CURRENT_LIST_DIR}/tests/unit/evidence_deduplication_test.cpp
+)
+target_link_libraries(rebuntu-evidence-deduplication-test PRIVATE rebuntu-evidence-deduplication rebuntu-core)
+target_include_directories(rebuntu-evidence-deduplication-test PRIVATE ${CMAKE_CURRENT_LIST_DIR}/../src)
+add_test(NAME evidence_deduplication_test COMMAND rebuntu-evidence-deduplication-test)
 
 # Phase 5.15: Reporting & Notification unit tests (disabled - gtest not available)
 # add_executable(rebuntu-reporting-test

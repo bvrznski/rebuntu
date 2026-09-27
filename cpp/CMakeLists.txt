@@ -296,6 +296,14 @@ add_library(rebuntu-thermal-adapter STATIC
 target_include_directories(rebuntu-thermal-adapter PUBLIC ${CMAKE_CURRENT_LIST_DIR}/../src)
 target_link_libraries(rebuntu-core PUBLIC rebuntu-thermal-adapter)
 
+# Phase 5.36: Udev/Sysfs Peripheral Discovery Adapter module
+add_library(rebuntu-peripherals STATIC
+    ${CMAKE_CURRENT_LIST_DIR}/../src/adapters/peripherals/types.hpp
+    ${CMAKE_CURRENT_LIST_DIR}/../src/adapters/peripherals/implementation.cpp
+)
+target_include_directories(rebuntu-peripherals PUBLIC ${CMAKE_CURRENT_LIST_DIR}/../src)
+target_link_libraries(rebuntu-core PUBLIC rebuntu-peripherals)
+
 # Phase 5.21: Netlink Link/Interface Discovery Adapter module
 add_library(rebuntu-netlink-link STATIC
     ${CMAKE_CURRENT_LIST_DIR}/../src/adapters/netlink/link/types.hpp

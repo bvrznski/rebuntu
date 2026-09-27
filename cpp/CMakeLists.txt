@@ -84,6 +84,9 @@ add_library(rebuntu-shell STATIC
     ${CMAKE_CURRENT_LIST_DIR}/../src/system/shell/verbs/list.cpp
 )
 
+# Phase 6.4: Qualifiers & Modifiers module (header-only, included via rebuntu-shell)
+# The qualifiers are header-only and used directly by parser.hpp
+
 # Phase 6.3: Subject Vocabulary module (header-only library)
 add_library(rebuntu-shell-subjects INTERFACE)
 target_include_directories(rebuntu-shell-subjects INTERFACE ${CMAKE_CURRENT_LIST_DIR}/../src)

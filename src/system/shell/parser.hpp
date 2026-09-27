@@ -1,19 +1,22 @@
-// rebuntu::shell::parser — Shell Command Parser (Phase 6.0)
+// rebuntu::shell::parser — Shell Command Parser with Qualifiers & Modifiers (Phase 6.4)
 //
 // This module provides deterministic parsing of shell commands into typed IR:
 //
 //   - Tokenization: Split input into lexical tokens
 //   - Parsing: Map tokens to IntentKind (verb/predicate/query)
+//   - Qualifier extraction: Parse execution and selection modifiers
 //   - Resolution: Validate against known command vocabulary
 //
 // Key Principles:
 //   * Parser NEVER executes any system operations
 //   * Parser produces CommandIntent, not side effects
 //   * Ambiguity is preserved for later resolution
+//   * Qualifiers refine behavior without bypassing authorization
 
 #pragma once
 
 #include "types.hpp"
+#include "qualifiers.hpp"
 #include <string>
 #include <vector>
 
@@ -36,6 +39,32 @@ struct ParseError {
 // ============================================================================
 
 std::vector<std::string> tokenize(std::string_view input);
+
+// ============================================================================
+// parse_qualifiers — Extract qualifier options from argv
+//
+// Parses flags like --dry-run, --force, --all, etc. and populates a QualifierBundle.
+// Returns the index after the last parsed option token.
+// ============================================================================
+
+size_t parse_qualifiers(
+    const std::vector<std::string>& argv,
+    size_t start_idx,
+    QualifierRegistry& registry,
+    QualifierBundle& out_bundle,
+    ParseError& out_error
+);
+
+// ============================================================================
+// apply_qualifiers_to_intent — Apply parsed qualifiers to CommandIntent
+//
+// Updates execution_policy and adds qualifiers to the intent's qualifier map.
+// ============================================================================
+
+void apply_qualifiers_to_intent(
+    const QualifierBundle& bundle,
+    CommandIntent& intent
+);
 
 // ============================================================================
 // parse_argv — Parse command line arguments into CommandIntent

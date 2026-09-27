@@ -372,6 +372,10 @@ public:
         
         return IdentityValidation::kValid;
     }
+    
+    ProcessDiscoveryResult observe_all() override {
+        return observe_all_processes();
+    }
 
 private:
     std::chrono::system_clock::time_point last_observation_time_{};

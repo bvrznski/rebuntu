@@ -273,6 +273,10 @@ public:
     // Returns IdentityValidation indicating whether the process can be safely
     // used for consequential operations.
     virtual IdentityValidation validate_identity(const ProcessIdentity& identity) = 0;
+    
+    // Convenience method for generic provider interfaces (e.g., IsolatedProvider)
+    // Returns same result as observe_all_processes()
+    virtual ProcessDiscoveryResult observe_all() = 0;
 };
 
 // ============================================================================

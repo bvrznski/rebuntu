@@ -339,6 +339,10 @@ public:
         last_observation_time_ = {};
         return observe_all_services();
     }
+    
+    ServiceDiscoveryResult observe_all() override {
+        return observe_all_services();
+    }
 
 private:
     std::chrono::system_clock::time_point last_observation_time_{};

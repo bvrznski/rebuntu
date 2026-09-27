@@ -275,6 +275,10 @@ public:
     // Force refresh: discard cached state and re-observe from systemd
     // This is idempotent and safe to call multiple times
     virtual ServiceDiscoveryResult force_refresh() = 0;
+    
+    // Convenience method for generic provider interfaces (e.g., IsolatedProvider)
+    // Returns same result as observe_all_services()
+    virtual ServiceDiscoveryResult observe_all() = 0;
 };
 
 // ============================================================================

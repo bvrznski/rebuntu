@@ -16,7 +16,7 @@
 
 #pragma once
 
-#include <system/core/contracts.hpp>
+#include "../core/contracts.hpp"
 #include <string>
 #include <string_view>
 #include <vector>

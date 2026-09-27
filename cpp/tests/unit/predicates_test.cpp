@@ -2,8 +2,9 @@
 //
 // Unit tests for predicate functions.
 
-#include "rebuntu/shell/types.hpp"
-#include "rebuntu/shell/predicates.hpp"
+#include "../../../src/system/core/contracts.hpp"
+#include "../../../src/system/shell/types.hpp"
+#include "../../../src/system/shell/predicates.hpp"
 
 #include <iostream>
 
@@ -14,7 +15,7 @@ void test_predicate_result_make_true() {
     
     auto result = PredicateResult::true_result();
     
-    if (result.status != core::SemanticStatus::kSuccess) {
+    if (result.status != rebuntu::core::SemanticStatus::kSuccess) {
         std::cerr << " [FAIL - wrong status]\n";
         return;
     }
@@ -32,7 +33,7 @@ void test_predicate_result_make_false() {
     
     auto result = PredicateResult::false_result();
     
-    if (result.status != core::SemanticStatus::kFailure) {
+    if (result.status != rebuntu::core::SemanticStatus::kFailure) {
         std::cerr << " [FAIL - wrong status]\n";
         return;
     }
@@ -50,12 +51,12 @@ void test_predicate_result_make_unknown() {
     
     auto result = PredicateResult::unknown("test error message");
     
-    if (result.status != core::SemanticStatus::kUnknown) {
+    if (result.status != rebuntu::core::SemanticStatus::kUnknown) {
         std::cerr << " [FAIL - wrong status]\n";
         return;
     }
     
-    if (!result.is_true.has_value()) {
+    if (result.is_true.has_value()) {
         std::cerr << " [FAIL - is_true should be nullopt for unknown]\n";
         return;
     }
@@ -71,7 +72,7 @@ void test_predicate_result_make_unknown() {
 void test_predicate_result_evidence_preservation() {
     std::cout << "[TEST] PredicateResult preserves evidence...";
     
-    core::Evidence e;
+    rebuntu::core::Evidence e;
     e.source = "test-source";
     e.value = "test-value";
     e.captured_at = "2026-01-01T00:00:00Z";

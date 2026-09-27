@@ -65,7 +65,6 @@ add_library(rebuntu-core STATIC
 )
 
 target_include_directories(rebuntu-core PUBLIC ${CMAKE_CURRENT_LIST_DIR}/../src)
-target_include_directories(rebuntu-core PUBLIC ${CMAKE_CURRENT_LIST_DIR}/../cpp/include)
 
 # Phase 5.52: Observation Memory Bounds module
 add_library(rebuntu-observation-bounds STATIC
@@ -84,6 +83,11 @@ add_library(rebuntu-shell STATIC
     ${CMAKE_CURRENT_LIST_DIR}/../src/system/shell/verbs/list.hpp
     ${CMAKE_CURRENT_LIST_DIR}/../src/system/shell/verbs/list.cpp
 )
+
+# Phase 6.3: Subject Vocabulary module (header-only library)
+add_library(rebuntu-shell-subjects INTERFACE)
+target_include_directories(rebuntu-shell-subjects INTERFACE ${CMAKE_CURRENT_LIST_DIR}/../src)
+target_link_libraries(rebuntu-core INTERFACE rebuntu-shell-subjects)
 target_include_directories(rebuntu-shell PUBLIC ${CMAKE_CURRENT_LIST_DIR}/../src)
 target_link_libraries(rebuntu-core PUBLIC rebuntu-shell)
 
@@ -466,7 +470,7 @@ add_executable(rebuntu-predicates-test
     ${CMAKE_CURRENT_LIST_DIR}/tests/unit/predicates_test.cpp
 )
 target_link_libraries(rebuntu-predicates-test PRIVATE rebuntu-core rebuntu-shell)
-target_include_directories(rebuntu-predicates-test PRIVATE ${CMAKE_CURRENT_LIST_DIR}/../src)
+target_include_directories(rebuntu-predicates-test PRIVATE ${CMAKE_SOURCE_DIR})
 add_test(NAME predicates_test COMMAND rebuntu-predicates-test)
 
 # Phase 5.32: Kernel Module Observation Adapter module (procfs modules)

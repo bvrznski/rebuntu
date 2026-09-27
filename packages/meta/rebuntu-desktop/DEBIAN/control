@@ -3,6 +3,37 @@ Version: 0.1.0-1
 Section: metapackages
 Priority: optional
 Architecture: all
-Depends: gdm3, gnome-shell, gnome-session, mutter, network-manager, network-manager-gnome, xserver-xorg, xwayland, dbus-user-session, polkitd, gnome-terminal, nautilus, gnome-control-center, epiphany-browser, gnome-text-editor, evince, file-roller, gnome-calculator, gnome-system-monitor, gnome-shell-ubuntu-extensions, pipewire, pipewire-pulse, wireplumber, libspa-0.2-bluetooth, bluez, gnome-bluetooth-sendto, udisks2, gvfs, gvfs-backends, xdg-desktop-portal, xdg-desktop-portal-gnome, xdg-user-dirs, xdg-user-dirs-gtk, rebuntu-base, rebuntu-branding
+Depends: gdm3, gnome-shell, gnome-session, mutter, network-manager, network-manager-gnome, xserver-xorg, xwayland, dbus-user-session, polkitd, terminator, nautilus, gnome-control-center, epiphany-browser, gnome-text-editor, evince, file-roller, gnome-calculator, gnome-system-monitor, gnome-shell-ubuntu-extensions, pipewire, pipewire-pulse, wireplumber, libspa-0.2-bluetooth, bluez, gnome-bluetooth-sendto, udisks2, gvfs, gvfs-backends, xdg-desktop-portal, xdg-desktop-portal-gnome, xdg-user-dirs, xdg-user-dirs-gtk, rebuntu-base, rebuntu-branding,
+ guake,
+ mc,
+ htop,
+ btop,
+ tree,
+ curl,
+ wget,
+ git,
+ rsync,
+ ripgrep,
+ fd-find,
+ jq,
+ less,
+ vim,
+ nano,
+ tmux,
+ python3,
+ python3-venv,
+ python3-pip,
+ pipx,
+ build-essential,
+ cmake,
+ ninja-build,
+ pkg-config,
+ gdb,
+ strace,
+ lsof,
+ pciutils,
+ usbutils,
+ lm-sensors,
+ gnome-tweaks
 Maintainer: Rebuntu Project
 Description: Rebuntu GNOME desktop profile

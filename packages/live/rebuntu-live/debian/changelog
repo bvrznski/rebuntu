@@ -1,4 +1,4 @@
-rebuntu-live (0.1.0-1) jammy; urgency=medium
+rebuntu-live (0.1.0-1) resolute; urgency=medium
 
   * New package: deterministic live user, live-media sudo policy and a
     serial-console TTY for the Rebuntu live (casper) medium.

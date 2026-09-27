@@ -2,7 +2,7 @@
 set -uo pipefail  # Removed 'e' to allow error handling, but keep 'u' for undefined var checks
 
 ROOT="$(cd "$(dirname "${BASH_SOURCE[0]}")/../.." && pwd)"
-SUITE="${UBUNTU_SUITE:-jammy}"
+SUITE="${UBUNTU_SUITE:-resolute}"
 ARCH="${REBUNTU_ARCH:-amd64}"
 ISO="${1:-$ROOT/build/artifacts/images/rebuntu-$SUITE-$ARCH.iso}"
 

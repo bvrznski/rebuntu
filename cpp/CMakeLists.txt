@@ -616,6 +616,17 @@ add_executable(rebuntu-hang-stall-jam-detector-test
 target_link_libraries(rebuntu-hang-stall-jam-detector-test PRIVATE rebuntu-hang-stall-jam-detector rebuntu-core)
 add_test(NAME hang_stall_jam_detector_test COMMAND rebuntu-hang-stall-jam-detector-test)
 
+# Phase 5.51: Parallel Discovery Infrastructure (header-only library)
+# The implementation is entirely in parallel_discovery.hpp as a header-only template library
+# Include the header directly via rebuntu-core's include path
+
+# Phase 5.51: Parallel Discovery Infrastructure unit tests
+add_executable(rebuntu-parallel-discovery-test
+    ${CMAKE_CURRENT_LIST_DIR}/tests/unit/parallel_discovery_test.cpp
+)
+target_link_libraries(rebuntu-parallel-discovery-test PRIVATE rebuntu-core)
+add_test(NAME parallel_discovery_test COMMAND rebuntu-parallel-discovery-test)
+
 # Phase 5.40: Discovery Resynchronization Interface unit tests
 add_executable(rebuntu-discovery-resync-test
     ${CMAKE_CURRENT_LIST_DIR}/tests/unit/discovery_resync_test.cpp

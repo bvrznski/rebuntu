@@ -2,7 +2,7 @@
 set -uo pipefail
 
 ROOT="${REBUNTU_ROOT:-/home/bvrznski/rebuntu}"
-ISO="$ROOT/build/artifacts/images/rebuntu-jammy-amd64.iso"
+ISO="$ROOT/build/artifacts/images/rebuntu-resolute-amd64.iso"
 BUILDER="${REBUNTU_BUILDER:-rebuntu-builder}"
 
 PASS=0

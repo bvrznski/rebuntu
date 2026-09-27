@@ -3,7 +3,7 @@ set -Eeuo pipefail
 
 ROOT="$(cd "$(dirname "${BASH_SOURCE[0]}")/../.." && pwd)"
 
-ISO="${1:-$ROOT/build/artifacts/images/rebuntu-jammy-amd64.iso}"
+ISO="${1:-$ROOT/build/artifacts/images/rebuntu-resolute-amd64.iso}"
 
 [[ -s "$ISO" ]] || {
     echo "FAIL: ISO missing: $ISO" >&2

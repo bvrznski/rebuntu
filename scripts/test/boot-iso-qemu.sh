@@ -1,7 +1,7 @@
 #!/usr/bin/env bash
 set -Eeuo pipefail
 ROOT="$(cd "$(dirname "${BASH_SOURCE[0]}")/../.." && pwd)"
-SUITE="${UBUNTU_SUITE:-jammy}"
+SUITE="${UBUNTU_SUITE:-resolute}"
 ARCH="${REBUNTU_ARCH:-amd64}"
 ISO="${1:-$ROOT/build/artifacts/images/rebuntu-$SUITE-$ARCH.iso}"
 [[ -s "$ISO" ]] || { echo "ISO missing: $ISO" >&2; exit 1; }

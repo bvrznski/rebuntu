@@ -3,7 +3,7 @@ set -Eeuo pipefail
 
 ROOT="${REBUNTU_ROOT:-$(cd "$(dirname "${BASH_SOURCE[0]}")/../.." && pwd)}"
 
-SUITE="${UBUNTU_SUITE:-jammy}"
+SUITE="${UBUNTU_SUITE:-resolute}"
 ARCH="${REBUNTU_ARCH:-amd64}"
 
 ROOTFS="${REBUNTU_ROOTFS:-$ROOT/build/rootfs/rebuntu-$SUITE-$ARCH}"
@@ -72,6 +72,6 @@ echo " REBUNTU LIVE DESKTOP BUILD COMPLETE"
 echo "========================================"
 echo
 echo "ISO:"
-echo "$ROOT/build/artifacts/images/rebuntu-jammy-amd64.iso"
+echo "$ROOT/build/artifacts/images/rebuntu-resolute-amd64.iso"
 echo
 echo "Next stage: real SeaBIOS + OVMF boot."

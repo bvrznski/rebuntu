@@ -48,7 +48,7 @@ sudo mkdir -p "$TARGET/etc/apt/sources.list.d"
 
 cat <<APT | sudo tee \
     "$TARGET/etc/apt/sources.list.d/rebuntu-local.list" >/dev/null
-deb [trusted=yes] file:/opt/rebuntu/repository jammy main
+deb [trusted=yes] file:/opt/rebuntu/repository resolute main
 APT
 
 # ------------------------------------------------------------

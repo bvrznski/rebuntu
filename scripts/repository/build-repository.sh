@@ -1,6 +1,7 @@
 #!/usr/bin/env bash
 set -Eeuo pipefail
-R="${REBUNTU_ROOT:-$(cd "$(dirname "${BASH_SOURCE[0]}")/../.."&&pwd)}"; X="$R/repository"; P="$X/pool/main/r/rebuntu"; D="$X/dists/jammy"; B="$D/main/binary-amd64"
+SUITE="${UBUNTU_SUITE:-resolute}"
+R="${REBUNTU_ROOT:-$(cd "$(dirname "${BASH_SOURCE[0]}")/../.."&&pwd)}"; X="$R/repository"; P="$X/pool/main/r/rebuntu"; D="$X/dists/$SUITE"; B="$D/main/binary-amd64"
 command -v dpkg-scanpackages >/dev/null || { echo "install dpkg-dev"; exit 2; }
 mkdir -p "$P" "$B"; find "$P" -name '*.deb' -delete; rm -f "$B"/Packages* "$D"/{Release,InRelease,Release.gpg}
 declare -A S
@@ -9,13 +10,13 @@ while IFS= read -r -d '' f; do
  [[ ${S[$k]+x} ]]&&continue; S[$k]=1; install -m644 "$f" "$P/${n}_${v}_${a}.deb"
 done < <(find "$R/build/artifacts/deb" "$R/packages" -type f -name '*.deb' -print0 2>/dev/null)
 find "$P" -name '*.deb'|grep -q . || { echo "no debs"; exit 3; }
-(cd "$X"; dpkg-scanpackages --multiversion pool/main/r/rebuntu /dev/null > dists/jammy/main/binary-amd64/Packages)
+(cd "$X"; dpkg-scanpackages --multiversion pool/main/r/rebuntu /dev/null > dists/$SUITE/main/binary-amd64/Packages)
 gzip -n9c "$B/Packages">"$B/Packages.gz"; xz -9ec "$B/Packages">"$B/Packages.xz"
 cat >"$D/Release" <<REL
 Origin: Rebuntu
 Label: Rebuntu
-Suite: jammy
-Codename: jammy
+Suite: $SUITE
+Codename: $SUITE
 Architectures: amd64 all
 Components: main
 Description: Rebuntu package repository

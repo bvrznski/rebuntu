@@ -6,7 +6,7 @@ GIT_SHA=$(git rev-parse HEAD 2>/dev/null || echo "UNKNOWN")
 GIT_DIRTY=$(git diff --quiet 2>/dev/null && echo "clean" || echo "dirty")
 
 ROOT="$(cd "$(dirname "${BASH_SOURCE[0]}")/../.." && pwd)"
-SUITE="${UBUNTU_SUITE:-jammy}"
+SUITE="${UBUNTU_SUITE:-resolute}"
 ARCH="${REBUNTU_ARCH:-amd64}"
 ROOTFS="${REBUNTU_ROOTFS:-$ROOT/build/rootfs/rebuntu-$SUITE-$ARCH}"
 WORK="$ROOT/build/live"

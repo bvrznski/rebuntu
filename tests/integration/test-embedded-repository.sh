@@ -3,7 +3,7 @@ set -Eeuo pipefail
 
 ROOT="$(cd "$(dirname "${BASH_SOURCE[0]}")/../.." && pwd)"
 
-TARGET="${1:-${REBUNTU_ROOTFS:-$ROOT/build/rootfs/rebuntu-jammy-amd64}}"
+TARGET="${1:-${REBUNTU_ROOTFS:-$ROOT/build/rootfs/rebuntu-resolute-amd64}}"
 
 sudo test -d \
     "$TARGET/opt/rebuntu/repository"

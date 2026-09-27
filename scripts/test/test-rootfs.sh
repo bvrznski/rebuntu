@@ -1,7 +1,7 @@
 #!/usr/bin/env bash
 set -Eeuo pipefail
 ROOT="$(cd "$(dirname "${BASH_SOURCE[0]}")/../.." && pwd)"
-SUITE="${UBUNTU_SUITE:-jammy}"
+SUITE="${UBUNTU_SUITE:-resolute}"
 ARCH="${REBUNTU_ARCH:-amd64}"
 TARGET="${REBUNTU_ROOTFS:-$ROOT/build/rootfs/rebuntu-$SUITE-$ARCH}"
 

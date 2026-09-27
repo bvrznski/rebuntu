@@ -133,6 +133,7 @@ rebuntu-procfs-process-test: librebuntu-cpu-memory-thermal-monitor.a
 rebuntu-procfs-process-test: librebuntu-gpu-health-monitor.a
 rebuntu-procfs-process-test: librebuntu-internal-alerts.a
 rebuntu-procfs-process-test: librebuntu-session-utmp.a
+rebuntu-procfs-process-test: librebuntu-cgroup-hierarchy-adapter.a
 rebuntu-procfs-process-test: librebuntu-reporting.a
 rebuntu-procfs-process-test: librebuntu-hang-stall-jam-detector.a
 rebuntu-procfs-process-test: librebuntu-host-foundation.a

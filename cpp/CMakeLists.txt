@@ -355,6 +355,13 @@ add_executable(rebuntu-systemd-service-test
 target_link_libraries(rebuntu-systemd-service-test PRIVATE rebuntu-systemd-service-adapter rebuntu-core)
 add_test(NAME systemd_service_test COMMAND rebuntu-systemd-service-test)
 
+# Phase 5.28: Cgroup v2 Hierarchy Discovery unit tests
+add_executable(rebuntu-cgroup-hierarchy-test
+    ${CMAKE_CURRENT_LIST_DIR}/tests/unit/cgroup_hierarchy_test.cpp
+)
+target_link_libraries(rebuntu-cgroup-hierarchy-test PRIVATE rebuntu-cgroup-hierarchy-adapter rebuntu-core)
+add_test(NAME cgroup_hierarchy_test COMMAND rebuntu-cgroup-hierarchy-test)
+
 # Phase 5.3: Journal filtering and normalization module
 add_library(rebuntu-journal-normalizer STATIC
     ${CMAKE_CURRENT_LIST_DIR}/../src/adapters/journal_normalizer.hpp
@@ -437,6 +444,14 @@ add_library(rebuntu-session-utmp STATIC
 )
 target_include_directories(rebuntu-session-utmp PUBLIC ${CMAKE_CURRENT_LIST_DIR}/../src)
 target_link_libraries(rebuntu-core PUBLIC rebuntu-session-utmp)
+
+# Phase 5.28: Cgroup v2 Hierarchy Observation Adapter module
+add_library(rebuntu-cgroup-hierarchy-adapter STATIC
+    ${CMAKE_CURRENT_LIST_DIR}/../src/adapters/cgroups/hierarchy/types.hpp
+    ${CMAKE_CURRENT_LIST_DIR}/../src/adapters/cgroups/hierarchy/implementation.cpp
+)
+target_include_directories(rebuntu-cgroup-hierarchy-adapter PUBLIC ${CMAKE_CURRENT_LIST_DIR}/../src)
+target_link_libraries(rebuntu-core PUBLIC rebuntu-cgroup-hierarchy-adapter)
 
 # Phase 5.15: Reporting & Notification module
 add_library(rebuntu-reporting STATIC

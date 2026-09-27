@@ -133,6 +133,7 @@ rebuntu-netlink-socket-test: librebuntu-cpu-memory-thermal-monitor.a
 rebuntu-netlink-socket-test: librebuntu-gpu-health-monitor.a
 rebuntu-netlink-socket-test: librebuntu-internal-alerts.a
 rebuntu-netlink-socket-test: librebuntu-session-utmp.a
+rebuntu-netlink-socket-test: librebuntu-cgroup-hierarchy-adapter.a
 rebuntu-netlink-socket-test: librebuntu-reporting.a
 rebuntu-netlink-socket-test: librebuntu-hang-stall-jam-detector.a
 rebuntu-netlink-socket-test: librebuntu-host-foundation.a

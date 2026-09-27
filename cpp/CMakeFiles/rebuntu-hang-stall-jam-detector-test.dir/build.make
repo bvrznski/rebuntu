@@ -134,6 +134,7 @@ rebuntu-hang-stall-jam-detector-test: librebuntu-cpu-memory-thermal-monitor.a
 rebuntu-hang-stall-jam-detector-test: librebuntu-gpu-health-monitor.a
 rebuntu-hang-stall-jam-detector-test: librebuntu-internal-alerts.a
 rebuntu-hang-stall-jam-detector-test: librebuntu-session-utmp.a
+rebuntu-hang-stall-jam-detector-test: librebuntu-cgroup-hierarchy-adapter.a
 rebuntu-hang-stall-jam-detector-test: librebuntu-reporting.a
 rebuntu-hang-stall-jam-detector-test: librebuntu-host-foundation.a
 rebuntu-hang-stall-jam-detector-test: CMakeFiles/rebuntu-hang-stall-jam-detector-test.dir/link.txt

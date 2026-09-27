@@ -959,6 +959,19 @@ rebuntu-systemd-service-test/fast:
 .PHONY : rebuntu-systemd-service-test/fast
 
 #=============================================================================
+# Target rules for targets named rebuntu-cgroup-hierarchy-test
+
+# Build rule for target.
+rebuntu-cgroup-hierarchy-test: cmake_check_build_system
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 rebuntu-cgroup-hierarchy-test
+.PHONY : rebuntu-cgroup-hierarchy-test
+
+# fast build rule for target.
+rebuntu-cgroup-hierarchy-test/fast:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/rebuntu-cgroup-hierarchy-test.dir/build.make CMakeFiles/rebuntu-cgroup-hierarchy-test.dir/build
+.PHONY : rebuntu-cgroup-hierarchy-test/fast
+
+#=============================================================================
 # Target rules for targets named rebuntu-journal-normalizer
 
 # Build rule for target.
@@ -1076,6 +1089,19 @@ rebuntu-session-utmp/fast:
 .PHONY : rebuntu-session-utmp/fast
 
 #=============================================================================
+# Target rules for targets named rebuntu-cgroup-hierarchy-adapter
+
+# Build rule for target.
+rebuntu-cgroup-hierarchy-adapter: cmake_check_build_system
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 rebuntu-cgroup-hierarchy-adapter
+.PHONY : rebuntu-cgroup-hierarchy-adapter
+
+# fast build rule for target.
+rebuntu-cgroup-hierarchy-adapter/fast:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/rebuntu-cgroup-hierarchy-adapter.dir/build.make CMakeFiles/rebuntu-cgroup-hierarchy-adapter.dir/build
+.PHONY : rebuntu-cgroup-hierarchy-adapter/fast
+
+#=============================================================================
 # Target rules for targets named rebuntu-reporting
 
 # Build rule for target.
@@ -1126,6 +1152,30 @@ rebuntu-host-foundation: cmake_check_build_system
 rebuntu-host-foundation/fast:
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/rebuntu-host-foundation.dir/build.make CMakeFiles/rebuntu-host-foundation.dir/build
 .PHONY : rebuntu-host-foundation/fast
+
+home/bvrznski/rebuntu/src/adapters/cgroups/hierarchy/implementation.o: home/bvrznski/rebuntu/src/adapters/cgroups/hierarchy/implementation.cpp.o
+.PHONY : home/bvrznski/rebuntu/src/adapters/cgroups/hierarchy/implementation.o
+
+# target to build an object file
+home/bvrznski/rebuntu/src/adapters/cgroups/hierarchy/implementation.cpp.o:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/rebuntu-cgroup-hierarchy-adapter.dir/build.make CMakeFiles/rebuntu-cgroup-hierarchy-adapter.dir/home/bvrznski/rebuntu/src/adapters/cgroups/hierarchy/implementation.cpp.o
+.PHONY : home/bvrznski/rebuntu/src/adapters/cgroups/hierarchy/implementation.cpp.o
+
+home/bvrznski/rebuntu/src/adapters/cgroups/hierarchy/implementation.i: home/bvrznski/rebuntu/src/adapters/cgroups/hierarchy/implementation.cpp.i
+.PHONY : home/bvrznski/rebuntu/src/adapters/cgroups/hierarchy/implementation.i
+
+# target to preprocess a source file
+home/bvrznski/rebuntu/src/adapters/cgroups/hierarchy/implementation.cpp.i:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/rebuntu-cgroup-hierarchy-adapter.dir/build.make CMakeFiles/rebuntu-cgroup-hierarchy-adapter.dir/home/bvrznski/rebuntu/src/adapters/cgroups/hierarchy/implementation.cpp.i
+.PHONY : home/bvrznski/rebuntu/src/adapters/cgroups/hierarchy/implementation.cpp.i
+
+home/bvrznski/rebuntu/src/adapters/cgroups/hierarchy/implementation.s: home/bvrznski/rebuntu/src/adapters/cgroups/hierarchy/implementation.cpp.s
+.PHONY : home/bvrznski/rebuntu/src/adapters/cgroups/hierarchy/implementation.s
+
+# target to generate assembly for a file
+home/bvrznski/rebuntu/src/adapters/cgroups/hierarchy/implementation.cpp.s:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/rebuntu-cgroup-hierarchy-adapter.dir/build.make CMakeFiles/rebuntu-cgroup-hierarchy-adapter.dir/home/bvrznski/rebuntu/src/adapters/cgroups/hierarchy/implementation.cpp.s
+.PHONY : home/bvrznski/rebuntu/src/adapters/cgroups/hierarchy/implementation.cpp.s
 
 home/bvrznski/rebuntu/src/adapters/journal_analyzer.o: home/bvrznski/rebuntu/src/adapters/journal_analyzer.cpp.o
 .PHONY : home/bvrznski/rebuntu/src/adapters/journal_analyzer.o
@@ -2327,6 +2377,30 @@ home/bvrznski/rebuntu/src/system/setup/setup.cpp.s:
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/rebuntu-setup.dir/build.make CMakeFiles/rebuntu-setup.dir/home/bvrznski/rebuntu/src/system/setup/setup.cpp.s
 .PHONY : home/bvrznski/rebuntu/src/system/setup/setup.cpp.s
 
+tests/unit/cgroup_hierarchy_test.o: tests/unit/cgroup_hierarchy_test.cpp.o
+.PHONY : tests/unit/cgroup_hierarchy_test.o
+
+# target to build an object file
+tests/unit/cgroup_hierarchy_test.cpp.o:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/rebuntu-cgroup-hierarchy-test.dir/build.make CMakeFiles/rebuntu-cgroup-hierarchy-test.dir/tests/unit/cgroup_hierarchy_test.cpp.o
+.PHONY : tests/unit/cgroup_hierarchy_test.cpp.o
+
+tests/unit/cgroup_hierarchy_test.i: tests/unit/cgroup_hierarchy_test.cpp.i
+.PHONY : tests/unit/cgroup_hierarchy_test.i
+
+# target to preprocess a source file
+tests/unit/cgroup_hierarchy_test.cpp.i:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/rebuntu-cgroup-hierarchy-test.dir/build.make CMakeFiles/rebuntu-cgroup-hierarchy-test.dir/tests/unit/cgroup_hierarchy_test.cpp.i
+.PHONY : tests/unit/cgroup_hierarchy_test.cpp.i
+
+tests/unit/cgroup_hierarchy_test.s: tests/unit/cgroup_hierarchy_test.cpp.s
+.PHONY : tests/unit/cgroup_hierarchy_test.s
+
+# target to generate assembly for a file
+tests/unit/cgroup_hierarchy_test.cpp.s:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/rebuntu-cgroup-hierarchy-test.dir/build.make CMakeFiles/rebuntu-cgroup-hierarchy-test.dir/tests/unit/cgroup_hierarchy_test.cpp.s
+.PHONY : tests/unit/cgroup_hierarchy_test.cpp.s
+
 tests/unit/hang_stall_jam_detector_test.o: tests/unit/hang_stall_jam_detector_test.cpp.o
 .PHONY : tests/unit/hang_stall_jam_detector_test.o
 
@@ -2510,6 +2584,8 @@ help:
 	@echo "... NightlyUpdate"
 	@echo "... rebuntu-authorization"
 	@echo "... rebuntu-capability-state"
+	@echo "... rebuntu-cgroup-hierarchy-adapter"
+	@echo "... rebuntu-cgroup-hierarchy-test"
 	@echo "... rebuntu-core"
 	@echo "... rebuntu-cpu-memory-thermal-monitor"
 	@echo "... rebuntu-directories"
@@ -2557,6 +2633,9 @@ help:
 	@echo "... rebuntu-systemd-service-test"
 	@echo "... rebuntu-temp-files"
 	@echo "... rebuntu-user-identity"
+	@echo "... home/bvrznski/rebuntu/src/adapters/cgroups/hierarchy/implementation.o"
+	@echo "... home/bvrznski/rebuntu/src/adapters/cgroups/hierarchy/implementation.i"
+	@echo "... home/bvrznski/rebuntu/src/adapters/cgroups/hierarchy/implementation.s"
 	@echo "... home/bvrznski/rebuntu/src/adapters/journal_analyzer.o"
 	@echo "... home/bvrznski/rebuntu/src/adapters/journal_analyzer.i"
 	@echo "... home/bvrznski/rebuntu/src/adapters/journal_analyzer.s"
@@ -2707,6 +2786,9 @@ help:
 	@echo "... home/bvrznski/rebuntu/src/system/setup/setup.o"
 	@echo "... home/bvrznski/rebuntu/src/system/setup/setup.i"
 	@echo "... home/bvrznski/rebuntu/src/system/setup/setup.s"
+	@echo "... tests/unit/cgroup_hierarchy_test.o"
+	@echo "... tests/unit/cgroup_hierarchy_test.i"
+	@echo "... tests/unit/cgroup_hierarchy_test.s"
 	@echo "... tests/unit/hang_stall_jam_detector_test.o"
 	@echo "... tests/unit/hang_stall_jam_detector_test.i"
 	@echo "... tests/unit/hang_stall_jam_detector_test.s"

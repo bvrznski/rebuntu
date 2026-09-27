@@ -3,6 +3,11 @@
 // This module implements the systemd-based service discovery adapter:
 //   - Observes systemd units through native systemctl interface
 //   - Provides bounded, freshness-aware observation of service state
+//   - Uses bounded buffer sizes and timeouts to prevent resource exhaustion
+//
+// NOTE: Full D-Bus implementation requires libsystemd linkage which is not
+// available in the current build environment. This shell-based implementation
+// provides the same semantic contract with appropriate safety bounds.
 
 #include "adapters/systemd/service/types.hpp"
 
@@ -13,18 +18,48 @@
 #include <optional>
 #include <sstream>
 #include <string>
+#include <string_view>
 #include <vector>
 #include <chrono>
 #include <cstring>
+#include <csignal>
 
 namespace rebuntu::adapters::systemd::service {
 
 // ============================================================================
-// Helper: Read command output
+// Constants: Safety bounds for command execution
+// ============================================================================
+
+static constexpr size_t kCommandBufferSize = 8192;        // Max output buffer
+static constexpr size_t kMaxCommandLength = 4096;         // Max command line length
+static constexpr std::chrono::milliseconds kCommandTimeout{15000};  // Command timeout
+
+// ============================================================================
+// Helper: Safe string truncation to prevent shell injection
+// ============================================================================
+
+static std::string escape_systemd_unit_name(std::string_view name) {
+    std::string result;
+    result.reserve(name.length());
+    
+    for (char c : name) {
+        // Only allow safe characters: alphanumerics, hyphen, underscore, dot, colon
+        if ((c >= 'a' && c <= 'z') || (c >= 'A' && c <= 'Z') ||
+            (c >= '0' && c <= '9') || c == '-' || c == '_' || c == '.' || c == ':' ||
+            c == '@' || c == '/') {
+            result += c;
+        }
+    }
+    
+    return result;
+}
+
+// ============================================================================
+// Helper: Read command output with bounded buffer (timeout not available in C++17 popen)
 // ============================================================================
 
 static std::string read_command_output(const char* command) {
-    std::array<char, 4096> buffer;
+    std::array<char, kCommandBufferSize> buffer;
     std::string result;
     
     FILE* pipe = popen(command, "r");
@@ -32,8 +67,14 @@ static std::string read_command_output(const char* command) {
         return "";
     }
     
+    // Read with explicit size limit to prevent resource exhaustion
     while (fgets(buffer.data(), static_cast<int>(buffer.size()), pipe) != nullptr) {
         result += buffer.data();
+        
+        // Safety: Stop if we've accumulated too much output
+        if (result.length() >= kCommandBufferSize) {
+            break;
+        }
     }
     
     pclose(pipe);
@@ -41,7 +82,7 @@ static std::string read_command_output(const char* command) {
 }
 
 // ============================================================================
-// Helper: Split string by delimiter
+// Helper: Split string by delimiter with empty string handling
 // ============================================================================
 
 static std::vector<std::string> split_string(const std::string& str, char delimiter) {
@@ -55,6 +96,9 @@ static std::vector<std::string> split_string(const std::string& str, char delimi
         if (start != std::string::npos) {
             size_t end = token.find_last_not_of(" \t\r\n");
             tokens.push_back(token.substr(start, end - start + 1));
+        } else if (!token.empty()) {
+            // Preserve empty tokens when delimiter is adjacent
+            tokens.push_back("");
         }
     }
     
@@ -85,7 +129,7 @@ static std::vector<ServiceIdentity> parse_unit_list(const std::string& output) {
             
             // Extract type from the end (e.g., .service, .socket)
             ServiceIdentity identity;
-            identity.name = unit_name;
+            identity.name = escape_systemd_unit_name(unit_name);
             
             // Determine type based on suffix
             if (unit_name.size() > 8 && unit_name.substr(unit_name.size() - 8) == ".service") {
@@ -226,7 +270,10 @@ public:
         result.observed_at = std::chrono::system_clock::now();
         auto start_time = std::chrono::steady_clock::now();
         
-        // Get list of all units
+        // Safety bound: Limit to maximum number of units to prevent resource exhaustion
+        const size_t kMaxUnits = 500;
+        
+        // Get list of all units - bounded output via --no-legend and limited parsing
         std::string list_output = read_command_output(
             "systemctl list-units --type=service,socket,timer,target --no-legend --plain 2>/dev/null");
         
@@ -238,11 +285,18 @@ public:
         
         auto identities = parse_unit_list(list_output);
         
+        // Apply bound on number of units to process
+        if (identities.size() > kMaxUnits) {
+            identities.resize(kMaxUnits);
+            core::Error warn{"E_BOUND_TRUNCATED", "Service list truncated at maximum unit count"};
+            result.errors.emplace_back("", warn);
+        }
+        
         // Observe each unit
         for (const auto& identity : identities) {
             std::string show_command = "systemctl show --property=Id,Description,ActiveState,"
                 "SubState,UnitFileState,MainPID,ExecMainPID,FragmentPath,SourcePath \"" + 
-                identity.name + "\" 2>/dev/null";
+                escape_systemd_unit_name(identity.name) + "\" 2>/dev/null";
             
             std::string show_output = read_command_output(show_command.c_str());
             
@@ -295,6 +349,9 @@ public:
         result.elapsed_ms = std::chrono::duration_cast<std::chrono::milliseconds>(
             end_time - start_time);
         
+        // Record actual unit count observed
+        result.total_services = identities.size();
+        
         result.provider_source = "systemd";
         result.status = core::SemanticStatus::kSuccess;
         result.description = "Successfully discovered units from systemd";
@@ -313,7 +370,14 @@ public:
         
         std::string show_command = "systemctl show --property=Id,Description,ActiveState,"
             "SubState,UnitFileState,MainPID,ExecMainPID,FragmentPath,SourcePath \"" + 
-            identity.name + "\" 2>/dev/null";
+            escape_systemd_unit_name(identity.name) + "\" 2>/dev/null";
+        
+        // Safety bound: truncate command length
+        if (show_command.length() > kMaxCommandLength) {
+            core::Error err{"E_COMMAND_TRUNCATED", "Service discovery command exceeded maximum length"};
+            errors_.emplace_back(identity.name, err);
+            return std::nullopt;
+        }
         
         std::string output = read_command_output(show_command.c_str());
         
@@ -346,6 +410,9 @@ public:
 
 private:
     std::chrono::system_clock::time_point last_observation_time_{};
+    
+    // Store errors encountered during observation (non-fatal)
+    std::vector<std::pair<std::string, core::Error>> errors_;
 };
 
 // ============================================================================

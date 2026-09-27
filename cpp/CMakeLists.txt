@@ -80,6 +80,7 @@ add_library(rebuntu-shell STATIC
     ${CMAKE_CURRENT_LIST_DIR}/../src/system/shell/parser.hpp
     ${CMAKE_CURRENT_LIST_DIR}/../src/system/shell/parser.cpp
     ${CMAKE_CURRENT_LIST_DIR}/../src/system/shell/predicates.hpp
+    ${CMAKE_CURRENT_LIST_DIR}/../src/system/shell/predicates.cpp
     ${CMAKE_CURRENT_LIST_DIR}/../src/system/shell/values.hpp
     ${CMAKE_CURRENT_LIST_DIR}/../src/system/shell/verbs/list.hpp
     ${CMAKE_CURRENT_LIST_DIR}/../src/system/shell/verbs/list.cpp

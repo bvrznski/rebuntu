@@ -772,3 +772,10 @@ add_executable(rebuntu-evidence-journal-test
 )
 target_link_libraries(rebuntu-evidence-journal-test PRIVATE rebuntu-evidence-journal-slice rebuntu-core)
 add_test(NAME evidence_journal_test COMMAND rebuntu-evidence-journal-test)
+
+# Phase 5.63: Unit and Provider Test Matrix (comprehensive test coverage)
+add_executable(rebuntu-provider-test-matrix
+    ${CMAKE_CURRENT_LIST_DIR}/tests/unit/provider_test_matrix.cpp
+)
+target_link_libraries(rebuntu-provider-test-matrix PRIVATE rebuntu-core)
+add_test(NAME provider_test_matrix COMMAND rebuntu-provider-test-matrix)

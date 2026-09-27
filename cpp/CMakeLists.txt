@@ -648,9 +648,17 @@ add_library(rebuntu-cross-domain-references STATIC
 target_include_directories(rebuntu-cross-domain-references PUBLIC ${CMAKE_CURRENT_LIST_DIR}/../src)
 target_link_libraries(rebuntu-core PUBLIC rebuntu-cross-domain-references)
 
+# Phase 5.47: Relationship Evidence module (provenance tracking for discovered relationships)
+add_library(rebuntu-relationship-evidence STATIC
+    ${CMAKE_CURRENT_LIST_DIR}/../src/observation/system-observation-inventory-discovery/relationships/types.hpp
+    ${CMAKE_CURRENT_LIST_DIR}/../src/observation/system-observation-inventory-discovery/relationships/implementation.cpp
+)
+target_include_directories(rebuntu-relationship-evidence PUBLIC ${CMAKE_CURRENT_LIST_DIR}/../src)
+target_link_libraries(rebuntu-core PUBLIC rebuntu-relationship-evidence)
+
 # Cross-Domain References unit tests (disabled - gtest not available in CTest)
 # add_executable(rebuntu-cross-domain-references-test
 #     ${CMAKE_CURRENT_LIST_DIR}/tests/unit/cross_domain_references_test.cpp
 # )
-# target_link_libraries(rebuntu-cross-domain-references-test PRIVATE rebuntu-cross-domain-references rebuntu-core)
+# target_link_libraries(rebuntu-cross-domain-references-test PRIVATE rebuntu-cross-domain-references rebuntu-core gtest_main)
 # add_test(NAME cross_domain_references_test COMMAND rebuntu-cross-domain-references-test)

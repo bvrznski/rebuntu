@@ -80,6 +80,7 @@ add_library(rebuntu-shell STATIC
     ${CMAKE_CURRENT_LIST_DIR}/../src/system/shell/parser.hpp
     ${CMAKE_CURRENT_LIST_DIR}/../src/system/shell/parser.cpp
     ${CMAKE_CURRENT_LIST_DIR}/../src/system/shell/predicates.hpp
+    ${CMAKE_CURRENT_LIST_DIR}/../src/system/shell/values.hpp
     ${CMAKE_CURRENT_LIST_DIR}/../src/system/shell/verbs/list.hpp
     ${CMAKE_CURRENT_LIST_DIR}/../src/system/shell/verbs/list.cpp
 )
@@ -483,6 +484,14 @@ add_executable(rebuntu-scope-grammar-test
 target_link_libraries(rebuntu-scope-grammar-test PRIVATE rebuntu-core rebuntu-shell)
 target_include_directories(rebuntu-scope-grammar-test PRIVATE ${CMAKE_SOURCE_DIR})
 add_test(NAME scope_grammar_test COMMAND rebuntu-scope-grammar-test)
+
+# Phase 6.6: Value Parsers unit tests
+add_executable(rebuntu-value-parsers-test
+    ${CMAKE_CURRENT_LIST_DIR}/tests/unit/value_parsers_test.cpp
+)
+target_link_libraries(rebuntu-value-parsers-test PRIVATE rebuntu-core rebuntu-shell)
+target_include_directories(rebuntu-value-parsers-test PRIVATE ${CMAKE_SOURCE_DIR})
+add_test(NAME value_parsers_test COMMAND rebuntu-value-parsers-test)
 
 # Phase 5.32: Kernel Module Observation Adapter module (procfs modules)
 add_library(rebuntu-procfs-modules STATIC

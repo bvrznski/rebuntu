@@ -137,7 +137,7 @@ struct CommandIntent {
     std::optional<std::string> subject;      // Subject type: package, service, file, etc.
     std::optional<std::string> target;       // Concrete target identity
     
-    // Parameters
+    // Parameters (positional arguments)
     std::vector<std::pair<std::string, std::string>> arguments;
     
     // Qualifiers/modifiers

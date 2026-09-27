@@ -329,46 +329,45 @@ private:
     
     // Execute a boolean-returning member function
     template<typename Func>
-auto execute_bool_with_catch(Func&& func, const char* operation) -> DegradedObservation<bool> {
-    
-    if (!wrapped_) {
-        return DegradedObservation<bool>::unavailable({
-            ProviderFailure{
-                .provider_id = provider_id_,
-                .failure_time = std::chrono::system_clock::now(),
-                .category = ProviderFailure::Category::kConnection,
-                .description = "Wrapped adapter is null",
-            }
-        });
+    auto execute_bool_with_catch(Func&& func, const char* operation) -> DegradedObservation<bool> {
+        if (!wrapped_) {
+            return DegradedObservation<bool>::unavailable({
+                ProviderFailure{
+                    .provider_id = provider_id_,
+                    .failure_time = std::chrono::system_clock::now(),
+                    .category = ProviderFailure::Category::kConnection,
+                    .description = "Wrapped adapter is null",
+                }
+            });
+        }
+        
+        try {
+            bool result = (wrapped_.get()->*func)();
+            return DegradedObservation<bool>::success(result);
+        } catch (const std::system_error& e) {
+            auto obs = handle_system_error(e, operation);
+            obs.status = core::SemanticStatus::kUnknown;
+            return obs;
+        } catch (const std::exception& e) {
+            return DegradedObservation<bool>::unavailable({
+                ProviderFailure{
+                    .provider_id = provider_id_,
+                    .failure_time = std::chrono::system_clock::now(),
+                    .category = ProviderFailure::Category::kUnknown,
+                    .description = "Exception in " + std::string(operation) + ": " + e.what(),
+                }
+            });
+        } catch (...) {
+            return DegradedObservation<bool>::unavailable({
+                ProviderFailure{
+                    .provider_id = provider_id_,
+                    .failure_time = std::chrono::system_clock::now(),
+                    .category = ProviderFailure::Category::kUnknown,
+                    .description = "Unknown exception in " + std::string(operation),
+                }
+            });
+        }
     }
-    
-    try {
-        bool result = (wrapped_.get()->*func)();
-        return DegradedObservation<bool>::success(result);
-    } catch (const std::system_error& e) {
-        auto obs = handle_system_error(e, operation);
-        obs.status = core::SemanticStatus::kUnknown;
-        return obs;
-    } catch (const std::exception& e) {
-        return DegradedObservation<bool>::unavailable({
-            ProviderFailure{
-                .provider_id = provider_id_,
-                .failure_time = std::chrono::system_clock::now(),
-                .category = ProviderFailure::Category::kUnknown,
-                .description = "Exception in " + std::string(operation) + ": " + e.what(),
-            }
-        });
-    } catch (...) {
-        return DegradedObservation<bool>::unavailable({
-            ProviderFailure{
-                .provider_id = provider_id_,
-                .failure_time = std::chrono::system_clock::now(),
-                .category = ProviderFailure::Category::kUnknown,
-                .description = "Unknown exception in " + std::string(operation),
-            }
-        });
-    }
-}
     
     // Execute a void-returning member function
     DegradedObservation<void> execute_void_with_catch(

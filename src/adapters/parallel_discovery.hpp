@@ -169,16 +169,17 @@ public:
     auto submit(Func func) -> std::future<decltype(func())> {
         using ResultType = decltype(func());
         
+        std::lock_guard<std::mutex> lock(mutex_);
+        
+        if (!running_) {
+            throw std::runtime_error("WorkerPool is not running");
+        }
+        
+        // Create task after confirming pool is running
         auto task = std::make_shared<std::packaged_task<ResultType()>>(std::move(func));
         std::future<ResultType> result = task->get_future();
         
-        {
-            std::lock_guard<std::mutex> lock(mutex_);
-            if (!running_) {
-                throw std::runtime_error("WorkerPool is not running");
-            }
-            tasks_.push([task]() { (*task)(); });
-        }
+        tasks_.push([task]() { (*task)(); });
         cv_.notify_one();
         
         return result;
@@ -295,14 +296,15 @@ public:
     
     // Check if we can add more items
     bool can_add(size_t count = 1) const noexcept {
-        std::lock_guard<std::mutex> lock(const_cast<std::mutex&>(mutex_));
-        return (items_added_ + count) <= max_items_;
+        // Read atomic value - this is thread-safe for reading
+        size_t current_items = items_added_.load(std::memory_order_relaxed);
+        return (current_items + count) <= max_items_;
     }
     
     // Get total items added
     size_t total_items() const noexcept {
-        std::lock_guard<std::mutex> lock(const_cast<std::mutex&>(mutex_));
-        return items_added_;
+        // Read atomic value - this is thread-safe for reading
+        return items_added_.load(std::memory_order_relaxed);
     }
     
 private:
@@ -310,7 +312,7 @@ private:
     std::vector<T> results_;
     std::vector<std::pair<size_t, core::Error>> errors_;
     size_t max_items_;
-    std::atomic<size_t> items_added_;
+    std::atomic<size_t> items_added_{0};
 };
 
 // ============================================================================
@@ -323,7 +325,7 @@ public:
     using ResultType = ParallelDiscoveryResult<T>;
     
     explicit ParallelDiscoveryEngine(
-        std::chrono::milliseconds default_timeout = std::chrono::seconds(30))
+        std::chrono::milliseconds /*default_timeout*/ = std::chrono::seconds(30))
         : aggregator_(10000) {}  // Max 10k items
     
     ~ParallelDiscoveryEngine() {

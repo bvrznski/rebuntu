@@ -15,7 +15,6 @@
 
 namespace rebuntu::adapters::hotplug {
 
-// ============================================================================
 // Helper: Read a file line by line
 // ============================================================================
 static std::vector<std::string> read_file_lines(std::filesystem::path path) {
@@ -373,10 +372,19 @@ public:
     }
     
     Metrics metrics() const override {
+        std::lock_guard<std::mutex> lock(state_mutex_);
         return metrics_;
+    }
+    
+    // Set options (thread-safe)
+    void set_options(const HotplugOptions& opts) {
+        std::lock_guard<std::mutex> lock(state_mutex_);
+        options_ = opts;
     }
 
 private:
+    mutable std::mutex state_mutex_;  // Protects all shared state
+    
     bool running_ = false;
     HotplugOptions options_{HotplugOptions::make_default()};
     std::unordered_map<std::string, DeviceRecord> device_records_;

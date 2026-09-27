@@ -15,4 +15,4 @@ set_tests_properties([=[procfs_process_test]=] PROPERTIES  _BACKTRACE_TRIPLES "/
 add_test([=[systemd_service_test]=] "/home/bvrznski/rebuntu/cpp/rebuntu-systemd-service-test")
 set_tests_properties([=[systemd_service_test]=] PROPERTIES  _BACKTRACE_TRIPLES "/home/bvrznski/rebuntu/cpp/CMakeLists.txt;356;add_test;/home/bvrznski/rebuntu/cpp/CMakeLists.txt;0;")
 add_test([=[hang_stall_jam_detector_test]=] "/home/bvrznski/rebuntu/cpp/rebuntu-hang-stall-jam-detector-test")
-set_tests_properties([=[hang_stall_jam_detector_test]=] PROPERTIES  _BACKTRACE_TRIPLES "/home/bvrznski/rebuntu/cpp/CMakeLists.txt;465;add_test;/home/bvrznski/rebuntu/cpp/CMakeLists.txt;0;")
+set_tests_properties([=[hang_stall_jam_detector_test]=] PROPERTIES  _BACKTRACE_TRIPLES "/home/bvrznski/rebuntu/cpp/CMakeLists.txt;473;add_test;/home/bvrznski/rebuntu/cpp/CMakeLists.txt;0;")

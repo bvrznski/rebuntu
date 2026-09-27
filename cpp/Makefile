@@ -1063,6 +1063,19 @@ rebuntu-internal-alerts/fast:
 .PHONY : rebuntu-internal-alerts/fast
 
 #=============================================================================
+# Target rules for targets named rebuntu-session-utmp
+
+# Build rule for target.
+rebuntu-session-utmp: cmake_check_build_system
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 rebuntu-session-utmp
+.PHONY : rebuntu-session-utmp
+
+# fast build rule for target.
+rebuntu-session-utmp/fast:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/rebuntu-session-utmp.dir/build.make CMakeFiles/rebuntu-session-utmp.dir/build
+.PHONY : rebuntu-session-utmp/fast
+
+#=============================================================================
 # Target rules for targets named rebuntu-reporting
 
 # Build rule for target.
@@ -1329,6 +1342,30 @@ home/bvrznski/rebuntu/src/adapters/procfs/process/implementation.s: home/bvrznsk
 home/bvrznski/rebuntu/src/adapters/procfs/process/implementation.cpp.s:
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/rebuntu-procfs-process.dir/build.make CMakeFiles/rebuntu-procfs-process.dir/home/bvrznski/rebuntu/src/adapters/procfs/process/implementation.cpp.s
 .PHONY : home/bvrznski/rebuntu/src/adapters/procfs/process/implementation.cpp.s
+
+home/bvrznski/rebuntu/src/adapters/session/utmp/implementation.o: home/bvrznski/rebuntu/src/adapters/session/utmp/implementation.cpp.o
+.PHONY : home/bvrznski/rebuntu/src/adapters/session/utmp/implementation.o
+
+# target to build an object file
+home/bvrznski/rebuntu/src/adapters/session/utmp/implementation.cpp.o:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/rebuntu-session-utmp.dir/build.make CMakeFiles/rebuntu-session-utmp.dir/home/bvrznski/rebuntu/src/adapters/session/utmp/implementation.cpp.o
+.PHONY : home/bvrznski/rebuntu/src/adapters/session/utmp/implementation.cpp.o
+
+home/bvrznski/rebuntu/src/adapters/session/utmp/implementation.i: home/bvrznski/rebuntu/src/adapters/session/utmp/implementation.cpp.i
+.PHONY : home/bvrznski/rebuntu/src/adapters/session/utmp/implementation.i
+
+# target to preprocess a source file
+home/bvrznski/rebuntu/src/adapters/session/utmp/implementation.cpp.i:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/rebuntu-session-utmp.dir/build.make CMakeFiles/rebuntu-session-utmp.dir/home/bvrznski/rebuntu/src/adapters/session/utmp/implementation.cpp.i
+.PHONY : home/bvrznski/rebuntu/src/adapters/session/utmp/implementation.cpp.i
+
+home/bvrznski/rebuntu/src/adapters/session/utmp/implementation.s: home/bvrznski/rebuntu/src/adapters/session/utmp/implementation.cpp.s
+.PHONY : home/bvrznski/rebuntu/src/adapters/session/utmp/implementation.s
+
+# target to generate assembly for a file
+home/bvrznski/rebuntu/src/adapters/session/utmp/implementation.cpp.s:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/rebuntu-session-utmp.dir/build.make CMakeFiles/rebuntu-session-utmp.dir/home/bvrznski/rebuntu/src/adapters/session/utmp/implementation.cpp.s
+.PHONY : home/bvrznski/rebuntu/src/adapters/session/utmp/implementation.cpp.s
 
 home/bvrznski/rebuntu/src/adapters/sysfs/encrypted_storage/implementation.o: home/bvrznski/rebuntu/src/adapters/sysfs/encrypted_storage/implementation.cpp.o
 .PHONY : home/bvrznski/rebuntu/src/adapters/sysfs/encrypted_storage/implementation.o
@@ -2510,6 +2547,7 @@ help:
 	@echo "... rebuntu-reporting"
 	@echo "... rebuntu-scope"
 	@echo "... rebuntu-secrets"
+	@echo "... rebuntu-session-utmp"
 	@echo "... rebuntu-sessions"
 	@echo "... rebuntu-setup"
 	@echo "... rebuntu-snapshot-service"
@@ -2546,6 +2584,9 @@ help:
 	@echo "... home/bvrznski/rebuntu/src/adapters/procfs/process/implementation.o"
 	@echo "... home/bvrznski/rebuntu/src/adapters/procfs/process/implementation.i"
 	@echo "... home/bvrznski/rebuntu/src/adapters/procfs/process/implementation.s"
+	@echo "... home/bvrznski/rebuntu/src/adapters/session/utmp/implementation.o"
+	@echo "... home/bvrznski/rebuntu/src/adapters/session/utmp/implementation.i"
+	@echo "... home/bvrznski/rebuntu/src/adapters/session/utmp/implementation.s"
 	@echo "... home/bvrznski/rebuntu/src/adapters/sysfs/encrypted_storage/implementation.o"
 	@echo "... home/bvrznski/rebuntu/src/adapters/sysfs/encrypted_storage/implementation.i"
 	@echo "... home/bvrznski/rebuntu/src/adapters/sysfs/encrypted_storage/implementation.s"

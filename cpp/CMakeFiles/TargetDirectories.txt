@@ -70,6 +70,7 @@
 /home/bvrznski/rebuntu/cpp/CMakeFiles/rebuntu-cpu-memory-thermal-monitor.dir
 /home/bvrznski/rebuntu/cpp/CMakeFiles/rebuntu-gpu-health-monitor.dir
 /home/bvrznski/rebuntu/cpp/CMakeFiles/rebuntu-internal-alerts.dir
+/home/bvrznski/rebuntu/cpp/CMakeFiles/rebuntu-session-utmp.dir
 /home/bvrznski/rebuntu/cpp/CMakeFiles/rebuntu-reporting.dir
 /home/bvrznski/rebuntu/cpp/CMakeFiles/rebuntu-hang-stall-jam-detector.dir
 /home/bvrznski/rebuntu/cpp/CMakeFiles/rebuntu-hang-stall-jam-detector-test.dir

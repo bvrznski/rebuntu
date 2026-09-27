@@ -132,6 +132,7 @@ rebuntu-netlink-link-test: librebuntu-storage-health-monitor.a
 rebuntu-netlink-link-test: librebuntu-cpu-memory-thermal-monitor.a
 rebuntu-netlink-link-test: librebuntu-gpu-health-monitor.a
 rebuntu-netlink-link-test: librebuntu-internal-alerts.a
+rebuntu-netlink-link-test: librebuntu-session-utmp.a
 rebuntu-netlink-link-test: librebuntu-reporting.a
 rebuntu-netlink-link-test: librebuntu-hang-stall-jam-detector.a
 rebuntu-netlink-link-test: librebuntu-host-foundation.a

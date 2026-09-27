@@ -82,23 +82,28 @@ sudo mksquashfs "$ROOTFS" "$ISO/casper/filesystem.squashfs" \
   -comp xz -b 1M -noappend \
   -e boot var/cache/apt/archives var/lib/apt/lists
 
-# BIOS GRUB (i386-pc) standalone image
-# Use i386-pc-eltorito format which properly handles ISO9660 filesystems for El Torito boot.
-# All modules are installed into the core image with --install-modules.
+# BIOS GRUB (i386-pc) El Torito image
+# Build core.img explicitly, then prepend GRUB's CD-ROM bootstrap.
+# This gives BIOS GRUB direct access to the El Torito CD device and ISO9660.
 grub-mkstandalone \
-  --format=i386-pc-eltorito \
-  --output="$ISO/boot/grub/bios.img" \
-  --install-modules="linux normal iso9660 biosdisk search search_fs_file search_label search_fs_uuid configfile echo ls cat test regexp gfxterm all_video video video_bochs video_cirrus font terminal part_msdos part_gpt extcmd" \
-  --modules="" \
-  --locales="" --fonts="" \
+  --format=i386-pc \
+  --output="$WORK/core.img" \
+  --locales="" \
+  --fonts="" \
   "boot/grub/grub.cfg=$ROOT/images/iso/config/grub.cfg"
+
+cat /usr/lib/grub/i386-pc/cdboot.img "$WORK/core.img" \
+  > "$ISO/boot/grub/bios.img"
+
+[[ -s "$ISO/boot/grub/bios.img" ]] || {
+  echo "ERROR: BIOS El Torito image is empty." >&2
+  exit 1
+}
 
 # UEFI GRUB (x86_64-efi) standalone image
 grub-mkstandalone \
   --format=x86_64-efi \
   --output="$ISO/EFI/BOOT/BOOTX64.EFI" \
-  --install-modules="linuxefi normal iso9660 search search_fs_file search_label search_fs_uuid configfile echo ls cat test regexp gfxterm all_video video font terminal part_gpt extcmd" \
-  --modules="" \
   --locales="" --fonts="" \
   "boot/grub/grub.cfg=$ROOT/images/iso/config/grub.cfg"
 

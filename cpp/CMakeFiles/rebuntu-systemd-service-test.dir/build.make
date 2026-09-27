@@ -132,6 +132,7 @@ rebuntu-systemd-service-test: librebuntu-storage-health-monitor.a
 rebuntu-systemd-service-test: librebuntu-cpu-memory-thermal-monitor.a
 rebuntu-systemd-service-test: librebuntu-gpu-health-monitor.a
 rebuntu-systemd-service-test: librebuntu-internal-alerts.a
+rebuntu-systemd-service-test: librebuntu-session-utmp.a
 rebuntu-systemd-service-test: librebuntu-reporting.a
 rebuntu-systemd-service-test: librebuntu-hang-stall-jam-detector.a
 rebuntu-systemd-service-test: librebuntu-host-foundation.a

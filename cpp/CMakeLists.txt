@@ -430,6 +430,14 @@ target_include_directories(rebuntu-internal-alerts PUBLIC ${CMAKE_CURRENT_LIST_D
 target_include_directories(rebuntu-internal-alerts PUBLIC ${CMAKE_CURRENT_LIST_DIR}/../src)
 target_link_libraries(rebuntu-core PUBLIC rebuntu-internal-alerts)
 
+# Phase 5.27: Session Observation Adapter (utmp/wtmp/btmp)
+add_library(rebuntu-session-utmp STATIC
+    ${CMAKE_CURRENT_LIST_DIR}/../src/adapters/session/utmp/types.hpp
+    ${CMAKE_CURRENT_LIST_DIR}/../src/adapters/session/utmp/implementation.cpp
+)
+target_include_directories(rebuntu-session-utmp PUBLIC ${CMAKE_CURRENT_LIST_DIR}/../src)
+target_link_libraries(rebuntu-core PUBLIC rebuntu-session-utmp)
+
 # Phase 5.15: Reporting & Notification module
 add_library(rebuntu-reporting STATIC
     ${CMAKE_CURRENT_LIST_DIR}/../src/modules/reporting/types.hpp
@@ -463,6 +471,13 @@ add_executable(rebuntu-hang-stall-jam-detector-test
 )
 target_link_libraries(rebuntu-hang-stall-jam-detector-test PRIVATE rebuntu-hang-stall-jam-detector rebuntu-core)
 add_test(NAME hang_stall_jam_detector_test COMMAND rebuntu-hang-stall-jam-detector-test)
+
+# Phase 5.27: Session Observation Adapter unit tests
+# add_executable(rebuntu-session-utmp-test
+#     ${CMAKE_CURRENT_LIST_DIR}/tests/unit/session_utmp_test.cpp
+# )
+# target_link_libraries(rebuntu-session-utmp-test PRIVATE rebuntu-session-utmp rebuntu-core gtest_main)
+# add_test(NAME session_utmp_test COMMAND rebuntu-session-utmp-test)
 
 # Phase 2.0: Linux Host Foundation module
 add_library(rebuntu-host-foundation STATIC

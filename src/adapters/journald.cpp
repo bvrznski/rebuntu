@@ -20,6 +20,9 @@
 #include <array>
 #include <thread>
 #include <mutex>
+#include <sstream>
+
+#include <system/environment/redact.hpp>
 
 namespace rebuntu::adapters {
 
@@ -175,6 +178,98 @@ std::optional<int64_t> extract_json_int(const std::string& json, const std::stri
     return value;
 }
 
+// Redact secrets from a message string
+std::string redact_message_secrets(const std::string& message) {
+    std::string result = message;
+    std::string lower_result = message;
+    
+    // Convert to lowercase for case-insensitive search
+    std::transform(lower_result.begin(), lower_result.end(), lower_result.begin(),
+                   [](unsigned char c){ return static_cast<char>(std::tolower(c)); });
+    
+    // Patterns to redact: password=, token=, secret=, authorization=
+    const std::vector<std::string> patterns = {"password", "token", "secret", "authorization"};
+    
+    for (const auto& pattern : patterns) {
+        size_t pos = 0;
+        while ((pos = lower_result.find(pattern, pos)) != std::string::npos) {
+            // Look for = after the key name
+            size_t after_key = pos + pattern.size();
+            
+            // Skip whitespace between key and =
+            while (after_key < result.size() && 
+                   std::isspace(result[after_key]) && 
+                   result[after_key] != '=') {
+                after_key++;
+            }
+            
+            if (after_key < result.size() && result[after_key] == '=') {
+                size_t after_eq = after_key + 1;
+                
+                // Skip whitespace
+                while (after_eq < result.size() && std::isspace(result[after_eq])) {
+                    after_eq++;
+                }
+                
+                if (after_eq < result.size()) {
+                    char quote_char = 0;
+                    
+                    // Check for quoted value
+                    if (result[after_eq] == '"' || result[after_eq] == '\'') {
+                        quote_char = result[after_eq];
+                        size_t end_pos = after_eq + 1;
+                        
+                        // Find closing quote (handle escapes)
+                        while (end_pos < result.size() && 
+                               result[end_pos] != quote_char) {
+                            if (result[end_pos] == '\\' && end_pos + 1 < result.size()) {
+                                end_pos += 2;
+                            } else {
+                                end_pos++;
+                            }
+                        }
+                        
+                        if (end_pos < result.size()) {
+                            std::string replacement = "<redacted>";
+                            result.replace(after_eq + 1, end_pos - after_eq, replacement);
+                            
+                            // Update lowercase version for next search
+                            lower_result = result;
+                            std::transform(lower_result.begin(), lower_result.end(), 
+                                          lower_result.begin(),
+                                          [](unsigned char c){ return static_cast<char>(std::tolower(c)); });
+                        }
+                    } else {
+                        // Unquoted value - find end (space, comma, semicolon, or end of string)
+                        size_t end_pos = after_eq;
+                        while (end_pos < result.size() && 
+                               !std::isspace(result[end_pos]) &&
+                               result[end_pos] != ',' && 
+                               result[end_pos] != ';' &&
+                               result[end_pos] != '&') {
+                            end_pos++;
+                        }
+                        
+                        if (end_pos > after_eq) {
+                            std::string replacement = "<redacted>";
+                            result.replace(after_eq, end_pos - after_eq, replacement);
+                            
+                            lower_result = result;
+                            std::transform(lower_result.begin(), lower_result.end(), 
+                                          lower_result.begin(),
+                                          [](unsigned char c){ return static_cast<char>(std::tolower(c)); });
+                        }
+                    }
+                }
+            }
+            
+            pos++;
+        }
+    }
+    
+    return result;
+}
+
 }  // namespace
 
 // ============================================================================
@@ -297,10 +392,14 @@ std::optional<runtime::Event> JournaldAdapter::parse_json_record(
     event.source = "journald";
     event.type = priority <= 3 ? "error" : (priority <= 5 ? "warning" : "info");
     
-    // Add evidence
+    // Add evidence with redaction for sensitive data in MESSAGE field
     core::Evidence msg_evidence;
     msg_evidence.source = "journal_message";
-    msg_evidence.value = message.value();
+    
+    // Redact secrets from the message value before storing as evidence
+    std::string redacted_message = redact_message_secrets(message.value());
+    msg_evidence.value = redacted_message;
+    
     char buffer[64];
     auto now = std::chrono::system_clock::now();
     auto time_t_now = std::chrono::system_clock::to_time_t(now);

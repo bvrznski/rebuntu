@@ -348,6 +348,14 @@ add_library(rebuntu-procfs-modules STATIC
 target_include_directories(rebuntu-procfs-modules PUBLIC ${CMAKE_CURRENT_LIST_DIR}/../src)
 target_link_libraries(rebuntu-core PUBLIC rebuntu-procfs-modules)
 
+# Phase 5.33: Firmware Observation Adapter module (sysfs DMI/SMBIOS)
+add_library(rebuntu-firmware-adapter STATIC
+    ${CMAKE_CURRENT_LIST_DIR}/../src/adapters/firmware/types.hpp
+    ${CMAKE_CURRENT_LIST_DIR}/../src/adapters/firmware/implementation.cpp
+)
+target_include_directories(rebuntu-firmware-adapter PUBLIC ${CMAKE_CURRENT_LIST_DIR}/../src)
+target_link_libraries(rebuntu-core PUBLIC rebuntu-firmware-adapter)
+
 # Phase 5.31: DPKG Package Inventory Adapter module
 add_library(rebuntu-dpkg-package-inventory STATIC
     ${CMAKE_CURRENT_LIST_DIR}/../src/adapters/package_managers/dpkg/types.hpp

@@ -323,6 +323,14 @@ add_library(rebuntu-peripherals STATIC
 target_include_directories(rebuntu-peripherals PUBLIC ${CMAKE_CURRENT_LIST_DIR}/../src)
 target_link_libraries(rebuntu-core PUBLIC rebuntu-peripherals)
 
+# Phase 5.48: Hotplug Device State Management module
+add_library(rebuntu-hotplug STATIC
+    ${CMAKE_CURRENT_LIST_DIR}/../src/adapters/hotplug/types.hpp
+    ${CMAKE_CURRENT_LIST_DIR}/../src/adapters/hotplug/implementation.cpp
+)
+target_include_directories(rebuntu-hotplug PUBLIC ${CMAKE_CURRENT_LIST_DIR}/../src)
+target_link_libraries(rebuntu-core PUBLIC rebuntu-hotplug)
+
 # Phase 5.21: Netlink Link/Interface Discovery Adapter module
 add_library(rebuntu-netlink-link STATIC
     ${CMAKE_CURRENT_LIST_DIR}/../src/adapters/netlink/link/types.hpp
@@ -662,3 +670,10 @@ target_link_libraries(rebuntu-core PUBLIC rebuntu-relationship-evidence)
 # )
 # target_link_libraries(rebuntu-cross-domain-references-test PRIVATE rebuntu-cross-domain-references rebuntu-core gtest_main)
 # add_test(NAME cross_domain_references_test COMMAND rebuntu-cross-domain-references-test)
+
+# Phase 5.48: Hotplug Device State Management unit tests
+add_executable(rebuntu-hotplug-test
+    ${CMAKE_CURRENT_LIST_DIR}/tests/unit/hotplug_test.cpp
+)
+target_link_libraries(rebuntu-hotplug-test PRIVATE rebuntu-hotplug rebuntu-core)
+add_test(NAME hotplug_test COMMAND rebuntu-hotplug-test)

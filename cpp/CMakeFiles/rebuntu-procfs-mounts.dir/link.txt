@@ -1,2 +1,0 @@
-/usr/bin/ar qc librebuntu-procfs-mounts.a CMakeFiles/rebuntu-procfs-mounts.dir/home/bvrznski/rebuntu/src/adapters/procfs/mounts/implementation.cpp.o
-/usr/bin/ranlib librebuntu-procfs-mounts.a

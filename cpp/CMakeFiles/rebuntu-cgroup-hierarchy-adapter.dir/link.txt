@@ -1,2 +1,0 @@
-/usr/bin/ar qc librebuntu-cgroup-hierarchy-adapter.a CMakeFiles/rebuntu-cgroup-hierarchy-adapter.dir/home/bvrznski/rebuntu/src/adapters/cgroups/hierarchy/implementation.cpp.o
-/usr/bin/ranlib librebuntu-cgroup-hierarchy-adapter.a

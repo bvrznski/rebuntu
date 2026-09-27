@@ -340,6 +340,21 @@ add_executable(rebuntu-procfs-process-test
 target_link_libraries(rebuntu-procfs-process-test PRIVATE rebuntu-procfs-process rebuntu-core)
 add_test(NAME procfs_process_test COMMAND rebuntu-procfs-process-test)
 
+# Phase 5.31: DPKG Package Inventory Adapter module
+add_library(rebuntu-dpkg-package-inventory STATIC
+    ${CMAKE_CURRENT_LIST_DIR}/../src/adapters/package_managers/dpkg/types.hpp
+    ${CMAKE_CURRENT_LIST_DIR}/../src/adapters/package_managers/dpkg/implementation.cpp
+)
+target_include_directories(rebuntu-dpkg-package-inventory PUBLIC ${CMAKE_CURRENT_LIST_DIR}/../src)
+target_link_libraries(rebuntu-core PUBLIC rebuntu-dpkg-package-inventory)
+
+# DPKG Package Inventory unit tests (disabled - gtest not available)
+# add_executable(rebuntu-dpkg-package-inventory-test
+#     ${CMAKE_CURRENT_LIST_DIR}/tests/unit/dpkg_package_inventory_test.cpp
+# )
+# target_link_libraries(rebuntu-dpkg-package-inventory-test PRIVATE rebuntu-dpkg-package-inventory rebuntu-core)
+# add_test(NAME dpkg_package_inventory_test COMMAND rebuntu-dpkg-package-inventory-test)
+
 # Phase 5.26: Systemd Service Discovery Adapter module
 add_library(rebuntu-systemd-service-adapter STATIC
     ${CMAKE_CURRENT_LIST_DIR}/../src/adapters/systemd/service/types.hpp

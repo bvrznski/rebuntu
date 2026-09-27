@@ -1,2 +1,0 @@
-/usr/bin/ar qc librebuntu-cpu-memory-thermal-monitor.a CMakeFiles/rebuntu-cpu-memory-thermal-monitor.dir/home/bvrznski/rebuntu/src/modules/cpu_memory_thermal_monitor/monitor.cpp.o
-/usr/bin/ranlib librebuntu-cpu-memory-thermal-monitor.a

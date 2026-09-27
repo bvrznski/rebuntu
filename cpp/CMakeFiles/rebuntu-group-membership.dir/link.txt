@@ -1,2 +1,0 @@
-/usr/bin/ar qc librebuntu-group-membership.a CMakeFiles/rebuntu-group-membership.dir/home/bvrznski/rebuntu/src/system/environment/group_membership.cpp.o
-/usr/bin/ranlib librebuntu-group-membership.a

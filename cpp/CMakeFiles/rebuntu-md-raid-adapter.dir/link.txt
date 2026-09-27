@@ -1,2 +1,0 @@
-/usr/bin/ar qc librebuntu-md-raid-adapter.a CMakeFiles/rebuntu-md-raid-adapter.dir/home/bvrznski/rebuntu/src/adapters/sysfs/md_raid/implementation.cpp.o
-/usr/bin/ranlib librebuntu-md-raid-adapter.a

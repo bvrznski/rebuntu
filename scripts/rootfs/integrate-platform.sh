@@ -235,6 +235,10 @@ if in_daemon:
 path.write_text("\n".join(out).rstrip() + "\n")
 GDM_PY
 
+    # Rebuntu: let NetworkManager manage Ethernet and other device types.
+    sudo mkdir -p "$TARGET/etc/NetworkManager/conf.d"
+    printf '[keyfile]\nunmanaged-devices=\n' | sudo tee "$TARGET/etc/NetworkManager/conf.d/90-rebuntu-managed-devices.conf" >/dev/null
+
     sudo chroot "$TARGET" \
         systemctl set-default graphical.target
 

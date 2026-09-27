@@ -1154,6 +1154,19 @@ rebuntu-namespaces-adapter/fast:
 .PHONY : rebuntu-namespaces-adapter/fast
 
 #=============================================================================
+# Target rules for targets named rebuntu-container-discovery
+
+# Build rule for target.
+rebuntu-container-discovery: cmake_check_build_system
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 rebuntu-container-discovery
+.PHONY : rebuntu-container-discovery
+
+# fast build rule for target.
+rebuntu-container-discovery/fast:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/rebuntu-container-discovery.dir/build.make CMakeFiles/rebuntu-container-discovery.dir/build
+.PHONY : rebuntu-container-discovery/fast
+
+#=============================================================================
 # Target rules for targets named rebuntu-host-foundation
 
 # Build rule for target.
@@ -1189,6 +1202,30 @@ home/bvrznski/rebuntu/src/adapters/cgroups/hierarchy/implementation.s: home/bvrz
 home/bvrznski/rebuntu/src/adapters/cgroups/hierarchy/implementation.cpp.s:
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/rebuntu-cgroup-hierarchy-adapter.dir/build.make CMakeFiles/rebuntu-cgroup-hierarchy-adapter.dir/home/bvrznski/rebuntu/src/adapters/cgroups/hierarchy/implementation.cpp.s
 .PHONY : home/bvrznski/rebuntu/src/adapters/cgroups/hierarchy/implementation.cpp.s
+
+home/bvrznski/rebuntu/src/adapters/container/implementation.o: home/bvrznski/rebuntu/src/adapters/container/implementation.cpp.o
+.PHONY : home/bvrznski/rebuntu/src/adapters/container/implementation.o
+
+# target to build an object file
+home/bvrznski/rebuntu/src/adapters/container/implementation.cpp.o:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/rebuntu-container-discovery.dir/build.make CMakeFiles/rebuntu-container-discovery.dir/home/bvrznski/rebuntu/src/adapters/container/implementation.cpp.o
+.PHONY : home/bvrznski/rebuntu/src/adapters/container/implementation.cpp.o
+
+home/bvrznski/rebuntu/src/adapters/container/implementation.i: home/bvrznski/rebuntu/src/adapters/container/implementation.cpp.i
+.PHONY : home/bvrznski/rebuntu/src/adapters/container/implementation.i
+
+# target to preprocess a source file
+home/bvrznski/rebuntu/src/adapters/container/implementation.cpp.i:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/rebuntu-container-discovery.dir/build.make CMakeFiles/rebuntu-container-discovery.dir/home/bvrznski/rebuntu/src/adapters/container/implementation.cpp.i
+.PHONY : home/bvrznski/rebuntu/src/adapters/container/implementation.cpp.i
+
+home/bvrznski/rebuntu/src/adapters/container/implementation.s: home/bvrznski/rebuntu/src/adapters/container/implementation.cpp.s
+.PHONY : home/bvrznski/rebuntu/src/adapters/container/implementation.s
+
+# target to generate assembly for a file
+home/bvrznski/rebuntu/src/adapters/container/implementation.cpp.s:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/rebuntu-container-discovery.dir/build.make CMakeFiles/rebuntu-container-discovery.dir/home/bvrznski/rebuntu/src/adapters/container/implementation.cpp.s
+.PHONY : home/bvrznski/rebuntu/src/adapters/container/implementation.cpp.s
 
 home/bvrznski/rebuntu/src/adapters/journal_analyzer.o: home/bvrznski/rebuntu/src/adapters/journal_analyzer.cpp.o
 .PHONY : home/bvrznski/rebuntu/src/adapters/journal_analyzer.o
@@ -2623,6 +2660,7 @@ help:
 	@echo "... rebuntu-capability-state"
 	@echo "... rebuntu-cgroup-hierarchy-adapter"
 	@echo "... rebuntu-cgroup-hierarchy-test"
+	@echo "... rebuntu-container-discovery"
 	@echo "... rebuntu-core"
 	@echo "... rebuntu-cpu-memory-thermal-monitor"
 	@echo "... rebuntu-directories"
@@ -2674,6 +2712,9 @@ help:
 	@echo "... home/bvrznski/rebuntu/src/adapters/cgroups/hierarchy/implementation.o"
 	@echo "... home/bvrznski/rebuntu/src/adapters/cgroups/hierarchy/implementation.i"
 	@echo "... home/bvrznski/rebuntu/src/adapters/cgroups/hierarchy/implementation.s"
+	@echo "... home/bvrznski/rebuntu/src/adapters/container/implementation.o"
+	@echo "... home/bvrznski/rebuntu/src/adapters/container/implementation.i"
+	@echo "... home/bvrznski/rebuntu/src/adapters/container/implementation.s"
 	@echo "... home/bvrznski/rebuntu/src/adapters/journal_analyzer.o"
 	@echo "... home/bvrznski/rebuntu/src/adapters/journal_analyzer.i"
 	@echo "... home/bvrznski/rebuntu/src/adapters/journal_analyzer.s"

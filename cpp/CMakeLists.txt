@@ -502,6 +502,14 @@ add_library(rebuntu-namespaces-adapter STATIC
 target_include_directories(rebuntu-namespaces-adapter PUBLIC ${CMAKE_CURRENT_LIST_DIR}/../src)
 target_link_libraries(rebuntu-core PUBLIC rebuntu-namespaces-adapter)
 
+# Phase 5.30: Container Runtime Discovery Adapter module
+add_library(rebuntu-container-discovery STATIC
+    ${CMAKE_CURRENT_LIST_DIR}/../src/adapters/container/types.hpp
+    ${CMAKE_CURRENT_LIST_DIR}/../src/adapters/container/implementation.cpp
+)
+target_include_directories(rebuntu-container-discovery PUBLIC ${CMAKE_CURRENT_LIST_DIR}/../src)
+target_link_libraries(rebuntu-core PUBLIC rebuntu-container-discovery)
+
 # Phase 2.0: Linux Host Foundation module
 add_library(rebuntu-host-foundation STATIC
     ${CMAKE_CURRENT_LIST_DIR}/../src/system/host_foundation/contracts.hpp

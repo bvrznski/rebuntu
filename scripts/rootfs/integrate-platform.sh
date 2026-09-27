@@ -151,7 +151,7 @@ if [[ "$PROFILE" != "base" ]]; then
     fi
 
     # Empty password for live autologin.
-    sudo passwd -R "$TARGET" -d rebuntu >/dev/null
+    echo "rebuntu:rebuntu" | sudo chroot "$TARGET" chpasswd
 
     # LIVE IMAGE ONLY.
     # Installer must remove this from an installed system.

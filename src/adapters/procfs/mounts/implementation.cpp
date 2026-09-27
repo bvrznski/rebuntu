@@ -261,6 +261,19 @@ public:
     ProcfsMountsAdapter() = default;
     ~ProcfsMountsAdapter() override = default;
     
+    // Get freshness: timestamp of the last observation
+    std::chrono::system_clock::time_point get_last_observation_time() const override {
+        return last_observation_time_;
+    }
+    
+    MountObservationResult force_refresh() override {
+        auto result = observe_mounts();
+        if (result.status == core::SemanticStatus::kSuccess) {
+            last_observation_time_ = std::chrono::system_clock::now();
+        }
+        return result;
+    }
+    
     MountObservationResult observe_mounts() override {
         MountObservationResult result;
         result.observed_at = std::chrono::system_clock::now();
@@ -465,6 +478,9 @@ private:
     
     // Map for building parent-child relationships
     std::unordered_map<int, std::vector<int>> children_map_;
+    
+    // Last observation timestamp for freshness tracking (mutable to allow updates in const methods)
+    std::chrono::system_clock::time_point last_observation_time_{};
     
     static std::optional<MountObservation> parse_mount_line(const std::string& line) {
         // Format from /proc/self/mountinfo:

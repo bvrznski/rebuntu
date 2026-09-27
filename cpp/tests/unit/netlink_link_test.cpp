@@ -174,6 +174,38 @@ void test_isolation() {
     std::cout << " [PASS]\n";
 }
 
+void test_freshness_tracking() {
+    std::cout << "[TEST] Freshness tracking (get_last_observation_time/force_refresh)...";
+    auto adapter = make_netlink_link_adapter();
+    
+    // Initial observation should set the time
+    auto result1 = adapter->observe_interfaces();
+    auto first_time = adapter->get_last_observation_time();
+    
+    if (first_time.time_since_epoch().count() <= 0) {
+        std::cerr << " [FAIL - invalid initial observation time]\n";
+        return;
+    }
+    
+    // Force refresh should update the time
+    std::this_thread::sleep_for(std::chrono::milliseconds(10));
+    auto result2 = adapter->force_refresh();
+    auto second_time = adapter->get_last_observation_time();
+    
+    if (second_time <= first_time) {
+        std::cerr << " [FAIL - observation time should be updated after force_refresh]\n";
+        return;
+    }
+    
+    // Force refresh should produce fresh observations
+    if (!result2.interfaces.empty() && result2.observed_at > result1.observed_at) {
+        std::cout << " [PASS]\n";
+    } else {
+        std::cerr << " [FAIL - force_refresh did not update observation timestamp]\n";
+        return;
+    }
+}
+
 int main() {
     std::cout << "\n=== Network Interface Discovery Tests ===\n\n";
     
@@ -184,6 +216,7 @@ int main() {
     test_link_state_enum();
     test_address_family_enum();
     test_isolation();
+    test_freshness_tracking();
     
     std::cout << "\n=== All Tests Complete ===\n\n";
     return 0;

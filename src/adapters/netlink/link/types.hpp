@@ -211,6 +211,15 @@ public:
     
     // Resolve a specific interface by name (less reliable than ifindex)
     virtual std::optional<NetworkInterfaceObservation> resolve_by_name(std::string_view name) = 0;
+    
+    // Get freshness: timestamp of the last observation
+    // Returns epoch time point if no observation has been performed yet
+    virtual std::chrono::system_clock::time_point get_last_observation_time() const = 0;
+    
+    // Force refresh: discard cached state and re-observe from native sources
+    // This is idempotent and safe to call multiple times
+    // Returns fresh observations with new timestamps
+    virtual NetworkInterfaceDiscoveryResult force_refresh() = 0;
 };
 
 // ============================================================================

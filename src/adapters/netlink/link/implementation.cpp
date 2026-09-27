@@ -217,9 +217,23 @@ public:
     NetlinkLinkAdapter() = default;
     ~NetlinkLinkAdapter() override = default;
     
+    // Last observation timestamp for freshness tracking
+    std::chrono::system_clock::time_point get_last_observation_time() const override {
+        return last_observation_time_;
+    }
+    
+    NetworkInterfaceDiscoveryResult force_refresh() override {
+        auto result = observe_interfaces();
+        if (result.status == core::SemanticStatus::kSuccess) {
+            last_observation_time_ = std::chrono::system_clock::now();
+        }
+        return result;
+    }
+    
     NetworkInterfaceDiscoveryResult observe_interfaces() override {
         NetworkInterfaceDiscoveryResult result;
         result.observed_at = std::chrono::system_clock::now();
+        last_observation_time_ = result.observed_at;  // Update freshness timestamp
         
         auto start_time = std::chrono::steady_clock::now();
         
@@ -314,6 +328,9 @@ public:
     }
 
 private:
+    // Last observation timestamp for freshness tracking
+    mutable std::chrono::system_clock::time_point last_observation_time_{};
+    
     // Scan all interfaces from sysfs /sys/class/net/
     std::vector<NetworkInterfaceObservation> scan_interfaces_from_sysfs() {
         std::vector<NetworkInterfaceObservation> interfaces;

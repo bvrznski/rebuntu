@@ -243,6 +243,15 @@ public:
     
     // Resolve a mount relationship to its base/source
     virtual std::optional<std::pair<int, MountIdentity>> resolve_to_source(int mount_id) = 0;
+    
+    // Get freshness: timestamp of the last observation
+    // Returns epoch time point if no observation has been performed yet
+    virtual std::chrono::system_clock::time_point get_last_observation_time() const = 0;
+    
+    // Force refresh: discard cached state and re-observe from native sources
+    // This is idempotent and safe to call multiple times
+    // Returns fresh observations with new timestamps
+    virtual MountObservationResult force_refresh() = 0;
 };
 
 // ============================================================================

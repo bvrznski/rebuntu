@@ -83,6 +83,8 @@ add_library(rebuntu-shell STATIC
     ${CMAKE_CURRENT_LIST_DIR}/../src/system/shell/values.hpp
     ${CMAKE_CURRENT_LIST_DIR}/../src/system/shell/verbs/list.hpp
     ${CMAKE_CURRENT_LIST_DIR}/../src/system/shell/verbs/list.cpp
+    ${CMAKE_CURRENT_LIST_DIR}/../src/system/shell/verbs/mapping.hpp
+    ${CMAKE_CURRENT_LIST_DIR}/../src/system/shell/verbs/mapping.cpp
 )
 
 # Phase 6.4: Qualifiers & Modifiers module (header-only, included via rebuntu-shell)

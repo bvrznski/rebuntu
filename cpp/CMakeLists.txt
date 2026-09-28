@@ -219,6 +219,14 @@ target_sources(rebuntu-core PRIVATE
     ${CMAKE_CURRENT_LIST_DIR}/../src/runtime/retry_mechanics.cpp
 )
 
+# Phase 6.40: Crash Reconciliation module
+# Types header is included via runtime/contracts.hpp dependency chain
+# Detector is header-only, added to rebuntu-core source list
+target_sources(rebuntu-core PRIVATE
+    ${CMAKE_CURRENT_LIST_DIR}/../src/runtime/reconciliation/types.hpp
+    ${CMAKE_CURRENT_LIST_DIR}/../src/runtime/reconciliation/detector.hpp
+)
+
 # Phase 1.0-1.2: Installation module
 add_library(rebuntu-install STATIC
     ${CMAKE_CURRENT_LIST_DIR}/../src/system/install/contracts.hpp

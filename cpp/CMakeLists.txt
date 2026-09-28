@@ -174,6 +174,11 @@ target_sources(rebuntu-core PRIVATE
     ${CMAKE_CURRENT_LIST_DIR}/../src/system/command/model.hpp
 )
 
+# Phase 6.22: Verification Freshness module (header-only)
+target_sources(rebuntu-core PRIVATE
+    ${CMAKE_CURRENT_LIST_DIR}/../src/system/core/freshness.hpp
+)
+
 # Add common runtime source files for Phase 4.18 and 6.21 verification
 target_sources(rebuntu-core PRIVATE
     ${CMAKE_CURRENT_LIST_DIR}/../src/runtime/production.hpp

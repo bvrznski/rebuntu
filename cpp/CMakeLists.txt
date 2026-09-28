@@ -1030,6 +1030,13 @@ target_link_libraries(rebuntu-shell-output-capture-test PRIVATE rebuntu-core reb
 target_include_directories(rebuntu-shell-output-capture-test PRIVATE /home/bvrznski/rebuntu/src)
 add_test(NAME shell_output_capture_test COMMAND rebuntu-shell-output-capture-test)
 
+# Phase 6.34: Privilege Requirement Metadata unit tests
+add_executable(rebuntu-privilege-requirement-test
+    ${CMAKE_CURRENT_LIST_DIR}/../tests/unit/privilege_requirement_test.cpp
+)
+target_link_libraries(rebuntu-privilege-requirement-test PRIVATE rebuntu-core)
+add_test(NAME privilege_requirement_test COMMAND rebuntu-privilege-requirement-test)
+
 # Phase 6.29: Operation Cancellation Points module
 add_library(rebuntu-cancellation-points STATIC
     ${CMAKE_CURRENT_LIST_DIR}/../src/runtime/cancellation/points.hpp

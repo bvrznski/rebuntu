@@ -1927,6 +1927,19 @@ rebuntu-shell-output-capture-test/fast:
 .PHONY : rebuntu-shell-output-capture-test/fast
 
 #=============================================================================
+# Target rules for targets named rebuntu-privilege-requirement-test
+
+# Build rule for target.
+rebuntu-privilege-requirement-test: cmake_check_build_system
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 rebuntu-privilege-requirement-test
+.PHONY : rebuntu-privilege-requirement-test
+
+# fast build rule for target.
+rebuntu-privilege-requirement-test/fast:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/rebuntu-privilege-requirement-test.dir/build.make CMakeFiles/rebuntu-privilege-requirement-test.dir/build
+.PHONY : rebuntu-privilege-requirement-test/fast
+
+#=============================================================================
 # Target rules for targets named rebuntu-cancellation-points
 
 # Build rule for target.
@@ -4198,6 +4211,30 @@ home/bvrznski/rebuntu/tests/unit/monotonic_deadline_test.cpp.s:
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/rebuntu-monotonic-deadline-test.dir/build.make CMakeFiles/rebuntu-monotonic-deadline-test.dir/home/bvrznski/rebuntu/tests/unit/monotonic_deadline_test.cpp.s
 .PHONY : home/bvrznski/rebuntu/tests/unit/monotonic_deadline_test.cpp.s
 
+home/bvrznski/rebuntu/tests/unit/privilege_requirement_test.o: home/bvrznski/rebuntu/tests/unit/privilege_requirement_test.cpp.o
+.PHONY : home/bvrznski/rebuntu/tests/unit/privilege_requirement_test.o
+
+# target to build an object file
+home/bvrznski/rebuntu/tests/unit/privilege_requirement_test.cpp.o:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/rebuntu-privilege-requirement-test.dir/build.make CMakeFiles/rebuntu-privilege-requirement-test.dir/home/bvrznski/rebuntu/tests/unit/privilege_requirement_test.cpp.o
+.PHONY : home/bvrznski/rebuntu/tests/unit/privilege_requirement_test.cpp.o
+
+home/bvrznski/rebuntu/tests/unit/privilege_requirement_test.i: home/bvrznski/rebuntu/tests/unit/privilege_requirement_test.cpp.i
+.PHONY : home/bvrznski/rebuntu/tests/unit/privilege_requirement_test.i
+
+# target to preprocess a source file
+home/bvrznski/rebuntu/tests/unit/privilege_requirement_test.cpp.i:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/rebuntu-privilege-requirement-test.dir/build.make CMakeFiles/rebuntu-privilege-requirement-test.dir/home/bvrznski/rebuntu/tests/unit/privilege_requirement_test.cpp.i
+.PHONY : home/bvrznski/rebuntu/tests/unit/privilege_requirement_test.cpp.i
+
+home/bvrznski/rebuntu/tests/unit/privilege_requirement_test.s: home/bvrznski/rebuntu/tests/unit/privilege_requirement_test.cpp.s
+.PHONY : home/bvrznski/rebuntu/tests/unit/privilege_requirement_test.s
+
+# target to generate assembly for a file
+home/bvrznski/rebuntu/tests/unit/privilege_requirement_test.cpp.s:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/rebuntu-privilege-requirement-test.dir/build.make CMakeFiles/rebuntu-privilege-requirement-test.dir/home/bvrznski/rebuntu/tests/unit/privilege_requirement_test.cpp.s
+.PHONY : home/bvrznski/rebuntu/tests/unit/privilege_requirement_test.cpp.s
+
 home/bvrznski/rebuntu/tests/unit/retry_mechanics_test.o: home/bvrznski/rebuntu/tests/unit/retry_mechanics_test.cpp.o
 .PHONY : home/bvrznski/rebuntu/tests/unit/retry_mechanics_test.o
 
@@ -4983,6 +5020,7 @@ help:
 	@echo "... rebuntu-power-supply-adapter"
 	@echo "... rebuntu-predicates-test"
 	@echo "... rebuntu-privilege"
+	@echo "... rebuntu-privilege-requirement-test"
 	@echo "... rebuntu-procfs-errors"
 	@echo "... rebuntu-procfs-modules"
 	@echo "... rebuntu-procfs-modules-test"
@@ -5301,6 +5339,9 @@ help:
 	@echo "... home/bvrznski/rebuntu/tests/unit/monotonic_deadline_test.o"
 	@echo "... home/bvrznski/rebuntu/tests/unit/monotonic_deadline_test.i"
 	@echo "... home/bvrznski/rebuntu/tests/unit/monotonic_deadline_test.s"
+	@echo "... home/bvrznski/rebuntu/tests/unit/privilege_requirement_test.o"
+	@echo "... home/bvrznski/rebuntu/tests/unit/privilege_requirement_test.i"
+	@echo "... home/bvrznski/rebuntu/tests/unit/privilege_requirement_test.s"
 	@echo "... home/bvrznski/rebuntu/tests/unit/retry_mechanics_test.o"
 	@echo "... home/bvrznski/rebuntu/tests/unit/retry_mechanics_test.i"
 	@echo "... home/bvrznski/rebuntu/tests/unit/retry_mechanics_test.s"

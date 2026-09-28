@@ -66,3 +66,5 @@ add_test([=[shell_boundary_test]=] "/home/bvrznski/rebuntu/cpp/rebuntu-shell-bou
 set_tests_properties([=[shell_boundary_test]=] PROPERTIES  _BACKTRACE_TRIPLES "/home/bvrznski/rebuntu/cpp/CMakeLists.txt;1023;add_test;/home/bvrznski/rebuntu/cpp/CMakeLists.txt;0;")
 add_test([=[shell_output_capture_test]=] "/home/bvrznski/rebuntu/cpp/rebuntu-shell-output-capture-test")
 set_tests_properties([=[shell_output_capture_test]=] PROPERTIES  _BACKTRACE_TRIPLES "/home/bvrznski/rebuntu/cpp/CMakeLists.txt;1031;add_test;/home/bvrznski/rebuntu/cpp/CMakeLists.txt;0;")
+add_test([=[privilege_requirement_test]=] "/home/bvrznski/rebuntu/cpp/rebuntu-privilege-requirement-test")
+set_tests_properties([=[privilege_requirement_test]=] PROPERTIES  _BACKTRACE_TRIPLES "/home/bvrznski/rebuntu/cpp/CMakeLists.txt;1038;add_test;/home/bvrznski/rebuntu/cpp/CMakeLists.txt;0;")

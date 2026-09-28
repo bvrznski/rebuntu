@@ -53,6 +53,7 @@
 
 namespace rebuntu::core {
 
+
 // ---------------------------------------------------------------------------
 // ExitReason — How a process/execution terminated (Phase 6.20)
 //
@@ -888,9 +889,13 @@ struct OperationDefinition {
     Idempotency idempotency = Idempotency::UNKNOWN;
     Reversibility reversibility = Reversibility::UNKNOWN;
     
-    // Scope and privilege requirements
-    std::optional<std::string> required_privilege;
-    bool requires_lock = false;
+     // Privilege requirement metadata - what level of privilege is required for this operation?
+     enum class PrivilegeRequirement {
+         kNone,         // No special privilege required (user-level sufficient)
+         kUserContext,  // Must be running as regular user (not root) - rare case
+         kElevated,     // Requires elevated privilege (typically root/UID 0)
+     } privilege_requirement = PrivilegeRequirement::kNone;
+     bool requires_lock = false;
     
      // Resource declarations (Phase 2 integration)
      // Operations can declare minimal resource requirements/constraints

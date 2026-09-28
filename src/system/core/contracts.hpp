@@ -41,6 +41,7 @@
 #pragma once
 
 #include <algorithm>
+#include <chrono>
 #include <cstddef>
 #include <map>
 #include <optional>
@@ -51,6 +52,181 @@
 #include <vector>
 
 namespace rebuntu::core {
+
+// ---------------------------------------------------------------------------
+// ExitReason — How a process/execution terminated (Phase 6.20)
+//
+// Distinct from SemanticStatus which represents the semantic outcome.
+// ExitReason captures the actual mechanism of termination:
+//
+//   - NormalExit: Process completed with explicit exit() or return from main()
+//   - NonzeroExit: Process exited with nonzero status (typically error)
+//   - SignalTermination: Process killed by a POSIX signal
+//   - Timeout: Execution exceeded its configured timeout
+//   - Cancellation: Explicit cancellation request was processed
+//   - SpawnFailure: Failed to spawn/start the process
+//   - ProtocolFailure: Execution failed due to protocol errors (IPC, serialization)
+//
+// This is foundational data for execution verification and recovery.
+// ---------------------------------------------------------------------------
+enum class ExitReason {
+    kNormalExit,           // Process exited normally with explicit exit code
+    kNonzeroExit,          // Process exited with nonzero status code
+    kSignalTermination,    // Terminated by POSIX signal (SIGKILL, SIGTERM, etc.)
+    kTimeout,              // Execution exceeded its timeout limit
+    kCancellation,         // Explicitly cancelled before completion
+    kSpawnFailure,         // Failed to spawn/start the process
+    kProtocolFailure,      // Protocol/IPC failure during execution
+    kUnknown,              // Termination reason unknown
+};
+
+inline std::string_view to_string(ExitReason r) {
+    switch (r) {
+        case ExitReason::kNormalExit:       return "normal_exit";
+        case ExitReason::kNonzeroExit:      return "nonzero_exit";
+        case ExitReason::kSignalTermination:return "signal_termination";
+        case ExitReason::kTimeout:          return "timeout";
+        case ExitReason::kCancellation:     return "cancellation";
+        case ExitReason::kSpawnFailure:     return "spawn_failure";
+        case ExitReason::kProtocolFailure:  return "protocol_failure";
+        case ExitReason::kUnknown:          return "unknown_exit";
+    }
+    return "unknown";
+}
+
+// ---------------------------------------------------------------------------
+// ProcessExitCode — Raw process exit code (0-255, platform-specific encoding)
+//
+// On POSIX systems:
+//   - Low 8 bits: exit status (if WIFEXITED)
+//   - High bit: signal number if killed by signal (if WIFSIGNALED)
+//
+// On Windows:
+//   - Standardized exit codes (0 = success, nonzero = failure)
+// ---------------------------------------------------------------------------
+using ProcessExitCode = int;
+
+// ============================================================================
+// ExitResult — Structured result of a process/execution termination
+//
+// Combines exit mechanism, exit code, and signal information into a single
+// typed result. This is the authoritative source for execution outcome.
+// ============================================================================
+struct ExitResult {
+    // How the process terminated (primary classification)
+    ExitReason reason{ExitReason::kUnknown};
+    
+    // Raw exit code (0-255 on POSIX, platform-defined on Windows)
+    ProcessExitCode exit_code{-1};
+    
+    // If terminated by signal: which signal
+    std::optional<int> signal_number;
+    
+    // Human-readable description of the termination
+    std::string description;
+    
+    // Timing information
+    std::chrono::milliseconds execution_duration_ms{0};
+    
+    // Output capture (bounded, may be partial)
+    std::string stdout_data;
+    std::string stderr_data;
+    
+    // Helper predicates
+    
+    bool is_success() const {
+        return reason == ExitReason::kNormalExit && exit_code == 0;
+    }
+    
+    bool is_failure() const {
+        return reason != ExitReason::kNormalExit || exit_code != 0;
+    }
+    
+    bool was_signaled() const {
+        return reason == ExitReason::kSignalTermination;
+    }
+    
+    bool timed_out() const {
+        return reason == ExitReason::kTimeout;
+    }
+    
+    bool cancelled() const {
+        return reason == ExitReason::kCancellation;
+    }
+    
+    bool spawn_failed() const {
+        return reason == ExitReason::kSpawnFailure;
+    }
+    
+    static ExitResult success(ProcessExitCode code = 0, std::chrono::milliseconds duration = {}) {
+        ExitResult r;
+        r.reason = ExitReason::kNormalExit;
+        r.exit_code = code;
+        r.description = "process completed successfully";
+        r.execution_duration_ms = duration;
+        return r;
+    }
+    
+    static ExitResult nonzero_exit(ProcessExitCode code, std::chrono::milliseconds duration = {}) {
+        ExitResult r;
+        r.reason = ExitReason::kNonzeroExit;
+        r.exit_code = code;
+        r.description = "process exited with nonzero status";
+        r.execution_duration_ms = duration;
+        return r;
+    }
+    
+    static ExitResult signal_termination(int sig, std::chrono::milliseconds duration = {}) {
+        ExitResult r;
+        r.reason = ExitReason::kSignalTermination;
+        r.exit_code = -1;  // No exit code when killed by signal
+        r.signal_number = sig;
+        r.description = "process terminated by signal " + std::to_string(sig);
+        r.execution_duration_ms = duration;
+        return r;
+    }
+    
+    static ExitResult timeout(std::chrono::milliseconds elapsed, const std::string& msg = {}) {
+        ExitResult r;
+        r.reason = ExitReason::kTimeout;
+        r.exit_code = -1;
+        r.description = msg.empty() ? "execution timed out" : msg;
+        r.execution_duration_ms = elapsed;
+        return r;
+    }
+    
+    static ExitResult cancellation(const std::string& reason = {}) {
+        ExitResult r;
+        r.reason = ExitReason::kCancellation;
+        r.exit_code = -1;
+        r.description = reason.empty() ? "execution was cancelled" : reason;
+        return r;
+    }
+    
+    static ExitResult spawn_failure(const std::string& error_msg) {
+        ExitResult r;
+        r.reason = ExitReason::kSpawnFailure;
+        r.exit_code = -1;
+        r.description = "failed to spawn process: " + error_msg;
+        return r;
+    }
+    
+    static ExitResult protocol_failure(const std::string& msg) {
+        ExitResult r;
+        r.reason = ExitReason::kProtocolFailure;
+        r.exit_code = -1;
+        r.description = "protocol failure: " + msg;
+        return r;
+    }
+    
+    static ExitResult unknown(const std::string& msg = {}) {
+        ExitResult r;
+        r.reason = ExitReason::kUnknown;
+        r.exit_code = -1;
+        r.description = msg.empty() ? "termination outcome unknown" : msg;
+        return r;
+    }
+};
 
 // ---------------------------------------------------------------------------
 // SemanticStatus

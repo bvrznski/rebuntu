@@ -836,6 +836,14 @@ add_executable(rebuntu-bin
 target_include_directories(rebuntu-bin PRIVATE ${CMAKE_CURRENT_LIST_DIR}/../src)
 target_link_libraries(rebuntu-bin PRIVATE rebuntu-core rebuntu-cli-inventory)
 
+# Phase 6.20: Exit Result Semantics unit tests
+add_executable(rebuntu-exit-result-test
+    ${CMAKE_CURRENT_LIST_DIR}/../tests/unit/exit_result_test.cpp
+)
+target_include_directories(rebuntu-exit-result-test PRIVATE ${CMAKE_CURRENT_LIST_DIR}/../src)
+target_link_libraries(rebuntu-exit-result-test PRIVATE rebuntu-core)
+add_test(NAME exit_result_test COMMAND rebuntu-exit-result-test)
+
 # Phase 5.61: Observation Output unit tests (disabled - gtest not available in CTest)
 # add_executable(rebuntu-observation-output-test
 #     ${CMAKE_CURRENT_LIST_DIR}/tests/unit/observation_output_test.cpp

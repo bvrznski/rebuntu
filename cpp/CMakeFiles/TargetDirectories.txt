@@ -137,6 +137,7 @@
 /home/bvrznski/rebuntu/cpp/CMakeFiles/rebuntu-privilege-requirement-test.dir
 /home/bvrznski/rebuntu/cpp/CMakeFiles/rebuntu-concurrency-control.dir
 /home/bvrznski/rebuntu/cpp/CMakeFiles/rebuntu-shell-boundary-test.dir
+/home/bvrznski/rebuntu/cpp/CMakeFiles/rebuntu-semantic-service-absence-test.dir
 /home/bvrznski/rebuntu/cpp/CMakeFiles/rebuntu-shell-output-capture-test.dir
 /home/bvrznski/rebuntu/cpp/CMakeFiles/rebuntu-cancellation-points.dir
 /home/bvrznski/rebuntu/cpp/CMakeFiles/rebuntu-replay-test.dir

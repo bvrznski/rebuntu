@@ -1077,6 +1077,14 @@ target_link_libraries(rebuntu-shell-boundary-test PRIVATE rebuntu-core rebuntu-s
 target_include_directories(rebuntu-shell-boundary-test PRIVATE ${CMAKE_CURRENT_LIST_DIR}/../src)
 add_test(NAME shell_boundary_test COMMAND rebuntu-shell-boundary-test)
 
+# Phase 6.51: Semantic Service Absence Behavior unit tests
+add_executable(rebuntu-semantic-service-absence-test
+    ${CMAKE_CURRENT_LIST_DIR}/tests/unit/semantic_service_absence_test.cpp
+)
+target_link_libraries(rebuntu-semantic-service-absence-test PRIVATE rebuntu-core rebuntu-shell rebuntu-shell-boundary)
+target_include_directories(rebuntu-semantic-service-absence-test PRIVATE ${CMAKE_CURRENT_LIST_DIR}/../src)
+add_test(NAME semantic_service_absence_test COMMAND rebuntu-semantic-service-absence-test)
+
 # Phase 6.19: Output capture semantics unit tests
 add_executable(rebuntu-shell-output-capture-test
     /home/bvrznski/rebuntu/tests/unit/shell_output_capture_test.cpp

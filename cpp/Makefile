@@ -1979,6 +1979,19 @@ rebuntu-shell-boundary-test/fast:
 .PHONY : rebuntu-shell-boundary-test/fast
 
 #=============================================================================
+# Target rules for targets named rebuntu-semantic-service-absence-test
+
+# Build rule for target.
+rebuntu-semantic-service-absence-test: cmake_check_build_system
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 rebuntu-semantic-service-absence-test
+.PHONY : rebuntu-semantic-service-absence-test
+
+# fast build rule for target.
+rebuntu-semantic-service-absence-test/fast:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/rebuntu-semantic-service-absence-test.dir/build.make CMakeFiles/rebuntu-semantic-service-absence-test.dir/build
+.PHONY : rebuntu-semantic-service-absence-test/fast
+
+#=============================================================================
 # Target rules for targets named rebuntu-shell-output-capture-test
 
 # Build rule for target.
@@ -5242,6 +5255,30 @@ tests/unit/provider_test_matrix.cpp.s:
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/rebuntu-provider-test-matrix.dir/build.make CMakeFiles/rebuntu-provider-test-matrix.dir/tests/unit/provider_test_matrix.cpp.s
 .PHONY : tests/unit/provider_test_matrix.cpp.s
 
+tests/unit/semantic_service_absence_test.o: tests/unit/semantic_service_absence_test.cpp.o
+.PHONY : tests/unit/semantic_service_absence_test.o
+
+# target to build an object file
+tests/unit/semantic_service_absence_test.cpp.o:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/rebuntu-semantic-service-absence-test.dir/build.make CMakeFiles/rebuntu-semantic-service-absence-test.dir/tests/unit/semantic_service_absence_test.cpp.o
+.PHONY : tests/unit/semantic_service_absence_test.cpp.o
+
+tests/unit/semantic_service_absence_test.i: tests/unit/semantic_service_absence_test.cpp.i
+.PHONY : tests/unit/semantic_service_absence_test.i
+
+# target to preprocess a source file
+tests/unit/semantic_service_absence_test.cpp.i:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/rebuntu-semantic-service-absence-test.dir/build.make CMakeFiles/rebuntu-semantic-service-absence-test.dir/tests/unit/semantic_service_absence_test.cpp.i
+.PHONY : tests/unit/semantic_service_absence_test.cpp.i
+
+tests/unit/semantic_service_absence_test.s: tests/unit/semantic_service_absence_test.cpp.s
+.PHONY : tests/unit/semantic_service_absence_test.s
+
+# target to generate assembly for a file
+tests/unit/semantic_service_absence_test.cpp.s:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/rebuntu-semantic-service-absence-test.dir/build.make CMakeFiles/rebuntu-semantic-service-absence-test.dir/tests/unit/semantic_service_absence_test.cpp.s
+.PHONY : tests/unit/semantic_service_absence_test.cpp.s
+
 tests/unit/sequential_composition_test.o: tests/unit/sequential_composition_test.cpp.o
 .PHONY : tests/unit/sequential_composition_test.o
 
@@ -5500,6 +5537,7 @@ help:
 	@echo "... rebuntu-scope-grammar-test"
 	@echo "... rebuntu-secrets"
 	@echo "... rebuntu-semantic-annotation"
+	@echo "... rebuntu-semantic-service-absence-test"
 	@echo "... rebuntu-sequential-composition-test"
 	@echo "... rebuntu-session-utmp"
 	@echo "... rebuntu-sessions"
@@ -5916,6 +5954,9 @@ help:
 	@echo "... tests/unit/provider_test_matrix.o"
 	@echo "... tests/unit/provider_test_matrix.i"
 	@echo "... tests/unit/provider_test_matrix.s"
+	@echo "... tests/unit/semantic_service_absence_test.o"
+	@echo "... tests/unit/semantic_service_absence_test.i"
+	@echo "... tests/unit/semantic_service_absence_test.s"
 	@echo "... tests/unit/sequential_composition_test.o"
 	@echo "... tests/unit/sequential_composition_test.i"
 	@echo "... tests/unit/sequential_composition_test.s"

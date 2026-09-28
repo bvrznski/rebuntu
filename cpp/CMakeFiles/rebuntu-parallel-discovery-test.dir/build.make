@@ -105,6 +105,7 @@ rebuntu-parallel-discovery-test: librebuntu-shell-output-capture.a
 rebuntu-parallel-discovery-test: librebuntu-command-explain.a
 rebuntu-parallel-discovery-test: librebuntu-idempotency.a
 rebuntu-parallel-discovery-test: librebuntu-dry-run.a
+rebuntu-parallel-discovery-test: librebuntu-ipc-command-boundary.a
 rebuntu-parallel-discovery-test: librebuntu-install.a
 rebuntu-parallel-discovery-test: librebuntu-user-identity.a
 rebuntu-parallel-discovery-test: librebuntu-group-membership.a

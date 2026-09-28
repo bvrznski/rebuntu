@@ -107,6 +107,7 @@ rebuntu-systemd-service-test: librebuntu-shell-output-capture.a
 rebuntu-systemd-service-test: librebuntu-command-explain.a
 rebuntu-systemd-service-test: librebuntu-idempotency.a
 rebuntu-systemd-service-test: librebuntu-dry-run.a
+rebuntu-systemd-service-test: librebuntu-ipc-command-boundary.a
 rebuntu-systemd-service-test: librebuntu-install.a
 rebuntu-systemd-service-test: librebuntu-user-identity.a
 rebuntu-systemd-service-test: librebuntu-group-membership.a

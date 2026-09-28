@@ -105,6 +105,7 @@ rebuntu-predicates-test: librebuntu-shell-output-capture.a
 rebuntu-predicates-test: librebuntu-command-explain.a
 rebuntu-predicates-test: librebuntu-idempotency.a
 rebuntu-predicates-test: librebuntu-dry-run.a
+rebuntu-predicates-test: librebuntu-ipc-command-boundary.a
 rebuntu-predicates-test: librebuntu-install.a
 rebuntu-predicates-test: librebuntu-user-identity.a
 rebuntu-predicates-test: librebuntu-group-membership.a

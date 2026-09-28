@@ -106,6 +106,7 @@ rebuntu-privilege-requirement-test: librebuntu-shell-output-capture.a
 rebuntu-privilege-requirement-test: librebuntu-command-explain.a
 rebuntu-privilege-requirement-test: librebuntu-idempotency.a
 rebuntu-privilege-requirement-test: librebuntu-dry-run.a
+rebuntu-privilege-requirement-test: librebuntu-ipc-command-boundary.a
 rebuntu-privilege-requirement-test: librebuntu-install.a
 rebuntu-privilege-requirement-test: librebuntu-user-identity.a
 rebuntu-privilege-requirement-test: librebuntu-group-membership.a

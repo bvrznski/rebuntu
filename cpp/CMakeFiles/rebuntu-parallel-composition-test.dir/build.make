@@ -105,6 +105,7 @@ rebuntu-parallel-composition-test: librebuntu-shell-output-capture.a
 rebuntu-parallel-composition-test: librebuntu-command-explain.a
 rebuntu-parallel-composition-test: librebuntu-idempotency.a
 rebuntu-parallel-composition-test: librebuntu-dry-run.a
+rebuntu-parallel-composition-test: librebuntu-ipc-command-boundary.a
 rebuntu-parallel-composition-test: librebuntu-install.a
 rebuntu-parallel-composition-test: librebuntu-user-identity.a
 rebuntu-parallel-composition-test: librebuntu-group-membership.a

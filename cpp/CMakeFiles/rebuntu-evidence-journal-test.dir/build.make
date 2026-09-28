@@ -107,6 +107,7 @@ rebuntu-evidence-journal-test: librebuntu-shell-output-capture.a
 rebuntu-evidence-journal-test: librebuntu-command-explain.a
 rebuntu-evidence-journal-test: librebuntu-idempotency.a
 rebuntu-evidence-journal-test: librebuntu-dry-run.a
+rebuntu-evidence-journal-test: librebuntu-ipc-command-boundary.a
 rebuntu-evidence-journal-test: librebuntu-install.a
 rebuntu-evidence-journal-test: librebuntu-user-identity.a
 rebuntu-evidence-journal-test: librebuntu-group-membership.a

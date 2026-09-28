@@ -105,6 +105,7 @@ rebuntu-replay-test: librebuntu-shell-output-capture.a
 rebuntu-replay-test: librebuntu-command-explain.a
 rebuntu-replay-test: librebuntu-idempotency.a
 rebuntu-replay-test: librebuntu-dry-run.a
+rebuntu-replay-test: librebuntu-ipc-command-boundary.a
 rebuntu-replay-test: librebuntu-install.a
 rebuntu-replay-test: librebuntu-user-identity.a
 rebuntu-replay-test: librebuntu-group-membership.a

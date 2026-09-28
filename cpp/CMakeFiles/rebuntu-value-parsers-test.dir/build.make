@@ -105,6 +105,7 @@ rebuntu-value-parsers-test: librebuntu-shell-output-capture.a
 rebuntu-value-parsers-test: librebuntu-command-explain.a
 rebuntu-value-parsers-test: librebuntu-idempotency.a
 rebuntu-value-parsers-test: librebuntu-dry-run.a
+rebuntu-value-parsers-test: librebuntu-ipc-command-boundary.a
 rebuntu-value-parsers-test: librebuntu-install.a
 rebuntu-value-parsers-test: librebuntu-user-identity.a
 rebuntu-value-parsers-test: librebuntu-group-membership.a

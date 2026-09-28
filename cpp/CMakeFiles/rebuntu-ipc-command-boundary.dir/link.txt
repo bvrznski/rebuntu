@@ -1,0 +1,2 @@
+/usr/bin/ar qc librebuntu-ipc-command-boundary.a CMakeFiles/rebuntu-ipc-command-boundary.dir/home/bvrznski/rebuntu/src/system/ipc/command_boundary.cpp.o
+/usr/bin/ranlib librebuntu-ipc-command-boundary.a

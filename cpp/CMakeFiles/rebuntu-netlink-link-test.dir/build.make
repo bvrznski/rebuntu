@@ -107,6 +107,7 @@ rebuntu-netlink-link-test: librebuntu-shell-output-capture.a
 rebuntu-netlink-link-test: librebuntu-command-explain.a
 rebuntu-netlink-link-test: librebuntu-idempotency.a
 rebuntu-netlink-link-test: librebuntu-dry-run.a
+rebuntu-netlink-link-test: librebuntu-ipc-command-boundary.a
 rebuntu-netlink-link-test: librebuntu-install.a
 rebuntu-netlink-link-test: librebuntu-user-identity.a
 rebuntu-netlink-link-test: librebuntu-group-membership.a

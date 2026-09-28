@@ -105,6 +105,7 @@ rebuntu-context-test: librebuntu-shell-output-capture.a
 rebuntu-context-test: librebuntu-command-explain.a
 rebuntu-context-test: librebuntu-idempotency.a
 rebuntu-context-test: librebuntu-dry-run.a
+rebuntu-context-test: librebuntu-ipc-command-boundary.a
 rebuntu-context-test: librebuntu-install.a
 rebuntu-context-test: librebuntu-user-identity.a
 rebuntu-context-test: librebuntu-group-membership.a

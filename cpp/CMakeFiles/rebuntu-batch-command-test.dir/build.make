@@ -105,6 +105,7 @@ rebuntu-batch-command-test: librebuntu-shell-output-capture.a
 rebuntu-batch-command-test: librebuntu-command-explain.a
 rebuntu-batch-command-test: librebuntu-idempotency.a
 rebuntu-batch-command-test: librebuntu-dry-run.a
+rebuntu-batch-command-test: librebuntu-ipc-command-boundary.a
 rebuntu-batch-command-test: librebuntu-install.a
 rebuntu-batch-command-test: librebuntu-user-identity.a
 rebuntu-batch-command-test: librebuntu-group-membership.a

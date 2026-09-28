@@ -107,6 +107,7 @@ rebuntu-cgroup-hierarchy-test: librebuntu-shell-output-capture.a
 rebuntu-cgroup-hierarchy-test: librebuntu-command-explain.a
 rebuntu-cgroup-hierarchy-test: librebuntu-idempotency.a
 rebuntu-cgroup-hierarchy-test: librebuntu-dry-run.a
+rebuntu-cgroup-hierarchy-test: librebuntu-ipc-command-boundary.a
 rebuntu-cgroup-hierarchy-test: librebuntu-install.a
 rebuntu-cgroup-hierarchy-test: librebuntu-user-identity.a
 rebuntu-cgroup-hierarchy-test: librebuntu-group-membership.a

@@ -105,6 +105,7 @@ rebuntu-dependency-aware-test: librebuntu-shell-output-capture.a
 rebuntu-dependency-aware-test: librebuntu-command-explain.a
 rebuntu-dependency-aware-test: librebuntu-idempotency.a
 rebuntu-dependency-aware-test: librebuntu-dry-run.a
+rebuntu-dependency-aware-test: librebuntu-ipc-command-boundary.a
 rebuntu-dependency-aware-test: librebuntu-install.a
 rebuntu-dependency-aware-test: librebuntu-user-identity.a
 rebuntu-dependency-aware-test: librebuntu-group-membership.a

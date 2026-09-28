@@ -105,6 +105,7 @@ rebuntu-scope-grammar-test: librebuntu-shell-output-capture.a
 rebuntu-scope-grammar-test: librebuntu-command-explain.a
 rebuntu-scope-grammar-test: librebuntu-idempotency.a
 rebuntu-scope-grammar-test: librebuntu-dry-run.a
+rebuntu-scope-grammar-test: librebuntu-ipc-command-boundary.a
 rebuntu-scope-grammar-test: librebuntu-install.a
 rebuntu-scope-grammar-test: librebuntu-user-identity.a
 rebuntu-scope-grammar-test: librebuntu-group-membership.a

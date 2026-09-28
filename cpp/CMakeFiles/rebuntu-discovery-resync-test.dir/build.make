@@ -105,6 +105,7 @@ rebuntu-discovery-resync-test: librebuntu-shell-output-capture.a
 rebuntu-discovery-resync-test: librebuntu-command-explain.a
 rebuntu-discovery-resync-test: librebuntu-idempotency.a
 rebuntu-discovery-resync-test: librebuntu-dry-run.a
+rebuntu-discovery-resync-test: librebuntu-ipc-command-boundary.a
 rebuntu-discovery-resync-test: librebuntu-install.a
 rebuntu-discovery-resync-test: librebuntu-user-identity.a
 rebuntu-discovery-resync-test: librebuntu-group-membership.a

@@ -108,6 +108,7 @@ rebuntu-cli-inventory-test: librebuntu-shell-output-capture.a
 rebuntu-cli-inventory-test: librebuntu-command-explain.a
 rebuntu-cli-inventory-test: librebuntu-idempotency.a
 rebuntu-cli-inventory-test: librebuntu-dry-run.a
+rebuntu-cli-inventory-test: librebuntu-ipc-command-boundary.a
 rebuntu-cli-inventory-test: librebuntu-install.a
 rebuntu-cli-inventory-test: librebuntu-user-identity.a
 rebuntu-cli-inventory-test: librebuntu-group-membership.a

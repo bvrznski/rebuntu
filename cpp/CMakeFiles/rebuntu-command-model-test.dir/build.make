@@ -105,6 +105,7 @@ rebuntu-command-model-test: librebuntu-shell-output-capture.a
 rebuntu-command-model-test: librebuntu-command-explain.a
 rebuntu-command-model-test: librebuntu-idempotency.a
 rebuntu-command-model-test: librebuntu-dry-run.a
+rebuntu-command-model-test: librebuntu-ipc-command-boundary.a
 rebuntu-command-model-test: librebuntu-install.a
 rebuntu-command-model-test: librebuntu-user-identity.a
 rebuntu-command-model-test: librebuntu-group-membership.a

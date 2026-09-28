@@ -105,6 +105,7 @@ rebuntu-exit-result-test: librebuntu-shell-output-capture.a
 rebuntu-exit-result-test: librebuntu-command-explain.a
 rebuntu-exit-result-test: librebuntu-idempotency.a
 rebuntu-exit-result-test: librebuntu-dry-run.a
+rebuntu-exit-result-test: librebuntu-ipc-command-boundary.a
 rebuntu-exit-result-test: librebuntu-install.a
 rebuntu-exit-result-test: librebuntu-user-identity.a
 rebuntu-exit-result-test: librebuntu-group-membership.a

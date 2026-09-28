@@ -107,6 +107,7 @@ rebuntu-hotplug-test: librebuntu-shell-output-capture.a
 rebuntu-hotplug-test: librebuntu-command-explain.a
 rebuntu-hotplug-test: librebuntu-idempotency.a
 rebuntu-hotplug-test: librebuntu-dry-run.a
+rebuntu-hotplug-test: librebuntu-ipc-command-boundary.a
 rebuntu-hotplug-test: librebuntu-install.a
 rebuntu-hotplug-test: librebuntu-user-identity.a
 rebuntu-hotplug-test: librebuntu-group-membership.a

@@ -105,6 +105,7 @@ rebuntu-sequential-composition-test: librebuntu-shell-output-capture.a
 rebuntu-sequential-composition-test: librebuntu-command-explain.a
 rebuntu-sequential-composition-test: librebuntu-idempotency.a
 rebuntu-sequential-composition-test: librebuntu-dry-run.a
+rebuntu-sequential-composition-test: librebuntu-ipc-command-boundary.a
 rebuntu-sequential-composition-test: librebuntu-install.a
 rebuntu-sequential-composition-test: librebuntu-user-identity.a
 rebuntu-sequential-composition-test: librebuntu-group-membership.a

@@ -105,6 +105,7 @@ rebuntu-idempotency-test: librebuntu-shell-output.a
 rebuntu-idempotency-test: librebuntu-shell-output-capture.a
 rebuntu-idempotency-test: librebuntu-command-explain.a
 rebuntu-idempotency-test: librebuntu-dry-run.a
+rebuntu-idempotency-test: librebuntu-ipc-command-boundary.a
 rebuntu-idempotency-test: librebuntu-install.a
 rebuntu-idempotency-test: librebuntu-user-identity.a
 rebuntu-idempotency-test: librebuntu-group-membership.a

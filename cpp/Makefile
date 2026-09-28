@@ -718,6 +718,19 @@ rebuntu-dry-run/fast:
 .PHONY : rebuntu-dry-run/fast
 
 #=============================================================================
+# Target rules for targets named rebuntu-ipc-command-boundary
+
+# Build rule for target.
+rebuntu-ipc-command-boundary: cmake_check_build_system
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 rebuntu-ipc-command-boundary
+.PHONY : rebuntu-ipc-command-boundary
+
+# fast build rule for target.
+rebuntu-ipc-command-boundary/fast:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/rebuntu-ipc-command-boundary.dir/build.make CMakeFiles/rebuntu-ipc-command-boundary.dir/build
+.PHONY : rebuntu-ipc-command-boundary/fast
+
+#=============================================================================
 # Target rules for targets named rebuntu-install
 
 # Build rule for target.
@@ -4002,6 +4015,30 @@ home/bvrznski/rebuntu/src/system/install/install_planning.cpp.s:
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/rebuntu-install.dir/build.make CMakeFiles/rebuntu-install.dir/home/bvrznski/rebuntu/src/system/install/install_planning.cpp.s
 .PHONY : home/bvrznski/rebuntu/src/system/install/install_planning.cpp.s
 
+home/bvrznski/rebuntu/src/system/ipc/command_boundary.o: home/bvrznski/rebuntu/src/system/ipc/command_boundary.cpp.o
+.PHONY : home/bvrznski/rebuntu/src/system/ipc/command_boundary.o
+
+# target to build an object file
+home/bvrznski/rebuntu/src/system/ipc/command_boundary.cpp.o:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/rebuntu-ipc-command-boundary.dir/build.make CMakeFiles/rebuntu-ipc-command-boundary.dir/home/bvrznski/rebuntu/src/system/ipc/command_boundary.cpp.o
+.PHONY : home/bvrznski/rebuntu/src/system/ipc/command_boundary.cpp.o
+
+home/bvrznski/rebuntu/src/system/ipc/command_boundary.i: home/bvrznski/rebuntu/src/system/ipc/command_boundary.cpp.i
+.PHONY : home/bvrznski/rebuntu/src/system/ipc/command_boundary.i
+
+# target to preprocess a source file
+home/bvrznski/rebuntu/src/system/ipc/command_boundary.cpp.i:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/rebuntu-ipc-command-boundary.dir/build.make CMakeFiles/rebuntu-ipc-command-boundary.dir/home/bvrznski/rebuntu/src/system/ipc/command_boundary.cpp.i
+.PHONY : home/bvrznski/rebuntu/src/system/ipc/command_boundary.cpp.i
+
+home/bvrznski/rebuntu/src/system/ipc/command_boundary.s: home/bvrznski/rebuntu/src/system/ipc/command_boundary.cpp.s
+.PHONY : home/bvrznski/rebuntu/src/system/ipc/command_boundary.s
+
+# target to generate assembly for a file
+home/bvrznski/rebuntu/src/system/ipc/command_boundary.cpp.s:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/rebuntu-ipc-command-boundary.dir/build.make CMakeFiles/rebuntu-ipc-command-boundary.dir/home/bvrznski/rebuntu/src/system/ipc/command_boundary.cpp.s
+.PHONY : home/bvrznski/rebuntu/src/system/ipc/command_boundary.cpp.s
+
 home/bvrznski/rebuntu/src/system/lifecycle/lifecycle.o: home/bvrznski/rebuntu/src/system/lifecycle/lifecycle.cpp.o
 .PHONY : home/bvrznski/rebuntu/src/system/lifecycle/lifecycle.o
 
@@ -5418,6 +5455,7 @@ help:
 	@echo "... rebuntu-install"
 	@echo "... rebuntu-internal-alerts"
 	@echo "... rebuntu-ipc"
+	@echo "... rebuntu-ipc-command-boundary"
 	@echo "... rebuntu-isolated-provider-test"
 	@echo "... rebuntu-journal-analyzer"
 	@echo "... rebuntu-journal-normalizer"
@@ -5725,6 +5763,9 @@ help:
 	@echo "... home/bvrznski/rebuntu/src/system/install/install_planning.o"
 	@echo "... home/bvrznski/rebuntu/src/system/install/install_planning.i"
 	@echo "... home/bvrznski/rebuntu/src/system/install/install_planning.s"
+	@echo "... home/bvrznski/rebuntu/src/system/ipc/command_boundary.o"
+	@echo "... home/bvrznski/rebuntu/src/system/ipc/command_boundary.i"
+	@echo "... home/bvrznski/rebuntu/src/system/ipc/command_boundary.s"
 	@echo "... home/bvrznski/rebuntu/src/system/lifecycle/lifecycle.o"
 	@echo "... home/bvrznski/rebuntu/src/system/lifecycle/lifecycle.i"
 	@echo "... home/bvrznski/rebuntu/src/system/lifecycle/lifecycle.s"

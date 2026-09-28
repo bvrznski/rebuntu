@@ -105,6 +105,7 @@ rebuntu-provider-test-matrix: librebuntu-shell-output-capture.a
 rebuntu-provider-test-matrix: librebuntu-command-explain.a
 rebuntu-provider-test-matrix: librebuntu-idempotency.a
 rebuntu-provider-test-matrix: librebuntu-dry-run.a
+rebuntu-provider-test-matrix: librebuntu-ipc-command-boundary.a
 rebuntu-provider-test-matrix: librebuntu-install.a
 rebuntu-provider-test-matrix: librebuntu-user-identity.a
 rebuntu-provider-test-matrix: librebuntu-group-membership.a

@@ -40,6 +40,7 @@
 /home/bvrznski/rebuntu/cpp/CMakeFiles/rebuntu-command-explain.dir
 /home/bvrznski/rebuntu/cpp/CMakeFiles/rebuntu-idempotency.dir
 /home/bvrznski/rebuntu/cpp/CMakeFiles/rebuntu-dry-run.dir
+/home/bvrznski/rebuntu/cpp/CMakeFiles/rebuntu-ipc-command-boundary.dir
 /home/bvrznski/rebuntu/cpp/CMakeFiles/rebuntu-install.dir
 /home/bvrznski/rebuntu/cpp/CMakeFiles/rebuntu-user-identity.dir
 /home/bvrznski/rebuntu/cpp/CMakeFiles/rebuntu-group-membership.dir

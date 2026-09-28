@@ -107,6 +107,7 @@ rebuntu-procfs-modules-test: librebuntu-shell-output-capture.a
 rebuntu-procfs-modules-test: librebuntu-command-explain.a
 rebuntu-procfs-modules-test: librebuntu-idempotency.a
 rebuntu-procfs-modules-test: librebuntu-dry-run.a
+rebuntu-procfs-modules-test: librebuntu-ipc-command-boundary.a
 rebuntu-procfs-modules-test: librebuntu-install.a
 rebuntu-procfs-modules-test: librebuntu-user-identity.a
 rebuntu-procfs-modules-test: librebuntu-group-membership.a

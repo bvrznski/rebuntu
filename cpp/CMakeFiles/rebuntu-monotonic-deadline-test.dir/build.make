@@ -105,6 +105,7 @@ rebuntu-monotonic-deadline-test: librebuntu-shell-output-capture.a
 rebuntu-monotonic-deadline-test: librebuntu-command-explain.a
 rebuntu-monotonic-deadline-test: librebuntu-idempotency.a
 rebuntu-monotonic-deadline-test: librebuntu-dry-run.a
+rebuntu-monotonic-deadline-test: librebuntu-ipc-command-boundary.a
 rebuntu-monotonic-deadline-test: librebuntu-install.a
 rebuntu-monotonic-deadline-test: librebuntu-user-identity.a
 rebuntu-monotonic-deadline-test: librebuntu-group-membership.a

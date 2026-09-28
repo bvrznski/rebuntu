@@ -105,6 +105,7 @@ rebuntu-collision-scanner-test: librebuntu-shell-output-capture.a
 rebuntu-collision-scanner-test: librebuntu-command-explain.a
 rebuntu-collision-scanner-test: librebuntu-idempotency.a
 rebuntu-collision-scanner-test: librebuntu-dry-run.a
+rebuntu-collision-scanner-test: librebuntu-ipc-command-boundary.a
 rebuntu-collision-scanner-test: librebuntu-install.a
 rebuntu-collision-scanner-test: librebuntu-user-identity.a
 rebuntu-collision-scanner-test: librebuntu-group-membership.a

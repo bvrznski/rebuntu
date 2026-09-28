@@ -105,6 +105,7 @@ rebuntu-netlink-adversarial-audit-test: librebuntu-shell-output-capture.a
 rebuntu-netlink-adversarial-audit-test: librebuntu-command-explain.a
 rebuntu-netlink-adversarial-audit-test: librebuntu-idempotency.a
 rebuntu-netlink-adversarial-audit-test: librebuntu-dry-run.a
+rebuntu-netlink-adversarial-audit-test: librebuntu-ipc-command-boundary.a
 rebuntu-netlink-adversarial-audit-test: librebuntu-install.a
 rebuntu-netlink-adversarial-audit-test: librebuntu-user-identity.a
 rebuntu-netlink-adversarial-audit-test: librebuntu-group-membership.a

@@ -219,6 +219,14 @@ target_sources(rebuntu-core PRIVATE
     ${CMAKE_CURRENT_LIST_DIR}/../src/runtime/retry_mechanics.cpp
 )
 
+# Phase 6.48: IPC Command Boundary module (process-separated callers)
+add_library(rebuntu-ipc-command-boundary STATIC
+    ${CMAKE_CURRENT_LIST_DIR}/../src/system/ipc/command_boundary.hpp
+    ${CMAKE_CURRENT_LIST_DIR}/../src/system/ipc/command_boundary.cpp
+)
+target_include_directories(rebuntu-ipc-command-boundary PUBLIC ${CMAKE_CURRENT_LIST_DIR}/../src)
+target_link_libraries(rebuntu-core PUBLIC rebuntu-ipc-command-boundary)
+
 # Phase 6.41: Command Replay Semantics module (intent vs stale plan semantics)
 target_sources(rebuntu-core PRIVATE
     ${CMAKE_CURRENT_LIST_DIR}/../src/system/command/replay.hpp

@@ -105,6 +105,7 @@ rebuntu-pipeline-test: librebuntu-shell-output-capture.a
 rebuntu-pipeline-test: librebuntu-command-explain.a
 rebuntu-pipeline-test: librebuntu-idempotency.a
 rebuntu-pipeline-test: librebuntu-dry-run.a
+rebuntu-pipeline-test: librebuntu-ipc-command-boundary.a
 rebuntu-pipeline-test: librebuntu-install.a
 rebuntu-pipeline-test: librebuntu-user-identity.a
 rebuntu-pipeline-test: librebuntu-group-membership.a

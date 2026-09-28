@@ -107,6 +107,7 @@ rebuntu-exec-diag-test: librebuntu-shell-output-capture.a
 rebuntu-exec-diag-test: librebuntu-command-explain.a
 rebuntu-exec-diag-test: librebuntu-idempotency.a
 rebuntu-exec-diag-test: librebuntu-dry-run.a
+rebuntu-exec-diag-test: librebuntu-ipc-command-boundary.a
 rebuntu-exec-diag-test: librebuntu-install.a
 rebuntu-exec-diag-test: librebuntu-user-identity.a
 rebuntu-exec-diag-test: librebuntu-group-membership.a

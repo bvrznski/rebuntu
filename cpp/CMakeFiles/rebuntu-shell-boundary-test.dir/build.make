@@ -105,6 +105,7 @@ rebuntu-shell-boundary-test: librebuntu-shell-output-capture.a
 rebuntu-shell-boundary-test: librebuntu-command-explain.a
 rebuntu-shell-boundary-test: librebuntu-idempotency.a
 rebuntu-shell-boundary-test: librebuntu-dry-run.a
+rebuntu-shell-boundary-test: librebuntu-ipc-command-boundary.a
 rebuntu-shell-boundary-test: librebuntu-install.a
 rebuntu-shell-boundary-test: librebuntu-user-identity.a
 rebuntu-shell-boundary-test: librebuntu-group-membership.a

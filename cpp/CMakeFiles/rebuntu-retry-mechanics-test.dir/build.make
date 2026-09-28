@@ -105,6 +105,7 @@ rebuntu-retry-mechanics-test: librebuntu-shell-output-capture.a
 rebuntu-retry-mechanics-test: librebuntu-command-explain.a
 rebuntu-retry-mechanics-test: librebuntu-idempotency.a
 rebuntu-retry-mechanics-test: librebuntu-dry-run.a
+rebuntu-retry-mechanics-test: librebuntu-ipc-command-boundary.a
 rebuntu-retry-mechanics-test: librebuntu-install.a
 rebuntu-retry-mechanics-test: librebuntu-user-identity.a
 rebuntu-retry-mechanics-test: librebuntu-group-membership.a

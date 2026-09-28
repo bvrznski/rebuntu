@@ -107,6 +107,7 @@ rebuntu-hang-stall-jam-detector-test: librebuntu-shell-output-capture.a
 rebuntu-hang-stall-jam-detector-test: librebuntu-command-explain.a
 rebuntu-hang-stall-jam-detector-test: librebuntu-idempotency.a
 rebuntu-hang-stall-jam-detector-test: librebuntu-dry-run.a
+rebuntu-hang-stall-jam-detector-test: librebuntu-ipc-command-boundary.a
 rebuntu-hang-stall-jam-detector-test: librebuntu-install.a
 rebuntu-hang-stall-jam-detector-test: librebuntu-user-identity.a
 rebuntu-hang-stall-jam-detector-test: librebuntu-group-membership.a

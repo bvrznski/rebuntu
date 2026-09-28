@@ -105,6 +105,7 @@ rebuntu-isolated-provider-test: librebuntu-shell-output-capture.a
 rebuntu-isolated-provider-test: librebuntu-command-explain.a
 rebuntu-isolated-provider-test: librebuntu-idempotency.a
 rebuntu-isolated-provider-test: librebuntu-dry-run.a
+rebuntu-isolated-provider-test: librebuntu-ipc-command-boundary.a
 rebuntu-isolated-provider-test: librebuntu-install.a
 rebuntu-isolated-provider-test: librebuntu-user-identity.a
 rebuntu-isolated-provider-test: librebuntu-group-membership.a

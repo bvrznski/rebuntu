@@ -124,6 +124,7 @@ rebuntu-bin: librebuntu-shell-output-capture.a
 rebuntu-bin: librebuntu-command-explain.a
 rebuntu-bin: librebuntu-idempotency.a
 rebuntu-bin: librebuntu-dry-run.a
+rebuntu-bin: librebuntu-ipc-command-boundary.a
 rebuntu-bin: librebuntu-install.a
 rebuntu-bin: librebuntu-user-identity.a
 rebuntu-bin: librebuntu-group-membership.a

@@ -107,6 +107,7 @@ rebuntu-drm-topology-test: librebuntu-shell-output-capture.a
 rebuntu-drm-topology-test: librebuntu-command-explain.a
 rebuntu-drm-topology-test: librebuntu-idempotency.a
 rebuntu-drm-topology-test: librebuntu-dry-run.a
+rebuntu-drm-topology-test: librebuntu-ipc-command-boundary.a
 rebuntu-drm-topology-test: librebuntu-install.a
 rebuntu-drm-topology-test: librebuntu-user-identity.a
 rebuntu-drm-topology-test: librebuntu-group-membership.a

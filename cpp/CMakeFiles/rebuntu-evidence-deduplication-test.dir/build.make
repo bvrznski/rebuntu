@@ -107,6 +107,7 @@ rebuntu-evidence-deduplication-test: librebuntu-shell-output-capture.a
 rebuntu-evidence-deduplication-test: librebuntu-command-explain.a
 rebuntu-evidence-deduplication-test: librebuntu-idempotency.a
 rebuntu-evidence-deduplication-test: librebuntu-dry-run.a
+rebuntu-evidence-deduplication-test: librebuntu-ipc-command-boundary.a
 rebuntu-evidence-deduplication-test: librebuntu-install.a
 rebuntu-evidence-deduplication-test: librebuntu-user-identity.a
 rebuntu-evidence-deduplication-test: librebuntu-group-membership.a

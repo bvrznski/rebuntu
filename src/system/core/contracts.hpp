@@ -229,8 +229,57 @@ struct ExitResult {
 };
 
 // ---------------------------------------------------------------------------
+// Evidence
+// A provenance-bearing observation. DATA, not CONTROL.
+// Bounded; must not contain secret material.
+// ---------------------------------------------------------------------------
+struct Evidence {
+    std::string source;      // where this evidence came from (e.g. "procfs", "systemd")
+    std::string value;       // the observed value / excerpt (bounded)
+    std::string captured_at; // ISO-8601, UTC
+};
+
+// ---------------------------------------------------------------------------
+// PartialExecutionStep
+// A record of a step that was partially executed.
+// Preserves the state before and after, along with any partial evidence.
+// ---------------------------------------------------------------------------
+struct PartialExecutionStep {
+    std::string description;           // human-readable step description
+    int step_index;                    // 0-based index in the execution plan
+    bool completed;                    // true if step fully completed
+    
+    // State observation before this step
+    std::optional<std::string> state_before;
+    
+    // State observation after this step (may be partial)
+    std::optional<std::string> state_after;
+    
+    // Evidence collected during step execution
+    std::vector<Evidence> evidence;
+};
+
+// ---------------------------------------------------------------------------
+// PartialExecutionInfo
+// Information about a partially executed operation.
+// Used when only some steps of a multi-step operation succeeded.
+// ---------------------------------------------------------------------------
+struct PartialExecutionInfo {
+    int total_steps;                          // total steps in the plan
+    int completed_steps = 0;                  // steps fully executed
+    std::optional<int> failed_step_index;     // index where execution stopped (if known)
+    
+    // Steps that were executed (may be partial records)
+    std::vector<PartialExecutionStep> executed_steps;
+    
+    // Recovery plan description (what needs to be done to reach desired state)
+    std::optional<std::string> recovery_plan_description;
+};
+
+// ---------------------------------------------------------------------------
 // SemanticStatus
 // The outcome of an attempt, distinct from any process exit code.
+// kPartial represents partial mutation: some steps completed but not all.
 // ---------------------------------------------------------------------------
 enum class SemanticStatus {
     kSuccess,    // completed AND independently verified against its postconditions
@@ -238,6 +287,7 @@ enum class SemanticStatus {
     kFailure,    // the attempt ran but the objective was not met
     kUnknown,    // the outcome could not be determined (not a negative observation)
     kCancelled,  // explicitly cancelled before completion
+    kPartial,    // partial mutation: some steps succeeded but operation incomplete
 };
 
 inline std::string_view to_string(SemanticStatus s) {
@@ -247,6 +297,7 @@ inline std::string_view to_string(SemanticStatus s) {
         case SemanticStatus::kFailure:   return "failure";
         case SemanticStatus::kUnknown:   return "unknown";
         case SemanticStatus::kCancelled: return "cancelled";
+        case SemanticStatus::kPartial:   return "partial";
     }
     return "unknown";
 }
@@ -286,17 +337,6 @@ inline std::string_view to_string(OperationStatus s) {
 struct Error {
     std::string code;     // stable machine-readable code, e.g. "E_UNSUPPORTED"
     std::string message;  // human-readable; must not contain secrets
-};
-
-// ---------------------------------------------------------------------------
-// Evidence
-// A provenance-bearing observation. DATA, not CONTROL.
-// Bounded; must not contain secret material.
-// ---------------------------------------------------------------------------
-struct Evidence {
-    std::string source;      // where this evidence came from (e.g. "procfs", "systemd")
-    std::string value;       // the observed value / excerpt (bounded)
-    std::string captured_at; // ISO-8601, UTC
 };
 
 // ---------------------------------------------------------------------------
@@ -343,7 +383,30 @@ struct Outcome {
 
     bool is_success() const { return status == SemanticStatus::kSuccess && verified; }
     bool is_completed() const { return status == SemanticStatus::kCompleted || status == SemanticStatus::kSuccess; }
-    bool is_error() const { return error.has_value(); }
+    bool is_failure() const { return status == SemanticStatus::kFailure; }
+    bool is_unknown() const { return status == SemanticStatus::kUnknown; }
+    bool is_cancelled() const { return status == SemanticStatus::kCancelled; }
+    bool is_partial() const { return status == SemanticStatus::kPartial; }
+    
+    // Check if outcome represents a successful completion (success, completed, or partial with evidence)
+    bool is_success_like() const {
+        return status == SemanticStatus::kSuccess || 
+               status == SemanticStatus::kCompleted ||
+               status == SemanticStatus::kPartial;
+    }
+
+    static Outcome partial(int completed_steps, int total_steps, std::string recovery_description = {}) {
+        Outcome o;
+        o.status = SemanticStatus::kPartial;
+        if (!recovery_description.empty()) {
+            o.error = Error{"E_PARTIAL", "operation partially executed: " + std::to_string(completed_steps) + 
+                            "/" + std::to_string(total_steps) + " steps completed. Recovery: " + recovery_description};
+        } else {
+            o.error = Error{"E_PARTIAL", "operation partially executed: " + std::to_string(completed_steps) + 
+                            "/" + std::to_string(total_steps) + " steps completed"};
+        }
+        return o;
+    }
 };
 
 // ---------------------------------------------------------------------------
@@ -370,7 +433,32 @@ struct Result : Outcome {
     }
 
     bool has_value() const { return value.has_value(); }
+    
+    bool is_partial() const { return status == SemanticStatus::kPartial; }
 };
+
+// ---------------------------------------------------------------------------
+// Partial execution helper functions for Outcome and Result types
+// ---------------------------------------------------------------------------
+
+inline std::string to_string(PartialExecutionStep step) {
+    return "PartialExecutionStep{index=" + std::to_string(step.step_index) + 
+           ", completed=" + (step.completed ? "true" : "false") +
+           ", description=\"" + step.description + "\"}";
+}
+
+inline std::string to_string(const PartialExecutionInfo& info) {
+    std::string result = "PartialExecutionInfo{total=" + std::to_string(info.total_steps) +
+                         ", completed=" + std::to_string(info.completed_steps);
+    if (info.failed_step_index.has_value()) {
+        result += ", failed_at=" + std::to_string(*info.failed_step_index);
+    }
+    if (info.recovery_plan_description.has_value()) {
+        result += ", recovery=\"" + *info.recovery_plan_description + "\"";
+    }
+    result += "}";
+    return result;
+}
 
 // ---------------------------------------------------------------------------
 // Component
@@ -922,7 +1010,21 @@ struct OperationResult {
         return r;
     }
     
+    static OperationResult partial(int completed_steps, int total_steps, std::string recovery_description = {}) {
+        OperationResult r;
+        r.status = SemanticStatus::kPartial;
+        if (!recovery_description.empty()) {
+            r.error = Error{"E_PARTIAL", "operation partially executed: " + std::to_string(completed_steps) + 
+                            "/" + std::to_string(total_steps) + " steps completed. Recovery: " + recovery_description};
+        } else {
+            r.error = Error{"E_PARTIAL", "operation partially executed: " + std::to_string(completed_steps) + 
+                            "/" + std::to_string(total_steps) + " steps completed"};
+        }
+        return r;
+    }
+    
     bool is_success() const { return status == SemanticStatus::kSuccess && verified; }
+    bool is_partial() const { return status == SemanticStatus::kPartial; }
 };
 
 // ---------------------------------------------------------------------------

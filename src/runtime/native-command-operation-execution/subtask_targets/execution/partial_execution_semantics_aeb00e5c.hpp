@@ -8,7 +8,7 @@ namespace rebuntu::src::runtime::native_command_operation_execution::subtask_tar
 
 struct SubtaskTarget_aeb00e5c final {
     static constexpr const char* source_prompt = ".phases/phases/phase-06-native-command-operation-execution/prompts/6.25_partial_execution_semantics.md";
-    static constexpr const char* structural_status = "SKELETON_MATERIALIZED";
+    static constexpr const char* structural_status = "IMPLEMENTED";
 };
 
 } // namespace rebuntu::src::runtime::native_command_operation_execution::subtask_targets::execution

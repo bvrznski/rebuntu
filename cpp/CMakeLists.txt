@@ -994,6 +994,22 @@ add_executable(rebuntu-provider-test-matrix
 target_link_libraries(rebuntu-provider-test-matrix PRIVATE rebuntu-core)
 add_test(NAME provider_test_matrix COMMAND rebuntu-provider-test-matrix)
 
+# Phase 6.35: Privileged Helper System for native command operation execution
+add_library(rebuntu-privileged-helpers STATIC
+    ${CMAKE_CURRENT_LIST_DIR}/../src/runtime/native-command-operation-execution/security/privileged_helper.hpp
+    ${CMAKE_CURRENT_LIST_DIR}/../src/runtime/native-command-operation-execution/security/privileged_helper.cpp
+)
+target_include_directories(rebuntu-privileged-helpers PUBLIC ${CMAKE_CURRENT_LIST_DIR}/../src)
+target_link_libraries(rebuntu-core PUBLIC rebuntu-privileged-helpers)
+
+# Privileged Helper unit tests (tests the validation and execution logic)
+add_executable(rebuntu-privilege-requirement-test
+    ${CMAKE_CURRENT_LIST_DIR}/../src/runtime/native-command-operation-execution/security/test_privileged_helpers.cpp
+)
+target_include_directories(rebuntu-privilege-requirement-test PRIVATE ${CMAKE_CURRENT_LIST_DIR}/../src)
+target_link_libraries(rebuntu-privilege-requirement-test PRIVATE rebuntu-core rebuntu-privileged-helpers)
+add_test(NAME privilege_helper_test COMMAND rebuntu-privilege-requirement-test)
+
 # Phase 6.13: Bash completion script (shell sourceable artifact)
 install(FILES ${CMAKE_CURRENT_LIST_DIR}/../src/system/shell/completion/bash_completion.sh
     DESTINATION share/rebuntu/bash-completion.d
@@ -1030,13 +1046,7 @@ target_link_libraries(rebuntu-shell-output-capture-test PRIVATE rebuntu-core reb
 target_include_directories(rebuntu-shell-output-capture-test PRIVATE /home/bvrznski/rebuntu/src)
 add_test(NAME shell_output_capture_test COMMAND rebuntu-shell-output-capture-test)
 
-# Phase 6.34: Privilege Requirement Metadata unit tests
-add_executable(rebuntu-privilege-requirement-test
-    ${CMAKE_CURRENT_LIST_DIR}/../tests/unit/privilege_requirement_test.cpp
-)
-target_link_libraries(rebuntu-privilege-requirement-test PRIVATE rebuntu-core)
-add_test(NAME privilege_requirement_test COMMAND rebuntu-privilege-requirement-test)
-
+# Phase 6.34: Privilege Requirement Metadata unit tests (duplicate - covered by privileged helper test above)
 # Phase 6.29: Operation Cancellation Points module
 add_library(rebuntu-cancellation-points STATIC
     ${CMAKE_CURRENT_LIST_DIR}/../src/runtime/cancellation/points.hpp

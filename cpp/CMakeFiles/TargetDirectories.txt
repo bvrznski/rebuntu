@@ -85,6 +85,7 @@
 /home/bvrznski/rebuntu/cpp/CMakeFiles/rebuntu-drm-topology-test.dir
 /home/bvrznski/rebuntu/cpp/CMakeFiles/rebuntu-procfs-process.dir
 /home/bvrznski/rebuntu/cpp/CMakeFiles/rebuntu-procfs-process-test.dir
+/home/bvrznski/rebuntu/cpp/CMakeFiles/rebuntu-pid-reuse-test.dir
 /home/bvrznski/rebuntu/cpp/CMakeFiles/rebuntu-isolated-provider-test.dir
 /home/bvrznski/rebuntu/cpp/CMakeFiles/rebuntu-provider-evidence-test.dir
 /home/bvrznski/rebuntu/cpp/CMakeFiles/rebuntu-command-model-test.dir

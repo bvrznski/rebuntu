@@ -608,6 +608,14 @@ add_executable(rebuntu-procfs-process-test
 target_link_libraries(rebuntu-procfs-process-test PRIVATE rebuntu-procfs-process rebuntu-core)
 add_test(NAME procfs_process_test COMMAND rebuntu-procfs-process-test)
 
+# Phase 6.56: PID Reuse and Transient Identity Adversarial Tests
+add_executable(rebuntu-pid-reuse-test
+    ${CMAKE_CURRENT_LIST_DIR}/tests/unit/pid_reuse_adversarial_test.cpp
+)
+target_include_directories(rebuntu-pid-reuse-test PRIVATE ${CMAKE_CURRENT_LIST_DIR}/../src)
+target_link_libraries(rebuntu-pid-reuse-test PRIVATE rebuntu-procfs-process rebuntu-core)
+add_test(NAME pid_reuse_test COMMAND rebuntu-pid-reuse-test)
+
 # Phase 5.50: Provider Isolation and Degradation unit tests (Task 5.50)
 add_executable(rebuntu-isolated-provider-test
     ${CMAKE_CURRENT_LIST_DIR}/tests/unit/isolated_provider_test.cpp

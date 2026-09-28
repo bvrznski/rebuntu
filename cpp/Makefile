@@ -1303,6 +1303,19 @@ rebuntu-procfs-process-test/fast:
 .PHONY : rebuntu-procfs-process-test/fast
 
 #=============================================================================
+# Target rules for targets named rebuntu-pid-reuse-test
+
+# Build rule for target.
+rebuntu-pid-reuse-test: cmake_check_build_system
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 rebuntu-pid-reuse-test
+.PHONY : rebuntu-pid-reuse-test
+
+# fast build rule for target.
+rebuntu-pid-reuse-test/fast:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/rebuntu-pid-reuse-test.dir/build.make CMakeFiles/rebuntu-pid-reuse-test.dir/build
+.PHONY : rebuntu-pid-reuse-test/fast
+
+#=============================================================================
 # Target rules for targets named rebuntu-isolated-provider-test
 
 # Build rule for target.
@@ -5246,6 +5259,30 @@ tests/unit/parallel_discovery_test.cpp.s:
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/rebuntu-parallel-discovery-test.dir/build.make CMakeFiles/rebuntu-parallel-discovery-test.dir/tests/unit/parallel_discovery_test.cpp.s
 .PHONY : tests/unit/parallel_discovery_test.cpp.s
 
+tests/unit/pid_reuse_adversarial_test.o: tests/unit/pid_reuse_adversarial_test.cpp.o
+.PHONY : tests/unit/pid_reuse_adversarial_test.o
+
+# target to build an object file
+tests/unit/pid_reuse_adversarial_test.cpp.o:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/rebuntu-pid-reuse-test.dir/build.make CMakeFiles/rebuntu-pid-reuse-test.dir/tests/unit/pid_reuse_adversarial_test.cpp.o
+.PHONY : tests/unit/pid_reuse_adversarial_test.cpp.o
+
+tests/unit/pid_reuse_adversarial_test.i: tests/unit/pid_reuse_adversarial_test.cpp.i
+.PHONY : tests/unit/pid_reuse_adversarial_test.i
+
+# target to preprocess a source file
+tests/unit/pid_reuse_adversarial_test.cpp.i:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/rebuntu-pid-reuse-test.dir/build.make CMakeFiles/rebuntu-pid-reuse-test.dir/tests/unit/pid_reuse_adversarial_test.cpp.i
+.PHONY : tests/unit/pid_reuse_adversarial_test.cpp.i
+
+tests/unit/pid_reuse_adversarial_test.s: tests/unit/pid_reuse_adversarial_test.cpp.s
+.PHONY : tests/unit/pid_reuse_adversarial_test.s
+
+# target to generate assembly for a file
+tests/unit/pid_reuse_adversarial_test.cpp.s:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/rebuntu-pid-reuse-test.dir/build.make CMakeFiles/rebuntu-pid-reuse-test.dir/tests/unit/pid_reuse_adversarial_test.cpp.s
+.PHONY : tests/unit/pid_reuse_adversarial_test.cpp.s
+
 tests/unit/pipeline_test.o: tests/unit/pipeline_test.cpp.o
 .PHONY : tests/unit/pipeline_test.o
 
@@ -5652,6 +5689,7 @@ help:
 	@echo "... rebuntu-parallel-composition-test"
 	@echo "... rebuntu-parallel-discovery-test"
 	@echo "... rebuntu-peripherals"
+	@echo "... rebuntu-pid-reuse-test"
 	@echo "... rebuntu-pipeline-test"
 	@echo "... rebuntu-power-supply-adapter"
 	@echo "... rebuntu-predicates-test"
@@ -6086,6 +6124,9 @@ help:
 	@echo "... tests/unit/parallel_discovery_test.o"
 	@echo "... tests/unit/parallel_discovery_test.i"
 	@echo "... tests/unit/parallel_discovery_test.s"
+	@echo "... tests/unit/pid_reuse_adversarial_test.o"
+	@echo "... tests/unit/pid_reuse_adversarial_test.i"
+	@echo "... tests/unit/pid_reuse_adversarial_test.s"
 	@echo "... tests/unit/pipeline_test.o"
 	@echo "... tests/unit/pipeline_test.i"
 	@echo "... tests/unit/pipeline_test.s"

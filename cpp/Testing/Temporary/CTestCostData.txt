@@ -33,4 +33,5 @@ privilege_requirement_test 3 0.000631087
 privilege_helper_test 13 0.000225439
 exec_diag_test 10 0.0149899
 replay_test 5 0.000571902
+batch_command_test 1 0.00250755
 ---

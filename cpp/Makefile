@@ -2005,6 +2005,19 @@ rebuntu-replay-test/fast:
 .PHONY : rebuntu-replay-test/fast
 
 #=============================================================================
+# Target rules for targets named rebuntu-batch-command-test
+
+# Build rule for target.
+rebuntu-batch-command-test: cmake_check_build_system
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 rebuntu-batch-command-test
+.PHONY : rebuntu-batch-command-test
+
+# fast build rule for target.
+rebuntu-batch-command-test/fast:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/rebuntu-batch-command-test.dir/build.make CMakeFiles/rebuntu-batch-command-test.dir/build
+.PHONY : rebuntu-batch-command-test/fast
+
+#=============================================================================
 # Target rules for targets named rebuntu-exec-persistence
 
 # Build rule for target.
@@ -4492,6 +4505,30 @@ home/bvrznski/rebuntu/tests/unit/shell_output_capture_test.cpp.s:
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/rebuntu-shell-output-capture-test.dir/build.make CMakeFiles/rebuntu-shell-output-capture-test.dir/home/bvrznski/rebuntu/tests/unit/shell_output_capture_test.cpp.s
 .PHONY : home/bvrznski/rebuntu/tests/unit/shell_output_capture_test.cpp.s
 
+tests/unit/batch_command_test.o: tests/unit/batch_command_test.cpp.o
+.PHONY : tests/unit/batch_command_test.o
+
+# target to build an object file
+tests/unit/batch_command_test.cpp.o:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/rebuntu-batch-command-test.dir/build.make CMakeFiles/rebuntu-batch-command-test.dir/tests/unit/batch_command_test.cpp.o
+.PHONY : tests/unit/batch_command_test.cpp.o
+
+tests/unit/batch_command_test.i: tests/unit/batch_command_test.cpp.i
+.PHONY : tests/unit/batch_command_test.i
+
+# target to preprocess a source file
+tests/unit/batch_command_test.cpp.i:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/rebuntu-batch-command-test.dir/build.make CMakeFiles/rebuntu-batch-command-test.dir/tests/unit/batch_command_test.cpp.i
+.PHONY : tests/unit/batch_command_test.cpp.i
+
+tests/unit/batch_command_test.s: tests/unit/batch_command_test.cpp.s
+.PHONY : tests/unit/batch_command_test.s
+
+# target to generate assembly for a file
+tests/unit/batch_command_test.cpp.s:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/rebuntu-batch-command-test.dir/build.make CMakeFiles/rebuntu-batch-command-test.dir/tests/unit/batch_command_test.cpp.s
+.PHONY : tests/unit/batch_command_test.cpp.s
+
 tests/unit/cgroup_hierarchy_test.o: tests/unit/cgroup_hierarchy_test.cpp.o
 .PHONY : tests/unit/cgroup_hierarchy_test.o
 
@@ -5158,6 +5195,7 @@ help:
 	@echo "... NightlyTest"
 	@echo "... NightlyUpdate"
 	@echo "... rebuntu-authorization"
+	@echo "... rebuntu-batch-command-test"
 	@echo "... rebuntu-bin"
 	@echo "... rebuntu-cancellation-points"
 	@echo "... rebuntu-capability-state"
@@ -5580,6 +5618,9 @@ help:
 	@echo "... home/bvrznski/rebuntu/tests/unit/shell_output_capture_test.o"
 	@echo "... home/bvrznski/rebuntu/tests/unit/shell_output_capture_test.i"
 	@echo "... home/bvrznski/rebuntu/tests/unit/shell_output_capture_test.s"
+	@echo "... tests/unit/batch_command_test.o"
+	@echo "... tests/unit/batch_command_test.i"
+	@echo "... tests/unit/batch_command_test.s"
 	@echo "... tests/unit/cgroup_hierarchy_test.o"
 	@echo "... tests/unit/cgroup_hierarchy_test.i"
 	@echo "... tests/unit/cgroup_hierarchy_test.s"

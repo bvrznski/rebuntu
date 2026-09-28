@@ -1098,6 +1098,18 @@ add_test(NAME replay_test COMMAND rebuntu-replay-test)
 # target_link_libraries(rebuntu-shell-output-test PRIVATE rebuntu-core rebuntu-shell-output)
 # add_test(NAME shell_output_test COMMAND rebuntu-shell-output-test)
 
+# Phase 6.42: Typed Batch Command Boundary module (header-only, included via rebuntu-core)
+target_sources(rebuntu-core PRIVATE
+    ${CMAKE_CURRENT_LIST_DIR}/../src/system/command/batch.hpp
+)
+
+# Phase 6.42: Batch Command Boundary unit tests
+add_executable(rebuntu-batch-command-test
+    ${CMAKE_CURRENT_LIST_DIR}/tests/unit/batch_command_test.cpp
+)
+target_link_libraries(rebuntu-batch-command-test PRIVATE rebuntu-core)
+add_test(NAME batch_command_test COMMAND rebuntu-batch-command-test)
+
 # Phase 6.39: Execution Record Persistence module
 add_library(rebuntu-exec-persistence STATIC
     ${CMAKE_CURRENT_LIST_DIR}/../src/runtime/persistence/integration.hpp

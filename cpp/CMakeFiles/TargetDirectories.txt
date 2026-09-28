@@ -139,6 +139,7 @@
 /home/bvrznski/rebuntu/cpp/CMakeFiles/rebuntu-shell-output-capture-test.dir
 /home/bvrznski/rebuntu/cpp/CMakeFiles/rebuntu-cancellation-points.dir
 /home/bvrznski/rebuntu/cpp/CMakeFiles/rebuntu-replay-test.dir
+/home/bvrznski/rebuntu/cpp/CMakeFiles/rebuntu-batch-command-test.dir
 /home/bvrznski/rebuntu/cpp/CMakeFiles/rebuntu-exec-persistence.dir
 /home/bvrznski/rebuntu/cpp/CMakeFiles/test.dir
 /home/bvrznski/rebuntu/cpp/CMakeFiles/edit_cache.dir

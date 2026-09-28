@@ -72,3 +72,5 @@ add_test([=[shell_output_capture_test]=] "/home/bvrznski/rebuntu/cpp/rebuntu-she
 set_tests_properties([=[shell_output_capture_test]=] PROPERTIES  _BACKTRACE_TRIPLES "/home/bvrznski/rebuntu/cpp/CMakeLists.txt;1076;add_test;/home/bvrznski/rebuntu/cpp/CMakeLists.txt;0;")
 add_test([=[replay_test]=] "/home/bvrznski/rebuntu/cpp/rebuntu-replay-test")
 set_tests_properties([=[replay_test]=] PROPERTIES  _BACKTRACE_TRIPLES "/home/bvrznski/rebuntu/cpp/CMakeLists.txt;1092;add_test;/home/bvrznski/rebuntu/cpp/CMakeLists.txt;0;")
+add_test([=[batch_command_test]=] "/home/bvrznski/rebuntu/cpp/rebuntu-batch-command-test")
+set_tests_properties([=[batch_command_test]=] PROPERTIES  _BACKTRACE_TRIPLES "/home/bvrznski/rebuntu/cpp/CMakeLists.txt;1111;add_test;/home/bvrznski/rebuntu/cpp/CMakeLists.txt;0;")

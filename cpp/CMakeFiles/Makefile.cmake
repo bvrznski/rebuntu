@@ -186,5 +186,6 @@ set(CMAKE_DEPEND_INFO_FILES
   "CMakeFiles/rebuntu-cancellation-points.dir/DependInfo.cmake"
   "CMakeFiles/rebuntu-replay-test.dir/DependInfo.cmake"
   "CMakeFiles/rebuntu-batch-command-test.dir/DependInfo.cmake"
+  "CMakeFiles/rebuntu-sequential-composition-test.dir/DependInfo.cmake"
   "CMakeFiles/rebuntu-exec-persistence.dir/DependInfo.cmake"
   )

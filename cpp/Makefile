@@ -2018,6 +2018,19 @@ rebuntu-batch-command-test/fast:
 .PHONY : rebuntu-batch-command-test/fast
 
 #=============================================================================
+# Target rules for targets named rebuntu-sequential-composition-test
+
+# Build rule for target.
+rebuntu-sequential-composition-test: cmake_check_build_system
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 rebuntu-sequential-composition-test
+.PHONY : rebuntu-sequential-composition-test
+
+# fast build rule for target.
+rebuntu-sequential-composition-test/fast:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/rebuntu-sequential-composition-test.dir/build.make CMakeFiles/rebuntu-sequential-composition-test.dir/build
+.PHONY : rebuntu-sequential-composition-test/fast
+
+#=============================================================================
 # Target rules for targets named rebuntu-exec-persistence
 
 # Build rule for target.
@@ -5057,6 +5070,30 @@ tests/unit/provider_test_matrix.cpp.s:
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/rebuntu-provider-test-matrix.dir/build.make CMakeFiles/rebuntu-provider-test-matrix.dir/tests/unit/provider_test_matrix.cpp.s
 .PHONY : tests/unit/provider_test_matrix.cpp.s
 
+tests/unit/sequential_composition_test.o: tests/unit/sequential_composition_test.cpp.o
+.PHONY : tests/unit/sequential_composition_test.o
+
+# target to build an object file
+tests/unit/sequential_composition_test.cpp.o:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/rebuntu-sequential-composition-test.dir/build.make CMakeFiles/rebuntu-sequential-composition-test.dir/tests/unit/sequential_composition_test.cpp.o
+.PHONY : tests/unit/sequential_composition_test.cpp.o
+
+tests/unit/sequential_composition_test.i: tests/unit/sequential_composition_test.cpp.i
+.PHONY : tests/unit/sequential_composition_test.i
+
+# target to preprocess a source file
+tests/unit/sequential_composition_test.cpp.i:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/rebuntu-sequential-composition-test.dir/build.make CMakeFiles/rebuntu-sequential-composition-test.dir/tests/unit/sequential_composition_test.cpp.i
+.PHONY : tests/unit/sequential_composition_test.cpp.i
+
+tests/unit/sequential_composition_test.s: tests/unit/sequential_composition_test.cpp.s
+.PHONY : tests/unit/sequential_composition_test.s
+
+# target to generate assembly for a file
+tests/unit/sequential_composition_test.cpp.s:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/rebuntu-sequential-composition-test.dir/build.make CMakeFiles/rebuntu-sequential-composition-test.dir/tests/unit/sequential_composition_test.cpp.s
+.PHONY : tests/unit/sequential_composition_test.cpp.s
+
 tests/unit/shell_boundary_test.o: tests/unit/shell_boundary_test.cpp.o
 .PHONY : tests/unit/shell_boundary_test.o
 
@@ -5287,6 +5324,7 @@ help:
 	@echo "... rebuntu-scope-grammar-test"
 	@echo "... rebuntu-secrets"
 	@echo "... rebuntu-semantic-annotation"
+	@echo "... rebuntu-sequential-composition-test"
 	@echo "... rebuntu-session-utmp"
 	@echo "... rebuntu-sessions"
 	@echo "... rebuntu-setup"
@@ -5687,6 +5725,9 @@ help:
 	@echo "... tests/unit/provider_test_matrix.o"
 	@echo "... tests/unit/provider_test_matrix.i"
 	@echo "... tests/unit/provider_test_matrix.s"
+	@echo "... tests/unit/sequential_composition_test.o"
+	@echo "... tests/unit/sequential_composition_test.i"
+	@echo "... tests/unit/sequential_composition_test.s"
 	@echo "... tests/unit/shell_boundary_test.o"
 	@echo "... tests/unit/shell_boundary_test.i"
 	@echo "... tests/unit/shell_boundary_test.s"

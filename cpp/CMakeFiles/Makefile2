@@ -177,6 +177,7 @@ all: CMakeFiles/rebuntu-shell-output-capture-test.dir/all
 all: CMakeFiles/rebuntu-cancellation-points.dir/all
 all: CMakeFiles/rebuntu-replay-test.dir/all
 all: CMakeFiles/rebuntu-batch-command-test.dir/all
+all: CMakeFiles/rebuntu-sequential-composition-test.dir/all
 all: CMakeFiles/rebuntu-exec-persistence.dir/all
 .PHONY : all
 
@@ -327,6 +328,7 @@ clean: CMakeFiles/rebuntu-shell-output-capture-test.dir/clean
 clean: CMakeFiles/rebuntu-cancellation-points.dir/clean
 clean: CMakeFiles/rebuntu-replay-test.dir/clean
 clean: CMakeFiles/rebuntu-batch-command-test.dir/clean
+clean: CMakeFiles/rebuntu-sequential-composition-test.dir/clean
 clean: CMakeFiles/rebuntu-exec-persistence.dir/clean
 .PHONY : clean
 
@@ -1146,7 +1148,7 @@ CMakeFiles/rebuntu-core.dir/all: CMakeFiles/rebuntu-exec-persistence.dir/all
 
 # Build rule for subdir invocation for target.
 CMakeFiles/rebuntu-core.dir/rule: cmake_check_build_system
-	$(CMAKE_COMMAND) -E cmake_progress_start /home/bvrznski/rebuntu/cpp/CMakeFiles 71
+	$(CMAKE_COMMAND) -E cmake_progress_start /home/bvrznski/rebuntu/cpp/CMakeFiles 67
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 CMakeFiles/rebuntu-core.dir/all
 	$(CMAKE_COMMAND) -E cmake_progress_start /home/bvrznski/rebuntu/cpp/CMakeFiles 0
 .PHONY : CMakeFiles/rebuntu-core.dir/rule
@@ -1193,12 +1195,12 @@ CMakeFiles/rebuntu-observation-bounds.dir/clean:
 CMakeFiles/rebuntu-shell.dir/all:
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/rebuntu-shell.dir/build.make CMakeFiles/rebuntu-shell.dir/depend
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/rebuntu-shell.dir/build.make CMakeFiles/rebuntu-shell.dir/build
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --progress-dir=/home/bvrznski/rebuntu/cpp/CMakeFiles --progress-num=83,84,85 "Built target rebuntu-shell"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --progress-dir=/home/bvrznski/rebuntu/cpp/CMakeFiles --progress-num=84,85 "Built target rebuntu-shell"
 .PHONY : CMakeFiles/rebuntu-shell.dir/all
 
 # Build rule for subdir invocation for target.
 CMakeFiles/rebuntu-shell.dir/rule: cmake_check_build_system
-	$(CMAKE_COMMAND) -E cmake_progress_start /home/bvrznski/rebuntu/cpp/CMakeFiles 3
+	$(CMAKE_COMMAND) -E cmake_progress_start /home/bvrznski/rebuntu/cpp/CMakeFiles 2
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 CMakeFiles/rebuntu-shell.dir/all
 	$(CMAKE_COMMAND) -E cmake_progress_start /home/bvrznski/rebuntu/cpp/CMakeFiles 0
 .PHONY : CMakeFiles/rebuntu-shell.dir/rule
@@ -1353,7 +1355,7 @@ CMakeFiles/rebuntu-context-test.dir/all: CMakeFiles/rebuntu-exec-persistence.dir
 
 # Build rule for subdir invocation for target.
 CMakeFiles/rebuntu-context-test.dir/rule: cmake_check_build_system
-	$(CMAKE_COMMAND) -E cmake_progress_start /home/bvrznski/rebuntu/cpp/CMakeFiles 72
+	$(CMAKE_COMMAND) -E cmake_progress_start /home/bvrznski/rebuntu/cpp/CMakeFiles 68
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 CMakeFiles/rebuntu-context-test.dir/all
 	$(CMAKE_COMMAND) -E cmake_progress_start /home/bvrznski/rebuntu/cpp/CMakeFiles 0
 .PHONY : CMakeFiles/rebuntu-context-test.dir/rule
@@ -1400,12 +1402,12 @@ CMakeFiles/rebuntu-shell-boundary.dir/clean:
 CMakeFiles/rebuntu-shell-collision.dir/all:
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/rebuntu-shell-collision.dir/build.make CMakeFiles/rebuntu-shell-collision.dir/depend
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/rebuntu-shell-collision.dir/build.make CMakeFiles/rebuntu-shell-collision.dir/build
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --progress-dir=/home/bvrznski/rebuntu/cpp/CMakeFiles --progress-num=87 "Built target rebuntu-shell-collision"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --progress-dir=/home/bvrznski/rebuntu/cpp/CMakeFiles --progress-num= "Built target rebuntu-shell-collision"
 .PHONY : CMakeFiles/rebuntu-shell-collision.dir/all
 
 # Build rule for subdir invocation for target.
 CMakeFiles/rebuntu-shell-collision.dir/rule: cmake_check_build_system
-	$(CMAKE_COMMAND) -E cmake_progress_start /home/bvrznski/rebuntu/cpp/CMakeFiles 1
+	$(CMAKE_COMMAND) -E cmake_progress_start /home/bvrznski/rebuntu/cpp/CMakeFiles 0
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 CMakeFiles/rebuntu-shell-collision.dir/all
 	$(CMAKE_COMMAND) -E cmake_progress_start /home/bvrznski/rebuntu/cpp/CMakeFiles 0
 .PHONY : CMakeFiles/rebuntu-shell-collision.dir/rule
@@ -1530,7 +1532,7 @@ CMakeFiles/rebuntu-command-explain.dir/clean:
 CMakeFiles/rebuntu-idempotency.dir/all:
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/rebuntu-idempotency.dir/build.make CMakeFiles/rebuntu-idempotency.dir/depend
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/rebuntu-idempotency.dir/build.make CMakeFiles/rebuntu-idempotency.dir/build
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --progress-dir=/home/bvrznski/rebuntu/cpp/CMakeFiles --progress-num=41 "Built target rebuntu-idempotency"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --progress-dir=/home/bvrznski/rebuntu/cpp/CMakeFiles --progress-num=40 "Built target rebuntu-idempotency"
 .PHONY : CMakeFiles/rebuntu-idempotency.dir/all
 
 # Build rule for subdir invocation for target.
@@ -1634,12 +1636,12 @@ CMakeFiles/rebuntu-user-identity.dir/clean:
 CMakeFiles/rebuntu-group-membership.dir/all:
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/rebuntu-group-membership.dir/build.make CMakeFiles/rebuntu-group-membership.dir/depend
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/rebuntu-group-membership.dir/build.make CMakeFiles/rebuntu-group-membership.dir/build
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --progress-dir=/home/bvrznski/rebuntu/cpp/CMakeFiles --progress-num= "Built target rebuntu-group-membership"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --progress-dir=/home/bvrznski/rebuntu/cpp/CMakeFiles --progress-num=34 "Built target rebuntu-group-membership"
 .PHONY : CMakeFiles/rebuntu-group-membership.dir/all
 
 # Build rule for subdir invocation for target.
 CMakeFiles/rebuntu-group-membership.dir/rule: cmake_check_build_system
-	$(CMAKE_COMMAND) -E cmake_progress_start /home/bvrznski/rebuntu/cpp/CMakeFiles 0
+	$(CMAKE_COMMAND) -E cmake_progress_start /home/bvrznski/rebuntu/cpp/CMakeFiles 1
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 CMakeFiles/rebuntu-group-membership.dir/all
 	$(CMAKE_COMMAND) -E cmake_progress_start /home/bvrznski/rebuntu/cpp/CMakeFiles 0
 .PHONY : CMakeFiles/rebuntu-group-membership.dir/rule
@@ -1660,12 +1662,12 @@ CMakeFiles/rebuntu-group-membership.dir/clean:
 CMakeFiles/rebuntu-ownership.dir/all:
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/rebuntu-ownership.dir/build.make CMakeFiles/rebuntu-ownership.dir/depend
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/rebuntu-ownership.dir/build.make CMakeFiles/rebuntu-ownership.dir/build
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --progress-dir=/home/bvrznski/rebuntu/cpp/CMakeFiles --progress-num=61 "Built target rebuntu-ownership"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --progress-dir=/home/bvrznski/rebuntu/cpp/CMakeFiles --progress-num= "Built target rebuntu-ownership"
 .PHONY : CMakeFiles/rebuntu-ownership.dir/all
 
 # Build rule for subdir invocation for target.
 CMakeFiles/rebuntu-ownership.dir/rule: cmake_check_build_system
-	$(CMAKE_COMMAND) -E cmake_progress_start /home/bvrznski/rebuntu/cpp/CMakeFiles 1
+	$(CMAKE_COMMAND) -E cmake_progress_start /home/bvrznski/rebuntu/cpp/CMakeFiles 0
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 CMakeFiles/rebuntu-ownership.dir/all
 	$(CMAKE_COMMAND) -E cmake_progress_start /home/bvrznski/rebuntu/cpp/CMakeFiles 0
 .PHONY : CMakeFiles/rebuntu-ownership.dir/rule
@@ -1686,7 +1688,7 @@ CMakeFiles/rebuntu-ownership.dir/clean:
 CMakeFiles/rebuntu-privilege.dir/all:
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/rebuntu-privilege.dir/build.make CMakeFiles/rebuntu-privilege.dir/depend
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/rebuntu-privilege.dir/build.make CMakeFiles/rebuntu-privilege.dir/build
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --progress-dir=/home/bvrznski/rebuntu/cpp/CMakeFiles --progress-num=66 "Built target rebuntu-privilege"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --progress-dir=/home/bvrznski/rebuntu/cpp/CMakeFiles --progress-num=65 "Built target rebuntu-privilege"
 .PHONY : CMakeFiles/rebuntu-privilege.dir/all
 
 # Build rule for subdir invocation for target.
@@ -1816,12 +1818,12 @@ CMakeFiles/rebuntu-environment-discovery.dir/clean:
 CMakeFiles/rebuntu-sessions.dir/all:
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/rebuntu-sessions.dir/build.make CMakeFiles/rebuntu-sessions.dir/depend
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/rebuntu-sessions.dir/build.make CMakeFiles/rebuntu-sessions.dir/build
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --progress-dir=/home/bvrznski/rebuntu/cpp/CMakeFiles --progress-num=81 "Built target rebuntu-sessions"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --progress-dir=/home/bvrznski/rebuntu/cpp/CMakeFiles --progress-num= "Built target rebuntu-sessions"
 .PHONY : CMakeFiles/rebuntu-sessions.dir/all
 
 # Build rule for subdir invocation for target.
 CMakeFiles/rebuntu-sessions.dir/rule: cmake_check_build_system
-	$(CMAKE_COMMAND) -E cmake_progress_start /home/bvrznski/rebuntu/cpp/CMakeFiles 1
+	$(CMAKE_COMMAND) -E cmake_progress_start /home/bvrznski/rebuntu/cpp/CMakeFiles 0
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 CMakeFiles/rebuntu-sessions.dir/all
 	$(CMAKE_COMMAND) -E cmake_progress_start /home/bvrznski/rebuntu/cpp/CMakeFiles 0
 .PHONY : CMakeFiles/rebuntu-sessions.dir/rule
@@ -1868,7 +1870,7 @@ CMakeFiles/rebuntu-directories.dir/clean:
 CMakeFiles/rebuntu-secrets.dir/all:
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/rebuntu-secrets.dir/build.make CMakeFiles/rebuntu-secrets.dir/depend
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/rebuntu-secrets.dir/build.make CMakeFiles/rebuntu-secrets.dir/build
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --progress-dir=/home/bvrznski/rebuntu/cpp/CMakeFiles --progress-num=79 "Built target rebuntu-secrets"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --progress-dir=/home/bvrznski/rebuntu/cpp/CMakeFiles --progress-num=78 "Built target rebuntu-secrets"
 .PHONY : CMakeFiles/rebuntu-secrets.dir/all
 
 # Build rule for subdir invocation for target.
@@ -1920,12 +1922,12 @@ CMakeFiles/rebuntu-temp-files.dir/clean:
 CMakeFiles/rebuntu-locks.dir/all:
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/rebuntu-locks.dir/build.make CMakeFiles/rebuntu-locks.dir/depend
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/rebuntu-locks.dir/build.make CMakeFiles/rebuntu-locks.dir/build
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --progress-dir=/home/bvrznski/rebuntu/cpp/CMakeFiles --progress-num= "Built target rebuntu-locks"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --progress-dir=/home/bvrznski/rebuntu/cpp/CMakeFiles --progress-num=50 "Built target rebuntu-locks"
 .PHONY : CMakeFiles/rebuntu-locks.dir/all
 
 # Build rule for subdir invocation for target.
 CMakeFiles/rebuntu-locks.dir/rule: cmake_check_build_system
-	$(CMAKE_COMMAND) -E cmake_progress_start /home/bvrznski/rebuntu/cpp/CMakeFiles 0
+	$(CMAKE_COMMAND) -E cmake_progress_start /home/bvrznski/rebuntu/cpp/CMakeFiles 1
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 CMakeFiles/rebuntu-locks.dir/all
 	$(CMAKE_COMMAND) -E cmake_progress_start /home/bvrznski/rebuntu/cpp/CMakeFiles 0
 .PHONY : CMakeFiles/rebuntu-locks.dir/rule
@@ -1946,7 +1948,7 @@ CMakeFiles/rebuntu-locks.dir/clean:
 CMakeFiles/rebuntu-ipc.dir/all:
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/rebuntu-ipc.dir/build.make CMakeFiles/rebuntu-ipc.dir/depend
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/rebuntu-ipc.dir/build.make CMakeFiles/rebuntu-ipc.dir/build
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --progress-dir=/home/bvrznski/rebuntu/cpp/CMakeFiles --progress-num=45 "Built target rebuntu-ipc"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --progress-dir=/home/bvrznski/rebuntu/cpp/CMakeFiles --progress-num=44 "Built target rebuntu-ipc"
 .PHONY : CMakeFiles/rebuntu-ipc.dir/all
 
 # Build rule for subdir invocation for target.
@@ -1972,12 +1974,12 @@ CMakeFiles/rebuntu-ipc.dir/clean:
 CMakeFiles/rebuntu-setup.dir/all:
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/rebuntu-setup.dir/build.make CMakeFiles/rebuntu-setup.dir/depend
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/rebuntu-setup.dir/build.make CMakeFiles/rebuntu-setup.dir/build
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --progress-dir=/home/bvrznski/rebuntu/cpp/CMakeFiles --progress-num=82 "Built target rebuntu-setup"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --progress-dir=/home/bvrznski/rebuntu/cpp/CMakeFiles --progress-num=82,83 "Built target rebuntu-setup"
 .PHONY : CMakeFiles/rebuntu-setup.dir/all
 
 # Build rule for subdir invocation for target.
 CMakeFiles/rebuntu-setup.dir/rule: cmake_check_build_system
-	$(CMAKE_COMMAND) -E cmake_progress_start /home/bvrznski/rebuntu/cpp/CMakeFiles 1
+	$(CMAKE_COMMAND) -E cmake_progress_start /home/bvrznski/rebuntu/cpp/CMakeFiles 2
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 CMakeFiles/rebuntu-setup.dir/all
 	$(CMAKE_COMMAND) -E cmake_progress_start /home/bvrznski/rebuntu/cpp/CMakeFiles 0
 .PHONY : CMakeFiles/rebuntu-setup.dir/rule
@@ -1998,7 +2000,7 @@ CMakeFiles/rebuntu-setup.dir/clean:
 CMakeFiles/rebuntu-lifecycle.dir/all:
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/rebuntu-lifecycle.dir/build.make CMakeFiles/rebuntu-lifecycle.dir/depend
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/rebuntu-lifecycle.dir/build.make CMakeFiles/rebuntu-lifecycle.dir/build
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --progress-dir=/home/bvrznski/rebuntu/cpp/CMakeFiles --progress-num=50 "Built target rebuntu-lifecycle"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --progress-dir=/home/bvrznski/rebuntu/cpp/CMakeFiles --progress-num=49 "Built target rebuntu-lifecycle"
 .PHONY : CMakeFiles/rebuntu-lifecycle.dir/all
 
 # Build rule for subdir invocation for target.
@@ -2050,12 +2052,12 @@ CMakeFiles/rebuntu-events-collector.dir/clean:
 CMakeFiles/rebuntu-evidence-collector.dir/all:
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/rebuntu-evidence-collector.dir/build.make CMakeFiles/rebuntu-evidence-collector.dir/depend
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/rebuntu-evidence-collector.dir/build.make CMakeFiles/rebuntu-evidence-collector.dir/build
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --progress-dir=/home/bvrznski/rebuntu/cpp/CMakeFiles --progress-num=26 "Built target rebuntu-evidence-collector"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --progress-dir=/home/bvrznski/rebuntu/cpp/CMakeFiles --progress-num= "Built target rebuntu-evidence-collector"
 .PHONY : CMakeFiles/rebuntu-evidence-collector.dir/all
 
 # Build rule for subdir invocation for target.
 CMakeFiles/rebuntu-evidence-collector.dir/rule: cmake_check_build_system
-	$(CMAKE_COMMAND) -E cmake_progress_start /home/bvrznski/rebuntu/cpp/CMakeFiles 1
+	$(CMAKE_COMMAND) -E cmake_progress_start /home/bvrznski/rebuntu/cpp/CMakeFiles 0
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 CMakeFiles/rebuntu-evidence-collector.dir/all
 	$(CMAKE_COMMAND) -E cmake_progress_start /home/bvrznski/rebuntu/cpp/CMakeFiles 0
 .PHONY : CMakeFiles/rebuntu-evidence-collector.dir/rule
@@ -2076,12 +2078,12 @@ CMakeFiles/rebuntu-evidence-collector.dir/clean:
 CMakeFiles/rebuntu-evidence-deduplication.dir/all:
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/rebuntu-evidence-deduplication.dir/build.make CMakeFiles/rebuntu-evidence-deduplication.dir/depend
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/rebuntu-evidence-deduplication.dir/build.make CMakeFiles/rebuntu-evidence-deduplication.dir/build
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --progress-dir=/home/bvrznski/rebuntu/cpp/CMakeFiles --progress-num= "Built target rebuntu-evidence-deduplication"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --progress-dir=/home/bvrznski/rebuntu/cpp/CMakeFiles --progress-num=26 "Built target rebuntu-evidence-deduplication"
 .PHONY : CMakeFiles/rebuntu-evidence-deduplication.dir/all
 
 # Build rule for subdir invocation for target.
 CMakeFiles/rebuntu-evidence-deduplication.dir/rule: cmake_check_build_system
-	$(CMAKE_COMMAND) -E cmake_progress_start /home/bvrznski/rebuntu/cpp/CMakeFiles 0
+	$(CMAKE_COMMAND) -E cmake_progress_start /home/bvrznski/rebuntu/cpp/CMakeFiles 1
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 CMakeFiles/rebuntu-evidence-deduplication.dir/all
 	$(CMAKE_COMMAND) -E cmake_progress_start /home/bvrznski/rebuntu/cpp/CMakeFiles 0
 .PHONY : CMakeFiles/rebuntu-evidence-deduplication.dir/rule
@@ -2180,12 +2182,12 @@ CMakeFiles/rebuntu-snapshot-storage.dir/clean:
 CMakeFiles/rebuntu-journald-adapter.dir/all:
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/rebuntu-journald-adapter.dir/build.make CMakeFiles/rebuntu-journald-adapter.dir/depend
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/rebuntu-journald-adapter.dir/build.make CMakeFiles/rebuntu-journald-adapter.dir/build
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --progress-dir=/home/bvrznski/rebuntu/cpp/CMakeFiles --progress-num=48 "Built target rebuntu-journald-adapter"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --progress-dir=/home/bvrznski/rebuntu/cpp/CMakeFiles --progress-num= "Built target rebuntu-journald-adapter"
 .PHONY : CMakeFiles/rebuntu-journald-adapter.dir/all
 
 # Build rule for subdir invocation for target.
 CMakeFiles/rebuntu-journald-adapter.dir/rule: cmake_check_build_system
-	$(CMAKE_COMMAND) -E cmake_progress_start /home/bvrznski/rebuntu/cpp/CMakeFiles 1
+	$(CMAKE_COMMAND) -E cmake_progress_start /home/bvrznski/rebuntu/cpp/CMakeFiles 0
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 CMakeFiles/rebuntu-journald-adapter.dir/all
 	$(CMAKE_COMMAND) -E cmake_progress_start /home/bvrznski/rebuntu/cpp/CMakeFiles 0
 .PHONY : CMakeFiles/rebuntu-journald-adapter.dir/rule
@@ -2206,12 +2208,12 @@ CMakeFiles/rebuntu-journald-adapter.dir/clean:
 CMakeFiles/rebuntu-exec-diag.dir/all:
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/rebuntu-exec-diag.dir/build.make CMakeFiles/rebuntu-exec-diag.dir/depend
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/rebuntu-exec-diag.dir/build.make CMakeFiles/rebuntu-exec-diag.dir/build
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --progress-dir=/home/bvrznski/rebuntu/cpp/CMakeFiles --progress-num=30 "Built target rebuntu-exec-diag"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --progress-dir=/home/bvrznski/rebuntu/cpp/CMakeFiles --progress-num= "Built target rebuntu-exec-diag"
 .PHONY : CMakeFiles/rebuntu-exec-diag.dir/all
 
 # Build rule for subdir invocation for target.
 CMakeFiles/rebuntu-exec-diag.dir/rule: cmake_check_build_system
-	$(CMAKE_COMMAND) -E cmake_progress_start /home/bvrznski/rebuntu/cpp/CMakeFiles 1
+	$(CMAKE_COMMAND) -E cmake_progress_start /home/bvrznski/rebuntu/cpp/CMakeFiles 0
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 CMakeFiles/rebuntu-exec-diag.dir/all
 	$(CMAKE_COMMAND) -E cmake_progress_start /home/bvrznski/rebuntu/cpp/CMakeFiles 0
 .PHONY : CMakeFiles/rebuntu-exec-diag.dir/rule
@@ -2309,12 +2311,12 @@ CMakeFiles/rebuntu-exec-diag-test.dir/all: CMakeFiles/rebuntu-cancellation-point
 CMakeFiles/rebuntu-exec-diag-test.dir/all: CMakeFiles/rebuntu-exec-persistence.dir/all
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/rebuntu-exec-diag-test.dir/build.make CMakeFiles/rebuntu-exec-diag-test.dir/depend
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/rebuntu-exec-diag-test.dir/build.make CMakeFiles/rebuntu-exec-diag-test.dir/build
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --progress-dir=/home/bvrznski/rebuntu/cpp/CMakeFiles --progress-num= "Built target rebuntu-exec-diag-test"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --progress-dir=/home/bvrznski/rebuntu/cpp/CMakeFiles --progress-num=30 "Built target rebuntu-exec-diag-test"
 .PHONY : CMakeFiles/rebuntu-exec-diag-test.dir/all
 
 # Build rule for subdir invocation for target.
 CMakeFiles/rebuntu-exec-diag-test.dir/rule: cmake_check_build_system
-	$(CMAKE_COMMAND) -E cmake_progress_start /home/bvrznski/rebuntu/cpp/CMakeFiles 71
+	$(CMAKE_COMMAND) -E cmake_progress_start /home/bvrznski/rebuntu/cpp/CMakeFiles 68
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 CMakeFiles/rebuntu-exec-diag-test.dir/all
 	$(CMAKE_COMMAND) -E cmake_progress_start /home/bvrznski/rebuntu/cpp/CMakeFiles 0
 .PHONY : CMakeFiles/rebuntu-exec-diag-test.dir/rule
@@ -2335,7 +2337,7 @@ CMakeFiles/rebuntu-exec-diag-test.dir/clean:
 CMakeFiles/rebuntu-procfs-mounts.dir/all:
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/rebuntu-procfs-mounts.dir/build.make CMakeFiles/rebuntu-procfs-mounts.dir/depend
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/rebuntu-procfs-mounts.dir/build.make CMakeFiles/rebuntu-procfs-mounts.dir/build
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --progress-dir=/home/bvrznski/rebuntu/cpp/CMakeFiles --progress-num=71 "Built target rebuntu-procfs-mounts"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --progress-dir=/home/bvrznski/rebuntu/cpp/CMakeFiles --progress-num=70 "Built target rebuntu-procfs-mounts"
 .PHONY : CMakeFiles/rebuntu-procfs-mounts.dir/all
 
 # Build rule for subdir invocation for target.
@@ -2491,7 +2493,7 @@ CMakeFiles/rebuntu-thermal-adapter.dir/clean:
 CMakeFiles/rebuntu-peripherals.dir/all:
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/rebuntu-peripherals.dir/build.make CMakeFiles/rebuntu-peripherals.dir/depend
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/rebuntu-peripherals.dir/build.make CMakeFiles/rebuntu-peripherals.dir/build
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --progress-dir=/home/bvrznski/rebuntu/cpp/CMakeFiles --progress-num=63 "Built target rebuntu-peripherals"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --progress-dir=/home/bvrznski/rebuntu/cpp/CMakeFiles --progress-num=62 "Built target rebuntu-peripherals"
 .PHONY : CMakeFiles/rebuntu-peripherals.dir/all
 
 # Build rule for subdir invocation for target.
@@ -2543,12 +2545,12 @@ CMakeFiles/rebuntu-hotplug.dir/clean:
 CMakeFiles/rebuntu-netlink-link.dir/all:
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/rebuntu-netlink-link.dir/build.make CMakeFiles/rebuntu-netlink-link.dir/depend
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/rebuntu-netlink-link.dir/build.make CMakeFiles/rebuntu-netlink-link.dir/build
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --progress-dir=/home/bvrznski/rebuntu/cpp/CMakeFiles --progress-num= "Built target rebuntu-netlink-link"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --progress-dir=/home/bvrznski/rebuntu/cpp/CMakeFiles --progress-num=54 "Built target rebuntu-netlink-link"
 .PHONY : CMakeFiles/rebuntu-netlink-link.dir/all
 
 # Build rule for subdir invocation for target.
 CMakeFiles/rebuntu-netlink-link.dir/rule: cmake_check_build_system
-	$(CMAKE_COMMAND) -E cmake_progress_start /home/bvrznski/rebuntu/cpp/CMakeFiles 0
+	$(CMAKE_COMMAND) -E cmake_progress_start /home/bvrznski/rebuntu/cpp/CMakeFiles 1
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 CMakeFiles/rebuntu-netlink-link.dir/all
 	$(CMAKE_COMMAND) -E cmake_progress_start /home/bvrznski/rebuntu/cpp/CMakeFiles 0
 .PHONY : CMakeFiles/rebuntu-netlink-link.dir/rule
@@ -2651,7 +2653,7 @@ CMakeFiles/rebuntu-netlink-link-test.dir/all: CMakeFiles/rebuntu-exec-persistenc
 
 # Build rule for subdir invocation for target.
 CMakeFiles/rebuntu-netlink-link-test.dir/rule: cmake_check_build_system
-	$(CMAKE_COMMAND) -E cmake_progress_start /home/bvrznski/rebuntu/cpp/CMakeFiles 72
+	$(CMAKE_COMMAND) -E cmake_progress_start /home/bvrznski/rebuntu/cpp/CMakeFiles 68
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 CMakeFiles/rebuntu-netlink-link-test.dir/all
 	$(CMAKE_COMMAND) -E cmake_progress_start /home/bvrznski/rebuntu/cpp/CMakeFiles 0
 .PHONY : CMakeFiles/rebuntu-netlink-link-test.dir/rule
@@ -2775,12 +2777,12 @@ CMakeFiles/rebuntu-netlink-route-test.dir/all: CMakeFiles/rebuntu-cancellation-p
 CMakeFiles/rebuntu-netlink-route-test.dir/all: CMakeFiles/rebuntu-exec-persistence.dir/all
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/rebuntu-netlink-route-test.dir/build.make CMakeFiles/rebuntu-netlink-route-test.dir/depend
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/rebuntu-netlink-route-test.dir/build.make CMakeFiles/rebuntu-netlink-route-test.dir/build
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --progress-dir=/home/bvrznski/rebuntu/cpp/CMakeFiles --progress-num=57 "Built target rebuntu-netlink-route-test"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --progress-dir=/home/bvrznski/rebuntu/cpp/CMakeFiles --progress-num= "Built target rebuntu-netlink-route-test"
 .PHONY : CMakeFiles/rebuntu-netlink-route-test.dir/all
 
 # Build rule for subdir invocation for target.
 CMakeFiles/rebuntu-netlink-route-test.dir/rule: cmake_check_build_system
-	$(CMAKE_COMMAND) -E cmake_progress_start /home/bvrznski/rebuntu/cpp/CMakeFiles 72
+	$(CMAKE_COMMAND) -E cmake_progress_start /home/bvrznski/rebuntu/cpp/CMakeFiles 67
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 CMakeFiles/rebuntu-netlink-route-test.dir/all
 	$(CMAKE_COMMAND) -E cmake_progress_start /home/bvrznski/rebuntu/cpp/CMakeFiles 0
 .PHONY : CMakeFiles/rebuntu-netlink-route-test.dir/rule
@@ -2801,7 +2803,7 @@ CMakeFiles/rebuntu-netlink-route-test.dir/clean:
 CMakeFiles/rebuntu-netlink-socket.dir/all:
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/rebuntu-netlink-socket.dir/build.make CMakeFiles/rebuntu-netlink-socket.dir/depend
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/rebuntu-netlink-socket.dir/build.make CMakeFiles/rebuntu-netlink-socket.dir/build
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --progress-dir=/home/bvrznski/rebuntu/cpp/CMakeFiles --progress-num=58 "Built target rebuntu-netlink-socket"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --progress-dir=/home/bvrznski/rebuntu/cpp/CMakeFiles --progress-num=57 "Built target rebuntu-netlink-socket"
 .PHONY : CMakeFiles/rebuntu-netlink-socket.dir/all
 
 # Build rule for subdir invocation for target.
@@ -2904,12 +2906,12 @@ CMakeFiles/rebuntu-netlink-socket-test.dir/all: CMakeFiles/rebuntu-cancellation-
 CMakeFiles/rebuntu-netlink-socket-test.dir/all: CMakeFiles/rebuntu-exec-persistence.dir/all
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/rebuntu-netlink-socket-test.dir/build.make CMakeFiles/rebuntu-netlink-socket-test.dir/depend
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/rebuntu-netlink-socket-test.dir/build.make CMakeFiles/rebuntu-netlink-socket-test.dir/build
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --progress-dir=/home/bvrznski/rebuntu/cpp/CMakeFiles --progress-num= "Built target rebuntu-netlink-socket-test"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --progress-dir=/home/bvrznski/rebuntu/cpp/CMakeFiles --progress-num=58 "Built target rebuntu-netlink-socket-test"
 .PHONY : CMakeFiles/rebuntu-netlink-socket-test.dir/all
 
 # Build rule for subdir invocation for target.
 CMakeFiles/rebuntu-netlink-socket-test.dir/rule: cmake_check_build_system
-	$(CMAKE_COMMAND) -E cmake_progress_start /home/bvrznski/rebuntu/cpp/CMakeFiles 71
+	$(CMAKE_COMMAND) -E cmake_progress_start /home/bvrznski/rebuntu/cpp/CMakeFiles 68
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 CMakeFiles/rebuntu-netlink-socket-test.dir/all
 	$(CMAKE_COMMAND) -E cmake_progress_start /home/bvrznski/rebuntu/cpp/CMakeFiles 0
 .PHONY : CMakeFiles/rebuntu-netlink-socket-test.dir/rule
@@ -2930,12 +2932,12 @@ CMakeFiles/rebuntu-netlink-socket-test.dir/clean:
 CMakeFiles/rebuntu-drm-topology.dir/all:
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/rebuntu-drm-topology.dir/build.make CMakeFiles/rebuntu-drm-topology.dir/depend
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/rebuntu-drm-topology.dir/build.make CMakeFiles/rebuntu-drm-topology.dir/build
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --progress-dir=/home/bvrznski/rebuntu/cpp/CMakeFiles --progress-num=21 "Built target rebuntu-drm-topology"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --progress-dir=/home/bvrznski/rebuntu/cpp/CMakeFiles --progress-num= "Built target rebuntu-drm-topology"
 .PHONY : CMakeFiles/rebuntu-drm-topology.dir/all
 
 # Build rule for subdir invocation for target.
 CMakeFiles/rebuntu-drm-topology.dir/rule: cmake_check_build_system
-	$(CMAKE_COMMAND) -E cmake_progress_start /home/bvrznski/rebuntu/cpp/CMakeFiles 1
+	$(CMAKE_COMMAND) -E cmake_progress_start /home/bvrznski/rebuntu/cpp/CMakeFiles 0
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 CMakeFiles/rebuntu-drm-topology.dir/all
 	$(CMAKE_COMMAND) -E cmake_progress_start /home/bvrznski/rebuntu/cpp/CMakeFiles 0
 .PHONY : CMakeFiles/rebuntu-drm-topology.dir/rule
@@ -3033,12 +3035,12 @@ CMakeFiles/rebuntu-drm-topology-test.dir/all: CMakeFiles/rebuntu-cancellation-po
 CMakeFiles/rebuntu-drm-topology-test.dir/all: CMakeFiles/rebuntu-exec-persistence.dir/all
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/rebuntu-drm-topology-test.dir/build.make CMakeFiles/rebuntu-drm-topology-test.dir/depend
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/rebuntu-drm-topology-test.dir/build.make CMakeFiles/rebuntu-drm-topology-test.dir/build
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --progress-dir=/home/bvrznski/rebuntu/cpp/CMakeFiles --progress-num= "Built target rebuntu-drm-topology-test"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --progress-dir=/home/bvrznski/rebuntu/cpp/CMakeFiles --progress-num=21 "Built target rebuntu-drm-topology-test"
 .PHONY : CMakeFiles/rebuntu-drm-topology-test.dir/all
 
 # Build rule for subdir invocation for target.
 CMakeFiles/rebuntu-drm-topology-test.dir/rule: cmake_check_build_system
-	$(CMAKE_COMMAND) -E cmake_progress_start /home/bvrznski/rebuntu/cpp/CMakeFiles 71
+	$(CMAKE_COMMAND) -E cmake_progress_start /home/bvrznski/rebuntu/cpp/CMakeFiles 68
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 CMakeFiles/rebuntu-drm-topology-test.dir/all
 	$(CMAKE_COMMAND) -E cmake_progress_start /home/bvrznski/rebuntu/cpp/CMakeFiles 0
 .PHONY : CMakeFiles/rebuntu-drm-topology-test.dir/rule
@@ -3059,12 +3061,12 @@ CMakeFiles/rebuntu-drm-topology-test.dir/clean:
 CMakeFiles/rebuntu-procfs-process.dir/all:
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/rebuntu-procfs-process.dir/build.make CMakeFiles/rebuntu-procfs-process.dir/depend
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/rebuntu-procfs-process.dir/build.make CMakeFiles/rebuntu-procfs-process.dir/build
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --progress-dir=/home/bvrznski/rebuntu/cpp/CMakeFiles --progress-num= "Built target rebuntu-procfs-process"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --progress-dir=/home/bvrznski/rebuntu/cpp/CMakeFiles --progress-num=71 "Built target rebuntu-procfs-process"
 .PHONY : CMakeFiles/rebuntu-procfs-process.dir/all
 
 # Build rule for subdir invocation for target.
 CMakeFiles/rebuntu-procfs-process.dir/rule: cmake_check_build_system
-	$(CMAKE_COMMAND) -E cmake_progress_start /home/bvrznski/rebuntu/cpp/CMakeFiles 0
+	$(CMAKE_COMMAND) -E cmake_progress_start /home/bvrznski/rebuntu/cpp/CMakeFiles 1
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 CMakeFiles/rebuntu-procfs-process.dir/all
 	$(CMAKE_COMMAND) -E cmake_progress_start /home/bvrznski/rebuntu/cpp/CMakeFiles 0
 .PHONY : CMakeFiles/rebuntu-procfs-process.dir/rule
@@ -3167,7 +3169,7 @@ CMakeFiles/rebuntu-procfs-process-test.dir/all: CMakeFiles/rebuntu-exec-persiste
 
 # Build rule for subdir invocation for target.
 CMakeFiles/rebuntu-procfs-process-test.dir/rule: cmake_check_build_system
-	$(CMAKE_COMMAND) -E cmake_progress_start /home/bvrznski/rebuntu/cpp/CMakeFiles 72
+	$(CMAKE_COMMAND) -E cmake_progress_start /home/bvrznski/rebuntu/cpp/CMakeFiles 68
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 CMakeFiles/rebuntu-procfs-process-test.dir/all
 	$(CMAKE_COMMAND) -E cmake_progress_start /home/bvrznski/rebuntu/cpp/CMakeFiles 0
 .PHONY : CMakeFiles/rebuntu-procfs-process-test.dir/rule
@@ -3265,12 +3267,12 @@ CMakeFiles/rebuntu-isolated-provider-test.dir/all: CMakeFiles/rebuntu-cancellati
 CMakeFiles/rebuntu-isolated-provider-test.dir/all: CMakeFiles/rebuntu-exec-persistence.dir/all
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/rebuntu-isolated-provider-test.dir/build.make CMakeFiles/rebuntu-isolated-provider-test.dir/depend
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/rebuntu-isolated-provider-test.dir/build.make CMakeFiles/rebuntu-isolated-provider-test.dir/build
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --progress-dir=/home/bvrznski/rebuntu/cpp/CMakeFiles --progress-num= "Built target rebuntu-isolated-provider-test"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --progress-dir=/home/bvrznski/rebuntu/cpp/CMakeFiles --progress-num=45 "Built target rebuntu-isolated-provider-test"
 .PHONY : CMakeFiles/rebuntu-isolated-provider-test.dir/all
 
 # Build rule for subdir invocation for target.
 CMakeFiles/rebuntu-isolated-provider-test.dir/rule: cmake_check_build_system
-	$(CMAKE_COMMAND) -E cmake_progress_start /home/bvrznski/rebuntu/cpp/CMakeFiles 71
+	$(CMAKE_COMMAND) -E cmake_progress_start /home/bvrznski/rebuntu/cpp/CMakeFiles 68
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 CMakeFiles/rebuntu-isolated-provider-test.dir/all
 	$(CMAKE_COMMAND) -E cmake_progress_start /home/bvrznski/rebuntu/cpp/CMakeFiles 0
 .PHONY : CMakeFiles/rebuntu-isolated-provider-test.dir/rule
@@ -3373,7 +3375,7 @@ CMakeFiles/rebuntu-command-model-test.dir/all: CMakeFiles/rebuntu-exec-persisten
 
 # Build rule for subdir invocation for target.
 CMakeFiles/rebuntu-command-model-test.dir/rule: cmake_check_build_system
-	$(CMAKE_COMMAND) -E cmake_progress_start /home/bvrznski/rebuntu/cpp/CMakeFiles 72
+	$(CMAKE_COMMAND) -E cmake_progress_start /home/bvrznski/rebuntu/cpp/CMakeFiles 68
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 CMakeFiles/rebuntu-command-model-test.dir/all
 	$(CMAKE_COMMAND) -E cmake_progress_start /home/bvrznski/rebuntu/cpp/CMakeFiles 0
 .PHONY : CMakeFiles/rebuntu-command-model-test.dir/rule
@@ -3476,7 +3478,7 @@ CMakeFiles/rebuntu-collision-scanner-test.dir/all: CMakeFiles/rebuntu-exec-persi
 
 # Build rule for subdir invocation for target.
 CMakeFiles/rebuntu-collision-scanner-test.dir/rule: cmake_check_build_system
-	$(CMAKE_COMMAND) -E cmake_progress_start /home/bvrznski/rebuntu/cpp/CMakeFiles 72
+	$(CMAKE_COMMAND) -E cmake_progress_start /home/bvrznski/rebuntu/cpp/CMakeFiles 68
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 CMakeFiles/rebuntu-collision-scanner-test.dir/all
 	$(CMAKE_COMMAND) -E cmake_progress_start /home/bvrznski/rebuntu/cpp/CMakeFiles 0
 .PHONY : CMakeFiles/rebuntu-collision-scanner-test.dir/rule
@@ -3574,12 +3576,12 @@ CMakeFiles/rebuntu-predicates-test.dir/all: CMakeFiles/rebuntu-cancellation-poin
 CMakeFiles/rebuntu-predicates-test.dir/all: CMakeFiles/rebuntu-exec-persistence.dir/all
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/rebuntu-predicates-test.dir/build.make CMakeFiles/rebuntu-predicates-test.dir/depend
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/rebuntu-predicates-test.dir/build.make CMakeFiles/rebuntu-predicates-test.dir/build
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --progress-dir=/home/bvrznski/rebuntu/cpp/CMakeFiles --progress-num=65 "Built target rebuntu-predicates-test"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --progress-dir=/home/bvrznski/rebuntu/cpp/CMakeFiles --progress-num= "Built target rebuntu-predicates-test"
 .PHONY : CMakeFiles/rebuntu-predicates-test.dir/all
 
 # Build rule for subdir invocation for target.
 CMakeFiles/rebuntu-predicates-test.dir/rule: cmake_check_build_system
-	$(CMAKE_COMMAND) -E cmake_progress_start /home/bvrznski/rebuntu/cpp/CMakeFiles 72
+	$(CMAKE_COMMAND) -E cmake_progress_start /home/bvrznski/rebuntu/cpp/CMakeFiles 67
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 CMakeFiles/rebuntu-predicates-test.dir/all
 	$(CMAKE_COMMAND) -E cmake_progress_start /home/bvrznski/rebuntu/cpp/CMakeFiles 0
 .PHONY : CMakeFiles/rebuntu-predicates-test.dir/rule
@@ -3677,12 +3679,12 @@ CMakeFiles/rebuntu-scope-grammar-test.dir/all: CMakeFiles/rebuntu-cancellation-p
 CMakeFiles/rebuntu-scope-grammar-test.dir/all: CMakeFiles/rebuntu-exec-persistence.dir/all
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/rebuntu-scope-grammar-test.dir/build.make CMakeFiles/rebuntu-scope-grammar-test.dir/depend
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/rebuntu-scope-grammar-test.dir/build.make CMakeFiles/rebuntu-scope-grammar-test.dir/build
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --progress-dir=/home/bvrznski/rebuntu/cpp/CMakeFiles --progress-num=78 "Built target rebuntu-scope-grammar-test"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --progress-dir=/home/bvrznski/rebuntu/cpp/CMakeFiles --progress-num= "Built target rebuntu-scope-grammar-test"
 .PHONY : CMakeFiles/rebuntu-scope-grammar-test.dir/all
 
 # Build rule for subdir invocation for target.
 CMakeFiles/rebuntu-scope-grammar-test.dir/rule: cmake_check_build_system
-	$(CMAKE_COMMAND) -E cmake_progress_start /home/bvrznski/rebuntu/cpp/CMakeFiles 72
+	$(CMAKE_COMMAND) -E cmake_progress_start /home/bvrznski/rebuntu/cpp/CMakeFiles 67
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 CMakeFiles/rebuntu-scope-grammar-test.dir/all
 	$(CMAKE_COMMAND) -E cmake_progress_start /home/bvrznski/rebuntu/cpp/CMakeFiles 0
 .PHONY : CMakeFiles/rebuntu-scope-grammar-test.dir/rule
@@ -3780,12 +3782,12 @@ CMakeFiles/rebuntu-pipeline-test.dir/all: CMakeFiles/rebuntu-cancellation-points
 CMakeFiles/rebuntu-pipeline-test.dir/all: CMakeFiles/rebuntu-exec-persistence.dir/all
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/rebuntu-pipeline-test.dir/build.make CMakeFiles/rebuntu-pipeline-test.dir/depend
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/rebuntu-pipeline-test.dir/build.make CMakeFiles/rebuntu-pipeline-test.dir/build
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --progress-dir=/home/bvrznski/rebuntu/cpp/CMakeFiles --progress-num= "Built target rebuntu-pipeline-test"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --progress-dir=/home/bvrznski/rebuntu/cpp/CMakeFiles --progress-num=63 "Built target rebuntu-pipeline-test"
 .PHONY : CMakeFiles/rebuntu-pipeline-test.dir/all
 
 # Build rule for subdir invocation for target.
 CMakeFiles/rebuntu-pipeline-test.dir/rule: cmake_check_build_system
-	$(CMAKE_COMMAND) -E cmake_progress_start /home/bvrznski/rebuntu/cpp/CMakeFiles 71
+	$(CMAKE_COMMAND) -E cmake_progress_start /home/bvrznski/rebuntu/cpp/CMakeFiles 68
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 CMakeFiles/rebuntu-pipeline-test.dir/all
 	$(CMAKE_COMMAND) -E cmake_progress_start /home/bvrznski/rebuntu/cpp/CMakeFiles 0
 .PHONY : CMakeFiles/rebuntu-pipeline-test.dir/rule
@@ -3888,7 +3890,7 @@ CMakeFiles/rebuntu-value-parsers-test.dir/all: CMakeFiles/rebuntu-exec-persisten
 
 # Build rule for subdir invocation for target.
 CMakeFiles/rebuntu-value-parsers-test.dir/rule: cmake_check_build_system
-	$(CMAKE_COMMAND) -E cmake_progress_start /home/bvrznski/rebuntu/cpp/CMakeFiles 72
+	$(CMAKE_COMMAND) -E cmake_progress_start /home/bvrznski/rebuntu/cpp/CMakeFiles 68
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 CMakeFiles/rebuntu-value-parsers-test.dir/all
 	$(CMAKE_COMMAND) -E cmake_progress_start /home/bvrznski/rebuntu/cpp/CMakeFiles 0
 .PHONY : CMakeFiles/rebuntu-value-parsers-test.dir/rule
@@ -3909,12 +3911,12 @@ CMakeFiles/rebuntu-value-parsers-test.dir/clean:
 CMakeFiles/rebuntu-procfs-modules.dir/all:
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/rebuntu-procfs-modules.dir/build.make CMakeFiles/rebuntu-procfs-modules.dir/depend
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/rebuntu-procfs-modules.dir/build.make CMakeFiles/rebuntu-procfs-modules.dir/build
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --progress-dir=/home/bvrznski/rebuntu/cpp/CMakeFiles --progress-num=69 "Built target rebuntu-procfs-modules"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --progress-dir=/home/bvrznski/rebuntu/cpp/CMakeFiles --progress-num= "Built target rebuntu-procfs-modules"
 .PHONY : CMakeFiles/rebuntu-procfs-modules.dir/all
 
 # Build rule for subdir invocation for target.
 CMakeFiles/rebuntu-procfs-modules.dir/rule: cmake_check_build_system
-	$(CMAKE_COMMAND) -E cmake_progress_start /home/bvrznski/rebuntu/cpp/CMakeFiles 1
+	$(CMAKE_COMMAND) -E cmake_progress_start /home/bvrznski/rebuntu/cpp/CMakeFiles 0
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 CMakeFiles/rebuntu-procfs-modules.dir/all
 	$(CMAKE_COMMAND) -E cmake_progress_start /home/bvrznski/rebuntu/cpp/CMakeFiles 0
 .PHONY : CMakeFiles/rebuntu-procfs-modules.dir/rule
@@ -3987,7 +3989,7 @@ CMakeFiles/rebuntu-dpkg-package-inventory.dir/clean:
 CMakeFiles/rebuntu-semantic-annotation.dir/all:
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/rebuntu-semantic-annotation.dir/build.make CMakeFiles/rebuntu-semantic-annotation.dir/depend
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/rebuntu-semantic-annotation.dir/build.make CMakeFiles/rebuntu-semantic-annotation.dir/build
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --progress-dir=/home/bvrznski/rebuntu/cpp/CMakeFiles --progress-num=80 "Built target rebuntu-semantic-annotation"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --progress-dir=/home/bvrznski/rebuntu/cpp/CMakeFiles --progress-num=79 "Built target rebuntu-semantic-annotation"
 .PHONY : CMakeFiles/rebuntu-semantic-annotation.dir/all
 
 # Build rule for subdir invocation for target.
@@ -4121,7 +4123,7 @@ CMakeFiles/rebuntu-systemd-service-test.dir/all: CMakeFiles/rebuntu-exec-persist
 
 # Build rule for subdir invocation for target.
 CMakeFiles/rebuntu-systemd-service-test.dir/rule: cmake_check_build_system
-	$(CMAKE_COMMAND) -E cmake_progress_start /home/bvrznski/rebuntu/cpp/CMakeFiles 72
+	$(CMAKE_COMMAND) -E cmake_progress_start /home/bvrznski/rebuntu/cpp/CMakeFiles 68
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 CMakeFiles/rebuntu-systemd-service-test.dir/all
 	$(CMAKE_COMMAND) -E cmake_progress_start /home/bvrznski/rebuntu/cpp/CMakeFiles 0
 .PHONY : CMakeFiles/rebuntu-systemd-service-test.dir/rule
@@ -4219,12 +4221,12 @@ CMakeFiles/rebuntu-procfs-modules-test.dir/all: CMakeFiles/rebuntu-cancellation-
 CMakeFiles/rebuntu-procfs-modules-test.dir/all: CMakeFiles/rebuntu-exec-persistence.dir/all
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/rebuntu-procfs-modules-test.dir/build.make CMakeFiles/rebuntu-procfs-modules-test.dir/depend
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/rebuntu-procfs-modules-test.dir/build.make CMakeFiles/rebuntu-procfs-modules-test.dir/build
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --progress-dir=/home/bvrznski/rebuntu/cpp/CMakeFiles --progress-num=70 "Built target rebuntu-procfs-modules-test"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --progress-dir=/home/bvrznski/rebuntu/cpp/CMakeFiles --progress-num=69 "Built target rebuntu-procfs-modules-test"
 .PHONY : CMakeFiles/rebuntu-procfs-modules-test.dir/all
 
 # Build rule for subdir invocation for target.
 CMakeFiles/rebuntu-procfs-modules-test.dir/rule: cmake_check_build_system
-	$(CMAKE_COMMAND) -E cmake_progress_start /home/bvrznski/rebuntu/cpp/CMakeFiles 72
+	$(CMAKE_COMMAND) -E cmake_progress_start /home/bvrznski/rebuntu/cpp/CMakeFiles 68
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 CMakeFiles/rebuntu-procfs-modules-test.dir/all
 	$(CMAKE_COMMAND) -E cmake_progress_start /home/bvrznski/rebuntu/cpp/CMakeFiles 0
 .PHONY : CMakeFiles/rebuntu-procfs-modules-test.dir/rule
@@ -4327,7 +4329,7 @@ CMakeFiles/rebuntu-cgroup-hierarchy-test.dir/all: CMakeFiles/rebuntu-exec-persis
 
 # Build rule for subdir invocation for target.
 CMakeFiles/rebuntu-cgroup-hierarchy-test.dir/rule: cmake_check_build_system
-	$(CMAKE_COMMAND) -E cmake_progress_start /home/bvrznski/rebuntu/cpp/CMakeFiles 72
+	$(CMAKE_COMMAND) -E cmake_progress_start /home/bvrznski/rebuntu/cpp/CMakeFiles 68
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 CMakeFiles/rebuntu-cgroup-hierarchy-test.dir/all
 	$(CMAKE_COMMAND) -E cmake_progress_start /home/bvrznski/rebuntu/cpp/CMakeFiles 0
 .PHONY : CMakeFiles/rebuntu-cgroup-hierarchy-test.dir/rule
@@ -4426,7 +4428,7 @@ CMakeFiles/rebuntu-health-monitor.dir/clean:
 CMakeFiles/rebuntu-kernel-fault-detector.dir/all:
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/rebuntu-kernel-fault-detector.dir/build.make CMakeFiles/rebuntu-kernel-fault-detector.dir/depend
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/rebuntu-kernel-fault-detector.dir/build.make CMakeFiles/rebuntu-kernel-fault-detector.dir/build
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --progress-dir=/home/bvrznski/rebuntu/cpp/CMakeFiles --progress-num=49 "Built target rebuntu-kernel-fault-detector"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --progress-dir=/home/bvrznski/rebuntu/cpp/CMakeFiles --progress-num=48 "Built target rebuntu-kernel-fault-detector"
 .PHONY : CMakeFiles/rebuntu-kernel-fault-detector.dir/all
 
 # Build rule for subdir invocation for target.
@@ -4478,12 +4480,12 @@ CMakeFiles/rebuntu-storage-health-monitor.dir/clean:
 CMakeFiles/rebuntu-cpu-memory-thermal-monitor.dir/all:
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/rebuntu-cpu-memory-thermal-monitor.dir/build.make CMakeFiles/rebuntu-cpu-memory-thermal-monitor.dir/depend
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/rebuntu-cpu-memory-thermal-monitor.dir/build.make CMakeFiles/rebuntu-cpu-memory-thermal-monitor.dir/build
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --progress-dir=/home/bvrznski/rebuntu/cpp/CMakeFiles --progress-num=17 "Built target rebuntu-cpu-memory-thermal-monitor"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --progress-dir=/home/bvrznski/rebuntu/cpp/CMakeFiles --progress-num= "Built target rebuntu-cpu-memory-thermal-monitor"
 .PHONY : CMakeFiles/rebuntu-cpu-memory-thermal-monitor.dir/all
 
 # Build rule for subdir invocation for target.
 CMakeFiles/rebuntu-cpu-memory-thermal-monitor.dir/rule: cmake_check_build_system
-	$(CMAKE_COMMAND) -E cmake_progress_start /home/bvrznski/rebuntu/cpp/CMakeFiles 1
+	$(CMAKE_COMMAND) -E cmake_progress_start /home/bvrznski/rebuntu/cpp/CMakeFiles 0
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 CMakeFiles/rebuntu-cpu-memory-thermal-monitor.dir/all
 	$(CMAKE_COMMAND) -E cmake_progress_start /home/bvrznski/rebuntu/cpp/CMakeFiles 0
 .PHONY : CMakeFiles/rebuntu-cpu-memory-thermal-monitor.dir/rule
@@ -4504,12 +4506,12 @@ CMakeFiles/rebuntu-cpu-memory-thermal-monitor.dir/clean:
 CMakeFiles/rebuntu-gpu-health-monitor.dir/all:
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/rebuntu-gpu-health-monitor.dir/build.make CMakeFiles/rebuntu-gpu-health-monitor.dir/depend
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/rebuntu-gpu-health-monitor.dir/build.make CMakeFiles/rebuntu-gpu-health-monitor.dir/build
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --progress-dir=/home/bvrznski/rebuntu/cpp/CMakeFiles --progress-num=34 "Built target rebuntu-gpu-health-monitor"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --progress-dir=/home/bvrznski/rebuntu/cpp/CMakeFiles --progress-num= "Built target rebuntu-gpu-health-monitor"
 .PHONY : CMakeFiles/rebuntu-gpu-health-monitor.dir/all
 
 # Build rule for subdir invocation for target.
 CMakeFiles/rebuntu-gpu-health-monitor.dir/rule: cmake_check_build_system
-	$(CMAKE_COMMAND) -E cmake_progress_start /home/bvrznski/rebuntu/cpp/CMakeFiles 1
+	$(CMAKE_COMMAND) -E cmake_progress_start /home/bvrznski/rebuntu/cpp/CMakeFiles 0
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 CMakeFiles/rebuntu-gpu-health-monitor.dir/all
 	$(CMAKE_COMMAND) -E cmake_progress_start /home/bvrznski/rebuntu/cpp/CMakeFiles 0
 .PHONY : CMakeFiles/rebuntu-gpu-health-monitor.dir/rule
@@ -4530,12 +4532,12 @@ CMakeFiles/rebuntu-gpu-health-monitor.dir/clean:
 CMakeFiles/rebuntu-internal-alerts.dir/all:
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/rebuntu-internal-alerts.dir/build.make CMakeFiles/rebuntu-internal-alerts.dir/depend
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/rebuntu-internal-alerts.dir/build.make CMakeFiles/rebuntu-internal-alerts.dir/build
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --progress-dir=/home/bvrznski/rebuntu/cpp/CMakeFiles --progress-num=44 "Built target rebuntu-internal-alerts"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --progress-dir=/home/bvrznski/rebuntu/cpp/CMakeFiles --progress-num= "Built target rebuntu-internal-alerts"
 .PHONY : CMakeFiles/rebuntu-internal-alerts.dir/all
 
 # Build rule for subdir invocation for target.
 CMakeFiles/rebuntu-internal-alerts.dir/rule: cmake_check_build_system
-	$(CMAKE_COMMAND) -E cmake_progress_start /home/bvrznski/rebuntu/cpp/CMakeFiles 1
+	$(CMAKE_COMMAND) -E cmake_progress_start /home/bvrznski/rebuntu/cpp/CMakeFiles 0
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 CMakeFiles/rebuntu-internal-alerts.dir/all
 	$(CMAKE_COMMAND) -E cmake_progress_start /home/bvrznski/rebuntu/cpp/CMakeFiles 0
 .PHONY : CMakeFiles/rebuntu-internal-alerts.dir/rule
@@ -4556,12 +4558,12 @@ CMakeFiles/rebuntu-internal-alerts.dir/clean:
 CMakeFiles/rebuntu-session-utmp.dir/all:
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/rebuntu-session-utmp.dir/build.make CMakeFiles/rebuntu-session-utmp.dir/depend
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/rebuntu-session-utmp.dir/build.make CMakeFiles/rebuntu-session-utmp.dir/build
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --progress-dir=/home/bvrznski/rebuntu/cpp/CMakeFiles --progress-num= "Built target rebuntu-session-utmp"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --progress-dir=/home/bvrznski/rebuntu/cpp/CMakeFiles --progress-num=81 "Built target rebuntu-session-utmp"
 .PHONY : CMakeFiles/rebuntu-session-utmp.dir/all
 
 # Build rule for subdir invocation for target.
 CMakeFiles/rebuntu-session-utmp.dir/rule: cmake_check_build_system
-	$(CMAKE_COMMAND) -E cmake_progress_start /home/bvrznski/rebuntu/cpp/CMakeFiles 0
+	$(CMAKE_COMMAND) -E cmake_progress_start /home/bvrznski/rebuntu/cpp/CMakeFiles 1
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 CMakeFiles/rebuntu-session-utmp.dir/all
 	$(CMAKE_COMMAND) -E cmake_progress_start /home/bvrznski/rebuntu/cpp/CMakeFiles 0
 .PHONY : CMakeFiles/rebuntu-session-utmp.dir/rule
@@ -4608,7 +4610,7 @@ CMakeFiles/rebuntu-cgroup-hierarchy-adapter.dir/clean:
 CMakeFiles/rebuntu-reporting.dir/all:
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/rebuntu-reporting.dir/build.make CMakeFiles/rebuntu-reporting.dir/depend
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/rebuntu-reporting.dir/build.make CMakeFiles/rebuntu-reporting.dir/build
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --progress-dir=/home/bvrznski/rebuntu/cpp/CMakeFiles --progress-num=76 "Built target rebuntu-reporting"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --progress-dir=/home/bvrznski/rebuntu/cpp/CMakeFiles --progress-num=75 "Built target rebuntu-reporting"
 .PHONY : CMakeFiles/rebuntu-reporting.dir/all
 
 # Build rule for subdir invocation for target.
@@ -4716,7 +4718,7 @@ CMakeFiles/rebuntu-evidence-deduplication-test.dir/all: CMakeFiles/rebuntu-exec-
 
 # Build rule for subdir invocation for target.
 CMakeFiles/rebuntu-evidence-deduplication-test.dir/rule: cmake_check_build_system
-	$(CMAKE_COMMAND) -E cmake_progress_start /home/bvrznski/rebuntu/cpp/CMakeFiles 72
+	$(CMAKE_COMMAND) -E cmake_progress_start /home/bvrznski/rebuntu/cpp/CMakeFiles 68
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 CMakeFiles/rebuntu-evidence-deduplication-test.dir/all
 	$(CMAKE_COMMAND) -E cmake_progress_start /home/bvrznski/rebuntu/cpp/CMakeFiles 0
 .PHONY : CMakeFiles/rebuntu-evidence-deduplication-test.dir/rule
@@ -4845,7 +4847,7 @@ CMakeFiles/rebuntu-hang-stall-jam-detector-test.dir/all: CMakeFiles/rebuntu-exec
 
 # Build rule for subdir invocation for target.
 CMakeFiles/rebuntu-hang-stall-jam-detector-test.dir/rule: cmake_check_build_system
-	$(CMAKE_COMMAND) -E cmake_progress_start /home/bvrznski/rebuntu/cpp/CMakeFiles 72
+	$(CMAKE_COMMAND) -E cmake_progress_start /home/bvrznski/rebuntu/cpp/CMakeFiles 68
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 CMakeFiles/rebuntu-hang-stall-jam-detector-test.dir/all
 	$(CMAKE_COMMAND) -E cmake_progress_start /home/bvrznski/rebuntu/cpp/CMakeFiles 0
 .PHONY : CMakeFiles/rebuntu-hang-stall-jam-detector-test.dir/rule
@@ -4943,12 +4945,12 @@ CMakeFiles/rebuntu-parallel-discovery-test.dir/all: CMakeFiles/rebuntu-cancellat
 CMakeFiles/rebuntu-parallel-discovery-test.dir/all: CMakeFiles/rebuntu-exec-persistence.dir/all
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/rebuntu-parallel-discovery-test.dir/build.make CMakeFiles/rebuntu-parallel-discovery-test.dir/depend
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/rebuntu-parallel-discovery-test.dir/build.make CMakeFiles/rebuntu-parallel-discovery-test.dir/build
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --progress-dir=/home/bvrznski/rebuntu/cpp/CMakeFiles --progress-num=62 "Built target rebuntu-parallel-discovery-test"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --progress-dir=/home/bvrznski/rebuntu/cpp/CMakeFiles --progress-num=61 "Built target rebuntu-parallel-discovery-test"
 .PHONY : CMakeFiles/rebuntu-parallel-discovery-test.dir/all
 
 # Build rule for subdir invocation for target.
 CMakeFiles/rebuntu-parallel-discovery-test.dir/rule: cmake_check_build_system
-	$(CMAKE_COMMAND) -E cmake_progress_start /home/bvrznski/rebuntu/cpp/CMakeFiles 72
+	$(CMAKE_COMMAND) -E cmake_progress_start /home/bvrznski/rebuntu/cpp/CMakeFiles 68
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 CMakeFiles/rebuntu-parallel-discovery-test.dir/all
 	$(CMAKE_COMMAND) -E cmake_progress_start /home/bvrznski/rebuntu/cpp/CMakeFiles 0
 .PHONY : CMakeFiles/rebuntu-parallel-discovery-test.dir/rule
@@ -5051,7 +5053,7 @@ CMakeFiles/rebuntu-discovery-resync-test.dir/all: CMakeFiles/rebuntu-exec-persis
 
 # Build rule for subdir invocation for target.
 CMakeFiles/rebuntu-discovery-resync-test.dir/rule: cmake_check_build_system
-	$(CMAKE_COMMAND) -E cmake_progress_start /home/bvrznski/rebuntu/cpp/CMakeFiles 72
+	$(CMAKE_COMMAND) -E cmake_progress_start /home/bvrznski/rebuntu/cpp/CMakeFiles 68
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 CMakeFiles/rebuntu-discovery-resync-test.dir/all
 	$(CMAKE_COMMAND) -E cmake_progress_start /home/bvrznski/rebuntu/cpp/CMakeFiles 0
 .PHONY : CMakeFiles/rebuntu-discovery-resync-test.dir/rule
@@ -5154,7 +5156,7 @@ CMakeFiles/rebuntu-cli-inventory.dir/all: CMakeFiles/rebuntu-exec-persistence.di
 
 # Build rule for subdir invocation for target.
 CMakeFiles/rebuntu-cli-inventory.dir/rule: cmake_check_build_system
-	$(CMAKE_COMMAND) -E cmake_progress_start /home/bvrznski/rebuntu/cpp/CMakeFiles 72
+	$(CMAKE_COMMAND) -E cmake_progress_start /home/bvrznski/rebuntu/cpp/CMakeFiles 68
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 CMakeFiles/rebuntu-cli-inventory.dir/all
 	$(CMAKE_COMMAND) -E cmake_progress_start /home/bvrznski/rebuntu/cpp/CMakeFiles 0
 .PHONY : CMakeFiles/rebuntu-cli-inventory.dir/rule
@@ -5258,7 +5260,7 @@ CMakeFiles/rebuntu-cli-inventory-test.dir/all: CMakeFiles/rebuntu-exec-persisten
 
 # Build rule for subdir invocation for target.
 CMakeFiles/rebuntu-cli-inventory-test.dir/rule: cmake_check_build_system
-	$(CMAKE_COMMAND) -E cmake_progress_start /home/bvrznski/rebuntu/cpp/CMakeFiles 73
+	$(CMAKE_COMMAND) -E cmake_progress_start /home/bvrznski/rebuntu/cpp/CMakeFiles 69
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 CMakeFiles/rebuntu-cli-inventory-test.dir/all
 	$(CMAKE_COMMAND) -E cmake_progress_start /home/bvrznski/rebuntu/cpp/CMakeFiles 0
 .PHONY : CMakeFiles/rebuntu-cli-inventory-test.dir/rule
@@ -5362,7 +5364,7 @@ CMakeFiles/rebuntu-bin.dir/all: CMakeFiles/rebuntu-exec-persistence.dir/all
 
 # Build rule for subdir invocation for target.
 CMakeFiles/rebuntu-bin.dir/rule: cmake_check_build_system
-	$(CMAKE_COMMAND) -E cmake_progress_start /home/bvrznski/rebuntu/cpp/CMakeFiles 73
+	$(CMAKE_COMMAND) -E cmake_progress_start /home/bvrznski/rebuntu/cpp/CMakeFiles 69
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 CMakeFiles/rebuntu-bin.dir/all
 	$(CMAKE_COMMAND) -E cmake_progress_start /home/bvrznski/rebuntu/cpp/CMakeFiles 0
 .PHONY : CMakeFiles/rebuntu-bin.dir/rule
@@ -5465,7 +5467,7 @@ CMakeFiles/rebuntu-exit-result-test.dir/all: CMakeFiles/rebuntu-exec-persistence
 
 # Build rule for subdir invocation for target.
 CMakeFiles/rebuntu-exit-result-test.dir/rule: cmake_check_build_system
-	$(CMAKE_COMMAND) -E cmake_progress_start /home/bvrznski/rebuntu/cpp/CMakeFiles 72
+	$(CMAKE_COMMAND) -E cmake_progress_start /home/bvrznski/rebuntu/cpp/CMakeFiles 68
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 CMakeFiles/rebuntu-exit-result-test.dir/all
 	$(CMAKE_COMMAND) -E cmake_progress_start /home/bvrznski/rebuntu/cpp/CMakeFiles 0
 .PHONY : CMakeFiles/rebuntu-exit-result-test.dir/rule
@@ -5563,12 +5565,12 @@ CMakeFiles/rebuntu-idempotency-test.dir/all: CMakeFiles/rebuntu-cancellation-poi
 CMakeFiles/rebuntu-idempotency-test.dir/all: CMakeFiles/rebuntu-exec-persistence.dir/all
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/rebuntu-idempotency-test.dir/build.make CMakeFiles/rebuntu-idempotency-test.dir/depend
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/rebuntu-idempotency-test.dir/build.make CMakeFiles/rebuntu-idempotency-test.dir/build
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --progress-dir=/home/bvrznski/rebuntu/cpp/CMakeFiles --progress-num= "Built target rebuntu-idempotency-test"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --progress-dir=/home/bvrznski/rebuntu/cpp/CMakeFiles --progress-num=41 "Built target rebuntu-idempotency-test"
 .PHONY : CMakeFiles/rebuntu-idempotency-test.dir/all
 
 # Build rule for subdir invocation for target.
 CMakeFiles/rebuntu-idempotency-test.dir/rule: cmake_check_build_system
-	$(CMAKE_COMMAND) -E cmake_progress_start /home/bvrznski/rebuntu/cpp/CMakeFiles 71
+	$(CMAKE_COMMAND) -E cmake_progress_start /home/bvrznski/rebuntu/cpp/CMakeFiles 68
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 CMakeFiles/rebuntu-idempotency-test.dir/all
 	$(CMAKE_COMMAND) -E cmake_progress_start /home/bvrznski/rebuntu/cpp/CMakeFiles 0
 .PHONY : CMakeFiles/rebuntu-idempotency-test.dir/rule
@@ -5666,12 +5668,12 @@ CMakeFiles/rebuntu-retry-mechanics-test.dir/all: CMakeFiles/rebuntu-cancellation
 CMakeFiles/rebuntu-retry-mechanics-test.dir/all: CMakeFiles/rebuntu-exec-persistence.dir/all
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/rebuntu-retry-mechanics-test.dir/build.make CMakeFiles/rebuntu-retry-mechanics-test.dir/depend
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/rebuntu-retry-mechanics-test.dir/build.make CMakeFiles/rebuntu-retry-mechanics-test.dir/build
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --progress-dir=/home/bvrznski/rebuntu/cpp/CMakeFiles --progress-num= "Built target rebuntu-retry-mechanics-test"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --progress-dir=/home/bvrznski/rebuntu/cpp/CMakeFiles --progress-num=76 "Built target rebuntu-retry-mechanics-test"
 .PHONY : CMakeFiles/rebuntu-retry-mechanics-test.dir/all
 
 # Build rule for subdir invocation for target.
 CMakeFiles/rebuntu-retry-mechanics-test.dir/rule: cmake_check_build_system
-	$(CMAKE_COMMAND) -E cmake_progress_start /home/bvrznski/rebuntu/cpp/CMakeFiles 71
+	$(CMAKE_COMMAND) -E cmake_progress_start /home/bvrznski/rebuntu/cpp/CMakeFiles 68
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 CMakeFiles/rebuntu-retry-mechanics-test.dir/all
 	$(CMAKE_COMMAND) -E cmake_progress_start /home/bvrznski/rebuntu/cpp/CMakeFiles 0
 .PHONY : CMakeFiles/rebuntu-retry-mechanics-test.dir/rule
@@ -5774,7 +5776,7 @@ CMakeFiles/rebuntu-monotonic-deadline-test.dir/all: CMakeFiles/rebuntu-exec-pers
 
 # Build rule for subdir invocation for target.
 CMakeFiles/rebuntu-monotonic-deadline-test.dir/rule: cmake_check_build_system
-	$(CMAKE_COMMAND) -E cmake_progress_start /home/bvrznski/rebuntu/cpp/CMakeFiles 72
+	$(CMAKE_COMMAND) -E cmake_progress_start /home/bvrznski/rebuntu/cpp/CMakeFiles 68
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 CMakeFiles/rebuntu-monotonic-deadline-test.dir/all
 	$(CMAKE_COMMAND) -E cmake_progress_start /home/bvrznski/rebuntu/cpp/CMakeFiles 0
 .PHONY : CMakeFiles/rebuntu-monotonic-deadline-test.dir/rule
@@ -5795,12 +5797,12 @@ CMakeFiles/rebuntu-monotonic-deadline-test.dir/clean:
 CMakeFiles/rebuntu-namespaces-adapter.dir/all:
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/rebuntu-namespaces-adapter.dir/build.make CMakeFiles/rebuntu-namespaces-adapter.dir/depend
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/rebuntu-namespaces-adapter.dir/build.make CMakeFiles/rebuntu-namespaces-adapter.dir/build
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --progress-dir=/home/bvrznski/rebuntu/cpp/CMakeFiles --progress-num=53 "Built target rebuntu-namespaces-adapter"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --progress-dir=/home/bvrznski/rebuntu/cpp/CMakeFiles --progress-num= "Built target rebuntu-namespaces-adapter"
 .PHONY : CMakeFiles/rebuntu-namespaces-adapter.dir/all
 
 # Build rule for subdir invocation for target.
 CMakeFiles/rebuntu-namespaces-adapter.dir/rule: cmake_check_build_system
-	$(CMAKE_COMMAND) -E cmake_progress_start /home/bvrznski/rebuntu/cpp/CMakeFiles 1
+	$(CMAKE_COMMAND) -E cmake_progress_start /home/bvrznski/rebuntu/cpp/CMakeFiles 0
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 CMakeFiles/rebuntu-namespaces-adapter.dir/all
 	$(CMAKE_COMMAND) -E cmake_progress_start /home/bvrznski/rebuntu/cpp/CMakeFiles 0
 .PHONY : CMakeFiles/rebuntu-namespaces-adapter.dir/rule
@@ -5873,12 +5875,12 @@ CMakeFiles/rebuntu-host-foundation.dir/clean:
 CMakeFiles/rebuntu-cross-domain-references.dir/all:
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/rebuntu-cross-domain-references.dir/build.make CMakeFiles/rebuntu-cross-domain-references.dir/depend
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/rebuntu-cross-domain-references.dir/build.make CMakeFiles/rebuntu-cross-domain-references.dir/build
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --progress-dir=/home/bvrznski/rebuntu/cpp/CMakeFiles --progress-num= "Built target rebuntu-cross-domain-references"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --progress-dir=/home/bvrznski/rebuntu/cpp/CMakeFiles --progress-num=17 "Built target rebuntu-cross-domain-references"
 .PHONY : CMakeFiles/rebuntu-cross-domain-references.dir/all
 
 # Build rule for subdir invocation for target.
 CMakeFiles/rebuntu-cross-domain-references.dir/rule: cmake_check_build_system
-	$(CMAKE_COMMAND) -E cmake_progress_start /home/bvrznski/rebuntu/cpp/CMakeFiles 0
+	$(CMAKE_COMMAND) -E cmake_progress_start /home/bvrznski/rebuntu/cpp/CMakeFiles 1
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 CMakeFiles/rebuntu-cross-domain-references.dir/all
 	$(CMAKE_COMMAND) -E cmake_progress_start /home/bvrznski/rebuntu/cpp/CMakeFiles 0
 .PHONY : CMakeFiles/rebuntu-cross-domain-references.dir/rule
@@ -5899,7 +5901,7 @@ CMakeFiles/rebuntu-cross-domain-references.dir/clean:
 CMakeFiles/rebuntu-relationship-evidence.dir/all:
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/rebuntu-relationship-evidence.dir/build.make CMakeFiles/rebuntu-relationship-evidence.dir/depend
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/rebuntu-relationship-evidence.dir/build.make CMakeFiles/rebuntu-relationship-evidence.dir/build
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --progress-dir=/home/bvrznski/rebuntu/cpp/CMakeFiles --progress-num=74 "Built target rebuntu-relationship-evidence"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --progress-dir=/home/bvrznski/rebuntu/cpp/CMakeFiles --progress-num=73 "Built target rebuntu-relationship-evidence"
 .PHONY : CMakeFiles/rebuntu-relationship-evidence.dir/all
 
 # Build rule for subdir invocation for target.
@@ -6002,12 +6004,12 @@ CMakeFiles/rebuntu-hotplug-test.dir/all: CMakeFiles/rebuntu-cancellation-points.
 CMakeFiles/rebuntu-hotplug-test.dir/all: CMakeFiles/rebuntu-exec-persistence.dir/all
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/rebuntu-hotplug-test.dir/build.make CMakeFiles/rebuntu-hotplug-test.dir/depend
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/rebuntu-hotplug-test.dir/build.make CMakeFiles/rebuntu-hotplug-test.dir/build
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --progress-dir=/home/bvrznski/rebuntu/cpp/CMakeFiles --progress-num=40 "Built target rebuntu-hotplug-test"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --progress-dir=/home/bvrznski/rebuntu/cpp/CMakeFiles --progress-num= "Built target rebuntu-hotplug-test"
 .PHONY : CMakeFiles/rebuntu-hotplug-test.dir/all
 
 # Build rule for subdir invocation for target.
 CMakeFiles/rebuntu-hotplug-test.dir/rule: cmake_check_build_system
-	$(CMAKE_COMMAND) -E cmake_progress_start /home/bvrznski/rebuntu/cpp/CMakeFiles 72
+	$(CMAKE_COMMAND) -E cmake_progress_start /home/bvrznski/rebuntu/cpp/CMakeFiles 67
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 CMakeFiles/rebuntu-hotplug-test.dir/all
 	$(CMAKE_COMMAND) -E cmake_progress_start /home/bvrznski/rebuntu/cpp/CMakeFiles 0
 .PHONY : CMakeFiles/rebuntu-hotplug-test.dir/rule
@@ -6105,12 +6107,12 @@ CMakeFiles/rebuntu-netlink-adversarial-audit-test.dir/all: CMakeFiles/rebuntu-ca
 CMakeFiles/rebuntu-netlink-adversarial-audit-test.dir/all: CMakeFiles/rebuntu-exec-persistence.dir/all
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/rebuntu-netlink-adversarial-audit-test.dir/build.make CMakeFiles/rebuntu-netlink-adversarial-audit-test.dir/depend
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/rebuntu-netlink-adversarial-audit-test.dir/build.make CMakeFiles/rebuntu-netlink-adversarial-audit-test.dir/build
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --progress-dir=/home/bvrznski/rebuntu/cpp/CMakeFiles --progress-num=54 "Built target rebuntu-netlink-adversarial-audit-test"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --progress-dir=/home/bvrznski/rebuntu/cpp/CMakeFiles --progress-num=53 "Built target rebuntu-netlink-adversarial-audit-test"
 .PHONY : CMakeFiles/rebuntu-netlink-adversarial-audit-test.dir/all
 
 # Build rule for subdir invocation for target.
 CMakeFiles/rebuntu-netlink-adversarial-audit-test.dir/rule: cmake_check_build_system
-	$(CMAKE_COMMAND) -E cmake_progress_start /home/bvrznski/rebuntu/cpp/CMakeFiles 72
+	$(CMAKE_COMMAND) -E cmake_progress_start /home/bvrznski/rebuntu/cpp/CMakeFiles 68
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 CMakeFiles/rebuntu-netlink-adversarial-audit-test.dir/all
 	$(CMAKE_COMMAND) -E cmake_progress_start /home/bvrznski/rebuntu/cpp/CMakeFiles 0
 .PHONY : CMakeFiles/rebuntu-netlink-adversarial-audit-test.dir/rule
@@ -6239,7 +6241,7 @@ CMakeFiles/rebuntu-evidence-journal-test.dir/all: CMakeFiles/rebuntu-exec-persis
 
 # Build rule for subdir invocation for target.
 CMakeFiles/rebuntu-evidence-journal-test.dir/rule: cmake_check_build_system
-	$(CMAKE_COMMAND) -E cmake_progress_start /home/bvrznski/rebuntu/cpp/CMakeFiles 72
+	$(CMAKE_COMMAND) -E cmake_progress_start /home/bvrznski/rebuntu/cpp/CMakeFiles 68
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 CMakeFiles/rebuntu-evidence-journal-test.dir/all
 	$(CMAKE_COMMAND) -E cmake_progress_start /home/bvrznski/rebuntu/cpp/CMakeFiles 0
 .PHONY : CMakeFiles/rebuntu-evidence-journal-test.dir/rule
@@ -6337,12 +6339,12 @@ CMakeFiles/rebuntu-provider-test-matrix.dir/all: CMakeFiles/rebuntu-cancellation
 CMakeFiles/rebuntu-provider-test-matrix.dir/all: CMakeFiles/rebuntu-exec-persistence.dir/all
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/rebuntu-provider-test-matrix.dir/build.make CMakeFiles/rebuntu-provider-test-matrix.dir/depend
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/rebuntu-provider-test-matrix.dir/build.make CMakeFiles/rebuntu-provider-test-matrix.dir/build
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --progress-dir=/home/bvrznski/rebuntu/cpp/CMakeFiles --progress-num=73 "Built target rebuntu-provider-test-matrix"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --progress-dir=/home/bvrznski/rebuntu/cpp/CMakeFiles --progress-num= "Built target rebuntu-provider-test-matrix"
 .PHONY : CMakeFiles/rebuntu-provider-test-matrix.dir/all
 
 # Build rule for subdir invocation for target.
 CMakeFiles/rebuntu-provider-test-matrix.dir/rule: cmake_check_build_system
-	$(CMAKE_COMMAND) -E cmake_progress_start /home/bvrznski/rebuntu/cpp/CMakeFiles 72
+	$(CMAKE_COMMAND) -E cmake_progress_start /home/bvrznski/rebuntu/cpp/CMakeFiles 67
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 CMakeFiles/rebuntu-provider-test-matrix.dir/all
 	$(CMAKE_COMMAND) -E cmake_progress_start /home/bvrznski/rebuntu/cpp/CMakeFiles 0
 .PHONY : CMakeFiles/rebuntu-provider-test-matrix.dir/rule
@@ -6363,12 +6365,12 @@ CMakeFiles/rebuntu-provider-test-matrix.dir/clean:
 CMakeFiles/rebuntu-privileged-helpers.dir/all:
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/rebuntu-privileged-helpers.dir/build.make CMakeFiles/rebuntu-privileged-helpers.dir/depend
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/rebuntu-privileged-helpers.dir/build.make CMakeFiles/rebuntu-privileged-helpers.dir/build
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --progress-dir=/home/bvrznski/rebuntu/cpp/CMakeFiles --progress-num= "Built target rebuntu-privileged-helpers"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --progress-dir=/home/bvrznski/rebuntu/cpp/CMakeFiles --progress-num=67 "Built target rebuntu-privileged-helpers"
 .PHONY : CMakeFiles/rebuntu-privileged-helpers.dir/all
 
 # Build rule for subdir invocation for target.
 CMakeFiles/rebuntu-privileged-helpers.dir/rule: cmake_check_build_system
-	$(CMAKE_COMMAND) -E cmake_progress_start /home/bvrznski/rebuntu/cpp/CMakeFiles 0
+	$(CMAKE_COMMAND) -E cmake_progress_start /home/bvrznski/rebuntu/cpp/CMakeFiles 1
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 CMakeFiles/rebuntu-privileged-helpers.dir/all
 	$(CMAKE_COMMAND) -E cmake_progress_start /home/bvrznski/rebuntu/cpp/CMakeFiles 0
 .PHONY : CMakeFiles/rebuntu-privileged-helpers.dir/rule
@@ -6466,12 +6468,12 @@ CMakeFiles/rebuntu-privilege-requirement-test.dir/all: CMakeFiles/rebuntu-cancel
 CMakeFiles/rebuntu-privilege-requirement-test.dir/all: CMakeFiles/rebuntu-exec-persistence.dir/all
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/rebuntu-privilege-requirement-test.dir/build.make CMakeFiles/rebuntu-privilege-requirement-test.dir/depend
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/rebuntu-privilege-requirement-test.dir/build.make CMakeFiles/rebuntu-privilege-requirement-test.dir/build
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --progress-dir=/home/bvrznski/rebuntu/cpp/CMakeFiles --progress-num=67 "Built target rebuntu-privilege-requirement-test"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --progress-dir=/home/bvrznski/rebuntu/cpp/CMakeFiles --progress-num=66 "Built target rebuntu-privilege-requirement-test"
 .PHONY : CMakeFiles/rebuntu-privilege-requirement-test.dir/all
 
 # Build rule for subdir invocation for target.
 CMakeFiles/rebuntu-privilege-requirement-test.dir/rule: cmake_check_build_system
-	$(CMAKE_COMMAND) -E cmake_progress_start /home/bvrznski/rebuntu/cpp/CMakeFiles 72
+	$(CMAKE_COMMAND) -E cmake_progress_start /home/bvrznski/rebuntu/cpp/CMakeFiles 68
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 CMakeFiles/rebuntu-privilege-requirement-test.dir/all
 	$(CMAKE_COMMAND) -E cmake_progress_start /home/bvrznski/rebuntu/cpp/CMakeFiles 0
 .PHONY : CMakeFiles/rebuntu-privilege-requirement-test.dir/rule
@@ -6595,12 +6597,12 @@ CMakeFiles/rebuntu-shell-boundary-test.dir/all: CMakeFiles/rebuntu-cancellation-
 CMakeFiles/rebuntu-shell-boundary-test.dir/all: CMakeFiles/rebuntu-exec-persistence.dir/all
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/rebuntu-shell-boundary-test.dir/build.make CMakeFiles/rebuntu-shell-boundary-test.dir/depend
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/rebuntu-shell-boundary-test.dir/build.make CMakeFiles/rebuntu-shell-boundary-test.dir/build
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --progress-dir=/home/bvrznski/rebuntu/cpp/CMakeFiles --progress-num= "Built target rebuntu-shell-boundary-test"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --progress-dir=/home/bvrznski/rebuntu/cpp/CMakeFiles --progress-num=87 "Built target rebuntu-shell-boundary-test"
 .PHONY : CMakeFiles/rebuntu-shell-boundary-test.dir/all
 
 # Build rule for subdir invocation for target.
 CMakeFiles/rebuntu-shell-boundary-test.dir/rule: cmake_check_build_system
-	$(CMAKE_COMMAND) -E cmake_progress_start /home/bvrznski/rebuntu/cpp/CMakeFiles 71
+	$(CMAKE_COMMAND) -E cmake_progress_start /home/bvrznski/rebuntu/cpp/CMakeFiles 68
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 CMakeFiles/rebuntu-shell-boundary-test.dir/all
 	$(CMAKE_COMMAND) -E cmake_progress_start /home/bvrznski/rebuntu/cpp/CMakeFiles 0
 .PHONY : CMakeFiles/rebuntu-shell-boundary-test.dir/rule
@@ -6703,7 +6705,7 @@ CMakeFiles/rebuntu-shell-output-capture-test.dir/all: CMakeFiles/rebuntu-exec-pe
 
 # Build rule for subdir invocation for target.
 CMakeFiles/rebuntu-shell-output-capture-test.dir/rule: cmake_check_build_system
-	$(CMAKE_COMMAND) -E cmake_progress_start /home/bvrznski/rebuntu/cpp/CMakeFiles 72
+	$(CMAKE_COMMAND) -E cmake_progress_start /home/bvrznski/rebuntu/cpp/CMakeFiles 68
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 CMakeFiles/rebuntu-shell-output-capture-test.dir/all
 	$(CMAKE_COMMAND) -E cmake_progress_start /home/bvrznski/rebuntu/cpp/CMakeFiles 0
 .PHONY : CMakeFiles/rebuntu-shell-output-capture-test.dir/rule
@@ -6827,12 +6829,12 @@ CMakeFiles/rebuntu-replay-test.dir/all: CMakeFiles/rebuntu-cancellation-points.d
 CMakeFiles/rebuntu-replay-test.dir/all: CMakeFiles/rebuntu-exec-persistence.dir/all
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/rebuntu-replay-test.dir/build.make CMakeFiles/rebuntu-replay-test.dir/depend
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/rebuntu-replay-test.dir/build.make CMakeFiles/rebuntu-replay-test.dir/build
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --progress-dir=/home/bvrznski/rebuntu/cpp/CMakeFiles --progress-num=75 "Built target rebuntu-replay-test"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --progress-dir=/home/bvrznski/rebuntu/cpp/CMakeFiles --progress-num=74 "Built target rebuntu-replay-test"
 .PHONY : CMakeFiles/rebuntu-replay-test.dir/all
 
 # Build rule for subdir invocation for target.
 CMakeFiles/rebuntu-replay-test.dir/rule: cmake_check_build_system
-	$(CMAKE_COMMAND) -E cmake_progress_start /home/bvrznski/rebuntu/cpp/CMakeFiles 72
+	$(CMAKE_COMMAND) -E cmake_progress_start /home/bvrznski/rebuntu/cpp/CMakeFiles 68
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 CMakeFiles/rebuntu-replay-test.dir/all
 	$(CMAKE_COMMAND) -E cmake_progress_start /home/bvrznski/rebuntu/cpp/CMakeFiles 0
 .PHONY : CMakeFiles/rebuntu-replay-test.dir/rule
@@ -6935,7 +6937,7 @@ CMakeFiles/rebuntu-batch-command-test.dir/all: CMakeFiles/rebuntu-exec-persisten
 
 # Build rule for subdir invocation for target.
 CMakeFiles/rebuntu-batch-command-test.dir/rule: cmake_check_build_system
-	$(CMAKE_COMMAND) -E cmake_progress_start /home/bvrznski/rebuntu/cpp/CMakeFiles 72
+	$(CMAKE_COMMAND) -E cmake_progress_start /home/bvrznski/rebuntu/cpp/CMakeFiles 68
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 CMakeFiles/rebuntu-batch-command-test.dir/all
 	$(CMAKE_COMMAND) -E cmake_progress_start /home/bvrznski/rebuntu/cpp/CMakeFiles 0
 .PHONY : CMakeFiles/rebuntu-batch-command-test.dir/rule
@@ -6948,6 +6950,109 @@ rebuntu-batch-command-test: CMakeFiles/rebuntu-batch-command-test.dir/rule
 CMakeFiles/rebuntu-batch-command-test.dir/clean:
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/rebuntu-batch-command-test.dir/build.make CMakeFiles/rebuntu-batch-command-test.dir/clean
 .PHONY : CMakeFiles/rebuntu-batch-command-test.dir/clean
+
+#=============================================================================
+# Target rules for target CMakeFiles/rebuntu-sequential-composition-test.dir
+
+# All Build rule for target.
+CMakeFiles/rebuntu-sequential-composition-test.dir/all: CMakeFiles/rebuntu-core.dir/all
+CMakeFiles/rebuntu-sequential-composition-test.dir/all: CMakeFiles/rebuntu-observation-bounds.dir/all
+CMakeFiles/rebuntu-sequential-composition-test.dir/all: CMakeFiles/rebuntu-shell.dir/all
+CMakeFiles/rebuntu-sequential-composition-test.dir/all: CMakeFiles/rebuntu-shell-semi-natural.dir/all
+CMakeFiles/rebuntu-sequential-composition-test.dir/all: CMakeFiles/rebuntu-shell-context.dir/all
+CMakeFiles/rebuntu-sequential-composition-test.dir/all: CMakeFiles/rebuntu-shell-boundary.dir/all
+CMakeFiles/rebuntu-sequential-composition-test.dir/all: CMakeFiles/rebuntu-shell-collision.dir/all
+CMakeFiles/rebuntu-sequential-composition-test.dir/all: CMakeFiles/rebuntu-shell-pipeline.dir/all
+CMakeFiles/rebuntu-sequential-composition-test.dir/all: CMakeFiles/rebuntu-shell-output.dir/all
+CMakeFiles/rebuntu-sequential-composition-test.dir/all: CMakeFiles/rebuntu-shell-output-capture.dir/all
+CMakeFiles/rebuntu-sequential-composition-test.dir/all: CMakeFiles/rebuntu-command-explain.dir/all
+CMakeFiles/rebuntu-sequential-composition-test.dir/all: CMakeFiles/rebuntu-idempotency.dir/all
+CMakeFiles/rebuntu-sequential-composition-test.dir/all: CMakeFiles/rebuntu-dry-run.dir/all
+CMakeFiles/rebuntu-sequential-composition-test.dir/all: CMakeFiles/rebuntu-install.dir/all
+CMakeFiles/rebuntu-sequential-composition-test.dir/all: CMakeFiles/rebuntu-user-identity.dir/all
+CMakeFiles/rebuntu-sequential-composition-test.dir/all: CMakeFiles/rebuntu-group-membership.dir/all
+CMakeFiles/rebuntu-sequential-composition-test.dir/all: CMakeFiles/rebuntu-ownership.dir/all
+CMakeFiles/rebuntu-sequential-composition-test.dir/all: CMakeFiles/rebuntu-privilege.dir/all
+CMakeFiles/rebuntu-sequential-composition-test.dir/all: CMakeFiles/rebuntu-capability-state.dir/all
+CMakeFiles/rebuntu-sequential-composition-test.dir/all: CMakeFiles/rebuntu-authorization.dir/all
+CMakeFiles/rebuntu-sequential-composition-test.dir/all: CMakeFiles/rebuntu-scope.dir/all
+CMakeFiles/rebuntu-sequential-composition-test.dir/all: CMakeFiles/rebuntu-environment-discovery.dir/all
+CMakeFiles/rebuntu-sequential-composition-test.dir/all: CMakeFiles/rebuntu-sessions.dir/all
+CMakeFiles/rebuntu-sequential-composition-test.dir/all: CMakeFiles/rebuntu-directories.dir/all
+CMakeFiles/rebuntu-sequential-composition-test.dir/all: CMakeFiles/rebuntu-secrets.dir/all
+CMakeFiles/rebuntu-sequential-composition-test.dir/all: CMakeFiles/rebuntu-temp-files.dir/all
+CMakeFiles/rebuntu-sequential-composition-test.dir/all: CMakeFiles/rebuntu-locks.dir/all
+CMakeFiles/rebuntu-sequential-composition-test.dir/all: CMakeFiles/rebuntu-ipc.dir/all
+CMakeFiles/rebuntu-sequential-composition-test.dir/all: CMakeFiles/rebuntu-setup.dir/all
+CMakeFiles/rebuntu-sequential-composition-test.dir/all: CMakeFiles/rebuntu-lifecycle.dir/all
+CMakeFiles/rebuntu-sequential-composition-test.dir/all: CMakeFiles/rebuntu-events-collector.dir/all
+CMakeFiles/rebuntu-sequential-composition-test.dir/all: CMakeFiles/rebuntu-evidence-collector.dir/all
+CMakeFiles/rebuntu-sequential-composition-test.dir/all: CMakeFiles/rebuntu-evidence-deduplication.dir/all
+CMakeFiles/rebuntu-sequential-composition-test.dir/all: CMakeFiles/rebuntu-observation-output.dir/all
+CMakeFiles/rebuntu-sequential-composition-test.dir/all: CMakeFiles/rebuntu-snapshot-service.dir/all
+CMakeFiles/rebuntu-sequential-composition-test.dir/all: CMakeFiles/rebuntu-snapshot-storage.dir/all
+CMakeFiles/rebuntu-sequential-composition-test.dir/all: CMakeFiles/rebuntu-journald-adapter.dir/all
+CMakeFiles/rebuntu-sequential-composition-test.dir/all: CMakeFiles/rebuntu-exec-diag.dir/all
+CMakeFiles/rebuntu-sequential-composition-test.dir/all: CMakeFiles/rebuntu-procfs-mounts.dir/all
+CMakeFiles/rebuntu-sequential-composition-test.dir/all: CMakeFiles/rebuntu-procfs-errors.dir/all
+CMakeFiles/rebuntu-sequential-composition-test.dir/all: CMakeFiles/rebuntu-encrypted-storage-adapter.dir/all
+CMakeFiles/rebuntu-sequential-composition-test.dir/all: CMakeFiles/rebuntu-md-raid-adapter.dir/all
+CMakeFiles/rebuntu-sequential-composition-test.dir/all: CMakeFiles/rebuntu-power-supply-adapter.dir/all
+CMakeFiles/rebuntu-sequential-composition-test.dir/all: CMakeFiles/rebuntu-thermal-adapter.dir/all
+CMakeFiles/rebuntu-sequential-composition-test.dir/all: CMakeFiles/rebuntu-peripherals.dir/all
+CMakeFiles/rebuntu-sequential-composition-test.dir/all: CMakeFiles/rebuntu-hotplug.dir/all
+CMakeFiles/rebuntu-sequential-composition-test.dir/all: CMakeFiles/rebuntu-netlink-link.dir/all
+CMakeFiles/rebuntu-sequential-composition-test.dir/all: CMakeFiles/rebuntu-netlink-route.dir/all
+CMakeFiles/rebuntu-sequential-composition-test.dir/all: CMakeFiles/rebuntu-netlink-socket.dir/all
+CMakeFiles/rebuntu-sequential-composition-test.dir/all: CMakeFiles/rebuntu-drm-topology.dir/all
+CMakeFiles/rebuntu-sequential-composition-test.dir/all: CMakeFiles/rebuntu-procfs-process.dir/all
+CMakeFiles/rebuntu-sequential-composition-test.dir/all: CMakeFiles/rebuntu-procfs-modules.dir/all
+CMakeFiles/rebuntu-sequential-composition-test.dir/all: CMakeFiles/rebuntu-firmware-adapter.dir/all
+CMakeFiles/rebuntu-sequential-composition-test.dir/all: CMakeFiles/rebuntu-dpkg-package-inventory.dir/all
+CMakeFiles/rebuntu-sequential-composition-test.dir/all: CMakeFiles/rebuntu-semantic-annotation.dir/all
+CMakeFiles/rebuntu-sequential-composition-test.dir/all: CMakeFiles/rebuntu-systemd-service-adapter.dir/all
+CMakeFiles/rebuntu-sequential-composition-test.dir/all: CMakeFiles/rebuntu-journal-normalizer.dir/all
+CMakeFiles/rebuntu-sequential-composition-test.dir/all: CMakeFiles/rebuntu-journal-analyzer.dir/all
+CMakeFiles/rebuntu-sequential-composition-test.dir/all: CMakeFiles/rebuntu-health-monitor.dir/all
+CMakeFiles/rebuntu-sequential-composition-test.dir/all: CMakeFiles/rebuntu-kernel-fault-detector.dir/all
+CMakeFiles/rebuntu-sequential-composition-test.dir/all: CMakeFiles/rebuntu-storage-health-monitor.dir/all
+CMakeFiles/rebuntu-sequential-composition-test.dir/all: CMakeFiles/rebuntu-cpu-memory-thermal-monitor.dir/all
+CMakeFiles/rebuntu-sequential-composition-test.dir/all: CMakeFiles/rebuntu-gpu-health-monitor.dir/all
+CMakeFiles/rebuntu-sequential-composition-test.dir/all: CMakeFiles/rebuntu-internal-alerts.dir/all
+CMakeFiles/rebuntu-sequential-composition-test.dir/all: CMakeFiles/rebuntu-session-utmp.dir/all
+CMakeFiles/rebuntu-sequential-composition-test.dir/all: CMakeFiles/rebuntu-cgroup-hierarchy-adapter.dir/all
+CMakeFiles/rebuntu-sequential-composition-test.dir/all: CMakeFiles/rebuntu-reporting.dir/all
+CMakeFiles/rebuntu-sequential-composition-test.dir/all: CMakeFiles/rebuntu-hang-stall-jam-detector.dir/all
+CMakeFiles/rebuntu-sequential-composition-test.dir/all: CMakeFiles/rebuntu-namespaces-adapter.dir/all
+CMakeFiles/rebuntu-sequential-composition-test.dir/all: CMakeFiles/rebuntu-container-discovery.dir/all
+CMakeFiles/rebuntu-sequential-composition-test.dir/all: CMakeFiles/rebuntu-host-foundation.dir/all
+CMakeFiles/rebuntu-sequential-composition-test.dir/all: CMakeFiles/rebuntu-cross-domain-references.dir/all
+CMakeFiles/rebuntu-sequential-composition-test.dir/all: CMakeFiles/rebuntu-relationship-evidence.dir/all
+CMakeFiles/rebuntu-sequential-composition-test.dir/all: CMakeFiles/rebuntu-evidence-journal-slice.dir/all
+CMakeFiles/rebuntu-sequential-composition-test.dir/all: CMakeFiles/rebuntu-privileged-helpers.dir/all
+CMakeFiles/rebuntu-sequential-composition-test.dir/all: CMakeFiles/rebuntu-concurrency-control.dir/all
+CMakeFiles/rebuntu-sequential-composition-test.dir/all: CMakeFiles/rebuntu-cancellation-points.dir/all
+CMakeFiles/rebuntu-sequential-composition-test.dir/all: CMakeFiles/rebuntu-exec-persistence.dir/all
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/rebuntu-sequential-composition-test.dir/build.make CMakeFiles/rebuntu-sequential-composition-test.dir/depend
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/rebuntu-sequential-composition-test.dir/build.make CMakeFiles/rebuntu-sequential-composition-test.dir/build
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --progress-dir=/home/bvrznski/rebuntu/cpp/CMakeFiles --progress-num=80 "Built target rebuntu-sequential-composition-test"
+.PHONY : CMakeFiles/rebuntu-sequential-composition-test.dir/all
+
+# Build rule for subdir invocation for target.
+CMakeFiles/rebuntu-sequential-composition-test.dir/rule: cmake_check_build_system
+	$(CMAKE_COMMAND) -E cmake_progress_start /home/bvrznski/rebuntu/cpp/CMakeFiles 68
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 CMakeFiles/rebuntu-sequential-composition-test.dir/all
+	$(CMAKE_COMMAND) -E cmake_progress_start /home/bvrznski/rebuntu/cpp/CMakeFiles 0
+.PHONY : CMakeFiles/rebuntu-sequential-composition-test.dir/rule
+
+# Convenience name for target.
+rebuntu-sequential-composition-test: CMakeFiles/rebuntu-sequential-composition-test.dir/rule
+.PHONY : rebuntu-sequential-composition-test
+
+# clean rule for target.
+CMakeFiles/rebuntu-sequential-composition-test.dir/clean:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/rebuntu-sequential-composition-test.dir/build.make CMakeFiles/rebuntu-sequential-composition-test.dir/clean
+.PHONY : CMakeFiles/rebuntu-sequential-composition-test.dir/clean
 
 #=============================================================================
 # Target rules for target CMakeFiles/rebuntu-exec-persistence.dir

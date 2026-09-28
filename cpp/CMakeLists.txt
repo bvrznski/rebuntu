@@ -1110,6 +1110,18 @@ add_executable(rebuntu-batch-command-test
 target_link_libraries(rebuntu-batch-command-test PRIVATE rebuntu-core)
 add_test(NAME batch_command_test COMMAND rebuntu-batch-command-test)
 
+# Phase 6.43: Typed Sequential Composition module (header-only, included via rebuntu-core)
+target_sources(rebuntu-core PRIVATE
+    ${CMAKE_CURRENT_LIST_DIR}/../src/system/command/sequential.hpp
+)
+
+# Phase 6.43: Typed Sequential Composition unit tests
+add_executable(rebuntu-sequential-composition-test
+    ${CMAKE_CURRENT_LIST_DIR}/tests/unit/sequential_composition_test.cpp
+)
+target_link_libraries(rebuntu-sequential-composition-test PRIVATE rebuntu-core)
+add_test(NAME sequential_composition_test COMMAND rebuntu-sequential-composition-test)
+
 # Phase 6.39: Execution Record Persistence module
 add_library(rebuntu-exec-persistence STATIC
     ${CMAKE_CURRENT_LIST_DIR}/../src/runtime/persistence/integration.hpp

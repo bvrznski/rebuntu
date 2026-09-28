@@ -125,6 +125,7 @@
 /home/bvrznski/rebuntu/cpp/CMakeFiles/rebuntu-idempotency-test.dir
 /home/bvrznski/rebuntu/cpp/CMakeFiles/rebuntu-retry-mechanics-test.dir
 /home/bvrznski/rebuntu/cpp/CMakeFiles/rebuntu-monotonic-deadline-test.dir
+/home/bvrznski/rebuntu/cpp/CMakeFiles/rebuntu-provider-malformed-output-test.dir
 /home/bvrznski/rebuntu/cpp/CMakeFiles/rebuntu-namespaces-adapter.dir
 /home/bvrznski/rebuntu/cpp/CMakeFiles/rebuntu-container-discovery.dir
 /home/bvrznski/rebuntu/cpp/CMakeFiles/rebuntu-host-foundation.dir

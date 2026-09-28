@@ -171,6 +171,7 @@ set(CMAKE_DEPEND_INFO_FILES
   "CMakeFiles/rebuntu-idempotency-test.dir/DependInfo.cmake"
   "CMakeFiles/rebuntu-retry-mechanics-test.dir/DependInfo.cmake"
   "CMakeFiles/rebuntu-monotonic-deadline-test.dir/DependInfo.cmake"
+  "CMakeFiles/rebuntu-provider-malformed-output-test.dir/DependInfo.cmake"
   "CMakeFiles/rebuntu-namespaces-adapter.dir/DependInfo.cmake"
   "CMakeFiles/rebuntu-container-discovery.dir/DependInfo.cmake"
   "CMakeFiles/rebuntu-host-foundation.dir/DependInfo.cmake"

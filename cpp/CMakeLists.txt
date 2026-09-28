@@ -965,6 +965,14 @@ target_include_directories(rebuntu-monotonic-deadline-test PRIVATE ${CMAKE_CURRE
 target_link_libraries(rebuntu-monotonic-deadline-test PRIVATE rebuntu-core)
 add_test(NAME monotonic_deadline_test COMMAND rebuntu-monotonic-deadline-test)
 
+# Phase 6.60: Malformed Provider Output Tests (Task 6.60)
+add_executable(rebuntu-provider-malformed-output-test
+    ${CMAKE_CURRENT_LIST_DIR}/tests/unit/provider_malformed_output_test.cpp
+)
+target_include_directories(rebuntu-provider-malformed-output-test PRIVATE ${CMAKE_CURRENT_LIST_DIR}/../src)
+target_link_libraries(rebuntu-provider-malformed-output-test PRIVATE rebuntu-core rebuntu-procfs-process)
+add_test(NAME provider_malformed_output_test COMMAND rebuntu-provider-malformed-output-test)
+
 # Phase 5.61: Observation Output unit tests (disabled - gtest not available in CTest)
 # add_executable(rebuntu-observation-output-test
 #     ${CMAKE_CURRENT_LIST_DIR}/tests/unit/observation_output_test.cpp

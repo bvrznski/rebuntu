@@ -1823,6 +1823,19 @@ rebuntu-monotonic-deadline-test/fast:
 .PHONY : rebuntu-monotonic-deadline-test/fast
 
 #=============================================================================
+# Target rules for targets named rebuntu-provider-malformed-output-test
+
+# Build rule for target.
+rebuntu-provider-malformed-output-test: cmake_check_build_system
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 rebuntu-provider-malformed-output-test
+.PHONY : rebuntu-provider-malformed-output-test
+
+# fast build rule for target.
+rebuntu-provider-malformed-output-test/fast:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/rebuntu-provider-malformed-output-test.dir/build.make CMakeFiles/rebuntu-provider-malformed-output-test.dir/build
+.PHONY : rebuntu-provider-malformed-output-test/fast
+
+#=============================================================================
 # Target rules for targets named rebuntu-namespaces-adapter
 
 # Build rule for target.
@@ -5453,6 +5466,30 @@ tests/unit/procfs_process_test.cpp.s:
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/rebuntu-procfs-process-test.dir/build.make CMakeFiles/rebuntu-procfs-process-test.dir/tests/unit/procfs_process_test.cpp.s
 .PHONY : tests/unit/procfs_process_test.cpp.s
 
+tests/unit/provider_malformed_output_test.o: tests/unit/provider_malformed_output_test.cpp.o
+.PHONY : tests/unit/provider_malformed_output_test.o
+
+# target to build an object file
+tests/unit/provider_malformed_output_test.cpp.o:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/rebuntu-provider-malformed-output-test.dir/build.make CMakeFiles/rebuntu-provider-malformed-output-test.dir/tests/unit/provider_malformed_output_test.cpp.o
+.PHONY : tests/unit/provider_malformed_output_test.cpp.o
+
+tests/unit/provider_malformed_output_test.i: tests/unit/provider_malformed_output_test.cpp.i
+.PHONY : tests/unit/provider_malformed_output_test.i
+
+# target to preprocess a source file
+tests/unit/provider_malformed_output_test.cpp.i:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/rebuntu-provider-malformed-output-test.dir/build.make CMakeFiles/rebuntu-provider-malformed-output-test.dir/tests/unit/provider_malformed_output_test.cpp.i
+.PHONY : tests/unit/provider_malformed_output_test.cpp.i
+
+tests/unit/provider_malformed_output_test.s: tests/unit/provider_malformed_output_test.cpp.s
+.PHONY : tests/unit/provider_malformed_output_test.s
+
+# target to generate assembly for a file
+tests/unit/provider_malformed_output_test.cpp.s:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/rebuntu-provider-malformed-output-test.dir/build.make CMakeFiles/rebuntu-provider-malformed-output-test.dir/tests/unit/provider_malformed_output_test.cpp.s
+.PHONY : tests/unit/provider_malformed_output_test.cpp.s
+
 tests/unit/provider_test_matrix.o: tests/unit/provider_test_matrix.cpp.o
 .PHONY : tests/unit/provider_test_matrix.o
 
@@ -5779,6 +5816,7 @@ help:
 	@echo "... rebuntu-procfs-process"
 	@echo "... rebuntu-procfs-process-test"
 	@echo "... rebuntu-provider-evidence-test"
+	@echo "... rebuntu-provider-malformed-output-test"
 	@echo "... rebuntu-provider-test-matrix"
 	@echo "... rebuntu-relationship-evidence"
 	@echo "... rebuntu-replay-test"
@@ -6221,6 +6259,9 @@ help:
 	@echo "... tests/unit/procfs_process_test.o"
 	@echo "... tests/unit/procfs_process_test.i"
 	@echo "... tests/unit/procfs_process_test.s"
+	@echo "... tests/unit/provider_malformed_output_test.o"
+	@echo "... tests/unit/provider_malformed_output_test.i"
+	@echo "... tests/unit/provider_malformed_output_test.s"
 	@echo "... tests/unit/provider_test_matrix.o"
 	@echo "... tests/unit/provider_test_matrix.i"
 	@echo "... tests/unit/provider_test_matrix.s"

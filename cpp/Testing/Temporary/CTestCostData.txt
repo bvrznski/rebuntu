@@ -44,4 +44,5 @@ device_reorder_test 3 0.000946437
 command_injection_adversarial_test 2 0.00145857
 pid_reuse_test 1 0.934883
 ambiguous_target_test 1 0.00261533
+provider_malformed_output_test 1 0.00417227
 ---

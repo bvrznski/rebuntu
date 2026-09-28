@@ -76,3 +76,7 @@ add_test([=[batch_command_test]=] "/home/bvrznski/rebuntu/cpp/rebuntu-batch-comm
 set_tests_properties([=[batch_command_test]=] PROPERTIES  _BACKTRACE_TRIPLES "/home/bvrznski/rebuntu/cpp/CMakeLists.txt;1111;add_test;/home/bvrznski/rebuntu/cpp/CMakeLists.txt;0;")
 add_test([=[sequential_composition_test]=] "/home/bvrznski/rebuntu/cpp/rebuntu-sequential-composition-test")
 set_tests_properties([=[sequential_composition_test]=] PROPERTIES  _BACKTRACE_TRIPLES "/home/bvrznski/rebuntu/cpp/CMakeLists.txt;1128;add_test;/home/bvrznski/rebuntu/cpp/CMakeLists.txt;0;")
+add_test([=[parallel_composition_test]=] "/home/bvrznski/rebuntu/cpp/rebuntu-parallel-composition-test")
+set_tests_properties([=[parallel_composition_test]=] PROPERTIES  _BACKTRACE_TRIPLES "/home/bvrznski/rebuntu/cpp/CMakeLists.txt;1135;add_test;/home/bvrznski/rebuntu/cpp/CMakeLists.txt;0;")
+add_test([=[dependency_aware_test]=] "/home/bvrznski/rebuntu/cpp/rebuntu-dependency-aware-test")
+set_tests_properties([=[dependency_aware_test]=] PROPERTIES  _BACKTRACE_TRIPLES "/home/bvrznski/rebuntu/cpp/CMakeLists.txt;1147;add_test;/home/bvrznski/rebuntu/cpp/CMakeLists.txt;0;")

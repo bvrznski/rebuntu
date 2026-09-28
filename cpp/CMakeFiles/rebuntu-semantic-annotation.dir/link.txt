@@ -1,0 +1,2 @@
+/usr/bin/ar qc librebuntu-semantic-annotation.a CMakeFiles/rebuntu-semantic-annotation.dir/home/bvrznski/rebuntu/src/system/semantic/annotation.cpp.o
+/usr/bin/ranlib librebuntu-semantic-annotation.a

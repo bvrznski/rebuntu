@@ -1,0 +1,2 @@
+/usr/bin/ar qc librebuntu-netlink-link.a CMakeFiles/rebuntu-netlink-link.dir/home/bvrznski/rebuntu/src/adapters/netlink/link/implementation.cpp.o
+/usr/bin/ranlib librebuntu-netlink-link.a

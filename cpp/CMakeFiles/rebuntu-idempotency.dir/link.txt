@@ -1,0 +1,2 @@
+/usr/bin/ar qc librebuntu-idempotency.a CMakeFiles/rebuntu-idempotency.dir/home/bvrznski/rebuntu/src/system/idempotency/classifier.cpp.o
+/usr/bin/ranlib librebuntu-idempotency.a

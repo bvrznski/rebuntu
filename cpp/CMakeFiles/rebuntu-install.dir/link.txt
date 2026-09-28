@@ -1,0 +1,2 @@
+/usr/bin/ar qc librebuntu-install.a CMakeFiles/rebuntu-install.dir/home/bvrznski/rebuntu/src/system/install/install_planning.cpp.o CMakeFiles/rebuntu-install.dir/home/bvrznski/rebuntu/src/system/install/discovery.cpp.o CMakeFiles/rebuntu-install.dir/home/bvrznski/rebuntu/src/system/install/bootstrap.cpp.o
+/usr/bin/ranlib librebuntu-install.a

@@ -1,0 +1,2 @@
+/usr/bin/ar qc librebuntu-evidence-collector.a CMakeFiles/rebuntu-evidence-collector.dir/home/bvrznski/rebuntu/src/system/evidence/collector.cpp.o
+/usr/bin/ranlib librebuntu-evidence-collector.a

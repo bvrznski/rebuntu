@@ -1,0 +1,2 @@
+/usr/bin/ar qc librebuntu-namespaces-adapter.a CMakeFiles/rebuntu-namespaces-adapter.dir/home/bvrznski/rebuntu/src/adapters/namespaces/implementation.cpp.o
+/usr/bin/ranlib librebuntu-namespaces-adapter.a

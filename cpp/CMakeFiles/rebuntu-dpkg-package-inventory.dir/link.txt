@@ -1,0 +1,2 @@
+/usr/bin/ar qc librebuntu-dpkg-package-inventory.a CMakeFiles/rebuntu-dpkg-package-inventory.dir/home/bvrznski/rebuntu/src/adapters/package_managers/dpkg/implementation.cpp.o
+/usr/bin/ranlib librebuntu-dpkg-package-inventory.a

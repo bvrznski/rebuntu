@@ -1,0 +1,2 @@
+/usr/bin/ar qc librebuntu-netlink-route.a CMakeFiles/rebuntu-netlink-route.dir/home/bvrznski/rebuntu/src/adapters/netlink/route/implementation.cpp.o
+/usr/bin/ranlib librebuntu-netlink-route.a

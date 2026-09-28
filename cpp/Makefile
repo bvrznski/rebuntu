@@ -2031,6 +2031,32 @@ rebuntu-sequential-composition-test/fast:
 .PHONY : rebuntu-sequential-composition-test/fast
 
 #=============================================================================
+# Target rules for targets named rebuntu-parallel-composition-test
+
+# Build rule for target.
+rebuntu-parallel-composition-test: cmake_check_build_system
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 rebuntu-parallel-composition-test
+.PHONY : rebuntu-parallel-composition-test
+
+# fast build rule for target.
+rebuntu-parallel-composition-test/fast:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/rebuntu-parallel-composition-test.dir/build.make CMakeFiles/rebuntu-parallel-composition-test.dir/build
+.PHONY : rebuntu-parallel-composition-test/fast
+
+#=============================================================================
+# Target rules for targets named rebuntu-dependency-aware-test
+
+# Build rule for target.
+rebuntu-dependency-aware-test: cmake_check_build_system
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 rebuntu-dependency-aware-test
+.PHONY : rebuntu-dependency-aware-test
+
+# fast build rule for target.
+rebuntu-dependency-aware-test/fast:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/rebuntu-dependency-aware-test.dir/build.make CMakeFiles/rebuntu-dependency-aware-test.dir/build
+.PHONY : rebuntu-dependency-aware-test/fast
+
+#=============================================================================
 # Target rules for targets named rebuntu-exec-persistence
 
 # Build rule for target.
@@ -4638,6 +4664,30 @@ tests/unit/command_model_test.cpp.s:
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/rebuntu-command-model-test.dir/build.make CMakeFiles/rebuntu-command-model-test.dir/tests/unit/command_model_test.cpp.s
 .PHONY : tests/unit/command_model_test.cpp.s
 
+tests/unit/dependency_aware_execution_test.o: tests/unit/dependency_aware_execution_test.cpp.o
+.PHONY : tests/unit/dependency_aware_execution_test.o
+
+# target to build an object file
+tests/unit/dependency_aware_execution_test.cpp.o:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/rebuntu-dependency-aware-test.dir/build.make CMakeFiles/rebuntu-dependency-aware-test.dir/tests/unit/dependency_aware_execution_test.cpp.o
+.PHONY : tests/unit/dependency_aware_execution_test.cpp.o
+
+tests/unit/dependency_aware_execution_test.i: tests/unit/dependency_aware_execution_test.cpp.i
+.PHONY : tests/unit/dependency_aware_execution_test.i
+
+# target to preprocess a source file
+tests/unit/dependency_aware_execution_test.cpp.i:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/rebuntu-dependency-aware-test.dir/build.make CMakeFiles/rebuntu-dependency-aware-test.dir/tests/unit/dependency_aware_execution_test.cpp.i
+.PHONY : tests/unit/dependency_aware_execution_test.cpp.i
+
+tests/unit/dependency_aware_execution_test.s: tests/unit/dependency_aware_execution_test.cpp.s
+.PHONY : tests/unit/dependency_aware_execution_test.s
+
+# target to generate assembly for a file
+tests/unit/dependency_aware_execution_test.cpp.s:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/rebuntu-dependency-aware-test.dir/build.make CMakeFiles/rebuntu-dependency-aware-test.dir/tests/unit/dependency_aware_execution_test.cpp.s
+.PHONY : tests/unit/dependency_aware_execution_test.cpp.s
+
 tests/unit/discovery_resync_test.o: tests/unit/discovery_resync_test.cpp.o
 .PHONY : tests/unit/discovery_resync_test.o
 
@@ -4925,6 +4975,30 @@ tests/unit/netlink_socket_test.s: tests/unit/netlink_socket_test.cpp.s
 tests/unit/netlink_socket_test.cpp.s:
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/rebuntu-netlink-socket-test.dir/build.make CMakeFiles/rebuntu-netlink-socket-test.dir/tests/unit/netlink_socket_test.cpp.s
 .PHONY : tests/unit/netlink_socket_test.cpp.s
+
+tests/unit/parallel_composition_test.o: tests/unit/parallel_composition_test.cpp.o
+.PHONY : tests/unit/parallel_composition_test.o
+
+# target to build an object file
+tests/unit/parallel_composition_test.cpp.o:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/rebuntu-parallel-composition-test.dir/build.make CMakeFiles/rebuntu-parallel-composition-test.dir/tests/unit/parallel_composition_test.cpp.o
+.PHONY : tests/unit/parallel_composition_test.cpp.o
+
+tests/unit/parallel_composition_test.i: tests/unit/parallel_composition_test.cpp.i
+.PHONY : tests/unit/parallel_composition_test.i
+
+# target to preprocess a source file
+tests/unit/parallel_composition_test.cpp.i:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/rebuntu-parallel-composition-test.dir/build.make CMakeFiles/rebuntu-parallel-composition-test.dir/tests/unit/parallel_composition_test.cpp.i
+.PHONY : tests/unit/parallel_composition_test.cpp.i
+
+tests/unit/parallel_composition_test.s: tests/unit/parallel_composition_test.cpp.s
+.PHONY : tests/unit/parallel_composition_test.s
+
+# target to generate assembly for a file
+tests/unit/parallel_composition_test.cpp.s:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/rebuntu-parallel-composition-test.dir/build.make CMakeFiles/rebuntu-parallel-composition-test.dir/tests/unit/parallel_composition_test.cpp.s
+.PHONY : tests/unit/parallel_composition_test.cpp.s
 
 tests/unit/parallel_discovery_test.o: tests/unit/parallel_discovery_test.cpp.o
 .PHONY : tests/unit/parallel_discovery_test.o
@@ -5249,6 +5323,7 @@ help:
 	@echo "... rebuntu-core"
 	@echo "... rebuntu-cpu-memory-thermal-monitor"
 	@echo "... rebuntu-cross-domain-references"
+	@echo "... rebuntu-dependency-aware-test"
 	@echo "... rebuntu-directories"
 	@echo "... rebuntu-discovery-resync-test"
 	@echo "... rebuntu-dpkg-package-inventory"
@@ -5301,6 +5376,7 @@ help:
 	@echo "... rebuntu-observation-bounds"
 	@echo "... rebuntu-observation-output"
 	@echo "... rebuntu-ownership"
+	@echo "... rebuntu-parallel-composition-test"
 	@echo "... rebuntu-parallel-discovery-test"
 	@echo "... rebuntu-peripherals"
 	@echo "... rebuntu-pipeline-test"
@@ -5671,6 +5747,9 @@ help:
 	@echo "... tests/unit/command_model_test.o"
 	@echo "... tests/unit/command_model_test.i"
 	@echo "... tests/unit/command_model_test.s"
+	@echo "... tests/unit/dependency_aware_execution_test.o"
+	@echo "... tests/unit/dependency_aware_execution_test.i"
+	@echo "... tests/unit/dependency_aware_execution_test.s"
 	@echo "... tests/unit/discovery_resync_test.o"
 	@echo "... tests/unit/discovery_resync_test.i"
 	@echo "... tests/unit/discovery_resync_test.s"
@@ -5707,6 +5786,9 @@ help:
 	@echo "... tests/unit/netlink_socket_test.o"
 	@echo "... tests/unit/netlink_socket_test.i"
 	@echo "... tests/unit/netlink_socket_test.s"
+	@echo "... tests/unit/parallel_composition_test.o"
+	@echo "... tests/unit/parallel_composition_test.i"
+	@echo "... tests/unit/parallel_composition_test.s"
 	@echo "... tests/unit/parallel_discovery_test.o"
 	@echo "... tests/unit/parallel_discovery_test.i"
 	@echo "... tests/unit/parallel_discovery_test.s"

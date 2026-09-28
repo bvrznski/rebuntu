@@ -1,0 +1,2 @@
+/usr/bin/ar qc librebuntu-command-explain.a CMakeFiles/rebuntu-command-explain.dir/home/bvrznski/rebuntu/src/system/command/explain.cpp.o
+/usr/bin/ranlib librebuntu-command-explain.a

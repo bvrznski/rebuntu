@@ -1,0 +1,2 @@
+/usr/bin/ar qc librebuntu-shell-collision.a CMakeFiles/rebuntu-shell-collision.dir/home/bvrznski/rebuntu/src/system/shell/collision_scanner.cpp.o
+/usr/bin/ranlib librebuntu-shell-collision.a

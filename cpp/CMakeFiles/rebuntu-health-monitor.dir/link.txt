@@ -1,0 +1,2 @@
+/usr/bin/ar qc librebuntu-health-monitor.a CMakeFiles/rebuntu-health-monitor.dir/home/bvrznski/rebuntu/src/modules/health_monitor/health_monitor.cpp.o CMakeFiles/rebuntu-health-monitor.dir/home/bvrznski/rebuntu/src/modules/health_monitor/adapters/journald_observer.cpp.o
+/usr/bin/ranlib librebuntu-health-monitor.a

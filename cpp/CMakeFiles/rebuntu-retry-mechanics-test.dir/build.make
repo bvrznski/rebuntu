@@ -129,6 +129,7 @@ rebuntu-retry-mechanics-test: librebuntu-observation-output.a
 rebuntu-retry-mechanics-test: librebuntu-snapshot-service.a
 rebuntu-retry-mechanics-test: librebuntu-snapshot-storage.a
 rebuntu-retry-mechanics-test: librebuntu-journald-adapter.a
+rebuntu-retry-mechanics-test: librebuntu-exec-diag.a
 rebuntu-retry-mechanics-test: librebuntu-procfs-mounts.a
 rebuntu-retry-mechanics-test: librebuntu-procfs-errors.a
 rebuntu-retry-mechanics-test: librebuntu-encrypted-storage-adapter.a

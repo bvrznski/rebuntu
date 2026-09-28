@@ -129,6 +129,7 @@ rebuntu-parallel-discovery-test: librebuntu-observation-output.a
 rebuntu-parallel-discovery-test: librebuntu-snapshot-service.a
 rebuntu-parallel-discovery-test: librebuntu-snapshot-storage.a
 rebuntu-parallel-discovery-test: librebuntu-journald-adapter.a
+rebuntu-parallel-discovery-test: librebuntu-exec-diag.a
 rebuntu-parallel-discovery-test: librebuntu-procfs-mounts.a
 rebuntu-parallel-discovery-test: librebuntu-procfs-errors.a
 rebuntu-parallel-discovery-test: librebuntu-encrypted-storage-adapter.a

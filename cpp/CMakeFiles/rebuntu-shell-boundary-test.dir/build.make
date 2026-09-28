@@ -129,6 +129,7 @@ rebuntu-shell-boundary-test: librebuntu-observation-output.a
 rebuntu-shell-boundary-test: librebuntu-snapshot-service.a
 rebuntu-shell-boundary-test: librebuntu-snapshot-storage.a
 rebuntu-shell-boundary-test: librebuntu-journald-adapter.a
+rebuntu-shell-boundary-test: librebuntu-exec-diag.a
 rebuntu-shell-boundary-test: librebuntu-procfs-mounts.a
 rebuntu-shell-boundary-test: librebuntu-procfs-errors.a
 rebuntu-shell-boundary-test: librebuntu-encrypted-storage-adapter.a

@@ -129,6 +129,7 @@ rebuntu-context-test: librebuntu-observation-output.a
 rebuntu-context-test: librebuntu-snapshot-service.a
 rebuntu-context-test: librebuntu-snapshot-storage.a
 rebuntu-context-test: librebuntu-journald-adapter.a
+rebuntu-context-test: librebuntu-exec-diag.a
 rebuntu-context-test: librebuntu-procfs-mounts.a
 rebuntu-context-test: librebuntu-procfs-errors.a
 rebuntu-context-test: librebuntu-encrypted-storage-adapter.a

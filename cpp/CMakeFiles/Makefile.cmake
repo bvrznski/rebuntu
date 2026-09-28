@@ -110,6 +110,8 @@ set(CMAKE_DEPEND_INFO_FILES
   "CMakeFiles/rebuntu-snapshot-service.dir/DependInfo.cmake"
   "CMakeFiles/rebuntu-snapshot-storage.dir/DependInfo.cmake"
   "CMakeFiles/rebuntu-journald-adapter.dir/DependInfo.cmake"
+  "CMakeFiles/rebuntu-exec-diag.dir/DependInfo.cmake"
+  "CMakeFiles/rebuntu-exec-diag-test.dir/DependInfo.cmake"
   "CMakeFiles/rebuntu-procfs-mounts.dir/DependInfo.cmake"
   "CMakeFiles/rebuntu-procfs-errors.dir/DependInfo.cmake"
   "CMakeFiles/rebuntu-encrypted-storage-adapter.dir/DependInfo.cmake"

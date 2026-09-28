@@ -131,6 +131,7 @@ rebuntu-evidence-journal-test: librebuntu-observation-output.a
 rebuntu-evidence-journal-test: librebuntu-snapshot-service.a
 rebuntu-evidence-journal-test: librebuntu-snapshot-storage.a
 rebuntu-evidence-journal-test: librebuntu-journald-adapter.a
+rebuntu-evidence-journal-test: librebuntu-exec-diag.a
 rebuntu-evidence-journal-test: librebuntu-procfs-mounts.a
 rebuntu-evidence-journal-test: librebuntu-procfs-errors.a
 rebuntu-evidence-journal-test: librebuntu-encrypted-storage-adapter.a

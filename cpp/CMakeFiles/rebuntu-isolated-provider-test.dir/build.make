@@ -129,6 +129,7 @@ rebuntu-isolated-provider-test: librebuntu-observation-output.a
 rebuntu-isolated-provider-test: librebuntu-snapshot-service.a
 rebuntu-isolated-provider-test: librebuntu-snapshot-storage.a
 rebuntu-isolated-provider-test: librebuntu-journald-adapter.a
+rebuntu-isolated-provider-test: librebuntu-exec-diag.a
 rebuntu-isolated-provider-test: librebuntu-procfs-mounts.a
 rebuntu-isolated-provider-test: librebuntu-procfs-errors.a
 rebuntu-isolated-provider-test: librebuntu-encrypted-storage-adapter.a

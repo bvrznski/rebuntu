@@ -129,6 +129,7 @@ rebuntu-pipeline-test: librebuntu-observation-output.a
 rebuntu-pipeline-test: librebuntu-snapshot-service.a
 rebuntu-pipeline-test: librebuntu-snapshot-storage.a
 rebuntu-pipeline-test: librebuntu-journald-adapter.a
+rebuntu-pipeline-test: librebuntu-exec-diag.a
 rebuntu-pipeline-test: librebuntu-procfs-mounts.a
 rebuntu-pipeline-test: librebuntu-procfs-errors.a
 rebuntu-pipeline-test: librebuntu-encrypted-storage-adapter.a

@@ -129,6 +129,7 @@ rebuntu-value-parsers-test: librebuntu-observation-output.a
 rebuntu-value-parsers-test: librebuntu-snapshot-service.a
 rebuntu-value-parsers-test: librebuntu-snapshot-storage.a
 rebuntu-value-parsers-test: librebuntu-journald-adapter.a
+rebuntu-value-parsers-test: librebuntu-exec-diag.a
 rebuntu-value-parsers-test: librebuntu-procfs-mounts.a
 rebuntu-value-parsers-test: librebuntu-procfs-errors.a
 rebuntu-value-parsers-test: librebuntu-encrypted-storage-adapter.a

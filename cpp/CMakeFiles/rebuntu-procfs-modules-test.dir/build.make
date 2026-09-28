@@ -131,6 +131,7 @@ rebuntu-procfs-modules-test: librebuntu-observation-output.a
 rebuntu-procfs-modules-test: librebuntu-snapshot-service.a
 rebuntu-procfs-modules-test: librebuntu-snapshot-storage.a
 rebuntu-procfs-modules-test: librebuntu-journald-adapter.a
+rebuntu-procfs-modules-test: librebuntu-exec-diag.a
 rebuntu-procfs-modules-test: librebuntu-procfs-mounts.a
 rebuntu-procfs-modules-test: librebuntu-procfs-errors.a
 rebuntu-procfs-modules-test: librebuntu-encrypted-storage-adapter.a

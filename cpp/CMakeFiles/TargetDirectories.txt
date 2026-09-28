@@ -64,6 +64,8 @@
 /home/bvrznski/rebuntu/cpp/CMakeFiles/rebuntu-snapshot-service.dir
 /home/bvrznski/rebuntu/cpp/CMakeFiles/rebuntu-snapshot-storage.dir
 /home/bvrznski/rebuntu/cpp/CMakeFiles/rebuntu-journald-adapter.dir
+/home/bvrznski/rebuntu/cpp/CMakeFiles/rebuntu-exec-diag.dir
+/home/bvrznski/rebuntu/cpp/CMakeFiles/rebuntu-exec-diag-test.dir
 /home/bvrznski/rebuntu/cpp/CMakeFiles/rebuntu-procfs-mounts.dir
 /home/bvrznski/rebuntu/cpp/CMakeFiles/rebuntu-procfs-errors.dir
 /home/bvrznski/rebuntu/cpp/CMakeFiles/rebuntu-encrypted-storage-adapter.dir

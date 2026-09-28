@@ -132,6 +132,7 @@ rebuntu-cli-inventory-test: librebuntu-observation-output.a
 rebuntu-cli-inventory-test: librebuntu-snapshot-service.a
 rebuntu-cli-inventory-test: librebuntu-snapshot-storage.a
 rebuntu-cli-inventory-test: librebuntu-journald-adapter.a
+rebuntu-cli-inventory-test: librebuntu-exec-diag.a
 rebuntu-cli-inventory-test: librebuntu-procfs-mounts.a
 rebuntu-cli-inventory-test: librebuntu-procfs-errors.a
 rebuntu-cli-inventory-test: librebuntu-encrypted-storage-adapter.a

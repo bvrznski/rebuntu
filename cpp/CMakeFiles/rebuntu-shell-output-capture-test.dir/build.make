@@ -129,6 +129,7 @@ rebuntu-shell-output-capture-test: librebuntu-observation-output.a
 rebuntu-shell-output-capture-test: librebuntu-snapshot-service.a
 rebuntu-shell-output-capture-test: librebuntu-snapshot-storage.a
 rebuntu-shell-output-capture-test: librebuntu-journald-adapter.a
+rebuntu-shell-output-capture-test: librebuntu-exec-diag.a
 rebuntu-shell-output-capture-test: librebuntu-procfs-mounts.a
 rebuntu-shell-output-capture-test: librebuntu-procfs-errors.a
 rebuntu-shell-output-capture-test: librebuntu-encrypted-storage-adapter.a

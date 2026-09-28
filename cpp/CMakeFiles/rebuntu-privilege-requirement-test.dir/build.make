@@ -130,6 +130,7 @@ rebuntu-privilege-requirement-test: librebuntu-observation-output.a
 rebuntu-privilege-requirement-test: librebuntu-snapshot-service.a
 rebuntu-privilege-requirement-test: librebuntu-snapshot-storage.a
 rebuntu-privilege-requirement-test: librebuntu-journald-adapter.a
+rebuntu-privilege-requirement-test: librebuntu-exec-diag.a
 rebuntu-privilege-requirement-test: librebuntu-procfs-mounts.a
 rebuntu-privilege-requirement-test: librebuntu-procfs-errors.a
 rebuntu-privilege-requirement-test: librebuntu-encrypted-storage-adapter.a

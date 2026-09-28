@@ -129,6 +129,7 @@ rebuntu-predicates-test: librebuntu-observation-output.a
 rebuntu-predicates-test: librebuntu-snapshot-service.a
 rebuntu-predicates-test: librebuntu-snapshot-storage.a
 rebuntu-predicates-test: librebuntu-journald-adapter.a
+rebuntu-predicates-test: librebuntu-exec-diag.a
 rebuntu-predicates-test: librebuntu-procfs-mounts.a
 rebuntu-predicates-test: librebuntu-procfs-errors.a
 rebuntu-predicates-test: librebuntu-encrypted-storage-adapter.a

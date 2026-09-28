@@ -129,6 +129,7 @@ rebuntu-discovery-resync-test: librebuntu-observation-output.a
 rebuntu-discovery-resync-test: librebuntu-snapshot-service.a
 rebuntu-discovery-resync-test: librebuntu-snapshot-storage.a
 rebuntu-discovery-resync-test: librebuntu-journald-adapter.a
+rebuntu-discovery-resync-test: librebuntu-exec-diag.a
 rebuntu-discovery-resync-test: librebuntu-procfs-mounts.a
 rebuntu-discovery-resync-test: librebuntu-procfs-errors.a
 rebuntu-discovery-resync-test: librebuntu-encrypted-storage-adapter.a

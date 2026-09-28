@@ -130,6 +130,7 @@ rebuntu-evidence-deduplication-test: librebuntu-observation-output.a
 rebuntu-evidence-deduplication-test: librebuntu-snapshot-service.a
 rebuntu-evidence-deduplication-test: librebuntu-snapshot-storage.a
 rebuntu-evidence-deduplication-test: librebuntu-journald-adapter.a
+rebuntu-evidence-deduplication-test: librebuntu-exec-diag.a
 rebuntu-evidence-deduplication-test: librebuntu-procfs-mounts.a
 rebuntu-evidence-deduplication-test: librebuntu-procfs-errors.a
 rebuntu-evidence-deduplication-test: librebuntu-encrypted-storage-adapter.a

@@ -129,6 +129,7 @@ rebuntu-provider-test-matrix: librebuntu-observation-output.a
 rebuntu-provider-test-matrix: librebuntu-snapshot-service.a
 rebuntu-provider-test-matrix: librebuntu-snapshot-storage.a
 rebuntu-provider-test-matrix: librebuntu-journald-adapter.a
+rebuntu-provider-test-matrix: librebuntu-exec-diag.a
 rebuntu-provider-test-matrix: librebuntu-procfs-mounts.a
 rebuntu-provider-test-matrix: librebuntu-procfs-errors.a
 rebuntu-provider-test-matrix: librebuntu-encrypted-storage-adapter.a

@@ -129,6 +129,7 @@ rebuntu-netlink-adversarial-audit-test: librebuntu-observation-output.a
 rebuntu-netlink-adversarial-audit-test: librebuntu-snapshot-service.a
 rebuntu-netlink-adversarial-audit-test: librebuntu-snapshot-storage.a
 rebuntu-netlink-adversarial-audit-test: librebuntu-journald-adapter.a
+rebuntu-netlink-adversarial-audit-test: librebuntu-exec-diag.a
 rebuntu-netlink-adversarial-audit-test: librebuntu-procfs-mounts.a
 rebuntu-netlink-adversarial-audit-test: librebuntu-procfs-errors.a
 rebuntu-netlink-adversarial-audit-test: librebuntu-encrypted-storage-adapter.a

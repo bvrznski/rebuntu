@@ -131,6 +131,7 @@ rebuntu-cgroup-hierarchy-test: librebuntu-observation-output.a
 rebuntu-cgroup-hierarchy-test: librebuntu-snapshot-service.a
 rebuntu-cgroup-hierarchy-test: librebuntu-snapshot-storage.a
 rebuntu-cgroup-hierarchy-test: librebuntu-journald-adapter.a
+rebuntu-cgroup-hierarchy-test: librebuntu-exec-diag.a
 rebuntu-cgroup-hierarchy-test: librebuntu-procfs-mounts.a
 rebuntu-cgroup-hierarchy-test: librebuntu-procfs-errors.a
 rebuntu-cgroup-hierarchy-test: librebuntu-encrypted-storage-adapter.a

@@ -131,6 +131,7 @@ rebuntu-hang-stall-jam-detector-test: librebuntu-observation-output.a
 rebuntu-hang-stall-jam-detector-test: librebuntu-snapshot-service.a
 rebuntu-hang-stall-jam-detector-test: librebuntu-snapshot-storage.a
 rebuntu-hang-stall-jam-detector-test: librebuntu-journald-adapter.a
+rebuntu-hang-stall-jam-detector-test: librebuntu-exec-diag.a
 rebuntu-hang-stall-jam-detector-test: librebuntu-procfs-mounts.a
 rebuntu-hang-stall-jam-detector-test: librebuntu-procfs-errors.a
 rebuntu-hang-stall-jam-detector-test: librebuntu-encrypted-storage-adapter.a

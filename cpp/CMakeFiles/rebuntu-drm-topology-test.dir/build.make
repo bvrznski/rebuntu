@@ -131,6 +131,7 @@ rebuntu-drm-topology-test: librebuntu-observation-output.a
 rebuntu-drm-topology-test: librebuntu-snapshot-service.a
 rebuntu-drm-topology-test: librebuntu-snapshot-storage.a
 rebuntu-drm-topology-test: librebuntu-journald-adapter.a
+rebuntu-drm-topology-test: librebuntu-exec-diag.a
 rebuntu-drm-topology-test: librebuntu-procfs-mounts.a
 rebuntu-drm-topology-test: librebuntu-procfs-errors.a
 rebuntu-drm-topology-test: librebuntu-encrypted-storage-adapter.a

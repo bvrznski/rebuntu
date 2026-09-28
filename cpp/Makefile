@@ -1030,6 +1030,32 @@ rebuntu-journald-adapter/fast:
 .PHONY : rebuntu-journald-adapter/fast
 
 #=============================================================================
+# Target rules for targets named rebuntu-exec-diag
+
+# Build rule for target.
+rebuntu-exec-diag: cmake_check_build_system
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 rebuntu-exec-diag
+.PHONY : rebuntu-exec-diag
+
+# fast build rule for target.
+rebuntu-exec-diag/fast:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/rebuntu-exec-diag.dir/build.make CMakeFiles/rebuntu-exec-diag.dir/build
+.PHONY : rebuntu-exec-diag/fast
+
+#=============================================================================
+# Target rules for targets named rebuntu-exec-diag-test
+
+# Build rule for target.
+rebuntu-exec-diag-test: cmake_check_build_system
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 rebuntu-exec-diag-test
+.PHONY : rebuntu-exec-diag-test
+
+# fast build rule for target.
+rebuntu-exec-diag-test/fast:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/rebuntu-exec-diag-test.dir/build.make CMakeFiles/rebuntu-exec-diag-test.dir/build
+.PHONY : rebuntu-exec-diag-test/fast
+
+#=============================================================================
 # Target rules for targets named rebuntu-procfs-mounts
 
 # Build rule for target.
@@ -2036,6 +2062,30 @@ home/bvrznski/rebuntu/src/adapters/drm/implementation.s: home/bvrznski/rebuntu/s
 home/bvrznski/rebuntu/src/adapters/drm/implementation.cpp.s:
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/rebuntu-drm-topology.dir/build.make CMakeFiles/rebuntu-drm-topology.dir/home/bvrznski/rebuntu/src/adapters/drm/implementation.cpp.s
 .PHONY : home/bvrznski/rebuntu/src/adapters/drm/implementation.cpp.s
+
+home/bvrznski/rebuntu/src/adapters/exec_diag.o: home/bvrznski/rebuntu/src/adapters/exec_diag.cpp.o
+.PHONY : home/bvrznski/rebuntu/src/adapters/exec_diag.o
+
+# target to build an object file
+home/bvrznski/rebuntu/src/adapters/exec_diag.cpp.o:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/rebuntu-exec-diag.dir/build.make CMakeFiles/rebuntu-exec-diag.dir/home/bvrznski/rebuntu/src/adapters/exec_diag.cpp.o
+.PHONY : home/bvrznski/rebuntu/src/adapters/exec_diag.cpp.o
+
+home/bvrznski/rebuntu/src/adapters/exec_diag.i: home/bvrznski/rebuntu/src/adapters/exec_diag.cpp.i
+.PHONY : home/bvrznski/rebuntu/src/adapters/exec_diag.i
+
+# target to preprocess a source file
+home/bvrznski/rebuntu/src/adapters/exec_diag.cpp.i:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/rebuntu-exec-diag.dir/build.make CMakeFiles/rebuntu-exec-diag.dir/home/bvrznski/rebuntu/src/adapters/exec_diag.cpp.i
+.PHONY : home/bvrznski/rebuntu/src/adapters/exec_diag.cpp.i
+
+home/bvrznski/rebuntu/src/adapters/exec_diag.s: home/bvrznski/rebuntu/src/adapters/exec_diag.cpp.s
+.PHONY : home/bvrznski/rebuntu/src/adapters/exec_diag.s
+
+# target to generate assembly for a file
+home/bvrznski/rebuntu/src/adapters/exec_diag.cpp.s:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/rebuntu-exec-diag.dir/build.make CMakeFiles/rebuntu-exec-diag.dir/home/bvrznski/rebuntu/src/adapters/exec_diag.cpp.s
+.PHONY : home/bvrznski/rebuntu/src/adapters/exec_diag.cpp.s
 
 home/bvrznski/rebuntu/src/adapters/firmware/implementation.o: home/bvrznski/rebuntu/src/adapters/firmware/implementation.cpp.o
 .PHONY : home/bvrznski/rebuntu/src/adapters/firmware/implementation.o
@@ -4536,6 +4586,30 @@ tests/unit/evidence_journal_test.cpp.s:
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/rebuntu-evidence-journal-test.dir/build.make CMakeFiles/rebuntu-evidence-journal-test.dir/tests/unit/evidence_journal_test.cpp.s
 .PHONY : tests/unit/evidence_journal_test.cpp.s
 
+tests/unit/exec_diag_test.o: tests/unit/exec_diag_test.cpp.o
+.PHONY : tests/unit/exec_diag_test.o
+
+# target to build an object file
+tests/unit/exec_diag_test.cpp.o:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/rebuntu-exec-diag-test.dir/build.make CMakeFiles/rebuntu-exec-diag-test.dir/tests/unit/exec_diag_test.cpp.o
+.PHONY : tests/unit/exec_diag_test.cpp.o
+
+tests/unit/exec_diag_test.i: tests/unit/exec_diag_test.cpp.i
+.PHONY : tests/unit/exec_diag_test.i
+
+# target to preprocess a source file
+tests/unit/exec_diag_test.cpp.i:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/rebuntu-exec-diag-test.dir/build.make CMakeFiles/rebuntu-exec-diag-test.dir/tests/unit/exec_diag_test.cpp.i
+.PHONY : tests/unit/exec_diag_test.cpp.i
+
+tests/unit/exec_diag_test.s: tests/unit/exec_diag_test.cpp.s
+.PHONY : tests/unit/exec_diag_test.s
+
+# target to generate assembly for a file
+tests/unit/exec_diag_test.cpp.s:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/rebuntu-exec-diag-test.dir/build.make CMakeFiles/rebuntu-exec-diag-test.dir/tests/unit/exec_diag_test.cpp.s
+.PHONY : tests/unit/exec_diag_test.cpp.s
+
 tests/unit/hang_stall_jam_detector_test.o: tests/unit/hang_stall_jam_detector_test.cpp.o
 .PHONY : tests/unit/hang_stall_jam_detector_test.o
 
@@ -5016,6 +5090,8 @@ help:
 	@echo "... rebuntu-evidence-deduplication-test"
 	@echo "... rebuntu-evidence-journal-slice"
 	@echo "... rebuntu-evidence-journal-test"
+	@echo "... rebuntu-exec-diag"
+	@echo "... rebuntu-exec-diag-test"
 	@echo "... rebuntu-exit-result-test"
 	@echo "... rebuntu-firmware-adapter"
 	@echo "... rebuntu-gpu-health-monitor"
@@ -5104,6 +5180,9 @@ help:
 	@echo "... home/bvrznski/rebuntu/src/adapters/drm/implementation.o"
 	@echo "... home/bvrznski/rebuntu/src/adapters/drm/implementation.i"
 	@echo "... home/bvrznski/rebuntu/src/adapters/drm/implementation.s"
+	@echo "... home/bvrznski/rebuntu/src/adapters/exec_diag.o"
+	@echo "... home/bvrznski/rebuntu/src/adapters/exec_diag.i"
+	@echo "... home/bvrznski/rebuntu/src/adapters/exec_diag.s"
 	@echo "... home/bvrznski/rebuntu/src/adapters/firmware/implementation.o"
 	@echo "... home/bvrznski/rebuntu/src/adapters/firmware/implementation.i"
 	@echo "... home/bvrznski/rebuntu/src/adapters/firmware/implementation.s"
@@ -5416,6 +5495,9 @@ help:
 	@echo "... tests/unit/evidence_journal_test.o"
 	@echo "... tests/unit/evidence_journal_test.i"
 	@echo "... tests/unit/evidence_journal_test.s"
+	@echo "... tests/unit/exec_diag_test.o"
+	@echo "... tests/unit/exec_diag_test.i"
+	@echo "... tests/unit/exec_diag_test.s"
 	@echo "... tests/unit/hang_stall_jam_detector_test.o"
 	@echo "... tests/unit/hang_stall_jam_detector_test.i"
 	@echo "... tests/unit/hang_stall_jam_detector_test.s"

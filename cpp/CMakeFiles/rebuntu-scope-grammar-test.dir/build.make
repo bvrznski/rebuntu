@@ -129,6 +129,7 @@ rebuntu-scope-grammar-test: librebuntu-observation-output.a
 rebuntu-scope-grammar-test: librebuntu-snapshot-service.a
 rebuntu-scope-grammar-test: librebuntu-snapshot-storage.a
 rebuntu-scope-grammar-test: librebuntu-journald-adapter.a
+rebuntu-scope-grammar-test: librebuntu-exec-diag.a
 rebuntu-scope-grammar-test: librebuntu-procfs-mounts.a
 rebuntu-scope-grammar-test: librebuntu-procfs-errors.a
 rebuntu-scope-grammar-test: librebuntu-encrypted-storage-adapter.a

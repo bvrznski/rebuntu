@@ -129,6 +129,7 @@ rebuntu-collision-scanner-test: librebuntu-observation-output.a
 rebuntu-collision-scanner-test: librebuntu-snapshot-service.a
 rebuntu-collision-scanner-test: librebuntu-snapshot-storage.a
 rebuntu-collision-scanner-test: librebuntu-journald-adapter.a
+rebuntu-collision-scanner-test: librebuntu-exec-diag.a
 rebuntu-collision-scanner-test: librebuntu-procfs-mounts.a
 rebuntu-collision-scanner-test: librebuntu-procfs-errors.a
 rebuntu-collision-scanner-test: librebuntu-encrypted-storage-adapter.a

@@ -129,6 +129,7 @@ rebuntu-monotonic-deadline-test: librebuntu-observation-output.a
 rebuntu-monotonic-deadline-test: librebuntu-snapshot-service.a
 rebuntu-monotonic-deadline-test: librebuntu-snapshot-storage.a
 rebuntu-monotonic-deadline-test: librebuntu-journald-adapter.a
+rebuntu-monotonic-deadline-test: librebuntu-exec-diag.a
 rebuntu-monotonic-deadline-test: librebuntu-procfs-mounts.a
 rebuntu-monotonic-deadline-test: librebuntu-procfs-errors.a
 rebuntu-monotonic-deadline-test: librebuntu-encrypted-storage-adapter.a

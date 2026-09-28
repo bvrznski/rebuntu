@@ -131,6 +131,7 @@ rebuntu-bin: librebuntu-observation-output.a
 rebuntu-bin: librebuntu-snapshot-service.a
 rebuntu-bin: librebuntu-snapshot-storage.a
 rebuntu-bin: librebuntu-journald-adapter.a
+rebuntu-bin: librebuntu-exec-diag.a
 rebuntu-bin: librebuntu-procfs-mounts.a
 rebuntu-bin: librebuntu-procfs-errors.a
 rebuntu-bin: librebuntu-encrypted-storage-adapter.a

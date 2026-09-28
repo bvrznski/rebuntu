@@ -129,6 +129,7 @@ rebuntu-exit-result-test: librebuntu-observation-output.a
 rebuntu-exit-result-test: librebuntu-snapshot-service.a
 rebuntu-exit-result-test: librebuntu-snapshot-storage.a
 rebuntu-exit-result-test: librebuntu-journald-adapter.a
+rebuntu-exit-result-test: librebuntu-exec-diag.a
 rebuntu-exit-result-test: librebuntu-procfs-mounts.a
 rebuntu-exit-result-test: librebuntu-procfs-errors.a
 rebuntu-exit-result-test: librebuntu-encrypted-storage-adapter.a

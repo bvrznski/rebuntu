@@ -131,6 +131,7 @@ rebuntu-netlink-socket-test: librebuntu-observation-output.a
 rebuntu-netlink-socket-test: librebuntu-snapshot-service.a
 rebuntu-netlink-socket-test: librebuntu-snapshot-storage.a
 rebuntu-netlink-socket-test: librebuntu-journald-adapter.a
+rebuntu-netlink-socket-test: librebuntu-exec-diag.a
 rebuntu-netlink-socket-test: librebuntu-procfs-mounts.a
 rebuntu-netlink-socket-test: librebuntu-procfs-errors.a
 rebuntu-netlink-socket-test: librebuntu-encrypted-storage-adapter.a

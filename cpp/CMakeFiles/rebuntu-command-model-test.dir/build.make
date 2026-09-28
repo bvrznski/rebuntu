@@ -129,6 +129,7 @@ rebuntu-command-model-test: librebuntu-observation-output.a
 rebuntu-command-model-test: librebuntu-snapshot-service.a
 rebuntu-command-model-test: librebuntu-snapshot-storage.a
 rebuntu-command-model-test: librebuntu-journald-adapter.a
+rebuntu-command-model-test: librebuntu-exec-diag.a
 rebuntu-command-model-test: librebuntu-procfs-mounts.a
 rebuntu-command-model-test: librebuntu-procfs-errors.a
 rebuntu-command-model-test: librebuntu-encrypted-storage-adapter.a

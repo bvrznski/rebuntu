@@ -129,6 +129,7 @@ rebuntu-idempotency-test: librebuntu-observation-output.a
 rebuntu-idempotency-test: librebuntu-snapshot-service.a
 rebuntu-idempotency-test: librebuntu-snapshot-storage.a
 rebuntu-idempotency-test: librebuntu-journald-adapter.a
+rebuntu-idempotency-test: librebuntu-exec-diag.a
 rebuntu-idempotency-test: librebuntu-procfs-mounts.a
 rebuntu-idempotency-test: librebuntu-procfs-errors.a
 rebuntu-idempotency-test: librebuntu-encrypted-storage-adapter.a

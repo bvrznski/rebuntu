@@ -131,6 +131,7 @@ rebuntu-systemd-service-test: librebuntu-observation-output.a
 rebuntu-systemd-service-test: librebuntu-snapshot-service.a
 rebuntu-systemd-service-test: librebuntu-snapshot-storage.a
 rebuntu-systemd-service-test: librebuntu-journald-adapter.a
+rebuntu-systemd-service-test: librebuntu-exec-diag.a
 rebuntu-systemd-service-test: librebuntu-procfs-mounts.a
 rebuntu-systemd-service-test: librebuntu-procfs-errors.a
 rebuntu-systemd-service-test: librebuntu-encrypted-storage-adapter.a

@@ -426,6 +426,21 @@ add_library(rebuntu-journald-adapter STATIC
 target_include_directories(rebuntu-journald-adapter PUBLIC ${CMAKE_CURRENT_LIST_DIR}/../src)
 target_link_libraries(rebuntu-core PUBLIC rebuntu-journald-adapter)
 
+# Phase 6.38: Execution Journald Diagnostics Emitter module
+add_library(rebuntu-exec-diag STATIC
+    ${CMAKE_CURRENT_LIST_DIR}/../src/adapters/exec_diag.hpp
+    ${CMAKE_CURRENT_LIST_DIR}/../src/adapters/exec_diag.cpp
+)
+target_include_directories(rebuntu-exec-diag PUBLIC ${CMAKE_CURRENT_LIST_DIR}/../src)
+target_link_libraries(rebuntu-core PUBLIC rebuntu-exec-diag)
+
+# Phase 6.38: Execution Journald Diagnostics unit tests
+add_executable(rebuntu-exec-diag-test
+    ${CMAKE_CURRENT_LIST_DIR}/tests/unit/exec_diag_test.cpp
+)
+target_link_libraries(rebuntu-exec-diag-test PRIVATE rebuntu-exec-diag rebuntu-core)
+add_test(NAME exec_diag_test COMMAND rebuntu-exec-diag-test)
+
 # Phase 5.17: Procfs Mounts Observation Adapter module
 add_library(rebuntu-procfs-mounts STATIC
     ${CMAKE_CURRENT_LIST_DIR}/../src/adapters/procfs/mounts/types.hpp

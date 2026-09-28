@@ -131,6 +131,7 @@ rebuntu-hotplug-test: librebuntu-observation-output.a
 rebuntu-hotplug-test: librebuntu-snapshot-service.a
 rebuntu-hotplug-test: librebuntu-snapshot-storage.a
 rebuntu-hotplug-test: librebuntu-journald-adapter.a
+rebuntu-hotplug-test: librebuntu-exec-diag.a
 rebuntu-hotplug-test: librebuntu-procfs-mounts.a
 rebuntu-hotplug-test: librebuntu-procfs-errors.a
 rebuntu-hotplug-test: librebuntu-encrypted-storage-adapter.a

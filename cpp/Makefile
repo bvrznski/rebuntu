@@ -1991,6 +1991,19 @@ rebuntu-cancellation-points/fast:
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/rebuntu-cancellation-points.dir/build.make CMakeFiles/rebuntu-cancellation-points.dir/build
 .PHONY : rebuntu-cancellation-points/fast
 
+#=============================================================================
+# Target rules for targets named rebuntu-exec-persistence
+
+# Build rule for target.
+rebuntu-exec-persistence: cmake_check_build_system
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 rebuntu-exec-persistence
+.PHONY : rebuntu-exec-persistence
+
+# fast build rule for target.
+rebuntu-exec-persistence/fast:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/rebuntu-exec-persistence.dir/build.make CMakeFiles/rebuntu-exec-persistence.dir/build
+.PHONY : rebuntu-exec-persistence/fast
+
 home/bvrznski/rebuntu/src/adapters/cgroups/hierarchy/implementation.o: home/bvrznski/rebuntu/src/adapters/cgroups/hierarchy/implementation.cpp.o
 .PHONY : home/bvrznski/rebuntu/src/adapters/cgroups/hierarchy/implementation.o
 
@@ -3142,6 +3155,30 @@ home/bvrznski/rebuntu/src/runtime/native/production_runtime.s: home/bvrznski/reb
 home/bvrznski/rebuntu/src/runtime/native/production_runtime.cpp.s:
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/rebuntu-core.dir/build.make CMakeFiles/rebuntu-core.dir/home/bvrznski/rebuntu/src/runtime/native/production_runtime.cpp.s
 .PHONY : home/bvrznski/rebuntu/src/runtime/native/production_runtime.cpp.s
+
+home/bvrznski/rebuntu/src/runtime/persistence/integration.o: home/bvrznski/rebuntu/src/runtime/persistence/integration.cpp.o
+.PHONY : home/bvrznski/rebuntu/src/runtime/persistence/integration.o
+
+# target to build an object file
+home/bvrznski/rebuntu/src/runtime/persistence/integration.cpp.o:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/rebuntu-exec-persistence.dir/build.make CMakeFiles/rebuntu-exec-persistence.dir/home/bvrznski/rebuntu/src/runtime/persistence/integration.cpp.o
+.PHONY : home/bvrznski/rebuntu/src/runtime/persistence/integration.cpp.o
+
+home/bvrznski/rebuntu/src/runtime/persistence/integration.i: home/bvrznski/rebuntu/src/runtime/persistence/integration.cpp.i
+.PHONY : home/bvrznski/rebuntu/src/runtime/persistence/integration.i
+
+# target to preprocess a source file
+home/bvrznski/rebuntu/src/runtime/persistence/integration.cpp.i:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/rebuntu-exec-persistence.dir/build.make CMakeFiles/rebuntu-exec-persistence.dir/home/bvrznski/rebuntu/src/runtime/persistence/integration.cpp.i
+.PHONY : home/bvrznski/rebuntu/src/runtime/persistence/integration.cpp.i
+
+home/bvrznski/rebuntu/src/runtime/persistence/integration.s: home/bvrznski/rebuntu/src/runtime/persistence/integration.cpp.s
+.PHONY : home/bvrznski/rebuntu/src/runtime/persistence/integration.s
+
+# target to generate assembly for a file
+home/bvrznski/rebuntu/src/runtime/persistence/integration.cpp.s:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/rebuntu-exec-persistence.dir/build.make CMakeFiles/rebuntu-exec-persistence.dir/home/bvrznski/rebuntu/src/runtime/persistence/integration.cpp.s
+.PHONY : home/bvrznski/rebuntu/src/runtime/persistence/integration.cpp.s
 
 home/bvrznski/rebuntu/src/runtime/retry_mechanics.o: home/bvrznski/rebuntu/src/runtime/retry_mechanics.cpp.o
 .PHONY : home/bvrznski/rebuntu/src/runtime/retry_mechanics.o
@@ -5092,6 +5129,7 @@ help:
 	@echo "... rebuntu-evidence-journal-test"
 	@echo "... rebuntu-exec-diag"
 	@echo "... rebuntu-exec-diag-test"
+	@echo "... rebuntu-exec-persistence"
 	@echo "... rebuntu-exit-result-test"
 	@echo "... rebuntu-firmware-adapter"
 	@echo "... rebuntu-gpu-health-monitor"
@@ -5315,6 +5353,9 @@ help:
 	@echo "... home/bvrznski/rebuntu/src/runtime/native/production_runtime.o"
 	@echo "... home/bvrznski/rebuntu/src/runtime/native/production_runtime.i"
 	@echo "... home/bvrznski/rebuntu/src/runtime/native/production_runtime.s"
+	@echo "... home/bvrznski/rebuntu/src/runtime/persistence/integration.o"
+	@echo "... home/bvrznski/rebuntu/src/runtime/persistence/integration.i"
+	@echo "... home/bvrznski/rebuntu/src/runtime/persistence/integration.s"
 	@echo "... home/bvrznski/rebuntu/src/runtime/retry_mechanics.o"
 	@echo "... home/bvrznski/rebuntu/src/runtime/retry_mechanics.i"
 	@echo "... home/bvrznski/rebuntu/src/runtime/retry_mechanics.s"

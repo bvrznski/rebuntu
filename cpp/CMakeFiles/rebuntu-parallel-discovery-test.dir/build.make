@@ -169,6 +169,7 @@ rebuntu-parallel-discovery-test: librebuntu-evidence-journal-slice.a
 rebuntu-parallel-discovery-test: librebuntu-privileged-helpers.a
 rebuntu-parallel-discovery-test: librebuntu-concurrency-control.a
 rebuntu-parallel-discovery-test: librebuntu-cancellation-points.a
+rebuntu-parallel-discovery-test: librebuntu-exec-persistence.a
 rebuntu-parallel-discovery-test: CMakeFiles/rebuntu-parallel-discovery-test.dir/link.txt
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --bold --progress-dir=/home/bvrznski/rebuntu/cpp/CMakeFiles --progress-num=$(CMAKE_PROGRESS_2) "Linking CXX executable rebuntu-parallel-discovery-test"
 	$(CMAKE_COMMAND) -E cmake_link_script CMakeFiles/rebuntu-parallel-discovery-test.dir/link.txt --verbose=$(VERBOSE)

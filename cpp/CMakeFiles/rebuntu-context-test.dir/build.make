@@ -169,6 +169,7 @@ rebuntu-context-test: librebuntu-evidence-journal-slice.a
 rebuntu-context-test: librebuntu-privileged-helpers.a
 rebuntu-context-test: librebuntu-concurrency-control.a
 rebuntu-context-test: librebuntu-cancellation-points.a
+rebuntu-context-test: librebuntu-exec-persistence.a
 rebuntu-context-test: CMakeFiles/rebuntu-context-test.dir/link.txt
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --bold --progress-dir=/home/bvrznski/rebuntu/cpp/CMakeFiles --progress-num=$(CMAKE_PROGRESS_2) "Linking CXX executable rebuntu-context-test"
 	$(CMAKE_COMMAND) -E cmake_link_script CMakeFiles/rebuntu-context-test.dir/link.txt --verbose=$(VERBOSE)

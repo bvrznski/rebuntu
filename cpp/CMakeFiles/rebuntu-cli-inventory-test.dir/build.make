@@ -171,6 +171,7 @@ rebuntu-cli-inventory-test: librebuntu-evidence-journal-slice.a
 rebuntu-cli-inventory-test: librebuntu-privileged-helpers.a
 rebuntu-cli-inventory-test: librebuntu-concurrency-control.a
 rebuntu-cli-inventory-test: librebuntu-cancellation-points.a
+rebuntu-cli-inventory-test: librebuntu-exec-persistence.a
 rebuntu-cli-inventory-test: librebuntu-dpkg-package-inventory.a
 rebuntu-cli-inventory-test: CMakeFiles/rebuntu-cli-inventory-test.dir/link.txt
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --bold --progress-dir=/home/bvrznski/rebuntu/cpp/CMakeFiles --progress-num=$(CMAKE_PROGRESS_2) "Linking CXX executable rebuntu-cli-inventory-test"

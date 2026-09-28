@@ -169,6 +169,7 @@ rebuntu-collision-scanner-test: librebuntu-evidence-journal-slice.a
 rebuntu-collision-scanner-test: librebuntu-privileged-helpers.a
 rebuntu-collision-scanner-test: librebuntu-concurrency-control.a
 rebuntu-collision-scanner-test: librebuntu-cancellation-points.a
+rebuntu-collision-scanner-test: librebuntu-exec-persistence.a
 rebuntu-collision-scanner-test: CMakeFiles/rebuntu-collision-scanner-test.dir/link.txt
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --bold --progress-dir=/home/bvrznski/rebuntu/cpp/CMakeFiles --progress-num=$(CMAKE_PROGRESS_2) "Linking CXX executable rebuntu-collision-scanner-test"
 	$(CMAKE_COMMAND) -E cmake_link_script CMakeFiles/rebuntu-collision-scanner-test.dir/link.txt --verbose=$(VERBOSE)

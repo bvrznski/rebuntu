@@ -1076,3 +1076,11 @@ target_link_libraries(rebuntu-core PUBLIC rebuntu-cancellation-points)
 # )
 # target_link_libraries(rebuntu-shell-output-test PRIVATE rebuntu-core rebuntu-shell-output)
 # add_test(NAME shell_output_test COMMAND rebuntu-shell-output-test)
+
+# Phase 6.39: Execution Record Persistence module
+add_library(rebuntu-exec-persistence STATIC
+    ${CMAKE_CURRENT_LIST_DIR}/../src/runtime/persistence/integration.hpp
+    ${CMAKE_CURRENT_LIST_DIR}/../src/runtime/persistence/integration.cpp
+)
+target_include_directories(rebuntu-exec-persistence PUBLIC ${CMAKE_CURRENT_LIST_DIR}/../src)
+target_link_libraries(rebuntu-core PUBLIC rebuntu-exec-persistence)

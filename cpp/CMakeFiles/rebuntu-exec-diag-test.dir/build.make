@@ -170,6 +170,7 @@ rebuntu-exec-diag-test: librebuntu-evidence-journal-slice.a
 rebuntu-exec-diag-test: librebuntu-privileged-helpers.a
 rebuntu-exec-diag-test: librebuntu-concurrency-control.a
 rebuntu-exec-diag-test: librebuntu-cancellation-points.a
+rebuntu-exec-diag-test: librebuntu-exec-persistence.a
 rebuntu-exec-diag-test: CMakeFiles/rebuntu-exec-diag-test.dir/link.txt
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --bold --progress-dir=/home/bvrznski/rebuntu/cpp/CMakeFiles --progress-num=$(CMAKE_PROGRESS_2) "Linking CXX executable rebuntu-exec-diag-test"
 	$(CMAKE_COMMAND) -E cmake_link_script CMakeFiles/rebuntu-exec-diag-test.dir/link.txt --verbose=$(VERBOSE)

@@ -170,6 +170,7 @@ rebuntu-bin: librebuntu-evidence-journal-slice.a
 rebuntu-bin: librebuntu-privileged-helpers.a
 rebuntu-bin: librebuntu-concurrency-control.a
 rebuntu-bin: librebuntu-cancellation-points.a
+rebuntu-bin: librebuntu-exec-persistence.a
 rebuntu-bin: librebuntu-dpkg-package-inventory.a
 rebuntu-bin: CMakeFiles/rebuntu-bin.dir/link.txt
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --bold --progress-dir=/home/bvrznski/rebuntu/cpp/CMakeFiles --progress-num=$(CMAKE_PROGRESS_2) "Linking CXX executable rebuntu-bin"

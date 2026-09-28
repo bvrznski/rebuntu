@@ -90,6 +90,15 @@ add_library(rebuntu-shell STATIC
     ${CMAKE_CURRENT_LIST_DIR}/../src/system/shell/context.cpp
 )
 
+# Phase 6.16: Semi-Natural Command Grammar module
+add_library(rebuntu-shell-semi-natural STATIC
+    ${CMAKE_CURRENT_LIST_DIR}/../src/system/shell/semi_natural.hpp
+    ${CMAKE_CURRENT_LIST_DIR}/../src/system/shell/semi_natural.cpp
+)
+
+target_include_directories(rebuntu-shell-semi-natural PUBLIC ${CMAKE_CURRENT_LIST_DIR}/../src)
+target_link_libraries(rebuntu-core PUBLIC rebuntu-shell-semi-natural)
+
 # Phase 6.15: Contextual Command Resolution module
 add_library(rebuntu-shell-context STATIC
     ${CMAKE_CURRENT_LIST_DIR}/../src/system/shell/context.hpp

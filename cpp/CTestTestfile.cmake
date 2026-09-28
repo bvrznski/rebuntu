@@ -75,4 +75,4 @@ set_tests_properties([=[replay_test]=] PROPERTIES  _BACKTRACE_TRIPLES "/home/bvr
 add_test([=[batch_command_test]=] "/home/bvrznski/rebuntu/cpp/rebuntu-batch-command-test")
 set_tests_properties([=[batch_command_test]=] PROPERTIES  _BACKTRACE_TRIPLES "/home/bvrznski/rebuntu/cpp/CMakeLists.txt;1111;add_test;/home/bvrznski/rebuntu/cpp/CMakeLists.txt;0;")
 add_test([=[sequential_composition_test]=] "/home/bvrznski/rebuntu/cpp/rebuntu-sequential-composition-test")
-set_tests_properties([=[sequential_composition_test]=] PROPERTIES  _BACKTRACE_TRIPLES "/home/bvrznski/rebuntu/cpp/CMakeLists.txt;1123;add_test;/home/bvrznski/rebuntu/cpp/CMakeLists.txt;0;")
+set_tests_properties([=[sequential_composition_test]=] PROPERTIES  _BACKTRACE_TRIPLES "/home/bvrznski/rebuntu/cpp/CMakeLists.txt;1128;add_test;/home/bvrznski/rebuntu/cpp/CMakeLists.txt;0;")

@@ -1,2 +1,0 @@
-/usr/bin/ar qc librebuntu-exec-diag.a CMakeFiles/rebuntu-exec-diag.dir/home/bvrznski/rebuntu/src/adapters/exec_diag.cpp.o
-/usr/bin/ranlib librebuntu-exec-diag.a

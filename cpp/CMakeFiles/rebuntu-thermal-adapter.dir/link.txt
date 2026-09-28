@@ -1,2 +1,0 @@
-/usr/bin/ar qc librebuntu-thermal-adapter.a CMakeFiles/rebuntu-thermal-adapter.dir/home/bvrznski/rebuntu/src/adapters/sysfs/thermal/implementation.cpp.o
-/usr/bin/ranlib librebuntu-thermal-adapter.a

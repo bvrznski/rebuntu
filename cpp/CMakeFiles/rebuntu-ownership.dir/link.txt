@@ -1,2 +1,0 @@
-/usr/bin/ar qc librebuntu-ownership.a CMakeFiles/rebuntu-ownership.dir/home/bvrznski/rebuntu/src/system/environment/ownership.cpp.o
-/usr/bin/ranlib librebuntu-ownership.a

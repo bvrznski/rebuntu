@@ -1,2 +1,0 @@
-/usr/bin/ar qc librebuntu-evidence-deduplication.a CMakeFiles/rebuntu-evidence-deduplication.dir/home/bvrznski/rebuntu/src/system/evidence/deduplication.cpp.o
-/usr/bin/ranlib librebuntu-evidence-deduplication.a

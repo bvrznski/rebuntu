@@ -1,2 +1,0 @@
-/usr/bin/ar qc librebuntu-peripherals.a CMakeFiles/rebuntu-peripherals.dir/home/bvrznski/rebuntu/src/adapters/peripherals/implementation.cpp.o
-/usr/bin/ranlib librebuntu-peripherals.a

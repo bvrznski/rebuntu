@@ -1,2 +1,0 @@
-/usr/bin/ar qc librebuntu-sessions.a CMakeFiles/rebuntu-sessions.dir/home/bvrznski/rebuntu/src/system/environment/sessions.cpp.o
-/usr/bin/ranlib librebuntu-sessions.a

@@ -1,12 +1,14 @@
 // rebuntu::cli — Native CLI Entry Point (Phase 5.60)
 //
 // This module provides the main entry point for the Rebuntu native CLI:
-//   - Parses command-line arguments
-//   - Dispatches to appropriate inventory inspection commands
+//   - Parses command-line arguments at the interface edge
+//   - Converts to typed CommandIntent via parser boundary (Task 6.46)
+//   - Dispatches to appropriate commands using typed intent
 //   - Outputs results with freshness and source information
 //
-// The CLI follows the principle of keeping presentation separate from discovery logic.
-//
+// Parser Boundary (Task 6.46):
+//   CLI text input → tokenize/parse_argv → typed CommandIntent → dispatch
+//   Domain code receives ONLY typed structures, NO string re-parsing.
 
 #include <iostream>
 #include <string>
@@ -14,6 +16,8 @@
 
 #include "inventory/types.hpp"
 #include "inventory/query.hpp"
+
+#include "parser.hpp"  // Task 6.46 parser boundary
 
 #include <system/observation/output/types.hpp>
 #include <system/shell/collision_scanner.hpp>
@@ -229,36 +233,77 @@ int cmd_inventory_packages(const inventory::QueryOptions& options) {
     return 0;
 }
 
+// ============================================================================
+// main — CLI entry point with parser boundary (Task 6.46)
+//
+// This is the interface edge where text parsing happens:
+//   argv → tokenize/parse_argv → typed CommandIntent
+//
+// Domain code receives ONLY typed structures - no string re-parsing.
+// ============================================================================
+
 int main(int argc, char** argv) {
     if (argc < 2) {
         print_usage(argv[0]);
         return 0;
     }
     
-    std::string command = argv[1];
+    // Check for help flag before parsing (help is special case)
+    for (int i = 1; i < argc; ++i) {
+        std::string arg = argv[i];
+        if (arg == "help" || arg == "--help" || arg == "-h") {
+            print_usage(argv[0]);
+            return 0;
+        }
+    }
+    
+    // Build vector of arguments from raw argv (interface edge - text parsing)
+    std::vector<std::string> args(argv, argv + argc);
+    
+    // Parse at the boundary: argv → typed CommandIntent
+    parser::ParseError parse_error{};
+    shell::CommandIntent intent = parser::parse_argv(args, parse_error);
+    
+    if (!parse_error.message.empty()) {
+        std::cerr << "error: " << parse_error.message << "\n";
+        print_usage(argv[0]);
+        return 1;
+    }
+    
+    // Command intent is now typed - no more string parsing in dispatch logic
+    const std::string& command = intent.verb;
     
     if (command == "inventory" || command == "pkg" || command == "package") {
         // Default to packages
         inventory::QueryOptions options;
         
-        // Parse remaining arguments
-        for (int i = 2; i < argc; ++i) {
-            std::string arg = argv[i];
-            
-            if (arg == "--format" && i + 1 < argc) {
-                // Format option - currently only table format supported
-                ++i;
-            } else if (arg == "--freshness" && i + 1 < argc) {
-                auto val = std::stoi(argv[++i]);
-                options.freshness_threshold_ms = std::chrono::seconds(val);
-            } else if (arg == "--max" && i + 1 < argc) {
-                options.max_results = std::stoul(argv[++i]);
-            } else if (arg == "--verbose") {
-                // Verbose mode - not used in current implementation
-            }
+        // Extract options from qualifiers map (already typed, no re-parsing)
+        auto it = intent.qualifiers.find("freshness");
+        if (it != intent.qualifiers.end()) {
+            try {
+                options.freshness_threshold_ms = std::chrono::seconds(std::stoi(it->second));
+            } catch (...) {}
         }
         
-        options.kind = inventory::InventoryKind::kPackage;
+        it = intent.qualifiers.find("max");
+        if (it != intent.qualifiers.end()) {
+            try {
+                options.max_results = std::stoul(it->second);
+            } catch (...) {}
+        }
+        
+        // Handle "all" qualifier for all packages
+        if (intent.qualifiers.count("all") > 0) {
+            options.kind = inventory::InventoryKind::kPackage;
+        } else {
+            // Check positional arguments for package kind
+            if (!intent.arguments.empty()) {
+                std::string arg = intent.arguments[0].second;
+                if (arg == "packages" || arg == "pkg") {
+                    options.kind = inventory::InventoryKind::kPackage;
+                }
+            }
+        }
         
         return cmd_inventory_packages(options);
     } else if (command == "help" || command == "--help" || command == "-h") {

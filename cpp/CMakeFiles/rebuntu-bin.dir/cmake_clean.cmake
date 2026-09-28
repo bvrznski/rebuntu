@@ -1,6 +1,8 @@
 file(REMOVE_RECURSE
   "CMakeFiles/rebuntu-bin.dir/home/bvrznski/rebuntu/src/cli/main.cpp.o"
   "CMakeFiles/rebuntu-bin.dir/home/bvrznski/rebuntu/src/cli/main.cpp.o.d"
+  "CMakeFiles/rebuntu-bin.dir/home/bvrznski/rebuntu/src/cli/parser.cpp.o"
+  "CMakeFiles/rebuntu-bin.dir/home/bvrznski/rebuntu/src/cli/parser.cpp.o.d"
   "rebuntu-bin"
   "rebuntu-bin.pdb"
 )

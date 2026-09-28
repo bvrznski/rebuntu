@@ -2741,6 +2741,30 @@ home/bvrznski/rebuntu/src/cli/main.cpp.s:
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/rebuntu-bin.dir/build.make CMakeFiles/rebuntu-bin.dir/home/bvrznski/rebuntu/src/cli/main.cpp.s
 .PHONY : home/bvrznski/rebuntu/src/cli/main.cpp.s
 
+home/bvrznski/rebuntu/src/cli/parser.o: home/bvrznski/rebuntu/src/cli/parser.cpp.o
+.PHONY : home/bvrznski/rebuntu/src/cli/parser.o
+
+# target to build an object file
+home/bvrznski/rebuntu/src/cli/parser.cpp.o:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/rebuntu-bin.dir/build.make CMakeFiles/rebuntu-bin.dir/home/bvrznski/rebuntu/src/cli/parser.cpp.o
+.PHONY : home/bvrznski/rebuntu/src/cli/parser.cpp.o
+
+home/bvrznski/rebuntu/src/cli/parser.i: home/bvrznski/rebuntu/src/cli/parser.cpp.i
+.PHONY : home/bvrznski/rebuntu/src/cli/parser.i
+
+# target to preprocess a source file
+home/bvrznski/rebuntu/src/cli/parser.cpp.i:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/rebuntu-bin.dir/build.make CMakeFiles/rebuntu-bin.dir/home/bvrznski/rebuntu/src/cli/parser.cpp.i
+.PHONY : home/bvrznski/rebuntu/src/cli/parser.cpp.i
+
+home/bvrznski/rebuntu/src/cli/parser.s: home/bvrznski/rebuntu/src/cli/parser.cpp.s
+.PHONY : home/bvrznski/rebuntu/src/cli/parser.s
+
+# target to generate assembly for a file
+home/bvrznski/rebuntu/src/cli/parser.cpp.s:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/rebuntu-bin.dir/build.make CMakeFiles/rebuntu-bin.dir/home/bvrznski/rebuntu/src/cli/parser.cpp.s
+.PHONY : home/bvrznski/rebuntu/src/cli/parser.cpp.s
+
 home/bvrznski/rebuntu/src/events/collector.o: home/bvrznski/rebuntu/src/events/collector.cpp.o
 .PHONY : home/bvrznski/rebuntu/src/events/collector.o
 
@@ -5507,6 +5531,9 @@ help:
 	@echo "... home/bvrznski/rebuntu/src/cli/main.o"
 	@echo "... home/bvrznski/rebuntu/src/cli/main.i"
 	@echo "... home/bvrznski/rebuntu/src/cli/main.s"
+	@echo "... home/bvrznski/rebuntu/src/cli/parser.o"
+	@echo "... home/bvrznski/rebuntu/src/cli/parser.i"
+	@echo "... home/bvrznski/rebuntu/src/cli/parser.s"
 	@echo "... home/bvrznski/rebuntu/src/events/collector.o"
 	@echo "... home/bvrznski/rebuntu/src/events/collector.i"
 	@echo "... home/bvrznski/rebuntu/src/events/collector.s"

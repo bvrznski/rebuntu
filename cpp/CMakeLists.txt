@@ -894,12 +894,14 @@ target_link_libraries(rebuntu-cli-inventory-test PRIVATE rebuntu-core rebuntu-dp
 target_include_directories(rebuntu-cli-inventory-test PRIVATE ${CMAKE_CURRENT_LIST_DIR}/../src)
 add_test(NAME cli_inventory_test COMMAND rebuntu-cli-inventory-test)
 
-# Rebuntu CLI binary
+# Rebuntu CLI binary (includes parser boundary from Task 6.46)
 add_executable(rebuntu-bin
     ${CMAKE_CURRENT_LIST_DIR}/../src/cli/main.cpp
+    ${CMAKE_CURRENT_LIST_DIR}/../src/cli/parser.hpp
+    ${CMAKE_CURRENT_LIST_DIR}/../src/cli/parser.cpp
 )
 target_include_directories(rebuntu-bin PRIVATE ${CMAKE_CURRENT_LIST_DIR}/../src)
-target_link_libraries(rebuntu-bin PRIVATE rebuntu-core rebuntu-cli-inventory)
+target_link_libraries(rebuntu-bin PRIVATE rebuntu-core rebuntu-cli-inventory rebuntu-shell)
 
 # Phase 6.20: Exit Result Semantics unit tests
 add_executable(rebuntu-exit-result-test

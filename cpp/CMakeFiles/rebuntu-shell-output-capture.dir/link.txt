@@ -1,2 +1,0 @@
-/usr/bin/ar qc librebuntu-shell-output-capture.a CMakeFiles/rebuntu-shell-output-capture.dir/home/bvrznski/rebuntu/src/system/shell/output/capture.cpp.o
-/usr/bin/ranlib librebuntu-shell-output-capture.a

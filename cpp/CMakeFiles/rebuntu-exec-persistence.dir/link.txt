@@ -1,2 +1,0 @@
-/usr/bin/ar qc librebuntu-exec-persistence.a CMakeFiles/rebuntu-exec-persistence.dir/home/bvrznski/rebuntu/src/runtime/persistence/integration.cpp.o
-/usr/bin/ranlib librebuntu-exec-persistence.a

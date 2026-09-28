@@ -1,2 +1,0 @@
-/usr/bin/ar qc librebuntu-journal-normalizer.a CMakeFiles/rebuntu-journal-normalizer.dir/home/bvrznski/rebuntu/src/adapters/journal_normalizer.cpp.o
-/usr/bin/ranlib librebuntu-journal-normalizer.a

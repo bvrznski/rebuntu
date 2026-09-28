@@ -1,2 +1,0 @@
-/usr/bin/ar qc librebuntu-journald-adapter.a CMakeFiles/rebuntu-journald-adapter.dir/home/bvrznski/rebuntu/src/adapters/journald.cpp.o
-/usr/bin/ranlib librebuntu-journald-adapter.a

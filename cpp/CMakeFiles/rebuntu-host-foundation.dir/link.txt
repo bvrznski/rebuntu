@@ -1,2 +1,0 @@
-/usr/bin/ar qc librebuntu-host-foundation.a CMakeFiles/rebuntu-host-foundation.dir/home/bvrznski/rebuntu/src/system/host_foundation/host_foundation.cpp.o
-/usr/bin/ranlib librebuntu-host-foundation.a

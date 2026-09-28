@@ -1249,6 +1249,14 @@ target_include_directories(rebuntu-command-injection-adversarial-test PRIVATE ${
 target_link_libraries(rebuntu-command-injection-adversarial-test PRIVATE rebuntu-core rebuntu-shell)
 add_test(NAME command_injection_adversarial_test COMMAND rebuntu-command-injection-adversarial-test)
 
+# Phase 6.64: Privilege Escalation Adversarial Tests
+add_executable(rebuntu-privilege-escalation-adversarial-test
+    ${CMAKE_CURRENT_LIST_DIR}/../tests/unit/privilege_escalation_adversarial_test.cpp
+)
+target_include_directories(rebuntu-privilege-escalation-adversarial-test PRIVATE ${CMAKE_CURRENT_LIST_DIR}/../src)
+target_link_libraries(rebuntu-privilege-escalation-adversarial-test PRIVATE rebuntu-core)
+add_test(NAME privilege_escalation_adversarial_test COMMAND rebuntu-privilege-escalation-adversarial-test)
+
 # Phase 6.61: Execution Storm and Backpressure Tests
 add_executable(rebuntu-execution-storm-backpressure-test
     ${CMAKE_CURRENT_LIST_DIR}/../tests/unit/execution_storm_backpressure_test.cpp

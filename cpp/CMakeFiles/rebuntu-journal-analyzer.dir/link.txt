@@ -1,2 +1,0 @@
-/usr/bin/ar qc librebuntu-journal-analyzer.a CMakeFiles/rebuntu-journal-analyzer.dir/home/bvrznski/rebuntu/src/adapters/journal_analyzer.cpp.o
-/usr/bin/ranlib librebuntu-journal-analyzer.a

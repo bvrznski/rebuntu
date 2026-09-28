@@ -1,2 +1,0 @@
-/usr/bin/ar qc librebuntu-session-utmp.a CMakeFiles/rebuntu-session-utmp.dir/home/bvrznski/rebuntu/src/adapters/session/utmp/implementation.cpp.o
-/usr/bin/ranlib librebuntu-session-utmp.a

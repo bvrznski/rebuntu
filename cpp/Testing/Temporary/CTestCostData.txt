@@ -45,4 +45,5 @@ ambiguous_target_test 0 0
 device_reorder_test 0 0
 command_injection_adversarial_test 0 0
 execution_storm_backpressure_test 3 0.00445053
+timeout_ambiguity_test 2 0.0617648
 ---

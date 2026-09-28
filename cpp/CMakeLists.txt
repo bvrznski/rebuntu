@@ -1271,3 +1271,11 @@ target_include_directories(rebuntu-cancellation-race-test PRIVATE ${CMAKE_CURREN
 target_link_libraries(rebuntu-cancellation-race-test PRIVATE rebuntu-core)
 add_test(NAME cancellation_race_test COMMAND rebuntu-cancellation-race-test)
 
+# Phase 6.63: Timeout Ambiguity Tests (Task 6.63)
+add_executable(rebuntu-timeout-ambiguity-test
+    ${CMAKE_CURRENT_LIST_DIR}/../tests/unit/timeout_after_commit_test.cpp
+)
+target_include_directories(rebuntu-timeout-ambiguity-test PRIVATE ${CMAKE_CURRENT_LIST_DIR}/../src)
+target_link_libraries(rebuntu-timeout-ambiguity-test PRIVATE rebuntu-core)
+add_test(NAME timeout_ambiguity_test COMMAND rebuntu-timeout-ambiguity-test)
+

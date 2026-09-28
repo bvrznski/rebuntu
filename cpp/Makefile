@@ -2225,6 +2225,19 @@ rebuntu-cancellation-race-test/fast:
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/rebuntu-cancellation-race-test.dir/build.make CMakeFiles/rebuntu-cancellation-race-test.dir/build
 .PHONY : rebuntu-cancellation-race-test/fast
 
+#=============================================================================
+# Target rules for targets named rebuntu-timeout-ambiguity-test
+
+# Build rule for target.
+rebuntu-timeout-ambiguity-test: cmake_check_build_system
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 rebuntu-timeout-ambiguity-test
+.PHONY : rebuntu-timeout-ambiguity-test
+
+# fast build rule for target.
+rebuntu-timeout-ambiguity-test/fast:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/rebuntu-timeout-ambiguity-test.dir/build.make CMakeFiles/rebuntu-timeout-ambiguity-test.dir/build
+.PHONY : rebuntu-timeout-ambiguity-test/fast
+
 home/bvrznski/rebuntu/src/adapters/cgroups/hierarchy/implementation.o: home/bvrznski/rebuntu/src/adapters/cgroups/hierarchy/implementation.cpp.o
 .PHONY : home/bvrznski/rebuntu/src/adapters/cgroups/hierarchy/implementation.o
 
@@ -4892,6 +4905,30 @@ home/bvrznski/rebuntu/tests/unit/shell_output_capture_test.cpp.s:
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/rebuntu-shell-output-capture-test.dir/build.make CMakeFiles/rebuntu-shell-output-capture-test.dir/home/bvrznski/rebuntu/tests/unit/shell_output_capture_test.cpp.s
 .PHONY : home/bvrznski/rebuntu/tests/unit/shell_output_capture_test.cpp.s
 
+home/bvrznski/rebuntu/tests/unit/timeout_after_commit_test.o: home/bvrznski/rebuntu/tests/unit/timeout_after_commit_test.cpp.o
+.PHONY : home/bvrznski/rebuntu/tests/unit/timeout_after_commit_test.o
+
+# target to build an object file
+home/bvrznski/rebuntu/tests/unit/timeout_after_commit_test.cpp.o:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/rebuntu-timeout-ambiguity-test.dir/build.make CMakeFiles/rebuntu-timeout-ambiguity-test.dir/home/bvrznski/rebuntu/tests/unit/timeout_after_commit_test.cpp.o
+.PHONY : home/bvrznski/rebuntu/tests/unit/timeout_after_commit_test.cpp.o
+
+home/bvrznski/rebuntu/tests/unit/timeout_after_commit_test.i: home/bvrznski/rebuntu/tests/unit/timeout_after_commit_test.cpp.i
+.PHONY : home/bvrznski/rebuntu/tests/unit/timeout_after_commit_test.i
+
+# target to preprocess a source file
+home/bvrznski/rebuntu/tests/unit/timeout_after_commit_test.cpp.i:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/rebuntu-timeout-ambiguity-test.dir/build.make CMakeFiles/rebuntu-timeout-ambiguity-test.dir/home/bvrznski/rebuntu/tests/unit/timeout_after_commit_test.cpp.i
+.PHONY : home/bvrznski/rebuntu/tests/unit/timeout_after_commit_test.cpp.i
+
+home/bvrznski/rebuntu/tests/unit/timeout_after_commit_test.s: home/bvrznski/rebuntu/tests/unit/timeout_after_commit_test.cpp.s
+.PHONY : home/bvrznski/rebuntu/tests/unit/timeout_after_commit_test.s
+
+# target to generate assembly for a file
+home/bvrznski/rebuntu/tests/unit/timeout_after_commit_test.cpp.s:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/rebuntu-timeout-ambiguity-test.dir/build.make CMakeFiles/rebuntu-timeout-ambiguity-test.dir/home/bvrznski/rebuntu/tests/unit/timeout_after_commit_test.cpp.s
+.PHONY : home/bvrznski/rebuntu/tests/unit/timeout_after_commit_test.cpp.s
+
 tests/unit/ambiguous_target_adversarial_test.o: tests/unit/ambiguous_target_adversarial_test.cpp.o
 .PHONY : tests/unit/ambiguous_target_adversarial_test.o
 
@@ -5949,6 +5986,7 @@ help:
 	@echo "... rebuntu-systemd-service-test"
 	@echo "... rebuntu-temp-files"
 	@echo "... rebuntu-thermal-adapter"
+	@echo "... rebuntu-timeout-ambiguity-test"
 	@echo "... rebuntu-user-identity"
 	@echo "... rebuntu-value-parsers-test"
 	@echo "... home/bvrznski/rebuntu/src/adapters/cgroups/hierarchy/implementation.o"
@@ -6284,6 +6322,9 @@ help:
 	@echo "... home/bvrznski/rebuntu/tests/unit/shell_output_capture_test.o"
 	@echo "... home/bvrznski/rebuntu/tests/unit/shell_output_capture_test.i"
 	@echo "... home/bvrznski/rebuntu/tests/unit/shell_output_capture_test.s"
+	@echo "... home/bvrznski/rebuntu/tests/unit/timeout_after_commit_test.o"
+	@echo "... home/bvrznski/rebuntu/tests/unit/timeout_after_commit_test.i"
+	@echo "... home/bvrznski/rebuntu/tests/unit/timeout_after_commit_test.s"
 	@echo "... tests/unit/ambiguous_target_adversarial_test.o"
 	@echo "... tests/unit/ambiguous_target_adversarial_test.i"
 	@echo "... tests/unit/ambiguous_target_adversarial_test.s"

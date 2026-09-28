@@ -100,3 +100,5 @@ add_test([=[execution_storm_backpressure_test]=] "/home/bvrznski/rebuntu/cpp/reb
 set_tests_properties([=[execution_storm_backpressure_test]=] PROPERTIES  _BACKTRACE_TRIPLES "/home/bvrznski/rebuntu/cpp/CMakeLists.txt;1258;add_test;/home/bvrznski/rebuntu/cpp/CMakeLists.txt;0;")
 add_test([=[cancellation_race_test]=] "/home/bvrznski/rebuntu/cpp/rebuntu-cancellation-race-test")
 set_tests_properties([=[cancellation_race_test]=] PROPERTIES  _BACKTRACE_TRIPLES "/home/bvrznski/rebuntu/cpp/CMakeLists.txt;1272;add_test;/home/bvrznski/rebuntu/cpp/CMakeLists.txt;0;")
+add_test([=[timeout_ambiguity_test]=] "/home/bvrznski/rebuntu/cpp/rebuntu-timeout-ambiguity-test")
+set_tests_properties([=[timeout_ambiguity_test]=] PROPERTIES  _BACKTRACE_TRIPLES "/home/bvrznski/rebuntu/cpp/CMakeLists.txt;1280;add_test;/home/bvrznski/rebuntu/cpp/CMakeLists.txt;0;")

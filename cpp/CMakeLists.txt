@@ -197,6 +197,12 @@ target_sources(rebuntu-core PRIVATE
     ${CMAKE_CURRENT_LIST_DIR}/../src/runtime/runner.cpp
 )
 
+# Phase 6.24: Retry Mechanics Integration module
+target_sources(rebuntu-core PRIVATE
+    ${CMAKE_CURRENT_LIST_DIR}/../src/runtime/retry_mechanics.hpp
+    ${CMAKE_CURRENT_LIST_DIR}/../src/runtime/retry_mechanics.cpp
+)
+
 # Phase 1.0-1.2: Installation module
 add_library(rebuntu-install STATIC
     ${CMAKE_CURRENT_LIST_DIR}/../src/system/install/contracts.hpp
@@ -865,6 +871,14 @@ add_executable(rebuntu-idempotency-test
 target_include_directories(rebuntu-idempotency-test PRIVATE ${CMAKE_CURRENT_LIST_DIR}/../src)
 target_link_libraries(rebuntu-idempotency-test PRIVATE rebuntu-core rebuntu-idempotency)
 add_test(NAME idempotency_classifier_test COMMAND rebuntu-idempotency-test)
+
+# Phase 6.24: Retry Mechanics Integration unit tests
+add_executable(rebuntu-retry-mechanics-test
+    ${CMAKE_CURRENT_LIST_DIR}/../tests/unit/retry_mechanics_test.cpp
+)
+target_include_directories(rebuntu-retry-mechanics-test PRIVATE ${CMAKE_CURRENT_LIST_DIR}/../src)
+target_link_libraries(rebuntu-retry-mechanics-test PRIVATE rebuntu-core)
+add_test(NAME retry_mechanics_test COMMAND rebuntu-retry-mechanics-test)
 
 # Phase 5.61: Observation Output unit tests (disabled - gtest not available in CTest)
 # add_executable(rebuntu-observation-output-test

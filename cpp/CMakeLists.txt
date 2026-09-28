@@ -174,13 +174,14 @@ target_sources(rebuntu-core PRIVATE
     ${CMAKE_CURRENT_LIST_DIR}/../src/system/command/model.hpp
 )
 
-# Add common runtime source files for Phase 4.18
+# Add common runtime source files for Phase 4.18 and 6.21 verification
 target_sources(rebuntu-core PRIVATE
     ${CMAKE_CURRENT_LIST_DIR}/../src/runtime/production.hpp
     ${CMAKE_CURRENT_LIST_DIR}/../src/runtime/native/production_runtime.cpp
     ${CMAKE_CURRENT_LIST_DIR}/../src/runtime/contracts.hpp
     ${CMAKE_CURRENT_LIST_DIR}/../src/runtime/work.hpp
     ${CMAKE_CURRENT_LIST_DIR}/../src/runtime/engine.cpp
+    ${CMAKE_CURRENT_LIST_DIR}/../src/runtime/runner.cpp
 )
 
 # Phase 1.0-1.2: Installation module

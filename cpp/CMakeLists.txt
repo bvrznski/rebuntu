@@ -153,13 +153,21 @@ target_link_libraries(rebuntu-core INTERFACE rebuntu-shell-subjects)
 target_include_directories(rebuntu-shell PUBLIC ${CMAKE_CURRENT_LIST_DIR}/../src)
 target_link_libraries(rebuntu-core PUBLIC rebuntu-shell)
 
-# Phase 6.11: Structured Output module (header-only for now, contract.hpp only)
+# Phase 6.11: Structured Output module
 add_library(rebuntu-shell-output STATIC
     ${CMAKE_CURRENT_LIST_DIR}/../src/system/shell/output/contract.hpp
     ${CMAKE_CURRENT_LIST_DIR}/../src/system/shell/output/contract.cpp
 )
 target_include_directories(rebuntu-shell-output PUBLIC ${CMAKE_CURRENT_LIST_DIR}/../src)
 target_link_libraries(rebuntu-core PUBLIC rebuntu-shell-output)
+
+# Phase 6.19: Output Capture Semantics module
+add_library(rebuntu-shell-output-capture STATIC
+    ${CMAKE_CURRENT_LIST_DIR}/../src/system/shell/output/capture.hpp
+    ${CMAKE_CURRENT_LIST_DIR}/../src/system/shell/output/capture.cpp
+)
+target_include_directories(rebuntu-shell-output-capture PUBLIC ${CMAKE_CURRENT_LIST_DIR}/../src)
+target_link_libraries(rebuntu-core PUBLIC rebuntu-shell-output-capture)
 
 # Phase 6.1: Typed Command Model module (header-only, included via rebuntu-core)
 target_sources(rebuntu-core PRIVATE
@@ -930,6 +938,14 @@ add_executable(rebuntu-shell-boundary-test
 target_link_libraries(rebuntu-shell-boundary-test PRIVATE rebuntu-core rebuntu-shell-boundary)
 target_include_directories(rebuntu-shell-boundary-test PRIVATE ${CMAKE_CURRENT_LIST_DIR}/../src)
 add_test(NAME shell_boundary_test COMMAND rebuntu-shell-boundary-test)
+
+# Phase 6.19: Output capture semantics unit tests
+add_executable(rebuntu-shell-output-capture-test
+    /home/bvrznski/rebuntu/tests/unit/shell_output_capture_test.cpp
+)
+target_link_libraries(rebuntu-shell-output-capture-test PRIVATE rebuntu-core rebuntu-shell-output-capture)
+target_include_directories(rebuntu-shell-output-capture-test PRIVATE /home/bvrznski/rebuntu/src)
+add_test(NAME shell_output_capture_test COMMAND rebuntu-shell-output-capture-test)
 
 # Phase 6.13: Shell output contract unit tests (disabled - gtest not available in CTest)
 # add_executable(rebuntu-shell-output-test

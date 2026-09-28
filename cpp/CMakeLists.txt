@@ -88,6 +88,14 @@ add_library(rebuntu-shell STATIC
     ${CMAKE_CURRENT_LIST_DIR}/../src/system/shell/verbs/mapping.cpp
 )
 
+# Phase 6.14: Command Collision Detection module
+add_library(rebuntu-shell-collision STATIC
+    ${CMAKE_CURRENT_LIST_DIR}/../src/system/shell/collision_scanner.hpp
+    ${CMAKE_CURRENT_LIST_DIR}/../src/system/shell/collision_scanner.cpp
+)
+target_include_directories(rebuntu-shell-collision PUBLIC ${CMAKE_CURRENT_LIST_DIR}/../src)
+target_link_libraries(rebuntu-core PUBLIC rebuntu-shell-collision)
+
 # Phase 6.10: Pipeline Semantics module (shell stream processing)
 add_library(rebuntu-shell-pipeline STATIC
     ${CMAKE_CURRENT_LIST_DIR}/../src/system/shell/pipeline.hpp
@@ -488,6 +496,14 @@ add_executable(rebuntu-command-model-test
 )
 target_link_libraries(rebuntu-command-model-test PRIVATE rebuntu-core)
 add_test(NAME command_model_test COMMAND rebuntu-command-model-test)
+
+# Phase 6.14: Command Collision Scanner unit tests
+add_executable(rebuntu-collision-scanner-test
+    ${CMAKE_CURRENT_LIST_DIR}/tests/unit/collision_scanner_test.cpp
+)
+target_link_libraries(rebuntu-collision-scanner-test PRIVATE rebuntu-core rebuntu-shell-collision)
+target_include_directories(rebuntu-collision-scanner-test PRIVATE ${CMAKE_CURRENT_LIST_DIR}/../src)
+add_test(NAME collision_scanner_test COMMAND rebuntu-collision-scanner-test)
 
 # Phase 6.2: Predicate Dictionary unit tests
 add_executable(rebuntu-predicates-test

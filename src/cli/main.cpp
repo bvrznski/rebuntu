@@ -16,6 +16,7 @@
 #include "inventory/query.hpp"
 
 #include <system/observation/output/types.hpp>
+#include <system/shell/collision_scanner.hpp>
 
 namespace rebuntu::cli {
 

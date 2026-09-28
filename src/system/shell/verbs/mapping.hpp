@@ -13,6 +13,7 @@
 #include <string>
 #include <vector>
 #include <map>
+#include <optional>
 
 namespace rebuntu::shell::verbs {
 
@@ -23,6 +24,10 @@ struct VerbMapping {
     std::optional<std::string> mapped_operation_id;
     SideEffectClass side_effect{SideEffectClass::NONE};
     std::string description;
+    
+    // Collision status - populated at registry initialization
+    // This indicates if the verb collides with system commands, builtins, etc.
+    std::optional<std::string> collision_status;  // none, shell_builtin, system_command, user_alias, reserved_rebuntu
 };
 
 class VerbMappingRegistry {

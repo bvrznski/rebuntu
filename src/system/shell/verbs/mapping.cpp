@@ -4,6 +4,7 @@
 
 #include "mapping.hpp"
 #include <system/core/contracts.hpp>
+#include <system/shell/collision_scanner.hpp>
 
 namespace rebuntu::shell::verbs {
 
@@ -12,6 +13,17 @@ VerbMappingRegistry::VerbMappingRegistry() {
 }
 
 void VerbMappingRegistry::register_builtin_mappings_() {
+    // Get collision scanner to populate collision status
+    rebuntu::shell::collision::CollisionScanner collision_scanner;
+    
+    auto get_collision_status_string = [](std::string_view verb) -> std::optional<std::string> {
+        auto status = rebuntu::shell::collision::get_collision_status(verb);
+        if (status == rebuntu::shell::collision::CollisionClass::kNone) {
+            return std::nullopt;
+        }
+        return rebuntu::shell::collision::to_string(status);
+    };
+    
     // Filesystem operations
     mappings_["copy"] = VerbMapping{
         .verb = "copy",
@@ -97,6 +109,19 @@ void VerbMappingRegistry::register_builtin_mappings_() {
         .side_effect = SideEffectClass::OBSERVATION,
         .description = "Check if a service is running"
     };
+    
+    // Add collision status for all verbs
+    std::vector<std::string> verbs_to_check = {
+        "copy", "install", "remove", "restart", "start", "stop",
+        "list", "status", "installed", "running"
+    };
+    
+    for (const auto& verb : verbs_to_check) {
+        auto it = mappings_.find(verb);
+        if (it != mappings_.end()) {
+            it->second.collision_status = get_collision_status_string(verb);
+        }
+    }
 }
 
 std::optional<VerbMapping> VerbMappingRegistry::find(const std::string& verb) const {

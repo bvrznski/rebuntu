@@ -197,6 +197,14 @@ target_sources(rebuntu-core PRIVATE
     ${CMAKE_CURRENT_LIST_DIR}/../src/runtime/runner.cpp
 )
 
+# Phase 6.27: Dry-Run Semantics module
+add_library(rebuntu-dry-run STATIC
+    ${CMAKE_CURRENT_LIST_DIR}/../src/operations/dry_run.hpp
+    ${CMAKE_CURRENT_LIST_DIR}/../src/operations/dry_run.cpp
+)
+target_include_directories(rebuntu-dry-run PUBLIC ${CMAKE_CURRENT_LIST_DIR}/../src)
+target_link_libraries(rebuntu-core PUBLIC rebuntu-dry-run)
+
 # Phase 6.24: Retry Mechanics Integration module
 target_sources(rebuntu-core PRIVATE
     ${CMAKE_CURRENT_LIST_DIR}/../src/runtime/retry_mechanics.hpp

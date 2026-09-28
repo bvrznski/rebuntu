@@ -6,7 +6,7 @@
   "implementation_header": "src/runtime/native-command-operation-execution/subtask_targets/verification/operation_evidence_bundle_41581cb6.hpp",
   "implementation_source": "src/runtime/native-command-operation-execution/subtask_targets/verification/operation_evidence_bundle_41581cb6.cpp",
   "test_target": "tests/structural-closure/runtime/native-command-operation-execution/verification/test_operation_evidence_bundle_41581cb6.cpp",
-  "status": "SKELETON_MATERIALIZED",
+   "status": "IMPLEMENTED",
   "behavioral_credit": false,
   "preservation": "PRESERVE_IMPLEMENT_EXTEND"
 }

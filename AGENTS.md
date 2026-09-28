@@ -2102,6 +2102,170 @@ Before implementing runtime functionality, ask these questions:
 
 ---
 
+## Phase 6 Command & Execution System
+
+### 56. Typed Commands and Canonical IR (Phase 6)
+
+> **COMMAND != SHELL COMMAND; INTENT != COMMAND; COMMAND != OPERATION**
+
+The shell is a presentation surface, not an independent runtime. All commands
+must produce typed intermediate representation that flows through the canonical
+execution pipeline.
+
+```text
+Shell tokens / argv / stdin
+  ↓
+lexical + grammatical parsing (C++)
+  ↓
+CommandIntent IR (typed data structure)
+  ↓
+subject + scope resolution (C++)
+  ↓
+validation (C++)
+  ↓
+authorization / policy decision (C++)
+  ↓
+canonical Operation invocation (C++)
+  ↓
+runtime execution with typed capability
+```
+
+**Rules:**
+
+- Shell commands never execute anything directly; they parse and produce IR only
+- Parser produces `CommandIntent`, not side effects
+- Resolution maps intent to canonical operation, never executes
+- Authorization happens before any system mutation
+- Python semantic fallback must validate candidates against canonical vocabulary
+
+### 57. Native Provider Preference (Phase 6)
+
+> **USE NATIVE LINUX MECHANISMS; NO SHELL COMMAND PARSING FOR SYSTEM STATE**
+
+For any system action, prefer in this order:
+
+1. Direct native API (kernel syscalls)
+2. Established C library wrapper (no shell parsing)
+3. D-Bus interface (systemd, udev)
+4. Kernel interfaces (netlink, inotify, fanotify, signalfd)
+5. Bounded external process with argv-style invocation only
+
+**Prohibited patterns:**
+
+```cpp
+// ❌ PROHIBITED:
+std::system(...);
+popen(...);
+"/bin/sh -c ...";
+bash -c "...";
+dynamically assembled command strings;
+eval;
+```
+
+**Allowed when necessary:**
+
+```cpp
+ProcessOptions opts;
+opts.executable = "/usr/bin/ssh";  // explicit executable
+opts.argv = {"ssh", "host", "cmd"};  // structured argv, no shell interpolation
+```
+
+### 58. Shell Command Prohibition (Phase 6)
+
+> **NO SHELL COMMAND CONSTRUCTION IN CANONICAL IMPLEMENTATION**
+
+A C++ program that merely constructs Bash is NOT a successful native migration.
+
+**Prohibited:**
+- `std::system("apt install curl")` — direct shell execution
+- `popen("systemctl status nginx", "r")` — shell pipe parsing
+- `"/bin/sh -c \"rm -rf " + path + "\""` — dynamic command strings
+
+**Allowed (when no native API exists):**
+- Bounded subprocess with explicit executable and argv array
+- Timeout, cancellation, bounded stdout/stderr
+- Process cleanup and exit-status capture
+
+### 59. Python Semantic Candidate Boundary (Phase 6)
+
+> **MODEL OUTPUT != AUTHORITY**
+
+The deterministic parser path is primary. Semantic fallback is only for when
+deterministic parsing fails or is ambiguous.
+
+**Python may be used at this boundary:**
+- ML/semantic classification of parsed output
+- Model output validation and structured candidate production
+
+**Python must NEVER produce:**
+- Executable shell commands
+- Authorization decisions
+- Verified state
+- Policy violations
+
+### 60. Stable Target Identity (Phase 6)
+
+> **NAME != IDENTITY; PATH != IDENTITY; PID != DURABLE PROCESS IDENTITY**
+
+Linux identifiers have temporal existence:
+- PID is reused after process exits
+- Process name changes at exec()
+- File path can be renamed/symlinked
+
+**Rebuntu must use:**
+1. Hardware identifiers (serial numbers, UUIDs, DMI IDs)
+2. Generated Rebuntu IDs where Linux provides none
+3. Ephemeral handles only for observation windowing
+
+### 61. Verification Semantics (Phase 6)
+
+> **EXECUTION SUCCESS != VERIFIED SEMANTIC SUCCESS**
+
+A successful exit code proves only what an exit code actually proves.
+
+**Verification is a separate, independent stage:**
+- Postcondition evaluation after execution
+- Uses different evidence than execution
+- May succeed independently of execution success
+
+**Result structure must include:**
+- `SemanticStatus`: semantic conclusion (SUCCESS/FAILURE/UNKNOWN/CANCELLED)
+- `Outcome`: structured result with cause if failure
+- `Evidence`: provenance-bearing observations from both stages
+- `verification_status`: whether postconditions were verified
+
+### 62. Canonical Execution Lifecycle (Phase 6)
+
+Consequential mutations follow:
+
+```text
+DISCOVER
+    ↓
+RESOLVE TARGET (map subject+target to concrete entity)
+    ↓
+OBSERVE CURRENT STATE
+    ↓
+EVALUATE PRECONDITIONS
+    ↓
+PLAN (if mutating)
+    ↓
+AUTHORIZE (policy decision before execution)
+    ↓
+EXECUTE (with typed capability, not arbitrary shell)
+    ↓
+OBSERVE RESULTING STATE
+    ↓
+VERIFY POSTCONDITIONS
+    ↓
+GENERATE EVIDENCE
+    ↓
+RESULT (outcome + evidence + verification status)
+```
+
+No subsystem-specific bypasses. This is the canonical execution path.
+
+---
+
 ## Phase 0.2 addendum (Operational Grammar)
 
 Before adding any new source component, identify which structural family it

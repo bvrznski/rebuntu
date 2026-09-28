@@ -1,5 +1,6 @@
 #pragma once
 #include <providers/linux/backend.hpp>
+#include <semantics/entities/state_store.hpp>
 #include <control/domain_controller.hpp>
 #include <runtime/state/persistence/journal.hpp>
 #include <security/policy/policy_engine.hpp>

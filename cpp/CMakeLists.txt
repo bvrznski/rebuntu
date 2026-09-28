@@ -1007,6 +1007,14 @@ target_link_libraries(rebuntu-shell-output-capture-test PRIVATE rebuntu-core reb
 target_include_directories(rebuntu-shell-output-capture-test PRIVATE /home/bvrznski/rebuntu/src)
 add_test(NAME shell_output_capture_test COMMAND rebuntu-shell-output-capture-test)
 
+# Phase 6.29: Operation Cancellation Points module
+add_library(rebuntu-cancellation-points STATIC
+    ${CMAKE_CURRENT_LIST_DIR}/../src/runtime/cancellation/points.hpp
+    ${CMAKE_CURRENT_LIST_DIR}/../src/runtime/cancellation/points.cpp
+)
+target_include_directories(rebuntu-cancellation-points PUBLIC ${CMAKE_CURRENT_LIST_DIR}/../src)
+target_link_libraries(rebuntu-core PUBLIC rebuntu-cancellation-points)
+
 # Phase 6.13: Shell output contract unit tests (disabled - gtest not available in CTest)
 # add_executable(rebuntu-shell-output-test
 #     ${CMAKE_CURRENT_LIST_DIR}/tests/unit/shell_output_contract_test.cpp

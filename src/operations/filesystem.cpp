@@ -221,6 +221,15 @@ void register_filesystem_operations(core::OperationRegistry& registry) {
     copy_op.idempotency = core::Idempotency::IDEMPOTENT;
     copy_op.reversibility = core::Reversibility::CONDITIONALLY_REVERSIBLE;
     
+    // Resource declarations (Phase 2 integration)
+    // File copy involves storage I/O operations
+    core::OperationDefinition::ResourceDeclaration storage_resource;
+    storage_resource.type = core::OperationDefinition::ResourceDeclaration::Type::STORAGE_IO;
+    storage_resource.amount = 10.0;  // Estimated: ~10% storage I/O bandwidth for typical copy
+    storage_resource.is_minimum = false;  // This is a maximum constraint
+    storage_resource.description = "Storage I/O bandwidth during file copy operation";
+    copy_op.resources.emplace_back(std::move(storage_resource));
+    
     // Preconditions
     copy_op.preconditions.emplace_back("source exists");
     copy_op.preconditions.emplace_back("destination parent directory exists");

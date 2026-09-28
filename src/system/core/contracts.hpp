@@ -892,13 +892,37 @@ struct OperationDefinition {
     std::optional<std::string> required_privilege;
     bool requires_lock = false;
     
-    // Execution constraints
-    std::optional<int64_t> max_execution_time_ms;
-    bool allows_concurrent_execution = true;
-    
-    // Registry metadata
-    ComponentKind kind = ComponentKind::kUnit;
-};
+     // Resource declarations (Phase 2 integration)
+     // Operations can declare minimal resource requirements/constraints
+     struct ResourceDeclaration {
+         // Resource types from Phase 2/30
+         enum class Type {
+             CPU,        // Central Processing Unit
+             MEMORY,     // Main memory (RAM)
+             GPU,        // Graphics Processing Unit
+             VRAM,       // Video RAM
+             STORAGE_IO, // Storage I/O bandwidth
+             NETWORK_IO, // Network I/O bandwidth
+             THERMAL,    // Thermal constraints
+             POWER,      // Power consumption limits
+         };
+         
+         Type type;
+         double amount;           // Required amount (CPU: percent, Memory: kibibytes, etc.)
+         bool is_minimum = true;  // Is this a minimum requirement or maximum limit?
+         std::string description; // Human-readable explanation of the resource declaration
+     };
+     
+     // Resource declarations required by this operation
+     std::vector<ResourceDeclaration> resources;
+     
+     // Execution constraints
+     std::optional<int64_t> max_execution_time_ms;
+     bool allows_concurrent_execution = true;
+     
+     // Registry metadata
+     ComponentKind kind = ComponentKind::kUnit;
+ };
 
 // ---------------------------------------------------------------------------
 // OperationRequest

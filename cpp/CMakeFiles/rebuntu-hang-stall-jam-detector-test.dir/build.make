@@ -171,6 +171,7 @@ rebuntu-hang-stall-jam-detector-test: librebuntu-privileged-helpers.a
 rebuntu-hang-stall-jam-detector-test: librebuntu-concurrency-control.a
 rebuntu-hang-stall-jam-detector-test: librebuntu-cancellation-points.a
 rebuntu-hang-stall-jam-detector-test: librebuntu-exec-persistence.a
+rebuntu-hang-stall-jam-detector-test: librebuntu-command-input.a
 rebuntu-hang-stall-jam-detector-test: CMakeFiles/rebuntu-hang-stall-jam-detector-test.dir/link.txt
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --bold --progress-dir=/home/bvrznski/rebuntu/cpp/CMakeFiles --progress-num=$(CMAKE_PROGRESS_2) "Linking CXX executable rebuntu-hang-stall-jam-detector-test"
 	$(CMAKE_COMMAND) -E cmake_link_script CMakeFiles/rebuntu-hang-stall-jam-detector-test.dir/link.txt --verbose=$(VERBOSE)

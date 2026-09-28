@@ -1,0 +1,2 @@
+/usr/bin/ar qc librebuntu-command-input.a CMakeFiles/rebuntu-command-input.dir/home/bvrznski/rebuntu/src/interfaces/cli/input.cpp.o
+/usr/bin/ranlib librebuntu-command-input.a

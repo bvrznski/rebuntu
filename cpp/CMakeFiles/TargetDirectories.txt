@@ -144,6 +144,7 @@
 /home/bvrznski/rebuntu/cpp/CMakeFiles/rebuntu-parallel-composition-test.dir
 /home/bvrznski/rebuntu/cpp/CMakeFiles/rebuntu-dependency-aware-test.dir
 /home/bvrznski/rebuntu/cpp/CMakeFiles/rebuntu-exec-persistence.dir
+/home/bvrznski/rebuntu/cpp/CMakeFiles/rebuntu-command-input.dir
 /home/bvrznski/rebuntu/cpp/CMakeFiles/test.dir
 /home/bvrznski/rebuntu/cpp/CMakeFiles/edit_cache.dir
 /home/bvrznski/rebuntu/cpp/CMakeFiles/rebuild_cache.dir

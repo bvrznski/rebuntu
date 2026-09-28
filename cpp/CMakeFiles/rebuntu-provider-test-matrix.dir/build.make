@@ -170,6 +170,7 @@ rebuntu-provider-test-matrix: librebuntu-privileged-helpers.a
 rebuntu-provider-test-matrix: librebuntu-concurrency-control.a
 rebuntu-provider-test-matrix: librebuntu-cancellation-points.a
 rebuntu-provider-test-matrix: librebuntu-exec-persistence.a
+rebuntu-provider-test-matrix: librebuntu-command-input.a
 rebuntu-provider-test-matrix: CMakeFiles/rebuntu-provider-test-matrix.dir/link.txt
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --bold --progress-dir=/home/bvrznski/rebuntu/cpp/CMakeFiles --progress-num=$(CMAKE_PROGRESS_2) "Linking CXX executable rebuntu-provider-test-matrix"
 	$(CMAKE_COMMAND) -E cmake_link_script CMakeFiles/rebuntu-provider-test-matrix.dir/link.txt --verbose=$(VERBOSE)

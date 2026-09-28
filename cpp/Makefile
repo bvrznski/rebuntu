@@ -2069,6 +2069,19 @@ rebuntu-exec-persistence/fast:
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/rebuntu-exec-persistence.dir/build.make CMakeFiles/rebuntu-exec-persistence.dir/build
 .PHONY : rebuntu-exec-persistence/fast
 
+#=============================================================================
+# Target rules for targets named rebuntu-command-input
+
+# Build rule for target.
+rebuntu-command-input: cmake_check_build_system
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 rebuntu-command-input
+.PHONY : rebuntu-command-input
+
+# fast build rule for target.
+rebuntu-command-input/fast:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/rebuntu-command-input.dir/build.make CMakeFiles/rebuntu-command-input.dir/build
+.PHONY : rebuntu-command-input/fast
+
 home/bvrznski/rebuntu/src/adapters/cgroups/hierarchy/implementation.o: home/bvrznski/rebuntu/src/adapters/cgroups/hierarchy/implementation.cpp.o
 .PHONY : home/bvrznski/rebuntu/src/adapters/cgroups/hierarchy/implementation.o
 
@@ -2788,6 +2801,30 @@ home/bvrznski/rebuntu/src/events/collector.s: home/bvrznski/rebuntu/src/events/c
 home/bvrznski/rebuntu/src/events/collector.cpp.s:
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/rebuntu-events-collector.dir/build.make CMakeFiles/rebuntu-events-collector.dir/home/bvrznski/rebuntu/src/events/collector.cpp.s
 .PHONY : home/bvrznski/rebuntu/src/events/collector.cpp.s
+
+home/bvrznski/rebuntu/src/interfaces/cli/input.o: home/bvrznski/rebuntu/src/interfaces/cli/input.cpp.o
+.PHONY : home/bvrznski/rebuntu/src/interfaces/cli/input.o
+
+# target to build an object file
+home/bvrznski/rebuntu/src/interfaces/cli/input.cpp.o:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/rebuntu-command-input.dir/build.make CMakeFiles/rebuntu-command-input.dir/home/bvrznski/rebuntu/src/interfaces/cli/input.cpp.o
+.PHONY : home/bvrznski/rebuntu/src/interfaces/cli/input.cpp.o
+
+home/bvrznski/rebuntu/src/interfaces/cli/input.i: home/bvrznski/rebuntu/src/interfaces/cli/input.cpp.i
+.PHONY : home/bvrznski/rebuntu/src/interfaces/cli/input.i
+
+# target to preprocess a source file
+home/bvrznski/rebuntu/src/interfaces/cli/input.cpp.i:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/rebuntu-command-input.dir/build.make CMakeFiles/rebuntu-command-input.dir/home/bvrznski/rebuntu/src/interfaces/cli/input.cpp.i
+.PHONY : home/bvrznski/rebuntu/src/interfaces/cli/input.cpp.i
+
+home/bvrznski/rebuntu/src/interfaces/cli/input.s: home/bvrznski/rebuntu/src/interfaces/cli/input.cpp.s
+.PHONY : home/bvrznski/rebuntu/src/interfaces/cli/input.s
+
+# target to generate assembly for a file
+home/bvrznski/rebuntu/src/interfaces/cli/input.cpp.s:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/rebuntu-command-input.dir/build.make CMakeFiles/rebuntu-command-input.dir/home/bvrznski/rebuntu/src/interfaces/cli/input.cpp.s
+.PHONY : home/bvrznski/rebuntu/src/interfaces/cli/input.cpp.s
 
 home/bvrznski/rebuntu/src/interfaces/cross_domain_references.o: home/bvrznski/rebuntu/src/interfaces/cross_domain_references.cpp.o
 .PHONY : home/bvrznski/rebuntu/src/interfaces/cross_domain_references.o
@@ -5340,6 +5377,7 @@ help:
 	@echo "... rebuntu-cli-inventory-test"
 	@echo "... rebuntu-collision-scanner-test"
 	@echo "... rebuntu-command-explain"
+	@echo "... rebuntu-command-input"
 	@echo "... rebuntu-command-model-test"
 	@echo "... rebuntu-concurrency-control"
 	@echo "... rebuntu-container-discovery"
@@ -5537,6 +5575,9 @@ help:
 	@echo "... home/bvrznski/rebuntu/src/events/collector.o"
 	@echo "... home/bvrznski/rebuntu/src/events/collector.i"
 	@echo "... home/bvrznski/rebuntu/src/events/collector.s"
+	@echo "... home/bvrznski/rebuntu/src/interfaces/cli/input.o"
+	@echo "... home/bvrznski/rebuntu/src/interfaces/cli/input.i"
+	@echo "... home/bvrznski/rebuntu/src/interfaces/cli/input.s"
 	@echo "... home/bvrznski/rebuntu/src/interfaces/cross_domain_references.o"
 	@echo "... home/bvrznski/rebuntu/src/interfaces/cross_domain_references.i"
 	@echo "... home/bvrznski/rebuntu/src/interfaces/cross_domain_references.s"

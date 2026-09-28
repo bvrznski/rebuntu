@@ -1155,3 +1155,18 @@ add_library(rebuntu-exec-persistence STATIC
 )
 target_include_directories(rebuntu-exec-persistence PUBLIC ${CMAKE_CURRENT_LIST_DIR}/../src)
 target_link_libraries(rebuntu-core PUBLIC rebuntu-exec-persistence)
+
+# Phase 6.47: Machine-readable command boundary module (versioned structured input)
+add_library(rebuntu-command-input STATIC
+    ${CMAKE_CURRENT_LIST_DIR}/../src/interfaces/cli/input.hpp
+    ${CMAKE_CURRENT_LIST_DIR}/../src/interfaces/cli/input.cpp
+)
+target_include_directories(rebuntu-command-input PUBLIC ${CMAKE_CURRENT_LIST_DIR}/../src)
+target_link_libraries(rebuntu-core PUBLIC rebuntu-command-input)
+
+# Phase 6.47: Machine-readable command boundary unit tests (disabled - gtest not available in CTest)
+# add_executable(rebuntu-command-input-test
+#     /home/bvrznski/rebuntu/tests/unit/command_input_test.cpp
+# )
+# target_link_libraries(rebuntu-command-input-test PRIVATE rebuntu-core rebuntu-command-input)
+# add_test(NAME command_input_test COMMAND rebuntu-command-input-test)

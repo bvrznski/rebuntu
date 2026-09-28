@@ -13,6 +13,50 @@ declare contracts but contain no runtime implementation.
 | `api/` | HTTP/gRPC API definitions (requests/responses, errors, schemas) |
 | `shell/` | Shell-facing command contracts (parsing, IR, intent) |
 
+## CLI Interface Module
+
+The `cli/` subdirectory contains the machine-readable command boundary module
+(Task 6.47):
+
+```
+src/interfaces/cli/
+├── input.hpp          # Versioned structured command input schema
+└── input.cpp          # Implementation with validation and security filtering
+```
+
+### Features:
+
+- **Versioned Schema**: Explicit `SchemaVersion` with major/minor/patch versioning
+  for safe evolution and backward compatibility checking
+
+- **Security Validation**: Rejects unknown security-sensitive field names and
+  values containing forbidden patterns (shell injection vectors, path traversal,
+  privilege escalation attempts)
+
+- **Whitelist Validation**: Verbs and subject types must be in whitelist of
+  safe operations
+
+- **JSON Serialization**: `serialization::to_json_string()` and
+  `serialization::from_json_string()` for IPC/structured output
+
+- **Filtering**: `SecurityFilter` class can strip dangerous fields from inputs
+
+### Example Usage:
+
+```cpp
+rebuntu::interfaces::cli::input::CommandInput input;
+input.verb = "install";
+input.subject_type = "package";
+input.targets = {"curl"};
+input.parameters["version"] = "latest";
+
+rebuntu::interfaces::cli::input::InputValidator validator;
+auto result = validator.validate(input);
+if (result.valid) {
+    // Input is valid - proceed with execution
+}
+```
+
 ## Principles
 
 - **No implementation**: interfaces declare *what*, not *how*.

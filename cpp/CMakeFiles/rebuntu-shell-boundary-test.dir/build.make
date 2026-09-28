@@ -170,6 +170,7 @@ rebuntu-shell-boundary-test: librebuntu-privileged-helpers.a
 rebuntu-shell-boundary-test: librebuntu-concurrency-control.a
 rebuntu-shell-boundary-test: librebuntu-cancellation-points.a
 rebuntu-shell-boundary-test: librebuntu-exec-persistence.a
+rebuntu-shell-boundary-test: librebuntu-command-input.a
 rebuntu-shell-boundary-test: CMakeFiles/rebuntu-shell-boundary-test.dir/link.txt
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --bold --progress-dir=/home/bvrznski/rebuntu/cpp/CMakeFiles --progress-num=$(CMAKE_PROGRESS_2) "Linking CXX executable rebuntu-shell-boundary-test"
 	$(CMAKE_COMMAND) -E cmake_link_script CMakeFiles/rebuntu-shell-boundary-test.dir/link.txt --verbose=$(VERBOSE)

@@ -171,6 +171,7 @@ rebuntu-drm-topology-test: librebuntu-privileged-helpers.a
 rebuntu-drm-topology-test: librebuntu-concurrency-control.a
 rebuntu-drm-topology-test: librebuntu-cancellation-points.a
 rebuntu-drm-topology-test: librebuntu-exec-persistence.a
+rebuntu-drm-topology-test: librebuntu-command-input.a
 rebuntu-drm-topology-test: CMakeFiles/rebuntu-drm-topology-test.dir/link.txt
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --bold --progress-dir=/home/bvrznski/rebuntu/cpp/CMakeFiles --progress-num=$(CMAKE_PROGRESS_2) "Linking CXX executable rebuntu-drm-topology-test"
 	$(CMAKE_COMMAND) -E cmake_link_script CMakeFiles/rebuntu-drm-topology-test.dir/link.txt --verbose=$(VERBOSE)

@@ -205,6 +205,12 @@ target_sources(rebuntu-core PRIVATE
     ${CMAKE_CURRENT_LIST_DIR}/../src/runtime/runner.cpp
 )
 
+# Phase 4.8: Resolver module - target resolution without execution
+target_sources(rebuntu-core PRIVATE
+    ${CMAKE_CURRENT_LIST_DIR}/../src/runtime/resolver.hpp
+    ${CMAKE_CURRENT_LIST_DIR}/../src/runtime/resolver.cpp
+)
+
 # Phase 6.27: Dry-Run Semantics module
 add_library(rebuntu-dry-run STATIC
     ${CMAKE_CURRENT_LIST_DIR}/../src/operations/dry_run.hpp
@@ -1202,3 +1208,11 @@ add_executable(rebuntu-stale-plan-adversarial-test
 target_include_directories(rebuntu-stale-plan-adversarial-test PRIVATE ${CMAKE_CURRENT_LIST_DIR}/../src)
 target_link_libraries(rebuntu-stale-plan-adversarial-test PRIVATE rebuntu-core)
 add_test(NAME stale_plan_adversarial_test COMMAND rebuntu-stale-plan-adversarial-test)
+
+# Phase 6.55: Ambiguous-target adversarial tests
+add_executable(rebuntu-ambiguous-target-test
+    ${CMAKE_CURRENT_LIST_DIR}/tests/unit/ambiguous_target_adversarial_test.cpp
+)
+target_include_directories(rebuntu-ambiguous-target-test PRIVATE ${CMAKE_CURRENT_LIST_DIR}/../src)
+target_link_libraries(rebuntu-ambiguous-target-test PRIVATE rebuntu-core)
+add_test(NAME ambiguous_target_test COMMAND rebuntu-ambiguous-target-test)

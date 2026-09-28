@@ -9,6 +9,8 @@ file(REMOVE_RECURSE
   "CMakeFiles/rebuntu-core.dir/home/bvrznski/rebuntu/src/runtime/engine.cpp.o.d"
   "CMakeFiles/rebuntu-core.dir/home/bvrznski/rebuntu/src/runtime/native/production_runtime.cpp.o"
   "CMakeFiles/rebuntu-core.dir/home/bvrznski/rebuntu/src/runtime/native/production_runtime.cpp.o.d"
+  "CMakeFiles/rebuntu-core.dir/home/bvrznski/rebuntu/src/runtime/resolver.cpp.o"
+  "CMakeFiles/rebuntu-core.dir/home/bvrznski/rebuntu/src/runtime/resolver.cpp.o.d"
   "CMakeFiles/rebuntu-core.dir/home/bvrznski/rebuntu/src/runtime/retry_mechanics.cpp.o"
   "CMakeFiles/rebuntu-core.dir/home/bvrznski/rebuntu/src/runtime/retry_mechanics.cpp.o.d"
   "CMakeFiles/rebuntu-core.dir/home/bvrznski/rebuntu/src/runtime/runner.cpp.o"

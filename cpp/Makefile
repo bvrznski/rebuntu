@@ -2134,6 +2134,19 @@ rebuntu-stale-plan-adversarial-test/fast:
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/rebuntu-stale-plan-adversarial-test.dir/build.make CMakeFiles/rebuntu-stale-plan-adversarial-test.dir/build
 .PHONY : rebuntu-stale-plan-adversarial-test/fast
 
+#=============================================================================
+# Target rules for targets named rebuntu-ambiguous-target-test
+
+# Build rule for target.
+rebuntu-ambiguous-target-test: cmake_check_build_system
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 rebuntu-ambiguous-target-test
+.PHONY : rebuntu-ambiguous-target-test
+
+# fast build rule for target.
+rebuntu-ambiguous-target-test/fast:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/rebuntu-ambiguous-target-test.dir/build.make CMakeFiles/rebuntu-ambiguous-target-test.dir/build
+.PHONY : rebuntu-ambiguous-target-test/fast
+
 home/bvrznski/rebuntu/src/adapters/cgroups/hierarchy/implementation.o: home/bvrznski/rebuntu/src/adapters/cgroups/hierarchy/implementation.cpp.o
 .PHONY : home/bvrznski/rebuntu/src/adapters/cgroups/hierarchy/implementation.o
 
@@ -3357,6 +3370,30 @@ home/bvrznski/rebuntu/src/runtime/persistence/integration.s: home/bvrznski/rebun
 home/bvrznski/rebuntu/src/runtime/persistence/integration.cpp.s:
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/rebuntu-exec-persistence.dir/build.make CMakeFiles/rebuntu-exec-persistence.dir/home/bvrznski/rebuntu/src/runtime/persistence/integration.cpp.s
 .PHONY : home/bvrznski/rebuntu/src/runtime/persistence/integration.cpp.s
+
+home/bvrznski/rebuntu/src/runtime/resolver.o: home/bvrznski/rebuntu/src/runtime/resolver.cpp.o
+.PHONY : home/bvrznski/rebuntu/src/runtime/resolver.o
+
+# target to build an object file
+home/bvrznski/rebuntu/src/runtime/resolver.cpp.o:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/rebuntu-core.dir/build.make CMakeFiles/rebuntu-core.dir/home/bvrznski/rebuntu/src/runtime/resolver.cpp.o
+.PHONY : home/bvrznski/rebuntu/src/runtime/resolver.cpp.o
+
+home/bvrznski/rebuntu/src/runtime/resolver.i: home/bvrznski/rebuntu/src/runtime/resolver.cpp.i
+.PHONY : home/bvrznski/rebuntu/src/runtime/resolver.i
+
+# target to preprocess a source file
+home/bvrznski/rebuntu/src/runtime/resolver.cpp.i:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/rebuntu-core.dir/build.make CMakeFiles/rebuntu-core.dir/home/bvrznski/rebuntu/src/runtime/resolver.cpp.i
+.PHONY : home/bvrznski/rebuntu/src/runtime/resolver.cpp.i
+
+home/bvrznski/rebuntu/src/runtime/resolver.s: home/bvrznski/rebuntu/src/runtime/resolver.cpp.s
+.PHONY : home/bvrznski/rebuntu/src/runtime/resolver.s
+
+# target to generate assembly for a file
+home/bvrznski/rebuntu/src/runtime/resolver.cpp.s:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/rebuntu-core.dir/build.make CMakeFiles/rebuntu-core.dir/home/bvrznski/rebuntu/src/runtime/resolver.cpp.s
+.PHONY : home/bvrznski/rebuntu/src/runtime/resolver.cpp.s
 
 home/bvrznski/rebuntu/src/runtime/retry_mechanics.o: home/bvrznski/rebuntu/src/runtime/retry_mechanics.cpp.o
 .PHONY : home/bvrznski/rebuntu/src/runtime/retry_mechanics.o
@@ -4705,6 +4742,30 @@ home/bvrznski/rebuntu/tests/unit/shell_output_capture_test.cpp.s:
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/rebuntu-shell-output-capture-test.dir/build.make CMakeFiles/rebuntu-shell-output-capture-test.dir/home/bvrznski/rebuntu/tests/unit/shell_output_capture_test.cpp.s
 .PHONY : home/bvrznski/rebuntu/tests/unit/shell_output_capture_test.cpp.s
 
+tests/unit/ambiguous_target_adversarial_test.o: tests/unit/ambiguous_target_adversarial_test.cpp.o
+.PHONY : tests/unit/ambiguous_target_adversarial_test.o
+
+# target to build an object file
+tests/unit/ambiguous_target_adversarial_test.cpp.o:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/rebuntu-ambiguous-target-test.dir/build.make CMakeFiles/rebuntu-ambiguous-target-test.dir/tests/unit/ambiguous_target_adversarial_test.cpp.o
+.PHONY : tests/unit/ambiguous_target_adversarial_test.cpp.o
+
+tests/unit/ambiguous_target_adversarial_test.i: tests/unit/ambiguous_target_adversarial_test.cpp.i
+.PHONY : tests/unit/ambiguous_target_adversarial_test.i
+
+# target to preprocess a source file
+tests/unit/ambiguous_target_adversarial_test.cpp.i:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/rebuntu-ambiguous-target-test.dir/build.make CMakeFiles/rebuntu-ambiguous-target-test.dir/tests/unit/ambiguous_target_adversarial_test.cpp.i
+.PHONY : tests/unit/ambiguous_target_adversarial_test.cpp.i
+
+tests/unit/ambiguous_target_adversarial_test.s: tests/unit/ambiguous_target_adversarial_test.cpp.s
+.PHONY : tests/unit/ambiguous_target_adversarial_test.s
+
+# target to generate assembly for a file
+tests/unit/ambiguous_target_adversarial_test.cpp.s:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/rebuntu-ambiguous-target-test.dir/build.make CMakeFiles/rebuntu-ambiguous-target-test.dir/tests/unit/ambiguous_target_adversarial_test.cpp.s
+.PHONY : tests/unit/ambiguous_target_adversarial_test.cpp.s
+
 tests/unit/batch_command_test.o: tests/unit/batch_command_test.cpp.o
 .PHONY : tests/unit/batch_command_test.o
 
@@ -5514,6 +5575,7 @@ help:
 	@echo "... NightlySubmit"
 	@echo "... NightlyTest"
 	@echo "... NightlyUpdate"
+	@echo "... rebuntu-ambiguous-target-test"
 	@echo "... rebuntu-authorization"
 	@echo "... rebuntu-batch-command-test"
 	@echo "... rebuntu-bin"
@@ -5790,6 +5852,9 @@ help:
 	@echo "... home/bvrznski/rebuntu/src/runtime/persistence/integration.o"
 	@echo "... home/bvrznski/rebuntu/src/runtime/persistence/integration.i"
 	@echo "... home/bvrznski/rebuntu/src/runtime/persistence/integration.s"
+	@echo "... home/bvrznski/rebuntu/src/runtime/resolver.o"
+	@echo "... home/bvrznski/rebuntu/src/runtime/resolver.i"
+	@echo "... home/bvrznski/rebuntu/src/runtime/resolver.s"
 	@echo "... home/bvrznski/rebuntu/src/runtime/retry_mechanics.o"
 	@echo "... home/bvrznski/rebuntu/src/runtime/retry_mechanics.i"
 	@echo "... home/bvrznski/rebuntu/src/runtime/retry_mechanics.s"
@@ -5958,6 +6023,9 @@ help:
 	@echo "... home/bvrznski/rebuntu/tests/unit/shell_output_capture_test.o"
 	@echo "... home/bvrznski/rebuntu/tests/unit/shell_output_capture_test.i"
 	@echo "... home/bvrznski/rebuntu/tests/unit/shell_output_capture_test.s"
+	@echo "... tests/unit/ambiguous_target_adversarial_test.o"
+	@echo "... tests/unit/ambiguous_target_adversarial_test.i"
+	@echo "... tests/unit/ambiguous_target_adversarial_test.s"
 	@echo "... tests/unit/batch_command_test.o"
 	@echo "... tests/unit/batch_command_test.i"
 	@echo "... tests/unit/batch_command_test.s"

@@ -6,5 +6,5 @@ CXX_DEFINES =
 
 CXX_INCLUDES = -I/home/bvrznski/rebuntu/cpp/../src/modules/hang_stall_jam -I/home/bvrznski/rebuntu/cpp/../src -I/home/bvrznski/rebuntu/cpp/../src/system/diagnostics/snapshot -I/home/bvrznski/rebuntu/cpp/../src/modules/storage_health_monitor -I/home/bvrznski/rebuntu/cpp/../src/modules/cpu_memory_thermal_monitor -I/home/bvrznski/rebuntu/cpp/../src/modules/gpu_health_monitor -I/home/bvrznski/rebuntu/cpp/../src/modules/internal_alerts -I/home/bvrznski/rebuntu/cpp/../src/modules/reporting
 
-CXX_FLAGS = -g -Wall -Wextra -Wpedantic -Wformat=2 -Wnull-dereference -Wshift-overflow -Wduplicated-cond -Wduplicated-branches -Wlogical-op -Wcast-qual -Wcast-align -Wconversion -std=c++20
+CXX_FLAGS = -O3 -DNDEBUG -Wall -Wextra -Wpedantic -Wformat=2 -Wnull-dereference -Wshift-overflow -Wduplicated-cond -Wduplicated-branches -Wlogical-op -Wcast-qual -Wcast-align -Wconversion -std=c++20
 

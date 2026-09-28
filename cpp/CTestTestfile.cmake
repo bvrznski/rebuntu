@@ -84,3 +84,5 @@ add_test([=[parallel_composition_test]=] "/home/bvrznski/rebuntu/cpp/rebuntu-par
 set_tests_properties([=[parallel_composition_test]=] PROPERTIES  _BACKTRACE_TRIPLES "/home/bvrznski/rebuntu/cpp/CMakeLists.txt;1161;add_test;/home/bvrznski/rebuntu/cpp/CMakeLists.txt;0;")
 add_test([=[dependency_aware_test]=] "/home/bvrznski/rebuntu/cpp/rebuntu-dependency-aware-test")
 set_tests_properties([=[dependency_aware_test]=] PROPERTIES  _BACKTRACE_TRIPLES "/home/bvrznski/rebuntu/cpp/CMakeLists.txt;1173;add_test;/home/bvrznski/rebuntu/cpp/CMakeLists.txt;0;")
+add_test([=[stale_plan_adversarial_test]=] "/home/bvrznski/rebuntu/cpp/rebuntu-stale-plan-adversarial-test")
+set_tests_properties([=[stale_plan_adversarial_test]=] PROPERTIES  _BACKTRACE_TRIPLES "/home/bvrznski/rebuntu/cpp/CMakeLists.txt;1204;add_test;/home/bvrznski/rebuntu/cpp/CMakeLists.txt;0;")

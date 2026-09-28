@@ -2121,6 +2121,19 @@ rebuntu-command-input/fast:
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/rebuntu-command-input.dir/build.make CMakeFiles/rebuntu-command-input.dir/build
 .PHONY : rebuntu-command-input/fast
 
+#=============================================================================
+# Target rules for targets named rebuntu-stale-plan-adversarial-test
+
+# Build rule for target.
+rebuntu-stale-plan-adversarial-test: cmake_check_build_system
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 rebuntu-stale-plan-adversarial-test
+.PHONY : rebuntu-stale-plan-adversarial-test
+
+# fast build rule for target.
+rebuntu-stale-plan-adversarial-test/fast:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/rebuntu-stale-plan-adversarial-test.dir/build.make CMakeFiles/rebuntu-stale-plan-adversarial-test.dir/build
+.PHONY : rebuntu-stale-plan-adversarial-test/fast
+
 home/bvrznski/rebuntu/src/adapters/cgroups/hierarchy/implementation.o: home/bvrznski/rebuntu/src/adapters/cgroups/hierarchy/implementation.cpp.o
 .PHONY : home/bvrznski/rebuntu/src/adapters/cgroups/hierarchy/implementation.o
 
@@ -5388,6 +5401,30 @@ tests/unit/shell_scope_grammar_test.cpp.s:
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/rebuntu-scope-grammar-test.dir/build.make CMakeFiles/rebuntu-scope-grammar-test.dir/tests/unit/shell_scope_grammar_test.cpp.s
 .PHONY : tests/unit/shell_scope_grammar_test.cpp.s
 
+tests/unit/stale_plan_adversarial_test.o: tests/unit/stale_plan_adversarial_test.cpp.o
+.PHONY : tests/unit/stale_plan_adversarial_test.o
+
+# target to build an object file
+tests/unit/stale_plan_adversarial_test.cpp.o:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/rebuntu-stale-plan-adversarial-test.dir/build.make CMakeFiles/rebuntu-stale-plan-adversarial-test.dir/tests/unit/stale_plan_adversarial_test.cpp.o
+.PHONY : tests/unit/stale_plan_adversarial_test.cpp.o
+
+tests/unit/stale_plan_adversarial_test.i: tests/unit/stale_plan_adversarial_test.cpp.i
+.PHONY : tests/unit/stale_plan_adversarial_test.i
+
+# target to preprocess a source file
+tests/unit/stale_plan_adversarial_test.cpp.i:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/rebuntu-stale-plan-adversarial-test.dir/build.make CMakeFiles/rebuntu-stale-plan-adversarial-test.dir/tests/unit/stale_plan_adversarial_test.cpp.i
+.PHONY : tests/unit/stale_plan_adversarial_test.cpp.i
+
+tests/unit/stale_plan_adversarial_test.s: tests/unit/stale_plan_adversarial_test.cpp.s
+.PHONY : tests/unit/stale_plan_adversarial_test.s
+
+# target to generate assembly for a file
+tests/unit/stale_plan_adversarial_test.cpp.s:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/rebuntu-stale-plan-adversarial-test.dir/build.make CMakeFiles/rebuntu-stale-plan-adversarial-test.dir/tests/unit/stale_plan_adversarial_test.cpp.s
+.PHONY : tests/unit/stale_plan_adversarial_test.cpp.s
+
 tests/unit/systemd_service_test.o: tests/unit/systemd_service_test.cpp.o
 .PHONY : tests/unit/systemd_service_test.o
 
@@ -5592,6 +5629,7 @@ help:
 	@echo "... rebuntu-shell-semi-natural"
 	@echo "... rebuntu-snapshot-service"
 	@echo "... rebuntu-snapshot-storage"
+	@echo "... rebuntu-stale-plan-adversarial-test"
 	@echo "... rebuntu-storage-health-monitor"
 	@echo "... rebuntu-systemd-service-adapter"
 	@echo "... rebuntu-systemd-service-test"
@@ -6007,6 +6045,9 @@ help:
 	@echo "... tests/unit/shell_scope_grammar_test.o"
 	@echo "... tests/unit/shell_scope_grammar_test.i"
 	@echo "... tests/unit/shell_scope_grammar_test.s"
+	@echo "... tests/unit/stale_plan_adversarial_test.o"
+	@echo "... tests/unit/stale_plan_adversarial_test.i"
+	@echo "... tests/unit/stale_plan_adversarial_test.s"
 	@echo "... tests/unit/systemd_service_test.o"
 	@echo "... tests/unit/systemd_service_test.i"
 	@echo "... tests/unit/systemd_service_test.s"

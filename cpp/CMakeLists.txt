@@ -1194,3 +1194,11 @@ target_link_libraries(rebuntu-core PUBLIC rebuntu-command-input)
 # )
 # target_link_libraries(rebuntu-command-input-test PRIVATE rebuntu-core rebuntu-command-input)
 # add_test(NAME command_input_test COMMAND rebuntu-command-input-test)
+
+# Phase 6.54: Stale-plan adversarial tests
+add_executable(rebuntu-stale-plan-adversarial-test
+    ${CMAKE_CURRENT_LIST_DIR}/tests/unit/stale_plan_adversarial_test.cpp
+)
+target_include_directories(rebuntu-stale-plan-adversarial-test PRIVATE ${CMAKE_CURRENT_LIST_DIR}/../src)
+target_link_libraries(rebuntu-stale-plan-adversarial-test PRIVATE rebuntu-core)
+add_test(NAME stale_plan_adversarial_test COMMAND rebuntu-stale-plan-adversarial-test)

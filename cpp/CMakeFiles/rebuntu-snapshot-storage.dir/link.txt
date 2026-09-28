@@ -1,0 +1,2 @@
+/usr/bin/ar qc librebuntu-snapshot-storage.a CMakeFiles/rebuntu-snapshot-storage.dir/home/bvrznski/rebuntu/src/system/diagnostics/snapshot/file_storage.cpp.o
+/usr/bin/ranlib librebuntu-snapshot-storage.a

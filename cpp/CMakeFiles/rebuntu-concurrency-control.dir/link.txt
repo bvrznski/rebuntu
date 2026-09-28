@@ -1,0 +1,2 @@
+/usr/bin/ar qc librebuntu-concurrency-control.a CMakeFiles/rebuntu-concurrency-control.dir/home/bvrznski/rebuntu/src/system/concurrency/control.cpp.o
+/usr/bin/ranlib librebuntu-concurrency-control.a

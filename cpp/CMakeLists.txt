@@ -999,6 +999,21 @@ install(FILES ${CMAKE_CURRENT_LIST_DIR}/../src/system/shell/completion/bash_comp
     DESTINATION share/rebuntu/bash-completion.d
 )
 
+# Phase 6.31: Execution Concurrency Control module (narrow locking by stable identity)
+add_library(rebuntu-concurrency-control STATIC
+    ${CMAKE_CURRENT_LIST_DIR}/../src/system/concurrency/control.hpp
+    ${CMAKE_CURRENT_LIST_DIR}/../src/system/concurrency/control.cpp
+)
+target_include_directories(rebuntu-concurrency-control PUBLIC ${CMAKE_CURRENT_LIST_DIR}/../src)
+target_link_libraries(rebuntu-core PUBLIC rebuntu-concurrency-control)
+
+# Phase 6.31: Concurrency Control unit tests (disabled - gtest not available in CTest)
+# add_executable(rebuntu-concurrency-test
+#     ${CMAKE_CURRENT_LIST_DIR}/tests/unit/concurrency_control_test.cpp
+# )
+# target_link_libraries(rebuntu-concurrency-test PRIVATE rebuntu-concurrency-control rebuntu-core)
+# add_test(NAME concurrency_control_test COMMAND rebuntu-concurrency-test)
+
 # Phase 6.17: Semantic Boundary unit tests
 add_executable(rebuntu-shell-boundary-test
     ${CMAKE_CURRENT_LIST_DIR}/tests/unit/shell_boundary_test.cpp

@@ -1,0 +1,2 @@
+/usr/bin/ar qc librebuntu-shell-context.a CMakeFiles/rebuntu-shell-context.dir/home/bvrznski/rebuntu/src/system/shell/context.cpp.o
+/usr/bin/ranlib librebuntu-shell-context.a

@@ -1,0 +1,2 @@
+/usr/bin/ar qc librebuntu-shell-boundary.a CMakeFiles/rebuntu-shell-boundary.dir/home/bvrznski/rebuntu/src/system/shell/boundary/integration.cpp.o
+/usr/bin/ranlib librebuntu-shell-boundary.a

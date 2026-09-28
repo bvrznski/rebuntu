@@ -1,0 +1,2 @@
+/usr/bin/ar qc librebuntu-procfs-errors.a CMakeFiles/rebuntu-procfs-errors.dir/home/bvrznski/rebuntu/src/adapters/procfs/error.cpp.o
+/usr/bin/ranlib librebuntu-procfs-errors.a

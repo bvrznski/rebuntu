@@ -1,0 +1,2 @@
+/usr/bin/ar qc librebuntu-systemd-service-adapter.a CMakeFiles/rebuntu-systemd-service-adapter.dir/home/bvrznski/rebuntu/src/adapters/systemd/service/implementation.cpp.o
+/usr/bin/ranlib librebuntu-systemd-service-adapter.a

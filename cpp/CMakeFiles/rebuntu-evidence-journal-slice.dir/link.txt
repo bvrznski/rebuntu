@@ -1,0 +1,2 @@
+/usr/bin/ar qc librebuntu-evidence-journal-slice.a CMakeFiles/rebuntu-evidence-journal-slice.dir/home/bvrznski/rebuntu/src/system/evidence/journal_slice_collector.cpp.o
+/usr/bin/ranlib librebuntu-evidence-journal-slice.a

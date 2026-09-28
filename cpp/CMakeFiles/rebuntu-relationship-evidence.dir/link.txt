@@ -1,0 +1,2 @@
+/usr/bin/ar qc librebuntu-relationship-evidence.a CMakeFiles/rebuntu-relationship-evidence.dir/home/bvrznski/rebuntu/src/observation/system-observation-inventory-discovery/relationships/implementation.cpp.o
+/usr/bin/ranlib librebuntu-relationship-evidence.a

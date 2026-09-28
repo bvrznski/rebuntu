@@ -15,6 +15,22 @@ distinction is deliberately **not** drawn.
 
 ---
 
+## Semantic Boundary (Phase 6.17)
+
+- **Deterministic Parser Path** — the primary command interpretation path that
+  attempts to parse input using Rebuntu's grammar rules before attempting semantic
+  fallback. *Status:* CURRENT.
+
+- **Semantic Fallback Path** — the secondary interpretation path used only when
+  deterministic parsing fails or is ambiguous. Model output is validated against
+  canonical vocabulary before becoming intent. *Status:* CURRENT (implemented).
+
+- **SemanticFallbackMode** — controls when semantic service is invoked:
+  - `kDisabled` — never use semantic fallback
+  - `kOnFailure` — use semantic only when deterministic parser fails
+  - `kExplicitOnly` — use semantic only when explicitly requested
+  - `kEnabled` — use semantic as advisory when deterministic ambiguous
+
 ## Structural
 
 - **Core** — the minimal set of functionality whose absence would prevent the

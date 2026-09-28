@@ -116,6 +116,16 @@ target_include_directories(rebuntu-context-test PRIVATE ${CMAKE_CURRENT_LIST_DIR
 target_link_libraries(rebuntu-context-test PRIVATE rebuntu-core rebuntu-shell)
 add_test(NAME context_test COMMAND rebuntu-context-test)
 
+# Phase 6.17: Semantic Boundary module (shell command language interpretation boundary)
+add_library(rebuntu-shell-boundary STATIC
+    ${CMAKE_CURRENT_LIST_DIR}/../src/system/shell/boundary/types.hpp
+    ${CMAKE_CURRENT_LIST_DIR}/../src/system/shell/boundary/integration.hpp
+    ${CMAKE_CURRENT_LIST_DIR}/../src/system/shell/boundary/integration.cpp
+)
+
+target_include_directories(rebuntu-shell-boundary PUBLIC ${CMAKE_CURRENT_LIST_DIR}/../src)
+target_link_libraries(rebuntu-core PUBLIC rebuntu-shell-boundary)
+
 # Phase 6.14: Command Collision Detection module
 add_library(rebuntu-shell-collision STATIC
     ${CMAKE_CURRENT_LIST_DIR}/../src/system/shell/collision_scanner.hpp
@@ -912,6 +922,14 @@ add_test(NAME provider_test_matrix COMMAND rebuntu-provider-test-matrix)
 install(FILES ${CMAKE_CURRENT_LIST_DIR}/../src/system/shell/completion/bash_completion.sh
     DESTINATION share/rebuntu/bash-completion.d
 )
+
+# Phase 6.17: Semantic Boundary unit tests
+add_executable(rebuntu-shell-boundary-test
+    ${CMAKE_CURRENT_LIST_DIR}/tests/unit/shell_boundary_test.cpp
+)
+target_link_libraries(rebuntu-shell-boundary-test PRIVATE rebuntu-core rebuntu-shell-boundary)
+target_include_directories(rebuntu-shell-boundary-test PRIVATE ${CMAKE_CURRENT_LIST_DIR}/../src)
+add_test(NAME shell_boundary_test COMMAND rebuntu-shell-boundary-test)
 
 # Phase 6.13: Shell output contract unit tests (disabled - gtest not available in CTest)
 # add_executable(rebuntu-shell-output-test

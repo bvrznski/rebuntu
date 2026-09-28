@@ -88,6 +88,35 @@ A substantial reusable functional component belonging to or used by a System.
 A Module may contain Units. A Module may implement Interfaces declared in
 `interfaces/`.
 
+### Shell Boundary (Phase 6.17)
+
+The **Shell Boundary** module (`src/system/shell/boundary/`) implements the
+semantic interpretation boundary between deterministic shell parsing and optional
+semantic service fallback:
+
+- **Deterministic Parser Path** — primary command interpretation using Rebuntu's
+  grammar rules. Always attempted first; produces unambiguous typed intent.
+  
+- **Semantic Fallback Path** — secondary interpretation used only when deterministic
+  parsing fails or is ambiguous. Model output from the Phase 3 semantic service is:
+  - Validated against canonical vocabulary before use
+  - Never contains executable shell fragments
+  - Always goes through typed `CommandIntent` IR
+
+Key principles:
+- **Deterministic wins when unambiguous** — fallback is only used as a safety net
+- **MODEL OUTPUT != AUTHORITY** — semantic candidates are validated before execution
+- **Typed IR, not free text** — model produces structured intent, not shell commands
+
+The boundary supports multiple modes via `SemanticFallbackMode`:
+- `kDisabled` — strict deterministic-only mode (no fallback)
+- `kOnFailure` — fallback when deterministic parsing fails
+- `kExplicitOnly` — fallback only when explicitly requested
+
+*Status:* **CURRENT** (implemented, tests green).
+
+See also: VOCABULARY.md §Semantic Boundary.
+
 ### Unit (Phase 0.7)
 
 **Phase 0.7 Update**: A bounded, independently identifiable Rebuntu definition

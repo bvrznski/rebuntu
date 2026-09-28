@@ -165,8 +165,7 @@ LoadResult Loader::load_from_path(const std::filesystem::path& pth, LoadKind kin
         return LoadResult::failure(err);
     }
     
-    // Basic validation
-    bool is_trusted = is_trusted_path(pth);
+    // Basic validation - path already validated during file access checks
     
     LoadResult result;
     

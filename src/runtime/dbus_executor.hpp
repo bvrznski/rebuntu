@@ -10,17 +10,20 @@
 
 namespace rebuntu::runtime {
 
+struct DBusMethodCall {
+    std::string bus_name;
+    std::string object_path;
+    std::string interface_name;
+    std::string method_name;
+    std::chrono::milliseconds timeout{30000};  // Default 30 second timeout
+};
+
 class DBusExecutor {
 public:
     DBusExecutor();
     
     // Execute a D-Bus method call
-    rebuntu::core::Outcome execute_dbus_method(
-        const std::string& bus_name,
-        const std::string& object_path,
-        const std::string& interface_name,
-        const std::string& method_name,
-        std::chrono::milliseconds timeout = std::chrono::minutes(5));
+    rebuntu::core::Outcome execute_dbus_method(DBusMethodCall call);
 };
 
 }  // namespace rebuntu::runtime

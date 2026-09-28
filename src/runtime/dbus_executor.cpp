@@ -9,18 +9,21 @@ namespace rebuntu::runtime {
 
 DBusExecutor::DBusExecutor() = default;
 
-rebuntu::core::Outcome DBusExecutor::execute_dbus_method(
-    const std::string& bus_name,
-    const std::string& object_path,
-    const std::string& interface_name,
-    const std::string& method_name,
-    std::chrono::milliseconds timeout) {
+struct DBusMethodCall {
+    std::string bus_name;
+    std::string object_path;
+    std::string interface_name;
+    std::string method_name;
+    std::chrono::milliseconds timeout{30000};  // Default 30 second timeout
+};
+
+rebuntu::core::Outcome DBusExecutor::execute_dbus_method(DBusMethodCall call) {
     
-    (void)bus_name;  // Not yet implemented in minimal proof
-    (void)object_path;  // Not yet implemented in minimal proof
-    (void)interface_name;  // Not yet implemented in minimal proof
-    (void)method_name;  // Not yet implemented in minimal proof
-    (void)timeout;  // Timeout not yet implemented in minimal proof
+    (void)call.bus_name;  // Not yet implemented in minimal proof
+    (void)call.object_path;  // Not yet implemented in minimal proof
+    (void)call.interface_name;  // Not yet implemented in minimal proof
+    (void)call.method_name;  // Not yet implemented in minimal proof
+    (void)call.timeout;  // Timeout not yet implemented in minimal proof
     
     return rebuntu::core::Outcome::completed();
 }

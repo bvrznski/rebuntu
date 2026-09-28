@@ -116,7 +116,7 @@ struct Job {
     std::chrono::system_clock::time_point created_at;
     std::vector<std::pair<std::string, std::string>> parameters;
     JobState state = JobState::kCreated;
-    std::optional<AttemptNumber> max_attempts{1};
+    std::optional<AttemptNumber> max_attempts;
     RetryPolicy retry_policy{};
     TimeoutPolicy timeout_policy{};
     WorkPriority priority = WorkPriority::kNormal;

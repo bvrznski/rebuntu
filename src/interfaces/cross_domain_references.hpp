@@ -297,11 +297,14 @@ public:
     virtual CrossDomainReferenceResult get_all_references(
         const CrossDomainEntityId& entity_id) = 0;
     
+    struct ReferenceQuery {
+        CrossDomainEntityId source;
+        CrossDomainEntityId target;
+        RelationshipType relationship_type{};
+    };
+
     // Check if a reference exists between two entities
-    virtual bool has_reference(
-        const CrossDomainEntityId& from,
-        const CrossDomainEntityId& to,
-        RelationshipType type) = 0;
+    virtual bool has_reference(ReferenceQuery query) = 0;
     
     // Get references by relationship type
     virtual std::vector<EntityReference> get_references_by_type(

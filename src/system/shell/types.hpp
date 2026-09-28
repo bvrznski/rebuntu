@@ -119,6 +119,35 @@ struct ExecutionPolicy {
 };
 
 // ============================================================================
+// IntentCandidate — Structured semantic intent from model (Phase 6.50)
+//
+// This is the EXACT structure that semantic providers MUST produce.
+// It cannot contain free-form text or arbitrary shell commands.
+//
+// Validation rules:
+//   * operation_id must be a valid operation registered in CommandRegistry
+//   * subject must match expected subject type if specified
+//   * parameters must be valid for the target operation
+//   * confidence must be in range [0.0, 1.0]
+// ============================================================================
+struct IntentCandidate {
+    std::string operation_id;      // The operation this intent suggests
+    std::optional<std::string> subject;   // Target of the operation
+    std::map<std::string, std::string> parameters;  // Operation parameters
+    double confidence{1.0};        // Confidence in this candidate (0.0 - 1.0)
+    
+    bool is_valid() const {
+        return !operation_id.empty() && confidence >= 0.0 && confidence <= 1.0;
+    }
+    
+    static IntentCandidate make_invalid() {
+        IntentCandidate ic;
+        ic.confidence = -1.0;
+        return ic;
+    }
+};
+
+// ============================================================================
 // CommandIntent — Typed command intent from shell
 //
 // This is the canonical IR that all shell commands must produce after parsing.

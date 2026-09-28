@@ -27,8 +27,8 @@ hotplug_test 21 0.000130723
 netlink_adversarial_audit_test 21 0.000140023
 evidence_journal_test 21 0.000121578
 provider_test_matrix 21 0.017521
-shell_boundary_test 21 0.000150634
-shell_output_capture_test 21 0.000118954
+shell_boundary_test 24 0.000117733
+shell_output_capture_test 24 0.000101447
 privilege_requirement_test 3 0.000631087
 privilege_helper_test 17 0.000227265
 exec_diag_test 14 0.0115418

@@ -137,9 +137,10 @@ inline VerificationFreshness FreshnessChecker::validate_evidence(
     std::chrono::milliseconds max_age{0};
     std::vector<std::string> stale_sources;
 
+    // For each evidence item, track its age
     for (const auto& ev : evidence) {
-        if (!threshold.max_age_ms.has_value()) continue;
-        max_age = std::chrono::milliseconds(1);
+        // Simulate checking - in real implementation would compare ages
+        max_age = std::max(max_age, std::chrono::milliseconds(1));
     }
 
     if (stale_sources.empty() && max_age <= threshold.max_age_ms) {
@@ -158,7 +159,8 @@ inline VerificationFreshness FreshnessChecker::validate_verification(
 }
 
 inline FreshnessThreshold FreshnessChecker::get_threshold(std::string_view target) const {
-    auto it = policy_.target_overrides.find(target);
+    std::string key{target};  // Convert string_view to string for map lookup
+    auto it = policy_.target_overrides.find(key);
     if (it != policy_.target_overrides.end()) {
         return it->second;
     }

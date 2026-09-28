@@ -219,6 +219,12 @@ target_sources(rebuntu-core PRIVATE
     ${CMAKE_CURRENT_LIST_DIR}/../src/runtime/retry_mechanics.cpp
 )
 
+# Phase 6.41: Command Replay Semantics module (intent vs stale plan semantics)
+target_sources(rebuntu-core PRIVATE
+    ${CMAKE_CURRENT_LIST_DIR}/../src/system/command/replay.hpp
+    ${CMAKE_CURRENT_LIST_DIR}/../src/system/command/replay.cpp
+)
+
 # Phase 6.40: Crash Reconciliation module
 # Types header is included via runtime/contracts.hpp dependency chain
 # Detector is header-only, added to rebuntu-core source list
@@ -1077,6 +1083,13 @@ add_library(rebuntu-cancellation-points STATIC
 )
 target_include_directories(rebuntu-cancellation-points PUBLIC ${CMAKE_CURRENT_LIST_DIR}/../src)
 target_link_libraries(rebuntu-core PUBLIC rebuntu-cancellation-points)
+
+# Phase 6.41: Command Replay Semantics unit tests
+add_executable(rebuntu-replay-test
+    /home/bvrznski/rebuntu/tests/unit/replay_test.cpp
+)
+target_link_libraries(rebuntu-replay-test PRIVATE rebuntu-core)
+add_test(NAME replay_test COMMAND rebuntu-replay-test)
 
 # Phase 6.13: Shell output contract unit tests (disabled - gtest not available in CTest)
 # add_executable(rebuntu-shell-output-test

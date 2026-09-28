@@ -1992,6 +1992,19 @@ rebuntu-cancellation-points/fast:
 .PHONY : rebuntu-cancellation-points/fast
 
 #=============================================================================
+# Target rules for targets named rebuntu-replay-test
+
+# Build rule for target.
+rebuntu-replay-test: cmake_check_build_system
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 rebuntu-replay-test
+.PHONY : rebuntu-replay-test
+
+# fast build rule for target.
+rebuntu-replay-test/fast:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/rebuntu-replay-test.dir/build.make CMakeFiles/rebuntu-replay-test.dir/build
+.PHONY : rebuntu-replay-test/fast
+
+#=============================================================================
 # Target rules for targets named rebuntu-exec-persistence
 
 # Build rule for target.
@@ -3252,6 +3265,30 @@ home/bvrznski/rebuntu/src/system/command/explain.cpp.s:
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/rebuntu-command-explain.dir/build.make CMakeFiles/rebuntu-command-explain.dir/home/bvrznski/rebuntu/src/system/command/explain.cpp.s
 .PHONY : home/bvrznski/rebuntu/src/system/command/explain.cpp.s
 
+home/bvrznski/rebuntu/src/system/command/replay.o: home/bvrznski/rebuntu/src/system/command/replay.cpp.o
+.PHONY : home/bvrznski/rebuntu/src/system/command/replay.o
+
+# target to build an object file
+home/bvrznski/rebuntu/src/system/command/replay.cpp.o:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/rebuntu-core.dir/build.make CMakeFiles/rebuntu-core.dir/home/bvrznski/rebuntu/src/system/command/replay.cpp.o
+.PHONY : home/bvrznski/rebuntu/src/system/command/replay.cpp.o
+
+home/bvrznski/rebuntu/src/system/command/replay.i: home/bvrznski/rebuntu/src/system/command/replay.cpp.i
+.PHONY : home/bvrznski/rebuntu/src/system/command/replay.i
+
+# target to preprocess a source file
+home/bvrznski/rebuntu/src/system/command/replay.cpp.i:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/rebuntu-core.dir/build.make CMakeFiles/rebuntu-core.dir/home/bvrznski/rebuntu/src/system/command/replay.cpp.i
+.PHONY : home/bvrznski/rebuntu/src/system/command/replay.cpp.i
+
+home/bvrznski/rebuntu/src/system/command/replay.s: home/bvrznski/rebuntu/src/system/command/replay.cpp.s
+.PHONY : home/bvrznski/rebuntu/src/system/command/replay.s
+
+# target to generate assembly for a file
+home/bvrznski/rebuntu/src/system/command/replay.cpp.s:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/rebuntu-core.dir/build.make CMakeFiles/rebuntu-core.dir/home/bvrznski/rebuntu/src/system/command/replay.cpp.s
+.PHONY : home/bvrznski/rebuntu/src/system/command/replay.cpp.s
+
 home/bvrznski/rebuntu/src/system/concurrency/control.o: home/bvrznski/rebuntu/src/system/concurrency/control.cpp.o
 .PHONY : home/bvrznski/rebuntu/src/system/concurrency/control.o
 
@@ -4359,6 +4396,30 @@ home/bvrznski/rebuntu/tests/unit/monotonic_deadline_test.cpp.s:
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/rebuntu-monotonic-deadline-test.dir/build.make CMakeFiles/rebuntu-monotonic-deadline-test.dir/home/bvrznski/rebuntu/tests/unit/monotonic_deadline_test.cpp.s
 .PHONY : home/bvrznski/rebuntu/tests/unit/monotonic_deadline_test.cpp.s
 
+home/bvrznski/rebuntu/tests/unit/replay_test.o: home/bvrznski/rebuntu/tests/unit/replay_test.cpp.o
+.PHONY : home/bvrznski/rebuntu/tests/unit/replay_test.o
+
+# target to build an object file
+home/bvrznski/rebuntu/tests/unit/replay_test.cpp.o:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/rebuntu-replay-test.dir/build.make CMakeFiles/rebuntu-replay-test.dir/home/bvrznski/rebuntu/tests/unit/replay_test.cpp.o
+.PHONY : home/bvrznski/rebuntu/tests/unit/replay_test.cpp.o
+
+home/bvrznski/rebuntu/tests/unit/replay_test.i: home/bvrznski/rebuntu/tests/unit/replay_test.cpp.i
+.PHONY : home/bvrznski/rebuntu/tests/unit/replay_test.i
+
+# target to preprocess a source file
+home/bvrznski/rebuntu/tests/unit/replay_test.cpp.i:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/rebuntu-replay-test.dir/build.make CMakeFiles/rebuntu-replay-test.dir/home/bvrznski/rebuntu/tests/unit/replay_test.cpp.i
+.PHONY : home/bvrznski/rebuntu/tests/unit/replay_test.cpp.i
+
+home/bvrznski/rebuntu/tests/unit/replay_test.s: home/bvrznski/rebuntu/tests/unit/replay_test.cpp.s
+.PHONY : home/bvrznski/rebuntu/tests/unit/replay_test.s
+
+# target to generate assembly for a file
+home/bvrznski/rebuntu/tests/unit/replay_test.cpp.s:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/rebuntu-replay-test.dir/build.make CMakeFiles/rebuntu-replay-test.dir/home/bvrznski/rebuntu/tests/unit/replay_test.cpp.s
+.PHONY : home/bvrznski/rebuntu/tests/unit/replay_test.cpp.s
+
 home/bvrznski/rebuntu/tests/unit/retry_mechanics_test.o: home/bvrznski/rebuntu/tests/unit/retry_mechanics_test.cpp.o
 .PHONY : home/bvrznski/rebuntu/tests/unit/retry_mechanics_test.o
 
@@ -5181,6 +5242,7 @@ help:
 	@echo "... rebuntu-procfs-process-test"
 	@echo "... rebuntu-provider-test-matrix"
 	@echo "... rebuntu-relationship-evidence"
+	@echo "... rebuntu-replay-test"
 	@echo "... rebuntu-reporting"
 	@echo "... rebuntu-retry-mechanics-test"
 	@echo "... rebuntu-scope"
@@ -5365,6 +5427,9 @@ help:
 	@echo "... home/bvrznski/rebuntu/src/system/command/explain.o"
 	@echo "... home/bvrznski/rebuntu/src/system/command/explain.i"
 	@echo "... home/bvrznski/rebuntu/src/system/command/explain.s"
+	@echo "... home/bvrznski/rebuntu/src/system/command/replay.o"
+	@echo "... home/bvrznski/rebuntu/src/system/command/replay.i"
+	@echo "... home/bvrznski/rebuntu/src/system/command/replay.s"
 	@echo "... home/bvrznski/rebuntu/src/system/concurrency/control.o"
 	@echo "... home/bvrznski/rebuntu/src/system/concurrency/control.i"
 	@echo "... home/bvrznski/rebuntu/src/system/concurrency/control.s"
@@ -5503,6 +5568,9 @@ help:
 	@echo "... home/bvrznski/rebuntu/tests/unit/monotonic_deadline_test.o"
 	@echo "... home/bvrznski/rebuntu/tests/unit/monotonic_deadline_test.i"
 	@echo "... home/bvrznski/rebuntu/tests/unit/monotonic_deadline_test.s"
+	@echo "... home/bvrznski/rebuntu/tests/unit/replay_test.o"
+	@echo "... home/bvrznski/rebuntu/tests/unit/replay_test.i"
+	@echo "... home/bvrznski/rebuntu/tests/unit/replay_test.s"
 	@echo "... home/bvrznski/rebuntu/tests/unit/retry_mechanics_test.o"
 	@echo "... home/bvrznski/rebuntu/tests/unit/retry_mechanics_test.i"
 	@echo "... home/bvrznski/rebuntu/tests/unit/retry_mechanics_test.s"

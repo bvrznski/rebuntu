@@ -17,6 +17,7 @@
 #include <sys/stat.h>
 #include <unistd.h>
 
+#include <optional>
 #include <filesystem>
 
 namespace fs = std::filesystem;
@@ -84,10 +85,34 @@ std::string HostDiscovery::discover_architecture() const {
     return std::string(uname_buf.machine);
 }
 
+// Helper: Check if executable exists in PATH without shell execution
+static bool command_exists_native(const std::string& cmd) {
+    const char* path_env = std::getenv("PATH");
+    if (!path_env) return false;
+    
+    std::string path_str(path_env);
+    size_t start = 0;
+    
+    while (start < path_str.length()) {
+        size_t end = path_str.find(':', start);
+        if (end == std::string::npos) end = path_str.length();
+        
+        std::string dir = path_str.substr(start, end - start);
+        if (!dir.empty() && dir.back() != '/') dir += '/';
+        dir += cmd;
+        
+        // Use access() to check if executable exists and is runnable
+        if (access(dir.c_str(), X_OK) == 0) return true;
+        
+        start = end + 1;
+    }
+    
+    return false;
+}
+
 bool HostDiscovery::detect_systemd() const {
     // Check if systemd is available by testing for systemd-run or checking /run/systemd
-    return fs::exists("/run/systemd/system") ||
-           (std::system("which systemd-run > /dev/null 2>&1") == 0);
+    return fs::exists("/run/systemd/system") || command_exists_native("systemd-run");
 }
 
 void HostDiscovery::detect_filesystems(HostFacts& facts) const {
@@ -123,7 +148,7 @@ void HostDiscovery::detect_filesystems(HostFacts& facts) const {
 
 void HostDiscovery::detect_package_managers(HostFacts& facts) const {
     // Check for apt
-    if (std::system("which apt > /dev/null 2>&1") == 0) {
+    if (command_exists_native("apt")) {
         HostFacts::PackageManager pm;
         pm.name = "apt";
         pm.available = true;
@@ -131,7 +156,7 @@ void HostDiscovery::detect_package_managers(HostFacts& facts) const {
     }
 
     // Check for dnf
-    if (std::system("which dnf > /dev/null 2>&1") == 0) {
+    if (command_exists_native("dnf")) {
         HostFacts::PackageManager pm;
         pm.name = "dnf";
         pm.available = true;
@@ -139,7 +164,7 @@ void HostDiscovery::detect_package_managers(HostFacts& facts) const {
     }
 
     // Check for pacman
-    if (std::system("which pacman > /dev/null 2>&1") == 0) {
+    if (command_exists_native("pacman")) {
         HostFacts::PackageManager pm;
         pm.name = "pacman";
         pm.available = true;

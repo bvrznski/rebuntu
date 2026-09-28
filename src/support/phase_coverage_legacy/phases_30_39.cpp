@@ -8,9 +8,34 @@
 #include <sys/statvfs.h>
 #include <unistd.h>
 namespace fs=std::filesystem; namespace rebuntu::platform::v3039 {
+
+// Helper: Check if executable exists in PATH without shell execution
+static bool command_exists_native(const std::string& cmd) {
+    const char* path_env = std::getenv("PATH");
+    if (!path_env) return false;
+    
+    std::string path_str(path_env);
+    size_t start = 0;
+    
+    while (start < path_str.length()) {
+        size_t end = path_str.find(':', start);
+        if (end == std::string::npos) end = path_str.length();
+        
+        std::string dir = path_str.substr(start, end - start);
+        if (!dir.empty() && dir.back() != '/') dir += '/';
+        dir += cmd;
+        
+        // Use access() to check if executable exists and is runnable
+        if (access(dir.c_str(), X_OK) == 0) return true;
+        
+        start = end + 1;
+    }
+    
+    return false;
+}
+
 static std::string rf(const fs::path&p){std::ifstream f(p,std::ios::binary); return f?std::string(std::istreambuf_iterator<char>(f),{}):std::string{};}
 static std::string tr(std::string s){while(!s.empty()&&std::isspace((unsigned char)s.back()))s.pop_back();while(!s.empty()&&std::isspace((unsigned char)s.front()))s.erase(s.begin());return s;}
-static bool cmd(const char*c){std::string x="command -v ";x+=c;x+=" >/dev/null 2>&1";return std::system(x.c_str())==0;}
 PhaseRegistry::PhaseRegistry(){ phases_={
 {30,0,"30.0-resource-management-system-foundation.md","resource management system foundation","Phase 30.0 \u2014 Resource Management System Foundation"},
 {30,1,"30.1-resource-domain-model.md","resource domain model","Phase 30.1 \u2014 Resource Domain Model"},

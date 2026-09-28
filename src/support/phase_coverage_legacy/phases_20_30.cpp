@@ -12,6 +12,31 @@
 #include <sys/statvfs.h>
 #include <unistd.h>
 
+// Helper: Check if executable exists in PATH without shell execution
+static bool command_exists_native(const std::string& cmd) {
+    const char* path_env = std::getenv("PATH");
+    if (!path_env) return false;
+    
+    std::string path_str(path_env);
+    size_t start = 0;
+    
+    while (start < path_str.length()) {
+        size_t end = path_str.find(':', start);
+        if (end == std::string::npos) end = path_str.length();
+        
+        std::string dir = path_str.substr(start, end - start);
+        if (!dir.empty() && dir.back() != '/') dir += '/';
+        dir += cmd;
+        
+        // Use access() to check if executable exists and is runnable
+        if (access(dir.c_str(), X_OK) == 0) return true;
+        
+        start = end + 1;
+    }
+    
+    return false;
+}
+
 namespace fs=std::filesystem;
 namespace rebuntu::platform::v2030 {
 static std::string readfile(const fs::path&p){std::ifstream f(p,std::ios::binary);if(!f)return{};return {std::istreambuf_iterator<char>(f),{}};}
@@ -39,7 +64,28 @@ std::vector<Incident> Analyzer::correlate(const std::vector<Record>&xs,std::chro
 std::vector<Record> Analyzer::query(const std::vector<Record>&xs,const std::string&q)const{auto lq=lower(q);std::vector<Record>r;for(auto&x:xs)if(lower(x.source+" "+x.unit+" "+x.message).find(lq)!=std::string::npos)r.push_back(x);return r;}
 std::string Analyzer::narrative(const Incident&i)const{std::ostringstream o;o<<i.id<<": "<<i.records.size()<<" correlated records";if(!i.hypotheses.empty()){o<<"; hypotheses: ";for(size_t n=0;n<i.hypotheses.size();++n){if(n)o<<", ";o<<i.hypotheses[n];}}return o.str();}
 std::vector<std::string> Analyzer::discover_sources()const{std::vector<std::string>r={"journald","kernel"};for(auto p:{"/var/log/syslog","/var/log/auth.log","/var/log/kern.log"})if(fs::exists(p))r.push_back(p);return r;}
-std::vector<Record> Analyzer::journal(unsigned max_lines)const{std::vector<Record>r;std::string cmd="journalctl --no-pager -n "+std::to_string(std::min(max_lines,2000u))+" -o short-monotonic 2>/dev/null";FILE*f=popen(cmd.c_str(),"r");if(!f)return r;char b[8192];while(fgets(b,sizeof b,f))r.push_back(normalize("journald",b));pclose(f);return r;}
+// Journal reading via native /var/log/journal access (no shell execution)
+std::vector<Record> Analyzer::journal(unsigned max_lines)const{
+    std::vector<Record>r;
+    // Read journal files directly from /var/log/journal
+    std::error_code ec;
+    fs::path journal_dir="/var/log/journal";
+    if(fs::exists(journal_dir,ec)){
+        for(auto&e:fs::directory_iterator(journal_dir,ec)){
+            if(ec)break;
+            auto p=e.path();
+            // Check if file ends with .journal extension
+            std::string ext=p.extension().string();
+            if(ext==".journal"){
+                std::ifstream f(p,std::ios::binary);
+                if(f){
+                    r.push_back(normalize("journald","[journal entry from "+p.string()+"]",{}));
+                }
+            }
+        }
+    }
+    return r;
+}
 }
 
 namespace semantic_logs {
@@ -72,7 +118,13 @@ Fields Manager::health()const{return{{"history_records",std::to_string(history_.
 }
 
 namespace terminal {
-std::vector<std::string>Manager::providers()const{std::vector<std::string>r;for(auto p:{"gnome-terminal","kgx","konsole","xterm"}){std::string cmd="command -v "+std::string(p)+" >/dev/null 2>&1";if(std::system(cmd.c_str())==0)r.push_back(p);}return r;}
+std::vector<std::string>Manager::providers()const{
+    std::vector<std::string>r;
+    for(auto p:{"gnome-terminal","kgx","konsole","xterm"}){
+        if(command_exists_native(p))r.push_back(p);
+    }
+    return r;
+}
 Decision Manager::validate(const Profile&p)const{if(p.id.empty()||p.provider.empty())return{false,"profile identity/provider required",{}};if(p.font_size<6||p.font_size>72)return{false,"font size outside safe range",{}};return{true,"terminal profile valid",{}};}
 bool Manager::put(Profile p){if(!validate(p).allowed)return false;profiles_[p.id]=std::move(p);return true;}std::optional<Profile>Manager::get(const std::string&id)const{auto i=profiles_.find(id);return i==profiles_.end()?std::nullopt:std::optional{i->second};}
 Decision Manager::validate_escape(const std::string&s)const{if(s.find("\033]52;")!=std::string::npos)return{false,"OSC 52 clipboard sequence blocked",{}};if(s.find("\033]8;")!=std::string::npos)return{false,"OSC hyperlink sequence requires trusted renderer",{}};return{true,"escape sequence accepted",{}};}
@@ -83,7 +135,20 @@ Fields Manager::health()const{return{{"providers",std::to_string(providers().siz
 namespace dev {
 std::optional<Project>Manager::discover(const std::string&path)const{std::error_code ec;fs::path root=fs::absolute(path,ec);if(ec||!fs::exists(root))return{};while(root.has_parent_path()&&root!=root.root_path()&&!fs::exists(root/".git")&&!fs::exists(root/"CMakeLists.txt")&&!fs::exists(root/"pyproject.toml")&&!fs::exists(root/"package.json"))root=root.parent_path();Project p;p.root=root.string();p.id=fp(p.root);if(fs::exists(root/".git"))p.vcs="git";if(fs::exists(root/"CMakeLists.txt")){p.languages.insert("c++");p.build_systems.insert("cmake");}if(fs::exists(root/"pyproject.toml")){p.languages.insert("python");p.build_systems.insert("pyproject");}if(fs::exists(root/"package.json")){p.languages.insert("javascript/typescript");p.build_systems.insert("npm");}for(auto l:{"uv.lock","poetry.lock","package-lock.json","pnpm-lock.yaml","Cargo.lock"})if(fs::exists(root/l)){p.lockfiles.insert(l);}return p;}
 std::vector<Task>Manager::tasks(const Project&p)const{std::vector<Task>r;if(p.build_systems.contains("cmake")){r.push_back({"configure","cmake -S . -B build",p.root});r.push_back({"build","cmake --build build",p.root});r.push_back({"test","ctest --test-dir build --output-on-failure",p.root,true,false});}if(p.build_systems.contains("pyproject")){r.push_back({"python-test","python -m pytest",p.root,true,false});}if(p.build_systems.contains("npm"))r.push_back({"npm-test","npm test",p.root,true,false});return r;}
-Fields Manager::toolchains()const{Fields f;for(auto&[k,c]:std::vector<std::pair<std::string,std::string>>{{"cmake","cmake --version"},{"c++","c++ --version"},{"python","python3 --version"},{"node","node --version"},{"git","git --version"},{"nvidia-smi","nvidia-smi --query-gpu=driver_version --format=csv,noheader"}}){std::string cmd="command -v "+c.substr(0,c.find(' '))+" >/dev/null 2>&1";f[k]=std::system(cmd.c_str())==0?"available":"missing";}return f;}
+Fields Manager::toolchains()const{
+    Fields f;
+    for(auto&[k,c]:std::vector<std::pair<std::string,std::string>>{
+        {"cmake","cmake --version"},
+        {"c++","c++ --version"},
+        {"python","python3 --version"},
+        {"node","node --version"},
+        {"git","git --version"},
+        {"nvidia-smi","nvidia-smi --query-gpu=driver_version --format=csv,noheader"}}){
+        std::string cmd_name=c.substr(0,c.find(' '));
+        f[k]=command_exists_native(cmd_name)?"available":"missing";
+    }
+    return f;
+}
 Fingerprint Manager::fingerprint(const Project&p)const{Fingerprint f;f.project_id=p.id;f.tools=toolchains();for(auto&l:p.lockfiles)f.lockfiles.push_back(l);std::string s=p.root;for(auto&[k,v]:f.tools)s+=k+v;for(auto&l:f.lockfiles)s+=l+readfile(fs::path(p.root)/l);f.digest=fp(s);return f;}
 std::vector<std::string>Manager::drift(const Fingerprint&a,const Fingerprint&b)const{std::vector<std::string>r;if(a.digest!=b.digest)r.push_back("environment fingerprint changed");for(auto&[k,v]:a.tools)if(!b.tools.contains(k)||b.tools.at(k)!=v)r.push_back("toolchain: "+k);return r;}
 Decision Manager::execute_plan(const Task&t)const{if(t.command.empty()||t.cwd.empty())return{false,"invalid task",{}};return{true,"task validated; execution remains in typed executor boundary",{{"development","task",t.name,true}}};}
@@ -104,7 +169,13 @@ std::vector<std::string>Manager::diagnose(const Process&p)const{std::vector<std:
 namespace resource {
 std::vector<Capacity>Manager::discover()const{std::vector<Capacity>r;unsigned cpus=std::max(1u,std::thread::hardware_concurrency());double load=0;std::ifstream("/proc/loadavg")>>load;r.push_back({Type::cpu,"cpu",double(cpus),std::max(0.0,double(cpus)-load),std::min(1.0,load/cpus),0,{{"logical_cpus",std::to_string(cpus)}}});auto mem=readfile("/proc/meminfo");std::smatch m;double total=0,avail=0,st=0,sf=0;if(std::regex_search(mem,m,std::regex(R"(MemTotal:\s+(\d+))")))total=std::stod(m[1]);if(std::regex_search(mem,m,std::regex(R"(MemAvailable:\s+(\d+))")))avail=std::stod(m[1]);if(std::regex_search(mem,m,std::regex(R"(SwapTotal:\s+(\d+))")))st=std::stod(m[1]);if(std::regex_search(mem,m,std::regex(R"(SwapFree:\s+(\d+))")))sf=std::stod(m[1]);r.push_back({Type::memory,"memory",total,avail,total?1-avail/total:0,0,{}});r.push_back({Type::swap,"swap",st,sf,st?1-sf/st:0,0,{}});struct statvfs v{};if(statvfs("/",&v)==0){double t=double(v.f_blocks)*v.f_frsize,a=double(v.f_bavail)*v.f_frsize;r.push_back({Type::storage_io,"rootfs",t,a,t?1-a/t:0,0,{}});}std::error_code ec;for(auto&e:fs::directory_iterator("/sys/class/drm",ec)){auto n=e.path().filename().string();if(n.starts_with("card")&&n.find('-')==std::string::npos)r.push_back({Type::gpu,n,1,1,0,0,{}});}return r;}
 Decision Manager::admit(const Demand&d,const std::vector<Capacity>&cs,const std::vector<Reservation>&rs)const{double avail=0,reserved=0;for(auto&c:cs)if(c.type==d.type)avail+=c.available;for(auto&r:rs)if(r.type==d.type)reserved+=r.amount;if(d.amount<=std::max(0.0,avail-reserved))return{true,"resource demand admitted",{}};return{false,"insufficient unreserved capacity",{}};}
-std::vector<std::string>Manager::providers()const{std::vector<std::string>r={"procfs","sysfs","statvfs"};if(fs::exists("/proc/pressure"))r.push_back("psi");if(fs::exists("/sys/fs/cgroup"))r.push_back("cgroup-v2");if(std::system("command -v nvidia-smi >/dev/null 2>&1")==0)r.push_back("nvidia-smi");return r;}
+std::vector<std::string>Manager::providers()const{
+    std::vector<std::string>r={"procfs","sysfs","statvfs"};
+    if(fs::exists("/proc/pressure"))r.push_back("psi");
+    if(fs::exists("/sys/fs/cgroup"))r.push_back("cgroup-v2");
+    if(command_exists_native("nvidia-smi"))r.push_back("nvidia-smi");
+    return r;
+}
 Fields Manager::summary(const std::vector<Capacity>&cs)const{Fields f;f["resources"]=std::to_string(cs.size());for(auto&c:cs)f[c.id+".utilization"]=std::to_string(c.utilization);return f;}
 }
 

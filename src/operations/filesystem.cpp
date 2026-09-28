@@ -1,9 +1,11 @@
 // Rebuntu Operations — Filesystem Domain Implementation (Phase 0.10)
 //
 // This provides the actual implementation for filesystem operations.
+// Idempotency classification uses automatic classifier from idempotency module.
 
 #include "filesystem.hpp"
 #include <system/core/contracts.hpp>
+#include <system/idempotency/classifier.hpp>
 
 #include <filesystem>
 #include <fstream>

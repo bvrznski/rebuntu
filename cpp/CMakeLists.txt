@@ -179,6 +179,14 @@ target_sources(rebuntu-core PRIVATE
     ${CMAKE_CURRENT_LIST_DIR}/../src/system/core/freshness.hpp
 )
 
+# Phase 6.23: Idempotency Classification System
+add_library(rebuntu-idempotency STATIC
+    ${CMAKE_CURRENT_LIST_DIR}/../src/system/idempotency/classifier.hpp
+    ${CMAKE_CURRENT_LIST_DIR}/../src/system/idempotency/classifier.cpp
+)
+target_include_directories(rebuntu-idempotency PUBLIC ${CMAKE_CURRENT_LIST_DIR}/../src)
+target_link_libraries(rebuntu-core PUBLIC rebuntu-idempotency)
+
 # Add common runtime source files for Phase 4.18 and 6.21 verification
 target_sources(rebuntu-core PRIVATE
     ${CMAKE_CURRENT_LIST_DIR}/../src/runtime/production.hpp
@@ -849,6 +857,14 @@ add_executable(rebuntu-exit-result-test
 target_include_directories(rebuntu-exit-result-test PRIVATE ${CMAKE_CURRENT_LIST_DIR}/../src)
 target_link_libraries(rebuntu-exit-result-test PRIVATE rebuntu-core)
 add_test(NAME exit_result_test COMMAND rebuntu-exit-result-test)
+
+# Phase 6.23: Idempotency Classifier unit tests
+add_executable(rebuntu-idempotency-test
+    ${CMAKE_CURRENT_LIST_DIR}/../tests/unit/idempotency_classifier_test.cpp
+)
+target_include_directories(rebuntu-idempotency-test PRIVATE ${CMAKE_CURRENT_LIST_DIR}/../src)
+target_link_libraries(rebuntu-idempotency-test PRIVATE rebuntu-core rebuntu-idempotency)
+add_test(NAME idempotency_classifier_test COMMAND rebuntu-idempotency-test)
 
 # Phase 5.61: Observation Output unit tests (disabled - gtest not available in CTest)
 # add_executable(rebuntu-observation-output-test

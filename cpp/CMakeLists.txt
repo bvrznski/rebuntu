@@ -211,6 +211,14 @@ target_sources(rebuntu-core PRIVATE
     ${CMAKE_CURRENT_LIST_DIR}/../src/runtime/resolver.cpp
 )
 
+# Phase 6.69: Read File Operation (vertical slice)
+add_library(rebuntu-read-file-operation STATIC
+    ${CMAKE_CURRENT_LIST_DIR}/../src/operations/read_file.hpp
+    ${CMAKE_CURRENT_LIST_DIR}/../src/operations/read_file.cpp
+)
+target_include_directories(rebuntu-read-file-operation PUBLIC ${CMAKE_CURRENT_LIST_DIR}/../src)
+target_link_libraries(rebuntu-core PUBLIC rebuntu-read-file-operation)
+
 # Phase 6.27: Dry-Run Semantics module
 add_library(rebuntu-dry-run STATIC
     ${CMAKE_CURRENT_LIST_DIR}/../src/operations/dry_run.hpp
@@ -1282,6 +1290,14 @@ add_executable(rebuntu-cancellation-race-test
 target_include_directories(rebuntu-cancellation-race-test PRIVATE ${CMAKE_CURRENT_LIST_DIR}/../src)
 target_link_libraries(rebuntu-cancellation-race-test PRIVATE rebuntu-core)
 add_test(NAME cancellation_race_test COMMAND rebuntu-cancellation-race-test)
+
+# Phase 6.69: Read File Operation Tests
+add_executable(rebuntu-read-file-operation-test
+    ${CMAKE_CURRENT_LIST_DIR}/../tests/unit/read_file_operation_test.cpp
+)
+target_include_directories(rebuntu-read-file-operation-test PRIVATE ${CMAKE_CURRENT_LIST_DIR}/../src)
+target_link_libraries(rebuntu-read-file-operation-test PRIVATE rebuntu-core rebuntu-read-file-operation)
+add_test(NAME read_file_operation_test COMMAND rebuntu-read-file-operation-test)
 
 # Phase 6.63: Timeout Ambiguity Tests (Task 6.63)
 add_executable(rebuntu-timeout-ambiguity-test

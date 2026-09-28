@@ -174,6 +174,14 @@ target_sources(rebuntu-core PRIVATE
     ${CMAKE_CURRENT_LIST_DIR}/../src/system/command/model.hpp
 )
 
+# Phase 6.28: Execution Plan Explain-Plan Output module
+add_library(rebuntu-command-explain STATIC
+    ${CMAKE_CURRENT_LIST_DIR}/../src/system/command/explain.hpp
+    ${CMAKE_CURRENT_LIST_DIR}/../src/system/command/explain.cpp
+)
+target_include_directories(rebuntu-command-explain PUBLIC ${CMAKE_CURRENT_LIST_DIR}/../src)
+target_link_libraries(rebuntu-core PUBLIC rebuntu-command-explain)
+
 # Phase 6.22: Verification Freshness module (header-only)
 target_sources(rebuntu-core PRIVATE
     ${CMAKE_CURRENT_LIST_DIR}/../src/system/core/freshness.hpp

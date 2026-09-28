@@ -1316,6 +1316,15 @@ target_include_directories(rebuntu-mutation-integration-test PRIVATE ${CMAKE_CUR
 target_link_libraries(rebuntu-mutation-integration-test PRIVATE rebuntu-core rebuntu-filesystem)
 add_test(NAME mutation_integration_test COMMAND rebuntu-mutation-integration-test)
 
+# Phase 6.71: Read-Only Command Integration Tests
+# Tests for QUERY/OBSERVE commands with UNKNOWN/partial/freshness handling
+add_executable(rebuntu-read-only-command-test
+    ${CMAKE_CURRENT_LIST_DIR}/../tests/unit/read_only_command_integration_test.cpp
+)
+target_include_directories(rebuntu-read-only-command-test PRIVATE ${CMAKE_CURRENT_LIST_DIR}/../src)
+target_link_libraries(rebuntu-read-only-command-test PRIVATE rebuntu-core rebuntu-filesystem)
+add_test(NAME read_only_command_test COMMAND rebuntu-read-only-command-test)
+
 # Phase 6.63: Timeout Ambiguity Tests (Task 6.63)
 add_executable(rebuntu-timeout-ambiguity-test
     ${CMAKE_CURRENT_LIST_DIR}/../tests/unit/timeout_after_commit_test.cpp

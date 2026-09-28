@@ -864,7 +864,12 @@ add_executable(rebuntu-provider-test-matrix
 target_link_libraries(rebuntu-provider-test-matrix PRIVATE rebuntu-core)
 add_test(NAME provider_test_matrix COMMAND rebuntu-provider-test-matrix)
 
-# Phase 6.11: Shell output contract unit tests (disabled - gtest not available in CTest)
+# Phase 6.13: Bash completion script (shell sourceable artifact)
+install(FILES ${CMAKE_CURRENT_LIST_DIR}/../src/system/shell/completion/bash_completion.sh
+    DESTINATION share/rebuntu/bash-completion.d
+)
+
+# Phase 6.13: Shell output contract unit tests (disabled - gtest not available in CTest)
 # add_executable(rebuntu-shell-output-test
 #     ${CMAKE_CURRENT_LIST_DIR}/tests/unit/shell_output_contract_test.cpp
 # )

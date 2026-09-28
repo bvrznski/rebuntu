@@ -175,8 +175,8 @@ public:
     EngineResult initialize();
     
     // Stop the engine (graceful shutdown)
-    // Blocks until all active executions complete or timeout.
-    EngineResult stop(std::optional<std::chrono::milliseconds> timeout = std::nullopt);
+    // Blocks until all active executions complete.
+    EngineResult stop();
     
     // Submit a WorkSubmission for execution
     // Returns SubmissionResult indicating whether accepted and tracking IDs.

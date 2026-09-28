@@ -241,9 +241,26 @@ private:
 // ResourceId helpers
 // ============================================================================
 
-inline ResourceId make_filesystem_resource(std::string_view path);
-inline ResourceId make_service_resource(std::string_view service_name);
-inline ResourceId make_package_resource(std::string_view package_name);
+inline ResourceId make_filesystem_resource(std::string_view path) {
+    ResourceId res;
+    res.category = "filesystem";
+    res.identifier = std::string(path);
+    return res;
+}
+
+inline ResourceId make_service_resource(std::string_view service_name) {
+    ResourceId res;
+    res.category = "service";
+    res.identifier = std::string(service_name);
+    return res;
+}
+
+inline ResourceId make_package_resource(std::string_view package_name) {
+    ResourceId res;
+    res.category = "package";
+    res.identifier = std::string(package_name);
+    return res;
+}
 
 std::unique_ptr<LockManager> make_lock_manager();
 

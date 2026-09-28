@@ -10,6 +10,8 @@
 #include <chrono>
 #include <thread>
 #include <optional>
+#include <memory>
+#include <iostream>
 
 namespace rebuntu::runtime::engine {
 
@@ -43,28 +45,23 @@ EngineResult Engine::initialize() {
     return core::Outcome::success();
 }
 
-EngineResult Engine::stop(std::optional<std::chrono::milliseconds> timeout) {
+EngineResult Engine::stop() {
     std::lock_guard<std::mutex> lock(active_executions_mutex_);
     
     if (state_ != EngineState::kReady && state_ != EngineState::kInitializing) {
         return core::Outcome::failure("E_INVALID_STATE", "Engine not in ready state");
     }
     
-    // Create shutdown coordinator with timeout policy
-    rebuntu::runtime::shutdown::ShutdownPolicy policy;
-    if (timeout.has_value()) {
-        policy.total_timeout = timeout.value();
-    } else {
-        policy.total_timeout = std::chrono::seconds(30);  // Default timeout
-    }
-    policy.drain_timeout = std::chrono::seconds(10);
+    // Use default shutdown policy
+    std::chrono::milliseconds total_timeout{30000};  // 30 seconds
+    std::chrono::milliseconds drain_timeout{10000};  // 10 seconds
     
     state_ = EngineState::kStopping;
     
     // Wait for active executions to complete (simulated bounded drain)
     // In production, this would wait on condition variable or poll execution states
     
-    auto deadline = std::chrono::steady_clock::now() + policy.total_timeout;
+    auto deadline = std::chrono::steady_clock::now() + total_timeout;
     
     while (active_executions_ > 0 && std::chrono::steady_clock::now() < deadline) {
         std::this_thread::sleep_for(std::chrono::milliseconds(100));

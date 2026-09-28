@@ -60,6 +60,7 @@ CMakeFiles/rebuntu-exec-diag.dir/home/bvrznski/rebuntu/src/adapters/exec_diag.cp
   /usr/include/x86_64-linux-gnu/bits/types/FILE.h \
   /usr/include/x86_64-linux-gnu/bits/types/locale_t.h \
   /usr/include/x86_64-linux-gnu/bits/types/__locale_t.h \
+  /usr/include/x86_64-linux-gnu/bits/wchar2.h \
   /usr/include/c++/11/cstdint \
   /usr/lib/gcc/x86_64-linux-gnu/11/include/stdint.h \
   /usr/include/stdint.h \
@@ -104,6 +105,7 @@ CMakeFiles/rebuntu-exec-diag.dir/home/bvrznski/rebuntu/src/adapters/exec_diag.cp
   /usr/include/x86_64-linux-gnu/bits/types/__sigset_t.h \
   /usr/include/x86_64-linux-gnu/bits/types/struct_timeval.h \
   /usr/include/x86_64-linux-gnu/bits/types/struct_timespec.h \
+  /usr/include/x86_64-linux-gnu/bits/select2.h \
   /usr/include/x86_64-linux-gnu/bits/pthreadtypes.h \
   /usr/include/x86_64-linux-gnu/bits/thread-shared-types.h \
   /usr/include/x86_64-linux-gnu/bits/pthreadtypes-arch.h \
@@ -111,7 +113,9 @@ CMakeFiles/rebuntu-exec-diag.dir/home/bvrznski/rebuntu/src/adapters/exec_diag.cp
   /usr/include/x86_64-linux-gnu/bits/struct_mutex.h \
   /usr/include/x86_64-linux-gnu/bits/struct_rwlock.h \
   /usr/include/alloca.h \
+  /usr/include/x86_64-linux-gnu/bits/stdlib-bsearch.h \
   /usr/include/x86_64-linux-gnu/bits/stdlib-float.h \
+  /usr/include/x86_64-linux-gnu/bits/stdlib.h \
   /usr/include/c++/11/bits/std_abs.h \
   /usr/include/c++/11/bits/algorithmfwd.h \
   /usr/include/c++/11/initializer_list \
@@ -155,6 +159,8 @@ CMakeFiles/rebuntu-exec-diag.dir/home/bvrznski/rebuntu/src/adapters/exec_diag.cp
   /usr/include/x86_64-linux-gnu/bits/types/struct_FILE.h \
   /usr/include/x86_64-linux-gnu/bits/types/cookie_io_functions_t.h \
   /usr/include/x86_64-linux-gnu/bits/stdio_lim.h \
+  /usr/include/x86_64-linux-gnu/bits/stdio.h \
+  /usr/include/x86_64-linux-gnu/bits/stdio2.h \
   /usr/include/c++/11/cerrno \
   /usr/include/errno.h \
   /usr/include/x86_64-linux-gnu/bits/errno.h \
@@ -240,6 +246,7 @@ CMakeFiles/rebuntu-exec-diag.dir/home/bvrznski/rebuntu/src/adapters/exec_diag.cp
   /usr/include/x86_64-linux-gnu/bits/confname.h \
   /usr/include/x86_64-linux-gnu/bits/getopt_posix.h \
   /usr/include/x86_64-linux-gnu/bits/getopt_core.h \
+  /usr/include/x86_64-linux-gnu/bits/unistd.h \
   /usr/include/x86_64-linux-gnu/bits/unistd_ext.h \
   /usr/include/linux/close_range.h \
   /usr/include/syscall.h \
@@ -305,6 +312,8 @@ CMakeFiles/rebuntu-exec-diag.dir/home/bvrznski/rebuntu/src/adapters/exec_diag.cp
   /usr/include/c++/11/cstring \
   /usr/include/string.h \
   /usr/include/strings.h \
+  /usr/include/x86_64-linux-gnu/bits/strings_fortified.h \
+  /usr/include/x86_64-linux-gnu/bits/string_fortified.h \
   /usr/include/x86_64-linux-gnu/sys/wait.h \
   /usr/include/signal.h \
   /usr/include/x86_64-linux-gnu/bits/signum-generic.h \
@@ -352,6 +361,7 @@ CMakeFiles/rebuntu-exec-diag.dir/home/bvrznski/rebuntu/src/adapters/exec_diag.cp
   /usr/include/x86_64-linux-gnu/bits/fcntl-linux.h \
   /usr/include/x86_64-linux-gnu/bits/types/struct_iovec.h \
   /usr/include/linux/falloc.h \
+  /usr/include/x86_64-linux-gnu/bits/fcntl2.h \
   /usr/include/c++/11/thread \
   /usr/include/c++/11/stop_token \
   /usr/include/c++/11/atomic \
@@ -439,6 +449,8 @@ CMakeFiles/rebuntu-exec-diag.dir/home/bvrznski/rebuntu/src/adapters/exec_diag.cp
 
 /usr/include/x86_64-linux-gnu/bits/signum-generic.h:
 
+/usr/include/x86_64-linux-gnu/bits/strings_fortified.h:
+
 /usr/include/signal.h:
 
 /usr/include/strings.h:
@@ -470,8 +482,6 @@ CMakeFiles/rebuntu-exec-diag.dir/home/bvrznski/rebuntu/src/adapters/exec_diag.cp
 /usr/include/x86_64-linux-gnu/bits/mathcalls.h:
 
 /usr/include/x86_64-linux-gnu/bits/mathcalls-helper-functions.h:
-
-/usr/include/x86_64-linux-gnu/bits/fp-logb.h:
 
 /usr/include/x86_64-linux-gnu/bits/flt-eval-method.h:
 
@@ -511,9 +521,17 @@ CMakeFiles/rebuntu-exec-diag.dir/home/bvrznski/rebuntu/src/adapters/exec_diag.cp
 
 /usr/include/c++/11/algorithm:
 
-/usr/include/x86_64-linux-gnu/asm/posix_types_64.h:
+/home/bvrznski/rebuntu/src/system/core/contracts.hpp:
 
-/usr/include/x86_64-linux-gnu/bits/cpu-set.h:
+/usr/include/x86_64-linux-gnu/bits/sigcontext.h:
+
+/home/bvrznski/rebuntu/src/runtime/contracts.hpp:
+
+/usr/include/c++/11/pstl/glue_memory_defs.h:
+
+/usr/include/c++/11/bits/uses_allocator_args.h:
+
+/usr/include/c++/11/bits/stream_iterator.h:
 
 /usr/include/x86_64-linux-gnu/c++/11/bits/gthr-default.h:
 
@@ -539,6 +557,10 @@ CMakeFiles/rebuntu-exec-diag.dir/home/bvrznski/rebuntu/src/adapters/exec_diag.cp
 
 /usr/include/c++/11/ext/new_allocator.h:
 
+/usr/include/c++/11/pstl/execution_defs.h:
+
+/usr/include/c++/11/bits/algorithmfwd.h:
+
 /usr/include/x86_64-linux-gnu/bits/pthreadtypes.h:
 
 /usr/include/c++/11/bits/allocated_ptr.h:
@@ -563,11 +585,11 @@ CMakeFiles/rebuntu-exec-diag.dir/home/bvrznski/rebuntu/src/adapters/exec_diag.cp
 
 /usr/include/c++/11/bit:
 
-/usr/include/x86_64-linux-gnu/sys/syscall.h:
-
 /usr/include/c++/11/bits/cxxabi_forced.h:
 
 /usr/include/x86_64-linux-gnu/bits/endianness.h:
+
+/usr/include/x86_64-linux-gnu/sys/syscall.h:
 
 /usr/include/x86_64-linux-gnu/bits/locale.h:
 
@@ -605,9 +627,9 @@ CMakeFiles/rebuntu-exec-diag.dir/home/bvrznski/rebuntu/src/adapters/exec_diag.cp
 
 /usr/include/x86_64-linux-gnu/asm/unistd_64.h:
 
-/usr/include/c++/11/ext/alloc_traits.h:
+/usr/include/x86_64-linux-gnu/bits/fp-logb.h:
 
-/usr/include/x86_64-linux-gnu/bits/sched.h:
+/usr/include/x86_64-linux-gnu/bits/wchar2.h:
 
 /usr/include/c++/11/compare:
 
@@ -620,6 +642,12 @@ CMakeFiles/rebuntu-exec-diag.dir/home/bvrznski/rebuntu/src/adapters/exec_diag.cp
 /usr/include/x86_64-linux-gnu/bits/stdlib-float.h:
 
 /usr/include/x86_64-linux-gnu/bits/uintn-identity.h:
+
+/usr/include/semaphore.h:
+
+/usr/include/x86_64-linux-gnu/bits/types/struct_statx_timestamp.h:
+
+/usr/include/c++/11/cwctype:
 
 /usr/include/c++/11/tuple:
 
@@ -653,11 +681,7 @@ CMakeFiles/rebuntu-exec-diag.dir/home/bvrznski/rebuntu/src/adapters/exec_diag.cp
 
 /usr/lib/gcc/x86_64-linux-gnu/11/include/stdint.h:
 
-/usr/include/c++/11/cwchar:
-
 /usr/include/c++/11/ext/type_traits.h:
-
-/usr/include/c++/11/pstl/glue_memory_defs.h:
 
 /usr/include/c++/11/bits/char_traits.h:
 
@@ -689,13 +713,13 @@ CMakeFiles/rebuntu-exec-diag.dir/home/bvrznski/rebuntu/src/adapters/exec_diag.cp
 
 /home/bvrznski/rebuntu/src/adapters/exec_diag.hpp:
 
-/usr/include/x86_64-linux-gnu/bits/types/struct_sched_param.h:
-
-/usr/include/asm-generic/errno.h:
-
 /usr/include/c++/11/bits/stl_tree.h:
 
 /usr/include/syscall.h:
+
+/usr/include/c++/11/cwchar:
+
+/usr/include/x86_64-linux-gnu/bits/select2.h:
 
 /usr/include/x86_64-linux-gnu/bits/types/wint_t.h:
 
@@ -706,6 +730,12 @@ CMakeFiles/rebuntu-exec-diag.dir/home/bvrznski/rebuntu/src/adapters/exec_diag.cp
 /usr/include/c++/11/bits/ostream_insert.h:
 
 /usr/include/x86_64-linux-gnu/bits/confname.h:
+
+/usr/include/x86_64-linux-gnu/bits/stdlib.h:
+
+/usr/include/x86_64-linux-gnu/bits/types/struct_timeval.h:
+
+/usr/include/x86_64-linux-gnu/asm/errno.h:
 
 /usr/include/c++/11/tr1/gamma.tcc:
 
@@ -721,10 +751,6 @@ CMakeFiles/rebuntu-exec-diag.dir/home/bvrznski/rebuntu/src/adapters/exec_diag.cp
 
 /usr/include/x86_64-linux-gnu/sys/single_threaded.h:
 
-/usr/include/c++/11/bits/algorithmfwd.h:
-
-/usr/include/c++/11/pstl/execution_defs.h:
-
 /usr/include/c++/11/bits/ranges_cmp.h:
 
 /usr/include/linux/close_range.h:
@@ -732,6 +758,8 @@ CMakeFiles/rebuntu-exec-diag.dir/home/bvrznski/rebuntu/src/adapters/exec_diag.cp
 /usr/include/x86_64-linux-gnu/bits/types/locale_t.h:
 
 /usr/include/x86_64-linux-gnu/bits/wctype-wchar.h:
+
+/usr/include/x86_64-linux-gnu/bits/fcntl2.h:
 
 /usr/include/x86_64-linux-gnu/bits/timesize.h:
 
@@ -747,15 +775,7 @@ CMakeFiles/rebuntu-exec-diag.dir/home/bvrznski/rebuntu/src/adapters/exec_diag.cp
 
 /usr/include/c++/11/bits/std_mutex.h:
 
-/usr/include/x86_64-linux-gnu/bits/types/struct_timeval.h:
-
-/usr/include/x86_64-linux-gnu/asm/errno.h:
-
 /usr/include/x86_64-linux-gnu/sys/cdefs.h:
-
-/usr/include/x86_64-linux-gnu/bits/sigcontext.h:
-
-/home/bvrznski/rebuntu/src/runtime/contracts.hpp:
 
 /usr/include/c++/11/bits/stl_pair.h:
 
@@ -802,8 +822,6 @@ CMakeFiles/rebuntu-exec-diag.dir/home/bvrznski/rebuntu/src/adapters/exec_diag.cp
 /usr/include/c++/11/bits/stl_iterator.h:
 
 /usr/include/ctype.h:
-
-/usr/include/c++/11/bits/stream_iterator.h:
 
 /usr/include/c++/11/bits/std_thread.h:
 
@@ -853,11 +871,29 @@ CMakeFiles/rebuntu-exec-diag.dir/home/bvrznski/rebuntu/src/adapters/exec_diag.cp
 
 /usr/include/c++/11/bits/atomic_wait.h:
 
+/usr/include/c++/11/iterator:
+
+/usr/include/c++/11/bits/range_access.h:
+
+/usr/include/x86_64-linux-gnu/bits/floatn.h:
+
 /usr/include/x86_64-linux-gnu/bits/types/struct_itimerspec.h:
 
 /usr/include/x86_64-linux-gnu/bits/libc-header-start.h:
 
 /usr/include/x86_64-linux-gnu/bits/types/mbstate_t.h:
+
+/usr/include/c++/11/ext/alloc_traits.h:
+
+/usr/include/x86_64-linux-gnu/bits/sched.h:
+
+/usr/include/asm-generic/errno.h:
+
+/usr/include/x86_64-linux-gnu/bits/types/struct_sched_param.h:
+
+/usr/include/x86_64-linux-gnu/asm/posix_types_64.h:
+
+/usr/include/x86_64-linux-gnu/bits/cpu-set.h:
 
 /usr/include/x86_64-linux-gnu/bits/stdio_lim.h:
 
@@ -921,6 +957,16 @@ CMakeFiles/rebuntu-exec-diag.dir/home/bvrznski/rebuntu/src/adapters/exec_diag.cp
 
 /usr/include/stdio.h:
 
+/usr/include/x86_64-linux-gnu/bits/stdio.h:
+
+/usr/include/x86_64-linux-gnu/bits/stdio2.h:
+
+/usr/include/c++/11/bits/this_thread_sleep.h:
+
+/usr/include/x86_64-linux-gnu/bits/types/struct_tm.h:
+
+/usr/include/c++/11/bits/locale_facets.tcc:
+
 /usr/include/x86_64-linux-gnu/bits/types/cookie_io_functions_t.h:
 
 /usr/include/c++/11/cerrno:
@@ -954,6 +1000,8 @@ CMakeFiles/rebuntu-exec-diag.dir/home/bvrznski/rebuntu/src/adapters/exec_diag.cp
 /usr/include/c++/11/system_error:
 
 /usr/include/x86_64-linux-gnu/bits/types/clockid_t.h:
+
+/usr/include/x86_64-linux-gnu/bits/stdlib-bsearch.h:
 
 /usr/include/x86_64-linux-gnu/bits/types/struct___jmp_buf_tag.h:
 
@@ -991,6 +1039,8 @@ CMakeFiles/rebuntu-exec-diag.dir/home/bvrznski/rebuntu/src/adapters/exec_diag.cp
 
 /usr/include/c++/11/bits/nested_exception.h:
 
+/usr/include/x86_64-linux-gnu/bits/string_fortified.h:
+
 /usr/include/c++/11/memory:
 
 /usr/include/x86_64-linux-gnu/bits/syscall.h:
@@ -1004,12 +1054,6 @@ CMakeFiles/rebuntu-exec-diag.dir/home/bvrznski/rebuntu/src/adapters/exec_diag.cp
 /usr/include/c++/11/bits/unique_ptr.h:
 
 /usr/include/c++/11/ostream:
-
-/usr/include/c++/11/bits/range_access.h:
-
-/usr/include/x86_64-linux-gnu/bits/floatn.h:
-
-/usr/include/c++/11/iterator:
 
 /usr/include/c++/11/tr1/beta_function.tcc:
 
@@ -1053,23 +1097,11 @@ CMakeFiles/rebuntu-exec-diag.dir/home/bvrznski/rebuntu/src/adapters/exec_diag.cp
 
 /usr/include/c++/11/bits/locale_facets.h:
 
-/usr/include/semaphore.h:
-
-/usr/include/x86_64-linux-gnu/bits/types/struct_statx_timestamp.h:
-
-/usr/include/c++/11/cwctype:
-
 /usr/include/c++/11/bits/streambuf_iterator.h:
 
 /usr/include/linux/types.h:
 
 /usr/include/x86_64-linux-gnu/c++/11/bits/ctype_inline.h:
-
-/usr/include/c++/11/bits/this_thread_sleep.h:
-
-/usr/include/x86_64-linux-gnu/bits/types/struct_tm.h:
-
-/usr/include/c++/11/bits/locale_facets.tcc:
 
 /usr/include/c++/11/bits/enable_special_members.h:
 
@@ -1107,8 +1139,6 @@ CMakeFiles/rebuntu-exec-diag.dir/home/bvrznski/rebuntu/src/adapters/exec_diag.cp
 
 /usr/include/x86_64-linux-gnu/bits/getopt_posix.h:
 
+/usr/include/x86_64-linux-gnu/bits/unistd.h:
+
 /usr/include/x86_64-linux-gnu/bits/unistd_ext.h:
-
-/usr/include/c++/11/bits/uses_allocator_args.h:
-
-/home/bvrznski/rebuntu/src/system/core/contracts.hpp:

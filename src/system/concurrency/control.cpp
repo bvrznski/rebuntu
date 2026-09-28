@@ -4,7 +4,9 @@
 
 #include <system/concurrency/control.hpp>
 #include <chrono>
+#include <optional>
 #include <memory>
+#include <string_view>
 
 namespace rebuntu::concurrency {
 
@@ -364,5 +366,14 @@ LockManager::Metrics ExecutionConcurrencyControl::metrics() const {
 std::unique_ptr<LockManager> make_lock_manager() {
     return std::make_unique<LockManager>();
 }
+
+// ============================================================================
+// ResourceId implementation
+// ============================================================================
+
+bool ResourceId::operator==(const ResourceId& other) const noexcept {
+    return category == other.category && identifier == other.identifier;
+}
+
 
 }  // namespace rebuntu::concurrency

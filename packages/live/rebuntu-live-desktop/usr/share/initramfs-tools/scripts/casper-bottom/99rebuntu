@@ -17,13 +17,9 @@ esac
 . /scripts/casper-functions
 
 # Casper deliberately removes the live user's password.
-echo "99rebuntu: START $(date)" >> /root/var/log/rebuntu-casper-password.log
-echo "99rebuntu: USERNAME=${USERNAME:-unset}" >> /root/var/log/rebuntu-casper-password.log
 # Restore Rebuntu's documented live credentials after Casper user setup.
 if chroot /root getent passwd rebuntu >/dev/null 2>&1; then
     printf '%s\n' 'rebuntu:rebuntu' | chroot /root chpasswd
-    echo "99rebuntu: chpasswd rc=$?" >> /root/var/log/rebuntu-casper-password.log
-    chroot /root passwd -S rebuntu >> /root/var/log/rebuntu-casper-password.log 2>&1
 fi
 
 exit 0

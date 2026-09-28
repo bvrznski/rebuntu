@@ -450,6 +450,8 @@ target_link_libraries(rebuntu-core PUBLIC rebuntu-snapshot-storage)
 add_library(rebuntu-journald-adapter STATIC
     ${CMAKE_CURRENT_LIST_DIR}/../src/adapters/journald.hpp
     ${CMAKE_CURRENT_LIST_DIR}/../src/adapters/journald.cpp
+    ${CMAKE_CURRENT_LIST_DIR}/../src/adapters/subprocess_utility.hpp
+    ${CMAKE_CURRENT_LIST_DIR}/../src/adapters/subprocess_utility.cpp
 )
 target_include_directories(rebuntu-journald-adapter PUBLIC ${CMAKE_CURRENT_LIST_DIR}/../src)
 target_link_libraries(rebuntu-core PUBLIC rebuntu-journald-adapter)
@@ -458,6 +460,8 @@ target_link_libraries(rebuntu-core PUBLIC rebuntu-journald-adapter)
 add_library(rebuntu-exec-diag STATIC
     ${CMAKE_CURRENT_LIST_DIR}/../src/adapters/exec_diag.hpp
     ${CMAKE_CURRENT_LIST_DIR}/../src/adapters/exec_diag.cpp
+    ${CMAKE_CURRENT_LIST_DIR}/../src/adapters/subprocess_utility.hpp
+    ${CMAKE_CURRENT_LIST_DIR}/../src/adapters/subprocess_utility.cpp
 )
 target_include_directories(rebuntu-exec-diag PUBLIC ${CMAKE_CURRENT_LIST_DIR}/../src)
 target_link_libraries(rebuntu-core PUBLIC rebuntu-exec-diag)

@@ -4,18 +4,13 @@
 // using journalctl with structured JSON output.
 
 #include "adapters/journald.hpp"
+#include "adapters/subprocess_utility.hpp"
 
 #include <cstdlib>
 #include <cstring>
 #include <cstddef>
-#include <unistd.h>
-#include <sys/wait.h>
-#include <sys/select.h>
-#include <sys/types.h>
-#include <sys/stat.h>
-#include <fcntl.h>
-#include <cerrno>
 #include <memory>
+#include <optional>
 #include <string_view>
 #include <array>
 #include <thread>
@@ -27,108 +22,35 @@
 namespace rebuntu::adapters {
 
 // ============================================================================
-// Helper Functions for JSON Parsing and Command Execution
+// Subprocess Utility Wrapper for Command Execution
 // ============================================================================
 
-namespace {
-    
-// Execute a command and capture its output
+// Static SubprocessUtility instance for the adapter
+static SubprocessUtility g_subprocess_utility{std::chrono::seconds(30)};
+
+// Execute a command using the canonical subprocess utility
 core::Outcome execute_command(
     const std::vector<std::string>& argv,
     std::string& stdout_output,
     std::chrono::milliseconds timeout) {
     
-    // Convert vector of strings to null-terminated array for execve
-    std::vector<char*> args;
-    for (const auto& arg : argv) {
-        args.push_back(const_cast<char*>(arg.c_str()));
-    }
-    args.push_back(nullptr);
+    // Use SubprocessUtility for canonical subprocess execution
+    SubprocessUtility::ExecutionResult result = g_subprocess_utility.execute(
+        argv[0], 
+        std::vector<std::string>(argv.begin() + 1, argv.end()),
+        std::nullopt,
+        timeout);
     
-    // Create pipe for stdout
-    int pipefd[2];
-    if (pipe(pipefd) != 0) {
+    stdout_output = result.stdout_output;
+    
+    // Convert SubprocessUtility result to Outcome
+    if (result.success) {
+        return core::Outcome::success();
+    } else {
         return core::Outcome::failure(
-            "E_PIPE_FAILED",
-            "Failed to create pipe: " + std::string(strerror(errno)));
+            "E_SUBPROCESS_FAILED",
+            "subprocess exited with code " + std::to_string(result.exit_code));
     }
-    
-    pid_t pid = fork();
-    if (pid < 0) {
-        close(pipefd[0]);
-        close(pipefd[1]);
-        return core::Outcome::failure(
-            "E_FORK_FAILED",
-            "Failed to fork process: " + std::string(strerror(errno)));
-    }
-    
-    if (pid == 0) {
-        // Child process
-        close(pipefd[0]);  // Close read end
-        
-        // Redirect stdout to pipe
-        dup2(pipefd[1], STDOUT_FILENO);
-        
-        // Execute the command
-        execv(args[0], args.data());
-        
-        // If we get here, exec failed
-        _exit(127);
-    }
-    
-    // Parent process
-    close(pipefd[1]);  // Close write end
-    
-    // Read output with timeout
-    char buffer[4096];
-    stdout_output.clear();
-    
-    fd_set read_fds;
-    FD_ZERO(&read_fds);
-    FD_SET(pipefd[0], &read_fds);
-    
-    struct timeval tv;
-    tv.tv_sec = timeout.count() / 1000;
-    tv.tv_usec = (timeout.count() % 1000) * 1000;
-    
-    ssize_t bytes_read;
-    while ((bytes_read = select(pipefd[0] + 1, &read_fds, nullptr, nullptr, &tv)) > 0) {
-        if (FD_ISSET(pipefd[0], &read_fds)) {
-            ssize_t n = read(pipefd[0], buffer, sizeof(buffer));
-            if (n <= 0) break;
-            stdout_output.append(buffer, n);
-            
-            // Reset timeout for next iteration
-            tv.tv_sec = timeout.count() / 1000;
-            tv.tv_usec = (timeout.count() % 1000) * 1000;
-            FD_ZERO(&read_fds);
-            FD_SET(pipefd[0], &read_fds);
-        }
-    }
-    
-    close(pipefd[0]);
-    
-    // Wait for process to complete
-    int status;
-    waitpid(pid, &status, 0);
-    
-    if (WIFEXITED(status)) {
-        int exit_code = WEXITSTATUS(status);
-        if (exit_code == 0) {
-            return core::Outcome::success();
-        } else {
-            return core::Outcome::failure(
-                "E_JOURNALCTL_FAILED",
-                "journalctl exited with code " + std::to_string(exit_code));
-        }
-    } else if (WIFSIGNALED(status)) {
-        int sig = WTERMSIG(status);
-        return core::Outcome::failure(
-            "E_JOURNALCTL_SIGNALED",
-            "journalctl terminated by signal " + std::to_string(sig));
-    }
-    
-    return core::Outcome::success();
 }
 
 // Extract a string value from JSON

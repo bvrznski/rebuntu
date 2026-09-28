@@ -227,6 +227,14 @@ add_library(rebuntu-dry-run STATIC
 target_include_directories(rebuntu-dry-run PUBLIC ${CMAKE_CURRENT_LIST_DIR}/../src)
 target_link_libraries(rebuntu-core PUBLIC rebuntu-dry-run)
 
+# Phase 0.10: Filesystem Operations module
+add_library(rebuntu-filesystem STATIC
+    ${CMAKE_CURRENT_LIST_DIR}/../src/operations/filesystem.hpp
+    ${CMAKE_CURRENT_LIST_DIR}/../src/operations/filesystem.cpp
+)
+target_include_directories(rebuntu-filesystem PUBLIC ${CMAKE_CURRENT_LIST_DIR}/../src)
+target_link_libraries(rebuntu-core PUBLIC rebuntu-filesystem)
+
 # Phase 6.24: Retry Mechanics Integration module
 target_sources(rebuntu-core PRIVATE
     ${CMAKE_CURRENT_LIST_DIR}/../src/runtime/retry_mechanics.hpp
@@ -1298,6 +1306,15 @@ add_executable(rebuntu-read-file-operation-test
 target_include_directories(rebuntu-read-file-operation-test PRIVATE ${CMAKE_CURRENT_LIST_DIR}/../src)
 target_link_libraries(rebuntu-read-file-operation-test PRIVATE rebuntu-core rebuntu-read-file-operation)
 add_test(NAME read_file_operation_test COMMAND rebuntu-read-file-operation-test)
+
+# Phase 6.70: Contained Mutation Integration Test
+# Tests for filesystem.copy operation with before/after observation + verification
+add_executable(rebuntu-mutation-integration-test
+    ${CMAKE_CURRENT_LIST_DIR}/../tests/unit/filesystem_mutation_integration_test.cpp
+)
+target_include_directories(rebuntu-mutation-integration-test PRIVATE ${CMAKE_CURRENT_LIST_DIR}/../src)
+target_link_libraries(rebuntu-mutation-integration-test PRIVATE rebuntu-core rebuntu-filesystem)
+add_test(NAME mutation_integration_test COMMAND rebuntu-mutation-integration-test)
 
 # Phase 6.63: Timeout Ambiguity Tests (Task 6.63)
 add_executable(rebuntu-timeout-ambiguity-test

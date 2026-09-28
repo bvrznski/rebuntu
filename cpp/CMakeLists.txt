@@ -86,7 +86,26 @@ add_library(rebuntu-shell STATIC
     ${CMAKE_CURRENT_LIST_DIR}/../src/system/shell/verbs/list.cpp
     ${CMAKE_CURRENT_LIST_DIR}/../src/system/shell/verbs/mapping.hpp
     ${CMAKE_CURRENT_LIST_DIR}/../src/system/shell/verbs/mapping.cpp
+    ${CMAKE_CURRENT_LIST_DIR}/../src/system/shell/context.hpp
+    ${CMAKE_CURRENT_LIST_DIR}/../src/system/shell/context.cpp
 )
+
+# Phase 6.15: Contextual Command Resolution module
+add_library(rebuntu-shell-context STATIC
+    ${CMAKE_CURRENT_LIST_DIR}/../src/system/shell/context.hpp
+    ${CMAKE_CURRENT_LIST_DIR}/../src/system/shell/context.cpp
+)
+
+target_include_directories(rebuntu-shell-context PUBLIC ${CMAKE_CURRENT_LIST_DIR}/../src)
+target_link_libraries(rebuntu-core PUBLIC rebuntu-shell-context)
+
+# Phase 6.15: Contextual Command Resolution unit tests
+add_executable(rebuntu-context-test
+    ${CMAKE_CURRENT_LIST_DIR}/../tests/unit/shell_context_test.cpp
+)
+target_include_directories(rebuntu-context-test PRIVATE ${CMAKE_CURRENT_LIST_DIR}/../src)
+target_link_libraries(rebuntu-context-test PRIVATE rebuntu-core rebuntu-shell)
+add_test(NAME context_test COMMAND rebuntu-context-test)
 
 # Phase 6.14: Command Collision Detection module
 add_library(rebuntu-shell-collision STATIC

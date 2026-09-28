@@ -1,0 +1,14 @@
+[Unit]
+Description=Prepare Rebuntu installer backend
+After=snapd.service snapd.socket
+Wants=snapd.service
+ConditionPathExists=/opt/rebuntu/installer/subiquity/subiquity_7403.snap
+ConditionPathExists=/opt/rebuntu/installer/subiquity/subiquity_7403.assert
+
+[Service]
+Type=oneshot
+ExecStart=/usr/lib/rebuntu/installer/prepare-subiquity
+RemainAfterExit=yes
+
+[Install]
+WantedBy=multi-user.target

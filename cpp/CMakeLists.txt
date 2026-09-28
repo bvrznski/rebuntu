@@ -1257,3 +1257,17 @@ target_include_directories(rebuntu-execution-storm-backpressure-test PRIVATE ${C
 target_link_libraries(rebuntu-execution-storm-backpressure-test PRIVATE rebuntu-core)
 add_test(NAME execution_storm_backpressure_test COMMAND rebuntu-execution-storm-backpressure-test)
 
+# Phase 6.30: SubprocessExecutor implementation (Phase 4.17)
+target_sources(rebuntu-core PRIVATE
+    ${CMAKE_CURRENT_LIST_DIR}/../src/runtime/subprocess_executor.hpp
+    ${CMAKE_CURRENT_LIST_DIR}/../src/runtime/subprocess_executor.cpp
+)
+
+# Phase 6.62: Cancellation Race Condition Tests
+add_executable(rebuntu-cancellation-race-test
+    ${CMAKE_CURRENT_LIST_DIR}/../tests/unit/cancellation_race_test.cpp
+)
+target_include_directories(rebuntu-cancellation-race-test PRIVATE ${CMAKE_CURRENT_LIST_DIR}/../src)
+target_link_libraries(rebuntu-cancellation-race-test PRIVATE rebuntu-core)
+add_test(NAME cancellation_race_test COMMAND rebuntu-cancellation-race-test)
+

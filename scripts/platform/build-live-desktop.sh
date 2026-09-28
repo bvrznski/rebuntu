@@ -24,6 +24,7 @@ BUILDERS=(
     packages/meta/rebuntu-desktop/build.sh
     packages/meta/rebuntu-ai/build.sh
     packages/meta/rebuntu-ai-dev/build.sh
+    packages/installer/rebuntu-installer/build.sh
     packages/live/rebuntu-live-desktop/build.sh
 )
 
@@ -40,11 +41,18 @@ echo "== Building Rebuntu APT repository =="
 "$ROOT/scripts/repository/build-repository.sh"
 
 echo
+echo "== Preparing installer backend =="
+
+"$ROOT/installer/scripts/fetch-subiquity.sh"
+"$ROOT/installer/tests/test-subiquity-artifact.sh"
+
+echo
 echo "== Building desktop rootfs =="
 
 REBUNTU_ROOTFS="$ROOTFS" \
 REBUNTU_PROFILE=desktop \
 REBUNTU_INTEGRATE_PLATFORM=1 \
+    REBUNTU_INSTALLER=1 \
     "$ROOT/scripts/rootfs/build-rootfs.sh"
 
 echo

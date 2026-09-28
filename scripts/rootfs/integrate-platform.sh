@@ -244,9 +244,33 @@ GDM_PY
     sudo mkdir -p "$TARGET/etc/NetworkManager/conf.d"
     printf '[keyfile]\nunmanaged-devices=\n' | sudo tee "$TARGET/etc/NetworkManager/conf.d/90-rebuntu-managed-devices.conf" >/dev/null
 
+
+# Optional Rebuntu installer layer for Live images only.
+if [[ "${REBUNTU_INSTALLER:-0}" == "1" ]]; then
+    INSTALLER_ARTIFACTS="$ROOT/build/installer/subiquity"
+    INSTALLER_TARGET="$TARGET/opt/rebuntu/installer/subiquity"
+
+    sudo chroot "$TARGET" apt-get install -y snapd
+
+    SNAP="$(find "$INSTALLER_ARTIFACTS" -maxdepth 1 -type f -name 'subiquity_*.snap' -print -quit)"
+    ASSERT="$(find "$INSTALLER_ARTIFACTS" -maxdepth 1 -type f -name 'subiquity_*.assert' -print -quit)"
+
+    [[ -n "$SNAP" && -s "$SNAP" ]] || {
+        echo "ERROR: Subiquity snap artifact missing" >&2
+        exit 1
+    }
+    [[ -n "$ASSERT" && -s "$ASSERT" ]] || {
+        echo "ERROR: Subiquity assertion artifact missing" >&2
+        exit 1
+    }
+
+    sudo mkdir -p "$INSTALLER_TARGET"
+    sudo install -m 0644 "$SNAP" "$INSTALLER_TARGET/"
+    sudo install -m 0644 "$ASSERT" "$INSTALLER_TARGET/"
+fi
+
     sudo chroot "$TARGET" \
         systemctl set-default graphical.target
-
     sudo chroot "$TARGET" \
         systemctl enable gdm3.service
 

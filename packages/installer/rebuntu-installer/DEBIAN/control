@@ -1,0 +1,10 @@
+Package: rebuntu-installer
+Version: 0.1.0-1
+Section: admin
+Priority: optional
+Architecture: all
+Maintainer: Rebuntu Project <rebuntu@localhost>
+Depends: snapd
+Description: Rebuntu live-system installer integration
+ Provides the Rebuntu installer bootstrap and integration with the
+ Subiquity installation backend.

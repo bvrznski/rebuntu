@@ -98,3 +98,5 @@ add_test([=[command_injection_adversarial_test]=] "/home/bvrznski/rebuntu/cpp/re
 set_tests_properties([=[command_injection_adversarial_test]=] PROPERTIES  _BACKTRACE_TRIPLES "/home/bvrznski/rebuntu/cpp/CMakeLists.txt;1250;add_test;/home/bvrznski/rebuntu/cpp/CMakeLists.txt;0;")
 add_test([=[execution_storm_backpressure_test]=] "/home/bvrznski/rebuntu/cpp/rebuntu-execution-storm-backpressure-test")
 set_tests_properties([=[execution_storm_backpressure_test]=] PROPERTIES  _BACKTRACE_TRIPLES "/home/bvrznski/rebuntu/cpp/CMakeLists.txt;1258;add_test;/home/bvrznski/rebuntu/cpp/CMakeLists.txt;0;")
+add_test([=[cancellation_race_test]=] "/home/bvrznski/rebuntu/cpp/rebuntu-cancellation-race-test")
+set_tests_properties([=[cancellation_race_test]=] PROPERTIES  _BACKTRACE_TRIPLES "/home/bvrznski/rebuntu/cpp/CMakeLists.txt;1272;add_test;/home/bvrznski/rebuntu/cpp/CMakeLists.txt;0;")

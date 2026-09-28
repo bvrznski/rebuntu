@@ -1,0 +1,57 @@
+#!/usr/bin/env bash
+set -Eeuo pipefail
+
+PAYLOAD_DIR="/opt/rebuntu/installer/subiquity"
+REVISION="7403"
+
+SNAP="$PAYLOAD_DIR/subiquity_${REVISION}.snap"
+ASSERT="$PAYLOAD_DIR/subiquity_${REVISION}.assert"
+
+[[ -s "$SNAP" ]] || {
+    echo "ERROR: missing Subiquity snap: $SNAP" >&2
+    exit 1
+}
+
+[[ -s "$ASSERT" ]] || {
+    echo "ERROR: missing Subiquity assertion: $ASSERT" >&2
+    exit 1
+}
+
+# Idempotency: nothing to do if the required revision is already installed.
+if snap list subiquity 2>/dev/null |
+    awk -v rev="$REVISION" 'NR > 1 && $3 == rev { found=1 } END { exit !found }'
+then
+    echo "Subiquity revision $REVISION already installed."
+    exit 0
+fi
+
+echo "Waiting for snapd..."
+
+for _ in $(seq 1 60); do
+    if snap version >/dev/null 2>&1; then
+        break
+    fi
+    sleep 1
+done
+
+snap version >/dev/null 2>&1 || {
+    echo "ERROR: snapd did not become ready" >&2
+    exit 1
+}
+
+echo "Acknowledging Subiquity assertion..."
+snap ack "$ASSERT"
+
+echo "Installing Subiquity revision $REVISION..."
+snap install "$SNAP" --classic
+
+snap list subiquity |
+    awk -v rev="$REVISION" '
+        NR > 1 && $3 == rev { found=1 }
+        END { exit !found }
+    ' || {
+        echo "ERROR: Subiquity revision verification failed" >&2
+        exit 1
+    }
+
+echo "Subiquity revision $REVISION ready."

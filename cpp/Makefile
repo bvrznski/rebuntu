@@ -2212,6 +2212,19 @@ rebuntu-execution-storm-backpressure-test/fast:
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/rebuntu-execution-storm-backpressure-test.dir/build.make CMakeFiles/rebuntu-execution-storm-backpressure-test.dir/build
 .PHONY : rebuntu-execution-storm-backpressure-test/fast
 
+#=============================================================================
+# Target rules for targets named rebuntu-cancellation-race-test
+
+# Build rule for target.
+rebuntu-cancellation-race-test: cmake_check_build_system
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 rebuntu-cancellation-race-test
+.PHONY : rebuntu-cancellation-race-test
+
+# fast build rule for target.
+rebuntu-cancellation-race-test/fast:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/rebuntu-cancellation-race-test.dir/build.make CMakeFiles/rebuntu-cancellation-race-test.dir/build
+.PHONY : rebuntu-cancellation-race-test/fast
+
 home/bvrznski/rebuntu/src/adapters/cgroups/hierarchy/implementation.o: home/bvrznski/rebuntu/src/adapters/cgroups/hierarchy/implementation.cpp.o
 .PHONY : home/bvrznski/rebuntu/src/adapters/cgroups/hierarchy/implementation.o
 
@@ -3508,6 +3521,30 @@ home/bvrznski/rebuntu/src/runtime/runner.cpp.s:
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/rebuntu-core.dir/build.make CMakeFiles/rebuntu-core.dir/home/bvrznski/rebuntu/src/runtime/runner.cpp.s
 .PHONY : home/bvrznski/rebuntu/src/runtime/runner.cpp.s
 
+home/bvrznski/rebuntu/src/runtime/subprocess_executor.o: home/bvrznski/rebuntu/src/runtime/subprocess_executor.cpp.o
+.PHONY : home/bvrznski/rebuntu/src/runtime/subprocess_executor.o
+
+# target to build an object file
+home/bvrznski/rebuntu/src/runtime/subprocess_executor.cpp.o:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/rebuntu-core.dir/build.make CMakeFiles/rebuntu-core.dir/home/bvrznski/rebuntu/src/runtime/subprocess_executor.cpp.o
+.PHONY : home/bvrznski/rebuntu/src/runtime/subprocess_executor.cpp.o
+
+home/bvrznski/rebuntu/src/runtime/subprocess_executor.i: home/bvrznski/rebuntu/src/runtime/subprocess_executor.cpp.i
+.PHONY : home/bvrznski/rebuntu/src/runtime/subprocess_executor.i
+
+# target to preprocess a source file
+home/bvrznski/rebuntu/src/runtime/subprocess_executor.cpp.i:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/rebuntu-core.dir/build.make CMakeFiles/rebuntu-core.dir/home/bvrznski/rebuntu/src/runtime/subprocess_executor.cpp.i
+.PHONY : home/bvrznski/rebuntu/src/runtime/subprocess_executor.cpp.i
+
+home/bvrznski/rebuntu/src/runtime/subprocess_executor.s: home/bvrznski/rebuntu/src/runtime/subprocess_executor.cpp.s
+.PHONY : home/bvrznski/rebuntu/src/runtime/subprocess_executor.s
+
+# target to generate assembly for a file
+home/bvrznski/rebuntu/src/runtime/subprocess_executor.cpp.s:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/rebuntu-core.dir/build.make CMakeFiles/rebuntu-core.dir/home/bvrznski/rebuntu/src/runtime/subprocess_executor.cpp.s
+.PHONY : home/bvrznski/rebuntu/src/runtime/subprocess_executor.cpp.s
+
 home/bvrznski/rebuntu/src/system/command/explain.o: home/bvrznski/rebuntu/src/system/command/explain.cpp.o
 .PHONY : home/bvrznski/rebuntu/src/system/command/explain.o
 
@@ -4639,6 +4676,30 @@ home/bvrznski/rebuntu/tests/provider_evidence_test.cpp.s:
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/rebuntu-provider-evidence-test.dir/build.make CMakeFiles/rebuntu-provider-evidence-test.dir/home/bvrznski/rebuntu/tests/provider_evidence_test.cpp.s
 .PHONY : home/bvrznski/rebuntu/tests/provider_evidence_test.cpp.s
 
+home/bvrznski/rebuntu/tests/unit/cancellation_race_test.o: home/bvrznski/rebuntu/tests/unit/cancellation_race_test.cpp.o
+.PHONY : home/bvrznski/rebuntu/tests/unit/cancellation_race_test.o
+
+# target to build an object file
+home/bvrznski/rebuntu/tests/unit/cancellation_race_test.cpp.o:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/rebuntu-cancellation-race-test.dir/build.make CMakeFiles/rebuntu-cancellation-race-test.dir/home/bvrznski/rebuntu/tests/unit/cancellation_race_test.cpp.o
+.PHONY : home/bvrznski/rebuntu/tests/unit/cancellation_race_test.cpp.o
+
+home/bvrznski/rebuntu/tests/unit/cancellation_race_test.i: home/bvrznski/rebuntu/tests/unit/cancellation_race_test.cpp.i
+.PHONY : home/bvrznski/rebuntu/tests/unit/cancellation_race_test.i
+
+# target to preprocess a source file
+home/bvrznski/rebuntu/tests/unit/cancellation_race_test.cpp.i:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/rebuntu-cancellation-race-test.dir/build.make CMakeFiles/rebuntu-cancellation-race-test.dir/home/bvrznski/rebuntu/tests/unit/cancellation_race_test.cpp.i
+.PHONY : home/bvrznski/rebuntu/tests/unit/cancellation_race_test.cpp.i
+
+home/bvrznski/rebuntu/tests/unit/cancellation_race_test.s: home/bvrznski/rebuntu/tests/unit/cancellation_race_test.cpp.s
+.PHONY : home/bvrznski/rebuntu/tests/unit/cancellation_race_test.s
+
+# target to generate assembly for a file
+home/bvrznski/rebuntu/tests/unit/cancellation_race_test.cpp.s:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/rebuntu-cancellation-race-test.dir/build.make CMakeFiles/rebuntu-cancellation-race-test.dir/home/bvrznski/rebuntu/tests/unit/cancellation_race_test.cpp.s
+.PHONY : home/bvrznski/rebuntu/tests/unit/cancellation_race_test.cpp.s
+
 home/bvrznski/rebuntu/tests/unit/execution_storm_backpressure_test.o: home/bvrznski/rebuntu/tests/unit/execution_storm_backpressure_test.cpp.o
 .PHONY : home/bvrznski/rebuntu/tests/unit/execution_storm_backpressure_test.o
 
@@ -5765,6 +5826,7 @@ help:
 	@echo "... rebuntu-batch-command-test"
 	@echo "... rebuntu-bin"
 	@echo "... rebuntu-cancellation-points"
+	@echo "... rebuntu-cancellation-race-test"
 	@echo "... rebuntu-capability-state"
 	@echo "... rebuntu-cgroup-hierarchy-adapter"
 	@echo "... rebuntu-cgroup-hierarchy-test"
@@ -6051,6 +6113,9 @@ help:
 	@echo "... home/bvrznski/rebuntu/src/runtime/runner.o"
 	@echo "... home/bvrznski/rebuntu/src/runtime/runner.i"
 	@echo "... home/bvrznski/rebuntu/src/runtime/runner.s"
+	@echo "... home/bvrznski/rebuntu/src/runtime/subprocess_executor.o"
+	@echo "... home/bvrznski/rebuntu/src/runtime/subprocess_executor.i"
+	@echo "... home/bvrznski/rebuntu/src/runtime/subprocess_executor.s"
 	@echo "... home/bvrznski/rebuntu/src/system/command/explain.o"
 	@echo "... home/bvrznski/rebuntu/src/system/command/explain.i"
 	@echo "... home/bvrznski/rebuntu/src/system/command/explain.s"
@@ -6192,6 +6257,9 @@ help:
 	@echo "... home/bvrznski/rebuntu/tests/provider_evidence_test.o"
 	@echo "... home/bvrznski/rebuntu/tests/provider_evidence_test.i"
 	@echo "... home/bvrznski/rebuntu/tests/provider_evidence_test.s"
+	@echo "... home/bvrznski/rebuntu/tests/unit/cancellation_race_test.o"
+	@echo "... home/bvrznski/rebuntu/tests/unit/cancellation_race_test.i"
+	@echo "... home/bvrznski/rebuntu/tests/unit/cancellation_race_test.s"
 	@echo "... home/bvrznski/rebuntu/tests/unit/execution_storm_backpressure_test.o"
 	@echo "... home/bvrznski/rebuntu/tests/unit/execution_storm_backpressure_test.i"
 	@echo "... home/bvrznski/rebuntu/tests/unit/execution_storm_backpressure_test.s"

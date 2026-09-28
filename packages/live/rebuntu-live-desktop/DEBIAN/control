@@ -4,6 +4,6 @@ Section: metapackages
 Priority: optional
 Maintainer: Rebuntu Project <rebuntu@localhost>
 Architecture: all
-Depends: rebuntu-desktop, casper, network-manager, gdm3, gnome-shell, gnome-session, mutter, xwayland, xserver-xorg, sudo, dbus-x11, openssh-server
+Depends: rebuntu-desktop, rebuntu-installer, casper, network-manager, gdm3, gnome-shell, gnome-session, mutter, xwayland, xserver-xorg, sudo, dbus-x11, openssh-server
 Description: Rebuntu live GNOME desktop integration
  Rebuntu GNOME live session with GDM, Wayland and Xorg fallback.

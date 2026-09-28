@@ -165,6 +165,7 @@ rebuntu-idempotency-test: librebuntu-host-foundation.a
 rebuntu-idempotency-test: librebuntu-cross-domain-references.a
 rebuntu-idempotency-test: librebuntu-relationship-evidence.a
 rebuntu-idempotency-test: librebuntu-evidence-journal-slice.a
+rebuntu-idempotency-test: librebuntu-privileged-helpers.a
 rebuntu-idempotency-test: librebuntu-concurrency-control.a
 rebuntu-idempotency-test: librebuntu-cancellation-points.a
 rebuntu-idempotency-test: CMakeFiles/rebuntu-idempotency-test.dir/link.txt

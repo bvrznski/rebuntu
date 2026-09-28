@@ -1,0 +1,2 @@
+/usr/bin/ar qc librebuntu-privileged-helpers.a CMakeFiles/rebuntu-privileged-helpers.dir/home/bvrznski/rebuntu/src/runtime/native-command-operation-execution/security/privileged_helper.cpp.o
+/usr/bin/ranlib librebuntu-privileged-helpers.a

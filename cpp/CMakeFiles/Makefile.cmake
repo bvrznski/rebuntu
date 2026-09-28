@@ -176,9 +176,10 @@ set(CMAKE_DEPEND_INFO_FILES
   "CMakeFiles/rebuntu-evidence-journal-slice.dir/DependInfo.cmake"
   "CMakeFiles/rebuntu-evidence-journal-test.dir/DependInfo.cmake"
   "CMakeFiles/rebuntu-provider-test-matrix.dir/DependInfo.cmake"
+  "CMakeFiles/rebuntu-privileged-helpers.dir/DependInfo.cmake"
+  "CMakeFiles/rebuntu-privilege-requirement-test.dir/DependInfo.cmake"
   "CMakeFiles/rebuntu-concurrency-control.dir/DependInfo.cmake"
   "CMakeFiles/rebuntu-shell-boundary-test.dir/DependInfo.cmake"
   "CMakeFiles/rebuntu-shell-output-capture-test.dir/DependInfo.cmake"
-  "CMakeFiles/rebuntu-privilege-requirement-test.dir/DependInfo.cmake"
   "CMakeFiles/rebuntu-cancellation-points.dir/DependInfo.cmake"
   )

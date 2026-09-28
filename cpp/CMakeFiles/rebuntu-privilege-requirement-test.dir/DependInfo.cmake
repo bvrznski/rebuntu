@@ -8,12 +8,13 @@ set(CMAKE_DEPENDS_LANGUAGES
 
 # The set of dependency files which are needed:
 set(CMAKE_DEPENDS_DEPENDENCY_FILES
-  "/home/bvrznski/rebuntu/tests/unit/privilege_requirement_test.cpp" "CMakeFiles/rebuntu-privilege-requirement-test.dir/home/bvrznski/rebuntu/tests/unit/privilege_requirement_test.cpp.o" "gcc" "CMakeFiles/rebuntu-privilege-requirement-test.dir/home/bvrznski/rebuntu/tests/unit/privilege_requirement_test.cpp.o.d"
+  "/home/bvrznski/rebuntu/src/runtime/native-command-operation-execution/security/test_privileged_helpers.cpp" "CMakeFiles/rebuntu-privilege-requirement-test.dir/home/bvrznski/rebuntu/src/runtime/native-command-operation-execution/security/test_privileged_helpers.cpp.o" "gcc" "CMakeFiles/rebuntu-privilege-requirement-test.dir/home/bvrznski/rebuntu/src/runtime/native-command-operation-execution/security/test_privileged_helpers.cpp.o.d"
   )
 
 # Targets to which this target links.
 set(CMAKE_TARGET_LINKED_INFO_FILES
   "/home/bvrznski/rebuntu/cpp/CMakeFiles/rebuntu-core.dir/DependInfo.cmake"
+  "/home/bvrznski/rebuntu/cpp/CMakeFiles/rebuntu-privileged-helpers.dir/DependInfo.cmake"
   "/home/bvrznski/rebuntu/cpp/CMakeFiles/rebuntu-observation-bounds.dir/DependInfo.cmake"
   "/home/bvrznski/rebuntu/cpp/CMakeFiles/rebuntu-shell-semi-natural.dir/DependInfo.cmake"
   "/home/bvrznski/rebuntu/cpp/CMakeFiles/rebuntu-shell-context.dir/DependInfo.cmake"

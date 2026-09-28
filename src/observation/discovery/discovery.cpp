@@ -2,74 +2,126 @@
 #include <array>
 #include <cstdio>
 #include <memory>
+#include <cstdlib>
+#include <cstring>
+#include <unistd.h>
+#include <sys/wait.h>
+#include <sys/types.h>
 
 namespace rebuntu::runtime::discovery {
 
-// Helper: Execute a shell command and capture output
-static std::string exec_command(const std::string& cmd) {
-    std::array<char, 1024> buffer;
-    std::string result;
-    
-    auto pipe = std::unique_ptr<FILE, decltype(&pclose)>(popen(cmd.c_str(), "r"), pclose);
-    if (!pipe) {
+// ============================================================================
+// Helper: Execute subprocess via fork/execve with bounded output
+// Uses native Linux primitives - no shell command interpretation
+// ============================================================================
+
+static std::string execute_subprocess(const char* executable, const std::vector<std::string>& argv) {
+    int stdout_pipe[2];
+    if (pipe(stdout_pipe) != 0) {
         return "";
     }
     
-    while (fgets(buffer.data(), buffer.size(), pipe.get()) != nullptr) {
-        result += buffer.data();
+    pid_t pid = fork();
+    if (pid == -1) {
+        close(stdout_pipe[0]);
+        close(stdout_pipe[1]);
+        return "";
     }
     
-    while (!result.empty() && (result.back() == '\n' || result.back() == ' ')) {
-        result.pop_back();
+    if (pid == 0) {
+        // Child process
+        close(stdout_pipe[0]);
+        dup2(stdout_pipe[1], STDOUT_FILENO);
+        close(stdout_pipe[1]);
+        
+        std::vector<char*> c_argv;
+        c_argv.push_back(const_cast<char*>(executable));
+        for (const auto& arg : argv) {
+            c_argv.push_back(const_cast<char*>(arg.c_str()));
+        }
+        c_argv.push_back(nullptr);
+        
+        execvp(executable, c_argv.data());
+        _exit(127);
     }
     
+    // Parent process
+    close(stdout_pipe[1]);
+    
+    std::array<char, 4096> buffer;
+    std::string result;
+    ssize_t bytes_read;
+    
+    while ((bytes_read = read(stdout_pipe[0], buffer.data(), buffer.size())) > 0) {
+        result.append(buffer.data(), static_cast<size_t>(bytes_read));
+        if (result.length() >= 4096) break;  // Bounded output
+    }
+    
+    close(stdout_pipe[0]);
+    
+    int status = 0;
+    waitpid(pid, &status, 0);
     return result;
 }
 
+// ============================================================================
+// Helper: Execute shell command with bash -c (for commands that require shell)
+// ============================================================================
+
+static std::string execute_shell_command(const char* command) {
+    return execute_subprocess("/bin/bash", {"bash", "-c", command});
+}
+
 // ShellVerbDetector implementation
-bool ShellVerbDetector::is_verb_free(std::string_view verb) const {
-    auto it = collisions_.find(std::string{verb});
+bool ShellVerbDetector::is_verb_free(const std::string& verb) const {
+    auto it = collisions_.find(verb);
     if (it != collisions_.end()) {
         return it->second.status == ShellVerbStatus::FREE;
     }
     
-    if (reserved_verbs_.count(std::string{verb})) {
+    if (reserved_verbs_.count(verb)) {
         return false;
     }
     
-    auto cmd = "command -v " + std::string{verb} + " >/dev/null 2>&1 && echo FOUND || echo MISSING";
-    auto output = exec_command(cmd);
+    // Use bash -c to check with command -v (requires shell)
+    auto cmd = "command -v '" + verb + "' >/dev/null 2>&1 && echo FOUND || echo MISSING";
+    auto output = execute_shell_command(cmd.c_str());
     
-    if (output == "FOUND") {
+    if (output.find("FOUND") != std::string::npos) {
         return false;
     }
     
     return true;
 }
 
-ShellVerbCollisionInfo ShellVerbDetector::detect(std::string_view verb) const {
+ShellVerbCollisionInfo ShellVerbDetector::detect(const std::string& verb) const {
     ShellVerbCollisionInfo info;
-    info.verb = std::string{verb};
+    info.verb = verb;
     
-    if (reserved_verbs_.count(std::string{verb})) {
+    if (reserved_verbs_.count(verb)) {
         info.status = ShellVerbStatus::REBUNTU;
         return info;
     }
     
-    auto cmd = "command -v " + std::string{verb} + " 2>&1";
-    auto output = exec_command(cmd);
+    // Use bash -c to check with command -v
+    auto cmd = "command -v '" + verb + "' 2>&1";
+    auto output = execute_shell_command(cmd.c_str());
     
     if (output.empty()) {
         info.status = ShellVerbStatus::FREE;
         return info;
     }
     
+    // Trim whitespace from output
+    while (!output.empty() && (output.back() == '\n' || output.back() == ' ')) {
+        output.pop_back();
+    }
     info.locations.push_back(output);
     
-    auto type_cmd = "type -t " + std::string{verb} + " 2>&1";
-    auto type_output = exec_command(type_cmd);
+    auto type_cmd = "type -t '" + verb + "' 2>&1";
+    auto type_output = execute_shell_command(type_cmd.c_str());
     
-    if (type_output == "builtin") {
+    if (type_output.find("builtin") != std::string::npos) {
         info.status = ShellVerbStatus::SHELL_BUILTIN;
     } else if (!output.empty()) {
         info.status = ShellVerbStatus::SYSTEM_COMMAND;
@@ -89,12 +141,12 @@ void AliasResolver::add_alias(Alias alias) {
     aliases_[std::move(alias.alias_id)] = std::move(alias);
 }
 
-bool AliasResolver::contains(std::string_view alias_id) const {
-    return aliases_.count(std::string{alias_id}) > 0;
+bool AliasResolver::contains(const std::string& alias_id) const {
+    return aliases_.count(alias_id) > 0;
 }
 
-std::optional<std::string> AliasResolver::resolve(std::string_view alias_id) const {
-    auto it = aliases_.find(std::string{alias_id});
+std::optional<std::string> AliasResolver::resolve(const std::string& alias_id) const {
+    auto it = aliases_.find(alias_id);
     if (it == aliases_.end()) return std::nullopt;
     return it->second.canonical_id;
 }
@@ -132,7 +184,7 @@ std::vector<std::string> FilesystemScanner::scan_all() const {
 
 std::vector<std::filesystem::path> FilesystemScanner::find_by_pattern(
     const std::filesystem::path& pth,
-    std::string_view pattern) const {
+    const std::string& pattern) const {
     std::vector<std::filesystem::path> results;
     
     if (!std::filesystem::exists(pth)) return results;

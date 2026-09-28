@@ -1888,6 +1888,32 @@ rebuntu-provider-test-matrix/fast:
 .PHONY : rebuntu-provider-test-matrix/fast
 
 #=============================================================================
+# Target rules for targets named rebuntu-privileged-helpers
+
+# Build rule for target.
+rebuntu-privileged-helpers: cmake_check_build_system
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 rebuntu-privileged-helpers
+.PHONY : rebuntu-privileged-helpers
+
+# fast build rule for target.
+rebuntu-privileged-helpers/fast:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/rebuntu-privileged-helpers.dir/build.make CMakeFiles/rebuntu-privileged-helpers.dir/build
+.PHONY : rebuntu-privileged-helpers/fast
+
+#=============================================================================
+# Target rules for targets named rebuntu-privilege-requirement-test
+
+# Build rule for target.
+rebuntu-privilege-requirement-test: cmake_check_build_system
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 rebuntu-privilege-requirement-test
+.PHONY : rebuntu-privilege-requirement-test
+
+# fast build rule for target.
+rebuntu-privilege-requirement-test/fast:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/rebuntu-privilege-requirement-test.dir/build.make CMakeFiles/rebuntu-privilege-requirement-test.dir/build
+.PHONY : rebuntu-privilege-requirement-test/fast
+
+#=============================================================================
 # Target rules for targets named rebuntu-concurrency-control
 
 # Build rule for target.
@@ -1925,19 +1951,6 @@ rebuntu-shell-output-capture-test: cmake_check_build_system
 rebuntu-shell-output-capture-test/fast:
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/rebuntu-shell-output-capture-test.dir/build.make CMakeFiles/rebuntu-shell-output-capture-test.dir/build
 .PHONY : rebuntu-shell-output-capture-test/fast
-
-#=============================================================================
-# Target rules for targets named rebuntu-privilege-requirement-test
-
-# Build rule for target.
-rebuntu-privilege-requirement-test: cmake_check_build_system
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 rebuntu-privilege-requirement-test
-.PHONY : rebuntu-privilege-requirement-test
-
-# fast build rule for target.
-rebuntu-privilege-requirement-test/fast:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/rebuntu-privilege-requirement-test.dir/build.make CMakeFiles/rebuntu-privilege-requirement-test.dir/build
-.PHONY : rebuntu-privilege-requirement-test/fast
 
 #=============================================================================
 # Target rules for targets named rebuntu-cancellation-points
@@ -3007,6 +3020,54 @@ home/bvrznski/rebuntu/src/runtime/engine.s: home/bvrznski/rebuntu/src/runtime/en
 home/bvrznski/rebuntu/src/runtime/engine.cpp.s:
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/rebuntu-core.dir/build.make CMakeFiles/rebuntu-core.dir/home/bvrznski/rebuntu/src/runtime/engine.cpp.s
 .PHONY : home/bvrznski/rebuntu/src/runtime/engine.cpp.s
+
+home/bvrznski/rebuntu/src/runtime/native-command-operation-execution/security/privileged_helper.o: home/bvrznski/rebuntu/src/runtime/native-command-operation-execution/security/privileged_helper.cpp.o
+.PHONY : home/bvrznski/rebuntu/src/runtime/native-command-operation-execution/security/privileged_helper.o
+
+# target to build an object file
+home/bvrznski/rebuntu/src/runtime/native-command-operation-execution/security/privileged_helper.cpp.o:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/rebuntu-privileged-helpers.dir/build.make CMakeFiles/rebuntu-privileged-helpers.dir/home/bvrznski/rebuntu/src/runtime/native-command-operation-execution/security/privileged_helper.cpp.o
+.PHONY : home/bvrznski/rebuntu/src/runtime/native-command-operation-execution/security/privileged_helper.cpp.o
+
+home/bvrznski/rebuntu/src/runtime/native-command-operation-execution/security/privileged_helper.i: home/bvrznski/rebuntu/src/runtime/native-command-operation-execution/security/privileged_helper.cpp.i
+.PHONY : home/bvrznski/rebuntu/src/runtime/native-command-operation-execution/security/privileged_helper.i
+
+# target to preprocess a source file
+home/bvrznski/rebuntu/src/runtime/native-command-operation-execution/security/privileged_helper.cpp.i:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/rebuntu-privileged-helpers.dir/build.make CMakeFiles/rebuntu-privileged-helpers.dir/home/bvrznski/rebuntu/src/runtime/native-command-operation-execution/security/privileged_helper.cpp.i
+.PHONY : home/bvrznski/rebuntu/src/runtime/native-command-operation-execution/security/privileged_helper.cpp.i
+
+home/bvrznski/rebuntu/src/runtime/native-command-operation-execution/security/privileged_helper.s: home/bvrznski/rebuntu/src/runtime/native-command-operation-execution/security/privileged_helper.cpp.s
+.PHONY : home/bvrznski/rebuntu/src/runtime/native-command-operation-execution/security/privileged_helper.s
+
+# target to generate assembly for a file
+home/bvrznski/rebuntu/src/runtime/native-command-operation-execution/security/privileged_helper.cpp.s:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/rebuntu-privileged-helpers.dir/build.make CMakeFiles/rebuntu-privileged-helpers.dir/home/bvrznski/rebuntu/src/runtime/native-command-operation-execution/security/privileged_helper.cpp.s
+.PHONY : home/bvrznski/rebuntu/src/runtime/native-command-operation-execution/security/privileged_helper.cpp.s
+
+home/bvrznski/rebuntu/src/runtime/native-command-operation-execution/security/test_privileged_helpers.o: home/bvrznski/rebuntu/src/runtime/native-command-operation-execution/security/test_privileged_helpers.cpp.o
+.PHONY : home/bvrznski/rebuntu/src/runtime/native-command-operation-execution/security/test_privileged_helpers.o
+
+# target to build an object file
+home/bvrznski/rebuntu/src/runtime/native-command-operation-execution/security/test_privileged_helpers.cpp.o:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/rebuntu-privilege-requirement-test.dir/build.make CMakeFiles/rebuntu-privilege-requirement-test.dir/home/bvrznski/rebuntu/src/runtime/native-command-operation-execution/security/test_privileged_helpers.cpp.o
+.PHONY : home/bvrznski/rebuntu/src/runtime/native-command-operation-execution/security/test_privileged_helpers.cpp.o
+
+home/bvrznski/rebuntu/src/runtime/native-command-operation-execution/security/test_privileged_helpers.i: home/bvrznski/rebuntu/src/runtime/native-command-operation-execution/security/test_privileged_helpers.cpp.i
+.PHONY : home/bvrznski/rebuntu/src/runtime/native-command-operation-execution/security/test_privileged_helpers.i
+
+# target to preprocess a source file
+home/bvrznski/rebuntu/src/runtime/native-command-operation-execution/security/test_privileged_helpers.cpp.i:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/rebuntu-privilege-requirement-test.dir/build.make CMakeFiles/rebuntu-privilege-requirement-test.dir/home/bvrznski/rebuntu/src/runtime/native-command-operation-execution/security/test_privileged_helpers.cpp.i
+.PHONY : home/bvrznski/rebuntu/src/runtime/native-command-operation-execution/security/test_privileged_helpers.cpp.i
+
+home/bvrznski/rebuntu/src/runtime/native-command-operation-execution/security/test_privileged_helpers.s: home/bvrznski/rebuntu/src/runtime/native-command-operation-execution/security/test_privileged_helpers.cpp.s
+.PHONY : home/bvrznski/rebuntu/src/runtime/native-command-operation-execution/security/test_privileged_helpers.s
+
+# target to generate assembly for a file
+home/bvrznski/rebuntu/src/runtime/native-command-operation-execution/security/test_privileged_helpers.cpp.s:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/rebuntu-privilege-requirement-test.dir/build.make CMakeFiles/rebuntu-privilege-requirement-test.dir/home/bvrznski/rebuntu/src/runtime/native-command-operation-execution/security/test_privileged_helpers.cpp.s
+.PHONY : home/bvrznski/rebuntu/src/runtime/native-command-operation-execution/security/test_privileged_helpers.cpp.s
 
 home/bvrznski/rebuntu/src/runtime/native/production_runtime.o: home/bvrznski/rebuntu/src/runtime/native/production_runtime.cpp.o
 .PHONY : home/bvrznski/rebuntu/src/runtime/native/production_runtime.o
@@ -4211,30 +4272,6 @@ home/bvrznski/rebuntu/tests/unit/monotonic_deadline_test.cpp.s:
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/rebuntu-monotonic-deadline-test.dir/build.make CMakeFiles/rebuntu-monotonic-deadline-test.dir/home/bvrznski/rebuntu/tests/unit/monotonic_deadline_test.cpp.s
 .PHONY : home/bvrznski/rebuntu/tests/unit/monotonic_deadline_test.cpp.s
 
-home/bvrznski/rebuntu/tests/unit/privilege_requirement_test.o: home/bvrznski/rebuntu/tests/unit/privilege_requirement_test.cpp.o
-.PHONY : home/bvrznski/rebuntu/tests/unit/privilege_requirement_test.o
-
-# target to build an object file
-home/bvrznski/rebuntu/tests/unit/privilege_requirement_test.cpp.o:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/rebuntu-privilege-requirement-test.dir/build.make CMakeFiles/rebuntu-privilege-requirement-test.dir/home/bvrznski/rebuntu/tests/unit/privilege_requirement_test.cpp.o
-.PHONY : home/bvrznski/rebuntu/tests/unit/privilege_requirement_test.cpp.o
-
-home/bvrznski/rebuntu/tests/unit/privilege_requirement_test.i: home/bvrznski/rebuntu/tests/unit/privilege_requirement_test.cpp.i
-.PHONY : home/bvrznski/rebuntu/tests/unit/privilege_requirement_test.i
-
-# target to preprocess a source file
-home/bvrznski/rebuntu/tests/unit/privilege_requirement_test.cpp.i:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/rebuntu-privilege-requirement-test.dir/build.make CMakeFiles/rebuntu-privilege-requirement-test.dir/home/bvrznski/rebuntu/tests/unit/privilege_requirement_test.cpp.i
-.PHONY : home/bvrznski/rebuntu/tests/unit/privilege_requirement_test.cpp.i
-
-home/bvrznski/rebuntu/tests/unit/privilege_requirement_test.s: home/bvrznski/rebuntu/tests/unit/privilege_requirement_test.cpp.s
-.PHONY : home/bvrznski/rebuntu/tests/unit/privilege_requirement_test.s
-
-# target to generate assembly for a file
-home/bvrznski/rebuntu/tests/unit/privilege_requirement_test.cpp.s:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/rebuntu-privilege-requirement-test.dir/build.make CMakeFiles/rebuntu-privilege-requirement-test.dir/home/bvrznski/rebuntu/tests/unit/privilege_requirement_test.cpp.s
-.PHONY : home/bvrznski/rebuntu/tests/unit/privilege_requirement_test.cpp.s
-
 home/bvrznski/rebuntu/tests/unit/retry_mechanics_test.o: home/bvrznski/rebuntu/tests/unit/retry_mechanics_test.cpp.o
 .PHONY : home/bvrznski/rebuntu/tests/unit/retry_mechanics_test.o
 
@@ -5021,6 +5058,7 @@ help:
 	@echo "... rebuntu-predicates-test"
 	@echo "... rebuntu-privilege"
 	@echo "... rebuntu-privilege-requirement-test"
+	@echo "... rebuntu-privileged-helpers"
 	@echo "... rebuntu-procfs-errors"
 	@echo "... rebuntu-procfs-modules"
 	@echo "... rebuntu-procfs-modules-test"
@@ -5189,6 +5227,12 @@ help:
 	@echo "... home/bvrznski/rebuntu/src/runtime/engine.o"
 	@echo "... home/bvrznski/rebuntu/src/runtime/engine.i"
 	@echo "... home/bvrznski/rebuntu/src/runtime/engine.s"
+	@echo "... home/bvrznski/rebuntu/src/runtime/native-command-operation-execution/security/privileged_helper.o"
+	@echo "... home/bvrznski/rebuntu/src/runtime/native-command-operation-execution/security/privileged_helper.i"
+	@echo "... home/bvrznski/rebuntu/src/runtime/native-command-operation-execution/security/privileged_helper.s"
+	@echo "... home/bvrznski/rebuntu/src/runtime/native-command-operation-execution/security/test_privileged_helpers.o"
+	@echo "... home/bvrznski/rebuntu/src/runtime/native-command-operation-execution/security/test_privileged_helpers.i"
+	@echo "... home/bvrznski/rebuntu/src/runtime/native-command-operation-execution/security/test_privileged_helpers.s"
 	@echo "... home/bvrznski/rebuntu/src/runtime/native/production_runtime.o"
 	@echo "... home/bvrznski/rebuntu/src/runtime/native/production_runtime.i"
 	@echo "... home/bvrznski/rebuntu/src/runtime/native/production_runtime.s"
@@ -5339,9 +5383,6 @@ help:
 	@echo "... home/bvrznski/rebuntu/tests/unit/monotonic_deadline_test.o"
 	@echo "... home/bvrznski/rebuntu/tests/unit/monotonic_deadline_test.i"
 	@echo "... home/bvrznski/rebuntu/tests/unit/monotonic_deadline_test.s"
-	@echo "... home/bvrznski/rebuntu/tests/unit/privilege_requirement_test.o"
-	@echo "... home/bvrznski/rebuntu/tests/unit/privilege_requirement_test.i"
-	@echo "... home/bvrznski/rebuntu/tests/unit/privilege_requirement_test.s"
 	@echo "... home/bvrznski/rebuntu/tests/unit/retry_mechanics_test.o"
 	@echo "... home/bvrznski/rebuntu/tests/unit/retry_mechanics_test.i"
 	@echo "... home/bvrznski/rebuntu/tests/unit/retry_mechanics_test.s"

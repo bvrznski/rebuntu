@@ -167,6 +167,7 @@ rebuntu-cli-inventory-test: librebuntu-host-foundation.a
 rebuntu-cli-inventory-test: librebuntu-cross-domain-references.a
 rebuntu-cli-inventory-test: librebuntu-relationship-evidence.a
 rebuntu-cli-inventory-test: librebuntu-evidence-journal-slice.a
+rebuntu-cli-inventory-test: librebuntu-privileged-helpers.a
 rebuntu-cli-inventory-test: librebuntu-concurrency-control.a
 rebuntu-cli-inventory-test: librebuntu-cancellation-points.a
 rebuntu-cli-inventory-test: librebuntu-dpkg-package-inventory.a

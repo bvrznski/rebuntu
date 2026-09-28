@@ -273,6 +273,43 @@ CMakeFiles/rebuntu-shell-collision.dir/home/bvrznski/rebuntu/src/system/shell/co
   /usr/include/x86_64-linux-gnu/c++/11/bits/c++io.h \
   /usr/include/c++/11/bits/fstream.tcc \
   /usr/include/c++/11/iostream \
+  /usr/include/c++/11/cstring \
+  /usr/include/string.h \
+  /usr/include/strings.h \
+  /usr/include/x86_64-linux-gnu/bits/strings_fortified.h \
+  /usr/include/x86_64-linux-gnu/bits/string_fortified.h \
+  /usr/include/unistd.h \
+  /usr/include/x86_64-linux-gnu/bits/posix_opt.h \
+  /usr/include/x86_64-linux-gnu/bits/environments.h \
+  /usr/include/x86_64-linux-gnu/bits/confname.h \
+  /usr/include/x86_64-linux-gnu/bits/getopt_posix.h \
+  /usr/include/x86_64-linux-gnu/bits/getopt_core.h \
+  /usr/include/x86_64-linux-gnu/bits/unistd.h \
+  /usr/include/x86_64-linux-gnu/bits/unistd_ext.h \
+  /usr/include/linux/close_range.h \
+  /usr/include/x86_64-linux-gnu/sys/wait.h \
+  /usr/include/signal.h \
+  /usr/include/x86_64-linux-gnu/bits/signum-generic.h \
+  /usr/include/x86_64-linux-gnu/bits/signum-arch.h \
+  /usr/include/x86_64-linux-gnu/bits/types/sig_atomic_t.h \
+  /usr/include/x86_64-linux-gnu/bits/types/siginfo_t.h \
+  /usr/include/x86_64-linux-gnu/bits/types/__sigval_t.h \
+  /usr/include/x86_64-linux-gnu/bits/siginfo-arch.h \
+  /usr/include/x86_64-linux-gnu/bits/siginfo-consts.h \
+  /usr/include/x86_64-linux-gnu/bits/siginfo-consts-arch.h \
+  /usr/include/x86_64-linux-gnu/bits/types/sigval_t.h \
+  /usr/include/x86_64-linux-gnu/bits/types/sigevent_t.h \
+  /usr/include/x86_64-linux-gnu/bits/sigevent-consts.h \
+  /usr/include/x86_64-linux-gnu/bits/sigaction.h \
+  /usr/include/x86_64-linux-gnu/bits/sigcontext.h \
+  /usr/include/x86_64-linux-gnu/bits/types/stack_t.h \
+  /usr/include/x86_64-linux-gnu/sys/ucontext.h \
+  /usr/include/x86_64-linux-gnu/bits/sigstack.h \
+  /usr/include/x86_64-linux-gnu/bits/sigstksz.h \
+  /usr/include/x86_64-linux-gnu/bits/ss_flags.h \
+  /usr/include/x86_64-linux-gnu/bits/types/struct_sigstack.h \
+  /usr/include/x86_64-linux-gnu/bits/sigthread.h \
+  /usr/include/x86_64-linux-gnu/bits/signal_ext.h \
   /usr/include/x86_64-linux-gnu/sys/stat.h \
   /usr/include/x86_64-linux-gnu/bits/stat.h \
   /usr/include/x86_64-linux-gnu/bits/struct_stat.h \
@@ -302,9 +339,57 @@ CMakeFiles/rebuntu-shell-collision.dir/home/bvrznski/rebuntu/src/system/shell/co
 
 /usr/include/linux/stat.h:
 
+/usr/include/x86_64-linux-gnu/sys/stat.h:
+
+/usr/include/x86_64-linux-gnu/bits/signal_ext.h:
+
+/usr/include/x86_64-linux-gnu/bits/sigthread.h:
+
 /usr/include/x86_64-linux-gnu/bits/stat.h:
 
-/usr/include/x86_64-linux-gnu/sys/stat.h:
+/usr/include/x86_64-linux-gnu/bits/sigstksz.h:
+
+/usr/include/x86_64-linux-gnu/sys/ucontext.h:
+
+/usr/include/x86_64-linux-gnu/bits/types/stack_t.h:
+
+/usr/include/x86_64-linux-gnu/bits/sigcontext.h:
+
+/usr/include/x86_64-linux-gnu/bits/sigaction.h:
+
+/usr/include/x86_64-linux-gnu/bits/sigevent-consts.h:
+
+/usr/include/x86_64-linux-gnu/bits/types/sigevent_t.h:
+
+/usr/include/x86_64-linux-gnu/bits/types/sigval_t.h:
+
+/usr/include/x86_64-linux-gnu/bits/siginfo-consts-arch.h:
+
+/usr/include/x86_64-linux-gnu/bits/siginfo-consts.h:
+
+/usr/include/x86_64-linux-gnu/bits/siginfo-arch.h:
+
+/usr/include/x86_64-linux-gnu/bits/ss_flags.h:
+
+/usr/include/x86_64-linux-gnu/bits/types/sig_atomic_t.h:
+
+/usr/include/linux/close_range.h:
+
+/usr/include/x86_64-linux-gnu/bits/unistd_ext.h:
+
+/usr/include/x86_64-linux-gnu/bits/unistd.h:
+
+/usr/include/x86_64-linux-gnu/bits/getopt_core.h:
+
+/usr/include/x86_64-linux-gnu/bits/confname.h:
+
+/usr/include/x86_64-linux-gnu/bits/string_fortified.h:
+
+/usr/include/x86_64-linux-gnu/bits/strings_fortified.h:
+
+/usr/include/signal.h:
+
+/usr/include/strings.h:
 
 /usr/include/asm-generic/posix_types.h:
 
@@ -333,6 +418,8 @@ CMakeFiles/rebuntu-shell-collision.dir/home/bvrznski/rebuntu/src/system/shell/co
 /usr/include/pthread.h:
 
 /usr/include/x86_64-linux-gnu/c++/11/bits/gthr-default.h:
+
+/usr/include/x86_64-linux-gnu/bits/types/siginfo_t.h:
 
 /usr/include/c++/11/bits/ios_base.h:
 
@@ -364,6 +451,8 @@ CMakeFiles/rebuntu-shell-collision.dir/home/bvrznski/rebuntu/src/system/shell/co
 
 /usr/include/x86_64-linux-gnu/bits/statx.h:
 
+/usr/include/unistd.h:
+
 /usr/include/c++/11/bits/stl_algobase.h:
 
 /usr/lib/gcc/x86_64-linux-gnu/11/include/stdint.h:
@@ -376,9 +465,13 @@ CMakeFiles/rebuntu-shell-collision.dir/home/bvrznski/rebuntu/src/system/shell/co
 
 /usr/include/c++/11/ostream:
 
+/usr/include/x86_64-linux-gnu/bits/posix_opt.h:
+
 /usr/include/c++/11/bits/ranges_algobase.h:
 
 /usr/include/c++/11/bits/iterator_concepts.h:
+
+/usr/include/c++/11/cstring:
 
 /usr/include/x86_64-linux-gnu/bits/types/__FILE.h:
 
@@ -439,6 +532,8 @@ CMakeFiles/rebuntu-shell-collision.dir/home/bvrznski/rebuntu/src/system/shell/co
 /home/bvrznski/rebuntu/src/system/shell/collision_scanner.cpp:
 
 /usr/include/c++/11/streambuf:
+
+/usr/include/x86_64-linux-gnu/bits/types/__sigval_t.h:
 
 /usr/include/c++/11/bits/functexcept.h:
 
@@ -514,6 +609,8 @@ CMakeFiles/rebuntu-shell-collision.dir/home/bvrznski/rebuntu/src/system/shell/co
 
 /usr/include/c++/11/stdexcept:
 
+/usr/include/x86_64-linux-gnu/bits/sigstack.h:
+
 /usr/include/c++/11/clocale:
 
 /usr/include/c++/11/bits/ostream.tcc:
@@ -560,6 +657,8 @@ CMakeFiles/rebuntu-shell-collision.dir/home/bvrznski/rebuntu/src/system/shell/co
 
 /usr/include/c++/11/debug/debug.h:
 
+/usr/include/x86_64-linux-gnu/bits/environments.h:
+
 /usr/include/x86_64-linux-gnu/c++/11/bits/os_defines.h:
 
 /home/bvrznski/rebuntu/src/system/shell/types.hpp:
@@ -579,6 +678,8 @@ CMakeFiles/rebuntu-shell-collision.dir/home/bvrznski/rebuntu/src/system/shell/co
 /usr/include/x86_64-linux-gnu/bits/stdint-uintn.h:
 
 /usr/include/x86_64-linux-gnu/bits/types/struct_timespec.h:
+
+/usr/include/x86_64-linux-gnu/bits/types/struct_sigstack.h:
 
 /usr/include/x86_64-linux-gnu/bits/types/__locale_t.h:
 
@@ -640,6 +741,8 @@ CMakeFiles/rebuntu-shell-collision.dir/home/bvrznski/rebuntu/src/system/shell/co
 
 /usr/include/c++/11/bits/invoke.h:
 
+/usr/include/x86_64-linux-gnu/bits/getopt_posix.h:
+
 /usr/include/time.h:
 
 /usr/include/x86_64-linux-gnu/bits/setjmp.h:
@@ -661,6 +764,8 @@ CMakeFiles/rebuntu-shell-collision.dir/home/bvrznski/rebuntu/src/system/shell/co
 /usr/include/c++/11/string:
 
 /usr/include/c++/11/bits/char_traits.h:
+
+/usr/include/x86_64-linux-gnu/sys/wait.h:
 
 /usr/include/asm-generic/errno-base.h:
 
@@ -748,6 +853,8 @@ CMakeFiles/rebuntu-shell-collision.dir/home/bvrznski/rebuntu/src/system/shell/co
 
 /usr/include/c++/11/cerrno:
 
+/usr/include/x86_64-linux-gnu/bits/signum-arch.h:
+
 /usr/include/x86_64-linux-gnu/bits/errno.h:
 
 /usr/include/sched.h:
@@ -787,6 +894,8 @@ CMakeFiles/rebuntu-shell-collision.dir/home/bvrznski/rebuntu/src/system/shell/co
 /usr/include/c++/11/typeinfo:
 
 /usr/include/c++/11/bits/nested_exception.h:
+
+/usr/include/string.h:
 
 /usr/include/c++/11/codecvt:
 
@@ -871,6 +980,8 @@ CMakeFiles/rebuntu-shell-collision.dir/home/bvrznski/rebuntu/src/system/shell/co
 /usr/include/c++/11/bits/enable_special_members.h:
 
 /usr/include/c++/11/bits/basic_ios.tcc:
+
+/usr/include/x86_64-linux-gnu/bits/signum-generic.h:
 
 /usr/include/c++/11/bits/quoted_string.h:
 

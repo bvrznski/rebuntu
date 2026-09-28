@@ -166,6 +166,7 @@ rebuntu-systemd-service-test: librebuntu-host-foundation.a
 rebuntu-systemd-service-test: librebuntu-cross-domain-references.a
 rebuntu-systemd-service-test: librebuntu-relationship-evidence.a
 rebuntu-systemd-service-test: librebuntu-evidence-journal-slice.a
+rebuntu-systemd-service-test: librebuntu-privileged-helpers.a
 rebuntu-systemd-service-test: librebuntu-concurrency-control.a
 rebuntu-systemd-service-test: librebuntu-cancellation-points.a
 rebuntu-systemd-service-test: CMakeFiles/rebuntu-systemd-service-test.dir/link.txt

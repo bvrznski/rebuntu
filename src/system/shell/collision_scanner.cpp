@@ -10,8 +10,14 @@
 #include <fstream>
 #include <iostream>
 #include <sstream>
+#include <string_view>
+#include <optional>
 #include <algorithm>
 #include <cstdlib>
+#include <cstring>
+#include <unistd.h>
+#include <sys/wait.h>
+#include <sys/types.h>
 #include <sys/stat.h>
 
 namespace rebuntu::shell::collision {
@@ -232,34 +238,115 @@ UserDefinitionScanner::UserDefinitionScanner(const ScannerConfig& config)
     : config_(config) {
 }
 
+// ============================================================================
+// Helper: Split string by delimiter with empty string handling
+// ============================================================================
+
+static std::vector<std::string> split_string(const std::string& str, char delimiter) {
+    std::vector<std::string> tokens;
+    std::istringstream iss(str);
+    std::string token;
+    
+    while (std::getline(iss, token, delimiter)) {
+        size_t start = token.find_first_not_of(" \t\r\n");
+        if (start != std::string::npos) {
+            size_t end = token.find_last_not_of(" \t\r\n");
+            tokens.push_back(token.substr(start, end - start + 1));
+        } else if (!token.empty()) {
+            tokens.push_back("");
+        }
+    }
+    
+    return tokens;
+}
+
+// ============================================================================
+// Helper: Execute subprocess via fork/execve with bounded output
+// Uses native Linux primitives - no shell command interpretation
+// ============================================================================
+
+static std::string execute_subprocess(const char* executable, const std::vector<std::string>& argv) {
+    int stdout_pipe[2];
+    if (pipe(stdout_pipe) != 0) {
+        return "";
+    }
+    
+    pid_t pid = fork();
+    if (pid == -1) {
+        close(stdout_pipe[0]);
+        close(stdout_pipe[1]);
+        return "";
+    }
+    
+    if (pid == 0) {
+        // Child process
+        close(stdout_pipe[0]);
+        dup2(stdout_pipe[1], STDOUT_FILENO);
+        close(stdout_pipe[1]);
+        
+        std::vector<char*> c_argv;
+        c_argv.push_back(const_cast<char*>(executable));
+        for (const auto& arg : argv) {
+            c_argv.push_back(const_cast<char*>(arg.c_str()));
+        }
+        c_argv.push_back(nullptr);
+        
+        execvp(executable, c_argv.data());
+        _exit(127);
+    }
+    
+    // Parent process
+    close(stdout_pipe[1]);
+    
+    std::array<char, 1024> buffer;
+    std::string result;
+    ssize_t bytes_read;
+    
+    while ((bytes_read = read(stdout_pipe[0], buffer.data(), buffer.size())) > 0) {
+        result.append(buffer.data(), static_cast<size_t>(bytes_read));
+        if (result.length() >= 8192) break;  // Bounded output
+    }
+    
+    close(stdout_pipe[0]);
+    
+    int status = 0;
+    waitpid(pid, &status, 0);
+    return result;
+}
+
+// ============================================================================
+// Helper: Execute shell command with bash -c (for commands like alias that require shell)
+// ============================================================================
+
+static std::string execute_shell_command(const char* command) {
+    return execute_subprocess("/bin/bash", {"bash", "-c", command});
+}
+
 std::vector<std::string> UserDefinitionScanner::get_user_aliases() const {
-    // Use 'alias' command to list aliases - this is bounded by the shell itself
+    // Use 'alias' command to list aliases
     std::vector<std::string> result;
     
-    FILE* pipe = popen("alias 2>/dev/null", "r");
-    if (!pipe) return result;
+    std::string output = execute_shell_command("alias");
+    if (output.empty()) return result;
     
-    char line[1024];
     size_t count = 0;
+    auto lines = split_string(output, '\n');
     
-    while (fgets(line, sizeof(line), pipe) != nullptr && count < config_.max_aliases_to_check) {
+    for (const auto& line : lines) {
         // Parse: alias name='value'
-        std::string line_str(line);
-        
-        // Find 'alias ' and extract the name
-        size_t pos = line_str.find("alias ");
+        size_t pos = line.find("alias ");
         if (pos == std::string::npos) continue;
         
         pos += 6;  // Skip "alias "
         
         // Find '=' which marks end of alias name
-        size_t eq_pos = line_str.find('=', pos);
+        size_t eq_pos = line.find('=', pos);
         if (eq_pos == std::string::npos) continue;
         
         // Extract name (may contain alphanumeric and underscore)
         std::string name;
         for (size_t i = pos; i < eq_pos; ++i) {
-            char c = line_str[i];
+            char c = line[i];
             if (std::isalnum(static_cast<unsigned char>(c)) || c == '_') {
                 name += c;
             } else {
@@ -271,9 +358,10 @@ std::vector<std::string> UserDefinitionScanner::get_user_aliases() const {
             result.push_back(name);
             count++;
         }
+        
+        if (count >= config_.max_aliases_to_check) break;
     }
     
-    pclose(pipe);
     return result;
 }
 
@@ -281,14 +369,14 @@ std::vector<std::string> UserDefinitionScanner::get_shell_functions() const {
     // Use 'compgen -f' to list shell functions
     std::vector<std::string> result;
     
-    FILE* pipe = popen("compgen -f 2>/dev/null", "r");
-    if (!pipe) return result;
+    std::string output = execute_shell_command("compgen -f");
+    if (output.empty()) return result;
     
-    char line[1024];
     size_t count = 0;
+    auto lines = split_string(output, '\n');
     
-    while (fgets(line, sizeof(line), pipe) != nullptr && count < config_.max_functions_to_check) {
-        std::string func_name(line);
+    for (const auto& line : lines) {
+        std::string func_name = line;
         
         // Remove trailing newline/whitespace
         while (!func_name.empty() && 
@@ -300,9 +388,10 @@ std::vector<std::string> UserDefinitionScanner::get_shell_functions() const {
             result.push_back(func_name);
             count++;
         }
+        
+        if (count >= config_.max_functions_to_check) break;
     }
     
-    pclose(pipe);
     return result;
 }
 

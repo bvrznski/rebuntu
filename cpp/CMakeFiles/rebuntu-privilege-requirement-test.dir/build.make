@@ -69,30 +69,31 @@ include CMakeFiles/rebuntu-privilege-requirement-test.dir/progress.make
 # Include the compile flags for this target's objects.
 include CMakeFiles/rebuntu-privilege-requirement-test.dir/flags.make
 
-CMakeFiles/rebuntu-privilege-requirement-test.dir/home/bvrznski/rebuntu/tests/unit/privilege_requirement_test.cpp.o: CMakeFiles/rebuntu-privilege-requirement-test.dir/flags.make
-CMakeFiles/rebuntu-privilege-requirement-test.dir/home/bvrznski/rebuntu/tests/unit/privilege_requirement_test.cpp.o: /home/bvrznski/rebuntu/tests/unit/privilege_requirement_test.cpp
-CMakeFiles/rebuntu-privilege-requirement-test.dir/home/bvrznski/rebuntu/tests/unit/privilege_requirement_test.cpp.o: CMakeFiles/rebuntu-privilege-requirement-test.dir/compiler_depend.ts
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/bvrznski/rebuntu/cpp/CMakeFiles --progress-num=$(CMAKE_PROGRESS_1) "Building CXX object CMakeFiles/rebuntu-privilege-requirement-test.dir/home/bvrznski/rebuntu/tests/unit/privilege_requirement_test.cpp.o"
-	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT CMakeFiles/rebuntu-privilege-requirement-test.dir/home/bvrznski/rebuntu/tests/unit/privilege_requirement_test.cpp.o -MF CMakeFiles/rebuntu-privilege-requirement-test.dir/home/bvrznski/rebuntu/tests/unit/privilege_requirement_test.cpp.o.d -o CMakeFiles/rebuntu-privilege-requirement-test.dir/home/bvrznski/rebuntu/tests/unit/privilege_requirement_test.cpp.o -c /home/bvrznski/rebuntu/tests/unit/privilege_requirement_test.cpp
+CMakeFiles/rebuntu-privilege-requirement-test.dir/home/bvrznski/rebuntu/src/runtime/native-command-operation-execution/security/test_privileged_helpers.cpp.o: CMakeFiles/rebuntu-privilege-requirement-test.dir/flags.make
+CMakeFiles/rebuntu-privilege-requirement-test.dir/home/bvrznski/rebuntu/src/runtime/native-command-operation-execution/security/test_privileged_helpers.cpp.o: /home/bvrznski/rebuntu/src/runtime/native-command-operation-execution/security/test_privileged_helpers.cpp
+CMakeFiles/rebuntu-privilege-requirement-test.dir/home/bvrznski/rebuntu/src/runtime/native-command-operation-execution/security/test_privileged_helpers.cpp.o: CMakeFiles/rebuntu-privilege-requirement-test.dir/compiler_depend.ts
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/bvrznski/rebuntu/cpp/CMakeFiles --progress-num=$(CMAKE_PROGRESS_1) "Building CXX object CMakeFiles/rebuntu-privilege-requirement-test.dir/home/bvrznski/rebuntu/src/runtime/native-command-operation-execution/security/test_privileged_helpers.cpp.o"
+	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT CMakeFiles/rebuntu-privilege-requirement-test.dir/home/bvrznski/rebuntu/src/runtime/native-command-operation-execution/security/test_privileged_helpers.cpp.o -MF CMakeFiles/rebuntu-privilege-requirement-test.dir/home/bvrznski/rebuntu/src/runtime/native-command-operation-execution/security/test_privileged_helpers.cpp.o.d -o CMakeFiles/rebuntu-privilege-requirement-test.dir/home/bvrznski/rebuntu/src/runtime/native-command-operation-execution/security/test_privileged_helpers.cpp.o -c /home/bvrznski/rebuntu/src/runtime/native-command-operation-execution/security/test_privileged_helpers.cpp
 
-CMakeFiles/rebuntu-privilege-requirement-test.dir/home/bvrznski/rebuntu/tests/unit/privilege_requirement_test.cpp.i: cmake_force
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/rebuntu-privilege-requirement-test.dir/home/bvrznski/rebuntu/tests/unit/privilege_requirement_test.cpp.i"
-	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /home/bvrznski/rebuntu/tests/unit/privilege_requirement_test.cpp > CMakeFiles/rebuntu-privilege-requirement-test.dir/home/bvrznski/rebuntu/tests/unit/privilege_requirement_test.cpp.i
+CMakeFiles/rebuntu-privilege-requirement-test.dir/home/bvrznski/rebuntu/src/runtime/native-command-operation-execution/security/test_privileged_helpers.cpp.i: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/rebuntu-privilege-requirement-test.dir/home/bvrznski/rebuntu/src/runtime/native-command-operation-execution/security/test_privileged_helpers.cpp.i"
+	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /home/bvrznski/rebuntu/src/runtime/native-command-operation-execution/security/test_privileged_helpers.cpp > CMakeFiles/rebuntu-privilege-requirement-test.dir/home/bvrznski/rebuntu/src/runtime/native-command-operation-execution/security/test_privileged_helpers.cpp.i
 
-CMakeFiles/rebuntu-privilege-requirement-test.dir/home/bvrznski/rebuntu/tests/unit/privilege_requirement_test.cpp.s: cmake_force
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/rebuntu-privilege-requirement-test.dir/home/bvrznski/rebuntu/tests/unit/privilege_requirement_test.cpp.s"
-	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /home/bvrznski/rebuntu/tests/unit/privilege_requirement_test.cpp -o CMakeFiles/rebuntu-privilege-requirement-test.dir/home/bvrznski/rebuntu/tests/unit/privilege_requirement_test.cpp.s
+CMakeFiles/rebuntu-privilege-requirement-test.dir/home/bvrznski/rebuntu/src/runtime/native-command-operation-execution/security/test_privileged_helpers.cpp.s: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/rebuntu-privilege-requirement-test.dir/home/bvrznski/rebuntu/src/runtime/native-command-operation-execution/security/test_privileged_helpers.cpp.s"
+	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /home/bvrznski/rebuntu/src/runtime/native-command-operation-execution/security/test_privileged_helpers.cpp -o CMakeFiles/rebuntu-privilege-requirement-test.dir/home/bvrznski/rebuntu/src/runtime/native-command-operation-execution/security/test_privileged_helpers.cpp.s
 
 # Object files for target rebuntu-privilege-requirement-test
 rebuntu__privilege__requirement__test_OBJECTS = \
-"CMakeFiles/rebuntu-privilege-requirement-test.dir/home/bvrznski/rebuntu/tests/unit/privilege_requirement_test.cpp.o"
+"CMakeFiles/rebuntu-privilege-requirement-test.dir/home/bvrznski/rebuntu/src/runtime/native-command-operation-execution/security/test_privileged_helpers.cpp.o"
 
 # External object files for target rebuntu-privilege-requirement-test
 rebuntu__privilege__requirement__test_EXTERNAL_OBJECTS =
 
-rebuntu-privilege-requirement-test: CMakeFiles/rebuntu-privilege-requirement-test.dir/home/bvrznski/rebuntu/tests/unit/privilege_requirement_test.cpp.o
+rebuntu-privilege-requirement-test: CMakeFiles/rebuntu-privilege-requirement-test.dir/home/bvrznski/rebuntu/src/runtime/native-command-operation-execution/security/test_privileged_helpers.cpp.o
 rebuntu-privilege-requirement-test: CMakeFiles/rebuntu-privilege-requirement-test.dir/build.make
 rebuntu-privilege-requirement-test: librebuntu-core.a
+rebuntu-privilege-requirement-test: librebuntu-privileged-helpers.a
 rebuntu-privilege-requirement-test: librebuntu-observation-bounds.a
 rebuntu-privilege-requirement-test: librebuntu-shell-semi-natural.a
 rebuntu-privilege-requirement-test: librebuntu-shell-context.a

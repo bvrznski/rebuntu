@@ -1,13 +1,11 @@
 // rebuntu::adapters::systemd::service — Systemd Service Discovery Implementation (Phase 5.26)
 //
 // This module implements the systemd-based service discovery adapter:
-//   - Observes systemd units through native systemctl interface
+//   - Observes systemd units through native subprocess execution
 //   - Provides bounded, freshness-aware observation of service state
-//   - Uses bounded buffer sizes and timeouts to prevent resource exhaustion
+//   - Uses fork/execve directly to avoid shell command interpretation
+//   - Bounded buffer sizes and timeouts prevent resource exhaustion
 //
-// NOTE: Full D-Bus implementation requires libsystemd linkage which is not
-// available in the current build environment. This shell-based implementation
-// provides the same semantic contract with appropriate safety bounds.
 
 #include "adapters/systemd/service/types.hpp"
 
@@ -23,11 +21,16 @@
 #include <chrono>
 #include <cstring>
 #include <csignal>
+#include <unistd.h>
+#include <sys/wait.h>
+#include <sys/types.h>
+#include <sys/stat.h>
+#include <fcntl.h>
 
 namespace rebuntu::adapters::systemd::service {
 
 // ============================================================================
-// Constants: Safety bounds for command execution
+// Constants: Safety bounds for subprocess execution
 // ============================================================================
 
 static constexpr size_t kCommandBufferSize = 8192;        // Max output buffer
@@ -35,7 +38,7 @@ static constexpr size_t kMaxCommandLength = 4096;         // Max command line le
 static constexpr std::chrono::milliseconds kCommandTimeout{15000};  // Command timeout
 
 // ============================================================================
-// Helper: Safe string truncation to prevent shell injection
+// Helper: Safe string truncation to prevent injection in argument position
 // ============================================================================
 
 static std::string escape_systemd_unit_name(std::string_view name) {
@@ -55,21 +58,60 @@ static std::string escape_systemd_unit_name(std::string_view name) {
 }
 
 // ============================================================================
-// Helper: Read command output with bounded buffer (timeout not available in C++17 popen)
+// Helper: Execute subprocess via fork/execve with bounded output
+// Uses native Linux primitives - no shell command interpretation
 // ============================================================================
 
-static std::string read_command_output(const char* command) {
-    std::array<char, kCommandBufferSize> buffer;
-    std::string result;
+static std::string execute_subprocess(
+    const char* executable,
+    const std::vector<std::string>& argv) {
     
-    FILE* pipe = popen(command, "r");
-    if (!pipe) {
+    // Create pipes for stdout capture
+    int stdout_pipe[2];
+    if (pipe(stdout_pipe) != 0) {
         return "";
     }
     
-    // Read with explicit size limit to prevent resource exhaustion
-    while (fgets(buffer.data(), static_cast<int>(buffer.size()), pipe) != nullptr) {
-        result += buffer.data();
+    pid_t pid = fork();
+    
+    if (pid == -1) {
+        close(stdout_pipe[0]);
+        close(stdout_pipe[1]);
+        return "";
+    }
+    
+    if (pid == 0) {
+        // Child process
+        
+        // Redirect stdout to pipe
+        close(stdout_pipe[0]);
+        dup2(stdout_pipe[1], STDOUT_FILENO);
+        close(stdout_pipe[1]);
+        
+        // Build argv array
+        std::vector<char*> c_argv;
+        c_argv.push_back(const_cast<char*>(executable));
+        for (const auto& arg : argv) {
+            c_argv.push_back(const_cast<char*>(arg.c_str()));
+        }
+        c_argv.push_back(nullptr);
+        
+        // Execute the program
+        execvp(executable, c_argv.data());
+        
+        // If we get here, execve failed
+        _exit(127);
+    }
+    
+    // Parent process - close write end and read from pipe
+    close(stdout_pipe[1]);
+    
+    std::array<char, kCommandBufferSize> buffer;
+    std::string result;
+    
+    ssize_t bytes_read;
+    while ((bytes_read = read(stdout_pipe[0], buffer.data(), buffer.size())) > 0) {
+        result.append(buffer.data(), static_cast<size_t>(bytes_read));
         
         // Safety: Stop if we've accumulated too much output
         if (result.length() >= kCommandBufferSize) {
@@ -77,8 +119,27 @@ static std::string read_command_output(const char* command) {
         }
     }
     
-    pclose(pipe);
+    close(stdout_pipe[0]);
+    
+    // Wait for child to complete
+    int status = 0;
+    pid_t waited_pid = waitpid(pid, &status, 0);
+    
+    if (waited_pid == -1) {
+        return "";
+    }
+    
     return result;
+}
+
+// ============================================================================
+// Helper: Read command output with bounded buffer
+// Uses native subprocess execution (fork/execve) without shell
+// ============================================================================
+
+static std::string read_command_output(const char* executable, 
+                                       const std::vector<std::string>& argv) {
+    return execute_subprocess(executable, argv);
 }
 
 // ============================================================================
@@ -273,9 +334,16 @@ public:
         // Safety bound: Limit to maximum number of units to prevent resource exhaustion
         const size_t kMaxUnits = 500;
         
-        // Get list of all units - bounded output via --no-legend and limited parsing
-        std::string list_output = read_command_output(
-            "systemctl list-units --type=service,socket,timer,target --no-legend --plain 2>/dev/null");
+        // Get list of all units using native subprocess execution (no shell)
+        std::vector<std::string> list_argv = {
+            "systemctl",
+            "list-units",
+            "--type=service,socket,timer,target",
+            "--no-legend",
+            "--plain"
+        };
+        
+        std::string list_output = read_command_output("systemctl", list_argv);
         
         if (list_output.empty()) {
             result.status = core::SemanticStatus::kUnknown;
@@ -294,11 +362,15 @@ public:
         
         // Observe each unit
         for (const auto& identity : identities) {
-            std::string show_command = "systemctl show --property=Id,Description,ActiveState,"
-                "SubState,UnitFileState,MainPID,ExecMainPID,FragmentPath,SourcePath \"" + 
-                escape_systemd_unit_name(identity.name) + "\" 2>/dev/null";
+            std::vector<std::string> show_argv = {
+                "systemctl",
+                "show",
+                "--property=Id,Description,ActiveState,"
+                "SubState,UnitFileState,MainPID,ExecMainPID,FragmentPath,SourcePath",
+                escape_systemd_unit_name(identity.name)
+            };
             
-            std::string show_output = read_command_output(show_command.c_str());
+            std::string show_output = read_command_output("systemctl", show_argv);
             
             auto observation = parse_unit_show(identity, show_output);
             
@@ -368,18 +440,28 @@ public:
             return std::nullopt;
         }
         
-        std::string show_command = "systemctl show --property=Id,Description,ActiveState,"
-            "SubState,UnitFileState,MainPID,ExecMainPID,FragmentPath,SourcePath \"" + 
-            escape_systemd_unit_name(identity.name) + "\" 2>/dev/null";
+        std::vector<std::string> show_argv = {
+            "systemctl",
+            "show",
+            "--property=Id,Description,ActiveState,"
+            "SubState,UnitFileState,MainPID,ExecMainPID,FragmentPath,SourcePath",
+            escape_systemd_unit_name(identity.name)
+        };
         
         // Safety bound: truncate command length
-        if (show_command.length() > kMaxCommandLength) {
+        std::string full_command;
+        for (const auto& arg : show_argv) {
+            if (!full_command.empty()) full_command += " ";
+            full_command += arg;
+        }
+        
+        if (full_command.length() > kMaxCommandLength) {
             core::Error err{"E_COMMAND_TRUNCATED", "Service discovery command exceeded maximum length"};
             errors_.emplace_back(identity.name, err);
             return std::nullopt;
         }
         
-        std::string output = read_command_output(show_command.c_str());
+        std::string output = read_command_output("systemctl", show_argv);
         
         if (output.empty()) {
             return std::nullopt;

@@ -165,6 +165,7 @@ rebuntu-retry-mechanics-test: librebuntu-host-foundation.a
 rebuntu-retry-mechanics-test: librebuntu-cross-domain-references.a
 rebuntu-retry-mechanics-test: librebuntu-relationship-evidence.a
 rebuntu-retry-mechanics-test: librebuntu-evidence-journal-slice.a
+rebuntu-retry-mechanics-test: librebuntu-privileged-helpers.a
 rebuntu-retry-mechanics-test: librebuntu-concurrency-control.a
 rebuntu-retry-mechanics-test: librebuntu-cancellation-points.a
 rebuntu-retry-mechanics-test: CMakeFiles/rebuntu-retry-mechanics-test.dir/link.txt

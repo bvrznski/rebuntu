@@ -165,6 +165,7 @@ rebuntu-shell-output-capture-test: librebuntu-host-foundation.a
 rebuntu-shell-output-capture-test: librebuntu-cross-domain-references.a
 rebuntu-shell-output-capture-test: librebuntu-relationship-evidence.a
 rebuntu-shell-output-capture-test: librebuntu-evidence-journal-slice.a
+rebuntu-shell-output-capture-test: librebuntu-privileged-helpers.a
 rebuntu-shell-output-capture-test: librebuntu-concurrency-control.a
 rebuntu-shell-output-capture-test: librebuntu-cancellation-points.a
 rebuntu-shell-output-capture-test: CMakeFiles/rebuntu-shell-output-capture-test.dir/link.txt

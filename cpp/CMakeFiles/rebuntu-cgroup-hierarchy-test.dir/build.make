@@ -166,6 +166,7 @@ rebuntu-cgroup-hierarchy-test: librebuntu-host-foundation.a
 rebuntu-cgroup-hierarchy-test: librebuntu-cross-domain-references.a
 rebuntu-cgroup-hierarchy-test: librebuntu-relationship-evidence.a
 rebuntu-cgroup-hierarchy-test: librebuntu-evidence-journal-slice.a
+rebuntu-cgroup-hierarchy-test: librebuntu-privileged-helpers.a
 rebuntu-cgroup-hierarchy-test: librebuntu-concurrency-control.a
 rebuntu-cgroup-hierarchy-test: librebuntu-cancellation-points.a
 rebuntu-cgroup-hierarchy-test: CMakeFiles/rebuntu-cgroup-hierarchy-test.dir/link.txt

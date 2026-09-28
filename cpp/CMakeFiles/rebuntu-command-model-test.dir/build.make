@@ -165,6 +165,7 @@ rebuntu-command-model-test: librebuntu-host-foundation.a
 rebuntu-command-model-test: librebuntu-cross-domain-references.a
 rebuntu-command-model-test: librebuntu-relationship-evidence.a
 rebuntu-command-model-test: librebuntu-evidence-journal-slice.a
+rebuntu-command-model-test: librebuntu-privileged-helpers.a
 rebuntu-command-model-test: librebuntu-concurrency-control.a
 rebuntu-command-model-test: librebuntu-cancellation-points.a
 rebuntu-command-model-test: CMakeFiles/rebuntu-command-model-test.dir/link.txt

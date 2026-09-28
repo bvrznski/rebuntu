@@ -165,6 +165,7 @@ rebuntu-pipeline-test: librebuntu-host-foundation.a
 rebuntu-pipeline-test: librebuntu-cross-domain-references.a
 rebuntu-pipeline-test: librebuntu-relationship-evidence.a
 rebuntu-pipeline-test: librebuntu-evidence-journal-slice.a
+rebuntu-pipeline-test: librebuntu-privileged-helpers.a
 rebuntu-pipeline-test: librebuntu-concurrency-control.a
 rebuntu-pipeline-test: librebuntu-cancellation-points.a
 rebuntu-pipeline-test: CMakeFiles/rebuntu-pipeline-test.dir/link.txt

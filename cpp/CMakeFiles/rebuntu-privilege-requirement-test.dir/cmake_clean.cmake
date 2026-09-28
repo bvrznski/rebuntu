@@ -1,6 +1,6 @@
 file(REMOVE_RECURSE
-  "CMakeFiles/rebuntu-privilege-requirement-test.dir/home/bvrznski/rebuntu/tests/unit/privilege_requirement_test.cpp.o"
-  "CMakeFiles/rebuntu-privilege-requirement-test.dir/home/bvrznski/rebuntu/tests/unit/privilege_requirement_test.cpp.o.d"
+  "CMakeFiles/rebuntu-privilege-requirement-test.dir/home/bvrznski/rebuntu/src/runtime/native-command-operation-execution/security/test_privileged_helpers.cpp.o"
+  "CMakeFiles/rebuntu-privilege-requirement-test.dir/home/bvrznski/rebuntu/src/runtime/native-command-operation-execution/security/test_privileged_helpers.cpp.o.d"
   "rebuntu-privilege-requirement-test"
   "rebuntu-privilege-requirement-test.pdb"
 )

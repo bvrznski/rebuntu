@@ -165,6 +165,7 @@ rebuntu-provider-test-matrix: librebuntu-host-foundation.a
 rebuntu-provider-test-matrix: librebuntu-cross-domain-references.a
 rebuntu-provider-test-matrix: librebuntu-relationship-evidence.a
 rebuntu-provider-test-matrix: librebuntu-evidence-journal-slice.a
+rebuntu-provider-test-matrix: librebuntu-privileged-helpers.a
 rebuntu-provider-test-matrix: librebuntu-concurrency-control.a
 rebuntu-provider-test-matrix: librebuntu-cancellation-points.a
 rebuntu-provider-test-matrix: CMakeFiles/rebuntu-provider-test-matrix.dir/link.txt

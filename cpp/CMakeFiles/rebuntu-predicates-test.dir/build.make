@@ -165,6 +165,7 @@ rebuntu-predicates-test: librebuntu-host-foundation.a
 rebuntu-predicates-test: librebuntu-cross-domain-references.a
 rebuntu-predicates-test: librebuntu-relationship-evidence.a
 rebuntu-predicates-test: librebuntu-evidence-journal-slice.a
+rebuntu-predicates-test: librebuntu-privileged-helpers.a
 rebuntu-predicates-test: librebuntu-concurrency-control.a
 rebuntu-predicates-test: librebuntu-cancellation-points.a
 rebuntu-predicates-test: CMakeFiles/rebuntu-predicates-test.dir/link.txt

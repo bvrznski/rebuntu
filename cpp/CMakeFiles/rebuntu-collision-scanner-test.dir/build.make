@@ -165,6 +165,7 @@ rebuntu-collision-scanner-test: librebuntu-host-foundation.a
 rebuntu-collision-scanner-test: librebuntu-cross-domain-references.a
 rebuntu-collision-scanner-test: librebuntu-relationship-evidence.a
 rebuntu-collision-scanner-test: librebuntu-evidence-journal-slice.a
+rebuntu-collision-scanner-test: librebuntu-privileged-helpers.a
 rebuntu-collision-scanner-test: librebuntu-concurrency-control.a
 rebuntu-collision-scanner-test: librebuntu-cancellation-points.a
 rebuntu-collision-scanner-test: CMakeFiles/rebuntu-collision-scanner-test.dir/link.txt

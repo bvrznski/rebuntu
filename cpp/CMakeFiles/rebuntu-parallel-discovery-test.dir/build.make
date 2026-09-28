@@ -165,6 +165,7 @@ rebuntu-parallel-discovery-test: librebuntu-host-foundation.a
 rebuntu-parallel-discovery-test: librebuntu-cross-domain-references.a
 rebuntu-parallel-discovery-test: librebuntu-relationship-evidence.a
 rebuntu-parallel-discovery-test: librebuntu-evidence-journal-slice.a
+rebuntu-parallel-discovery-test: librebuntu-privileged-helpers.a
 rebuntu-parallel-discovery-test: librebuntu-concurrency-control.a
 rebuntu-parallel-discovery-test: librebuntu-cancellation-points.a
 rebuntu-parallel-discovery-test: CMakeFiles/rebuntu-parallel-discovery-test.dir/link.txt

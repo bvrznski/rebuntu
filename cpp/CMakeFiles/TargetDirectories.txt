@@ -130,10 +130,11 @@
 /home/bvrznski/rebuntu/cpp/CMakeFiles/rebuntu-evidence-journal-slice.dir
 /home/bvrznski/rebuntu/cpp/CMakeFiles/rebuntu-evidence-journal-test.dir
 /home/bvrznski/rebuntu/cpp/CMakeFiles/rebuntu-provider-test-matrix.dir
+/home/bvrznski/rebuntu/cpp/CMakeFiles/rebuntu-privileged-helpers.dir
+/home/bvrznski/rebuntu/cpp/CMakeFiles/rebuntu-privilege-requirement-test.dir
 /home/bvrznski/rebuntu/cpp/CMakeFiles/rebuntu-concurrency-control.dir
 /home/bvrznski/rebuntu/cpp/CMakeFiles/rebuntu-shell-boundary-test.dir
 /home/bvrznski/rebuntu/cpp/CMakeFiles/rebuntu-shell-output-capture-test.dir
-/home/bvrznski/rebuntu/cpp/CMakeFiles/rebuntu-privilege-requirement-test.dir
 /home/bvrznski/rebuntu/cpp/CMakeFiles/rebuntu-cancellation-points.dir
 /home/bvrznski/rebuntu/cpp/CMakeFiles/test.dir
 /home/bvrznski/rebuntu/cpp/CMakeFiles/edit_cache.dir

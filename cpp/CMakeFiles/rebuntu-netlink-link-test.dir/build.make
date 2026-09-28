@@ -166,6 +166,7 @@ rebuntu-netlink-link-test: librebuntu-host-foundation.a
 rebuntu-netlink-link-test: librebuntu-cross-domain-references.a
 rebuntu-netlink-link-test: librebuntu-relationship-evidence.a
 rebuntu-netlink-link-test: librebuntu-evidence-journal-slice.a
+rebuntu-netlink-link-test: librebuntu-privileged-helpers.a
 rebuntu-netlink-link-test: librebuntu-concurrency-control.a
 rebuntu-netlink-link-test: librebuntu-cancellation-points.a
 rebuntu-netlink-link-test: CMakeFiles/rebuntu-netlink-link-test.dir/link.txt

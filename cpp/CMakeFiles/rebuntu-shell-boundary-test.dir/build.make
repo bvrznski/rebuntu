@@ -165,6 +165,7 @@ rebuntu-shell-boundary-test: librebuntu-host-foundation.a
 rebuntu-shell-boundary-test: librebuntu-cross-domain-references.a
 rebuntu-shell-boundary-test: librebuntu-relationship-evidence.a
 rebuntu-shell-boundary-test: librebuntu-evidence-journal-slice.a
+rebuntu-shell-boundary-test: librebuntu-privileged-helpers.a
 rebuntu-shell-boundary-test: librebuntu-concurrency-control.a
 rebuntu-shell-boundary-test: librebuntu-cancellation-points.a
 rebuntu-shell-boundary-test: CMakeFiles/rebuntu-shell-boundary-test.dir/link.txt

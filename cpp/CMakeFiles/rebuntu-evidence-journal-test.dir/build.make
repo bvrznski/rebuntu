@@ -166,6 +166,7 @@ rebuntu-evidence-journal-test: librebuntu-container-discovery.a
 rebuntu-evidence-journal-test: librebuntu-host-foundation.a
 rebuntu-evidence-journal-test: librebuntu-cross-domain-references.a
 rebuntu-evidence-journal-test: librebuntu-relationship-evidence.a
+rebuntu-evidence-journal-test: librebuntu-privileged-helpers.a
 rebuntu-evidence-journal-test: librebuntu-concurrency-control.a
 rebuntu-evidence-journal-test: librebuntu-cancellation-points.a
 rebuntu-evidence-journal-test: CMakeFiles/rebuntu-evidence-journal-test.dir/link.txt

@@ -166,6 +166,7 @@ rebuntu-procfs-process-test: librebuntu-host-foundation.a
 rebuntu-procfs-process-test: librebuntu-cross-domain-references.a
 rebuntu-procfs-process-test: librebuntu-relationship-evidence.a
 rebuntu-procfs-process-test: librebuntu-evidence-journal-slice.a
+rebuntu-procfs-process-test: librebuntu-privileged-helpers.a
 rebuntu-procfs-process-test: librebuntu-concurrency-control.a
 rebuntu-procfs-process-test: librebuntu-cancellation-points.a
 rebuntu-procfs-process-test: CMakeFiles/rebuntu-procfs-process-test.dir/link.txt

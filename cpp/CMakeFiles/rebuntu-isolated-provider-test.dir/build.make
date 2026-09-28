@@ -165,6 +165,7 @@ rebuntu-isolated-provider-test: librebuntu-host-foundation.a
 rebuntu-isolated-provider-test: librebuntu-cross-domain-references.a
 rebuntu-isolated-provider-test: librebuntu-relationship-evidence.a
 rebuntu-isolated-provider-test: librebuntu-evidence-journal-slice.a
+rebuntu-isolated-provider-test: librebuntu-privileged-helpers.a
 rebuntu-isolated-provider-test: librebuntu-concurrency-control.a
 rebuntu-isolated-provider-test: librebuntu-cancellation-points.a
 rebuntu-isolated-provider-test: CMakeFiles/rebuntu-isolated-provider-test.dir/link.txt

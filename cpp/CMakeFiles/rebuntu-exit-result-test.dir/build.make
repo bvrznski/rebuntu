@@ -165,6 +165,7 @@ rebuntu-exit-result-test: librebuntu-host-foundation.a
 rebuntu-exit-result-test: librebuntu-cross-domain-references.a
 rebuntu-exit-result-test: librebuntu-relationship-evidence.a
 rebuntu-exit-result-test: librebuntu-evidence-journal-slice.a
+rebuntu-exit-result-test: librebuntu-privileged-helpers.a
 rebuntu-exit-result-test: librebuntu-concurrency-control.a
 rebuntu-exit-result-test: librebuntu-cancellation-points.a
 rebuntu-exit-result-test: CMakeFiles/rebuntu-exit-result-test.dir/link.txt

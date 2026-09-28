@@ -165,6 +165,7 @@ rebuntu-scope-grammar-test: librebuntu-host-foundation.a
 rebuntu-scope-grammar-test: librebuntu-cross-domain-references.a
 rebuntu-scope-grammar-test: librebuntu-relationship-evidence.a
 rebuntu-scope-grammar-test: librebuntu-evidence-journal-slice.a
+rebuntu-scope-grammar-test: librebuntu-privileged-helpers.a
 rebuntu-scope-grammar-test: librebuntu-concurrency-control.a
 rebuntu-scope-grammar-test: librebuntu-cancellation-points.a
 rebuntu-scope-grammar-test: CMakeFiles/rebuntu-scope-grammar-test.dir/link.txt

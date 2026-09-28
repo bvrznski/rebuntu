@@ -166,6 +166,7 @@ rebuntu-bin: librebuntu-host-foundation.a
 rebuntu-bin: librebuntu-cross-domain-references.a
 rebuntu-bin: librebuntu-relationship-evidence.a
 rebuntu-bin: librebuntu-evidence-journal-slice.a
+rebuntu-bin: librebuntu-privileged-helpers.a
 rebuntu-bin: librebuntu-concurrency-control.a
 rebuntu-bin: librebuntu-cancellation-points.a
 rebuntu-bin: librebuntu-dpkg-package-inventory.a

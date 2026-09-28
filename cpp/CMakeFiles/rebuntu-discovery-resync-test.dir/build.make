@@ -165,6 +165,7 @@ rebuntu-discovery-resync-test: librebuntu-host-foundation.a
 rebuntu-discovery-resync-test: librebuntu-cross-domain-references.a
 rebuntu-discovery-resync-test: librebuntu-relationship-evidence.a
 rebuntu-discovery-resync-test: librebuntu-evidence-journal-slice.a
+rebuntu-discovery-resync-test: librebuntu-privileged-helpers.a
 rebuntu-discovery-resync-test: librebuntu-concurrency-control.a
 rebuntu-discovery-resync-test: librebuntu-cancellation-points.a
 rebuntu-discovery-resync-test: CMakeFiles/rebuntu-discovery-resync-test.dir/link.txt

@@ -166,6 +166,7 @@ rebuntu-evidence-deduplication-test: librebuntu-host-foundation.a
 rebuntu-evidence-deduplication-test: librebuntu-cross-domain-references.a
 rebuntu-evidence-deduplication-test: librebuntu-relationship-evidence.a
 rebuntu-evidence-deduplication-test: librebuntu-evidence-journal-slice.a
+rebuntu-evidence-deduplication-test: librebuntu-privileged-helpers.a
 rebuntu-evidence-deduplication-test: librebuntu-concurrency-control.a
 rebuntu-evidence-deduplication-test: librebuntu-cancellation-points.a
 rebuntu-evidence-deduplication-test: CMakeFiles/rebuntu-evidence-deduplication-test.dir/link.txt

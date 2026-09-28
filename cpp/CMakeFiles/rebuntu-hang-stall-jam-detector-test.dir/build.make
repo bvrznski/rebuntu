@@ -166,6 +166,7 @@ rebuntu-hang-stall-jam-detector-test: librebuntu-host-foundation.a
 rebuntu-hang-stall-jam-detector-test: librebuntu-cross-domain-references.a
 rebuntu-hang-stall-jam-detector-test: librebuntu-relationship-evidence.a
 rebuntu-hang-stall-jam-detector-test: librebuntu-evidence-journal-slice.a
+rebuntu-hang-stall-jam-detector-test: librebuntu-privileged-helpers.a
 rebuntu-hang-stall-jam-detector-test: librebuntu-concurrency-control.a
 rebuntu-hang-stall-jam-detector-test: librebuntu-cancellation-points.a
 rebuntu-hang-stall-jam-detector-test: CMakeFiles/rebuntu-hang-stall-jam-detector-test.dir/link.txt

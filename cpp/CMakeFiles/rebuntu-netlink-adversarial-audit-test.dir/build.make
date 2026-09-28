@@ -165,6 +165,7 @@ rebuntu-netlink-adversarial-audit-test: librebuntu-host-foundation.a
 rebuntu-netlink-adversarial-audit-test: librebuntu-cross-domain-references.a
 rebuntu-netlink-adversarial-audit-test: librebuntu-relationship-evidence.a
 rebuntu-netlink-adversarial-audit-test: librebuntu-evidence-journal-slice.a
+rebuntu-netlink-adversarial-audit-test: librebuntu-privileged-helpers.a
 rebuntu-netlink-adversarial-audit-test: librebuntu-concurrency-control.a
 rebuntu-netlink-adversarial-audit-test: librebuntu-cancellation-points.a
 rebuntu-netlink-adversarial-audit-test: CMakeFiles/rebuntu-netlink-adversarial-audit-test.dir/link.txt

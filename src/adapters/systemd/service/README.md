@@ -139,7 +139,7 @@ if (optional_obs) {
 
 ## Performance Considerations
 
-- Each observation calls `popen()` for systemctl commands
+- Uses fork/execve directly (no shell command interpretation)
 - Consider caching with freshness-aware invalidation
 - Multiple concurrent observations may be slow; use batching
 

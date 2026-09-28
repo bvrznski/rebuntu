@@ -166,6 +166,7 @@ rebuntu-drm-topology-test: librebuntu-host-foundation.a
 rebuntu-drm-topology-test: librebuntu-cross-domain-references.a
 rebuntu-drm-topology-test: librebuntu-relationship-evidence.a
 rebuntu-drm-topology-test: librebuntu-evidence-journal-slice.a
+rebuntu-drm-topology-test: librebuntu-privileged-helpers.a
 rebuntu-drm-topology-test: librebuntu-concurrency-control.a
 rebuntu-drm-topology-test: librebuntu-cancellation-points.a
 rebuntu-drm-topology-test: CMakeFiles/rebuntu-drm-topology-test.dir/link.txt

@@ -165,6 +165,7 @@ rebuntu-value-parsers-test: librebuntu-host-foundation.a
 rebuntu-value-parsers-test: librebuntu-cross-domain-references.a
 rebuntu-value-parsers-test: librebuntu-relationship-evidence.a
 rebuntu-value-parsers-test: librebuntu-evidence-journal-slice.a
+rebuntu-value-parsers-test: librebuntu-privileged-helpers.a
 rebuntu-value-parsers-test: librebuntu-concurrency-control.a
 rebuntu-value-parsers-test: librebuntu-cancellation-points.a
 rebuntu-value-parsers-test: CMakeFiles/rebuntu-value-parsers-test.dir/link.txt

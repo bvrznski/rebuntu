@@ -166,6 +166,7 @@ rebuntu-hotplug-test: librebuntu-host-foundation.a
 rebuntu-hotplug-test: librebuntu-cross-domain-references.a
 rebuntu-hotplug-test: librebuntu-relationship-evidence.a
 rebuntu-hotplug-test: librebuntu-evidence-journal-slice.a
+rebuntu-hotplug-test: librebuntu-privileged-helpers.a
 rebuntu-hotplug-test: librebuntu-concurrency-control.a
 rebuntu-hotplug-test: librebuntu-cancellation-points.a
 rebuntu-hotplug-test: CMakeFiles/rebuntu-hotplug-test.dir/link.txt

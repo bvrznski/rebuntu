@@ -165,6 +165,7 @@ rebuntu-monotonic-deadline-test: librebuntu-host-foundation.a
 rebuntu-monotonic-deadline-test: librebuntu-cross-domain-references.a
 rebuntu-monotonic-deadline-test: librebuntu-relationship-evidence.a
 rebuntu-monotonic-deadline-test: librebuntu-evidence-journal-slice.a
+rebuntu-monotonic-deadline-test: librebuntu-privileged-helpers.a
 rebuntu-monotonic-deadline-test: librebuntu-concurrency-control.a
 rebuntu-monotonic-deadline-test: librebuntu-cancellation-points.a
 rebuntu-monotonic-deadline-test: CMakeFiles/rebuntu-monotonic-deadline-test.dir/link.txt

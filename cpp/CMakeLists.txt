@@ -1232,3 +1232,11 @@ add_executable(rebuntu-device-reorder-test
 target_include_directories(rebuntu-device-reorder-test PRIVATE ${CMAKE_CURRENT_LIST_DIR}/../src)
 target_link_libraries(rebuntu-device-reorder-test PRIVATE rebuntu-core rebuntu-drm-topology rebuntu-peripherals rebuntu-hotplug)
 add_test(NAME device_reorder_test COMMAND rebuntu-device-reorder-test)
+
+# Phase 6.58: Command Injection Adversarial Tests
+add_executable(rebuntu-command-injection-adversarial-test
+    ${CMAKE_CURRENT_LIST_DIR}/tests/unit/command_injection_adversarial_test.cpp
+)
+target_include_directories(rebuntu-command-injection-adversarial-test PRIVATE ${CMAKE_CURRENT_LIST_DIR}/../src)
+target_link_libraries(rebuntu-command-injection-adversarial-test PRIVATE rebuntu-core rebuntu-shell)
+add_test(NAME command_injection_adversarial_test COMMAND rebuntu-command-injection-adversarial-test)

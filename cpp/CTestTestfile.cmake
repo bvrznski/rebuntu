@@ -92,3 +92,5 @@ add_test([=[ambiguous_target_test]=] "/home/bvrznski/rebuntu/cpp/rebuntu-ambiguo
 set_tests_properties([=[ambiguous_target_test]=] PROPERTIES  _BACKTRACE_TRIPLES "/home/bvrznski/rebuntu/cpp/CMakeLists.txt;1226;add_test;/home/bvrznski/rebuntu/cpp/CMakeLists.txt;0;")
 add_test([=[device_reorder_test]=] "/home/bvrznski/rebuntu/cpp/rebuntu-device-reorder-test")
 set_tests_properties([=[device_reorder_test]=] PROPERTIES  _BACKTRACE_TRIPLES "/home/bvrznski/rebuntu/cpp/CMakeLists.txt;1234;add_test;/home/bvrznski/rebuntu/cpp/CMakeLists.txt;0;")
+add_test([=[command_injection_adversarial_test]=] "/home/bvrznski/rebuntu/cpp/rebuntu-command-injection-adversarial-test")
+set_tests_properties([=[command_injection_adversarial_test]=] PROPERTIES  _BACKTRACE_TRIPLES "/home/bvrznski/rebuntu/cpp/CMakeLists.txt;1242;add_test;/home/bvrznski/rebuntu/cpp/CMakeLists.txt;0;")

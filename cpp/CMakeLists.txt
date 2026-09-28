@@ -1224,3 +1224,11 @@ add_executable(rebuntu-ambiguous-target-test
 target_include_directories(rebuntu-ambiguous-target-test PRIVATE ${CMAKE_CURRENT_LIST_DIR}/../src)
 target_link_libraries(rebuntu-ambiguous-target-test PRIVATE rebuntu-core)
 add_test(NAME ambiguous_target_test COMMAND rebuntu-ambiguous-target-test)
+
+# Phase 6.57: Device Reorder Tests
+add_executable(rebuntu-device-reorder-test
+    ${CMAKE_CURRENT_LIST_DIR}/tests/unit/device_reorder_test.cpp
+)
+target_include_directories(rebuntu-device-reorder-test PRIVATE ${CMAKE_CURRENT_LIST_DIR}/../src)
+target_link_libraries(rebuntu-device-reorder-test PRIVATE rebuntu-core rebuntu-drm-topology rebuntu-peripherals rebuntu-hotplug)
+add_test(NAME device_reorder_test COMMAND rebuntu-device-reorder-test)

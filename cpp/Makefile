@@ -2160,6 +2160,19 @@ rebuntu-ambiguous-target-test/fast:
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/rebuntu-ambiguous-target-test.dir/build.make CMakeFiles/rebuntu-ambiguous-target-test.dir/build
 .PHONY : rebuntu-ambiguous-target-test/fast
 
+#=============================================================================
+# Target rules for targets named rebuntu-device-reorder-test
+
+# Build rule for target.
+rebuntu-device-reorder-test: cmake_check_build_system
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 rebuntu-device-reorder-test
+.PHONY : rebuntu-device-reorder-test
+
+# fast build rule for target.
+rebuntu-device-reorder-test/fast:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/rebuntu-device-reorder-test.dir/build.make CMakeFiles/rebuntu-device-reorder-test.dir/build
+.PHONY : rebuntu-device-reorder-test/fast
+
 home/bvrznski/rebuntu/src/adapters/cgroups/hierarchy/implementation.o: home/bvrznski/rebuntu/src/adapters/cgroups/hierarchy/implementation.cpp.o
 .PHONY : home/bvrznski/rebuntu/src/adapters/cgroups/hierarchy/implementation.o
 
@@ -4923,6 +4936,30 @@ tests/unit/dependency_aware_execution_test.cpp.s:
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/rebuntu-dependency-aware-test.dir/build.make CMakeFiles/rebuntu-dependency-aware-test.dir/tests/unit/dependency_aware_execution_test.cpp.s
 .PHONY : tests/unit/dependency_aware_execution_test.cpp.s
 
+tests/unit/device_reorder_test.o: tests/unit/device_reorder_test.cpp.o
+.PHONY : tests/unit/device_reorder_test.o
+
+# target to build an object file
+tests/unit/device_reorder_test.cpp.o:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/rebuntu-device-reorder-test.dir/build.make CMakeFiles/rebuntu-device-reorder-test.dir/tests/unit/device_reorder_test.cpp.o
+.PHONY : tests/unit/device_reorder_test.cpp.o
+
+tests/unit/device_reorder_test.i: tests/unit/device_reorder_test.cpp.i
+.PHONY : tests/unit/device_reorder_test.i
+
+# target to preprocess a source file
+tests/unit/device_reorder_test.cpp.i:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/rebuntu-device-reorder-test.dir/build.make CMakeFiles/rebuntu-device-reorder-test.dir/tests/unit/device_reorder_test.cpp.i
+.PHONY : tests/unit/device_reorder_test.cpp.i
+
+tests/unit/device_reorder_test.s: tests/unit/device_reorder_test.cpp.s
+.PHONY : tests/unit/device_reorder_test.s
+
+# target to generate assembly for a file
+tests/unit/device_reorder_test.cpp.s:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/rebuntu-device-reorder-test.dir/build.make CMakeFiles/rebuntu-device-reorder-test.dir/tests/unit/device_reorder_test.cpp.s
+.PHONY : tests/unit/device_reorder_test.cpp.s
+
 tests/unit/discovery_resync_test.o: tests/unit/discovery_resync_test.cpp.o
 .PHONY : tests/unit/discovery_resync_test.o
 
@@ -5633,6 +5670,7 @@ help:
 	@echo "... rebuntu-cpu-memory-thermal-monitor"
 	@echo "... rebuntu-cross-domain-references"
 	@echo "... rebuntu-dependency-aware-test"
+	@echo "... rebuntu-device-reorder-test"
 	@echo "... rebuntu-directories"
 	@echo "... rebuntu-discovery-resync-test"
 	@echo "... rebuntu-dpkg-package-inventory"
@@ -6082,6 +6120,9 @@ help:
 	@echo "... tests/unit/dependency_aware_execution_test.o"
 	@echo "... tests/unit/dependency_aware_execution_test.i"
 	@echo "... tests/unit/dependency_aware_execution_test.s"
+	@echo "... tests/unit/device_reorder_test.o"
+	@echo "... tests/unit/device_reorder_test.i"
+	@echo "... tests/unit/device_reorder_test.s"
 	@echo "... tests/unit/discovery_resync_test.o"
 	@echo "... tests/unit/discovery_resync_test.i"
 	@echo "... tests/unit/discovery_resync_test.s"

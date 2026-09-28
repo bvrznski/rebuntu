@@ -40,4 +40,5 @@ parallel_composition_test 5 0.000594464
 semantic_service_absence_test 6 0.000539257
 provider_evidence_test 3 0.00106967
 stale_plan_adversarial_test 9 0.00147347
+device_reorder_test 2 0.00125085
 ---

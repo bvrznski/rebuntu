@@ -25,7 +25,6 @@ CMakeFiles/rebuntu-ipc.dir/home/bvrznski/rebuntu/src/system/environment/ipc.cpp.
   /usr/include/x86_64-linux-gnu/bits/confname.h \
   /usr/include/x86_64-linux-gnu/bits/getopt_posix.h \
   /usr/include/x86_64-linux-gnu/bits/getopt_core.h \
-  /usr/include/x86_64-linux-gnu/bits/unistd.h \
   /usr/include/x86_64-linux-gnu/bits/unistd_ext.h \
   /usr/include/linux/close_range.h \
   /usr/include/x86_64-linux-gnu/sys/stat.h \
@@ -67,7 +66,6 @@ CMakeFiles/rebuntu-ipc.dir/home/bvrznski/rebuntu/src/system/environment/ipc.cpp.
   /usr/include/x86_64-linux-gnu/bits/types/sigset_t.h \
   /usr/include/x86_64-linux-gnu/bits/types/__sigset_t.h \
   /usr/include/x86_64-linux-gnu/bits/types/struct_timeval.h \
-  /usr/include/x86_64-linux-gnu/bits/select2.h \
   /usr/include/x86_64-linux-gnu/bits/pthreadtypes.h \
   /usr/include/x86_64-linux-gnu/bits/thread-shared-types.h \
   /usr/include/x86_64-linux-gnu/bits/pthreadtypes-arch.h \
@@ -81,15 +79,12 @@ CMakeFiles/rebuntu-ipc.dir/home/bvrznski/rebuntu/src/system/environment/ipc.cpp.
   /usr/include/x86_64-linux-gnu/asm/sockios.h \
   /usr/include/asm-generic/sockios.h \
   /usr/include/x86_64-linux-gnu/bits/types/struct_osockaddr.h \
-  /usr/include/x86_64-linux-gnu/bits/socket2.h \
   /usr/include/x86_64-linux-gnu/sys/un.h \
   /usr/include/string.h \
   /usr/include/x86_64-linux-gnu/bits/libc-header-start.h \
   /usr/include/x86_64-linux-gnu/bits/types/locale_t.h \
   /usr/include/x86_64-linux-gnu/bits/types/__locale_t.h \
   /usr/include/strings.h \
-  /usr/include/x86_64-linux-gnu/bits/strings_fortified.h \
-  /usr/include/x86_64-linux-gnu/bits/string_fortified.h \
   /usr/include/c++/11/cstdint \
   /usr/include/x86_64-linux-gnu/c++/11/bits/c++config.h \
   /usr/include/x86_64-linux-gnu/c++/11/bits/os_defines.h \
@@ -137,7 +132,6 @@ CMakeFiles/rebuntu-ipc.dir/home/bvrznski/rebuntu/src/system/environment/ipc.cpp.
   /usr/include/x86_64-linux-gnu/bits/types/mbstate_t.h \
   /usr/include/x86_64-linux-gnu/bits/types/__mbstate_t.h \
   /usr/include/x86_64-linux-gnu/bits/types/__FILE.h \
-  /usr/include/x86_64-linux-gnu/bits/wchar2.h \
   /usr/include/c++/11/bits/allocator.h \
   /usr/include/x86_64-linux-gnu/c++/11/bits/c++allocator.h \
   /usr/include/c++/11/ext/new_allocator.h \
@@ -159,9 +153,7 @@ CMakeFiles/rebuntu-ipc.dir/home/bvrznski/rebuntu/src/system/environment/ipc.cpp.
   /usr/include/x86_64-linux-gnu/bits/waitflags.h \
   /usr/include/x86_64-linux-gnu/bits/waitstatus.h \
   /usr/include/alloca.h \
-  /usr/include/x86_64-linux-gnu/bits/stdlib-bsearch.h \
   /usr/include/x86_64-linux-gnu/bits/stdlib-float.h \
-  /usr/include/x86_64-linux-gnu/bits/stdlib.h \
   /usr/include/c++/11/bits/std_abs.h \
   /usr/include/c++/11/bits/algorithmfwd.h \
   /usr/include/c++/11/initializer_list \
@@ -205,8 +197,6 @@ CMakeFiles/rebuntu-ipc.dir/home/bvrznski/rebuntu/src/system/environment/ipc.cpp.
   /usr/include/x86_64-linux-gnu/bits/types/struct_FILE.h \
   /usr/include/x86_64-linux-gnu/bits/types/cookie_io_functions_t.h \
   /usr/include/x86_64-linux-gnu/bits/stdio_lim.h \
-  /usr/include/x86_64-linux-gnu/bits/stdio.h \
-  /usr/include/x86_64-linux-gnu/bits/stdio2.h \
   /usr/include/c++/11/cerrno \
   /usr/include/errno.h \
   /usr/include/x86_64-linux-gnu/bits/errno.h \
@@ -320,15 +310,11 @@ CMakeFiles/rebuntu-ipc.dir/home/bvrznski/rebuntu/src/system/environment/ipc.cpp.
   /usr/include/x86_64-linux-gnu/bits/fcntl.h \
   /usr/include/x86_64-linux-gnu/bits/fcntl-linux.h \
   /usr/include/linux/falloc.h \
-  /usr/include/x86_64-linux-gnu/bits/fcntl2.h \
   /usr/include/poll.h \
   /usr/include/x86_64-linux-gnu/sys/poll.h \
   /usr/include/x86_64-linux-gnu/bits/poll.h \
-  /usr/include/x86_64-linux-gnu/bits/poll2.h \
   /usr/include/c++/11/iostream
 
-
-/usr/include/x86_64-linux-gnu/bits/poll2.h:
 
 /usr/include/x86_64-linux-gnu/bits/poll.h:
 
@@ -392,21 +378,23 @@ CMakeFiles/rebuntu-ipc.dir/home/bvrznski/rebuntu/src/system/environment/ipc.cpp.
 
 /usr/include/c++/11/ostream:
 
-/usr/include/c++/11/bits/uses_allocator.h:
+/usr/include/x86_64-linux-gnu/bits/floatn-common.h:
 
-/usr/include/c++/11/array:
+/usr/include/x86_64-linux-gnu/bits/types/wint_t.h:
 
-/usr/include/c++/11/tuple:
+/usr/include/wchar.h:
 
-/usr/include/c++/11/bits/unique_ptr.h:
+/usr/include/c++/11/bits/basic_ios.h:
 
-/usr/include/c++/11/bits/locale_conv.h:
+/usr/include/c++/11/bits/uniform_int_dist.h:
 
-/usr/include/c++/11/bits/locale_facets_nonio.tcc:
+/usr/include/c++/11/bits/cxxabi_init_exception.h:
 
-/usr/include/libintl.h:
+/usr/include/c++/11/cwchar:
 
-/usr/include/x86_64-linux-gnu/c++/11/bits/messages_members.h:
+/usr/lib/gcc/x86_64-linux-gnu/11/include/stdint.h:
+
+/usr/include/x86_64-linux-gnu/bits/sockaddr.h:
 
 /usr/include/linux/falloc.h:
 
@@ -418,23 +406,27 @@ CMakeFiles/rebuntu-ipc.dir/home/bvrznski/rebuntu/src/system/environment/ipc.cpp.
 
 /usr/include/c++/11/bits/stl_construct.h:
 
+/usr/include/x86_64-linux-gnu/bits/types/struct_itimerspec.h:
+
 /usr/include/c++/11/bits/sstream.tcc:
 
 /usr/include/c++/11/new:
 
-/usr/include/x86_64-linux-gnu/bits/string_fortified.h:
+/usr/lib/gcc/x86_64-linux-gnu/11/include/stdarg.h:
+
+/usr/include/c++/11/debug/assertions.h:
+
+/usr/include/c++/11/tuple:
 
 /usr/include/x86_64-linux-gnu/bits/atomic_wide_counter.h:
 
 /usr/include/c++/11/ext/atomicity.h:
 
+/usr/include/c++/11/bits/locale_facets_nonio.tcc:
+
 /usr/include/c++/11/ext/type_traits.h:
 
 /usr/include/c++/11/streambuf:
-
-/usr/lib/gcc/x86_64-linux-gnu/11/include/stdint.h:
-
-/usr/include/x86_64-linux-gnu/bits/sockaddr.h:
 
 /usr/include/c++/11/bits/stringfwd.h:
 
@@ -450,8 +442,6 @@ CMakeFiles/rebuntu-ipc.dir/home/bvrznski/rebuntu/src/system/environment/ipc.cpp.
 
 /usr/include/x86_64-linux-gnu/c++/11/bits/cpu_defines.h:
 
-/usr/include/x86_64-linux-gnu/bits/fcntl2.h:
-
 /usr/include/x86_64-linux-gnu/bits/timesize.h:
 
 /usr/include/c++/11/bits/refwrap.h:
@@ -463,10 +453,6 @@ CMakeFiles/rebuntu-ipc.dir/home/bvrznski/rebuntu/src/system/environment/ipc.cpp.
 /usr/include/x86_64-linux-gnu/bits/waitstatus.h:
 
 /usr/include/c++/11/cstdint:
-
-/usr/include/x86_64-linux-gnu/bits/strings_fortified.h:
-
-/usr/include/x86_64-linux-gnu/bits/types/mbstate_t.h:
 
 /usr/include/strings.h:
 
@@ -510,15 +496,19 @@ CMakeFiles/rebuntu-ipc.dir/home/bvrznski/rebuntu/src/system/environment/ipc.cpp.
 
 /usr/include/x86_64-linux-gnu/bits/pthreadtypes.h:
 
-/usr/include/c++/11/cwchar:
-
-/usr/include/x86_64-linux-gnu/bits/select2.h:
-
 /usr/include/c++/11/bits/cpp_type_traits.h:
 
 /usr/include/c++/11/bits/stl_iterator_base_funcs.h:
 
 /usr/include/x86_64-linux-gnu/bits/uintn-identity.h:
+
+/usr/include/x86_64-linux-gnu/bits/endian.h:
+
+/usr/include/x86_64-linux-gnu/gnu/stubs.h:
+
+/usr/include/c++/11/bits/shared_ptr_base.h:
+
+/usr/include/c++/11/bits/basic_string.h:
 
 /usr/include/c++/11/bits/stl_iterator_base_types.h:
 
@@ -531,8 +521,6 @@ CMakeFiles/rebuntu-ipc.dir/home/bvrznski/rebuntu/src/system/environment/ipc.cpp.
 /usr/include/x86_64-linux-gnu/sys/stat.h:
 
 /usr/include/x86_64-linux-gnu/gnu/stubs-64.h:
-
-/usr/include/x86_64-linux-gnu/bits/unistd.h:
 
 /usr/include/c++/11/bits/exception_defines.h:
 
@@ -562,7 +550,11 @@ CMakeFiles/rebuntu-ipc.dir/home/bvrznski/rebuntu/src/system/environment/ipc.cpp.
 
 /usr/include/x86_64-linux-gnu/bits/endianness.h:
 
+/usr/include/libintl.h:
+
 /usr/include/pwd.h:
+
+/usr/include/c++/11/bits/locale_conv.h:
 
 /usr/include/asm-generic/posix_types.h:
 
@@ -584,10 +576,6 @@ CMakeFiles/rebuntu-ipc.dir/home/bvrznski/rebuntu/src/system/environment/ipc.cpp.
 
 /usr/include/c++/11/vector:
 
-/usr/include/c++/11/bits/invoke.h:
-
-/usr/include/asm-generic/socket.h:
-
 /usr/include/x86_64-linux-gnu/bits/types/__fpos64_t.h:
 
 /usr/include/c++/11/debug/debug.h:
@@ -601,8 +589,6 @@ CMakeFiles/rebuntu-ipc.dir/home/bvrznski/rebuntu/src/system/environment/ipc.cpp.
 /usr/include/poll.h:
 
 /usr/include/x86_64-linux-gnu/bits/types/struct_timeval.h:
-
-/usr/include/x86_64-linux-gnu/bits/stdlib.h:
 
 /usr/include/x86_64-linux-gnu/asm/errno.h:
 
@@ -620,25 +606,15 @@ CMakeFiles/rebuntu-ipc.dir/home/bvrznski/rebuntu/src/system/environment/ipc.cpp.
 
 /usr/include/x86_64-linux-gnu/bits/types/__sigset_t.h:
 
-/usr/include/x86_64-linux-gnu/bits/byteswap.h:
-
 /usr/include/c++/11/bits/functexcept.h:
 
 /home/bvrznski/rebuntu/src/system/environment/ipc.cpp:
 
 /home/bvrznski/rebuntu/src/system/environment/ipc.hpp:
 
+/usr/include/x86_64-linux-gnu/bits/byteswap.h:
+
 /usr/include/x86_64-linux-gnu/bits/long-double.h:
-
-/usr/include/x86_64-linux-gnu/bits/stdio.h:
-
-/usr/include/x86_64-linux-gnu/bits/endian.h:
-
-/usr/include/x86_64-linux-gnu/gnu/stubs.h:
-
-/usr/include/c++/11/bits/shared_ptr_base.h:
-
-/usr/include/c++/11/bits/basic_string.h:
 
 /usr/include/c++/11/string:
 
@@ -724,23 +700,7 @@ CMakeFiles/rebuntu-ipc.dir/home/bvrznski/rebuntu/src/system/environment/ipc.cpp.
 
 /usr/include/x86_64-linux-gnu/bits/types/timer_t.h:
 
-/usr/include/wchar.h:
-
-/usr/include/c++/11/bits/basic_ios.h:
-
-/usr/include/c++/11/bits/uniform_int_dist.h:
-
-/usr/include/c++/11/bits/cxxabi_init_exception.h:
-
-/usr/include/x86_64-linux-gnu/bits/types/struct_itimerspec.h:
-
-/usr/include/x86_64-linux-gnu/bits/floatn-common.h:
-
-/usr/include/x86_64-linux-gnu/bits/types/wint_t.h:
-
-/usr/include/c++/11/debug/assertions.h:
-
-/usr/lib/gcc/x86_64-linux-gnu/11/include/stdarg.h:
+/usr/include/x86_64-linux-gnu/bits/types/mbstate_t.h:
 
 /usr/include/c++/11/cstring:
 
@@ -751,12 +711,6 @@ CMakeFiles/rebuntu-ipc.dir/home/bvrznski/rebuntu/src/system/environment/ipc.cpp.
 /usr/include/c++/11/bits/std_function.h:
 
 /usr/include/c++/11/bits/stl_tempbuf.h:
-
-/usr/include/x86_64-linux-gnu/bits/wchar2.h:
-
-/usr/include/x86_64-linux-gnu/bits/socket2.h:
-
-/usr/include/c++/11/filesystem:
 
 /usr/include/x86_64-linux-gnu/c++/11/bits/c++allocator.h:
 
@@ -828,6 +782,10 @@ CMakeFiles/rebuntu-ipc.dir/home/bvrznski/rebuntu/src/system/environment/ipc.cpp.
 
 /usr/include/x86_64-linux-gnu/bits/timex.h:
 
+/usr/include/asm-generic/socket.h:
+
+/usr/include/c++/11/bits/invoke.h:
+
 /usr/include/x86_64-linux-gnu/c++/11/bits/c++config.h:
 
 /usr/include/x86_64-linux-gnu/bits/pthread_stack_min-dynamic.h:
@@ -875,12 +833,6 @@ CMakeFiles/rebuntu-ipc.dir/home/bvrznski/rebuntu/src/system/environment/ipc.cpp.
 /usr/include/c++/11/chrono:
 
 /usr/include/stdio.h:
-
-/usr/include/x86_64-linux-gnu/bits/stdio2.h:
-
-/usr/include/x86_64-linux-gnu/bits/types/struct_tm.h:
-
-/usr/include/c++/11/bits/locale_facets.tcc:
 
 /usr/include/x86_64-linux-gnu/bits/types/cookie_io_functions_t.h:
 
@@ -930,11 +882,11 @@ CMakeFiles/rebuntu-ipc.dir/home/bvrznski/rebuntu/src/system/environment/ipc.cpp.
 
 /usr/include/c++/11/bits/enable_special_members.h:
 
+/usr/include/c++/11/filesystem:
+
 /usr/include/c++/11/bits/stl_bvector.h:
 
 /usr/include/x86_64-linux-gnu/bits/types/clockid_t.h:
-
-/usr/include/x86_64-linux-gnu/bits/stdlib-bsearch.h:
 
 /usr/include/x86_64-linux-gnu/bits/types/struct___jmp_buf_tag.h:
 
@@ -976,4 +928,16 @@ CMakeFiles/rebuntu-ipc.dir/home/bvrznski/rebuntu/src/system/environment/ipc.cpp.
 
 /usr/include/x86_64-linux-gnu/c++/11/bits/ctype_inline.h:
 
+/usr/include/x86_64-linux-gnu/bits/types/struct_tm.h:
+
+/usr/include/c++/11/bits/locale_facets.tcc:
+
 /usr/include/x86_64-linux-gnu/c++/11/bits/time_members.h:
+
+/usr/include/x86_64-linux-gnu/c++/11/bits/messages_members.h:
+
+/usr/include/c++/11/bits/unique_ptr.h:
+
+/usr/include/c++/11/array:
+
+/usr/include/c++/11/bits/uses_allocator.h:

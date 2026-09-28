@@ -77,7 +77,6 @@ CMakeFiles/rebuntu-command-explain.dir/home/bvrznski/rebuntu/src/system/command/
   /usr/include/x86_64-linux-gnu/bits/types/__sigset_t.h \
   /usr/include/x86_64-linux-gnu/bits/types/struct_timeval.h \
   /usr/include/x86_64-linux-gnu/bits/types/struct_timespec.h \
-  /usr/include/x86_64-linux-gnu/bits/select2.h \
   /usr/include/x86_64-linux-gnu/bits/pthreadtypes.h \
   /usr/include/x86_64-linux-gnu/bits/thread-shared-types.h \
   /usr/include/x86_64-linux-gnu/bits/pthreadtypes-arch.h \
@@ -85,9 +84,7 @@ CMakeFiles/rebuntu-command-explain.dir/home/bvrznski/rebuntu/src/system/command/
   /usr/include/x86_64-linux-gnu/bits/struct_mutex.h \
   /usr/include/x86_64-linux-gnu/bits/struct_rwlock.h \
   /usr/include/alloca.h \
-  /usr/include/x86_64-linux-gnu/bits/stdlib-bsearch.h \
   /usr/include/x86_64-linux-gnu/bits/stdlib-float.h \
-  /usr/include/x86_64-linux-gnu/bits/stdlib.h \
   /usr/include/c++/11/bits/std_abs.h \
   /usr/include/c++/11/bits/algorithmfwd.h \
   /usr/include/c++/11/bits/stl_heap.h \
@@ -109,7 +106,6 @@ CMakeFiles/rebuntu-command-explain.dir/home/bvrznski/rebuntu/src/system/command/
   /usr/include/x86_64-linux-gnu/bits/types/__mbstate_t.h \
   /usr/include/x86_64-linux-gnu/bits/types/__FILE.h \
   /usr/include/x86_64-linux-gnu/bits/types/FILE.h \
-  /usr/include/x86_64-linux-gnu/bits/wchar2.h \
   /usr/include/c++/11/bits/stream_iterator.h \
   /usr/include/c++/11/bits/streambuf_iterator.h \
   /usr/include/c++/11/streambuf \
@@ -172,8 +168,6 @@ CMakeFiles/rebuntu-command-explain.dir/home/bvrznski/rebuntu/src/system/command/
   /usr/include/x86_64-linux-gnu/bits/types/struct_FILE.h \
   /usr/include/x86_64-linux-gnu/bits/types/cookie_io_functions_t.h \
   /usr/include/x86_64-linux-gnu/bits/stdio_lim.h \
-  /usr/include/x86_64-linux-gnu/bits/stdio.h \
-  /usr/include/x86_64-linux-gnu/bits/stdio2.h \
   /usr/include/c++/11/cerrno \
   /usr/include/errno.h \
   /usr/include/x86_64-linux-gnu/bits/errno.h \
@@ -274,7 +268,11 @@ CMakeFiles/rebuntu-command-explain.dir/home/bvrznski/rebuntu/src/system/command/
 
 /usr/include/c++/11/bits/basic_ios.tcc:
 
+/usr/include/c++/11/bits/locale_facets.tcc:
+
 /usr/include/x86_64-linux-gnu/c++/11/bits/ctype_inline.h:
+
+/usr/include/c++/11/cwctype:
 
 /usr/include/c++/11/bits/locale_facets.h:
 
@@ -354,12 +352,6 @@ CMakeFiles/rebuntu-command-explain.dir/home/bvrznski/rebuntu/src/system/command/
 
 /usr/include/c++/11/cerrno:
 
-/usr/include/c++/11/bits/locale_facets.tcc:
-
-/usr/include/x86_64-linux-gnu/bits/stdio2.h:
-
-/usr/include/x86_64-linux-gnu/bits/stdio.h:
-
 /usr/include/stdio.h:
 
 /usr/include/c++/11/chrono:
@@ -431,14 +423,6 @@ CMakeFiles/rebuntu-command-explain.dir/home/bvrznski/rebuntu/src/system/command/
 /usr/include/x86_64-linux-gnu/bits/types/__fpos64_t.h:
 
 /usr/include/x86_64-linux-gnu/bits/setjmp.h:
-
-/usr/include/c++/11/bits/invoke.h:
-
-/usr/include/x86_64-linux-gnu/bits/timex.h:
-
-/usr/include/time.h:
-
-/usr/include/x86_64-linux-gnu/bits/cpu-set.h:
 
 /usr/include/x86_64-linux-gnu/sys/types.h:
 
@@ -538,21 +522,11 @@ CMakeFiles/rebuntu-command-explain.dir/home/bvrznski/rebuntu/src/system/command/
 
 /home/bvrznski/rebuntu/src/system/core/contracts.hpp:
 
+/usr/include/time.h:
+
 /home/bvrznski/rebuntu/src/system/command/explain.hpp:
 
-/usr/include/c++/11/bits/locale_facets_nonio.tcc:
-
-/usr/include/x86_64-linux-gnu/bits/time.h:
-
-/usr/include/c++/11/bits/stl_pair.h:
-
-/usr/include/c++/11/ext/atomicity.h:
-
 /usr/include/stdc-predef.h:
-
-/usr/include/c++/11/cwctype:
-
-/usr/include/x86_64-linux-gnu/bits/stdlib-bsearch.h:
 
 /usr/include/x86_64-linux-gnu/bits/uintn-identity.h:
 
@@ -567,8 +541,6 @@ CMakeFiles/rebuntu-command-explain.dir/home/bvrznski/rebuntu/src/system/command/
 /usr/include/x86_64-linux-gnu/sys/cdefs.h:
 
 /usr/include/x86_64-linux-gnu/asm/errno.h:
-
-/usr/include/x86_64-linux-gnu/bits/stdlib.h:
 
 /usr/include/x86_64-linux-gnu/bits/types/struct_timeval.h:
 
@@ -676,12 +648,6 @@ CMakeFiles/rebuntu-command-explain.dir/home/bvrznski/rebuntu/src/system/command/
 
 /usr/include/x86_64-linux-gnu/bits/locale.h:
 
-/usr/include/x86_64-linux-gnu/bits/select2.h:
-
-/usr/include/x86_64-linux-gnu/bits/floatn-common.h:
-
-/usr/include/x86_64-linux-gnu/bits/types/wint_t.h:
-
 /usr/include/x86_64-linux-gnu/bits/pthreadtypes.h:
 
 /usr/include/c++/11/bits/algorithmfwd.h:
@@ -718,6 +684,10 @@ CMakeFiles/rebuntu-command-explain.dir/home/bvrznski/rebuntu/src/system/command/
 
 /usr/include/c++/11/bits/postypes.h:
 
+/usr/include/c++/11/bits/invoke.h:
+
+/usr/include/x86_64-linux-gnu/bits/timex.h:
+
 /usr/lib/gcc/x86_64-linux-gnu/11/include/stdint.h:
 
 /usr/include/c++/11/bits/stl_algobase.h:
@@ -736,6 +706,10 @@ CMakeFiles/rebuntu-command-explain.dir/home/bvrznski/rebuntu/src/system/command/
 
 /usr/lib/gcc/x86_64-linux-gnu/11/include/stdarg.h:
 
+/usr/include/x86_64-linux-gnu/bits/floatn-common.h:
+
+/usr/include/x86_64-linux-gnu/bits/types/wint_t.h:
+
 /usr/include/x86_64-linux-gnu/bits/types/mbstate_t.h:
 
 /usr/include/c++/11/bits/node_handle.h:
@@ -745,8 +719,6 @@ CMakeFiles/rebuntu-command-explain.dir/home/bvrznski/rebuntu/src/system/command/
 /usr/include/x86_64-linux-gnu/bits/stdio_lim.h:
 
 /usr/include/x86_64-linux-gnu/bits/types/FILE.h:
-
-/usr/include/x86_64-linux-gnu/bits/wchar2.h:
 
 /usr/include/c++/11/bits/streambuf_iterator.h:
 
@@ -773,3 +745,13 @@ CMakeFiles/rebuntu-command-explain.dir/home/bvrznski/rebuntu/src/system/command/
 /usr/include/c++/11/bits/unordered_map.h:
 
 /usr/include/x86_64-linux-gnu/bits/types/struct_sched_param.h:
+
+/usr/include/x86_64-linux-gnu/bits/cpu-set.h:
+
+/usr/include/c++/11/bits/locale_facets_nonio.tcc:
+
+/usr/include/c++/11/bits/stl_pair.h:
+
+/usr/include/c++/11/ext/atomicity.h:
+
+/usr/include/x86_64-linux-gnu/bits/time.h:

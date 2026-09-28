@@ -609,6 +609,14 @@ add_executable(rebuntu-isolated-provider-test
 target_link_libraries(rebuntu-isolated-provider-test PRIVATE rebuntu-core)
 add_test(NAME isolated_provider_test COMMAND rebuntu-isolated-provider-test)
 
+# Phase 6.52: Provider Result Distrust unit tests (ProviderEvidence, ProviderResult types)
+add_executable(rebuntu-provider-evidence-test
+    ${CMAKE_CURRENT_LIST_DIR}/../tests/provider_evidence_test.cpp
+)
+target_include_directories(rebuntu-provider-evidence-test PRIVATE ${CMAKE_CURRENT_LIST_DIR}/../src)
+target_link_libraries(rebuntu-provider-evidence-test PRIVATE rebuntu-core)
+add_test(NAME provider_evidence_test COMMAND rebuntu-provider-evidence-test)
+
 # Phase 6.1: Typed Command Model unit tests
 add_executable(rebuntu-command-model-test
     ${CMAKE_CURRENT_LIST_DIR}/tests/unit/command_model_test.cpp

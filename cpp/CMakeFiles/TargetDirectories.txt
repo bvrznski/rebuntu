@@ -86,6 +86,7 @@
 /home/bvrznski/rebuntu/cpp/CMakeFiles/rebuntu-procfs-process.dir
 /home/bvrznski/rebuntu/cpp/CMakeFiles/rebuntu-procfs-process-test.dir
 /home/bvrznski/rebuntu/cpp/CMakeFiles/rebuntu-isolated-provider-test.dir
+/home/bvrznski/rebuntu/cpp/CMakeFiles/rebuntu-provider-evidence-test.dir
 /home/bvrznski/rebuntu/cpp/CMakeFiles/rebuntu-command-model-test.dir
 /home/bvrznski/rebuntu/cpp/CMakeFiles/rebuntu-collision-scanner-test.dir
 /home/bvrznski/rebuntu/cpp/CMakeFiles/rebuntu-predicates-test.dir

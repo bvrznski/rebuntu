@@ -1316,6 +1316,19 @@ rebuntu-isolated-provider-test/fast:
 .PHONY : rebuntu-isolated-provider-test/fast
 
 #=============================================================================
+# Target rules for targets named rebuntu-provider-evidence-test
+
+# Build rule for target.
+rebuntu-provider-evidence-test: cmake_check_build_system
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 rebuntu-provider-evidence-test
+.PHONY : rebuntu-provider-evidence-test
+
+# fast build rule for target.
+rebuntu-provider-evidence-test/fast:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/rebuntu-provider-evidence-test.dir/build.make CMakeFiles/rebuntu-provider-evidence-test.dir/build
+.PHONY : rebuntu-provider-evidence-test/fast
+
+#=============================================================================
 # Target rules for targets named rebuntu-command-model-test
 
 # Build rule for target.
@@ -4487,6 +4500,30 @@ home/bvrznski/rebuntu/src/system/shell/verbs/mapping.cpp.s:
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/rebuntu-shell.dir/build.make CMakeFiles/rebuntu-shell.dir/home/bvrznski/rebuntu/src/system/shell/verbs/mapping.cpp.s
 .PHONY : home/bvrznski/rebuntu/src/system/shell/verbs/mapping.cpp.s
 
+home/bvrznski/rebuntu/tests/provider_evidence_test.o: home/bvrznski/rebuntu/tests/provider_evidence_test.cpp.o
+.PHONY : home/bvrznski/rebuntu/tests/provider_evidence_test.o
+
+# target to build an object file
+home/bvrznski/rebuntu/tests/provider_evidence_test.cpp.o:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/rebuntu-provider-evidence-test.dir/build.make CMakeFiles/rebuntu-provider-evidence-test.dir/home/bvrznski/rebuntu/tests/provider_evidence_test.cpp.o
+.PHONY : home/bvrznski/rebuntu/tests/provider_evidence_test.cpp.o
+
+home/bvrznski/rebuntu/tests/provider_evidence_test.i: home/bvrznski/rebuntu/tests/provider_evidence_test.cpp.i
+.PHONY : home/bvrznski/rebuntu/tests/provider_evidence_test.i
+
+# target to preprocess a source file
+home/bvrznski/rebuntu/tests/provider_evidence_test.cpp.i:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/rebuntu-provider-evidence-test.dir/build.make CMakeFiles/rebuntu-provider-evidence-test.dir/home/bvrznski/rebuntu/tests/provider_evidence_test.cpp.i
+.PHONY : home/bvrznski/rebuntu/tests/provider_evidence_test.cpp.i
+
+home/bvrznski/rebuntu/tests/provider_evidence_test.s: home/bvrznski/rebuntu/tests/provider_evidence_test.cpp.s
+.PHONY : home/bvrznski/rebuntu/tests/provider_evidence_test.s
+
+# target to generate assembly for a file
+home/bvrznski/rebuntu/tests/provider_evidence_test.cpp.s:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/rebuntu-provider-evidence-test.dir/build.make CMakeFiles/rebuntu-provider-evidence-test.dir/home/bvrznski/rebuntu/tests/provider_evidence_test.cpp.s
+.PHONY : home/bvrznski/rebuntu/tests/provider_evidence_test.cpp.s
+
 home/bvrznski/rebuntu/tests/unit/exit_result_test.o: home/bvrznski/rebuntu/tests/unit/exit_result_test.cpp.o
 .PHONY : home/bvrznski/rebuntu/tests/unit/exit_result_test.o
 
@@ -5528,6 +5565,7 @@ help:
 	@echo "... rebuntu-procfs-mounts"
 	@echo "... rebuntu-procfs-process"
 	@echo "... rebuntu-procfs-process-test"
+	@echo "... rebuntu-provider-evidence-test"
 	@echo "... rebuntu-provider-test-matrix"
 	@echo "... rebuntu-relationship-evidence"
 	@echo "... rebuntu-replay-test"
@@ -5858,6 +5896,9 @@ help:
 	@echo "... home/bvrznski/rebuntu/src/system/shell/verbs/mapping.o"
 	@echo "... home/bvrznski/rebuntu/src/system/shell/verbs/mapping.i"
 	@echo "... home/bvrznski/rebuntu/src/system/shell/verbs/mapping.s"
+	@echo "... home/bvrznski/rebuntu/tests/provider_evidence_test.o"
+	@echo "... home/bvrznski/rebuntu/tests/provider_evidence_test.i"
+	@echo "... home/bvrznski/rebuntu/tests/provider_evidence_test.s"
 	@echo "... home/bvrznski/rebuntu/tests/unit/exit_result_test.o"
 	@echo "... home/bvrznski/rebuntu/tests/unit/exit_result_test.i"
 	@echo "... home/bvrznski/rebuntu/tests/unit/exit_result_test.s"

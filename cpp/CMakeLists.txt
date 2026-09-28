@@ -896,6 +896,14 @@ target_include_directories(rebuntu-retry-mechanics-test PRIVATE ${CMAKE_CURRENT_
 target_link_libraries(rebuntu-retry-mechanics-test PRIVATE rebuntu-core)
 add_test(NAME retry_mechanics_test COMMAND rebuntu-retry-mechanics-test)
 
+# Phase 6.30: Monotonic Deadline System unit tests
+add_executable(rebuntu-monotonic-deadline-test
+    ${CMAKE_CURRENT_LIST_DIR}/../tests/unit/monotonic_deadline_test.cpp
+)
+target_include_directories(rebuntu-monotonic-deadline-test PRIVATE ${CMAKE_CURRENT_LIST_DIR}/../src)
+target_link_libraries(rebuntu-monotonic-deadline-test PRIVATE rebuntu-core)
+add_test(NAME monotonic_deadline_test COMMAND rebuntu-monotonic-deadline-test)
+
 # Phase 5.61: Observation Output unit tests (disabled - gtest not available in CTest)
 # add_executable(rebuntu-observation-output-test
 #     ${CMAKE_CURRENT_LIST_DIR}/tests/unit/observation_output_test.cpp

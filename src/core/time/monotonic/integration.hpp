@@ -1,13 +1,41 @@
+// rebuntu::core::time::monotonic — Integration Utilities (Phase 6.30)
+//
+// Integration helpers for monotonic deadline propagation through Rebuntu's
+// execution system.
+
 #pragma once
 
-// Structural saturation XXV.
-// Architectural slot only: this file is NOT behavioral implementation evidence.
-// Preserve and implement in place according to the owning phase/subtask ledger.
+#include <runtime/contracts.hpp>
+#include <chrono>
 
-#include <cstdint>
+namespace rebuntu::core::time {
 
-namespace rebuntu::structural_slots {
-struct Skeleton_3640b86bd1_Integration final {
-    static constexpr std::uint32_t structural_revision = 25;
+// -----------------------------------------------------------------------------
+// TimeBudgetManager
+// -----------------------------------------------------------------------------
+
+class TimeBudgetManager {
+public:
+    TimeBudgetManager() = default;
+    
+    explicit TimeBudgetManager(std::chrono::steady_clock::duration total_budget)
+        : budget_(total_budget) {}
+    
+    std::optional<std::chrono::steady_clock::duration> get_remaining() const {
+        if (budget_ <= std::chrono::steady_clock::duration{0}) return std::nullopt;
+        return budget_;
+    }
+    
+    bool try_consume(std::chrono::steady_clock::duration duration) {
+        if (duration > budget_) {
+            return false;
+        }
+        budget_ -= duration;
+        return true;
+    }
+    
+private:
+    std::chrono::steady_clock::duration budget_{};
 };
-} // namespace rebuntu::structural_slots
+
+}  // namespace rebuntu::core::time

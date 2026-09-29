@@ -1,2 +1,0 @@
-/usr/bin/ar qc librebuntu-events-collector.a CMakeFiles/rebuntu-events-collector.dir/home/bvrznski/rebuntu/src/events/collector.cpp.o
-/usr/bin/ranlib librebuntu-events-collector.a

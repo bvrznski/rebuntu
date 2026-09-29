@@ -1,2 +1,0 @@
-/usr/bin/ar qc librebuntu-scope.a CMakeFiles/rebuntu-scope.dir/home/bvrznski/rebuntu/src/system/environment/scope.cpp.o
-/usr/bin/ranlib librebuntu-scope.a

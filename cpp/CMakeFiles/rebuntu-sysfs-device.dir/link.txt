@@ -1,2 +1,0 @@
-/usr/bin/ar qc librebuntu-sysfs-device.a CMakeFiles/rebuntu-sysfs-device.dir/home/bvrznski/rebuntu/src/adapters/sysfs/device/integration.cpp.o
-/usr/bin/ranlib librebuntu-sysfs-device.a

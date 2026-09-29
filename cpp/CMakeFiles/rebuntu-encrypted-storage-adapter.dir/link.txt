@@ -1,2 +1,0 @@
-/usr/bin/ar qc librebuntu-encrypted-storage-adapter.a CMakeFiles/rebuntu-encrypted-storage-adapter.dir/home/bvrznski/rebuntu/src/adapters/sysfs/encrypted_storage/implementation.cpp.o
-/usr/bin/ranlib librebuntu-encrypted-storage-adapter.a

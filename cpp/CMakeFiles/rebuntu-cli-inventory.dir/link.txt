@@ -1,2 +1,0 @@
-/usr/bin/ar qc librebuntu-cli-inventory.a CMakeFiles/rebuntu-cli-inventory.dir/home/bvrznski/rebuntu/src/cli/inventory/query.cpp.o
-/usr/bin/ranlib librebuntu-cli-inventory.a

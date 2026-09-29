@@ -1,2 +1,0 @@
-/usr/bin/ar qc librebuntu-hotplug.a CMakeFiles/rebuntu-hotplug.dir/home/bvrznski/rebuntu/src/adapters/hotplug/implementation.cpp.o
-/usr/bin/ranlib librebuntu-hotplug.a

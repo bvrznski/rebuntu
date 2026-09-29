@@ -1,2 +1,0 @@
-/usr/bin/ar qc librebuntu-procfs-modules.a CMakeFiles/rebuntu-procfs-modules.dir/home/bvrznski/rebuntu/src/adapters/procfs/modules/implementation.cpp.o
-/usr/bin/ranlib librebuntu-procfs-modules.a

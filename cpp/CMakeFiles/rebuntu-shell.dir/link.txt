@@ -1,2 +1,0 @@
-/usr/bin/ar qc librebuntu-shell.a CMakeFiles/rebuntu-shell.dir/home/bvrznski/rebuntu/src/system/shell/parser.cpp.o CMakeFiles/rebuntu-shell.dir/home/bvrznski/rebuntu/src/system/shell/predicates.cpp.o CMakeFiles/rebuntu-shell.dir/home/bvrznski/rebuntu/src/system/shell/verbs/list.cpp.o CMakeFiles/rebuntu-shell.dir/home/bvrznski/rebuntu/src/system/shell/verbs/mapping.cpp.o CMakeFiles/rebuntu-shell.dir/home/bvrznski/rebuntu/src/system/shell/context.cpp.o
-/usr/bin/ranlib librebuntu-shell.a

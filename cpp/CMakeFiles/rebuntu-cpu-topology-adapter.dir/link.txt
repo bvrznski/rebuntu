@@ -1,2 +1,0 @@
-/usr/bin/ar qc librebuntu-cpu-topology-adapter.a CMakeFiles/rebuntu-cpu-topology-adapter.dir/home/bvrznski/rebuntu/src/system/observation/adapters/cpu_topology.cpp.o
-/usr/bin/ranlib librebuntu-cpu-topology-adapter.a

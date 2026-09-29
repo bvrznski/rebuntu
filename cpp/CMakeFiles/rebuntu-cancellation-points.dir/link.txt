@@ -1,2 +1,0 @@
-/usr/bin/ar qc librebuntu-cancellation-points.a CMakeFiles/rebuntu-cancellation-points.dir/home/bvrznski/rebuntu/src/runtime/cancellation/points.cpp.o
-/usr/bin/ranlib librebuntu-cancellation-points.a

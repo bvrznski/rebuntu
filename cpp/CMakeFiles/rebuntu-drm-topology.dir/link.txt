@@ -1,2 +1,0 @@
-/usr/bin/ar qc librebuntu-drm-topology.a CMakeFiles/rebuntu-drm-topology.dir/home/bvrznski/rebuntu/src/adapters/drm/implementation.cpp.o
-/usr/bin/ranlib librebuntu-drm-topology.a

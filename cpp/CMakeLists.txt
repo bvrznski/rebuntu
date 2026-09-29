@@ -882,6 +882,13 @@ add_library(rebuntu-memory-observation-adapter STATIC
 target_include_directories(rebuntu-memory-observation-adapter PUBLIC ${CMAKE_CURRENT_LIST_DIR}/../src)
 target_link_libraries(rebuntu-core PUBLIC rebuntu-memory-observation-adapter)
 
+# Phase 7.11: GPU Observation Adapter (sysfs/DRM-based, PCI bus ID identity)
+add_library(rebuntu-gpu-observation-adapter STATIC
+    ${CMAKE_CURRENT_LIST_DIR}/../src/system/observation/adapters/gpu_observation.cpp
+)
+target_include_directories(rebuntu-gpu-observation-adapter PUBLIC ${CMAKE_CURRENT_LIST_DIR}/../src)
+target_link_libraries(rebuntu-core PUBLIC rebuntu-gpu-observation-adapter)
+
 # Phase 5.9: CPU / Memory / Thermal Monitor module
 add_library(rebuntu-cpu-memory-thermal-monitor STATIC
     ${CMAKE_CURRENT_LIST_DIR}/../src/modules/cpu_memory_thermal_monitor/types.hpp

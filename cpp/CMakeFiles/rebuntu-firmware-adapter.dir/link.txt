@@ -1,2 +1,0 @@
-/usr/bin/ar qc librebuntu-firmware-adapter.a CMakeFiles/rebuntu-firmware-adapter.dir/home/bvrznski/rebuntu/src/adapters/firmware/implementation.cpp.o
-/usr/bin/ranlib librebuntu-firmware-adapter.a

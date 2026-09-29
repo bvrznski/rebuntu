@@ -1,2 +1,0 @@
-/usr/bin/ar qc librebuntu-memory-observation-adapter.a CMakeFiles/rebuntu-memory-observation-adapter.dir/home/bvrznski/rebuntu/src/system/observation/adapters/memory_observation.cpp.o
-/usr/bin/ranlib librebuntu-memory-observation-adapter.a

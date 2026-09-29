@@ -1,2 +1,0 @@
-/usr/bin/ar qc librebuntu-state-acquisition.a CMakeFiles/rebuntu-state-acquisition.dir/home/bvrznski/rebuntu/src/system/observation/snapshot_builder.cpp.o CMakeFiles/rebuntu-state-acquisition.dir/home/bvrznski/rebuntu/src/system/observation/state_acquisition_service.cpp.o
-/usr/bin/ranlib librebuntu-state-acquisition.a

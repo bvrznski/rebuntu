@@ -1472,6 +1472,45 @@ rebuntu-storage-health-monitor/fast:
 .PHONY : rebuntu-storage-health-monitor/fast
 
 #=============================================================================
+# Target rules for targets named rebuntu-cpu-topology-adapter
+
+# Build rule for target.
+rebuntu-cpu-topology-adapter: cmake_check_build_system
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 rebuntu-cpu-topology-adapter
+.PHONY : rebuntu-cpu-topology-adapter
+
+# fast build rule for target.
+rebuntu-cpu-topology-adapter/fast:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/rebuntu-cpu-topology-adapter.dir/build.make CMakeFiles/rebuntu-cpu-topology-adapter.dir/build
+.PHONY : rebuntu-cpu-topology-adapter/fast
+
+#=============================================================================
+# Target rules for targets named rebuntu-cpu-topology-test
+
+# Build rule for target.
+rebuntu-cpu-topology-test: cmake_check_build_system
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 rebuntu-cpu-topology-test
+.PHONY : rebuntu-cpu-topology-test
+
+# fast build rule for target.
+rebuntu-cpu-topology-test/fast:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/rebuntu-cpu-topology-test.dir/build.make CMakeFiles/rebuntu-cpu-topology-test.dir/build
+.PHONY : rebuntu-cpu-topology-test/fast
+
+#=============================================================================
+# Target rules for targets named rebuntu-memory-observation-adapter
+
+# Build rule for target.
+rebuntu-memory-observation-adapter: cmake_check_build_system
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 rebuntu-memory-observation-adapter
+.PHONY : rebuntu-memory-observation-adapter
+
+# fast build rule for target.
+rebuntu-memory-observation-adapter/fast:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/rebuntu-memory-observation-adapter.dir/build.make CMakeFiles/rebuntu-memory-observation-adapter.dir/build
+.PHONY : rebuntu-memory-observation-adapter/fast
+
+#=============================================================================
 # Target rules for targets named rebuntu-cpu-memory-thermal-monitor
 
 # Build rule for target.
@@ -3989,6 +4028,54 @@ home/bvrznski/rebuntu/src/system/lifecycle/lifecycle.cpp.s:
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/rebuntu-lifecycle.dir/build.make CMakeFiles/rebuntu-lifecycle.dir/home/bvrznski/rebuntu/src/system/lifecycle/lifecycle.cpp.s
 .PHONY : home/bvrznski/rebuntu/src/system/lifecycle/lifecycle.cpp.s
 
+home/bvrznski/rebuntu/src/system/observation/adapters/cpu_topology.o: home/bvrznski/rebuntu/src/system/observation/adapters/cpu_topology.cpp.o
+.PHONY : home/bvrznski/rebuntu/src/system/observation/adapters/cpu_topology.o
+
+# target to build an object file
+home/bvrznski/rebuntu/src/system/observation/adapters/cpu_topology.cpp.o:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/rebuntu-cpu-topology-adapter.dir/build.make CMakeFiles/rebuntu-cpu-topology-adapter.dir/home/bvrznski/rebuntu/src/system/observation/adapters/cpu_topology.cpp.o
+.PHONY : home/bvrznski/rebuntu/src/system/observation/adapters/cpu_topology.cpp.o
+
+home/bvrznski/rebuntu/src/system/observation/adapters/cpu_topology.i: home/bvrznski/rebuntu/src/system/observation/adapters/cpu_topology.cpp.i
+.PHONY : home/bvrznski/rebuntu/src/system/observation/adapters/cpu_topology.i
+
+# target to preprocess a source file
+home/bvrznski/rebuntu/src/system/observation/adapters/cpu_topology.cpp.i:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/rebuntu-cpu-topology-adapter.dir/build.make CMakeFiles/rebuntu-cpu-topology-adapter.dir/home/bvrznski/rebuntu/src/system/observation/adapters/cpu_topology.cpp.i
+.PHONY : home/bvrznski/rebuntu/src/system/observation/adapters/cpu_topology.cpp.i
+
+home/bvrznski/rebuntu/src/system/observation/adapters/cpu_topology.s: home/bvrznski/rebuntu/src/system/observation/adapters/cpu_topology.cpp.s
+.PHONY : home/bvrznski/rebuntu/src/system/observation/adapters/cpu_topology.s
+
+# target to generate assembly for a file
+home/bvrznski/rebuntu/src/system/observation/adapters/cpu_topology.cpp.s:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/rebuntu-cpu-topology-adapter.dir/build.make CMakeFiles/rebuntu-cpu-topology-adapter.dir/home/bvrznski/rebuntu/src/system/observation/adapters/cpu_topology.cpp.s
+.PHONY : home/bvrznski/rebuntu/src/system/observation/adapters/cpu_topology.cpp.s
+
+home/bvrznski/rebuntu/src/system/observation/adapters/memory_observation.o: home/bvrznski/rebuntu/src/system/observation/adapters/memory_observation.cpp.o
+.PHONY : home/bvrznski/rebuntu/src/system/observation/adapters/memory_observation.o
+
+# target to build an object file
+home/bvrznski/rebuntu/src/system/observation/adapters/memory_observation.cpp.o:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/rebuntu-memory-observation-adapter.dir/build.make CMakeFiles/rebuntu-memory-observation-adapter.dir/home/bvrznski/rebuntu/src/system/observation/adapters/memory_observation.cpp.o
+.PHONY : home/bvrznski/rebuntu/src/system/observation/adapters/memory_observation.cpp.o
+
+home/bvrznski/rebuntu/src/system/observation/adapters/memory_observation.i: home/bvrznski/rebuntu/src/system/observation/adapters/memory_observation.cpp.i
+.PHONY : home/bvrznski/rebuntu/src/system/observation/adapters/memory_observation.i
+
+# target to preprocess a source file
+home/bvrznski/rebuntu/src/system/observation/adapters/memory_observation.cpp.i:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/rebuntu-memory-observation-adapter.dir/build.make CMakeFiles/rebuntu-memory-observation-adapter.dir/home/bvrznski/rebuntu/src/system/observation/adapters/memory_observation.cpp.i
+.PHONY : home/bvrznski/rebuntu/src/system/observation/adapters/memory_observation.cpp.i
+
+home/bvrznski/rebuntu/src/system/observation/adapters/memory_observation.s: home/bvrznski/rebuntu/src/system/observation/adapters/memory_observation.cpp.s
+.PHONY : home/bvrznski/rebuntu/src/system/observation/adapters/memory_observation.s
+
+# target to generate assembly for a file
+home/bvrznski/rebuntu/src/system/observation/adapters/memory_observation.cpp.s:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/rebuntu-memory-observation-adapter.dir/build.make CMakeFiles/rebuntu-memory-observation-adapter.dir/home/bvrznski/rebuntu/src/system/observation/adapters/memory_observation.cpp.s
+.PHONY : home/bvrznski/rebuntu/src/system/observation/adapters/memory_observation.cpp.s
+
 home/bvrznski/rebuntu/src/system/observation/bounds.o: home/bvrznski/rebuntu/src/system/observation/bounds.cpp.o
 .PHONY : home/bvrznski/rebuntu/src/system/observation/bounds.o
 
@@ -4496,6 +4583,30 @@ home/bvrznski/rebuntu/tests/unit/cancellation_race_test.cpp.s:
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/rebuntu-cancellation-race-test.dir/build.make CMakeFiles/rebuntu-cancellation-race-test.dir/home/bvrznski/rebuntu/tests/unit/cancellation_race_test.cpp.s
 .PHONY : home/bvrznski/rebuntu/tests/unit/cancellation_race_test.cpp.s
 
+home/bvrznski/rebuntu/tests/unit/cpu_topology_test.o: home/bvrznski/rebuntu/tests/unit/cpu_topology_test.cpp.o
+.PHONY : home/bvrznski/rebuntu/tests/unit/cpu_topology_test.o
+
+# target to build an object file
+home/bvrznski/rebuntu/tests/unit/cpu_topology_test.cpp.o:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/rebuntu-cpu-topology-test.dir/build.make CMakeFiles/rebuntu-cpu-topology-test.dir/home/bvrznski/rebuntu/tests/unit/cpu_topology_test.cpp.o
+.PHONY : home/bvrznski/rebuntu/tests/unit/cpu_topology_test.cpp.o
+
+home/bvrznski/rebuntu/tests/unit/cpu_topology_test.i: home/bvrznski/rebuntu/tests/unit/cpu_topology_test.cpp.i
+.PHONY : home/bvrznski/rebuntu/tests/unit/cpu_topology_test.i
+
+# target to preprocess a source file
+home/bvrznski/rebuntu/tests/unit/cpu_topology_test.cpp.i:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/rebuntu-cpu-topology-test.dir/build.make CMakeFiles/rebuntu-cpu-topology-test.dir/home/bvrznski/rebuntu/tests/unit/cpu_topology_test.cpp.i
+.PHONY : home/bvrznski/rebuntu/tests/unit/cpu_topology_test.cpp.i
+
+home/bvrznski/rebuntu/tests/unit/cpu_topology_test.s: home/bvrznski/rebuntu/tests/unit/cpu_topology_test.cpp.s
+.PHONY : home/bvrznski/rebuntu/tests/unit/cpu_topology_test.s
+
+# target to generate assembly for a file
+home/bvrznski/rebuntu/tests/unit/cpu_topology_test.cpp.s:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/rebuntu-cpu-topology-test.dir/build.make CMakeFiles/rebuntu-cpu-topology-test.dir/home/bvrznski/rebuntu/tests/unit/cpu_topology_test.cpp.s
+.PHONY : home/bvrznski/rebuntu/tests/unit/cpu_topology_test.cpp.s
+
 home/bvrznski/rebuntu/tests/unit/execution_storm_backpressure_test.o: home/bvrznski/rebuntu/tests/unit/execution_storm_backpressure_test.cpp.o
 .PHONY : home/bvrznski/rebuntu/tests/unit/execution_storm_backpressure_test.o
 
@@ -4887,6 +4998,8 @@ help:
 	@echo "... rebuntu-context-test"
 	@echo "... rebuntu-core"
 	@echo "... rebuntu-cpu-memory-thermal-monitor"
+	@echo "... rebuntu-cpu-topology-adapter"
+	@echo "... rebuntu-cpu-topology-test"
 	@echo "... rebuntu-cross-domain-references"
 	@echo "... rebuntu-directories"
 	@echo "... rebuntu-dpkg-package-inventory"
@@ -4923,6 +5036,7 @@ help:
 	@echo "... rebuntu-lifecycle"
 	@echo "... rebuntu-locks"
 	@echo "... rebuntu-md-raid-adapter"
+	@echo "... rebuntu-memory-observation-adapter"
 	@echo "... rebuntu-monotonic-deadline-test"
 	@echo "... rebuntu-mutation-integration-test"
 	@echo "... rebuntu-namespaces-adapter"
@@ -5240,6 +5354,12 @@ help:
 	@echo "... home/bvrznski/rebuntu/src/system/lifecycle/lifecycle.o"
 	@echo "... home/bvrznski/rebuntu/src/system/lifecycle/lifecycle.i"
 	@echo "... home/bvrznski/rebuntu/src/system/lifecycle/lifecycle.s"
+	@echo "... home/bvrznski/rebuntu/src/system/observation/adapters/cpu_topology.o"
+	@echo "... home/bvrznski/rebuntu/src/system/observation/adapters/cpu_topology.i"
+	@echo "... home/bvrznski/rebuntu/src/system/observation/adapters/cpu_topology.s"
+	@echo "... home/bvrznski/rebuntu/src/system/observation/adapters/memory_observation.o"
+	@echo "... home/bvrznski/rebuntu/src/system/observation/adapters/memory_observation.i"
+	@echo "... home/bvrznski/rebuntu/src/system/observation/adapters/memory_observation.s"
 	@echo "... home/bvrznski/rebuntu/src/system/observation/bounds.o"
 	@echo "... home/bvrznski/rebuntu/src/system/observation/bounds.i"
 	@echo "... home/bvrznski/rebuntu/src/system/observation/bounds.s"
@@ -5303,6 +5423,9 @@ help:
 	@echo "... home/bvrznski/rebuntu/tests/unit/cancellation_race_test.o"
 	@echo "... home/bvrznski/rebuntu/tests/unit/cancellation_race_test.i"
 	@echo "... home/bvrznski/rebuntu/tests/unit/cancellation_race_test.s"
+	@echo "... home/bvrznski/rebuntu/tests/unit/cpu_topology_test.o"
+	@echo "... home/bvrznski/rebuntu/tests/unit/cpu_topology_test.i"
+	@echo "... home/bvrznski/rebuntu/tests/unit/cpu_topology_test.s"
 	@echo "... home/bvrznski/rebuntu/tests/unit/execution_storm_backpressure_test.o"
 	@echo "... home/bvrznski/rebuntu/tests/unit/execution_storm_backpressure_test.i"
 	@echo "... home/bvrznski/rebuntu/tests/unit/execution_storm_backpressure_test.s"

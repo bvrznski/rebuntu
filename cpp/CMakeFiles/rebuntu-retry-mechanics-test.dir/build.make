@@ -160,6 +160,8 @@ rebuntu-retry-mechanics-test: librebuntu-journal-analyzer.a
 rebuntu-retry-mechanics-test: librebuntu-health-monitor.a
 rebuntu-retry-mechanics-test: librebuntu-kernel-fault-detector.a
 rebuntu-retry-mechanics-test: librebuntu-storage-health-monitor.a
+rebuntu-retry-mechanics-test: librebuntu-cpu-topology-adapter.a
+rebuntu-retry-mechanics-test: librebuntu-memory-observation-adapter.a
 rebuntu-retry-mechanics-test: librebuntu-cpu-memory-thermal-monitor.a
 rebuntu-retry-mechanics-test: librebuntu-gpu-health-monitor.a
 rebuntu-retry-mechanics-test: librebuntu-internal-alerts.a

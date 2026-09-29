@@ -178,6 +178,8 @@ rebuntu-bin: librebuntu-journal-analyzer.a
 rebuntu-bin: librebuntu-health-monitor.a
 rebuntu-bin: librebuntu-kernel-fault-detector.a
 rebuntu-bin: librebuntu-storage-health-monitor.a
+rebuntu-bin: librebuntu-cpu-topology-adapter.a
+rebuntu-bin: librebuntu-memory-observation-adapter.a
 rebuntu-bin: librebuntu-cpu-memory-thermal-monitor.a
 rebuntu-bin: librebuntu-gpu-health-monitor.a
 rebuntu-bin: librebuntu-internal-alerts.a

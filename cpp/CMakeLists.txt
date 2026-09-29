@@ -860,6 +860,28 @@ target_include_directories(rebuntu-storage-health-monitor PUBLIC ${CMAKE_CURRENT
 target_include_directories(rebuntu-storage-health-monitor PUBLIC ${CMAKE_CURRENT_LIST_DIR}/../src)
 target_link_libraries(rebuntu-core PUBLIC rebuntu-storage-health-monitor)
 
+# Phase 7.10: CPU Topology Observation Adapter
+add_library(rebuntu-cpu-topology-adapter STATIC
+    ${CMAKE_CURRENT_LIST_DIR}/../src/system/observation/adapters/cpu_topology.cpp
+)
+target_include_directories(rebuntu-cpu-topology-adapter PUBLIC ${CMAKE_CURRENT_LIST_DIR}/../src)
+target_link_libraries(rebuntu-core PUBLIC rebuntu-cpu-topology-adapter)
+
+# Phase 7.10: CPU Topology Adapter Unit Tests
+add_executable(rebuntu-cpu-topology-test
+    ${CMAKE_CURRENT_LIST_DIR}/../tests/unit/cpu_topology_test.cpp
+)
+target_include_directories(rebuntu-cpu-topology-test PRIVATE ${CMAKE_CURRENT_LIST_DIR}/../src)
+target_link_libraries(rebuntu-cpu-topology-test PRIVATE rebuntu-core rebuntu-cpu-topology-adapter)
+add_test(NAME cpu_topology_test COMMAND rebuntu-cpu-topology-test)
+
+# Phase 7.10: Memory Observation Adapter
+add_library(rebuntu-memory-observation-adapter STATIC
+    ${CMAKE_CURRENT_LIST_DIR}/../src/system/observation/adapters/memory_observation.cpp
+)
+target_include_directories(rebuntu-memory-observation-adapter PUBLIC ${CMAKE_CURRENT_LIST_DIR}/../src)
+target_link_libraries(rebuntu-core PUBLIC rebuntu-memory-observation-adapter)
+
 # Phase 5.9: CPU / Memory / Thermal Monitor module
 add_library(rebuntu-cpu-memory-thermal-monitor STATIC
     ${CMAKE_CURRENT_LIST_DIR}/../src/modules/cpu_memory_thermal_monitor/types.hpp

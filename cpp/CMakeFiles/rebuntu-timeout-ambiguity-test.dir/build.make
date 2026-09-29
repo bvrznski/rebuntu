@@ -160,6 +160,8 @@ rebuntu-timeout-ambiguity-test: librebuntu-journal-analyzer.a
 rebuntu-timeout-ambiguity-test: librebuntu-health-monitor.a
 rebuntu-timeout-ambiguity-test: librebuntu-kernel-fault-detector.a
 rebuntu-timeout-ambiguity-test: librebuntu-storage-health-monitor.a
+rebuntu-timeout-ambiguity-test: librebuntu-cpu-topology-adapter.a
+rebuntu-timeout-ambiguity-test: librebuntu-memory-observation-adapter.a
 rebuntu-timeout-ambiguity-test: librebuntu-cpu-memory-thermal-monitor.a
 rebuntu-timeout-ambiguity-test: librebuntu-gpu-health-monitor.a
 rebuntu-timeout-ambiguity-test: librebuntu-internal-alerts.a

@@ -160,6 +160,8 @@ rebuntu-idempotency-test: librebuntu-journal-analyzer.a
 rebuntu-idempotency-test: librebuntu-health-monitor.a
 rebuntu-idempotency-test: librebuntu-kernel-fault-detector.a
 rebuntu-idempotency-test: librebuntu-storage-health-monitor.a
+rebuntu-idempotency-test: librebuntu-cpu-topology-adapter.a
+rebuntu-idempotency-test: librebuntu-memory-observation-adapter.a
 rebuntu-idempotency-test: librebuntu-cpu-memory-thermal-monitor.a
 rebuntu-idempotency-test: librebuntu-gpu-health-monitor.a
 rebuntu-idempotency-test: librebuntu-internal-alerts.a

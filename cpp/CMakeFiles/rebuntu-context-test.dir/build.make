@@ -160,6 +160,8 @@ rebuntu-context-test: librebuntu-journal-analyzer.a
 rebuntu-context-test: librebuntu-health-monitor.a
 rebuntu-context-test: librebuntu-kernel-fault-detector.a
 rebuntu-context-test: librebuntu-storage-health-monitor.a
+rebuntu-context-test: librebuntu-cpu-topology-adapter.a
+rebuntu-context-test: librebuntu-memory-observation-adapter.a
 rebuntu-context-test: librebuntu-cpu-memory-thermal-monitor.a
 rebuntu-context-test: librebuntu-gpu-health-monitor.a
 rebuntu-context-test: librebuntu-internal-alerts.a

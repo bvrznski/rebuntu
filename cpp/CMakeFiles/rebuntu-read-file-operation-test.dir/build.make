@@ -160,6 +160,8 @@ rebuntu-read-file-operation-test: librebuntu-journal-analyzer.a
 rebuntu-read-file-operation-test: librebuntu-health-monitor.a
 rebuntu-read-file-operation-test: librebuntu-kernel-fault-detector.a
 rebuntu-read-file-operation-test: librebuntu-storage-health-monitor.a
+rebuntu-read-file-operation-test: librebuntu-cpu-topology-adapter.a
+rebuntu-read-file-operation-test: librebuntu-memory-observation-adapter.a
 rebuntu-read-file-operation-test: librebuntu-cpu-memory-thermal-monitor.a
 rebuntu-read-file-operation-test: librebuntu-gpu-health-monitor.a
 rebuntu-read-file-operation-test: librebuntu-internal-alerts.a

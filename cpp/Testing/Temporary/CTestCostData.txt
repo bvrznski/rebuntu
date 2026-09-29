@@ -11,4 +11,3 @@ mutation_integration_test 2 0.00158561
 read_only_command_test 2 0.00137599
 timeout_ambiguity_test 2 0.0617798
 ---
-privilege_escalation_adversarial_test

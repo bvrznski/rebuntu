@@ -160,6 +160,8 @@ rebuntu-read-only-command-test: librebuntu-journal-analyzer.a
 rebuntu-read-only-command-test: librebuntu-health-monitor.a
 rebuntu-read-only-command-test: librebuntu-kernel-fault-detector.a
 rebuntu-read-only-command-test: librebuntu-storage-health-monitor.a
+rebuntu-read-only-command-test: librebuntu-cpu-topology-adapter.a
+rebuntu-read-only-command-test: librebuntu-memory-observation-adapter.a
 rebuntu-read-only-command-test: librebuntu-cpu-memory-thermal-monitor.a
 rebuntu-read-only-command-test: librebuntu-gpu-health-monitor.a
 rebuntu-read-only-command-test: librebuntu-internal-alerts.a

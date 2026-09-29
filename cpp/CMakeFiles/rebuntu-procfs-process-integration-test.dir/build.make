@@ -160,6 +160,8 @@ rebuntu-procfs-process-integration-test: librebuntu-journal-analyzer.a
 rebuntu-procfs-process-integration-test: librebuntu-health-monitor.a
 rebuntu-procfs-process-integration-test: librebuntu-kernel-fault-detector.a
 rebuntu-procfs-process-integration-test: librebuntu-storage-health-monitor.a
+rebuntu-procfs-process-integration-test: librebuntu-cpu-topology-adapter.a
+rebuntu-procfs-process-integration-test: librebuntu-memory-observation-adapter.a
 rebuntu-procfs-process-integration-test: librebuntu-cpu-memory-thermal-monitor.a
 rebuntu-procfs-process-integration-test: librebuntu-gpu-health-monitor.a
 rebuntu-procfs-process-integration-test: librebuntu-internal-alerts.a

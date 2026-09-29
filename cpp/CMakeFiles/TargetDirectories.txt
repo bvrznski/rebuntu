@@ -98,6 +98,9 @@
 /home/bvrznski/rebuntu/cpp/CMakeFiles/rebuntu-health-monitor.dir
 /home/bvrznski/rebuntu/cpp/CMakeFiles/rebuntu-kernel-fault-detector.dir
 /home/bvrznski/rebuntu/cpp/CMakeFiles/rebuntu-storage-health-monitor.dir
+/home/bvrznski/rebuntu/cpp/CMakeFiles/rebuntu-cpu-topology-adapter.dir
+/home/bvrznski/rebuntu/cpp/CMakeFiles/rebuntu-cpu-topology-test.dir
+/home/bvrznski/rebuntu/cpp/CMakeFiles/rebuntu-memory-observation-adapter.dir
 /home/bvrznski/rebuntu/cpp/CMakeFiles/rebuntu-cpu-memory-thermal-monitor.dir
 /home/bvrznski/rebuntu/cpp/CMakeFiles/rebuntu-gpu-health-monitor.dir
 /home/bvrznski/rebuntu/cpp/CMakeFiles/rebuntu-internal-alerts.dir

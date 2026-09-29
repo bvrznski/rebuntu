@@ -160,6 +160,8 @@ rebuntu-privilege-escalation-adversarial-test: librebuntu-journal-analyzer.a
 rebuntu-privilege-escalation-adversarial-test: librebuntu-health-monitor.a
 rebuntu-privilege-escalation-adversarial-test: librebuntu-kernel-fault-detector.a
 rebuntu-privilege-escalation-adversarial-test: librebuntu-storage-health-monitor.a
+rebuntu-privilege-escalation-adversarial-test: librebuntu-cpu-topology-adapter.a
+rebuntu-privilege-escalation-adversarial-test: librebuntu-memory-observation-adapter.a
 rebuntu-privilege-escalation-adversarial-test: librebuntu-cpu-memory-thermal-monitor.a
 rebuntu-privilege-escalation-adversarial-test: librebuntu-gpu-health-monitor.a
 rebuntu-privilege-escalation-adversarial-test: librebuntu-internal-alerts.a

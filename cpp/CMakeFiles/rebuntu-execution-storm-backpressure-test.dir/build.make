@@ -160,6 +160,8 @@ rebuntu-execution-storm-backpressure-test: librebuntu-journal-analyzer.a
 rebuntu-execution-storm-backpressure-test: librebuntu-health-monitor.a
 rebuntu-execution-storm-backpressure-test: librebuntu-kernel-fault-detector.a
 rebuntu-execution-storm-backpressure-test: librebuntu-storage-health-monitor.a
+rebuntu-execution-storm-backpressure-test: librebuntu-cpu-topology-adapter.a
+rebuntu-execution-storm-backpressure-test: librebuntu-memory-observation-adapter.a
 rebuntu-execution-storm-backpressure-test: librebuntu-cpu-memory-thermal-monitor.a
 rebuntu-execution-storm-backpressure-test: librebuntu-gpu-health-monitor.a
 rebuntu-execution-storm-backpressure-test: librebuntu-internal-alerts.a

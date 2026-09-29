@@ -160,6 +160,8 @@ rebuntu-monotonic-deadline-test: librebuntu-journal-analyzer.a
 rebuntu-monotonic-deadline-test: librebuntu-health-monitor.a
 rebuntu-monotonic-deadline-test: librebuntu-kernel-fault-detector.a
 rebuntu-monotonic-deadline-test: librebuntu-storage-health-monitor.a
+rebuntu-monotonic-deadline-test: librebuntu-cpu-topology-adapter.a
+rebuntu-monotonic-deadline-test: librebuntu-memory-observation-adapter.a
 rebuntu-monotonic-deadline-test: librebuntu-cpu-memory-thermal-monitor.a
 rebuntu-monotonic-deadline-test: librebuntu-gpu-health-monitor.a
 rebuntu-monotonic-deadline-test: librebuntu-internal-alerts.a

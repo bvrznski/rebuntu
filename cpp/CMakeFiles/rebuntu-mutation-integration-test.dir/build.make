@@ -160,6 +160,8 @@ rebuntu-mutation-integration-test: librebuntu-journal-analyzer.a
 rebuntu-mutation-integration-test: librebuntu-health-monitor.a
 rebuntu-mutation-integration-test: librebuntu-kernel-fault-detector.a
 rebuntu-mutation-integration-test: librebuntu-storage-health-monitor.a
+rebuntu-mutation-integration-test: librebuntu-cpu-topology-adapter.a
+rebuntu-mutation-integration-test: librebuntu-memory-observation-adapter.a
 rebuntu-mutation-integration-test: librebuntu-cpu-memory-thermal-monitor.a
 rebuntu-mutation-integration-test: librebuntu-gpu-health-monitor.a
 rebuntu-mutation-integration-test: librebuntu-internal-alerts.a

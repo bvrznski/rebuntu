@@ -161,6 +161,8 @@ rebuntu-systemd-service-test: librebuntu-journal-analyzer.a
 rebuntu-systemd-service-test: librebuntu-health-monitor.a
 rebuntu-systemd-service-test: librebuntu-kernel-fault-detector.a
 rebuntu-systemd-service-test: librebuntu-storage-health-monitor.a
+rebuntu-systemd-service-test: librebuntu-cpu-topology-adapter.a
+rebuntu-systemd-service-test: librebuntu-memory-observation-adapter.a
 rebuntu-systemd-service-test: librebuntu-cpu-memory-thermal-monitor.a
 rebuntu-systemd-service-test: librebuntu-gpu-health-monitor.a
 rebuntu-systemd-service-test: librebuntu-internal-alerts.a

@@ -160,6 +160,8 @@ rebuntu-exit-result-test: librebuntu-journal-analyzer.a
 rebuntu-exit-result-test: librebuntu-health-monitor.a
 rebuntu-exit-result-test: librebuntu-kernel-fault-detector.a
 rebuntu-exit-result-test: librebuntu-storage-health-monitor.a
+rebuntu-exit-result-test: librebuntu-cpu-topology-adapter.a
+rebuntu-exit-result-test: librebuntu-memory-observation-adapter.a
 rebuntu-exit-result-test: librebuntu-cpu-memory-thermal-monitor.a
 rebuntu-exit-result-test: librebuntu-gpu-health-monitor.a
 rebuntu-exit-result-test: librebuntu-internal-alerts.a

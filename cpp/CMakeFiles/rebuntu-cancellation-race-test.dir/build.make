@@ -160,6 +160,8 @@ rebuntu-cancellation-race-test: librebuntu-journal-analyzer.a
 rebuntu-cancellation-race-test: librebuntu-health-monitor.a
 rebuntu-cancellation-race-test: librebuntu-kernel-fault-detector.a
 rebuntu-cancellation-race-test: librebuntu-storage-health-monitor.a
+rebuntu-cancellation-race-test: librebuntu-cpu-topology-adapter.a
+rebuntu-cancellation-race-test: librebuntu-memory-observation-adapter.a
 rebuntu-cancellation-race-test: librebuntu-cpu-memory-thermal-monitor.a
 rebuntu-cancellation-race-test: librebuntu-gpu-health-monitor.a
 rebuntu-cancellation-race-test: librebuntu-internal-alerts.a

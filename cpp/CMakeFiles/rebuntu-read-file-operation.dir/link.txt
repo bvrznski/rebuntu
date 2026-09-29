@@ -1,0 +1,2 @@
+/usr/bin/ar qc librebuntu-read-file-operation.a CMakeFiles/rebuntu-read-file-operation.dir/home/bvrznski/rebuntu/src/operations/read_file.cpp.o
+/usr/bin/ranlib librebuntu-read-file-operation.a

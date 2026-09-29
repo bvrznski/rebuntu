@@ -1,0 +1,2 @@
+/usr/bin/ar qc librebuntu-filesystem.a CMakeFiles/rebuntu-filesystem.dir/home/bvrznski/rebuntu/src/operations/filesystem.cpp.o
+/usr/bin/ranlib librebuntu-filesystem.a

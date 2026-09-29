@@ -1,0 +1,2 @@
+/usr/bin/ar qc librebuntu-observation-bounds.a CMakeFiles/rebuntu-observation-bounds.dir/home/bvrznski/rebuntu/src/system/observation/bounds.cpp.o
+/usr/bin/ranlib librebuntu-observation-bounds.a

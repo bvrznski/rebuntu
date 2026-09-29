@@ -1,0 +1,2 @@
+/usr/bin/ar qc librebuntu-dry-run.a CMakeFiles/rebuntu-dry-run.dir/home/bvrznski/rebuntu/src/operations/dry_run.cpp.o
+/usr/bin/ranlib librebuntu-dry-run.a

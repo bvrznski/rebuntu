@@ -1,0 +1,2 @@
+/usr/bin/ar qc librebuntu-power-supply-adapter.a CMakeFiles/rebuntu-power-supply-adapter.dir/home/bvrznski/rebuntu/src/adapters/sysfs/power/implementation.cpp.o
+/usr/bin/ranlib librebuntu-power-supply-adapter.a

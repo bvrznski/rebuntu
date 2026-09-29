@@ -1,0 +1,2 @@
+/usr/bin/ar qc librebuntu-container-discovery.a CMakeFiles/rebuntu-container-discovery.dir/home/bvrznski/rebuntu/src/adapters/container/implementation.cpp.o
+/usr/bin/ranlib librebuntu-container-discovery.a

@@ -1,0 +1,2 @@
+/usr/bin/ar qc librebuntu-users.a CMakeFiles/rebuntu-users.dir/home/bvrznski/rebuntu/src/operations/users.cpp.o
+/usr/bin/ranlib librebuntu-users.a

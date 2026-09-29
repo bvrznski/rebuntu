@@ -1,0 +1,2 @@
+/usr/bin/ar qc librebuntu-shell-semi-natural.a CMakeFiles/rebuntu-shell-semi-natural.dir/home/bvrznski/rebuntu/src/system/shell/semi_natural.cpp.o
+/usr/bin/ranlib librebuntu-shell-semi-natural.a

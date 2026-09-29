@@ -1,0 +1,2 @@
+/usr/bin/ar qc librebuntu-cross-domain-references.a CMakeFiles/rebuntu-cross-domain-references.dir/home/bvrznski/rebuntu/src/interfaces/cross_domain_references.cpp.o
+/usr/bin/ranlib librebuntu-cross-domain-references.a

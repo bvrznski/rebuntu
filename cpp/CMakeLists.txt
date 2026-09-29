@@ -74,6 +74,12 @@ add_library(rebuntu-observation-bounds STATIC
 target_include_directories(rebuntu-observation-bounds PUBLIC ${CMAKE_CURRENT_LIST_DIR}/../src)
 target_link_libraries(rebuntu-core PUBLIC rebuntu-observation-bounds)
 
+# Phase 7.1: Facts & Observations Model module (core types and interfaces)
+# Header-only library - included via rebuntu-core
+target_sources(rebuntu-core PRIVATE
+    ${CMAKE_CURRENT_LIST_DIR}/../src/system/observation/model.hpp
+)
+
 # Phase 6.0: Shell Language Foundation module
 add_library(rebuntu-shell STATIC
     ${CMAKE_CURRENT_LIST_DIR}/../src/system/shell/types.hpp

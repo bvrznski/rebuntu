@@ -95,6 +95,8 @@ rebuntu-context-test: CMakeFiles/rebuntu-context-test.dir/build.make
 rebuntu-context-test: librebuntu-core.a
 rebuntu-context-test: librebuntu-shell.a
 rebuntu-context-test: librebuntu-observation-bounds.a
+rebuntu-context-test: librebuntu-state-acquisition.a
+rebuntu-context-test: librebuntu-state-normalizer.a
 rebuntu-context-test: librebuntu-shell-semi-natural.a
 rebuntu-context-test: librebuntu-shell-context.a
 rebuntu-context-test: librebuntu-shell-boundary.a

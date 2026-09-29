@@ -95,6 +95,8 @@ rebuntu-read-only-command-test: CMakeFiles/rebuntu-read-only-command-test.dir/bu
 rebuntu-read-only-command-test: librebuntu-core.a
 rebuntu-read-only-command-test: librebuntu-filesystem.a
 rebuntu-read-only-command-test: librebuntu-observation-bounds.a
+rebuntu-read-only-command-test: librebuntu-state-acquisition.a
+rebuntu-read-only-command-test: librebuntu-state-normalizer.a
 rebuntu-read-only-command-test: librebuntu-shell-semi-natural.a
 rebuntu-read-only-command-test: librebuntu-shell-context.a
 rebuntu-read-only-command-test: librebuntu-shell-boundary.a

@@ -1,1 +1,14 @@
+context_test 2 0.00154707
+exit_result_test 2 0.00145495
+idempotency_classifier_test 2 0.0013927
+retry_mechanics_test 2 0.00121689
+monotonic_deadline_test 2 0.0512023
+privilege_escalation_adversarial_test 0 0
+execution_storm_backpressure_test 2 0.00657172
+cancellation_race_test 2 0.860546
+read_file_operation_test 2 0.0017107
+mutation_integration_test 2 0.00158561
+read_only_command_test 2 0.00137599
+timeout_ambiguity_test 2 0.0617798
 ---
+privilege_escalation_adversarial_test

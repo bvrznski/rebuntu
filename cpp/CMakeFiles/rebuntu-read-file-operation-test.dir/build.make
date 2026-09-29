@@ -95,6 +95,8 @@ rebuntu-read-file-operation-test: CMakeFiles/rebuntu-read-file-operation-test.di
 rebuntu-read-file-operation-test: librebuntu-core.a
 rebuntu-read-file-operation-test: librebuntu-read-file-operation.a
 rebuntu-read-file-operation-test: librebuntu-observation-bounds.a
+rebuntu-read-file-operation-test: librebuntu-state-acquisition.a
+rebuntu-read-file-operation-test: librebuntu-state-normalizer.a
 rebuntu-read-file-operation-test: librebuntu-shell-semi-natural.a
 rebuntu-read-file-operation-test: librebuntu-shell-context.a
 rebuntu-read-file-operation-test: librebuntu-shell-boundary.a

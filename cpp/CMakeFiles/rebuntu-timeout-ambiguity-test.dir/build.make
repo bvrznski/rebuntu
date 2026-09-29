@@ -94,6 +94,8 @@ rebuntu-timeout-ambiguity-test: CMakeFiles/rebuntu-timeout-ambiguity-test.dir/ho
 rebuntu-timeout-ambiguity-test: CMakeFiles/rebuntu-timeout-ambiguity-test.dir/build.make
 rebuntu-timeout-ambiguity-test: librebuntu-core.a
 rebuntu-timeout-ambiguity-test: librebuntu-observation-bounds.a
+rebuntu-timeout-ambiguity-test: librebuntu-state-acquisition.a
+rebuntu-timeout-ambiguity-test: librebuntu-state-normalizer.a
 rebuntu-timeout-ambiguity-test: librebuntu-shell-semi-natural.a
 rebuntu-timeout-ambiguity-test: librebuntu-shell-context.a
 rebuntu-timeout-ambiguity-test: librebuntu-shell-boundary.a

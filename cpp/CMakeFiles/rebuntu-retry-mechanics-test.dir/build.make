@@ -94,6 +94,8 @@ rebuntu-retry-mechanics-test: CMakeFiles/rebuntu-retry-mechanics-test.dir/home/b
 rebuntu-retry-mechanics-test: CMakeFiles/rebuntu-retry-mechanics-test.dir/build.make
 rebuntu-retry-mechanics-test: librebuntu-core.a
 rebuntu-retry-mechanics-test: librebuntu-observation-bounds.a
+rebuntu-retry-mechanics-test: librebuntu-state-acquisition.a
+rebuntu-retry-mechanics-test: librebuntu-state-normalizer.a
 rebuntu-retry-mechanics-test: librebuntu-shell-semi-natural.a
 rebuntu-retry-mechanics-test: librebuntu-shell-context.a
 rebuntu-retry-mechanics-test: librebuntu-shell-boundary.a

@@ -562,6 +562,32 @@ rebuntu-observation-bounds/fast:
 .PHONY : rebuntu-observation-bounds/fast
 
 #=============================================================================
+# Target rules for targets named rebuntu-state-acquisition
+
+# Build rule for target.
+rebuntu-state-acquisition: cmake_check_build_system
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 rebuntu-state-acquisition
+.PHONY : rebuntu-state-acquisition
+
+# fast build rule for target.
+rebuntu-state-acquisition/fast:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/rebuntu-state-acquisition.dir/build.make CMakeFiles/rebuntu-state-acquisition.dir/build
+.PHONY : rebuntu-state-acquisition/fast
+
+#=============================================================================
+# Target rules for targets named rebuntu-state-normalizer
+
+# Build rule for target.
+rebuntu-state-normalizer: cmake_check_build_system
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 rebuntu-state-normalizer
+.PHONY : rebuntu-state-normalizer
+
+# fast build rule for target.
+rebuntu-state-normalizer/fast:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/rebuntu-state-normalizer.dir/build.make CMakeFiles/rebuntu-state-normalizer.dir/build
+.PHONY : rebuntu-state-normalizer/fast
+
+#=============================================================================
 # Target rules for targets named rebuntu-shell
 
 # Build rule for target.
@@ -3935,6 +3961,78 @@ home/bvrznski/rebuntu/src/system/observation/output/json_serializer.cpp.s:
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/rebuntu-observation-output.dir/build.make CMakeFiles/rebuntu-observation-output.dir/home/bvrznski/rebuntu/src/system/observation/output/json_serializer.cpp.s
 .PHONY : home/bvrznski/rebuntu/src/system/observation/output/json_serializer.cpp.s
 
+home/bvrznski/rebuntu/src/system/observation/snapshot_builder.o: home/bvrznski/rebuntu/src/system/observation/snapshot_builder.cpp.o
+.PHONY : home/bvrznski/rebuntu/src/system/observation/snapshot_builder.o
+
+# target to build an object file
+home/bvrznski/rebuntu/src/system/observation/snapshot_builder.cpp.o:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/rebuntu-state-acquisition.dir/build.make CMakeFiles/rebuntu-state-acquisition.dir/home/bvrznski/rebuntu/src/system/observation/snapshot_builder.cpp.o
+.PHONY : home/bvrznski/rebuntu/src/system/observation/snapshot_builder.cpp.o
+
+home/bvrznski/rebuntu/src/system/observation/snapshot_builder.i: home/bvrznski/rebuntu/src/system/observation/snapshot_builder.cpp.i
+.PHONY : home/bvrznski/rebuntu/src/system/observation/snapshot_builder.i
+
+# target to preprocess a source file
+home/bvrznski/rebuntu/src/system/observation/snapshot_builder.cpp.i:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/rebuntu-state-acquisition.dir/build.make CMakeFiles/rebuntu-state-acquisition.dir/home/bvrznski/rebuntu/src/system/observation/snapshot_builder.cpp.i
+.PHONY : home/bvrznski/rebuntu/src/system/observation/snapshot_builder.cpp.i
+
+home/bvrznski/rebuntu/src/system/observation/snapshot_builder.s: home/bvrznski/rebuntu/src/system/observation/snapshot_builder.cpp.s
+.PHONY : home/bvrznski/rebuntu/src/system/observation/snapshot_builder.s
+
+# target to generate assembly for a file
+home/bvrznski/rebuntu/src/system/observation/snapshot_builder.cpp.s:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/rebuntu-state-acquisition.dir/build.make CMakeFiles/rebuntu-state-acquisition.dir/home/bvrznski/rebuntu/src/system/observation/snapshot_builder.cpp.s
+.PHONY : home/bvrznski/rebuntu/src/system/observation/snapshot_builder.cpp.s
+
+home/bvrznski/rebuntu/src/system/observation/state_acquisition_service.o: home/bvrznski/rebuntu/src/system/observation/state_acquisition_service.cpp.o
+.PHONY : home/bvrznski/rebuntu/src/system/observation/state_acquisition_service.o
+
+# target to build an object file
+home/bvrznski/rebuntu/src/system/observation/state_acquisition_service.cpp.o:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/rebuntu-state-acquisition.dir/build.make CMakeFiles/rebuntu-state-acquisition.dir/home/bvrznski/rebuntu/src/system/observation/state_acquisition_service.cpp.o
+.PHONY : home/bvrznski/rebuntu/src/system/observation/state_acquisition_service.cpp.o
+
+home/bvrznski/rebuntu/src/system/observation/state_acquisition_service.i: home/bvrznski/rebuntu/src/system/observation/state_acquisition_service.cpp.i
+.PHONY : home/bvrznski/rebuntu/src/system/observation/state_acquisition_service.i
+
+# target to preprocess a source file
+home/bvrznski/rebuntu/src/system/observation/state_acquisition_service.cpp.i:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/rebuntu-state-acquisition.dir/build.make CMakeFiles/rebuntu-state-acquisition.dir/home/bvrznski/rebuntu/src/system/observation/state_acquisition_service.cpp.i
+.PHONY : home/bvrznski/rebuntu/src/system/observation/state_acquisition_service.cpp.i
+
+home/bvrznski/rebuntu/src/system/observation/state_acquisition_service.s: home/bvrznski/rebuntu/src/system/observation/state_acquisition_service.cpp.s
+.PHONY : home/bvrznski/rebuntu/src/system/observation/state_acquisition_service.s
+
+# target to generate assembly for a file
+home/bvrznski/rebuntu/src/system/observation/state_acquisition_service.cpp.s:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/rebuntu-state-acquisition.dir/build.make CMakeFiles/rebuntu-state-acquisition.dir/home/bvrznski/rebuntu/src/system/observation/state_acquisition_service.cpp.s
+.PHONY : home/bvrznski/rebuntu/src/system/observation/state_acquisition_service.cpp.s
+
+home/bvrznski/rebuntu/src/system/observation/state_normalizer.o: home/bvrznski/rebuntu/src/system/observation/state_normalizer.cpp.o
+.PHONY : home/bvrznski/rebuntu/src/system/observation/state_normalizer.o
+
+# target to build an object file
+home/bvrznski/rebuntu/src/system/observation/state_normalizer.cpp.o:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/rebuntu-state-normalizer.dir/build.make CMakeFiles/rebuntu-state-normalizer.dir/home/bvrznski/rebuntu/src/system/observation/state_normalizer.cpp.o
+.PHONY : home/bvrznski/rebuntu/src/system/observation/state_normalizer.cpp.o
+
+home/bvrznski/rebuntu/src/system/observation/state_normalizer.i: home/bvrznski/rebuntu/src/system/observation/state_normalizer.cpp.i
+.PHONY : home/bvrznski/rebuntu/src/system/observation/state_normalizer.i
+
+# target to preprocess a source file
+home/bvrznski/rebuntu/src/system/observation/state_normalizer.cpp.i:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/rebuntu-state-normalizer.dir/build.make CMakeFiles/rebuntu-state-normalizer.dir/home/bvrznski/rebuntu/src/system/observation/state_normalizer.cpp.i
+.PHONY : home/bvrznski/rebuntu/src/system/observation/state_normalizer.cpp.i
+
+home/bvrznski/rebuntu/src/system/observation/state_normalizer.s: home/bvrznski/rebuntu/src/system/observation/state_normalizer.cpp.s
+.PHONY : home/bvrznski/rebuntu/src/system/observation/state_normalizer.s
+
+# target to generate assembly for a file
+home/bvrznski/rebuntu/src/system/observation/state_normalizer.cpp.s:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/rebuntu-state-normalizer.dir/build.make CMakeFiles/rebuntu-state-normalizer.dir/home/bvrznski/rebuntu/src/system/observation/state_normalizer.cpp.s
+.PHONY : home/bvrznski/rebuntu/src/system/observation/state_normalizer.cpp.s
+
 home/bvrznski/rebuntu/src/system/semantic/annotation.o: home/bvrznski/rebuntu/src/system/semantic/annotation.cpp.o
 .PHONY : home/bvrznski/rebuntu/src/system/semantic/annotation.o
 
@@ -4717,6 +4815,8 @@ help:
 	@echo "... rebuntu-shell-semi-natural"
 	@echo "... rebuntu-snapshot-service"
 	@echo "... rebuntu-snapshot-storage"
+	@echo "... rebuntu-state-acquisition"
+	@echo "... rebuntu-state-normalizer"
 	@echo "... rebuntu-storage-health-monitor"
 	@echo "... rebuntu-systemd-service-adapter"
 	@echo "... rebuntu-temp-files"
@@ -4991,6 +5091,15 @@ help:
 	@echo "... home/bvrznski/rebuntu/src/system/observation/output/json_serializer.o"
 	@echo "... home/bvrznski/rebuntu/src/system/observation/output/json_serializer.i"
 	@echo "... home/bvrznski/rebuntu/src/system/observation/output/json_serializer.s"
+	@echo "... home/bvrznski/rebuntu/src/system/observation/snapshot_builder.o"
+	@echo "... home/bvrznski/rebuntu/src/system/observation/snapshot_builder.i"
+	@echo "... home/bvrznski/rebuntu/src/system/observation/snapshot_builder.s"
+	@echo "... home/bvrznski/rebuntu/src/system/observation/state_acquisition_service.o"
+	@echo "... home/bvrznski/rebuntu/src/system/observation/state_acquisition_service.i"
+	@echo "... home/bvrznski/rebuntu/src/system/observation/state_acquisition_service.s"
+	@echo "... home/bvrznski/rebuntu/src/system/observation/state_normalizer.o"
+	@echo "... home/bvrznski/rebuntu/src/system/observation/state_normalizer.i"
+	@echo "... home/bvrznski/rebuntu/src/system/observation/state_normalizer.s"
 	@echo "... home/bvrznski/rebuntu/src/system/semantic/annotation.o"
 	@echo "... home/bvrznski/rebuntu/src/system/semantic/annotation.i"
 	@echo "... home/bvrznski/rebuntu/src/system/semantic/annotation.s"

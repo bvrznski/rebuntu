@@ -94,6 +94,8 @@ rebuntu-execution-storm-backpressure-test: CMakeFiles/rebuntu-execution-storm-ba
 rebuntu-execution-storm-backpressure-test: CMakeFiles/rebuntu-execution-storm-backpressure-test.dir/build.make
 rebuntu-execution-storm-backpressure-test: librebuntu-core.a
 rebuntu-execution-storm-backpressure-test: librebuntu-observation-bounds.a
+rebuntu-execution-storm-backpressure-test: librebuntu-state-acquisition.a
+rebuntu-execution-storm-backpressure-test: librebuntu-state-normalizer.a
 rebuntu-execution-storm-backpressure-test: librebuntu-shell-semi-natural.a
 rebuntu-execution-storm-backpressure-test: librebuntu-shell-context.a
 rebuntu-execution-storm-backpressure-test: librebuntu-shell-boundary.a

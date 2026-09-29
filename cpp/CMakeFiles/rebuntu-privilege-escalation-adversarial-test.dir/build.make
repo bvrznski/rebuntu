@@ -94,6 +94,8 @@ rebuntu-privilege-escalation-adversarial-test: CMakeFiles/rebuntu-privilege-esca
 rebuntu-privilege-escalation-adversarial-test: CMakeFiles/rebuntu-privilege-escalation-adversarial-test.dir/build.make
 rebuntu-privilege-escalation-adversarial-test: librebuntu-core.a
 rebuntu-privilege-escalation-adversarial-test: librebuntu-observation-bounds.a
+rebuntu-privilege-escalation-adversarial-test: librebuntu-state-acquisition.a
+rebuntu-privilege-escalation-adversarial-test: librebuntu-state-normalizer.a
 rebuntu-privilege-escalation-adversarial-test: librebuntu-shell-semi-natural.a
 rebuntu-privilege-escalation-adversarial-test: librebuntu-shell-context.a
 rebuntu-privilege-escalation-adversarial-test: librebuntu-shell-boundary.a

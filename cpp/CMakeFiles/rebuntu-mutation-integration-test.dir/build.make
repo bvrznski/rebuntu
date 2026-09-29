@@ -95,6 +95,8 @@ rebuntu-mutation-integration-test: CMakeFiles/rebuntu-mutation-integration-test.
 rebuntu-mutation-integration-test: librebuntu-core.a
 rebuntu-mutation-integration-test: librebuntu-filesystem.a
 rebuntu-mutation-integration-test: librebuntu-observation-bounds.a
+rebuntu-mutation-integration-test: librebuntu-state-acquisition.a
+rebuntu-mutation-integration-test: librebuntu-state-normalizer.a
 rebuntu-mutation-integration-test: librebuntu-shell-semi-natural.a
 rebuntu-mutation-integration-test: librebuntu-shell-context.a
 rebuntu-mutation-integration-test: librebuntu-shell-boundary.a

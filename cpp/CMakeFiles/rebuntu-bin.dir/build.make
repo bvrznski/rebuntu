@@ -114,6 +114,8 @@ rebuntu-bin: librebuntu-shell.a
 rebuntu-bin: librebuntu-core.a
 rebuntu-bin: librebuntu-shell.a
 rebuntu-bin: librebuntu-observation-bounds.a
+rebuntu-bin: librebuntu-state-acquisition.a
+rebuntu-bin: librebuntu-state-normalizer.a
 rebuntu-bin: librebuntu-shell-semi-natural.a
 rebuntu-bin: librebuntu-shell-context.a
 rebuntu-bin: librebuntu-shell-boundary.a

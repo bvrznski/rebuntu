@@ -94,6 +94,8 @@ rebuntu-cancellation-race-test: CMakeFiles/rebuntu-cancellation-race-test.dir/ho
 rebuntu-cancellation-race-test: CMakeFiles/rebuntu-cancellation-race-test.dir/build.make
 rebuntu-cancellation-race-test: librebuntu-core.a
 rebuntu-cancellation-race-test: librebuntu-observation-bounds.a
+rebuntu-cancellation-race-test: librebuntu-state-acquisition.a
+rebuntu-cancellation-race-test: librebuntu-state-normalizer.a
 rebuntu-cancellation-race-test: librebuntu-shell-semi-natural.a
 rebuntu-cancellation-race-test: librebuntu-shell-context.a
 rebuntu-cancellation-race-test: librebuntu-shell-boundary.a

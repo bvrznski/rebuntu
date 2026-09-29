@@ -28,6 +28,8 @@
 /home/bvrznski/rebuntu/cpp/CMakeFiles/ContinuousSubmit.dir
 /home/bvrznski/rebuntu/cpp/CMakeFiles/rebuntu-core.dir
 /home/bvrznski/rebuntu/cpp/CMakeFiles/rebuntu-observation-bounds.dir
+/home/bvrznski/rebuntu/cpp/CMakeFiles/rebuntu-state-acquisition.dir
+/home/bvrznski/rebuntu/cpp/CMakeFiles/rebuntu-state-normalizer.dir
 /home/bvrznski/rebuntu/cpp/CMakeFiles/rebuntu-shell.dir
 /home/bvrznski/rebuntu/cpp/CMakeFiles/rebuntu-shell-semi-natural.dir
 /home/bvrznski/rebuntu/cpp/CMakeFiles/rebuntu-shell-context.dir

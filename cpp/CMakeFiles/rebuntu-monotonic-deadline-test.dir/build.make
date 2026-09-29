@@ -94,6 +94,8 @@ rebuntu-monotonic-deadline-test: CMakeFiles/rebuntu-monotonic-deadline-test.dir/
 rebuntu-monotonic-deadline-test: CMakeFiles/rebuntu-monotonic-deadline-test.dir/build.make
 rebuntu-monotonic-deadline-test: librebuntu-core.a
 rebuntu-monotonic-deadline-test: librebuntu-observation-bounds.a
+rebuntu-monotonic-deadline-test: librebuntu-state-acquisition.a
+rebuntu-monotonic-deadline-test: librebuntu-state-normalizer.a
 rebuntu-monotonic-deadline-test: librebuntu-shell-semi-natural.a
 rebuntu-monotonic-deadline-test: librebuntu-shell-context.a
 rebuntu-monotonic-deadline-test: librebuntu-shell-boundary.a

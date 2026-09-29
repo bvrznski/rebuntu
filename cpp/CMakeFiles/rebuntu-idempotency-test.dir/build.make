@@ -95,6 +95,8 @@ rebuntu-idempotency-test: CMakeFiles/rebuntu-idempotency-test.dir/build.make
 rebuntu-idempotency-test: librebuntu-core.a
 rebuntu-idempotency-test: librebuntu-idempotency.a
 rebuntu-idempotency-test: librebuntu-observation-bounds.a
+rebuntu-idempotency-test: librebuntu-state-acquisition.a
+rebuntu-idempotency-test: librebuntu-state-normalizer.a
 rebuntu-idempotency-test: librebuntu-shell-semi-natural.a
 rebuntu-idempotency-test: librebuntu-shell-context.a
 rebuntu-idempotency-test: librebuntu-shell-boundary.a

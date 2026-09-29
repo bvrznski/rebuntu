@@ -74,6 +74,8 @@ set(CMAKE_DEPEND_INFO_FILES
   "CMakeFiles/ContinuousSubmit.dir/DependInfo.cmake"
   "CMakeFiles/rebuntu-core.dir/DependInfo.cmake"
   "CMakeFiles/rebuntu-observation-bounds.dir/DependInfo.cmake"
+  "CMakeFiles/rebuntu-state-acquisition.dir/DependInfo.cmake"
+  "CMakeFiles/rebuntu-state-normalizer.dir/DependInfo.cmake"
   "CMakeFiles/rebuntu-shell.dir/DependInfo.cmake"
   "CMakeFiles/rebuntu-shell-semi-natural.dir/DependInfo.cmake"
   "CMakeFiles/rebuntu-shell-context.dir/DependInfo.cmake"

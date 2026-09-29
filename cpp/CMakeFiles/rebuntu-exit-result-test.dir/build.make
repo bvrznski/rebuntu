@@ -94,6 +94,8 @@ rebuntu-exit-result-test: CMakeFiles/rebuntu-exit-result-test.dir/home/bvrznski/
 rebuntu-exit-result-test: CMakeFiles/rebuntu-exit-result-test.dir/build.make
 rebuntu-exit-result-test: librebuntu-core.a
 rebuntu-exit-result-test: librebuntu-observation-bounds.a
+rebuntu-exit-result-test: librebuntu-state-acquisition.a
+rebuntu-exit-result-test: librebuntu-state-normalizer.a
 rebuntu-exit-result-test: librebuntu-shell-semi-natural.a
 rebuntu-exit-result-test: librebuntu-shell-context.a
 rebuntu-exit-result-test: librebuntu-shell-boundary.a

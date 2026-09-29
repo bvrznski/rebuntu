@@ -567,6 +567,14 @@ add_library(rebuntu-thermal-adapter STATIC
 target_include_directories(rebuntu-thermal-adapter PUBLIC ${CMAKE_CURRENT_LIST_DIR}/../src)
 target_link_libraries(rebuntu-core PUBLIC rebuntu-thermal-adapter)
 
+# Phase 7.12: Power/Thermal Observation Tests
+add_executable(rebuntu-power-thermal-test
+    ${CMAKE_CURRENT_LIST_DIR}/../tests/unit/power_thermal_observation_test.cpp
+)
+target_include_directories(rebuntu-power-thermal-test PRIVATE ${CMAKE_CURRENT_LIST_DIR}/../src)
+target_link_libraries(rebuntu-power-thermal-test PRIVATE rebuntu-core rebuntu-power-supply-adapter rebuntu-thermal-adapter)
+add_test(NAME power_thermal_test COMMAND rebuntu-power-thermal-test)
+
 # Phase 7.8: Sysfs Device Observation Adapter module
 add_library(rebuntu-sysfs-device STATIC
     ${CMAKE_CURRENT_LIST_DIR}/../src/adapters/sysfs/device/types.hpp

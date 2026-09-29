@@ -651,12 +651,13 @@ add_library(rebuntu-procfs-process STATIC
 target_include_directories(rebuntu-procfs-process PUBLIC ${CMAKE_CURRENT_LIST_DIR}/../src)
 target_link_libraries(rebuntu-core PUBLIC rebuntu-procfs-process)
 
-# Procfs Process Discovery unit tests - test file missing
-# add_executable(rebuntu-procfs-process-test
-#     ${CMAKE_CURRENT_LIST_DIR}/tests/unit/procfs_process_test.cpp
-# )
-# target_link_libraries(rebuntu-procfs-process-test PRIVATE rebuntu-procfs-process rebuntu-core)
-# add_test(NAME procfs_process_test COMMAND rebuntu-procfs-process-test)
+# Phase 7.5: Procfs Process Discovery Integration Tests
+add_executable(rebuntu-procfs-process-integration-test
+    ${CMAKE_CURRENT_LIST_DIR}/../tests/unit/procfs_process_integration_test.cpp
+)
+target_include_directories(rebuntu-procfs-process-integration-test PRIVATE ${CMAKE_CURRENT_LIST_DIR}/../src)
+target_link_libraries(rebuntu-procfs-process-integration-test PRIVATE rebuntu-core rebuntu-procfs-process)
+add_test(NAME procfs_process_integration_test COMMAND rebuntu-procfs-process-integration-test)
 
 # Phase 6.56: PID Reuse and Transient Identity Adversarial Tests - test file missing
 # add_executable(rebuntu-pid-reuse-test

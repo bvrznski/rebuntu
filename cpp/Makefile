@@ -1290,6 +1290,19 @@ rebuntu-procfs-process/fast:
 .PHONY : rebuntu-procfs-process/fast
 
 #=============================================================================
+# Target rules for targets named rebuntu-procfs-process-integration-test
+
+# Build rule for target.
+rebuntu-procfs-process-integration-test: cmake_check_build_system
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 rebuntu-procfs-process-integration-test
+.PHONY : rebuntu-procfs-process-integration-test
+
+# fast build rule for target.
+rebuntu-procfs-process-integration-test/fast:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/rebuntu-procfs-process-integration-test.dir/build.make CMakeFiles/rebuntu-procfs-process-integration-test.dir/build
+.PHONY : rebuntu-procfs-process-integration-test/fast
+
+#=============================================================================
 # Target rules for targets named rebuntu-procfs-modules
 
 # Build rule for target.
@@ -4564,6 +4577,30 @@ home/bvrznski/rebuntu/tests/unit/privilege_escalation_adversarial_test.cpp.s:
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/rebuntu-privilege-escalation-adversarial-test.dir/build.make CMakeFiles/rebuntu-privilege-escalation-adversarial-test.dir/home/bvrznski/rebuntu/tests/unit/privilege_escalation_adversarial_test.cpp.s
 .PHONY : home/bvrznski/rebuntu/tests/unit/privilege_escalation_adversarial_test.cpp.s
 
+home/bvrznski/rebuntu/tests/unit/procfs_process_integration_test.o: home/bvrznski/rebuntu/tests/unit/procfs_process_integration_test.cpp.o
+.PHONY : home/bvrznski/rebuntu/tests/unit/procfs_process_integration_test.o
+
+# target to build an object file
+home/bvrznski/rebuntu/tests/unit/procfs_process_integration_test.cpp.o:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/rebuntu-procfs-process-integration-test.dir/build.make CMakeFiles/rebuntu-procfs-process-integration-test.dir/home/bvrznski/rebuntu/tests/unit/procfs_process_integration_test.cpp.o
+.PHONY : home/bvrznski/rebuntu/tests/unit/procfs_process_integration_test.cpp.o
+
+home/bvrznski/rebuntu/tests/unit/procfs_process_integration_test.i: home/bvrznski/rebuntu/tests/unit/procfs_process_integration_test.cpp.i
+.PHONY : home/bvrznski/rebuntu/tests/unit/procfs_process_integration_test.i
+
+# target to preprocess a source file
+home/bvrznski/rebuntu/tests/unit/procfs_process_integration_test.cpp.i:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/rebuntu-procfs-process-integration-test.dir/build.make CMakeFiles/rebuntu-procfs-process-integration-test.dir/home/bvrznski/rebuntu/tests/unit/procfs_process_integration_test.cpp.i
+.PHONY : home/bvrznski/rebuntu/tests/unit/procfs_process_integration_test.cpp.i
+
+home/bvrznski/rebuntu/tests/unit/procfs_process_integration_test.s: home/bvrznski/rebuntu/tests/unit/procfs_process_integration_test.cpp.s
+.PHONY : home/bvrznski/rebuntu/tests/unit/procfs_process_integration_test.s
+
+# target to generate assembly for a file
+home/bvrznski/rebuntu/tests/unit/procfs_process_integration_test.cpp.s:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/rebuntu-procfs-process-integration-test.dir/build.make CMakeFiles/rebuntu-procfs-process-integration-test.dir/home/bvrznski/rebuntu/tests/unit/procfs_process_integration_test.cpp.s
+.PHONY : home/bvrznski/rebuntu/tests/unit/procfs_process_integration_test.cpp.s
+
 home/bvrznski/rebuntu/tests/unit/read_file_operation_test.o: home/bvrznski/rebuntu/tests/unit/read_file_operation_test.cpp.o
 .PHONY : home/bvrznski/rebuntu/tests/unit/read_file_operation_test.o
 
@@ -4793,6 +4830,7 @@ help:
 	@echo "... rebuntu-procfs-modules"
 	@echo "... rebuntu-procfs-mounts"
 	@echo "... rebuntu-procfs-process"
+	@echo "... rebuntu-procfs-process-integration-test"
 	@echo "... rebuntu-read-file-operation"
 	@echo "... rebuntu-read-file-operation-test"
 	@echo "... rebuntu-read-only-command-test"
@@ -5166,6 +5204,9 @@ help:
 	@echo "... home/bvrznski/rebuntu/tests/unit/privilege_escalation_adversarial_test.o"
 	@echo "... home/bvrznski/rebuntu/tests/unit/privilege_escalation_adversarial_test.i"
 	@echo "... home/bvrznski/rebuntu/tests/unit/privilege_escalation_adversarial_test.s"
+	@echo "... home/bvrznski/rebuntu/tests/unit/procfs_process_integration_test.o"
+	@echo "... home/bvrznski/rebuntu/tests/unit/procfs_process_integration_test.i"
+	@echo "... home/bvrznski/rebuntu/tests/unit/procfs_process_integration_test.s"
 	@echo "... home/bvrznski/rebuntu/tests/unit/read_file_operation_test.o"
 	@echo "... home/bvrznski/rebuntu/tests/unit/read_file_operation_test.i"
 	@echo "... home/bvrznski/rebuntu/tests/unit/read_file_operation_test.s"

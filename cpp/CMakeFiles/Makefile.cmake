@@ -130,6 +130,7 @@ set(CMAKE_DEPEND_INFO_FILES
   "CMakeFiles/rebuntu-netlink-socket.dir/DependInfo.cmake"
   "CMakeFiles/rebuntu-drm-topology.dir/DependInfo.cmake"
   "CMakeFiles/rebuntu-procfs-process.dir/DependInfo.cmake"
+  "CMakeFiles/rebuntu-procfs-process-integration-test.dir/DependInfo.cmake"
   "CMakeFiles/rebuntu-procfs-modules.dir/DependInfo.cmake"
   "CMakeFiles/rebuntu-firmware-adapter.dir/DependInfo.cmake"
   "CMakeFiles/rebuntu-dpkg-package-inventory.dir/DependInfo.cmake"

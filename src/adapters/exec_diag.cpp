@@ -217,8 +217,6 @@ std::string build_journal_message(const ExecDiagnosticEvent& event) {
     return oss.str();
 }
 
-}  // namespace
-
 // ============================================================================
 // ExecDiagnosticEmitterImpl — Implementation of ExecDiagnosticEmitter
 // ============================================================================

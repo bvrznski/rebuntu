@@ -107,11 +107,8 @@ public:
         return result;
     }
     
-    bool has_reference(
-        const CrossDomainEntityId& from,
-        const CrossDomainEntityId& to,
-        RelationshipType type) override {
-        return false;  // Unknown
+    bool has_reference(ReferenceQuery query) override {
+        return false;  // Unknown - stub implementation
     }
     
     std::vector<EntityReference> get_references_by_type(

@@ -192,8 +192,6 @@ std::string redact_message_secrets(const std::string& message) {
     return result;
 }
 
-}  // namespace
-
 // ============================================================================
 // JournaldAdapter Implementation
 // ============================================================================
@@ -417,7 +415,7 @@ JournaldAdapter::extract_monotonic_timestamp(
 // JournaldQuery Implementation
 // ============================================================================
 
-std::vector<std::string> JournaldQuery::build_argv(const QueryConfig& config) {
+std::vector<std::string> JournaldQuery::build_argv(const JournaldQuery::QueryConfig& config) {
     std::vector<std::string> argv;
     
     // Boot filtering

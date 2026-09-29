@@ -16,6 +16,17 @@
 #include "operations/read_file.hpp"
 
 using namespace rebuntu::operations;
+using namespace rebuntu::core;
+
+void test_register_operation() {
+    OperationRegistry registry;
+    register_read_file_operation(registry);
+    
+    auto op = registry.find("filesystem.read_file");
+    assert(op.has_value());
+    assert(op->id == "filesystem.read_file");
+    assert(op->side_effect == SideEffectKind::NONE);
+}
 
 void test_read_nonexistent_file() {
     ReadFileInputs inputs;
@@ -110,15 +121,6 @@ void test_evidence_collected() {
     std::remove("/tmp/rebuntu_test_evidence.txt");
 }
 
-void test_register_operation() {
-    core::OperationRegistry registry;
-    register_read_file_operation(registry);
-    
-    auto op = registry.find("filesystem.read_file");
-    assert(op.has_value());
-    assert(op->id == "filesystem.read_file");
-    assert(op->side_effect == core::SideEffectKind::NONE);
-}
 
 int main() {
     std::cout << "=== Phase 6.69: Read File Operation Tests ===" << std::endl;

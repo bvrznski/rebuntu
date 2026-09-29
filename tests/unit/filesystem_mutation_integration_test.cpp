@@ -178,7 +178,7 @@ void test_filesystem_copy_mutation() {
     
     auto result = filesystem_copy(inputs);
     
-    std::cout << "Copy result status: " << core::to_string(result.status) << std::endl;
+    std::cout << "Copy result status: " << to_string(result.status) << std::endl;
     std::cout << "Changed: " << (result.changed ? "true" : "false") << std::endl;
     std::cout << "Verified: " << (result.verified ? "true" : "false") << std::endl;
     
@@ -264,7 +264,7 @@ void test_filesystem_copy_idempotency() {
     auto result1 = filesystem_copy(inputs1);
     
     std::cout << "First copy - changed: " << (result1.changed ? "true" : "false") 
-              << ", status: " << core::to_string(result1.status) << std::endl;
+              << ", status: " << to_string(result1.status) << std::endl;
     
     assert(result1.status == SemanticStatus::kSuccess),
         "First copy should succeed";
@@ -279,7 +279,7 @@ void test_filesystem_copy_idempotency() {
     
     std::cout << "Second copy (no overwrite) - changed: " 
               << (result2.changed ? "true" : "false") 
-              << ", status: " << core::to_string(result2.status) << std::endl;
+              << ", status: " << to_string(result2.status) << std::endl;
     
     // Since dest exists and overwrite=false, should return no_change
     assert(result2.status == SemanticStatus::kSuccess),
@@ -321,7 +321,7 @@ void test_filesystem_copy_precondition_failure() {
     // Execute should also fail
     auto result = filesystem_copy(inputs);
     
-    std::cout << "Execution result status: " << core::to_string(result.status) << std::endl;
+    std::cout << "Execution result status: " << to_string(result.status) << std::endl;
     
     assert(result.status == SemanticStatus::kFailure),
         "Operation on non-existent source should return failure";

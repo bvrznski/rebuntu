@@ -1347,6 +1347,27 @@ target_include_directories(rebuntu-mutation-integration-test PRIVATE ${CMAKE_CUR
 target_link_libraries(rebuntu-mutation-integration-test PRIVATE rebuntu-core rebuntu-filesystem)
 add_test(NAME mutation_integration_test COMMAND rebuntu-mutation-integration-test)
 
+# Phase 5.17: Procfs Mounts Adapter unit tests (disabled - gtest not available in CTest)
+# add_executable(rebuntu-procfs-mounts-test
+#     ${CMAKE_CURRENT_LIST_DIR}/../tests/unit/test_procfs_mounts_adapter.cpp
+# )
+# target_link_libraries(rebuntu-procfs-mounts-test PRIVATE rebuntu-core rebuntu-procfs-mounts gtest_main)
+# add_test(NAME procfs_mounts_test COMMAND rebuntu-procfs-mounts-test)
+
+# Phase 5.19: Encrypted Storage Adapter unit tests (disabled - gtest not available in CTest)
+# add_executable(rebuntu-encrypted-storage-test
+#     ${CMAKE_CURRENT_LIST_DIR}/../tests/unit/test_sysfs_encrypted_storage_adapter.cpp
+# )
+# target_link_libraries(rebuntu-encrypted-storage-test PRIVATE rebuntu-core rebuntu-encrypted-storage-adapter gtest_main)
+# add_test(NAME encrypted_storage_test COMMAND rebuntu-encrypted-storage-test)
+
+# Phase 5.20: MD RAID Adapter unit tests (disabled - gtest not available in CTest)
+# add_executable(rebuntu-md-raid-test
+#     ${CMAKE_CURRENT_LIST_DIR}/../tests/unit/test_sysfs_md_raid_adapter.cpp
+# )
+# target_link_libraries(rebuntu-md-raid-test PRIVATE rebuntu-core rebuntu-md-raid-adapter gtest_main)
+# add_test(NAME md_raid_test COMMAND rebuntu-md-raid-test)
+
 # Phase 6.71: Read-Only Command Integration Tests
 # Tests for QUERY/OBSERVE commands with UNKNOWN/partial/freshness handling
 add_executable(rebuntu-read-only-command-test

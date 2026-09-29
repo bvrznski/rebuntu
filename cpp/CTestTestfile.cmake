@@ -29,6 +29,6 @@ set_tests_properties([=[read_file_operation_test]=] PROPERTIES  _BACKTRACE_TRIPL
 add_test([=[mutation_integration_test]=] "/home/bvrznski/rebuntu/cpp/rebuntu-mutation-integration-test")
 set_tests_properties([=[mutation_integration_test]=] PROPERTIES  _BACKTRACE_TRIPLES "/home/bvrznski/rebuntu/cpp/CMakeLists.txt;1348;add_test;/home/bvrznski/rebuntu/cpp/CMakeLists.txt;0;")
 add_test([=[read_only_command_test]=] "/home/bvrznski/rebuntu/cpp/rebuntu-read-only-command-test")
-set_tests_properties([=[read_only_command_test]=] PROPERTIES  _BACKTRACE_TRIPLES "/home/bvrznski/rebuntu/cpp/CMakeLists.txt;1357;add_test;/home/bvrznski/rebuntu/cpp/CMakeLists.txt;0;")
+set_tests_properties([=[read_only_command_test]=] PROPERTIES  _BACKTRACE_TRIPLES "/home/bvrznski/rebuntu/cpp/CMakeLists.txt;1378;add_test;/home/bvrznski/rebuntu/cpp/CMakeLists.txt;0;")
 add_test([=[timeout_ambiguity_test]=] "/home/bvrznski/rebuntu/cpp/rebuntu-timeout-ambiguity-test")
-set_tests_properties([=[timeout_ambiguity_test]=] PROPERTIES  _BACKTRACE_TRIPLES "/home/bvrznski/rebuntu/cpp/CMakeLists.txt;1365;add_test;/home/bvrznski/rebuntu/cpp/CMakeLists.txt;0;")
+set_tests_properties([=[timeout_ambiguity_test]=] PROPERTIES  _BACKTRACE_TRIPLES "/home/bvrznski/rebuntu/cpp/CMakeLists.txt;1386;add_test;/home/bvrznski/rebuntu/cpp/CMakeLists.txt;0;")

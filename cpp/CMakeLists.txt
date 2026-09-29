@@ -80,6 +80,14 @@ target_sources(rebuntu-core PRIVATE
     ${CMAKE_CURRENT_LIST_DIR}/../src/system/observation/model.hpp
 )
 
+# Phase 7.2: State Acquisition Service module
+add_library(rebuntu-state-acquisition STATIC
+    ${CMAKE_CURRENT_LIST_DIR}/../src/system/observation/snapshot_builder.cpp
+    ${CMAKE_CURRENT_LIST_DIR}/../src/system/observation/state_acquisition_service.cpp
+)
+target_include_directories(rebuntu-state-acquisition PUBLIC ${CMAKE_CURRENT_LIST_DIR}/../src)
+target_link_libraries(rebuntu-core PUBLIC rebuntu-state-acquisition rebuntu-observation-bounds)
+
 # Phase 6.0: Shell Language Foundation module
 add_library(rebuntu-shell STATIC
     ${CMAKE_CURRENT_LIST_DIR}/../src/system/shell/types.hpp

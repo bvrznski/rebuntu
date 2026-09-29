@@ -777,12 +777,13 @@ add_library(rebuntu-systemd-service-adapter STATIC
 target_include_directories(rebuntu-systemd-service-adapter PUBLIC ${CMAKE_CURRENT_LIST_DIR}/../src)
 target_link_libraries(rebuntu-core PUBLIC rebuntu-systemd-service-adapter)
 
-# Systemd Service Discovery unit tests - test file missing
-# add_executable(rebuntu-systemd-service-test
-#     ${CMAKE_CURRENT_LIST_DIR}/tests/unit/systemd_service_test.cpp
-# )
-# target_link_libraries(rebuntu-systemd-service-test PRIVATE rebuntu-systemd-service-adapter rebuntu-core)
-# add_test(NAME systemd_service_test COMMAND rebuntu-systemd-service-test)
+# Phase 7.6: Systemd Service Discovery unit tests (native Linux interfaces)
+add_executable(rebuntu-systemd-service-test
+    ${CMAKE_CURRENT_LIST_DIR}/../tests/unit/systemd_service_test.cpp
+)
+target_include_directories(rebuntu-systemd-service-test PRIVATE ${CMAKE_CURRENT_LIST_DIR}/../src)
+target_link_libraries(rebuntu-systemd-service-test PRIVATE rebuntu-systemd-service-adapter rebuntu-core)
+add_test(NAME systemd_service_test COMMAND rebuntu-systemd-service-test)
 
 # Phase 5.32: Kernel Module Discovery unit tests - test file missing
 # add_executable(rebuntu-procfs-modules-test

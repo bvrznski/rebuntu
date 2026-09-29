@@ -1368,6 +1368,19 @@ rebuntu-systemd-service-adapter/fast:
 .PHONY : rebuntu-systemd-service-adapter/fast
 
 #=============================================================================
+# Target rules for targets named rebuntu-systemd-service-test
+
+# Build rule for target.
+rebuntu-systemd-service-test: cmake_check_build_system
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 rebuntu-systemd-service-test
+.PHONY : rebuntu-systemd-service-test
+
+# fast build rule for target.
+rebuntu-systemd-service-test/fast:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/rebuntu-systemd-service-test.dir/build.make CMakeFiles/rebuntu-systemd-service-test.dir/build
+.PHONY : rebuntu-systemd-service-test/fast
+
+#=============================================================================
 # Target rules for targets named rebuntu-journal-normalizer
 
 # Build rule for target.
@@ -4697,6 +4710,30 @@ home/bvrznski/rebuntu/tests/unit/shell_context_test.cpp.s:
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/rebuntu-context-test.dir/build.make CMakeFiles/rebuntu-context-test.dir/home/bvrznski/rebuntu/tests/unit/shell_context_test.cpp.s
 .PHONY : home/bvrznski/rebuntu/tests/unit/shell_context_test.cpp.s
 
+home/bvrznski/rebuntu/tests/unit/systemd_service_test.o: home/bvrznski/rebuntu/tests/unit/systemd_service_test.cpp.o
+.PHONY : home/bvrznski/rebuntu/tests/unit/systemd_service_test.o
+
+# target to build an object file
+home/bvrznski/rebuntu/tests/unit/systemd_service_test.cpp.o:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/rebuntu-systemd-service-test.dir/build.make CMakeFiles/rebuntu-systemd-service-test.dir/home/bvrznski/rebuntu/tests/unit/systemd_service_test.cpp.o
+.PHONY : home/bvrznski/rebuntu/tests/unit/systemd_service_test.cpp.o
+
+home/bvrznski/rebuntu/tests/unit/systemd_service_test.i: home/bvrznski/rebuntu/tests/unit/systemd_service_test.cpp.i
+.PHONY : home/bvrznski/rebuntu/tests/unit/systemd_service_test.i
+
+# target to preprocess a source file
+home/bvrznski/rebuntu/tests/unit/systemd_service_test.cpp.i:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/rebuntu-systemd-service-test.dir/build.make CMakeFiles/rebuntu-systemd-service-test.dir/home/bvrznski/rebuntu/tests/unit/systemd_service_test.cpp.i
+.PHONY : home/bvrznski/rebuntu/tests/unit/systemd_service_test.cpp.i
+
+home/bvrznski/rebuntu/tests/unit/systemd_service_test.s: home/bvrznski/rebuntu/tests/unit/systemd_service_test.cpp.s
+.PHONY : home/bvrznski/rebuntu/tests/unit/systemd_service_test.s
+
+# target to generate assembly for a file
+home/bvrznski/rebuntu/tests/unit/systemd_service_test.cpp.s:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/rebuntu-systemd-service-test.dir/build.make CMakeFiles/rebuntu-systemd-service-test.dir/home/bvrznski/rebuntu/tests/unit/systemd_service_test.cpp.s
+.PHONY : home/bvrznski/rebuntu/tests/unit/systemd_service_test.cpp.s
+
 home/bvrznski/rebuntu/tests/unit/timeout_after_commit_test.o: home/bvrznski/rebuntu/tests/unit/timeout_after_commit_test.cpp.o
 .PHONY : home/bvrznski/rebuntu/tests/unit/timeout_after_commit_test.o
 
@@ -4857,6 +4894,7 @@ help:
 	@echo "... rebuntu-state-normalizer"
 	@echo "... rebuntu-storage-health-monitor"
 	@echo "... rebuntu-systemd-service-adapter"
+	@echo "... rebuntu-systemd-service-test"
 	@echo "... rebuntu-temp-files"
 	@echo "... rebuntu-thermal-adapter"
 	@echo "... rebuntu-timeout-ambiguity-test"
@@ -5219,6 +5257,9 @@ help:
 	@echo "... home/bvrznski/rebuntu/tests/unit/shell_context_test.o"
 	@echo "... home/bvrznski/rebuntu/tests/unit/shell_context_test.i"
 	@echo "... home/bvrznski/rebuntu/tests/unit/shell_context_test.s"
+	@echo "... home/bvrznski/rebuntu/tests/unit/systemd_service_test.o"
+	@echo "... home/bvrznski/rebuntu/tests/unit/systemd_service_test.i"
+	@echo "... home/bvrznski/rebuntu/tests/unit/systemd_service_test.s"
 	@echo "... home/bvrznski/rebuntu/tests/unit/timeout_after_commit_test.o"
 	@echo "... home/bvrznski/rebuntu/tests/unit/timeout_after_commit_test.i"
 	@echo "... home/bvrznski/rebuntu/tests/unit/timeout_after_commit_test.s"

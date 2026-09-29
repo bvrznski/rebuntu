@@ -142,6 +142,7 @@ rebuntu-idempotency-test: librebuntu-encrypted-storage-adapter.a
 rebuntu-idempotency-test: librebuntu-md-raid-adapter.a
 rebuntu-idempotency-test: librebuntu-power-supply-adapter.a
 rebuntu-idempotency-test: librebuntu-thermal-adapter.a
+rebuntu-idempotency-test: librebuntu-sysfs-device.a
 rebuntu-idempotency-test: librebuntu-peripherals.a
 rebuntu-idempotency-test: librebuntu-hotplug.a
 rebuntu-idempotency-test: librebuntu-netlink-link.a

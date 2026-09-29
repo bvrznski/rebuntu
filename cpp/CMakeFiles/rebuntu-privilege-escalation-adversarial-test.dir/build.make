@@ -142,6 +142,7 @@ rebuntu-privilege-escalation-adversarial-test: librebuntu-encrypted-storage-adap
 rebuntu-privilege-escalation-adversarial-test: librebuntu-md-raid-adapter.a
 rebuntu-privilege-escalation-adversarial-test: librebuntu-power-supply-adapter.a
 rebuntu-privilege-escalation-adversarial-test: librebuntu-thermal-adapter.a
+rebuntu-privilege-escalation-adversarial-test: librebuntu-sysfs-device.a
 rebuntu-privilege-escalation-adversarial-test: librebuntu-peripherals.a
 rebuntu-privilege-escalation-adversarial-test: librebuntu-hotplug.a
 rebuntu-privilege-escalation-adversarial-test: librebuntu-netlink-link.a

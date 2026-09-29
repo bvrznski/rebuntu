@@ -144,6 +144,7 @@ rebuntu-systemd-service-test: librebuntu-encrypted-storage-adapter.a
 rebuntu-systemd-service-test: librebuntu-md-raid-adapter.a
 rebuntu-systemd-service-test: librebuntu-power-supply-adapter.a
 rebuntu-systemd-service-test: librebuntu-thermal-adapter.a
+rebuntu-systemd-service-test: librebuntu-sysfs-device.a
 rebuntu-systemd-service-test: librebuntu-peripherals.a
 rebuntu-systemd-service-test: librebuntu-hotplug.a
 rebuntu-systemd-service-test: librebuntu-netlink-link.a

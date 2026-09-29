@@ -142,6 +142,7 @@ rebuntu-monotonic-deadline-test: librebuntu-encrypted-storage-adapter.a
 rebuntu-monotonic-deadline-test: librebuntu-md-raid-adapter.a
 rebuntu-monotonic-deadline-test: librebuntu-power-supply-adapter.a
 rebuntu-monotonic-deadline-test: librebuntu-thermal-adapter.a
+rebuntu-monotonic-deadline-test: librebuntu-sysfs-device.a
 rebuntu-monotonic-deadline-test: librebuntu-peripherals.a
 rebuntu-monotonic-deadline-test: librebuntu-hotplug.a
 rebuntu-monotonic-deadline-test: librebuntu-netlink-link.a

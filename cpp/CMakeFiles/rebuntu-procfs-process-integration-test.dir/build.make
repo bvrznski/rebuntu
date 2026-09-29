@@ -143,6 +143,7 @@ rebuntu-procfs-process-integration-test: librebuntu-encrypted-storage-adapter.a
 rebuntu-procfs-process-integration-test: librebuntu-md-raid-adapter.a
 rebuntu-procfs-process-integration-test: librebuntu-power-supply-adapter.a
 rebuntu-procfs-process-integration-test: librebuntu-thermal-adapter.a
+rebuntu-procfs-process-integration-test: librebuntu-sysfs-device.a
 rebuntu-procfs-process-integration-test: librebuntu-peripherals.a
 rebuntu-procfs-process-integration-test: librebuntu-hotplug.a
 rebuntu-procfs-process-integration-test: librebuntu-netlink-link.a

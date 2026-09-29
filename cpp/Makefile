@@ -1199,6 +1199,19 @@ rebuntu-thermal-adapter/fast:
 .PHONY : rebuntu-thermal-adapter/fast
 
 #=============================================================================
+# Target rules for targets named rebuntu-sysfs-device
+
+# Build rule for target.
+rebuntu-sysfs-device: cmake_check_build_system
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 rebuntu-sysfs-device
+.PHONY : rebuntu-sysfs-device
+
+# fast build rule for target.
+rebuntu-sysfs-device/fast:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/rebuntu-sysfs-device.dir/build.make CMakeFiles/rebuntu-sysfs-device.dir/build
+.PHONY : rebuntu-sysfs-device/fast
+
+#=============================================================================
 # Target rules for targets named rebuntu-peripherals
 
 # Build rule for target.
@@ -1379,6 +1392,19 @@ rebuntu-systemd-service-test: cmake_check_build_system
 rebuntu-systemd-service-test/fast:
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/rebuntu-systemd-service-test.dir/build.make CMakeFiles/rebuntu-systemd-service-test.dir/build
 .PHONY : rebuntu-systemd-service-test/fast
+
+#=============================================================================
+# Target rules for targets named rebuntu-sysfs-device-test
+
+# Build rule for target.
+rebuntu-sysfs-device-test: cmake_check_build_system
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 rebuntu-sysfs-device-test
+.PHONY : rebuntu-sysfs-device-test
+
+# fast build rule for target.
+rebuntu-sysfs-device-test/fast:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/rebuntu-sysfs-device-test.dir/build.make CMakeFiles/rebuntu-sysfs-device-test.dir/build
+.PHONY : rebuntu-sysfs-device-test/fast
 
 #=============================================================================
 # Target rules for targets named rebuntu-journal-normalizer
@@ -2378,6 +2404,30 @@ home/bvrznski/rebuntu/src/adapters/subprocess_utility.cpp.s:
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/rebuntu-journald-adapter.dir/build.make CMakeFiles/rebuntu-journald-adapter.dir/home/bvrznski/rebuntu/src/adapters/subprocess_utility.cpp.s
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/rebuntu-exec-diag.dir/build.make CMakeFiles/rebuntu-exec-diag.dir/home/bvrznski/rebuntu/src/adapters/subprocess_utility.cpp.s
 .PHONY : home/bvrznski/rebuntu/src/adapters/subprocess_utility.cpp.s
+
+home/bvrznski/rebuntu/src/adapters/sysfs/device/integration.o: home/bvrznski/rebuntu/src/adapters/sysfs/device/integration.cpp.o
+.PHONY : home/bvrznski/rebuntu/src/adapters/sysfs/device/integration.o
+
+# target to build an object file
+home/bvrznski/rebuntu/src/adapters/sysfs/device/integration.cpp.o:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/rebuntu-sysfs-device.dir/build.make CMakeFiles/rebuntu-sysfs-device.dir/home/bvrznski/rebuntu/src/adapters/sysfs/device/integration.cpp.o
+.PHONY : home/bvrznski/rebuntu/src/adapters/sysfs/device/integration.cpp.o
+
+home/bvrznski/rebuntu/src/adapters/sysfs/device/integration.i: home/bvrznski/rebuntu/src/adapters/sysfs/device/integration.cpp.i
+.PHONY : home/bvrznski/rebuntu/src/adapters/sysfs/device/integration.i
+
+# target to preprocess a source file
+home/bvrznski/rebuntu/src/adapters/sysfs/device/integration.cpp.i:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/rebuntu-sysfs-device.dir/build.make CMakeFiles/rebuntu-sysfs-device.dir/home/bvrznski/rebuntu/src/adapters/sysfs/device/integration.cpp.i
+.PHONY : home/bvrznski/rebuntu/src/adapters/sysfs/device/integration.cpp.i
+
+home/bvrznski/rebuntu/src/adapters/sysfs/device/integration.s: home/bvrznski/rebuntu/src/adapters/sysfs/device/integration.cpp.s
+.PHONY : home/bvrznski/rebuntu/src/adapters/sysfs/device/integration.s
+
+# target to generate assembly for a file
+home/bvrznski/rebuntu/src/adapters/sysfs/device/integration.cpp.s:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/rebuntu-sysfs-device.dir/build.make CMakeFiles/rebuntu-sysfs-device.dir/home/bvrznski/rebuntu/src/adapters/sysfs/device/integration.cpp.s
+.PHONY : home/bvrznski/rebuntu/src/adapters/sysfs/device/integration.cpp.s
 
 home/bvrznski/rebuntu/src/adapters/sysfs/encrypted_storage/implementation.o: home/bvrznski/rebuntu/src/adapters/sysfs/encrypted_storage/implementation.cpp.o
 .PHONY : home/bvrznski/rebuntu/src/adapters/sysfs/encrypted_storage/implementation.o
@@ -4710,6 +4760,30 @@ home/bvrznski/rebuntu/tests/unit/shell_context_test.cpp.s:
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/rebuntu-context-test.dir/build.make CMakeFiles/rebuntu-context-test.dir/home/bvrznski/rebuntu/tests/unit/shell_context_test.cpp.s
 .PHONY : home/bvrznski/rebuntu/tests/unit/shell_context_test.cpp.s
 
+home/bvrznski/rebuntu/tests/unit/sysfs_device_test.o: home/bvrznski/rebuntu/tests/unit/sysfs_device_test.cpp.o
+.PHONY : home/bvrznski/rebuntu/tests/unit/sysfs_device_test.o
+
+# target to build an object file
+home/bvrznski/rebuntu/tests/unit/sysfs_device_test.cpp.o:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/rebuntu-sysfs-device-test.dir/build.make CMakeFiles/rebuntu-sysfs-device-test.dir/home/bvrznski/rebuntu/tests/unit/sysfs_device_test.cpp.o
+.PHONY : home/bvrznski/rebuntu/tests/unit/sysfs_device_test.cpp.o
+
+home/bvrznski/rebuntu/tests/unit/sysfs_device_test.i: home/bvrznski/rebuntu/tests/unit/sysfs_device_test.cpp.i
+.PHONY : home/bvrznski/rebuntu/tests/unit/sysfs_device_test.i
+
+# target to preprocess a source file
+home/bvrznski/rebuntu/tests/unit/sysfs_device_test.cpp.i:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/rebuntu-sysfs-device-test.dir/build.make CMakeFiles/rebuntu-sysfs-device-test.dir/home/bvrznski/rebuntu/tests/unit/sysfs_device_test.cpp.i
+.PHONY : home/bvrznski/rebuntu/tests/unit/sysfs_device_test.cpp.i
+
+home/bvrznski/rebuntu/tests/unit/sysfs_device_test.s: home/bvrznski/rebuntu/tests/unit/sysfs_device_test.cpp.s
+.PHONY : home/bvrznski/rebuntu/tests/unit/sysfs_device_test.s
+
+# target to generate assembly for a file
+home/bvrznski/rebuntu/tests/unit/sysfs_device_test.cpp.s:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/rebuntu-sysfs-device-test.dir/build.make CMakeFiles/rebuntu-sysfs-device-test.dir/home/bvrznski/rebuntu/tests/unit/sysfs_device_test.cpp.s
+.PHONY : home/bvrznski/rebuntu/tests/unit/sysfs_device_test.cpp.s
+
 home/bvrznski/rebuntu/tests/unit/systemd_service_test.o: home/bvrznski/rebuntu/tests/unit/systemd_service_test.cpp.o
 .PHONY : home/bvrznski/rebuntu/tests/unit/systemd_service_test.o
 
@@ -4893,6 +4967,8 @@ help:
 	@echo "... rebuntu-state-acquisition"
 	@echo "... rebuntu-state-normalizer"
 	@echo "... rebuntu-storage-health-monitor"
+	@echo "... rebuntu-sysfs-device"
+	@echo "... rebuntu-sysfs-device-test"
 	@echo "... rebuntu-systemd-service-adapter"
 	@echo "... rebuntu-systemd-service-test"
 	@echo "... rebuntu-temp-files"
@@ -4966,6 +5042,9 @@ help:
 	@echo "... home/bvrznski/rebuntu/src/adapters/subprocess_utility.o"
 	@echo "... home/bvrznski/rebuntu/src/adapters/subprocess_utility.i"
 	@echo "... home/bvrznski/rebuntu/src/adapters/subprocess_utility.s"
+	@echo "... home/bvrznski/rebuntu/src/adapters/sysfs/device/integration.o"
+	@echo "... home/bvrznski/rebuntu/src/adapters/sysfs/device/integration.i"
+	@echo "... home/bvrznski/rebuntu/src/adapters/sysfs/device/integration.s"
 	@echo "... home/bvrznski/rebuntu/src/adapters/sysfs/encrypted_storage/implementation.o"
 	@echo "... home/bvrznski/rebuntu/src/adapters/sysfs/encrypted_storage/implementation.i"
 	@echo "... home/bvrznski/rebuntu/src/adapters/sysfs/encrypted_storage/implementation.s"
@@ -5257,6 +5336,9 @@ help:
 	@echo "... home/bvrznski/rebuntu/tests/unit/shell_context_test.o"
 	@echo "... home/bvrznski/rebuntu/tests/unit/shell_context_test.i"
 	@echo "... home/bvrznski/rebuntu/tests/unit/shell_context_test.s"
+	@echo "... home/bvrznski/rebuntu/tests/unit/sysfs_device_test.o"
+	@echo "... home/bvrznski/rebuntu/tests/unit/sysfs_device_test.i"
+	@echo "... home/bvrznski/rebuntu/tests/unit/sysfs_device_test.s"
 	@echo "... home/bvrznski/rebuntu/tests/unit/systemd_service_test.o"
 	@echo "... home/bvrznski/rebuntu/tests/unit/systemd_service_test.i"
 	@echo "... home/bvrznski/rebuntu/tests/unit/systemd_service_test.s"

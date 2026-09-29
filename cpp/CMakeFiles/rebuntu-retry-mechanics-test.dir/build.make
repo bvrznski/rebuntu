@@ -142,6 +142,7 @@ rebuntu-retry-mechanics-test: librebuntu-encrypted-storage-adapter.a
 rebuntu-retry-mechanics-test: librebuntu-md-raid-adapter.a
 rebuntu-retry-mechanics-test: librebuntu-power-supply-adapter.a
 rebuntu-retry-mechanics-test: librebuntu-thermal-adapter.a
+rebuntu-retry-mechanics-test: librebuntu-sysfs-device.a
 rebuntu-retry-mechanics-test: librebuntu-peripherals.a
 rebuntu-retry-mechanics-test: librebuntu-hotplug.a
 rebuntu-retry-mechanics-test: librebuntu-netlink-link.a

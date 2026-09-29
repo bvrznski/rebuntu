@@ -142,6 +142,7 @@ rebuntu-context-test: librebuntu-encrypted-storage-adapter.a
 rebuntu-context-test: librebuntu-md-raid-adapter.a
 rebuntu-context-test: librebuntu-power-supply-adapter.a
 rebuntu-context-test: librebuntu-thermal-adapter.a
+rebuntu-context-test: librebuntu-sysfs-device.a
 rebuntu-context-test: librebuntu-peripherals.a
 rebuntu-context-test: librebuntu-hotplug.a
 rebuntu-context-test: librebuntu-netlink-link.a

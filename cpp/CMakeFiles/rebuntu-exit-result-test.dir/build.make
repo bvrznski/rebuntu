@@ -142,6 +142,7 @@ rebuntu-exit-result-test: librebuntu-encrypted-storage-adapter.a
 rebuntu-exit-result-test: librebuntu-md-raid-adapter.a
 rebuntu-exit-result-test: librebuntu-power-supply-adapter.a
 rebuntu-exit-result-test: librebuntu-thermal-adapter.a
+rebuntu-exit-result-test: librebuntu-sysfs-device.a
 rebuntu-exit-result-test: librebuntu-peripherals.a
 rebuntu-exit-result-test: librebuntu-hotplug.a
 rebuntu-exit-result-test: librebuntu-netlink-link.a

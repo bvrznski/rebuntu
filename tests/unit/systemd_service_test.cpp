@@ -17,9 +17,10 @@
 #include <thread>
 
 #include "adapters/systemd/service/types.hpp"
-#include "system/core/contracts.hpp"
+#include <system/core/contracts.hpp>
 
 using namespace rebuntu::adapters::systemd::service;
+using namespace rebuntu::core;
 
 void test_service_identity_validity() {
     ServiceIdentity identity;
@@ -99,7 +100,7 @@ void test_service_runtime_info_default_values() {
 void test_service_discovery_result_default_values() {
     ServiceDiscoveryResult result;
     
-    assert(result.status == core::SemanticStatus::kUnknown);
+    assert(result.status == rebuntu::core::SemanticStatus::kUnknown);
     assert(result.total_services == 0);
     assert(result.active_services == 0);
     assert(result.inactive_services == 0);

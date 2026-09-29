@@ -567,6 +567,14 @@ add_library(rebuntu-thermal-adapter STATIC
 target_include_directories(rebuntu-thermal-adapter PUBLIC ${CMAKE_CURRENT_LIST_DIR}/../src)
 target_link_libraries(rebuntu-core PUBLIC rebuntu-thermal-adapter)
 
+# Phase 7.8: Sysfs Device Observation Adapter module
+add_library(rebuntu-sysfs-device STATIC
+    ${CMAKE_CURRENT_LIST_DIR}/../src/adapters/sysfs/device/types.hpp
+    ${CMAKE_CURRENT_LIST_DIR}/../src/adapters/sysfs/device/integration.cpp
+)
+target_include_directories(rebuntu-sysfs-device PUBLIC ${CMAKE_CURRENT_LIST_DIR}/../src)
+target_link_libraries(rebuntu-core PUBLIC rebuntu-sysfs-device)
+
 # Phase 5.36: Udev/Sysfs Peripheral Discovery Adapter module
 add_library(rebuntu-peripherals STATIC
     ${CMAKE_CURRENT_LIST_DIR}/../src/adapters/peripherals/types.hpp
@@ -784,6 +792,14 @@ add_executable(rebuntu-systemd-service-test
 target_include_directories(rebuntu-systemd-service-test PRIVATE ${CMAKE_CURRENT_LIST_DIR}/../src)
 target_link_libraries(rebuntu-systemd-service-test PRIVATE rebuntu-systemd-service-adapter rebuntu-core)
 add_test(NAME systemd_service_test COMMAND rebuntu-systemd-service-test)
+
+# Phase 7.8: Sysfs Device Observation Unit Tests
+add_executable(rebuntu-sysfs-device-test
+    ${CMAKE_CURRENT_LIST_DIR}/../tests/unit/sysfs_device_test.cpp
+)
+target_include_directories(rebuntu-sysfs-device-test PRIVATE ${CMAKE_CURRENT_LIST_DIR}/../src)
+target_link_libraries(rebuntu-sysfs-device-test PRIVATE rebuntu-core rebuntu-sysfs-device)
+add_test(NAME sysfs_device_test COMMAND rebuntu-sysfs-device-test)
 
 # Phase 5.32: Kernel Module Discovery unit tests - test file missing
 # add_executable(rebuntu-procfs-modules-test

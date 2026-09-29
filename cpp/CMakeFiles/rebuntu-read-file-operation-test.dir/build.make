@@ -142,6 +142,7 @@ rebuntu-read-file-operation-test: librebuntu-encrypted-storage-adapter.a
 rebuntu-read-file-operation-test: librebuntu-md-raid-adapter.a
 rebuntu-read-file-operation-test: librebuntu-power-supply-adapter.a
 rebuntu-read-file-operation-test: librebuntu-thermal-adapter.a
+rebuntu-read-file-operation-test: librebuntu-sysfs-device.a
 rebuntu-read-file-operation-test: librebuntu-peripherals.a
 rebuntu-read-file-operation-test: librebuntu-hotplug.a
 rebuntu-read-file-operation-test: librebuntu-netlink-link.a

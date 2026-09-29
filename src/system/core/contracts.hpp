@@ -723,7 +723,7 @@ public:
     std::vector<ServiceInfo> by_category(std::string_view category) const {
         std::vector<ServiceInfo> result;
         for (const auto& [id, info] : services_) {
-            if (info.categories.contains(std::string{category})) {
+            if (info.categories.find(std::string{category}) != info.categories.end()) {
                 result.push_back(info);
             }
         }

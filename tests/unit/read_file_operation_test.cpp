@@ -16,10 +16,9 @@
 #include "operations/read_file.hpp"
 
 using namespace rebuntu::operations;
-using namespace rebuntu::core;
 
 void test_register_operation() {
-    OperationRegistry registry;
+    rebuntu::core::OperationRegistry registry;
     register_read_file_operation(registry);
     
     auto op = registry.find("filesystem.read_file");

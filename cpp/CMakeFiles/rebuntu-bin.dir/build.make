@@ -161,6 +161,7 @@ rebuntu-bin: librebuntu-encrypted-storage-adapter.a
 rebuntu-bin: librebuntu-md-raid-adapter.a
 rebuntu-bin: librebuntu-power-supply-adapter.a
 rebuntu-bin: librebuntu-thermal-adapter.a
+rebuntu-bin: librebuntu-sysfs-device.a
 rebuntu-bin: librebuntu-peripherals.a
 rebuntu-bin: librebuntu-hotplug.a
 rebuntu-bin: librebuntu-netlink-link.a

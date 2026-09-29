@@ -142,6 +142,7 @@ rebuntu-read-only-command-test: librebuntu-encrypted-storage-adapter.a
 rebuntu-read-only-command-test: librebuntu-md-raid-adapter.a
 rebuntu-read-only-command-test: librebuntu-power-supply-adapter.a
 rebuntu-read-only-command-test: librebuntu-thermal-adapter.a
+rebuntu-read-only-command-test: librebuntu-sysfs-device.a
 rebuntu-read-only-command-test: librebuntu-peripherals.a
 rebuntu-read-only-command-test: librebuntu-hotplug.a
 rebuntu-read-only-command-test: librebuntu-netlink-link.a

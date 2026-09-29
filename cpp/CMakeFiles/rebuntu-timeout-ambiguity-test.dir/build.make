@@ -142,6 +142,7 @@ rebuntu-timeout-ambiguity-test: librebuntu-encrypted-storage-adapter.a
 rebuntu-timeout-ambiguity-test: librebuntu-md-raid-adapter.a
 rebuntu-timeout-ambiguity-test: librebuntu-power-supply-adapter.a
 rebuntu-timeout-ambiguity-test: librebuntu-thermal-adapter.a
+rebuntu-timeout-ambiguity-test: librebuntu-sysfs-device.a
 rebuntu-timeout-ambiguity-test: librebuntu-peripherals.a
 rebuntu-timeout-ambiguity-test: librebuntu-hotplug.a
 rebuntu-timeout-ambiguity-test: librebuntu-netlink-link.a

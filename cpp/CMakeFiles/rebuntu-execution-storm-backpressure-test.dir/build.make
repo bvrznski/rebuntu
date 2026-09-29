@@ -142,6 +142,7 @@ rebuntu-execution-storm-backpressure-test: librebuntu-encrypted-storage-adapter.
 rebuntu-execution-storm-backpressure-test: librebuntu-md-raid-adapter.a
 rebuntu-execution-storm-backpressure-test: librebuntu-power-supply-adapter.a
 rebuntu-execution-storm-backpressure-test: librebuntu-thermal-adapter.a
+rebuntu-execution-storm-backpressure-test: librebuntu-sysfs-device.a
 rebuntu-execution-storm-backpressure-test: librebuntu-peripherals.a
 rebuntu-execution-storm-backpressure-test: librebuntu-hotplug.a
 rebuntu-execution-storm-backpressure-test: librebuntu-netlink-link.a

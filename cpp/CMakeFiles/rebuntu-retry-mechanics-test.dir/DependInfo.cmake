@@ -63,6 +63,7 @@ set(CMAKE_TARGET_LINKED_INFO_FILES
   "/home/bvrznski/rebuntu/cpp/CMakeFiles/rebuntu-md-raid-adapter.dir/DependInfo.cmake"
   "/home/bvrznski/rebuntu/cpp/CMakeFiles/rebuntu-power-supply-adapter.dir/DependInfo.cmake"
   "/home/bvrznski/rebuntu/cpp/CMakeFiles/rebuntu-thermal-adapter.dir/DependInfo.cmake"
+  "/home/bvrznski/rebuntu/cpp/CMakeFiles/rebuntu-sysfs-device.dir/DependInfo.cmake"
   "/home/bvrznski/rebuntu/cpp/CMakeFiles/rebuntu-peripherals.dir/DependInfo.cmake"
   "/home/bvrznski/rebuntu/cpp/CMakeFiles/rebuntu-hotplug.dir/DependInfo.cmake"
   "/home/bvrznski/rebuntu/cpp/CMakeFiles/rebuntu-netlink-link.dir/DependInfo.cmake"

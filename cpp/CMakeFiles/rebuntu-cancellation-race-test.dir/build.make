@@ -142,6 +142,7 @@ rebuntu-cancellation-race-test: librebuntu-encrypted-storage-adapter.a
 rebuntu-cancellation-race-test: librebuntu-md-raid-adapter.a
 rebuntu-cancellation-race-test: librebuntu-power-supply-adapter.a
 rebuntu-cancellation-race-test: librebuntu-thermal-adapter.a
+rebuntu-cancellation-race-test: librebuntu-sysfs-device.a
 rebuntu-cancellation-race-test: librebuntu-peripherals.a
 rebuntu-cancellation-race-test: librebuntu-hotplug.a
 rebuntu-cancellation-race-test: librebuntu-netlink-link.a

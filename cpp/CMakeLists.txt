@@ -88,6 +88,14 @@ add_library(rebuntu-state-acquisition STATIC
 target_include_directories(rebuntu-state-acquisition PUBLIC ${CMAKE_CURRENT_LIST_DIR}/../src)
 target_link_libraries(rebuntu-core PUBLIC rebuntu-state-acquisition rebuntu-observation-bounds)
 
+# Phase 7.3: State Normalization module (normalizer registry and domain-specific normalizers)
+add_library(rebuntu-state-normalizer STATIC
+    ${CMAKE_CURRENT_LIST_DIR}/../src/system/observation/state_normalizer.hpp
+    ${CMAKE_CURRENT_LIST_DIR}/../src/system/observation/state_normalizer.cpp
+)
+target_include_directories(rebuntu-state-normalizer PUBLIC ${CMAKE_CURRENT_LIST_DIR}/../src)
+target_link_libraries(rebuntu-core PUBLIC rebuntu-state-normalizer rebuntu-state-acquisition)
+
 # Phase 6.0: Shell Language Foundation module
 add_library(rebuntu-shell STATIC
     ${CMAKE_CURRENT_LIST_DIR}/../src/system/shell/types.hpp

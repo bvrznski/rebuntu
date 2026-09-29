@@ -235,6 +235,14 @@ add_library(rebuntu-filesystem STATIC
 target_include_directories(rebuntu-filesystem PUBLIC ${CMAKE_CURRENT_LIST_DIR}/../src)
 target_link_libraries(rebuntu-core PUBLIC rebuntu-filesystem)
 
+# Phase 6.77: User Management Operations module
+add_library(rebuntu-users STATIC
+    ${CMAKE_CURRENT_LIST_DIR}/../src/operations/users.hpp
+    ${CMAKE_CURRENT_LIST_DIR}/../src/operations/users.cpp
+)
+target_include_directories(rebuntu-users PUBLIC ${CMAKE_CURRENT_LIST_DIR}/../src)
+target_link_libraries(rebuntu-core PUBLIC rebuntu-users)
+
 # Phase 6.24: Retry Mechanics Integration module
 target_sources(rebuntu-core PRIVATE
     ${CMAKE_CURRENT_LIST_DIR}/../src/runtime/retry_mechanics.hpp
